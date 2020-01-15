@@ -1,0 +1,52 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.ai.qna.HttpRequestUtils.execute_http_request
+  class: botbuilder.ai.qna.HttpRequestUtils
+  fullName: botbuilder.ai.qna.HttpRequestUtils
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: botbuilder.ai.qna
+  name: HttpRequestUtils
+  summary: HTTP request utils class.
+  syntax:
+    content: 'HttpRequestUtils(http_client: aiohttp.client.ClientSession)'
+  type: class
+  uid: botbuilder.ai.qna.HttpRequestUtils
+- class: botbuilder.ai.qna.HttpRequestUtils
+  fullName: botbuilder.ai.qna.HttpRequestUtils.execute_http_request
+  langs:
+  - python
+  module: botbuilder.ai.qna
+  name: 'execute_http_request(request_url: str, payload_body: object, endpoint: botbuilder.ai.qna.qnamaker_endpoint.QnAMakerEndpoint,
+    timeout: float = None) -> aiohttp.client_reqrep.ClientResponse'
+  summary: 'Execute HTTP request.
+
+
+
+    request_url: HTTP request URL.
+
+
+    payload_body: HTTP request body.
+
+
+    endpoint: QnA Maker endpoint details.
+
+
+    timeout: Timeout for HTTP call (milliseconds).'
+  syntax:
+    content: 'execute_http_request(request_url: str, payload_body: object, endpoint:
+      botbuilder.ai.qna.qnamaker_endpoint.QnAMakerEndpoint, timeout: float = None)
+      -> aiohttp.client_reqrep.ClientResponse'
+  type: method
+  uid: botbuilder.ai.qna.HttpRequestUtils.execute_http_request
+references:
+- fullName: botbuilder.ai.qna.HttpRequestUtils.execute_http_request
+  isExternal: false
+  name: 'execute_http_request(request_url: str, payload_body: object, endpoint: botbuilder.ai.qna.qnamaker_endpoint.QnAMakerEndpoint,
+    timeout: float = None) -> aiohttp.client_reqrep.ClientResponse'
+  parent: botbuilder.ai.qna.HttpRequestUtils
+  uid: botbuilder.ai.qna.HttpRequestUtils.execute_http_request

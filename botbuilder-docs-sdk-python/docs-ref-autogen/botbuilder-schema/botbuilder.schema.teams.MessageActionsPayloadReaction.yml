@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: botbuilder.schema.teams.MessageActionsPayloadReaction
+  fullName: botbuilder.schema.teams.MessageActionsPayloadReaction
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: msrest.serialization.Model
+  langs:
+  - python
+  module: botbuilder.schema.teams
+  name: MessageActionsPayloadReaction
+  summary: Represents the reaction of a user to a message.
+  syntax:
+    content: 'MessageActionsPayloadReaction(*, reaction_type=None, created_date_time:
+      str = None, user=None, **kwargs) -> None'
+    parameters:
+    - description: 'The type of reaction given to the message. Possible
+
+        values include: ''like'', ''heart'', ''laugh'', ''surprised'', ''sad'', ''angry'''
+      id: reaction_type
+      type:
+      - str
+      - botframework.connector.teams.models.enum
+    - description: 'Timestamp of when the user reacted to the
+
+        message.'
+      id: created_date_time
+      type:
+      - str
+    - description: The user with which the reaction is associated.
+      id: user
+      type:
+      - botframework.connector.teams.models.MessageActionsPayloadFrom
+  type: class
+  uid: botbuilder.schema.teams.MessageActionsPayloadReaction
+references: []

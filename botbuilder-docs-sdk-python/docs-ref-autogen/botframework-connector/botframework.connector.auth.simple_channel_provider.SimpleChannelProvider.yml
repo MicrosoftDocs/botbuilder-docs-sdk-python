@@ -1,0 +1,75 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botframework.connector.auth.simple_channel_provider.SimpleChannelProvider.get_channel_service
+  - botframework.connector.auth.simple_channel_provider.SimpleChannelProvider.is_government
+  - botframework.connector.auth.simple_channel_provider.SimpleChannelProvider.is_public_azure
+  class: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider
+  fullName: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: abc.ABC
+    type: botframework.connector.auth.channel_provider.ChannelProvider
+  langs:
+  - python
+  module: botframework.connector.auth.simple_channel_provider
+  name: SimpleChannelProvider
+  summary: 'ChannelProvider interface. This interface allows Bots to provide their
+    own
+
+    implementation for the configuration parameters to connect to a Bot.
+
+    Framework channel service.'
+  syntax:
+    content: 'SimpleChannelProvider(channel_service: str = None)'
+  type: class
+  uid: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider
+- class: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider
+  fullName: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider.get_channel_service
+  langs:
+  - python
+  module: botframework.connector.auth.simple_channel_provider
+  name: get_channel_service() -> str
+  syntax:
+    content: get_channel_service() -> str
+  type: method
+  uid: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider.get_channel_service
+- class: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider
+  fullName: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider.is_government
+  langs:
+  - python
+  module: botframework.connector.auth.simple_channel_provider
+  name: is_government() -> bool
+  syntax:
+    content: is_government() -> bool
+  type: method
+  uid: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider.is_government
+- class: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider
+  fullName: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider.is_public_azure
+  langs:
+  - python
+  module: botframework.connector.auth.simple_channel_provider
+  name: is_public_azure() -> bool
+  syntax:
+    content: is_public_azure() -> bool
+  type: method
+  uid: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider.is_public_azure
+references:
+- fullName: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider.get_channel_service
+  isExternal: false
+  name: get_channel_service() -> str
+  parent: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider
+  uid: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider.get_channel_service
+- fullName: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider.is_government
+  isExternal: false
+  name: is_government() -> bool
+  parent: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider
+  uid: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider.is_government
+- fullName: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider.is_public_azure
+  isExternal: false
+  name: is_public_azure() -> bool
+  parent: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider
+  uid: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider.is_public_azure

@@ -1,0 +1,85 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botframework.connector.auth.skill_validation.SkillValidation.authenticate_channel_token
+  - botframework.connector.auth.skill_validation.SkillValidation.is_skill_claim
+  - botframework.connector.auth.skill_validation.SkillValidation.is_skill_token
+  class: botframework.connector.auth.skill_validation.SkillValidation
+  fullName: botframework.connector.auth.skill_validation.SkillValidation
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: botframework.connector.auth.skill_validation
+  name: SkillValidation
+  summary: Validates JWT tokens sent to and from a Skill.
+  syntax: {}
+  type: class
+  uid: botframework.connector.auth.skill_validation.SkillValidation
+- class: botframework.connector.auth.skill_validation.SkillValidation
+  fullName: botframework.connector.auth.skill_validation.SkillValidation.authenticate_channel_token
+  langs:
+  - python
+  module: botframework.connector.auth.skill_validation
+  name: 'authenticate_channel_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
+    channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
+    channel_id: str, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration)
+    -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  syntax:
+    content: 'authenticate_channel_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
+      channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
+      channel_id: str, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration)
+      -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  type: method
+  uid: botframework.connector.auth.skill_validation.SkillValidation.authenticate_channel_token
+- class: botframework.connector.auth.skill_validation.SkillValidation
+  fullName: botframework.connector.auth.skill_validation.SkillValidation.is_skill_claim
+  langs:
+  - python
+  module: botframework.connector.auth.skill_validation
+  name: 'is_skill_claim(claims: typing.Dict[str, object]) -> bool'
+  summary: 'Checks if the given list of claims represents a skill.
+
+    :param claims: A dict of claims.
+
+    :return bool:'
+  syntax:
+    content: 'is_skill_claim(claims: typing.Dict[str, object]) -> bool'
+  type: method
+  uid: botframework.connector.auth.skill_validation.SkillValidation.is_skill_claim
+- class: botframework.connector.auth.skill_validation.SkillValidation
+  fullName: botframework.connector.auth.skill_validation.SkillValidation.is_skill_token
+  langs:
+  - python
+  module: botframework.connector.auth.skill_validation
+  name: 'is_skill_token(auth_header: str) -> bool'
+  summary: 'Determines if a given Auth header is from from a skill to bot or bot to
+    skill request.
+
+    :param auth_header: Bearer Token, in the "Bearer [Long String]" Format.
+
+    :return bool:'
+  syntax:
+    content: 'is_skill_token(auth_header: str) -> bool'
+  type: method
+  uid: botframework.connector.auth.skill_validation.SkillValidation.is_skill_token
+references:
+- fullName: botframework.connector.auth.skill_validation.SkillValidation.authenticate_channel_token
+  isExternal: false
+  name: 'authenticate_channel_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
+    channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
+    channel_id: str, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration)
+    -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  parent: botframework.connector.auth.skill_validation.SkillValidation
+  uid: botframework.connector.auth.skill_validation.SkillValidation.authenticate_channel_token
+- fullName: botframework.connector.auth.skill_validation.SkillValidation.is_skill_claim
+  isExternal: false
+  name: 'is_skill_claim(claims: typing.Dict[str, object]) -> bool'
+  parent: botframework.connector.auth.skill_validation.SkillValidation
+  uid: botframework.connector.auth.skill_validation.SkillValidation.is_skill_claim
+- fullName: botframework.connector.auth.skill_validation.SkillValidation.is_skill_token
+  isExternal: false
+  name: 'is_skill_token(auth_header: str) -> bool'
+  parent: botframework.connector.auth.skill_validation.SkillValidation
+  uid: botframework.connector.auth.skill_validation.SkillValidation.is_skill_token

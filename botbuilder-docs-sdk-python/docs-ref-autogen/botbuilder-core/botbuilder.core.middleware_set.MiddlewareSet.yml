@@ -1,0 +1,125 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.core.middleware_set.MiddlewareSet.on_turn
+  - botbuilder.core.middleware_set.MiddlewareSet.receive_activity
+  - botbuilder.core.middleware_set.MiddlewareSet.receive_activity_internal
+  - botbuilder.core.middleware_set.MiddlewareSet.receive_activity_with_status
+  - botbuilder.core.middleware_set.MiddlewareSet.use
+  class: botbuilder.core.middleware_set.MiddlewareSet
+  fullName: botbuilder.core.middleware_set.MiddlewareSet
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: abc.ABC
+    type: botbuilder.core.middleware_set.Middleware
+  langs:
+  - python
+  module: botbuilder.core.middleware_set
+  name: MiddlewareSet
+  summary: 'A set of *Middleware* plugins. The set itself is middleware so you can
+    easily package up a set
+
+    of middleware that can be composed into a bot with a single *bot.use(mySet)* call
+    or even into
+
+    another middleware set using *set.use(mySet)*.'
+  syntax:
+    content: MiddlewareSet()
+  type: class
+  uid: botbuilder.core.middleware_set.MiddlewareSet
+- class: botbuilder.core.middleware_set.MiddlewareSet
+  fullName: botbuilder.core.middleware_set.MiddlewareSet.on_turn
+  langs:
+  - python
+  module: botbuilder.core.middleware_set
+  name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
+    typing.Awaitable])'
+  syntax:
+    content: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
+      typing.Awaitable])'
+  type: method
+  uid: botbuilder.core.middleware_set.MiddlewareSet.on_turn
+- class: botbuilder.core.middleware_set.MiddlewareSet
+  fullName: botbuilder.core.middleware_set.MiddlewareSet.receive_activity
+  langs:
+  - python
+  module: botbuilder.core.middleware_set
+  name: 'receive_activity(context: botbuilder.core.turn_context.TurnContext)'
+  syntax:
+    content: 'receive_activity(context: botbuilder.core.turn_context.TurnContext)'
+  type: method
+  uid: botbuilder.core.middleware_set.MiddlewareSet.receive_activity
+- class: botbuilder.core.middleware_set.MiddlewareSet
+  fullName: botbuilder.core.middleware_set.MiddlewareSet.receive_activity_internal
+  langs:
+  - python
+  module: botbuilder.core.middleware_set
+  name: 'receive_activity_internal(context: botbuilder.core.turn_context.TurnContext,
+    callback: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable],
+    next_middleware_index: int = 0)'
+  syntax:
+    content: 'receive_activity_internal(context: botbuilder.core.turn_context.TurnContext,
+      callback: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable],
+      next_middleware_index: int = 0)'
+  type: method
+  uid: botbuilder.core.middleware_set.MiddlewareSet.receive_activity_internal
+- class: botbuilder.core.middleware_set.MiddlewareSet
+  fullName: botbuilder.core.middleware_set.MiddlewareSet.receive_activity_with_status
+  langs:
+  - python
+  module: botbuilder.core.middleware_set
+  name: 'receive_activity_with_status(context: botbuilder.core.turn_context.TurnContext,
+    callback: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable])'
+  syntax:
+    content: 'receive_activity_with_status(context: botbuilder.core.turn_context.TurnContext,
+      callback: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable])'
+  type: method
+  uid: botbuilder.core.middleware_set.MiddlewareSet.receive_activity_with_status
+- class: botbuilder.core.middleware_set.MiddlewareSet
+  fullName: botbuilder.core.middleware_set.MiddlewareSet.use
+  langs:
+  - python
+  module: botbuilder.core.middleware_set
+  name: 'use(*middleware: botbuilder.core.middleware_set.Middleware)'
+  summary: 'Registers middleware plugin(s) with the bot or set.
+
+    :param middleware :
+
+    :return:'
+  syntax:
+    content: 'use(*middleware: botbuilder.core.middleware_set.Middleware)'
+  type: method
+  uid: botbuilder.core.middleware_set.MiddlewareSet.use
+references:
+- fullName: botbuilder.core.middleware_set.MiddlewareSet.on_turn
+  isExternal: false
+  name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
+    typing.Awaitable])'
+  parent: botbuilder.core.middleware_set.MiddlewareSet
+  uid: botbuilder.core.middleware_set.MiddlewareSet.on_turn
+- fullName: botbuilder.core.middleware_set.MiddlewareSet.receive_activity
+  isExternal: false
+  name: 'receive_activity(context: botbuilder.core.turn_context.TurnContext)'
+  parent: botbuilder.core.middleware_set.MiddlewareSet
+  uid: botbuilder.core.middleware_set.MiddlewareSet.receive_activity
+- fullName: botbuilder.core.middleware_set.MiddlewareSet.receive_activity_internal
+  isExternal: false
+  name: 'receive_activity_internal(context: botbuilder.core.turn_context.TurnContext,
+    callback: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable],
+    next_middleware_index: int = 0)'
+  parent: botbuilder.core.middleware_set.MiddlewareSet
+  uid: botbuilder.core.middleware_set.MiddlewareSet.receive_activity_internal
+- fullName: botbuilder.core.middleware_set.MiddlewareSet.receive_activity_with_status
+  isExternal: false
+  name: 'receive_activity_with_status(context: botbuilder.core.turn_context.TurnContext,
+    callback: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable])'
+  parent: botbuilder.core.middleware_set.MiddlewareSet
+  uid: botbuilder.core.middleware_set.MiddlewareSet.receive_activity_with_status
+- fullName: botbuilder.core.middleware_set.MiddlewareSet.use
+  isExternal: false
+  name: 'use(*middleware: botbuilder.core.middleware_set.Middleware)'
+  parent: botbuilder.core.middleware_set.MiddlewareSet
+  uid: botbuilder.core.middleware_set.MiddlewareSet.use

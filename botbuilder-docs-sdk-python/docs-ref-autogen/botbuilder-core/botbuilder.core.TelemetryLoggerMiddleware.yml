@@ -1,0 +1,331 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.core.TelemetryLoggerMiddleware.fill_delete_event_properties
+  - botbuilder.core.TelemetryLoggerMiddleware.fill_receive_event_properties
+  - botbuilder.core.TelemetryLoggerMiddleware.fill_send_event_properties
+  - botbuilder.core.TelemetryLoggerMiddleware.fill_update_event_properties
+  - botbuilder.core.TelemetryLoggerMiddleware.log_personal_information
+  - botbuilder.core.TelemetryLoggerMiddleware.on_delete_activity
+  - botbuilder.core.TelemetryLoggerMiddleware.on_receive_activity
+  - botbuilder.core.TelemetryLoggerMiddleware.on_send_activity
+  - botbuilder.core.TelemetryLoggerMiddleware.on_turn
+  - botbuilder.core.TelemetryLoggerMiddleware.on_update_activity
+  - botbuilder.core.TelemetryLoggerMiddleware.telemetry_client
+  class: botbuilder.core.TelemetryLoggerMiddleware
+  fullName: botbuilder.core.TelemetryLoggerMiddleware
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: abc.ABC
+    type: botbuilder.core.middleware_set.Middleware
+  langs:
+  - python
+  module: botbuilder.core
+  name: TelemetryLoggerMiddleware
+  summary: Middleware for logging incoming, outgoing, updated or deleted Activity
+    messages.
+  syntax:
+    content: 'TelemetryLoggerMiddleware(telemetry_client: botbuilder.core.bot_telemetry_client.BotTelemetryClient,
+      log_personal_information: bool) -> None'
+  type: class
+  uid: botbuilder.core.TelemetryLoggerMiddleware
+- class: botbuilder.core.TelemetryLoggerMiddleware
+  fullName: botbuilder.core.TelemetryLoggerMiddleware.fill_delete_event_properties
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'fill_delete_event_properties(activity: botbuilder.schema._models_py3.Activity,
+    additional_properties: typing.Dict[str, str] = None) -> typing.Dict[str, str]'
+  summary: 'Fills the event properties for the BotMessageDelete.
+
+    These properties are logged when an activity message is deleted by the Bot.
+
+    :param activity: activity sent from user.
+
+    :param additional_properties: Additional properties to add to the event.
+
+    Additional properties can override "stock" properties.
+
+
+
+    BotTelemetryClient.track_event method for the BotMessageUpdate event.'
+  syntax:
+    content: 'fill_delete_event_properties(activity: botbuilder.schema._models_py3.Activity,
+      additional_properties: typing.Dict[str, str] = None) -> typing.Dict[str, str]'
+    return:
+      description: A dictionary that is sent as "Properties" to the
+  type: method
+  uid: botbuilder.core.TelemetryLoggerMiddleware.fill_delete_event_properties
+- class: botbuilder.core.TelemetryLoggerMiddleware
+  fullName: botbuilder.core.TelemetryLoggerMiddleware.fill_receive_event_properties
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'fill_receive_event_properties(activity: botbuilder.schema._models_py3.Activity,
+    additional_properties: typing.Dict[str, str] = None) -> typing.Dict[str, str]'
+  summary: 'Fills the event properties for the BotMessageReceived.
+
+    Adheres to the LogPersonalInformation flag to filter Name, Text and Speak properties.
+
+    :param activity: activity sent from user.
+
+    :param additional_properties: Additional properties to add to the event.
+
+    Additional properties can override "stock" properties.
+
+
+
+    BotTelemetryClient.track_event method for the BotMessageReceived event.'
+  syntax:
+    content: 'fill_receive_event_properties(activity: botbuilder.schema._models_py3.Activity,
+      additional_properties: typing.Dict[str, str] = None) -> typing.Dict[str, str]'
+    return:
+      description: A dictionary that is sent as "Properties" to
+  type: method
+  uid: botbuilder.core.TelemetryLoggerMiddleware.fill_receive_event_properties
+- class: botbuilder.core.TelemetryLoggerMiddleware
+  fullName: botbuilder.core.TelemetryLoggerMiddleware.fill_send_event_properties
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'fill_send_event_properties(activity: botbuilder.schema._models_py3.Activity,
+    additional_properties: typing.Dict[str, str] = None) -> typing.Dict[str, str]'
+  summary: 'Fills the event properties for the BotMessageSend.
+
+    These properties are logged when an activity message is sent by the Bot to the
+    user.
+
+    :param activity: activity sent from user.
+
+    :param additional_properties: Additional properties to add to the event.
+
+    Additional properties can override "stock" properties.
+
+
+
+    BotTelemetryClient.track_event method for the BotMessageSend event.'
+  syntax:
+    content: 'fill_send_event_properties(activity: botbuilder.schema._models_py3.Activity,
+      additional_properties: typing.Dict[str, str] = None) -> typing.Dict[str, str]'
+    return:
+      description: A dictionary that is sent as "Properties" to the
+  type: method
+  uid: botbuilder.core.TelemetryLoggerMiddleware.fill_send_event_properties
+- class: botbuilder.core.TelemetryLoggerMiddleware
+  fullName: botbuilder.core.TelemetryLoggerMiddleware.fill_update_event_properties
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'fill_update_event_properties(activity: botbuilder.schema._models_py3.Activity,
+    additional_properties: typing.Dict[str, str] = None) -> typing.Dict[str, str]'
+  summary: 'Fills the event properties for the BotMessageUpdate.
+
+    These properties are logged when an activity message is updated by the Bot.
+
+    For example, if a card is interacted with by the use, and the card needs
+
+    to be updated to reflect some interaction.
+
+    :param activity: activity sent from user.
+
+    :param additional_properties: Additional properties to add to the event.
+
+    Additional properties can override "stock" properties.
+
+
+
+    BotTelemetryClient.track_event method for the BotMessageUpdate event.'
+  syntax:
+    content: 'fill_update_event_properties(activity: botbuilder.schema._models_py3.Activity,
+      additional_properties: typing.Dict[str, str] = None) -> typing.Dict[str, str]'
+    return:
+      description: A dictionary that is sent as "Properties" to the
+  type: method
+  uid: botbuilder.core.TelemetryLoggerMiddleware.fill_update_event_properties
+- class: botbuilder.core.TelemetryLoggerMiddleware
+  fullName: botbuilder.core.TelemetryLoggerMiddleware.log_personal_information
+  langs:
+  - python
+  module: botbuilder.core
+  name: log_personal_information
+  summary: 'Gets a value indicating whether determines whether to log personal
+
+    information that came from the user.'
+  syntax: {}
+  type: attribute
+  uid: botbuilder.core.TelemetryLoggerMiddleware.log_personal_information
+- class: botbuilder.core.TelemetryLoggerMiddleware
+  fullName: botbuilder.core.TelemetryLoggerMiddleware.on_delete_activity
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'on_delete_activity(activity: botbuilder.schema._models_py3.Activity) -> None'
+  summary: 'Invoked when the bot deletes a message.
+
+    Performs logging of telemetry data using the BotTelemetryClient.track_event()
+    method.
+
+    This event name used is "BotMessageDelete".
+
+    :param activity: Current activity sent from user.'
+  syntax:
+    content: 'on_delete_activity(activity: botbuilder.schema._models_py3.Activity)
+      -> None'
+  type: method
+  uid: botbuilder.core.TelemetryLoggerMiddleware.on_delete_activity
+- class: botbuilder.core.TelemetryLoggerMiddleware
+  fullName: botbuilder.core.TelemetryLoggerMiddleware.on_receive_activity
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'on_receive_activity(activity: botbuilder.schema._models_py3.Activity) ->
+    None'
+  summary: 'Invoked when a message is received from the user.
+
+    Performs logging of telemetry data using the BotTelemetryClient.track_event()
+    method.
+
+    This event name used is "BotMessageReceived".
+
+    :param activity: Current activity sent from user.'
+  syntax:
+    content: 'on_receive_activity(activity: botbuilder.schema._models_py3.Activity)
+      -> None'
+  type: method
+  uid: botbuilder.core.TelemetryLoggerMiddleware.on_receive_activity
+- class: botbuilder.core.TelemetryLoggerMiddleware
+  fullName: botbuilder.core.TelemetryLoggerMiddleware.on_send_activity
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'on_send_activity(activity: botbuilder.schema._models_py3.Activity) -> None'
+  summary: 'Invoked when the bot sends a message to the user.
+
+    Performs logging of telemetry data using the BotTelemetryClient.track_event()
+    method.
+
+    This event name used is "BotMessageSend".
+
+    :param activity: Current activity sent from bot.'
+  syntax:
+    content: 'on_send_activity(activity: botbuilder.schema._models_py3.Activity) ->
+      None'
+  type: method
+  uid: botbuilder.core.TelemetryLoggerMiddleware.on_send_activity
+- class: botbuilder.core.TelemetryLoggerMiddleware
+  fullName: botbuilder.core.TelemetryLoggerMiddleware.on_turn
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic_fn: typing.Callable[botbuilder.core.turn_context.TurnContext,
+    typing.Awaitable]) -> None'
+  summary: 'Logs events based on incoming and outgoing activities using
+
+    BotTelemetryClient base class'
+  syntax:
+    content: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic_fn:
+      typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable])
+      -> None'
+    parameters:
+    - description: The context object for this turn.
+      id: turn_context
+    - description: Callable to continue the bot middleware pipeline
+      id: logic
+    return:
+      description: None
+  type: method
+  uid: botbuilder.core.TelemetryLoggerMiddleware.on_turn
+- class: botbuilder.core.TelemetryLoggerMiddleware
+  fullName: botbuilder.core.TelemetryLoggerMiddleware.on_update_activity
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'on_update_activity(activity: botbuilder.schema._models_py3.Activity) -> None'
+  summary: 'Invoked when the bot updates a message.
+
+    Performs logging of telemetry data using the BotTelemetryClient.track_event()
+    method.
+
+    This event name used is "BotMessageUpdate".
+
+    :param activity: Current activity sent from user.'
+  syntax:
+    content: 'on_update_activity(activity: botbuilder.schema._models_py3.Activity)
+      -> None'
+  type: method
+  uid: botbuilder.core.TelemetryLoggerMiddleware.on_update_activity
+- class: botbuilder.core.TelemetryLoggerMiddleware
+  fullName: botbuilder.core.TelemetryLoggerMiddleware.telemetry_client
+  langs:
+  - python
+  module: botbuilder.core
+  name: telemetry_client
+  summary: Gets the currently configured BotTelemetryClient.
+  syntax: {}
+  type: attribute
+  uid: botbuilder.core.TelemetryLoggerMiddleware.telemetry_client
+references:
+- fullName: botbuilder.core.TelemetryLoggerMiddleware.fill_delete_event_properties
+  isExternal: false
+  name: 'fill_delete_event_properties(activity: botbuilder.schema._models_py3.Activity,
+    additional_properties: typing.Dict[str, str] = None) -> typing.Dict[str, str]'
+  parent: botbuilder.core.TelemetryLoggerMiddleware
+  uid: botbuilder.core.TelemetryLoggerMiddleware.fill_delete_event_properties
+- fullName: botbuilder.core.TelemetryLoggerMiddleware.fill_receive_event_properties
+  isExternal: false
+  name: 'fill_receive_event_properties(activity: botbuilder.schema._models_py3.Activity,
+    additional_properties: typing.Dict[str, str] = None) -> typing.Dict[str, str]'
+  parent: botbuilder.core.TelemetryLoggerMiddleware
+  uid: botbuilder.core.TelemetryLoggerMiddleware.fill_receive_event_properties
+- fullName: botbuilder.core.TelemetryLoggerMiddleware.fill_send_event_properties
+  isExternal: false
+  name: 'fill_send_event_properties(activity: botbuilder.schema._models_py3.Activity,
+    additional_properties: typing.Dict[str, str] = None) -> typing.Dict[str, str]'
+  parent: botbuilder.core.TelemetryLoggerMiddleware
+  uid: botbuilder.core.TelemetryLoggerMiddleware.fill_send_event_properties
+- fullName: botbuilder.core.TelemetryLoggerMiddleware.fill_update_event_properties
+  isExternal: false
+  name: 'fill_update_event_properties(activity: botbuilder.schema._models_py3.Activity,
+    additional_properties: typing.Dict[str, str] = None) -> typing.Dict[str, str]'
+  parent: botbuilder.core.TelemetryLoggerMiddleware
+  uid: botbuilder.core.TelemetryLoggerMiddleware.fill_update_event_properties
+- fullName: botbuilder.core.TelemetryLoggerMiddleware.log_personal_information
+  isExternal: false
+  name: log_personal_information
+  parent: botbuilder.core.TelemetryLoggerMiddleware
+  uid: botbuilder.core.TelemetryLoggerMiddleware.log_personal_information
+- fullName: botbuilder.core.TelemetryLoggerMiddleware.on_delete_activity
+  isExternal: false
+  name: 'on_delete_activity(activity: botbuilder.schema._models_py3.Activity) -> None'
+  parent: botbuilder.core.TelemetryLoggerMiddleware
+  uid: botbuilder.core.TelemetryLoggerMiddleware.on_delete_activity
+- fullName: botbuilder.core.TelemetryLoggerMiddleware.on_receive_activity
+  isExternal: false
+  name: 'on_receive_activity(activity: botbuilder.schema._models_py3.Activity) ->
+    None'
+  parent: botbuilder.core.TelemetryLoggerMiddleware
+  uid: botbuilder.core.TelemetryLoggerMiddleware.on_receive_activity
+- fullName: botbuilder.core.TelemetryLoggerMiddleware.on_send_activity
+  isExternal: false
+  name: 'on_send_activity(activity: botbuilder.schema._models_py3.Activity) -> None'
+  parent: botbuilder.core.TelemetryLoggerMiddleware
+  uid: botbuilder.core.TelemetryLoggerMiddleware.on_send_activity
+- fullName: botbuilder.core.TelemetryLoggerMiddleware.on_turn
+  isExternal: false
+  name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic_fn: typing.Callable[botbuilder.core.turn_context.TurnContext,
+    typing.Awaitable]) -> None'
+  parent: botbuilder.core.TelemetryLoggerMiddleware
+  uid: botbuilder.core.TelemetryLoggerMiddleware.on_turn
+- fullName: botbuilder.core.TelemetryLoggerMiddleware.on_update_activity
+  isExternal: false
+  name: 'on_update_activity(activity: botbuilder.schema._models_py3.Activity) -> None'
+  parent: botbuilder.core.TelemetryLoggerMiddleware
+  uid: botbuilder.core.TelemetryLoggerMiddleware.on_update_activity
+- fullName: botbuilder.core.TelemetryLoggerMiddleware.telemetry_client
+  isExternal: false
+  name: telemetry_client
+  parent: botbuilder.core.TelemetryLoggerMiddleware
+  uid: botbuilder.core.TelemetryLoggerMiddleware.telemetry_client

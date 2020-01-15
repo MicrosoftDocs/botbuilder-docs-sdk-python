@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: botbuilder.schema.teams.O365ConnectorCardTextInput
+  fullName: botbuilder.schema.teams.O365ConnectorCardTextInput
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: msrest.serialization.Model
+    type: botbuilder.schema.teams._models_py3.O365ConnectorCardInputBase
+  langs:
+  - python
+  module: botbuilder.schema.teams
+  name: O365ConnectorCardTextInput
+  summary: O365 connector card text input.
+  syntax:
+    content: 'O365ConnectorCardTextInput(*, type=None, id: str = None, is_required:
+      bool = None, title: str = None, value: str = None, is_multiline: bool = None,
+      max_length: float = None, **kwargs) -> None'
+    parameters:
+    - description: 'Input type name. Possible values include: ''textInput'',
+
+        ''dateInput'', ''multichoiceInput'''
+      id: type
+      type:
+      - str
+      - botframework.connector.teams.models.enum
+    - description: Input Id. It must be unique per entire O365 connector card.
+      id: id
+      type:
+      - str
+    - description: 'Define if this input is a required field. Default
+
+        value is false.'
+      id: is_required
+      type:
+      - bool
+    - description: Input title that will be shown as the placeholder
+      id: title
+      type:
+      - str
+    - description: Default value for this input field
+      id: value
+      type:
+      - str
+    - description: 'Define if text input is allowed for multiple lines.
+
+        Default value is false.'
+      id: is_multiline
+      type:
+      - bool
+    - description: 'Maximum length of text input. Default value is
+
+        unlimited.'
+      id: max_length
+      type:
+      - float
+  type: class
+  uid: botbuilder.schema.teams.O365ConnectorCardTextInput
+references: []

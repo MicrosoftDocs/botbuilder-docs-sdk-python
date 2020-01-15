@@ -1,0 +1,28 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: botbuilder.schema.MessageReaction
+  fullName: botbuilder.schema.MessageReaction
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: msrest.serialization.Model
+  langs:
+  - python
+  module: botbuilder.schema
+  name: MessageReaction
+  summary: Message reaction object.
+  syntax:
+    content: MessageReaction(*, type=None, **kwargs) -> None
+    parameters:
+    - description: 'Message reaction type. Possible values include: ''like'',
+
+        ''plusOne'''
+      id: type
+      type:
+      - str
+      - botframework.connector.models.MessageReactionTypes
+  type: class
+  uid: botbuilder.schema.MessageReaction
+references: []

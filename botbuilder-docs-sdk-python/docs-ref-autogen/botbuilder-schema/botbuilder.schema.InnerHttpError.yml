@@ -1,0 +1,29 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: botbuilder.schema.InnerHttpError
+  fullName: botbuilder.schema.InnerHttpError
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: msrest.serialization.Model
+  langs:
+  - python
+  module: botbuilder.schema
+  name: InnerHttpError
+  summary: Object representing inner http error.
+  syntax:
+    content: 'InnerHttpError(*, status_code: int = None, body=None, **kwargs) -> None'
+    parameters:
+    - description: HttpStatusCode from failed request
+      id: status_code
+      type:
+      - int
+    - description: Body from failed request
+      id: body
+      type:
+      - object
+  type: class
+  uid: botbuilder.schema.InnerHttpError
+references: []
