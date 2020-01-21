@@ -1,0 +1,246 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.dialogs.waterfall_dialog.WaterfallDialog.add_step
+  - botbuilder.dialogs.waterfall_dialog.WaterfallDialog.begin_dialog
+  - botbuilder.dialogs.waterfall_dialog.WaterfallDialog.continue_dialog
+  - botbuilder.dialogs.waterfall_dialog.WaterfallDialog.end_dialog
+  - botbuilder.dialogs.waterfall_dialog.WaterfallDialog.get_step_name
+  - botbuilder.dialogs.waterfall_dialog.WaterfallDialog.on_step
+  - botbuilder.dialogs.waterfall_dialog.WaterfallDialog.resume_dialog
+  - botbuilder.dialogs.waterfall_dialog.WaterfallDialog.run_step
+  - botbuilder.dialogs.waterfall_dialog.WaterfallDialog.PersistedInstanceId
+  - botbuilder.dialogs.waterfall_dialog.WaterfallDialog.PersistedOptions
+  - botbuilder.dialogs.waterfall_dialog.WaterfallDialog.PersistedValues
+  - botbuilder.dialogs.waterfall_dialog.WaterfallDialog.StepIndex
+  class: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: abc.ABC
+    type: botbuilder.dialogs.dialog.Dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.waterfall_dialog
+  name: WaterfallDialog
+  summary: ''
+  syntax: {}
+  type: class
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+- class: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.add_step
+  langs:
+  - python
+  module: botbuilder.dialogs.waterfall_dialog
+  name: add_step(step)
+  summary: 'Adds a new step to the waterfall.
+
+    :param step: Step to add
+
+    :return: Waterfall dialog for fluent calls to *add_step()*.'
+  syntax:
+    content: add_step(step)
+    parameters:
+    - id: step
+  type: method
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.add_step
+- class: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.begin_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.waterfall_dialog
+  name: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  syntax:
+    content: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+      options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  type: method
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.begin_dialog
+- class: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.continue_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.waterfall_dialog
+  name: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext
+    = None, reason: botbuilder.dialogs.dialog_reason.DialogReason = None, result:
+    object = NotImplementedError()) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  syntax:
+    content: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext
+      = None, reason: botbuilder.dialogs.dialog_reason.DialogReason = None, result:
+      object = NotImplementedError()) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  type: method
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.continue_dialog
+- class: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.end_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.waterfall_dialog
+  name: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance: botbuilder.dialogs.dialog_instance.DialogInstance,
+    reason: botbuilder.dialogs.dialog_reason.DialogReason) -> None'
+  syntax:
+    content: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+      botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)
+      -> None'
+  type: method
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.end_dialog
+- class: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.get_step_name
+  langs:
+  - python
+  module: botbuilder.dialogs.waterfall_dialog
+  name: 'get_step_name(index: int) -> str'
+  summary: Give the waterfall step a unique name
+  syntax:
+    content: 'get_step_name(index: int) -> str'
+  type: method
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.get_step_name
+- class: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.on_step
+  langs:
+  - python
+  module: botbuilder.dialogs.waterfall_dialog
+  name: 'on_step(step_context: botbuilder.dialogs.waterfall_step_context.WaterfallStepContext)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  syntax:
+    content: 'on_step(step_context: botbuilder.dialogs.waterfall_step_context.WaterfallStepContext)
+      -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  type: method
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.on_step
+- class: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.resume_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.waterfall_dialog
+  name: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)'
+  syntax:
+    content: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+      reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)'
+  type: method
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.resume_dialog
+- class: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.run_step
+  langs:
+  - python
+  module: botbuilder.dialogs.waterfall_dialog
+  name: 'run_step(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    index: int, reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  syntax:
+    content: 'run_step(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+      index: int, reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)
+      -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  type: method
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.run_step
+- class: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.PersistedInstanceId
+  langs:
+  - python
+  module: botbuilder.dialogs.waterfall_dialog
+  name: PersistedInstanceId
+  syntax:
+    content: PersistedInstanceId = 'instanceId'
+  type: attribute
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.PersistedInstanceId
+- class: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.PersistedOptions
+  langs:
+  - python
+  module: botbuilder.dialogs.waterfall_dialog
+  name: PersistedOptions
+  syntax:
+    content: PersistedOptions = 'options'
+  type: attribute
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.PersistedOptions
+- class: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.PersistedValues
+  langs:
+  - python
+  module: botbuilder.dialogs.waterfall_dialog
+  name: PersistedValues
+  syntax:
+    content: PersistedValues = 'values'
+  type: attribute
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.PersistedValues
+- class: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.StepIndex
+  langs:
+  - python
+  module: botbuilder.dialogs.waterfall_dialog
+  name: StepIndex
+  syntax:
+    content: StepIndex = 'stepIndex'
+  type: attribute
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.StepIndex
+references:
+- fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.add_step
+  isExternal: false
+  name: add_step(step)
+  parent: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.add_step
+- fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.begin_dialog
+  isExternal: false
+  name: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parent: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.begin_dialog
+- fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.continue_dialog
+  isExternal: false
+  name: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext
+    = None, reason: botbuilder.dialogs.dialog_reason.DialogReason = None, result:
+    object = NotImplementedError()) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parent: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.continue_dialog
+- fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.end_dialog
+  isExternal: false
+  name: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance: botbuilder.dialogs.dialog_instance.DialogInstance,
+    reason: botbuilder.dialogs.dialog_reason.DialogReason) -> None'
+  parent: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.end_dialog
+- fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.get_step_name
+  isExternal: false
+  name: 'get_step_name(index: int) -> str'
+  parent: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.get_step_name
+- fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.on_step
+  isExternal: false
+  name: 'on_step(step_context: botbuilder.dialogs.waterfall_step_context.WaterfallStepContext)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parent: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.on_step
+- fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.resume_dialog
+  isExternal: false
+  name: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)'
+  parent: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.resume_dialog
+- fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.run_step
+  isExternal: false
+  name: 'run_step(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    index: int, reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parent: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.run_step
+- fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.PersistedInstanceId
+  isExternal: false
+  name: PersistedInstanceId
+  parent: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.PersistedInstanceId
+- fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.PersistedOptions
+  isExternal: false
+  name: PersistedOptions
+  parent: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.PersistedOptions
+- fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.PersistedValues
+  isExternal: false
+  name: PersistedValues
+  parent: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.PersistedValues
+- fullName: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.StepIndex
+  isExternal: false
+  name: StepIndex
+  parent: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+  uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.StepIndex

@@ -1,0 +1,115 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: botbuilder.schema.teams.O365ConnectorCardSection
+  fullName: botbuilder.schema.teams.O365ConnectorCardSection
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: msrest.serialization.Model
+  langs:
+  - python
+  module: botbuilder.schema.teams
+  name: O365ConnectorCardSection
+  summary: O365 connector card section.
+  syntax:
+    content: 'O365ConnectorCardSection(*, title: str = None, text: str = None, activity_title:
+      str = None, activity_subtitle: str = None, activity_text: str = None, activity_image:
+      str = None, activity_image_type=None, markdown: bool = None, facts=None, images=None,
+      potential_action=None, **kwargs) -> None'
+    parameters:
+    - description: Title of the section
+      id: title
+      type:
+      - str
+    - description: Text for the section
+      id: text
+      type:
+      - str
+    - description: Activity title
+      id: activity_title
+      type:
+      - str
+    - description: Activity subtitle
+      id: activity_subtitle
+      type:
+      - str
+    - description: Activity text
+      id: activity_text
+      type:
+      - str
+    - description: Activity image
+      id: activity_image
+      type:
+      - str
+    - description: 'Describes how Activity image is rendered.
+
+        Possible values include: ''avatar'', ''article'''
+      id: activity_image_type
+      type:
+      - str
+      - botframework.connector.teams.models.enum
+    - description: 'Use markdown for all text contents. Default value is
+
+        true.'
+      id: markdown
+      type:
+      - bool
+    - description: Set of facts for the current section
+      id: facts
+      type:
+      - list[botframework.connector.teams.models.O365ConnectorCardFact]
+    - description: Set of images for the current section
+      id: images
+      type:
+      - list[botframework.connector.teams.models.O365ConnectorCardImage]
+    - description: Set of actions for the current section
+      id: potential_action
+      type:
+      - list[botframework.connector.teams.models.O365ConnectorCardActionBase]
+  type: class
+  uid: botbuilder.schema.teams.O365ConnectorCardSection
+references:
+- fullName: list[botframework.connector.teams.models.O365ConnectorCardFact]
+  name: list[O365ConnectorCardFact]
+  spec.python:
+  - fullName: list
+    name: list
+    uid: list
+  - fullName: '['
+    name: '['
+  - fullName: botframework.connector.teams.models.O365ConnectorCardFact
+    name: O365ConnectorCardFact
+    uid: botframework.connector.teams.models.O365ConnectorCardFact
+  - fullName: ']'
+    name: ']'
+  uid: list[botframework.connector.teams.models.O365ConnectorCardFact]
+- fullName: list[botframework.connector.teams.models.O365ConnectorCardImage]
+  name: list[O365ConnectorCardImage]
+  spec.python:
+  - fullName: list
+    name: list
+    uid: list
+  - fullName: '['
+    name: '['
+  - fullName: botframework.connector.teams.models.O365ConnectorCardImage
+    name: O365ConnectorCardImage
+    uid: botframework.connector.teams.models.O365ConnectorCardImage
+  - fullName: ']'
+    name: ']'
+  uid: list[botframework.connector.teams.models.O365ConnectorCardImage]
+- fullName: list[botframework.connector.teams.models.O365ConnectorCardActionBase]
+  name: list[O365ConnectorCardActionBase]
+  spec.python:
+  - fullName: list
+    name: list
+    uid: list
+  - fullName: '['
+    name: '['
+  - fullName: botframework.connector.teams.models.O365ConnectorCardActionBase
+    name: O365ConnectorCardActionBase
+    uid: botframework.connector.teams.models.O365ConnectorCardActionBase
+  - fullName: ']'
+    name: ']'
+  uid: list[botframework.connector.teams.models.O365ConnectorCardActionBase]

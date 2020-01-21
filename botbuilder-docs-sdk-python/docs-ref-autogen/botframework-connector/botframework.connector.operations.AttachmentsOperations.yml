@@ -1,0 +1,181 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botframework.connector.operations.AttachmentsOperations.get_attachment
+  - botframework.connector.operations.AttachmentsOperations.get_attachment_info
+  - botframework.connector.operations.AttachmentsOperations.models
+  class: botframework.connector.operations.AttachmentsOperations
+  fullName: botframework.connector.operations.AttachmentsOperations
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: botframework.connector.operations
+  name: AttachmentsOperations
+  summary: "AttachmentsOperations operations.\n\nYou should not instantiate directly\
+    \ this class, but create a Client instance that will create it for you and attach\n\
+    \   it as attribute."
+  syntax:
+    content: AttachmentsOperations(client, config, serializer, deserializer)
+    parameters:
+    - description: Client for service requests.
+      id: client
+    - description: Configuration of service client.
+      id: config
+    - description: An object model serializer.
+      id: serializer
+    - description: An object model deserializer.
+      id: deserializer
+    variables:
+    - description: 'The API version to use for the request. Constant value: "v3".'
+      id: api_version
+  type: class
+  uid: botframework.connector.operations.AttachmentsOperations
+- class: botframework.connector.operations.AttachmentsOperations
+  exceptions:
+  - type: botframework.connector.models.ErrorResponseException
+  fullName: botframework.connector.operations.AttachmentsOperations.get_attachment
+  langs:
+  - python
+  module: botframework.connector.operations
+  name: get_attachment(attachment_id, view_id, custom_headers=None, raw=False, callback=None,
+    **operation_config)
+  summary: 'GetAttachment.
+
+
+    Get the named view as binary content.'
+  syntax:
+    content: get_attachment(attachment_id, view_id, custom_headers=None, raw=False,
+      callback=None, **operation_config)
+    parameters:
+    - description: attachment id
+      id: attachment_id
+      type:
+      - str
+    - description: View id from attachmentInfo
+      id: view_id
+      type:
+      - str
+    - defaultValue: None
+      description: headers that will be added to the request
+      id: custom_headers
+      type:
+      - dict
+    - defaultValue: 'False'
+      description: 'returns the direct response alongside the
+
+        deserialized response'
+      id: raw
+      type:
+      - bool
+    - defaultValue: None
+      description: 'When specified, will be called with each chunk of
+
+        data that is streamed. The callback should take two arguments, the
+
+        bytes of the current chunk of data and the response object. If the
+
+        data is uploading, response will be None.'
+      id: callback
+      type:
+      - Callable[Bytes, response=None]
+    - description: '*Operation configuration
+
+        overrides*.'
+      id: operation_config
+    return:
+      description: object or ClientRawResponse if raw=true
+      type:
+      - Generator
+      - msrest.pipeline.ClientRawResponse
+  type: method
+  uid: botframework.connector.operations.AttachmentsOperations.get_attachment
+- class: botframework.connector.operations.AttachmentsOperations
+  exceptions:
+  - type: botframework.connector.models.ErrorResponseException
+  fullName: botframework.connector.operations.AttachmentsOperations.get_attachment_info
+  langs:
+  - python
+  module: botframework.connector.operations
+  name: get_attachment_info(attachment_id, custom_headers=None, raw=False, **operation_config)
+  summary: 'GetAttachmentInfo.
+
+
+    Get AttachmentInfo structure describing the attachment views.'
+  syntax:
+    content: get_attachment_info(attachment_id, custom_headers=None, raw=False, **operation_config)
+    parameters:
+    - description: attachment id
+      id: attachment_id
+      type:
+      - str
+    - defaultValue: None
+      description: headers that will be added to the request
+      id: custom_headers
+      type:
+      - dict
+    - defaultValue: 'False'
+      description: 'returns the direct response alongside the
+
+        deserialized response'
+      id: raw
+      type:
+      - bool
+    - description: '*Operation configuration
+
+        overrides*.'
+      id: operation_config
+    return:
+      description: AttachmentInfo or ClientRawResponse if raw=true
+      type:
+      - botframework.connector.models.AttachmentInfo
+      - msrest.pipeline.ClientRawResponse
+  type: method
+  uid: botframework.connector.operations.AttachmentsOperations.get_attachment_info
+- class: botframework.connector.operations.AttachmentsOperations
+  fullName: botframework.connector.operations.AttachmentsOperations.models
+  langs:
+  - python
+  module: botframework.connector.operations
+  name: models
+  syntax:
+    content: models = <module 'botframework.connector.models' from 'c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\site-packages\\botframework\\connector\\models\\__init__.py'>
+  type: attribute
+  uid: botframework.connector.operations.AttachmentsOperations.models
+references:
+- fullName: botframework.connector.operations.AttachmentsOperations.get_attachment
+  isExternal: false
+  name: get_attachment(attachment_id, view_id, custom_headers=None, raw=False, callback=None,
+    **operation_config)
+  parent: botframework.connector.operations.AttachmentsOperations
+  uid: botframework.connector.operations.AttachmentsOperations.get_attachment
+- fullName: botframework.connector.operations.AttachmentsOperations.get_attachment_info
+  isExternal: false
+  name: get_attachment_info(attachment_id, custom_headers=None, raw=False, **operation_config)
+  parent: botframework.connector.operations.AttachmentsOperations
+  uid: botframework.connector.operations.AttachmentsOperations.get_attachment_info
+- fullName: botframework.connector.operations.AttachmentsOperations.models
+  isExternal: false
+  name: models
+  parent: botframework.connector.operations.AttachmentsOperations
+  uid: botframework.connector.operations.AttachmentsOperations.models
+- fullName: Callable[Bytes, response=None]
+  name: Callable[Bytes, response=None]
+  spec.python:
+  - fullName: Callable
+    name: Callable
+    uid: Callable
+  - fullName: '['
+    name: '['
+  - fullName: Bytes
+    name: Bytes
+    uid: Bytes
+  - fullName: ', '
+    name: ', '
+  - fullName: response=None
+    name: response=None
+    uid: response=None
+  - fullName: ']'
+    name: ']'
+  uid: Callable[Bytes, response=None]

@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: botbuilder.schema.teams.FileInfoCard
+  fullName: botbuilder.schema.teams.FileInfoCard
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: msrest.serialization.Model
+  langs:
+  - python
+  module: botbuilder.schema.teams
+  name: FileInfoCard
+  summary: File info card.
+  syntax:
+    content: 'FileInfoCard(*, unique_id: str = None, file_type: str = None, etag=None,
+      **kwargs) -> None'
+    parameters:
+    - description: Unique Id for the file.
+      id: unique_id
+      type:
+      - str
+    - description: Type of file.
+      id: file_type
+      type:
+      - str
+    - description: ETag for the file.
+      id: etag
+      type:
+      - object
+  type: class
+  uid: botbuilder.schema.teams.FileInfoCard
+references: []

@@ -1,0 +1,33 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: botbuilder.schema.teams.O365ConnectorCardOpenUriTarget
+  fullName: botbuilder.schema.teams.O365ConnectorCardOpenUriTarget
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: msrest.serialization.Model
+  langs:
+  - python
+  module: botbuilder.schema.teams
+  name: O365ConnectorCardOpenUriTarget
+  summary: O365 connector card OpenUri target.
+  syntax:
+    content: 'O365ConnectorCardOpenUriTarget(*, os=None, uri: str = None, **kwargs)
+      -> None'
+    parameters:
+    - description: 'Target operating system. Possible values include: ''default'',
+
+        ''iOS'', ''android'', ''windows'''
+      id: os
+      type:
+      - str
+      - botframework.connector.teams.models.enum
+    - description: Target url
+      id: uri
+      type:
+      - str
+  type: class
+  uid: botbuilder.schema.teams.O365ConnectorCardOpenUriTarget
+references: []

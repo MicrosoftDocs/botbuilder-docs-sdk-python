@@ -1,0 +1,150 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.core.skills.SkillHandler.on_reply_to_activity
+  - botbuilder.core.skills.SkillHandler.on_send_to_conversation
+  - botbuilder.core.skills.SkillHandler.SKILL_CONVERSATION_REFERENCE_KEY
+  class: botbuilder.core.skills.SkillHandler
+  fullName: botbuilder.core.skills.SkillHandler
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: botbuilder.core.channel_service_handler.ChannelServiceHandler
+  langs:
+  - python
+  module: botbuilder.core.skills
+  name: SkillHandler
+  summary: ''
+  syntax:
+    content: 'SkillHandler(adapter: botbuilder.core.bot_adapter.BotAdapter, bot: botbuilder.core.bot.Bot,
+      conversation_id_factory: botbuilder.core.skills.skill_conversation_id_factory.SkillConversationIdFactory,
+      credential_provider: botframework.connector.auth.credential_provider.CredentialProvider,
+      auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration,
+      channel_provider: botframework.connector.auth.channel_provider.ChannelProvider
+      = None, logger: object = None)'
+  type: class
+  uid: botbuilder.core.skills.SkillHandler
+- class: botbuilder.core.skills.SkillHandler
+  fullName: botbuilder.core.skills.SkillHandler.on_reply_to_activity
+  langs:
+  - python
+  module: botbuilder.core.skills
+  name: 'on_reply_to_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+    conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
+    -> botbuilder.schema._models_py3.ResourceResponse'
+  summary: 'reply_to_activity() API for Skill.
+
+
+    This method allows you to reply to an activity.
+
+
+    This is slightly different from SendToConversation().
+
+    * SendToConversation(conversationId) - will append the activity to the end
+
+    of the conversation according to the timestamp or semantics of the channel.
+
+    * ReplyToActivity(conversationId,ActivityId) - adds the activity as a reply
+
+    to another activity, if the channel supports it. If the channel does not
+
+    support nested replies, ReplyToActivity falls back to SendToConversation.
+
+
+    Use ReplyToActivity when replying to a specific activity in the
+
+    conversation.
+
+
+    Use SendToConversation in all other cases.
+
+    :param claims_identity:
+
+    :param conversation_id:
+
+    :param activity_id:
+
+    :param activity:
+
+    :return:'
+  syntax:
+    content: 'on_reply_to_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+      conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
+      -> botbuilder.schema._models_py3.ResourceResponse'
+  type: method
+  uid: botbuilder.core.skills.SkillHandler.on_reply_to_activity
+- class: botbuilder.core.skills.SkillHandler
+  fullName: botbuilder.core.skills.SkillHandler.on_send_to_conversation
+  langs:
+  - python
+  module: botbuilder.core.skills
+  name: 'on_send_to_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+    conversation_id: str, activity: botbuilder.schema._models_py3.Activity) -> botbuilder.schema._models_py3.ResourceResponse'
+  summary: 'send_to_conversation() API for Skill
+
+
+    This method allows you to send an activity to the end of a conversation.
+
+
+    This is slightly different from ReplyToActivity().
+
+    * SendToConversation(conversationId) - will append the activity to the end
+
+    of the conversation according to the timestamp or semantics of the channel.
+
+    * ReplyToActivity(conversationId,ActivityId) - adds the activity as a reply
+
+    to another activity, if the channel supports it. If the channel does not
+
+    support nested replies, ReplyToActivity falls back to SendToConversation.
+
+
+    Use ReplyToActivity when replying to a specific activity in the
+
+    conversation.
+
+
+    Use SendToConversation in all other cases.
+
+    :param claims_identity:
+
+    :param conversation_id:
+
+    :param activity:
+
+    :return:'
+  syntax:
+    content: 'on_send_to_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+      conversation_id: str, activity: botbuilder.schema._models_py3.Activity) -> botbuilder.schema._models_py3.ResourceResponse'
+  type: method
+  uid: botbuilder.core.skills.SkillHandler.on_send_to_conversation
+- class: botbuilder.core.skills.SkillHandler
+  fullName: botbuilder.core.skills.SkillHandler.SKILL_CONVERSATION_REFERENCE_KEY
+  langs:
+  - python
+  module: botbuilder.core.skills
+  name: SKILL_CONVERSATION_REFERENCE_KEY
+  syntax:
+    content: SKILL_CONVERSATION_REFERENCE_KEY = 'botbuilder.core.skills.SkillConversationReference'
+  type: attribute
+  uid: botbuilder.core.skills.SkillHandler.SKILL_CONVERSATION_REFERENCE_KEY
+references:
+- fullName: botbuilder.core.skills.SkillHandler.on_reply_to_activity
+  isExternal: false
+  name: 'on_reply_to_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+    conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
+    -> botbuilder.schema._models_py3.ResourceResponse'
+  parent: botbuilder.core.skills.SkillHandler
+  uid: botbuilder.core.skills.SkillHandler.on_reply_to_activity
+- fullName: botbuilder.core.skills.SkillHandler.on_send_to_conversation
+  isExternal: false
+  name: 'on_send_to_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+    conversation_id: str, activity: botbuilder.schema._models_py3.Activity) -> botbuilder.schema._models_py3.ResourceResponse'
+  parent: botbuilder.core.skills.SkillHandler
+  uid: botbuilder.core.skills.SkillHandler.on_send_to_conversation
+- fullName: botbuilder.core.skills.SkillHandler.SKILL_CONVERSATION_REFERENCE_KEY
+  isExternal: false
+  name: SKILL_CONVERSATION_REFERENCE_KEY
+  parent: botbuilder.core.skills.SkillHandler
+  uid: botbuilder.core.skills.SkillHandler.SKILL_CONVERSATION_REFERENCE_KEY

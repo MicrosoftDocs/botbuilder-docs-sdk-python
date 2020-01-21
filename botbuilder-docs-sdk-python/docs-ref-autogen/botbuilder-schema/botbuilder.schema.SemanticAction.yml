@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: botbuilder.schema.SemanticAction
+  fullName: botbuilder.schema.SemanticAction
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: msrest.serialization.Model
+  langs:
+  - python
+  module: botbuilder.schema
+  name: SemanticAction
+  summary: Represents a reference to a programmatic action.
+  syntax:
+    content: 'SemanticAction(*, id: str = None, entities=None, state=None, **kwargs)
+      -> None'
+    parameters:
+    - description: ID of this action
+      id: id
+      type:
+      - str
+    - description: Entities associated with this action
+      id: entities
+      type:
+      - dict[str, botframework.connector.models.Entity]
+    - description: 'State of this action. Allowed values: *start*, *continue*, *done*'
+      id: state
+      type:
+      - str
+      - botframework.connector.models.SemanticActionStates
+  type: class
+  uid: botbuilder.schema.SemanticAction
+references:
+- fullName: dict[str, botframework.connector.models.Entity]
+  name: dict[str, Entity]
+  spec.python:
+  - fullName: dict
+    name: dict
+    uid: dict
+  - fullName: '['
+    name: '['
+  - fullName: str
+    name: str
+    uid: str
+  - fullName: ', '
+    name: ', '
+  - fullName: botframework.connector.models.Entity
+    name: Entity
+    uid: botframework.connector.models.Entity
+  - fullName: ']'
+    name: ']'
+  uid: dict[str, botframework.connector.models.Entity]

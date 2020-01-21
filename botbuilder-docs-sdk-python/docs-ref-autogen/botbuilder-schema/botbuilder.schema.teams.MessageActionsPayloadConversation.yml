@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: botbuilder.schema.teams.MessageActionsPayloadConversation
+  fullName: botbuilder.schema.teams.MessageActionsPayloadConversation
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: msrest.serialization.Model
+  langs:
+  - python
+  module: botbuilder.schema.teams
+  name: MessageActionsPayloadConversation
+  summary: Represents a team or channel entity.
+  syntax:
+    content: 'MessageActionsPayloadConversation(*, conversation_identity_type=None,
+      id: str = None, display_name: str = None, **kwargs) -> None'
+    parameters:
+    - description: 'The type of conversation, whether a
+
+        team or channel. Possible values include: ''team'', ''channel'''
+      id: conversation_identity_type
+      type:
+      - str
+      - botframework.connector.teams.models.enum
+    - description: The id of the team or channel.
+      id: id
+      type:
+      - str
+    - description: 'The plaintext display name of the team or channel
+
+        entity.'
+      id: display_name
+      type:
+      - str
+  type: class
+  uid: botbuilder.schema.teams.MessageActionsPayloadConversation
+references: []

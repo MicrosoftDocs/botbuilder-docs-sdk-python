@@ -1,0 +1,60 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.core.BotFrameworkHttpClient.post_activity
+  - botbuilder.core.BotFrameworkHttpClient.INVOKE_ACTIVITY_NAME
+  class: botbuilder.core.BotFrameworkHttpClient
+  fullName: botbuilder.core.BotFrameworkHttpClient
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: botbuilder.core
+  name: BotFrameworkHttpClient
+  summary: 'A skill host adapter implements API to forward activity to a skill and
+
+    implements routing ChannelAPI calls from the Skill up through the bot/adapter.'
+  syntax:
+    content: 'BotFrameworkHttpClient(credential_provider: botframework.connector.auth.credential_provider.CredentialProvider,
+      channel_provider: botframework.connector.auth.channel_provider.ChannelProvider
+      = None, logger: logging.Logger = None)'
+  type: class
+  uid: botbuilder.core.BotFrameworkHttpClient
+- class: botbuilder.core.BotFrameworkHttpClient
+  fullName: botbuilder.core.BotFrameworkHttpClient.post_activity
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'post_activity(from_bot_id: str, to_bot_id: str, to_url: str, service_url:
+    str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity) ->
+    botbuilder.core.invoke_response.InvokeResponse'
+  syntax:
+    content: 'post_activity(from_bot_id: str, to_bot_id: str, to_url: str, service_url:
+      str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity)
+      -> botbuilder.core.invoke_response.InvokeResponse'
+  type: method
+  uid: botbuilder.core.BotFrameworkHttpClient.post_activity
+- class: botbuilder.core.BotFrameworkHttpClient
+  fullName: botbuilder.core.BotFrameworkHttpClient.INVOKE_ACTIVITY_NAME
+  langs:
+  - python
+  module: botbuilder.core
+  name: INVOKE_ACTIVITY_NAME
+  syntax:
+    content: INVOKE_ACTIVITY_NAME = 'SkillEvents.ChannelApiInvoke'
+  type: attribute
+  uid: botbuilder.core.BotFrameworkHttpClient.INVOKE_ACTIVITY_NAME
+references:
+- fullName: botbuilder.core.BotFrameworkHttpClient.post_activity
+  isExternal: false
+  name: 'post_activity(from_bot_id: str, to_bot_id: str, to_url: str, service_url:
+    str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity) ->
+    botbuilder.core.invoke_response.InvokeResponse'
+  parent: botbuilder.core.BotFrameworkHttpClient
+  uid: botbuilder.core.BotFrameworkHttpClient.post_activity
+- fullName: botbuilder.core.BotFrameworkHttpClient.INVOKE_ACTIVITY_NAME
+  isExternal: false
+  name: INVOKE_ACTIVITY_NAME
+  parent: botbuilder.core.BotFrameworkHttpClient
+  uid: botbuilder.core.BotFrameworkHttpClient.INVOKE_ACTIVITY_NAME

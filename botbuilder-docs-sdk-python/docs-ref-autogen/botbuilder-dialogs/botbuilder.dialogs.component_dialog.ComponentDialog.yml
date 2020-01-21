@@ -1,0 +1,281 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.dialogs.component_dialog.ComponentDialog.add_dialog
+  - botbuilder.dialogs.component_dialog.ComponentDialog.begin_dialog
+  - botbuilder.dialogs.component_dialog.ComponentDialog.continue_dialog
+  - botbuilder.dialogs.component_dialog.ComponentDialog.end_component
+  - botbuilder.dialogs.component_dialog.ComponentDialog.end_dialog
+  - botbuilder.dialogs.component_dialog.ComponentDialog.find_dialog
+  - botbuilder.dialogs.component_dialog.ComponentDialog.on_begin_dialog
+  - botbuilder.dialogs.component_dialog.ComponentDialog.on_continue_dialog
+  - botbuilder.dialogs.component_dialog.ComponentDialog.on_end_dialog
+  - botbuilder.dialogs.component_dialog.ComponentDialog.on_reprompt_dialog
+  - botbuilder.dialogs.component_dialog.ComponentDialog.reprompt_dialog
+  - botbuilder.dialogs.component_dialog.ComponentDialog.resume_dialog
+  - botbuilder.dialogs.component_dialog.ComponentDialog.persisted_dialog_state
+  class: botbuilder.dialogs.component_dialog.ComponentDialog
+  fullName: botbuilder.dialogs.component_dialog.ComponentDialog
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: abc.ABC
+    type: botbuilder.dialogs.dialog.Dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.component_dialog
+  name: ComponentDialog
+  summary: ''
+  syntax:
+    content: 'ComponentDialog(dialog_id: str)'
+  type: class
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog
+- class: botbuilder.dialogs.component_dialog.ComponentDialog
+  fullName: botbuilder.dialogs.component_dialog.ComponentDialog.add_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.component_dialog
+  name: 'add_dialog(dialog: botbuilder.dialogs.dialog.Dialog) -> object'
+  summary: 'Adds a dialog to the component dialog.
+
+    Adding a new dialog will inherit the BotTelemetryClient of the ComponentDialog.
+
+    :param dialog: The dialog to add.
+
+    :return: The updated ComponentDialog'
+  syntax:
+    content: 'add_dialog(dialog: botbuilder.dialogs.dialog.Dialog) -> object'
+  type: method
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.add_dialog
+- class: botbuilder.dialogs.component_dialog.ComponentDialog
+  fullName: botbuilder.dialogs.component_dialog.ComponentDialog.begin_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.component_dialog
+  name: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  syntax:
+    content: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+      options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  type: method
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.begin_dialog
+- class: botbuilder.dialogs.component_dialog.ComponentDialog
+  fullName: botbuilder.dialogs.component_dialog.ComponentDialog.continue_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.component_dialog
+  name: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  syntax:
+    content: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
+      -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  type: method
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.continue_dialog
+- class: botbuilder.dialogs.component_dialog.ComponentDialog
+  fullName: botbuilder.dialogs.component_dialog.ComponentDialog.end_component
+  langs:
+  - python
+  module: botbuilder.dialogs.component_dialog
+  name: 'end_component(outer_dc: botbuilder.dialogs.dialog_context.DialogContext,
+    result: object) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  syntax:
+    content: 'end_component(outer_dc: botbuilder.dialogs.dialog_context.DialogContext,
+      result: object) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  type: method
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.end_component
+- class: botbuilder.dialogs.component_dialog.ComponentDialog
+  fullName: botbuilder.dialogs.component_dialog.ComponentDialog.end_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.component_dialog
+  name: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance: botbuilder.dialogs.dialog_instance.DialogInstance,
+    reason: botbuilder.dialogs.dialog_reason.DialogReason) -> None'
+  syntax:
+    content: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+      botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)
+      -> None'
+  type: method
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.end_dialog
+- class: botbuilder.dialogs.component_dialog.ComponentDialog
+  fullName: botbuilder.dialogs.component_dialog.ComponentDialog.find_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.component_dialog
+  name: 'find_dialog(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
+  summary: 'Finds a dialog by ID.
+
+    Adding a new dialog will inherit the BotTelemetryClient of the ComponentDialog.
+
+    :param dialog_id: The dialog to add.
+
+    :return: The dialog; or None if there is not a match for the ID.'
+  syntax:
+    content: 'find_dialog(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
+  type: method
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.find_dialog
+- class: botbuilder.dialogs.component_dialog.ComponentDialog
+  fullName: botbuilder.dialogs.component_dialog.ComponentDialog.on_begin_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.component_dialog
+  name: 'on_begin_dialog(inner_dc: botbuilder.dialogs.dialog_context.DialogContext,
+    options: object) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  syntax:
+    content: 'on_begin_dialog(inner_dc: botbuilder.dialogs.dialog_context.DialogContext,
+      options: object) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  type: method
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.on_begin_dialog
+- class: botbuilder.dialogs.component_dialog.ComponentDialog
+  fullName: botbuilder.dialogs.component_dialog.ComponentDialog.on_continue_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.component_dialog
+  name: 'on_continue_dialog(inner_dc: botbuilder.dialogs.dialog_context.DialogContext)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  syntax:
+    content: 'on_continue_dialog(inner_dc: botbuilder.dialogs.dialog_context.DialogContext)
+      -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  type: method
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.on_continue_dialog
+- class: botbuilder.dialogs.component_dialog.ComponentDialog
+  fullName: botbuilder.dialogs.component_dialog.ComponentDialog.on_end_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.component_dialog
+  name: 'on_end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+    botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)
+    -> None'
+  syntax:
+    content: 'on_end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+      botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)
+      -> None'
+  type: method
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.on_end_dialog
+- class: botbuilder.dialogs.component_dialog.ComponentDialog
+  fullName: botbuilder.dialogs.component_dialog.ComponentDialog.on_reprompt_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.component_dialog
+  name: 'on_reprompt_dialog(turn_context: botbuilder.core.turn_context.TurnContext,
+    instance: botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
+  syntax:
+    content: 'on_reprompt_dialog(turn_context: botbuilder.core.turn_context.TurnContext,
+      instance: botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
+  type: method
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.on_reprompt_dialog
+- class: botbuilder.dialogs.component_dialog.ComponentDialog
+  fullName: botbuilder.dialogs.component_dialog.ComponentDialog.reprompt_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.component_dialog
+  name: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+    botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
+  syntax:
+    content: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+      botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
+  type: method
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.reprompt_dialog
+- class: botbuilder.dialogs.component_dialog.ComponentDialog
+  fullName: botbuilder.dialogs.component_dialog.ComponentDialog.resume_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.component_dialog
+  name: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object = None)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  syntax:
+    content: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+      reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object = None)
+      -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  type: method
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.resume_dialog
+- class: botbuilder.dialogs.component_dialog.ComponentDialog
+  fullName: botbuilder.dialogs.component_dialog.ComponentDialog.persisted_dialog_state
+  langs:
+  - python
+  module: botbuilder.dialogs.component_dialog
+  name: persisted_dialog_state
+  syntax:
+    content: persisted_dialog_state = 'dialogs'
+  type: attribute
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.persisted_dialog_state
+references:
+- fullName: botbuilder.dialogs.component_dialog.ComponentDialog.add_dialog
+  isExternal: false
+  name: 'add_dialog(dialog: botbuilder.dialogs.dialog.Dialog) -> object'
+  parent: botbuilder.dialogs.component_dialog.ComponentDialog
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.add_dialog
+- fullName: botbuilder.dialogs.component_dialog.ComponentDialog.begin_dialog
+  isExternal: false
+  name: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parent: botbuilder.dialogs.component_dialog.ComponentDialog
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.begin_dialog
+- fullName: botbuilder.dialogs.component_dialog.ComponentDialog.continue_dialog
+  isExternal: false
+  name: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parent: botbuilder.dialogs.component_dialog.ComponentDialog
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.continue_dialog
+- fullName: botbuilder.dialogs.component_dialog.ComponentDialog.end_component
+  isExternal: false
+  name: 'end_component(outer_dc: botbuilder.dialogs.dialog_context.DialogContext,
+    result: object) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parent: botbuilder.dialogs.component_dialog.ComponentDialog
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.end_component
+- fullName: botbuilder.dialogs.component_dialog.ComponentDialog.end_dialog
+  isExternal: false
+  name: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance: botbuilder.dialogs.dialog_instance.DialogInstance,
+    reason: botbuilder.dialogs.dialog_reason.DialogReason) -> None'
+  parent: botbuilder.dialogs.component_dialog.ComponentDialog
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.end_dialog
+- fullName: botbuilder.dialogs.component_dialog.ComponentDialog.find_dialog
+  isExternal: false
+  name: 'find_dialog(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
+  parent: botbuilder.dialogs.component_dialog.ComponentDialog
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.find_dialog
+- fullName: botbuilder.dialogs.component_dialog.ComponentDialog.on_begin_dialog
+  isExternal: false
+  name: 'on_begin_dialog(inner_dc: botbuilder.dialogs.dialog_context.DialogContext,
+    options: object) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parent: botbuilder.dialogs.component_dialog.ComponentDialog
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.on_begin_dialog
+- fullName: botbuilder.dialogs.component_dialog.ComponentDialog.on_continue_dialog
+  isExternal: false
+  name: 'on_continue_dialog(inner_dc: botbuilder.dialogs.dialog_context.DialogContext)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parent: botbuilder.dialogs.component_dialog.ComponentDialog
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.on_continue_dialog
+- fullName: botbuilder.dialogs.component_dialog.ComponentDialog.on_end_dialog
+  isExternal: false
+  name: 'on_end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+    botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)
+    -> None'
+  parent: botbuilder.dialogs.component_dialog.ComponentDialog
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.on_end_dialog
+- fullName: botbuilder.dialogs.component_dialog.ComponentDialog.on_reprompt_dialog
+  isExternal: false
+  name: 'on_reprompt_dialog(turn_context: botbuilder.core.turn_context.TurnContext,
+    instance: botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
+  parent: botbuilder.dialogs.component_dialog.ComponentDialog
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.on_reprompt_dialog
+- fullName: botbuilder.dialogs.component_dialog.ComponentDialog.reprompt_dialog
+  isExternal: false
+  name: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+    botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
+  parent: botbuilder.dialogs.component_dialog.ComponentDialog
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.reprompt_dialog
+- fullName: botbuilder.dialogs.component_dialog.ComponentDialog.resume_dialog
+  isExternal: false
+  name: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object = None)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parent: botbuilder.dialogs.component_dialog.ComponentDialog
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.resume_dialog
+- fullName: botbuilder.dialogs.component_dialog.ComponentDialog.persisted_dialog_state
+  isExternal: false
+  name: persisted_dialog_state
+  parent: botbuilder.dialogs.component_dialog.ComponentDialog
+  uid: botbuilder.dialogs.component_dialog.ComponentDialog.persisted_dialog_state

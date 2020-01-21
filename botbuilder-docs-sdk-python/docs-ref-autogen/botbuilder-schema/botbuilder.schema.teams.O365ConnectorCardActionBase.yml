@@ -1,0 +1,37 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: botbuilder.schema.teams.O365ConnectorCardActionBase
+  fullName: botbuilder.schema.teams.O365ConnectorCardActionBase
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: msrest.serialization.Model
+  langs:
+  - python
+  module: botbuilder.schema.teams
+  name: O365ConnectorCardActionBase
+  summary: O365 connector card action base.
+  syntax:
+    content: 'O365ConnectorCardActionBase(*, type=None, name: str = None, id: str
+      = None, **kwargs) -> None'
+    parameters:
+    - description: 'Type of the action. Possible values include: ''ViewAction'',
+
+        ''OpenUri'', ''HttpPOST'', ''ActionCard'''
+      id: type
+      type:
+      - str
+      - botframework.connector.teams.models.enum
+    - description: Name of the action that will be used as button title
+      id: name
+      type:
+      - str
+    - description: Action Id
+      id: id
+      type:
+      - str
+  type: class
+  uid: botbuilder.schema.teams.O365ConnectorCardActionBase
+references: []
