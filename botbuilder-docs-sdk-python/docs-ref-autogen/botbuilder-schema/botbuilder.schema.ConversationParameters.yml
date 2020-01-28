@@ -1,0 +1,71 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: botbuilder.schema.ConversationParameters
+  fullName: botbuilder.schema.ConversationParameters
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: msrest.serialization.Model
+  langs:
+  - python
+  module: botbuilder.schema
+  name: ConversationParameters
+  summary: Parameters for creating a new conversation.
+  syntax:
+    content: 'ConversationParameters(*, is_group: bool = None, bot=None, members=None,
+      topic_name: str = None, activity=None, channel_data=None, tenant_id=None, **kwargs)
+      -> None'
+    parameters:
+    - description: IsGroup
+      id: is_group
+      type:
+      - bool
+    - description: The bot address for this conversation
+      id: bot
+      type:
+      - botframework.connector.models.ChannelAccount
+    - description: Members to add to the conversation
+      id: members
+      type:
+      - list[botframework.connector.models.ChannelAccount]
+    - description: '(Optional) Topic of the conversation (if supported by
+
+        the channel)'
+      id: topic_name
+      type:
+      - str
+    - description: '(Optional) When creating a new conversation, use this
+
+        activity as the initial message to the conversation'
+      id: activity
+      type:
+      - botframework.connector.models.Activity
+    - description: 'Channel specific payload for creating the
+
+        conversation'
+      id: channel_data
+      type:
+      - object
+    - description: (Optional) The tenant ID in which the conversation should be created
+      id: tenant_id
+      type:
+      - str
+  type: class
+  uid: botbuilder.schema.ConversationParameters
+references:
+- fullName: list[botframework.connector.models.ChannelAccount]
+  name: list[ChannelAccount]
+  spec.python:
+  - fullName: list
+    name: list
+    uid: list
+  - fullName: '['
+    name: '['
+  - fullName: botframework.connector.models.ChannelAccount
+    name: ChannelAccount
+    uid: botframework.connector.models.ChannelAccount
+  - fullName: ']'
+    name: ']'
+  uid: list[botframework.connector.models.ChannelAccount]

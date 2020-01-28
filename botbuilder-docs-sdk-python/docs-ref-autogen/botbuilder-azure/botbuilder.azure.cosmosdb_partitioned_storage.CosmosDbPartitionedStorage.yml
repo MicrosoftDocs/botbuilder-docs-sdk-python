@@ -1,0 +1,99 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.delete
+  - botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.initialize
+  - botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.read
+  - botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.write
+  class: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage
+  fullName: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: abc.ABC
+    type: botbuilder.core.storage.Storage
+  langs:
+  - python
+  module: botbuilder.azure.cosmosdb_partitioned_storage
+  name: CosmosDbPartitionedStorage
+  summary: The class for partitioned CosmosDB middleware for the Azure Bot Framework.
+  syntax:
+    content: 'CosmosDbPartitionedStorage(config: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedConfig)'
+  type: class
+  uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage
+- class: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage
+  fullName: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.delete
+  langs:
+  - python
+  module: botbuilder.azure.cosmosdb_partitioned_storage
+  name: 'delete(keys: typing.List[str])'
+  summary: Remove storeitems from storage.
+  syntax:
+    content: 'delete(keys: typing.List[str])'
+    parameters:
+    - description: ''
+      id: keys
+  type: method
+  uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.delete
+- class: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage
+  fullName: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.initialize
+  langs:
+  - python
+  module: botbuilder.azure.cosmosdb_partitioned_storage
+  name: initialize()
+  syntax:
+    content: initialize()
+    parameters: []
+  type: method
+  uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.initialize
+- class: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage
+  fullName: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.read
+  langs:
+  - python
+  module: botbuilder.azure.cosmosdb_partitioned_storage
+  name: 'read(keys: typing.List[str]) -> typing.Dict[str, object]'
+  summary: Read storeitems from storage.
+  syntax:
+    content: 'read(keys: typing.List[str]) -> typing.Dict[str, object]'
+    parameters:
+    - description: ''
+      id: keys
+  type: method
+  uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.read
+- class: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage
+  fullName: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.write
+  langs:
+  - python
+  module: botbuilder.azure.cosmosdb_partitioned_storage
+  name: 'write(changes: typing.Dict[str, object])'
+  summary: Save storeitems to storage.
+  syntax:
+    content: 'write(changes: typing.Dict[str, object])'
+    parameters:
+    - description: ''
+      id: changes
+  type: method
+  uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.write
+references:
+- fullName: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.delete
+  isExternal: false
+  name: 'delete(keys: typing.List[str])'
+  parent: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage
+  uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.delete
+- fullName: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.initialize
+  isExternal: false
+  name: initialize()
+  parent: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage
+  uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.initialize
+- fullName: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.read
+  isExternal: false
+  name: 'read(keys: typing.List[str]) -> typing.Dict[str, object]'
+  parent: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage
+  uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.read
+- fullName: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.write
+  isExternal: false
+  name: 'write(changes: typing.Dict[str, object])'
+  parent: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage
+  uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.write

@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware.add
+  - botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware.on_turn
+  class: botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware
+  fullName: botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: abc.ABC
+    type: botbuilder.core.middleware_set.Middleware
+  langs:
+  - python
+  module: botbuilder.core.auto_save_state_middleware
+  name: AutoSaveStateMiddleware
+  summary: ''
+  syntax:
+    content: 'AutoSaveStateMiddleware(bot_states: typing.Union[typing.List[botbuilder.core.bot_state.BotState],
+      botbuilder.core.bot_state_set.BotStateSet] = None)'
+  type: class
+  uid: botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware
+- class: botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware
+  fullName: botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware.add
+  langs:
+  - python
+  module: botbuilder.core.auto_save_state_middleware
+  name: 'add(bot_state: botbuilder.core.bot_state.BotState) -> botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware'
+  syntax:
+    content: 'add(bot_state: botbuilder.core.bot_state.BotState) -> botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware'
+  type: method
+  uid: botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware.add
+- class: botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware
+  fullName: botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware.on_turn
+  langs:
+  - python
+  module: botbuilder.core.auto_save_state_middleware
+  name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
+    typing.Awaitable])'
+  syntax:
+    content: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
+      typing.Awaitable])'
+  type: method
+  uid: botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware.on_turn
+references:
+- fullName: botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware.add
+  isExternal: false
+  name: 'add(bot_state: botbuilder.core.bot_state.BotState) -> botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware'
+  parent: botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware
+  uid: botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware.add
+- fullName: botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware.on_turn
+  isExternal: false
+  name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
+    typing.Awaitable])'
+  parent: botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware
+  uid: botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware.on_turn

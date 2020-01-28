@@ -1,0 +1,112 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: botbuilder.schema.MediaCard
+  fullName: botbuilder.schema.MediaCard
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: msrest.serialization.Model
+  langs:
+  - python
+  module: botbuilder.schema
+  name: MediaCard
+  summary: Media card.
+  syntax:
+    content: 'MediaCard(*, title: str = None, subtitle: str = None, text: str = None,
+      image=None, media=None, buttons=None, shareable: bool = None, autoloop: bool
+      = None, autostart: bool = None, aspect: str = None, duration: str = None, value=None,
+      **kwargs) -> None'
+    parameters:
+    - description: Title of this card
+      id: title
+      type:
+      - str
+    - description: Subtitle of this card
+      id: subtitle
+      type:
+      - str
+    - description: Text of this card
+      id: text
+      type:
+      - str
+    - description: Thumbnail placeholder
+      id: image
+      type:
+      - botframework.connector.models.ThumbnailUrl
+    - description: 'Media URLs for this card. When this field contains more than
+
+        one URL, each URL is an alternative format of the same content.'
+      id: media
+      type:
+      - list[botframework.connector.models.MediaUrl]
+    - description: Actions on this card
+      id: buttons
+      type:
+      - list[botframework.connector.models.CardAction]
+    - description: This content may be shared with others (default:true)
+      id: shareable
+      type:
+      - bool
+    - description: 'Should the client loop playback at end of content
+
+        (default:true)'
+      id: autoloop
+      type:
+      - bool
+    - description: 'Should the client automatically start playback of media
+
+        in this card (default:true)'
+      id: autostart
+      type:
+      - bool
+    - description: 'Aspect ratio of thumbnail/media placeholder. Allowed values
+
+        are "16:9" and "4:3"'
+      id: aspect
+      type:
+      - str
+    - description: 'Describes the length of the media content without
+
+        requiring a receiver to open the content. Formatted as an ISO 8601
+
+        Duration field.'
+      id: duration
+      type:
+      - str
+    - description: Supplementary parameter for this card
+      id: value
+      type:
+      - object
+  type: class
+  uid: botbuilder.schema.MediaCard
+references:
+- fullName: list[botframework.connector.models.MediaUrl]
+  name: list[MediaUrl]
+  spec.python:
+  - fullName: list
+    name: list
+    uid: list
+  - fullName: '['
+    name: '['
+  - fullName: botframework.connector.models.MediaUrl
+    name: MediaUrl
+    uid: botframework.connector.models.MediaUrl
+  - fullName: ']'
+    name: ']'
+  uid: list[botframework.connector.models.MediaUrl]
+- fullName: list[botframework.connector.models.CardAction]
+  name: list[CardAction]
+  spec.python:
+  - fullName: list
+    name: list
+    uid: list
+  - fullName: '['
+    name: '['
+  - fullName: botframework.connector.models.CardAction
+    name: CardAction
+    uid: botframework.connector.models.CardAction
+  - fullName: ']'
+    name: ']'
+  uid: list[botframework.connector.models.CardAction]

@@ -1,0 +1,214 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.begin_dialog
+  - botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.continue_dialog
+  - botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.on_prompt
+  - botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.on_recognize
+  - botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.reprompt_dialog
+  - botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.resume_dialog
+  - botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.persisted_options
+  - botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.persisted_state
+  class: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
+  fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: abc.ABC
+    type: botbuilder.dialogs.dialog.Dialog
+  - inheritance:
+    - type: builtins.object
+    type: abc.ABC
+  langs:
+  - python
+  module: botbuilder.dialogs.prompts.activity_prompt
+  name: ActivityPrompt
+  summary: 'Waits for an activity to be received.
+
+
+    This prompt requires a validator be passed in and is useful when waiting for non-message
+
+    activities like an event to be received. The validator can ignore received events
+    until the
+
+    expected activity is received.'
+  syntax:
+    content: 'ActivityPrompt(dialog_id: str, validator: typing.Callable[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext,
+      bool])'
+  type: class
+  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
+- class: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
+  fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.begin_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.prompts.activity_prompt
+  name: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    options: botbuilder.dialogs.prompts.prompt_options.PromptOptions = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  syntax:
+    content: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+      options: botbuilder.dialogs.prompts.prompt_options.PromptOptions = None) ->
+      botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  type: method
+  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.begin_dialog
+- class: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
+  fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.continue_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.prompts.activity_prompt
+  name: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  syntax:
+    content: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
+      -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  type: method
+  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.continue_dialog
+- class: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
+  fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.on_prompt
+  langs:
+  - python
+  module: botbuilder.dialogs.prompts.activity_prompt
+  name: 'on_prompt(context: botbuilder.core.turn_context.TurnContext, state: typing.Dict[str,
+    dict], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions, is_retry:
+    bool = False)'
+  summary: 'Called anytime the derived class should send the user a prompt.
+
+
+
+
+    context: Context for the current turn of conversation with the user.
+
+
+    state: Additional state being persisted for the prompt.
+
+
+    options: Options that the prompt started with in the call to *DialogContext.prompt()*.
+
+
+    isRetry: If *true* the users response wasn''t recognized and the re-prompt should
+    be sent.'
+  syntax:
+    content: 'on_prompt(context: botbuilder.core.turn_context.TurnContext, state:
+      typing.Dict[str, dict], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
+      is_retry: bool = False)'
+  type: method
+  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.on_prompt
+- class: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
+  fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.on_recognize
+  langs:
+  - python
+  module: botbuilder.dialogs.prompts.activity_prompt
+  name: 'on_recognize(context: botbuilder.core.turn_context.TurnContext, state: typing.Dict[str,
+    object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions) ->
+    botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
+  syntax:
+    content: 'on_recognize(context: botbuilder.core.turn_context.TurnContext, state:
+      typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
+      -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
+  type: method
+  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.on_recognize
+- class: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
+  fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.reprompt_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.prompts.activity_prompt
+  name: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+    botbuilder.dialogs.dialog_instance.DialogInstance)'
+  syntax:
+    content: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+      botbuilder.dialogs.dialog_instance.DialogInstance)'
+  type: method
+  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.reprompt_dialog
+- class: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
+  fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.resume_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.prompts.activity_prompt
+  name: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object = None)'
+  summary: 'Prompts are typically leaf nodes on the stack but the dev is free to push
+    other dialogs
+
+    on top of the stack which will result in the prompt receiving an unexpected call
+    to
+
+    resume_dialog() when the pushed on dialog ends.
+
+    To avoid the prompt prematurely ending, we need to implement this method and
+
+    simply re-prompt the user'
+  syntax:
+    content: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+      reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object = None)'
+  type: method
+  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.resume_dialog
+- class: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
+  fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.persisted_options
+  langs:
+  - python
+  module: botbuilder.dialogs.prompts.activity_prompt
+  name: persisted_options
+  syntax:
+    content: persisted_options = 'options'
+  type: attribute
+  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.persisted_options
+- class: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
+  fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.persisted_state
+  langs:
+  - python
+  module: botbuilder.dialogs.prompts.activity_prompt
+  name: persisted_state
+  syntax:
+    content: persisted_state = 'state'
+  type: attribute
+  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.persisted_state
+references:
+- fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.begin_dialog
+  isExternal: false
+  name: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    options: botbuilder.dialogs.prompts.prompt_options.PromptOptions = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parent: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
+  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.begin_dialog
+- fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.continue_dialog
+  isExternal: false
+  name: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parent: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
+  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.continue_dialog
+- fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.on_prompt
+  isExternal: false
+  name: 'on_prompt(context: botbuilder.core.turn_context.TurnContext, state: typing.Dict[str,
+    dict], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions, is_retry:
+    bool = False)'
+  parent: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
+  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.on_prompt
+- fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.on_recognize
+  isExternal: false
+  name: 'on_recognize(context: botbuilder.core.turn_context.TurnContext, state: typing.Dict[str,
+    object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions) ->
+    botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
+  parent: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
+  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.on_recognize
+- fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.reprompt_dialog
+  isExternal: false
+  name: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+    botbuilder.dialogs.dialog_instance.DialogInstance)'
+  parent: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
+  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.reprompt_dialog
+- fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.resume_dialog
+  isExternal: false
+  name: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object = None)'
+  parent: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
+  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.resume_dialog
+- fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.persisted_options
+  isExternal: false
+  name: persisted_options
+  parent: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
+  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.persisted_options
+- fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.persisted_state
+  isExternal: false
+  name: persisted_state
+  parent: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
+  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.persisted_state

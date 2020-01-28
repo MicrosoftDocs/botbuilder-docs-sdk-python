@@ -1,0 +1,37 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: botbuilder.schema.teams.MessageActionsPayloadFrom
+  fullName: botbuilder.schema.teams.MessageActionsPayloadFrom
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: msrest.serialization.Model
+  langs:
+  - python
+  module: botbuilder.schema.teams
+  name: MessageActionsPayloadFrom
+  summary: 'Represents a user, application, or conversation type that either sent
+    or
+
+    was referenced in a message.'
+  syntax:
+    content: MessageActionsPayloadFrom(*, user=None, application=None, conversation=None,
+      **kwargs) -> None
+    parameters:
+    - description: Represents details of the user.
+      id: user
+      type:
+      - botframework.connector.teams.models.MessageActionsPayloadUser
+    - description: Represents details of the app.
+      id: application
+      type:
+      - botframework.connector.teams.models.MessageActionsPayloadApp
+    - description: Represents details of the converesation.
+      id: conversation
+      type:
+      - botframework.connector.teams.models.MessageActionsPayloadConversation
+  type: class
+  uid: botbuilder.schema.teams.MessageActionsPayloadFrom
+references: []

@@ -1,0 +1,38 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: botbuilder.schema.teams.FileDownloadInfo
+  fullName: botbuilder.schema.teams.FileDownloadInfo
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: msrest.serialization.Model
+  langs:
+  - python
+  module: botbuilder.schema.teams
+  name: FileDownloadInfo
+  summary: File download info attachment.
+  syntax:
+    content: 'FileDownloadInfo(*, download_url: str = None, unique_id: str = None,
+      file_type: str = None, etag=None, **kwargs) -> None'
+    parameters:
+    - description: File download url.
+      id: download_url
+      type:
+      - str
+    - description: Unique Id for the file.
+      id: unique_id
+      type:
+      - str
+    - description: Type of file.
+      id: file_type
+      type:
+      - str
+    - description: ETag for the file.
+      id: etag
+      type:
+      - object
+  type: class
+  uid: botbuilder.schema.teams.FileDownloadInfo
+references: []

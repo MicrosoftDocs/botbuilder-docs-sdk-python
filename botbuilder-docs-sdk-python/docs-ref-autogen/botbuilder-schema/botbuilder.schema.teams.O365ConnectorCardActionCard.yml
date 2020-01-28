@@ -1,0 +1,81 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: botbuilder.schema.teams.O365ConnectorCardActionCard
+  fullName: botbuilder.schema.teams.O365ConnectorCardActionCard
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: msrest.serialization.Model
+    type: botbuilder.schema.teams._models_py3.O365ConnectorCardActionBase
+  langs:
+  - python
+  module: botbuilder.schema.teams
+  name: O365ConnectorCardActionCard
+  summary: O365 connector card ActionCard action.
+  syntax:
+    content: 'O365ConnectorCardActionCard(*, type=None, name: str = None, id: str
+      = None, inputs=None, actions=None, **kwargs) -> None'
+    parameters:
+    - description: 'Type of the action. Possible values include: ''ViewAction'',
+
+        ''OpenUri'', ''HttpPOST'', ''ActionCard'''
+      id: type
+      type:
+      - str
+      - botframework.connector.teams.models.enum
+    - description: Name of the action that will be used as button title
+      id: name
+      type:
+      - str
+    - description: Action Id
+      id: id
+      type:
+      - str
+    - description: 'Set of inputs contained in this ActionCard whose each item
+
+        can be in any subtype of O365ConnectorCardInputBase'
+      id: inputs
+      type:
+      - list[botframework.connector.teams.models.O365ConnectorCardInputBase]
+    - description: 'Set of actions contained in this ActionCard whose each
+
+        item can be in any subtype of O365ConnectorCardActionBase except
+
+        O365ConnectorCardActionCard, as nested ActionCard is forbidden.'
+      id: actions
+      type:
+      - list[botframework.connector.teams.models.O365ConnectorCardActionBase]
+  type: class
+  uid: botbuilder.schema.teams.O365ConnectorCardActionCard
+references:
+- fullName: list[botframework.connector.teams.models.O365ConnectorCardInputBase]
+  name: list[O365ConnectorCardInputBase]
+  spec.python:
+  - fullName: list
+    name: list
+    uid: list
+  - fullName: '['
+    name: '['
+  - fullName: botframework.connector.teams.models.O365ConnectorCardInputBase
+    name: O365ConnectorCardInputBase
+    uid: botframework.connector.teams.models.O365ConnectorCardInputBase
+  - fullName: ']'
+    name: ']'
+  uid: list[botframework.connector.teams.models.O365ConnectorCardInputBase]
+- fullName: list[botframework.connector.teams.models.O365ConnectorCardActionBase]
+  name: list[O365ConnectorCardActionBase]
+  spec.python:
+  - fullName: list
+    name: list
+    uid: list
+  - fullName: '['
+    name: '['
+  - fullName: botframework.connector.teams.models.O365ConnectorCardActionBase
+    name: O365ConnectorCardActionBase
+    uid: botframework.connector.teams.models.O365ConnectorCardActionBase
+  - fullName: ']'
+    name: ']'
+  uid: list[botframework.connector.teams.models.O365ConnectorCardActionBase]

@@ -1,0 +1,56 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: botbuilder.schema.teams.O365ConnectorCardDateInput
+  fullName: botbuilder.schema.teams.O365ConnectorCardDateInput
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: msrest.serialization.Model
+    type: botbuilder.schema.teams._models_py3.O365ConnectorCardInputBase
+  langs:
+  - python
+  module: botbuilder.schema.teams
+  name: O365ConnectorCardDateInput
+  summary: O365 connector card date input.
+  syntax:
+    content: 'O365ConnectorCardDateInput(*, type=None, id: str = None, is_required:
+      bool = None, title: str = None, value: str = None, include_time: bool = None,
+      **kwargs) -> None'
+    parameters:
+    - description: 'Input type name. Possible values include: ''textInput'',
+
+        ''dateInput'', ''multichoiceInput'''
+      id: type
+      type:
+      - str
+      - botframework.connector.teams.models.enum
+    - description: Input Id. It must be unique per entire O365 connector card.
+      id: id
+      type:
+      - str
+    - description: 'Define if this input is a required field. Default
+
+        value is false.'
+      id: is_required
+      type:
+      - bool
+    - description: Input title that will be shown as the placeholder
+      id: title
+      type:
+      - str
+    - description: Default value for this input field
+      id: value
+      type:
+      - str
+    - description: 'Include time input field. Default value  is false
+
+        (date only).'
+      id: include_time
+      type:
+      - bool
+  type: class
+  uid: botbuilder.schema.teams.O365ConnectorCardDateInput
+references: []

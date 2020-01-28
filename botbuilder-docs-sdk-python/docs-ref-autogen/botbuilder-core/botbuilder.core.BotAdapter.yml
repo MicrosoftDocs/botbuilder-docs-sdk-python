@@ -1,0 +1,196 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.core.BotAdapter.continue_conversation
+  - botbuilder.core.BotAdapter.delete_activity
+  - botbuilder.core.BotAdapter.run_pipeline
+  - botbuilder.core.BotAdapter.send_activities
+  - botbuilder.core.BotAdapter.update_activity
+  - botbuilder.core.BotAdapter.use
+  class: botbuilder.core.BotAdapter
+  fullName: botbuilder.core.BotAdapter
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: abc.ABC
+  langs:
+  - python
+  module: botbuilder.core
+  name: BotAdapter
+  summary: ''
+  syntax:
+    content: 'BotAdapter(on_turn_error: typing.Callable[[botbuilder.core.turn_context.TurnContext,
+      Exception], typing.Awaitable] = None)'
+  type: class
+  uid: botbuilder.core.BotAdapter
+- class: botbuilder.core.BotAdapter
+  fullName: botbuilder.core.BotAdapter.continue_conversation
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
+    callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
+    = None)'
+  summary: 'Sends a proactive message to a conversation. Call this method to proactively
+    send a message to a conversation.
+
+    Most _channels require a user to initiate a conversation with a bot before the
+    bot can send activities
+
+    to the user.
+
+    :param bot_id: The application ID of the bot. This parameter is ignored in
+
+    single tenant the Adpters (Console, Test, etc) but is critical to the BotFrameworkAdapter
+
+    which is multi-tenant aware. </param>
+
+    :param reference: A reference to the conversation to continue.</param>
+
+    :param callback: The method to call for the resulting bot turn.</param>
+
+    :param claims_identity:'
+  syntax:
+    content: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
+      callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
+      = None)'
+  type: method
+  uid: botbuilder.core.BotAdapter.continue_conversation
+- class: botbuilder.core.BotAdapter
+  fullName: botbuilder.core.BotAdapter.delete_activity
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'delete_activity(context: botbuilder.core.turn_context.TurnContext, reference:
+    botbuilder.schema._models_py3.ConversationReference)'
+  summary: 'Deletes an existing activity.
+
+    :param context:
+
+    :param reference:
+
+    :return:'
+  syntax:
+    content: 'delete_activity(context: botbuilder.core.turn_context.TurnContext, reference:
+      botbuilder.schema._models_py3.ConversationReference)'
+  type: method
+  uid: botbuilder.core.BotAdapter.delete_activity
+- class: botbuilder.core.BotAdapter
+  fullName: botbuilder.core.BotAdapter.run_pipeline
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'run_pipeline(context: botbuilder.core.turn_context.TurnContext, callback:
+    typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable] =
+    None)'
+  summary: 'Called by the parent class to run the adapters middleware set and calls
+    the passed in *callback()* handler at
+
+    the end of the chain.
+
+    :param context:
+
+    :param callback:
+
+    :return:'
+  syntax:
+    content: 'run_pipeline(context: botbuilder.core.turn_context.TurnContext, callback:
+      typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable]
+      = None)'
+  type: method
+  uid: botbuilder.core.BotAdapter.run_pipeline
+- class: botbuilder.core.BotAdapter
+  fullName: botbuilder.core.BotAdapter.send_activities
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'send_activities(context: botbuilder.core.turn_context.TurnContext, activities:
+    typing.List[botbuilder.schema._models_py3.Activity]) -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
+  summary: 'Sends a set of activities to the user. An array of responses from the
+    server will be returned.
+
+    :param context:
+
+    :param activities:
+
+    :return:'
+  syntax:
+    content: 'send_activities(context: botbuilder.core.turn_context.TurnContext, activities:
+      typing.List[botbuilder.schema._models_py3.Activity]) -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
+  type: method
+  uid: botbuilder.core.BotAdapter.send_activities
+- class: botbuilder.core.BotAdapter
+  fullName: botbuilder.core.BotAdapter.update_activity
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'update_activity(context: botbuilder.core.turn_context.TurnContext, activity:
+    botbuilder.schema._models_py3.Activity)'
+  summary: 'Replaces an existing activity.
+
+    :param context:
+
+    :param activity:
+
+    :return:'
+  syntax:
+    content: 'update_activity(context: botbuilder.core.turn_context.TurnContext, activity:
+      botbuilder.schema._models_py3.Activity)'
+  type: method
+  uid: botbuilder.core.BotAdapter.update_activity
+- class: botbuilder.core.BotAdapter
+  fullName: botbuilder.core.BotAdapter.use
+  langs:
+  - python
+  module: botbuilder.core
+  name: use(middleware)
+  summary: 'Registers a middleware handler with the adapter.
+
+    :param middleware:
+
+    :return:'
+  syntax:
+    content: use(middleware)
+    parameters:
+    - id: middleware
+  type: method
+  uid: botbuilder.core.BotAdapter.use
+references:
+- fullName: botbuilder.core.BotAdapter.continue_conversation
+  isExternal: false
+  name: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
+    callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
+    = None)'
+  parent: botbuilder.core.BotAdapter
+  uid: botbuilder.core.BotAdapter.continue_conversation
+- fullName: botbuilder.core.BotAdapter.delete_activity
+  isExternal: false
+  name: 'delete_activity(context: botbuilder.core.turn_context.TurnContext, reference:
+    botbuilder.schema._models_py3.ConversationReference)'
+  parent: botbuilder.core.BotAdapter
+  uid: botbuilder.core.BotAdapter.delete_activity
+- fullName: botbuilder.core.BotAdapter.run_pipeline
+  isExternal: false
+  name: 'run_pipeline(context: botbuilder.core.turn_context.TurnContext, callback:
+    typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable] =
+    None)'
+  parent: botbuilder.core.BotAdapter
+  uid: botbuilder.core.BotAdapter.run_pipeline
+- fullName: botbuilder.core.BotAdapter.send_activities
+  isExternal: false
+  name: 'send_activities(context: botbuilder.core.turn_context.TurnContext, activities:
+    typing.List[botbuilder.schema._models_py3.Activity]) -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
+  parent: botbuilder.core.BotAdapter
+  uid: botbuilder.core.BotAdapter.send_activities
+- fullName: botbuilder.core.BotAdapter.update_activity
+  isExternal: false
+  name: 'update_activity(context: botbuilder.core.turn_context.TurnContext, activity:
+    botbuilder.schema._models_py3.Activity)'
+  parent: botbuilder.core.BotAdapter
+  uid: botbuilder.core.BotAdapter.update_activity
+- fullName: botbuilder.core.BotAdapter.use
+  isExternal: false
+  name: use(middleware)
+  parent: botbuilder.core.BotAdapter
+  uid: botbuilder.core.BotAdapter.use

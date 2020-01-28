@@ -1,0 +1,67 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.testing.DialogTestClient.get_next_reply
+  - botbuilder.testing.DialogTestClient.send_activity
+  class: botbuilder.testing.DialogTestClient
+  fullName: botbuilder.testing.DialogTestClient
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: botbuilder.testing
+  name: DialogTestClient
+  summary: A client for testing dialogs in isolation.
+  syntax:
+    content: 'DialogTestClient(channel_or_adapter: typing.Union[str, botbuilder.core.adapters.test_adapter.TestAdapter],
+      target_dialog: botbuilder.dialogs.dialog.Dialog, initial_dialog_options: object
+      = None, middlewares: typing.List[botbuilder.core.middleware_set.Middleware]
+      = None, conversation_state: botbuilder.core.conversation_state.ConversationState
+      = None)'
+  type: class
+  uid: botbuilder.testing.DialogTestClient
+- class: botbuilder.testing.DialogTestClient
+  fullName: botbuilder.testing.DialogTestClient.get_next_reply
+  langs:
+  - python
+  module: botbuilder.testing
+  name: get_next_reply() -> botbuilder.schema._models_py3.Activity
+  summary: Get the next reply waiting to be delivered (if one exists)
+  syntax:
+    content: get_next_reply() -> botbuilder.schema._models_py3.Activity
+    return:
+      description: a TestFlow that can be used to assert replies etc.
+      type:
+      - Activity
+  type: method
+  uid: botbuilder.testing.DialogTestClient.get_next_reply
+- class: botbuilder.testing.DialogTestClient
+  fullName: botbuilder.testing.DialogTestClient.send_activity
+  langs:
+  - python
+  module: botbuilder.testing
+  name: send_activity(activity) -> botbuilder.schema._models_py3.Activity
+  summary: Send an activity into the dialog.
+  syntax:
+    content: send_activity(activity) -> botbuilder.schema._models_py3.Activity
+    parameters:
+    - description: an activity potentially with text.
+      id: activity
+    return:
+      description: a TestFlow that can be used to assert replies etc.
+      type:
+      - Activity
+  type: method
+  uid: botbuilder.testing.DialogTestClient.send_activity
+references:
+- fullName: botbuilder.testing.DialogTestClient.get_next_reply
+  isExternal: false
+  name: get_next_reply() -> botbuilder.schema._models_py3.Activity
+  parent: botbuilder.testing.DialogTestClient
+  uid: botbuilder.testing.DialogTestClient.get_next_reply
+- fullName: botbuilder.testing.DialogTestClient.send_activity
+  isExternal: false
+  name: send_activity(activity) -> botbuilder.schema._models_py3.Activity
+  parent: botbuilder.testing.DialogTestClient
+  uid: botbuilder.testing.DialogTestClient.send_activity

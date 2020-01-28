@@ -1,0 +1,70 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.azure.BlobStorage.delete
+  - botbuilder.azure.BlobStorage.read
+  - botbuilder.azure.BlobStorage.write
+  class: botbuilder.azure.BlobStorage
+  fullName: botbuilder.azure.BlobStorage
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: abc.ABC
+    type: botbuilder.core.storage.Storage
+  langs:
+  - python
+  module: botbuilder.azure
+  name: BlobStorage
+  summary: ''
+  syntax:
+    content: 'BlobStorage(settings: botbuilder.azure.blob_storage.BlobStorageSettings)'
+  type: class
+  uid: botbuilder.azure.BlobStorage
+- class: botbuilder.azure.BlobStorage
+  fullName: botbuilder.azure.BlobStorage.delete
+  langs:
+  - python
+  module: botbuilder.azure
+  name: 'delete(keys: typing.List[str])'
+  syntax:
+    content: 'delete(keys: typing.List[str])'
+  type: method
+  uid: botbuilder.azure.BlobStorage.delete
+- class: botbuilder.azure.BlobStorage
+  fullName: botbuilder.azure.BlobStorage.read
+  langs:
+  - python
+  module: botbuilder.azure
+  name: 'read(keys: typing.List[str]) -> typing.Dict[str, object]'
+  syntax:
+    content: 'read(keys: typing.List[str]) -> typing.Dict[str, object]'
+  type: method
+  uid: botbuilder.azure.BlobStorage.read
+- class: botbuilder.azure.BlobStorage
+  fullName: botbuilder.azure.BlobStorage.write
+  langs:
+  - python
+  module: botbuilder.azure
+  name: 'write(changes: typing.Dict[str, object])'
+  syntax:
+    content: 'write(changes: typing.Dict[str, object])'
+  type: method
+  uid: botbuilder.azure.BlobStorage.write
+references:
+- fullName: botbuilder.azure.BlobStorage.delete
+  isExternal: false
+  name: 'delete(keys: typing.List[str])'
+  parent: botbuilder.azure.BlobStorage
+  uid: botbuilder.azure.BlobStorage.delete
+- fullName: botbuilder.azure.BlobStorage.read
+  isExternal: false
+  name: 'read(keys: typing.List[str]) -> typing.Dict[str, object]'
+  parent: botbuilder.azure.BlobStorage
+  uid: botbuilder.azure.BlobStorage.read
+- fullName: botbuilder.azure.BlobStorage.write
+  isExternal: false
+  name: 'write(changes: typing.Dict[str, object])'
+  parent: botbuilder.azure.BlobStorage
+  uid: botbuilder.azure.BlobStorage.write

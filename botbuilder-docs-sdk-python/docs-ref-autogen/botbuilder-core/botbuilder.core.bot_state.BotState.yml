@@ -1,0 +1,251 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.core.bot_state.BotState.clear_state
+  - botbuilder.core.bot_state.BotState.create_property
+  - botbuilder.core.bot_state.BotState.delete
+  - botbuilder.core.bot_state.BotState.delete_property_value
+  - botbuilder.core.bot_state.BotState.get
+  - botbuilder.core.bot_state.BotState.get_property_value
+  - botbuilder.core.bot_state.BotState.get_storage_key
+  - botbuilder.core.bot_state.BotState.load
+  - botbuilder.core.bot_state.BotState.save_changes
+  - botbuilder.core.bot_state.BotState.set_property_value
+  class: botbuilder.core.bot_state.BotState
+  fullName: botbuilder.core.bot_state.BotState
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: botbuilder.core.property_manager.PropertyManager
+  langs:
+  - python
+  module: botbuilder.core.bot_state
+  name: BotState
+  summary: ''
+  syntax:
+    content: 'BotState(storage: botbuilder.core.storage.Storage, context_service_key:
+      str)'
+  type: class
+  uid: botbuilder.core.bot_state.BotState
+- class: botbuilder.core.bot_state.BotState
+  fullName: botbuilder.core.bot_state.BotState.clear_state
+  langs:
+  - python
+  module: botbuilder.core.bot_state
+  name: 'clear_state(turn_context: botbuilder.core.turn_context.TurnContext)'
+  summary: 'Clears any state currently stored in this state scope.
+
+    NOTE: that save_changes must be called in order for the cleared state to be persisted
+    to the underlying store.
+
+    :param turn_context: The context object for this turn.
+
+    :return: None'
+  syntax:
+    content: 'clear_state(turn_context: botbuilder.core.turn_context.TurnContext)'
+  type: method
+  uid: botbuilder.core.bot_state.BotState.clear_state
+- class: botbuilder.core.bot_state.BotState
+  fullName: botbuilder.core.bot_state.BotState.create_property
+  langs:
+  - python
+  module: botbuilder.core.bot_state
+  name: 'create_property(name: str) -> botbuilder.core.state_property_accessor.StatePropertyAccessor'
+  summary: 'Create a property definition and register it with this BotState.
+
+    :param name: The name of the property.
+
+    :param force:
+
+    :return: If successful, the state property accessor created.'
+  syntax:
+    content: 'create_property(name: str) -> botbuilder.core.state_property_accessor.StatePropertyAccessor'
+  type: method
+  uid: botbuilder.core.bot_state.BotState.create_property
+- class: botbuilder.core.bot_state.BotState
+  fullName: botbuilder.core.bot_state.BotState.delete
+  langs:
+  - python
+  module: botbuilder.core.bot_state
+  name: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
+  summary: 'Delete any state currently stored in this state scope.
+
+    :param turn_context: The context object for this turn.
+
+    :return: None'
+  syntax:
+    content: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
+  type: method
+  uid: botbuilder.core.bot_state.BotState.delete
+- class: botbuilder.core.bot_state.BotState
+  fullName: botbuilder.core.bot_state.BotState.delete_property_value
+  langs:
+  - python
+  module: botbuilder.core.bot_state
+  name: 'delete_property_value(turn_context: botbuilder.core.turn_context.TurnContext,
+    property_name: str) -> None'
+  summary: 'Deletes a property from the state cache in the turn context.
+
+    :param turn_context: The context object for this turn.
+
+    :param property_name: The name of the property to delete.
+
+    :return: None'
+  syntax:
+    content: 'delete_property_value(turn_context: botbuilder.core.turn_context.TurnContext,
+      property_name: str) -> None'
+  type: method
+  uid: botbuilder.core.bot_state.BotState.delete_property_value
+- class: botbuilder.core.bot_state.BotState
+  fullName: botbuilder.core.bot_state.BotState.get
+  langs:
+  - python
+  module: botbuilder.core.bot_state
+  name: 'get(turn_context: botbuilder.core.turn_context.TurnContext) -> typing.Dict[str,
+    object]'
+  syntax:
+    content: 'get(turn_context: botbuilder.core.turn_context.TurnContext) -> typing.Dict[str,
+      object]'
+  type: method
+  uid: botbuilder.core.bot_state.BotState.get
+- class: botbuilder.core.bot_state.BotState
+  fullName: botbuilder.core.bot_state.BotState.get_property_value
+  langs:
+  - python
+  module: botbuilder.core.bot_state
+  name: 'get_property_value(turn_context: botbuilder.core.turn_context.TurnContext,
+    property_name: str)'
+  syntax:
+    content: 'get_property_value(turn_context: botbuilder.core.turn_context.TurnContext,
+      property_name: str)'
+  type: method
+  uid: botbuilder.core.bot_state.BotState.get_property_value
+- class: botbuilder.core.bot_state.BotState
+  fullName: botbuilder.core.bot_state.BotState.get_storage_key
+  langs:
+  - python
+  module: botbuilder.core.bot_state
+  name: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext) ->
+    str'
+  syntax:
+    content: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext)
+      -> str'
+  type: method
+  uid: botbuilder.core.bot_state.BotState.get_storage_key
+- class: botbuilder.core.bot_state.BotState
+  fullName: botbuilder.core.bot_state.BotState.load
+  langs:
+  - python
+  module: botbuilder.core.bot_state
+  name: 'load(turn_context: botbuilder.core.turn_context.TurnContext, force: bool
+    = False) -> None'
+  summary: 'Reads in  the current state object and caches it in the context object
+    for this turm.
+
+    :param turn_context: The context object for this turn.
+
+    :param force: Optional. True to bypass the cache.'
+  syntax:
+    content: 'load(turn_context: botbuilder.core.turn_context.TurnContext, force:
+      bool = False) -> None'
+  type: method
+  uid: botbuilder.core.bot_state.BotState.load
+- class: botbuilder.core.bot_state.BotState
+  fullName: botbuilder.core.bot_state.BotState.save_changes
+  langs:
+  - python
+  module: botbuilder.core.bot_state
+  name: 'save_changes(turn_context: botbuilder.core.turn_context.TurnContext, force:
+    bool = False) -> None'
+  summary: 'If it has changed, writes to storage the state object that is cached in
+    the current context object
+
+    for this turn.
+
+    :param turn_context: The context object for this turn.
+
+    :param force: Optional. True to save state to storage whether or not there are
+    changes.'
+  syntax:
+    content: 'save_changes(turn_context: botbuilder.core.turn_context.TurnContext,
+      force: bool = False) -> None'
+  type: method
+  uid: botbuilder.core.bot_state.BotState.save_changes
+- class: botbuilder.core.bot_state.BotState
+  fullName: botbuilder.core.bot_state.BotState.set_property_value
+  langs:
+  - python
+  module: botbuilder.core.bot_state
+  name: 'set_property_value(turn_context: botbuilder.core.turn_context.TurnContext,
+    property_name: str, value: object) -> None'
+  summary: 'Deletes a property from the state cache in the turn context.
+
+    :param turn_context: The context object for this turn.
+
+    :param property_name: The value to set on the property.
+
+    :return: None'
+  syntax:
+    content: 'set_property_value(turn_context: botbuilder.core.turn_context.TurnContext,
+      property_name: str, value: object) -> None'
+  type: method
+  uid: botbuilder.core.bot_state.BotState.set_property_value
+references:
+- fullName: botbuilder.core.bot_state.BotState.clear_state
+  isExternal: false
+  name: 'clear_state(turn_context: botbuilder.core.turn_context.TurnContext)'
+  parent: botbuilder.core.bot_state.BotState
+  uid: botbuilder.core.bot_state.BotState.clear_state
+- fullName: botbuilder.core.bot_state.BotState.create_property
+  isExternal: false
+  name: 'create_property(name: str) -> botbuilder.core.state_property_accessor.StatePropertyAccessor'
+  parent: botbuilder.core.bot_state.BotState
+  uid: botbuilder.core.bot_state.BotState.create_property
+- fullName: botbuilder.core.bot_state.BotState.delete
+  isExternal: false
+  name: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
+  parent: botbuilder.core.bot_state.BotState
+  uid: botbuilder.core.bot_state.BotState.delete
+- fullName: botbuilder.core.bot_state.BotState.delete_property_value
+  isExternal: false
+  name: 'delete_property_value(turn_context: botbuilder.core.turn_context.TurnContext,
+    property_name: str) -> None'
+  parent: botbuilder.core.bot_state.BotState
+  uid: botbuilder.core.bot_state.BotState.delete_property_value
+- fullName: botbuilder.core.bot_state.BotState.get
+  isExternal: false
+  name: 'get(turn_context: botbuilder.core.turn_context.TurnContext) -> typing.Dict[str,
+    object]'
+  parent: botbuilder.core.bot_state.BotState
+  uid: botbuilder.core.bot_state.BotState.get
+- fullName: botbuilder.core.bot_state.BotState.get_property_value
+  isExternal: false
+  name: 'get_property_value(turn_context: botbuilder.core.turn_context.TurnContext,
+    property_name: str)'
+  parent: botbuilder.core.bot_state.BotState
+  uid: botbuilder.core.bot_state.BotState.get_property_value
+- fullName: botbuilder.core.bot_state.BotState.get_storage_key
+  isExternal: false
+  name: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext) ->
+    str'
+  parent: botbuilder.core.bot_state.BotState
+  uid: botbuilder.core.bot_state.BotState.get_storage_key
+- fullName: botbuilder.core.bot_state.BotState.load
+  isExternal: false
+  name: 'load(turn_context: botbuilder.core.turn_context.TurnContext, force: bool
+    = False) -> None'
+  parent: botbuilder.core.bot_state.BotState
+  uid: botbuilder.core.bot_state.BotState.load
+- fullName: botbuilder.core.bot_state.BotState.save_changes
+  isExternal: false
+  name: 'save_changes(turn_context: botbuilder.core.turn_context.TurnContext, force:
+    bool = False) -> None'
+  parent: botbuilder.core.bot_state.BotState
+  uid: botbuilder.core.bot_state.BotState.save_changes
+- fullName: botbuilder.core.bot_state.BotState.set_property_value
+  isExternal: false
+  name: 'set_property_value(turn_context: botbuilder.core.turn_context.TurnContext,
+    property_name: str, value: object) -> None'
+  parent: botbuilder.core.bot_state.BotState
+  uid: botbuilder.core.bot_state.BotState.set_property_value

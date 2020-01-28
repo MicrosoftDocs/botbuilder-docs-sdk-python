@@ -1,0 +1,57 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: botbuilder.schema.ReceiptItem
+  fullName: botbuilder.schema.ReceiptItem
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: msrest.serialization.Model
+  langs:
+  - python
+  module: botbuilder.schema
+  name: ReceiptItem
+  summary: An item on a receipt card.
+  syntax:
+    content: 'ReceiptItem(*, title: str = None, subtitle: str = None, text: str =
+      None, image=None, price: str = None, quantity: str = None, tap=None, **kwargs)
+      -> None'
+    parameters:
+    - description: Title of the Card
+      id: title
+      type:
+      - str
+    - description: 'Subtitle appears just below Title field, differs from
+
+        Title in font styling only'
+      id: subtitle
+      type:
+      - str
+    - description: 'Text field appears just below subtitle, differs from Subtitle
+
+        in font styling only'
+      id: text
+      type:
+      - str
+    - description: Image
+      id: image
+      type:
+      - botframework.connector.models.CardImage
+    - description: Amount with currency
+      id: price
+      type:
+      - str
+    - description: Number of items of given kind
+      id: quantity
+      type:
+      - str
+    - description: 'This action will be activated when user taps on the Item
+
+        bubble.'
+      id: tap
+      type:
+      - botframework.connector.models.CardAction
+  type: class
+  uid: botbuilder.schema.ReceiptItem
+references: []

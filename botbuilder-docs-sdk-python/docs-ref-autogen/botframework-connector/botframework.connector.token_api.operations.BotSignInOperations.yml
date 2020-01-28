@@ -1,0 +1,110 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botframework.connector.token_api.operations.BotSignInOperations.get_sign_in_url
+  - botframework.connector.token_api.operations.BotSignInOperations.models
+  class: botframework.connector.token_api.operations.BotSignInOperations
+  fullName: botframework.connector.token_api.operations.BotSignInOperations
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: botframework.connector.token_api.operations
+  name: BotSignInOperations
+  summary: "BotSignInOperations operations.\n\nYou should not instantiate directly\
+    \ this class, but create a Client instance that will create it for you and attach\n\
+    \   it as attribute."
+  syntax:
+    content: BotSignInOperations(client, config, serializer, deserializer)
+    parameters:
+    - description: Client for service requests.
+      id: client
+    - description: Configuration of service client.
+      id: config
+    - description: An object model serializer.
+      id: serializer
+    - description: An object model deserializer.
+      id: deserializer
+    variables:
+    - description: 'The API version to use for the request. Constant value: "token".'
+      id: api_version
+  type: class
+  uid: botframework.connector.token_api.operations.BotSignInOperations
+- class: botframework.connector.token_api.operations.BotSignInOperations
+  exceptions:
+  - type: msrest.exceptions.HttpOperationError
+  fullName: botframework.connector.token_api.operations.BotSignInOperations.get_sign_in_url
+  langs:
+  - python
+  module: botframework.connector.token_api.operations
+  name: get_sign_in_url(state, code_challenge=None, emulator_url=None, final_redirect=None,
+    custom_headers=None, raw=False, **operation_config)
+  syntax:
+    content: get_sign_in_url(state, code_challenge=None, emulator_url=None, final_redirect=None,
+      custom_headers=None, raw=False, **operation_config)
+    parameters:
+    - description: ''
+      id: state
+      type:
+      - str
+    - defaultValue: None
+      description: ''
+      id: code_challenge
+      type:
+      - str
+    - defaultValue: None
+      description: ''
+      id: emulator_url
+      type:
+      - str
+    - defaultValue: None
+      description: ''
+      id: final_redirect
+      type:
+      - str
+    - defaultValue: None
+      description: headers that will be added to the request
+      id: custom_headers
+      type:
+      - dict
+    - defaultValue: 'False'
+      description: 'returns the direct response alongside the
+
+        deserialized response'
+      id: raw
+      type:
+      - bool
+    - description: '*Operation configuration
+
+        overrides*.'
+      id: operation_config
+    return:
+      description: str or ClientRawResponse if raw=true
+      type:
+      - str
+      - msrest.pipeline.ClientRawResponse
+  type: method
+  uid: botframework.connector.token_api.operations.BotSignInOperations.get_sign_in_url
+- class: botframework.connector.token_api.operations.BotSignInOperations
+  fullName: botframework.connector.token_api.operations.BotSignInOperations.models
+  langs:
+  - python
+  module: botframework.connector.token_api.operations
+  name: models
+  syntax:
+    content: models = <module 'botframework.connector.token_api.models' from 'c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\site-packages\\botframework\\connector\\token_api\\models\\__init__.py'>
+  type: attribute
+  uid: botframework.connector.token_api.operations.BotSignInOperations.models
+references:
+- fullName: botframework.connector.token_api.operations.BotSignInOperations.get_sign_in_url
+  isExternal: false
+  name: get_sign_in_url(state, code_challenge=None, emulator_url=None, final_redirect=None,
+    custom_headers=None, raw=False, **operation_config)
+  parent: botframework.connector.token_api.operations.BotSignInOperations
+  uid: botframework.connector.token_api.operations.BotSignInOperations.get_sign_in_url
+- fullName: botframework.connector.token_api.operations.BotSignInOperations.models
+  isExternal: false
+  name: models
+  parent: botframework.connector.token_api.operations.BotSignInOperations
+  uid: botframework.connector.token_api.operations.BotSignInOperations.models

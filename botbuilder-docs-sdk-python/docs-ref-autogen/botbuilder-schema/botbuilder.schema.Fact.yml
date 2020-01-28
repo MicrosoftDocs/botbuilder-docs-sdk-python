@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: botbuilder.schema.Fact
+  fullName: botbuilder.schema.Fact
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: msrest.serialization.Model
+  langs:
+  - python
+  module: botbuilder.schema
+  name: Fact
+  summary: 'Set of key-value pairs. Advantage of this section is that key and value
+
+    properties will be
+
+    rendered with default style information with some delimiter between them.
+
+    So there is no need for developer to specify style information.'
+  syntax:
+    content: 'Fact(*, key: str = None, value: str = None, **kwargs) -> None'
+    parameters:
+    - description: The key for this Fact
+      id: key
+      type:
+      - str
+    - description: The value for this Fact
+      id: value
+      type:
+      - str
+  type: class
+  uid: botbuilder.schema.Fact
+references: []
