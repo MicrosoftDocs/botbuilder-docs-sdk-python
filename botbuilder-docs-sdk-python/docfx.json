@@ -1,28 +1,40 @@
 {
   "build": {
-    "markdownEngineName": "markdig",
     "content": [
+      {
+        "files": [
+          "**/toc.yml",
+          "**/toc.md"
+        ],
+        "src": "docs-ref-autogen",
+        "dest": "api/bb_py_toc",
+        "version": "botbuilder-py-latest"
+      },
       {
         "files": [
           "**/*.md",
           "**/*.yml"
         ],
-	"src": "docs-ref-autogen",
+        "src": "docs-ref-autogen",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "ThirdPartyNotices"
-        ]
+          "ThirdPartyNotices",
+           "**/toc.yml"
+        ],
+        "dest":"api",
+        "version": "botbuilder-py-latest"
       },
-	  {
+      {
         "files": [
           "**/*.yml"
         ],
         "src": "breadcrumb",
-        "dest": "breadcrumb",
+        "dest": "api/bb_py_breadcrumb",
+        "version": "botbuilder-py-latest",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
@@ -38,18 +50,31 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**"
-        ]
+        ],
+        "version": "botbuilder-py-latest"
       }
     ],
+    "versions": {
+      "botbuilder-py-latest": {
+        "dest": "botbuilder-py-latest"
+      }
+    },
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "apiPlatform": "python",
       "breadcrumb_path": "~/breadcrumb/toc.yml"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "monikers": {
+        "docs-ref-autogen/**": [
+          "botbuilder-py-latest"
+        ]
+      }
+    },
     "template": [],
     "dest": "_site",
-	"xref": [
+    "xref": [
       "../xrefmap.yml"
     ]
   }
