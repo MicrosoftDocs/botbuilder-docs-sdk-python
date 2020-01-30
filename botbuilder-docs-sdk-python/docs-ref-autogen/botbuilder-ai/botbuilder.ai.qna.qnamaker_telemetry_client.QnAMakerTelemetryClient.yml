@@ -13,6 +13,14 @@ items:
   - python
   module: botbuilder.ai.qna.qnamaker_telemetry_client
   name: QnAMakerTelemetryClient
+  source:
+    id: QnAMakerTelemetryClient
+    path: libraries/botbuilder-ai\botbuilder\ai\qna\qnamaker_telemetry_client.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-ai\botbuilder\ai\qna\qnamaker_telemetry_client.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 10
   syntax:
     content: 'QnAMakerTelemetryClient(log_personal_information: bool, telemetry_client:
       botbuilder.core.bot_telemetry_client.BotTelemetryClient)'
@@ -26,6 +34,14 @@ items:
   name: 'get_answers(context: botbuilder.core.turn_context.TurnContext, options: botbuilder.ai.qna.qnamaker_options.QnAMakerOptions
     = None, telemetry_properties: typing.Dict[str, str] = None, telemetry_metrics:
     typing.Dict[str, float] = None)'
+  source:
+    id: get_answers
+    path: libraries/botbuilder-ai\botbuilder\ai\qna\qnamaker_telemetry_client.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-ai\botbuilder\ai\qna\qnamaker_telemetry_client.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 17
   syntax:
     content: 'get_answers(context: botbuilder.core.turn_context.TurnContext, options:
       botbuilder.ai.qna.qnamaker_options.QnAMakerOptions = None, telemetry_properties:

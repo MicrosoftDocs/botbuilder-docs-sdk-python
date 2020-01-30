@@ -10,6 +10,14 @@ items:
   - python
   module: botbuilder.ai.luis
   name: LuisPredictionOptions
+  source:
+    id: LuisPredictionOptions
+    path: libraries/botbuilder-ai\botbuilder\ai\luis\luis_prediction_options.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-ai\botbuilder\ai\luis\luis_prediction_options.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 7
   summary: Optional parameters for a LUIS prediction request.
   syntax:
     content: 'LuisPredictionOptions(bing_spell_check_subscription_key: str = None,

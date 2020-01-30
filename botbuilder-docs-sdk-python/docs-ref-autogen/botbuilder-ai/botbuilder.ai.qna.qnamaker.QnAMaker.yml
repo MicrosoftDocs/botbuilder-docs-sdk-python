@@ -20,6 +20,14 @@ items:
   - python
   module: botbuilder.ai.qna.qnamaker
   name: QnAMaker
+  source:
+    id: QnAMaker
+    path: libraries/botbuilder-ai\botbuilder\ai\qna\qnamaker.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-ai\botbuilder\ai\qna\qnamaker.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 30
   summary: Class used to query a QnA Maker knowledge base for answers.
   syntax:
     content: 'QnAMaker(endpoint: botbuilder.ai.qna.qnamaker_endpoint.QnAMakerEndpoint,
@@ -34,6 +42,14 @@ items:
   - python
   module: botbuilder.ai.qna.qnamaker
   name: 'call_train(feedback_records: typing.List[botbuilder.ai.qna.models.feedback_record.FeedbackRecord])'
+  source:
+    id: call_train
+    path: libraries/botbuilder-ai\botbuilder\ai\qna\qnamaker.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-ai\botbuilder\ai\qna\qnamaker.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 143
   summary: 'Sends feedback to the knowledge base.
 
 
@@ -52,6 +68,14 @@ items:
     turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
     typing.Dict[str, str] = None, telemetry_metrics: typing.Dict[str, float] = None)
     -> botbuilder.ai.qna.qnamaker.EventData'
+  source:
+    id: fill_qna_event
+    path: libraries/botbuilder-ai\botbuilder\ai\qna\qnamaker.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-ai\botbuilder\ai\qna\qnamaker.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 171
   summary: 'Fills the event properties and metrics for the QnaMessage event for telemetry.
 
 
@@ -82,6 +106,14 @@ items:
   name: 'get_answers(context: botbuilder.core.turn_context.TurnContext, options: botbuilder.ai.qna.qnamaker_options.QnAMakerOptions
     = None, telemetry_properties: typing.Dict[str, str] = None, telemetry_metrics:
     typing.Dict[str, int] = None) -> [<class ''botbuilder.ai.qna.models.query_result.QueryResult''>]'
+  source:
+    id: get_answers
+    path: libraries/botbuilder-ai\botbuilder\ai\qna\qnamaker.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-ai\botbuilder\ai\qna\qnamaker.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 71
   summary: 'Generates answers from the knowledge base.
 
 
@@ -108,6 +140,14 @@ items:
     botbuilder.ai.qna.qnamaker_options.QnAMakerOptions = None, telemetry_properties:
     typing.Dict[str, str] = None, telemetry_metrics: typing.Dict[str, int] = None)
     -> botbuilder.ai.qna.models.query_results.QueryResults'
+  source:
+    id: get_answers_raw
+    path: libraries/botbuilder-ai\botbuilder\ai\qna\qnamaker.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-ai\botbuilder\ai\qna\qnamaker.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 95
   summary: 'Generates raw answers from the knowledge base.
 
 
@@ -132,6 +172,14 @@ items:
   module: botbuilder.ai.qna.qnamaker
   name: 'get_low_score_variation(query_result: botbuilder.ai.qna.models.query_result.QueryResult)
     -> typing.List[botbuilder.ai.qna.models.query_result.QueryResult]'
+  source:
+    id: get_low_score_variation
+    path: libraries/botbuilder-ai\botbuilder\ai\qna\qnamaker.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-ai\botbuilder\ai\qna\qnamaker.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 129
   summary: 'Filters the ambiguous question for active learning.
 
 
@@ -154,6 +202,14 @@ items:
   name: 'on_qna_result(query_results: [<class ''botbuilder.ai.qna.models.query_result.QueryResult''>],
     turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
     typing.Dict[str, str] = None, telemetry_metrics: typing.Dict[str, float] = None)'
+  source:
+    id: on_qna_result
+    path: libraries/botbuilder-ai\botbuilder\ai\qna\qnamaker.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-ai\botbuilder\ai\qna\qnamaker.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 153
   syntax:
     content: 'on_qna_result(query_results: [<class ''botbuilder.ai.qna.models.query_result.QueryResult''>],
       turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:

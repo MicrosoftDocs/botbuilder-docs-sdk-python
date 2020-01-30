@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.ai.qna.models.feedback_records
   name: FeedbackRecords
+  source:
+    id: FeedbackRecords
+    path: libraries/botbuilder-ai\botbuilder\ai\qna\models\feedback_records.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-ai\botbuilder\ai\qna\models\feedback_records.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 11
   summary: Active learning feedback records.
   syntax:
     content: 'FeedbackRecords(records: typing.List[botbuilder.ai.qna.models.feedback_record.FeedbackRecord],

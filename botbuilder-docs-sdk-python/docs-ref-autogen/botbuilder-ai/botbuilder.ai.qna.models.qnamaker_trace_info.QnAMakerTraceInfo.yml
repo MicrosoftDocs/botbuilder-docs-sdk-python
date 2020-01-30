@@ -10,6 +10,14 @@ items:
   - python
   module: botbuilder.ai.qna.models.qnamaker_trace_info
   name: QnAMakerTraceInfo
+  source:
+    id: QnAMakerTraceInfo
+    path: libraries/botbuilder-ai\botbuilder\ai\qna\models\qnamaker_trace_info.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-ai\botbuilder\ai\qna\models\qnamaker_trace_info.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 13
   summary: Represents all the trace info that we collect from the QnAMaker Middleware.
   syntax:
     content: 'QnAMakerTraceInfo(message: botbuilder.schema._models_py3.Activity, query_results:

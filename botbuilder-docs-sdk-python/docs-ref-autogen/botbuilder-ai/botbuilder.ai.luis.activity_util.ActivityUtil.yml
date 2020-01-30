@@ -11,6 +11,14 @@ items:
   - python
   module: botbuilder.ai.luis.activity_util
   name: ActivityUtil
+  source:
+    id: ActivityUtil
+    path: libraries/botbuilder-ai\botbuilder\ai\luis\activity_util.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-ai\botbuilder\ai\luis\activity_util.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 14
   syntax: {}
   type: class
   uid: botbuilder.ai.luis.activity_util.ActivityUtil
@@ -21,6 +29,14 @@ items:
   module: botbuilder.ai.luis.activity_util
   name: 'create_trace(turn_activity: botbuilder.schema._models_py3.Activity, name:
     str, value: object = None, value_type: str = None, label: str = None) -> botbuilder.schema._models_py3.Activity'
+  source:
+    id: create_trace
+    path: libraries/botbuilder-ai\botbuilder\ai\luis\activity_util.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-ai\botbuilder\ai\luis\activity_util.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 15
   summary: Creates a trace activity based on this activity.
   syntax:
     content: 'create_trace(turn_activity: botbuilder.schema._models_py3.Activity,

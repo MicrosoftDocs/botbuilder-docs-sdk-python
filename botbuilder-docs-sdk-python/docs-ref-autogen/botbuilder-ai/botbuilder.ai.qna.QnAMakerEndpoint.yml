@@ -10,6 +10,14 @@ items:
   - python
   module: botbuilder.ai.qna
   name: QnAMakerEndpoint
+  source:
+    id: QnAMakerEndpoint
+    path: libraries/botbuilder-ai\botbuilder\ai\qna\qnamaker_endpoint.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-ai\botbuilder\ai\qna\qnamaker_endpoint.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 5
   syntax:
     content: 'QnAMakerEndpoint(knowledge_base_id: str, endpoint_key: str, host: str)'
   type: class

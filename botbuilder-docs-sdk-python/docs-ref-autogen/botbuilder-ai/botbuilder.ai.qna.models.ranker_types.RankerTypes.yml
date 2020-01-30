@@ -13,6 +13,14 @@ items:
   - python
   module: botbuilder.ai.qna.models.ranker_types
   name: RankerTypes
+  source:
+    id: RankerTypes
+    path: libraries/botbuilder-ai\botbuilder\ai\qna\models\ranker_types.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-ai\botbuilder\ai\qna\models\ranker_types.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 5
   summary: Default Ranker Behaviour. i.e. Ranking based on Questions and Answer.
   syntax: {}
   type: class
@@ -23,6 +31,14 @@ items:
   - python
   module: botbuilder.ai.qna.models.ranker_types
   name: DEFAULT
+  source:
+    id: DEFAULT
+    path: null
+    remote:
+      branch: master
+      path: null
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: null
   summary: Ranker based on question Only.
   syntax:
     content: DEFAULT = 'Default'
@@ -34,6 +50,14 @@ items:
   - python
   module: botbuilder.ai.qna.models.ranker_types
   name: QUESTION_ONLY
+  source:
+    id: QUESTION_ONLY
+    path: null
+    remote:
+      branch: master
+      path: null
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: null
   summary: Ranker based on Autosuggest for question field only.
   syntax:
     content: QUESTION_ONLY = 'QuestionOnly'

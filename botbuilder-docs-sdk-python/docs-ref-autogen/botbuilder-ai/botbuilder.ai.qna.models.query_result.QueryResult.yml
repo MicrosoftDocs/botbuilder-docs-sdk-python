@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.ai.qna.models.query_result
   name: QueryResult
+  source:
+    id: QueryResult
+    path: libraries/botbuilder-ai\botbuilder\ai\qna\models\query_result.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-ai\botbuilder\ai\qna\models\query_result.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 10
   summary: Represents an individual result from a knowledge base query.
   syntax:
     content: 'QueryResult(*, questions: typing.List[str], answer: str, score: float,
