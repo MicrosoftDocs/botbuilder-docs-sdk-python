@@ -1,0 +1,102 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.core.skills.ConversationIdFactoryBase.create_skill_conversation_id
+  - botbuilder.core.skills.ConversationIdFactoryBase.delete_conversation_reference
+  - botbuilder.core.skills.ConversationIdFactoryBase.get_conversation_reference
+  class: botbuilder.core.skills.ConversationIdFactoryBase
+  fullName: botbuilder.core.skills.ConversationIdFactoryBase
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: abc.ABC
+  langs:
+  - python
+  module: botbuilder.core.skills
+  name: ConversationIdFactoryBase
+  source:
+    id: ConversationIdFactoryBase
+    path: libraries/botbuilder-core\botbuilder\core\skills\conversation_id_factory.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\skills\conversation_id_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 7
+  summary: ''
+  syntax: {}
+  type: class
+  uid: botbuilder.core.skills.ConversationIdFactoryBase
+- class: botbuilder.core.skills.ConversationIdFactoryBase
+  fullName: botbuilder.core.skills.ConversationIdFactoryBase.create_skill_conversation_id
+  langs:
+  - python
+  module: botbuilder.core.skills
+  name: 'create_skill_conversation_id(conversation_reference: botbuilder.schema._models_py3.ConversationReference)
+    -> str'
+  source:
+    id: create_skill_conversation_id
+    path: libraries/botbuilder-core\botbuilder\core\skills\conversation_id_factory.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\skills\conversation_id_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 8
+  syntax:
+    content: 'create_skill_conversation_id(conversation_reference: botbuilder.schema._models_py3.ConversationReference)
+      -> str'
+  type: method
+  uid: botbuilder.core.skills.ConversationIdFactoryBase.create_skill_conversation_id
+- class: botbuilder.core.skills.ConversationIdFactoryBase
+  fullName: botbuilder.core.skills.ConversationIdFactoryBase.delete_conversation_reference
+  langs:
+  - python
+  module: botbuilder.core.skills
+  name: 'delete_conversation_reference(skill_conversation_id: str)'
+  source:
+    id: delete_conversation_reference
+    path: libraries/botbuilder-core\botbuilder\core\skills\conversation_id_factory.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\skills\conversation_id_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 20
+  syntax:
+    content: 'delete_conversation_reference(skill_conversation_id: str)'
+  type: method
+  uid: botbuilder.core.skills.ConversationIdFactoryBase.delete_conversation_reference
+- class: botbuilder.core.skills.ConversationIdFactoryBase
+  fullName: botbuilder.core.skills.ConversationIdFactoryBase.get_conversation_reference
+  langs:
+  - python
+  module: botbuilder.core.skills
+  name: 'get_conversation_reference(skill_conversation_id: str) -> botbuilder.schema._models_py3.ConversationReference'
+  source:
+    id: get_conversation_reference
+    path: libraries/botbuilder-core\botbuilder\core\skills\conversation_id_factory.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\skills\conversation_id_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 14
+  syntax:
+    content: 'get_conversation_reference(skill_conversation_id: str) -> botbuilder.schema._models_py3.ConversationReference'
+  type: method
+  uid: botbuilder.core.skills.ConversationIdFactoryBase.get_conversation_reference
+references:
+- fullName: botbuilder.core.skills.ConversationIdFactoryBase.create_skill_conversation_id
+  isExternal: false
+  name: 'create_skill_conversation_id(conversation_reference: botbuilder.schema._models_py3.ConversationReference)
+    -> str'
+  parent: botbuilder.core.skills.ConversationIdFactoryBase
+  uid: botbuilder.core.skills.ConversationIdFactoryBase.create_skill_conversation_id
+- fullName: botbuilder.core.skills.ConversationIdFactoryBase.delete_conversation_reference
+  isExternal: false
+  name: 'delete_conversation_reference(skill_conversation_id: str)'
+  parent: botbuilder.core.skills.ConversationIdFactoryBase
+  uid: botbuilder.core.skills.ConversationIdFactoryBase.delete_conversation_reference
+- fullName: botbuilder.core.skills.ConversationIdFactoryBase.get_conversation_reference
+  isExternal: false
+  name: 'get_conversation_reference(skill_conversation_id: str) -> botbuilder.schema._models_py3.ConversationReference'
+  parent: botbuilder.core.skills.ConversationIdFactoryBase
+  uid: botbuilder.core.skills.ConversationIdFactoryBase.get_conversation_reference

@@ -1,0 +1,56 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.core.ShowTypingMiddleware.on_turn
+  class: botbuilder.core.ShowTypingMiddleware
+  fullName: botbuilder.core.ShowTypingMiddleware
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: abc.ABC
+    type: botbuilder.core.middleware_set.Middleware
+  langs:
+  - python
+  module: botbuilder.core
+  name: ShowTypingMiddleware
+  source:
+    id: ShowTypingMiddleware
+    path: libraries/botbuilder-core\botbuilder\core\show_typing_middleware.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\show_typing_middleware.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 44
+  syntax:
+    content: 'ShowTypingMiddleware(delay: float = 0.5, period: float = 2.0)'
+  type: class
+  uid: botbuilder.core.ShowTypingMiddleware
+- class: botbuilder.core.ShowTypingMiddleware
+  fullName: botbuilder.core.ShowTypingMiddleware.on_turn
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
+    typing.Awaitable])'
+  source:
+    id: on_turn
+    path: libraries/botbuilder-core\botbuilder\core\show_typing_middleware.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\show_typing_middleware.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 55
+  syntax:
+    content: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
+      typing.Awaitable])'
+  type: method
+  uid: botbuilder.core.ShowTypingMiddleware.on_turn
+references:
+- fullName: botbuilder.core.ShowTypingMiddleware.on_turn
+  isExternal: false
+  name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
+    typing.Awaitable])'
+  parent: botbuilder.core.ShowTypingMiddleware
+  uid: botbuilder.core.ShowTypingMiddleware.on_turn

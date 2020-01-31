@@ -1,0 +1,126 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.dialogs.dialog_turn_status.DialogTurnStatus.Cancelled
+  - botbuilder.dialogs.dialog_turn_status.DialogTurnStatus.Complete
+  - botbuilder.dialogs.dialog_turn_status.DialogTurnStatus.Empty
+  - botbuilder.dialogs.dialog_turn_status.DialogTurnStatus.Waiting
+  class: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus
+  fullName: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: enum.Enum
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_turn_status
+  name: DialogTurnStatus
+  source:
+    id: DialogTurnStatus
+    path: libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_turn_status.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_turn_status.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 6
+  summary: Codes indicating the state of the dialog stack after a call to *DialogContext.continueDialog()*
+  syntax:
+    variables:
+    - description: Indicates that there is currently nothing on the dialog stack.
+      id: Empty
+      type:
+      - int
+    - description: Indicates that the dialog on top is waiting for a response from
+        the user.
+      id: Waiting
+      type:
+      - int
+    - description: Indicates that the dialog completed successfully, the result is
+        available, and the stack is empty.
+      id: Complete
+      type:
+      - int
+    - description: Indicates that the dialog was cancelled and the stack is empty.
+      id: Cancelled
+      type:
+      - int
+  type: class
+  uid: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus
+- fullName: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus.Cancelled
+  id: Cancelled
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_turn_status
+  name: Cancelled
+  parent: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus
+  syntax:
+    content: Cancelled = 4
+    return:
+      type:
+      - botbuilder.dialogs.dialog_turn_status.DialogTurnStatus
+  type: attribute
+  uid: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus.Cancelled
+- fullName: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus.Complete
+  id: Complete
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_turn_status
+  name: Complete
+  parent: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus
+  syntax:
+    content: Complete = 3
+    return:
+      type:
+      - botbuilder.dialogs.dialog_turn_status.DialogTurnStatus
+  type: attribute
+  uid: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus.Complete
+- fullName: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus.Empty
+  id: Empty
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_turn_status
+  name: Empty
+  parent: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus
+  syntax:
+    content: Empty = 1
+    return:
+      type:
+      - botbuilder.dialogs.dialog_turn_status.DialogTurnStatus
+  type: attribute
+  uid: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus.Empty
+- fullName: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus.Waiting
+  id: Waiting
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_turn_status
+  name: Waiting
+  parent: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus
+  syntax:
+    content: Waiting = 2
+    return:
+      type:
+      - botbuilder.dialogs.dialog_turn_status.DialogTurnStatus
+  type: attribute
+  uid: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus.Waiting
+references:
+- fullName: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus.Cancelled
+  isExternal: false
+  name: Cancelled
+  parent: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus
+  uid: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus.Cancelled
+- fullName: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus.Complete
+  isExternal: false
+  name: Complete
+  parent: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus
+  uid: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus.Complete
+- fullName: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus.Empty
+  isExternal: false
+  name: Empty
+  parent: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus
+  uid: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus.Empty
+- fullName: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus.Waiting
+  isExternal: false
+  name: Waiting
+  parent: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus
+  uid: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus.Waiting

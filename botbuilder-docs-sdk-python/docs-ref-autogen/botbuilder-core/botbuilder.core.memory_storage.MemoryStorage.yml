@@ -1,0 +1,102 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.core.memory_storage.MemoryStorage.delete
+  - botbuilder.core.memory_storage.MemoryStorage.read
+  - botbuilder.core.memory_storage.MemoryStorage.write
+  class: botbuilder.core.memory_storage.MemoryStorage
+  fullName: botbuilder.core.memory_storage.MemoryStorage
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: abc.ABC
+    type: botbuilder.core.storage.Storage
+  langs:
+  - python
+  module: botbuilder.core.memory_storage
+  name: MemoryStorage
+  source:
+    id: MemoryStorage
+    path: libraries/botbuilder-core\botbuilder\core\memory_storage.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\memory_storage.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 9
+  summary: ''
+  syntax:
+    content: MemoryStorage(dictionary=None)
+  type: class
+  uid: botbuilder.core.memory_storage.MemoryStorage
+- class: botbuilder.core.memory_storage.MemoryStorage
+  fullName: botbuilder.core.memory_storage.MemoryStorage.delete
+  langs:
+  - python
+  module: botbuilder.core.memory_storage
+  name: 'delete(keys: typing.List[str])'
+  source:
+    id: delete
+    path: libraries/botbuilder-core\botbuilder\core\memory_storage.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\memory_storage.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 15
+  syntax:
+    content: 'delete(keys: typing.List[str])'
+  type: method
+  uid: botbuilder.core.memory_storage.MemoryStorage.delete
+- class: botbuilder.core.memory_storage.MemoryStorage
+  fullName: botbuilder.core.memory_storage.MemoryStorage.read
+  langs:
+  - python
+  module: botbuilder.core.memory_storage
+  name: 'read(keys: typing.List[str])'
+  source:
+    id: read
+    path: libraries/botbuilder-core\botbuilder\core\memory_storage.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\memory_storage.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 23
+  syntax:
+    content: 'read(keys: typing.List[str])'
+  type: method
+  uid: botbuilder.core.memory_storage.MemoryStorage.read
+- class: botbuilder.core.memory_storage.MemoryStorage
+  fullName: botbuilder.core.memory_storage.MemoryStorage.write
+  langs:
+  - python
+  module: botbuilder.core.memory_storage
+  name: 'write(changes: typing.Dict[str, botbuilder.core.storage.StoreItem])'
+  source:
+    id: write
+    path: libraries/botbuilder-core\botbuilder\core\memory_storage.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\memory_storage.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 36
+  syntax:
+    content: 'write(changes: typing.Dict[str, botbuilder.core.storage.StoreItem])'
+  type: method
+  uid: botbuilder.core.memory_storage.MemoryStorage.write
+references:
+- fullName: botbuilder.core.memory_storage.MemoryStorage.delete
+  isExternal: false
+  name: 'delete(keys: typing.List[str])'
+  parent: botbuilder.core.memory_storage.MemoryStorage
+  uid: botbuilder.core.memory_storage.MemoryStorage.delete
+- fullName: botbuilder.core.memory_storage.MemoryStorage.read
+  isExternal: false
+  name: 'read(keys: typing.List[str])'
+  parent: botbuilder.core.memory_storage.MemoryStorage
+  uid: botbuilder.core.memory_storage.MemoryStorage.read
+- fullName: botbuilder.core.memory_storage.MemoryStorage.write
+  isExternal: false
+  name: 'write(changes: typing.Dict[str, botbuilder.core.storage.StoreItem])'
+  parent: botbuilder.core.memory_storage.MemoryStorage
+  uid: botbuilder.core.memory_storage.MemoryStorage.write

@@ -1,0 +1,98 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.core.integration.aiohttp_channel_service.aiohttp_channel_service_routes
+  - botbuilder.core.integration.aiohttp_channel_service.deserialize_from_body
+  - botbuilder.core.integration.aiohttp_channel_service.get_serialized_response
+  fullName: botbuilder.core.integration.aiohttp_channel_service
+  langs:
+  - python
+  module: botbuilder.core.integration.aiohttp_channel_service
+  name: aiohttp_channel_service
+  source:
+    id: aiohttp_channel_service
+    path: libraries/botbuilder-core\botbuilder\core\integration\aiohttp_channel_service.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\integration\aiohttp_channel_service.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 0
+  type: module
+  uid: botbuilder.core.integration.aiohttp_channel_service
+- fullName: botbuilder.core.integration.aiohttp_channel_service.aiohttp_channel_service_routes
+  langs:
+  - python
+  module: botbuilder.core.integration.aiohttp_channel_service
+  name: 'aiohttp_channel_service_routes(handler: botbuilder.core.channel_service_handler.ChannelServiceHandler,
+    base_url: str = '''') -> aiohttp.web_routedef.RouteTableDef'
+  source:
+    id: aiohttp_channel_service_routes
+    path: libraries/botbuilder-core\botbuilder\core\integration\aiohttp_channel_service.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\integration\aiohttp_channel_service.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 39
+  syntax:
+    content: 'aiohttp_channel_service_routes(handler: botbuilder.core.channel_service_handler.ChannelServiceHandler,
+      base_url: str = '''') -> aiohttp.web_routedef.RouteTableDef'
+  type: function
+  uid: botbuilder.core.integration.aiohttp_channel_service.aiohttp_channel_service_routes
+- fullName: botbuilder.core.integration.aiohttp_channel_service.deserialize_from_body
+  langs:
+  - python
+  module: botbuilder.core.integration.aiohttp_channel_service
+  name: 'deserialize_from_body(request: aiohttp.web_request.Request, target_model:
+    typing.Type[msrest.serialization.Model]) -> botbuilder.schema._models_py3.Activity'
+  source:
+    id: deserialize_from_body
+    path: libraries/botbuilder-core\botbuilder\core\integration\aiohttp_channel_service.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\integration\aiohttp_channel_service.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 19
+  syntax:
+    content: 'deserialize_from_body(request: aiohttp.web_request.Request, target_model:
+      typing.Type[msrest.serialization.Model]) -> botbuilder.schema._models_py3.Activity'
+  type: function
+  uid: botbuilder.core.integration.aiohttp_channel_service.deserialize_from_body
+- fullName: botbuilder.core.integration.aiohttp_channel_service.get_serialized_response
+  langs:
+  - python
+  module: botbuilder.core.integration.aiohttp_channel_service
+  name: 'get_serialized_response(model_or_list: typing.Union[msrest.serialization.Model,
+    typing.List[msrest.serialization.Model]]) -> aiohttp.web_response.Response'
+  source:
+    id: get_serialized_response
+    path: libraries/botbuilder-core\botbuilder\core\integration\aiohttp_channel_service.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\integration\aiohttp_channel_service.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 30
+  syntax:
+    content: 'get_serialized_response(model_or_list: typing.Union[msrest.serialization.Model,
+      typing.List[msrest.serialization.Model]]) -> aiohttp.web_response.Response'
+  type: function
+  uid: botbuilder.core.integration.aiohttp_channel_service.get_serialized_response
+references:
+- fullName: botbuilder.core.integration.aiohttp_channel_service.aiohttp_channel_service_routes
+  isExternal: false
+  name: 'aiohttp_channel_service_routes(handler: botbuilder.core.channel_service_handler.ChannelServiceHandler,
+    base_url: str = '''') -> aiohttp.web_routedef.RouteTableDef'
+  parent: botbuilder.core.integration.aiohttp_channel_service
+  uid: botbuilder.core.integration.aiohttp_channel_service.aiohttp_channel_service_routes
+- fullName: botbuilder.core.integration.aiohttp_channel_service.deserialize_from_body
+  isExternal: false
+  name: 'deserialize_from_body(request: aiohttp.web_request.Request, target_model:
+    typing.Type[msrest.serialization.Model]) -> botbuilder.schema._models_py3.Activity'
+  parent: botbuilder.core.integration.aiohttp_channel_service
+  uid: botbuilder.core.integration.aiohttp_channel_service.deserialize_from_body
+- fullName: botbuilder.core.integration.aiohttp_channel_service.get_serialized_response
+  isExternal: false
+  name: 'get_serialized_response(model_or_list: typing.Union[msrest.serialization.Model,
+    typing.List[msrest.serialization.Model]]) -> aiohttp.web_response.Response'
+  parent: botbuilder.core.integration.aiohttp_channel_service
+  uid: botbuilder.core.integration.aiohttp_channel_service.get_serialized_response

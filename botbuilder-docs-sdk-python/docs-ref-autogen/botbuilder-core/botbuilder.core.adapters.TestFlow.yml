@@ -1,0 +1,138 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.core.adapters.TestFlow.assert_reply
+  - botbuilder.core.adapters.TestFlow.send
+  - botbuilder.core.adapters.TestFlow.test
+  class: botbuilder.core.adapters.TestFlow
+  fullName: botbuilder.core.adapters.TestFlow
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: TestFlow
+  source:
+    id: TestFlow
+    path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 337
+  summary: ''
+  syntax:
+    content: 'TestFlow(previous: typing.Callable, adapter: botbuilder.core.adapters.test_adapter.TestAdapter)'
+  type: class
+  uid: botbuilder.core.adapters.TestFlow
+- class: botbuilder.core.adapters.TestFlow
+  fullName: botbuilder.core.adapters.TestFlow.assert_reply
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: 'assert_reply(expected: typing.Union[str, botbuilder.schema._models_py3.Activity,
+    typing.Callable[[botbuilder.schema._models_py3.Activity, str], NoneType]], description=None,
+    timeout=None, is_substring=False) -> botbuilder.core.adapters.test_adapter.TestFlow'
+  source:
+    id: assert_reply
+    path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 380
+  summary: 'Generates an assertion if the bots response doesn''t match the expected
+    text/activity.
+
+    :param expected:
+
+    :param description:
+
+    :param timeout:
+
+    :param is_substring:
+
+    :return:'
+  syntax:
+    content: 'assert_reply(expected: typing.Union[str, botbuilder.schema._models_py3.Activity,
+      typing.Callable[[botbuilder.schema._models_py3.Activity, str], NoneType]], description=None,
+      timeout=None, is_substring=False) -> botbuilder.core.adapters.test_adapter.TestFlow'
+  type: method
+  uid: botbuilder.core.adapters.TestFlow.assert_reply
+- class: botbuilder.core.adapters.TestFlow
+  fullName: botbuilder.core.adapters.TestFlow.send
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: send(user_says) -> botbuilder.core.adapters.test_adapter.TestFlow
+  source:
+    id: send
+    path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 365
+  summary: 'Sends something to the bot.
+
+    :param user_says:
+
+    :return:'
+  syntax:
+    content: send(user_says) -> botbuilder.core.adapters.test_adapter.TestFlow
+  type: method
+  uid: botbuilder.core.adapters.TestFlow.send
+- class: botbuilder.core.adapters.TestFlow
+  fullName: botbuilder.core.adapters.TestFlow.test
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: test(user_says, expected, description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
+  source:
+    id: test
+    path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 347
+  summary: 'Send something to the bot and expects the bot to return with a given reply.
+    This is simply a
+
+    wrapper around calls to *send()* and *assertReply()*. This is such a common pattern
+    that a
+
+    helper is provided.
+
+    :param user_says:
+
+    :param expected:
+
+    :param description:
+
+    :param timeout:
+
+    :return:'
+  syntax:
+    content: test(user_says, expected, description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
+  type: method
+  uid: botbuilder.core.adapters.TestFlow.test
+references:
+- fullName: botbuilder.core.adapters.TestFlow.assert_reply
+  isExternal: false
+  name: 'assert_reply(expected: typing.Union[str, botbuilder.schema._models_py3.Activity,
+    typing.Callable[[botbuilder.schema._models_py3.Activity, str], NoneType]], description=None,
+    timeout=None, is_substring=False) -> botbuilder.core.adapters.test_adapter.TestFlow'
+  parent: botbuilder.core.adapters.TestFlow
+  uid: botbuilder.core.adapters.TestFlow.assert_reply
+- fullName: botbuilder.core.adapters.TestFlow.send
+  isExternal: false
+  name: send(user_says) -> botbuilder.core.adapters.test_adapter.TestFlow
+  parent: botbuilder.core.adapters.TestFlow
+  uid: botbuilder.core.adapters.TestFlow.send
+- fullName: botbuilder.core.adapters.TestFlow.test
+  isExternal: false
+  name: test(user_says, expected, description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
+  parent: botbuilder.core.adapters.TestFlow
+  uid: botbuilder.core.adapters.TestFlow.test

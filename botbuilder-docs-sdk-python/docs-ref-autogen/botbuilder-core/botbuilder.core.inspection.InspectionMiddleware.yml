@@ -1,0 +1,87 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.core.inspection.InspectionMiddleware.process_attach_command
+  - botbuilder.core.inspection.InspectionMiddleware.process_command
+  class: botbuilder.core.inspection.InspectionMiddleware
+  fullName: botbuilder.core.inspection.InspectionMiddleware
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - inheritance:
+        - type: builtins.object
+        type: abc.ABC
+      type: botbuilder.core.middleware_set.Middleware
+    type: botbuilder.core.inspection.interception_middleware.InterceptionMiddleware
+  langs:
+  - python
+  module: botbuilder.core.inspection
+  name: InspectionMiddleware
+  source:
+    id: InspectionMiddleware
+    path: libraries/botbuilder-core\botbuilder\core\inspection\inspection_middleware.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\inspection\inspection_middleware.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 22
+  summary: ''
+  syntax:
+    content: 'InspectionMiddleware(inspection_state: botbuilder.core.inspection.inspection_state.InspectionState,
+      user_state: botbuilder.core.user_state.UserState = None, conversation_state:
+      botbuilder.core.conversation_state.ConversationState = None, credentials: botframework.connector.auth.microsoft_app_credentials.MicrosoftAppCredentials
+      = None)'
+  type: class
+  uid: botbuilder.core.inspection.InspectionMiddleware
+- class: botbuilder.core.inspection.InspectionMiddleware
+  fullName: botbuilder.core.inspection.InspectionMiddleware.process_attach_command
+  langs:
+  - python
+  module: botbuilder.core.inspection
+  name: 'process_attach_command(context: botbuilder.core.turn_context.TurnContext,
+    session_id: str) -> None'
+  source:
+    id: process_attach_command
+    path: libraries/botbuilder-core\botbuilder\core\inspection\inspection_middleware.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\inspection\inspection_middleware.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 123
+  syntax:
+    content: 'process_attach_command(context: botbuilder.core.turn_context.TurnContext,
+      session_id: str) -> None'
+  type: method
+  uid: botbuilder.core.inspection.InspectionMiddleware.process_attach_command
+- class: botbuilder.core.inspection.InspectionMiddleware
+  fullName: botbuilder.core.inspection.InspectionMiddleware.process_command
+  langs:
+  - python
+  module: botbuilder.core.inspection
+  name: 'process_command(context: botbuilder.core.turn_context.TurnContext) -> typing.Any'
+  source:
+    id: process_command
+    path: libraries/botbuilder-core\botbuilder\core\inspection\inspection_middleware.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\inspection\inspection_middleware.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 44
+  syntax:
+    content: 'process_command(context: botbuilder.core.turn_context.TurnContext) ->
+      typing.Any'
+  type: method
+  uid: botbuilder.core.inspection.InspectionMiddleware.process_command
+references:
+- fullName: botbuilder.core.inspection.InspectionMiddleware.process_attach_command
+  isExternal: false
+  name: 'process_attach_command(context: botbuilder.core.turn_context.TurnContext,
+    session_id: str) -> None'
+  parent: botbuilder.core.inspection.InspectionMiddleware
+  uid: botbuilder.core.inspection.InspectionMiddleware.process_attach_command
+- fullName: botbuilder.core.inspection.InspectionMiddleware.process_command
+  isExternal: false
+  name: 'process_command(context: botbuilder.core.turn_context.TurnContext) -> typing.Any'
+  parent: botbuilder.core.inspection.InspectionMiddleware
+  uid: botbuilder.core.inspection.InspectionMiddleware.process_command

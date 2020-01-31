@@ -1,0 +1,512 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.core.adapters.TestAdapter.add_user_token
+  - botbuilder.core.adapters.TestAdapter.continue_conversation
+  - botbuilder.core.adapters.TestAdapter.delete_activity
+  - botbuilder.core.adapters.TestAdapter.get_aad_tokens
+  - botbuilder.core.adapters.TestAdapter.get_next_activity
+  - botbuilder.core.adapters.TestAdapter.get_oauth_sign_in_link
+  - botbuilder.core.adapters.TestAdapter.get_user_token
+  - botbuilder.core.adapters.TestAdapter.process_activity
+  - botbuilder.core.adapters.TestAdapter.receive_activity
+  - botbuilder.core.adapters.TestAdapter.send
+  - botbuilder.core.adapters.TestAdapter.send_activities
+  - botbuilder.core.adapters.TestAdapter.sign_out_user
+  - botbuilder.core.adapters.TestAdapter.test
+  - botbuilder.core.adapters.TestAdapter.tests
+  - botbuilder.core.adapters.TestAdapter.update_activity
+  class: botbuilder.core.adapters.TestAdapter
+  fullName: botbuilder.core.adapters.TestAdapter
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: abc.ABC
+    type: botbuilder.core.bot_adapter.BotAdapter
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: abc.ABC
+    type: botbuilder.core.user_token_provider.UserTokenProvider
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: TestAdapter
+  source:
+    id: TestAdapter
+    path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 57
+  summary: ''
+  syntax:
+    content: 'TestAdapter(logic: typing.Coroutine = None, template_or_conversation:
+      typing.Union[botbuilder.schema._models_py3.Activity, botbuilder.schema._models_py3.ConversationReference]
+      = None, send_trace_activities: bool = False)'
+  type: class
+  uid: botbuilder.core.adapters.TestAdapter
+- class: botbuilder.core.adapters.TestAdapter
+  fullName: botbuilder.core.adapters.TestAdapter.add_user_token
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: 'add_user_token(connection_name: str, channel_id: str, user_id: str, token:
+    str, magic_code: str = None)'
+  source:
+    id: add_user_token
+    path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 249
+  syntax:
+    content: 'add_user_token(connection_name: str, channel_id: str, user_id: str,
+      token: str, magic_code: str = None)'
+  type: method
+  uid: botbuilder.core.adapters.TestAdapter.add_user_token
+- class: botbuilder.core.adapters.TestAdapter
+  fullName: botbuilder.core.adapters.TestAdapter.continue_conversation
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
+    callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
+    = None)'
+  source:
+    id: continue_conversation
+    path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 160
+  summary: 'The *TestAdapter* just calls parent implementation.
+
+    :param reference:
+
+    :param callback:
+
+    :param bot_id:
+
+    :param claims_identity:
+
+    :return:'
+  syntax:
+    content: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
+      callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
+      = None)'
+  type: method
+  uid: botbuilder.core.adapters.TestAdapter.continue_conversation
+- class: botbuilder.core.adapters.TestAdapter
+  fullName: botbuilder.core.adapters.TestAdapter.delete_activity
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: 'delete_activity(context, reference: botbuilder.schema._models_py3.ConversationReference)'
+  source:
+    id: delete_activity
+    path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 140
+  summary: 'INTERNAL: called by the logic under test to delete an existing activity.
+    These are simply
+
+    pushed onto a [deletedActivities](#deletedactivities) array for inspection after
+    the turn
+
+    completes.
+
+    :param reference:
+
+    :return:'
+  syntax:
+    content: 'delete_activity(context, reference: botbuilder.schema._models_py3.ConversationReference)'
+  type: method
+  uid: botbuilder.core.adapters.TestAdapter.delete_activity
+- class: botbuilder.core.adapters.TestAdapter
+  fullName: botbuilder.core.adapters.TestAdapter.get_aad_tokens
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: 'get_aad_tokens(context: botbuilder.core.turn_context.TurnContext, connection_name:
+    str, resource_urls: typing.List[str]) -> typing.Dict[str, botbuilder.schema._models_py3.TokenResponse]'
+  source:
+    id: get_aad_tokens
+    path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 331
+  syntax:
+    content: 'get_aad_tokens(context: botbuilder.core.turn_context.TurnContext, connection_name:
+      str, resource_urls: typing.List[str]) -> typing.Dict[str, botbuilder.schema._models_py3.TokenResponse]'
+  type: method
+  uid: botbuilder.core.adapters.TestAdapter.get_aad_tokens
+- class: botbuilder.core.adapters.TestAdapter
+  fullName: botbuilder.core.adapters.TestAdapter.get_next_activity
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: get_next_activity() -> botbuilder.schema._models_py3.Activity
+  source:
+    id: get_next_activity
+    path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 204
+  syntax:
+    content: get_next_activity() -> botbuilder.schema._models_py3.Activity
+  type: method
+  uid: botbuilder.core.adapters.TestAdapter.get_next_activity
+- class: botbuilder.core.adapters.TestAdapter
+  fullName: botbuilder.core.adapters.TestAdapter.get_oauth_sign_in_link
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: 'get_oauth_sign_in_link(context: botbuilder.core.turn_context.TurnContext,
+    connection_name: str) -> str'
+  source:
+    id: get_oauth_sign_in_link
+    path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 323
+  syntax:
+    content: 'get_oauth_sign_in_link(context: botbuilder.core.turn_context.TurnContext,
+      connection_name: str) -> str'
+  type: method
+  uid: botbuilder.core.adapters.TestAdapter.get_oauth_sign_in_link
+- class: botbuilder.core.adapters.TestAdapter
+  fullName: botbuilder.core.adapters.TestAdapter.get_user_token
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, connection_name:
+    str, magic_code: str = None) -> botbuilder.schema._models_py3.TokenResponse'
+  source:
+    id: get_user_token
+    path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 271
+  syntax:
+    content: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, connection_name:
+      str, magic_code: str = None) -> botbuilder.schema._models_py3.TokenResponse'
+  type: method
+  uid: botbuilder.core.adapters.TestAdapter.get_user_token
+- class: botbuilder.core.adapters.TestAdapter
+  fullName: botbuilder.core.adapters.TestAdapter.process_activity
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: 'process_activity(activity: botbuilder.schema._models_py3.Activity, logic:
+    typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable])'
+  source:
+    id: process_activity
+    path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 95
+  syntax:
+    content: 'process_activity(activity: botbuilder.schema._models_py3.Activity, logic:
+      typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable])'
+  type: method
+  uid: botbuilder.core.adapters.TestAdapter.process_activity
+- class: botbuilder.core.adapters.TestAdapter
+  fullName: botbuilder.core.adapters.TestAdapter.receive_activity
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: receive_activity(activity)
+  source:
+    id: receive_activity
+    path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 179
+  summary: 'INTERNAL: called by a *TestFlow* instance to simulate a user sending a
+    message to the bot.
+
+    This will cause the adapters middleware pipe to be run and it''s logic to be called.
+
+    :param activity:
+
+    :return:'
+  syntax:
+    content: receive_activity(activity)
+    parameters:
+    - id: activity
+  type: method
+  uid: botbuilder.core.adapters.TestAdapter.receive_activity
+- class: botbuilder.core.adapters.TestAdapter
+  fullName: botbuilder.core.adapters.TestAdapter.send
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: send(user_says) -> object
+  source:
+    id: send
+    path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 207
+  summary: 'Sends something to the bot. This returns a new *TestFlow* instance which
+    can be used to add
+
+    additional steps for inspecting the bots reply and then sending additional activities.
+
+    :param user_says:
+
+    :return: A new instance of the TestFlow object'
+  syntax:
+    content: send(user_says) -> object
+  type: method
+  uid: botbuilder.core.adapters.TestAdapter.send
+- class: botbuilder.core.adapters.TestAdapter
+  fullName: botbuilder.core.adapters.TestAdapter.send_activities
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: 'send_activities(context, activities: typing.List[botbuilder.schema._models_py3.Activity])
+    -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
+  source:
+    id: send_activities
+    path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 118
+  summary: 'INTERNAL: called by the logic under test to send a set of activities.
+    These will be buffered
+
+    to the current *TestFlow* instance for comparison against the expected results.
+
+    :param context:
+
+    :param activities:
+
+    :return:'
+  syntax:
+    content: 'send_activities(context, activities: typing.List[botbuilder.schema._models_py3.Activity])
+      -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
+  type: method
+  uid: botbuilder.core.adapters.TestAdapter.send_activities
+- class: botbuilder.core.adapters.TestAdapter
+  fullName: botbuilder.core.adapters.TestAdapter.sign_out_user
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
+    str, user_id: str = None)'
+  source:
+    id: sign_out_user
+    path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 307
+  syntax:
+    content: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
+      str, user_id: str = None)'
+  type: method
+  uid: botbuilder.core.adapters.TestAdapter.sign_out_user
+- class: botbuilder.core.adapters.TestAdapter
+  fullName: botbuilder.core.adapters.TestAdapter.test
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: test(user_says, expected, description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
+  source:
+    id: test
+    path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 216
+  summary: 'Send something to the bot and expects the bot to return with a given reply.
+    This is simply a
+
+    wrapper around calls to *send()* and *assertReply()*. This is such a common pattern
+    that a
+
+    helper is provided.
+
+    :param user_says:
+
+    :param expected:
+
+    :param description:
+
+    :param timeout:
+
+    :return:'
+  syntax:
+    content: test(user_says, expected, description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
+  type: method
+  uid: botbuilder.core.adapters.TestAdapter.test
+- class: botbuilder.core.adapters.TestAdapter
+  fullName: botbuilder.core.adapters.TestAdapter.tests
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: tests(*args)
+  source:
+    id: tests
+    path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 233
+  summary: 'Support multiple test cases without having to manually call *test()* repeatedly.
+    This is a
+
+    convenience layer around the *test()*. Valid args are either lists or tuples of
+    parameters
+
+    :param args:
+
+    :return:'
+  syntax:
+    content: tests(*args)
+    parameters: []
+  type: method
+  uid: botbuilder.core.adapters.TestAdapter.tests
+- class: botbuilder.core.adapters.TestAdapter
+  fullName: botbuilder.core.adapters.TestAdapter.update_activity
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: 'update_activity(context, activity: botbuilder.schema._models_py3.Activity)'
+  source:
+    id: update_activity
+    path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 150
+  summary: 'INTERNAL: called by the logic under test to replace an existing activity.
+    These are simply
+
+    pushed onto an [updatedActivities](#updatedactivities) array for inspection after
+    the turn
+
+    completes.
+
+    :param activity:
+
+    :return:'
+  syntax:
+    content: 'update_activity(context, activity: botbuilder.schema._models_py3.Activity)'
+  type: method
+  uid: botbuilder.core.adapters.TestAdapter.update_activity
+references:
+- fullName: botbuilder.core.adapters.TestAdapter.add_user_token
+  isExternal: false
+  name: 'add_user_token(connection_name: str, channel_id: str, user_id: str, token:
+    str, magic_code: str = None)'
+  parent: botbuilder.core.adapters.TestAdapter
+  uid: botbuilder.core.adapters.TestAdapter.add_user_token
+- fullName: botbuilder.core.adapters.TestAdapter.continue_conversation
+  isExternal: false
+  name: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
+    callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
+    = None)'
+  parent: botbuilder.core.adapters.TestAdapter
+  uid: botbuilder.core.adapters.TestAdapter.continue_conversation
+- fullName: botbuilder.core.adapters.TestAdapter.delete_activity
+  isExternal: false
+  name: 'delete_activity(context, reference: botbuilder.schema._models_py3.ConversationReference)'
+  parent: botbuilder.core.adapters.TestAdapter
+  uid: botbuilder.core.adapters.TestAdapter.delete_activity
+- fullName: botbuilder.core.adapters.TestAdapter.get_aad_tokens
+  isExternal: false
+  name: 'get_aad_tokens(context: botbuilder.core.turn_context.TurnContext, connection_name:
+    str, resource_urls: typing.List[str]) -> typing.Dict[str, botbuilder.schema._models_py3.TokenResponse]'
+  parent: botbuilder.core.adapters.TestAdapter
+  uid: botbuilder.core.adapters.TestAdapter.get_aad_tokens
+- fullName: botbuilder.core.adapters.TestAdapter.get_next_activity
+  isExternal: false
+  name: get_next_activity() -> botbuilder.schema._models_py3.Activity
+  parent: botbuilder.core.adapters.TestAdapter
+  uid: botbuilder.core.adapters.TestAdapter.get_next_activity
+- fullName: botbuilder.core.adapters.TestAdapter.get_oauth_sign_in_link
+  isExternal: false
+  name: 'get_oauth_sign_in_link(context: botbuilder.core.turn_context.TurnContext,
+    connection_name: str) -> str'
+  parent: botbuilder.core.adapters.TestAdapter
+  uid: botbuilder.core.adapters.TestAdapter.get_oauth_sign_in_link
+- fullName: botbuilder.core.adapters.TestAdapter.get_user_token
+  isExternal: false
+  name: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, connection_name:
+    str, magic_code: str = None) -> botbuilder.schema._models_py3.TokenResponse'
+  parent: botbuilder.core.adapters.TestAdapter
+  uid: botbuilder.core.adapters.TestAdapter.get_user_token
+- fullName: botbuilder.core.adapters.TestAdapter.process_activity
+  isExternal: false
+  name: 'process_activity(activity: botbuilder.schema._models_py3.Activity, logic:
+    typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable])'
+  parent: botbuilder.core.adapters.TestAdapter
+  uid: botbuilder.core.adapters.TestAdapter.process_activity
+- fullName: botbuilder.core.adapters.TestAdapter.receive_activity
+  isExternal: false
+  name: receive_activity(activity)
+  parent: botbuilder.core.adapters.TestAdapter
+  uid: botbuilder.core.adapters.TestAdapter.receive_activity
+- fullName: botbuilder.core.adapters.TestAdapter.send
+  isExternal: false
+  name: send(user_says) -> object
+  parent: botbuilder.core.adapters.TestAdapter
+  uid: botbuilder.core.adapters.TestAdapter.send
+- fullName: botbuilder.core.adapters.TestAdapter.send_activities
+  isExternal: false
+  name: 'send_activities(context, activities: typing.List[botbuilder.schema._models_py3.Activity])
+    -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
+  parent: botbuilder.core.adapters.TestAdapter
+  uid: botbuilder.core.adapters.TestAdapter.send_activities
+- fullName: botbuilder.core.adapters.TestAdapter.sign_out_user
+  isExternal: false
+  name: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
+    str, user_id: str = None)'
+  parent: botbuilder.core.adapters.TestAdapter
+  uid: botbuilder.core.adapters.TestAdapter.sign_out_user
+- fullName: botbuilder.core.adapters.TestAdapter.test
+  isExternal: false
+  name: test(user_says, expected, description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
+  parent: botbuilder.core.adapters.TestAdapter
+  uid: botbuilder.core.adapters.TestAdapter.test
+- fullName: botbuilder.core.adapters.TestAdapter.tests
+  isExternal: false
+  name: tests(*args)
+  parent: botbuilder.core.adapters.TestAdapter
+  uid: botbuilder.core.adapters.TestAdapter.tests
+- fullName: botbuilder.core.adapters.TestAdapter.update_activity
+  isExternal: false
+  name: 'update_activity(context, activity: botbuilder.schema._models_py3.Activity)'
+  parent: botbuilder.core.adapters.TestAdapter
+  uid: botbuilder.core.adapters.TestAdapter.update_activity

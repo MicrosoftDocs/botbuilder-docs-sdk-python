@@ -1,0 +1,117 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt.on_prompt
+  - botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt.on_recognize
+  - botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt.read_resolution
+  class: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt
+  fullName: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - inheritance:
+        - type: builtins.object
+        type: abc.ABC
+      type: botbuilder.dialogs.dialog.Dialog
+    type: botbuilder.dialogs.prompts.prompt.Prompt
+  langs:
+  - python
+  module: botbuilder.dialogs.prompts.datetime_prompt
+  name: DateTimePrompt
+  source:
+    id: DateTimePrompt
+    path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\datetime_prompt.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\datetime_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 14
+  summary: ''
+  syntax:
+    content: 'DateTimePrompt(dialog_id: str, validator: object = None, default_locale:
+      str = None)'
+  type: class
+  uid: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt
+- class: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt
+  fullName: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt.on_prompt
+  langs:
+  - python
+  module: botbuilder.dialogs.prompts.datetime_prompt
+  name: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
+    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
+    is_retry: bool)'
+  source:
+    id: on_prompt
+    path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\datetime_prompt.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\datetime_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 21
+  syntax:
+    content: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
+      typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
+      is_retry: bool)'
+  type: method
+  uid: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt.on_prompt
+- class: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt
+  fullName: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt.on_recognize
+  langs:
+  - python
+  module: botbuilder.dialogs.prompts.datetime_prompt
+  name: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext, state:
+    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
+    -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
+  source:
+    id: on_recognize
+    path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\datetime_prompt.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\datetime_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 39
+  syntax:
+    content: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
+      state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
+      -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
+  type: method
+  uid: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt.on_recognize
+- class: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt
+  fullName: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt.read_resolution
+  langs:
+  - python
+  module: botbuilder.dialogs.prompts.datetime_prompt
+  name: 'read_resolution(resolution: typing.Dict[str, str]) -> botbuilder.dialogs.prompts.datetime_resolution.DateTimeResolution'
+  source:
+    id: read_resolution
+    path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\datetime_prompt.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\datetime_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 67
+  syntax:
+    content: 'read_resolution(resolution: typing.Dict[str, str]) -> botbuilder.dialogs.prompts.datetime_resolution.DateTimeResolution'
+  type: method
+  uid: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt.read_resolution
+references:
+- fullName: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt.on_prompt
+  isExternal: false
+  name: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
+    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
+    is_retry: bool)'
+  parent: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt
+  uid: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt.on_prompt
+- fullName: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt.on_recognize
+  isExternal: false
+  name: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext, state:
+    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
+    -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
+  parent: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt
+  uid: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt.on_recognize
+- fullName: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt.read_resolution
+  isExternal: false
+  name: 'read_resolution(resolution: typing.Dict[str, str]) -> botbuilder.dialogs.prompts.datetime_resolution.DateTimeResolution'
+  parent: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt
+  uid: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt.read_resolution

@@ -1,0 +1,322 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.core.CardFactory.adaptive_card
+  - botbuilder.core.CardFactory.animation_card
+  - botbuilder.core.CardFactory.audio_card
+  - botbuilder.core.CardFactory.hero_card
+  - botbuilder.core.CardFactory.oauth_card
+  - botbuilder.core.CardFactory.receipt_card
+  - botbuilder.core.CardFactory.signin_card
+  - botbuilder.core.CardFactory.thumbnail_card
+  - botbuilder.core.CardFactory.video_card
+  class: botbuilder.core.CardFactory
+  fullName: botbuilder.core.CardFactory
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: botbuilder.core
+  name: CardFactory
+  source:
+    id: CardFactory
+    path: libraries/botbuilder-core\botbuilder\core\card_factory.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\card_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 29
+  summary: ''
+  syntax: {}
+  type: class
+  uid: botbuilder.core.CardFactory
+- class: botbuilder.core.CardFactory
+  fullName: botbuilder.core.CardFactory.adaptive_card
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'adaptive_card(card: dict) -> botbuilder.schema._models_py3.Attachment'
+  source:
+    id: adaptive_card
+    path: libraries/botbuilder-core\botbuilder\core\card_factory.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\card_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 32
+  summary: 'Returns an attachment for an adaptive card. The attachment will contain
+    the card and the
+
+    appropriate ''contentType''. Will raise a TypeError if the ''card'' argument is
+    not an
+
+    dict.
+
+    :param card:
+
+    :return:'
+  syntax:
+    content: 'adaptive_card(card: dict) -> botbuilder.schema._models_py3.Attachment'
+  type: method
+  uid: botbuilder.core.CardFactory.adaptive_card
+- class: botbuilder.core.CardFactory
+  fullName: botbuilder.core.CardFactory.animation_card
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'animation_card(card: botbuilder.schema._models_py3.AnimationCard) -> botbuilder.schema._models_py3.Attachment'
+  source:
+    id: animation_card
+    path: libraries/botbuilder-core\botbuilder\core\card_factory.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\card_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 51
+  summary: 'Returns an attachment for an animation card. Will raise a TypeError if
+    the ''card'' argument is not an
+
+    AnimationCard.
+
+    :param card:
+
+    :return:'
+  syntax:
+    content: 'animation_card(card: botbuilder.schema._models_py3.AnimationCard) ->
+      botbuilder.schema._models_py3.Attachment'
+  type: method
+  uid: botbuilder.core.CardFactory.animation_card
+- class: botbuilder.core.CardFactory
+  fullName: botbuilder.core.CardFactory.audio_card
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'audio_card(card: botbuilder.schema._models_py3.AudioCard) -> botbuilder.schema._models_py3.Attachment'
+  source:
+    id: audio_card
+    path: libraries/botbuilder-core\botbuilder\core\card_factory.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\card_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 69
+  summary: 'Returns an attachment for an audio card. Will raise a TypeError if ''card''
+    argument is not an AudioCard.
+
+    :param card:
+
+    :return:'
+  syntax:
+    content: 'audio_card(card: botbuilder.schema._models_py3.AudioCard) -> botbuilder.schema._models_py3.Attachment'
+  type: method
+  uid: botbuilder.core.CardFactory.audio_card
+- class: botbuilder.core.CardFactory
+  fullName: botbuilder.core.CardFactory.hero_card
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'hero_card(card: botbuilder.schema._models_py3.HeroCard) -> botbuilder.schema._models_py3.Attachment'
+  source:
+    id: hero_card
+    path: libraries/botbuilder-core\botbuilder\core\card_factory.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\card_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 86
+  summary: 'Returns an attachment for a hero card. Will raise a TypeError if ''card''
+    argument is not a HeroCard.
+
+
+    Hero cards tend to have one dominant full width image and the cards text & buttons
+    can
+
+    usually be found below the image.
+
+    :return:'
+  syntax:
+    content: 'hero_card(card: botbuilder.schema._models_py3.HeroCard) -> botbuilder.schema._models_py3.Attachment'
+  type: method
+  uid: botbuilder.core.CardFactory.hero_card
+- class: botbuilder.core.CardFactory
+  fullName: botbuilder.core.CardFactory.oauth_card
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'oauth_card(card: botbuilder.schema._models_py3.OAuthCard) -> botbuilder.schema._models_py3.Attachment'
+  source:
+    id: oauth_card
+    path: libraries/botbuilder-core\botbuilder\core\card_factory.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\card_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 105
+  summary: 'Returns an attachment for an OAuth card used by the Bot Frameworks Single
+    Sign On (SSO) service. Will raise a
+
+    TypeError if ''card'' argument is not a OAuthCard.
+
+    :param card:
+
+    :return:'
+  syntax:
+    content: 'oauth_card(card: botbuilder.schema._models_py3.OAuthCard) -> botbuilder.schema._models_py3.Attachment'
+  type: method
+  uid: botbuilder.core.CardFactory.oauth_card
+- class: botbuilder.core.CardFactory
+  fullName: botbuilder.core.CardFactory.receipt_card
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'receipt_card(card: botbuilder.schema._models_py3.ReceiptCard) -> botbuilder.schema._models_py3.Attachment'
+  source:
+    id: receipt_card
+    path: libraries/botbuilder-core\botbuilder\core\card_factory.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\card_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 123
+  summary: 'Returns an attachment for a receipt card. Will raise a TypeError if ''card''
+    argument is not a ReceiptCard.
+
+    :param card:
+
+    :return:'
+  syntax:
+    content: 'receipt_card(card: botbuilder.schema._models_py3.ReceiptCard) -> botbuilder.schema._models_py3.Attachment'
+  type: method
+  uid: botbuilder.core.CardFactory.receipt_card
+- class: botbuilder.core.CardFactory
+  fullName: botbuilder.core.CardFactory.signin_card
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'signin_card(card: botbuilder.schema._models_py3.SigninCard) -> botbuilder.schema._models_py3.Attachment'
+  source:
+    id: signin_card
+    path: libraries/botbuilder-core\botbuilder\core\card_factory.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\card_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 140
+  summary: 'Returns an attachment for a signin card. For channels that don''t natively
+    support signin cards an alternative
+
+    message will be rendered. Will raise a TypeError if ''card'' argument is not a
+    SigninCard.
+
+    :param card:
+
+    :return:'
+  syntax:
+    content: 'signin_card(card: botbuilder.schema._models_py3.SigninCard) -> botbuilder.schema._models_py3.Attachment'
+  type: method
+  uid: botbuilder.core.CardFactory.signin_card
+- class: botbuilder.core.CardFactory
+  fullName: botbuilder.core.CardFactory.thumbnail_card
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'thumbnail_card(card: botbuilder.schema._models_py3.ThumbnailCard) -> botbuilder.schema._models_py3.Attachment'
+  source:
+    id: thumbnail_card
+    path: libraries/botbuilder-core\botbuilder\core\card_factory.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\card_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 158
+  summary: 'Returns an attachment for a thumbnail card. Thumbnail cards are similar
+    to
+
+    but instead of a full width image, they''re typically rendered with a smaller
+    thumbnail version of
+
+    the image on either side and the text will be rendered in column next to the image.
+    Any buttons
+
+    will typically show up under the card. Will raise a TypeError if ''card'' argument
+    is not a ThumbnailCard.
+
+    :param card:
+
+    :return:'
+  syntax:
+    content: 'thumbnail_card(card: botbuilder.schema._models_py3.ThumbnailCard) ->
+      botbuilder.schema._models_py3.Attachment'
+  type: method
+  uid: botbuilder.core.CardFactory.thumbnail_card
+- class: botbuilder.core.CardFactory
+  fullName: botbuilder.core.CardFactory.video_card
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'video_card(card: botbuilder.schema._models_py3.VideoCard) -> botbuilder.schema._models_py3.Attachment'
+  source:
+    id: video_card
+    path: libraries/botbuilder-core\botbuilder\core\card_factory.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\card_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 178
+  summary: 'Returns an attachment for a video card. Will raise a TypeError if ''card''
+    argument is not a VideoCard.
+
+    :param card:
+
+    :return:'
+  syntax:
+    content: 'video_card(card: botbuilder.schema._models_py3.VideoCard) -> botbuilder.schema._models_py3.Attachment'
+  type: method
+  uid: botbuilder.core.CardFactory.video_card
+references:
+- fullName: botbuilder.core.CardFactory.adaptive_card
+  isExternal: false
+  name: 'adaptive_card(card: dict) -> botbuilder.schema._models_py3.Attachment'
+  parent: botbuilder.core.CardFactory
+  uid: botbuilder.core.CardFactory.adaptive_card
+- fullName: botbuilder.core.CardFactory.animation_card
+  isExternal: false
+  name: 'animation_card(card: botbuilder.schema._models_py3.AnimationCard) -> botbuilder.schema._models_py3.Attachment'
+  parent: botbuilder.core.CardFactory
+  uid: botbuilder.core.CardFactory.animation_card
+- fullName: botbuilder.core.CardFactory.audio_card
+  isExternal: false
+  name: 'audio_card(card: botbuilder.schema._models_py3.AudioCard) -> botbuilder.schema._models_py3.Attachment'
+  parent: botbuilder.core.CardFactory
+  uid: botbuilder.core.CardFactory.audio_card
+- fullName: botbuilder.core.CardFactory.hero_card
+  isExternal: false
+  name: 'hero_card(card: botbuilder.schema._models_py3.HeroCard) -> botbuilder.schema._models_py3.Attachment'
+  parent: botbuilder.core.CardFactory
+  uid: botbuilder.core.CardFactory.hero_card
+- fullName: botbuilder.core.CardFactory.oauth_card
+  isExternal: false
+  name: 'oauth_card(card: botbuilder.schema._models_py3.OAuthCard) -> botbuilder.schema._models_py3.Attachment'
+  parent: botbuilder.core.CardFactory
+  uid: botbuilder.core.CardFactory.oauth_card
+- fullName: botbuilder.core.CardFactory.receipt_card
+  isExternal: false
+  name: 'receipt_card(card: botbuilder.schema._models_py3.ReceiptCard) -> botbuilder.schema._models_py3.Attachment'
+  parent: botbuilder.core.CardFactory
+  uid: botbuilder.core.CardFactory.receipt_card
+- fullName: botbuilder.core.CardFactory.signin_card
+  isExternal: false
+  name: 'signin_card(card: botbuilder.schema._models_py3.SigninCard) -> botbuilder.schema._models_py3.Attachment'
+  parent: botbuilder.core.CardFactory
+  uid: botbuilder.core.CardFactory.signin_card
+- fullName: botbuilder.core.CardFactory.thumbnail_card
+  isExternal: false
+  name: 'thumbnail_card(card: botbuilder.schema._models_py3.ThumbnailCard) -> botbuilder.schema._models_py3.Attachment'
+  parent: botbuilder.core.CardFactory
+  uid: botbuilder.core.CardFactory.thumbnail_card
+- fullName: botbuilder.core.CardFactory.video_card
+  isExternal: false
+  name: 'video_card(card: botbuilder.schema._models_py3.VideoCard) -> botbuilder.schema._models_py3.Attachment'
+  parent: botbuilder.core.CardFactory
+  uid: botbuilder.core.CardFactory.video_card

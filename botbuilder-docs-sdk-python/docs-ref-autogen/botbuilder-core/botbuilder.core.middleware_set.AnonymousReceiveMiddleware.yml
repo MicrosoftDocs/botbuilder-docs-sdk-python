@@ -1,0 +1,56 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.core.middleware_set.AnonymousReceiveMiddleware.on_turn
+  class: botbuilder.core.middleware_set.AnonymousReceiveMiddleware
+  fullName: botbuilder.core.middleware_set.AnonymousReceiveMiddleware
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: abc.ABC
+    type: botbuilder.core.middleware_set.Middleware
+  langs:
+  - python
+  module: botbuilder.core.middleware_set
+  name: AnonymousReceiveMiddleware
+  source:
+    id: AnonymousReceiveMiddleware
+    path: libraries/botbuilder-core\botbuilder\core\middleware_set.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\middleware_set.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 19
+  syntax:
+    content: AnonymousReceiveMiddleware(anonymous_handler)
+  type: class
+  uid: botbuilder.core.middleware_set.AnonymousReceiveMiddleware
+- class: botbuilder.core.middleware_set.AnonymousReceiveMiddleware
+  fullName: botbuilder.core.middleware_set.AnonymousReceiveMiddleware.on_turn
+  langs:
+  - python
+  module: botbuilder.core.middleware_set
+  name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
+    typing.Awaitable])'
+  source:
+    id: on_turn
+    path: libraries/botbuilder-core\botbuilder\core\middleware_set.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\middleware_set.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 27
+  syntax:
+    content: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
+      typing.Awaitable])'
+  type: method
+  uid: botbuilder.core.middleware_set.AnonymousReceiveMiddleware.on_turn
+references:
+- fullName: botbuilder.core.middleware_set.AnonymousReceiveMiddleware.on_turn
+  isExternal: false
+  name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
+    typing.Awaitable])'
+  parent: botbuilder.core.middleware_set.AnonymousReceiveMiddleware
+  uid: botbuilder.core.middleware_set.AnonymousReceiveMiddleware.on_turn

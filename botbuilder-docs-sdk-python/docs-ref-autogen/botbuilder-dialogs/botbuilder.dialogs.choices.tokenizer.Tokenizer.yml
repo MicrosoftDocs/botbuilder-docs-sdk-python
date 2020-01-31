@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.dialogs.choices.tokenizer.Tokenizer.default_tokenizer
+  class: botbuilder.dialogs.choices.tokenizer.Tokenizer
+  fullName: botbuilder.dialogs.choices.tokenizer.Tokenizer
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: botbuilder.dialogs.choices.tokenizer
+  name: Tokenizer
+  source:
+    id: Tokenizer
+    path: libraries/botbuilder-dialogs\botbuilder\dialogs\choices\tokenizer.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-dialogs\botbuilder\dialogs\choices\tokenizer.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 9
+  summary: Provides a default tokenizer implementation.
+  syntax: {}
+  type: class
+  uid: botbuilder.dialogs.choices.tokenizer.Tokenizer
+- class: botbuilder.dialogs.choices.tokenizer.Tokenizer
+  fullName: botbuilder.dialogs.choices.tokenizer.Tokenizer.default_tokenizer
+  langs:
+  - python
+  module: botbuilder.dialogs.choices.tokenizer
+  name: 'default_tokenizer(text: str, locale: str = None) -> [<class ''botbuilder.dialogs.choices.token.Token''>]'
+  source:
+    id: default_tokenizer
+    path: libraries/botbuilder-dialogs\botbuilder\dialogs\choices\tokenizer.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-dialogs\botbuilder\dialogs\choices\tokenizer.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 12
+  summary: 'Simple tokenizer that breaks on spaces and punctuation. The only normalization
+    is to lowercase.
+
+
+
+
+    text: The input text.
+
+
+    locale: (Optional) Identifies the locale of the input text.'
+  syntax:
+    content: 'default_tokenizer(text: str, locale: str = None) -> [<class ''botbuilder.dialogs.choices.token.Token''>]'
+  type: method
+  uid: botbuilder.dialogs.choices.tokenizer.Tokenizer.default_tokenizer
+references:
+- fullName: botbuilder.dialogs.choices.tokenizer.Tokenizer.default_tokenizer
+  isExternal: false
+  name: 'default_tokenizer(text: str, locale: str = None) -> [<class ''botbuilder.dialogs.choices.token.Token''>]'
+  parent: botbuilder.dialogs.choices.tokenizer.Tokenizer
+  uid: botbuilder.dialogs.choices.tokenizer.Tokenizer.default_tokenizer

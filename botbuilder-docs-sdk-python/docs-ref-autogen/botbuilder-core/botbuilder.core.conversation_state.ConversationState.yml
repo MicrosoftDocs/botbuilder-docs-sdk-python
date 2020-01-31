@@ -1,0 +1,98 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.core.conversation_state.ConversationState.get_storage_key
+  - botbuilder.core.conversation_state.ConversationState.no_key_error_message
+  class: botbuilder.core.conversation_state.ConversationState
+  fullName: botbuilder.core.conversation_state.ConversationState
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: botbuilder.core.property_manager.PropertyManager
+    type: botbuilder.core.bot_state.BotState
+  langs:
+  - python
+  module: botbuilder.core.conversation_state
+  name: ConversationState
+  remarks: 'Conversation state is available in any turn in a specific conversation,
+    regardless of the user, such as
+
+    in a group conversation.
+
+    '
+  source:
+    id: ConversationState
+    path: libraries/botbuilder-core\botbuilder\core\conversation_state.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\conversation_state.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 9
+  summary: 'Defines a state management object for conversation state.
+
+    Extends <xref:botbuilder.core.conversation_state.BootState> base class.'
+  syntax:
+    content: 'ConversationState(storage: botbuilder.core.storage.Storage)'
+  type: class
+  uid: botbuilder.core.conversation_state.ConversationState
+- class: botbuilder.core.conversation_state.ConversationState
+  fullName: botbuilder.core.conversation_state.ConversationState.get_storage_key
+  langs:
+  - python
+  module: botbuilder.core.conversation_state
+  name: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext) ->
+    object'
+  remarks: 'Conversation state includes the channel ID and conversation ID as part
+    of its storage key.
+
+    '
+  source:
+    id: get_storage_key
+    path: libraries/botbuilder-core\botbuilder\core\conversation_state.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\conversation_state.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 31
+  summary: 'Gets the key to use when reading and writing state to and from storage.
+
+
+
+    <xref:botbuilder.schema.Activity> channelId or conversation information or the
+    conversation''s
+
+    account id is missing.'
+  syntax:
+    content: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext)
+      -> object'
+    return:
+      description: The storage key.
+      type:
+      - str
+  type: method
+  uid: botbuilder.core.conversation_state.ConversationState.get_storage_key
+- class: botbuilder.core.conversation_state.ConversationState
+  fullName: botbuilder.core.conversation_state.ConversationState.no_key_error_message
+  langs:
+  - python
+  module: botbuilder.core.conversation_state
+  name: no_key_error_message
+  syntax:
+    content: 'no_key_error_message = ''ConversationState: channelId and/or conversation
+      missing from context.activity.'''
+  type: attribute
+  uid: botbuilder.core.conversation_state.ConversationState.no_key_error_message
+references:
+- fullName: botbuilder.core.conversation_state.ConversationState.get_storage_key
+  isExternal: false
+  name: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext) ->
+    object'
+  parent: botbuilder.core.conversation_state.ConversationState
+  uid: botbuilder.core.conversation_state.ConversationState.get_storage_key
+- fullName: botbuilder.core.conversation_state.ConversationState.no_key_error_message
+  isExternal: false
+  name: no_key_error_message
+  parent: botbuilder.core.conversation_state.ConversationState
+  uid: botbuilder.core.conversation_state.ConversationState.no_key_error_message

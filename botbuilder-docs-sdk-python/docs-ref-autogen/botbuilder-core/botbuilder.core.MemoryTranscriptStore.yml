@@ -1,0 +1,144 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.core.MemoryTranscriptStore.delete_transcript
+  - botbuilder.core.MemoryTranscriptStore.get_transcript_activities
+  - botbuilder.core.MemoryTranscriptStore.list_transcripts
+  - botbuilder.core.MemoryTranscriptStore.log_activity
+  - botbuilder.core.MemoryTranscriptStore.channels
+  class: botbuilder.core.MemoryTranscriptStore
+  fullName: botbuilder.core.MemoryTranscriptStore
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - inheritance:
+        - type: builtins.object
+        type: abc.ABC
+      type: botbuilder.core.transcript_logger.TranscriptLogger
+    type: botbuilder.core.transcript_logger.TranscriptStore
+  langs:
+  - python
+  module: botbuilder.core
+  name: MemoryTranscriptStore
+  source:
+    id: MemoryTranscriptStore
+    path: libraries/botbuilder-core\botbuilder\core\memory_transcript_store.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\memory_transcript_store.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 10
+  summary: 'This provider is most useful for simulating production storage when running
+    locally against the
+
+    emulator or as part of a unit test.'
+  syntax: {}
+  type: class
+  uid: botbuilder.core.MemoryTranscriptStore
+- class: botbuilder.core.MemoryTranscriptStore
+  fullName: botbuilder.core.MemoryTranscriptStore.delete_transcript
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'delete_transcript(channel_id: str, conversation_id: str) -> None'
+  source:
+    id: delete_transcript
+    path: libraries/botbuilder-core\botbuilder\core\memory_transcript_store.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\memory_transcript_store.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 84
+  syntax:
+    content: 'delete_transcript(channel_id: str, conversation_id: str) -> None'
+  type: method
+  uid: botbuilder.core.MemoryTranscriptStore.delete_transcript
+- class: botbuilder.core.MemoryTranscriptStore
+  fullName: botbuilder.core.MemoryTranscriptStore.get_transcript_activities
+  langs:
+  - python
+  module: botbuilder.core
+  name: get_transcript_activities
+  source:
+    id: get_transcript_activities
+    path: libraries/botbuilder-core\botbuilder\core\memory_transcript_store.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\memory_transcript_store.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 39
+  syntax: {}
+  type: method
+  uid: botbuilder.core.MemoryTranscriptStore.get_transcript_activities
+- class: botbuilder.core.MemoryTranscriptStore
+  fullName: botbuilder.core.MemoryTranscriptStore.list_transcripts
+  langs:
+  - python
+  module: botbuilder.core
+  name: list_transcripts
+  source:
+    id: list_transcripts
+    path: libraries/botbuilder-core\botbuilder\core\memory_transcript_store.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\memory_transcript_store.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 95
+  syntax: {}
+  type: method
+  uid: botbuilder.core.MemoryTranscriptStore.list_transcripts
+- class: botbuilder.core.MemoryTranscriptStore
+  fullName: botbuilder.core.MemoryTranscriptStore.log_activity
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'log_activity(activity: botbuilder.schema._models_py3.Activity) -> None'
+  source:
+    id: log_activity
+    path: libraries/botbuilder-core\botbuilder\core\memory_transcript_store.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-core\botbuilder\core\memory_transcript_store.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 17
+  syntax:
+    content: 'log_activity(activity: botbuilder.schema._models_py3.Activity) -> None'
+  type: method
+  uid: botbuilder.core.MemoryTranscriptStore.log_activity
+- class: botbuilder.core.MemoryTranscriptStore
+  fullName: botbuilder.core.MemoryTranscriptStore.channels
+  langs:
+  - python
+  module: botbuilder.core
+  name: channels
+  syntax:
+    content: channels = {}
+  type: attribute
+  uid: botbuilder.core.MemoryTranscriptStore.channels
+references:
+- fullName: botbuilder.core.MemoryTranscriptStore.delete_transcript
+  isExternal: false
+  name: 'delete_transcript(channel_id: str, conversation_id: str) -> None'
+  parent: botbuilder.core.MemoryTranscriptStore
+  uid: botbuilder.core.MemoryTranscriptStore.delete_transcript
+- fullName: botbuilder.core.MemoryTranscriptStore.get_transcript_activities
+  isExternal: false
+  name: get_transcript_activities
+  parent: botbuilder.core.MemoryTranscriptStore
+  uid: botbuilder.core.MemoryTranscriptStore.get_transcript_activities
+- fullName: botbuilder.core.MemoryTranscriptStore.list_transcripts
+  isExternal: false
+  name: list_transcripts
+  parent: botbuilder.core.MemoryTranscriptStore
+  uid: botbuilder.core.MemoryTranscriptStore.list_transcripts
+- fullName: botbuilder.core.MemoryTranscriptStore.log_activity
+  isExternal: false
+  name: 'log_activity(activity: botbuilder.schema._models_py3.Activity) -> None'
+  parent: botbuilder.core.MemoryTranscriptStore
+  uid: botbuilder.core.MemoryTranscriptStore.log_activity
+- fullName: botbuilder.core.MemoryTranscriptStore.channels
+  isExternal: false
+  name: channels
+  parent: botbuilder.core.MemoryTranscriptStore
+  uid: botbuilder.core.MemoryTranscriptStore.channels

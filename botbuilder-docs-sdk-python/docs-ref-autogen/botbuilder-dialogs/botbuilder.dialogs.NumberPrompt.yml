@@ -1,0 +1,93 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.dialogs.NumberPrompt.on_prompt
+  - botbuilder.dialogs.NumberPrompt.on_recognize
+  class: botbuilder.dialogs.NumberPrompt
+  fullName: botbuilder.dialogs.NumberPrompt
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - inheritance:
+        - type: builtins.object
+        type: abc.ABC
+      type: botbuilder.dialogs.dialog.Dialog
+    type: botbuilder.dialogs.prompts.prompt.Prompt
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: NumberPrompt
+  source:
+    id: NumberPrompt
+    path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\number_prompt.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\number_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 18
+  summary: ''
+  syntax:
+    content: 'NumberPrompt(dialog_id: str, validator: typing.Callable[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext,
+      bool] = None, default_locale: str = None)'
+  type: class
+  uid: botbuilder.dialogs.NumberPrompt
+- class: botbuilder.dialogs.NumberPrompt
+  fullName: botbuilder.dialogs.NumberPrompt.on_prompt
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
+    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
+    is_retry: bool)'
+  source:
+    id: on_prompt
+    path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\number_prompt.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\number_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 30
+  syntax:
+    content: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
+      typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
+      is_retry: bool)'
+  type: method
+  uid: botbuilder.dialogs.NumberPrompt.on_prompt
+- class: botbuilder.dialogs.NumberPrompt
+  fullName: botbuilder.dialogs.NumberPrompt.on_recognize
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext, state:
+    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
+    -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
+  source:
+    id: on_recognize
+    path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\number_prompt.py
+    remote:
+      branch: master
+      path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\number_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 47
+  syntax:
+    content: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
+      state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
+      -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
+  type: method
+  uid: botbuilder.dialogs.NumberPrompt.on_recognize
+references:
+- fullName: botbuilder.dialogs.NumberPrompt.on_prompt
+  isExternal: false
+  name: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
+    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
+    is_retry: bool)'
+  parent: botbuilder.dialogs.NumberPrompt
+  uid: botbuilder.dialogs.NumberPrompt.on_prompt
+- fullName: botbuilder.dialogs.NumberPrompt.on_recognize
+  isExternal: false
+  name: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext, state:
+    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
+    -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
+  parent: botbuilder.dialogs.NumberPrompt
+  uid: botbuilder.dialogs.NumberPrompt.on_recognize
