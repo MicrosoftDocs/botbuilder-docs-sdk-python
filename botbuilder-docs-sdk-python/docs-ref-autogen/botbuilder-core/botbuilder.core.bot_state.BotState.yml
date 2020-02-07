@@ -55,6 +55,10 @@ items:
   - python
   module: botbuilder.core.bot_state
   name: 'clear_state(turn_context: botbuilder.core.turn_context.TurnContext)'
+  remarks: 'This function must be called in order for the cleared state to be persisted
+    to the underlying store.
+
+    '
   source:
     id: clear_state
     path: libraries/botbuilder-core\botbuilder\core\bot_state.py
@@ -63,23 +67,14 @@ items:
       path: libraries/botbuilder-core\botbuilder\core\bot_state.py
       repo: https://github.com/microsoft/botbuilder-python
     startLine: 125
-  summary: 'Clears any state currently stored in this state scope.
-
-
-
-    > [!NOTE]
-
-    > This function must be called in order for the cleared state to be persisted
-    to the underlying store.
-
-    >'
+  summary: Clears any state currently stored in this state scope.
   syntax:
     content: 'clear_state(turn_context: botbuilder.core.turn_context.TurnContext)'
     parameters:
     - description: The context object for this turn
       id: turn_context
       type:
-      - botbuilder.core.bot_state.TurnContext
+      - <xref:botbuilder.core.TurnContext>
     return:
       description: None
   type: method
@@ -133,7 +128,7 @@ items:
     - description: The context object for this turn
       id: turn_context
       type:
-      - botbuilder.core.bot_state.TurnContext
+      - <xref:botbuilder.core.TurnContext>
     return:
       description: None
   type: method
@@ -161,7 +156,7 @@ items:
     - description: The context object for this turn
       id: turn_context
       type:
-      - botbuilder.core.bot_state.TurnContext
+      - <xref:botbuilder.core.TurnContext>
     - description: The name of the property to delete
       id: property_name
       type:
@@ -213,7 +208,7 @@ items:
     - description: The context object for this turn
       id: turn_context
       type:
-      - botbuilder.core.bot_state.TurnContext
+      - <xref:botbuilder.core.TurnContext>
     - description: The property name
       id: property_name
       type:
@@ -266,7 +261,7 @@ items:
     - description: The context object for this turn
       id: turn_context
       type:
-      - botbuilder.core.bot_state.TurnContext
+      - <xref:botbuilder.core.TurnContext>
     - description: Optional, true to bypass the cache
       id: force
       type:
@@ -299,7 +294,7 @@ items:
     - description: The context object for this turn
       id: turn_context
       type:
-      - botbuilder.core.bot_state.TurnContext
+      - <xref:botbuilder.core.TurnContext>
     - description: Optional, true to save state to storage whether or not there are
         changes
       id: force
@@ -330,7 +325,7 @@ items:
     - description: The context object for this turn
       id: turn_context
       type:
-      - botbuilder.core.bot_state.TurnContext
+      - <xref:botbuilder.core.TurnContext>
     - description: The property name
       id: property_name
       type:

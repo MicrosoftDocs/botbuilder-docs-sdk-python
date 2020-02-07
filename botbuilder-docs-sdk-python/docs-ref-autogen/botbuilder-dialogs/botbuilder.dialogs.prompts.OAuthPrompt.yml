@@ -45,6 +45,36 @@ items:
     is that you don''t block the *event* and *invoke* activities that the prompt might
     be waiting on.
 
+
+    You should avoid persisting the access token with your bots other state. The Bot
+    Frameworks SSO service
+
+    will securely store the token on your behalf. If you store it in your bots state,
+
+    it could expire or be revoked in between turns.
+
+    When calling the prompt from within a waterfall step, you should use the token
+    within the step
+
+    following the prompt and then let the token go out of scope at the end of your
+    function.
+
+
+    When used with your bots <xref:botbuilder.dialogs.prompts.DialogSet>, you can
+    simply add a new instance of the prompt as a named
+
+    dialog using :meth`DialogSet.add()`.
+
+    You can then start the prompt from a waterfall step using either <xref:DialogContext.begin>
+    or
+
+    <xref:DialogContext.prompt>.
+
+    The user will be prompted to sign in as needed and their access token will be
+    passed as an argument to
+
+    the callers next waterfall step.
+
     '
   source:
     id: OAuthPrompt
@@ -54,20 +84,8 @@ items:
       path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
       repo: https://github.com/microsoft/botbuilder-python
     startLine: 34
-  summary: "Creates a new prompt that asks the user to sign in, using the Bot Framework\
-    \ Single Sign On (SSO) service.\n\n\n> [!NOTE]\n> You should avoid persisting\
-    \ the access token with your bots other state. The Bot Frameworks SSO service\n\
-    >\n> will securely store the token on your behalf. If you store it in your bots\
-    \ state,\n>\n> it could expire or be revoked in between turns.\n>\n> When calling\
-    \ the prompt from within a waterfall step, you should use the token within the\
-    \ step\n>\n> following the prompt and then let the token go out of scope at the\
-    \ end of your function.\n>\n> \n>\n> Prompt Usage\n>\n> When used with your bots\
-    \ <xref:botbuilder.dialogs.prompts.DialogSet>, you can simply add a new instance\
-    \ of the prompt as a named\n>\n> dialog using\n>\n> :meth`DialogSet.add()`.\n\
-    >\n> You can then start the prompt from a waterfall step using either <xref:DialogContext.begin>\
-    \ or\n>\n> <xref:DialogContext.prompt>.\n>\n> The user will be prompted to sign\
-    \ in as needed and their access token will be passed as an argument to\n>\n> the\
-    \ callers next waterfall step.\n>"
+  summary: Creates a new prompt that asks the user to sign in, using the Bot Framework
+    Single Sign On (SSO) service.
   syntax:
     content: 'OAuthPrompt(dialog_id: str, settings: botbuilder.dialogs.prompts.oauth_prompt_settings.OAuthPromptSettings,
       validator: typing.Callable[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext,
@@ -88,7 +106,7 @@ items:
       branch: master
       path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 99
+    startLine: 96
   summary: 'Starts an authentication prompt dialog. Called when an authentication
     prompt dialog is pushed onto the
 
@@ -103,7 +121,7 @@ items:
 
     >
 
-    > has been processed by the prompt.
+    > has been processed.
 
     >'
   syntax:
@@ -132,6 +150,17 @@ items:
   module: botbuilder.dialogs.prompts
   name: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
     -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  remarks: 'If the task is successful, the result indicates whether the dialog is
+    still
+
+    active after the turn has been processed by the dialog.
+
+    The prompt generally continues to receive the user''s replies until it accepts
+    the
+
+    user''s reply as valid input for the prompt.
+
+    '
   source:
     id: continue_dialog
     path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
@@ -139,30 +168,9 @@ items:
       branch: master
       path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 157
-  summary: 'Continues a dialog. Called when a prompt dialog is the active dialog and
+    startLine: 154
+  summary: Continues a dialog. Called when a prompt dialog is the active dialog and
     the user replied with a new activity.
-
-
-
-    > [!NOTE]
-
-    > If the task is successful, the result indicates whether the dialog is still
-
-    >
-
-    > active after the turn has been processed by the dialog.
-
-    >
-
-    > The prompt generally continues to receive the user''s replies until it accepts
-    the
-
-    >
-
-    > user''s reply as valid input for the prompt.
-
-    >'
   syntax:
     content: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
       -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
@@ -191,7 +199,7 @@ items:
       branch: master
       path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 216
+    startLine: 213
   summary: 'Gets the user''s tokeN.
 
 
@@ -233,7 +241,7 @@ items:
       branch: master
       path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 243
+    startLine: 240
   summary: 'Signs out the user
 
 
@@ -254,7 +262,7 @@ items:
     - description: Context for the current turn of conversation with the user
       id: context
       type:
-      - botbuilder.dialogs.prompts.TurnContext
+      - botbuilder.core.TurnContext
     return:
       description: A <xref:botbuilder.dialogs.prompts.Task> representing the work
         queued to execute

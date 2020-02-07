@@ -33,7 +33,10 @@ items:
       path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\activity_prompt.py
       repo: https://github.com/microsoft/botbuilder-python
     startLine: 23
-  summary: Waits for an activity to be received.
+  summary: "Waits for an activity to be received.\n\n   This prompt requires a validator\
+    \ be passed in and is useful when waiting for non-message\n   activities like\
+    \ an event to be received. The validator can ignore received events until the\n\
+    \   expected activity is received."
   syntax:
     content: 'ActivityPrompt(dialog_id: str, validator: typing.Callable[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext,
       bool])'
@@ -172,7 +175,7 @@ items:
     - description: Context for the current turn of conversation with the user.
       id: context
       type:
-      - botbuilder.dialogs.prompts.TurnContext
+      - botbuilder.core.TurnContext
     - description: Contains state for the current instance of the prompt on the dialog
         stack.
       id: state
@@ -211,6 +214,20 @@ items:
   module: botbuilder.dialogs.prompts
   name: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object = None)'
+  remarks: 'Prompts are typically leaf nodes on the stack but the dev is free to push
+    other dialogs
+
+    on top of the stack which will result in the prompt receiving an unexpected call
+    to
+
+    <xref:botbuilder.dialogs.prompts.ActivityPrompt.resume_dialog> when the pushed
+    on dialog ends.
+
+    To avoid the prompt prematurely ending, we need to implement this method and
+
+    simply re-prompt the user.
+
+    '
   source:
     id: resume_dialog
     path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\activity_prompt.py

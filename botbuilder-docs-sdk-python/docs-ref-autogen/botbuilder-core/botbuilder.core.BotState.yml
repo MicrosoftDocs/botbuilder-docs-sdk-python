@@ -55,6 +55,10 @@ items:
   - python
   module: botbuilder.core
   name: 'clear_state(turn_context: botbuilder.core.turn_context.TurnContext)'
+  remarks: 'This function must be called in order for the cleared state to be persisted
+    to the underlying store.
+
+    '
   source:
     id: clear_state
     path: libraries/botbuilder-core\botbuilder\core\bot_state.py
@@ -63,16 +67,7 @@ items:
       path: libraries/botbuilder-core\botbuilder\core\bot_state.py
       repo: https://github.com/microsoft/botbuilder-python
     startLine: 125
-  summary: 'Clears any state currently stored in this state scope.
-
-
-
-    > [!NOTE]
-
-    > This function must be called in order for the cleared state to be persisted
-    to the underlying store.
-
-    >'
+  summary: Clears any state currently stored in this state scope.
   syntax:
     content: 'clear_state(turn_context: botbuilder.core.turn_context.TurnContext)'
     parameters:

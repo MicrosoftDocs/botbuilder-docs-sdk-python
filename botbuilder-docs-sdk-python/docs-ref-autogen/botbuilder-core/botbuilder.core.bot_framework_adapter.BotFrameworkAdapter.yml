@@ -57,7 +57,7 @@ items:
       branch: master
       path: libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 120
+    startLine: 118
   summary: Defines an adapter to connect a bot to a service endpoint.
   syntax:
     content: 'BotFrameworkAdapter(settings: botbuilder.core.bot_framework_adapter.BotFrameworkAdapterSettings)'
@@ -77,7 +77,7 @@ items:
       branch: master
       path: libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 363
+    startLine: 362
   summary: Allows for the overriding of authentication in unit tests.
   syntax:
     content: 'authenticate_request(request: botbuilder.schema._models_py3.Activity,
@@ -108,7 +108,7 @@ items:
       branch: master
       path: libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 958
+    startLine: 956
   syntax:
     content: 'check_emulating_oauth_cards(context: botbuilder.core.turn_context.TurnContext)'
   type: method
@@ -121,6 +121,15 @@ items:
   name: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
     callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
     = None)'
+  remarks: 'This is often referred to as the bots *proactive messaging* flow as it
+    lets the bot proactively
+
+    send messages to a conversation or user that are already in a communication.
+
+    Scenarios such as sending notifications or coupons to a user are enabled by this
+    function.
+
+    '
   source:
     id: continue_conversation
     path: libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
@@ -128,7 +137,7 @@ items:
       branch: master
       path: libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 180
+    startLine: 178
   summary: 'Continues a conversation with a user.
 
 
@@ -139,25 +148,7 @@ items:
 
     :param claims_identity: The bot claims identity
 
-    :type claims_identity: <xref:botframework.connector.auth.ClaimsIdentity>
-
-
-
-    > [!NOTE]
-
-    > This is often referred to as the bots proactive messaging flow as it lets the
-    bot proactively
-
-    >
-
-    > send messages to a conversation or user that are already in a communication.
-
-    >
-
-    > Scenarios such as sending notifications or coupons to a user are enabled by
-    this function.
-
-    >'
+    :type claims_identity: <xref:botframework.connector.auth.ClaimsIdentity>'
   syntax:
     content: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
       callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
@@ -180,7 +171,7 @@ items:
       branch: master
       path: libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 874
+    startLine: 872
   summary: 'Allows for mocking of the connector client in unit tests
 
     :param service_url: The service URL
@@ -207,7 +198,7 @@ items:
       branch: master
       path: libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 391
+    startLine: 390
   summary: 'Allows for the overriding of the context object in unit tests and derived
     adapters.
 
@@ -229,6 +220,24 @@ items:
     logic: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable]
     = None, conversation_parameters: botbuilder.schema._models_py3.ConversationParameters
     = None)'
+  remarks: 'To start a conversation, your bot must know its account information and
+    the user''s
+
+    account information on that channel.
+
+    Most channels only support initiating a direct message (non-group) conversation.
+
+    The adapter attempts to create a new conversation on the channel, and
+
+    then sends a conversation update activity through its middleware pipeline
+
+    to the the callback method.
+
+    If the conversation is established with the specified users, the ID of the activity
+
+    will contain the ID of the new conversation.</para>
+
+    '
   source:
     id: create_conversation
     path: libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
@@ -236,46 +245,9 @@ items:
       branch: master
       path: libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 227
-  summary: 'Starts a new conversation with a user. Used to direct message to a member
+    startLine: 228
+  summary: Starts a new conversation with a user. Used to direct message to a member
     of a group.
-
-
-
-    > [!NOTE]
-
-    > To start a conversation, your bot must know its account information and the
-    user''s
-
-    >
-
-    > account information on that channel.
-
-    >
-
-    > Most channels only support initiating a direct message (non-group) conversation.
-
-    >
-
-    > The adapter attempts to create a new conversation on the channel, and
-
-    >
-
-    > then sends a conversation update activity through its middleware pipeline
-
-    >
-
-    > to the the callback method.
-
-    >
-
-    > If the conversation is established with the specified users, the ID of the activity
-
-    >
-
-    > will contain the ID of the new conversation.</para>
-
-    >'
   syntax:
     content: 'create_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
       logic: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable]
@@ -309,7 +281,7 @@ items:
       branch: master
       path: libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 925
+    startLine: 923
   syntax:
     content: 'create_token_api_client(service_url: str) -> botframework.connector.token_api._token_api_client.TokenApiClient'
   type: method
@@ -328,7 +300,7 @@ items:
       branch: master
       path: libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 473
+    startLine: 472
   summary: 'Deletes an activity that was previously sent to a channel. It should be
     noted that not all
 
@@ -381,7 +353,7 @@ items:
     - description: The context object for the turn
       id: context
       type:
-      - botbuilder.core.bot_framework_adapter.TurnContext
+      - <xref:botbuilder.core.TurnContext>
     - description: The ID of the member to remove from the conversation
       id: member_id
       type:
@@ -404,7 +376,7 @@ items:
       branch: master
       path: libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 931
+    startLine: 929
   syntax:
     content: 'emulate_oauth_cards(context_or_service_url: typing.Union[botbuilder.core.turn_context.TurnContext,
       str], emulate: bool)'
@@ -424,7 +396,7 @@ items:
       branch: master
       path: libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 841
+    startLine: 842
   summary: Retrieves Azure Active Directory tokens for particular resources on a configured
     connection.
   syntax:
@@ -434,7 +406,7 @@ items:
     - description: Context for the current turn of conversation with the user
       id: context
       type:
-      - botbuilder.core.bot_framework_adapter.TurnContext
+      - <xref:botbuilder.core.TurnContext>
     - description: The name of the Azure Active Directory connection configured with
         this bot
       id: connection_name
@@ -498,7 +470,7 @@ items:
     - description: The context object for the turn
       id: context
       type:
-      - botbuilder.core.bot_framework_adapter.TurnContext
+      - <xref:botbuilder.core.TurnContext>
     return:
       description: List of members of the current conversation
   type: method
@@ -509,6 +481,20 @@ items:
   - python
   module: botbuilder.core.bot_framework_adapter
   name: 'get_conversations(service_url: str, continuation_token: str = None)'
+  remarks: 'The channel server returns results in pages and each page will include
+    a *continuationToken* that
+
+    can be used to fetch the next page of results from the server.
+
+    If the task completes successfully, the result contains a page of the members
+    of the current conversation.
+
+    This overload may be called from outside the context of a conversation, as only
+    the bot''s service URL and
+
+    credentials are required.
+
+    '
   source:
     id: get_conversations
     path: libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
@@ -518,36 +504,13 @@ items:
       repo: https://github.com/microsoft/botbuilder-python
     startLine: 672
   summary: 'Lists the Conversations in which this bot has participated for a given
-    channel server. The channel server
-
-    returns results in pages and each page will include a *continuationToken* that
-    can be used to fetch the next
-
-    page of results from the server.
+    channel server.
 
 
 
     *context.activity.serviceUrl*
 
-    :type service_url: str
-
-
-
-    > [!NOTE]
-
-    > If the task completes successfully, the result contains a page of the members
-    of the current
-
-    >
-
-
-
-    conversation.
-
-    This overload may be called from outside the context of a conversation, as only
-    the bot''s service URL and
-
-    credentials are required.'
+    :type service_url: str'
   syntax:
     content: 'get_conversations(service_url: str, continuation_token: str = None)'
     parameters:
@@ -591,7 +554,7 @@ items:
     - description: Context for the current turn of conversation with the user
       id: context
       type:
-      - botbuilder.core.bot_framework_adapter.TurnContext
+      - <xref:botbuilder.core.TurnContext>
     - description: Name of the auth connection to use
       id: connection_name
       type:
@@ -614,7 +577,7 @@ items:
       branch: master
       path: libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 806
+    startLine: 807
   summary: 'Retrieves the token status for each configured connection for the given
     user.
 
@@ -675,7 +638,7 @@ items:
       branch: master
       path: libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 938
+    startLine: 936
   syntax:
     content: 'oauth_api_url(context_or_service_url: typing.Union[botbuilder.core.turn_context.TurnContext,
       str]) -> str'
@@ -694,7 +657,7 @@ items:
       branch: master
       path: libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 399
+    startLine: 398
   summary: 'Parses and validates request
 
     :param req:
@@ -712,6 +675,21 @@ items:
   - python
   module: botbuilder.core.bot_framework_adapter
   name: 'process_activity(req, auth_header: str, logic: typing.Callable)'
+  remarks: 'This class processes an activity received by the bots web server. This
+    includes any messages
+
+    sent from a user and is the method that drives what''s often referred to as the
+
+    bots *reactive messaging* flow.
+
+    Call this method to reactively send a message to a conversation.
+
+    If the task completes successfully, then an <xref:botbuilder.core.bot_framework_adapter.InvokeResponse>
+    is returned;
+
+    otherwise. *null* is returned.
+
+    '
   source:
     id: process_activity
     path: libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
@@ -719,40 +697,9 @@ items:
       branch: master
       path: libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 304
-  summary: 'Creates a turn context and runs the middleware pipeline for an incoming
-    activity,
-
-    Processes an activity received by the bots web server. This includes any messages
-    sent from a
-
-    user and is the method that drives what''s often referred to as the bots *reactive
-    messaging* flow.
-
-
-
-    was *Invoke* and the corresponding key (*channelId* + *activityId*) was found
-    then
-
-    an <xref:botbuilder.core.bot_framework_adapter.InvokeResponse> is returned; otherwise,
-    *null* is returned.
-
-
-
-    > [!NOTE]
-
-    > Call this method to reactively send a message to a conversation.
-
-    >
-
-    > If the task completes successfully, then an <xref:botbuilder.core.bot_framework_adapter.InvokeResponse>
-    is returned;
-
-    >
-
-    > otherwise. null is returned.
-
-    >'
+    startLine: 305
+  summary: Creates a turn context and runs the middleware pipeline for an incoming
+    activity.
   syntax:
     content: 'process_activity(req, auth_header: str, logic: typing.Callable)'
     parameters:
@@ -769,8 +716,7 @@ items:
       type:
       - typing.Callable
     return:
-      description: A task that represents the work queued to execute. If the activity
-        type
+      description: A task that represents the work queued to execute.
   type: method
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.process_activity
 - class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
@@ -816,7 +762,7 @@ items:
     - description: Context for the current turn of conversation with the user
       id: context
       type:
-      - botbuilder.core.bot_framework_adapter.TurnContext
+      - <xref:botbuilder.core.TurnContext>
     - description: Name of the auth connection to use
       id: connection_name
       type:
@@ -836,6 +782,17 @@ items:
   module: botbuilder.core.bot_framework_adapter
   name: 'update_activity(context: botbuilder.core.turn_context.TurnContext, activity:
     botbuilder.schema._models_py3.Activity)'
+  remarks: 'If the activity is successfully sent, the task result contains
+
+    a <xref:botbuilder.schema.ResourceResponse> object containing the ID that
+
+    the receiving channel assigned to the activity.
+
+    Before calling this function, set the ID of the replacement activity to the ID
+
+    of the activity to replace.
+
+    '
   source:
     id: update_activity
     path: libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
@@ -843,36 +800,11 @@ items:
       branch: master
       path: libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 443
+    startLine: 442
   summary: 'Replaces an activity that was previously sent to a channel. It should
     be noted that not all
 
-    channels support this feature.
-
-
-
-    > [!NOTE]
-
-    > If the activity is successfully sent, the task result contains
-
-    >
-
-    > a <xref:botbuilder.schema.ResourceResponse> object containing the ID that
-
-    >
-
-    > the receiving channel assigned to the activity.
-
-    >
-
-    > Before calling this function, set the ID of the replacement activity to the
-    ID
-
-    >
-
-    > of the activity to replace.
-
-    >'
+    channels support this feature.'
   syntax:
     content: 'update_activity(context: botbuilder.core.turn_context.TurnContext, activity:
       botbuilder.schema._models_py3.Activity)'

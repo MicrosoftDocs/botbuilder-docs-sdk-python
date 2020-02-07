@@ -48,7 +48,9 @@ items:
       type:
       - int
     - description: A dialog is being continued through a call to *DialogContext.continue_dialog()*.
-      id: ContinuCalled
+      id: ContinueCalled
+      type:
+      - int
     - description: A dialog ended normally through a call to >>`<<DialogContext.end_dialog()
       id: EndCalled
       type:

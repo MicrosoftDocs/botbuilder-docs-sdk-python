@@ -24,7 +24,7 @@ items:
     methods.
 
 
-    Use <xref:DialogContext.end_dialogAsync> to end a <xref:botbuilder.dialogs.dialog_turn_result.Dialog>
+    Use <xref:DialogContext.end_dialog> to end a <xref:botbuilder.dialogs.dialog_turn_result.Dialog>
     and
 
     return a result to the calling context.'
@@ -47,11 +47,10 @@ items:
       path: null
       repo: https://github.com/microsoft/botbuilder-python
     startLine: null
-  summary: "Final result returned by a dialog that just completed.\n\n\n   > [!NOTE]\n\
-    \   > This will only be populated in certain cases:\n   >\n   > * The bot calls\
-    \ <xref:DialogContext.begin_dialog> to start a new dialog and the dialog ends\
-    \ immediately.\n   >\n   > * The bot calls <xref:DialogContext.continue_dialog>\
-    \ and a dialog that was active ends.\n   >"
+  summary: "Final result returned by a dialog that just completed.\n\n   This will\
+    \ only be populated in certain cases:\n   * The bot calls <xref:DialogContext.begin_dialog>\
+    \ to start a new\n   dialog and the dialog ends immediately.\n   * The bot calls\
+    \ <xref:DialogContext.continue_dialog> and a dialog\n   that was active ends."
   syntax: {}
   type: attribute
   uid: botbuilder.dialogs.dialog_turn_result.DialogTurnResult.result

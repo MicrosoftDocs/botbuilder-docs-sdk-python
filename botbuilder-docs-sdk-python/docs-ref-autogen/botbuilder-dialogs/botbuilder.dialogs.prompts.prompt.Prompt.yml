@@ -24,14 +24,24 @@ items:
   - python
   module: botbuilder.dialogs.prompts.prompt
   name: Prompt
-  remarks: "When the prompt ends, it returns an object that represents the value it\
-    \ was prompted for.\nUse <xref:DialogSet.add> or <xref:ComponentDialog.add_dialog>\
-    \ to add a prompt to a dialog set or\ncomponent dialog, respectively.\nUse <xref:DialogContext.prompt>\
-    \ or <xref:DialogContext.begin_dialog> to start the prompt.\n.. note:\n\n<!--\
-    \ literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [],\
-    \ \"backrefs\": [], \"xml:space\": \"preserve\"} -->\n\n````\n\n   If you start\
-    \ a prompt from a :class:`WaterfallStep` in a :class:`WaterfallDialog`, then the\
-    \ prompt result\n   will be available in the next step of the waterfall.\n   ````\n"
+  remarks: 'When the prompt ends, it returns an object that represents the value it
+    was prompted for.
+
+    Use <xref:DialogSet.add> or <xref:ComponentDialog.add_dialog> to add a prompt
+    to a dialog set or
+
+    component dialog, respectively.
+
+    Use <xref:DialogContext.prompt> or <xref:DialogContext.begin_dialog> to start
+    the prompt.
+
+    If you start a prompt from a <xref:botbuilder.dialogs.prompts.prompt.WaterfallStep>
+    in a <xref:botbuilder.dialogs.prompts.prompt.WaterfallDialog>, then the prompt
+    result
+
+    will be available in the next step of the waterfall.
+
+    '
   source:
     id: Prompt
     path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
@@ -55,6 +65,15 @@ items:
     str, choices: typing.List[botbuilder.dialogs.choices.choice.Choice], style: botbuilder.dialogs.choices.list_style.ListStyle,
     options: botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
     = None) -> botbuilder.schema._models_py3.Activity'
+  remarks: 'If the task is successful, the result contains the updated activity.
+
+    When overridden in a derived class, appends choices to the activity when the user
+
+    is prompted for input. This is an helper function to compose an output activity
+
+    containing a set of choices.
+
+    '
   source:
     id: append_choices
     path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
@@ -62,21 +81,8 @@ items:
       branch: master
       path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 241
-  summary: 'Composes an output activity containing a set of choices.
-
-    When overridden in a derived class, appends choices to the activity when the user
-    is prompted for input.
-
-    Helper function to compose an output activity containing a set of choices.
-
-
-
-    > [!NOTE]
-
-    > If the task is successful, the result contains the updated activity.
-
-    >'
+    startLine: 240
+  summary: Composes an output activity containing a set of choices.
   syntax:
     content: 'append_choices(prompt: botbuilder.schema._models_py3.Activity, channel_id:
       str, choices: typing.List[botbuilder.dialogs.choices.choice.Choice], style:
@@ -109,7 +115,7 @@ items:
       branch: master
       path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 58
+    startLine: 57
   summary: 'Starts a prompt dialog. Called when a prompt dialog is pushed onto the
     dialog stack and is being activated.
 
@@ -122,7 +128,7 @@ items:
 
     >
 
-    > after the turn has been processed by the prompt.
+    > after the turn has been processed.
 
     >'
   syntax:
@@ -149,6 +155,17 @@ items:
   - python
   module: botbuilder.dialogs.prompts.prompt
   name: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
+  remarks: 'If the task is successful, the result indicates whether the dialog is
+    still
+
+    active after the turn has been processed by the dialog.
+
+    The prompt generally continues to receive the user''s replies until it accepts
+    the
+
+    user''s reply as valid input for the prompt.
+
+    '
   source:
     id: continue_dialog
     path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
@@ -156,30 +173,9 @@ items:
       branch: master
       path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 101
-  summary: 'Continues a dialog. Called when a prompt dialog is the active dialog and
+    startLine: 100
+  summary: Continues a dialog. Called when a prompt dialog is the active dialog and
     the user replied with a new activity.
-
-
-
-    > [!NOTE]
-
-    > If the task is successful, the result indicates whether the dialog is still
-
-    >
-
-    > active after the turn has been processed by the dialog.
-
-    >
-
-    > The prompt generally continues to receive the user''s replies until it accepts
-    the
-
-    >
-
-    > user''s reply as valid input for the prompt.
-
-    >'
   syntax:
     content: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
     parameters:
@@ -208,7 +204,7 @@ items:
       branch: master
       path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 193
+    startLine: 192
   summary: 'Prompts user for input. When overridden in a derived class, prompts the
     user for input.
 
@@ -248,7 +244,7 @@ items:
       branch: master
       path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 219
+    startLine: 218
   summary: 'Recognizes the user''s input. When overridden in a derived class, attempts
     to recognize the user''s input.
 
@@ -261,7 +257,7 @@ items:
     content: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
       state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)'
     return:
-      description: A :class:Task representing the asynchronous operation.
+      description: A task representing the asynchronous operation.
       type:
       - :class:Task
   type: method
@@ -280,7 +276,7 @@ items:
       branch: master
       path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 178
+    startLine: 177
   summary: Reprompts user for input. Called when a prompt dialog has been requested
     to re-prompt the user for input.
   syntax:
@@ -308,6 +304,26 @@ items:
   module: botbuilder.dialogs.prompts.prompt
   name: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  remarks: 'Called when a prompt dialog resumes being the active dialog on the dialog
+    stack,
+
+    such as when the previous active dialog on the stack completes.
+
+    If the task is successful, the result indicates whether the dialog is still
+
+    active after the turn has been processed by the dialog.
+
+    Prompts are typically leaf nodes on the stack but the dev is free to push other
+    dialogs
+
+    on top of the stack which will result in the prompt receiving an unexpected call
+    to
+
+    :meth:resume_dialog() when the pushed on dialog ends.
+
+    To avoid the prompt prematurely ending we need to simply re-prompt the user.
+
+    '
   source:
     id: resume_dialog
     path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
@@ -315,13 +331,18 @@ items:
       branch: master
       path: libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 150
-  summary: 'Resumes a dialog. Called when a prompt dialog resumes being the active
-    dialog
+    startLine: 149
+  summary: 'Resumes a dialog. C
 
-    on the dialog stack, such as when the previous active dialog on the stack completes.
+    :param dialog_context: The dialog context for the current turn of the conversation.
 
+    :type dialog_context:  :class:DialogContext
 
+    :param reason: An enum indicating why the dialog resumed.
+
+    :type reason:  :class:DialogReason
+
+    :param result: Optional, value returned from the previous dialog on the stack.
 
     The type of the value returned is dependent on the previous dialog.
 
@@ -329,51 +350,10 @@ items:
 
     :return: The dialog turn result
 
-    :rtype: <xref:botbuilder.dialogs.prompts.prompt.DialogTurnResult>
-
-
-
-    > [!NOTE]
-
-    > If the task is successful, the result indicates whether the dialog is still
-
-    >
-
-    > active after the turn has been processed by the dialog.
-
-    >
-
-    > Prompts are typically leaf nodes on the stack but the dev is free to push other
-    dialogs
-
-    >
-
-    > on top of the stack which will result in the prompt receiving an unexpected
-    call to
-
-    >
-
-    > :meth:resume_dialog() when the pushed on dialog ends.
-
-    >
-
-    > To avoid the prompt prematurely ending we need to simply re-prompt the user.
-
-    >'
+    :rtype: <xref:botbuilder.dialogs.prompts.prompt.DialogTurnResult>'
   syntax:
     content: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
       reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
-    parameters:
-    - description: The dialog context for the current turn of the conversation.
-      id: dialog_context
-      type:
-      - :class:DialogContext
-    - description: An enum indicating why the dialog resumed.
-      id: reason
-      type:
-      - :class:DialogReason
-    - description: Optional, value returned from the previous dialog on the stack.
-      id: result
   type: method
   uid: botbuilder.dialogs.prompts.prompt.Prompt.resume_dialog
 - class: botbuilder.dialogs.prompts.prompt.Prompt

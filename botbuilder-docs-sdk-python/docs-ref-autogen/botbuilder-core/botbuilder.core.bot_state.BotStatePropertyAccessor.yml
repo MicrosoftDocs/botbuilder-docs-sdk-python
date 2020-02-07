@@ -4,6 +4,7 @@ items:
 - children:
   - botbuilder.core.bot_state.BotStatePropertyAccessor.delete
   - botbuilder.core.bot_state.BotStatePropertyAccessor.get
+  - botbuilder.core.bot_state.BotStatePropertyAccessor.name
   - botbuilder.core.bot_state.BotStatePropertyAccessor.set
   class: botbuilder.core.bot_state.BotStatePropertyAccessor
   fullName: botbuilder.core.bot_state.BotStatePropertyAccessor
@@ -24,8 +25,9 @@ items:
       branch: master
       path: libraries/botbuilder-core\botbuilder\core\bot_state.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 235
-  summary: ''
+    startLine: 234
+  summary: Defines methods for accessing a state property created in a <xref:botbuilder.core.bot_state.BotState>
+    object.
   syntax:
     content: 'BotStatePropertyAccessor(bot_state: botbuilder.core.bot_state.BotState,
       name: str)'
@@ -44,9 +46,15 @@ items:
       branch: master
       path: libraries/botbuilder-core\botbuilder\core\bot_state.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 244
+    startLine: 262
+  summary: Deletes the property.
   syntax:
     content: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
+    parameters:
+    - description: The context object for this turn
+      id: turn_context
+      type:
+      - <xref:botbuilder.core.TurnContext>
   type: method
   uid: botbuilder.core.bot_state.BotStatePropertyAccessor.delete
 - class: botbuilder.core.bot_state.BotStatePropertyAccessor
@@ -63,12 +71,42 @@ items:
       branch: master
       path: libraries/botbuilder-core\botbuilder\core\bot_state.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 248
+    startLine: 272
+  summary: Gets the property value.
   syntax:
     content: 'get(turn_context: botbuilder.core.turn_context.TurnContext, default_value_or_factory:
       object = None) -> object'
+    parameters:
+    - description: The context object for this turn
+      id: turn_context
+      type:
+      - <xref:botbuilder.core.TurnContext>
+    - description: Defines the default value for the property
+      id: default_value_or_factory
   type: method
   uid: botbuilder.core.bot_state.BotStatePropertyAccessor.get
+- class: botbuilder.core.bot_state.BotStatePropertyAccessor
+  fullName: botbuilder.core.bot_state.BotStatePropertyAccessor.name
+  langs:
+  - python
+  module: botbuilder.core.bot_state
+  name: name
+  source:
+    id: name
+    path: null
+    remote:
+      branch: master
+      path: null
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: null
+  summary: Gets the name of the property.
+  syntax:
+    return:
+      description: The name of the property
+      type:
+      - str
+  type: attribute
+  uid: botbuilder.core.bot_state.BotStatePropertyAccessor.name
 - class: botbuilder.core.bot_state.BotStatePropertyAccessor
   fullName: botbuilder.core.bot_state.BotStatePropertyAccessor.set
   langs:
@@ -83,10 +121,18 @@ items:
       branch: master
       path: libraries/botbuilder-core\botbuilder\core\bot_state.py
       repo: https://github.com/microsoft/botbuilder-python
-    startLine: 270
+    startLine: 301
+  summary: Sets the property value.
   syntax:
     content: 'set(turn_context: botbuilder.core.turn_context.TurnContext, value: object)
       -> None'
+    parameters:
+    - description: The context object for this turn
+      id: turn_context
+      type:
+      - <xref:botbuilder.core.TurnContext>
+    - description: The value to assign to the property
+      id: value
   type: method
   uid: botbuilder.core.bot_state.BotStatePropertyAccessor.set
 references:
@@ -101,6 +147,11 @@ references:
     object = None) -> object'
   parent: botbuilder.core.bot_state.BotStatePropertyAccessor
   uid: botbuilder.core.bot_state.BotStatePropertyAccessor.get
+- fullName: botbuilder.core.bot_state.BotStatePropertyAccessor.name
+  isExternal: false
+  name: name
+  parent: botbuilder.core.bot_state.BotStatePropertyAccessor
+  uid: botbuilder.core.bot_state.BotStatePropertyAccessor.name
 - fullName: botbuilder.core.bot_state.BotStatePropertyAccessor.set
   isExternal: false
   name: 'set(turn_context: botbuilder.core.turn_context.TurnContext, value: object)
