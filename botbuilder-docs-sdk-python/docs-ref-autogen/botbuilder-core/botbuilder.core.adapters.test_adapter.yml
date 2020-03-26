@@ -2,6 +2,7 @@
 api_name: []
 items:
 - children:
+  - botbuilder.core.adapters.test_adapter.ExchangeableToken
   - botbuilder.core.adapters.test_adapter.TestAdapter
   - botbuilder.core.adapters.test_adapter.TestFlow
   - botbuilder.core.adapters.test_adapter.TokenMagicCode
@@ -31,6 +32,11 @@ items:
   type: function
   uid: botbuilder.core.adapters.test_adapter.validate_activity
 references:
+- fullName: botbuilder.core.adapters.test_adapter.ExchangeableToken
+  isExternal: false
+  name: ExchangeableToken
+  parent: botbuilder.core.adapters.test_adapter
+  uid: botbuilder.core.adapters.test_adapter.ExchangeableToken
 - fullName: botbuilder.core.adapters.test_adapter.TestAdapter
   isExternal: false
   name: TestAdapter

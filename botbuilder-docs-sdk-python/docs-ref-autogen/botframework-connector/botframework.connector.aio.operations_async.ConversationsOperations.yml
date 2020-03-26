@@ -6,9 +6,11 @@ items:
   - botframework.connector.aio.operations_async.ConversationsOperations.delete_activity
   - botframework.connector.aio.operations_async.ConversationsOperations.delete_conversation_member
   - botframework.connector.aio.operations_async.ConversationsOperations.get_activity_members
+  - botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_member
   - botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_members
   - botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_paged_members
   - botframework.connector.aio.operations_async.ConversationsOperations.get_conversations
+  - botframework.connector.aio.operations_async.ConversationsOperations.get_teams_conversation_paged_members
   - botframework.connector.aio.operations_async.ConversationsOperations.reply_to_activity
   - botframework.connector.aio.operations_async.ConversationsOperations.send_conversation_history
   - botframework.connector.aio.operations_async.ConversationsOperations.send_to_conversation
@@ -276,6 +278,58 @@ items:
 - class: botframework.connector.aio.operations_async.ConversationsOperations
   exceptions:
   - type: botframework.connector.models.ErrorResponseException
+  fullName: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_member
+  langs:
+  - python
+  module: botframework.connector.aio.operations_async
+  name: get_conversation_member(conversation_id, member_id, custom_headers=None, raw=False,
+    **operation_config)
+  summary: 'GetConversationMember.
+
+
+    Get a member of a conversation.
+
+    This REST API takes a ConversationId and memberId and returns a
+
+    ChannelAccount object representing the member of the conversation.'
+  syntax:
+    content: get_conversation_member(conversation_id, member_id, custom_headers=None,
+      raw=False, **operation_config)
+    parameters:
+    - description: Conversation Id
+      id: conversation_id
+      type:
+      - str
+    - description: Member Id
+      id: member_id
+      type:
+      - str
+    - defaultValue: None
+      description: headers that will be added to the request
+      id: custom_headers
+      type:
+      - dict
+    - defaultValue: 'False'
+      description: 'returns the direct response alongside the
+
+        deserialized response'
+      id: raw
+      type:
+      - bool
+    - description: '*Operation configuration
+
+        overrides*.'
+      id: operation_config
+    return:
+      description: list or ClientRawResponse if raw=true
+      type:
+      - list[botframework.connector.models.ChannelAccount]
+      - msrest.pipeline.ClientRawResponse
+  type: method
+  uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_member
+- class: botframework.connector.aio.operations_async.ConversationsOperations
+  exceptions:
+  - type: botframework.connector.models.ErrorResponseException
   fullName: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_members
   langs:
   - python
@@ -455,6 +509,86 @@ items:
       - msrest.pipeline.ClientRawResponse
   type: method
   uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversations
+- class: botframework.connector.aio.operations_async.ConversationsOperations
+  exceptions:
+  - type: msrest.exceptions.HttpOperationError
+  fullName: botframework.connector.aio.operations_async.ConversationsOperations.get_teams_conversation_paged_members
+  langs:
+  - python
+  module: botframework.connector.aio.operations_async
+  name: get_teams_conversation_paged_members(conversation_id, page_size=None, continuation_token=None,
+    custom_headers=None, raw=False, **operation_config)
+  summary: 'GetTeamsConversationPagedMembers.
+
+
+    Enumerate the members of a Teams conversation one page at a time.
+
+    This REST API takes a ConversationId. Optionally a pageSize and/or
+
+    continuationToken can be provided. It returns a PagedMembersResult,
+
+    which contains an array
+
+    of ChannelAccounts representing the members of the conversation and a
+
+    continuation token that can be used to get more values.
+
+    One page of ChannelAccounts records are returned with each call. The
+
+    number of records in a page may vary between channels and calls. The
+
+    pageSize parameter can be used as
+
+    a suggestion. If there are no additional results the response will not
+
+    contain a continuation token. If there are no members in the
+
+    conversation the Members will be empty or not present in the response.
+
+    A response to a request that has a continuation token from a prior
+
+    request may rarely return members from a previous request.'
+  syntax:
+    content: get_teams_conversation_paged_members(conversation_id, page_size=None,
+      continuation_token=None, custom_headers=None, raw=False, **operation_config)
+    parameters:
+    - description: Conversation ID
+      id: conversation_id
+      type:
+      - str
+    - defaultValue: None
+      description: Suggested page size
+      id: page_size
+      type:
+      - int
+    - defaultValue: None
+      description: Continuation Token
+      id: continuation_token
+      type:
+      - str
+    - defaultValue: None
+      description: headers that will be added to the request
+      id: custom_headers
+      type:
+      - dict
+    - defaultValue: 'False'
+      description: 'returns the direct response alongside the
+
+        deserialized response'
+      id: raw
+      type:
+      - bool
+    - description: '*Operation configuration
+
+        overrides*.'
+      id: operation_config
+    return:
+      description: PagedMembersResult or ClientRawResponse if raw=true
+      type:
+      - botframework.connector.models.PagedMembersResult
+      - msrest.pipeline.ClientRawResponse
+  type: method
+  uid: botframework.connector.aio.operations_async.ConversationsOperations.get_teams_conversation_paged_members
 - class: botframework.connector.aio.operations_async.ConversationsOperations
   exceptions:
   - type: botframework.connector.models.ErrorResponseException
@@ -801,6 +935,12 @@ references:
     raw=False, **operation_config)
   parent: botframework.connector.aio.operations_async.ConversationsOperations
   uid: botframework.connector.aio.operations_async.ConversationsOperations.get_activity_members
+- fullName: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_member
+  isExternal: false
+  name: get_conversation_member(conversation_id, member_id, custom_headers=None, raw=False,
+    **operation_config)
+  parent: botframework.connector.aio.operations_async.ConversationsOperations
+  uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_member
 - fullName: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_members
   isExternal: false
   name: get_conversation_members(conversation_id, *, custom_headers=None, raw=False,
@@ -819,6 +959,12 @@ references:
     **operation_config)
   parent: botframework.connector.aio.operations_async.ConversationsOperations
   uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversations
+- fullName: botframework.connector.aio.operations_async.ConversationsOperations.get_teams_conversation_paged_members
+  isExternal: false
+  name: get_teams_conversation_paged_members(conversation_id, page_size=None, continuation_token=None,
+    custom_headers=None, raw=False, **operation_config)
+  parent: botframework.connector.aio.operations_async.ConversationsOperations
+  uid: botframework.connector.aio.operations_async.ConversationsOperations.get_teams_conversation_paged_members
 - fullName: botframework.connector.aio.operations_async.ConversationsOperations.reply_to_activity
   isExternal: false
   name: reply_to_activity(conversation_id, activity_id, activity, *, custom_headers=None,

@@ -57,6 +57,7 @@ items:
   - botbuilder.schema.teams.TeamInfo
   - botbuilder.schema.teams.TeamsChannelAccount
   - botbuilder.schema.teams.TeamsChannelData
+  - botbuilder.schema.teams.TeamsPagedMembersResult
   - botbuilder.schema.teams.TenantInfo
   - botbuilder.schema.teams.additional_properties
   fullName: botbuilder.schema.teams
@@ -343,6 +344,11 @@ references:
   name: TeamsChannelData
   parent: botbuilder.schema.teams
   uid: botbuilder.schema.teams.TeamsChannelData
+- fullName: botbuilder.schema.teams.TeamsPagedMembersResult
+  isExternal: false
+  name: TeamsPagedMembersResult
+  parent: botbuilder.schema.teams
+  uid: botbuilder.schema.teams.TeamsPagedMembersResult
 - fullName: botbuilder.schema.teams.TenantInfo
   isExternal: false
   name: TenantInfo

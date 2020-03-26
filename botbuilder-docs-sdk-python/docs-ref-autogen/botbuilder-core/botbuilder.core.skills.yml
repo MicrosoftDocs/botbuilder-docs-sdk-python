@@ -3,12 +3,16 @@ api_name: []
 items:
 - children:
   - botbuilder.core.skills.BotFrameworkSkill
+  - botbuilder.core.skills.BotFrameworkClient
   - botbuilder.core.skills.ConversationIdFactoryBase
-  - botbuilder.core.skills.SkillConversationIdFactory
+  - botbuilder.core.skills.SkillConversationIdFactoryOptions
+  - botbuilder.core.skills.SkillConversationReference
   - botbuilder.core.skills.SkillHandler
+  - botbuilder.core.skills.bot_framework_client
   - botbuilder.core.skills.bot_framework_skill
   - botbuilder.core.skills.conversation_id_factory
-  - botbuilder.core.skills.skill_conversation_id_factory
+  - botbuilder.core.skills.skill_conversation_id_factory_options
+  - botbuilder.core.skills.skill_conversation_reference
   - botbuilder.core.skills.skill_handler
   fullName: botbuilder.core.skills
   kind: import
@@ -24,21 +28,36 @@ references:
   name: BotFrameworkSkill
   parent: botbuilder.core.skills
   uid: botbuilder.core.skills.BotFrameworkSkill
+- fullName: botbuilder.core.skills.BotFrameworkClient
+  isExternal: false
+  name: BotFrameworkClient
+  parent: botbuilder.core.skills
+  uid: botbuilder.core.skills.BotFrameworkClient
 - fullName: botbuilder.core.skills.ConversationIdFactoryBase
   isExternal: false
   name: ConversationIdFactoryBase
   parent: botbuilder.core.skills
   uid: botbuilder.core.skills.ConversationIdFactoryBase
-- fullName: botbuilder.core.skills.SkillConversationIdFactory
+- fullName: botbuilder.core.skills.SkillConversationIdFactoryOptions
   isExternal: false
-  name: SkillConversationIdFactory
+  name: SkillConversationIdFactoryOptions
   parent: botbuilder.core.skills
-  uid: botbuilder.core.skills.SkillConversationIdFactory
+  uid: botbuilder.core.skills.SkillConversationIdFactoryOptions
+- fullName: botbuilder.core.skills.SkillConversationReference
+  isExternal: false
+  name: SkillConversationReference
+  parent: botbuilder.core.skills
+  uid: botbuilder.core.skills.SkillConversationReference
 - fullName: botbuilder.core.skills.SkillHandler
   isExternal: false
   name: SkillHandler
   parent: botbuilder.core.skills
   uid: botbuilder.core.skills.SkillHandler
+- fullName: botbuilder.core.skills.bot_framework_client
+  isExternal: false
+  name: bot_framework_client
+  parent: botbuilder.core.skills
+  uid: botbuilder.core.skills.bot_framework_client
 - fullName: botbuilder.core.skills.bot_framework_skill
   isExternal: false
   name: bot_framework_skill
@@ -49,11 +68,16 @@ references:
   name: conversation_id_factory
   parent: botbuilder.core.skills
   uid: botbuilder.core.skills.conversation_id_factory
-- fullName: botbuilder.core.skills.skill_conversation_id_factory
+- fullName: botbuilder.core.skills.skill_conversation_id_factory_options
   isExternal: false
-  name: skill_conversation_id_factory
+  name: skill_conversation_id_factory_options
   parent: botbuilder.core.skills
-  uid: botbuilder.core.skills.skill_conversation_id_factory
+  uid: botbuilder.core.skills.skill_conversation_id_factory_options
+- fullName: botbuilder.core.skills.skill_conversation_reference
+  isExternal: false
+  name: skill_conversation_reference
+  parent: botbuilder.core.skills
+  uid: botbuilder.core.skills.skill_conversation_reference
 - fullName: botbuilder.core.skills.skill_handler
   isExternal: false
   name: skill_handler

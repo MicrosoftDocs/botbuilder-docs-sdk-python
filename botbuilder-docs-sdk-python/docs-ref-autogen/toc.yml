@@ -118,6 +118,8 @@
         uid: botbuilder.schema.teams.TeamsChannelAccount
       - name: botbuilder.schema.teams.TeamsChannelData
         uid: botbuilder.schema.teams.TeamsChannelData
+      - name: botbuilder.schema.teams.TeamsPagedMembersResult
+        uid: botbuilder.schema.teams.TeamsPagedMembersResult
       - name: botbuilder.schema.teams.TenantInfo
         uid: botbuilder.schema.teams.TenantInfo
       name: botbuilder.schema.teams
@@ -178,6 +180,8 @@
       uid: botbuilder.schema.ErrorResponse
     - name: botbuilder.schema.ErrorResponseException
       uid: botbuilder.schema.ErrorResponseException
+    - name: botbuilder.schema.ExpectedReplies
+      uid: botbuilder.schema.ExpectedReplies
     - name: botbuilder.schema.Fact
       uid: botbuilder.schema.Fact
     - name: botbuilder.schema.GeoCoordinates
@@ -218,6 +222,8 @@
       uid: botbuilder.schema.RoleTypes
     - name: botbuilder.schema.SemanticAction
       uid: botbuilder.schema.SemanticAction
+    - name: botbuilder.schema.SignInConstants
+      uid: botbuilder.schema.SignInConstants
     - name: botbuilder.schema.SigninCard
       uid: botbuilder.schema.SigninCard
     - name: botbuilder.schema.SuggestedActions
@@ -232,6 +238,12 @@
       uid: botbuilder.schema.ThumbnailCard
     - name: botbuilder.schema.ThumbnailUrl
       uid: botbuilder.schema.ThumbnailUrl
+    - name: botbuilder.schema.TokenExchangeInvokeRequest
+      uid: botbuilder.schema.TokenExchangeInvokeRequest
+    - name: botbuilder.schema.TokenExchangeInvokeResponse
+      uid: botbuilder.schema.TokenExchangeInvokeResponse
+    - name: botbuilder.schema.TokenExchangeState
+      uid: botbuilder.schema.TokenExchangeState
     - name: botbuilder.schema.TokenRequest
       uid: botbuilder.schema.TokenRequest
     - name: botbuilder.schema.TokenResponse
@@ -302,6 +314,8 @@
       uid: botbuilder.core.activity_handler
     - items:
       - items:
+        - name: botbuilder.core.adapters.test_adapter.ExchangeableToken
+          uid: botbuilder.core.adapters.test_adapter.ExchangeableToken
         - name: botbuilder.core.adapters.test_adapter.TestAdapter
           uid: botbuilder.core.adapters.test_adapter.TestAdapter
         - name: botbuilder.core.adapters.test_adapter.TestFlow
@@ -348,11 +362,6 @@
       name: botbuilder.core.bot_framework_adapter
       uid: botbuilder.core.bot_framework_adapter
     - items:
-      - name: botbuilder.core.bot_framework_http_client.BotFrameworkHttpClient
-        uid: botbuilder.core.bot_framework_http_client.BotFrameworkHttpClient
-      name: botbuilder.core.bot_framework_http_client
-      uid: botbuilder.core.bot_framework_http_client
-    - items:
       - name: botbuilder.core.bot_state.BotState
         uid: botbuilder.core.bot_state.BotState
       - name: botbuilder.core.bot_state.BotStatePropertyAccessor
@@ -396,6 +405,11 @@
         uid: botbuilder.core.conversation_state.ConversationState
       name: botbuilder.core.conversation_state
       uid: botbuilder.core.conversation_state
+    - items:
+      - name: botbuilder.core.extended_user_token_provider.ExtendedUserTokenProvider
+        uid: botbuilder.core.extended_user_token_provider.ExtendedUserTokenProvider
+      name: botbuilder.core.extended_user_token_provider
+      uid: botbuilder.core.extended_user_token_provider
     - items:
       - items:
         - name: botbuilder.core.inspection.inspection_middleware.InspectionMiddleware
@@ -486,6 +500,8 @@
         uid: botbuilder.core.property_manager.PropertyManager
       name: botbuilder.core.property_manager
       uid: botbuilder.core.property_manager
+    - name: botbuilder.core.re_escape
+      uid: botbuilder.core.re_escape
     - items:
       - name: botbuilder.core.recognizer.Recognizer
         uid: botbuilder.core.recognizer.Recognizer
@@ -498,6 +514,8 @@
         uid: botbuilder.core.recognizer_result.TopIntent
       name: botbuilder.core.recognizer_result
       uid: botbuilder.core.recognizer_result
+    - name: botbuilder.core.serializer_helper
+      uid: botbuilder.core.serializer_helper
     - items:
       - name: botbuilder.core.show_typing_middleware.ShowTypingMiddleware
         uid: botbuilder.core.show_typing_middleware.ShowTypingMiddleware
@@ -506,6 +524,11 @@
       name: botbuilder.core.show_typing_middleware
       uid: botbuilder.core.show_typing_middleware
     - items:
+      - items:
+        - name: botbuilder.core.skills.bot_framework_client.BotFrameworkClient
+          uid: botbuilder.core.skills.bot_framework_client.BotFrameworkClient
+        name: botbuilder.core.skills.bot_framework_client
+        uid: botbuilder.core.skills.bot_framework_client
       - items:
         - name: botbuilder.core.skills.bot_framework_skill.BotFrameworkSkill
           uid: botbuilder.core.skills.bot_framework_skill.BotFrameworkSkill
@@ -517,21 +540,30 @@
         name: botbuilder.core.skills.conversation_id_factory
         uid: botbuilder.core.skills.conversation_id_factory
       - items:
-        - name: botbuilder.core.skills.skill_conversation_id_factory.SkillConversationIdFactory
-          uid: botbuilder.core.skills.skill_conversation_id_factory.SkillConversationIdFactory
-        name: botbuilder.core.skills.skill_conversation_id_factory
-        uid: botbuilder.core.skills.skill_conversation_id_factory
+        - name: botbuilder.core.skills.skill_conversation_id_factory_options.SkillConversationIdFactoryOptions
+          uid: botbuilder.core.skills.skill_conversation_id_factory_options.SkillConversationIdFactoryOptions
+        name: botbuilder.core.skills.skill_conversation_id_factory_options
+        uid: botbuilder.core.skills.skill_conversation_id_factory_options
+      - items:
+        - name: botbuilder.core.skills.skill_conversation_reference.SkillConversationReference
+          uid: botbuilder.core.skills.skill_conversation_reference.SkillConversationReference
+        name: botbuilder.core.skills.skill_conversation_reference
+        uid: botbuilder.core.skills.skill_conversation_reference
       - items:
         - name: botbuilder.core.skills.skill_handler.SkillHandler
           uid: botbuilder.core.skills.skill_handler.SkillHandler
         name: botbuilder.core.skills.skill_handler
         uid: botbuilder.core.skills.skill_handler
+      - name: botbuilder.core.skills.BotFrameworkClient
+        uid: botbuilder.core.skills.BotFrameworkClient
       - name: botbuilder.core.skills.BotFrameworkSkill
         uid: botbuilder.core.skills.BotFrameworkSkill
       - name: botbuilder.core.skills.ConversationIdFactoryBase
         uid: botbuilder.core.skills.ConversationIdFactoryBase
-      - name: botbuilder.core.skills.SkillConversationIdFactory
-        uid: botbuilder.core.skills.SkillConversationIdFactory
+      - name: botbuilder.core.skills.SkillConversationIdFactoryOptions
+        uid: botbuilder.core.skills.SkillConversationIdFactoryOptions
+      - name: botbuilder.core.skills.SkillConversationReference
+        uid: botbuilder.core.skills.SkillConversationReference
       - name: botbuilder.core.skills.SkillHandler
         uid: botbuilder.core.skills.SkillHandler
       name: botbuilder.core.skills
@@ -637,8 +669,6 @@
       uid: botbuilder.core.BotFrameworkAdapter
     - name: botbuilder.core.BotFrameworkAdapterSettings
       uid: botbuilder.core.BotFrameworkAdapterSettings
-    - name: botbuilder.core.BotFrameworkHttpClient
-      uid: botbuilder.core.BotFrameworkHttpClient
     - name: botbuilder.core.BotState
       uid: botbuilder.core.BotState
     - name: botbuilder.core.BotStateSet
@@ -651,6 +681,8 @@
       uid: botbuilder.core.ChannelServiceHandler
     - name: botbuilder.core.ConversationState
       uid: botbuilder.core.ConversationState
+    - name: botbuilder.core.ExtendedUserTokenProvider
+      uid: botbuilder.core.ExtendedUserTokenProvider
     - name: botbuilder.core.IntentScore
       uid: botbuilder.core.IntentScore
     - name: botbuilder.core.InvokeResponse
@@ -962,323 +994,6 @@
 
 - items:
   - items:
-    - name: botbuilder.dialogs.about
-      uid: botbuilder.dialogs.about
-    - items:
-      - items:
-        - name: botbuilder.dialogs.choices.channel.Channel
-          uid: botbuilder.dialogs.choices.channel.Channel
-        name: botbuilder.dialogs.choices.channel
-        uid: botbuilder.dialogs.choices.channel
-      - items:
-        - name: botbuilder.dialogs.choices.choice.Choice
-          uid: botbuilder.dialogs.choices.choice.Choice
-        name: botbuilder.dialogs.choices.choice
-        uid: botbuilder.dialogs.choices.choice
-      - items:
-        - name: botbuilder.dialogs.choices.choice_factory.ChoiceFactory
-          uid: botbuilder.dialogs.choices.choice_factory.ChoiceFactory
-        name: botbuilder.dialogs.choices.choice_factory
-        uid: botbuilder.dialogs.choices.choice_factory
-      - items:
-        - name: botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
-          uid: botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
-        name: botbuilder.dialogs.choices.choice_factory_options
-        uid: botbuilder.dialogs.choices.choice_factory_options
-      - items:
-        - name: botbuilder.dialogs.choices.choice_recognizers.ChoiceRecognizers
-          uid: botbuilder.dialogs.choices.choice_recognizers.ChoiceRecognizers
-        name: botbuilder.dialogs.choices.choice_recognizers
-        uid: botbuilder.dialogs.choices.choice_recognizers
-      - items:
-        - name: botbuilder.dialogs.choices.find.Find
-          uid: botbuilder.dialogs.choices.find.Find
-        name: botbuilder.dialogs.choices.find
-        uid: botbuilder.dialogs.choices.find
-      - items:
-        - name: botbuilder.dialogs.choices.find_choices_options.FindChoicesOptions
-          uid: botbuilder.dialogs.choices.find_choices_options.FindChoicesOptions
-        name: botbuilder.dialogs.choices.find_choices_options
-        uid: botbuilder.dialogs.choices.find_choices_options
-      - items:
-        - name: botbuilder.dialogs.choices.find_values_options.FindValuesOptions
-          uid: botbuilder.dialogs.choices.find_values_options.FindValuesOptions
-        name: botbuilder.dialogs.choices.find_values_options
-        uid: botbuilder.dialogs.choices.find_values_options
-      - items:
-        - name: botbuilder.dialogs.choices.found_choice.FoundChoice
-          uid: botbuilder.dialogs.choices.found_choice.FoundChoice
-        name: botbuilder.dialogs.choices.found_choice
-        uid: botbuilder.dialogs.choices.found_choice
-      - items:
-        - name: botbuilder.dialogs.choices.found_value.FoundValue
-          uid: botbuilder.dialogs.choices.found_value.FoundValue
-        name: botbuilder.dialogs.choices.found_value
-        uid: botbuilder.dialogs.choices.found_value
-      - items:
-        - name: botbuilder.dialogs.choices.list_style.ListStyle
-          uid: botbuilder.dialogs.choices.list_style.ListStyle
-        name: botbuilder.dialogs.choices.list_style
-        uid: botbuilder.dialogs.choices.list_style
-      - items:
-        - name: botbuilder.dialogs.choices.model_result.ModelResult
-          uid: botbuilder.dialogs.choices.model_result.ModelResult
-        name: botbuilder.dialogs.choices.model_result
-        uid: botbuilder.dialogs.choices.model_result
-      - items:
-        - name: botbuilder.dialogs.choices.sorted_value.SortedValue
-          uid: botbuilder.dialogs.choices.sorted_value.SortedValue
-        name: botbuilder.dialogs.choices.sorted_value
-        uid: botbuilder.dialogs.choices.sorted_value
-      - items:
-        - name: botbuilder.dialogs.choices.token.Token
-          uid: botbuilder.dialogs.choices.token.Token
-        name: botbuilder.dialogs.choices.token
-        uid: botbuilder.dialogs.choices.token
-      - items:
-        - name: botbuilder.dialogs.choices.tokenizer.Tokenizer
-          uid: botbuilder.dialogs.choices.tokenizer.Tokenizer
-        name: botbuilder.dialogs.choices.tokenizer
-        uid: botbuilder.dialogs.choices.tokenizer
-      - name: botbuilder.dialogs.choices.Channel
-        uid: botbuilder.dialogs.choices.Channel
-      - name: botbuilder.dialogs.choices.Choice
-        uid: botbuilder.dialogs.choices.Choice
-      - name: botbuilder.dialogs.choices.ChoiceFactory
-        uid: botbuilder.dialogs.choices.ChoiceFactory
-      - name: botbuilder.dialogs.choices.ChoiceFactoryOptions
-        uid: botbuilder.dialogs.choices.ChoiceFactoryOptions
-      - name: botbuilder.dialogs.choices.ChoiceRecognizers
-        uid: botbuilder.dialogs.choices.ChoiceRecognizers
-      - name: botbuilder.dialogs.choices.Find
-        uid: botbuilder.dialogs.choices.Find
-      - name: botbuilder.dialogs.choices.FindChoicesOptions
-        uid: botbuilder.dialogs.choices.FindChoicesOptions
-      - name: botbuilder.dialogs.choices.FindValuesOptions
-        uid: botbuilder.dialogs.choices.FindValuesOptions
-      - name: botbuilder.dialogs.choices.FoundChoice
-        uid: botbuilder.dialogs.choices.FoundChoice
-      - name: botbuilder.dialogs.choices.ListStyle
-        uid: botbuilder.dialogs.choices.ListStyle
-      - name: botbuilder.dialogs.choices.ModelResult
-        uid: botbuilder.dialogs.choices.ModelResult
-      - name: botbuilder.dialogs.choices.SortedValue
-        uid: botbuilder.dialogs.choices.SortedValue
-      - name: botbuilder.dialogs.choices.Token
-        uid: botbuilder.dialogs.choices.Token
-      - name: botbuilder.dialogs.choices.Tokenizer
-        uid: botbuilder.dialogs.choices.Tokenizer
-      name: botbuilder.dialogs.choices
-      uid: botbuilder.dialogs.choices
-    - items:
-      - name: botbuilder.dialogs.component_dialog.ComponentDialog
-        uid: botbuilder.dialogs.component_dialog.ComponentDialog
-      name: botbuilder.dialogs.component_dialog
-      uid: botbuilder.dialogs.component_dialog
-    - items:
-      - name: botbuilder.dialogs.dialog.Dialog
-        uid: botbuilder.dialogs.dialog.Dialog
-      name: botbuilder.dialogs.dialog
-      uid: botbuilder.dialogs.dialog
-    - items:
-      - name: botbuilder.dialogs.dialog_context.DialogContext
-        uid: botbuilder.dialogs.dialog_context.DialogContext
-      name: botbuilder.dialogs.dialog_context
-      uid: botbuilder.dialogs.dialog_context
-    - items:
-      - name: botbuilder.dialogs.dialog_instance.DialogInstance
-        uid: botbuilder.dialogs.dialog_instance.DialogInstance
-      name: botbuilder.dialogs.dialog_instance
-      uid: botbuilder.dialogs.dialog_instance
-    - items:
-      - name: botbuilder.dialogs.dialog_reason.DialogReason
-        uid: botbuilder.dialogs.dialog_reason.DialogReason
-      name: botbuilder.dialogs.dialog_reason
-      uid: botbuilder.dialogs.dialog_reason
-    - items:
-      - name: botbuilder.dialogs.dialog_set.DialogSet
-        uid: botbuilder.dialogs.dialog_set.DialogSet
-      name: botbuilder.dialogs.dialog_set
-      uid: botbuilder.dialogs.dialog_set
-    - items:
-      - name: botbuilder.dialogs.dialog_state.DialogState
-        uid: botbuilder.dialogs.dialog_state.DialogState
-      name: botbuilder.dialogs.dialog_state
-      uid: botbuilder.dialogs.dialog_state
-    - items:
-      - name: botbuilder.dialogs.dialog_turn_result.DialogTurnResult
-        uid: botbuilder.dialogs.dialog_turn_result.DialogTurnResult
-      name: botbuilder.dialogs.dialog_turn_result
-      uid: botbuilder.dialogs.dialog_turn_result
-    - items:
-      - name: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus
-        uid: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus
-      name: botbuilder.dialogs.dialog_turn_status
-      uid: botbuilder.dialogs.dialog_turn_status
-    - items:
-      - items:
-        - name: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
-          uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
-        name: botbuilder.dialogs.prompts.activity_prompt
-        uid: botbuilder.dialogs.prompts.activity_prompt
-      - items:
-        - name: botbuilder.dialogs.prompts.attachment_prompt.AttachmentPrompt
-          uid: botbuilder.dialogs.prompts.attachment_prompt.AttachmentPrompt
-        name: botbuilder.dialogs.prompts.attachment_prompt
-        uid: botbuilder.dialogs.prompts.attachment_prompt
-      - items:
-        - name: botbuilder.dialogs.prompts.choice_prompt.ChoicePrompt
-          uid: botbuilder.dialogs.prompts.choice_prompt.ChoicePrompt
-        name: botbuilder.dialogs.prompts.choice_prompt
-        uid: botbuilder.dialogs.prompts.choice_prompt
-      - items:
-        - name: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt
-          uid: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt
-        name: botbuilder.dialogs.prompts.confirm_prompt
-        uid: botbuilder.dialogs.prompts.confirm_prompt
-      - items:
-        - name: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt
-          uid: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt
-        name: botbuilder.dialogs.prompts.datetime_prompt
-        uid: botbuilder.dialogs.prompts.datetime_prompt
-      - items:
-        - name: botbuilder.dialogs.prompts.datetime_resolution.DateTimeResolution
-          uid: botbuilder.dialogs.prompts.datetime_resolution.DateTimeResolution
-        name: botbuilder.dialogs.prompts.datetime_resolution
-        uid: botbuilder.dialogs.prompts.datetime_resolution
-      - items:
-        - name: botbuilder.dialogs.prompts.number_prompt.NumberPrompt
-          uid: botbuilder.dialogs.prompts.number_prompt.NumberPrompt
-        name: botbuilder.dialogs.prompts.number_prompt
-        uid: botbuilder.dialogs.prompts.number_prompt
-      - items:
-        - name: botbuilder.dialogs.prompts.oauth_prompt.OAuthPrompt
-          uid: botbuilder.dialogs.prompts.oauth_prompt.OAuthPrompt
-        name: botbuilder.dialogs.prompts.oauth_prompt
-        uid: botbuilder.dialogs.prompts.oauth_prompt
-      - items:
-        - name: botbuilder.dialogs.prompts.oauth_prompt_settings.OAuthPromptSettings
-          uid: botbuilder.dialogs.prompts.oauth_prompt_settings.OAuthPromptSettings
-        name: botbuilder.dialogs.prompts.oauth_prompt_settings
-        uid: botbuilder.dialogs.prompts.oauth_prompt_settings
-      - items:
-        - name: botbuilder.dialogs.prompts.prompt.Prompt
-          uid: botbuilder.dialogs.prompts.prompt.Prompt
-        name: botbuilder.dialogs.prompts.prompt
-        uid: botbuilder.dialogs.prompts.prompt
-      - items:
-        - name: botbuilder.dialogs.prompts.prompt_options.PromptOptions
-          uid: botbuilder.dialogs.prompts.prompt_options.PromptOptions
-        name: botbuilder.dialogs.prompts.prompt_options
-        uid: botbuilder.dialogs.prompts.prompt_options
-      - items:
-        - name: botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult
-          uid: botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult
-        name: botbuilder.dialogs.prompts.prompt_recognizer_result
-        uid: botbuilder.dialogs.prompts.prompt_recognizer_result
-      - items:
-        - name: botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext
-          uid: botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext
-        name: botbuilder.dialogs.prompts.prompt_validator_context
-        uid: botbuilder.dialogs.prompts.prompt_validator_context
-      - items:
-        - name: botbuilder.dialogs.prompts.text_prompt.TextPrompt
-          uid: botbuilder.dialogs.prompts.text_prompt.TextPrompt
-        name: botbuilder.dialogs.prompts.text_prompt
-        uid: botbuilder.dialogs.prompts.text_prompt
-      - name: botbuilder.dialogs.prompts.ActivityPrompt
-        uid: botbuilder.dialogs.prompts.ActivityPrompt
-      - name: botbuilder.dialogs.prompts.AttachmentPrompt
-        uid: botbuilder.dialogs.prompts.AttachmentPrompt
-      - name: botbuilder.dialogs.prompts.ChoicePrompt
-        uid: botbuilder.dialogs.prompts.ChoicePrompt
-      - name: botbuilder.dialogs.prompts.ConfirmPrompt
-        uid: botbuilder.dialogs.prompts.ConfirmPrompt
-      - name: botbuilder.dialogs.prompts.DateTimePrompt
-        uid: botbuilder.dialogs.prompts.DateTimePrompt
-      - name: botbuilder.dialogs.prompts.DateTimeResolution
-        uid: botbuilder.dialogs.prompts.DateTimeResolution
-      - name: botbuilder.dialogs.prompts.NumberPrompt
-        uid: botbuilder.dialogs.prompts.NumberPrompt
-      - name: botbuilder.dialogs.prompts.OAuthPrompt
-        uid: botbuilder.dialogs.prompts.OAuthPrompt
-      - name: botbuilder.dialogs.prompts.OAuthPromptSettings
-        uid: botbuilder.dialogs.prompts.OAuthPromptSettings
-      - name: botbuilder.dialogs.prompts.Prompt
-        uid: botbuilder.dialogs.prompts.Prompt
-      - name: botbuilder.dialogs.prompts.PromptOptions
-        uid: botbuilder.dialogs.prompts.PromptOptions
-      - name: botbuilder.dialogs.prompts.PromptRecognizerResult
-        uid: botbuilder.dialogs.prompts.PromptRecognizerResult
-      - name: botbuilder.dialogs.prompts.PromptValidatorContext
-        uid: botbuilder.dialogs.prompts.PromptValidatorContext
-      - name: botbuilder.dialogs.prompts.TextPrompt
-        uid: botbuilder.dialogs.prompts.TextPrompt
-      name: botbuilder.dialogs.prompts
-      uid: botbuilder.dialogs.prompts
-    - items:
-      - name: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
-        uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
-      name: botbuilder.dialogs.waterfall_dialog
-      uid: botbuilder.dialogs.waterfall_dialog
-    - name: botbuilder.dialogs.waterfall_step
-      uid: botbuilder.dialogs.waterfall_step
-    - items:
-      - name: botbuilder.dialogs.waterfall_step_context.WaterfallStepContext
-        uid: botbuilder.dialogs.waterfall_step_context.WaterfallStepContext
-      name: botbuilder.dialogs.waterfall_step_context
-      uid: botbuilder.dialogs.waterfall_step_context
-    - name: botbuilder.dialogs.ComponentDialog
-      uid: botbuilder.dialogs.ComponentDialog
-    - name: botbuilder.dialogs.ConfirmPrompt
-      uid: botbuilder.dialogs.ConfirmPrompt
-    - name: botbuilder.dialogs.DateTimePrompt
-      uid: botbuilder.dialogs.DateTimePrompt
-    - name: botbuilder.dialogs.DateTimeResolution
-      uid: botbuilder.dialogs.DateTimeResolution
-    - name: botbuilder.dialogs.Dialog
-      uid: botbuilder.dialogs.Dialog
-    - name: botbuilder.dialogs.DialogContext
-      uid: botbuilder.dialogs.DialogContext
-    - name: botbuilder.dialogs.DialogInstance
-      uid: botbuilder.dialogs.DialogInstance
-    - name: botbuilder.dialogs.DialogReason
-      uid: botbuilder.dialogs.DialogReason
-    - name: botbuilder.dialogs.DialogSet
-      uid: botbuilder.dialogs.DialogSet
-    - name: botbuilder.dialogs.DialogState
-      uid: botbuilder.dialogs.DialogState
-    - name: botbuilder.dialogs.DialogTurnResult
-      uid: botbuilder.dialogs.DialogTurnResult
-    - name: botbuilder.dialogs.DialogTurnStatus
-      uid: botbuilder.dialogs.DialogTurnStatus
-    - name: botbuilder.dialogs.NumberPrompt
-      uid: botbuilder.dialogs.NumberPrompt
-    - name: botbuilder.dialogs.OAuthPrompt
-      uid: botbuilder.dialogs.OAuthPrompt
-    - name: botbuilder.dialogs.OAuthPromptSettings
-      uid: botbuilder.dialogs.OAuthPromptSettings
-    - name: botbuilder.dialogs.Prompt
-      uid: botbuilder.dialogs.Prompt
-    - name: botbuilder.dialogs.PromptOptions
-      uid: botbuilder.dialogs.PromptOptions
-    - name: botbuilder.dialogs.PromptRecognizerResult
-      uid: botbuilder.dialogs.PromptRecognizerResult
-    - name: botbuilder.dialogs.PromptValidatorContext
-      uid: botbuilder.dialogs.PromptValidatorContext
-    - name: botbuilder.dialogs.TextPrompt
-      uid: botbuilder.dialogs.TextPrompt
-    - name: botbuilder.dialogs.WaterfallDialog
-      uid: botbuilder.dialogs.WaterfallDialog
-    - name: botbuilder.dialogs.WaterfallStepContext
-      uid: botbuilder.dialogs.WaterfallStepContext
-    name: botbuilder.dialogs
-    uid: botbuilder.dialogs
-  name: botbuilder-dialogs
-  uid: project-botbuilder-dialogs
-
-- items:
-  - items:
     - items:
       - items:
         - name: botframework.connector.aio.operations_async.AttachmentsOperations
@@ -1303,6 +1018,11 @@
       uid: botframework.connector.async_mixin
     - items:
       - items:
+        - name: botframework.connector.auth.app_credentials.AppCredentials
+          uid: botframework.connector.auth.app_credentials.AppCredentials
+        name: botframework.connector.auth.app_credentials
+        uid: botframework.connector.auth.app_credentials
+      - items:
         - name: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
           uid: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
         name: botframework.connector.auth.authentication_configuration
@@ -1312,6 +1032,11 @@
           uid: botframework.connector.auth.authentication_constants.AuthenticationConstants
         name: botframework.connector.auth.authentication_constants
         uid: botframework.connector.auth.authentication_constants
+      - items:
+        - name: botframework.connector.auth.certificate_app_credentials.CertificateAppCredentials
+          uid: botframework.connector.auth.certificate_app_credentials.CertificateAppCredentials
+        name: botframework.connector.auth.certificate_app_credentials
+        uid: botframework.connector.auth.certificate_app_credentials
       - items:
         - name: botframework.connector.auth.channel_provider.ChannelProvider
           uid: botframework.connector.auth.channel_provider.ChannelProvider
@@ -1376,6 +1101,11 @@
           uid: botframework.connector.auth.microsoft_app_credentials.MicrosoftAppCredentials
         name: botframework.connector.auth.microsoft_app_credentials
         uid: botframework.connector.auth.microsoft_app_credentials
+      - items:
+        - name: botframework.connector.auth.microsoft_government_app_credentials.MicrosoftGovernmentAppCredentials
+          uid: botframework.connector.auth.microsoft_government_app_credentials.MicrosoftGovernmentAppCredentials
+        name: botframework.connector.auth.microsoft_government_app_credentials
+        uid: botframework.connector.auth.microsoft_government_app_credentials
       - items:
         - name: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider
           uid: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider
@@ -1453,6 +1183,12 @@
           uid: botframework.connector.token_api.models.ErrorResponseException
         - name: botframework.connector.token_api.models.InnerHttpError
           uid: botframework.connector.token_api.models.InnerHttpError
+        - name: botframework.connector.token_api.models.SignInUrlResponse
+          uid: botframework.connector.token_api.models.SignInUrlResponse
+        - name: botframework.connector.token_api.models.TokenExchangeRequest
+          uid: botframework.connector.token_api.models.TokenExchangeRequest
+        - name: botframework.connector.token_api.models.TokenExchangeResource
+          uid: botframework.connector.token_api.models.TokenExchangeResource
         - name: botframework.connector.token_api.models.TokenResponse
           uid: botframework.connector.token_api.models.TokenResponse
         - name: botframework.connector.token_api.models.TokenStatus

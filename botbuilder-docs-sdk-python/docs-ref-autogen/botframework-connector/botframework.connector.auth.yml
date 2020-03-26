@@ -2,8 +2,10 @@
 api_name: []
 items:
 - children:
+  - botframework.connector.auth.app_credentials
   - botframework.connector.auth.authentication_configuration
   - botframework.connector.auth.authentication_constants
+  - botframework.connector.auth.certificate_app_credentials
   - botframework.connector.auth.channel_provider
   - botframework.connector.auth.channel_validation
   - botframework.connector.auth.claims_identity
@@ -16,6 +18,7 @@ items:
   - botframework.connector.auth.jwt_token_extractor
   - botframework.connector.auth.jwt_token_validation
   - botframework.connector.auth.microsoft_app_credentials
+  - botframework.connector.auth.microsoft_government_app_credentials
   - botframework.connector.auth.simple_channel_provider
   - botframework.connector.auth.skill_validation
   - botframework.connector.auth.verify_options
@@ -28,6 +31,11 @@ items:
   type: package
   uid: botframework.connector.auth
 references:
+- fullName: botframework.connector.auth.app_credentials
+  isExternal: false
+  name: app_credentials
+  parent: botframework.connector.auth
+  uid: botframework.connector.auth.app_credentials
 - fullName: botframework.connector.auth.authentication_configuration
   isExternal: false
   name: authentication_configuration
@@ -38,6 +46,11 @@ references:
   name: authentication_constants
   parent: botframework.connector.auth
   uid: botframework.connector.auth.authentication_constants
+- fullName: botframework.connector.auth.certificate_app_credentials
+  isExternal: false
+  name: certificate_app_credentials
+  parent: botframework.connector.auth
+  uid: botframework.connector.auth.certificate_app_credentials
 - fullName: botframework.connector.auth.channel_provider
   isExternal: false
   name: channel_provider
@@ -98,6 +111,11 @@ references:
   name: microsoft_app_credentials
   parent: botframework.connector.auth
   uid: botframework.connector.auth.microsoft_app_credentials
+- fullName: botframework.connector.auth.microsoft_government_app_credentials
+  isExternal: false
+  name: microsoft_government_app_credentials
+  parent: botframework.connector.auth
+  uid: botframework.connector.auth.microsoft_government_app_credentials
 - fullName: botframework.connector.auth.simple_channel_provider
   isExternal: false
   name: simple_channel_provider

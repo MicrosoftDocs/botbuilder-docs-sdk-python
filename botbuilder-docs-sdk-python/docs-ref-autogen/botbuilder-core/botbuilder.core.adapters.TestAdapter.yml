@@ -2,12 +2,18 @@
 api_name: []
 items:
 - children:
+  - botbuilder.core.adapters.TestAdapter.add_exchangeable_token
   - botbuilder.core.adapters.TestAdapter.add_user_token
   - botbuilder.core.adapters.TestAdapter.continue_conversation
   - botbuilder.core.adapters.TestAdapter.delete_activity
+  - botbuilder.core.adapters.TestAdapter.exchange_token
+  - botbuilder.core.adapters.TestAdapter.exchange_token_from_credentials
   - botbuilder.core.adapters.TestAdapter.get_aad_tokens
   - botbuilder.core.adapters.TestAdapter.get_next_activity
   - botbuilder.core.adapters.TestAdapter.get_oauth_sign_in_link
+  - botbuilder.core.adapters.TestAdapter.get_sign_in_resource_from_user
+  - botbuilder.core.adapters.TestAdapter.get_sign_in_resource_from_user_and_credentials
+  - botbuilder.core.adapters.TestAdapter.get_token_status
   - botbuilder.core.adapters.TestAdapter.get_user_token
   - botbuilder.core.adapters.TestAdapter.process_activity
   - botbuilder.core.adapters.TestAdapter.receive_activity
@@ -27,9 +33,14 @@ items:
     type: botbuilder.core.bot_adapter.BotAdapter
   - inheritance:
     - inheritance:
+      - inheritance:
+        - type: builtins.object
+        type: abc.ABC
+      type: botbuilder.core.user_token_provider.UserTokenProvider
+    - inheritance:
       - type: builtins.object
       type: abc.ABC
-    type: botbuilder.core.user_token_provider.UserTokenProvider
+    type: botbuilder.core.extended_user_token_provider.ExtendedUserTokenProvider
   langs:
   - python
   module: botbuilder.core.adapters
@@ -41,6 +52,18 @@ items:
       = None, send_trace_activities: bool = False)'
   type: class
   uid: botbuilder.core.adapters.TestAdapter
+- class: botbuilder.core.adapters.TestAdapter
+  fullName: botbuilder.core.adapters.TestAdapter.add_exchangeable_token
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: 'add_exchangeable_token(connection_name: str, channel_id: str, user_id: str,
+    exchangeable_item: str, token: str)'
+  syntax:
+    content: 'add_exchangeable_token(connection_name: str, channel_id: str, user_id:
+      str, exchangeable_item: str, token: str)'
+  type: method
+  uid: botbuilder.core.adapters.TestAdapter.add_exchangeable_token
 - class: botbuilder.core.adapters.TestAdapter
   fullName: botbuilder.core.adapters.TestAdapter.add_user_token
   langs:
@@ -60,7 +83,7 @@ items:
   module: botbuilder.core.adapters
   name: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
     callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
-    = None)'
+    = None, audience: str = None)'
   summary: 'The *TestAdapter* just calls parent implementation.
 
     :param reference:
@@ -75,7 +98,7 @@ items:
   syntax:
     content: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
       callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
-      = None)'
+      = None, audience: str = None)'
   type: method
   uid: botbuilder.core.adapters.TestAdapter.continue_conversation
 - class: botbuilder.core.adapters.TestAdapter
@@ -100,15 +123,49 @@ items:
   type: method
   uid: botbuilder.core.adapters.TestAdapter.delete_activity
 - class: botbuilder.core.adapters.TestAdapter
+  fullName: botbuilder.core.adapters.TestAdapter.exchange_token
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: 'exchange_token(turn_context: botbuilder.core.turn_context.TurnContext, connection_name:
+    str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
+    -> botbuilder.schema._models_py3.TokenResponse'
+  syntax:
+    content: 'exchange_token(turn_context: botbuilder.core.turn_context.TurnContext,
+      connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
+      -> botbuilder.schema._models_py3.TokenResponse'
+  type: method
+  uid: botbuilder.core.adapters.TestAdapter.exchange_token
+- class: botbuilder.core.adapters.TestAdapter
+  fullName: botbuilder.core.adapters.TestAdapter.exchange_token_from_credentials
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: 'exchange_token_from_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
+    oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
+    connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
+    -> botbuilder.schema._models_py3.TokenResponse'
+  syntax:
+    content: 'exchange_token_from_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
+      oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
+      connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
+      -> botbuilder.schema._models_py3.TokenResponse'
+  type: method
+  uid: botbuilder.core.adapters.TestAdapter.exchange_token_from_credentials
+- class: botbuilder.core.adapters.TestAdapter
   fullName: botbuilder.core.adapters.TestAdapter.get_aad_tokens
   langs:
   - python
   module: botbuilder.core.adapters
   name: 'get_aad_tokens(context: botbuilder.core.turn_context.TurnContext, connection_name:
-    str, resource_urls: typing.List[str]) -> typing.Dict[str, botbuilder.schema._models_py3.TokenResponse]'
+    str, resource_urls: typing.List[str], user_id: str = None, oauth_app_credentials:
+    botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
+    botbuilder.schema._models_py3.TokenResponse]'
   syntax:
     content: 'get_aad_tokens(context: botbuilder.core.turn_context.TurnContext, connection_name:
-      str, resource_urls: typing.List[str]) -> typing.Dict[str, botbuilder.schema._models_py3.TokenResponse]'
+      str, resource_urls: typing.List[str], user_id: str = None, oauth_app_credentials:
+      botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
+      botbuilder.schema._models_py3.TokenResponse]'
   type: method
   uid: botbuilder.core.adapters.TestAdapter.get_aad_tokens
 - class: botbuilder.core.adapters.TestAdapter
@@ -127,22 +184,68 @@ items:
   - python
   module: botbuilder.core.adapters
   name: 'get_oauth_sign_in_link(context: botbuilder.core.turn_context.TurnContext,
-    connection_name: str) -> str'
+    connection_name: str, final_redirect: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+    = None) -> str'
   syntax:
     content: 'get_oauth_sign_in_link(context: botbuilder.core.turn_context.TurnContext,
-      connection_name: str) -> str'
+      connection_name: str, final_redirect: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+      = None) -> str'
   type: method
   uid: botbuilder.core.adapters.TestAdapter.get_oauth_sign_in_link
+- class: botbuilder.core.adapters.TestAdapter
+  fullName: botbuilder.core.adapters.TestAdapter.get_sign_in_resource_from_user
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: 'get_sign_in_resource_from_user(turn_context: botbuilder.core.turn_context.TurnContext,
+    connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+  syntax:
+    content: 'get_sign_in_resource_from_user(turn_context: botbuilder.core.turn_context.TurnContext,
+      connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+  type: method
+  uid: botbuilder.core.adapters.TestAdapter.get_sign_in_resource_from_user
+- class: botbuilder.core.adapters.TestAdapter
+  fullName: botbuilder.core.adapters.TestAdapter.get_sign_in_resource_from_user_and_credentials
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: 'get_sign_in_resource_from_user_and_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
+    oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
+    connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+  syntax:
+    content: 'get_sign_in_resource_from_user_and_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
+      oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
+      connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+  type: method
+  uid: botbuilder.core.adapters.TestAdapter.get_sign_in_resource_from_user_and_credentials
+- class: botbuilder.core.adapters.TestAdapter
+  fullName: botbuilder.core.adapters.TestAdapter.get_token_status
+  langs:
+  - python
+  module: botbuilder.core.adapters
+  name: 'get_token_status(context: botbuilder.core.turn_context.TurnContext, connection_name:
+    str = None, user_id: str = None, include_filter: str = None, oauth_app_credentials:
+    botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
+    botbuilder.schema._models_py3.TokenResponse]'
+  syntax:
+    content: 'get_token_status(context: botbuilder.core.turn_context.TurnContext,
+      connection_name: str = None, user_id: str = None, include_filter: str = None,
+      oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+      = None) -> typing.Dict[str, botbuilder.schema._models_py3.TokenResponse]'
+  type: method
+  uid: botbuilder.core.adapters.TestAdapter.get_token_status
 - class: botbuilder.core.adapters.TestAdapter
   fullName: botbuilder.core.adapters.TestAdapter.get_user_token
   langs:
   - python
   module: botbuilder.core.adapters
   name: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, connection_name:
-    str, magic_code: str = None) -> botbuilder.schema._models_py3.TokenResponse'
+    str, magic_code: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+    = None) -> botbuilder.schema._models_py3.TokenResponse'
   syntax:
     content: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, connection_name:
-      str, magic_code: str = None) -> botbuilder.schema._models_py3.TokenResponse'
+      str, magic_code: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+      = None) -> botbuilder.schema._models_py3.TokenResponse'
   type: method
   uid: botbuilder.core.adapters.TestAdapter.get_user_token
 - class: botbuilder.core.adapters.TestAdapter
@@ -223,10 +326,12 @@ items:
   - python
   module: botbuilder.core.adapters
   name: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
-    str, user_id: str = None)'
+    str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+    = None)'
   syntax:
     content: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
-      str, user_id: str = None)'
+      str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+      = None)'
   type: method
   uid: botbuilder.core.adapters.TestAdapter.sign_out_user
 - class: botbuilder.core.adapters.TestAdapter
@@ -298,6 +403,12 @@ items:
   type: method
   uid: botbuilder.core.adapters.TestAdapter.update_activity
 references:
+- fullName: botbuilder.core.adapters.TestAdapter.add_exchangeable_token
+  isExternal: false
+  name: 'add_exchangeable_token(connection_name: str, channel_id: str, user_id: str,
+    exchangeable_item: str, token: str)'
+  parent: botbuilder.core.adapters.TestAdapter
+  uid: botbuilder.core.adapters.TestAdapter.add_exchangeable_token
 - fullName: botbuilder.core.adapters.TestAdapter.add_user_token
   isExternal: false
   name: 'add_user_token(connection_name: str, channel_id: str, user_id: str, token:
@@ -308,7 +419,7 @@ references:
   isExternal: false
   name: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
     callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
-    = None)'
+    = None, audience: str = None)'
   parent: botbuilder.core.adapters.TestAdapter
   uid: botbuilder.core.adapters.TestAdapter.continue_conversation
 - fullName: botbuilder.core.adapters.TestAdapter.delete_activity
@@ -316,10 +427,27 @@ references:
   name: 'delete_activity(context, reference: botbuilder.schema._models_py3.ConversationReference)'
   parent: botbuilder.core.adapters.TestAdapter
   uid: botbuilder.core.adapters.TestAdapter.delete_activity
+- fullName: botbuilder.core.adapters.TestAdapter.exchange_token
+  isExternal: false
+  name: 'exchange_token(turn_context: botbuilder.core.turn_context.TurnContext, connection_name:
+    str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
+    -> botbuilder.schema._models_py3.TokenResponse'
+  parent: botbuilder.core.adapters.TestAdapter
+  uid: botbuilder.core.adapters.TestAdapter.exchange_token
+- fullName: botbuilder.core.adapters.TestAdapter.exchange_token_from_credentials
+  isExternal: false
+  name: 'exchange_token_from_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
+    oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
+    connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
+    -> botbuilder.schema._models_py3.TokenResponse'
+  parent: botbuilder.core.adapters.TestAdapter
+  uid: botbuilder.core.adapters.TestAdapter.exchange_token_from_credentials
 - fullName: botbuilder.core.adapters.TestAdapter.get_aad_tokens
   isExternal: false
   name: 'get_aad_tokens(context: botbuilder.core.turn_context.TurnContext, connection_name:
-    str, resource_urls: typing.List[str]) -> typing.Dict[str, botbuilder.schema._models_py3.TokenResponse]'
+    str, resource_urls: typing.List[str], user_id: str = None, oauth_app_credentials:
+    botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
+    botbuilder.schema._models_py3.TokenResponse]'
   parent: botbuilder.core.adapters.TestAdapter
   uid: botbuilder.core.adapters.TestAdapter.get_aad_tokens
 - fullName: botbuilder.core.adapters.TestAdapter.get_next_activity
@@ -330,13 +458,36 @@ references:
 - fullName: botbuilder.core.adapters.TestAdapter.get_oauth_sign_in_link
   isExternal: false
   name: 'get_oauth_sign_in_link(context: botbuilder.core.turn_context.TurnContext,
-    connection_name: str) -> str'
+    connection_name: str, final_redirect: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+    = None) -> str'
   parent: botbuilder.core.adapters.TestAdapter
   uid: botbuilder.core.adapters.TestAdapter.get_oauth_sign_in_link
+- fullName: botbuilder.core.adapters.TestAdapter.get_sign_in_resource_from_user
+  isExternal: false
+  name: 'get_sign_in_resource_from_user(turn_context: botbuilder.core.turn_context.TurnContext,
+    connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+  parent: botbuilder.core.adapters.TestAdapter
+  uid: botbuilder.core.adapters.TestAdapter.get_sign_in_resource_from_user
+- fullName: botbuilder.core.adapters.TestAdapter.get_sign_in_resource_from_user_and_credentials
+  isExternal: false
+  name: 'get_sign_in_resource_from_user_and_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
+    oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
+    connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+  parent: botbuilder.core.adapters.TestAdapter
+  uid: botbuilder.core.adapters.TestAdapter.get_sign_in_resource_from_user_and_credentials
+- fullName: botbuilder.core.adapters.TestAdapter.get_token_status
+  isExternal: false
+  name: 'get_token_status(context: botbuilder.core.turn_context.TurnContext, connection_name:
+    str = None, user_id: str = None, include_filter: str = None, oauth_app_credentials:
+    botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
+    botbuilder.schema._models_py3.TokenResponse]'
+  parent: botbuilder.core.adapters.TestAdapter
+  uid: botbuilder.core.adapters.TestAdapter.get_token_status
 - fullName: botbuilder.core.adapters.TestAdapter.get_user_token
   isExternal: false
   name: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, connection_name:
-    str, magic_code: str = None) -> botbuilder.schema._models_py3.TokenResponse'
+    str, magic_code: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+    = None) -> botbuilder.schema._models_py3.TokenResponse'
   parent: botbuilder.core.adapters.TestAdapter
   uid: botbuilder.core.adapters.TestAdapter.get_user_token
 - fullName: botbuilder.core.adapters.TestAdapter.process_activity
@@ -364,7 +515,8 @@ references:
 - fullName: botbuilder.core.adapters.TestAdapter.sign_out_user
   isExternal: false
   name: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
-    str, user_id: str = None)'
+    str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+    = None)'
   parent: botbuilder.core.adapters.TestAdapter
   uid: botbuilder.core.adapters.TestAdapter.sign_out_user
 - fullName: botbuilder.core.adapters.TestAdapter.test

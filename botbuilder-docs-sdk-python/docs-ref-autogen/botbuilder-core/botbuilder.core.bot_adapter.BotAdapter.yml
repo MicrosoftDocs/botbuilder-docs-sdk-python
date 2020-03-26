@@ -8,6 +8,10 @@ items:
   - botbuilder.core.bot_adapter.BotAdapter.send_activities
   - botbuilder.core.bot_adapter.BotAdapter.update_activity
   - botbuilder.core.bot_adapter.BotAdapter.use
+  - botbuilder.core.bot_adapter.BotAdapter.BOT_CALLBACK_HANDLER_KEY
+  - botbuilder.core.bot_adapter.BotAdapter.BOT_CONNECTOR_CLIENT_KEY
+  - botbuilder.core.bot_adapter.BotAdapter.BOT_IDENTITY_KEY
+  - botbuilder.core.bot_adapter.BotAdapter.BOT_OAUTH_SCOPE_KEY
   class: botbuilder.core.bot_adapter.BotAdapter
   fullName: botbuilder.core.bot_adapter.BotAdapter
   inheritance:
@@ -31,7 +35,7 @@ items:
   module: botbuilder.core.bot_adapter
   name: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
     callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
-    = None)'
+    = None, audience: str = None)'
   summary: 'Sends a proactive message to a conversation. Call this method to proactively
     send a message to a conversation.
 
@@ -50,11 +54,13 @@ items:
 
     :param callback: The method to call for the resulting bot turn.</param>
 
-    :param claims_identity:'
+    :param claims_identity:
+
+    :param audience:'
   syntax:
     content: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
       callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
-      = None)'
+      = None, audience: str = None)'
   type: method
   uid: botbuilder.core.bot_adapter.BotAdapter.continue_conversation
 - class: botbuilder.core.bot_adapter.BotAdapter
@@ -156,12 +162,52 @@ items:
     - id: middleware
   type: method
   uid: botbuilder.core.bot_adapter.BotAdapter.use
+- class: botbuilder.core.bot_adapter.BotAdapter
+  fullName: botbuilder.core.bot_adapter.BotAdapter.BOT_CALLBACK_HANDLER_KEY
+  langs:
+  - python
+  module: botbuilder.core.bot_adapter
+  name: BOT_CALLBACK_HANDLER_KEY
+  syntax:
+    content: BOT_CALLBACK_HANDLER_KEY = 'BotCallbackHandler'
+  type: attribute
+  uid: botbuilder.core.bot_adapter.BotAdapter.BOT_CALLBACK_HANDLER_KEY
+- class: botbuilder.core.bot_adapter.BotAdapter
+  fullName: botbuilder.core.bot_adapter.BotAdapter.BOT_CONNECTOR_CLIENT_KEY
+  langs:
+  - python
+  module: botbuilder.core.bot_adapter
+  name: BOT_CONNECTOR_CLIENT_KEY
+  syntax:
+    content: BOT_CONNECTOR_CLIENT_KEY = 'ConnectorClient'
+  type: attribute
+  uid: botbuilder.core.bot_adapter.BotAdapter.BOT_CONNECTOR_CLIENT_KEY
+- class: botbuilder.core.bot_adapter.BotAdapter
+  fullName: botbuilder.core.bot_adapter.BotAdapter.BOT_IDENTITY_KEY
+  langs:
+  - python
+  module: botbuilder.core.bot_adapter
+  name: BOT_IDENTITY_KEY
+  syntax:
+    content: BOT_IDENTITY_KEY = 'BotIdentity'
+  type: attribute
+  uid: botbuilder.core.bot_adapter.BotAdapter.BOT_IDENTITY_KEY
+- class: botbuilder.core.bot_adapter.BotAdapter
+  fullName: botbuilder.core.bot_adapter.BotAdapter.BOT_OAUTH_SCOPE_KEY
+  langs:
+  - python
+  module: botbuilder.core.bot_adapter
+  name: BOT_OAUTH_SCOPE_KEY
+  syntax:
+    content: BOT_OAUTH_SCOPE_KEY = 'botbuilder.core.BotAdapter.OAuthScope'
+  type: attribute
+  uid: botbuilder.core.bot_adapter.BotAdapter.BOT_OAUTH_SCOPE_KEY
 references:
 - fullName: botbuilder.core.bot_adapter.BotAdapter.continue_conversation
   isExternal: false
   name: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
     callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
-    = None)'
+    = None, audience: str = None)'
   parent: botbuilder.core.bot_adapter.BotAdapter
   uid: botbuilder.core.bot_adapter.BotAdapter.continue_conversation
 - fullName: botbuilder.core.bot_adapter.BotAdapter.delete_activity
@@ -194,3 +240,23 @@ references:
   name: use(middleware)
   parent: botbuilder.core.bot_adapter.BotAdapter
   uid: botbuilder.core.bot_adapter.BotAdapter.use
+- fullName: botbuilder.core.bot_adapter.BotAdapter.BOT_CALLBACK_HANDLER_KEY
+  isExternal: false
+  name: BOT_CALLBACK_HANDLER_KEY
+  parent: botbuilder.core.bot_adapter.BotAdapter
+  uid: botbuilder.core.bot_adapter.BotAdapter.BOT_CALLBACK_HANDLER_KEY
+- fullName: botbuilder.core.bot_adapter.BotAdapter.BOT_CONNECTOR_CLIENT_KEY
+  isExternal: false
+  name: BOT_CONNECTOR_CLIENT_KEY
+  parent: botbuilder.core.bot_adapter.BotAdapter
+  uid: botbuilder.core.bot_adapter.BotAdapter.BOT_CONNECTOR_CLIENT_KEY
+- fullName: botbuilder.core.bot_adapter.BotAdapter.BOT_IDENTITY_KEY
+  isExternal: false
+  name: BOT_IDENTITY_KEY
+  parent: botbuilder.core.bot_adapter.BotAdapter
+  uid: botbuilder.core.bot_adapter.BotAdapter.BOT_IDENTITY_KEY
+- fullName: botbuilder.core.bot_adapter.BotAdapter.BOT_OAUTH_SCOPE_KEY
+  isExternal: false
+  name: BOT_OAUTH_SCOPE_KEY
+  parent: botbuilder.core.bot_adapter.BotAdapter
+  uid: botbuilder.core.bot_adapter.BotAdapter.BOT_OAUTH_SCOPE_KEY

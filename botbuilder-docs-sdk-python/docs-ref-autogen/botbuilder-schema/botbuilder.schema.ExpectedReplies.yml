@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: botbuilder.schema.ExpectedReplies
+  fullName: botbuilder.schema.ExpectedReplies
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: msrest.serialization.Model
+  langs:
+  - python
+  module: botbuilder.schema
+  name: ExpectedReplies
+  summary: ExpectedReplies.
+  syntax:
+    content: ExpectedReplies(*, activities=None, **kwargs) -> None
+    parameters:
+    - description: 'A collection of Activities that conforms to the
+
+        ExpectedReplies schema.'
+      id: activities
+      type:
+      - list[botframework.connector.models.Activity]
+  type: class
+  uid: botbuilder.schema.ExpectedReplies
+references:
+- fullName: list[botframework.connector.models.Activity]
+  name: list[Activity]
+  spec.python:
+  - fullName: list
+    name: list
+    uid: list
+  - fullName: '['
+    name: '['
+  - fullName: botframework.connector.models.Activity
+    name: Activity
+    uid: botframework.connector.models.Activity
+  - fullName: ']'
+    name: ']'
+  uid: list[botframework.connector.models.Activity]

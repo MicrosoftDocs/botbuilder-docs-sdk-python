@@ -13,8 +13,30 @@ items:
   module: botbuilder.core.bot_framework_adapter
   name: TokenExchangeState
   syntax:
-    content: 'TokenExchangeState(*, connection_name: str = None, conversation: botbuilder.schema._models_py3.ConversationReference
-      = None, bot_url: str = None, ms_app_id: str = None, **kwargs) -> None'
+    content: 'TokenExchangeState(*, connection_name: str = None, conversation=None,
+      relates_to=None, bot_url: str = None, ms_app_id: str = None, **kwargs) -> None'
+    parameters:
+    - description: The connection name that was used.
+      id: connection_name
+      type:
+      - str
+    - description: Gets or sets a reference to the conversation.
+      id: conversation
+      type:
+      - botframework.connector.models.ConversationReference
+    - description: Gets or sets a reference to a related parent conversation for this
+        token exchange.
+      id: relates_to
+      type:
+      - botframework.connector.models.ConversationReference
+    - description: The URL of the bot messaging endpoint.
+      id: bot_ur
+      type:
+      - str
+    - description: The bot's registered application ID.
+      id: ms_app_id
+      type:
+      - str
   type: class
   uid: botbuilder.core.bot_framework_adapter.TokenExchangeState
 references: []

@@ -302,11 +302,11 @@ items:
   langs:
   - python
   module: botbuilder.core.turn_context
-  name: 'send_trace_activity(name: str, value: object, value_type: str, label: str)
-    -> botbuilder.schema._models_py3.ResourceResponse'
+  name: 'send_trace_activity(name: str, value: object = None, value_type: str = None,
+    label: str = None) -> botbuilder.schema._models_py3.ResourceResponse'
   syntax:
-    content: 'send_trace_activity(name: str, value: object, value_type: str, label:
-      str) -> botbuilder.schema._models_py3.ResourceResponse'
+    content: 'send_trace_activity(name: str, value: object = None, value_type: str
+      = None, label: str = None) -> botbuilder.schema._models_py3.ResourceResponse'
   type: method
   uid: botbuilder.core.turn_context.TurnContext.send_trace_activity
 - class: botbuilder.core.turn_context.TurnContext
@@ -449,8 +449,8 @@ references:
   uid: botbuilder.core.turn_context.TurnContext.send_activity
 - fullName: botbuilder.core.turn_context.TurnContext.send_trace_activity
   isExternal: false
-  name: 'send_trace_activity(name: str, value: object, value_type: str, label: str)
-    -> botbuilder.schema._models_py3.ResourceResponse'
+  name: 'send_trace_activity(name: str, value: object = None, value_type: str = None,
+    label: str = None) -> botbuilder.schema._models_py3.ResourceResponse'
   parent: botbuilder.core.turn_context.TurnContext
   uid: botbuilder.core.turn_context.TurnContext.send_trace_activity
 - fullName: botbuilder.core.turn_context.TurnContext.services

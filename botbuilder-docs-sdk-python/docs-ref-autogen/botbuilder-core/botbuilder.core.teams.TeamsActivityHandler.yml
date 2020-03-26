@@ -4,6 +4,7 @@ items:
 - children:
   - botbuilder.core.teams.TeamsActivityHandler.on_conversation_update_activity
   - botbuilder.core.teams.TeamsActivityHandler.on_invoke_activity
+  - botbuilder.core.teams.TeamsActivityHandler.on_sign_in_invoke
   - botbuilder.core.teams.TeamsActivityHandler.on_teams_app_based_link_query
   - botbuilder.core.teams.TeamsActivityHandler.on_teams_card_action_invoke
   - botbuilder.core.teams.TeamsActivityHandler.on_teams_channel_created
@@ -27,11 +28,11 @@ items:
   - botbuilder.core.teams.TeamsActivityHandler.on_teams_messaging_extension_submit_action
   - botbuilder.core.teams.TeamsActivityHandler.on_teams_messaging_extension_submit_action_dispatch
   - botbuilder.core.teams.TeamsActivityHandler.on_teams_o365_connector_card_action
+  - botbuilder.core.teams.TeamsActivityHandler.on_teams_signin_token_exchange
   - botbuilder.core.teams.TeamsActivityHandler.on_teams_signin_verify_state
   - botbuilder.core.teams.TeamsActivityHandler.on_teams_task_module_fetch
   - botbuilder.core.teams.TeamsActivityHandler.on_teams_task_module_submit
   - botbuilder.core.teams.TeamsActivityHandler.on_teams_team_renamed_activity
-  - botbuilder.core.teams.TeamsActivityHandler.on_turn
   class: botbuilder.core.teams.TeamsActivityHandler
   fullName: botbuilder.core.teams.TeamsActivityHandler
   inheritance:
@@ -68,6 +69,16 @@ items:
       -> botbuilder.core.invoke_response.InvokeResponse'
   type: method
   uid: botbuilder.core.teams.TeamsActivityHandler.on_invoke_activity
+- class: botbuilder.core.teams.TeamsActivityHandler
+  fullName: botbuilder.core.teams.TeamsActivityHandler.on_sign_in_invoke
+  langs:
+  - python
+  module: botbuilder.core.teams
+  name: 'on_sign_in_invoke(turn_context: botbuilder.core.turn_context.TurnContext)'
+  syntax:
+    content: 'on_sign_in_invoke(turn_context: botbuilder.core.turn_context.TurnContext)'
+  type: method
+  uid: botbuilder.core.teams.TeamsActivityHandler.on_sign_in_invoke
 - class: botbuilder.core.teams.TeamsActivityHandler
   fullName: botbuilder.core.teams.TeamsActivityHandler.on_teams_app_based_link_query
   langs:
@@ -351,6 +362,16 @@ items:
   type: method
   uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_o365_connector_card_action
 - class: botbuilder.core.teams.TeamsActivityHandler
+  fullName: botbuilder.core.teams.TeamsActivityHandler.on_teams_signin_token_exchange
+  langs:
+  - python
+  module: botbuilder.core.teams
+  name: 'on_teams_signin_token_exchange(turn_context: botbuilder.core.turn_context.TurnContext)'
+  syntax:
+    content: 'on_teams_signin_token_exchange(turn_context: botbuilder.core.turn_context.TurnContext)'
+  type: method
+  uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_signin_token_exchange
+- class: botbuilder.core.teams.TeamsActivityHandler
   fullName: botbuilder.core.teams.TeamsActivityHandler.on_teams_signin_verify_state
   langs:
   - python
@@ -400,16 +421,6 @@ items:
       turn_context: botbuilder.core.turn_context.TurnContext)'
   type: method
   uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_team_renamed_activity
-- class: botbuilder.core.teams.TeamsActivityHandler
-  fullName: botbuilder.core.teams.TeamsActivityHandler.on_turn
-  langs:
-  - python
-  module: botbuilder.core.teams
-  name: 'on_turn(turn_context: botbuilder.core.turn_context.TurnContext)'
-  syntax:
-    content: 'on_turn(turn_context: botbuilder.core.turn_context.TurnContext)'
-  type: method
-  uid: botbuilder.core.teams.TeamsActivityHandler.on_turn
 references:
 - fullName: botbuilder.core.teams.TeamsActivityHandler.on_conversation_update_activity
   isExternal: false
@@ -422,6 +433,11 @@ references:
     -> botbuilder.core.invoke_response.InvokeResponse'
   parent: botbuilder.core.teams.TeamsActivityHandler
   uid: botbuilder.core.teams.TeamsActivityHandler.on_invoke_activity
+- fullName: botbuilder.core.teams.TeamsActivityHandler.on_sign_in_invoke
+  isExternal: false
+  name: 'on_sign_in_invoke(turn_context: botbuilder.core.turn_context.TurnContext)'
+  parent: botbuilder.core.teams.TeamsActivityHandler
+  uid: botbuilder.core.teams.TeamsActivityHandler.on_sign_in_invoke
 - fullName: botbuilder.core.teams.TeamsActivityHandler.on_teams_app_based_link_query
   isExternal: false
   name: 'on_teams_app_based_link_query(turn_context: botbuilder.core.turn_context.TurnContext,
@@ -562,6 +578,11 @@ references:
     query: botbuilder.schema.teams._models_py3.O365ConnectorCardActionQuery)'
   parent: botbuilder.core.teams.TeamsActivityHandler
   uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_o365_connector_card_action
+- fullName: botbuilder.core.teams.TeamsActivityHandler.on_teams_signin_token_exchange
+  isExternal: false
+  name: 'on_teams_signin_token_exchange(turn_context: botbuilder.core.turn_context.TurnContext)'
+  parent: botbuilder.core.teams.TeamsActivityHandler
+  uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_signin_token_exchange
 - fullName: botbuilder.core.teams.TeamsActivityHandler.on_teams_signin_verify_state
   isExternal: false
   name: 'on_teams_signin_verify_state(turn_context: botbuilder.core.turn_context.TurnContext)'
@@ -587,8 +608,3 @@ references:
     turn_context: botbuilder.core.turn_context.TurnContext)'
   parent: botbuilder.core.teams.TeamsActivityHandler
   uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_team_renamed_activity
-- fullName: botbuilder.core.teams.TeamsActivityHandler.on_turn
-  isExternal: false
-  name: 'on_turn(turn_context: botbuilder.core.turn_context.TurnContext)'
-  parent: botbuilder.core.teams.TeamsActivityHandler
-  uid: botbuilder.core.teams.TeamsActivityHandler.on_turn

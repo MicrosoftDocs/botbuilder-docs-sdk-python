@@ -1,0 +1,347 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.core.ExtendedUserTokenProvider.exchange_token
+  - botbuilder.core.ExtendedUserTokenProvider.exchange_token_from_credentials
+  - botbuilder.core.ExtendedUserTokenProvider.get_aad_tokens
+  - botbuilder.core.ExtendedUserTokenProvider.get_oauth_sign_in_link
+  - botbuilder.core.ExtendedUserTokenProvider.get_sign_in_resource
+  - botbuilder.core.ExtendedUserTokenProvider.get_sign_in_resource_from_user
+  - botbuilder.core.ExtendedUserTokenProvider.get_sign_in_resource_from_user_and_credentials
+  - botbuilder.core.ExtendedUserTokenProvider.get_user_token
+  - botbuilder.core.ExtendedUserTokenProvider.sign_out_user
+  class: botbuilder.core.ExtendedUserTokenProvider
+  fullName: botbuilder.core.ExtendedUserTokenProvider
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: abc.ABC
+    type: botbuilder.core.user_token_provider.UserTokenProvider
+  - inheritance:
+    - type: builtins.object
+    type: abc.ABC
+  langs:
+  - python
+  module: botbuilder.core
+  name: ExtendedUserTokenProvider
+  summary: ''
+  syntax: {}
+  type: class
+  uid: botbuilder.core.ExtendedUserTokenProvider
+- class: botbuilder.core.ExtendedUserTokenProvider
+  fullName: botbuilder.core.ExtendedUserTokenProvider.exchange_token
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'exchange_token(turn_context: botbuilder.core.turn_context.TurnContext, connection_name:
+    str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
+    -> botframework.connector.token_api.models._models_py3.TokenResponse'
+  summary: Performs a token exchange operation such as for single sign-on.
+  syntax:
+    content: 'exchange_token(turn_context: botbuilder.core.turn_context.TurnContext,
+      connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
+      -> botframework.connector.token_api.models._models_py3.TokenResponse'
+    parameters:
+    - description: Context for the current turn of conversation with the user.
+      id: turn_context
+    - description: Name of the auth connection to use.
+      id: connection_name
+    - description: The user id associated with the token..
+      id: user_id
+    - description: The exchange request details, either a token to exchange or a uri
+        to exchange.
+      id: exchange_request
+    return:
+      description: If the task completes, the exchanged token is returned.
+  type: method
+  uid: botbuilder.core.ExtendedUserTokenProvider.exchange_token
+- class: botbuilder.core.ExtendedUserTokenProvider
+  fullName: botbuilder.core.ExtendedUserTokenProvider.exchange_token_from_credentials
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'exchange_token_from_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
+    oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
+    connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
+    -> botframework.connector.token_api.models._models_py3.TokenResponse'
+  summary: Performs a token exchange operation such as for single sign-on.
+  syntax:
+    content: 'exchange_token_from_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
+      oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
+      connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
+      -> botframework.connector.token_api.models._models_py3.TokenResponse'
+    parameters:
+    - description: Context for the current turn of conversation with the user.
+      id: turn_context
+    - description: AppCredentials for OAuth.
+      id: oauth_app_credentials
+    - description: Name of the auth connection to use.
+      id: connection_name
+    - description: The user id associated with the token..
+      id: user_id
+    - description: The exchange request details, either a token to exchange or a uri
+        to exchange.
+      id: exchange_request
+    return:
+      description: If the task completes, the exchanged token is returned.
+  type: method
+  uid: botbuilder.core.ExtendedUserTokenProvider.exchange_token_from_credentials
+- class: botbuilder.core.ExtendedUserTokenProvider
+  fullName: botbuilder.core.ExtendedUserTokenProvider.get_aad_tokens
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'get_aad_tokens(context: botbuilder.core.turn_context.TurnContext, connection_name:
+    str, resource_urls: typing.List[str], user_id: str = None, oauth_app_credentials:
+    botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
+    botframework.connector.token_api.models._models_py3.TokenResponse]'
+  summary: 'Retrieves Azure Active Directory tokens for particular resources on a
+    configured connection.
+
+    :param context:
+
+    :param connection_name:
+
+    :param resource_urls:
+
+    :param user_id:
+
+    :param oauth_app_credentials:
+
+    :return:'
+  syntax:
+    content: 'get_aad_tokens(context: botbuilder.core.turn_context.TurnContext, connection_name:
+      str, resource_urls: typing.List[str], user_id: str = None, oauth_app_credentials:
+      botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
+      botframework.connector.token_api.models._models_py3.TokenResponse]'
+  type: method
+  uid: botbuilder.core.ExtendedUserTokenProvider.get_aad_tokens
+- class: botbuilder.core.ExtendedUserTokenProvider
+  fullName: botbuilder.core.ExtendedUserTokenProvider.get_oauth_sign_in_link
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'get_oauth_sign_in_link(context: botbuilder.core.turn_context.TurnContext,
+    connection_name: str, final_redirect: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+    = None) -> str'
+  summary: 'Get the raw signin link to be sent to the user for signin for a connection
+    name.
+
+    :param context:
+
+    :param connection_name:
+
+    :param final_redirect:
+
+    :param oauth_app_credentials:
+
+    :return:'
+  syntax:
+    content: 'get_oauth_sign_in_link(context: botbuilder.core.turn_context.TurnContext,
+      connection_name: str, final_redirect: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+      = None) -> str'
+  type: method
+  uid: botbuilder.core.ExtendedUserTokenProvider.get_oauth_sign_in_link
+- class: botbuilder.core.ExtendedUserTokenProvider
+  fullName: botbuilder.core.ExtendedUserTokenProvider.get_sign_in_resource
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'get_sign_in_resource(turn_context: botbuilder.core.turn_context.TurnContext,
+    connection_name: str) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+  remarks: 'If the task completes successfully, the result contains the raw signin
+    link.
+
+    '
+  summary: Get the raw signin link to be sent to the user for signin for a connection
+    name.
+  syntax:
+    content: 'get_sign_in_resource(turn_context: botbuilder.core.turn_context.TurnContext,
+      connection_name: str) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+    parameters:
+    - description: Context for the current turn of conversation with the user.
+      id: turn_context
+    - description: Name of the auth connection to use.
+      id: connection_name
+    return:
+      description: A task that represents the work queued to execute.
+  type: method
+  uid: botbuilder.core.ExtendedUserTokenProvider.get_sign_in_resource
+- class: botbuilder.core.ExtendedUserTokenProvider
+  fullName: botbuilder.core.ExtendedUserTokenProvider.get_sign_in_resource_from_user
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'get_sign_in_resource_from_user(turn_context: botbuilder.core.turn_context.TurnContext,
+    connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+  remarks: 'If the task completes successfully, the result contains the raw signin
+    link.
+
+    '
+  summary: Get the raw signin link to be sent to the user for signin for a connection
+    name.
+  syntax:
+    content: 'get_sign_in_resource_from_user(turn_context: botbuilder.core.turn_context.TurnContext,
+      connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+    parameters:
+    - description: Context for the current turn of conversation with the user.
+      id: turn_context
+    - description: Name of the auth connection to use.
+      id: connection_name
+    - description: The user id that will be associated with the token.
+      id: user_id
+    - description: The final URL that the OAuth flow will redirect to.
+      id: final_redirect
+    return:
+      description: A task that represents the work queued to execute.
+  type: method
+  uid: botbuilder.core.ExtendedUserTokenProvider.get_sign_in_resource_from_user
+- class: botbuilder.core.ExtendedUserTokenProvider
+  fullName: botbuilder.core.ExtendedUserTokenProvider.get_sign_in_resource_from_user_and_credentials
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'get_sign_in_resource_from_user_and_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
+    oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
+    connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+  remarks: 'If the task completes successfully, the result contains the raw signin
+    link.
+
+    '
+  summary: Get the raw signin link to be sent to the user for signin for a connection
+    name.
+  syntax:
+    content: 'get_sign_in_resource_from_user_and_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
+      oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
+      connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+    parameters:
+    - description: Context for the current turn of conversation with the user.
+      id: turn_context
+    - description: Credentials for OAuth.
+      id: oauth_app_credentials
+    - description: Name of the auth connection to use.
+      id: connection_name
+    - description: The user id that will be associated with the token.
+      id: user_id
+    - description: The final URL that the OAuth flow will redirect to.
+      id: final_redirect
+    return:
+      description: A task that represents the work queued to execute.
+  type: method
+  uid: botbuilder.core.ExtendedUserTokenProvider.get_sign_in_resource_from_user_and_credentials
+- class: botbuilder.core.ExtendedUserTokenProvider
+  fullName: botbuilder.core.ExtendedUserTokenProvider.get_user_token
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, connection_name:
+    str, magic_code: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+    = None) -> botframework.connector.token_api.models._models_py3.TokenResponse'
+  summary: 'Retrieves the OAuth token for a user that is in a sign-in flow.
+
+    :param context:
+
+    :param connection_name:
+
+    :param magic_code:
+
+    :param oauth_app_credentials:
+
+    :return:'
+  syntax:
+    content: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, connection_name:
+      str, magic_code: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+      = None) -> botframework.connector.token_api.models._models_py3.TokenResponse'
+  type: method
+  uid: botbuilder.core.ExtendedUserTokenProvider.get_user_token
+- class: botbuilder.core.ExtendedUserTokenProvider
+  fullName: botbuilder.core.ExtendedUserTokenProvider.sign_out_user
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
+    str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+    = None)'
+  summary: 'Signs the user out with the token server.
+
+    :param context:
+
+    :param connection_name:
+
+    :param user_id:
+
+    :param oauth_app_credentials:
+
+    :return:'
+  syntax:
+    content: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
+      str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+      = None)'
+  type: method
+  uid: botbuilder.core.ExtendedUserTokenProvider.sign_out_user
+references:
+- fullName: botbuilder.core.ExtendedUserTokenProvider.exchange_token
+  isExternal: false
+  name: 'exchange_token(turn_context: botbuilder.core.turn_context.TurnContext, connection_name:
+    str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
+    -> botframework.connector.token_api.models._models_py3.TokenResponse'
+  parent: botbuilder.core.ExtendedUserTokenProvider
+  uid: botbuilder.core.ExtendedUserTokenProvider.exchange_token
+- fullName: botbuilder.core.ExtendedUserTokenProvider.exchange_token_from_credentials
+  isExternal: false
+  name: 'exchange_token_from_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
+    oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
+    connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
+    -> botframework.connector.token_api.models._models_py3.TokenResponse'
+  parent: botbuilder.core.ExtendedUserTokenProvider
+  uid: botbuilder.core.ExtendedUserTokenProvider.exchange_token_from_credentials
+- fullName: botbuilder.core.ExtendedUserTokenProvider.get_aad_tokens
+  isExternal: false
+  name: 'get_aad_tokens(context: botbuilder.core.turn_context.TurnContext, connection_name:
+    str, resource_urls: typing.List[str], user_id: str = None, oauth_app_credentials:
+    botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
+    botframework.connector.token_api.models._models_py3.TokenResponse]'
+  parent: botbuilder.core.ExtendedUserTokenProvider
+  uid: botbuilder.core.ExtendedUserTokenProvider.get_aad_tokens
+- fullName: botbuilder.core.ExtendedUserTokenProvider.get_oauth_sign_in_link
+  isExternal: false
+  name: 'get_oauth_sign_in_link(context: botbuilder.core.turn_context.TurnContext,
+    connection_name: str, final_redirect: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+    = None) -> str'
+  parent: botbuilder.core.ExtendedUserTokenProvider
+  uid: botbuilder.core.ExtendedUserTokenProvider.get_oauth_sign_in_link
+- fullName: botbuilder.core.ExtendedUserTokenProvider.get_sign_in_resource
+  isExternal: false
+  name: 'get_sign_in_resource(turn_context: botbuilder.core.turn_context.TurnContext,
+    connection_name: str) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+  parent: botbuilder.core.ExtendedUserTokenProvider
+  uid: botbuilder.core.ExtendedUserTokenProvider.get_sign_in_resource
+- fullName: botbuilder.core.ExtendedUserTokenProvider.get_sign_in_resource_from_user
+  isExternal: false
+  name: 'get_sign_in_resource_from_user(turn_context: botbuilder.core.turn_context.TurnContext,
+    connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+  parent: botbuilder.core.ExtendedUserTokenProvider
+  uid: botbuilder.core.ExtendedUserTokenProvider.get_sign_in_resource_from_user
+- fullName: botbuilder.core.ExtendedUserTokenProvider.get_sign_in_resource_from_user_and_credentials
+  isExternal: false
+  name: 'get_sign_in_resource_from_user_and_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
+    oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
+    connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+  parent: botbuilder.core.ExtendedUserTokenProvider
+  uid: botbuilder.core.ExtendedUserTokenProvider.get_sign_in_resource_from_user_and_credentials
+- fullName: botbuilder.core.ExtendedUserTokenProvider.get_user_token
+  isExternal: false
+  name: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, connection_name:
+    str, magic_code: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+    = None) -> botframework.connector.token_api.models._models_py3.TokenResponse'
+  parent: botbuilder.core.ExtendedUserTokenProvider
+  uid: botbuilder.core.ExtendedUserTokenProvider.get_user_token
+- fullName: botbuilder.core.ExtendedUserTokenProvider.sign_out_user
+  isExternal: false
+  name: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
+    str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+    = None)'
+  parent: botbuilder.core.ExtendedUserTokenProvider
+  uid: botbuilder.core.ExtendedUserTokenProvider.sign_out_user

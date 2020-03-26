@@ -65,9 +65,9 @@ items:
   langs:
   - python
   module: botframework.connector.auth.jwt_token_validation
-  name: 'get_app_id_from_claims(claims: typing.Dict[str, object]) -> bool'
+  name: 'get_app_id_from_claims(claims: typing.Dict[str, object]) -> str'
   syntax:
-    content: 'get_app_id_from_claims(claims: typing.Dict[str, object]) -> bool'
+    content: 'get_app_id_from_claims(claims: typing.Dict[str, object]) -> str'
   type: method
   uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.get_app_id_from_claims
 - class: botframework.connector.auth.jwt_token_validation.JwtTokenValidation
@@ -130,7 +130,7 @@ references:
   uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.authenticate_request
 - fullName: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.get_app_id_from_claims
   isExternal: false
-  name: 'get_app_id_from_claims(claims: typing.Dict[str, object]) -> bool'
+  name: 'get_app_id_from_claims(claims: typing.Dict[str, object]) -> str'
   parent: botframework.connector.auth.jwt_token_validation.JwtTokenValidation
   uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.get_app_id_from_claims
 - fullName: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.is_government
