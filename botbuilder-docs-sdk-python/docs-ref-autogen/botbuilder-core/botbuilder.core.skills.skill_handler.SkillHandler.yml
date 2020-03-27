@@ -18,7 +18,7 @@ items:
   summary: ''
   syntax:
     content: 'SkillHandler(adapter: botbuilder.core.bot_adapter.BotAdapter, bot: botbuilder.core.bot.Bot,
-      conversation_id_factory: botbuilder.core.skills.skill_conversation_id_factory.SkillConversationIdFactory,
+      conversation_id_factory: botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase,
       credential_provider: botframework.connector.auth.credential_provider.CredentialProvider,
       auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration,
       channel_provider: botframework.connector.auth.channel_provider.ChannelProvider

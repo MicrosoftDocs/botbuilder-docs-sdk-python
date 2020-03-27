@@ -19,6 +19,7 @@ items:
   - botbuilder.schema.ConversationReference
   - botbuilder.schema.ConversationResourceResponse
   - botbuilder.schema.ConversationsResult
+  - botbuilder.schema.ExpectedReplies
   - botbuilder.schema.Entity
   - botbuilder.schema.Error
   - botbuilder.schema.ErrorResponse
@@ -40,11 +41,15 @@ items:
   - botbuilder.schema.ResourceResponse
   - botbuilder.schema.SemanticAction
   - botbuilder.schema.SigninCard
+  - botbuilder.schema.SignInConstants
   - botbuilder.schema.SuggestedActions
   - botbuilder.schema.TextHighlight
   - botbuilder.schema.Thing
   - botbuilder.schema.ThumbnailCard
   - botbuilder.schema.ThumbnailUrl
+  - botbuilder.schema.TokenExchangeInvokeRequest
+  - botbuilder.schema.TokenExchangeInvokeResponse
+  - botbuilder.schema.TokenExchangeState
   - botbuilder.schema.TokenRequest
   - botbuilder.schema.TokenResponse
   - botbuilder.schema.Transcript
@@ -156,6 +161,11 @@ references:
   name: ConversationsResult
   parent: botbuilder.schema
   uid: botbuilder.schema.ConversationsResult
+- fullName: botbuilder.schema.ExpectedReplies
+  isExternal: false
+  name: ExpectedReplies
+  parent: botbuilder.schema
+  uid: botbuilder.schema.ExpectedReplies
 - fullName: botbuilder.schema.Entity
   isExternal: false
   name: Entity
@@ -261,6 +271,11 @@ references:
   name: SigninCard
   parent: botbuilder.schema
   uid: botbuilder.schema.SigninCard
+- fullName: botbuilder.schema.SignInConstants
+  isExternal: false
+  name: SignInConstants
+  parent: botbuilder.schema
+  uid: botbuilder.schema.SignInConstants
 - fullName: botbuilder.schema.SuggestedActions
   isExternal: false
   name: SuggestedActions
@@ -286,6 +301,21 @@ references:
   name: ThumbnailUrl
   parent: botbuilder.schema
   uid: botbuilder.schema.ThumbnailUrl
+- fullName: botbuilder.schema.TokenExchangeInvokeRequest
+  isExternal: false
+  name: TokenExchangeInvokeRequest
+  parent: botbuilder.schema
+  uid: botbuilder.schema.TokenExchangeInvokeRequest
+- fullName: botbuilder.schema.TokenExchangeInvokeResponse
+  isExternal: false
+  name: TokenExchangeInvokeResponse
+  parent: botbuilder.schema
+  uid: botbuilder.schema.TokenExchangeInvokeResponse
+- fullName: botbuilder.schema.TokenExchangeState
+  isExternal: false
+  name: TokenExchangeState
+  parent: botbuilder.schema
+  uid: botbuilder.schema.TokenExchangeState
 - fullName: botbuilder.schema.TokenRequest
   isExternal: false
   name: TokenRequest

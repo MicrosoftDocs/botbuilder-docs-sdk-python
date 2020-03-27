@@ -1,0 +1,44 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: botbuilder.schema.teams.TeamsPagedMembersResult
+  fullName: botbuilder.schema.teams.TeamsPagedMembersResult
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: msrest.serialization.Model
+    type: botbuilder.schema._models_py3.PagedMembersResult
+  langs:
+  - python
+  module: botbuilder.schema.teams
+  name: TeamsPagedMembersResult
+  summary: Page of members for Teams.
+  syntax:
+    parameters:
+    - description: Paging token
+      id: continuation_token
+      type:
+      - str
+    - description: The Teams Channel Accounts.
+      id: members
+      type:
+      - list[botframework.connector.models.TeamsChannelAccount]
+  type: class
+  uid: botbuilder.schema.teams.TeamsPagedMembersResult
+references:
+- fullName: list[botframework.connector.models.TeamsChannelAccount]
+  name: list[TeamsChannelAccount]
+  spec.python:
+  - fullName: list
+    name: list
+    uid: list
+  - fullName: '['
+    name: '['
+  - fullName: botframework.connector.models.TeamsChannelAccount
+    name: TeamsChannelAccount
+    uid: botframework.connector.models.TeamsChannelAccount
+  - fullName: ']'
+    name: ']'
+  uid: list[botframework.connector.models.TeamsChannelAccount]

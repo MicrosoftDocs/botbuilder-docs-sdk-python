@@ -6,6 +6,7 @@ items:
   - botbuilder.core.ChannelServiceHandler.handle_delete_activity
   - botbuilder.core.ChannelServiceHandler.handle_delete_conversation_member
   - botbuilder.core.ChannelServiceHandler.handle_get_activity_members
+  - botbuilder.core.ChannelServiceHandler.handle_get_conversation_member
   - botbuilder.core.ChannelServiceHandler.handle_get_conversation_members
   - botbuilder.core.ChannelServiceHandler.handle_get_conversation_paged_members
   - botbuilder.core.ChannelServiceHandler.handle_get_conversations
@@ -18,6 +19,7 @@ items:
   - botbuilder.core.ChannelServiceHandler.on_delete_activity
   - botbuilder.core.ChannelServiceHandler.on_delete_conversation_member
   - botbuilder.core.ChannelServiceHandler.on_get_activity_members
+  - botbuilder.core.ChannelServiceHandler.on_get_conversation_member
   - botbuilder.core.ChannelServiceHandler.on_get_conversation_members
   - botbuilder.core.ChannelServiceHandler.on_get_conversation_paged_members
   - botbuilder.core.ChannelServiceHandler.on_get_conversations
@@ -97,6 +99,18 @@ items:
       -> typing.List[botbuilder.schema._models_py3.ChannelAccount]
   type: method
   uid: botbuilder.core.ChannelServiceHandler.handle_get_activity_members
+- class: botbuilder.core.ChannelServiceHandler
+  fullName: botbuilder.core.ChannelServiceHandler.handle_get_conversation_member
+  langs:
+  - python
+  module: botbuilder.core
+  name: handle_get_conversation_member(auth_header, conversation_id, member_id) ->
+    botbuilder.schema._models_py3.ChannelAccount
+  syntax:
+    content: handle_get_conversation_member(auth_header, conversation_id, member_id)
+      -> botbuilder.schema._models_py3.ChannelAccount
+  type: method
+  uid: botbuilder.core.ChannelServiceHandler.handle_get_conversation_member
 - class: botbuilder.core.ChannelServiceHandler
   fullName: botbuilder.core.ChannelServiceHandler.handle_get_conversation_members
   langs:
@@ -336,6 +350,34 @@ items:
       id: activity_id
   type: method
   uid: botbuilder.core.ChannelServiceHandler.on_get_activity_members
+- class: botbuilder.core.ChannelServiceHandler
+  fullName: botbuilder.core.ChannelServiceHandler.on_get_conversation_member
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'on_get_conversation_member(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+    conversation_id: str, member_id: str) -> botbuilder.schema._models_py3.ChannelAccount'
+  summary: 'get_conversation_member() API for Skill.
+
+
+    Enumerate the members of a conversation.
+
+
+    This REST API takes a ConversationId and returns a list of ChannelAccount
+
+    objects representing the members of the conversation.'
+  syntax:
+    content: 'on_get_conversation_member(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+      conversation_id: str, member_id: str) -> botbuilder.schema._models_py3.ChannelAccount'
+    parameters:
+    - description: ''
+      id: claims_identity
+    - description: ''
+      id: conversation_id
+    - description: ''
+      id: member_id
+  type: method
+  uid: botbuilder.core.ChannelServiceHandler.on_get_conversation_member
 - class: botbuilder.core.ChannelServiceHandler
   fullName: botbuilder.core.ChannelServiceHandler.on_get_conversation_members
   langs:
@@ -681,6 +723,12 @@ references:
     typing.List[botbuilder.schema._models_py3.ChannelAccount]
   parent: botbuilder.core.ChannelServiceHandler
   uid: botbuilder.core.ChannelServiceHandler.handle_get_activity_members
+- fullName: botbuilder.core.ChannelServiceHandler.handle_get_conversation_member
+  isExternal: false
+  name: handle_get_conversation_member(auth_header, conversation_id, member_id) ->
+    botbuilder.schema._models_py3.ChannelAccount
+  parent: botbuilder.core.ChannelServiceHandler
+  uid: botbuilder.core.ChannelServiceHandler.handle_get_conversation_member
 - fullName: botbuilder.core.ChannelServiceHandler.handle_get_conversation_members
   isExternal: false
   name: handle_get_conversation_members(auth_header, conversation_id) -> typing.List[botbuilder.schema._models_py3.ChannelAccount]
@@ -751,6 +799,12 @@ references:
     conversation_id: str, activity_id: str) -> typing.List[botbuilder.schema._models_py3.ChannelAccount]'
   parent: botbuilder.core.ChannelServiceHandler
   uid: botbuilder.core.ChannelServiceHandler.on_get_activity_members
+- fullName: botbuilder.core.ChannelServiceHandler.on_get_conversation_member
+  isExternal: false
+  name: 'on_get_conversation_member(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+    conversation_id: str, member_id: str) -> botbuilder.schema._models_py3.ChannelAccount'
+  parent: botbuilder.core.ChannelServiceHandler
+  uid: botbuilder.core.ChannelServiceHandler.on_get_conversation_member
 - fullName: botbuilder.core.ChannelServiceHandler.on_get_conversation_members
   isExternal: false
   name: 'on_get_conversation_members(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,

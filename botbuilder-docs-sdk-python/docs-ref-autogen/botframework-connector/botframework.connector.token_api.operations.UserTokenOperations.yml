@@ -2,6 +2,7 @@
 api_name: []
 items:
 - children:
+  - botframework.connector.token_api.operations.UserTokenOperations.exchange_async
   - botframework.connector.token_api.operations.UserTokenOperations.get_aad_tokens
   - botframework.connector.token_api.operations.UserTokenOperations.get_token
   - botframework.connector.token_api.operations.UserTokenOperations.get_token_status
@@ -15,9 +16,13 @@ items:
   - python
   module: botframework.connector.token_api.operations
   name: UserTokenOperations
-  summary: "UserTokenOperations operations.\n\nYou should not instantiate directly\
-    \ this class, but create a Client instance that will create it for you and attach\n\
-    \   it as attribute."
+  summary: 'UserTokenOperations operations.
+
+
+    You should not instantiate directly this class, but create a Client instance that
+    will create it for you and attach
+
+    it as attribute.'
   syntax:
     content: UserTokenOperations(client, config, serializer, deserializer)
     parameters:
@@ -34,6 +39,64 @@ items:
       id: api_version
   type: class
   uid: botframework.connector.token_api.operations.UserTokenOperations
+- class: botframework.connector.token_api.operations.UserTokenOperations
+  exceptions:
+  - type: botframework.tokenapi.models.ErrorResponseException
+  fullName: botframework.connector.token_api.operations.UserTokenOperations.exchange_async
+  langs:
+  - python
+  module: botframework.connector.token_api.operations
+  name: exchange_async(user_id, connection_name, channel_id, uri=None, token=None,
+    custom_headers=None, raw=False, **operation_config)
+  syntax:
+    content: exchange_async(user_id, connection_name, channel_id, uri=None, token=None,
+      custom_headers=None, raw=False, **operation_config)
+    parameters:
+    - description: ''
+      id: user_id
+      type:
+      - str
+    - description: ''
+      id: connection_name
+      type:
+      - str
+    - description: ''
+      id: channel_id
+      type:
+      - str
+    - defaultValue: None
+      description: ''
+      id: uri
+      type:
+      - str
+    - defaultValue: None
+      description: ''
+      id: token
+      type:
+      - str
+    - defaultValue: None
+      description: headers that will be added to the request
+      id: custom_headers
+      type:
+      - dict
+    - defaultValue: 'False'
+      description: 'returns the direct response alongside the
+
+        deserialized response'
+      id: raw
+      type:
+      - bool
+    - description: '*Operation configuration
+
+        overrides*.'
+      id: operation_config
+    return:
+      description: object or ClientRawResponse if raw=true
+      type:
+      - object
+      - msrest.pipeline.ClientRawResponse
+  type: method
+  uid: botframework.connector.token_api.operations.UserTokenOperations.exchange_async
 - class: botframework.connector.token_api.operations.UserTokenOperations
   exceptions:
   - type: botframework.tokenapi.models.ErrorResponseException
@@ -253,6 +316,12 @@ items:
   type: attribute
   uid: botframework.connector.token_api.operations.UserTokenOperations.models
 references:
+- fullName: botframework.connector.token_api.operations.UserTokenOperations.exchange_async
+  isExternal: false
+  name: exchange_async(user_id, connection_name, channel_id, uri=None, token=None,
+    custom_headers=None, raw=False, **operation_config)
+  parent: botframework.connector.token_api.operations.UserTokenOperations
+  uid: botframework.connector.token_api.operations.UserTokenOperations.exchange_async
 - fullName: botframework.connector.token_api.operations.UserTokenOperations.get_aad_tokens
   isExternal: false
   name: get_aad_tokens(user_id, connection_name, channel_id=None, resource_urls=None,

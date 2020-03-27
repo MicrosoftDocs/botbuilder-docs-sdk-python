@@ -18,9 +18,9 @@ items:
   - botbuilder.core.CardFactory
   - botbuilder.core.ChannelServiceHandler
   - botbuilder.core.ConversationState
+  - botbuilder.core.ExtendedUserTokenProvider
   - botbuilder.core.IntentScore
   - botbuilder.core.InvokeResponse
-  - botbuilder.core.BotFrameworkHttpClient
   - botbuilder.core.MemoryStorage
   - botbuilder.core.MemoryTranscriptStore
   - botbuilder.core.MessageFactory
@@ -50,7 +50,6 @@ items:
   - botbuilder.core.bot_adapter
   - botbuilder.core.bot_assert
   - botbuilder.core.bot_framework_adapter
-  - botbuilder.core.bot_framework_http_client
   - botbuilder.core.bot_state
   - botbuilder.core.bot_state_set
   - botbuilder.core.bot_telemetry_client
@@ -58,6 +57,7 @@ items:
   - botbuilder.core.channel_service_handler
   - botbuilder.core.conversation_reference_extension
   - botbuilder.core.conversation_state
+  - botbuilder.core.extended_user_token_provider
   - botbuilder.core.intent_score
   - botbuilder.core.invoke_response
   - botbuilder.core.memory_storage
@@ -67,8 +67,10 @@ items:
   - botbuilder.core.null_telemetry_client
   - botbuilder.core.private_conversation_state
   - botbuilder.core.property_manager
+  - botbuilder.core.re_escape
   - botbuilder.core.recognizer
   - botbuilder.core.recognizer_result
+  - botbuilder.core.serializer_helper
   - botbuilder.core.show_typing_middleware
   - botbuilder.core.state_property_accessor
   - botbuilder.core.state_property_info
@@ -188,6 +190,11 @@ references:
   name: ConversationState
   parent: botbuilder.core
   uid: botbuilder.core.ConversationState
+- fullName: botbuilder.core.ExtendedUserTokenProvider
+  isExternal: false
+  name: ExtendedUserTokenProvider
+  parent: botbuilder.core
+  uid: botbuilder.core.ExtendedUserTokenProvider
 - fullName: botbuilder.core.IntentScore
   isExternal: false
   name: IntentScore
@@ -198,11 +205,6 @@ references:
   name: InvokeResponse
   parent: botbuilder.core
   uid: botbuilder.core.InvokeResponse
-- fullName: botbuilder.core.BotFrameworkHttpClient
-  isExternal: false
-  name: BotFrameworkHttpClient
-  parent: botbuilder.core
-  uid: botbuilder.core.BotFrameworkHttpClient
 - fullName: botbuilder.core.MemoryStorage
   isExternal: false
   name: MemoryStorage
@@ -348,11 +350,6 @@ references:
   name: bot_framework_adapter
   parent: botbuilder.core
   uid: botbuilder.core.bot_framework_adapter
-- fullName: botbuilder.core.bot_framework_http_client
-  isExternal: false
-  name: bot_framework_http_client
-  parent: botbuilder.core
-  uid: botbuilder.core.bot_framework_http_client
 - fullName: botbuilder.core.bot_state
   isExternal: false
   name: bot_state
@@ -388,6 +385,11 @@ references:
   name: conversation_state
   parent: botbuilder.core
   uid: botbuilder.core.conversation_state
+- fullName: botbuilder.core.extended_user_token_provider
+  isExternal: false
+  name: extended_user_token_provider
+  parent: botbuilder.core
+  uid: botbuilder.core.extended_user_token_provider
 - fullName: botbuilder.core.intent_score
   isExternal: false
   name: intent_score
@@ -433,6 +435,11 @@ references:
   name: property_manager
   parent: botbuilder.core
   uid: botbuilder.core.property_manager
+- fullName: botbuilder.core.re_escape
+  isExternal: false
+  name: re_escape
+  parent: botbuilder.core
+  uid: botbuilder.core.re_escape
 - fullName: botbuilder.core.recognizer
   isExternal: false
   name: recognizer
@@ -443,6 +450,11 @@ references:
   name: recognizer_result
   parent: botbuilder.core
   uid: botbuilder.core.recognizer_result
+- fullName: botbuilder.core.serializer_helper
+  isExternal: false
+  name: serializer_helper
+  parent: botbuilder.core
+  uid: botbuilder.core.serializer_helper
 - fullName: botbuilder.core.show_typing_middleware
   isExternal: false
   name: show_typing_middleware
