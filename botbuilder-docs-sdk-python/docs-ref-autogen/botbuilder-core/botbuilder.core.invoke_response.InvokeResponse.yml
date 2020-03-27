@@ -10,13 +10,18 @@ items:
   - python
   module: botbuilder.core.invoke_response
   name: InvokeResponse
-  summary: 'Tuple class containing an HTTP Status Code and a JSON Serializable
+  summary: 'Tuple class containing an HTTP Status Code and a JSON serializable
 
     object. The HTTP Status code is, in the invoke activity scenario, what will
 
     be set in the resulting POST. The Body of the resulting POST will be
 
-    the JSON Serialized content from the Body property.'
+    JSON serialized content.
+
+
+    The body content is defined by the producer.  The caller must know what
+
+    the content is and deserialize as needed.'
   syntax:
     content: 'InvokeResponse(status: int = None, body: object = None)'
   type: class

@@ -15,7 +15,7 @@ items:
   summary: A card representing a request to perform a sign in via OAuth.
   syntax:
     content: 'OAuthCard(*, text: str = None, connection_name: str = None, buttons=None,
-      **kwargs) -> None'
+      token_exchange_resource=None, **kwargs) -> None'
     parameters:
     - description: Text for signin request
       id: text

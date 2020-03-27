@@ -1,0 +1,70 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.schema.SignInConstants.token_exchange_operation_name
+  - botbuilder.schema.SignInConstants.token_response_event_name
+  - botbuilder.schema.SignInConstants.verify_state_operation_name
+  class: botbuilder.schema.SignInConstants
+  fullName: botbuilder.schema.SignInConstants
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: builtins.str
+  - inheritance:
+    - type: builtins.object
+    type: enum.Enum
+  langs:
+  - python
+  module: botbuilder.schema
+  name: SignInConstants
+  summary: An enumeration.
+  syntax: {}
+  type: class
+  uid: botbuilder.schema.SignInConstants
+- class: botbuilder.schema.SignInConstants
+  fullName: botbuilder.schema.SignInConstants.token_exchange_operation_name
+  langs:
+  - python
+  module: botbuilder.schema
+  name: token_exchange_operation_name
+  syntax:
+    content: token_exchange_operation_name = 'signin/tokenExchange'
+  type: attribute
+  uid: botbuilder.schema.SignInConstants.token_exchange_operation_name
+- class: botbuilder.schema.SignInConstants
+  fullName: botbuilder.schema.SignInConstants.token_response_event_name
+  langs:
+  - python
+  module: botbuilder.schema
+  name: token_response_event_name
+  syntax:
+    content: token_response_event_name = 'tokens/response'
+  type: attribute
+  uid: botbuilder.schema.SignInConstants.token_response_event_name
+- class: botbuilder.schema.SignInConstants
+  fullName: botbuilder.schema.SignInConstants.verify_state_operation_name
+  langs:
+  - python
+  module: botbuilder.schema
+  name: verify_state_operation_name
+  syntax:
+    content: verify_state_operation_name = 'signin/verifyState'
+  type: attribute
+  uid: botbuilder.schema.SignInConstants.verify_state_operation_name
+references:
+- fullName: botbuilder.schema.SignInConstants.token_exchange_operation_name
+  isExternal: false
+  name: token_exchange_operation_name
+  parent: botbuilder.schema.SignInConstants
+  uid: botbuilder.schema.SignInConstants.token_exchange_operation_name
+- fullName: botbuilder.schema.SignInConstants.token_response_event_name
+  isExternal: false
+  name: token_response_event_name
+  parent: botbuilder.schema.SignInConstants
+  uid: botbuilder.schema.SignInConstants.token_response_event_name
+- fullName: botbuilder.schema.SignInConstants.verify_state_operation_name
+  isExternal: false
+  name: verify_state_operation_name
+  parent: botbuilder.schema.SignInConstants
+  uid: botbuilder.schema.SignInConstants.verify_state_operation_name

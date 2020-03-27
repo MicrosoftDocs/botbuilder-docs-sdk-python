@@ -2,26 +2,28 @@
 api_name: []
 items:
 - children:
-  - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.authenticate_request
-  - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.check_emulating_oauth_cards
   - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.continue_conversation
   - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.create_connector_client
-  - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.create_context
   - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.create_conversation
-  - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.create_token_api_client
   - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.delete_activity
   - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.delete_conversation_member
-  - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.emulate_oauth_cards
+  - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.exchange_token
+  - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.exchange_token_from_credentials
   - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_aad_tokens
   - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_activity_members
+  - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_conversation_member
   - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_conversation_members
   - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_conversations
   - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_oauth_sign_in_link
+  - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_sign_in_resource_from_user
+  - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_sign_in_resource_from_user_and_credentials
   - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_token_status
   - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_user_token
-  - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.oauth_api_url
+  - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.key_for_app_credentials
+  - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.key_for_connector_client
   - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.parse_request
   - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.process_activity
+  - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.process_activity_with_identity
   - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.send_activities
   - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.sign_out_user
   - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.update_activity
@@ -35,47 +37,31 @@ items:
     type: botbuilder.core.bot_adapter.BotAdapter
   - inheritance:
     - inheritance:
+      - inheritance:
+        - type: builtins.object
+        type: abc.ABC
+      type: botbuilder.core.user_token_provider.UserTokenProvider
+    - inheritance:
       - type: builtins.object
       type: abc.ABC
-    type: botbuilder.core.user_token_provider.UserTokenProvider
+    type: botbuilder.core.extended_user_token_provider.ExtendedUserTokenProvider
   langs:
   - python
   module: botbuilder.core.bot_framework_adapter
   name: BotFrameworkAdapter
-  summary: ''
+  remarks: "The bot adapter encapsulates authentication processes and sends activities\
+    \ to and\nreceives activities from the Bot Connector Service. When your bot receives\
+    \ an activity,\nthe adapter creates a context object, passes it to your bot's\
+    \ application logic, and\nsends responses back to the user's channel.\nThe adapter\
+    \ processes and directs incoming activities in through the bot middleware\npipeline\
+    \ to your bot\u2019s logic and then back out again.\nAs each activity flows in\
+    \ and out of the bot, each piece of middleware can inspect or act\nupon the activity,\
+    \ both before and after the bot logic runs.\n"
+  summary: Defines an adapter to connect a bot to a service endpoint.
   syntax:
     content: 'BotFrameworkAdapter(settings: botbuilder.core.bot_framework_adapter.BotFrameworkAdapterSettings)'
   type: class
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
-- class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
-  fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.authenticate_request
-  langs:
-  - python
-  module: botbuilder.core.bot_framework_adapter
-  name: 'authenticate_request(request: botbuilder.schema._models_py3.Activity, auth_header:
-    str) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  summary: 'Allows for the overriding of authentication in unit tests.
-
-    :param request:
-
-    :param auth_header:
-
-    :return:'
-  syntax:
-    content: 'authenticate_request(request: botbuilder.schema._models_py3.Activity,
-      auth_header: str) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  type: method
-  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.authenticate_request
-- class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
-  fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.check_emulating_oauth_cards
-  langs:
-  - python
-  module: botbuilder.core.bot_framework_adapter
-  name: 'check_emulating_oauth_cards(context: botbuilder.core.turn_context.TurnContext)'
-  syntax:
-    content: 'check_emulating_oauth_cards(context: botbuilder.core.turn_context.TurnContext)'
-  type: method
-  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.check_emulating_oauth_cards
 - class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
   fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.continue_conversation
   langs:
@@ -83,31 +69,37 @@ items:
   module: botbuilder.core.bot_framework_adapter
   name: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
     callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
-    = None)'
-  summary: 'Continues a conversation with a user. This is often referred to as the
-    bots "Proactive Messaging"
+    = None, audience: str = None)'
+  remarks: 'This is often referred to as the bots *proactive messaging* flow as it
+    lets the bot proactively
 
-    flow as its lets the bot proactively send messages to a conversation or user that
-    its already
+    send messages to a conversation or user that are already in a communication.
 
-    communicated with. Scenarios like sending notifications or coupons to a user are
-    enabled by this
+    Scenarios such as sending notifications or coupons to a user are enabled by this
+    function.
 
-    method.
+    '
+  summary: 'Continues a conversation with a user.
 
-    :param bot_id:
 
-    :param reference:
 
-    :param callback:
+    and is generally found in the *MicrosoftAppId* parameter in *config.py*.
 
-    :param claims_identity:
+    :type bot_id: <xref:typing.str>
 
-    :return:'
+    :param claims_identity: The bot claims identity
+
+    :type claims_identity: <xref:botframework.connector.auth.ClaimsIdentity>
+
+    :param audience:
+
+    :type audience: <xref:typing.str>'
   syntax:
     content: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
       callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
-      = None)'
+      = None, audience: str = None)'
+    return:
+      description: A task that represents the work queued to execute.
   type: method
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.continue_conversation
 - class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
@@ -116,37 +108,22 @@ items:
   - python
   module: botbuilder.core.bot_framework_adapter
   name: 'create_connector_client(service_url: str, identity: botframework.connector.auth.claims_identity.ClaimsIdentity
-    = None) -> botframework.connector.aio._connector_client_async.ConnectorClient'
-  summary: 'Allows for mocking of the connector client in unit tests.
+    = None, audience: str = None) -> botframework.connector.aio._connector_client_async.ConnectorClient'
+  summary: 'Creates the connector client
 
-    :param service_url:
+    :param service_url: The service URL
 
-    :param identity:
+    :param identity: The claims identity
 
-    :return:'
+    :param audience:'
   syntax:
     content: 'create_connector_client(service_url: str, identity: botframework.connector.auth.claims_identity.ClaimsIdentity
-      = None) -> botframework.connector.aio._connector_client_async.ConnectorClient'
+      = None, audience: str = None) -> botframework.connector.aio._connector_client_async.ConnectorClient'
+    return:
+      description: An instance of the <xref:botbuilder.core.bot_framework_adapter.ConnectorClient>
+        class
   type: method
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.create_connector_client
-- class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
-  fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.create_context
-  langs:
-  - python
-  module: botbuilder.core.bot_framework_adapter
-  name: create_context(activity)
-  summary: 'Allows for the overriding of the context object in unit tests and derived
-    adapters.
-
-    :param activity:
-
-    :return:'
-  syntax:
-    content: create_context(activity)
-    parameters:
-    - id: activity
-  type: method
-  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.create_context
 - class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
   fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.create_conversation
   langs:
@@ -155,34 +132,61 @@ items:
   name: 'create_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
     logic: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable]
     = None, conversation_parameters: botbuilder.schema._models_py3.ConversationParameters
+    = None, channel_id: str = None, service_url: str = None, credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None)'
-  summary: 'Starts a new conversation with a user. This is typically used to Direct
-    Message (DM) a member
+  remarks: 'To start a conversation, your bot must know its account information and
+    the user''s
 
+    account information on that channel.
+
+    Most channels only support initiating a direct message (non-group) conversation.
+
+    The adapter attempts to create a new conversation on the channel, and
+
+    then sends a conversation update activity through its middleware pipeline
+
+    to the the callback method.
+
+    If the conversation is established with the specified users, the ID of the activity
+
+    will contain the ID of the new conversation.
+
+    '
+  summary: Starts a new conversation with a user. Used to direct message to a member
     of a group.
-
-    :param reference:
-
-    :param logic:
-
-    :return:'
   syntax:
     content: 'create_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
       logic: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable]
       = None, conversation_parameters: botbuilder.schema._models_py3.ConversationParameters
+      = None, channel_id: str = None, service_url: str = None, credentials: botframework.connector.auth.app_credentials.AppCredentials
       = None)'
+    parameters:
+    - description: The conversation reference that contains the tenant
+      id: reference
+      type:
+      - botbuilder.schema.ConversationReference
+    - description: The logic to use for the creation of the conversation
+      id: logic
+      type:
+      - typing.Callable
+    - description: The information to use to create the conversation
+      id: conversation_parameters
+    - description: The ID for the channel.
+      id: channel_id
+      type:
+      - typing.str
+    - description: The channel's service URL endpoint.
+      id: service_url
+      type:
+      - typing.str
+    - description: The application credentials for the bot.
+      id: credentials
+      type:
+      - botframework.connector.auth.AppCredentials
+    return:
+      description: A task representing the work queued to execute.
   type: method
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.create_conversation
-- class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
-  fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.create_token_api_client
-  langs:
-  - python
-  module: botbuilder.core.bot_framework_adapter
-  name: 'create_token_api_client(service_url: str) -> botframework.connector.token_api._token_api_client.TokenApiClient'
-  syntax:
-    content: 'create_token_api_client(service_url: str) -> botframework.connector.token_api._token_api_client.TokenApiClient'
-  type: method
-  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.create_token_api_client
 - class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
   fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.delete_activity
   langs:
@@ -195,14 +199,28 @@ items:
 
     channels support this feature.
 
-    :param context:
 
-    :param reference:
 
-    :return:'
+    > [!NOTE]
+
+    > The activity_id of the <xref:botbuilder.schema.ConversationReference> identifies
+    the activity to delete.
+
+    >'
   syntax:
     content: 'delete_activity(context: botbuilder.core.turn_context.TurnContext, reference:
       botbuilder.schema._models_py3.ConversationReference)'
+    parameters:
+    - description: The context object for the turn
+      id: context
+      type:
+      - :class:`TurnContext'
+    - description: Conversation reference for the activity to delete
+      id: reference
+      type:
+      - botbuilder.schema.ConversationReference
+    return:
+      description: A task that represents the work queued to execute
   type: method
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.delete_activity
 - class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
@@ -212,40 +230,83 @@ items:
   module: botbuilder.core.bot_framework_adapter
   name: 'delete_conversation_member(context: botbuilder.core.turn_context.TurnContext,
     member_id: str) -> None'
-  summary: 'Deletes a member from the current conversation.
-
-    :param context:
-
-    :param member_id:
-
-    :return:'
+  summary: Deletes a member from the current conversation.
   syntax:
     content: 'delete_conversation_member(context: botbuilder.core.turn_context.TurnContext,
       member_id: str) -> None'
+    parameters:
+    - description: The context object for the turn
+      id: context
+      type:
+      - <xref:botbuilder.core.TurnContext>
+    - description: The ID of the member to remove from the conversation
+      id: member_id
+      type:
+      - str
+    return:
+      description: A task that represents the work queued to execute.</returns
   type: method
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.delete_conversation_member
 - class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
-  fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.emulate_oauth_cards
+  fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.exchange_token
   langs:
   - python
   module: botbuilder.core.bot_framework_adapter
-  name: 'emulate_oauth_cards(context_or_service_url: typing.Union[botbuilder.core.turn_context.TurnContext,
-    str], emulate: bool)'
+  name: 'exchange_token(turn_context: botbuilder.core.turn_context.TurnContext, connection_name:
+    str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
+    -> botbuilder.schema._models_py3.TokenResponse'
   syntax:
-    content: 'emulate_oauth_cards(context_or_service_url: typing.Union[botbuilder.core.turn_context.TurnContext,
-      str], emulate: bool)'
+    content: 'exchange_token(turn_context: botbuilder.core.turn_context.TurnContext,
+      connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
+      -> botbuilder.schema._models_py3.TokenResponse'
   type: method
-  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.emulate_oauth_cards
+  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.exchange_token
+- class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
+  fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.exchange_token_from_credentials
+  langs:
+  - python
+  module: botbuilder.core.bot_framework_adapter
+  name: 'exchange_token_from_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
+    oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
+    connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
+    -> botbuilder.schema._models_py3.TokenResponse'
+  syntax:
+    content: 'exchange_token_from_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
+      oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
+      connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
+      -> botbuilder.schema._models_py3.TokenResponse'
+  type: method
+  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.exchange_token_from_credentials
 - class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
   fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_aad_tokens
   langs:
   - python
   module: botbuilder.core.bot_framework_adapter
   name: 'get_aad_tokens(context: botbuilder.core.turn_context.TurnContext, connection_name:
-    str, resource_urls: typing.List[str]) -> typing.Dict[str, botbuilder.schema._models_py3.TokenResponse]'
+    str, resource_urls: typing.List[str], user_id: str = None, oauth_app_credentials:
+    botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
+    botbuilder.schema._models_py3.TokenResponse]'
+  summary: 'Retrieves Azure Active Directory tokens for particular resources on a
+    configured connection.
+
+
+
+    from the Activity in the TurnContext.
+
+    :type user_id: str
+
+    :param oauth_app_credentials: (Optional) AppCredentials for OAuth.
+
+    :type oauth_app_credentials: <xref:botframework.connector.auth.AppCredential>'
   syntax:
     content: 'get_aad_tokens(context: botbuilder.core.turn_context.TurnContext, connection_name:
-      str, resource_urls: typing.List[str]) -> typing.Dict[str, botbuilder.schema._models_py3.TokenResponse]'
+      str, resource_urls: typing.List[str], user_id: str = None, oauth_app_credentials:
+      botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
+      botbuilder.schema._models_py3.TokenResponse]'
+    return:
+      description: Dictionary of resource Urls to the corresponding :class:'botbuilder.schema.TokenResponse`
+      type:
+      - typing.Dict
   type: method
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_aad_tokens
 - class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
@@ -257,29 +318,56 @@ items:
     str)'
   summary: 'Lists the members of a given activity.
 
-    :param context:
 
-    :param activity_id:
 
-    :return:'
+    If not specified the current activities ID will be used.'
   syntax:
     content: 'get_activity_members(context: botbuilder.core.turn_context.TurnContext,
       activity_id: str)'
+    return:
+      description: List of Members of the activity
   type: method
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_activity_members
+- class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
+  fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_conversation_member
+  langs:
+  - python
+  module: botbuilder.core.bot_framework_adapter
+  name: 'get_conversation_member(context: botbuilder.core.turn_context.TurnContext,
+    member_id: str) -> botbuilder.schema._models_py3.ChannelAccount'
+  summary: Retrieve a member of a current conversation.
+  syntax:
+    content: 'get_conversation_member(context: botbuilder.core.turn_context.TurnContext,
+      member_id: str) -> botbuilder.schema._models_py3.ChannelAccount'
+    parameters:
+    - description: The context object for the turn
+      id: context
+      type:
+      - <xref:botbuilder.core.TurnContext>
+    - description: The member Id
+      id: member_id
+      type:
+      - str
+    return:
+      description: A member of the current conversation
+  type: method
+  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_conversation_member
 - class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
   fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_conversation_members
   langs:
   - python
   module: botbuilder.core.bot_framework_adapter
   name: 'get_conversation_members(context: botbuilder.core.turn_context.TurnContext)'
-  summary: 'Lists the members of a current conversation.
-
-    :param context:
-
-    :return:'
+  summary: Lists the members of a current conversation.
   syntax:
     content: 'get_conversation_members(context: botbuilder.core.turn_context.TurnContext)'
+    parameters:
+    - description: The context object for the turn
+      id: context
+      type:
+      - <xref:botbuilder.core.TurnContext>
+    return:
+      description: List of members of the current conversation
   type: method
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_conversation_members
 - class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
@@ -287,22 +375,40 @@ items:
   langs:
   - python
   module: botbuilder.core.bot_framework_adapter
-  name: 'get_conversations(service_url: str, continuation_token: str = None)'
+  name: 'get_conversations(service_url: str, credentials: botframework.connector.auth.app_credentials.AppCredentials,
+    continuation_token: str = None)'
+  remarks: 'The channel server returns results in pages and each page will include
+    a *continuationToken* that
+
+    can be used to fetch the next page of results from the server.
+
+    If the task completes successfully, the result contains a page of the members
+    of the current conversation.
+
+    This overload may be called from outside the context of a conversation, as only
+    the bot''s service URL and
+
+    credentials are required.
+
+    '
   summary: 'Lists the Conversations in which this bot has participated for a given
-    channel server. The channel server
+    channel server.
 
-    returns results in pages and each page will include a *continuationToken* that
-    can be used to fetch the next
 
-    page of results from the server.
 
-    :param service_url:
+    *context.activity.serviceUrl*
 
-    :param continuation_token:
-
-    :return:'
+    :type service_url: str'
   syntax:
-    content: 'get_conversations(service_url: str, continuation_token: str = None)'
+    content: 'get_conversations(service_url: str, credentials: botframework.connector.auth.app_credentials.AppCredentials,
+      continuation_token: str = None)'
+    parameters:
+    - description: The continuation token from the previous page of results
+      id: continuation_token
+      type:
+      - str
+    return:
+      description: A task that represents the work queued to execute
   type: method
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_conversations
 - class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
@@ -311,22 +417,87 @@ items:
   - python
   module: botbuilder.core.bot_framework_adapter
   name: 'get_oauth_sign_in_link(context: botbuilder.core.turn_context.TurnContext,
-    connection_name: str) -> str'
+    connection_name: str, final_redirect: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+    = None) -> str'
+  summary: Gets the raw sign-in link to be sent to the user for sign-in for a connection
+    name.
   syntax:
     content: 'get_oauth_sign_in_link(context: botbuilder.core.turn_context.TurnContext,
-      connection_name: str) -> str'
+      connection_name: str, final_redirect: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+      = None) -> str'
+    parameters:
+    - description: Context for the current turn of conversation with the user
+      id: context
+      type:
+      - <xref:botbuilder.core.TurnContext>
+    - description: Name of the auth connection to use
+      id: connection_name
+      type:
+      - str
+    - description: The final URL that the OAuth flow will redirect to.
+      id: final_redirect
+    - description: (Optional) AppCredentials for OAuth.
+      id: oauth_app_credentials
+      type:
+      - botframework.connector.auth.AppCredential
+    return:
+      description: If the task completes successfully, the result contains the raw
+        sign-in link
   type: method
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_oauth_sign_in_link
+- class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
+  fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_sign_in_resource_from_user
+  langs:
+  - python
+  module: botbuilder.core.bot_framework_adapter
+  name: 'get_sign_in_resource_from_user(turn_context: botbuilder.core.turn_context.TurnContext,
+    connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+  syntax:
+    content: 'get_sign_in_resource_from_user(turn_context: botbuilder.core.turn_context.TurnContext,
+      connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+  type: method
+  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_sign_in_resource_from_user
+- class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
+  fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_sign_in_resource_from_user_and_credentials
+  langs:
+  - python
+  module: botbuilder.core.bot_framework_adapter
+  name: 'get_sign_in_resource_from_user_and_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
+    oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
+    connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+  syntax:
+    content: 'get_sign_in_resource_from_user_and_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
+      oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
+      connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+  type: method
+  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_sign_in_resource_from_user_and_credentials
 - class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
   fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_token_status
   langs:
   - python
   module: botbuilder.core.bot_framework_adapter
-  name: 'get_token_status(context: botbuilder.core.turn_context.TurnContext, user_id:
-    str = None, include_filter: str = None) -> typing.List[botframework.connector.token_api.models._models_py3.TokenStatus]'
+  name: 'get_token_status(context: botbuilder.core.turn_context.TurnContext, connection_name:
+    str = None, user_id: str = None, include_filter: str = None, oauth_app_credentials:
+    botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.List[botframework.connector.token_api.models._models_py3.TokenStatus]'
+  summary: 'Retrieves the token status for each configured connection for the given
+    user.
+
+
+
+    Blank will return token status for all configured connections.
+
+    :type include_filter: str
+
+    :param oauth_app_credentials: (Optional) AppCredentials for OAuth.
+
+    :type oauth_app_credentials: <xref:botframework.connector.auth.AppCredential>'
   syntax:
     content: 'get_token_status(context: botbuilder.core.turn_context.TurnContext,
-      user_id: str = None, include_filter: str = None) -> typing.List[botframework.connector.token_api.models._models_py3.TokenStatus]'
+      connection_name: str = None, user_id: str = None, include_filter: str = None,
+      oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+      = None) -> typing.List[botframework.connector.token_api.models._models_py3.TokenStatus]'
+    return:
+      description: Array of <xref:botframework.connector.token_api.modelsTokenStatus>
   type: method
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_token_status
 - class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
@@ -335,24 +506,49 @@ items:
   - python
   module: botbuilder.core.bot_framework_adapter
   name: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, connection_name:
-    str, magic_code: str = None) -> botbuilder.schema._models_py3.TokenResponse'
+    str, magic_code: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+    = None) -> botbuilder.schema._models_py3.TokenResponse'
+  summary: 'Attempts to retrieve the token for a user that''s in a login flow.
+
+
+
+    :param magic_code" (Optional) user entered code to validate
+
+    :str magic_code" str
+
+    :param oauth_app_credentials: (Optional) AppCredentials for OAuth.
+
+    :type oauth_app_credentials: <xref:botframework.connector.auth.AppCredential>'
   syntax:
     content: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, connection_name:
-      str, magic_code: str = None) -> botbuilder.schema._models_py3.TokenResponse'
+      str, magic_code: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+      = None) -> botbuilder.schema._models_py3.TokenResponse'
+    return:
+      description: Token Response
+      type:
+      - :class:'botbuilder.schema.TokenResponse`
   type: method
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_user_token
 - class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
-  fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.oauth_api_url
+  fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.key_for_app_credentials
   langs:
   - python
   module: botbuilder.core.bot_framework_adapter
-  name: 'oauth_api_url(context_or_service_url: typing.Union[botbuilder.core.turn_context.TurnContext,
-    str]) -> str'
+  name: 'key_for_app_credentials(app_id: str, scope: str)'
   syntax:
-    content: 'oauth_api_url(context_or_service_url: typing.Union[botbuilder.core.turn_context.TurnContext,
-      str]) -> str'
+    content: 'key_for_app_credentials(app_id: str, scope: str)'
   type: method
-  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.oauth_api_url
+  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.key_for_app_credentials
+- class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
+  fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.key_for_connector_client
+  langs:
+  - python
+  module: botbuilder.core.bot_framework_adapter
+  name: 'key_for_connector_client(service_url: str, app_id: str, scope: str)'
+  syntax:
+    content: 'key_for_connector_client(service_url: str, app_id: str, scope: str)'
+  type: method
+  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.key_for_connector_client
 - class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
   fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.parse_request
   langs:
@@ -376,25 +572,55 @@ items:
   - python
   module: botbuilder.core.bot_framework_adapter
   name: 'process_activity(req, auth_header: str, logic: typing.Callable)'
-  summary: 'Processes an activity received by the bots web server. This includes any
-    messages sent from a
+  remarks: 'This class processes an activity received by the bots web server. This
+    includes any messages
 
-    user and is the method that drives what''s often referred to as the bots "Reactive
-    Messaging"
+    sent from a user and is the method that drives what''s often referred to as the
 
-    flow.
+    bots *reactive messaging* flow.
 
-    :param req:
+    Call this method to reactively send a message to a conversation.
 
-    :param auth_header:
+    If the task completes successfully, then an <xref:botbuilder.core.bot_framework_adapter.InvokeResponse>
+    is returned;
 
-    :param logic:
+    otherwise. *null* is returned.
 
-    :return:'
+    '
+  summary: Creates a turn context and runs the middleware pipeline for an incoming
+    activity.
   syntax:
     content: 'process_activity(req, auth_header: str, logic: typing.Callable)'
+    parameters:
+    - description: The incoming activity
+      id: req
+      type:
+      - typing.str
+    - description: The HTTP authentication header of the request
+      id: auth_header
+      type:
+      - typing.str
+    - description: The logic to execute at the end of the adapter's middleware pipeline.
+      id: logic
+      type:
+      - typing.Callable
+    return:
+      description: A task that represents the work queued to execute.
   type: method
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.process_activity
+- class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
+  fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.process_activity_with_identity
+  langs:
+  - python
+  module: botbuilder.core.bot_framework_adapter
+  name: 'process_activity_with_identity(activity: botbuilder.schema._models_py3.Activity,
+    identity: botframework.connector.auth.claims_identity.ClaimsIdentity, logic: typing.Callable)'
+  syntax:
+    content: 'process_activity_with_identity(activity: botbuilder.schema._models_py3.Activity,
+      identity: botframework.connector.auth.claims_identity.ClaimsIdentity, logic:
+      typing.Callable)'
+  type: method
+  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.process_activity_with_identity
 - class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
   fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.send_activities
   langs:
@@ -413,10 +639,30 @@ items:
   - python
   module: botbuilder.core.bot_framework_adapter
   name: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
-    str = None, user_id: str = None) -> str'
+    str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+    = None)'
+  summary: Signs the user out with the token server.
   syntax:
     content: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
-      str = None, user_id: str = None) -> str'
+      str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+      = None)'
+    parameters:
+    - description: Context for the current turn of conversation with the user
+      id: context
+      type:
+      - <xref:botbuilder.core.TurnContext>
+    - description: Name of the auth connection to use
+      id: connection_name
+      type:
+      - str
+    - description: User id of user to sign out
+      id: user_id
+      type:
+      - str
+    - description: (Optional) AppCredentials for OAuth.
+      id: oauth_app_credentials
+      type:
+      - botframework.connector.auth.AppCredential
   type: method
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.sign_out_user
 - class: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
@@ -426,64 +672,60 @@ items:
   module: botbuilder.core.bot_framework_adapter
   name: 'update_activity(context: botbuilder.core.turn_context.TurnContext, activity:
     botbuilder.schema._models_py3.Activity)'
+  remarks: 'If the activity is successfully sent, the task result contains
+
+    a <xref:botbuilder.schema.ResourceResponse> object containing the ID that
+
+    the receiving channel assigned to the activity.
+
+    Before calling this function, set the ID of the replacement activity to the ID
+
+    of the activity to replace.
+
+    '
   summary: 'Replaces an activity that was previously sent to a channel. It should
     be noted that not all
 
-    channels support this feature.
-
-    :param context:
-
-    :param activity:
-
-    :return:'
+    channels support this feature.'
   syntax:
     content: 'update_activity(context: botbuilder.core.turn_context.TurnContext, activity:
       botbuilder.schema._models_py3.Activity)'
+    parameters:
+    - description: The context object for the turn
+      id: context
+      type:
+      - :class:`TurnContext'
+    - description: New replacement activity
+      id: activity
+      type:
+      - botbuilder.schema.Activity
+    return:
+      description: A task that represents the work queued to execute
   type: method
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.update_activity
 references:
-- fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.authenticate_request
-  isExternal: false
-  name: 'authenticate_request(request: botbuilder.schema._models_py3.Activity, auth_header:
-    str) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  parent: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
-  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.authenticate_request
-- fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.check_emulating_oauth_cards
-  isExternal: false
-  name: 'check_emulating_oauth_cards(context: botbuilder.core.turn_context.TurnContext)'
-  parent: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
-  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.check_emulating_oauth_cards
 - fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.continue_conversation
   isExternal: false
   name: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
     callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
-    = None)'
+    = None, audience: str = None)'
   parent: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.continue_conversation
 - fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.create_connector_client
   isExternal: false
   name: 'create_connector_client(service_url: str, identity: botframework.connector.auth.claims_identity.ClaimsIdentity
-    = None) -> botframework.connector.aio._connector_client_async.ConnectorClient'
+    = None, audience: str = None) -> botframework.connector.aio._connector_client_async.ConnectorClient'
   parent: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.create_connector_client
-- fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.create_context
-  isExternal: false
-  name: create_context(activity)
-  parent: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
-  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.create_context
 - fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.create_conversation
   isExternal: false
   name: 'create_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
     logic: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable]
     = None, conversation_parameters: botbuilder.schema._models_py3.ConversationParameters
+    = None, channel_id: str = None, service_url: str = None, credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None)'
   parent: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.create_conversation
-- fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.create_token_api_client
-  isExternal: false
-  name: 'create_token_api_client(service_url: str) -> botframework.connector.token_api._token_api_client.TokenApiClient'
-  parent: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
-  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.create_token_api_client
 - fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.delete_activity
   isExternal: false
   name: 'delete_activity(context: botbuilder.core.turn_context.TurnContext, reference:
@@ -496,16 +738,27 @@ references:
     member_id: str) -> None'
   parent: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.delete_conversation_member
-- fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.emulate_oauth_cards
+- fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.exchange_token
   isExternal: false
-  name: 'emulate_oauth_cards(context_or_service_url: typing.Union[botbuilder.core.turn_context.TurnContext,
-    str], emulate: bool)'
+  name: 'exchange_token(turn_context: botbuilder.core.turn_context.TurnContext, connection_name:
+    str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
+    -> botbuilder.schema._models_py3.TokenResponse'
   parent: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
-  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.emulate_oauth_cards
+  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.exchange_token
+- fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.exchange_token_from_credentials
+  isExternal: false
+  name: 'exchange_token_from_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
+    oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
+    connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
+    -> botbuilder.schema._models_py3.TokenResponse'
+  parent: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
+  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.exchange_token_from_credentials
 - fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_aad_tokens
   isExternal: false
   name: 'get_aad_tokens(context: botbuilder.core.turn_context.TurnContext, connection_name:
-    str, resource_urls: typing.List[str]) -> typing.Dict[str, botbuilder.schema._models_py3.TokenResponse]'
+    str, resource_urls: typing.List[str], user_id: str = None, oauth_app_credentials:
+    botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
+    botbuilder.schema._models_py3.TokenResponse]'
   parent: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_aad_tokens
 - fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_activity_members
@@ -514,6 +767,12 @@ references:
     str)'
   parent: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_activity_members
+- fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_conversation_member
+  isExternal: false
+  name: 'get_conversation_member(context: botbuilder.core.turn_context.TurnContext,
+    member_id: str) -> botbuilder.schema._models_py3.ChannelAccount'
+  parent: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
+  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_conversation_member
 - fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_conversation_members
   isExternal: false
   name: 'get_conversation_members(context: botbuilder.core.turn_context.TurnContext)'
@@ -521,33 +780,54 @@ references:
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_conversation_members
 - fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_conversations
   isExternal: false
-  name: 'get_conversations(service_url: str, continuation_token: str = None)'
+  name: 'get_conversations(service_url: str, credentials: botframework.connector.auth.app_credentials.AppCredentials,
+    continuation_token: str = None)'
   parent: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_conversations
 - fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_oauth_sign_in_link
   isExternal: false
   name: 'get_oauth_sign_in_link(context: botbuilder.core.turn_context.TurnContext,
-    connection_name: str) -> str'
+    connection_name: str, final_redirect: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+    = None) -> str'
   parent: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_oauth_sign_in_link
+- fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_sign_in_resource_from_user
+  isExternal: false
+  name: 'get_sign_in_resource_from_user(turn_context: botbuilder.core.turn_context.TurnContext,
+    connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+  parent: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
+  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_sign_in_resource_from_user
+- fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_sign_in_resource_from_user_and_credentials
+  isExternal: false
+  name: 'get_sign_in_resource_from_user_and_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
+    oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
+    connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+  parent: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
+  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_sign_in_resource_from_user_and_credentials
 - fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_token_status
   isExternal: false
-  name: 'get_token_status(context: botbuilder.core.turn_context.TurnContext, user_id:
-    str = None, include_filter: str = None) -> typing.List[botframework.connector.token_api.models._models_py3.TokenStatus]'
+  name: 'get_token_status(context: botbuilder.core.turn_context.TurnContext, connection_name:
+    str = None, user_id: str = None, include_filter: str = None, oauth_app_credentials:
+    botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.List[botframework.connector.token_api.models._models_py3.TokenStatus]'
   parent: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_token_status
 - fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_user_token
   isExternal: false
   name: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, connection_name:
-    str, magic_code: str = None) -> botbuilder.schema._models_py3.TokenResponse'
+    str, magic_code: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+    = None) -> botbuilder.schema._models_py3.TokenResponse'
   parent: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_user_token
-- fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.oauth_api_url
+- fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.key_for_app_credentials
   isExternal: false
-  name: 'oauth_api_url(context_or_service_url: typing.Union[botbuilder.core.turn_context.TurnContext,
-    str]) -> str'
+  name: 'key_for_app_credentials(app_id: str, scope: str)'
   parent: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
-  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.oauth_api_url
+  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.key_for_app_credentials
+- fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.key_for_connector_client
+  isExternal: false
+  name: 'key_for_connector_client(service_url: str, app_id: str, scope: str)'
+  parent: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
+  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.key_for_connector_client
 - fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.parse_request
   isExternal: false
   name: parse_request(req)
@@ -558,6 +838,12 @@ references:
   name: 'process_activity(req, auth_header: str, logic: typing.Callable)'
   parent: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.process_activity
+- fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.process_activity_with_identity
+  isExternal: false
+  name: 'process_activity_with_identity(activity: botbuilder.schema._models_py3.Activity,
+    identity: botframework.connector.auth.claims_identity.ClaimsIdentity, logic: typing.Callable)'
+  parent: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
+  uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.process_activity_with_identity
 - fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.send_activities
   isExternal: false
   name: 'send_activities(context: botbuilder.core.turn_context.TurnContext, activities:
@@ -567,7 +853,8 @@ references:
 - fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.sign_out_user
   isExternal: false
   name: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
-    str = None, user_id: str = None) -> str'
+    str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+    = None)'
   parent: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
   uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.sign_out_user
 - fullName: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.update_activity

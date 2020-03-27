@@ -1,0 +1,57 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: botbuilder.schema.TokenExchangeInvokeResponse
+  fullName: botbuilder.schema.TokenExchangeInvokeResponse
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: msrest.serialization.Model
+  langs:
+  - python
+  module: botbuilder.schema
+  name: TokenExchangeInvokeResponse
+  summary: TokenExchangeInvokeResponse.
+  syntax:
+    content: 'TokenExchangeInvokeResponse(*, id: str = None, connection_name: str
+      = None, failure_detail: str = None, properties=None, **kwargs) -> None'
+    parameters:
+    - description: The id from the OAuthCard.
+      id: id
+      type:
+      - str
+    - description: The connection name.
+      id: connection_name
+      type:
+      - str
+    - description: The details of why the token exchange failed.
+      id: failure_detail
+      type:
+      - str
+    - description: Extension data for overflow of properties.
+      id: properties
+      type:
+      - dict[str, object]
+  type: class
+  uid: botbuilder.schema.TokenExchangeInvokeResponse
+references:
+- fullName: dict[str, object]
+  name: dict[str, object]
+  spec.python:
+  - fullName: dict
+    name: dict
+    uid: dict
+  - fullName: '['
+    name: '['
+  - fullName: str
+    name: str
+    uid: str
+  - fullName: ', '
+    name: ', '
+  - fullName: object
+    name: object
+    uid: object
+  - fullName: ']'
+    name: ']'
+  uid: dict[str, object]

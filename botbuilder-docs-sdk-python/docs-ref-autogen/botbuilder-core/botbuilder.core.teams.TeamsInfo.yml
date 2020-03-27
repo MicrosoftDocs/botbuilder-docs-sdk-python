@@ -2,12 +2,17 @@
 api_name: []
 items:
 - children:
+  - botbuilder.core.teams.TeamsInfo.get_member
   - botbuilder.core.teams.TeamsInfo.get_members
+  - botbuilder.core.teams.TeamsInfo.get_paged_members
+  - botbuilder.core.teams.TeamsInfo.get_paged_team_members
   - botbuilder.core.teams.TeamsInfo.get_team_channels
   - botbuilder.core.teams.TeamsInfo.get_team_details
   - botbuilder.core.teams.TeamsInfo.get_team_id
+  - botbuilder.core.teams.TeamsInfo.get_team_member
   - botbuilder.core.teams.TeamsInfo.get_team_members
   - botbuilder.core.teams.TeamsInfo.get_teams_connector_client
+  - botbuilder.core.teams.TeamsInfo.send_message_to_teams_channel
   class: botbuilder.core.teams.TeamsInfo
   fullName: botbuilder.core.teams.TeamsInfo
   inheritance:
@@ -21,6 +26,18 @@ items:
   type: class
   uid: botbuilder.core.teams.TeamsInfo
 - class: botbuilder.core.teams.TeamsInfo
+  fullName: botbuilder.core.teams.TeamsInfo.get_member
+  langs:
+  - python
+  module: botbuilder.core.teams
+  name: 'get_member(turn_context: botbuilder.core.turn_context.TurnContext, member_id:
+    str) -> botbuilder.schema.teams._models_py3.TeamsChannelAccount'
+  syntax:
+    content: 'get_member(turn_context: botbuilder.core.turn_context.TurnContext, member_id:
+      str) -> botbuilder.schema.teams._models_py3.TeamsChannelAccount'
+  type: method
+  uid: botbuilder.core.teams.TeamsInfo.get_member
+- class: botbuilder.core.teams.TeamsInfo
   fullName: botbuilder.core.teams.TeamsInfo.get_members
   langs:
   - python
@@ -31,6 +48,32 @@ items:
       -> typing.List[botbuilder.schema.teams._models_py3.TeamsChannelAccount]'
   type: method
   uid: botbuilder.core.teams.TeamsInfo.get_members
+- class: botbuilder.core.teams.TeamsInfo
+  fullName: botbuilder.core.teams.TeamsInfo.get_paged_members
+  langs:
+  - python
+  module: botbuilder.core.teams
+  name: 'get_paged_members(turn_context: botbuilder.core.turn_context.TurnContext,
+    continuation_token: str = None, page_size: int = None) -> typing.List[botbuilder.schema.teams._models_py3.TeamsPagedMembersResult]'
+  syntax:
+    content: 'get_paged_members(turn_context: botbuilder.core.turn_context.TurnContext,
+      continuation_token: str = None, page_size: int = None) -> typing.List[botbuilder.schema.teams._models_py3.TeamsPagedMembersResult]'
+  type: method
+  uid: botbuilder.core.teams.TeamsInfo.get_paged_members
+- class: botbuilder.core.teams.TeamsInfo
+  fullName: botbuilder.core.teams.TeamsInfo.get_paged_team_members
+  langs:
+  - python
+  module: botbuilder.core.teams
+  name: 'get_paged_team_members(turn_context: botbuilder.core.turn_context.TurnContext,
+    team_id: str = '''', continuation_token: str = None, page_size: int = None) ->
+    typing.List[botbuilder.schema.teams._models_py3.TeamsPagedMembersResult]'
+  syntax:
+    content: 'get_paged_team_members(turn_context: botbuilder.core.turn_context.TurnContext,
+      team_id: str = '''', continuation_token: str = None, page_size: int = None)
+      -> typing.List[botbuilder.schema.teams._models_py3.TeamsPagedMembersResult]'
+  type: method
+  uid: botbuilder.core.teams.TeamsInfo.get_paged_team_members
 - class: botbuilder.core.teams.TeamsInfo
   fullName: botbuilder.core.teams.TeamsInfo.get_team_channels
   langs:
@@ -66,15 +109,27 @@ items:
   type: method
   uid: botbuilder.core.teams.TeamsInfo.get_team_id
 - class: botbuilder.core.teams.TeamsInfo
+  fullName: botbuilder.core.teams.TeamsInfo.get_team_member
+  langs:
+  - python
+  module: botbuilder.core.teams
+  name: 'get_team_member(turn_context: botbuilder.core.turn_context.TurnContext, team_id:
+    str = '''', member_id: str = None) -> botbuilder.schema.teams._models_py3.TeamsChannelAccount'
+  syntax:
+    content: 'get_team_member(turn_context: botbuilder.core.turn_context.TurnContext,
+      team_id: str = '''', member_id: str = None) -> botbuilder.schema.teams._models_py3.TeamsChannelAccount'
+  type: method
+  uid: botbuilder.core.teams.TeamsInfo.get_team_member
+- class: botbuilder.core.teams.TeamsInfo
   fullName: botbuilder.core.teams.TeamsInfo.get_team_members
   langs:
   - python
   module: botbuilder.core.teams
   name: 'get_team_members(turn_context: botbuilder.core.turn_context.TurnContext,
-    team_id: str = '''')'
+    team_id: str = '''') -> typing.List[botbuilder.schema.teams._models_py3.TeamsChannelAccount]'
   syntax:
     content: 'get_team_members(turn_context: botbuilder.core.turn_context.TurnContext,
-      team_id: str = '''')'
+      team_id: str = '''') -> typing.List[botbuilder.schema.teams._models_py3.TeamsChannelAccount]'
   type: method
   uid: botbuilder.core.teams.TeamsInfo.get_team_members
 - class: botbuilder.core.teams.TeamsInfo
@@ -89,12 +144,45 @@ items:
       -> botframework.connector.teams.teams_connector_client.TeamsConnectorClient'
   type: method
   uid: botbuilder.core.teams.TeamsInfo.get_teams_connector_client
+- class: botbuilder.core.teams.TeamsInfo
+  fullName: botbuilder.core.teams.TeamsInfo.send_message_to_teams_channel
+  langs:
+  - python
+  module: botbuilder.core.teams
+  name: 'send_message_to_teams_channel(turn_context: botbuilder.core.turn_context.TurnContext,
+    activity: botbuilder.schema._models_py3.Activity, teams_channel_id: str) -> typing.Tuple[botbuilder.schema._models_py3.ConversationReference,
+    str]'
+  syntax:
+    content: 'send_message_to_teams_channel(turn_context: botbuilder.core.turn_context.TurnContext,
+      activity: botbuilder.schema._models_py3.Activity, teams_channel_id: str) ->
+      typing.Tuple[botbuilder.schema._models_py3.ConversationReference, str]'
+  type: method
+  uid: botbuilder.core.teams.TeamsInfo.send_message_to_teams_channel
 references:
+- fullName: botbuilder.core.teams.TeamsInfo.get_member
+  isExternal: false
+  name: 'get_member(turn_context: botbuilder.core.turn_context.TurnContext, member_id:
+    str) -> botbuilder.schema.teams._models_py3.TeamsChannelAccount'
+  parent: botbuilder.core.teams.TeamsInfo
+  uid: botbuilder.core.teams.TeamsInfo.get_member
 - fullName: botbuilder.core.teams.TeamsInfo.get_members
   isExternal: false
   name: 'get_members(turn_context: botbuilder.core.turn_context.TurnContext) -> typing.List[botbuilder.schema.teams._models_py3.TeamsChannelAccount]'
   parent: botbuilder.core.teams.TeamsInfo
   uid: botbuilder.core.teams.TeamsInfo.get_members
+- fullName: botbuilder.core.teams.TeamsInfo.get_paged_members
+  isExternal: false
+  name: 'get_paged_members(turn_context: botbuilder.core.turn_context.TurnContext,
+    continuation_token: str = None, page_size: int = None) -> typing.List[botbuilder.schema.teams._models_py3.TeamsPagedMembersResult]'
+  parent: botbuilder.core.teams.TeamsInfo
+  uid: botbuilder.core.teams.TeamsInfo.get_paged_members
+- fullName: botbuilder.core.teams.TeamsInfo.get_paged_team_members
+  isExternal: false
+  name: 'get_paged_team_members(turn_context: botbuilder.core.turn_context.TurnContext,
+    team_id: str = '''', continuation_token: str = None, page_size: int = None) ->
+    typing.List[botbuilder.schema.teams._models_py3.TeamsPagedMembersResult]'
+  parent: botbuilder.core.teams.TeamsInfo
+  uid: botbuilder.core.teams.TeamsInfo.get_paged_team_members
 - fullName: botbuilder.core.teams.TeamsInfo.get_team_channels
   isExternal: false
   name: 'get_team_channels(turn_context: botbuilder.core.turn_context.TurnContext,
@@ -112,10 +200,16 @@ references:
   name: 'get_team_id(turn_context: botbuilder.core.turn_context.TurnContext)'
   parent: botbuilder.core.teams.TeamsInfo
   uid: botbuilder.core.teams.TeamsInfo.get_team_id
+- fullName: botbuilder.core.teams.TeamsInfo.get_team_member
+  isExternal: false
+  name: 'get_team_member(turn_context: botbuilder.core.turn_context.TurnContext, team_id:
+    str = '''', member_id: str = None) -> botbuilder.schema.teams._models_py3.TeamsChannelAccount'
+  parent: botbuilder.core.teams.TeamsInfo
+  uid: botbuilder.core.teams.TeamsInfo.get_team_member
 - fullName: botbuilder.core.teams.TeamsInfo.get_team_members
   isExternal: false
   name: 'get_team_members(turn_context: botbuilder.core.turn_context.TurnContext,
-    team_id: str = '''')'
+    team_id: str = '''') -> typing.List[botbuilder.schema.teams._models_py3.TeamsChannelAccount]'
   parent: botbuilder.core.teams.TeamsInfo
   uid: botbuilder.core.teams.TeamsInfo.get_team_members
 - fullName: botbuilder.core.teams.TeamsInfo.get_teams_connector_client
@@ -124,3 +218,10 @@ references:
     -> botframework.connector.teams.teams_connector_client.TeamsConnectorClient'
   parent: botbuilder.core.teams.TeamsInfo
   uid: botbuilder.core.teams.TeamsInfo.get_teams_connector_client
+- fullName: botbuilder.core.teams.TeamsInfo.send_message_to_teams_channel
+  isExternal: false
+  name: 'send_message_to_teams_channel(turn_context: botbuilder.core.turn_context.TurnContext,
+    activity: botbuilder.schema._models_py3.Activity, teams_channel_id: str) -> typing.Tuple[botbuilder.schema._models_py3.ConversationReference,
+    str]'
+  parent: botbuilder.core.teams.TeamsInfo
+  uid: botbuilder.core.teams.TeamsInfo.send_message_to_teams_channel
