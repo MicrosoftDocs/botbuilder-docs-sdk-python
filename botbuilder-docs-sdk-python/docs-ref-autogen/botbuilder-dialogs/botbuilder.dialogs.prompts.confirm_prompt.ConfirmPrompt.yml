@@ -1,0 +1,150 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.determine_culture
+  - botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.on_prompt
+  - botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.on_recognize
+  - botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.choice_defaults
+  class: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt
+  fullName: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - inheritance:
+        - type: builtins.object
+        type: abc.ABC
+      type: botbuilder.dialogs.dialog.Dialog
+    type: botbuilder.dialogs.prompts.prompt.Prompt
+  langs:
+  - python
+  module: botbuilder.dialogs.prompts.confirm_prompt
+  name: ConfirmPrompt
+  source:
+    id: ConfirmPrompt
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\confirm_prompt.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\confirm_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 19
+  summary: ''
+  syntax:
+    content: 'ConfirmPrompt(dialog_id: str, validator: object = None, default_locale:
+      str = None)'
+  type: class
+  uid: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt
+- class: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt
+  fullName: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.determine_culture
+  langs:
+  - python
+  module: botbuilder.dialogs.prompts.confirm_prompt
+  name: 'determine_culture(activity: botbuilder.schema._models_py3.Activity) -> str'
+  source:
+    id: determine_culture
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\confirm_prompt.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\confirm_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 162
+  syntax:
+    content: 'determine_culture(activity: botbuilder.schema._models_py3.Activity)
+      -> str'
+  type: method
+  uid: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.determine_culture
+- class: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt
+  fullName: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.on_prompt
+  langs:
+  - python
+  module: botbuilder.dialogs.prompts.confirm_prompt
+  name: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
+    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
+    is_retry: bool)'
+  source:
+    id: on_prompt
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\confirm_prompt.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\confirm_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 78
+  syntax:
+    content: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
+      typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
+      is_retry: bool)'
+  type: method
+  uid: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.on_prompt
+- class: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt
+  fullName: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.on_recognize
+  langs:
+  - python
+  module: botbuilder.dialogs.prompts.confirm_prompt
+  name: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext, state:
+    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
+    -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
+  source:
+    id: on_recognize
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\confirm_prompt.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\confirm_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 113
+  syntax:
+    content: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
+      state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
+      -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
+  type: method
+  uid: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.on_recognize
+- class: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt
+  fullName: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.choice_defaults
+  langs:
+  - python
+  module: botbuilder.dialogs.prompts.confirm_prompt
+  name: choice_defaults
+  syntax:
+    content: 'choice_defaults = {''Spanish'': (<botbuilder.dialogs.choices.choice.Choice
+      object>, <botbuilder.dialogs.choices.choice.Choice object>, <botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
+      object>), ''Dutch'': (<botbuilder.dialogs.choices.choice.Choice object>, <botbuilder.dialogs.choices.choice.Choice
+      object>, <botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
+      object>), ''English'': (<botbuilder.dialogs.choices.choice.Choice object>, <botbuilder.dialogs.choices.choice.Choice
+      object>, <botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
+      object>), ''French'': (<botbuilder.dialogs.choices.choice.Choice object>, <botbuilder.dialogs.choices.choice.Choice
+      object>, <botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
+      object>), ''German'': (<botbuilder.dialogs.choices.choice.Choice object>, <botbuilder.dialogs.choices.choice.Choice
+      object>, <botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
+      object>), ''Japanese'': (<botbuilder.dialogs.choices.choice.Choice object>,
+      <botbuilder.dialogs.choices.choice.Choice object>, <botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
+      object>), ''Portuguese'': (<botbuilder.dialogs.choices.choice.Choice object>,
+      <botbuilder.dialogs.choices.choice.Choice object>, <botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
+      object>), ''Chinese'': (<botbuilder.dialogs.choices.choice.Choice object>, <botbuilder.dialogs.choices.choice.Choice
+      object>, <botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
+      object>)}'
+  type: attribute
+  uid: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.choice_defaults
+references:
+- fullName: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.determine_culture
+  isExternal: false
+  name: 'determine_culture(activity: botbuilder.schema._models_py3.Activity) -> str'
+  parent: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt
+  uid: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.determine_culture
+- fullName: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.on_prompt
+  isExternal: false
+  name: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
+    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
+    is_retry: bool)'
+  parent: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt
+  uid: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.on_prompt
+- fullName: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.on_recognize
+  isExternal: false
+  name: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext, state:
+    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
+    -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
+  parent: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt
+  uid: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.on_recognize
+- fullName: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.choice_defaults
+  isExternal: false
+  name: choice_defaults
+  parent: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt
+  uid: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.choice_defaults
