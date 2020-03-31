@@ -1,0 +1,110 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.dialogs.DialogSet.add
+  - botbuilder.dialogs.DialogSet.create_context
+  - botbuilder.dialogs.DialogSet.find
+  class: botbuilder.dialogs.DialogSet
+  fullName: botbuilder.dialogs.DialogSet
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: DialogSet
+  source:
+    id: DialogSet
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_set.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_set.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 12
+  summary: ''
+  syntax:
+    content: 'DialogSet(dialog_state: botbuilder.core.state_property_accessor.StatePropertyAccessor
+      = None)'
+  type: class
+  uid: botbuilder.dialogs.DialogSet
+- class: botbuilder.dialogs.DialogSet
+  fullName: botbuilder.dialogs.DialogSet.add
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: 'add(dialog: botbuilder.dialogs.dialog.Dialog)'
+  source:
+    id: add
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_set.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_set.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 37
+  summary: 'Adds a new dialog to the set and returns the added dialog.
+
+    :param dialog: The dialog to add.'
+  syntax:
+    content: 'add(dialog: botbuilder.dialogs.dialog.Dialog)'
+  type: method
+  uid: botbuilder.dialogs.DialogSet.add
+- class: botbuilder.dialogs.DialogSet
+  fullName: botbuilder.dialogs.DialogSet.create_context
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: 'create_context(turn_context: botbuilder.core.turn_context.TurnContext) ->
+    botbuilder.dialogs.dialog_context.DialogContext'
+  source:
+    id: create_context
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_set.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_set.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 58
+  syntax:
+    content: 'create_context(turn_context: botbuilder.core.turn_context.TurnContext)
+      -> botbuilder.dialogs.dialog_context.DialogContext'
+  type: method
+  uid: botbuilder.dialogs.DialogSet.create_context
+- class: botbuilder.dialogs.DialogSet
+  fullName: botbuilder.dialogs.DialogSet.find
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: 'find(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
+  source:
+    id: find
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_set.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_set.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 71
+  summary: 'Finds a dialog that was previously added to the set using add(dialog)
+
+    :param dialog_id: ID of the dialog/prompt to look up.
+
+    :return: The dialog if found, otherwise null.'
+  syntax:
+    content: 'find(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
+  type: method
+  uid: botbuilder.dialogs.DialogSet.find
+references:
+- fullName: botbuilder.dialogs.DialogSet.add
+  isExternal: false
+  name: 'add(dialog: botbuilder.dialogs.dialog.Dialog)'
+  parent: botbuilder.dialogs.DialogSet
+  uid: botbuilder.dialogs.DialogSet.add
+- fullName: botbuilder.dialogs.DialogSet.create_context
+  isExternal: false
+  name: 'create_context(turn_context: botbuilder.core.turn_context.TurnContext) ->
+    botbuilder.dialogs.dialog_context.DialogContext'
+  parent: botbuilder.dialogs.DialogSet
+  uid: botbuilder.dialogs.DialogSet.create_context
+- fullName: botbuilder.dialogs.DialogSet.find
+  isExternal: false
+  name: 'find(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
+  parent: botbuilder.dialogs.DialogSet
+  uid: botbuilder.dialogs.DialogSet.find

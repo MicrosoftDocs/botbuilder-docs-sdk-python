@@ -1,0 +1,170 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.dialogs.skills.skill_dialog.SkillDialog.begin_dialog
+  - botbuilder.dialogs.skills.skill_dialog.SkillDialog.continue_dialog
+  - botbuilder.dialogs.skills.skill_dialog.SkillDialog.end_dialog
+  - botbuilder.dialogs.skills.skill_dialog.SkillDialog.reprompt_dialog
+  - botbuilder.dialogs.skills.skill_dialog.SkillDialog.resume_dialog
+  class: botbuilder.dialogs.skills.skill_dialog.SkillDialog
+  fullName: botbuilder.dialogs.skills.skill_dialog.SkillDialog
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: abc.ABC
+    type: botbuilder.dialogs.dialog.Dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.skills.skill_dialog
+  name: SkillDialog
+  source:
+    id: SkillDialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 26
+  summary: ''
+  syntax:
+    content: 'SkillDialog(dialog_options: botbuilder.dialogs.skills.skill_dialog_options.SkillDialogOptions,
+      dialog_id: str)'
+  type: class
+  uid: botbuilder.dialogs.skills.skill_dialog.SkillDialog
+- class: botbuilder.dialogs.skills.skill_dialog.SkillDialog
+  fullName: botbuilder.dialogs.skills.skill_dialog.SkillDialog.begin_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.skills.skill_dialog
+  name: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    options: object = None)'
+  source:
+    id: begin_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 35
+  summary: 'Method called when a new dialog has been pushed onto the stack and is
+    being activated.
+
+    :param dialog_context: The dialog context for the current turn of conversation.
+
+    :param options: (Optional) additional argument(s) to pass to the dialog being
+    started.'
+  syntax:
+    content: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+      options: object = None)'
+  type: method
+  uid: botbuilder.dialogs.skills.skill_dialog.SkillDialog.begin_dialog
+- class: botbuilder.dialogs.skills.skill_dialog.SkillDialog
+  fullName: botbuilder.dialogs.skills.skill_dialog.SkillDialog.continue_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.skills.skill_dialog
+  name: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
+  source:
+    id: continue_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 69
+  syntax:
+    content: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
+  type: method
+  uid: botbuilder.dialogs.skills.skill_dialog.SkillDialog.continue_dialog
+- class: botbuilder.dialogs.skills.skill_dialog.SkillDialog
+  fullName: botbuilder.dialogs.skills.skill_dialog.SkillDialog.end_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.skills.skill_dialog
+  name: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance: botbuilder.dialogs.dialog_instance.DialogInstance,
+    reason: botbuilder.dialogs.dialog_reason.DialogReason)'
+  source:
+    id: end_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 130
+  syntax:
+    content: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+      botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)'
+  type: method
+  uid: botbuilder.dialogs.skills.skill_dialog.SkillDialog.end_dialog
+- class: botbuilder.dialogs.skills.skill_dialog.SkillDialog
+  fullName: botbuilder.dialogs.skills.skill_dialog.SkillDialog.reprompt_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.skills.skill_dialog
+  name: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+    botbuilder.dialogs.dialog_instance.DialogInstance)'
+  source:
+    id: reprompt_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 107
+  syntax:
+    content: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+      botbuilder.dialogs.dialog_instance.DialogInstance)'
+  type: method
+  uid: botbuilder.dialogs.skills.skill_dialog.SkillDialog.reprompt_dialog
+- class: botbuilder.dialogs.skills.skill_dialog.SkillDialog
+  fullName: botbuilder.dialogs.skills.skill_dialog.SkillDialog.resume_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.skills.skill_dialog
+  name: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)'
+  source:
+    id: resume_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 124
+  syntax:
+    content: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+      reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)'
+  type: method
+  uid: botbuilder.dialogs.skills.skill_dialog.SkillDialog.resume_dialog
+references:
+- fullName: botbuilder.dialogs.skills.skill_dialog.SkillDialog.begin_dialog
+  isExternal: false
+  name: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    options: object = None)'
+  parent: botbuilder.dialogs.skills.skill_dialog.SkillDialog
+  uid: botbuilder.dialogs.skills.skill_dialog.SkillDialog.begin_dialog
+- fullName: botbuilder.dialogs.skills.skill_dialog.SkillDialog.continue_dialog
+  isExternal: false
+  name: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
+  parent: botbuilder.dialogs.skills.skill_dialog.SkillDialog
+  uid: botbuilder.dialogs.skills.skill_dialog.SkillDialog.continue_dialog
+- fullName: botbuilder.dialogs.skills.skill_dialog.SkillDialog.end_dialog
+  isExternal: false
+  name: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance: botbuilder.dialogs.dialog_instance.DialogInstance,
+    reason: botbuilder.dialogs.dialog_reason.DialogReason)'
+  parent: botbuilder.dialogs.skills.skill_dialog.SkillDialog
+  uid: botbuilder.dialogs.skills.skill_dialog.SkillDialog.end_dialog
+- fullName: botbuilder.dialogs.skills.skill_dialog.SkillDialog.reprompt_dialog
+  isExternal: false
+  name: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+    botbuilder.dialogs.dialog_instance.DialogInstance)'
+  parent: botbuilder.dialogs.skills.skill_dialog.SkillDialog
+  uid: botbuilder.dialogs.skills.skill_dialog.SkillDialog.reprompt_dialog
+- fullName: botbuilder.dialogs.skills.skill_dialog.SkillDialog.resume_dialog
+  isExternal: false
+  name: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)'
+  parent: botbuilder.dialogs.skills.skill_dialog.SkillDialog
+  uid: botbuilder.dialogs.skills.skill_dialog.SkillDialog.resume_dialog

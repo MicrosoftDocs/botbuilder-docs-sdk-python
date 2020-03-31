@@ -1,0 +1,86 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.dialogs.choices.find.Find.find_choices
+  - botbuilder.dialogs.choices.find.Find.find_values
+  class: botbuilder.dialogs.choices.find.Find
+  fullName: botbuilder.dialogs.choices.find.Find
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: botbuilder.dialogs.choices.find
+  name: Find
+  source:
+    id: Find
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\find.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\find.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 16
+  summary: Contains methods for matching user input against a list of choices
+  syntax: {}
+  type: class
+  uid: botbuilder.dialogs.choices.find.Find
+- class: botbuilder.dialogs.choices.find.Find
+  fullName: botbuilder.dialogs.choices.find.Find.find_choices
+  langs:
+  - python
+  module: botbuilder.dialogs.choices.find
+  name: 'find_choices(utterance: str, choices: [typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
+    options: botbuilder.dialogs.choices.find_choices_options.FindChoicesOptions =
+    None)'
+  source:
+    id: find_choices
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\find.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\find.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 19
+  summary: Matches user input against a list of choices
+  syntax:
+    content: 'find_choices(utterance: str, choices: [typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
+      options: botbuilder.dialogs.choices.find_choices_options.FindChoicesOptions
+      = None)'
+  type: method
+  uid: botbuilder.dialogs.choices.find.Find.find_choices
+- class: botbuilder.dialogs.choices.find.Find
+  fullName: botbuilder.dialogs.choices.find.Find.find_values
+  langs:
+  - python
+  module: botbuilder.dialogs.choices.find
+  name: 'find_values(utterance: str, values: typing.List[botbuilder.dialogs.choices.sorted_value.SortedValue],
+    options: botbuilder.dialogs.choices.find_values_options.FindValuesOptions = None)
+    -> typing.List[botbuilder.dialogs.choices.model_result.ModelResult]'
+  source:
+    id: find_values
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\find.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\find.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 83
+  syntax:
+    content: 'find_values(utterance: str, values: typing.List[botbuilder.dialogs.choices.sorted_value.SortedValue],
+      options: botbuilder.dialogs.choices.find_values_options.FindValuesOptions =
+      None) -> typing.List[botbuilder.dialogs.choices.model_result.ModelResult]'
+  type: method
+  uid: botbuilder.dialogs.choices.find.Find.find_values
+references:
+- fullName: botbuilder.dialogs.choices.find.Find.find_choices
+  isExternal: false
+  name: 'find_choices(utterance: str, choices: [typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
+    options: botbuilder.dialogs.choices.find_choices_options.FindChoicesOptions =
+    None)'
+  parent: botbuilder.dialogs.choices.find.Find
+  uid: botbuilder.dialogs.choices.find.Find.find_choices
+- fullName: botbuilder.dialogs.choices.find.Find.find_values
+  isExternal: false
+  name: 'find_values(utterance: str, values: typing.List[botbuilder.dialogs.choices.sorted_value.SortedValue],
+    options: botbuilder.dialogs.choices.find_values_options.FindValuesOptions = None)
+    -> typing.List[botbuilder.dialogs.choices.model_result.ModelResult]'
+  parent: botbuilder.dialogs.choices.find.Find
+  uid: botbuilder.dialogs.choices.find.Find.find_values

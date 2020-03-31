@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.dialogs.waterfall_step_context.WaterfallStepContext.next
+  class: botbuilder.dialogs.waterfall_step_context.WaterfallStepContext
+  fullName: botbuilder.dialogs.waterfall_step_context.WaterfallStepContext
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: botbuilder.dialogs.dialog_context.DialogContext
+  langs:
+  - python
+  module: botbuilder.dialogs.waterfall_step_context
+  name: WaterfallStepContext
+  source:
+    id: WaterfallStepContext
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\waterfall_step_context.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\waterfall_step_context.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 12
+  summary: ''
+  syntax:
+    content: 'WaterfallStepContext(parent, dc: botbuilder.dialogs.dialog_context.DialogContext,
+      options: object, values: typing.Dict[str, object], index: int, reason: botbuilder.dialogs.dialog_reason.DialogReason,
+      result: object = None)'
+  type: class
+  uid: botbuilder.dialogs.waterfall_step_context.WaterfallStepContext
+- class: botbuilder.dialogs.waterfall_step_context.WaterfallStepContext
+  fullName: botbuilder.dialogs.waterfall_step_context.WaterfallStepContext.next
+  langs:
+  - python
+  module: botbuilder.dialogs.waterfall_step_context
+  name: 'next(result: object) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  source:
+    id: next
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\waterfall_step_context.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\waterfall_step_context.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 55
+  syntax:
+    content: 'next(result: object) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  type: method
+  uid: botbuilder.dialogs.waterfall_step_context.WaterfallStepContext.next
+references:
+- fullName: botbuilder.dialogs.waterfall_step_context.WaterfallStepContext.next
+  isExternal: false
+  name: 'next(result: object) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parent: botbuilder.dialogs.waterfall_step_context.WaterfallStepContext
+  uid: botbuilder.dialogs.waterfall_step_context.WaterfallStepContext.next

@@ -1,0 +1,176 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.dialogs.dialog_reason.DialogReason.BeginCalled
+  - botbuilder.dialogs.dialog_reason.DialogReason.CancelCalled
+  - botbuilder.dialogs.dialog_reason.DialogReason.ContinueCalled
+  - botbuilder.dialogs.dialog_reason.DialogReason.EndCalled
+  - botbuilder.dialogs.dialog_reason.DialogReason.NextCalled
+  - botbuilder.dialogs.dialog_reason.DialogReason.ReplaceCalled
+  class: botbuilder.dialogs.dialog_reason.DialogReason
+  fullName: botbuilder.dialogs.dialog_reason.DialogReason
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: enum.Enum
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_reason
+  name: DialogReason
+  source:
+    id: DialogReason
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_reason.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_reason.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 6
+  summary: 'Indicates in which a dialog-related method is being called.
+
+
+
+    :meth:>>``<<DialogContext.replace_dialog()`.
+
+    :vartype ReplacedCalled: int
+
+    :var CancelCalled: A dialog was cancelled as part of a call to <xref:DialogContext.cancel_all_dialogs>.
+
+    :vartype CancelCalled: int
+
+    :var NextCalled: A preceding step was skipped through a call to <xref:WaterfallStepContext.next>.
+
+    :vartype NextCalled: int'
+  syntax:
+    variables:
+    - description: A dialog is being started through a call to <xref:DialogContext.begin>.
+      id: BeginCalled
+      type:
+      - int
+    - description: A dialog is being continued through a call to <xref:DialogContext.continue_dialog>.
+      id: ContinueCalled
+      type:
+      - int
+    - description: A dialog ended normally through a call to :meth:>>`<<DialogContext.end_dialog()
+      id: EndCalled
+      type:
+      - int
+    - description: A dialog is ending because it's being replaced through a call to
+      id: ReplaceCalled
+  type: class
+  uid: botbuilder.dialogs.dialog_reason.DialogReason
+- fullName: botbuilder.dialogs.dialog_reason.DialogReason.BeginCalled
+  id: BeginCalled
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_reason
+  name: BeginCalled
+  parent: botbuilder.dialogs.dialog_reason.DialogReason
+  syntax:
+    content: BeginCalled = 1
+    return:
+      type:
+      - botbuilder.dialogs.dialog_reason.DialogReason
+  type: attribute
+  uid: botbuilder.dialogs.dialog_reason.DialogReason.BeginCalled
+- fullName: botbuilder.dialogs.dialog_reason.DialogReason.CancelCalled
+  id: CancelCalled
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_reason
+  name: CancelCalled
+  parent: botbuilder.dialogs.dialog_reason.DialogReason
+  syntax:
+    content: CancelCalled = 5
+    return:
+      type:
+      - botbuilder.dialogs.dialog_reason.DialogReason
+  type: attribute
+  uid: botbuilder.dialogs.dialog_reason.DialogReason.CancelCalled
+- fullName: botbuilder.dialogs.dialog_reason.DialogReason.ContinueCalled
+  id: ContinueCalled
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_reason
+  name: ContinueCalled
+  parent: botbuilder.dialogs.dialog_reason.DialogReason
+  syntax:
+    content: ContinueCalled = 2
+    return:
+      type:
+      - botbuilder.dialogs.dialog_reason.DialogReason
+  type: attribute
+  uid: botbuilder.dialogs.dialog_reason.DialogReason.ContinueCalled
+- fullName: botbuilder.dialogs.dialog_reason.DialogReason.EndCalled
+  id: EndCalled
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_reason
+  name: EndCalled
+  parent: botbuilder.dialogs.dialog_reason.DialogReason
+  syntax:
+    content: EndCalled = 3
+    return:
+      type:
+      - botbuilder.dialogs.dialog_reason.DialogReason
+  type: attribute
+  uid: botbuilder.dialogs.dialog_reason.DialogReason.EndCalled
+- fullName: botbuilder.dialogs.dialog_reason.DialogReason.NextCalled
+  id: NextCalled
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_reason
+  name: NextCalled
+  parent: botbuilder.dialogs.dialog_reason.DialogReason
+  syntax:
+    content: NextCalled = 6
+    return:
+      type:
+      - botbuilder.dialogs.dialog_reason.DialogReason
+  type: attribute
+  uid: botbuilder.dialogs.dialog_reason.DialogReason.NextCalled
+- fullName: botbuilder.dialogs.dialog_reason.DialogReason.ReplaceCalled
+  id: ReplaceCalled
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_reason
+  name: ReplaceCalled
+  parent: botbuilder.dialogs.dialog_reason.DialogReason
+  syntax:
+    content: ReplaceCalled = 4
+    return:
+      type:
+      - botbuilder.dialogs.dialog_reason.DialogReason
+  type: attribute
+  uid: botbuilder.dialogs.dialog_reason.DialogReason.ReplaceCalled
+references:
+- fullName: botbuilder.dialogs.dialog_reason.DialogReason.BeginCalled
+  isExternal: false
+  name: BeginCalled
+  parent: botbuilder.dialogs.dialog_reason.DialogReason
+  uid: botbuilder.dialogs.dialog_reason.DialogReason.BeginCalled
+- fullName: botbuilder.dialogs.dialog_reason.DialogReason.CancelCalled
+  isExternal: false
+  name: CancelCalled
+  parent: botbuilder.dialogs.dialog_reason.DialogReason
+  uid: botbuilder.dialogs.dialog_reason.DialogReason.CancelCalled
+- fullName: botbuilder.dialogs.dialog_reason.DialogReason.ContinueCalled
+  isExternal: false
+  name: ContinueCalled
+  parent: botbuilder.dialogs.dialog_reason.DialogReason
+  uid: botbuilder.dialogs.dialog_reason.DialogReason.ContinueCalled
+- fullName: botbuilder.dialogs.dialog_reason.DialogReason.EndCalled
+  isExternal: false
+  name: EndCalled
+  parent: botbuilder.dialogs.dialog_reason.DialogReason
+  uid: botbuilder.dialogs.dialog_reason.DialogReason.EndCalled
+- fullName: botbuilder.dialogs.dialog_reason.DialogReason.NextCalled
+  isExternal: false
+  name: NextCalled
+  parent: botbuilder.dialogs.dialog_reason.DialogReason
+  uid: botbuilder.dialogs.dialog_reason.DialogReason.NextCalled
+- fullName: botbuilder.dialogs.dialog_reason.DialogReason.ReplaceCalled
+  isExternal: false
+  name: ReplaceCalled
+  parent: botbuilder.dialogs.dialog_reason.DialogReason
+  uid: botbuilder.dialogs.dialog_reason.DialogReason.ReplaceCalled

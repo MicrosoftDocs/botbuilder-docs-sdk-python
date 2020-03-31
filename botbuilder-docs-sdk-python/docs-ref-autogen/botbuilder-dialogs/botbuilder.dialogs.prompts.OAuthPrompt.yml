@@ -1,0 +1,276 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.dialogs.prompts.OAuthPrompt.begin_dialog
+  - botbuilder.dialogs.prompts.OAuthPrompt.continue_dialog
+  - botbuilder.dialogs.prompts.OAuthPrompt.get_user_token
+  - botbuilder.dialogs.prompts.OAuthPrompt.sign_out_user
+  class: botbuilder.dialogs.prompts.OAuthPrompt
+  fullName: botbuilder.dialogs.prompts.OAuthPrompt
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: abc.ABC
+    type: botbuilder.dialogs.dialog.Dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.prompts
+  name: OAuthPrompt
+  remarks: 'The prompt will attempt to retrieve the users current token and if the
+    user isn''t signed in, it
+
+    will send them an *OAuthCard* containing a button they can press to sign in. Depending
+    on the channel,
+
+    the user will be sent through one of two possible sign-in flows:
+
+    - The automatic sign-in flow where once the user signs in, the SSO service will
+    forward
+
+    the bot the users access token using either an *event* or *invoke* activity.
+
+    - The "magic code" flow where once the user signs in, they will be prompted by
+    the SSO service
+
+    to send the bot a six digit code confirming their identity. This code will be
+    sent as a
+
+    standard *message* activity.
+
+    Both flows are automatically supported by the *OAuthPrompt* and they only thing
+    you need to be careful of
+
+    is that you don''t block the *event* and *invoke* activities that the prompt might
+    be waiting on.
+
+
+    You should avoid persisting the access token with your bots other state. The Bot
+    Frameworks SSO service
+
+    will securely store the token on your behalf. If you store it in your bots state,
+
+    it could expire or be revoked in between turns.
+
+    When calling the prompt from within a waterfall step, you should use the token
+    within the step
+
+    following the prompt and then let the token go out of scope at the end of your
+    function.
+
+
+    When used with your bots <xref:botbuilder.dialogs.prompts.DialogSet>, you can
+    simply add a new instance of the prompt as a named
+
+    dialog using :meth`DialogSet.add()`.
+
+    You can then start the prompt from a waterfall step using either <xref:DialogContext.begin>
+    or
+
+    <xref:DialogContext.prompt>.
+
+    The user will be prompted to sign in as needed and their access token will be
+    passed as an argument to
+
+    the callers next waterfall step.
+
+    '
+  source:
+    id: OAuthPrompt
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 44
+  summary: Creates a new prompt that asks the user to sign in, using the Bot Framework
+    Single Sign On (SSO) service.
+  syntax:
+    content: 'OAuthPrompt(dialog_id: str, settings: botbuilder.dialogs.prompts.oauth_prompt_settings.OAuthPromptSettings,
+      validator: typing.Callable[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext,
+      typing.Awaitable[bool]] = None)'
+  type: class
+  uid: botbuilder.dialogs.prompts.OAuthPrompt
+- class: botbuilder.dialogs.prompts.OAuthPrompt
+  fullName: botbuilder.dialogs.prompts.OAuthPrompt.begin_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.prompts
+  name: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    options: botbuilder.dialogs.prompts.prompt_options.PromptOptions = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  remarks: 'If the task is successful, the result indicates whether the prompt is
+    still active after the turn
+
+    has been processed.
+
+    '
+  source:
+    id: begin_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 105
+  summary: 'Starts an authentication prompt dialog. Called when an authentication
+    prompt dialog is pushed onto the
+
+    dialog stack and is being activated.'
+  syntax:
+    content: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+      options: botbuilder.dialogs.prompts.prompt_options.PromptOptions = None) ->
+      botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+    parameters:
+    - description: The dialog context for the current turn of the conversation
+      id: dialog_context
+      type:
+      - botbuilder.dialogs.prompts.DialogContext
+    - description: Optional, additional information to pass to the prompt being started
+      id: options
+      type:
+      - botbuilder.dialogs.prompts.PromptOptions
+    return:
+      description: Dialog turn result
+      type:
+      - :class`:*DialogTurnResult*
+  type: method
+  uid: botbuilder.dialogs.prompts.OAuthPrompt.begin_dialog
+- class: botbuilder.dialogs.prompts.OAuthPrompt
+  fullName: botbuilder.dialogs.prompts.OAuthPrompt.continue_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.prompts
+  name: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  remarks: 'If the task is successful, the result indicates whether the dialog is
+    still
+
+    active after the turn has been processed by the dialog.
+
+    The prompt generally continues to receive the user''s replies until it accepts
+    the
+
+    user''s reply as valid input for the prompt.
+
+    '
+  source:
+    id: continue_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 168
+  summary: Continues a dialog. Called when a prompt dialog is the active dialog and
+    the user replied with a new activity.
+  syntax:
+    content: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
+      -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+    parameters:
+    - description: The dialog context for the current turn of the conversation
+      id: dialog_context
+      type:
+      - botbuilder.dialogs.prompts.DialogContext
+    return:
+      description: Dialog turn result
+      type:
+      - <xref:botbuilder.dialogs.prompts.DialogTurnResult>
+  type: method
+  uid: botbuilder.dialogs.prompts.OAuthPrompt.continue_dialog
+- class: botbuilder.dialogs.prompts.OAuthPrompt
+  fullName: botbuilder.dialogs.prompts.OAuthPrompt.get_user_token
+  langs:
+  - python
+  module: botbuilder.dialogs.prompts
+  name: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, code: str
+    = None) -> botbuilder.schema._models_py3.TokenResponse'
+  remarks: 'If the task is successful and the user already has a token or the user
+    successfully signs in,
+
+    the result contains the user''s token.
+
+    '
+  source:
+    id: get_user_token
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 228
+  summary: Gets the user's tokeN.
+  syntax:
+    content: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, code:
+      str = None) -> botbuilder.schema._models_py3.TokenResponse'
+    parameters:
+    - description: Context for the current turn of conversation with the user
+      id: context
+      type:
+      - botbuilder.dialogs.prompts.TurnContext
+    - description: (Optional) Optional user entered code to validate.
+      id: code
+      type:
+      - str
+    return:
+      description: A response that includes the user's token
+      type:
+      - <xref:botbuilder.dialogs.prompts.TokenResponse>
+  type: method
+  uid: botbuilder.dialogs.prompts.OAuthPrompt.get_user_token
+- class: botbuilder.dialogs.prompts.OAuthPrompt
+  fullName: botbuilder.dialogs.prompts.OAuthPrompt.sign_out_user
+  langs:
+  - python
+  module: botbuilder.dialogs.prompts
+  name: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext)'
+  remarks: 'If the task is successful and the user already has a token or the user
+    successfully signs in,
+
+    the result contains the user''s token.
+
+    '
+  source:
+    id: sign_out_user
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 261
+  summary: Signs out the user
+  syntax:
+    content: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext)'
+    parameters:
+    - description: Context for the current turn of conversation with the user
+      id: context
+      type:
+      - botbuilder.dialogs.prompts.TurnContext
+    return:
+      description: A task representing the work queued to execute
+  type: method
+  uid: botbuilder.dialogs.prompts.OAuthPrompt.sign_out_user
+references:
+- fullName: botbuilder.dialogs.prompts.OAuthPrompt.begin_dialog
+  isExternal: false
+  name: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    options: botbuilder.dialogs.prompts.prompt_options.PromptOptions = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parent: botbuilder.dialogs.prompts.OAuthPrompt
+  uid: botbuilder.dialogs.prompts.OAuthPrompt.begin_dialog
+- fullName: botbuilder.dialogs.prompts.OAuthPrompt.continue_dialog
+  isExternal: false
+  name: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parent: botbuilder.dialogs.prompts.OAuthPrompt
+  uid: botbuilder.dialogs.prompts.OAuthPrompt.continue_dialog
+- fullName: botbuilder.dialogs.prompts.OAuthPrompt.get_user_token
+  isExternal: false
+  name: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, code: str
+    = None) -> botbuilder.schema._models_py3.TokenResponse'
+  parent: botbuilder.dialogs.prompts.OAuthPrompt
+  uid: botbuilder.dialogs.prompts.OAuthPrompt.get_user_token
+- fullName: botbuilder.dialogs.prompts.OAuthPrompt.sign_out_user
+  isExternal: false
+  name: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext)'
+  parent: botbuilder.dialogs.prompts.OAuthPrompt
+  uid: botbuilder.dialogs.prompts.OAuthPrompt.sign_out_user
