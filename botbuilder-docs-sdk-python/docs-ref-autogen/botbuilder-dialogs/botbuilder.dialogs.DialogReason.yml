@@ -26,21 +26,7 @@ items:
       path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_reason.py
       repo: https://github.com/microsoft/botbuilder-python
     startLine: 6
-  summary: 'Indicates in which a dialog-related method is being called.
-
-
-
-    :meth:>>``<<DialogContext.replace_dialog()`.
-
-    :vartype ReplacedCalled: int
-
-    :var CancelCalled: A dialog was cancelled as part of a call to <xref:botbuilder.dialogs.DialogContext.cancel_all_dialogs>.
-
-    :vartype CancelCalled: int
-
-    :var NextCalled: A preceding step was skipped through a call to <xref:WaterfallStepContext.next>.
-
-    :vartype NextCalled: int'
+  summary: Indicates in which a dialog-related method is being called.
   syntax:
     variables:
     - description: A dialog is being started through a call to <xref:DialogContext.begin>.
@@ -55,8 +41,16 @@ items:
       id: EndCalled
       type:
       - int
-    - description: A dialog is ending because it's being replaced through a call to
+    - description: A dialog is ending and replaced through a call to :meth:>>``<<DialogContext.replace_dialog()`.
       id: ReplaceCalled
+    - description: A dialog was cancelled as part of a call to <xref:botbuilder.dialogs.DialogContext.cancel_all_dialogs>.
+      id: CancelCalled
+      type:
+      - int
+    - description: A preceding step was skipped through a call to <xref:WaterfallStepContext.next>.
+      id: NextCalled
+      type:
+      - int
   type: class
   uid: botbuilder.dialogs.DialogReason
 - fullName: botbuilder.dialogs.DialogReason.BeginCalled
