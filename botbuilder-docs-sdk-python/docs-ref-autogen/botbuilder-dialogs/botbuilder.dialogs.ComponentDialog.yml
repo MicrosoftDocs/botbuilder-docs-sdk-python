@@ -1,0 +1,588 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.dialogs.ComponentDialog.add_dialog
+  - botbuilder.dialogs.ComponentDialog.begin_dialog
+  - botbuilder.dialogs.ComponentDialog.continue_dialog
+  - botbuilder.dialogs.ComponentDialog.end_component
+  - botbuilder.dialogs.ComponentDialog.end_dialog
+  - botbuilder.dialogs.ComponentDialog.find_dialog
+  - botbuilder.dialogs.ComponentDialog.on_begin_dialog
+  - botbuilder.dialogs.ComponentDialog.on_continue_dialog
+  - botbuilder.dialogs.ComponentDialog.on_end_dialog
+  - botbuilder.dialogs.ComponentDialog.on_reprompt_dialog
+  - botbuilder.dialogs.ComponentDialog.reprompt_dialog
+  - botbuilder.dialogs.ComponentDialog.resume_dialog
+  - botbuilder.dialogs.ComponentDialog.persisted_dialog_state
+  class: botbuilder.dialogs.ComponentDialog
+  fullName: botbuilder.dialogs.ComponentDialog
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: abc.ABC
+    type: botbuilder.dialogs.dialog.Dialog
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: ComponentDialog
+  source:
+    id: ComponentDialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 16
+  summary: A <xref:botbuilder.dialogs.Dialog> that is composed of other dialogs
+  syntax:
+    content: 'ComponentDialog(dialog_id: str)'
+    variables:
+    - description: ''
+      id: state
+      type:
+      - persisted_dialog
+  type: class
+  uid: botbuilder.dialogs.ComponentDialog
+- class: botbuilder.dialogs.ComponentDialog
+  fullName: botbuilder.dialogs.ComponentDialog.add_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: 'add_dialog(dialog: botbuilder.dialogs.dialog.Dialog) -> object'
+  source:
+    id: add_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 178
+  summary: Adds a <xref:botbuilder.dialogs.Dialog> to the component dialog and returns
+    the updated component.
+  syntax:
+    content: 'add_dialog(dialog: botbuilder.dialogs.dialog.Dialog) -> object'
+    parameters:
+    - description: The dialog to add.
+      id: dialog
+    return:
+      description: The updated <xref:botbuilder.dialogs.ComponentDialog>.
+      type:
+      - <xref:botbuilder.dialogs.ComponentDialog>
+  type: method
+  uid: botbuilder.dialogs.ComponentDialog.add_dialog
+- class: botbuilder.dialogs.ComponentDialog
+  fullName: botbuilder.dialogs.ComponentDialog.begin_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  source:
+    id: begin_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 43
+  summary: 'Called when the dialog is started and pushed onto the parent''s dialog
+    stack.
+
+
+    If the task is successful, the result indicates whether the dialog is still
+
+    active after the turn has been processed by the dialog.'
+  syntax:
+    content: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+      options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+    parameters:
+    - description: The <xref:botbuilder.dialogs.DialogContext> for the current turn
+        of the conversation.
+      id: dialog_context
+      type:
+      - botbuilder.dialogs.DialogContext
+    - description: Optional, initial information to pass to the dialog.
+      id: options
+      type:
+      - object
+    return:
+      description: Signals the end of the turn
+      type:
+      - botbuilder.dialogs.Dialog.end_of_turn
+  type: method
+  uid: botbuilder.dialogs.ComponentDialog.begin_dialog
+- class: botbuilder.dialogs.ComponentDialog
+  fullName: botbuilder.dialogs.ComponentDialog.continue_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  remarks: 'If the task is successful, the result indicates whether the dialog is
+    still
+
+    active after the turn has been processed by the dialog. The result may also
+
+    contain a return value.
+
+
+    If this method is *not* overriden the component dialog calls the
+
+    <xref:botbuilder.dialogs.DialogContext.continue_dialog> method on it''s inner
+    dialog
+
+    context. If the inner dialog stack is empty, the component dialog ends,
+
+    and if a <xref:botbuilder.dialogs.DialogTurnResult.result> is available, the component
+    dialog
+
+    uses that as it''s return value.
+
+    '
+  source:
+    id: continue_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 77
+  summary: 'Called when the dialog is continued, where it is the active dialog and
+    the
+
+    user replies with a new activity.'
+  syntax:
+    content: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
+      -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+    parameters:
+    - description: The parent dialog context for the current turn of the conversation.
+      id: dialog_context
+      type:
+      - botbuilder.dialogs.DialogContext
+    return:
+      description: Signals the end of the turn
+      type:
+      - botbuilder.dialogs.Dialog.end_of_turn
+  type: method
+  uid: botbuilder.dialogs.ComponentDialog.continue_dialog
+- class: botbuilder.dialogs.ComponentDialog
+  fullName: botbuilder.dialogs.ComponentDialog.end_component
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: 'end_component(outer_dc: botbuilder.dialogs.dialog_context.DialogContext,
+    result: object) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  remarks: 'If the task is successful, the result indicates that the dialog ended
+    after the
+
+    turn was processed by the dialog.
+
+    '
+  source:
+    id: end_component
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 258
+  summary: Ends the component dialog in its parent's context.
+  syntax:
+    content: 'end_component(outer_dc: botbuilder.dialogs.dialog_context.DialogContext,
+      result: object) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+    parameters:
+    - description: The parent dialog context for the current turn of conversation.
+      id: outer_dc
+      type:
+      - class:botbuilder.dialogs.DialogContext
+    - description: Optional, value to return from the dialog component to the parent
+        context.
+      id: result
+      type:
+      - object
+    return:
+      description: Value to return.
+      type:
+      - botbuilder.dialogs.DialogTurnResult.result
+  type: method
+  uid: botbuilder.dialogs.ComponentDialog.end_component
+- class: botbuilder.dialogs.ComponentDialog
+  fullName: botbuilder.dialogs.ComponentDialog.end_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance: botbuilder.dialogs.dialog_instance.DialogInstance,
+    reason: botbuilder.dialogs.dialog_reason.DialogReason) -> None'
+  source:
+    id: end_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 158
+  summary: Called when the dialog is ending.
+  syntax:
+    content: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+      botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)
+      -> None'
+    parameters:
+    - description: The context object for this turn.
+      id: context
+      type:
+      - botbuilder.core.TurnContext
+    - description: State information associated with the instance of this component
+        dialog.
+      id: instance
+      type:
+      - botbuilder.dialogs.DialogInstance
+    - description: Reason why the dialog ended.
+      id: reason
+      type:
+      - botbuilder.dialogs.DialogReason
+  type: method
+  uid: botbuilder.dialogs.ComponentDialog.end_dialog
+- class: botbuilder.dialogs.ComponentDialog
+  fullName: botbuilder.dialogs.ComponentDialog.find_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: 'find_dialog(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
+  source:
+    id: find_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 191
+  summary: Finds a dialog by ID.
+  syntax:
+    content: 'find_dialog(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
+    parameters:
+    - description: The dialog to add.
+      id: dialog_id
+    return:
+      description: The dialog; or None if there is not a match for the ID.
+      type:
+      - botbuilder.dialogs.Dialog
+  type: method
+  uid: botbuilder.dialogs.ComponentDialog.find_dialog
+- class: botbuilder.dialogs.ComponentDialog
+  fullName: botbuilder.dialogs.ComponentDialog.on_begin_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: 'on_begin_dialog(inner_dc: botbuilder.dialogs.dialog_context.DialogContext,
+    options: object) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  remarks: 'If the task is successful, the result indicates whether the dialog is
+    still
+
+    active after the turn has been processed by the dialog.
+
+
+    By default, this calls the <xref:botbuilder.dialogs.Dialog.begin_dialog>
+
+    method of the component dialog''s initial dialog.
+
+
+    Override this method in a derived class to implement interrupt logic.
+
+    '
+  source:
+    id: on_begin_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 201
+  summary: Called when the dialog is started and pushed onto the parent's dialog stack.
+  syntax:
+    content: 'on_begin_dialog(inner_dc: botbuilder.dialogs.dialog_context.DialogContext,
+      options: object) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+    parameters:
+    - description: The inner dialog context for the current turn of conversation.
+      id: inner_dc
+      type:
+      - botbuilder.dialogs.DialogContext
+    - description: Optional, initial information to pass to the dialog.
+      id: options
+      type:
+      - object
+  type: method
+  uid: botbuilder.dialogs.ComponentDialog.on_begin_dialog
+- class: botbuilder.dialogs.ComponentDialog
+  fullName: botbuilder.dialogs.ComponentDialog.on_continue_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: 'on_continue_dialog(inner_dc: botbuilder.dialogs.dialog_context.DialogContext)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  source:
+    id: on_continue_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 223
+  summary: Called when the dialog is continued, where it is the active dialog and
+    the user replies with a new activity.
+  syntax:
+    content: 'on_continue_dialog(inner_dc: botbuilder.dialogs.dialog_context.DialogContext)
+      -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+    parameters:
+    - description: The inner dialog context for the current turn of conversation.
+      id: inner_dc
+      type:
+      - botbuilder.dialogs.DialogContext
+  type: method
+  uid: botbuilder.dialogs.ComponentDialog.on_continue_dialog
+- class: botbuilder.dialogs.ComponentDialog
+  fullName: botbuilder.dialogs.ComponentDialog.on_end_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: 'on_end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+    botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)
+    -> None'
+  source:
+    id: on_end_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 232
+  summary: Ends the component dialog in its parent's context.
+  syntax:
+    content: 'on_end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+      botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)
+      -> None'
+    parameters:
+    - description: The <xref:botbuilder.core.TurnContext> for the current turn of
+        the conversation.
+      id: turn_context
+      type:
+      - botbuilder.core.TurnContext
+    - description: State information associated with the inner dialog stack of this
+        component dialog.
+      id: instance
+      type:
+      - botbuilder.dialogs.DialogInstance
+    - description: Reason why the dialog ended.
+      id: reason
+      type:
+      - botbuilder.dialogs.DialogReason
+  type: method
+  uid: botbuilder.dialogs.ComponentDialog.on_end_dialog
+- class: botbuilder.dialogs.ComponentDialog
+  fullName: botbuilder.dialogs.ComponentDialog.on_reprompt_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: 'on_reprompt_dialog(turn_context: botbuilder.core.turn_context.TurnContext,
+    instance: botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
+  source:
+    id: on_reprompt_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 247
+  syntax:
+    content: 'on_reprompt_dialog(turn_context: botbuilder.core.turn_context.TurnContext,
+      instance: botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
+    parameters:
+    - description: The <xref:botbuilder.core.TurnContext> for the current turn of
+        the conversation.
+      id: turn_context
+      type:
+      - botbuilder.dialogs.DialogInstance
+    - description: State information associated with the inner dialog stack of this
+        component dialog.
+      id: instance
+      type:
+      - botbuilder.dialogs.DialogInstance
+  type: method
+  uid: botbuilder.dialogs.ComponentDialog.on_reprompt_dialog
+- class: botbuilder.dialogs.ComponentDialog
+  fullName: botbuilder.dialogs.ComponentDialog.reprompt_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+    botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
+  source:
+    id: reprompt_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 139
+  summary: Called when the dialog should re-prompt the user for input.
+  syntax:
+    content: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+      botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
+    parameters:
+    - description: The context object for this turn.
+      id: context
+      type:
+      - botbuilder.core.TurnContext
+    - description: State information for this dialog.
+      id: instance
+      type:
+      - botbuilder.dialogs.DialogInstance
+  type: method
+  uid: botbuilder.dialogs.ComponentDialog.reprompt_dialog
+- class: botbuilder.dialogs.ComponentDialog
+  fullName: botbuilder.dialogs.ComponentDialog.resume_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object = None)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  remarks: 'Containers are typically leaf nodes on the stack but the dev is free to
+    push other dialogs
+
+    on top of the stack which will result in the container receiving an unexpected
+    call to
+
+    <xref:botbuilder.dialogs.ComponentDialog.resume_dialog> when the pushed on dialog
+    ends.
+
+    To avoid the container prematurely ending we need to implement this method and
+    simply
+
+    ask our inner dialog stack to re-prompt.
+
+    '
+  source:
+    id: resume_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 112
+  summary: 'Called when a child dialog on the parent''s dialog stack completed this
+    turn, returning
+
+    control to this dialog component.'
+  syntax:
+    content: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+      reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object = None)
+      -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+    parameters:
+    - description: The dialog context for the current turn of the conversation.
+      id: dialog_context
+      type:
+      - botbuilder.dialogs.DialogContext
+    - description: Reason why the dialog resumed.
+      id: reason
+      type:
+      - botbuilder.dialogs.DialogReason
+    - description: Optional, value returned from the dialog that was called.
+      id: result
+      type:
+      - object
+    return:
+      description: Signals the end of the turn
+      type:
+      - botbuilder.dialogs.Dialog.end_of_turn
+  type: method
+  uid: botbuilder.dialogs.ComponentDialog.resume_dialog
+- class: botbuilder.dialogs.ComponentDialog
+  fullName: botbuilder.dialogs.ComponentDialog.persisted_dialog_state
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: persisted_dialog_state
+  syntax:
+    content: persisted_dialog_state = 'dialogs'
+  type: attribute
+  uid: botbuilder.dialogs.ComponentDialog.persisted_dialog_state
+references:
+- fullName: botbuilder.dialogs.ComponentDialog.add_dialog
+  isExternal: false
+  name: 'add_dialog(dialog: botbuilder.dialogs.dialog.Dialog) -> object'
+  parent: botbuilder.dialogs.ComponentDialog
+  uid: botbuilder.dialogs.ComponentDialog.add_dialog
+- fullName: botbuilder.dialogs.ComponentDialog.begin_dialog
+  isExternal: false
+  name: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parent: botbuilder.dialogs.ComponentDialog
+  uid: botbuilder.dialogs.ComponentDialog.begin_dialog
+- fullName: botbuilder.dialogs.ComponentDialog.continue_dialog
+  isExternal: false
+  name: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parent: botbuilder.dialogs.ComponentDialog
+  uid: botbuilder.dialogs.ComponentDialog.continue_dialog
+- fullName: botbuilder.dialogs.ComponentDialog.end_component
+  isExternal: false
+  name: 'end_component(outer_dc: botbuilder.dialogs.dialog_context.DialogContext,
+    result: object) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parent: botbuilder.dialogs.ComponentDialog
+  uid: botbuilder.dialogs.ComponentDialog.end_component
+- fullName: botbuilder.dialogs.ComponentDialog.end_dialog
+  isExternal: false
+  name: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance: botbuilder.dialogs.dialog_instance.DialogInstance,
+    reason: botbuilder.dialogs.dialog_reason.DialogReason) -> None'
+  parent: botbuilder.dialogs.ComponentDialog
+  uid: botbuilder.dialogs.ComponentDialog.end_dialog
+- fullName: botbuilder.dialogs.ComponentDialog.find_dialog
+  isExternal: false
+  name: 'find_dialog(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
+  parent: botbuilder.dialogs.ComponentDialog
+  uid: botbuilder.dialogs.ComponentDialog.find_dialog
+- fullName: botbuilder.dialogs.ComponentDialog.on_begin_dialog
+  isExternal: false
+  name: 'on_begin_dialog(inner_dc: botbuilder.dialogs.dialog_context.DialogContext,
+    options: object) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parent: botbuilder.dialogs.ComponentDialog
+  uid: botbuilder.dialogs.ComponentDialog.on_begin_dialog
+- fullName: botbuilder.dialogs.ComponentDialog.on_continue_dialog
+  isExternal: false
+  name: 'on_continue_dialog(inner_dc: botbuilder.dialogs.dialog_context.DialogContext)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parent: botbuilder.dialogs.ComponentDialog
+  uid: botbuilder.dialogs.ComponentDialog.on_continue_dialog
+- fullName: botbuilder.dialogs.ComponentDialog.on_end_dialog
+  isExternal: false
+  name: 'on_end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+    botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)
+    -> None'
+  parent: botbuilder.dialogs.ComponentDialog
+  uid: botbuilder.dialogs.ComponentDialog.on_end_dialog
+- fullName: botbuilder.dialogs.ComponentDialog.on_reprompt_dialog
+  isExternal: false
+  name: 'on_reprompt_dialog(turn_context: botbuilder.core.turn_context.TurnContext,
+    instance: botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
+  parent: botbuilder.dialogs.ComponentDialog
+  uid: botbuilder.dialogs.ComponentDialog.on_reprompt_dialog
+- fullName: botbuilder.dialogs.ComponentDialog.reprompt_dialog
+  isExternal: false
+  name: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+    botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
+  parent: botbuilder.dialogs.ComponentDialog
+  uid: botbuilder.dialogs.ComponentDialog.reprompt_dialog
+- fullName: botbuilder.dialogs.ComponentDialog.resume_dialog
+  isExternal: false
+  name: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object = None)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parent: botbuilder.dialogs.ComponentDialog
+  uid: botbuilder.dialogs.ComponentDialog.resume_dialog
+- fullName: botbuilder.dialogs.ComponentDialog.persisted_dialog_state
+  isExternal: false
+  name: persisted_dialog_state
+  parent: botbuilder.dialogs.ComponentDialog
+  uid: botbuilder.dialogs.ComponentDialog.persisted_dialog_state

@@ -1,0 +1,417 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.dialogs.dialog_context.DialogContext.active_dialog
+  - botbuilder.dialogs.dialog_context.DialogContext.begin_dialog
+  - botbuilder.dialogs.dialog_context.DialogContext.cancel_all_dialogs
+  - botbuilder.dialogs.dialog_context.DialogContext.context
+  - botbuilder.dialogs.dialog_context.DialogContext.continue_dialog
+  - botbuilder.dialogs.dialog_context.DialogContext.dialogs
+  - botbuilder.dialogs.dialog_context.DialogContext.end_active_dialog
+  - botbuilder.dialogs.dialog_context.DialogContext.end_dialog
+  - botbuilder.dialogs.dialog_context.DialogContext.find_dialog
+  - botbuilder.dialogs.dialog_context.DialogContext.prompt
+  - botbuilder.dialogs.dialog_context.DialogContext.replace_dialog
+  - botbuilder.dialogs.dialog_context.DialogContext.reprompt_dialog
+  - botbuilder.dialogs.dialog_context.DialogContext.stack
+  class: botbuilder.dialogs.dialog_context.DialogContext
+  fullName: botbuilder.dialogs.dialog_context.DialogContext
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_context
+  name: DialogContext
+  source:
+    id: DialogContext
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_context.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_context.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 13
+  summary: ''
+  syntax:
+    content: 'DialogContext(dialog_set: object, turn_context: botbuilder.core.turn_context.TurnContext,
+      state: botbuilder.dialogs.dialog_state.DialogState)'
+  type: class
+  uid: botbuilder.dialogs.dialog_context.DialogContext
+- class: botbuilder.dialogs.dialog_context.DialogContext
+  fullName: botbuilder.dialogs.dialog_context.DialogContext.active_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_context
+  name: active_dialog
+  source:
+    id: active_dialog
+    path: null
+    remote:
+      branch: master
+      path: null
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: null
+  summary: Return the container link in the database.
+  syntax: {}
+  type: attribute
+  uid: botbuilder.dialogs.dialog_context.DialogContext.active_dialog
+- class: botbuilder.dialogs.dialog_context.DialogContext
+  fullName: botbuilder.dialogs.dialog_context.DialogContext.begin_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_context
+  name: 'begin_dialog(dialog_id: str, options: object = None)'
+  source:
+    id: begin_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_context.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_context.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 66
+  summary: 'Pushes a new dialog onto the dialog stack.
+
+    :param dialog_id: ID of the dialog to start
+
+    :param options: (Optional) additional argument(s) to pass to the dialog being
+    started.'
+  syntax:
+    content: 'begin_dialog(dialog_id: str, options: object = None)'
+  type: method
+  uid: botbuilder.dialogs.dialog_context.DialogContext.begin_dialog
+- class: botbuilder.dialogs.dialog_context.DialogContext
+  fullName: botbuilder.dialogs.dialog_context.DialogContext.cancel_all_dialogs
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_context
+  name: cancel_all_dialogs()
+  source:
+    id: cancel_all_dialogs
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_context.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_context.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 162
+  summary: 'Deletes any existing dialog stack thus cancelling all dialogs on the stack.
+
+    :param result: (Optional) result to pass to the parent dialogs.
+
+    :return:'
+  syntax:
+    content: cancel_all_dialogs()
+    parameters: []
+  type: method
+  uid: botbuilder.dialogs.dialog_context.DialogContext.cancel_all_dialogs
+- class: botbuilder.dialogs.dialog_context.DialogContext
+  fullName: botbuilder.dialogs.dialog_context.DialogContext.context
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_context
+  name: context
+  source:
+    id: context
+    path: null
+    remote:
+      branch: master
+      path: null
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: null
+  summary: Gets the context for the current turn of conversation.
+  syntax: {}
+  type: attribute
+  uid: botbuilder.dialogs.dialog_context.DialogContext.context
+- class: botbuilder.dialogs.dialog_context.DialogContext
+  fullName: botbuilder.dialogs.dialog_context.DialogContext.continue_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_context
+  name: continue_dialog()
+  source:
+    id: continue_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_context.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_context.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 110
+  summary: 'Continues execution of the active dialog, if there is one, by passing
+    the context object to
+
+    its *Dialog.continue_dialog()* method. You can check *turn_context.responded*
+    after the call completes
+
+    to determine if a dialog was run and a reply was sent to the user.
+
+    :return:'
+  syntax:
+    content: continue_dialog()
+    parameters: []
+  type: method
+  uid: botbuilder.dialogs.dialog_context.DialogContext.continue_dialog
+- class: botbuilder.dialogs.dialog_context.DialogContext
+  fullName: botbuilder.dialogs.dialog_context.DialogContext.dialogs
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_context
+  name: dialogs
+  source:
+    id: dialogs
+    path: null
+    remote:
+      branch: master
+      path: null
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: null
+  summary: Gets the set of dialogs that can be called from this context.
+  syntax: {}
+  type: attribute
+  uid: botbuilder.dialogs.dialog_context.DialogContext.dialogs
+- class: botbuilder.dialogs.dialog_context.DialogContext
+  fullName: botbuilder.dialogs.dialog_context.DialogContext.end_active_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_context
+  name: 'end_active_dialog(reason: botbuilder.dialogs.dialog_reason.DialogReason)'
+  source:
+    id: end_active_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_context.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_context.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 222
+  syntax:
+    content: 'end_active_dialog(reason: botbuilder.dialogs.dialog_reason.DialogReason)'
+  type: method
+  uid: botbuilder.dialogs.dialog_context.DialogContext.end_active_dialog
+- class: botbuilder.dialogs.dialog_context.DialogContext
+  fullName: botbuilder.dialogs.dialog_context.DialogContext.end_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_context
+  name: 'end_dialog(result: object = None)'
+  source:
+    id: end_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_context.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_context.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 133
+  summary: 'Ends a dialog by popping it off the stack and returns an optional result
+    to the dialog''s
+
+    parent. The parent dialog is the dialog that started the dialog being ended via
+    a call to
+
+    either "begin_dialog" or "prompt".
+
+    The parent dialog will have its *Dialog.resume_dialog()* method invoked with any
+    returned
+
+    result. If the parent dialog hasn''t implemented a *resume_dialog()* method then
+    it will be
+
+    automatically ended as well and the result passed to its parent. If there are
+    no more
+
+    parent dialogs on the stack then processing of the turn will end.
+
+    :param result: (Optional) result to pass to the parent dialogs.
+
+    :return:'
+  syntax:
+    content: 'end_dialog(result: object = None)'
+  type: method
+  uid: botbuilder.dialogs.dialog_context.DialogContext.end_dialog
+- class: botbuilder.dialogs.dialog_context.DialogContext
+  fullName: botbuilder.dialogs.dialog_context.DialogContext.find_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_context
+  name: 'find_dialog(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
+  source:
+    id: find_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_context.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_context.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 175
+  summary: 'If the dialog cannot be found within the current *DialogSet*, the parent
+    *DialogContext*
+
+    will be searched if there is one.
+
+    :param dialog_id: ID of the dialog to search for.
+
+    :return:'
+  syntax:
+    content: 'find_dialog(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
+  type: method
+  uid: botbuilder.dialogs.dialog_context.DialogContext.find_dialog
+- class: botbuilder.dialogs.dialog_context.DialogContext
+  fullName: botbuilder.dialogs.dialog_context.DialogContext.prompt
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_context
+  name: 'prompt(dialog_id: str, options) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  source:
+    id: prompt
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_context.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_context.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 94
+  summary: 'Helper function to simplify formatting the options for calling a prompt
+    dialog. This helper will
+
+    take a *PromptOptions* argument and then call.
+
+    :param dialog_id: ID of the prompt to start.
+
+    :param options: Contains a Prompt, potentially a RetryPrompt and if using ChoicePrompt,
+    Choices.
+
+    :return:'
+  syntax:
+    content: 'prompt(dialog_id: str, options) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  type: method
+  uid: botbuilder.dialogs.dialog_context.DialogContext.prompt
+- class: botbuilder.dialogs.dialog_context.DialogContext
+  fullName: botbuilder.dialogs.dialog_context.DialogContext.replace_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_context
+  name: 'replace_dialog(dialog_id: str, options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  source:
+    id: replace_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_context.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_context.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 188
+  summary: 'Ends the active dialog and starts a new dialog in its place. This is particularly
+    useful
+
+    for creating loops or redirecting to another dialog.
+
+    :param dialog_id: ID of the dialog to search for.
+
+    :param options: (Optional) additional argument(s) to pass to the new dialog.
+
+    :return:'
+  syntax:
+    content: 'replace_dialog(dialog_id: str, options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  type: method
+  uid: botbuilder.dialogs.dialog_context.DialogContext.replace_dialog
+- class: botbuilder.dialogs.dialog_context.DialogContext
+  fullName: botbuilder.dialogs.dialog_context.DialogContext.reprompt_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_context
+  name: reprompt_dialog()
+  source:
+    id: reprompt_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_context.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_context.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 204
+  summary: 'Calls reprompt on the currently active dialog, if there is one. Used with
+    Prompts that have a reprompt behavior.
+
+    :return:'
+  syntax:
+    content: reprompt_dialog()
+    parameters: []
+  type: method
+  uid: botbuilder.dialogs.dialog_context.DialogContext.reprompt_dialog
+- class: botbuilder.dialogs.dialog_context.DialogContext
+  fullName: botbuilder.dialogs.dialog_context.DialogContext.stack
+  langs:
+  - python
+  module: botbuilder.dialogs.dialog_context
+  name: stack
+  source:
+    id: stack
+    path: null
+    remote:
+      branch: master
+      path: null
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: null
+  summary: Gets the current dialog stack.
+  syntax: {}
+  type: attribute
+  uid: botbuilder.dialogs.dialog_context.DialogContext.stack
+references:
+- fullName: botbuilder.dialogs.dialog_context.DialogContext.active_dialog
+  isExternal: false
+  name: active_dialog
+  parent: botbuilder.dialogs.dialog_context.DialogContext
+  uid: botbuilder.dialogs.dialog_context.DialogContext.active_dialog
+- fullName: botbuilder.dialogs.dialog_context.DialogContext.begin_dialog
+  isExternal: false
+  name: 'begin_dialog(dialog_id: str, options: object = None)'
+  parent: botbuilder.dialogs.dialog_context.DialogContext
+  uid: botbuilder.dialogs.dialog_context.DialogContext.begin_dialog
+- fullName: botbuilder.dialogs.dialog_context.DialogContext.cancel_all_dialogs
+  isExternal: false
+  name: cancel_all_dialogs()
+  parent: botbuilder.dialogs.dialog_context.DialogContext
+  uid: botbuilder.dialogs.dialog_context.DialogContext.cancel_all_dialogs
+- fullName: botbuilder.dialogs.dialog_context.DialogContext.context
+  isExternal: false
+  name: context
+  parent: botbuilder.dialogs.dialog_context.DialogContext
+  uid: botbuilder.dialogs.dialog_context.DialogContext.context
+- fullName: botbuilder.dialogs.dialog_context.DialogContext.continue_dialog
+  isExternal: false
+  name: continue_dialog()
+  parent: botbuilder.dialogs.dialog_context.DialogContext
+  uid: botbuilder.dialogs.dialog_context.DialogContext.continue_dialog
+- fullName: botbuilder.dialogs.dialog_context.DialogContext.dialogs
+  isExternal: false
+  name: dialogs
+  parent: botbuilder.dialogs.dialog_context.DialogContext
+  uid: botbuilder.dialogs.dialog_context.DialogContext.dialogs
+- fullName: botbuilder.dialogs.dialog_context.DialogContext.end_active_dialog
+  isExternal: false
+  name: 'end_active_dialog(reason: botbuilder.dialogs.dialog_reason.DialogReason)'
+  parent: botbuilder.dialogs.dialog_context.DialogContext
+  uid: botbuilder.dialogs.dialog_context.DialogContext.end_active_dialog
+- fullName: botbuilder.dialogs.dialog_context.DialogContext.end_dialog
+  isExternal: false
+  name: 'end_dialog(result: object = None)'
+  parent: botbuilder.dialogs.dialog_context.DialogContext
+  uid: botbuilder.dialogs.dialog_context.DialogContext.end_dialog
+- fullName: botbuilder.dialogs.dialog_context.DialogContext.find_dialog
+  isExternal: false
+  name: 'find_dialog(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
+  parent: botbuilder.dialogs.dialog_context.DialogContext
+  uid: botbuilder.dialogs.dialog_context.DialogContext.find_dialog
+- fullName: botbuilder.dialogs.dialog_context.DialogContext.prompt
+  isExternal: false
+  name: 'prompt(dialog_id: str, options) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parent: botbuilder.dialogs.dialog_context.DialogContext
+  uid: botbuilder.dialogs.dialog_context.DialogContext.prompt
+- fullName: botbuilder.dialogs.dialog_context.DialogContext.replace_dialog
+  isExternal: false
+  name: 'replace_dialog(dialog_id: str, options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parent: botbuilder.dialogs.dialog_context.DialogContext
+  uid: botbuilder.dialogs.dialog_context.DialogContext.replace_dialog
+- fullName: botbuilder.dialogs.dialog_context.DialogContext.reprompt_dialog
+  isExternal: false
+  name: reprompt_dialog()
+  parent: botbuilder.dialogs.dialog_context.DialogContext
+  uid: botbuilder.dialogs.dialog_context.DialogContext.reprompt_dialog
+- fullName: botbuilder.dialogs.dialog_context.DialogContext.stack
+  isExternal: false
+  name: stack
+  parent: botbuilder.dialogs.dialog_context.DialogContext
+  uid: botbuilder.dialogs.dialog_context.DialogContext.stack

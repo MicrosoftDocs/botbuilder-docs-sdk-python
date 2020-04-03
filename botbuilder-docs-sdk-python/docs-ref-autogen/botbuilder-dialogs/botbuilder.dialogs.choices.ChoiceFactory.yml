@@ -1,0 +1,207 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.dialogs.choices.ChoiceFactory.for_channel
+  - botbuilder.dialogs.choices.ChoiceFactory.hero_card
+  - botbuilder.dialogs.choices.ChoiceFactory.inline
+  - botbuilder.dialogs.choices.ChoiceFactory.list_style
+  - botbuilder.dialogs.choices.ChoiceFactory.suggested_action
+  class: botbuilder.dialogs.choices.ChoiceFactory
+  fullName: botbuilder.dialogs.choices.ChoiceFactory
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: botbuilder.dialogs.choices
+  name: ChoiceFactory
+  source:
+    id: ChoiceFactory
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 12
+  summary: Assists with formatting a message activity that contains a list of choices.
+  syntax: {}
+  type: class
+  uid: botbuilder.dialogs.choices.ChoiceFactory
+- class: botbuilder.dialogs.choices.ChoiceFactory
+  fullName: botbuilder.dialogs.choices.ChoiceFactory.for_channel
+  langs:
+  - python
+  module: botbuilder.dialogs.choices
+  name: 'for_channel(channel_id: str, choices: typing.List[typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
+    text: str = None, speak: str = None, options: botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
+    = None) -> botbuilder.schema._models_py3.Activity'
+  source:
+    id: for_channel
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 17
+  summary: "Creates a message activity that includes a list of choices formatted based\
+    \ on the\n   capabilities of a given channel.\n\n\n\nchannel_id: A channel ID.\n\
+    choices: List of choices to render\ntext: (Optional) Text of the message to send.\n\
+    speak (Optional) SSML. Text to be spoken by your bot on a speech-enabled channel."
+  syntax:
+    content: 'for_channel(channel_id: str, choices: typing.List[typing.Union[str,
+      botbuilder.dialogs.choices.choice.Choice]], text: str = None, speak: str = None,
+      options: botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
+      = None) -> botbuilder.schema._models_py3.Activity'
+  type: method
+  uid: botbuilder.dialogs.choices.ChoiceFactory.for_channel
+- class: botbuilder.dialogs.choices.ChoiceFactory
+  fullName: botbuilder.dialogs.choices.ChoiceFactory.hero_card
+  langs:
+  - python
+  module: botbuilder.dialogs.choices
+  name: 'hero_card(choices: typing.List[typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
+    text: str = None, speak: str = None) -> botbuilder.schema._models_py3.Activity'
+  source:
+    id: hero_card
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 204
+  summary: Creates a message activity that includes a lsit of coices that have been
+    added as *HeroCard*'s
+  syntax:
+    content: 'hero_card(choices: typing.List[typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
+      text: str = None, speak: str = None) -> botbuilder.schema._models_py3.Activity'
+  type: method
+  uid: botbuilder.dialogs.choices.ChoiceFactory.hero_card
+- class: botbuilder.dialogs.choices.ChoiceFactory
+  fullName: botbuilder.dialogs.choices.ChoiceFactory.inline
+  langs:
+  - python
+  module: botbuilder.dialogs.choices
+  name: 'inline(choices: typing.List[typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
+    text: str = None, speak: str = None, options: botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
+    = None) -> botbuilder.schema._models_py3.Activity'
+  source:
+    id: inline
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 74
+  summary: 'Creates a message activity that includes a list of choices formatted as
+    an inline list.
+
+
+
+
+    choices: The list of choices to render.
+
+    text: (Optional) The text of the message to send.
+
+    speak: (Optional) SSML. Text to be spoken by your bot on a speech-enabled channel.
+
+    options: (Optional) The formatting options to use to tweak rendering of list.'
+  syntax:
+    content: 'inline(choices: typing.List[typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
+      text: str = None, speak: str = None, options: botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
+      = None) -> botbuilder.schema._models_py3.Activity'
+  type: method
+  uid: botbuilder.dialogs.choices.ChoiceFactory.inline
+- class: botbuilder.dialogs.choices.ChoiceFactory
+  fullName: botbuilder.dialogs.choices.ChoiceFactory.list_style
+  langs:
+  - python
+  module: botbuilder.dialogs.choices
+  name: 'list_style(choices: typing.List[typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
+    text: str = None, speak: str = None, options: botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
+    = None)'
+  source:
+    id: list_style
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 133
+  summary: 'Creates a message activity that includes a list of choices formatted as
+    a numbered or bulleted list.
+
+
+
+
+    choices: The list of choices to render.
+
+
+    text: (Optional) The text of the message to send.
+
+
+    speak: (Optional) SSML. Text to be spoken by your bot on a speech-enabled channel.
+
+
+    options: (Optional) The formatting options to use to tweak rendering of list.'
+  syntax:
+    content: 'list_style(choices: typing.List[typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
+      text: str = None, speak: str = None, options: botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
+      = None)'
+  type: method
+  uid: botbuilder.dialogs.choices.ChoiceFactory.list_style
+- class: botbuilder.dialogs.choices.ChoiceFactory
+  fullName: botbuilder.dialogs.choices.ChoiceFactory.suggested_action
+  langs:
+  - python
+  module: botbuilder.dialogs.choices
+  name: 'suggested_action(choices: typing.List[botbuilder.dialogs.choices.choice.Choice],
+    text: str = None, speak: str = None) -> botbuilder.schema._models_py3.Activity'
+  source:
+    id: suggested_action
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 189
+  summary: Creates a message activity that includes a list of choices that have been
+    added as suggested actions.
+  syntax:
+    content: 'suggested_action(choices: typing.List[botbuilder.dialogs.choices.choice.Choice],
+      text: str = None, speak: str = None) -> botbuilder.schema._models_py3.Activity'
+  type: method
+  uid: botbuilder.dialogs.choices.ChoiceFactory.suggested_action
+references:
+- fullName: botbuilder.dialogs.choices.ChoiceFactory.for_channel
+  isExternal: false
+  name: 'for_channel(channel_id: str, choices: typing.List[typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
+    text: str = None, speak: str = None, options: botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
+    = None) -> botbuilder.schema._models_py3.Activity'
+  parent: botbuilder.dialogs.choices.ChoiceFactory
+  uid: botbuilder.dialogs.choices.ChoiceFactory.for_channel
+- fullName: botbuilder.dialogs.choices.ChoiceFactory.hero_card
+  isExternal: false
+  name: 'hero_card(choices: typing.List[typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
+    text: str = None, speak: str = None) -> botbuilder.schema._models_py3.Activity'
+  parent: botbuilder.dialogs.choices.ChoiceFactory
+  uid: botbuilder.dialogs.choices.ChoiceFactory.hero_card
+- fullName: botbuilder.dialogs.choices.ChoiceFactory.inline
+  isExternal: false
+  name: 'inline(choices: typing.List[typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
+    text: str = None, speak: str = None, options: botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
+    = None) -> botbuilder.schema._models_py3.Activity'
+  parent: botbuilder.dialogs.choices.ChoiceFactory
+  uid: botbuilder.dialogs.choices.ChoiceFactory.inline
+- fullName: botbuilder.dialogs.choices.ChoiceFactory.list_style
+  isExternal: false
+  name: 'list_style(choices: typing.List[typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
+    text: str = None, speak: str = None, options: botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
+    = None)'
+  parent: botbuilder.dialogs.choices.ChoiceFactory
+  uid: botbuilder.dialogs.choices.ChoiceFactory.list_style
+- fullName: botbuilder.dialogs.choices.ChoiceFactory.suggested_action
+  isExternal: false
+  name: 'suggested_action(choices: typing.List[botbuilder.dialogs.choices.choice.Choice],
+    text: str = None, speak: str = None) -> botbuilder.schema._models_py3.Activity'
+  parent: botbuilder.dialogs.choices.ChoiceFactory
+  uid: botbuilder.dialogs.choices.ChoiceFactory.suggested_action

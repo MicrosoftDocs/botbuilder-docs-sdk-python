@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.dialogs.DialogTurnResult.result
+  - botbuilder.dialogs.DialogTurnResult.status
+  class: botbuilder.dialogs.DialogTurnResult
+  fullName: botbuilder.dialogs.DialogTurnResult
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: DialogTurnResult
+  source:
+    id: DialogTurnResult
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_turn_result.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_turn_result.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 7
+  summary: Result returned to the caller of one of the various stack manipulation
+    methods.
+  syntax:
+    content: 'DialogTurnResult(status: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus,
+      result: object = None)'
+  type: class
+  uid: botbuilder.dialogs.DialogTurnResult
+- class: botbuilder.dialogs.DialogTurnResult
+  fullName: botbuilder.dialogs.DialogTurnResult.result
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: result
+  source:
+    id: result
+    path: null
+    remote:
+      branch: master
+      path: null
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: null
+  summary: Final result returned by a dialog that just completed.
+  syntax: {}
+  type: attribute
+  uid: botbuilder.dialogs.DialogTurnResult.result
+- class: botbuilder.dialogs.DialogTurnResult
+  fullName: botbuilder.dialogs.DialogTurnResult.status
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: status
+  source:
+    id: status
+    path: null
+    remote:
+      branch: master
+      path: null
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: null
+  summary: Gets or sets the current status of the stack.
+  syntax: {}
+  type: attribute
+  uid: botbuilder.dialogs.DialogTurnResult.status
+references:
+- fullName: botbuilder.dialogs.DialogTurnResult.result
+  isExternal: false
+  name: result
+  parent: botbuilder.dialogs.DialogTurnResult
+  uid: botbuilder.dialogs.DialogTurnResult.result
+- fullName: botbuilder.dialogs.DialogTurnResult.status
+  isExternal: false
+  name: status
+  parent: botbuilder.dialogs.DialogTurnResult
+  uid: botbuilder.dialogs.DialogTurnResult.status

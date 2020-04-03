@@ -1,0 +1,247 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.dialogs.Dialog.begin_dialog
+  - botbuilder.dialogs.Dialog.continue_dialog
+  - botbuilder.dialogs.Dialog.end_dialog
+  - botbuilder.dialogs.Dialog.reprompt_dialog
+  - botbuilder.dialogs.Dialog.resume_dialog
+  - botbuilder.dialogs.Dialog.telemetry_client
+  - botbuilder.dialogs.Dialog.end_of_turn
+  class: botbuilder.dialogs.Dialog
+  fullName: botbuilder.dialogs.Dialog
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: abc.ABC
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: Dialog
+  source:
+    id: Dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 12
+  summary: ''
+  syntax:
+    content: 'Dialog(dialog_id: str)'
+  type: class
+  uid: botbuilder.dialogs.Dialog
+- class: botbuilder.dialogs.Dialog
+  fullName: botbuilder.dialogs.Dialog.begin_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: begin_dialog
+  source:
+    id: begin_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 43
+  summary: 'Method called when a new dialog has been pushed onto the stack and is
+    being activated.
+
+    :param dialog_context: The dialog context for the current turn of conversation.
+
+    :param options: (Optional) additional argument(s) to pass to the dialog being
+    started.'
+  syntax: {}
+  type: method
+  uid: botbuilder.dialogs.Dialog.begin_dialog
+- class: botbuilder.dialogs.Dialog
+  fullName: botbuilder.dialogs.Dialog.continue_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: continue_dialog
+  source:
+    id: continue_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 54
+  summary: 'Method called when an instance of the dialog is the "current" dialog and
+    the
+
+    user replies with a new activity. The dialog will generally continue to receive
+    the user''s
+
+    replies until it calls either *end_dialog()* or *begin_dialog()*.
+
+    If this method is NOT implemented then the dialog will automatically be ended
+    when the user replies.
+
+    :param dialog_context: The dialog context for the current turn of conversation.
+
+    :return:'
+  syntax: {}
+  type: method
+  uid: botbuilder.dialogs.Dialog.continue_dialog
+- class: botbuilder.dialogs.Dialog
+  fullName: botbuilder.dialogs.Dialog.end_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance: botbuilder.dialogs.dialog_instance.DialogInstance,
+    reason: botbuilder.dialogs.dialog_reason.DialogReason)'
+  source:
+    id: end_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 97
+  syntax:
+    content: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+      botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)'
+    parameters:
+    - description: ''
+      id: context
+    - description: ''
+      id: instance
+    - description: ''
+      id: reason
+  type: method
+  uid: botbuilder.dialogs.Dialog.end_dialog
+- class: botbuilder.dialogs.Dialog
+  fullName: botbuilder.dialogs.Dialog.reprompt_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+    botbuilder.dialogs.dialog_instance.DialogInstance)'
+  source:
+    id: reprompt_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 85
+  syntax:
+    content: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+      botbuilder.dialogs.dialog_instance.DialogInstance)'
+    parameters:
+    - description: ''
+      id: context
+    - description: ''
+      id: instance
+  type: method
+  uid: botbuilder.dialogs.Dialog.reprompt_dialog
+- class: botbuilder.dialogs.Dialog
+  fullName: botbuilder.dialogs.Dialog.resume_dialog
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: resume_dialog
+  source:
+    id: resume_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 66
+  summary: 'Method called when an instance of the dialog is being returned to from
+    another
+
+    dialog that was started by the current instance using *begin_dialog()*.
+
+    If this method is NOT implemented then the dialog will be automatically ended
+    with a call
+
+    to *end_dialog()*. Any result passed from the called dialog will be passed
+
+    to the current dialog''s parent.
+
+    :param dialog_context: The dialog context for the current turn of conversation.
+
+    :param reason: Reason why the dialog resumed.
+
+    :param result: (Optional) value returned from the dialog that was called. The
+    type of the value returned is
+
+    dependent on the dialog that was called.
+
+    :return:'
+  syntax: {}
+  type: method
+  uid: botbuilder.dialogs.Dialog.resume_dialog
+- class: botbuilder.dialogs.Dialog
+  fullName: botbuilder.dialogs.Dialog.telemetry_client
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: telemetry_client
+  source:
+    id: telemetry_client
+    path: null
+    remote:
+      branch: master
+      path: null
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: null
+  summary: Gets the telemetry client for logging events.
+  syntax: {}
+  type: attribute
+  uid: botbuilder.dialogs.Dialog.telemetry_client
+- class: botbuilder.dialogs.Dialog
+  fullName: botbuilder.dialogs.Dialog.end_of_turn
+  langs:
+  - python
+  module: botbuilder.dialogs
+  name: end_of_turn
+  syntax:
+    content: end_of_turn = <botbuilder.dialogs.dialog_turn_result.DialogTurnResult
+      object>
+  type: attribute
+  uid: botbuilder.dialogs.Dialog.end_of_turn
+references:
+- fullName: botbuilder.dialogs.Dialog.begin_dialog
+  isExternal: false
+  name: begin_dialog
+  parent: botbuilder.dialogs.Dialog
+  uid: botbuilder.dialogs.Dialog.begin_dialog
+- fullName: botbuilder.dialogs.Dialog.continue_dialog
+  isExternal: false
+  name: continue_dialog
+  parent: botbuilder.dialogs.Dialog
+  uid: botbuilder.dialogs.Dialog.continue_dialog
+- fullName: botbuilder.dialogs.Dialog.end_dialog
+  isExternal: false
+  name: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance: botbuilder.dialogs.dialog_instance.DialogInstance,
+    reason: botbuilder.dialogs.dialog_reason.DialogReason)'
+  parent: botbuilder.dialogs.Dialog
+  uid: botbuilder.dialogs.Dialog.end_dialog
+- fullName: botbuilder.dialogs.Dialog.reprompt_dialog
+  isExternal: false
+  name: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+    botbuilder.dialogs.dialog_instance.DialogInstance)'
+  parent: botbuilder.dialogs.Dialog
+  uid: botbuilder.dialogs.Dialog.reprompt_dialog
+- fullName: botbuilder.dialogs.Dialog.resume_dialog
+  isExternal: false
+  name: resume_dialog
+  parent: botbuilder.dialogs.Dialog
+  uid: botbuilder.dialogs.Dialog.resume_dialog
+- fullName: botbuilder.dialogs.Dialog.telemetry_client
+  isExternal: false
+  name: telemetry_client
+  parent: botbuilder.dialogs.Dialog
+  uid: botbuilder.dialogs.Dialog.telemetry_client
+- fullName: botbuilder.dialogs.Dialog.end_of_turn
+  isExternal: false
+  name: end_of_turn
+  parent: botbuilder.dialogs.Dialog
+  uid: botbuilder.dialogs.Dialog.end_of_turn
