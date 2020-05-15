@@ -1,7 +1,8 @@
 ### YamlMime:UniversalReference
 api_name: []
 items:
-- children: []
+- children:
+  - botbuilder.core.InvokeResponse.is_successful_status_code
   class: botbuilder.core.InvokeResponse
   fullName: botbuilder.core.InvokeResponse
   inheritance:
@@ -26,4 +27,26 @@ items:
     content: 'InvokeResponse(status: int = None, body: object = None)'
   type: class
   uid: botbuilder.core.InvokeResponse
-references: []
+- class: botbuilder.core.InvokeResponse
+  fullName: botbuilder.core.InvokeResponse.is_successful_status_code
+  langs:
+  - python
+  module: botbuilder.core
+  name: is_successful_status_code() -> bool
+  namewithoutparameters: is_successful_status_code
+  summary: 'Gets a value indicating whether the invoke response was successful.
+
+    :return: A value that indicates if the HTTP response was successful. true if status
+    is in
+
+    the Successful range (200-299); otherwise false.'
+  syntax:
+    content: is_successful_status_code() -> bool
+  type: method
+  uid: botbuilder.core.InvokeResponse.is_successful_status_code
+references:
+- fullName: botbuilder.core.InvokeResponse.is_successful_status_code
+  isExternal: false
+  name: is_successful_status_code() -> bool
+  parent: botbuilder.core.InvokeResponse
+  uid: botbuilder.core.InvokeResponse.is_successful_status_code

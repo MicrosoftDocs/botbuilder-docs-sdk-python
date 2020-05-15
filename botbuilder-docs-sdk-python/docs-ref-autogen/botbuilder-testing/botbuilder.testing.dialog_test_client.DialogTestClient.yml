@@ -27,6 +27,7 @@ items:
   - python
   module: botbuilder.testing.dialog_test_client
   name: get_next_reply() -> botbuilder.schema._models_py3.Activity
+  namewithoutparameters: get_next_reply
   summary: Get the next reply waiting to be delivered (if one exists)
   syntax:
     content: get_next_reply() -> botbuilder.schema._models_py3.Activity
@@ -42,12 +43,14 @@ items:
   - python
   module: botbuilder.testing.dialog_test_client
   name: send_activity(activity) -> botbuilder.schema._models_py3.Activity
+  namewithoutparameters: send_activity
   summary: Send an activity into the dialog.
   syntax:
     content: send_activity(activity) -> botbuilder.schema._models_py3.Activity
     parameters:
     - description: an activity potentially with text.
       id: activity
+      isRequired: true
     return:
       description: a TestFlow that can be used to assert replies etc.
       type:

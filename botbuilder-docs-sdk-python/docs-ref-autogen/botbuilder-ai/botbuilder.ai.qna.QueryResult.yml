@@ -14,9 +14,7 @@ items:
   name: QueryResult
   summary: Represents an individual result from a knowledge base query.
   syntax:
-    content: 'QueryResult(*, questions: typing.List[str], answer: str, score: float,
-      metadata: object = None, source: str = None, id: int = None, context: botbuilder.ai.qna.models.qna_response_context.QnAResponseContext
-      = None, **kwargs)'
+    content: QueryResult(**kwargs)
   type: class
   uid: botbuilder.ai.qna.QueryResult
 references: []

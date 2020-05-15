@@ -27,6 +27,7 @@ items:
   module: botbuilder.core
   name: 'activity_list_not_none(activities: typing.List[botbuilder.schema._models_py3.Activity])
     -> None'
+  namewithoutparameters: activity_list_not_none
   summary: 'Checks that an activity list is not None
 
     :param activities: The activity list'
@@ -41,6 +42,7 @@ items:
   - python
   module: botbuilder.core
   name: 'activity_not_none(activity: botbuilder.schema._models_py3.Activity) -> None'
+  namewithoutparameters: activity_not_none
   summary: 'Checks that an activity object is not None
 
     :param activity: The activity object'
@@ -56,6 +58,7 @@ items:
   module: botbuilder.core
   name: 'context_not_none(turn_context: botbuilder.core.turn_context.TurnContext)
     -> None'
+  namewithoutparameters: context_not_none
   summary: 'Checks that a context object is not None
 
     :param turn_context: The context object'
@@ -71,6 +74,7 @@ items:
   module: botbuilder.core
   name: 'conversation_reference_not_none(reference: botbuilder.schema._models_py3.ConversationReference)
     -> None'
+  namewithoutparameters: conversation_reference_not_none
   summary: 'Checks that a conversation reference object is not None
 
     :param reference: The conversation reference object'
@@ -86,6 +90,7 @@ items:
   module: botbuilder.core
   name: 'middleware_list_not_none(middleware: typing.List[botbuilder.core.middleware_set.Middleware])
     -> None'
+  namewithoutparameters: middleware_list_not_none
   summary: 'Checks that a middeware list is not None
 
     :param activities: The middleware list'
@@ -101,6 +106,7 @@ items:
   module: botbuilder.core
   name: 'middleware_not_none(middleware: botbuilder.core.middleware_set.Middleware)
     -> None'
+  namewithoutparameters: middleware_not_none
   summary: 'Checks that a middleware object is not None
 
     :param middleware: The middleware object'

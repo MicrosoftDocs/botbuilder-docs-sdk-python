@@ -12,14 +12,6 @@ items:
   - python
   module: botbuilder.dialogs.choices.find
   name: Find
-  source:
-    id: Find
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\find.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\find.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 16
   summary: Contains methods for matching user input against a list of choices
   syntax: {}
   type: class
@@ -32,14 +24,7 @@ items:
   name: 'find_choices(utterance: str, choices: [typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
     options: botbuilder.dialogs.choices.find_choices_options.FindChoicesOptions =
     None)'
-  source:
-    id: find_choices
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\find.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\find.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 19
+  namewithoutparameters: find_choices
   summary: Matches user input against a list of choices
   syntax:
     content: 'find_choices(utterance: str, choices: [typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
@@ -55,14 +40,7 @@ items:
   name: 'find_values(utterance: str, values: typing.List[botbuilder.dialogs.choices.sorted_value.SortedValue],
     options: botbuilder.dialogs.choices.find_values_options.FindValuesOptions = None)
     -> typing.List[botbuilder.dialogs.choices.model_result.ModelResult]'
-  source:
-    id: find_values
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\find.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\find.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 83
+  namewithoutparameters: find_values
   syntax:
     content: 'find_values(utterance: str, values: typing.List[botbuilder.dialogs.choices.sorted_value.SortedValue],
       options: botbuilder.dialogs.choices.find_values_options.FindValuesOptions =

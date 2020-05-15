@@ -16,7 +16,7 @@ items:
 
     Used to mark if the current prompt is relevant with a previous question or not.'
   syntax:
-    content: 'QnARequestContext(previous_qna_id: int, prvious_user_query: str, **kwargs)'
+    content: QnARequestContext(**kwargs)
   type: class
   uid: botbuilder.ai.qna.models.qna_request_context.QnARequestContext
 references: []

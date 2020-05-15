@@ -11,14 +11,6 @@ items:
   - python
   module: botbuilder.dialogs.choices.tokenizer
   name: Tokenizer
-  source:
-    id: Tokenizer
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\tokenizer.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\tokenizer.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 9
   summary: Provides a default tokenizer implementation.
   syntax: {}
   type: class
@@ -29,14 +21,7 @@ items:
   - python
   module: botbuilder.dialogs.choices.tokenizer
   name: 'default_tokenizer(text: str, locale: str = None) -> [<class ''botbuilder.dialogs.choices.token.Token''>]'
-  source:
-    id: default_tokenizer
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\tokenizer.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\tokenizer.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 12
+  namewithoutparameters: default_tokenizer
   summary: 'Simple tokenizer that breaks on spaces and punctuation. The only normalization
     is to lowercase.
 

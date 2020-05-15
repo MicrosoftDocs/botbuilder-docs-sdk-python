@@ -30,6 +30,7 @@ items:
     str, resource_urls: typing.List[str], user_id: str = None, oauth_app_credentials:
     botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
     botbuilder.schema._models_py3.TokenResponse]'
+  namewithoutparameters: get_aad_tokens
   summary: 'Retrieves Azure Active Directory tokens for particular resources on a
     configured connection.
 
@@ -65,6 +66,7 @@ items:
   name: 'get_oauth_sign_in_link(context: botbuilder.core.turn_context.TurnContext,
     connection_name: str, final_redirect: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None) -> str'
+  namewithoutparameters: get_oauth_sign_in_link
   summary: 'Get the raw signin link to be sent to the user for signin for a connection
     name.
 
@@ -95,6 +97,7 @@ items:
     str = None, user_id: str = None, include_filter: str = None, oauth_app_credentials:
     botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
     botbuilder.schema._models_py3.TokenResponse]'
+  namewithoutparameters: get_token_status
   summary: 'Retrieves Azure Active Directory tokens for particular resources on a
     configured connection.
 
@@ -130,6 +133,7 @@ items:
   name: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, connection_name:
     str, magic_code: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None) -> botbuilder.schema._models_py3.TokenResponse'
+  namewithoutparameters: get_user_token
   summary: 'Retrieves the OAuth token for a user that is in a sign-in flow.
 
     :param context: Context for the current turn of conversation with the user.
@@ -158,6 +162,7 @@ items:
   name: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
     str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None)'
+  namewithoutparameters: sign_out_user
   summary: 'Signs the user out with the token server.
 
     :param context: Context for the current turn of conversation with the user.

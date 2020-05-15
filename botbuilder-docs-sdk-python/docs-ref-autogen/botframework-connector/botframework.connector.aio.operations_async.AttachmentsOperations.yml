@@ -41,6 +41,7 @@ items:
   module: botframework.connector.aio.operations_async
   name: get_attachment(attachment_id, view_id, *, custom_headers=None, raw=False,
     callback=None, **operation_config)
+  namewithoutparameters: get_attachment
   summary: 'GetAttachment.
 
 
@@ -51,20 +52,24 @@ items:
     parameters:
     - description: attachment id
       id: attachment_id
+      isRequired: true
       type:
       - str
     - description: View id from attachmentInfo
       id: view_id
+      isRequired: true
       type:
       - str
     - description: headers that will be added to the request
       id: custom_headers
+      isRequired: true
       type:
       - dict
     - description: 'returns the direct response alongside the
 
         deserialized response'
       id: raw
+      isRequired: true
       type:
       - bool
     - description: 'When specified, will be called with each chunk of
@@ -75,12 +80,14 @@ items:
 
         data is uploading, response will be None.'
       id: callback
+      isRequired: true
       type:
       - Callable[Bytes, response=None]
     - description: '*Operation configuration
 
         overrides*.'
       id: operation_config
+      isRequired: true
     return:
       description: object or ClientRawResponse if raw=true
       type:
@@ -96,6 +103,7 @@ items:
   - python
   module: botframework.connector.aio.operations_async
   name: get_attachment_info(attachment_id, *, custom_headers=None, raw=False, **operation_config)
+  namewithoutparameters: get_attachment_info
   summary: 'GetAttachmentInfo.
 
 
@@ -106,22 +114,26 @@ items:
     parameters:
     - description: attachment id
       id: attachment_id
+      isRequired: true
       type:
       - str
     - description: headers that will be added to the request
       id: custom_headers
+      isRequired: true
       type:
       - dict
     - description: 'returns the direct response alongside the
 
         deserialized response'
       id: raw
+      isRequired: true
       type:
       - bool
     - description: '*Operation configuration
 
         overrides*.'
       id: operation_config
+      isRequired: true
     return:
       description: AttachmentInfo or ClientRawResponse if raw=true
       type:

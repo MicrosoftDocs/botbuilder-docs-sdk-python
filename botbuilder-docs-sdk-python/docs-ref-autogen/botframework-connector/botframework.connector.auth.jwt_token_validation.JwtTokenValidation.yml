@@ -33,6 +33,7 @@ items:
     channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider]
     = '''', auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
     = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  namewithoutparameters: authenticate_request
   summary: 'Authenticates the request and sets the service url in the set of trusted
     urls.
 
@@ -66,6 +67,7 @@ items:
   - python
   module: botframework.connector.auth.jwt_token_validation
   name: 'get_app_id_from_claims(claims: typing.Dict[str, object]) -> str'
+  namewithoutparameters: get_app_id_from_claims
   syntax:
     content: 'get_app_id_from_claims(claims: typing.Dict[str, object]) -> str'
   type: method
@@ -76,6 +78,7 @@ items:
   - python
   module: botframework.connector.auth.jwt_token_validation
   name: 'is_government(channel_service: str) -> bool'
+  namewithoutparameters: is_government
   syntax:
     content: 'is_government(channel_service: str) -> bool'
   type: method
@@ -86,6 +89,7 @@ items:
   - python
   module: botframework.connector.auth.jwt_token_validation
   name: 'is_valid_token_format(auth_header: str) -> bool'
+  namewithoutparameters: is_valid_token_format
   syntax:
     content: 'is_valid_token_format(auth_header: str) -> bool'
   type: method
@@ -99,6 +103,7 @@ items:
     channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
     channel_id: str, service_url: str = None, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
     = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  namewithoutparameters: validate_auth_header
   syntax:
     content: 'validate_auth_header(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
       channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
@@ -113,6 +118,7 @@ items:
   module: botframework.connector.auth.jwt_token_validation
   name: 'validate_claims(auth_config: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration,
     claims: typing.List[typing.Dict])'
+  namewithoutparameters: validate_claims
   syntax:
     content: 'validate_claims(auth_config: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration,
       claims: typing.List[typing.Dict])'

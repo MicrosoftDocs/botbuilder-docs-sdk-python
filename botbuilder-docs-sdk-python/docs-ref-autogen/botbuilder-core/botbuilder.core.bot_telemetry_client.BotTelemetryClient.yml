@@ -32,6 +32,7 @@ items:
     = None, duration: int = None, success: bool = None, result_code: str = None, properties:
     typing.Dict[str, object] = None, measurements: typing.Dict[str, object] = None,
     dependency_id: str = None)'
+  namewithoutparameters: track_dependency
   summary: 'Sends a single dependency telemetry that was captured for the application.
 
     :param name: the name of the command initiated with this dependency call. Low
@@ -79,6 +80,7 @@ items:
   module: botbuilder.core.bot_telemetry_client
   name: 'track_event(name: str, properties: typing.Dict[str, object] = None, measurements:
     typing.Dict[str, object] = None) -> None'
+  namewithoutparameters: track_event
   summary: 'Send information about a single event that has occurred in the context
     of the application.
 
@@ -100,6 +102,7 @@ items:
   - python
   module: botbuilder.core.bot_telemetry_client
   name: track_exception
+  namewithoutparameters: track_exception
   summary: 'Send information about a single exception that occurred in the application.
 
     :param exception_type: the type of the exception that was thrown.
@@ -124,6 +127,7 @@ items:
   name: 'track_metric(name: str, value: float, tel_type: botbuilder.core.bot_telemetry_client.TelemetryDataPointType
     = None, count: int = None, min_val: float = None, max_val: float = None, std_dev:
     float = None, properties: typing.Dict[str, object] = None) -> NotImplemented'
+  namewithoutparameters: track_metric
   summary: "Send information about a single metric data point that was captured for\
     \ the application.\n:param name: The name of the metric that was captured.\n:param\
     \ value: The value of the metric that was captured.\n:param tel_type: The type\
@@ -141,10 +145,12 @@ items:
 
         (defaults to: None)'
       id: max_val
+      isRequired: true
     - description: 'the standard deviation of all metrics collected that were aggregated
         into this data point.         :param properties: the set of custom properties
         the client wants attached to this data item. (defaults to: None)'
       id: std_dev
+      isRequired: true
   type: method
   uid: botbuilder.core.bot_telemetry_client.BotTelemetryClient.track_metric
 - class: botbuilder.core.bot_telemetry_client.BotTelemetryClient
@@ -154,6 +160,7 @@ items:
   module: botbuilder.core.bot_telemetry_client
   name: 'track_pageview(name: str, url, duration: int = 0, properties: typing.Dict[str,
     object] = None, measurements: typing.Dict[str, object] = None) -> None'
+  namewithoutparameters: track_pageview
   summary: 'Send information about the page viewed in the application (a web page
     for instance).
 
@@ -183,6 +190,7 @@ items:
     duration: int = None, response_code: str = None, http_method: str = None, properties:
     typing.Dict[str, object] = None, measurements: typing.Dict[str, object] = None,
     request_id: str = None)'
+  namewithoutparameters: track_request
   summary: 'Sends a single request that was captured for the application.
 
     :param name: The name for this request. All requests with the same name will be
@@ -226,6 +234,7 @@ items:
   module: botbuilder.core.bot_telemetry_client
   name: 'track_trace(name, properties=None, severity: botbuilder.core.bot_telemetry_client.Severity
     = None)'
+  namewithoutparameters: track_trace
   summary: 'Sends a single trace statement.
 
     :param name: the trace statement.'
@@ -236,9 +245,11 @@ items:
     - description: 'the set of custom properties the client wants attached to this
         data item. (defaults to: None)'
       id: properties
+      isRequired: true
     - description: the severity level of this trace, one of DEBUG, INFO, WARNING,
         ERROR, CRITICAL
       id: severity
+      isRequired: true
   type: method
   uid: botbuilder.core.bot_telemetry_client.BotTelemetryClient.track_trace
 references:

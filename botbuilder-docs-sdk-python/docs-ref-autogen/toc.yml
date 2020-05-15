@@ -1,6 +1,21 @@
 - items:
   - items:
     - items:
+      - name: botbuilder.schema.callerid_constants.CallerIdConstants
+        uid: botbuilder.schema.callerid_constants.CallerIdConstants
+      name: botbuilder.schema.callerid_constants
+      uid: botbuilder.schema.callerid_constants
+    - items:
+      - name: botbuilder.schema.health_results.HealthResults
+        uid: botbuilder.schema.health_results.HealthResults
+      name: botbuilder.schema.health_results
+      uid: botbuilder.schema.health_results
+    - items:
+      - name: botbuilder.schema.healthcheck_response.HealthCheckResponse
+        uid: botbuilder.schema.healthcheck_response.HealthCheckResponse
+      name: botbuilder.schema.healthcheck_response
+      uid: botbuilder.schema.healthcheck_response
+    - items:
       - items:
         - name: botbuilder.schema.teams.additional_properties.ContentType
           uid: botbuilder.schema.teams.additional_properties.ContentType
@@ -148,6 +163,8 @@
       uid: botbuilder.schema.AudioCard
     - name: botbuilder.schema.BasicCard
       uid: botbuilder.schema.BasicCard
+    - name: botbuilder.schema.CallerIdConstants
+      uid: botbuilder.schema.CallerIdConstants
     - name: botbuilder.schema.CardAction
       uid: botbuilder.schema.CardAction
     - name: botbuilder.schema.CardImage
@@ -186,6 +203,10 @@
       uid: botbuilder.schema.Fact
     - name: botbuilder.schema.GeoCoordinates
       uid: botbuilder.schema.GeoCoordinates
+    - name: botbuilder.schema.HealthCheckResponse
+      uid: botbuilder.schema.HealthCheckResponse
+    - name: botbuilder.schema.HealthResults
+      uid: botbuilder.schema.HealthResults
     - name: botbuilder.schema.HeroCard
       uid: botbuilder.schema.HeroCard
     - name: botbuilder.schema.InnerHttpError
@@ -313,6 +334,11 @@
       name: botbuilder.core.activity_handler
       uid: botbuilder.core.activity_handler
     - items:
+      - name: botbuilder.core.adapter_extensions.AdapterExtensions
+        uid: botbuilder.core.adapter_extensions.AdapterExtensions
+      name: botbuilder.core.adapter_extensions
+      uid: botbuilder.core.adapter_extensions
+    - items:
       - items:
         - name: botbuilder.core.adapters.test_adapter.ExchangeableToken
           uid: botbuilder.core.adapters.test_adapter.ExchangeableToken
@@ -406,10 +432,10 @@
       name: botbuilder.core.conversation_state
       uid: botbuilder.core.conversation_state
     - items:
-      - name: botbuilder.core.extended_user_token_provider.ExtendedUserTokenProvider
-        uid: botbuilder.core.extended_user_token_provider.ExtendedUserTokenProvider
-      name: botbuilder.core.extended_user_token_provider
-      uid: botbuilder.core.extended_user_token_provider
+      - name: botbuilder.core.healthcheck.HealthCheck
+        uid: botbuilder.core.healthcheck.HealthCheck
+      name: botbuilder.core.healthcheck
+      uid: botbuilder.core.healthcheck
     - items:
       - items:
         - name: botbuilder.core.inspection.inspection_middleware.InspectionMiddleware
@@ -491,6 +517,30 @@
       name: botbuilder.core.null_telemetry_client
       uid: botbuilder.core.null_telemetry_client
     - items:
+      - items:
+        - name: botbuilder.core.oauth.connector_client_builder.ConnectorClientBuilder
+          uid: botbuilder.core.oauth.connector_client_builder.ConnectorClientBuilder
+        name: botbuilder.core.oauth.connector_client_builder
+        uid: botbuilder.core.oauth.connector_client_builder
+      - items:
+        - name: botbuilder.core.oauth.extended_user_token_provider.ExtendedUserTokenProvider
+          uid: botbuilder.core.oauth.extended_user_token_provider.ExtendedUserTokenProvider
+        name: botbuilder.core.oauth.extended_user_token_provider
+        uid: botbuilder.core.oauth.extended_user_token_provider
+      - items:
+        - name: botbuilder.core.oauth.user_token_provider.UserTokenProvider
+          uid: botbuilder.core.oauth.user_token_provider.UserTokenProvider
+        name: botbuilder.core.oauth.user_token_provider
+        uid: botbuilder.core.oauth.user_token_provider
+      - name: botbuilder.core.oauth.ConnectorClientBuilder
+        uid: botbuilder.core.oauth.ConnectorClientBuilder
+      - name: botbuilder.core.oauth.ExtendedUserTokenProvider
+        uid: botbuilder.core.oauth.ExtendedUserTokenProvider
+      - name: botbuilder.core.oauth.UserTokenProvider
+        uid: botbuilder.core.oauth.UserTokenProvider
+      name: botbuilder.core.oauth
+      uid: botbuilder.core.oauth
+    - items:
       - name: botbuilder.core.private_conversation_state.PrivateConversationState
         uid: botbuilder.core.private_conversation_state.PrivateConversationState
       name: botbuilder.core.private_conversation_state
@@ -514,6 +564,11 @@
         uid: botbuilder.core.recognizer_result.TopIntent
       name: botbuilder.core.recognizer_result
       uid: botbuilder.core.recognizer_result
+    - items:
+      - name: botbuilder.core.register_class_middleware.RegisterClassMiddleware
+        uid: botbuilder.core.register_class_middleware.RegisterClassMiddleware
+      name: botbuilder.core.register_class_middleware
+      uid: botbuilder.core.register_class_middleware
     - name: botbuilder.core.serializer_helper
       uid: botbuilder.core.serializer_helper
     - items:
@@ -646,13 +701,10 @@
         uid: botbuilder.core.user_state.UserState
       name: botbuilder.core.user_state
       uid: botbuilder.core.user_state
-    - items:
-      - name: botbuilder.core.user_token_provider.UserTokenProvider
-        uid: botbuilder.core.user_token_provider.UserTokenProvider
-      name: botbuilder.core.user_token_provider
-      uid: botbuilder.core.user_token_provider
     - name: botbuilder.core.ActivityHandler
       uid: botbuilder.core.ActivityHandler
+    - name: botbuilder.core.AdapterExtensions
+      uid: botbuilder.core.AdapterExtensions
     - name: botbuilder.core.AnonymousReceiveMiddleware
       uid: botbuilder.core.AnonymousReceiveMiddleware
     - name: botbuilder.core.AutoSaveStateMiddleware
@@ -683,6 +735,8 @@
       uid: botbuilder.core.ConversationState
     - name: botbuilder.core.ExtendedUserTokenProvider
       uid: botbuilder.core.ExtendedUserTokenProvider
+    - name: botbuilder.core.HealthCheck
+      uid: botbuilder.core.HealthCheck
     - name: botbuilder.core.IntentScore
       uid: botbuilder.core.IntentScore
     - name: botbuilder.core.InvokeResponse
@@ -705,6 +759,8 @@
       uid: botbuilder.core.Recognizer
     - name: botbuilder.core.RecognizerResult
       uid: botbuilder.core.RecognizerResult
+    - name: botbuilder.core.RegisterClassMiddleware
+      uid: botbuilder.core.RegisterClassMiddleware
     - name: botbuilder.core.Severity
       uid: botbuilder.core.Severity
     - name: botbuilder.core.ShowTypingMiddleware
@@ -762,6 +818,36 @@
         name: botbuilder.ai.luis.luis_recognizer
         uid: botbuilder.ai.luis.luis_recognizer
       - items:
+        - name: botbuilder.ai.luis.luis_recognizer_internal.LuisRecognizerInternal
+          uid: botbuilder.ai.luis.luis_recognizer_internal.LuisRecognizerInternal
+        name: botbuilder.ai.luis.luis_recognizer_internal
+        uid: botbuilder.ai.luis.luis_recognizer_internal
+      - items:
+        - name: botbuilder.ai.luis.luis_recognizer_options.LuisRecognizerOptions
+          uid: botbuilder.ai.luis.luis_recognizer_options.LuisRecognizerOptions
+        name: botbuilder.ai.luis.luis_recognizer_options
+        uid: botbuilder.ai.luis.luis_recognizer_options
+      - items:
+        - name: botbuilder.ai.luis.luis_recognizer_options_v2.LuisRecognizerOptionsV2
+          uid: botbuilder.ai.luis.luis_recognizer_options_v2.LuisRecognizerOptionsV2
+        name: botbuilder.ai.luis.luis_recognizer_options_v2
+        uid: botbuilder.ai.luis.luis_recognizer_options_v2
+      - items:
+        - name: botbuilder.ai.luis.luis_recognizer_options_v3.LuisRecognizerOptionsV3
+          uid: botbuilder.ai.luis.luis_recognizer_options_v3.LuisRecognizerOptionsV3
+        name: botbuilder.ai.luis.luis_recognizer_options_v3
+        uid: botbuilder.ai.luis.luis_recognizer_options_v3
+      - items:
+        - name: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2
+          uid: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2
+        name: botbuilder.ai.luis.luis_recognizer_v2
+        uid: botbuilder.ai.luis.luis_recognizer_v2
+      - items:
+        - name: botbuilder.ai.luis.luis_recognizer_v3.LuisRecognizerV3
+          uid: botbuilder.ai.luis.luis_recognizer_v3.LuisRecognizerV3
+        name: botbuilder.ai.luis.luis_recognizer_v3
+        uid: botbuilder.ai.luis.luis_recognizer_v3
+      - items:
         - name: botbuilder.ai.luis.luis_telemetry_constants.LuisTelemetryConstants
           uid: botbuilder.ai.luis.luis_telemetry_constants.LuisTelemetryConstants
         name: botbuilder.ai.luis.luis_telemetry_constants
@@ -777,6 +863,8 @@
         uid: botbuilder.ai.luis.LuisPredictionOptions
       - name: botbuilder.ai.luis.LuisRecognizer
         uid: botbuilder.ai.luis.LuisRecognizer
+      - name: botbuilder.ai.luis.LuisRecognizerOptionsV3
+        uid: botbuilder.ai.luis.LuisRecognizerOptionsV3
       - name: botbuilder.ai.luis.LuisTelemetryConstants
         uid: botbuilder.ai.luis.LuisTelemetryConstants
       name: botbuilder.ai.luis
@@ -868,6 +956,11 @@
         name: botbuilder.ai.qna.models
         uid: botbuilder.ai.qna.models
       - items:
+        - name: botbuilder.ai.qna.qna_dialog_response_options.QnADialogResponseOptions
+          uid: botbuilder.ai.qna.qna_dialog_response_options.QnADialogResponseOptions
+        name: botbuilder.ai.qna.qna_dialog_response_options
+        uid: botbuilder.ai.qna.qna_dialog_response_options
+      - items:
         - name: botbuilder.ai.qna.qnamaker.EventData
           uid: botbuilder.ai.qna.qnamaker.EventData
         - name: botbuilder.ai.qna.qnamaker.QnAMaker
@@ -906,6 +999,11 @@
           name: botbuilder.ai.qna.utils.http_request_utils
           uid: botbuilder.ai.qna.utils.http_request_utils
         - items:
+          - name: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder
+            uid: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder
+          name: botbuilder.ai.qna.utils.qna_card_builder
+          uid: botbuilder.ai.qna.utils.qna_card_builder
+        - items:
           - name: botbuilder.ai.qna.utils.qna_telemetry_constants.QnATelemetryConstants
             uid: botbuilder.ai.qna.utils.qna_telemetry_constants.QnATelemetryConstants
           name: botbuilder.ai.qna.utils.qna_telemetry_constants
@@ -921,6 +1019,8 @@
           uid: botbuilder.ai.qna.utils.GenerateAnswerUtils
         - name: botbuilder.ai.qna.utils.HttpRequestUtils
           uid: botbuilder.ai.qna.utils.HttpRequestUtils
+        - name: botbuilder.ai.qna.utils.QnACardBuilder
+          uid: botbuilder.ai.qna.utils.QnACardBuilder
         - name: botbuilder.ai.qna.utils.QnATelemetryConstants
           uid: botbuilder.ai.qna.utils.QnATelemetryConstants
         - name: botbuilder.ai.qna.utils.TrainUtils
@@ -939,6 +1039,8 @@
         uid: botbuilder.ai.qna.HttpRequestUtils
       - name: botbuilder.ai.qna.Metadata
         uid: botbuilder.ai.qna.Metadata
+      - name: botbuilder.ai.qna.QnADialogResponseOptions
+        uid: botbuilder.ai.qna.QnADialogResponseOptions
       - name: botbuilder.ai.qna.QnAMaker
         uid: botbuilder.ai.qna.QnAMaker
       - name: botbuilder.ai.qna.QnAMakerEndpoint
@@ -1389,6 +1491,11 @@
       name: botbuilder.dialogs.dialog_turn_status
       uid: botbuilder.dialogs.dialog_turn_status
     - items:
+      - name: botbuilder.dialogs.object_path.ObjectPath
+        uid: botbuilder.dialogs.object_path.ObjectPath
+      name: botbuilder.dialogs.object_path
+      uid: botbuilder.dialogs.object_path
+    - items:
       - items:
         - name: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
           uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
@@ -1425,6 +1532,8 @@
         name: botbuilder.dialogs.prompts.number_prompt
         uid: botbuilder.dialogs.prompts.number_prompt
       - items:
+        - name: botbuilder.dialogs.prompts.oauth_prompt.CallerInfo
+          uid: botbuilder.dialogs.prompts.oauth_prompt.CallerInfo
         - name: botbuilder.dialogs.prompts.oauth_prompt.OAuthPrompt
           uid: botbuilder.dialogs.prompts.oauth_prompt.OAuthPrompt
         name: botbuilder.dialogs.prompts.oauth_prompt
@@ -1559,6 +1668,8 @@
       uid: botbuilder.dialogs.OAuthPrompt
     - name: botbuilder.dialogs.OAuthPromptSettings
       uid: botbuilder.dialogs.OAuthPromptSettings
+    - name: botbuilder.dialogs.ObjectPath
+      uid: botbuilder.dialogs.ObjectPath
     - name: botbuilder.dialogs.Prompt
       uid: botbuilder.dialogs.Prompt
     - name: botbuilder.dialogs.PromptOptions
@@ -1577,4 +1688,136 @@
     uid: botbuilder.dialogs
   name: botbuilder-dialogs
   uid: project-botbuilder-dialogs
+
+- items:
+  - items:
+    - name: botbuilder.applicationinsights.about
+      uid: botbuilder.applicationinsights.about
+    - items:
+      - name: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient
+        uid: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient
+      name: botbuilder.applicationinsights.application_insights_telemetry_client
+      uid: botbuilder.applicationinsights.application_insights_telemetry_client
+    - items:
+      - name: botbuilder.applicationinsights.bot_telemetry_processor.BotTelemetryProcessor
+        uid: botbuilder.applicationinsights.bot_telemetry_processor.BotTelemetryProcessor
+      name: botbuilder.applicationinsights.bot_telemetry_processor
+      uid: botbuilder.applicationinsights.bot_telemetry_processor
+    - items:
+      - items:
+        - name: botbuilder.applicationinsights.django.bot_telemetry_middleware.BotTelemetryMiddleware
+          uid: botbuilder.applicationinsights.django.bot_telemetry_middleware.BotTelemetryMiddleware
+        name: botbuilder.applicationinsights.django.bot_telemetry_middleware
+        uid: botbuilder.applicationinsights.django.bot_telemetry_middleware
+      - items:
+        - name: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings
+          uid: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings
+        - name: botbuilder.applicationinsights.django.common.ApplicationInsightsSettings
+          uid: botbuilder.applicationinsights.django.common.ApplicationInsightsSettings
+        name: botbuilder.applicationinsights.django.common
+        uid: botbuilder.applicationinsights.django.common
+      - items:
+        - name: botbuilder.applicationinsights.django.django_telemetry_processor.DjangoTelemetryProcessor
+          uid: botbuilder.applicationinsights.django.django_telemetry_processor.DjangoTelemetryProcessor
+        name: botbuilder.applicationinsights.django.django_telemetry_processor
+        uid: botbuilder.applicationinsights.django.django_telemetry_processor
+      - items:
+        - name: botbuilder.applicationinsights.django.logging.LoggingHandler
+          uid: botbuilder.applicationinsights.django.logging.LoggingHandler
+        name: botbuilder.applicationinsights.django.logging
+        uid: botbuilder.applicationinsights.django.logging
+      - items:
+        - name: botbuilder.applicationinsights.django.middleware.ApplicationInsightsMiddleware
+          uid: botbuilder.applicationinsights.django.middleware.ApplicationInsightsMiddleware
+        - name: botbuilder.applicationinsights.django.middleware.RequestAddon
+          uid: botbuilder.applicationinsights.django.middleware.RequestAddon
+        name: botbuilder.applicationinsights.django.middleware
+        uid: botbuilder.applicationinsights.django.middleware
+      - name: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware
+        uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware
+      - name: botbuilder.applicationinsights.django.BotTelemetryMiddleware
+        uid: botbuilder.applicationinsights.django.BotTelemetryMiddleware
+      - name: botbuilder.applicationinsights.django.LoggingHandler
+        uid: botbuilder.applicationinsights.django.LoggingHandler
+      name: botbuilder.applicationinsights.django
+      uid: botbuilder.applicationinsights.django
+    - items:
+      - items:
+        - name: botbuilder.applicationinsights.flask.flask_telemetry_middleware.BotTelemetryMiddleware
+          uid: botbuilder.applicationinsights.flask.flask_telemetry_middleware.BotTelemetryMiddleware
+        name: botbuilder.applicationinsights.flask.flask_telemetry_middleware
+        uid: botbuilder.applicationinsights.flask.flask_telemetry_middleware
+      - items:
+        - name: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor
+          uid: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor
+        name: botbuilder.applicationinsights.flask.flask_telemetry_processor
+        uid: botbuilder.applicationinsights.flask.flask_telemetry_processor
+      - name: botbuilder.applicationinsights.flask.BotTelemetryMiddleware
+        uid: botbuilder.applicationinsights.flask.BotTelemetryMiddleware
+      name: botbuilder.applicationinsights.flask
+      uid: botbuilder.applicationinsights.flask
+    - items:
+      - items:
+        - name: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
+          uid: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
+        name: botbuilder.applicationinsights.processor.telemetry_processor
+        uid: botbuilder.applicationinsights.processor.telemetry_processor
+      name: botbuilder.applicationinsights.processor
+      uid: botbuilder.applicationinsights.processor
+    - name: botbuilder.applicationinsights.ApplicationInsightsTelemetryClient
+      uid: botbuilder.applicationinsights.ApplicationInsightsTelemetryClient
+    - name: botbuilder.applicationinsights.BotTelemetryProcessor
+      uid: botbuilder.applicationinsights.BotTelemetryProcessor
+    name: botbuilder.applicationinsights
+    uid: botbuilder.applicationinsights
+  name: botbuilder-applicationinsights
+  uid: project-botbuilder-applicationinsights
+
+- items:
+  - items:
+    - name: botbuilder.integration.applicationinsights.aiohttp.about
+      uid: botbuilder.integration.applicationinsights.aiohttp.about
+    - name: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware
+      uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware
+    - items:
+      - name: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor
+        uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor
+      name: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor
+      uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor
+    - name: botbuilder.integration.applicationinsights.aiohttp.AiohttpTelemetryProcessor
+      uid: botbuilder.integration.applicationinsights.aiohttp.AiohttpTelemetryProcessor
+    name: botbuilder.integration.applicationinsights.aiohttp
+    uid: botbuilder.integration.applicationinsights.aiohttp
+  name: botbuilder-integration-applicationinsights-aiohttp
+  uid: project-botbuilder-integration-applicationinsights-aiohttp
+
+- items:
+  - items:
+    - name: botbuilder.integration.aiohttp.about
+      uid: botbuilder.integration.aiohttp.about
+    - name: botbuilder.integration.aiohttp.aiohttp_channel_service
+      uid: botbuilder.integration.aiohttp.aiohttp_channel_service
+    - name: botbuilder.integration.aiohttp.aiohttp_channel_service_exception_middleware
+      uid: botbuilder.integration.aiohttp.aiohttp_channel_service_exception_middleware
+    - items:
+      - name: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient
+        uid: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient
+      name: botbuilder.integration.aiohttp.bot_framework_http_client
+      uid: botbuilder.integration.aiohttp.bot_framework_http_client
+    - items:
+      - items:
+        - name: botbuilder.integration.aiohttp.skills.skill_http_client.SkillHttpClient
+          uid: botbuilder.integration.aiohttp.skills.skill_http_client.SkillHttpClient
+        name: botbuilder.integration.aiohttp.skills.skill_http_client
+        uid: botbuilder.integration.aiohttp.skills.skill_http_client
+      - name: botbuilder.integration.aiohttp.skills.SkillHttpClient
+        uid: botbuilder.integration.aiohttp.skills.SkillHttpClient
+      name: botbuilder.integration.aiohttp.skills
+      uid: botbuilder.integration.aiohttp.skills
+    - name: botbuilder.integration.aiohttp.BotFrameworkHttpClient
+      uid: botbuilder.integration.aiohttp.BotFrameworkHttpClient
+    name: botbuilder.integration.aiohttp
+    uid: botbuilder.integration.aiohttp
+  name: botbuilder-integration-aiohttp
+  uid: project-botbuilder-integration-aiohttp
 

@@ -30,6 +30,7 @@ items:
   module: botbuilder.core.message_factory
   name: 'attachment(attachment: botbuilder.schema._models_py3.Attachment, text: str
     = None, speak: str = None, input_hint: str = None)'
+  namewithoutparameters: attachment
   summary: "Returns a single message activity containing an attachment.\n\n\nmessage\
     \ = MessageFactory.attachment(CardFactory.hero_card(HeroCard(title='White T-Shirt',\n\
     \   images=[CardImage(url=\n      '[https://example.com/whiteShirt.jpg](https://example.com/whiteShirt.jpg)'\n\
@@ -40,12 +41,16 @@ items:
     parameters:
     - description: ''
       id: attachment
+      isRequired: true
     - description: ''
       id: text
+      isRequired: true
     - description: ''
       id: speak
+      isRequired: true
     - description: ''
       id: input_hint
+      isRequired: true
   type: method
   uid: botbuilder.core.message_factory.MessageFactory.attachment
 - class: botbuilder.core.message_factory.MessageFactory
@@ -55,6 +60,7 @@ items:
   module: botbuilder.core.message_factory
   name: 'carousel(attachments: typing.List[botbuilder.schema._models_py3.Attachment],
     text: str = None, speak: str = None, input_hint: str = None) -> botbuilder.schema._models_py3.Activity'
+  namewithoutparameters: carousel
   summary: "Returns a message that will display a set of attachments using a carousel\
     \ layout.\n\n\nmessage = MessageFactory.carousel([CardFactory.hero_card(HeroCard(title='title1',\n\
     \      images=[CardImage(url='imageUrl1')],\n      buttons=[CardAction(title='button1')])),\n\
@@ -68,12 +74,16 @@ items:
     parameters:
     - description: ''
       id: attachments
+      isRequired: true
     - description: ''
       id: text
+      isRequired: true
     - description: ''
       id: speak
+      isRequired: true
     - description: ''
       id: input_hint
+      isRequired: true
   type: method
   uid: botbuilder.core.message_factory.MessageFactory.carousel
 - class: botbuilder.core.message_factory.MessageFactory
@@ -83,6 +93,7 @@ items:
   module: botbuilder.core.message_factory
   name: 'content_url(url: str, content_type: str, name: str = None, text: str = None,
     speak: str = None, input_hint: str = None)'
+  namewithoutparameters: content_url
   summary: "Returns a message that will display a single image or video to a user.\n\
     \n\nmessage = MessageFactory.content_url('[https://example.com/hawaii.jpg](https://example.com/hawaii.jpg)',\
     \ 'image/jpeg',\n   'Hawaii Trip', 'A photo from our family vacation.')\n\n\n\
@@ -93,16 +104,22 @@ items:
     parameters:
     - description: ''
       id: url
+      isRequired: true
     - description: ''
       id: content_type
+      isRequired: true
     - description: ''
       id: name
+      isRequired: true
     - description: ''
       id: text
+      isRequired: true
     - description: ''
       id: speak
+      isRequired: true
     - description: ''
       id: input_hint
+      isRequired: true
   type: method
   uid: botbuilder.core.message_factory.MessageFactory.content_url
 - class: botbuilder.core.message_factory.MessageFactory
@@ -112,6 +129,7 @@ items:
   module: botbuilder.core.message_factory
   name: 'list(attachments: typing.List[botbuilder.schema._models_py3.Attachment],
     text: str = None, speak: str = None, input_hint: str = None) -> botbuilder.schema._models_py3.Activity'
+  namewithoutparameters: list
   summary: "Returns a message that will display a set of attachments in list form.\n\
     \n\nmessage = MessageFactory.list([CardFactory.hero_card(HeroCard(title='title1',\n\
     \      images=[CardImage(url='imageUrl1')],\n      buttons=[CardAction(title='button1')])),\n\
@@ -125,12 +143,16 @@ items:
     parameters:
     - description: ''
       id: attachments
+      isRequired: true
     - description: ''
       id: text
+      isRequired: true
     - description: ''
       id: speak
+      isRequired: true
     - description: ''
       id: input_hint
+      isRequired: true
   type: method
   uid: botbuilder.core.message_factory.MessageFactory.list
 - class: botbuilder.core.message_factory.MessageFactory
@@ -141,6 +163,7 @@ items:
   name: 'suggested_actions(actions: typing.List[botbuilder.schema._models_py3.CardAction],
     text: str = None, speak: str = None, input_hint: str = <InputHints.accepting_input:
     ''acceptingInput''>) -> botbuilder.schema._models_py3.Activity'
+  namewithoutparameters: suggested_actions
   summary: "Returns a message that includes a set of suggested actions and optional\
     \ text.\n\n\nmessage = MessageFactory.suggested_actions([CardAction(title='a',\
     \ type=ActionTypes.im_back, value='a'),\n   CardAction(title='b', type=ActionTypes.im_back,\
@@ -153,12 +176,16 @@ items:
     parameters:
     - description: ''
       id: actions
+      isRequired: true
     - description: ''
       id: text
+      isRequired: true
     - description: ''
       id: speak
+      isRequired: true
     - description: ''
       id: input_hint
+      isRequired: true
   type: method
   uid: botbuilder.core.message_factory.MessageFactory.suggested_actions
 - class: botbuilder.core.message_factory.MessageFactory
@@ -168,6 +195,7 @@ items:
   module: botbuilder.core.message_factory
   name: 'text(text: str, speak: str = None, input_hint: str = <InputHints.accepting_input:
     ''acceptingInput''>) -> botbuilder.schema._models_py3.Activity'
+  namewithoutparameters: text
   summary: 'Returns a simple text message.
 
 
@@ -181,10 +209,13 @@ items:
     parameters:
     - description: ''
       id: text
+      isRequired: true
     - description: ''
       id: speak
+      isRequired: true
     - description: ''
       id: input_hint
+      isRequired: true
   type: method
   uid: botbuilder.core.message_factory.MessageFactory.text
 references:

@@ -54,6 +54,7 @@ items:
   module: botbuilder.core.channel_service_handler
   name: 'handle_create_conversation(auth_header, parameters: botbuilder.schema._models_py3.ConversationParameters)
     -> botbuilder.schema._models_py3.ConversationResourceResponse'
+  namewithoutparameters: handle_create_conversation
   syntax:
     content: 'handle_create_conversation(auth_header, parameters: botbuilder.schema._models_py3.ConversationParameters)
       -> botbuilder.schema._models_py3.ConversationResourceResponse'
@@ -65,12 +66,16 @@ items:
   - python
   module: botbuilder.core.channel_service_handler
   name: handle_delete_activity(auth_header, conversation_id, activity_id)
+  namewithoutparameters: handle_delete_activity
   syntax:
     content: handle_delete_activity(auth_header, conversation_id, activity_id)
     parameters:
     - id: auth_header
+      isRequired: true
     - id: conversation_id
+      isRequired: true
     - id: activity_id
+      isRequired: true
   type: method
   uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_delete_activity
 - class: botbuilder.core.channel_service_handler.ChannelServiceHandler
@@ -79,12 +84,16 @@ items:
   - python
   module: botbuilder.core.channel_service_handler
   name: handle_delete_conversation_member(auth_header, conversation_id, member_id)
+  namewithoutparameters: handle_delete_conversation_member
   syntax:
     content: handle_delete_conversation_member(auth_header, conversation_id, member_id)
     parameters:
     - id: auth_header
+      isRequired: true
     - id: conversation_id
+      isRequired: true
     - id: member_id
+      isRequired: true
   type: method
   uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_delete_conversation_member
 - class: botbuilder.core.channel_service_handler.ChannelServiceHandler
@@ -94,6 +103,7 @@ items:
   module: botbuilder.core.channel_service_handler
   name: handle_get_activity_members(auth_header, conversation_id, activity_id) ->
     typing.List[botbuilder.schema._models_py3.ChannelAccount]
+  namewithoutparameters: handle_get_activity_members
   syntax:
     content: handle_get_activity_members(auth_header, conversation_id, activity_id)
       -> typing.List[botbuilder.schema._models_py3.ChannelAccount]
@@ -106,6 +116,7 @@ items:
   module: botbuilder.core.channel_service_handler
   name: handle_get_conversation_member(auth_header, conversation_id, member_id) ->
     botbuilder.schema._models_py3.ChannelAccount
+  namewithoutparameters: handle_get_conversation_member
   syntax:
     content: handle_get_conversation_member(auth_header, conversation_id, member_id)
       -> botbuilder.schema._models_py3.ChannelAccount
@@ -117,6 +128,7 @@ items:
   - python
   module: botbuilder.core.channel_service_handler
   name: handle_get_conversation_members(auth_header, conversation_id) -> typing.List[botbuilder.schema._models_py3.ChannelAccount]
+  namewithoutparameters: handle_get_conversation_members
   syntax:
     content: handle_get_conversation_members(auth_header, conversation_id) -> typing.List[botbuilder.schema._models_py3.ChannelAccount]
   type: method
@@ -128,6 +140,7 @@ items:
   module: botbuilder.core.channel_service_handler
   name: 'handle_get_conversation_paged_members(auth_header, conversation_id, page_size:
     int = 0, continuation_token: str = '''') -> botbuilder.schema._models_py3.PagedMembersResult'
+  namewithoutparameters: handle_get_conversation_paged_members
   syntax:
     content: 'handle_get_conversation_paged_members(auth_header, conversation_id,
       page_size: int = 0, continuation_token: str = '''') -> botbuilder.schema._models_py3.PagedMembersResult'
@@ -140,6 +153,7 @@ items:
   module: botbuilder.core.channel_service_handler
   name: 'handle_get_conversations(auth_header, continuation_token: str = '''') ->
     botbuilder.schema._models_py3.ConversationsResult'
+  namewithoutparameters: handle_get_conversations
   syntax:
     content: 'handle_get_conversations(auth_header, continuation_token: str = '''')
       -> botbuilder.schema._models_py3.ConversationsResult'
@@ -152,6 +166,7 @@ items:
   module: botbuilder.core.channel_service_handler
   name: handle_reply_to_activity(auth_header, conversation_id, activity_id, activity)
     -> botbuilder.schema._models_py3.ResourceResponse
+  namewithoutparameters: handle_reply_to_activity
   syntax:
     content: handle_reply_to_activity(auth_header, conversation_id, activity_id, activity)
       -> botbuilder.schema._models_py3.ResourceResponse
@@ -164,6 +179,7 @@ items:
   module: botbuilder.core.channel_service_handler
   name: 'handle_send_conversation_history(auth_header, conversation_id, transcript:
     botbuilder.schema._models_py3.Transcript) -> botbuilder.schema._models_py3.ResourceResponse'
+  namewithoutparameters: handle_send_conversation_history
   syntax:
     content: 'handle_send_conversation_history(auth_header, conversation_id, transcript:
       botbuilder.schema._models_py3.Transcript) -> botbuilder.schema._models_py3.ResourceResponse'
@@ -175,6 +191,7 @@ items:
   - python
   module: botbuilder.core.channel_service_handler
   name: handle_send_to_conversation(auth_header, conversation_id, activity) -> botbuilder.schema._models_py3.ResourceResponse
+  namewithoutparameters: handle_send_to_conversation
   syntax:
     content: handle_send_to_conversation(auth_header, conversation_id, activity) ->
       botbuilder.schema._models_py3.ResourceResponse
@@ -187,6 +204,7 @@ items:
   module: botbuilder.core.channel_service_handler
   name: handle_update_activity(auth_header, conversation_id, activity_id, activity)
     -> botbuilder.schema._models_py3.ResourceResponse
+  namewithoutparameters: handle_update_activity
   syntax:
     content: handle_update_activity(auth_header, conversation_id, activity_id, activity)
       -> botbuilder.schema._models_py3.ResourceResponse
@@ -199,6 +217,7 @@ items:
   module: botbuilder.core.channel_service_handler
   name: 'handle_upload_attachment(auth_header, conversation_id, attachment_upload:
     botbuilder.schema._models_py3.AttachmentData) -> botbuilder.schema._models_py3.ResourceResponse'
+  namewithoutparameters: handle_upload_attachment
   syntax:
     content: 'handle_upload_attachment(auth_header, conversation_id, attachment_upload:
       botbuilder.schema._models_py3.AttachmentData) -> botbuilder.schema._models_py3.ResourceResponse'
@@ -211,6 +230,7 @@ items:
   module: botbuilder.core.channel_service_handler
   name: 'on_create_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     parameters: botbuilder.schema._models_py3.ConversationParameters) -> botbuilder.schema._models_py3.ConversationResourceResponse'
+  namewithoutparameters: on_create_conversation
   summary: 'create_conversation() API for Skill
 
 
@@ -256,8 +276,10 @@ items:
     parameters:
     - description: ''
       id: claims_identity
+      isRequired: true
     - description: ''
       id: parameters
+      isRequired: true
   type: method
   uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.on_create_conversation
 - class: botbuilder.core.channel_service_handler.ChannelServiceHandler
@@ -267,6 +289,7 @@ items:
   module: botbuilder.core.channel_service_handler
   name: 'on_delete_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity_id: str)'
+  namewithoutparameters: on_delete_activity
   summary: 'delete_activity() API for Skill.
 
 
@@ -282,10 +305,13 @@ items:
     parameters:
     - description: ''
       id: claims_identity
+      isRequired: true
     - description: ''
       id: conversation_id
+      isRequired: true
     - description: ''
       id: activity_id
+      isRequired: true
   type: method
   uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.on_delete_activity
 - class: botbuilder.core.channel_service_handler.ChannelServiceHandler
@@ -295,6 +321,7 @@ items:
   module: botbuilder.core.channel_service_handler
   name: 'on_delete_conversation_member(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, member_id: str)'
+  namewithoutparameters: on_delete_conversation_member
   summary: 'delete_conversation_member() API for Skill.
 
 
@@ -314,10 +341,13 @@ items:
     parameters:
     - description: ''
       id: claims_identity
+      isRequired: true
     - description: ''
       id: conversation_id
+      isRequired: true
     - description: ''
       id: member_id
+      isRequired: true
   type: method
   uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.on_delete_conversation_member
 - class: botbuilder.core.channel_service_handler.ChannelServiceHandler
@@ -327,6 +357,7 @@ items:
   module: botbuilder.core.channel_service_handler
   name: 'on_get_activity_members(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity_id: str) -> typing.List[botbuilder.schema._models_py3.ChannelAccount]'
+  namewithoutparameters: on_get_activity_members
   summary: 'get_activity_members() API for Skill.
 
 
@@ -344,10 +375,13 @@ items:
     parameters:
     - description: ''
       id: claims_identity
+      isRequired: true
     - description: ''
       id: conversation_id
+      isRequired: true
     - description: ''
       id: activity_id
+      isRequired: true
   type: method
   uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.on_get_activity_members
 - class: botbuilder.core.channel_service_handler.ChannelServiceHandler
@@ -357,6 +391,7 @@ items:
   module: botbuilder.core.channel_service_handler
   name: 'on_get_conversation_member(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, member_id: str) -> botbuilder.schema._models_py3.ChannelAccount'
+  namewithoutparameters: on_get_conversation_member
   summary: 'get_conversation_member() API for Skill.
 
 
@@ -372,10 +407,13 @@ items:
     parameters:
     - description: ''
       id: claims_identity
+      isRequired: true
     - description: ''
       id: conversation_id
+      isRequired: true
     - description: ''
       id: member_id
+      isRequired: true
   type: method
   uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.on_get_conversation_member
 - class: botbuilder.core.channel_service_handler.ChannelServiceHandler
@@ -385,6 +423,7 @@ items:
   module: botbuilder.core.channel_service_handler
   name: 'on_get_conversation_members(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str) -> typing.List[botbuilder.schema._models_py3.ChannelAccount]'
+  namewithoutparameters: on_get_conversation_members
   summary: 'get_conversation_members() API for Skill.
 
 
@@ -400,8 +439,10 @@ items:
     parameters:
     - description: ''
       id: claims_identity
+      isRequired: true
     - description: ''
       id: conversation_id
+      isRequired: true
   type: method
   uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.on_get_conversation_members
 - class: botbuilder.core.channel_service_handler.ChannelServiceHandler
@@ -412,6 +453,7 @@ items:
   name: 'on_get_conversation_paged_members(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, page_size: int = None, continuation_token: str = '''') ->
     botbuilder.schema._models_py3.PagedMembersResult'
+  namewithoutparameters: on_get_conversation_paged_members
   summary: 'get_conversation_paged_members() API for Skill.
 
 
@@ -452,12 +494,16 @@ items:
     parameters:
     - description: ''
       id: claims_identity
+      isRequired: true
     - description: ''
       id: conversation_id
+      isRequired: true
     - description: ''
       id: page_size
+      isRequired: true
     - description: ''
       id: continuation_token
+      isRequired: true
   type: method
   uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.on_get_conversation_paged_members
 - class: botbuilder.core.channel_service_handler.ChannelServiceHandler
@@ -467,6 +513,7 @@ items:
   module: botbuilder.core.channel_service_handler
   name: 'on_get_conversations(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     continuation_token: str = '''') -> botbuilder.schema._models_py3.ConversationsResult'
+  namewithoutparameters: on_get_conversations
   summary: 'get_conversations() API for Skill
 
 
@@ -494,10 +541,13 @@ items:
     parameters:
     - description: ''
       id: claims_identity
+      isRequired: true
     - description: ''
       id: conversation_id
+      isRequired: true
     - description: ''
       id: continuation_token
+      isRequired: true
   type: method
   uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.on_get_conversations
 - class: botbuilder.core.channel_service_handler.ChannelServiceHandler
@@ -508,6 +558,7 @@ items:
   name: 'on_reply_to_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
     -> botbuilder.schema._models_py3.ResourceResponse'
+  namewithoutparameters: on_reply_to_activity
   summary: 'reply_to_activity() API for Skill.
 
 
@@ -540,12 +591,16 @@ items:
     parameters:
     - description: ''
       id: claims_identity
+      isRequired: true
     - description: ''
       id: conversation_id
+      isRequired: true
     - description: ''
       id: activity_id
+      isRequired: true
     - description: ''
       id: activity
+      isRequired: true
   type: method
   uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.on_reply_to_activity
 - class: botbuilder.core.channel_service_handler.ChannelServiceHandler
@@ -556,6 +611,7 @@ items:
   name: 'on_send_conversation_history(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, transcript: botbuilder.schema._models_py3.Transcript) ->
     botbuilder.schema._models_py3.ResourceResponse'
+  namewithoutparameters: on_send_conversation_history
   summary: 'send_conversation_history() API for Skill.
 
 
@@ -578,10 +634,13 @@ items:
     parameters:
     - description: ''
       id: claims_identity
+      isRequired: true
     - description: ''
       id: conversation_id
+      isRequired: true
     - description: ''
       id: transcript
+      isRequired: true
   type: method
   uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.on_send_conversation_history
 - class: botbuilder.core.channel_service_handler.ChannelServiceHandler
@@ -591,6 +650,7 @@ items:
   module: botbuilder.core.channel_service_handler
   name: 'on_send_to_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity: botbuilder.schema._models_py3.Activity) -> botbuilder.schema._models_py3.ResourceResponse'
+  namewithoutparameters: on_send_to_conversation
   summary: 'send_to_conversation() API for Skill
 
 
@@ -622,10 +682,13 @@ items:
     parameters:
     - description: ''
       id: claims_identity
+      isRequired: true
     - description: ''
       id: conversation_id
+      isRequired: true
     - description: ''
       id: activity
+      isRequired: true
   type: method
   uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.on_send_to_conversation
 - class: botbuilder.core.channel_service_handler.ChannelServiceHandler
@@ -636,6 +699,7 @@ items:
   name: 'on_update_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
     -> botbuilder.schema._models_py3.ResourceResponse'
+  namewithoutparameters: on_update_activity
   summary: 'update_activity() API for Skill.
 
 
@@ -657,12 +721,16 @@ items:
     parameters:
     - description: ''
       id: claims_identity
+      isRequired: true
     - description: ''
       id: conversation_id
+      isRequired: true
     - description: ''
       id: activity_id
+      isRequired: true
     - description: ''
       id: activity
+      isRequired: true
   type: method
   uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.on_update_activity
 - class: botbuilder.core.channel_service_handler.ChannelServiceHandler
@@ -673,6 +741,7 @@ items:
   name: 'on_upload_attachment(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, attachment_upload: botbuilder.schema._models_py3.AttachmentData)
     -> botbuilder.schema._models_py3.ResourceResponse'
+  namewithoutparameters: on_upload_attachment
   summary: 'upload_attachment() API for Skill.
 
 
@@ -694,10 +763,13 @@ items:
     parameters:
     - description: ''
       id: claims_identity
+      isRequired: true
     - description: ''
       id: conversation_id
+      isRequired: true
     - description: ''
       id: attachment_upload
+      isRequired: true
   type: method
   uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.on_upload_attachment
 references:

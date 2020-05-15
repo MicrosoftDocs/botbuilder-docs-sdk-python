@@ -33,6 +33,7 @@ items:
   name: 'on_reply_to_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
     -> botbuilder.schema._models_py3.ResourceResponse'
+  namewithoutparameters: on_reply_to_activity
   summary: 'reply_to_activity() API for Skill.
 
 
@@ -81,6 +82,7 @@ items:
   module: botbuilder.core.skills.skill_handler
   name: 'on_send_to_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity: botbuilder.schema._models_py3.Activity) -> botbuilder.schema._models_py3.ResourceResponse'
+  namewithoutparameters: on_send_to_conversation
   summary: 'send_to_conversation() API for Skill
 
 

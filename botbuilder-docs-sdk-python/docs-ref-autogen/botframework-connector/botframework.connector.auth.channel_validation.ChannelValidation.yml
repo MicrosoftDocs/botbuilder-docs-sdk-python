@@ -31,6 +31,7 @@ items:
   name: 'authenticate_channel_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
     channel_id: str, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
     = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  namewithoutparameters: authenticate_channel_token
   summary: 'Validate the incoming Auth Header
 
 
@@ -44,10 +45,12 @@ items:
     parameters:
     - description: 'The raw HTTP header in the format: ''Bearer [longString]'''
       id: auth_header
+      isRequired: true
       type:
       - str
     - description: The user defined set of valid credentials, such as the AppId.
       id: credentials
+      isRequired: true
       type:
       - CredentialProvider
     return:
@@ -66,6 +69,7 @@ items:
     botframework.connector.auth.credential_provider.CredentialProvider, service_url:
     str, channel_id: str, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
     = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  namewithoutparameters: authenticate_channel_token_with_service_url
   summary: 'Validate the incoming Auth Header
 
 
@@ -80,14 +84,17 @@ items:
     parameters:
     - description: 'The raw HTTP header in the format: ''Bearer [longString]'''
       id: auth_header
+      isRequired: true
       type:
       - str
     - description: The user defined set of valid credentials, such as the AppId.
       id: credentials
+      isRequired: true
       type:
       - CredentialProvider
     - description: Claim value that must match in the identity.
       id: service_url
+      isRequired: true
       type:
       - str
     return:
@@ -102,6 +109,7 @@ items:
   name: 'validate_identity(identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     credentials: botframework.connector.auth.credential_provider.CredentialProvider)
     -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  namewithoutparameters: validate_identity
   syntax:
     content: 'validate_identity(identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
       credentials: botframework.connector.auth.credential_provider.CredentialProvider)

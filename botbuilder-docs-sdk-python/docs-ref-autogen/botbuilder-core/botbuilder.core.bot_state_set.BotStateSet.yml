@@ -24,6 +24,7 @@ items:
   - python
   module: botbuilder.core.bot_state_set
   name: 'add(bot_state: botbuilder.core.bot_state.BotState) -> botbuilder.core.bot_state_set.BotStateSet'
+  namewithoutparameters: add
   syntax:
     content: 'add(bot_state: botbuilder.core.bot_state.BotState) -> botbuilder.core.bot_state_set.BotStateSet'
   type: method
@@ -35,6 +36,7 @@ items:
   module: botbuilder.core.bot_state_set
   name: 'load_all(turn_context: botbuilder.core.turn_context.TurnContext, force: bool
     = False)'
+  namewithoutparameters: load_all
   syntax:
     content: 'load_all(turn_context: botbuilder.core.turn_context.TurnContext, force:
       bool = False)'
@@ -47,6 +49,7 @@ items:
   module: botbuilder.core.bot_state_set
   name: 'save_all_changes(turn_context: botbuilder.core.turn_context.TurnContext,
     force: bool = False)'
+  namewithoutparameters: save_all_changes
   syntax:
     content: 'save_all_changes(turn_context: botbuilder.core.turn_context.TurnContext,
       force: bool = False)'

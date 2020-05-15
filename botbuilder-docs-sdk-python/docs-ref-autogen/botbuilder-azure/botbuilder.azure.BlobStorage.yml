@@ -28,6 +28,7 @@ items:
   - python
   module: botbuilder.azure
   name: 'delete(keys: typing.List[str])'
+  namewithoutparameters: delete
   syntax:
     content: 'delete(keys: typing.List[str])'
   type: method
@@ -38,6 +39,7 @@ items:
   - python
   module: botbuilder.azure
   name: 'read(keys: typing.List[str]) -> typing.Dict[str, object]'
+  namewithoutparameters: read
   syntax:
     content: 'read(keys: typing.List[str]) -> typing.Dict[str, object]'
   type: method
@@ -48,6 +50,7 @@ items:
   - python
   module: botbuilder.azure
   name: 'write(changes: typing.Dict[str, object])'
+  namewithoutparameters: write
   syntax:
     content: 'write(changes: typing.Dict[str, object])'
   type: method

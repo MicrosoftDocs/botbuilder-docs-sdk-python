@@ -32,6 +32,7 @@ items:
   module: botbuilder.core.skills.conversation_id_factory
   name: 'create_skill_conversation_id(options_or_conversation_reference: typing.Union[botbuilder.core.skills.skill_conversation_id_factory_options.SkillConversationIdFactoryOptions,
     botbuilder.schema._models_py3.ConversationReference]) -> str'
+  namewithoutparameters: create_skill_conversation_id
   summary: 'Using the options passed in, creates a conversation id and
 
     SkillConversationReference, storing them for future use.
@@ -68,6 +69,7 @@ items:
   - python
   module: botbuilder.core.skills.conversation_id_factory
   name: 'delete_conversation_reference(skill_conversation_id: str)'
+  namewithoutparameters: delete_conversation_reference
   summary: Removes any reference to objects keyed on the conversation id passed in.
   syntax:
     content: 'delete_conversation_reference(skill_conversation_id: str)'
@@ -80,6 +82,7 @@ items:
   module: botbuilder.core.skills.conversation_id_factory
   name: 'get_conversation_reference(skill_conversation_id: str) -> typing.Union[botbuilder.core.skills.skill_conversation_reference.SkillConversationReference,
     botbuilder.schema._models_py3.ConversationReference]'
+  namewithoutparameters: get_conversation_reference
   summary: 'Retrieves a SkillConversationReference using a conversation id passed
     in.
 
@@ -106,6 +109,7 @@ items:
     parameters:
     - description: The conversation id for which to retrieve
       id: skill_conversation_id
+      isRequired: true
   type: method
   uid: botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase.get_conversation_reference
 references:

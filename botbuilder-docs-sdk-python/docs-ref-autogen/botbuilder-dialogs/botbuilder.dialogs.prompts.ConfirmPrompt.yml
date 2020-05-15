@@ -20,14 +20,6 @@ items:
   - python
   module: botbuilder.dialogs.prompts
   name: ConfirmPrompt
-  source:
-    id: ConfirmPrompt
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\confirm_prompt.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\confirm_prompt.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 19
   summary: ''
   syntax:
     content: 'ConfirmPrompt(dialog_id: str, validator: object = None, default_locale:
@@ -40,14 +32,7 @@ items:
   - python
   module: botbuilder.dialogs.prompts
   name: 'determine_culture(activity: botbuilder.schema._models_py3.Activity) -> str'
-  source:
-    id: determine_culture
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\confirm_prompt.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\confirm_prompt.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 162
+  namewithoutparameters: determine_culture
   syntax:
     content: 'determine_culture(activity: botbuilder.schema._models_py3.Activity)
       -> str'
@@ -61,14 +46,7 @@ items:
   name: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
     typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
     is_retry: bool)'
-  source:
-    id: on_prompt
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\confirm_prompt.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\confirm_prompt.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 78
+  namewithoutparameters: on_prompt
   syntax:
     content: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
       typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
@@ -83,14 +61,7 @@ items:
   name: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext, state:
     typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
     -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
-  source:
-    id: on_recognize
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\confirm_prompt.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\confirm_prompt.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 113
+  namewithoutparameters: on_recognize
   syntax:
     content: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
       state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)

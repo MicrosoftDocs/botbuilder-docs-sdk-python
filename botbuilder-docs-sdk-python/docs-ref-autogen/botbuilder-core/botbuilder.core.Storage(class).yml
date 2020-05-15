@@ -25,6 +25,7 @@ items:
   - python
   module: botbuilder.core
   name: 'delete(keys: typing.List[str])'
+  namewithoutparameters: delete
   summary: 'Removes store items from storage.
 
     :param keys:
@@ -40,6 +41,7 @@ items:
   - python
   module: botbuilder.core
   name: 'read(keys: typing.List[str])'
+  namewithoutparameters: read
   summary: 'Loads store items from storage.
 
     :param keys:
@@ -55,6 +57,7 @@ items:
   - python
   module: botbuilder.core
   name: write(changes)
+  namewithoutparameters: write
   summary: 'Saves store items to storage.
 
     :param changes:
@@ -64,6 +67,7 @@ items:
     content: write(changes)
     parameters:
     - id: changes
+      isRequired: true
   type: method
   uid: botbuilder.core.Storage.write
 references:

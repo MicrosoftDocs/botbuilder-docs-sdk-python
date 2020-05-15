@@ -27,6 +27,7 @@ items:
   module: botbuilder.core.adapters.test_adapter
   name: 'equals_key(rhs: botbuilder.core.adapters.test_adapter.ExchangeableToken)
     -> bool'
+  namewithoutparameters: equals_key
   syntax:
     content: 'equals_key(rhs: botbuilder.core.adapters.test_adapter.ExchangeableToken)
       -> bool'
@@ -38,6 +39,7 @@ items:
   - python
   module: botbuilder.core.adapters.test_adapter
   name: to_key() -> str
+  namewithoutparameters: to_key
   syntax:
     content: to_key() -> str
   type: method

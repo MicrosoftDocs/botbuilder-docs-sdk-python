@@ -24,14 +24,12 @@ items:
       id: attachment_layout
       type:
       - str
-      - botframework.connector.teams.models.enum
     - description: 'The type of the result. Possible values include: ''result'',
 
         ''auth'', ''config'', ''message'', ''botMessagePreview'''
       id: type
       type:
       - str
-      - botframework.connector.teams.models.enum
     - description: (Only when type is result) Attachments
       id: attachments
       type:

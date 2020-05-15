@@ -28,6 +28,7 @@ items:
   - python
   module: botbuilder.core.recognizer_result
   name: 'convert(result: object)'
+  namewithoutparameters: convert
   syntax:
     content: 'convert(result: object)'
   type: method
@@ -38,6 +39,7 @@ items:
   - python
   module: botbuilder.core.recognizer_result
   name: get_top_scoring_intent() -> botbuilder.core.recognizer_result.TopIntent
+  namewithoutparameters: get_top_scoring_intent
   summary: Return the top scoring intent and its score.
   syntax:
     content: get_top_scoring_intent() -> botbuilder.core.recognizer_result.TopIntent

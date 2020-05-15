@@ -19,14 +19,6 @@ items:
   - python
   module: botbuilder.dialogs.skills.skill_dialog
   name: SkillDialog
-  source:
-    id: SkillDialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 26
   summary: ''
   syntax:
     content: 'SkillDialog(dialog_options: botbuilder.dialogs.skills.skill_dialog_options.SkillDialogOptions,
@@ -40,14 +32,7 @@ items:
   module: botbuilder.dialogs.skills.skill_dialog
   name: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     options: object = None)'
-  source:
-    id: begin_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 35
+  namewithoutparameters: begin_dialog
   summary: 'Method called when a new dialog has been pushed onto the stack and is
     being activated.
 
@@ -66,14 +51,7 @@ items:
   - python
   module: botbuilder.dialogs.skills.skill_dialog
   name: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
-  source:
-    id: continue_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 69
+  namewithoutparameters: continue_dialog
   syntax:
     content: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
   type: method
@@ -85,14 +63,7 @@ items:
   module: botbuilder.dialogs.skills.skill_dialog
   name: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance: botbuilder.dialogs.dialog_instance.DialogInstance,
     reason: botbuilder.dialogs.dialog_reason.DialogReason)'
-  source:
-    id: end_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 130
+  namewithoutparameters: end_dialog
   syntax:
     content: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
       botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)'
@@ -105,14 +76,7 @@ items:
   module: botbuilder.dialogs.skills.skill_dialog
   name: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
     botbuilder.dialogs.dialog_instance.DialogInstance)'
-  source:
-    id: reprompt_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 107
+  namewithoutparameters: reprompt_dialog
   syntax:
     content: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
       botbuilder.dialogs.dialog_instance.DialogInstance)'
@@ -125,14 +89,7 @@ items:
   module: botbuilder.dialogs.skills.skill_dialog
   name: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)'
-  source:
-    id: resume_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 124
+  namewithoutparameters: resume_dialog
   syntax:
     content: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
       reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)'

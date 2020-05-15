@@ -11,14 +11,6 @@ items:
   - python
   module: botbuilder.dialogs.choices
   name: ChoiceRecognizers
-  source:
-    id: ChoiceRecognizers
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_recognizers.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_recognizers.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 16
   summary: Contains methods for matching user input against a list of choices.
   syntax: {}
   type: class
@@ -31,14 +23,7 @@ items:
   name: 'recognize_choices(utterance: str, choices: typing.List[typing.Union[str,
     botbuilder.dialogs.choices.choice.Choice]], options: botbuilder.dialogs.choices.find_choices_options.FindChoicesOptions
     = None) -> typing.List[botbuilder.dialogs.choices.model_result.ModelResult]'
-  source:
-    id: recognize_choices
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_recognizers.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_recognizers.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 19
+  namewithoutparameters: recognize_choices
   summary: "Matches user input against a list of choices.\n\nThis is layered above\
     \ the *Find.find_choices()* function, and adds logic to let the user specify\n\
     their choice by index (they can say \"one\" to pick *choice[0]*) or ordinal position\n\
