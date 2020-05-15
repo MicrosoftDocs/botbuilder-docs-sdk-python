@@ -25,6 +25,7 @@ items:
   - python
   module: botbuilder.core
   name: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
+  namewithoutparameters: delete
   summary: 'Saves store items to storage.
 
     :param turn_context: Turn Context.
@@ -41,6 +42,7 @@ items:
   module: botbuilder.core
   name: 'get(turn_context: botbuilder.core.turn_context.TurnContext, default_value_or_factory=None)
     -> object'
+  namewithoutparameters: get
   summary: 'Get the property value from the source
 
     :param turn_context: Turn Context.
@@ -59,6 +61,7 @@ items:
   - python
   module: botbuilder.core
   name: 'set(turn_context: botbuilder.core.turn_context.TurnContext, value) -> None'
+  namewithoutparameters: set
   summary: 'Set the property value on the source.
 
     :param turn_context: Turn Context.

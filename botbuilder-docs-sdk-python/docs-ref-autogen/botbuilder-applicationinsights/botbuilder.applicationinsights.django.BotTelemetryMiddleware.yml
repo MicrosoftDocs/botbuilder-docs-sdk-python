@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.applicationinsights.django.BotTelemetryMiddleware.process_request
+  class: botbuilder.applicationinsights.django.BotTelemetryMiddleware
+  fullName: botbuilder.applicationinsights.django.BotTelemetryMiddleware
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: botbuilder.applicationinsights.django
+  name: BotTelemetryMiddleware
+  summary: "Save off the POST body to later populate bot-specific properties to\n\
+    add to Application Insights.\n\nExample activating MIDDLEWARE in Django settings:\n\
+    MIDDLEWARE = [\n\n\n   # Ideally add somewhere near top\n   'botbuilder.applicationinsights.django.BotTelemetryMiddleware',\n\
+    \   ...\n   ]"
+  syntax:
+    content: BotTelemetryMiddleware(get_response)
+  type: class
+  uid: botbuilder.applicationinsights.django.BotTelemetryMiddleware
+- class: botbuilder.applicationinsights.django.BotTelemetryMiddleware
+  fullName: botbuilder.applicationinsights.django.BotTelemetryMiddleware.process_request
+  langs:
+  - python
+  module: botbuilder.applicationinsights.django
+  name: process_request(request) -> bool
+  namewithoutparameters: process_request
+  summary: Process the incoming Django request.
+  syntax:
+    content: process_request(request) -> bool
+  type: method
+  uid: botbuilder.applicationinsights.django.BotTelemetryMiddleware.process_request
+references:
+- fullName: botbuilder.applicationinsights.django.BotTelemetryMiddleware.process_request
+  isExternal: false
+  name: process_request(request) -> bool
+  parent: botbuilder.applicationinsights.django.BotTelemetryMiddleware
+  uid: botbuilder.applicationinsights.django.BotTelemetryMiddleware.process_request

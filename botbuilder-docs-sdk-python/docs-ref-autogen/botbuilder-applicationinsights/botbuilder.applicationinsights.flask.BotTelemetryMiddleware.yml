@@ -1,0 +1,38 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.applicationinsights.flask.BotTelemetryMiddleware.process_request
+  class: botbuilder.applicationinsights.flask.BotTelemetryMiddleware
+  fullName: botbuilder.applicationinsights.flask.BotTelemetryMiddleware
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: botbuilder.applicationinsights.flask
+  name: BotTelemetryMiddleware
+  summary: "Bot Telemetry Middleware\nSave off the POST body to later populate bot-specific\
+    \ properties to\nadd to Application Insights.\n\nExample adding telemetry middleware\
+    \ to Flask:\n   app = Flask(__name__)\n   app.wsgi_app = BotTelemetryMiddleware(app.wsgi_app)"
+  syntax:
+    content: BotTelemetryMiddleware(app)
+  type: class
+  uid: botbuilder.applicationinsights.flask.BotTelemetryMiddleware
+- class: botbuilder.applicationinsights.flask.BotTelemetryMiddleware
+  fullName: botbuilder.applicationinsights.flask.BotTelemetryMiddleware.process_request
+  langs:
+  - python
+  module: botbuilder.applicationinsights.flask
+  name: process_request(environ) -> bool
+  namewithoutparameters: process_request
+  summary: Process the incoming Flask request.
+  syntax:
+    content: process_request(environ) -> bool
+  type: method
+  uid: botbuilder.applicationinsights.flask.BotTelemetryMiddleware.process_request
+references:
+- fullName: botbuilder.applicationinsights.flask.BotTelemetryMiddleware.process_request
+  isExternal: false
+  name: process_request(environ) -> bool
+  parent: botbuilder.applicationinsights.flask.BotTelemetryMiddleware
+  uid: botbuilder.applicationinsights.flask.BotTelemetryMiddleware.process_request

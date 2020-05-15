@@ -29,12 +29,14 @@ items:
   - python
   module: botbuilder.azure.cosmosdb_partitioned_storage
   name: 'delete(keys: typing.List[str])'
+  namewithoutparameters: delete
   summary: Remove storeitems from storage.
   syntax:
     content: 'delete(keys: typing.List[str])'
     parameters:
     - description: ''
       id: keys
+      isRequired: true
   type: method
   uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.delete
 - class: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage
@@ -43,6 +45,7 @@ items:
   - python
   module: botbuilder.azure.cosmosdb_partitioned_storage
   name: initialize()
+  namewithoutparameters: initialize
   syntax:
     content: initialize()
     parameters: []
@@ -54,12 +57,14 @@ items:
   - python
   module: botbuilder.azure.cosmosdb_partitioned_storage
   name: 'read(keys: typing.List[str]) -> typing.Dict[str, object]'
+  namewithoutparameters: read
   summary: Read storeitems from storage.
   syntax:
     content: 'read(keys: typing.List[str]) -> typing.Dict[str, object]'
     parameters:
     - description: ''
       id: keys
+      isRequired: true
   type: method
   uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.read
 - class: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage
@@ -68,12 +73,14 @@ items:
   - python
   module: botbuilder.azure.cosmosdb_partitioned_storage
   name: 'write(changes: typing.Dict[str, object])'
+  namewithoutparameters: write
   summary: Save storeitems to storage.
   syntax:
     content: 'write(changes: typing.Dict[str, object])'
     parameters:
     - description: ''
       id: changes
+      isRequired: true
   type: method
   uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.write
 references:

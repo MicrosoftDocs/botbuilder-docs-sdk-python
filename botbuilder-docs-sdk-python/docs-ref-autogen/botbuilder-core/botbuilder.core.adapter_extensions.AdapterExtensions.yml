@@ -1,0 +1,92 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.core.adapter_extensions.AdapterExtensions.use_state
+  - botbuilder.core.adapter_extensions.AdapterExtensions.use_storage
+  class: botbuilder.core.adapter_extensions.AdapterExtensions
+  fullName: botbuilder.core.adapter_extensions.AdapterExtensions
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: botbuilder.core.adapter_extensions
+  name: AdapterExtensions
+  summary: ''
+  syntax: {}
+  type: class
+  uid: botbuilder.core.adapter_extensions.AdapterExtensions
+- class: botbuilder.core.adapter_extensions.AdapterExtensions
+  fullName: botbuilder.core.adapter_extensions.AdapterExtensions.use_state
+  langs:
+  - python
+  module: botbuilder.core.adapter_extensions
+  name: 'use_state(adapter: botbuilder.core.bot_adapter.BotAdapter, user_state: botbuilder.core.user_state.UserState,
+    conversation_state: botbuilder.core.conversation_state.ConversationState, auto:
+    bool = True) -> botbuilder.core.bot_adapter.BotAdapter'
+  namewithoutparameters: use_state
+  summary: 'Registers user and conversation state objects with the adapter. These
+    objects will be available via
+
+    the turn context''s *turn_state* property.'
+  syntax:
+    content: 'use_state(adapter: botbuilder.core.bot_adapter.BotAdapter, user_state:
+      botbuilder.core.user_state.UserState, conversation_state: botbuilder.core.conversation_state.ConversationState,
+      auto: bool = True) -> botbuilder.core.bot_adapter.BotAdapter'
+    parameters:
+    - description: The BotAdapter on which to register the state objects.
+      id: adapter
+      isRequired: true
+    - description: The UserState object to register.
+      id: user_state
+      isRequired: true
+    - description: The ConversationState object to register.
+      id: conversation_state
+      isRequired: true
+    - description: True to automatically persist state each turn.
+      id: auto
+      isRequired: true
+    return:
+      description: The BotAdapter
+  type: method
+  uid: botbuilder.core.adapter_extensions.AdapterExtensions.use_state
+- class: botbuilder.core.adapter_extensions.AdapterExtensions
+  fullName: botbuilder.core.adapter_extensions.AdapterExtensions.use_storage
+  langs:
+  - python
+  module: botbuilder.core.adapter_extensions
+  name: 'use_storage(adapter: botbuilder.core.bot_adapter.BotAdapter, storage: botbuilder.core.storage.Storage)
+    -> botbuilder.core.bot_adapter.BotAdapter'
+  namewithoutparameters: use_storage
+  summary: 'Registers a storage layer with the adapter. The storage object will be
+    available via the turn context''s
+
+    *turn_state* property.'
+  syntax:
+    content: 'use_storage(adapter: botbuilder.core.bot_adapter.BotAdapter, storage:
+      botbuilder.core.storage.Storage) -> botbuilder.core.bot_adapter.BotAdapter'
+    parameters:
+    - description: The BotAdapter on which to register the storage object.
+      id: adapter
+      isRequired: true
+    - description: The Storage object to register.
+      id: storage
+      isRequired: true
+    return:
+      description: The BotAdapter
+  type: method
+  uid: botbuilder.core.adapter_extensions.AdapterExtensions.use_storage
+references:
+- fullName: botbuilder.core.adapter_extensions.AdapterExtensions.use_state
+  isExternal: false
+  name: 'use_state(adapter: botbuilder.core.bot_adapter.BotAdapter, user_state: botbuilder.core.user_state.UserState,
+    conversation_state: botbuilder.core.conversation_state.ConversationState, auto:
+    bool = True) -> botbuilder.core.bot_adapter.BotAdapter'
+  parent: botbuilder.core.adapter_extensions.AdapterExtensions
+  uid: botbuilder.core.adapter_extensions.AdapterExtensions.use_state
+- fullName: botbuilder.core.adapter_extensions.AdapterExtensions.use_storage
+  isExternal: false
+  name: 'use_storage(adapter: botbuilder.core.bot_adapter.BotAdapter, storage: botbuilder.core.storage.Storage)
+    -> botbuilder.core.bot_adapter.BotAdapter'
+  parent: botbuilder.core.adapter_extensions.AdapterExtensions
+  uid: botbuilder.core.adapter_extensions.AdapterExtensions.use_storage

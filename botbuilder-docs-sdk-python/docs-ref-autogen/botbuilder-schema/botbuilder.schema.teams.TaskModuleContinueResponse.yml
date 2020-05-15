@@ -16,15 +16,8 @@ items:
   name: TaskModuleContinueResponse
   summary: Task Module Response with continue action.
   syntax:
-    content: TaskModuleContinueResponse(*, type=None, value=None, **kwargs) -> None
+    content: TaskModuleContinueResponse(*, value=None, **kwargs) -> None
     parameters:
-    - description: 'Choice of action options when responding to the task/submit
-
-        message. Possible values include: ''message'', ''continue'''
-      id: type
-      type:
-      - str
-      - botframework.connector.teams.models.enum
     - description: The JSON for the Adaptive card to appear in the task module.
       id: value
       type:

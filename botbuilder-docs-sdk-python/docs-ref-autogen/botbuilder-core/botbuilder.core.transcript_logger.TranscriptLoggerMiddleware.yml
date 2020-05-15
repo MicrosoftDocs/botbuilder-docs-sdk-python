@@ -28,6 +28,7 @@ items:
   module: botbuilder.core.transcript_logger
   name: 'log_activity(transcript: queue.Queue, activity: botbuilder.schema._models_py3.Activity)
     -> None'
+  namewithoutparameters: log_activity
   summary: 'Logs the activity.
 
     :param transcript: transcript.
@@ -45,6 +46,7 @@ items:
   module: botbuilder.core.transcript_logger
   name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
     typing.Awaitable])'
+  namewithoutparameters: on_turn
   summary: 'Initialization for middleware.
 
     :param context: Context for the current turn of conversation with the user.

@@ -11,14 +11,6 @@ items:
   - python
   module: botbuilder.dialogs.dialog_state
   name: DialogState
-  source:
-    id: DialogState
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_state.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_state.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 8
   summary: Contains state information for the dialog stack.
   syntax:
     content: 'DialogState(stack: typing.List[botbuilder.dialogs.dialog_instance.DialogInstance]
@@ -31,14 +23,6 @@ items:
   - python
   module: botbuilder.dialogs.dialog_state
   name: dialog_stack
-  source:
-    id: dialog_stack
-    path: null
-    remote:
-      branch: master
-      path: null
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: null
   summary: Initializes a new instance of the <xref:botbuilder.dialogs.dialog_state.DialogState>
     class.
   syntax:

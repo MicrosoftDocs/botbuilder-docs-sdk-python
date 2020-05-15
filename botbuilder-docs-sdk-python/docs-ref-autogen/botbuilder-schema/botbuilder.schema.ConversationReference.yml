@@ -15,8 +15,8 @@ items:
   summary: An object relating to a particular point in a conversation.
   syntax:
     content: 'ConversationReference(*, activity_id: str = None, user=None, bot=None,
-      conversation=None, channel_id: str = None, service_url: str = None, **kwargs)
-      -> None'
+      conversation=None, channel_id: str = None, locale: str = None, service_url:
+      str = None, **kwargs) -> None'
     parameters:
     - description: (Optional) ID of the activity to refer to
       id: activity_id
@@ -36,6 +36,18 @@ items:
       - botframework.connector.models.ConversationAccount
     - description: Channel ID
       id: channel_id
+      type:
+      - str
+    - description: 'A locale name for the contents of the text field.
+
+        The locale name is a combination of an ISO 639 two- or three-letter
+
+        culture code associated with a language and an ISO 3166 two-letter
+
+        subculture code associated with a country or region.
+
+        The locale name can also correspond to a valid BCP-47 language tag.'
+      id: locale
       type:
       - str
     - description: 'Service endpoint where operations concerning the

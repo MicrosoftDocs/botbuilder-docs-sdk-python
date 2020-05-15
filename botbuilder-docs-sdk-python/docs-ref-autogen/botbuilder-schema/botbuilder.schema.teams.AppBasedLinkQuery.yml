@@ -14,10 +14,15 @@ items:
   name: AppBasedLinkQuery
   summary: Invoke request body type for app-based link query.
   syntax:
-    content: 'AppBasedLinkQuery(*, url: str = None, **kwargs) -> None'
+    content: 'AppBasedLinkQuery(*, url: str = None, state: str = None, **kwargs) ->
+      None'
     parameters:
     - description: Url queried by user
       id: url
+      type:
+      - str
+    - description: The magic code for OAuth Flow
+      id: state
       type:
       - str
   type: class

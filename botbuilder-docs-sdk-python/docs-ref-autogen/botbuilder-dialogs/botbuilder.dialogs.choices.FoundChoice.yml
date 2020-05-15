@@ -10,14 +10,6 @@ items:
   - python
   module: botbuilder.dialogs.choices
   name: FoundChoice
-  source:
-    id: FoundChoice
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\found_choice.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\found_choice.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 5
   summary: Represents a result from matching user input against a list of choices
   syntax:
     content: 'FoundChoice(value: str, index: int, score: float, synonym: str = None)'

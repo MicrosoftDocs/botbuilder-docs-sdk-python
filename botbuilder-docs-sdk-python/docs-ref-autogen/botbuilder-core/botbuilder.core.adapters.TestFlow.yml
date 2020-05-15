@@ -26,6 +26,7 @@ items:
   name: 'assert_reply(expected: typing.Union[str, botbuilder.schema._models_py3.Activity,
     typing.Callable[[botbuilder.schema._models_py3.Activity, str], NoneType]], description=None,
     timeout=None, is_substring=False) -> botbuilder.core.adapters.test_adapter.TestFlow'
+  namewithoutparameters: assert_reply
   summary: 'Generates an assertion if the bots response doesn''t match the expected
     text/activity.
 
@@ -50,6 +51,7 @@ items:
   - python
   module: botbuilder.core.adapters
   name: send(user_says) -> botbuilder.core.adapters.test_adapter.TestFlow
+  namewithoutparameters: send
   summary: 'Sends something to the bot.
 
     :param user_says:
@@ -65,6 +67,7 @@ items:
   - python
   module: botbuilder.core.adapters
   name: test(user_says, expected, description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
+  namewithoutparameters: test
   summary: 'Send something to the bot and expects the bot to return with a given reply.
     This is simply a
 

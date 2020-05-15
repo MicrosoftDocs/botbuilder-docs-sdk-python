@@ -1,0 +1,66 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.integration.aiohttp.aiohttp_channel_service.aiohttp_channel_service_routes
+  - botbuilder.integration.aiohttp.aiohttp_channel_service.deserialize_from_body
+  - botbuilder.integration.aiohttp.aiohttp_channel_service.get_serialized_response
+  fullName: botbuilder.integration.aiohttp.aiohttp_channel_service
+  langs:
+  - python
+  module: botbuilder.integration.aiohttp.aiohttp_channel_service
+  name: aiohttp_channel_service
+  type: module
+  uid: botbuilder.integration.aiohttp.aiohttp_channel_service
+- fullName: botbuilder.integration.aiohttp.aiohttp_channel_service.aiohttp_channel_service_routes
+  langs:
+  - python
+  module: botbuilder.integration.aiohttp.aiohttp_channel_service
+  name: 'aiohttp_channel_service_routes(handler: botbuilder.core.channel_service_handler.ChannelServiceHandler,
+    base_url: str = '''') -> aiohttp.web_routedef.RouteTableDef'
+  syntax:
+    content: 'aiohttp_channel_service_routes(handler: botbuilder.core.channel_service_handler.ChannelServiceHandler,
+      base_url: str = '''') -> aiohttp.web_routedef.RouteTableDef'
+  type: function
+  uid: botbuilder.integration.aiohttp.aiohttp_channel_service.aiohttp_channel_service_routes
+- fullName: botbuilder.integration.aiohttp.aiohttp_channel_service.deserialize_from_body
+  langs:
+  - python
+  module: botbuilder.integration.aiohttp.aiohttp_channel_service
+  name: 'deserialize_from_body(request: aiohttp.web_request.Request, target_model:
+    typing.Type[msrest.serialization.Model]) -> botbuilder.schema._models_py3.Activity'
+  syntax:
+    content: 'deserialize_from_body(request: aiohttp.web_request.Request, target_model:
+      typing.Type[msrest.serialization.Model]) -> botbuilder.schema._models_py3.Activity'
+  type: function
+  uid: botbuilder.integration.aiohttp.aiohttp_channel_service.deserialize_from_body
+- fullName: botbuilder.integration.aiohttp.aiohttp_channel_service.get_serialized_response
+  langs:
+  - python
+  module: botbuilder.integration.aiohttp.aiohttp_channel_service
+  name: 'get_serialized_response(model_or_list: typing.Union[msrest.serialization.Model,
+    typing.List[msrest.serialization.Model]]) -> aiohttp.web_response.Response'
+  syntax:
+    content: 'get_serialized_response(model_or_list: typing.Union[msrest.serialization.Model,
+      typing.List[msrest.serialization.Model]]) -> aiohttp.web_response.Response'
+  type: function
+  uid: botbuilder.integration.aiohttp.aiohttp_channel_service.get_serialized_response
+references:
+- fullName: botbuilder.integration.aiohttp.aiohttp_channel_service.aiohttp_channel_service_routes
+  isExternal: false
+  name: 'aiohttp_channel_service_routes(handler: botbuilder.core.channel_service_handler.ChannelServiceHandler,
+    base_url: str = '''') -> aiohttp.web_routedef.RouteTableDef'
+  parent: botbuilder.integration.aiohttp.aiohttp_channel_service
+  uid: botbuilder.integration.aiohttp.aiohttp_channel_service.aiohttp_channel_service_routes
+- fullName: botbuilder.integration.aiohttp.aiohttp_channel_service.deserialize_from_body
+  isExternal: false
+  name: 'deserialize_from_body(request: aiohttp.web_request.Request, target_model:
+    typing.Type[msrest.serialization.Model]) -> botbuilder.schema._models_py3.Activity'
+  parent: botbuilder.integration.aiohttp.aiohttp_channel_service
+  uid: botbuilder.integration.aiohttp.aiohttp_channel_service.deserialize_from_body
+- fullName: botbuilder.integration.aiohttp.aiohttp_channel_service.get_serialized_response
+  isExternal: false
+  name: 'get_serialized_response(model_or_list: typing.Union[msrest.serialization.Model,
+    typing.List[msrest.serialization.Model]]) -> aiohttp.web_response.Response'
+  parent: botbuilder.integration.aiohttp.aiohttp_channel_service
+  uid: botbuilder.integration.aiohttp.aiohttp_channel_service.get_serialized_response

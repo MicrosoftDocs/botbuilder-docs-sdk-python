@@ -10,14 +10,6 @@ items:
   - python
   module: botbuilder.dialogs.prompts
   name: DateTimeResolution
-  source:
-    id: DateTimeResolution
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\datetime_resolution.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\datetime_resolution.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 5
   syntax:
     content: 'DateTimeResolution(value: str = None, start: str = None, end: str =
       None, timex: str = None)'

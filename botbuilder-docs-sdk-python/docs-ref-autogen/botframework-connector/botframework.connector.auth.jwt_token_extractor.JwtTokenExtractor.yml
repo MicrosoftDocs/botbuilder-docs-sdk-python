@@ -27,6 +27,7 @@ items:
   module: botframework.connector.auth.jwt_token_extractor
   name: 'get_identity(schema: str, parameter: str, channel_id: str, required_endorsements:
     typing.List[str] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  namewithoutparameters: get_identity
   syntax:
     content: 'get_identity(schema: str, parameter: str, channel_id: str, required_endorsements:
       typing.List[str] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
@@ -39,6 +40,7 @@ items:
   module: botframework.connector.auth.jwt_token_extractor
   name: 'get_identity_from_auth_header(auth_header: str, channel_id: str, required_endorsements:
     typing.List[str] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  namewithoutparameters: get_identity_from_auth_header
   syntax:
     content: 'get_identity_from_auth_header(auth_header: str, channel_id: str, required_endorsements:
       typing.List[str] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
@@ -50,6 +52,7 @@ items:
   - python
   module: botframework.connector.auth.jwt_token_extractor
   name: 'get_open_id_metadata(metadata_url: str)'
+  namewithoutparameters: get_open_id_metadata
   syntax:
     content: 'get_open_id_metadata(metadata_url: str)'
   type: method

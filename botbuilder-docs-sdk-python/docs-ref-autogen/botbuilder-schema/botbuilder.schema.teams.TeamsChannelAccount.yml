@@ -18,7 +18,7 @@ items:
   syntax:
     content: 'TeamsChannelAccount(*, id: str = None, name: str = None, given_name:
       str = None, surname: str = None, email: str = None, user_principal_name: str
-      = None, **kwargs) -> None'
+      = None, tenant_id: str = None, user_role: str = None, **kwargs) -> None'
     parameters:
     - description: 'Channel id for the user or bot on this channel (Example:
 
@@ -42,8 +42,16 @@ items:
       id: email
       type:
       - str
-    - description: Unique user principal name
+    - description: Unique user principal name.
       id: user_principal_name
+      type:
+      - str
+    - description: Tenant Id of the user.
+      id: tenant_id
+      type:
+      - str
+    - description: User Role of the user.
+      id: user_role
       type:
       - str
   type: class

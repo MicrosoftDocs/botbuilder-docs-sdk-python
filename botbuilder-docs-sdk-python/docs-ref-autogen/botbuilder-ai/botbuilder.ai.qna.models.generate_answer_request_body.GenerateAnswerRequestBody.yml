@@ -14,10 +14,7 @@ items:
   name: GenerateAnswerRequestBody
   summary: Question used as the payload body for QnA Maker's Generate Answer API.
   syntax:
-    content: 'GenerateAnswerRequestBody(question: str, top: int, score_threshold:
-      float, strict_filters: typing.List[botbuilder.ai.qna.models.metadata.Metadata],
-      context: botbuilder.ai.qna.models.qna_request_context.QnARequestContext = None,
-      qna_id: int = None, is_test: bool = False, ranker_type: str = ''Default'', **kwargs)'
+    content: GenerateAnswerRequestBody(**kwargs)
   type: class
   uid: botbuilder.ai.qna.models.generate_answer_request_body.GenerateAnswerRequestBody
 references: []

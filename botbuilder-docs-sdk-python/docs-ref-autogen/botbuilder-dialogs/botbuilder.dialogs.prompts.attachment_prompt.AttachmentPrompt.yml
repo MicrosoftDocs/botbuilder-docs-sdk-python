@@ -18,14 +18,6 @@ items:
   - python
   module: botbuilder.dialogs.prompts.attachment_prompt
   name: AttachmentPrompt
-  source:
-    id: AttachmentPrompt
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\attachment_prompt.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\attachment_prompt.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 14
   summary: 'Prompts a user to upload attachments like images.
 
 
@@ -43,14 +35,7 @@ items:
   name: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
     typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
     is_retry: bool)'
-  source:
-    id: on_prompt
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\attachment_prompt.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\attachment_prompt.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 26
+  namewithoutparameters: on_prompt
   syntax:
     content: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
       typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
@@ -65,14 +50,7 @@ items:
   name: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext, state:
     typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
     -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
-  source:
-    id: on_recognize
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\attachment_prompt.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\attachment_prompt.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 48
+  namewithoutparameters: on_recognize
   syntax:
     content: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
       state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)

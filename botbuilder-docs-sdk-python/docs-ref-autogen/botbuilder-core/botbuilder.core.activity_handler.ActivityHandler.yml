@@ -6,6 +6,7 @@ items:
   - botbuilder.core.activity_handler.ActivityHandler.on_end_of_conversation_activity
   - botbuilder.core.activity_handler.ActivityHandler.on_event
   - botbuilder.core.activity_handler.ActivityHandler.on_event_activity
+  - botbuilder.core.activity_handler.ActivityHandler.on_healthcheck
   - botbuilder.core.activity_handler.ActivityHandler.on_invoke_activity
   - botbuilder.core.activity_handler.ActivityHandler.on_members_added_activity
   - botbuilder.core.activity_handler.ActivityHandler.on_members_removed_activity
@@ -16,6 +17,7 @@ items:
   - botbuilder.core.activity_handler.ActivityHandler.on_sign_in_invoke
   - botbuilder.core.activity_handler.ActivityHandler.on_token_response_event
   - botbuilder.core.activity_handler.ActivityHandler.on_turn
+  - botbuilder.core.activity_handler.ActivityHandler.on_typing_activity
   - botbuilder.core.activity_handler.ActivityHandler.on_unrecognized_activity_type
   class: botbuilder.core.activity_handler.ActivityHandler
   fullName: botbuilder.core.activity_handler.ActivityHandler
@@ -42,6 +44,7 @@ items:
   - python
   module: botbuilder.core.activity_handler
   name: 'on_conversation_update_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  namewithoutparameters: on_conversation_update_activity
   remarks: 'When the <xref:botbuilder.core.activity_handler.ActivityHandler.on_turn>
     method receives a conversation update activity, it calls this
 
@@ -76,6 +79,7 @@ items:
     parameters:
     - description: The context object for this turn
       id: turn_context
+      isRequired: true
       type:
       - <xref:botbuilder.core.TurnContext>
     return:
@@ -88,12 +92,14 @@ items:
   - python
   module: botbuilder.core.activity_handler
   name: 'on_end_of_conversation_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  namewithoutparameters: on_end_of_conversation_activity
   summary: Invoked when a conversation end activity is received from the channel.
   syntax:
     content: 'on_end_of_conversation_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
     parameters:
     - description: The context object for this turn
       id: turn_context
+      isRequired: true
       type:
       - <xref:botbuilder.core.TurnContext>
     return:
@@ -106,6 +112,7 @@ items:
   - python
   module: botbuilder.core.activity_handler
   name: 'on_event(turn_context: botbuilder.core.turn_context.TurnContext)'
+  namewithoutparameters: on_event
   remarks: 'When the <xref:botbuilder.core.activity_handler.ActivityHandler.on_event_activity>
     is used method receives an event with an
 
@@ -124,6 +131,7 @@ items:
     parameters:
     - description: The context object for this turn
       id: turn_context
+      isRequired: true
       type:
       - <xref:botbuilder.core.TurnContext>
     return:
@@ -136,6 +144,7 @@ items:
   - python
   module: botbuilder.core.activity_handler
   name: 'on_event_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  namewithoutparameters: on_event_activity
   remarks: 'When the <xref:botbuilder.core.activity_handler.ActivityHandler.on_turn>
     method receives an event activity, it calls this method.
 
@@ -172,6 +181,7 @@ items:
     parameters:
     - description: The context object for this turn
       id: turn_context
+      isRequired: true
       type:
       - <xref:botbuilder.core.TurnContext>
     return:
@@ -179,12 +189,43 @@ items:
   type: method
   uid: botbuilder.core.activity_handler.ActivityHandler.on_event_activity
 - class: botbuilder.core.activity_handler.ActivityHandler
+  fullName: botbuilder.core.activity_handler.ActivityHandler.on_healthcheck
+  langs:
+  - python
+  module: botbuilder.core.activity_handler
+  name: 'on_healthcheck(turn_context: botbuilder.core.turn_context.TurnContext) ->
+    botbuilder.schema.healthcheck_response.HealthCheckResponse'
+  namewithoutparameters: on_healthcheck
+  summary: 'Invoked when the bot is sent a health check from the hosting infrastructure
+    or, in the case of
+
+    Skills the parent bot. By default, this method acknowledges the health state of
+    the bot.
+
+
+    When the on_invoke_activity method receives an Invoke with a Activity.name of
+    *healthCheck*, it
+
+    calls this method.'
+  syntax:
+    content: 'on_healthcheck(turn_context: botbuilder.core.turn_context.TurnContext)
+      -> botbuilder.schema.healthcheck_response.HealthCheckResponse'
+    parameters:
+    - description: A context object for this turn.
+      id: turn_context
+      isRequired: true
+    return:
+      description: The HealthCheckResponse object
+  type: method
+  uid: botbuilder.core.activity_handler.ActivityHandler.on_healthcheck
+- class: botbuilder.core.activity_handler.ActivityHandler
   fullName: botbuilder.core.activity_handler.ActivityHandler.on_invoke_activity
   langs:
   - python
   module: botbuilder.core.activity_handler
   name: 'on_invoke_activity(turn_context: botbuilder.core.turn_context.TurnContext)
     -> typing.Union[botbuilder.core.invoke_response.InvokeResponse, NoneType]'
+  namewithoutparameters: on_invoke_activity
   summary: Registers an activity event handler for the _invoke_ event, emitted for
     every incoming event activity.
   syntax:
@@ -193,6 +234,7 @@ items:
     parameters:
     - description: The context object for this turn
       id: turn_context
+      isRequired: true
       type:
       - <xref:botbuilder.core.TurnContext>
     return:
@@ -206,6 +248,7 @@ items:
   module: botbuilder.core.activity_handler
   name: 'on_members_added_activity(members_added: typing.List[botbuilder.schema._models_py3.ChannelAccount],
     turn_context: botbuilder.core.turn_context.TurnContext)'
+  namewithoutparameters: on_members_added_activity
   remarks: 'When the <xref:botbuilder.core.activity_handler.ActivityHandler.on_conversation_update_activity>
     method receives a conversation
 
@@ -243,6 +286,7 @@ items:
   module: botbuilder.core.activity_handler
   name: 'on_members_removed_activity(members_removed: typing.List[botbuilder.schema._models_py3.ChannelAccount],
     turn_context: botbuilder.core.turn_context.TurnContext)'
+  namewithoutparameters: on_members_removed_activity
   remarks: 'When the <xref:botbuilder.core.activity_handler.ActivityHandler.on_conversation_update_activity>
     method receives a conversation
 
@@ -279,6 +323,7 @@ items:
   - python
   module: botbuilder.core.activity_handler
   name: 'on_message_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  namewithoutparameters: on_message_activity
   summary: 'Override this method in a derived class to provide logic specific to activities,
 
     such as the conversational logic.'
@@ -287,6 +332,7 @@ items:
     parameters:
     - description: The context object for this turn
       id: turn_context
+      isRequired: true
       type:
       - <xref:botbuilder.core.TurnContext>
     return:
@@ -299,6 +345,7 @@ items:
   - python
   module: botbuilder.core.activity_handler
   name: 'on_message_reaction_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  namewithoutparameters: on_message_reaction_activity
   remarks: "Message reactions correspond to the user adding a 'like' or 'sad' etc.\
     \ (often an emoji) to a previously\nsent activity.\n\nMessage reactions are only\
     \ supported by a few channels. The activity that the message reaction corresponds\n\
@@ -323,6 +370,7 @@ items:
     parameters:
     - description: The context object for this turn
       id: turn_context
+      isRequired: true
       type:
       - <xref:botbuilder.core.TurnContext>
     return:
@@ -336,6 +384,7 @@ items:
   module: botbuilder.core.activity_handler
   name: 'on_reactions_added(message_reactions: typing.List[botbuilder.schema._models_py3.MessageReaction],
     turn_context: botbuilder.core.turn_context.TurnContext)'
+  namewithoutparameters: on_reactions_added
   remarks: 'Message reactions correspond to the user adding a ''like'' or ''sad''
     etc. (often an emoji)
 
@@ -363,10 +412,12 @@ items:
     parameters:
     - description: The list of reactions added
       id: message_reactions
+      isRequired: true
       type:
       - typing.List
     - description: The context object for this turn
       id: turn_context
+      isRequired: true
       type:
       - <xref:botbuilder.core.TurnContext>
     return:
@@ -380,6 +431,7 @@ items:
   module: botbuilder.core.activity_handler
   name: 'on_reactions_removed(message_reactions: typing.List[botbuilder.schema._models_py3.MessageReaction],
     turn_context: botbuilder.core.turn_context.TurnContext)'
+  namewithoutparameters: on_reactions_removed
   remarks: 'Message reactions correspond to the user adding a ''like'' or ''sad''
     etc. (often an emoji)
 
@@ -406,10 +458,12 @@ items:
     parameters:
     - description: The list of reactions removed
       id: message_reactions
+      isRequired: true
       type:
       - typing.List
     - description: The context object for this turn
       id: turn_context
+      isRequired: true
       type:
       - <xref:botbuilder.core.TurnContext>
     return:
@@ -422,6 +476,7 @@ items:
   - python
   module: botbuilder.core.activity_handler
   name: 'on_sign_in_invoke(turn_context: botbuilder.core.turn_context.TurnContext)'
+  namewithoutparameters: on_sign_in_invoke
   summary: 'Invoked when a signin/verifyState or signin/tokenExchange event is received
     when the base behavior of
 
@@ -436,6 +491,7 @@ items:
     parameters:
     - description: The context object for this turn
       id: turn_context
+      isRequired: true
       type:
       - <xref:botbuilder.core.TurnContext>
     return:
@@ -448,6 +504,7 @@ items:
   - python
   module: botbuilder.core.activity_handler
   name: 'on_token_response_event(turn_context: botbuilder.core.turn_context.TurnContext)'
+  namewithoutparameters: on_token_response_event
   remarks: 'When the <xref:botbuilder.core.activity_handler.ActivityHandler.on_event>
     method receives an event with an activity name of
 
@@ -469,6 +526,7 @@ items:
     parameters:
     - description: The context object for this turn
       id: turn_context
+      isRequired: true
       type:
       - <xref:botbuilder.core.TurnContext>
     return:
@@ -481,6 +539,7 @@ items:
   - python
   module: botbuilder.core.activity_handler
   name: 'on_turn(turn_context: botbuilder.core.turn_context.TurnContext)'
+  namewithoutparameters: on_turn
   remarks: 'It calls other methods in this class based on the type of the activity
     to
 
@@ -506,6 +565,7 @@ items:
     parameters:
     - description: The context object for this turn
       id: turn_context
+      isRequired: true
       type:
       - <xref:botbuilder.core.TurnContext>
     return:
@@ -513,11 +573,34 @@ items:
   type: method
   uid: botbuilder.core.activity_handler.ActivityHandler.on_turn
 - class: botbuilder.core.activity_handler.ActivityHandler
+  fullName: botbuilder.core.activity_handler.ActivityHandler.on_typing_activity
+  langs:
+  - python
+  module: botbuilder.core.activity_handler
+  name: 'on_typing_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  namewithoutparameters: on_typing_activity
+  summary: 'Override this in a derived class to provide logic specific to
+
+    ActivityTypes.typing activities, such as the conversational logic.'
+  syntax:
+    content: 'on_typing_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+    parameters:
+    - description: The context object for this turn
+      id: turn_context
+      isRequired: true
+      type:
+      - <xref:botbuilder.core.TurnContext>
+    return:
+      description: A task that represents the work queued to execute
+  type: method
+  uid: botbuilder.core.activity_handler.ActivityHandler.on_typing_activity
+- class: botbuilder.core.activity_handler.ActivityHandler
   fullName: botbuilder.core.activity_handler.ActivityHandler.on_unrecognized_activity_type
   langs:
   - python
   module: botbuilder.core.activity_handler
   name: 'on_unrecognized_activity_type(turn_context: botbuilder.core.turn_context.TurnContext)'
+  namewithoutparameters: on_unrecognized_activity_type
   remarks: 'When the <xref:botbuilder.core.activity_handler.ActivityHandler.on_turn>
     method receives an activity that is not a message,
 
@@ -537,6 +620,7 @@ items:
     parameters:
     - description: The context object for this turn
       id: turn_context
+      isRequired: true
       type:
       - <xref:botbuilder.core.TurnContext>
     return:
@@ -564,6 +648,12 @@ references:
   name: 'on_event_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
   parent: botbuilder.core.activity_handler.ActivityHandler
   uid: botbuilder.core.activity_handler.ActivityHandler.on_event_activity
+- fullName: botbuilder.core.activity_handler.ActivityHandler.on_healthcheck
+  isExternal: false
+  name: 'on_healthcheck(turn_context: botbuilder.core.turn_context.TurnContext) ->
+    botbuilder.schema.healthcheck_response.HealthCheckResponse'
+  parent: botbuilder.core.activity_handler.ActivityHandler
+  uid: botbuilder.core.activity_handler.ActivityHandler.on_healthcheck
 - fullName: botbuilder.core.activity_handler.ActivityHandler.on_invoke_activity
   isExternal: false
   name: 'on_invoke_activity(turn_context: botbuilder.core.turn_context.TurnContext)
@@ -619,6 +709,11 @@ references:
   name: 'on_turn(turn_context: botbuilder.core.turn_context.TurnContext)'
   parent: botbuilder.core.activity_handler.ActivityHandler
   uid: botbuilder.core.activity_handler.ActivityHandler.on_turn
+- fullName: botbuilder.core.activity_handler.ActivityHandler.on_typing_activity
+  isExternal: false
+  name: 'on_typing_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  parent: botbuilder.core.activity_handler.ActivityHandler
+  uid: botbuilder.core.activity_handler.ActivityHandler.on_typing_activity
 - fullName: botbuilder.core.activity_handler.ActivityHandler.on_unrecognized_activity_type
   isExternal: false
   name: 'on_unrecognized_activity_type(turn_context: botbuilder.core.turn_context.TurnContext)'

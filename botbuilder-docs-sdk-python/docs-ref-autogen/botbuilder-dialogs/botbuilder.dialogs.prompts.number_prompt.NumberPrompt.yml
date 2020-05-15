@@ -18,14 +18,6 @@ items:
   - python
   module: botbuilder.dialogs.prompts.number_prompt
   name: NumberPrompt
-  source:
-    id: NumberPrompt
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\number_prompt.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\number_prompt.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 18
   summary: ''
   syntax:
     content: 'NumberPrompt(dialog_id: str, validator: typing.Callable[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext,
@@ -40,14 +32,7 @@ items:
   name: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
     typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
     is_retry: bool)'
-  source:
-    id: on_prompt
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\number_prompt.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\number_prompt.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 30
+  namewithoutparameters: on_prompt
   syntax:
     content: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
       typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
@@ -62,14 +47,7 @@ items:
   name: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext, state:
     typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
     -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
-  source:
-    id: on_recognize
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\number_prompt.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\number_prompt.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 47
+  namewithoutparameters: on_recognize
   syntax:
     content: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
       state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)

@@ -23,6 +23,7 @@ items:
   module: botbuilder.azure.cosmosdb_storage
   name: 'sanitize_key(key: str, key_suffix: str = '''', compatibility_mode: bool =
     True) -> str'
+  namewithoutparameters: sanitize_key
   summary: 'Return the sanitized key.
 
 
@@ -33,8 +34,10 @@ items:
     parameters:
     - description: The provided key to be escaped.
       id: key
+      isRequired: true
     - description: The string to add a the end of all RowKeys.
       id: key_suffix
+      isRequired: true
     - description: 'True if keys should be truncated in order to support previous
         CosmosDb
 
@@ -42,6 +45,7 @@ items:
 
         cosmosdb_partitioned_config.compatibility_mode to False.'
       id: compatibility_mode
+      isRequired: true
   type: method
   uid: botbuilder.azure.cosmosdb_storage.CosmosDbKeyEscape.sanitize_key
 - class: botbuilder.azure.cosmosdb_storage.CosmosDbKeyEscape
@@ -50,6 +54,7 @@ items:
   - python
   module: botbuilder.azure.cosmosdb_storage
   name: 'truncate_key(key: str, compatibility_mode: bool = True) -> str'
+  namewithoutparameters: truncate_key
   syntax:
     content: 'truncate_key(key: str, compatibility_mode: bool = True) -> str'
   type: method

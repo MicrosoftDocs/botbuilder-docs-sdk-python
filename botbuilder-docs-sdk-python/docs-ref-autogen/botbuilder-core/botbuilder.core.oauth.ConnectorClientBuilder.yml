@@ -1,0 +1,52 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.core.oauth.ConnectorClientBuilder.create_connector_client
+  class: botbuilder.core.oauth.ConnectorClientBuilder
+  fullName: botbuilder.core.oauth.ConnectorClientBuilder
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: abc.ABC
+  langs:
+  - python
+  module: botbuilder.core.oauth
+  name: ConnectorClientBuilder
+  summary: Abstraction to build connector clients.
+  syntax: {}
+  type: class
+  uid: botbuilder.core.oauth.ConnectorClientBuilder
+- class: botbuilder.core.oauth.ConnectorClientBuilder
+  fullName: botbuilder.core.oauth.ConnectorClientBuilder.create_connector_client
+  langs:
+  - python
+  module: botbuilder.core.oauth
+  name: 'create_connector_client(service_url: str, identity: botframework.connector.auth.claims_identity.ClaimsIdentity
+    = None, audience: str = None) -> botframework.connector.connector_client.ConnectorClient'
+  namewithoutparameters: create_connector_client
+  summary: Creates the connector client asynchronous.
+  syntax:
+    content: 'create_connector_client(service_url: str, identity: botframework.connector.auth.claims_identity.ClaimsIdentity
+      = None, audience: str = None) -> botframework.connector.connector_client.ConnectorClient'
+    parameters:
+    - description: The service URL.
+      id: service_url
+      isRequired: true
+    - description: The claims claimsIdentity.
+      id: identity
+      isRequired: true
+    - description: The target audience for the connector.
+      id: audience
+      isRequired: true
+    return:
+      description: ConnectorClient instance
+  type: method
+  uid: botbuilder.core.oauth.ConnectorClientBuilder.create_connector_client
+references:
+- fullName: botbuilder.core.oauth.ConnectorClientBuilder.create_connector_client
+  isExternal: false
+  name: 'create_connector_client(service_url: str, identity: botframework.connector.auth.claims_identity.ClaimsIdentity
+    = None, audience: str = None) -> botframework.connector.connector_client.ConnectorClient'
+  parent: botbuilder.core.oauth.ConnectorClientBuilder
+  uid: botbuilder.core.oauth.ConnectorClientBuilder.create_connector_client

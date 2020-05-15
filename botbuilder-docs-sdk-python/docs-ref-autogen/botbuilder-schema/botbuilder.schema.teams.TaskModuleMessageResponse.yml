@@ -16,16 +16,8 @@ items:
   name: TaskModuleMessageResponse
   summary: Task Module response with message action.
   syntax:
-    content: 'TaskModuleMessageResponse(*, type=None, value: str = None, **kwargs)
-      -> None'
+    content: 'TaskModuleMessageResponse(*, value: str = None, **kwargs) -> None'
     parameters:
-    - description: 'Choice of action options when responding to the task/submit
-
-        message. Possible values include: ''message'', ''continue'''
-      id: type
-      type:
-      - str
-      - botframework.connector.teams.models.enum
     - description: 'Teams will display the value of value in a popup message
 
         box.'

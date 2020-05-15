@@ -1,0 +1,49 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.integration.aiohttp.skills.skill_http_client.SkillHttpClient.post_activity_to_skill
+  class: botbuilder.integration.aiohttp.skills.skill_http_client.SkillHttpClient
+  fullName: botbuilder.integration.aiohttp.skills.skill_http_client.SkillHttpClient
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - inheritance:
+        - type: builtins.object
+        type: abc.ABC
+      type: botbuilder.core.skills.bot_framework_client.BotFrameworkClient
+    type: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient
+  langs:
+  - python
+  module: botbuilder.integration.aiohttp.skills.skill_http_client
+  name: SkillHttpClient
+  syntax:
+    content: 'SkillHttpClient(credential_provider: botframework.connector.auth.credential_provider.SimpleCredentialProvider,
+      skill_conversation_id_factory: botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase,
+      channel_provider: botframework.connector.auth.channel_provider.ChannelProvider
+      = None, logger: logging.Logger = None)'
+  type: class
+  uid: botbuilder.integration.aiohttp.skills.skill_http_client.SkillHttpClient
+- class: botbuilder.integration.aiohttp.skills.skill_http_client.SkillHttpClient
+  fullName: botbuilder.integration.aiohttp.skills.skill_http_client.SkillHttpClient.post_activity_to_skill
+  langs:
+  - python
+  module: botbuilder.integration.aiohttp.skills.skill_http_client
+  name: 'post_activity_to_skill(from_bot_id: str, to_skill: botbuilder.core.skills.bot_framework_skill.BotFrameworkSkill,
+    service_url: str, activity: botbuilder.schema._models_py3.Activity, originating_audience:
+    str = None) -> botbuilder.core.invoke_response.InvokeResponse'
+  namewithoutparameters: post_activity_to_skill
+  syntax:
+    content: 'post_activity_to_skill(from_bot_id: str, to_skill: botbuilder.core.skills.bot_framework_skill.BotFrameworkSkill,
+      service_url: str, activity: botbuilder.schema._models_py3.Activity, originating_audience:
+      str = None) -> botbuilder.core.invoke_response.InvokeResponse'
+  type: method
+  uid: botbuilder.integration.aiohttp.skills.skill_http_client.SkillHttpClient.post_activity_to_skill
+references:
+- fullName: botbuilder.integration.aiohttp.skills.skill_http_client.SkillHttpClient.post_activity_to_skill
+  isExternal: false
+  name: 'post_activity_to_skill(from_bot_id: str, to_skill: botbuilder.core.skills.bot_framework_skill.BotFrameworkSkill,
+    service_url: str, activity: botbuilder.schema._models_py3.Activity, originating_audience:
+    str = None) -> botbuilder.core.invoke_response.InvokeResponse'
+  parent: botbuilder.integration.aiohttp.skills.skill_http_client.SkillHttpClient
+  uid: botbuilder.integration.aiohttp.skills.skill_http_client.SkillHttpClient.post_activity_to_skill

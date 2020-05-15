@@ -3,6 +3,7 @@ api_name: []
 items:
 - children:
   - botbuilder.core.ActivityHandler
+  - botbuilder.core.AdapterExtensions
   - botbuilder.core.AnonymousReceiveMiddleware
   - botbuilder.core.AutoSaveStateMiddleware
   - botbuilder.core.Bot
@@ -19,6 +20,7 @@ items:
   - botbuilder.core.ChannelServiceHandler
   - botbuilder.core.ConversationState
   - botbuilder.core.ExtendedUserTokenProvider
+  - botbuilder.core.HealthCheck
   - botbuilder.core.IntentScore
   - botbuilder.core.InvokeResponse
   - botbuilder.core.MemoryStorage
@@ -28,6 +30,7 @@ items:
   - botbuilder.core.MiddlewareSet
   - botbuilder.core.NullTelemetryClient
   - botbuilder.core.PrivateConversationState
+  - botbuilder.core.RegisterClassMiddleware
   - botbuilder.core.Recognizer
   - botbuilder.core.RecognizerResult
   - botbuilder.core.Severity
@@ -45,6 +48,7 @@ items:
   - botbuilder.core.UserTokenProvider
   - botbuilder.core.about
   - botbuilder.core.activity_handler
+  - botbuilder.core.adapter_extensions
   - botbuilder.core.auto_save_state_middleware
   - botbuilder.core.bot
   - botbuilder.core.bot_adapter
@@ -57,7 +61,7 @@ items:
   - botbuilder.core.channel_service_handler
   - botbuilder.core.conversation_reference_extension
   - botbuilder.core.conversation_state
-  - botbuilder.core.extended_user_token_provider
+  - botbuilder.core.healthcheck
   - botbuilder.core.intent_score
   - botbuilder.core.invoke_response
   - botbuilder.core.memory_storage
@@ -70,6 +74,7 @@ items:
   - botbuilder.core.re_escape
   - botbuilder.core.recognizer
   - botbuilder.core.recognizer_result
+  - botbuilder.core.register_class_middleware
   - botbuilder.core.serializer_helper
   - botbuilder.core.show_typing_middleware
   - botbuilder.core.state_property_accessor
@@ -81,10 +86,10 @@ items:
   - botbuilder.core.transcript_logger
   - botbuilder.core.turn_context
   - botbuilder.core.user_state
-  - botbuilder.core.user_token_provider
   - botbuilder.core.adapters
   - botbuilder.core.inspection
   - botbuilder.core.integration
+  - botbuilder.core.oauth
   - botbuilder.core.skills
   - botbuilder.core.teams
   fullName: botbuilder.core
@@ -115,6 +120,11 @@ references:
   name: ActivityHandler
   parent: botbuilder.core
   uid: botbuilder.core.ActivityHandler
+- fullName: botbuilder.core.AdapterExtensions
+  isExternal: false
+  name: AdapterExtensions
+  parent: botbuilder.core
+  uid: botbuilder.core.AdapterExtensions
 - fullName: botbuilder.core.AnonymousReceiveMiddleware
   isExternal: false
   name: AnonymousReceiveMiddleware
@@ -195,6 +205,11 @@ references:
   name: ExtendedUserTokenProvider
   parent: botbuilder.core
   uid: botbuilder.core.ExtendedUserTokenProvider
+- fullName: botbuilder.core.HealthCheck
+  isExternal: false
+  name: HealthCheck
+  parent: botbuilder.core
+  uid: botbuilder.core.HealthCheck
 - fullName: botbuilder.core.IntentScore
   isExternal: false
   name: IntentScore
@@ -240,6 +255,11 @@ references:
   name: PrivateConversationState
   parent: botbuilder.core
   uid: botbuilder.core.PrivateConversationState
+- fullName: botbuilder.core.RegisterClassMiddleware
+  isExternal: false
+  name: RegisterClassMiddleware
+  parent: botbuilder.core
+  uid: botbuilder.core.RegisterClassMiddleware
 - fullName: botbuilder.core.Recognizer
   isExternal: false
   name: Recognizer
@@ -325,6 +345,11 @@ references:
   name: activity_handler
   parent: botbuilder.core
   uid: botbuilder.core.activity_handler
+- fullName: botbuilder.core.adapter_extensions
+  isExternal: false
+  name: adapter_extensions
+  parent: botbuilder.core
+  uid: botbuilder.core.adapter_extensions
 - fullName: botbuilder.core.auto_save_state_middleware
   isExternal: false
   name: auto_save_state_middleware
@@ -385,11 +410,11 @@ references:
   name: conversation_state
   parent: botbuilder.core
   uid: botbuilder.core.conversation_state
-- fullName: botbuilder.core.extended_user_token_provider
+- fullName: botbuilder.core.healthcheck
   isExternal: false
-  name: extended_user_token_provider
+  name: healthcheck
   parent: botbuilder.core
-  uid: botbuilder.core.extended_user_token_provider
+  uid: botbuilder.core.healthcheck
 - fullName: botbuilder.core.intent_score
   isExternal: false
   name: intent_score
@@ -450,6 +475,11 @@ references:
   name: recognizer_result
   parent: botbuilder.core
   uid: botbuilder.core.recognizer_result
+- fullName: botbuilder.core.register_class_middleware
+  isExternal: false
+  name: register_class_middleware
+  parent: botbuilder.core
+  uid: botbuilder.core.register_class_middleware
 - fullName: botbuilder.core.serializer_helper
   isExternal: false
   name: serializer_helper
@@ -505,11 +535,6 @@ references:
   name: user_state
   parent: botbuilder.core
   uid: botbuilder.core.user_state
-- fullName: botbuilder.core.user_token_provider
-  isExternal: false
-  name: user_token_provider
-  parent: botbuilder.core
-  uid: botbuilder.core.user_token_provider
 - fullName: botbuilder.core.adapters
   isExternal: false
   name: adapters
@@ -525,6 +550,11 @@ references:
   name: integration
   parent: botbuilder.core
   uid: botbuilder.core.integration
+- fullName: botbuilder.core.oauth
+  isExternal: false
+  name: oauth
+  parent: botbuilder.core
+  uid: botbuilder.core.oauth
 - fullName: botbuilder.core.skills
   isExternal: false
   name: skills

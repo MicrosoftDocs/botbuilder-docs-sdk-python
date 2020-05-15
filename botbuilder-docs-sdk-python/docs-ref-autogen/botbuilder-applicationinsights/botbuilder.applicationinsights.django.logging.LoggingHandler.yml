@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: botbuilder.applicationinsights.django.logging.LoggingHandler
+  fullName: botbuilder.applicationinsights.django.logging.LoggingHandler
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - inheritance:
+        - type: builtins.object
+        type: logging.Filterer
+      type: logging.Handler
+    type: applicationinsights.logging.LoggingHandler.LoggingHandler
+  langs:
+  - python
+  module: botbuilder.applicationinsights.django.logging
+  name: LoggingHandler
+  summary: "This class is a LoggingHandler that uses the same settings as the Django\
+    \ middleware to configure\nthe telemetry client.  This can be referenced from\
+    \ LOGGING in your Django settings.py file.  As an\nexample, this code would send\
+    \ all Django log messages--WARNING and up--to Application Insights:\n\n<!-- literal_block\
+    \ {\"ids\": [], \"classes\": [\"code\", \"python\"], \"names\": [], \"dupnames\"\
+    : [], \"backrefs\": [], \"xml:space\": \"preserve\"} -->\n\n````\n\n   LOGGING\
+    \ = {\n       'version': 1,\n       'disable_existing_loggers': False,\n     \
+    \  'handlers': {\n           # The application insights handler is here\n    \
+    \       'appinsights': {\n               'class': 'applicationinsights.django.LoggingHandler',\n\
+    \               'level': 'WARNING'\n           }\n       },\n       'loggers':\
+    \ {\n           'django': {\n               'handlers': ['appinsights'],\n   \
+    \            'level': 'WARNING',\n               'propagate': True,\n        \
+    \   }\n       }\n   }\n\n   # You will need this anyway if you're using the middleware.\n\
+    \   # See the middleware documentation for more information on configuring\n \
+    \  # this setting:\n   APPLICATION_INSIGHTS = {\n       'ikey': '00000000-0000-0000-0000-000000000000'\n\
+    \   }\n   ````"
+  syntax:
+    content: LoggingHandler(*args, **kwargs)
+  type: class
+  uid: botbuilder.applicationinsights.django.logging.LoggingHandler
+references: []

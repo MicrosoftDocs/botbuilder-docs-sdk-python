@@ -7,9 +7,11 @@ items:
   - botbuilder.ai.qna.utils.HttpRequestUtils
   - botbuilder.ai.qna.utils.QnATelemetryConstants
   - botbuilder.ai.qna.utils.TrainUtils
+  - botbuilder.ai.qna.utils.QnACardBuilder
   - botbuilder.ai.qna.utils.active_learning_utils
   - botbuilder.ai.qna.utils.generate_answer_utils
   - botbuilder.ai.qna.utils.http_request_utils
+  - botbuilder.ai.qna.utils.qna_card_builder
   - botbuilder.ai.qna.utils.qna_telemetry_constants
   - botbuilder.ai.qna.utils.train_utils
   fullName: botbuilder.ai.qna.utils
@@ -46,6 +48,11 @@ references:
   name: TrainUtils
   parent: botbuilder.ai.qna.utils
   uid: botbuilder.ai.qna.utils.TrainUtils
+- fullName: botbuilder.ai.qna.utils.QnACardBuilder
+  isExternal: false
+  name: QnACardBuilder
+  parent: botbuilder.ai.qna.utils
+  uid: botbuilder.ai.qna.utils.QnACardBuilder
 - fullName: botbuilder.ai.qna.utils.active_learning_utils
   isExternal: false
   name: active_learning_utils
@@ -61,6 +68,11 @@ references:
   name: http_request_utils
   parent: botbuilder.ai.qna.utils
   uid: botbuilder.ai.qna.utils.http_request_utils
+- fullName: botbuilder.ai.qna.utils.qna_card_builder
+  isExternal: false
+  name: qna_card_builder
+  parent: botbuilder.ai.qna.utils
+  uid: botbuilder.ai.qna.utils.qna_card_builder
 - fullName: botbuilder.ai.qna.utils.qna_telemetry_constants
   isExternal: false
   name: qna_telemetry_constants

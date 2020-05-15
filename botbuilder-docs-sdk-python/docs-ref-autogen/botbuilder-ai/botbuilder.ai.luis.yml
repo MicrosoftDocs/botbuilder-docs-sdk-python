@@ -3,6 +3,7 @@ api_name: []
 items:
 - children:
   - botbuilder.ai.luis.LuisApplication
+  - botbuilder.ai.luis.LuisRecognizerOptionsV3
   - botbuilder.ai.luis.LuisPredictionOptions
   - botbuilder.ai.luis.LuisRecognizer
   - botbuilder.ai.luis.LuisTelemetryConstants
@@ -10,6 +11,12 @@ items:
   - botbuilder.ai.luis.luis_application
   - botbuilder.ai.luis.luis_prediction_options
   - botbuilder.ai.luis.luis_recognizer
+  - botbuilder.ai.luis.luis_recognizer_internal
+  - botbuilder.ai.luis.luis_recognizer_options
+  - botbuilder.ai.luis.luis_recognizer_options_v2
+  - botbuilder.ai.luis.luis_recognizer_options_v3
+  - botbuilder.ai.luis.luis_recognizer_v2
+  - botbuilder.ai.luis.luis_recognizer_v3
   - botbuilder.ai.luis.luis_telemetry_constants
   - botbuilder.ai.luis.luis_util
   fullName: botbuilder.ai.luis
@@ -26,6 +33,11 @@ references:
   name: LuisApplication
   parent: botbuilder.ai.luis
   uid: botbuilder.ai.luis.LuisApplication
+- fullName: botbuilder.ai.luis.LuisRecognizerOptionsV3
+  isExternal: false
+  name: LuisRecognizerOptionsV3
+  parent: botbuilder.ai.luis
+  uid: botbuilder.ai.luis.LuisRecognizerOptionsV3
 - fullName: botbuilder.ai.luis.LuisPredictionOptions
   isExternal: false
   name: LuisPredictionOptions
@@ -61,6 +73,36 @@ references:
   name: luis_recognizer
   parent: botbuilder.ai.luis
   uid: botbuilder.ai.luis.luis_recognizer
+- fullName: botbuilder.ai.luis.luis_recognizer_internal
+  isExternal: false
+  name: luis_recognizer_internal
+  parent: botbuilder.ai.luis
+  uid: botbuilder.ai.luis.luis_recognizer_internal
+- fullName: botbuilder.ai.luis.luis_recognizer_options
+  isExternal: false
+  name: luis_recognizer_options
+  parent: botbuilder.ai.luis
+  uid: botbuilder.ai.luis.luis_recognizer_options
+- fullName: botbuilder.ai.luis.luis_recognizer_options_v2
+  isExternal: false
+  name: luis_recognizer_options_v2
+  parent: botbuilder.ai.luis
+  uid: botbuilder.ai.luis.luis_recognizer_options_v2
+- fullName: botbuilder.ai.luis.luis_recognizer_options_v3
+  isExternal: false
+  name: luis_recognizer_options_v3
+  parent: botbuilder.ai.luis
+  uid: botbuilder.ai.luis.luis_recognizer_options_v3
+- fullName: botbuilder.ai.luis.luis_recognizer_v2
+  isExternal: false
+  name: luis_recognizer_v2
+  parent: botbuilder.ai.luis
+  uid: botbuilder.ai.luis.luis_recognizer_v2
+- fullName: botbuilder.ai.luis.luis_recognizer_v3
+  isExternal: false
+  name: luis_recognizer_v3
+  parent: botbuilder.ai.luis
+  uid: botbuilder.ai.luis.luis_recognizer_v3
 - fullName: botbuilder.ai.luis.luis_telemetry_constants
   isExternal: false
   name: luis_telemetry_constants

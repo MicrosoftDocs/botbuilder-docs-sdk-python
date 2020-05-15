@@ -34,6 +34,7 @@ items:
   - python
   module: botbuilder.core.memory_transcript_store
   name: 'delete_transcript(channel_id: str, conversation_id: str) -> None'
+  namewithoutparameters: delete_transcript
   syntax:
     content: 'delete_transcript(channel_id: str, conversation_id: str) -> None'
   type: method
@@ -44,6 +45,7 @@ items:
   - python
   module: botbuilder.core.memory_transcript_store
   name: get_transcript_activities
+  namewithoutparameters: get_transcript_activities
   syntax: {}
   type: method
   uid: botbuilder.core.memory_transcript_store.MemoryTranscriptStore.get_transcript_activities
@@ -53,6 +55,7 @@ items:
   - python
   module: botbuilder.core.memory_transcript_store
   name: list_transcripts
+  namewithoutparameters: list_transcripts
   syntax: {}
   type: method
   uid: botbuilder.core.memory_transcript_store.MemoryTranscriptStore.list_transcripts
@@ -62,6 +65,7 @@ items:
   - python
   module: botbuilder.core.memory_transcript_store
   name: 'log_activity(activity: botbuilder.schema._models_py3.Activity) -> None'
+  namewithoutparameters: log_activity
   syntax:
     content: 'log_activity(activity: botbuilder.schema._models_py3.Activity) -> None'
   type: method

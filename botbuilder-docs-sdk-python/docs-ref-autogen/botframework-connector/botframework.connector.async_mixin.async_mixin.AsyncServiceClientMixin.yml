@@ -23,6 +23,7 @@ items:
   - python
   module: botframework.connector.async_mixin.async_mixin
   name: async_send(request, headers=None, content=None, **config)
+  namewithoutparameters: async_send
   summary: 'Prepare and send request object according to configuration.
 
     :param ClientRequest request: The request object to be sent.
@@ -36,6 +37,7 @@ items:
     content: async_send(request, headers=None, content=None, **config)
     parameters:
     - id: request
+      isRequired: true
     - defaultValue: None
       id: headers
     - defaultValue: None
@@ -48,6 +50,7 @@ items:
   - python
   module: botframework.connector.async_mixin.async_mixin
   name: async_send_formdata(request, headers=None, content=None, **config)
+  namewithoutparameters: async_send_formdata
   summary: 'Send data as a multipart form-data request.
 
     We only deal with file-like objects or strings at this point.
@@ -65,6 +68,7 @@ items:
     content: async_send_formdata(request, headers=None, content=None, **config)
     parameters:
     - id: request
+      isRequired: true
     - defaultValue: None
       id: headers
     - defaultValue: None
@@ -77,6 +81,7 @@ items:
   - python
   module: botframework.connector.async_mixin.async_mixin
   name: stream_download_async(response, user_callback)
+  namewithoutparameters: stream_download_async
   summary: 'Async Generator for streaming request body data.
 
     :param response: The initial response
@@ -86,7 +91,9 @@ items:
     content: stream_download_async(response, user_callback)
     parameters:
     - id: response
+      isRequired: true
     - id: user_callback
+      isRequired: true
   type: method
   uid: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin.stream_download_async
 references:

@@ -42,14 +42,6 @@ items:
     prompt result will be available in the next step of the waterfall.
 
     '
-  source:
-    id: Prompt
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 25
   summary: Defines the core behavior of prompt dialogs. Extends the <xref:botbuilder.dialogs.Dialog>
     base class.
   syntax:
@@ -65,6 +57,7 @@ items:
     str, choices: typing.List[botbuilder.dialogs.choices.choice.Choice], style: botbuilder.dialogs.choices.list_style.ListStyle,
     options: botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
     = None) -> botbuilder.schema._models_py3.Activity'
+  namewithoutparameters: append_choices
   remarks: 'If the task is successful, the result contains the updated activity.
 
     When overridden in a derived class, appends choices to the activity when the user
@@ -74,14 +67,6 @@ items:
     containing a set of choices.
 
     '
-  source:
-    id: append_choices
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 246
   summary: Composes an output activity containing a set of choices.
   syntax:
     content: 'append_choices(prompt: botbuilder.schema._models_py3.Activity, channel_id:
@@ -91,8 +76,10 @@ items:
     parameters:
     - description: The prompt to append the user's choice to
       id: prompt
+      isRequired: true
     - description: Id of the channel the prompt is being sent to
       id: channel_id
+      isRequired: true
       type:
       - str
     return:
@@ -106,14 +93,7 @@ items:
   module: botbuilder.dialogs
   name: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
-  source:
-    id: begin_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 58
+  namewithoutparameters: begin_dialog
   summary: 'Starts a prompt dialog. Called when a prompt dialog is pushed onto the
     dialog stack and is being activated.
 
@@ -131,10 +111,12 @@ items:
     parameters:
     - description: The dialog context for the current turn of the conversation
       id: dialog_context
+      isRequired: true
       type:
       - <xref:botbuilder.dialogs.DialogContext>
     - description: Optional, additional information to pass to the prompt being started
       id: options
+      isRequired: true
       type:
       - Object
     return:
@@ -149,6 +131,7 @@ items:
   - python
   module: botbuilder.dialogs
   name: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
+  namewithoutparameters: continue_dialog
   remarks: 'Called when a prompt dialog is the active dialog and the user replied
     with a new activity.
 
@@ -165,20 +148,13 @@ items:
     user''s reply as valid input for the prompt.
 
     '
-  source:
-    id: continue_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 100
   summary: Continues a dialog.
   syntax:
     content: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
     parameters:
     - description: The dialog context for the current turn of the conversation
       id: dialog_context
+      isRequired: true
       type:
       - <xref:botbuilder.dialogs.DialogContext>
     return:
@@ -195,14 +171,7 @@ items:
   name: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
     typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
     is_retry: bool)'
-  source:
-    id: on_prompt
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 199
+  namewithoutparameters: on_prompt
   summary: Prompts user for input. When overridden in a derived class, prompts the
     user for input.
   syntax:
@@ -212,19 +181,23 @@ items:
     parameters:
     - description: Context for the current turn of conversation with the user
       id: turn_context
+      isRequired: true
       type:
       - botbuilder.core.TurnContext
     - description: Contains state for the current instance of the prompt on the dialog
         stack
       id: state
+      isRequired: true
       type:
       - botbuilder.dialogs.Dict
     - description: A prompt options object constructed from:meth:*DialogContext.prompt()*
       id: options
+      isRequired: true
       type:
       - botbuilder.dialogs.PromptOptions
     - description: true if is the first time the user for input; otherwise, false
       id: is_retry
+      isRequired: true
       type:
       - bool
     return:
@@ -238,14 +211,7 @@ items:
   module: botbuilder.dialogs
   name: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext, state:
     typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)'
-  source:
-    id: on_recognize
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 223
+  namewithoutparameters: on_recognize
   summary: 'Recognizes the user''s input.
 
 
@@ -261,15 +227,18 @@ items:
     parameters:
     - description: Context for the current turn of conversation with the user
       id: turn_context
+      isRequired: true
       type:
       - botbuilder.core.TurnContext
     - description: Contains state for the current instance of the prompt on the dialog
         stack
       id: state
+      isRequired: true
       type:
       - botbuilder.dialogs.Dict
     - description: A prompt options object constructed from <xref:botbuilder.dialogs.DialogContext.prompt>
       id: options
+      isRequired: true
       type:
       - botbuilder.dialogs.PromptOptions
     return:
@@ -283,14 +252,7 @@ items:
   module: botbuilder.dialogs
   name: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
     botbuilder.dialogs.dialog_instance.DialogInstance)'
-  source:
-    id: reprompt_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 184
+  namewithoutparameters: reprompt_dialog
   summary: Reprompts user for input.
   syntax:
     content: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
@@ -298,10 +260,12 @@ items:
     parameters:
     - description: Context for the current turn of conversation with the user
       id: context
+      isRequired: true
       type:
       - botbuilder.core.TurnContext
     - description: The instance of the dialog on the stack
       id: instance
+      isRequired: true
       type:
       - <xref:botbuilder.dialogs.DialogInstance>
     return:
@@ -315,6 +279,7 @@ items:
   module: botbuilder.dialogs
   name: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  namewithoutparameters: resume_dialog
   remarks: 'Called when a prompt dialog resumes being the active dialog on the dialog
     stack,
 
@@ -338,14 +303,6 @@ items:
     Simply re-prompt the user to avoid that the prompt ends prematurely.
 
     '
-  source:
-    id: resume_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 152
   summary: Resumes a dialog.
   syntax:
     content: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
@@ -353,14 +310,17 @@ items:
     parameters:
     - description: The dialog context for the current turn of the conversation.
       id: dialog_context
+      isRequired: true
       type:
       - <xref:botbuilder.dialogs.DialogContext>
     - description: An enum indicating why the dialog resumed.
       id: reason
+      isRequired: true
       type:
       - <xref:botbuilder.dialogs.DialogReason>
     - description: Optional, value returned from the previous dialog on the stack.
       id: result
+      isRequired: true
       type:
       - object
     return:

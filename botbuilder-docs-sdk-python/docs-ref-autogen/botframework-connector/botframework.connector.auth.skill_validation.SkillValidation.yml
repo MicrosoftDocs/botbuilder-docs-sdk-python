@@ -26,6 +26,7 @@ items:
     channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
     channel_id: str, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration)
     -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  namewithoutparameters: authenticate_channel_token
   syntax:
     content: 'authenticate_channel_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
       channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
@@ -39,6 +40,7 @@ items:
   - python
   module: botframework.connector.auth.skill_validation
   name: 'is_skill_claim(claims: typing.Dict[str, object]) -> bool'
+  namewithoutparameters: is_skill_claim
   summary: 'Checks if the given list of claims represents a skill.
 
     :param claims: A dict of claims.
@@ -54,6 +56,7 @@ items:
   - python
   module: botframework.connector.auth.skill_validation
   name: 'is_skill_token(auth_header: str) -> bool'
+  namewithoutparameters: is_skill_token
   summary: 'Determines if a given Auth header is from from a skill to bot or bot to
     skill request.
 

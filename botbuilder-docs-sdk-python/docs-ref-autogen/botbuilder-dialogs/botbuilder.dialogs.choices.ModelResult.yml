@@ -10,14 +10,6 @@ items:
   - python
   module: botbuilder.dialogs.choices
   name: ModelResult
-  source:
-    id: ModelResult
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\model_result.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\model_result.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 5
   summary: Contains recognition result information.
   syntax:
     content: 'ModelResult(text: str, start: int, end: int, type_name: str, resolution:
