@@ -37,6 +37,7 @@ items:
   module: botbuilder.core
   name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
     typing.Awaitable])'
+  namewithoutparameters: on_turn
   syntax:
     content: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
       typing.Awaitable])'
@@ -48,6 +49,7 @@ items:
   - python
   module: botbuilder.core
   name: 'receive_activity(context: botbuilder.core.turn_context.TurnContext)'
+  namewithoutparameters: receive_activity
   syntax:
     content: 'receive_activity(context: botbuilder.core.turn_context.TurnContext)'
   type: method
@@ -60,6 +62,7 @@ items:
   name: 'receive_activity_internal(context: botbuilder.core.turn_context.TurnContext,
     callback: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable],
     next_middleware_index: int = 0)'
+  namewithoutparameters: receive_activity_internal
   syntax:
     content: 'receive_activity_internal(context: botbuilder.core.turn_context.TurnContext,
       callback: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable],
@@ -73,6 +76,7 @@ items:
   module: botbuilder.core
   name: 'receive_activity_with_status(context: botbuilder.core.turn_context.TurnContext,
     callback: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable])'
+  namewithoutparameters: receive_activity_with_status
   syntax:
     content: 'receive_activity_with_status(context: botbuilder.core.turn_context.TurnContext,
       callback: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable])'
@@ -84,6 +88,7 @@ items:
   - python
   module: botbuilder.core
   name: 'use(*middleware: botbuilder.core.middleware_set.Middleware)'
+  namewithoutparameters: use
   summary: 'Registers middleware plugin(s) with the bot or set.
 
     :param middleware :

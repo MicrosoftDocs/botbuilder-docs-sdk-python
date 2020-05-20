@@ -52,6 +52,7 @@ items:
   - python
   module: botframework.connector.operations
   name: create_conversation(parameters, custom_headers=None, raw=False, **operation_config)
+  namewithoutparameters: create_conversation
   summary: 'CreateConversation.
 
 
@@ -95,6 +96,7 @@ items:
     parameters:
     - description: Parameters to create the conversation from
       id: parameters
+      isRequired: true
       type:
       - botframework.connector.models.ConversationParameters
     - defaultValue: None
@@ -113,6 +115,7 @@ items:
 
         overrides*.'
       id: operation_config
+      isRequired: true
     return:
       description: ConversationResourceResponse or ClientRawResponse if raw=true
       type:
@@ -129,6 +132,7 @@ items:
   module: botframework.connector.operations
   name: delete_activity(conversation_id, activity_id, custom_headers=None, raw=False,
     **operation_config)
+  namewithoutparameters: delete_activity
   summary: 'DeleteActivity.
 
 
@@ -143,10 +147,12 @@ items:
     parameters:
     - description: Conversation ID
       id: conversation_id
+      isRequired: true
       type:
       - str
     - description: activityId to delete
       id: activity_id
+      isRequired: true
       type:
       - str
     - defaultValue: None
@@ -165,6 +171,7 @@ items:
 
         overrides*.'
       id: operation_config
+      isRequired: true
     return:
       description: None or ClientRawResponse if raw=true
       type:
@@ -181,6 +188,7 @@ items:
   module: botframework.connector.operations
   name: delete_conversation_member(conversation_id, member_id, custom_headers=None,
     raw=False, **operation_config)
+  namewithoutparameters: delete_conversation_member
   summary: 'DeleteConversationMember.
 
 
@@ -199,10 +207,12 @@ items:
     parameters:
     - description: Conversation ID
       id: conversation_id
+      isRequired: true
       type:
       - str
     - description: ID of the member to delete from this conversation
       id: member_id
+      isRequired: true
       type:
       - str
     - defaultValue: None
@@ -221,6 +231,7 @@ items:
 
         overrides*.'
       id: operation_config
+      isRequired: true
     return:
       description: None or ClientRawResponse if raw=true
       type:
@@ -237,6 +248,7 @@ items:
   module: botframework.connector.operations
   name: get_activity_members(conversation_id, activity_id, custom_headers=None, raw=False,
     **operation_config)
+  namewithoutparameters: get_activity_members
   summary: 'GetActivityMembers.
 
 
@@ -253,10 +265,12 @@ items:
     parameters:
     - description: Conversation ID
       id: conversation_id
+      isRequired: true
       type:
       - str
     - description: Activity ID
       id: activity_id
+      isRequired: true
       type:
       - str
     - defaultValue: None
@@ -275,6 +289,7 @@ items:
 
         overrides*.'
       id: operation_config
+      isRequired: true
     return:
       description: list or ClientRawResponse if raw=true
       type:
@@ -291,6 +306,7 @@ items:
   module: botframework.connector.operations
   name: get_conversation_member(conversation_id, member_id, custom_headers=None, raw=False,
     **operation_config)
+  namewithoutparameters: get_conversation_member
   summary: 'GetConversationMember.
 
 
@@ -305,10 +321,12 @@ items:
     parameters:
     - description: Conversation Id
       id: conversation_id
+      isRequired: true
       type:
       - str
     - description: Member Id
       id: member_id
+      isRequired: true
       type:
       - str
     - defaultValue: None
@@ -327,6 +345,7 @@ items:
 
         overrides*.'
       id: operation_config
+      isRequired: true
     return:
       description: list or ClientRawResponse if raw=true
       type:
@@ -343,6 +362,7 @@ items:
   module: botframework.connector.operations
   name: get_conversation_members(conversation_id, custom_headers=None, raw=False,
     **operation_config)
+  namewithoutparameters: get_conversation_members
   summary: 'GetConversationMembers.
 
 
@@ -357,6 +377,7 @@ items:
     parameters:
     - description: Conversation ID
       id: conversation_id
+      isRequired: true
       type:
       - str
     - defaultValue: None
@@ -375,6 +396,7 @@ items:
 
         overrides*.'
       id: operation_config
+      isRequired: true
     return:
       description: list or ClientRawResponse if raw=true
       type:
@@ -391,6 +413,7 @@ items:
   module: botframework.connector.operations
   name: get_conversation_paged_members(conversation_id, page_size=None, continuation_token=None,
     custom_headers=None, raw=False, **operation_config)
+  namewithoutparameters: get_conversation_paged_members
   summary: 'GetConversationPagedMembers.
 
 
@@ -427,6 +450,7 @@ items:
     parameters:
     - description: Conversation ID
       id: conversation_id
+      isRequired: true
       type:
       - str
     - defaultValue: None
@@ -455,6 +479,7 @@ items:
 
         overrides*.'
       id: operation_config
+      isRequired: true
     return:
       description: PagedMembersResult or ClientRawResponse if raw=true
       type:
@@ -471,6 +496,7 @@ items:
   module: botframework.connector.operations
   name: get_conversations(continuation_token=None, custom_headers=None, raw=False,
     **operation_config)
+  namewithoutparameters: get_conversations
   summary: 'GetConversations.
 
 
@@ -518,6 +544,7 @@ items:
 
         overrides*.'
       id: operation_config
+      isRequired: true
     return:
       description: ConversationsResult or ClientRawResponse if raw=true
       type:
@@ -534,6 +561,7 @@ items:
   module: botframework.connector.operations
   name: get_teams_conversation_paged_members(conversation_id, page_size=None, continuation_token=None,
     custom_headers=None, raw=False, **operation_config)
+  namewithoutparameters: get_teams_conversation_paged_members
   summary: 'GetTeamsConversationPagedMembers.
 
 
@@ -570,6 +598,7 @@ items:
     parameters:
     - description: Conversation ID
       id: conversation_id
+      isRequired: true
       type:
       - str
     - defaultValue: None
@@ -598,6 +627,7 @@ items:
 
         overrides*.'
       id: operation_config
+      isRequired: true
     return:
       description: PagedMembersResult or ClientRawResponse if raw=true
       type:
@@ -614,6 +644,7 @@ items:
   module: botframework.connector.operations
   name: reply_to_activity(conversation_id, activity_id, activity, custom_headers=None,
     raw=False, **operation_config)
+  namewithoutparameters: reply_to_activity
   summary: 'ReplyToActivity.
 
 
@@ -646,14 +677,17 @@ items:
     parameters:
     - description: Conversation ID
       id: conversation_id
+      isRequired: true
       type:
       - str
     - description: activityId the reply is to (OPTIONAL)
       id: activity_id
+      isRequired: true
       type:
       - str
     - description: Activity to send
       id: activity
+      isRequired: true
       type:
       - botframework.connector.models.Activity
     - defaultValue: None
@@ -672,6 +706,7 @@ items:
 
         overrides*.'
       id: operation_config
+      isRequired: true
     return:
       description: ResourceResponse or ClientRawResponse if raw=true
       type:
@@ -688,6 +723,7 @@ items:
   module: botframework.connector.operations
   name: send_conversation_history(conversation_id, activities=None, custom_headers=None,
     raw=False, **operation_config)
+  namewithoutparameters: send_conversation_history
   summary: 'SendConversationHistory.
 
 
@@ -708,6 +744,7 @@ items:
     parameters:
     - description: Conversation ID
       id: conversation_id
+      isRequired: true
       type:
       - str
     - defaultValue: None
@@ -733,6 +770,7 @@ items:
 
         overrides*.'
       id: operation_config
+      isRequired: true
     return:
       description: ResourceResponse or ClientRawResponse if raw=true
       type:
@@ -749,6 +787,7 @@ items:
   module: botframework.connector.operations
   name: send_to_conversation(conversation_id, activity, custom_headers=None, raw=False,
     **operation_config)
+  namewithoutparameters: send_to_conversation
   summary: 'SendToConversation.
 
 
@@ -783,10 +822,12 @@ items:
     parameters:
     - description: Conversation ID
       id: conversation_id
+      isRequired: true
       type:
       - str
     - description: Activity to send
       id: activity
+      isRequired: true
       type:
       - botframework.connector.models.Activity
     - defaultValue: None
@@ -805,6 +846,7 @@ items:
 
         overrides*.'
       id: operation_config
+      isRequired: true
     return:
       description: ResourceResponse or ClientRawResponse if raw=true
       type:
@@ -821,6 +863,7 @@ items:
   module: botframework.connector.operations
   name: update_activity(conversation_id, activity_id, activity, custom_headers=None,
     raw=False, **operation_config)
+  namewithoutparameters: update_activity
   summary: 'UpdateActivity.
 
 
@@ -839,14 +882,17 @@ items:
     parameters:
     - description: Conversation ID
       id: conversation_id
+      isRequired: true
       type:
       - str
     - description: activityId to update
       id: activity_id
+      isRequired: true
       type:
       - str
     - description: replacement Activity
       id: activity
+      isRequired: true
       type:
       - botframework.connector.models.Activity
     - defaultValue: None
@@ -865,6 +911,7 @@ items:
 
         overrides*.'
       id: operation_config
+      isRequired: true
     return:
       description: ResourceResponse or ClientRawResponse if raw=true
       type:
@@ -881,6 +928,7 @@ items:
   module: botframework.connector.operations
   name: upload_attachment(conversation_id, attachment_upload, custom_headers=None,
     raw=False, **operation_config)
+  namewithoutparameters: upload_attachment
   summary: 'UploadAttachment.
 
 
@@ -899,10 +947,12 @@ items:
     parameters:
     - description: Conversation ID
       id: conversation_id
+      isRequired: true
       type:
       - str
     - description: Attachment data
       id: attachment_upload
+      isRequired: true
       type:
       - botframework.connector.models.AttachmentData
     - defaultValue: None
@@ -921,6 +971,7 @@ items:
 
         overrides*.'
       id: operation_config
+      isRequired: true
     return:
       description: ResourceResponse or ClientRawResponse if raw=true
       type:

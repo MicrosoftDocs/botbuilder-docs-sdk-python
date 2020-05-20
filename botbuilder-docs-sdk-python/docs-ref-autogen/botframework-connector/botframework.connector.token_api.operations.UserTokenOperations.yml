@@ -48,20 +48,24 @@ items:
   module: botframework.connector.token_api.operations
   name: exchange_async(user_id, connection_name, channel_id, uri=None, token=None,
     custom_headers=None, raw=False, **operation_config)
+  namewithoutparameters: exchange_async
   syntax:
     content: exchange_async(user_id, connection_name, channel_id, uri=None, token=None,
       custom_headers=None, raw=False, **operation_config)
     parameters:
     - description: ''
       id: user_id
+      isRequired: true
       type:
       - str
     - description: ''
       id: connection_name
+      isRequired: true
       type:
       - str
     - description: ''
       id: channel_id
+      isRequired: true
       type:
       - str
     - defaultValue: None
@@ -90,6 +94,7 @@ items:
 
         overrides*.'
       id: operation_config
+      isRequired: true
     return:
       description: object or ClientRawResponse if raw=true
       type:
@@ -106,16 +111,19 @@ items:
   module: botframework.connector.token_api.operations
   name: get_aad_tokens(user_id, connection_name, channel_id=None, resource_urls=None,
     custom_headers=None, raw=False, **operation_config)
+  namewithoutparameters: get_aad_tokens
   syntax:
     content: get_aad_tokens(user_id, connection_name, channel_id=None, resource_urls=None,
       custom_headers=None, raw=False, **operation_config)
     parameters:
     - description: ''
       id: user_id
+      isRequired: true
       type:
       - str
     - description: ''
       id: connection_name
+      isRequired: true
       type:
       - str
     - defaultValue: None
@@ -144,6 +152,7 @@ items:
 
         overrides*.'
       id: operation_config
+      isRequired: true
     return:
       description: dict or ClientRawResponse if raw=true
       type:
@@ -160,16 +169,19 @@ items:
   module: botframework.connector.token_api.operations
   name: get_token(user_id, connection_name, channel_id=None, code=None, custom_headers=None,
     raw=False, **operation_config)
+  namewithoutparameters: get_token
   syntax:
     content: get_token(user_id, connection_name, channel_id=None, code=None, custom_headers=None,
       raw=False, **operation_config)
     parameters:
     - description: ''
       id: user_id
+      isRequired: true
       type:
       - str
     - description: ''
       id: connection_name
+      isRequired: true
       type:
       - str
     - defaultValue: None
@@ -198,6 +210,7 @@ items:
 
         overrides*.'
       id: operation_config
+      isRequired: true
     return:
       description: TokenResponse or ClientRawResponse if raw=true
       type:
@@ -214,12 +227,14 @@ items:
   module: botframework.connector.token_api.operations
   name: get_token_status(user_id, channel_id=None, include=None, custom_headers=None,
     raw=False, **operation_config)
+  namewithoutparameters: get_token_status
   syntax:
     content: get_token_status(user_id, channel_id=None, include=None, custom_headers=None,
       raw=False, **operation_config)
     parameters:
     - description: ''
       id: user_id
+      isRequired: true
       type:
       - str
     - defaultValue: None
@@ -248,6 +263,7 @@ items:
 
         overrides*.'
       id: operation_config
+      isRequired: true
     return:
       description: list or ClientRawResponse if raw=true
       type:
@@ -264,12 +280,14 @@ items:
   module: botframework.connector.token_api.operations
   name: sign_out(user_id, connection_name=None, channel_id=None, custom_headers=None,
     raw=False, **operation_config)
+  namewithoutparameters: sign_out
   syntax:
     content: sign_out(user_id, connection_name=None, channel_id=None, custom_headers=None,
       raw=False, **operation_config)
     parameters:
     - description: ''
       id: user_id
+      isRequired: true
       type:
       - str
     - defaultValue: None
@@ -298,6 +316,7 @@ items:
 
         overrides*.'
       id: operation_config
+      isRequired: true
     return:
       description: object or ClientRawResponse if raw=true
       type:

@@ -31,12 +31,14 @@ items:
   - python
   module: botbuilder.core.bot_state
   name: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
+  namewithoutparameters: delete
   summary: Deletes the property.
   syntax:
     content: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
     parameters:
     - description: The context object for this turn
       id: turn_context
+      isRequired: true
       type:
       - botbuilder.core.bot_state.TurnContext
   type: method
@@ -48,6 +50,7 @@ items:
   module: botbuilder.core.bot_state
   name: 'get(turn_context: botbuilder.core.turn_context.TurnContext, default_value_or_factory:
     object = None) -> object'
+  namewithoutparameters: get
   summary: Gets the property value.
   syntax:
     content: 'get(turn_context: botbuilder.core.turn_context.TurnContext, default_value_or_factory:
@@ -55,10 +58,12 @@ items:
     parameters:
     - description: The context object for this turn
       id: turn_context
+      isRequired: true
       type:
       - botbuilder.core.bot_state.TurnContext
     - description: Defines the default value for the property
       id: default_value_or_factory
+      isRequired: true
   type: method
   uid: botbuilder.core.bot_state.BotStatePropertyAccessor.get
 - class: botbuilder.core.bot_state.BotStatePropertyAccessor
@@ -78,6 +83,7 @@ items:
   module: botbuilder.core.bot_state
   name: 'set(turn_context: botbuilder.core.turn_context.TurnContext, value: object)
     -> None'
+  namewithoutparameters: set
   summary: Sets the property value.
   syntax:
     content: 'set(turn_context: botbuilder.core.turn_context.TurnContext, value: object)
@@ -85,10 +91,12 @@ items:
     parameters:
     - description: The context object for this turn
       id: turn_context
+      isRequired: true
       type:
       - botbuilder.core.bot_state.TurnContext
     - description: The value to assign to the property
       id: value
+      isRequired: true
   type: method
   uid: botbuilder.core.bot_state.BotStatePropertyAccessor.set
 references:

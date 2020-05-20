@@ -57,6 +57,7 @@ items:
   name: 'apply_conversation_reference(activity: botbuilder.schema._models_py3.Activity,
     reference: botbuilder.schema._models_py3.ConversationReference, is_incoming: bool
     = False) -> botbuilder.schema._models_py3.Activity'
+  namewithoutparameters: apply_conversation_reference
   summary: 'Updates an activity with the delivery information from a conversation
     reference. Calling
 
@@ -83,6 +84,7 @@ items:
   - python
   module: botbuilder.core.turn_context
   name: 'copy_to(context: botbuilder.core.turn_context.TurnContext) -> None'
+  namewithoutparameters: copy_to
   summary: 'Called when this TurnContext instance is passed into the constructor of
     a new TurnContext
 
@@ -101,6 +103,7 @@ items:
   - python
   module: botbuilder.core.turn_context
   name: 'delete_activity(id_or_reference: typing.Union[str, botbuilder.schema._models_py3.ConversationReference])'
+  namewithoutparameters: delete_activity
   summary: 'Deletes an existing activity.
 
     :param id_or_reference:
@@ -116,6 +119,7 @@ items:
   - python
   module: botbuilder.core.turn_context
   name: 'get(key: str) -> object'
+  namewithoutparameters: get
   syntax:
     content: 'get(key: str) -> object'
   type: method
@@ -127,6 +131,7 @@ items:
   module: botbuilder.core.turn_context
   name: 'get_conversation_reference(activity: botbuilder.schema._models_py3.Activity)
     -> botbuilder.schema._models_py3.ConversationReference'
+  namewithoutparameters: get_conversation_reference
   summary: 'Returns the conversation reference for an activity. This can be saved
     as a plain old JSON
 
@@ -151,6 +156,7 @@ items:
   - python
   module: botbuilder.core.turn_context
   name: 'get_mentions(activity: botbuilder.schema._models_py3.Activity) -> typing.List[botbuilder.schema._models_py3.Mention]'
+  namewithoutparameters: get_mentions
   syntax:
     content: 'get_mentions(activity: botbuilder.schema._models_py3.Activity) -> typing.List[botbuilder.schema._models_py3.Mention]'
   type: method
@@ -162,6 +168,7 @@ items:
   module: botbuilder.core.turn_context
   name: 'get_reply_conversation_reference(activity: botbuilder.schema._models_py3.Activity,
     reply: botbuilder.schema._models_py3.ResourceResponse) -> botbuilder.schema._models_py3.ConversationReference'
+  namewithoutparameters: get_reply_conversation_reference
   syntax:
     content: 'get_reply_conversation_reference(activity: botbuilder.schema._models_py3.Activity,
       reply: botbuilder.schema._models_py3.ResourceResponse) -> botbuilder.schema._models_py3.ConversationReference'
@@ -173,6 +180,7 @@ items:
   - python
   module: botbuilder.core.turn_context
   name: 'has(key: str) -> bool'
+  namewithoutparameters: has
   summary: 'Returns True is set() has been called for a key. The cached value may
     be of type ''None''.
 
@@ -189,6 +197,7 @@ items:
   - python
   module: botbuilder.core.turn_context
   name: on_delete_activity(handler) -> botbuilder.core.turn_context.TurnContext
+  namewithoutparameters: on_delete_activity
   summary: 'Registers a handler to be notified of and potentially intercept an activity
     being deleted.
 
@@ -205,6 +214,7 @@ items:
   - python
   module: botbuilder.core.turn_context
   name: on_send_activities(handler) -> botbuilder.core.turn_context.TurnContext
+  namewithoutparameters: on_send_activities
   summary: 'Registers a handler to be notified of and potentially intercept the sending
     of activities.
 
@@ -221,6 +231,7 @@ items:
   - python
   module: botbuilder.core.turn_context
   name: on_update_activity(handler) -> botbuilder.core.turn_context.TurnContext
+  namewithoutparameters: on_update_activity
   summary: 'Registers a handler to be notified of and potentially intercept an activity
     being updated.
 
@@ -238,6 +249,7 @@ items:
   module: botbuilder.core.turn_context
   name: 'remove_mention_text(activity: botbuilder.schema._models_py3.Activity, identifier:
     str) -> str'
+  namewithoutparameters: remove_mention_text
   syntax:
     content: 'remove_mention_text(activity: botbuilder.schema._models_py3.Activity,
       identifier: str) -> str'
@@ -250,6 +262,7 @@ items:
   module: botbuilder.core.turn_context
   name: 'remove_recipient_mention(activity: botbuilder.schema._models_py3.Activity)
     -> str'
+  namewithoutparameters: remove_recipient_mention
   syntax:
     content: 'remove_recipient_mention(activity: botbuilder.schema._models_py3.Activity)
       -> str'
@@ -275,6 +288,7 @@ items:
   module: botbuilder.core.turn_context
   name: 'send_activities(activities: typing.List[botbuilder.schema._models_py3.Activity])
     -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
+  namewithoutparameters: send_activities
   syntax:
     content: 'send_activities(activities: typing.List[botbuilder.schema._models_py3.Activity])
       -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
@@ -287,6 +301,7 @@ items:
   module: botbuilder.core.turn_context
   name: 'send_activity(activity_or_text: typing.Union[botbuilder.schema._models_py3.Activity,
     str], speak: str = None, input_hint: str = None) -> botbuilder.schema._models_py3.ResourceResponse'
+  namewithoutparameters: send_activity
   summary: 'Sends a single activity or message to the user.
 
     :param activity_or_text:
@@ -304,6 +319,7 @@ items:
   module: botbuilder.core.turn_context
   name: 'send_trace_activity(name: str, value: object = None, value_type: str = None,
     label: str = None) -> botbuilder.schema._models_py3.ResourceResponse'
+  namewithoutparameters: send_trace_activity
   syntax:
     content: 'send_trace_activity(name: str, value: object = None, value_type: str
       = None, label: str = None) -> botbuilder.schema._models_py3.ResourceResponse'
@@ -327,6 +343,7 @@ items:
   - python
   module: botbuilder.core.turn_context
   name: 'set(key: str, value: object) -> None'
+  namewithoutparameters: set
   summary: 'Caches a value for the lifetime of the current turn.
 
     :param key:
@@ -344,6 +361,7 @@ items:
   - python
   module: botbuilder.core.turn_context
   name: 'update_activity(activity: botbuilder.schema._models_py3.Activity)'
+  namewithoutparameters: update_activity
   summary: 'Replaces an existing activity.
 
     :param activity:

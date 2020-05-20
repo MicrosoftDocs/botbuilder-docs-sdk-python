@@ -19,14 +19,6 @@ items:
   - python
   module: botbuilder.dialogs.dialog
   name: Dialog
-  source:
-    id: Dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 12
   summary: ''
   syntax:
     content: 'Dialog(dialog_id: str)'
@@ -38,14 +30,7 @@ items:
   - python
   module: botbuilder.dialogs.dialog
   name: begin_dialog
-  source:
-    id: begin_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 43
+  namewithoutparameters: begin_dialog
   summary: 'Method called when a new dialog has been pushed onto the stack and is
     being activated.
 
@@ -62,14 +47,7 @@ items:
   - python
   module: botbuilder.dialogs.dialog
   name: continue_dialog
-  source:
-    id: continue_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 54
+  namewithoutparameters: continue_dialog
   summary: 'Method called when an instance of the dialog is the "current" dialog and
     the
 
@@ -94,24 +72,20 @@ items:
   module: botbuilder.dialogs.dialog
   name: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance: botbuilder.dialogs.dialog_instance.DialogInstance,
     reason: botbuilder.dialogs.dialog_reason.DialogReason)'
-  source:
-    id: end_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 97
+  namewithoutparameters: end_dialog
   syntax:
     content: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
       botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)'
     parameters:
     - description: ''
       id: context
+      isRequired: true
     - description: ''
       id: instance
+      isRequired: true
     - description: ''
       id: reason
+      isRequired: true
   type: method
   uid: botbuilder.dialogs.dialog.Dialog.end_dialog
 - class: botbuilder.dialogs.dialog.Dialog
@@ -121,22 +95,17 @@ items:
   module: botbuilder.dialogs.dialog
   name: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
     botbuilder.dialogs.dialog_instance.DialogInstance)'
-  source:
-    id: reprompt_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 85
+  namewithoutparameters: reprompt_dialog
   syntax:
     content: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
       botbuilder.dialogs.dialog_instance.DialogInstance)'
     parameters:
     - description: ''
       id: context
+      isRequired: true
     - description: ''
       id: instance
+      isRequired: true
   type: method
   uid: botbuilder.dialogs.dialog.Dialog.reprompt_dialog
 - class: botbuilder.dialogs.dialog.Dialog
@@ -145,14 +114,7 @@ items:
   - python
   module: botbuilder.dialogs.dialog
   name: resume_dialog
-  source:
-    id: resume_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 66
+  namewithoutparameters: resume_dialog
   summary: 'Method called when an instance of the dialog is being returned to from
     another
 
@@ -184,14 +146,6 @@ items:
   - python
   module: botbuilder.dialogs.dialog
   name: telemetry_client
-  source:
-    id: telemetry_client
-    path: null
-    remote:
-      branch: master
-      path: null
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: null
   summary: Gets the telemetry client for logging events.
   syntax: {}
   type: attribute

@@ -1,7 +1,8 @@
 ### YamlMime:UniversalReference
 api_name: []
 items:
-- children: []
+- children:
+  - botbuilder.schema.Activity.create_reply
   class: botbuilder.schema.Activity
   fullName: botbuilder.schema.Activity
   inheritance:
@@ -295,7 +296,23 @@ items:
       - str
   type: class
   uid: botbuilder.schema.Activity
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.create_reply
+  langs:
+  - python
+  module: botbuilder.schema
+  name: 'create_reply(text: str = None, locale: str = None)'
+  namewithoutparameters: create_reply
+  syntax:
+    content: 'create_reply(text: str = None, locale: str = None)'
+  type: method
+  uid: botbuilder.schema.Activity.create_reply
 references:
+- fullName: botbuilder.schema.Activity.create_reply
+  isExternal: false
+  name: 'create_reply(text: str = None, locale: str = None)'
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.create_reply
 - fullName: list[botframework.connector.models.ChannelAccount]
   name: list[ChannelAccount]
   spec.python:

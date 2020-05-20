@@ -16,8 +16,7 @@ items:
 
     Used to mark if the qna response has related prompts.'
   syntax:
-    content: 'QnAResponseContext(*, is_context_only: bool = False, prompts: typing.List[botbuilder.ai.qna.models.prompt.Prompt]
-      = None, **kwargs)'
+    content: QnAResponseContext(**kwargs)
   type: class
   uid: botbuilder.ai.qna.models.qna_response_context.QnAResponseContext
 references: []

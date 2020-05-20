@@ -23,6 +23,7 @@ items:
   - python
   module: botbuilder.core.show_typing_middleware
   name: set_clear_timer()
+  namewithoutparameters: set_clear_timer
   syntax:
     content: set_clear_timer()
     parameters: []
@@ -33,12 +34,15 @@ items:
   langs:
   - python
   module: botbuilder.core.show_typing_middleware
-  name: set_timeout(func, time)
+  name: set_timeout(func, span)
+  namewithoutparameters: set_timeout
   syntax:
-    content: set_timeout(func, time)
+    content: set_timeout(func, span)
     parameters:
     - id: func
-    - id: time
+      isRequired: true
+    - id: span
+      isRequired: true
   type: method
   uid: botbuilder.core.show_typing_middleware.Timer.set_timeout
 - class: botbuilder.core.show_typing_middleware.Timer
@@ -59,7 +63,7 @@ references:
   uid: botbuilder.core.show_typing_middleware.Timer.set_clear_timer
 - fullName: botbuilder.core.show_typing_middleware.Timer.set_timeout
   isExternal: false
-  name: set_timeout(func, time)
+  name: set_timeout(func, span)
   parent: botbuilder.core.show_typing_middleware.Timer
   uid: botbuilder.core.show_typing_middleware.Timer.set_timeout
 - fullName: botbuilder.core.show_typing_middleware.Timer.clear_timer

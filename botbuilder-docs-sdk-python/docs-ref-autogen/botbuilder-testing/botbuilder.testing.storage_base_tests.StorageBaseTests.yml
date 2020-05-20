@@ -31,6 +31,7 @@ items:
   - python
   module: botbuilder.testing.storage_base_tests
   name: create_object(storage) -> bool
+  namewithoutparameters: create_object
   syntax:
     content: create_object(storage) -> bool
   type: method
@@ -41,6 +42,7 @@ items:
   - python
   module: botbuilder.testing.storage_base_tests
   name: delete_object(storage) -> bool
+  namewithoutparameters: delete_object
   syntax:
     content: delete_object(storage) -> bool
   type: method
@@ -51,6 +53,7 @@ items:
   - python
   module: botbuilder.testing.storage_base_tests
   name: delete_unknown_object(storage) -> bool
+  namewithoutparameters: delete_unknown_object
   syntax:
     content: delete_unknown_object(storage) -> bool
   type: method
@@ -61,6 +64,7 @@ items:
   - python
   module: botbuilder.testing.storage_base_tests
   name: does_not_raise_when_writing_no_items(storage) -> bool
+  namewithoutparameters: does_not_raise_when_writing_no_items
   syntax:
     content: does_not_raise_when_writing_no_items(storage) -> bool
   type: method
@@ -71,6 +75,7 @@ items:
   - python
   module: botbuilder.testing.storage_base_tests
   name: handle_crazy_keys(storage) -> bool
+  namewithoutparameters: handle_crazy_keys
   syntax:
     content: handle_crazy_keys(storage) -> bool
   type: method
@@ -81,6 +86,7 @@ items:
   - python
   module: botbuilder.testing.storage_base_tests
   name: handle_null_keys_when_reading(storage) -> bool
+  namewithoutparameters: handle_null_keys_when_reading
   syntax:
     content: handle_null_keys_when_reading(storage) -> bool
   type: method
@@ -91,6 +97,7 @@ items:
   - python
   module: botbuilder.testing.storage_base_tests
   name: handle_null_keys_when_writing(storage) -> bool
+  namewithoutparameters: handle_null_keys_when_writing
   syntax:
     content: handle_null_keys_when_writing(storage) -> bool
   type: method
@@ -101,6 +108,7 @@ items:
   - python
   module: botbuilder.testing.storage_base_tests
   name: perform_batch_operations(storage) -> bool
+  namewithoutparameters: perform_batch_operations
   syntax:
     content: perform_batch_operations(storage) -> bool
   type: method
@@ -111,6 +119,7 @@ items:
   - python
   module: botbuilder.testing.storage_base_tests
   name: proceeds_through_waterfall(storage) -> bool
+  namewithoutparameters: proceeds_through_waterfall
   syntax:
     content: proceeds_through_waterfall(storage) -> bool
   type: method
@@ -121,6 +130,7 @@ items:
   - python
   module: botbuilder.testing.storage_base_tests
   name: return_empty_object_when_reading_unknown_key(storage) -> bool
+  namewithoutparameters: return_empty_object_when_reading_unknown_key
   syntax:
     content: return_empty_object_when_reading_unknown_key(storage) -> bool
   type: method
@@ -131,6 +141,7 @@ items:
   - python
   module: botbuilder.testing.storage_base_tests
   name: update_object(storage) -> bool
+  namewithoutparameters: update_object
   syntax:
     content: update_object(storage) -> bool
   type: method

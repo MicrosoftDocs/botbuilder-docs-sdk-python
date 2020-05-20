@@ -32,6 +32,7 @@ items:
   module: botbuilder.core.teams
   name: 'get_member(turn_context: botbuilder.core.turn_context.TurnContext, member_id:
     str) -> botbuilder.schema.teams._models_py3.TeamsChannelAccount'
+  namewithoutparameters: get_member
   syntax:
     content: 'get_member(turn_context: botbuilder.core.turn_context.TurnContext, member_id:
       str) -> botbuilder.schema.teams._models_py3.TeamsChannelAccount'
@@ -43,6 +44,7 @@ items:
   - python
   module: botbuilder.core.teams
   name: 'get_members(turn_context: botbuilder.core.turn_context.TurnContext) -> typing.List[botbuilder.schema.teams._models_py3.TeamsChannelAccount]'
+  namewithoutparameters: get_members
   syntax:
     content: 'get_members(turn_context: botbuilder.core.turn_context.TurnContext)
       -> typing.List[botbuilder.schema.teams._models_py3.TeamsChannelAccount]'
@@ -55,6 +57,7 @@ items:
   module: botbuilder.core.teams
   name: 'get_paged_members(turn_context: botbuilder.core.turn_context.TurnContext,
     continuation_token: str = None, page_size: int = None) -> typing.List[botbuilder.schema.teams._models_py3.TeamsPagedMembersResult]'
+  namewithoutparameters: get_paged_members
   syntax:
     content: 'get_paged_members(turn_context: botbuilder.core.turn_context.TurnContext,
       continuation_token: str = None, page_size: int = None) -> typing.List[botbuilder.schema.teams._models_py3.TeamsPagedMembersResult]'
@@ -68,6 +71,7 @@ items:
   name: 'get_paged_team_members(turn_context: botbuilder.core.turn_context.TurnContext,
     team_id: str = '''', continuation_token: str = None, page_size: int = None) ->
     typing.List[botbuilder.schema.teams._models_py3.TeamsPagedMembersResult]'
+  namewithoutparameters: get_paged_team_members
   syntax:
     content: 'get_paged_team_members(turn_context: botbuilder.core.turn_context.TurnContext,
       team_id: str = '''', continuation_token: str = None, page_size: int = None)
@@ -81,6 +85,7 @@ items:
   module: botbuilder.core.teams
   name: 'get_team_channels(turn_context: botbuilder.core.turn_context.TurnContext,
     team_id: str = '''') -> typing.List[botbuilder.schema.teams._models_py3.ChannelInfo]'
+  namewithoutparameters: get_team_channels
   syntax:
     content: 'get_team_channels(turn_context: botbuilder.core.turn_context.TurnContext,
       team_id: str = '''') -> typing.List[botbuilder.schema.teams._models_py3.ChannelInfo]'
@@ -93,6 +98,7 @@ items:
   module: botbuilder.core.teams
   name: 'get_team_details(turn_context: botbuilder.core.turn_context.TurnContext,
     team_id: str = '''') -> botbuilder.schema.teams._models_py3.TeamDetails'
+  namewithoutparameters: get_team_details
   syntax:
     content: 'get_team_details(turn_context: botbuilder.core.turn_context.TurnContext,
       team_id: str = '''') -> botbuilder.schema.teams._models_py3.TeamDetails'
@@ -104,6 +110,7 @@ items:
   - python
   module: botbuilder.core.teams
   name: 'get_team_id(turn_context: botbuilder.core.turn_context.TurnContext)'
+  namewithoutparameters: get_team_id
   syntax:
     content: 'get_team_id(turn_context: botbuilder.core.turn_context.TurnContext)'
   type: method
@@ -115,6 +122,7 @@ items:
   module: botbuilder.core.teams
   name: 'get_team_member(turn_context: botbuilder.core.turn_context.TurnContext, team_id:
     str = '''', member_id: str = None) -> botbuilder.schema.teams._models_py3.TeamsChannelAccount'
+  namewithoutparameters: get_team_member
   syntax:
     content: 'get_team_member(turn_context: botbuilder.core.turn_context.TurnContext,
       team_id: str = '''', member_id: str = None) -> botbuilder.schema.teams._models_py3.TeamsChannelAccount'
@@ -127,6 +135,7 @@ items:
   module: botbuilder.core.teams
   name: 'get_team_members(turn_context: botbuilder.core.turn_context.TurnContext,
     team_id: str = '''') -> typing.List[botbuilder.schema.teams._models_py3.TeamsChannelAccount]'
+  namewithoutparameters: get_team_members
   syntax:
     content: 'get_team_members(turn_context: botbuilder.core.turn_context.TurnContext,
       team_id: str = '''') -> typing.List[botbuilder.schema.teams._models_py3.TeamsChannelAccount]'
@@ -139,6 +148,7 @@ items:
   module: botbuilder.core.teams
   name: 'get_teams_connector_client(turn_context: botbuilder.core.turn_context.TurnContext)
     -> botframework.connector.teams.teams_connector_client.TeamsConnectorClient'
+  namewithoutparameters: get_teams_connector_client
   syntax:
     content: 'get_teams_connector_client(turn_context: botbuilder.core.turn_context.TurnContext)
       -> botframework.connector.teams.teams_connector_client.TeamsConnectorClient'
@@ -152,6 +162,7 @@ items:
   name: 'send_message_to_teams_channel(turn_context: botbuilder.core.turn_context.TurnContext,
     activity: botbuilder.schema._models_py3.Activity, teams_channel_id: str) -> typing.Tuple[botbuilder.schema._models_py3.ConversationReference,
     str]'
+  namewithoutparameters: send_message_to_teams_channel
   syntax:
     content: 'send_message_to_teams_channel(turn_context: botbuilder.core.turn_context.TurnContext,
       activity: botbuilder.schema._models_py3.Activity, teams_channel_id: str) ->

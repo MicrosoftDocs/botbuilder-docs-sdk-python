@@ -27,6 +27,7 @@ items:
   - python
   module: botbuilder.core.transcript_logger
   name: 'delete_transcript(channel_id: str, conversation_id: str) -> None'
+  namewithoutparameters: delete_transcript
   summary: 'Delete a specific conversation and all of it''s activities.
 
     :param channel_id: Channel Id where conversation took place.
@@ -46,6 +47,7 @@ items:
   name: 'get_transcript_activities(channel_id: str, conversation_id: str, continuation_token:
     str, start_date: <module ''datetime'' from ''c:\\\\hostedtoolcache\\\\windows\\\\python\\\\3.6.8\\\\x64\\\\lib\\\\datetime.py''>)
     -> botbuilder.core.transcript_logger.PagedResult'
+  namewithoutparameters: get_transcript_activities
   summary: 'Get activities for a conversation (Aka the transcript).
 
     :param channel_id: Channel Id where conversation took place.
@@ -69,6 +71,7 @@ items:
   - python
   module: botbuilder.core.transcript_logger
   name: 'list_transcripts(channel_id: str, continuation_token: str) -> botbuilder.core.transcript_logger.PagedResult'
+  namewithoutparameters: list_transcripts
   summary: 'List conversations in the channelId.
 
     :param channel_id: Channel Id where conversation took place.

@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.schema.callerid_constants.CallerIdConstants.bot_to_bot_prefix
+  - botbuilder.schema.callerid_constants.CallerIdConstants.public_azure_channel
+  - botbuilder.schema.callerid_constants.CallerIdConstants.us_gov_channel
+  class: botbuilder.schema.callerid_constants.CallerIdConstants
+  fullName: botbuilder.schema.callerid_constants.CallerIdConstants
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: builtins.str
+  - inheritance:
+    - type: builtins.object
+    type: enum.Enum
+  langs:
+  - python
+  module: botbuilder.schema.callerid_constants
+  name: CallerIdConstants
+  summary: An enumeration.
+  syntax: {}
+  type: class
+  uid: botbuilder.schema.callerid_constants.CallerIdConstants
+- class: botbuilder.schema.callerid_constants.CallerIdConstants
+  fullName: botbuilder.schema.callerid_constants.CallerIdConstants.bot_to_bot_prefix
+  langs:
+  - python
+  module: botbuilder.schema.callerid_constants
+  name: bot_to_bot_prefix
+  summary: 'The caller ID prefix when a bot initiates a request to another bot.
+
+    This prefix will be followed by the Azure Active Directory App ID of the bot that
+    initiated the call.'
+  syntax:
+    content: bot_to_bot_prefix = 'urn:botframework:aadappid:'
+  type: attribute
+  uid: botbuilder.schema.callerid_constants.CallerIdConstants.bot_to_bot_prefix
+- class: botbuilder.schema.callerid_constants.CallerIdConstants
+  fullName: botbuilder.schema.callerid_constants.CallerIdConstants.public_azure_channel
+  langs:
+  - python
+  module: botbuilder.schema.callerid_constants
+  name: public_azure_channel
+  summary: The caller ID for any Bot Framework channel.
+  syntax:
+    content: public_azure_channel = 'urn:botframework:azure'
+  type: attribute
+  uid: botbuilder.schema.callerid_constants.CallerIdConstants.public_azure_channel
+- class: botbuilder.schema.callerid_constants.CallerIdConstants
+  fullName: botbuilder.schema.callerid_constants.CallerIdConstants.us_gov_channel
+  langs:
+  - python
+  module: botbuilder.schema.callerid_constants
+  name: us_gov_channel
+  summary: The caller ID for any Bot Framework US Government cloud channel.
+  syntax:
+    content: us_gov_channel = 'urn:botframework:azureusgov'
+  type: attribute
+  uid: botbuilder.schema.callerid_constants.CallerIdConstants.us_gov_channel
+references:
+- fullName: botbuilder.schema.callerid_constants.CallerIdConstants.bot_to_bot_prefix
+  isExternal: false
+  name: bot_to_bot_prefix
+  parent: botbuilder.schema.callerid_constants.CallerIdConstants
+  uid: botbuilder.schema.callerid_constants.CallerIdConstants.bot_to_bot_prefix
+- fullName: botbuilder.schema.callerid_constants.CallerIdConstants.public_azure_channel
+  isExternal: false
+  name: public_azure_channel
+  parent: botbuilder.schema.callerid_constants.CallerIdConstants
+  uid: botbuilder.schema.callerid_constants.CallerIdConstants.public_azure_channel
+- fullName: botbuilder.schema.callerid_constants.CallerIdConstants.us_gov_channel
+  isExternal: false
+  name: us_gov_channel
+  parent: botbuilder.schema.callerid_constants.CallerIdConstants
+  uid: botbuilder.schema.callerid_constants.CallerIdConstants.us_gov_channel

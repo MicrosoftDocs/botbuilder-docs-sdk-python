@@ -26,6 +26,7 @@ items:
   - botbuilder.dialogs.PromptOptions
   - botbuilder.dialogs.TextPrompt
   - botbuilder.dialogs.DialogExtensions
+  - botbuilder.dialogs.ObjectPath
   - botbuilder.dialogs.about
   - botbuilder.dialogs.component_dialog
   - botbuilder.dialogs.dialog
@@ -38,6 +39,7 @@ items:
   - botbuilder.dialogs.dialog_state
   - botbuilder.dialogs.dialog_turn_result
   - botbuilder.dialogs.dialog_turn_status
+  - botbuilder.dialogs.object_path
   - botbuilder.dialogs.waterfall_dialog
   - botbuilder.dialogs.waterfall_step
   - botbuilder.dialogs.waterfall_step_context
@@ -50,14 +52,6 @@ items:
   - python
   module: botbuilder.dialogs
   name: dialogs
-  source:
-    id: dialogs
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\__init__.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\__init__.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 0
   type: package
   uid: botbuilder.dialogs
 references:
@@ -181,6 +175,11 @@ references:
   name: DialogExtensions
   parent: botbuilder.dialogs
   uid: botbuilder.dialogs.DialogExtensions
+- fullName: botbuilder.dialogs.ObjectPath
+  isExternal: false
+  name: ObjectPath
+  parent: botbuilder.dialogs
+  uid: botbuilder.dialogs.ObjectPath
 - fullName: botbuilder.dialogs.about
   isExternal: false
   name: about
@@ -241,6 +240,11 @@ references:
   name: dialog_turn_status
   parent: botbuilder.dialogs
   uid: botbuilder.dialogs.dialog_turn_status
+- fullName: botbuilder.dialogs.object_path
+  isExternal: false
+  name: object_path
+  parent: botbuilder.dialogs
+  uid: botbuilder.dialogs.object_path
 - fullName: botbuilder.dialogs.waterfall_dialog
   isExternal: false
   name: waterfall_dialog

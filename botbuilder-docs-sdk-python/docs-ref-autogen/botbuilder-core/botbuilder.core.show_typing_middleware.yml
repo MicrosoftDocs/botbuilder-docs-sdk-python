@@ -4,7 +4,6 @@ items:
 - children:
   - botbuilder.core.show_typing_middleware.ShowTypingMiddleware
   - botbuilder.core.show_typing_middleware.Timer
-  - botbuilder.core.show_typing_middleware.delay
   fullName: botbuilder.core.show_typing_middleware
   langs:
   - python
@@ -12,18 +11,6 @@ items:
   name: show_typing_middleware
   type: module
   uid: botbuilder.core.show_typing_middleware
-- fullName: botbuilder.core.show_typing_middleware.delay
-  langs:
-  - python
-  module: botbuilder.core.show_typing_middleware
-  name: delay(span=0.0)
-  syntax:
-    content: delay(span=0.0)
-    parameters:
-    - defaultValue: '0.0'
-      id: span
-  type: function
-  uid: botbuilder.core.show_typing_middleware.delay
 references:
 - fullName: botbuilder.core.show_typing_middleware.ShowTypingMiddleware
   isExternal: false
@@ -35,8 +22,3 @@ references:
   name: Timer
   parent: botbuilder.core.show_typing_middleware
   uid: botbuilder.core.show_typing_middleware.Timer
-- fullName: botbuilder.core.show_typing_middleware.delay
-  isExternal: false
-  name: delay(span=0.0)
-  parent: botbuilder.core.show_typing_middleware
-  uid: botbuilder.core.show_typing_middleware.delay

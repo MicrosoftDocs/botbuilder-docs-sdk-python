@@ -5,6 +5,8 @@ items:
   - botbuilder.core.adapters.test_adapter.TestAdapter.add_exchangeable_token
   - botbuilder.core.adapters.test_adapter.TestAdapter.add_user_token
   - botbuilder.core.adapters.test_adapter.TestAdapter.continue_conversation
+  - botbuilder.core.adapters.test_adapter.TestAdapter.create_conversation
+  - botbuilder.core.adapters.test_adapter.TestAdapter.create_conversation_reference
   - botbuilder.core.adapters.test_adapter.TestAdapter.delete_activity
   - botbuilder.core.adapters.test_adapter.TestAdapter.exchange_token
   - botbuilder.core.adapters.test_adapter.TestAdapter.exchange_token_from_credentials
@@ -22,6 +24,7 @@ items:
   - botbuilder.core.adapters.test_adapter.TestAdapter.sign_out_user
   - botbuilder.core.adapters.test_adapter.TestAdapter.test
   - botbuilder.core.adapters.test_adapter.TestAdapter.tests
+  - botbuilder.core.adapters.test_adapter.TestAdapter.throw_on_exchange_request
   - botbuilder.core.adapters.test_adapter.TestAdapter.update_activity
   class: botbuilder.core.adapters.test_adapter.TestAdapter
   fullName: botbuilder.core.adapters.test_adapter.TestAdapter
@@ -36,11 +39,11 @@ items:
       - inheritance:
         - type: builtins.object
         type: abc.ABC
-      type: botbuilder.core.user_token_provider.UserTokenProvider
+      type: botbuilder.core.oauth.user_token_provider.UserTokenProvider
     - inheritance:
       - type: builtins.object
       type: abc.ABC
-    type: botbuilder.core.extended_user_token_provider.ExtendedUserTokenProvider
+    type: botbuilder.core.oauth.extended_user_token_provider.ExtendedUserTokenProvider
   langs:
   - python
   module: botbuilder.core.adapters.test_adapter
@@ -59,6 +62,7 @@ items:
   module: botbuilder.core.adapters.test_adapter
   name: 'add_exchangeable_token(connection_name: str, channel_id: str, user_id: str,
     exchangeable_item: str, token: str)'
+  namewithoutparameters: add_exchangeable_token
   syntax:
     content: 'add_exchangeable_token(connection_name: str, channel_id: str, user_id:
       str, exchangeable_item: str, token: str)'
@@ -71,6 +75,7 @@ items:
   module: botbuilder.core.adapters.test_adapter
   name: 'add_user_token(connection_name: str, channel_id: str, user_id: str, token:
     str, magic_code: str = None)'
+  namewithoutparameters: add_user_token
   syntax:
     content: 'add_user_token(connection_name: str, channel_id: str, user_id: str,
       token: str, magic_code: str = None)'
@@ -84,6 +89,7 @@ items:
   name: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
     callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
     = None, audience: str = None)'
+  namewithoutparameters: continue_conversation
   summary: 'The *TestAdapter* just calls parent implementation.
 
     :param reference:
@@ -102,11 +108,36 @@ items:
   type: method
   uid: botbuilder.core.adapters.test_adapter.TestAdapter.continue_conversation
 - class: botbuilder.core.adapters.test_adapter.TestAdapter
+  fullName: botbuilder.core.adapters.test_adapter.TestAdapter.create_conversation
+  langs:
+  - python
+  module: botbuilder.core.adapters.test_adapter
+  name: 'create_conversation(channel_id: str, callback: typing.Callable)'
+  namewithoutparameters: create_conversation
+  syntax:
+    content: 'create_conversation(channel_id: str, callback: typing.Callable)'
+  type: method
+  uid: botbuilder.core.adapters.test_adapter.TestAdapter.create_conversation
+- class: botbuilder.core.adapters.test_adapter.TestAdapter
+  fullName: botbuilder.core.adapters.test_adapter.TestAdapter.create_conversation_reference
+  langs:
+  - python
+  module: botbuilder.core.adapters.test_adapter
+  name: 'create_conversation_reference(name: str, user: str = ''User1'', bot: str
+    = ''Bot'') -> botbuilder.schema._models_py3.ConversationReference'
+  namewithoutparameters: create_conversation_reference
+  syntax:
+    content: 'create_conversation_reference(name: str, user: str = ''User1'', bot:
+      str = ''Bot'') -> botbuilder.schema._models_py3.ConversationReference'
+  type: method
+  uid: botbuilder.core.adapters.test_adapter.TestAdapter.create_conversation_reference
+- class: botbuilder.core.adapters.test_adapter.TestAdapter
   fullName: botbuilder.core.adapters.test_adapter.TestAdapter.delete_activity
   langs:
   - python
   module: botbuilder.core.adapters.test_adapter
   name: 'delete_activity(context, reference: botbuilder.schema._models_py3.ConversationReference)'
+  namewithoutparameters: delete_activity
   summary: 'INTERNAL: called by the logic under test to delete an existing activity.
     These are simply
 
@@ -130,6 +161,7 @@ items:
   name: 'exchange_token(turn_context: botbuilder.core.turn_context.TurnContext, connection_name:
     str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
     -> botbuilder.schema._models_py3.TokenResponse'
+  namewithoutparameters: exchange_token
   syntax:
     content: 'exchange_token(turn_context: botbuilder.core.turn_context.TurnContext,
       connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
@@ -145,6 +177,7 @@ items:
     oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
     connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
     -> botbuilder.schema._models_py3.TokenResponse'
+  namewithoutparameters: exchange_token_from_credentials
   syntax:
     content: 'exchange_token_from_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
       oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
@@ -161,6 +194,7 @@ items:
     str, resource_urls: typing.List[str], user_id: str = None, oauth_app_credentials:
     botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
     botbuilder.schema._models_py3.TokenResponse]'
+  namewithoutparameters: get_aad_tokens
   syntax:
     content: 'get_aad_tokens(context: botbuilder.core.turn_context.TurnContext, connection_name:
       str, resource_urls: typing.List[str], user_id: str = None, oauth_app_credentials:
@@ -174,6 +208,7 @@ items:
   - python
   module: botbuilder.core.adapters.test_adapter
   name: get_next_activity() -> botbuilder.schema._models_py3.Activity
+  namewithoutparameters: get_next_activity
   syntax:
     content: get_next_activity() -> botbuilder.schema._models_py3.Activity
   type: method
@@ -186,6 +221,7 @@ items:
   name: 'get_oauth_sign_in_link(context: botbuilder.core.turn_context.TurnContext,
     connection_name: str, final_redirect: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None) -> str'
+  namewithoutparameters: get_oauth_sign_in_link
   syntax:
     content: 'get_oauth_sign_in_link(context: botbuilder.core.turn_context.TurnContext,
       connection_name: str, final_redirect: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
@@ -199,6 +235,7 @@ items:
   module: botbuilder.core.adapters.test_adapter
   name: 'get_sign_in_resource_from_user(turn_context: botbuilder.core.turn_context.TurnContext,
     connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+  namewithoutparameters: get_sign_in_resource_from_user
   syntax:
     content: 'get_sign_in_resource_from_user(turn_context: botbuilder.core.turn_context.TurnContext,
       connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
@@ -212,6 +249,7 @@ items:
   name: 'get_sign_in_resource_from_user_and_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
     oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
     connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+  namewithoutparameters: get_sign_in_resource_from_user_and_credentials
   syntax:
     content: 'get_sign_in_resource_from_user_and_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
       oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
@@ -227,6 +265,7 @@ items:
     str = None, user_id: str = None, include_filter: str = None, oauth_app_credentials:
     botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
     botbuilder.schema._models_py3.TokenResponse]'
+  namewithoutparameters: get_token_status
   syntax:
     content: 'get_token_status(context: botbuilder.core.turn_context.TurnContext,
       connection_name: str = None, user_id: str = None, include_filter: str = None,
@@ -242,6 +281,7 @@ items:
   name: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, connection_name:
     str, magic_code: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None) -> botbuilder.schema._models_py3.TokenResponse'
+  namewithoutparameters: get_user_token
   syntax:
     content: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, connection_name:
       str, magic_code: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
@@ -255,6 +295,7 @@ items:
   module: botbuilder.core.adapters.test_adapter
   name: 'process_activity(activity: botbuilder.schema._models_py3.Activity, logic:
     typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable])'
+  namewithoutparameters: process_activity
   syntax:
     content: 'process_activity(activity: botbuilder.schema._models_py3.Activity, logic:
       typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable])'
@@ -266,6 +307,7 @@ items:
   - python
   module: botbuilder.core.adapters.test_adapter
   name: receive_activity(activity)
+  namewithoutparameters: receive_activity
   summary: 'INTERNAL: called by a *TestFlow* instance to simulate a user sending a
     message to the bot.
 
@@ -278,6 +320,7 @@ items:
     content: receive_activity(activity)
     parameters:
     - id: activity
+      isRequired: true
   type: method
   uid: botbuilder.core.adapters.test_adapter.TestAdapter.receive_activity
 - class: botbuilder.core.adapters.test_adapter.TestAdapter
@@ -286,6 +329,7 @@ items:
   - python
   module: botbuilder.core.adapters.test_adapter
   name: send(user_says) -> object
+  namewithoutparameters: send
   summary: 'Sends something to the bot. This returns a new *TestFlow* instance which
     can be used to add
 
@@ -305,6 +349,7 @@ items:
   module: botbuilder.core.adapters.test_adapter
   name: 'send_activities(context, activities: typing.List[botbuilder.schema._models_py3.Activity])
     -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
+  namewithoutparameters: send_activities
   summary: 'INTERNAL: called by the logic under test to send a set of activities.
     These will be buffered
 
@@ -328,6 +373,7 @@ items:
   name: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
     str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None)'
+  namewithoutparameters: sign_out_user
   syntax:
     content: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
       str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
@@ -340,6 +386,7 @@ items:
   - python
   module: botbuilder.core.adapters.test_adapter
   name: test(user_says, expected, description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
+  namewithoutparameters: test
   summary: 'Send something to the bot and expects the bot to return with a given reply.
     This is simply a
 
@@ -367,6 +414,7 @@ items:
   - python
   module: botbuilder.core.adapters.test_adapter
   name: tests(*args)
+  namewithoutparameters: tests
   summary: 'Support multiple test cases without having to manually call *test()* repeatedly.
     This is a
 
@@ -382,11 +430,25 @@ items:
   type: method
   uid: botbuilder.core.adapters.test_adapter.TestAdapter.tests
 - class: botbuilder.core.adapters.test_adapter.TestAdapter
+  fullName: botbuilder.core.adapters.test_adapter.TestAdapter.throw_on_exchange_request
+  langs:
+  - python
+  module: botbuilder.core.adapters.test_adapter
+  name: 'throw_on_exchange_request(connection_name: str, channel_id: str, user_id:
+    str, exchangeable_item: str)'
+  namewithoutparameters: throw_on_exchange_request
+  syntax:
+    content: 'throw_on_exchange_request(connection_name: str, channel_id: str, user_id:
+      str, exchangeable_item: str)'
+  type: method
+  uid: botbuilder.core.adapters.test_adapter.TestAdapter.throw_on_exchange_request
+- class: botbuilder.core.adapters.test_adapter.TestAdapter
   fullName: botbuilder.core.adapters.test_adapter.TestAdapter.update_activity
   langs:
   - python
   module: botbuilder.core.adapters.test_adapter
   name: 'update_activity(context, activity: botbuilder.schema._models_py3.Activity)'
+  namewithoutparameters: update_activity
   summary: 'INTERNAL: called by the logic under test to replace an existing activity.
     These are simply
 
@@ -422,6 +484,17 @@ references:
     = None, audience: str = None)'
   parent: botbuilder.core.adapters.test_adapter.TestAdapter
   uid: botbuilder.core.adapters.test_adapter.TestAdapter.continue_conversation
+- fullName: botbuilder.core.adapters.test_adapter.TestAdapter.create_conversation
+  isExternal: false
+  name: 'create_conversation(channel_id: str, callback: typing.Callable)'
+  parent: botbuilder.core.adapters.test_adapter.TestAdapter
+  uid: botbuilder.core.adapters.test_adapter.TestAdapter.create_conversation
+- fullName: botbuilder.core.adapters.test_adapter.TestAdapter.create_conversation_reference
+  isExternal: false
+  name: 'create_conversation_reference(name: str, user: str = ''User1'', bot: str
+    = ''Bot'') -> botbuilder.schema._models_py3.ConversationReference'
+  parent: botbuilder.core.adapters.test_adapter.TestAdapter
+  uid: botbuilder.core.adapters.test_adapter.TestAdapter.create_conversation_reference
 - fullName: botbuilder.core.adapters.test_adapter.TestAdapter.delete_activity
   isExternal: false
   name: 'delete_activity(context, reference: botbuilder.schema._models_py3.ConversationReference)'
@@ -529,6 +602,12 @@ references:
   name: tests(*args)
   parent: botbuilder.core.adapters.test_adapter.TestAdapter
   uid: botbuilder.core.adapters.test_adapter.TestAdapter.tests
+- fullName: botbuilder.core.adapters.test_adapter.TestAdapter.throw_on_exchange_request
+  isExternal: false
+  name: 'throw_on_exchange_request(connection_name: str, channel_id: str, user_id:
+    str, exchangeable_item: str)'
+  parent: botbuilder.core.adapters.test_adapter.TestAdapter
+  uid: botbuilder.core.adapters.test_adapter.TestAdapter.throw_on_exchange_request
 - fullName: botbuilder.core.adapters.test_adapter.TestAdapter.update_activity
   isExternal: false
   name: 'update_activity(context, activity: botbuilder.schema._models_py3.Activity)'

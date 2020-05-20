@@ -1,0 +1,94 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.applicationinsights.ApplicationInsightsTelemetryClient
+  - botbuilder.applicationinsights.BotTelemetryProcessor
+  - botbuilder.applicationinsights.bot_telemetry_processor
+  - botbuilder.applicationinsights.about
+  - botbuilder.applicationinsights.application_insights_telemetry_client
+  - botbuilder.applicationinsights.bot_telemetry_processor
+  - botbuilder.applicationinsights.django
+  - botbuilder.applicationinsights.flask
+  - botbuilder.applicationinsights.processor
+  fullName: botbuilder.applicationinsights
+  kind: import
+  langs:
+  - python
+  module: botbuilder.applicationinsights
+  name: applicationinsights
+  type: package
+  uid: botbuilder.applicationinsights
+- fullName: botbuilder.applicationinsights.bot_telemetry_processor
+  langs:
+  - python
+  module: botbuilder.applicationinsights
+  name: bot_telemetry_processor(data, context) -> bool
+  summary: 'Bot Telemetry Processor as a method for backward compatibility. Refer
+    to
+
+    callable object <xref:botbuilder.applicationinsights.BotTelemetryProcessor> for
+    details.'
+  syntax:
+    content: bot_telemetry_processor(data, context) -> bool
+    parameters:
+    - description: Data from Application Insights
+      id: data
+      type:
+      - telemetry item
+    - description: Context from Application Insights
+      id: context
+      type:
+      - context object
+    return:
+      description: determines if the event is passed to the server (False = Filtered).
+      type:
+      - bool
+  type: function
+  uid: botbuilder.applicationinsights.bot_telemetry_processor
+references:
+- fullName: botbuilder.applicationinsights.ApplicationInsightsTelemetryClient
+  isExternal: false
+  name: ApplicationInsightsTelemetryClient
+  parent: botbuilder.applicationinsights
+  uid: botbuilder.applicationinsights.ApplicationInsightsTelemetryClient
+- fullName: botbuilder.applicationinsights.BotTelemetryProcessor
+  isExternal: false
+  name: BotTelemetryProcessor
+  parent: botbuilder.applicationinsights
+  uid: botbuilder.applicationinsights.BotTelemetryProcessor
+- fullName: botbuilder.applicationinsights.bot_telemetry_processor
+  isExternal: false
+  name: bot_telemetry_processor(data, context) -> bool
+  parent: botbuilder.applicationinsights
+  uid: botbuilder.applicationinsights.bot_telemetry_processor
+- fullName: botbuilder.applicationinsights.about
+  isExternal: false
+  name: about
+  parent: botbuilder.applicationinsights
+  uid: botbuilder.applicationinsights.about
+- fullName: botbuilder.applicationinsights.application_insights_telemetry_client
+  isExternal: false
+  name: application_insights_telemetry_client
+  parent: botbuilder.applicationinsights
+  uid: botbuilder.applicationinsights.application_insights_telemetry_client
+- fullName: botbuilder.applicationinsights.bot_telemetry_processor
+  isExternal: false
+  name: bot_telemetry_processor
+  parent: botbuilder.applicationinsights
+  uid: botbuilder.applicationinsights.bot_telemetry_processor
+- fullName: botbuilder.applicationinsights.django
+  isExternal: false
+  name: django
+  parent: botbuilder.applicationinsights
+  uid: botbuilder.applicationinsights.django
+- fullName: botbuilder.applicationinsights.flask
+  isExternal: false
+  name: flask
+  parent: botbuilder.applicationinsights
+  uid: botbuilder.applicationinsights.flask
+- fullName: botbuilder.applicationinsights.processor
+  isExternal: false
+  name: processor
+  parent: botbuilder.applicationinsights
+  uid: botbuilder.applicationinsights.processor

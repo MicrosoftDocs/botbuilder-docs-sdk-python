@@ -28,6 +28,7 @@ items:
   - python
   module: botbuilder.core.auto_save_state_middleware
   name: 'add(bot_state: botbuilder.core.bot_state.BotState) -> botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware'
+  namewithoutparameters: add
   syntax:
     content: 'add(bot_state: botbuilder.core.bot_state.BotState) -> botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware'
   type: method
@@ -39,6 +40,7 @@ items:
   module: botbuilder.core.auto_save_state_middleware
   name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
     typing.Awaitable])'
+  namewithoutparameters: on_turn
   syntax:
     content: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
       typing.Awaitable])'

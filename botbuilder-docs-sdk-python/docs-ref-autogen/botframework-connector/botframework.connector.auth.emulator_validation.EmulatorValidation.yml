@@ -30,6 +30,7 @@ items:
   name: 'authenticate_emulator_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
     channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
     channel_id: str) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  namewithoutparameters: authenticate_emulator_token
   summary: 'Validate the incoming Auth Header
 
 
@@ -43,10 +44,12 @@ items:
     parameters:
     - description: 'The raw HTTP header in the format: ''Bearer [longString]'''
       id: auth_header
+      isRequired: true
       type:
       - str
     - description: The user defined set of valid credentials, such as the AppId.
       id: credentials
+      isRequired: true
       type:
       - CredentialProvider
     return:
@@ -59,12 +62,14 @@ items:
   - python
   module: botframework.connector.auth.emulator_validation
   name: 'is_token_from_emulator(auth_header: str) -> bool'
+  namewithoutparameters: is_token_from_emulator
   summary: Determines if a given Auth header is from the Bot Framework Emulator
   syntax:
     content: 'is_token_from_emulator(auth_header: str) -> bool'
     parameters:
     - description: Bearer Token, in the 'Bearer [Long String]' Format.
       id: auth_header
+      isRequired: true
       type:
       - str
     return:

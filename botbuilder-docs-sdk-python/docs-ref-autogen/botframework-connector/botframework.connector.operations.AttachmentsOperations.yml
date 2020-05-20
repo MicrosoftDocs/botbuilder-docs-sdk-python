@@ -41,6 +41,7 @@ items:
   module: botframework.connector.operations
   name: get_attachment(attachment_id, view_id, custom_headers=None, raw=False, callback=None,
     **operation_config)
+  namewithoutparameters: get_attachment
   summary: 'GetAttachment.
 
 
@@ -51,10 +52,12 @@ items:
     parameters:
     - description: attachment id
       id: attachment_id
+      isRequired: true
       type:
       - str
     - description: View id from attachmentInfo
       id: view_id
+      isRequired: true
       type:
       - str
     - defaultValue: None
@@ -84,6 +87,7 @@ items:
 
         overrides*.'
       id: operation_config
+      isRequired: true
     return:
       description: object or ClientRawResponse if raw=true
       type:
@@ -99,6 +103,7 @@ items:
   - python
   module: botframework.connector.operations
   name: get_attachment_info(attachment_id, custom_headers=None, raw=False, **operation_config)
+  namewithoutparameters: get_attachment_info
   summary: 'GetAttachmentInfo.
 
 
@@ -108,6 +113,7 @@ items:
     parameters:
     - description: attachment id
       id: attachment_id
+      isRequired: true
       type:
       - str
     - defaultValue: None
@@ -126,6 +132,7 @@ items:
 
         overrides*.'
       id: operation_config
+      isRequired: true
     return:
       description: AttachmentInfo or ClientRawResponse if raw=true
       type:
