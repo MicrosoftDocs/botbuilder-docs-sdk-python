@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.ai.qna
   name: GenerateAnswerUtils
+  source:
+    id: GenerateAnswerUtils
+    path: ./libraries/botbuilder-ai\botbuilder\ai\qna\utils\generate_answer_utils.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-ai\botbuilder\ai\qna\utils\generate_answer_utils.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 28
   summary: 'Helper class for Generate Answer API, which is used to make queries to
 
     a single QnA Maker knowledge base and return the result.'
@@ -29,6 +37,14 @@ items:
   name: 'get_answers(context: botbuilder.core.turn_context.TurnContext, options: botbuilder.ai.qna.qnamaker_options.QnAMakerOptions
     = None) -> typing.List[botbuilder.ai.qna.models.query_result.QueryResult]'
   namewithoutparameters: get_answers
+  source:
+    id: get_answers
+    path: ./libraries/botbuilder-ai\botbuilder\ai\qna\utils\generate_answer_utils.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-ai\botbuilder\ai\qna\utils\generate_answer_utils.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 63
   syntax:
     content: 'get_answers(context: botbuilder.core.turn_context.TurnContext, options:
       botbuilder.ai.qna.qnamaker_options.QnAMakerOptions = None) -> typing.List[botbuilder.ai.qna.models.query_result.QueryResult]'
@@ -42,6 +58,14 @@ items:
   name: 'get_answers_raw(context: botbuilder.core.turn_context.TurnContext, options:
     botbuilder.ai.qna.qnamaker_options.QnAMakerOptions = None) -> botbuilder.ai.qna.models.query_results.QueryResults'
   namewithoutparameters: get_answers_raw
+  source:
+    id: get_answers_raw
+    path: ./libraries/botbuilder-ai\botbuilder\ai\qna\utils\generate_answer_utils.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-ai\botbuilder\ai\qna\utils\generate_answer_utils.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 70
   syntax:
     content: 'get_answers_raw(context: botbuilder.core.turn_context.TurnContext, options:
       botbuilder.ai.qna.qnamaker_options.QnAMakerOptions = None) -> botbuilder.ai.qna.models.query_results.QueryResults'

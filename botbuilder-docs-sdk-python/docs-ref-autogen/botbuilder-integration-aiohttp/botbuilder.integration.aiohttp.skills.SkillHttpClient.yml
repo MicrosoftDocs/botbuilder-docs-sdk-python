@@ -17,6 +17,14 @@ items:
   - python
   module: botbuilder.integration.aiohttp.skills
   name: SkillHttpClient
+  source:
+    id: SkillHttpClient
+    path: ./libraries/botbuilder-integration-aiohttp\botbuilder\integration\aiohttp\skills\skill_http_client.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-integration-aiohttp\botbuilder\integration\aiohttp\skills\skill_http_client.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 22
   syntax:
     content: 'SkillHttpClient(credential_provider: botframework.connector.auth.credential_provider.SimpleCredentialProvider,
       skill_conversation_id_factory: botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase,
@@ -33,6 +41,14 @@ items:
     service_url: str, activity: botbuilder.schema._models_py3.Activity, originating_audience:
     str = None) -> botbuilder.core.invoke_response.InvokeResponse'
   namewithoutparameters: post_activity_to_skill
+  source:
+    id: post_activity_to_skill
+    path: ./libraries/botbuilder-integration-aiohttp\botbuilder\integration\aiohttp\skills\skill_http_client.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-integration-aiohttp\botbuilder\integration\aiohttp\skills\skill_http_client.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 40
   syntax:
     content: 'post_activity_to_skill(from_bot_id: str, to_skill: botbuilder.core.skills.bot_framework_skill.BotFrameworkSkill,
       service_url: str, activity: botbuilder.schema._models_py3.Activity, originating_audience:

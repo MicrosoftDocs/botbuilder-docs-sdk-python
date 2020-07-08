@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema
   name: ConversationMembers
+  source:
+    id: ConversationMembers
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 1354
   summary: Conversation and its members.
   syntax:
     content: 'ConversationMembers(*, id: str = None, members=None, **kwargs) -> None'

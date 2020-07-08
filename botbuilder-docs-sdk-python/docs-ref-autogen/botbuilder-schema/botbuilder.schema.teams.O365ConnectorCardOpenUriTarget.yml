@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema.teams
   name: O365ConnectorCardOpenUriTarget
+  source:
+    id: O365ConnectorCardOpenUriTarget
+    path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 1379
   summary: O365 connector card OpenUri target.
   syntax:
     content: 'O365ConnectorCardOpenUriTarget(*, os=None, uri: str = None, **kwargs)

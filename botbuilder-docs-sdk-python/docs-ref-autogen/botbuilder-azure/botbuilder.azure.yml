@@ -19,6 +19,14 @@ items:
   - python
   module: botbuilder.azure
   name: azure
+  source:
+    id: azure
+    path: ./libraries/botbuilder-azure\botbuilder\azure\__init__.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-azure\botbuilder\azure\__init__.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 0
   type: package
   uid: botbuilder.azure
 references:

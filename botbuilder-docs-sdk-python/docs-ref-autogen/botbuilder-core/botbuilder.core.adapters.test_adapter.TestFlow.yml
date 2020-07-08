@@ -13,6 +13,14 @@ items:
   - python
   module: botbuilder.core.adapters.test_adapter
   name: TestFlow
+  source:
+    id: TestFlow
+    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 538
   summary: ''
   syntax:
     content: 'TestFlow(previous: typing.Callable, adapter: botbuilder.core.adapters.test_adapter.TestAdapter)'
@@ -27,6 +35,14 @@ items:
     typing.Callable[[botbuilder.schema._models_py3.Activity, str], NoneType]], description=None,
     timeout=None, is_substring=False) -> botbuilder.core.adapters.test_adapter.TestFlow'
   namewithoutparameters: assert_reply
+  source:
+    id: assert_reply
+    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 583
   summary: 'Generates an assertion if the bots response doesn''t match the expected
     text/activity.
 
@@ -52,6 +68,14 @@ items:
   module: botbuilder.core.adapters.test_adapter
   name: send(user_says) -> botbuilder.core.adapters.test_adapter.TestFlow
   namewithoutparameters: send
+  source:
+    id: send
+    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 568
   summary: 'Sends something to the bot.
 
     :param user_says:
@@ -68,6 +92,14 @@ items:
   module: botbuilder.core.adapters.test_adapter
   name: test(user_says, expected, description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
   namewithoutparameters: test
+  source:
+    id: test
+    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 550
   summary: 'Send something to the bot and expects the bot to return with a given reply.
     This is simply a
 

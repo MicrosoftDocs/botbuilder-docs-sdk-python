@@ -13,6 +13,14 @@ items:
   - python
   module: botbuilder.core
   name: Middleware
+  source:
+    id: Middleware
+    path: ./libraries/botbuilder-core\botbuilder\core\middleware_set.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\middleware_set.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 11
   syntax: {}
   type: class
   uid: botbuilder.core.Middleware
@@ -24,6 +32,14 @@ items:
   name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
     typing.Awaitable])'
   namewithoutparameters: on_turn
+  source:
+    id: on_turn
+    path: ./libraries/botbuilder-core\botbuilder\core\middleware_set.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\middleware_set.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 12
   syntax:
     content: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
       typing.Awaitable])'

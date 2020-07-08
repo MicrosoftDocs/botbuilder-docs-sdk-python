@@ -13,6 +13,14 @@ items:
   - python
   module: botbuilder.core.skills
   name: BotFrameworkClient
+  source:
+    id: BotFrameworkClient
+    path: ./libraries/botbuilder-core\botbuilder\core\skills\bot_framework_client.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\skills\bot_framework_client.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 10
   syntax: {}
   type: class
   uid: botbuilder.core.skills.BotFrameworkClient
@@ -25,6 +33,14 @@ items:
     str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity) ->
     botbuilder.core.invoke_response.InvokeResponse'
   namewithoutparameters: post_activity
+  source:
+    id: post_activity
+    path: ./libraries/botbuilder-core\botbuilder\core\skills\bot_framework_client.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\skills\bot_framework_client.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 11
   syntax:
     content: 'post_activity(from_bot_id: str, to_bot_id: str, to_url: str, service_url:
       str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity)

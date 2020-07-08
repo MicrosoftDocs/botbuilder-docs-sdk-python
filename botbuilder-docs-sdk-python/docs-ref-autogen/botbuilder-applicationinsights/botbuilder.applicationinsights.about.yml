@@ -7,6 +7,14 @@ items:
   - python
   module: botbuilder.applicationinsights.about
   name: about
+  source:
+    id: about
+    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\about.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\about.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 0
   summary: Bot Framework Application Insights integration package info.
   type: module
   uid: botbuilder.applicationinsights.about

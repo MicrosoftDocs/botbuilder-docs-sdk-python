@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema
   name: OAuthCard
+  source:
+    id: OAuthCard
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 1833
   summary: A card representing a request to perform a sign in via OAuth.
   syntax:
     content: 'OAuthCard(*, text: str = None, connection_name: str = None, buttons=None,

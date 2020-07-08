@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema
   name: SuggestedActions
+  source:
+    id: SuggestedActions
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 2087
   summary: SuggestedActions that can be performed.
   syntax:
     content: SuggestedActions(*, to=None, actions=None, **kwargs) -> None

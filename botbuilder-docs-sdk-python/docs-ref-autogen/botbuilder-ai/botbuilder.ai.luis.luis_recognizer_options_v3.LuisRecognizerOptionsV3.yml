@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.ai.luis.luis_recognizer_options_v3
   name: LuisRecognizerOptionsV3
+  source:
+    id: LuisRecognizerOptionsV3
+    path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_recognizer_options_v3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_recognizer_options_v3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 10
   syntax:
     content: 'LuisRecognizerOptionsV3(include_all_intents: bool = False, include_instance_data:
       bool = True, log: bool = True, prefer_external_entities: bool = True, datetime_reference:

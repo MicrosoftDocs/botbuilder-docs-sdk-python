@@ -14,6 +14,14 @@ items:
   - python
   module: botbuilder.core.recognizer_result
   name: TopIntent
+  source:
+    id: TopIntent
+    path: ./libraries/botbuilder-core\botbuilder\core\recognizer_result.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\recognizer_result.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 10
   summary: The top scoring intent and its score.
   syntax: {}
   type: class
@@ -24,6 +32,14 @@ items:
   - python
   module: botbuilder.core.recognizer_result
   name: intent
+  source:
+    id: intent
+    path: null
+    remote:
+      branch: master
+      path: null
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: null
   summary: Alias for field number 0
   syntax: {}
   type: attribute
@@ -34,6 +50,14 @@ items:
   - python
   module: botbuilder.core.recognizer_result
   name: score
+  source:
+    id: score
+    path: null
+    remote:
+      branch: master
+      path: null
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: null
   summary: Alias for field number 1
   syntax: {}
   type: attribute

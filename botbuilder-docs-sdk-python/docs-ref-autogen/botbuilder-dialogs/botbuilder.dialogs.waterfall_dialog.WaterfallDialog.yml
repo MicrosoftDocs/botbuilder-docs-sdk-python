@@ -26,6 +26,14 @@ items:
   - python
   module: botbuilder.dialogs.waterfall_dialog
   name: WaterfallDialog
+  source:
+    id: WaterfallDialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\waterfall_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\waterfall_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 17
   summary: ''
   syntax: {}
   type: class
@@ -37,6 +45,14 @@ items:
   module: botbuilder.dialogs.waterfall_dialog
   name: add_step(step)
   namewithoutparameters: add_step
+  source:
+    id: add_step
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\waterfall_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\waterfall_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 32
   summary: 'Adds a new step to the waterfall.
 
     :param step: Step to add
@@ -57,6 +73,14 @@ items:
   name: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   namewithoutparameters: begin_dialog
+  source:
+    id: begin_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\waterfall_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\waterfall_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 44
   syntax:
     content: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
       options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
@@ -71,6 +95,14 @@ items:
     = None, reason: botbuilder.dialogs.dialog_reason.DialogReason = None, result:
     object = NotImplementedError()) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   namewithoutparameters: continue_dialog
+  source:
+    id: continue_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\waterfall_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\waterfall_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 67
   syntax:
     content: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext
       = None, reason: botbuilder.dialogs.dialog_reason.DialogReason = None, result:
@@ -85,6 +117,14 @@ items:
   name: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance: botbuilder.dialogs.dialog_instance.DialogInstance,
     reason: botbuilder.dialogs.dialog_reason.DialogReason) -> None'
   namewithoutparameters: end_dialog
+  source:
+    id: end_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\waterfall_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\waterfall_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 101
   syntax:
     content: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
       botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)
@@ -98,6 +138,14 @@ items:
   module: botbuilder.dialogs.waterfall_dialog
   name: 'get_step_name(index: int) -> str'
   namewithoutparameters: get_step_name
+  source:
+    id: get_step_name
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\waterfall_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\waterfall_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 161
   summary: Give the waterfall step a unique name
   syntax:
     content: 'get_step_name(index: int) -> str'
@@ -111,6 +159,14 @@ items:
   name: 'on_step(step_context: botbuilder.dialogs.waterfall_step_context.WaterfallStepContext)
     -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   namewithoutparameters: on_step
+  source:
+    id: on_step
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\waterfall_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\waterfall_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 123
   syntax:
     content: 'on_step(step_context: botbuilder.dialogs.waterfall_step_context.WaterfallStepContext)
       -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
@@ -124,6 +180,14 @@ items:
   name: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)'
   namewithoutparameters: resume_dialog
+  source:
+    id: resume_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\waterfall_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\waterfall_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 85
   syntax:
     content: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
       reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)'
@@ -138,6 +202,14 @@ items:
     index: int, reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)
     -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   namewithoutparameters: run_step
+  source:
+    id: run_step
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\waterfall_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\waterfall_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 134
   syntax:
     content: 'run_step(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
       index: int, reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)

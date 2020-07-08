@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema
   name: AttachmentData
+  source:
+    id: AttachmentData
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 958
   summary: Attachment data.
   syntax:
     content: 'AttachmentData(*, type: str = None, name: str = None, original_base64:

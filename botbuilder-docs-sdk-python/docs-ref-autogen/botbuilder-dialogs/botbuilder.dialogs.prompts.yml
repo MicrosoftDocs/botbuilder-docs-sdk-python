@@ -37,6 +37,14 @@ items:
   - python
   module: botbuilder.dialogs.prompts
   name: prompts
+  source:
+    id: prompts
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\__init__.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\__init__.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 0
   type: package
   uid: botbuilder.dialogs.prompts
 references:

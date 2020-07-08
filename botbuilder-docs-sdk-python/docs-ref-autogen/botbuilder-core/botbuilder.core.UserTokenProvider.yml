@@ -17,6 +17,14 @@ items:
   - python
   module: botbuilder.core
   name: UserTokenProvider
+  source:
+    id: UserTokenProvider
+    path: ./libraries/botbuilder-core\botbuilder\core\oauth\user_token_provider.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\oauth\user_token_provider.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 12
   summary: ''
   syntax: {}
   type: class
@@ -31,6 +39,14 @@ items:
     botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
     botbuilder.schema._models_py3.TokenResponse]'
   namewithoutparameters: get_aad_tokens
+  source:
+    id: get_aad_tokens
+    path: ./libraries/botbuilder-core\botbuilder\core\oauth\user_token_provider.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\oauth\user_token_provider.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 92
   summary: 'Retrieves Azure Active Directory tokens for particular resources on a
     configured connection.
 
@@ -67,6 +83,14 @@ items:
     connection_name: str, final_redirect: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None) -> str'
   namewithoutparameters: get_oauth_sign_in_link
+  source:
+    id: get_oauth_sign_in_link
+    path: ./libraries/botbuilder-core\botbuilder\core\oauth\user_token_provider.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\oauth\user_token_provider.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 51
   summary: 'Get the raw signin link to be sent to the user for signin for a connection
     name.
 
@@ -98,6 +122,14 @@ items:
     botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
     botbuilder.schema._models_py3.TokenResponse]'
   namewithoutparameters: get_token_status
+  source:
+    id: get_token_status
+    path: ./libraries/botbuilder-core\botbuilder\core\oauth\user_token_provider.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\oauth\user_token_provider.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 70
   summary: 'Retrieves Azure Active Directory tokens for particular resources on a
     configured connection.
 
@@ -134,6 +166,14 @@ items:
     str, magic_code: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None) -> botbuilder.schema._models_py3.TokenResponse'
   namewithoutparameters: get_user_token
+  source:
+    id: get_user_token
+    path: ./libraries/botbuilder-core\botbuilder\core\oauth\user_token_provider.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\oauth\user_token_provider.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 13
   summary: 'Retrieves the OAuth token for a user that is in a sign-in flow.
 
     :param context: Context for the current turn of conversation with the user.
@@ -163,6 +203,14 @@ items:
     str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None)'
   namewithoutparameters: sign_out_user
+  source:
+    id: sign_out_user
+    path: ./libraries/botbuilder-core\botbuilder\core\oauth\user_token_provider.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\oauth\user_token_provider.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 32
   summary: 'Signs the user out with the token server.
 
     :param context: Context for the current turn of conversation with the user.

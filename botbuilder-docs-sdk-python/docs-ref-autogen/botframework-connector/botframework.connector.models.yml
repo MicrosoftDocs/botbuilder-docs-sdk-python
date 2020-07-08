@@ -8,6 +8,14 @@ items:
   - python
   module: botframework.connector.models
   name: models
+  source:
+    id: models
+    path: ./libraries/botframework-connector\botframework\connector\models\__init__.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\models\__init__.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 0
   type: package
   uid: botframework.connector.models
 references: []

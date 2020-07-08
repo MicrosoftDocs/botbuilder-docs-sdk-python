@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema
   name: HeroCard
+  source:
+    id: HeroCard
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 1633
   summary: A Hero card (card with a single, large image).
   syntax:
     content: 'HeroCard(*, title: str = None, subtitle: str = None, text: str = None,

@@ -11,6 +11,14 @@ items:
   - python
   module: botbuilder.core.adapters.test_adapter
   name: UserToken
+  source:
+    id: UserToken
+    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 36
   syntax:
     content: 'UserToken(connection_name: str = None, user_id: str = None, channel_id:
       str = None, token: str = None)'
@@ -23,6 +31,14 @@ items:
   module: botbuilder.core.adapters.test_adapter
   name: 'equals_key(rhs: botbuilder.core.adapters.test_adapter.UserToken)'
   namewithoutparameters: equals_key
+  source:
+    id: equals_key
+    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 49
   syntax:
     content: 'equals_key(rhs: botbuilder.core.adapters.test_adapter.UserToken)'
   type: method

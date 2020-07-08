@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema.teams
   name: O365ConnectorCardInputBase
+  source:
+    id: O365ConnectorCardInputBase
+    path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 1001
   summary: O365 connector card input for ActionCard action.
   syntax:
     content: 'O365ConnectorCardInputBase(*, type=None, id: str = None, is_required:

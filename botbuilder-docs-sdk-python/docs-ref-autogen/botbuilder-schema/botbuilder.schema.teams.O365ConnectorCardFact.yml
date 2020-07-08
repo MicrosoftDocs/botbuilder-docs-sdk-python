@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema.teams
   name: O365ConnectorCardFact
+  source:
+    id: O365ConnectorCardFact
+    path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 1191
   summary: O365 connector card fact.
   syntax:
     content: 'O365ConnectorCardFact(*, name: str = None, value: str = None, **kwargs)

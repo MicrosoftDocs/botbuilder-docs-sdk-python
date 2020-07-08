@@ -16,6 +16,14 @@ items:
   - python
   module: botframework.connector.auth.enterprise_channel_validation
   name: EnterpriseChannelValidation
+  source:
+    id: EnterpriseChannelValidation
+    path: ./libraries/botframework-connector\botframework\connector\auth\enterprise_channel_validation.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\auth\enterprise_channel_validation.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 17
   summary: ''
   syntax: {}
   type: class
@@ -30,6 +38,14 @@ items:
     auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
     = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   namewithoutparameters: authenticate_channel_token
+  source:
+    id: authenticate_channel_token
+    path: ./libraries/botframework-connector\botframework\connector\auth\enterprise_channel_validation.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\auth\enterprise_channel_validation.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 26
   syntax:
     content: 'authenticate_channel_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
       channel_id: str, channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
@@ -48,6 +64,14 @@ items:
     auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
     = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   namewithoutparameters: authenticate_channel_token_with_service_url
+  source:
+    id: authenticate_channel_token_with_service_url
+    path: ./libraries/botframework-connector\botframework\connector\auth\enterprise_channel_validation.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\auth\enterprise_channel_validation.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 58
   syntax:
     content: 'authenticate_channel_token_with_service_url(auth_header: str, credentials:
       botframework.connector.auth.credential_provider.CredentialProvider, service_url:
@@ -65,6 +89,14 @@ items:
     credentials: botframework.connector.auth.credential_provider.CredentialProvider)
     -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   namewithoutparameters: validate_identity
+  source:
+    id: validate_identity
+    path: ./libraries/botframework-connector\botframework\connector\auth\enterprise_channel_validation.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\auth\enterprise_channel_validation.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 83
   syntax:
     content: 'validate_identity(identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
       credentials: botframework.connector.auth.credential_provider.CredentialProvider)

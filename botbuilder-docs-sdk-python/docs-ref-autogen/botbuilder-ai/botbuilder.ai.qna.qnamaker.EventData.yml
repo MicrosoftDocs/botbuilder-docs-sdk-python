@@ -14,6 +14,14 @@ items:
   - python
   module: botbuilder.ai.qna.qnamaker
   name: EventData
+  source:
+    id: EventData
+    path: ./libraries/botbuilder-ai\botbuilder\ai\qna\qnamaker.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-ai\botbuilder\ai\qna\qnamaker.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 25
   summary: ''
   syntax:
     content: EventData(properties, metrics)
@@ -25,6 +33,14 @@ items:
   - python
   module: botbuilder.ai.qna.qnamaker
   name: metrics
+  source:
+    id: metrics
+    path: null
+    remote:
+      branch: master
+      path: null
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: null
   summary: Alias for field number 1
   syntax: {}
   type: attribute
@@ -35,6 +51,14 @@ items:
   - python
   module: botbuilder.ai.qna.qnamaker
   name: properties
+  source:
+    id: properties
+    path: null
+    remote:
+      branch: master
+      path: null
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: null
   summary: Alias for field number 0
   syntax: {}
   type: attribute

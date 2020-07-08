@@ -15,6 +15,14 @@ items:
   - python
   module: botbuilder.core.skills.skill_handler
   name: SkillHandler
+  source:
+    id: SkillHandler
+    path: ./libraries/botbuilder-core\botbuilder\core\skills\skill_handler.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\skills\skill_handler.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 26
   summary: ''
   syntax:
     content: 'SkillHandler(adapter: botbuilder.core.bot_adapter.BotAdapter, bot: botbuilder.core.bot.Bot,
@@ -34,6 +42,14 @@ items:
     conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
     -> botbuilder.schema._models_py3.ResourceResponse'
   namewithoutparameters: on_reply_to_activity
+  source:
+    id: on_reply_to_activity
+    path: ./libraries/botbuilder-core\botbuilder\core\skills\skill_handler.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\skills\skill_handler.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 87
   summary: 'reply_to_activity() API for Skill.
 
 
@@ -60,13 +76,17 @@ items:
 
     Use SendToConversation in all other cases.
 
-    :param claims_identity:
+    :param claims_identity: Claims identity for the bot.
 
-    :param conversation_id:
+    :type claims_identity: <xref:botframework.connector.auth.ClaimsIdentity>
 
-    :param activity_id:
+    :param conversation_id:The conversation ID.
 
-    :param activity:
+    :type conversation_id: str
+
+    :param activity: Activity to send.
+
+    :type activity: Activity
 
     :return:'
   syntax:
@@ -83,6 +103,14 @@ items:
   name: 'on_send_to_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity: botbuilder.schema._models_py3.Activity) -> botbuilder.schema._models_py3.ResourceResponse'
   namewithoutparameters: on_send_to_conversation
+  source:
+    id: on_send_to_conversation
+    path: ./libraries/botbuilder-core\botbuilder\core\skills\skill_handler.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\skills\skill_handler.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 56
   summary: 'send_to_conversation() API for Skill
 
 
@@ -109,11 +137,17 @@ items:
 
     Use SendToConversation in all other cases.
 
-    :param claims_identity:
+    :param claims_identity: Claims identity for the bot.
 
-    :param conversation_id:
+    :type claims_identity: <xref:botframework.connector.auth.ClaimsIdentity>
 
-    :param activity:
+    :param conversation_id:The conversation ID.
+
+    :type conversation_id: str
+
+    :param activity: Activity to send.
+
+    :type activity: Activity
 
     :return:'
   syntax:

@@ -12,11 +12,19 @@ items:
   - python
   module: botbuilder.schema
   name: CardAction
+  source:
+    id: CardAction
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 1169
   summary: A clickable action.
   syntax:
     content: 'CardAction(*, type=None, title: str = None, image: str = None, text:
-      str = None, display_text: str = None, value=None, channel_data=None, **kwargs)
-      -> None'
+      str = None, display_text: str = None, value=None, channel_data=None, image_alt_text:
+      str = None, **kwargs) -> None'
     parameters:
     - description: 'The type of action implemented by this button. Possible
 
@@ -57,6 +65,10 @@ items:
       id: channel_data
       type:
       - object
+    - description: Alternate image text to be used in place of the *image* field
+      id: image_alt_text
+      type:
+      - str
   type: class
   uid: botbuilder.schema.CardAction
 references: []

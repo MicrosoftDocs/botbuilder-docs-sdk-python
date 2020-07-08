@@ -11,6 +11,14 @@ items:
   - python
   module: botframework.connector.auth.endorsements_validator
   name: EndorsementsValidator
+  source:
+    id: EndorsementsValidator
+    path: ./libraries/botframework-connector\botframework\connector\auth\endorsements_validator.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\auth\endorsements_validator.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 7
   syntax: {}
   type: class
   uid: botframework.connector.auth.endorsements_validator.EndorsementsValidator
@@ -21,6 +29,14 @@ items:
   module: botframework.connector.auth.endorsements_validator
   name: 'validate(expected_endorsement: str, endorsements: typing.List[str])'
   namewithoutparameters: validate
+  source:
+    id: validate
+    path: ./libraries/botframework-connector\botframework\connector\auth\endorsements_validator.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\auth\endorsements_validator.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 8
   syntax:
     content: 'validate(expected_endorsement: str, endorsements: typing.List[str])'
   type: method

@@ -17,6 +17,14 @@ items:
   - python
   module: botbuilder.applicationinsights.django
   name: django
+  source:
+    id: django
+    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\__init__.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\__init__.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 0
   summary: Django Application Insights package.
   type: package
   uid: botbuilder.applicationinsights.django
@@ -25,6 +33,14 @@ items:
   - python
   module: botbuilder.applicationinsights.django
   name: create_client()
+  source:
+    id: create_client
+    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\__init__.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\__init__.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 19
   summary: 'Returns an <xref:applicationinsights.TelemetryClient> instance using the
     instrumentation key
 

@@ -8,6 +8,14 @@ items:
   - python
   module: botbuilder.core.skills.skill_handler
   name: skill_handler
+  source:
+    id: skill_handler
+    path: ./libraries/botbuilder-core\botbuilder\core\skills\skill_handler.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\skills\skill_handler.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 0
   type: module
   uid: botbuilder.core.skills.skill_handler
 references:
