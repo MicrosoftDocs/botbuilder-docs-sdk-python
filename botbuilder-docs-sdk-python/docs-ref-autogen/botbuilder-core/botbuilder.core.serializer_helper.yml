@@ -9,6 +9,14 @@ items:
   - python
   module: botbuilder.core.serializer_helper
   name: serializer_helper
+  source:
+    id: serializer_helper
+    path: ./libraries/botbuilder-core\botbuilder\core\serializer_helper.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\serializer_helper.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 0
   type: module
   uid: botbuilder.core.serializer_helper
 - fullName: botbuilder.core.serializer_helper.deserializer_helper
@@ -17,6 +25,14 @@ items:
   module: botbuilder.core.serializer_helper
   name: 'deserializer_helper(msrest_cls: typing.Type[msrest.serialization.Model],
     dict_to_deserialize: dict) -> msrest.serialization.Model'
+  source:
+    id: deserializer_helper
+    path: ./libraries/botbuilder-core\botbuilder\core\serializer_helper.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\serializer_helper.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 26
   syntax:
     content: 'deserializer_helper(msrest_cls: typing.Type[msrest.serialization.Model],
       dict_to_deserialize: dict) -> msrest.serialization.Model'
@@ -27,6 +43,14 @@ items:
   - python
   module: botbuilder.core.serializer_helper
   name: 'serializer_helper(object_to_serialize: msrest.serialization.Model) -> dict'
+  source:
+    id: serializer_helper
+    path: ./libraries/botbuilder-core\botbuilder\core\serializer_helper.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\serializer_helper.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 31
   syntax:
     content: 'serializer_helper(object_to_serialize: msrest.serialization.Model) ->
       dict'

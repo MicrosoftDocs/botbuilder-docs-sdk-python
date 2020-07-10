@@ -13,6 +13,14 @@ items:
   - python
   module: botframework.connector.teams.operations
   name: TeamsOperations
+  source:
+    id: TeamsOperations
+    path: ./libraries/botframework-connector\botframework\connector\teams\operations\teams_operations.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\teams\operations\teams_operations.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 18
   summary: TeamsOperations operations.
   syntax:
     content: TeamsOperations(client, config, serializer, deserializer)
@@ -36,6 +44,14 @@ items:
   module: botframework.connector.teams.operations
   name: get_team_details(team_id, custom_headers=None, raw=False, **operation_config)
   namewithoutparameters: get_team_details
+  source:
+    id: get_team_details
+    path: ./libraries/botframework-connector\botframework\connector\teams\operations\teams_operations.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\teams\operations\teams_operations.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 93
   summary: 'Fetches details related to a team.
 
 
@@ -81,6 +97,14 @@ items:
   module: botframework.connector.teams.operations
   name: get_teams_channels(team_id, custom_headers=None, raw=False, **operation_config)
   namewithoutparameters: get_teams_channels
+  source:
+    id: get_teams_channels
+    path: ./libraries/botframework-connector\botframework\connector\teams\operations\teams_operations.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\teams\operations\teams_operations.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 37
   summary: 'Fetches channel list for a given team.
 
 

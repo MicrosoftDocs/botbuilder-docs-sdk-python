@@ -21,6 +21,14 @@ items:
   - python
   module: botbuilder.core
   name: MemoryTranscriptStore
+  source:
+    id: MemoryTranscriptStore
+    path: ./libraries/botbuilder-core\botbuilder\core\memory_transcript_store.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\memory_transcript_store.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 10
   summary: 'This provider is most useful for simulating production storage when running
     locally against the
 
@@ -35,6 +43,14 @@ items:
   module: botbuilder.core
   name: 'delete_transcript(channel_id: str, conversation_id: str) -> None'
   namewithoutparameters: delete_transcript
+  source:
+    id: delete_transcript
+    path: ./libraries/botbuilder-core\botbuilder\core\memory_transcript_store.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\memory_transcript_store.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 84
   syntax:
     content: 'delete_transcript(channel_id: str, conversation_id: str) -> None'
   type: method
@@ -46,6 +62,14 @@ items:
   module: botbuilder.core
   name: get_transcript_activities
   namewithoutparameters: get_transcript_activities
+  source:
+    id: get_transcript_activities
+    path: ./libraries/botbuilder-core\botbuilder\core\memory_transcript_store.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\memory_transcript_store.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 39
   syntax: {}
   type: method
   uid: botbuilder.core.MemoryTranscriptStore.get_transcript_activities
@@ -56,6 +80,14 @@ items:
   module: botbuilder.core
   name: list_transcripts
   namewithoutparameters: list_transcripts
+  source:
+    id: list_transcripts
+    path: ./libraries/botbuilder-core\botbuilder\core\memory_transcript_store.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\memory_transcript_store.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 95
   syntax: {}
   type: method
   uid: botbuilder.core.MemoryTranscriptStore.list_transcripts
@@ -66,6 +98,14 @@ items:
   module: botbuilder.core
   name: 'log_activity(activity: botbuilder.schema._models_py3.Activity) -> None'
   namewithoutparameters: log_activity
+  source:
+    id: log_activity
+    path: ./libraries/botbuilder-core\botbuilder\core\memory_transcript_store.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\memory_transcript_store.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 17
   syntax:
     content: 'log_activity(activity: botbuilder.schema._models_py3.Activity) -> None'
   type: method

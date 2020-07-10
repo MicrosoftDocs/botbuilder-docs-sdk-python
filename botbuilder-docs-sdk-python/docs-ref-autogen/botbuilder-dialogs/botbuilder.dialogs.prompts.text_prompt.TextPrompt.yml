@@ -18,6 +18,14 @@ items:
   - python
   module: botbuilder.dialogs.prompts.text_prompt
   name: TextPrompt
+  source:
+    id: TextPrompt
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\text_prompt.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\text_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 12
   summary: ''
   syntax:
     content: 'TextPrompt(dialog_id: str, validator: object = None)'
@@ -32,6 +40,14 @@ items:
     typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
     is_retry: bool)'
   namewithoutparameters: on_prompt
+  source:
+    id: on_prompt
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\text_prompt.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\text_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 13
   syntax:
     content: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
       typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
@@ -47,6 +63,14 @@ items:
     typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
     -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
   namewithoutparameters: on_recognize
+  source:
+    id: on_recognize
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\text_prompt.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\text_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 31
   syntax:
     content: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
       state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)

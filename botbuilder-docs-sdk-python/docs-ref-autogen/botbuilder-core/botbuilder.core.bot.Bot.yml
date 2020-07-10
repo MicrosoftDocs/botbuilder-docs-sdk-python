@@ -13,6 +13,14 @@ items:
   - python
   module: botbuilder.core.bot
   name: Bot
+  source:
+    id: Bot
+    path: ./libraries/botbuilder-core\botbuilder\core\bot.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 9
   summary: Represents a bot that can operate on incoming activities.
   syntax: {}
   type: class
@@ -24,6 +32,14 @@ items:
   module: botbuilder.core.bot
   name: 'on_turn(context: botbuilder.core.turn_context.TurnContext)'
   namewithoutparameters: on_turn
+  source:
+    id: on_turn
+    path: ./libraries/botbuilder-core\botbuilder\core\bot.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 14
   summary: 'When implemented in a bot, handles an incoming activity.
 
     :param context: The context object for this turn.

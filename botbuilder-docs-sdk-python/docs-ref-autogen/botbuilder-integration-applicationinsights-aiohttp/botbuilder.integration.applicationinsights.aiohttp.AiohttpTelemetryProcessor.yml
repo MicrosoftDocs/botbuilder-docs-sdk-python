@@ -17,6 +17,14 @@ items:
   - python
   module: botbuilder.integration.applicationinsights.aiohttp
   name: AiohttpTelemetryProcessor
+  source:
+    id: AiohttpTelemetryProcessor
+    path: ./libraries/botbuilder-integration-applicationinsights-aiohttp\botbuilder\integration\applicationinsights\aiohttp\aiohttp_telemetry_processor.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-integration-applicationinsights-aiohttp\botbuilder\integration\applicationinsights\aiohttp\aiohttp_telemetry_processor.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 12
   summary: ''
   syntax: {}
   type: class
@@ -28,6 +36,14 @@ items:
   module: botbuilder.integration.applicationinsights.aiohttp
   name: can_process() -> bool
   namewithoutparameters: can_process
+  source:
+    id: can_process
+    path: ./libraries/botbuilder-integration-applicationinsights-aiohttp\botbuilder\integration\applicationinsights\aiohttp\aiohttp_telemetry_processor.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-integration-applicationinsights-aiohttp\botbuilder\integration\applicationinsights\aiohttp\aiohttp_telemetry_processor.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 13
   syntax:
     content: can_process() -> bool
   type: method
@@ -39,6 +55,14 @@ items:
   module: botbuilder.integration.applicationinsights.aiohttp
   name: detect_aiohttp() -> bool
   namewithoutparameters: detect_aiohttp
+  source:
+    id: detect_aiohttp
+    path: ./libraries/botbuilder-integration-applicationinsights-aiohttp\botbuilder\integration\applicationinsights\aiohttp\aiohttp_telemetry_processor.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-integration-applicationinsights-aiohttp\botbuilder\integration\applicationinsights\aiohttp\aiohttp_telemetry_processor.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 21
   summary: Detects if running in aiohttp.
   syntax:
     content: detect_aiohttp() -> bool
@@ -51,6 +75,14 @@ items:
   module: botbuilder.integration.applicationinsights.aiohttp
   name: get_request_body() -> str
   namewithoutparameters: get_request_body
+  source:
+    id: get_request_body
+    path: ./libraries/botbuilder-integration-applicationinsights-aiohttp\botbuilder\integration\applicationinsights\aiohttp\aiohttp_telemetry_processor.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-integration-applicationinsights-aiohttp\botbuilder\integration\applicationinsights\aiohttp\aiohttp_telemetry_processor.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 16
   syntax:
     content: get_request_body() -> str
   type: method

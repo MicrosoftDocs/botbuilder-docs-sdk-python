@@ -13,6 +13,14 @@ items:
   - python
   module: botbuilder.core.transcript_logger
   name: transcript_logger
+  source:
+    id: transcript_logger
+    path: ./libraries/botbuilder-core\botbuilder\core\transcript_logger.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\transcript_logger.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 0
   summary: Logs incoming and outgoing activities to a TranscriptStore..
   type: module
   uid: botbuilder.core.transcript_logger

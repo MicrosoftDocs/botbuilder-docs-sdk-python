@@ -8,12 +8,27 @@ items:
   - python
   module: botbuilder.testing.storage_base_tests
   name: storage_base_tests
+  source:
+    id: storage_base_tests
+    path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 0
   summary: "Base tests that all storage providers should implement in their own tests.\n\
     They handle the storage-based assertions, internally.\n\n\nAll tests return true\
     \ if assertions pass to indicate that the code ran to completion, passing internal\
     \ assertions.\nTherefore, all tests using theses static tests should strictly\
-    \ check that the method returns true.\n\n\n:Example:\n    async def test_handle_null_keys_when_reading(self):\n\
-    \        await reset()\n\n\n        test_ran = await StorageBaseTests.handle_null_keys_when_reading(get_storage())\n\
+    \ check that the method returns true.\n\n\nNote: Python cannot have dicts with\
+    \ properties with a None value like other SDKs can have properties with null values.\n\
+    \      Because of this, StoreItem tests have \"e_tag: *\" where the tests in the\
+    \ other SDKs do not.\n      This has also caused us to comment out some parts\
+    \ of these tests where we assert that \"e_tag\"\n      is None for the same reason.\
+    \ A null e_tag should work just like a * e_tag when writing,\n      as far as\
+    \ the storage adapters are concerened, so this shouldn't cause issues.\n\n\n\n\
+    :Example:\n    async def test_handle_null_keys_when_reading(self):\n        await\
+    \ reset()\n\n\n        test_ran = await StorageBaseTests.handle_null_keys_when_reading(get_storage())\n\
     \n\n        assert test_ran"
   type: module
   uid: botbuilder.testing.storage_base_tests

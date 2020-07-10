@@ -21,6 +21,14 @@ items:
   - python
   module: botbuilder.core
   name: NullTelemetryClient
+  source:
+    id: NullTelemetryClient
+    path: ./libraries/botbuilder-core\botbuilder\core\null_telemetry_client.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\null_telemetry_client.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 9
   summary: ''
   syntax:
     content: NullTelemetryClient()
@@ -36,6 +44,14 @@ items:
     typing.Dict[str, object] = None, measurements: typing.Dict[str, object] = None,
     dependency_id: str = None)'
   namewithoutparameters: track_dependency
+  source:
+    id: track_dependency
+    path: ./libraries/botbuilder-core\botbuilder\core\null_telemetry_client.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\null_telemetry_client.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 132
   summary: 'Sends a single dependency telemetry that was captured for the application.
 
     :param name: the name of the command initiated with this dependency call. Low
@@ -84,6 +100,14 @@ items:
   name: 'track_event(name: str, properties: typing.Dict[str, object] = None, measurements:
     typing.Dict[str, object] = None) -> None'
   namewithoutparameters: track_event
+  source:
+    id: track_event
+    path: ./libraries/botbuilder-core\botbuilder\core\null_telemetry_client.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\null_telemetry_client.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 51
   summary: 'Send information about a single event that has occurred in the context
     of the application.
 
@@ -106,6 +130,14 @@ items:
   module: botbuilder.core
   name: track_exception
   namewithoutparameters: track_exception
+  source:
+    id: track_exception
+    path: ./libraries/botbuilder-core\botbuilder\core\null_telemetry_client.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\null_telemetry_client.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 32
   summary: 'Send information about a single exception that occurred in the application.
 
     :param exception_type: the type of the exception that was thrown.
@@ -131,6 +163,14 @@ items:
     = None, count: int = None, min_val: float = None, max_val: float = None, std_dev:
     float = None, properties: typing.Dict[str, object] = None) -> NotImplemented'
   namewithoutparameters: track_metric
+  source:
+    id: track_metric
+    path: ./libraries/botbuilder-core\botbuilder\core\null_telemetry_client.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\null_telemetry_client.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 66
   summary: "Send information about a single metric data point that was captured for\
     \ the application.\n:param name: The name of the metric that was captured.\n:param\
     \ value: The value of the metric that was captured.\n:param tel_type: The type\
@@ -167,6 +207,14 @@ items:
   name: 'track_pageview(name: str, url, duration: int = 0, properties: typing.Dict[str,
     object] = None, measurements: typing.Dict[str, object] = None) -> None'
   namewithoutparameters: track_pageview
+  source:
+    id: track_pageview
+    path: ./libraries/botbuilder-core\botbuilder\core\null_telemetry_client.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\null_telemetry_client.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 13
   summary: 'Send information about the page viewed in the application (a web page
     for instance).
 
@@ -197,6 +245,14 @@ items:
     typing.Dict[str, object] = None, measurements: typing.Dict[str, object] = None,
     request_id: str = None)'
   namewithoutparameters: track_request
+  source:
+    id: track_request
+    path: ./libraries/botbuilder-core\botbuilder\core\null_telemetry_client.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\null_telemetry_client.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 102
   summary: 'Sends a single request that was captured for the application.
 
     :param name: The name for this request. All requests with the same name will be
@@ -207,7 +263,7 @@ items:
     :param success: True if the request ended in success, False otherwise.
 
     :param start_time: the start time of the request. The value should look the same
-    as the one returned         by <xref:datetime.isoformat> (defaults to: None)
+    as the one returned         by <xref:datetime.isoformat>. (defaults to: None)
 
     :param duration: the number of milliseconds that this request lasted. (defaults
     to: None)
@@ -241,6 +297,14 @@ items:
   name: 'track_trace(name, properties=None, severity: botbuilder.core.bot_telemetry_client.Severity
     = None)'
   namewithoutparameters: track_trace
+  source:
+    id: track_trace
+    path: ./libraries/botbuilder-core\botbuilder\core\null_telemetry_client.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\null_telemetry_client.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 93
   summary: 'Sends a single trace statement.
 
     :param name: the trace statement.'

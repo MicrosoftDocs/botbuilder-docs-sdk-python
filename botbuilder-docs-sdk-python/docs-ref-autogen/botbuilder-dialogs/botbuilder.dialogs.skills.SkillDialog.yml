@@ -19,6 +19,14 @@ items:
   - python
   module: botbuilder.dialogs.skills
   name: SkillDialog
+  source:
+    id: SkillDialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 31
   summary: ''
   syntax:
     content: 'SkillDialog(dialog_options: botbuilder.dialogs.skills.skill_dialog_options.SkillDialogOptions,
@@ -33,6 +41,14 @@ items:
   name: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     options: object = None)'
   namewithoutparameters: begin_dialog
+  source:
+    id: begin_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 40
   summary: 'Method called when a new dialog has been pushed onto the stack and is
     being activated.
 
@@ -52,6 +68,14 @@ items:
   module: botbuilder.dialogs.skills
   name: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
   namewithoutparameters: continue_dialog
+  source:
+    id: continue_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 75
   syntax:
     content: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
   type: method
@@ -64,6 +88,14 @@ items:
   name: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance: botbuilder.dialogs.dialog_instance.DialogInstance,
     reason: botbuilder.dialogs.dialog_reason.DialogReason)'
   namewithoutparameters: end_dialog
+  source:
+    id: end_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 134
   syntax:
     content: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
       botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)'
@@ -77,6 +109,14 @@ items:
   name: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
     botbuilder.dialogs.dialog_instance.DialogInstance)'
   namewithoutparameters: reprompt_dialog
+  source:
+    id: reprompt_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 110
   syntax:
     content: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
       botbuilder.dialogs.dialog_instance.DialogInstance)'
@@ -90,6 +130,14 @@ items:
   name: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)'
   namewithoutparameters: resume_dialog
+  source:
+    id: resume_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\skills\skill_dialog.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 128
   syntax:
     content: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
       reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)'

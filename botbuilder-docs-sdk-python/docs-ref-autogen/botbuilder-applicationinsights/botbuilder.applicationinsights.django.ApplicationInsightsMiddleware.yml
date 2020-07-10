@@ -15,6 +15,14 @@ items:
   - python
   module: botbuilder.applicationinsights.django
   name: ApplicationInsightsMiddleware
+  source:
+    id: ApplicationInsightsMiddleware
+    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\middleware.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\middleware.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 27
   summary: "This class is a Django middleware that automatically enables request and\
     \ exception telemetry.  Django versions\n1.7 and newer are supported.\n\nTo enable,\
     \ add this class to your settings.py file in MIDDLEWARE_CLASSES (pre-1.10) or\
@@ -74,6 +82,14 @@ items:
   module: botbuilder.applicationinsights.django
   name: process_exception(request, exception)
   namewithoutparameters: process_exception
+  source:
+    id: process_exception
+    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\middleware.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\middleware.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 212
   syntax:
     content: process_exception(request, exception)
     parameters:
@@ -90,6 +106,14 @@ items:
   module: botbuilder.applicationinsights.django
   name: process_request(request)
   namewithoutparameters: process_request
+  source:
+    id: process_request
+    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\middleware.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\middleware.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 120
   syntax:
     content: process_request(request)
     parameters:
@@ -104,6 +128,14 @@ items:
   module: botbuilder.applicationinsights.django
   name: process_response(request, response)
   namewithoutparameters: process_response
+  source:
+    id: process_response
+    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\middleware.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\middleware.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 151
   syntax:
     content: process_response(request, response)
     parameters:
@@ -120,6 +152,14 @@ items:
   module: botbuilder.applicationinsights.django
   name: process_template_response(request, response)
   namewithoutparameters: process_template_response
+  source:
+    id: process_template_response
+    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\middleware.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\middleware.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 234
   syntax:
     content: process_template_response(request, response)
     parameters:
@@ -136,6 +176,14 @@ items:
   module: botbuilder.applicationinsights.django
   name: process_view(request, view_func, view_args, view_kwargs)
   namewithoutparameters: process_view
+  source:
+    id: process_view
+    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\middleware.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\middleware.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 175
   syntax:
     content: process_view(request, view_func, view_args, view_kwargs)
     parameters:

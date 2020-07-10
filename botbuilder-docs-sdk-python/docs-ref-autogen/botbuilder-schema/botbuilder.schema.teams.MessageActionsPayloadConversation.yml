@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema.teams
   name: MessageActionsPayloadConversation
+  source:
+    id: MessageActionsPayloadConversation
+    path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 361
   summary: Represents a team or channel entity.
   syntax:
     content: 'MessageActionsPayloadConversation(*, conversation_identity_type=None,

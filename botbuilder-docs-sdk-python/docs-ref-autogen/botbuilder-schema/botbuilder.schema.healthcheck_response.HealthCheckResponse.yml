@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema.healthcheck_response
   name: HealthCheckResponse
+  source:
+    id: HealthCheckResponse
+    path: ./libraries/botbuilder-schema\botbuilder\schema\healthcheck_response.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\healthcheck_response.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 9
   syntax:
     content: 'HealthCheckResponse(*, health_results: botbuilder.schema.health_results.HealthResults
       = None, **kwargs) -> None'

@@ -14,6 +14,14 @@ items:
   - python
   module: botframework.connector.async_mixin.async_mixin
   name: StreamDownloadGenerator
+  source:
+    id: StreamDownloadGenerator
+    path: ./libraries/botframework-connector\botframework\connector\async_mixin\async_mixin.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\async_mixin\async_mixin.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 155
   syntax:
     content: StreamDownloadGenerator(response, user_callback, block)
   type: class

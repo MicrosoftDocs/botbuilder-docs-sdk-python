@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema
   name: MediaUrl
+  source:
+    id: MediaUrl
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 1797
   summary: Media URL.
   syntax:
     content: 'MediaUrl(*, url: str = None, profile: str = None, **kwargs) -> None'

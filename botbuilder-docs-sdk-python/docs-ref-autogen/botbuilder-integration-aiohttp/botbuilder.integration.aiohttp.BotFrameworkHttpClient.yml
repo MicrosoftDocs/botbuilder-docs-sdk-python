@@ -17,6 +17,14 @@ items:
   - python
   module: botbuilder.integration.aiohttp
   name: BotFrameworkHttpClient
+  source:
+    id: BotFrameworkHttpClient
+    path: ./libraries/botbuilder-integration-aiohttp\botbuilder\integration\aiohttp\bot_framework_http_client.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-integration-aiohttp\botbuilder\integration\aiohttp\bot_framework_http_client.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 28
   summary: 'A skill host adapter implements API to forward activity to a skill and
 
     implements routing ChannelAPI calls from the Skill up through the bot/adapter.'
@@ -35,6 +43,14 @@ items:
     str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity) ->
     botbuilder.core.invoke_response.InvokeResponse'
   namewithoutparameters: post_activity
+  source:
+    id: post_activity
+    path: ./libraries/botbuilder-integration-aiohttp\botbuilder\integration\aiohttp\bot_framework_http_client.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-integration-aiohttp\botbuilder\integration\aiohttp\bot_framework_http_client.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 53
   syntax:
     content: 'post_activity(from_bot_id: str, to_bot_id: str, to_url: str, service_url:
       str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity)
@@ -50,6 +66,14 @@ items:
     str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity) ->
     [<class ''botbuilder.schema._models_py3.Activity''>]'
   namewithoutparameters: post_buffered_activity
+  source:
+    id: post_buffered_activity
+    path: ./libraries/botbuilder-integration-aiohttp\botbuilder\integration\aiohttp\bot_framework_http_client.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-integration-aiohttp\botbuilder\integration\aiohttp\bot_framework_http_client.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 132
   summary: 'Helper method to return a list of activities when an Activity is being
 
     sent with DeliveryMode == expectReplies.'

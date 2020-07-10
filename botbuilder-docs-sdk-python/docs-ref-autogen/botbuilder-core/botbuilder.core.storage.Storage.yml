@@ -15,6 +15,14 @@ items:
   - python
   module: botbuilder.core.storage
   name: Storage
+  source:
+    id: Storage
+    path: ./libraries/botbuilder-core\botbuilder\core\storage.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\storage.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 9
   summary: ''
   syntax: {}
   type: class
@@ -26,6 +34,14 @@ items:
   module: botbuilder.core.storage
   name: 'delete(keys: typing.List[str])'
   namewithoutparameters: delete
+  source:
+    id: delete
+    path: ./libraries/botbuilder-core\botbuilder\core\storage.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\storage.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 28
   summary: 'Removes store items from storage.
 
     :param keys:
@@ -42,6 +58,14 @@ items:
   module: botbuilder.core.storage
   name: 'read(keys: typing.List[str])'
   namewithoutparameters: read
+  source:
+    id: read
+    path: ./libraries/botbuilder-core\botbuilder\core\storage.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\storage.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 10
   summary: 'Loads store items from storage.
 
     :param keys:
@@ -58,6 +82,14 @@ items:
   module: botbuilder.core.storage
   name: write(changes)
   namewithoutparameters: write
+  source:
+    id: write
+    path: ./libraries/botbuilder-core\botbuilder\core\storage.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\storage.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 19
   summary: 'Saves store items to storage.
 
     :param changes:

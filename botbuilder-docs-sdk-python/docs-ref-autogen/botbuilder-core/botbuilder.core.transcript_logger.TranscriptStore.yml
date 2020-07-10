@@ -17,6 +17,14 @@ items:
   - python
   module: botbuilder.core.transcript_logger
   name: TranscriptStore
+  source:
+    id: TranscriptStore
+    path: ./libraries/botbuilder-core\botbuilder\core\transcript_logger.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\transcript_logger.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 138
   summary: Transcript storage for conversations.
   syntax: {}
   type: class
@@ -28,6 +36,14 @@ items:
   module: botbuilder.core.transcript_logger
   name: 'delete_transcript(channel_id: str, conversation_id: str) -> None'
   namewithoutparameters: delete_transcript
+  source:
+    id: delete_transcript
+    path: ./libraries/botbuilder-core\botbuilder\core\transcript_logger.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\transcript_logger.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 169
   summary: 'Delete a specific conversation and all of it''s activities.
 
     :param channel_id: Channel Id where conversation took place.
@@ -48,6 +64,14 @@ items:
     str, start_date: <module ''datetime'' from ''c:\\\\hostedtoolcache\\\\windows\\\\python\\\\3.6.8\\\\x64\\\\lib\\\\datetime.py''>)
     -> botbuilder.core.transcript_logger.PagedResult'
   namewithoutparameters: get_transcript_activities
+  source:
+    id: get_transcript_activities
+    path: ./libraries/botbuilder-core\botbuilder\core\transcript_logger.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\transcript_logger.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 141
   summary: 'Get activities for a conversation (Aka the transcript).
 
     :param channel_id: Channel Id where conversation took place.
@@ -72,6 +96,14 @@ items:
   module: botbuilder.core.transcript_logger
   name: 'list_transcripts(channel_id: str, continuation_token: str) -> botbuilder.core.transcript_logger.PagedResult'
   namewithoutparameters: list_transcripts
+  source:
+    id: list_transcripts
+    path: ./libraries/botbuilder-core\botbuilder\core\transcript_logger.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\transcript_logger.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 158
   summary: 'List conversations in the channelId.
 
     :param channel_id: Channel Id where conversation took place.

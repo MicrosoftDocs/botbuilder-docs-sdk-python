@@ -10,6 +10,14 @@ items:
   - python
   module: botbuilder.dialogs.choices
   name: ChoiceFactoryOptions
+  source:
+    id: ChoiceFactoryOptions
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory_options.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory_options.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 5
   syntax:
     content: 'ChoiceFactoryOptions(inline_separator: str = None, inline_or: str =
       None, inline_or_more: str = None, include_numbers: bool = None) -> None'

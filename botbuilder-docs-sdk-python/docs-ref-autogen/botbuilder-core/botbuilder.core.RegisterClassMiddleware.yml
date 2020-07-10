@@ -16,10 +16,18 @@ items:
   - python
   module: botbuilder.core
   name: RegisterClassMiddleware
+  source:
+    id: RegisterClassMiddleware
+    path: ./libraries/botbuilder-core\botbuilder\core\register_class_middleware.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\register_class_middleware.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 8
   summary: Middleware for adding an object to or registering a service with the current
     turn context.
   syntax:
-    content: RegisterClassMiddleware(service)
+    content: 'RegisterClassMiddleware(service, key: str = None)'
   type: class
   uid: botbuilder.core.RegisterClassMiddleware
 - class: botbuilder.core.RegisterClassMiddleware
@@ -29,6 +37,14 @@ items:
   module: botbuilder.core
   name: fullname(obj)
   namewithoutparameters: fullname
+  source:
+    id: fullname
+    path: ./libraries/botbuilder-core\botbuilder\core\register_class_middleware.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\register_class_middleware.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 27
   syntax:
     content: fullname(obj)
     parameters:
@@ -44,6 +60,14 @@ items:
   name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
     typing.Awaitable])'
   namewithoutparameters: on_turn
+  source:
+    id: on_turn
+    path: ./libraries/botbuilder-core\botbuilder\core\register_class_middleware.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\register_class_middleware.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 17
   syntax:
     content: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
       typing.Awaitable])'

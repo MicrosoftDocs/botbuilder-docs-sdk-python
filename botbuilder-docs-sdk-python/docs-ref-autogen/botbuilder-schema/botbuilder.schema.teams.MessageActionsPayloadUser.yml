@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema.teams
   name: MessageActionsPayloadUser
+  source:
+    id: MessageActionsPayloadUser
+    path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 485
   summary: Represents a user entity.
   syntax:
     content: 'MessageActionsPayloadUser(*, user_identity_type=None, id: str = None,

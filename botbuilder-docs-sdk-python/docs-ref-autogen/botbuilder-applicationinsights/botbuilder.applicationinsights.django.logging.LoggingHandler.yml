@@ -16,6 +16,14 @@ items:
   - python
   module: botbuilder.applicationinsights.django.logging
   name: LoggingHandler
+  source:
+    id: LoggingHandler
+    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\logging.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\logging.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 8
   summary: "This class is a LoggingHandler that uses the same settings as the Django\
     \ middleware to configure\nthe telemetry client.  This can be referenced from\
     \ LOGGING in your Django settings.py file.  As an\nexample, this code would send\

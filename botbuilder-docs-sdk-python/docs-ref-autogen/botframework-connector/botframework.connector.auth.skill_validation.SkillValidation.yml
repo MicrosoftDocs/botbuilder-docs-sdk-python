@@ -13,6 +13,14 @@ items:
   - python
   module: botframework.connector.auth.skill_validation
   name: SkillValidation
+  source:
+    id: SkillValidation
+    path: ./libraries/botframework-connector\botframework\connector\auth\skill_validation.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\auth\skill_validation.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 19
   summary: Validates JWT tokens sent to and from a Skill.
   syntax: {}
   type: class
@@ -27,6 +35,14 @@ items:
     channel_id: str, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration)
     -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   namewithoutparameters: authenticate_channel_token
+  source:
+    id: authenticate_channel_token
+    path: ./libraries/botframework-connector\botframework\connector\auth\skill_validation.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\auth\skill_validation.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 88
   syntax:
     content: 'authenticate_channel_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
       channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
@@ -41,6 +57,14 @@ items:
   module: botframework.connector.auth.skill_validation
   name: 'is_skill_claim(claims: typing.Dict[str, object]) -> bool'
   namewithoutparameters: is_skill_claim
+  source:
+    id: is_skill_claim
+    path: ./libraries/botframework-connector\botframework\connector\auth\skill_validation.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\auth\skill_validation.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 59
   summary: 'Checks if the given list of claims represents a skill.
 
     :param claims: A dict of claims.
@@ -57,6 +81,14 @@ items:
   module: botframework.connector.auth.skill_validation
   name: 'is_skill_token(auth_header: str) -> bool'
   namewithoutparameters: is_skill_token
+  source:
+    id: is_skill_token
+    path: ./libraries/botframework-connector\botframework\connector\auth\skill_validation.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\auth\skill_validation.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 41
   summary: 'Determines if a given Auth header is from from a skill to bot or bot to
     skill request.
 

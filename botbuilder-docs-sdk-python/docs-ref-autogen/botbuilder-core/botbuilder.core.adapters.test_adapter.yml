@@ -13,6 +13,14 @@ items:
   - python
   module: botbuilder.core.adapters.test_adapter
   name: test_adapter
+  source:
+    id: test_adapter
+    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 0
   type: module
   uid: botbuilder.core.adapters.test_adapter
 - fullName: botbuilder.core.adapters.test_adapter.validate_activity
@@ -20,6 +28,14 @@ items:
   - python
   module: botbuilder.core.adapters.test_adapter
   name: validate_activity(activity, expected) -> None
+  source:
+    id: validate_activity
+    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 655
   summary: 'Helper method that compares activities
 
     :param activity:

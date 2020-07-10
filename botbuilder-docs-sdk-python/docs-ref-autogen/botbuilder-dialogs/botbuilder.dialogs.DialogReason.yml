@@ -18,6 +18,14 @@ items:
   - python
   module: botbuilder.dialogs
   name: DialogReason
+  source:
+    id: DialogReason
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_reason.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_reason.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 6
   summary: Indicates in which a dialog-related method is being called.
   syntax:
     variables:

@@ -18,6 +18,14 @@ items:
   - python
   module: botbuilder.core.inspection.inspection_middleware
   name: InspectionMiddleware
+  source:
+    id: InspectionMiddleware
+    path: ./libraries/botbuilder-core\botbuilder\core\inspection\inspection_middleware.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\inspection\inspection_middleware.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 22
   summary: ''
   syntax:
     content: 'InspectionMiddleware(inspection_state: botbuilder.core.inspection.inspection_state.InspectionState,
@@ -34,6 +42,14 @@ items:
   name: 'process_attach_command(context: botbuilder.core.turn_context.TurnContext,
     session_id: str) -> None'
   namewithoutparameters: process_attach_command
+  source:
+    id: process_attach_command
+    path: ./libraries/botbuilder-core\botbuilder\core\inspection\inspection_middleware.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\inspection\inspection_middleware.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 123
   syntax:
     content: 'process_attach_command(context: botbuilder.core.turn_context.TurnContext,
       session_id: str) -> None'
@@ -46,6 +62,14 @@ items:
   module: botbuilder.core.inspection.inspection_middleware
   name: 'process_command(context: botbuilder.core.turn_context.TurnContext) -> typing.Any'
   namewithoutparameters: process_command
+  source:
+    id: process_command
+    path: ./libraries/botbuilder-core\botbuilder\core\inspection\inspection_middleware.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\inspection\inspection_middleware.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 44
   syntax:
     content: 'process_command(context: botbuilder.core.turn_context.TurnContext) ->
       typing.Any'

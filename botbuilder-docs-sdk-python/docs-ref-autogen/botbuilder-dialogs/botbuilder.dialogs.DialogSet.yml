@@ -13,6 +13,14 @@ items:
   - python
   module: botbuilder.dialogs
   name: DialogSet
+  source:
+    id: DialogSet
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_set.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_set.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 12
   summary: ''
   syntax:
     content: 'DialogSet(dialog_state: botbuilder.core.state_property_accessor.StatePropertyAccessor
@@ -26,6 +34,14 @@ items:
   module: botbuilder.dialogs
   name: 'add(dialog: botbuilder.dialogs.dialog.Dialog)'
   namewithoutparameters: add
+  source:
+    id: add
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_set.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_set.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 37
   summary: 'Adds a new dialog to the set and returns the added dialog.
 
     :param dialog: The dialog to add.'
@@ -41,6 +57,14 @@ items:
   name: 'create_context(turn_context: botbuilder.core.turn_context.TurnContext) ->
     botbuilder.dialogs.dialog_context.DialogContext'
   namewithoutparameters: create_context
+  source:
+    id: create_context
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_set.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_set.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 58
   syntax:
     content: 'create_context(turn_context: botbuilder.core.turn_context.TurnContext)
       -> botbuilder.dialogs.dialog_context.DialogContext'
@@ -53,6 +77,14 @@ items:
   module: botbuilder.dialogs
   name: 'find(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
   namewithoutparameters: find
+  source:
+    id: find
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_set.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_set.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 71
   summary: 'Finds a dialog that was previously added to the set using add(dialog)
 
     :param dialog_id: ID of the dialog/prompt to look up.

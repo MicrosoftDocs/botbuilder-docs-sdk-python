@@ -11,6 +11,14 @@ items:
   - python
   module: botbuilder.dialogs.prompts.prompt_validator_context
   name: PromptValidatorContext
+  source:
+    id: PromptValidatorContext
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt_validator_context.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\prompt_validator_context.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 9
   syntax:
     content: 'PromptValidatorContext(turn_context: botbuilder.core.turn_context.TurnContext,
       recognized: botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult,
@@ -23,6 +31,14 @@ items:
   - python
   module: botbuilder.dialogs.prompts.prompt_validator_context
   name: attempt_count
+  source:
+    id: attempt_count
+    path: null
+    remote:
+      branch: master
+      path: null
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: null
   summary: Gets the number of times the prompt has been executed.
   syntax: {}
   type: attribute

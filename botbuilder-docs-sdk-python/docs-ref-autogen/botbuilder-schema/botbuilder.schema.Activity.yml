@@ -2,7 +2,37 @@
 api_name: []
 items:
 - children:
+  - botbuilder.schema.Activity.apply_conversation_reference
+  - botbuilder.schema.Activity.as_contact_relation_update_activity
+  - botbuilder.schema.Activity.as_conversation_update_activity
+  - botbuilder.schema.Activity.as_end_of_conversation_activity
+  - botbuilder.schema.Activity.as_event_activity
+  - botbuilder.schema.Activity.as_handoff_activity
+  - botbuilder.schema.Activity.as_installation_update_activity
+  - botbuilder.schema.Activity.as_invoke_activity
+  - botbuilder.schema.Activity.as_message_activity
+  - botbuilder.schema.Activity.as_message_delete_activity
+  - botbuilder.schema.Activity.as_message_reaction_activity
+  - botbuilder.schema.Activity.as_message_update_activity
+  - botbuilder.schema.Activity.as_suggestion_activity
+  - botbuilder.schema.Activity.as_trace_activity
+  - botbuilder.schema.Activity.as_typing_activity
+  - botbuilder.schema.Activity.create_contact_relation_update_activity
+  - botbuilder.schema.Activity.create_conversation_update_activity
+  - botbuilder.schema.Activity.create_end_of_conversation_activity
+  - botbuilder.schema.Activity.create_event_activity
+  - botbuilder.schema.Activity.create_handoff_activity
+  - botbuilder.schema.Activity.create_invoke_activity
+  - botbuilder.schema.Activity.create_message_activity
   - botbuilder.schema.Activity.create_reply
+  - botbuilder.schema.Activity.create_trace
+  - botbuilder.schema.Activity.create_trace_activity
+  - botbuilder.schema.Activity.create_typing_activity
+  - botbuilder.schema.Activity.get_conversation_reference
+  - botbuilder.schema.Activity.get_mentions
+  - botbuilder.schema.Activity.get_reply_conversation_reference
+  - botbuilder.schema.Activity.has_content
+  - botbuilder.schema.Activity.is_from_streaming_connection
   class: botbuilder.schema.Activity
   fullName: botbuilder.schema.Activity
   inheritance:
@@ -13,6 +43,14 @@ items:
   - python
   module: botbuilder.schema
   name: Activity
+  source:
+    id: Activity
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 106
   summary: 'An Activity is the basic communication type for the Bot Framework 3.0
 
     protocol.'
@@ -297,22 +335,974 @@ items:
   type: class
   uid: botbuilder.schema.Activity
 - class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.apply_conversation_reference
+  langs:
+  - python
+  module: botbuilder.schema
+  name: 'apply_conversation_reference(reference: botbuilder.schema._models_py3.ConversationReference,
+    is_incoming: bool = False)'
+  namewithoutparameters: apply_conversation_reference
+  remarks: 'Call GetConversationReference on an incoming
+
+    activity to get a conversation reference that you can then use to update an
+
+    outgoing activity with the correct delivery information.
+
+    '
+  source:
+    id: apply_conversation_reference
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 380
+  summary: 'Updates this activity with the delivery information from an existing ConversationReference
+
+
+
+    incoming activity, where the bot is the recipient; otherwise, False.
+
+    Default is False, and the activity will show the bot as the sender.'
+  syntax:
+    content: 'apply_conversation_reference(reference: botbuilder.schema._models_py3.ConversationReference,
+      is_incoming: bool = False)'
+    return:
+      description: his activity, updated with the delivery information.
+  type: method
+  uid: botbuilder.schema.Activity.apply_conversation_reference
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.as_contact_relation_update_activity
+  langs:
+  - python
+  module: botbuilder.schema
+  name: as_contact_relation_update_activity()
+  namewithoutparameters: as_contact_relation_update_activity
+  source:
+    id: as_contact_relation_update_activity
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 420
+  summary: 'Returns this activity as a ContactRelationUpdateActivity object;
+
+    or None, if this is not that type of activity.'
+  syntax:
+    content: as_contact_relation_update_activity()
+    parameters: []
+    return:
+      description: This activity as a message activity; or None.
+  type: method
+  uid: botbuilder.schema.Activity.as_contact_relation_update_activity
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.as_conversation_update_activity
+  langs:
+  - python
+  module: botbuilder.schema
+  name: as_conversation_update_activity()
+  namewithoutparameters: as_conversation_update_activity
+  source:
+    id: as_conversation_update_activity
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 431
+  summary: 'Returns this activity as a ConversationUpdateActivity object;
+
+    or None, if this is not that type of activity.'
+  syntax:
+    content: as_conversation_update_activity()
+    parameters: []
+    return:
+      description: This activity as a conversation update activity; or None.
+  type: method
+  uid: botbuilder.schema.Activity.as_conversation_update_activity
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.as_end_of_conversation_activity
+  langs:
+  - python
+  module: botbuilder.schema
+  name: as_end_of_conversation_activity()
+  namewithoutparameters: as_end_of_conversation_activity
+  source:
+    id: as_end_of_conversation_activity
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 440
+  summary: 'Returns this activity as an EndOfConversationActivity object;
+
+    or None, if this is not that type of activity.'
+  syntax:
+    content: as_end_of_conversation_activity()
+    parameters: []
+    return:
+      description: This activity as an end of conversation activity; or None.
+  type: method
+  uid: botbuilder.schema.Activity.as_end_of_conversation_activity
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.as_event_activity
+  langs:
+  - python
+  module: botbuilder.schema
+  name: as_event_activity()
+  namewithoutparameters: as_event_activity
+  source:
+    id: as_event_activity
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 449
+  summary: 'Returns this activity as an EventActivity object;
+
+    or None, if this is not that type of activity.'
+  syntax:
+    content: as_event_activity()
+    parameters: []
+    return:
+      description: This activity as an event activity; or None.
+  type: method
+  uid: botbuilder.schema.Activity.as_event_activity
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.as_handoff_activity
+  langs:
+  - python
+  module: botbuilder.schema
+  name: as_handoff_activity()
+  namewithoutparameters: as_handoff_activity
+  source:
+    id: as_handoff_activity
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 458
+  summary: 'Returns this activity as a HandoffActivity object;
+
+    or None, if this is not that type of activity.'
+  syntax:
+    content: as_handoff_activity()
+    parameters: []
+    return:
+      description: This activity as a handoff activity; or None.
+  type: method
+  uid: botbuilder.schema.Activity.as_handoff_activity
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.as_installation_update_activity
+  langs:
+  - python
+  module: botbuilder.schema
+  name: as_installation_update_activity()
+  namewithoutparameters: as_installation_update_activity
+  source:
+    id: as_installation_update_activity
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 467
+  summary: 'Returns this activity as an InstallationUpdateActivity object;
+
+    or None, if this is not that type of activity.'
+  syntax:
+    content: as_installation_update_activity()
+    parameters: []
+    return:
+      description: This activity as an installation update activity; or None.
+  type: method
+  uid: botbuilder.schema.Activity.as_installation_update_activity
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.as_invoke_activity
+  langs:
+  - python
+  module: botbuilder.schema
+  name: as_invoke_activity()
+  namewithoutparameters: as_invoke_activity
+  source:
+    id: as_invoke_activity
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 476
+  summary: 'Returns this activity as an InvokeActivity object;
+
+    or None, if this is not that type of activity.'
+  syntax:
+    content: as_invoke_activity()
+    parameters: []
+    return:
+      description: This activity as an invoke activity; or None.
+  type: method
+  uid: botbuilder.schema.Activity.as_invoke_activity
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.as_message_activity
+  langs:
+  - python
+  module: botbuilder.schema
+  name: as_message_activity()
+  namewithoutparameters: as_message_activity
+  source:
+    id: as_message_activity
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 485
+  summary: 'Returns this activity as a MessageActivity object;
+
+    or None, if this is not that type of activity.'
+  syntax:
+    content: as_message_activity()
+    parameters: []
+    return:
+      description: This activity as a message activity; or None.
+  type: method
+  uid: botbuilder.schema.Activity.as_message_activity
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.as_message_delete_activity
+  langs:
+  - python
+  module: botbuilder.schema
+  name: as_message_delete_activity()
+  namewithoutparameters: as_message_delete_activity
+  source:
+    id: as_message_delete_activity
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 494
+  summary: 'Returns this activity as a MessageDeleteActivity object;
+
+    or None, if this is not that type of activity.'
+  syntax:
+    content: as_message_delete_activity()
+    parameters: []
+    return:
+      description: This activity as a message delete request; or None.
+  type: method
+  uid: botbuilder.schema.Activity.as_message_delete_activity
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.as_message_reaction_activity
+  langs:
+  - python
+  module: botbuilder.schema
+  name: as_message_reaction_activity()
+  namewithoutparameters: as_message_reaction_activity
+  source:
+    id: as_message_reaction_activity
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 503
+  summary: 'Returns this activity as a MessageReactionActivity object;
+
+    or None, if this is not that type of activity.'
+  syntax:
+    content: as_message_reaction_activity()
+    parameters: []
+    return:
+      description: This activity as a message reaction activity; or None.
+  type: method
+  uid: botbuilder.schema.Activity.as_message_reaction_activity
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.as_message_update_activity
+  langs:
+  - python
+  module: botbuilder.schema
+  name: as_message_update_activity()
+  namewithoutparameters: as_message_update_activity
+  source:
+    id: as_message_update_activity
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 512
+  summary: 'Returns this activity as an MessageUpdateActivity object;
+
+    or None, if this is not that type of activity.'
+  syntax:
+    content: as_message_update_activity()
+    parameters: []
+    return:
+      description: This activity as a message update request; or None.
+  type: method
+  uid: botbuilder.schema.Activity.as_message_update_activity
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.as_suggestion_activity
+  langs:
+  - python
+  module: botbuilder.schema
+  name: as_suggestion_activity()
+  namewithoutparameters: as_suggestion_activity
+  source:
+    id: as_suggestion_activity
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 521
+  summary: 'Returns this activity as a SuggestionActivity object;
+
+    or None, if this is not that type of activity.'
+  syntax:
+    content: as_suggestion_activity()
+    parameters: []
+    return:
+      description: This activity as a suggestion activity; or None.
+  type: method
+  uid: botbuilder.schema.Activity.as_suggestion_activity
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.as_trace_activity
+  langs:
+  - python
+  module: botbuilder.schema
+  name: as_trace_activity()
+  namewithoutparameters: as_trace_activity
+  source:
+    id: as_trace_activity
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 530
+  summary: 'Returns this activity as a TraceActivity object;
+
+    or None, if this is not that type of activity.'
+  syntax:
+    content: as_trace_activity()
+    parameters: []
+    return:
+      description: This activity as a trace activity; or None.
+  type: method
+  uid: botbuilder.schema.Activity.as_trace_activity
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.as_typing_activity
+  langs:
+  - python
+  module: botbuilder.schema
+  name: as_typing_activity()
+  namewithoutparameters: as_typing_activity
+  source:
+    id: as_typing_activity
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 539
+  summary: 'Returns this activity as a TypingActivity object;
+
+    or null, if this is not that type of activity.'
+  syntax:
+    content: as_typing_activity()
+    parameters: []
+    return:
+      description: This activity as a typing activity; or null.
+  type: method
+  uid: botbuilder.schema.Activity.as_typing_activity
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.create_contact_relation_update_activity
+  langs:
+  - python
+  module: botbuilder.schema
+  name: create_contact_relation_update_activity()
+  namewithoutparameters: create_contact_relation_update_activity
+  source:
+    id: create_contact_relation_update_activity
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 548
+  summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as aContactRelationUpdateActivity
+    object.
+  syntax:
+    content: create_contact_relation_update_activity()
+    return:
+      description: The new contact relation update activity.
+  type: method
+  uid: botbuilder.schema.Activity.create_contact_relation_update_activity
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.create_conversation_update_activity
+  langs:
+  - python
+  module: botbuilder.schema
+  name: create_conversation_update_activity()
+  namewithoutparameters: create_conversation_update_activity
+  source:
+    id: create_conversation_update_activity
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 557
+  summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as a
+    ConversationUpdateActivity object.
+  syntax:
+    content: create_conversation_update_activity()
+    return:
+      description: The new conversation update activity.
+  type: method
+  uid: botbuilder.schema.Activity.create_conversation_update_activity
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.create_end_of_conversation_activity
+  langs:
+  - python
+  module: botbuilder.schema
+  name: create_end_of_conversation_activity()
+  namewithoutparameters: create_end_of_conversation_activity
+  source:
+    id: create_end_of_conversation_activity
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 566
+  summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as an
+    EndOfConversationActivity object.
+  syntax:
+    content: create_end_of_conversation_activity()
+    return:
+      description: The new end of conversation activity.
+  type: method
+  uid: botbuilder.schema.Activity.create_end_of_conversation_activity
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.create_event_activity
+  langs:
+  - python
+  module: botbuilder.schema
+  name: create_event_activity()
+  namewithoutparameters: create_event_activity
+  source:
+    id: create_event_activity
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 575
+  summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as an
+    EventActivity object.
+  syntax:
+    content: create_event_activity()
+    return:
+      description: The new event activity.
+  type: method
+  uid: botbuilder.schema.Activity.create_event_activity
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.create_handoff_activity
+  langs:
+  - python
+  module: botbuilder.schema
+  name: create_handoff_activity()
+  namewithoutparameters: create_handoff_activity
+  source:
+    id: create_handoff_activity
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 584
+  summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as a
+    HandoffActivity object.
+  syntax:
+    content: create_handoff_activity()
+    return:
+      description: The new handoff activity.
+  type: method
+  uid: botbuilder.schema.Activity.create_handoff_activity
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.create_invoke_activity
+  langs:
+  - python
+  module: botbuilder.schema
+  name: create_invoke_activity()
+  namewithoutparameters: create_invoke_activity
+  source:
+    id: create_invoke_activity
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 593
+  summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as an
+    InvokeActivity object.
+  syntax:
+    content: create_invoke_activity()
+    return:
+      description: The new invoke activity.
+  type: method
+  uid: botbuilder.schema.Activity.create_invoke_activity
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.create_message_activity
+  langs:
+  - python
+  module: botbuilder.schema
+  name: create_message_activity()
+  namewithoutparameters: create_message_activity
+  source:
+    id: create_message_activity
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 602
+  summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as a
+    MessageActivity object.
+  syntax:
+    content: create_message_activity()
+    return:
+      description: The new message activity.
+  type: method
+  uid: botbuilder.schema.Activity.create_message_activity
+- class: botbuilder.schema.Activity
   fullName: botbuilder.schema.Activity.create_reply
   langs:
   - python
   module: botbuilder.schema
   name: 'create_reply(text: str = None, locale: str = None)'
   namewithoutparameters: create_reply
+  remarks: 'The new activity sets up routing information based on this activity.
+
+    '
+  source:
+    id: create_reply
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 611
+  summary: Creates a new message activity as a response to this activity.
   syntax:
     content: 'create_reply(text: str = None, locale: str = None)'
+    parameters:
+    - description: The text of the reply.
+      id: text
+      isRequired: true
+    - description: The language code for the text.
+      id: locale
+      isRequired: true
+    return:
+      description: The new message activity.
   type: method
   uid: botbuilder.schema.Activity.create_reply
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.create_trace
+  langs:
+  - python
+  module: botbuilder.schema
+  name: 'create_trace(name: str, value: object = None, value_type: str = None, label:
+    str = None)'
+  namewithoutparameters: create_trace
+  source:
+    id: create_trace
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 648
+  summary: 'Creates a new trace activity based on this activity.
+
+
+
+    Default is the name of type of the value.
+
+    :param label: Optional, a descriptive label for this trace operation.'
+  syntax:
+    content: 'create_trace(name: str, value: object = None, value_type: str = None,
+      label: str = None)'
+    return:
+      description: The new trace activity.
+  type: method
+  uid: botbuilder.schema.Activity.create_trace
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.create_trace_activity
+  langs:
+  - python
+  module: botbuilder.schema
+  name: 'create_trace_activity(name: str, value: object = None, value_type: str =
+    None, label: str = None)'
+  namewithoutparameters: create_trace_activity
+  source:
+    id: create_trace_activity
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 690
+  summary: 'Creates an instance of the <xref:botbuilder.schema.Activity> class as
+    a TraceActivity object.
+
+
+
+    Default is the name of type of the value.
+
+    :param label: Optional, a descriptive label for this trace operation.'
+  syntax:
+    content: 'create_trace_activity(name: str, value: object = None, value_type: str
+      = None, label: str = None)'
+    return:
+      description: The new trace activity.
+  type: method
+  uid: botbuilder.schema.Activity.create_trace_activity
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.create_typing_activity
+  langs:
+  - python
+  module: botbuilder.schema
+  name: create_typing_activity()
+  namewithoutparameters: create_typing_activity
+  source:
+    id: create_typing_activity
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 716
+  summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as a
+    TypingActivity object.
+  syntax:
+    content: create_typing_activity()
+    return:
+      description: The new typing activity.
+  type: method
+  uid: botbuilder.schema.Activity.create_typing_activity
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.get_conversation_reference
+  langs:
+  - python
+  module: botbuilder.schema
+  name: get_conversation_reference()
+  namewithoutparameters: get_conversation_reference
+  source:
+    id: get_conversation_reference
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 725
+  summary: Creates a ConversationReference based on this activity.
+  syntax:
+    content: get_conversation_reference()
+    parameters: []
+    return:
+      description: A conversation reference for the conversation that contains this
+        activity.
+  type: method
+  uid: botbuilder.schema.Activity.get_conversation_reference
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.get_mentions
+  langs:
+  - python
+  module: botbuilder.schema
+  name: get_mentions() -> [<class 'botbuilder.schema._models_py3.Mention'>]
+  namewithoutparameters: get_mentions
+  remarks: 'This method is defined on the <xref:botbuilder.schema.Activity> class,
+    but is only intended
+
+    for use with a message activity, where the activity Activity.Type is set to
+
+    ActivityTypes.Message.
+
+    '
+  source:
+    id: get_mentions
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 741
+  summary: Resolves the mentions from the entities of this activity.
+  syntax:
+    content: get_mentions() -> [<class 'botbuilder.schema._models_py3.Mention'>]
+    return:
+      description: The array of mentions; or an empty array, if none are found.
+  type: method
+  uid: botbuilder.schema.Activity.get_mentions
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.get_reply_conversation_reference
+  langs:
+  - python
+  module: botbuilder.schema
+  name: 'get_reply_conversation_reference(reply: botbuilder.schema._models_py3.ResourceResponse)
+    -> botbuilder.schema._models_py3.ConversationReference'
+  namewithoutparameters: get_reply_conversation_reference
+  source:
+    id: get_reply_conversation_reference
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 755
+  summary: 'Create a ConversationReference based on this Activity''s Conversation
+    info
+
+    and the ResourceResponse from sending an activity.'
+  syntax:
+    content: 'get_reply_conversation_reference(reply: botbuilder.schema._models_py3.ResourceResponse)
+      -> botbuilder.schema._models_py3.ConversationReference'
+    parameters:
+    - description: ResourceResponse returned from send_activity.
+      id: reply
+      isRequired: true
+    return:
+      description: A ConversationReference that can be stored and used later to delete
+        or update the activity.
+  type: method
+  uid: botbuilder.schema.Activity.get_reply_conversation_reference
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.has_content
+  langs:
+  - python
+  module: botbuilder.schema
+  name: has_content() -> bool
+  namewithoutparameters: has_content
+  remarks: 'This method is defined on the <xref:botbuilder.schema.Activity> class,
+    but is only intended
+
+    for use with a message activity, where the activity Activity.Type is set to
+
+    ActivityTypes.Message.
+
+    '
+  source:
+    id: has_content
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 770
+  summary: Indicates whether this activity has content.
+  syntax:
+    content: has_content() -> bool
+    return:
+      description: True, if this activity has any content to send; otherwise, false.
+  type: method
+  uid: botbuilder.schema.Activity.has_content
+- class: botbuilder.schema.Activity
+  fullName: botbuilder.schema.Activity.is_from_streaming_connection
+  langs:
+  - python
+  module: botbuilder.schema
+  name: is_from_streaming_connection() -> bool
+  namewithoutparameters: is_from_streaming_connection
+  source:
+    id: is_from_streaming_connection
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 795
+  summary: 'Determine if the Activity was sent via an Http/Https connection or Streaming
+
+    This can be determined by looking at the service_url property:
+
+    (1) All channels that send messages via http/https are not streaming
+
+    (2) Channels that send messages via streaming have a ServiceUrl that does not
+    begin with http/https.'
+  syntax:
+    content: is_from_streaming_connection() -> bool
+    return:
+      description: True if the Activity originated from a streaming connection.
+  type: method
+  uid: botbuilder.schema.Activity.is_from_streaming_connection
 references:
+- fullName: botbuilder.schema.Activity.apply_conversation_reference
+  isExternal: false
+  name: 'apply_conversation_reference(reference: botbuilder.schema._models_py3.ConversationReference,
+    is_incoming: bool = False)'
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.apply_conversation_reference
+- fullName: botbuilder.schema.Activity.as_contact_relation_update_activity
+  isExternal: false
+  name: as_contact_relation_update_activity()
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.as_contact_relation_update_activity
+- fullName: botbuilder.schema.Activity.as_conversation_update_activity
+  isExternal: false
+  name: as_conversation_update_activity()
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.as_conversation_update_activity
+- fullName: botbuilder.schema.Activity.as_end_of_conversation_activity
+  isExternal: false
+  name: as_end_of_conversation_activity()
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.as_end_of_conversation_activity
+- fullName: botbuilder.schema.Activity.as_event_activity
+  isExternal: false
+  name: as_event_activity()
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.as_event_activity
+- fullName: botbuilder.schema.Activity.as_handoff_activity
+  isExternal: false
+  name: as_handoff_activity()
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.as_handoff_activity
+- fullName: botbuilder.schema.Activity.as_installation_update_activity
+  isExternal: false
+  name: as_installation_update_activity()
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.as_installation_update_activity
+- fullName: botbuilder.schema.Activity.as_invoke_activity
+  isExternal: false
+  name: as_invoke_activity()
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.as_invoke_activity
+- fullName: botbuilder.schema.Activity.as_message_activity
+  isExternal: false
+  name: as_message_activity()
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.as_message_activity
+- fullName: botbuilder.schema.Activity.as_message_delete_activity
+  isExternal: false
+  name: as_message_delete_activity()
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.as_message_delete_activity
+- fullName: botbuilder.schema.Activity.as_message_reaction_activity
+  isExternal: false
+  name: as_message_reaction_activity()
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.as_message_reaction_activity
+- fullName: botbuilder.schema.Activity.as_message_update_activity
+  isExternal: false
+  name: as_message_update_activity()
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.as_message_update_activity
+- fullName: botbuilder.schema.Activity.as_suggestion_activity
+  isExternal: false
+  name: as_suggestion_activity()
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.as_suggestion_activity
+- fullName: botbuilder.schema.Activity.as_trace_activity
+  isExternal: false
+  name: as_trace_activity()
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.as_trace_activity
+- fullName: botbuilder.schema.Activity.as_typing_activity
+  isExternal: false
+  name: as_typing_activity()
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.as_typing_activity
+- fullName: botbuilder.schema.Activity.create_contact_relation_update_activity
+  isExternal: false
+  name: create_contact_relation_update_activity()
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.create_contact_relation_update_activity
+- fullName: botbuilder.schema.Activity.create_conversation_update_activity
+  isExternal: false
+  name: create_conversation_update_activity()
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.create_conversation_update_activity
+- fullName: botbuilder.schema.Activity.create_end_of_conversation_activity
+  isExternal: false
+  name: create_end_of_conversation_activity()
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.create_end_of_conversation_activity
+- fullName: botbuilder.schema.Activity.create_event_activity
+  isExternal: false
+  name: create_event_activity()
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.create_event_activity
+- fullName: botbuilder.schema.Activity.create_handoff_activity
+  isExternal: false
+  name: create_handoff_activity()
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.create_handoff_activity
+- fullName: botbuilder.schema.Activity.create_invoke_activity
+  isExternal: false
+  name: create_invoke_activity()
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.create_invoke_activity
+- fullName: botbuilder.schema.Activity.create_message_activity
+  isExternal: false
+  name: create_message_activity()
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.create_message_activity
 - fullName: botbuilder.schema.Activity.create_reply
   isExternal: false
   name: 'create_reply(text: str = None, locale: str = None)'
   parent: botbuilder.schema.Activity
   uid: botbuilder.schema.Activity.create_reply
+- fullName: botbuilder.schema.Activity.create_trace
+  isExternal: false
+  name: 'create_trace(name: str, value: object = None, value_type: str = None, label:
+    str = None)'
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.create_trace
+- fullName: botbuilder.schema.Activity.create_trace_activity
+  isExternal: false
+  name: 'create_trace_activity(name: str, value: object = None, value_type: str =
+    None, label: str = None)'
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.create_trace_activity
+- fullName: botbuilder.schema.Activity.create_typing_activity
+  isExternal: false
+  name: create_typing_activity()
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.create_typing_activity
+- fullName: botbuilder.schema.Activity.get_conversation_reference
+  isExternal: false
+  name: get_conversation_reference()
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.get_conversation_reference
+- fullName: botbuilder.schema.Activity.get_mentions
+  isExternal: false
+  name: get_mentions() -> [<class 'botbuilder.schema._models_py3.Mention'>]
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.get_mentions
+- fullName: botbuilder.schema.Activity.get_reply_conversation_reference
+  isExternal: false
+  name: 'get_reply_conversation_reference(reply: botbuilder.schema._models_py3.ResourceResponse)
+    -> botbuilder.schema._models_py3.ConversationReference'
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.get_reply_conversation_reference
+- fullName: botbuilder.schema.Activity.has_content
+  isExternal: false
+  name: has_content() -> bool
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.has_content
+- fullName: botbuilder.schema.Activity.is_from_streaming_connection
+  isExternal: false
+  name: is_from_streaming_connection() -> bool
+  parent: botbuilder.schema.Activity
+  uid: botbuilder.schema.Activity.is_from_streaming_connection
 - fullName: list[botframework.connector.models.ChannelAccount]
   name: list[ChannelAccount]
   spec.python:

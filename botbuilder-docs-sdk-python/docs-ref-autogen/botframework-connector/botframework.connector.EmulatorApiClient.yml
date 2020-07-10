@@ -11,6 +11,14 @@ items:
   - python
   module: botframework.connector
   name: EmulatorApiClient
+  source:
+    id: EmulatorApiClient
+    path: ./libraries/botframework-connector\botframework\connector\emulator_api_client.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\emulator_api_client.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 8
   syntax: {}
   type: class
   uid: botframework.connector.EmulatorApiClient
@@ -22,6 +30,14 @@ items:
   name: 'emulate_oauth_cards(credentials: botframework.connector.auth.app_credentials.AppCredentials,
     emulator_url: str, emulate: bool) -> bool'
   namewithoutparameters: emulate_oauth_cards
+  source:
+    id: emulate_oauth_cards
+    path: ./libraries/botframework-connector\botframework\connector\emulator_api_client.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\emulator_api_client.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 9
   syntax:
     content: 'emulate_oauth_cards(credentials: botframework.connector.auth.app_credentials.AppCredentials,
       emulator_url: str, emulate: bool) -> bool'

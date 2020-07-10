@@ -13,6 +13,14 @@ items:
   - python
   module: botframework.connector.async_mixin.async_mixin
   name: AsyncServiceClientMixin
+  source:
+    id: AsyncServiceClientMixin
+    path: ./libraries/botframework-connector\botframework\connector\async_mixin\async_mixin.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\async_mixin\async_mixin.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 44
   summary: ''
   syntax: {}
   type: class
@@ -24,6 +32,14 @@ items:
   module: botframework.connector.async_mixin.async_mixin
   name: async_send(request, headers=None, content=None, **config)
   namewithoutparameters: async_send
+  source:
+    id: async_send
+    path: ./libraries/botframework-connector\botframework\connector\async_mixin\async_mixin.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\async_mixin\async_mixin.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 57
   summary: 'Prepare and send request object according to configuration.
 
     :param ClientRequest request: The request object to be sent.
@@ -51,6 +67,14 @@ items:
   module: botframework.connector.async_mixin.async_mixin
   name: async_send_formdata(request, headers=None, content=None, **config)
   namewithoutparameters: async_send_formdata
+  source:
+    id: async_send_formdata
+    path: ./libraries/botframework-connector\botframework\connector\async_mixin\async_mixin.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\async_mixin\async_mixin.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 45
   summary: 'Send data as a multipart form-data request.
 
     We only deal with file-like objects or strings at this point.
@@ -82,6 +106,14 @@ items:
   module: botframework.connector.async_mixin.async_mixin
   name: stream_download_async(response, user_callback)
   namewithoutparameters: stream_download_async
+  source:
+    id: stream_download_async
+    path: ./libraries/botframework-connector\botframework\connector\async_mixin\async_mixin.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\async_mixin\async_mixin.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 132
   summary: 'Async Generator for streaming request body data.
 
     :param response: The initial response

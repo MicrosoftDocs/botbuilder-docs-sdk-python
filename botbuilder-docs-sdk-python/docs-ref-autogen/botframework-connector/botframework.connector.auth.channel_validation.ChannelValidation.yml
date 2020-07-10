@@ -16,6 +16,14 @@ items:
   - python
   module: botframework.connector.auth.channel_validation
   name: ChannelValidation
+  source:
+    id: ChannelValidation
+    path: ./libraries/botframework-connector\botframework\connector\auth\channel_validation.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\auth\channel_validation.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 11
   summary: ''
   syntax: {}
   type: class
@@ -32,6 +40,14 @@ items:
     channel_id: str, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
     = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   namewithoutparameters: authenticate_channel_token
+  source:
+    id: authenticate_channel_token
+    path: ./libraries/botframework-connector\botframework\connector\auth\channel_validation.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\auth\channel_validation.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 64
   summary: 'Validate the incoming Auth Header
 
 
@@ -70,6 +86,14 @@ items:
     str, channel_id: str, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
     = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   namewithoutparameters: authenticate_channel_token_with_service_url
+  source:
+    id: authenticate_channel_token_with_service_url
+    path: ./libraries/botframework-connector\botframework\connector\auth\channel_validation.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\auth\channel_validation.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 28
   summary: 'Validate the incoming Auth Header
 
 
@@ -110,6 +134,14 @@ items:
     credentials: botframework.connector.auth.credential_provider.CredentialProvider)
     -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   namewithoutparameters: validate_identity
+  source:
+    id: validate_identity
+    path: ./libraries/botframework-connector\botframework\connector\auth\channel_validation.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\auth\channel_validation.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 103
   syntax:
     content: 'validate_identity(identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
       credentials: botframework.connector.auth.credential_provider.CredentialProvider)

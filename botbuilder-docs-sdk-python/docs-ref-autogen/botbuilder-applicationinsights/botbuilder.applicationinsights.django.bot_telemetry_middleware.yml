@@ -9,6 +9,14 @@ items:
   - python
   module: botbuilder.applicationinsights.django.bot_telemetry_middleware
   name: bot_telemetry_middleware
+  source:
+    id: bot_telemetry_middleware
+    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\bot_telemetry_middleware.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\bot_telemetry_middleware.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 0
   summary: Bot Telemetry Middleware.
   type: module
   uid: botbuilder.applicationinsights.django.bot_telemetry_middleware
@@ -17,6 +25,14 @@ items:
   - python
   module: botbuilder.applicationinsights.django.bot_telemetry_middleware
   name: retrieve_bot_body()
+  source:
+    id: retrieve_bot_body
+    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\bot_telemetry_middleware.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\bot_telemetry_middleware.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 12
   summary: 'Retrieve the POST body text from temporary cache.
 
     The POST body corresponds with the thread id and should resides in

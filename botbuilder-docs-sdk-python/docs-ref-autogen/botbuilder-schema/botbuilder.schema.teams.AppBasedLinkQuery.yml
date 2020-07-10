@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema.teams
   name: AppBasedLinkQuery
+  source:
+    id: AppBasedLinkQuery
+    path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 29
   summary: Invoke request body type for app-based link query.
   syntax:
     content: 'AppBasedLinkQuery(*, url: str = None, state: str = None, **kwargs) ->

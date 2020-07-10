@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema.teams
   name: MessagingExtensionSuggestedAction
+  source:
+    id: MessagingExtensionSuggestedAction
+    path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 917
   summary: Messaging extension Actions (Only when type is auth or config).
   syntax:
     content: MessagingExtensionSuggestedAction(*, actions=None, **kwargs) -> None

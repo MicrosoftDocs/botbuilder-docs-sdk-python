@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema.teams
   name: TenantInfo
+  source:
+    id: TenantInfo
+    path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 1919
   summary: Describes a tenant.
   syntax:
     content: 'TenantInfo(*, id: str = None, **kwargs) -> None'

@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema.teams
   name: FileConsentCard
+  source:
+    id: FileConsentCard
+    path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 86
   summary: File consent card attachment.
   syntax:
     content: 'FileConsentCard(*, description: str = None, size_in_bytes: int = None,

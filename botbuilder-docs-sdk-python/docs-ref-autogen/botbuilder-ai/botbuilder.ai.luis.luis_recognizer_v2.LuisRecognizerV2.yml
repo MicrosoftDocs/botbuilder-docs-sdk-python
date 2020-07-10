@@ -17,6 +17,14 @@ items:
   - python
   module: botbuilder.ai.luis.luis_recognizer_v2
   name: LuisRecognizerV2
+  source:
+    id: LuisRecognizerV2
+    path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_recognizer_v2.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_recognizer_v2.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 20
   summary: ''
   syntax:
     content: 'LuisRecognizerV2(luis_application: botbuilder.ai.luis.luis_application.LuisApplication,
@@ -31,6 +39,14 @@ items:
   module: botbuilder.ai.luis.luis_recognizer_v2
   name: 'recognizer_internal(turn_context: botbuilder.core.turn_context.TurnContext)'
   namewithoutparameters: recognizer_internal
+  source:
+    id: recognizer_internal
+    path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_recognizer_v2.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_recognizer_v2.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 45
   syntax:
     content: 'recognizer_internal(turn_context: botbuilder.core.turn_context.TurnContext)'
   type: method

@@ -9,6 +9,14 @@ items:
   - python
   module: botbuilder.applicationinsights.application_insights_telemetry_client
   name: application_insights_telemetry_client
+  source:
+    id: application_insights_telemetry_client
+    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\application_insights_telemetry_client.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\application_insights_telemetry_client.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 0
   summary: Application Insights Telemetry Client for Bots.
   type: module
   uid: botbuilder.applicationinsights.application_insights_telemetry_client
@@ -17,6 +25,14 @@ items:
   - python
   module: botbuilder.applicationinsights.application_insights_telemetry_client
   name: bot_telemetry_processor(data, context) -> bool
+  source:
+    id: bot_telemetry_processor
+    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\application_insights_telemetry_client.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\application_insights_telemetry_client.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 18
   summary: 'Bot Telemetry Processor as a method for backward compatibility. Refer
     to
 
