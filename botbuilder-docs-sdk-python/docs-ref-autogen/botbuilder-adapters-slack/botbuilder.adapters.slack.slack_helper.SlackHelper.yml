@@ -1,0 +1,281 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - botbuilder.adapters.slack.slack_helper.SlackHelper.activity_to_slack
+  - botbuilder.adapters.slack.slack_helper.SlackHelper.command_to_activity
+  - botbuilder.adapters.slack.slack_helper.SlackHelper.deserialize_body
+  - botbuilder.adapters.slack.slack_helper.SlackHelper.event_to_activity
+  - botbuilder.adapters.slack.slack_helper.SlackHelper.payload_to_activity
+  - botbuilder.adapters.slack.slack_helper.SlackHelper.query_string_to_dictionary
+  - botbuilder.adapters.slack.slack_helper.SlackHelper.response
+  class: botbuilder.adapters.slack.slack_helper.SlackHelper
+  fullName: botbuilder.adapters.slack.slack_helper.SlackHelper
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: botbuilder.adapters.slack.slack_helper
+  name: SlackHelper
+  source:
+    id: SlackHelper
+    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_helper.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_helper.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 26
+  summary: ''
+  syntax: {}
+  type: class
+  uid: botbuilder.adapters.slack.slack_helper.SlackHelper
+- class: botbuilder.adapters.slack.slack_helper.SlackHelper
+  fullName: botbuilder.adapters.slack.slack_helper.SlackHelper.activity_to_slack
+  langs:
+  - python
+  module: botbuilder.adapters.slack.slack_helper
+  name: 'activity_to_slack(activity: botbuilder.schema._models_py3.Activity) -> botbuilder.adapters.slack.slack_message.SlackMessage'
+  namewithoutparameters: activity_to_slack
+  source:
+    id: activity_to_slack
+    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_helper.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_helper.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 27
+  summary: 'Formats a BotBuilder activity into an outgoing Slack message.
+
+    :param activity: A BotBuilder Activity object.
+
+    :return: A Slack message object with {text, attachments, channel, thread ts} as
+    well
+
+    as any fields found in activity.channelData'
+  syntax:
+    content: 'activity_to_slack(activity: botbuilder.schema._models_py3.Activity)
+      -> botbuilder.adapters.slack.slack_message.SlackMessage'
+  type: method
+  uid: botbuilder.adapters.slack.slack_helper.SlackHelper.activity_to_slack
+- class: botbuilder.adapters.slack.slack_helper.SlackHelper
+  fullName: botbuilder.adapters.slack.slack_helper.SlackHelper.command_to_activity
+  langs:
+  - python
+  module: botbuilder.adapters.slack.slack_helper
+  name: 'command_to_activity(body: botbuilder.adapters.slack.slack_request_body.SlackRequestBody,
+    client: botbuilder.adapters.slack.slack_client.SlackClient) -> botbuilder.schema._models_py3.Activity'
+  namewithoutparameters: command_to_activity
+  source:
+    id: command_to_activity
+    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_helper.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_helper.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 189
+  summary: Creates an activity based on a slack event related to a slash command.
+  syntax:
+    content: 'command_to_activity(body: botbuilder.adapters.slack.slack_request_body.SlackRequestBody,
+      client: botbuilder.adapters.slack.slack_client.SlackClient) -> botbuilder.schema._models_py3.Activity'
+    parameters:
+    - description: The data of the slack event.
+      id: body
+      isRequired: true
+    - description: The Slack client.
+      id: client
+      isRequired: true
+    return:
+      description: An activity containing the event data.
+  type: method
+  uid: botbuilder.adapters.slack.slack_helper.SlackHelper.command_to_activity
+- class: botbuilder.adapters.slack.slack_helper.SlackHelper
+  fullName: botbuilder.adapters.slack.slack_helper.SlackHelper.deserialize_body
+  langs:
+  - python
+  module: botbuilder.adapters.slack.slack_helper
+  name: 'deserialize_body(content_type: str, request_body: str) -> botbuilder.adapters.slack.slack_request_body.SlackRequestBody'
+  namewithoutparameters: deserialize_body
+  source:
+    id: deserialize_body
+    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_helper.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_helper.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 245
+  summary: Deserializes the request's body as a SlackRequestBody object.
+  syntax:
+    content: 'deserialize_body(content_type: str, request_body: str) -> botbuilder.adapters.slack.slack_request_body.SlackRequestBody'
+    parameters:
+    - description: The content type of the body
+      id: content_type
+      isRequired: true
+    - description: The body of the request
+      id: request_body
+      isRequired: true
+    return:
+      description: A SlackRequestBody object
+  type: method
+  uid: botbuilder.adapters.slack.slack_helper.SlackHelper.deserialize_body
+- class: botbuilder.adapters.slack.slack_helper.SlackHelper
+  fullName: botbuilder.adapters.slack.slack_helper.SlackHelper.event_to_activity
+  langs:
+  - python
+  module: botbuilder.adapters.slack.slack_helper
+  name: 'event_to_activity(event: botbuilder.adapters.slack.slack_event.SlackEvent,
+    client: botbuilder.adapters.slack.slack_client.SlackClient) -> botbuilder.schema._models_py3.Activity'
+  namewithoutparameters: event_to_activity
+  source:
+    id: event_to_activity
+    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_helper.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_helper.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 138
+  summary: Creates an activity based on the slack event data.
+  syntax:
+    content: 'event_to_activity(event: botbuilder.adapters.slack.slack_event.SlackEvent,
+      client: botbuilder.adapters.slack.slack_client.SlackClient) -> botbuilder.schema._models_py3.Activity'
+    parameters:
+    - description: The data of the slack event.
+      id: event
+      isRequired: true
+    - description: The Slack client.
+      id: client
+      isRequired: true
+    return:
+      description: An activity containing the event data.
+  type: method
+  uid: botbuilder.adapters.slack.slack_helper.SlackHelper.event_to_activity
+- class: botbuilder.adapters.slack.slack_helper.SlackHelper
+  fullName: botbuilder.adapters.slack.slack_helper.SlackHelper.payload_to_activity
+  langs:
+  - python
+  module: botbuilder.adapters.slack.slack_helper
+  name: 'payload_to_activity(payload: botbuilder.adapters.slack.slack_payload.SlackPayload)
+    -> botbuilder.schema._models_py3.Activity'
+  namewithoutparameters: payload_to_activity
+  source:
+    id: payload_to_activity
+    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_helper.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_helper.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 103
+  summary: Creates an activity based on the slack event payload.
+  syntax:
+    content: 'payload_to_activity(payload: botbuilder.adapters.slack.slack_payload.SlackPayload)
+      -> botbuilder.schema._models_py3.Activity'
+    parameters:
+    - description: The payload of the slack event.
+      id: payload
+      isRequired: true
+    return:
+      description: An activity containing the event data.
+  type: method
+  uid: botbuilder.adapters.slack.slack_helper.SlackHelper.payload_to_activity
+- class: botbuilder.adapters.slack.slack_helper.SlackHelper
+  fullName: botbuilder.adapters.slack.slack_helper.SlackHelper.query_string_to_dictionary
+  langs:
+  - python
+  module: botbuilder.adapters.slack.slack_helper
+  name: 'query_string_to_dictionary(query: str) -> {}'
+  namewithoutparameters: query_string_to_dictionary
+  source:
+    id: query_string_to_dictionary
+    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_helper.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_helper.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 220
+  summary: Converts a query string to a dictionary with key-value pairs.
+  syntax:
+    content: 'query_string_to_dictionary(query: str) -> {}'
+    parameters:
+    - description: The query string to convert.
+      id: query
+      isRequired: true
+    return:
+      description: A dictionary with the query values.
+  type: method
+  uid: botbuilder.adapters.slack.slack_helper.SlackHelper.query_string_to_dictionary
+- class: botbuilder.adapters.slack.slack_helper.SlackHelper
+  fullName: botbuilder.adapters.slack.slack_helper.SlackHelper.response
+  langs:
+  - python
+  module: botbuilder.adapters.slack.slack_helper
+  name: 'response(req: aiohttp.web_request.Request, code: int, text: str = None, encoding:
+    str = None) -> aiohttp.web_response.Response'
+  namewithoutparameters: response
+  source:
+    id: response
+    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_helper.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_helper.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 81
+  summary: Formats an aiohttp Response
+  syntax:
+    content: 'response(req: aiohttp.web_request.Request, code: int, text: str = None,
+      encoding: str = None) -> aiohttp.web_response.Response'
+    parameters:
+    - description: The original aoihttp Request
+      id: req
+      isRequired: true
+    - description: The HTTP result code to return
+      id: code
+      isRequired: true
+    - description: The text to return
+      id: text
+      isRequired: true
+    - description: The text encoding.  Defaults to utf-8
+      id: encoding
+      isRequired: true
+    return:
+      description: The aoihttp Response
+  type: method
+  uid: botbuilder.adapters.slack.slack_helper.SlackHelper.response
+references:
+- fullName: botbuilder.adapters.slack.slack_helper.SlackHelper.activity_to_slack
+  isExternal: false
+  name: 'activity_to_slack(activity: botbuilder.schema._models_py3.Activity) -> botbuilder.adapters.slack.slack_message.SlackMessage'
+  parent: botbuilder.adapters.slack.slack_helper.SlackHelper
+  uid: botbuilder.adapters.slack.slack_helper.SlackHelper.activity_to_slack
+- fullName: botbuilder.adapters.slack.slack_helper.SlackHelper.command_to_activity
+  isExternal: false
+  name: 'command_to_activity(body: botbuilder.adapters.slack.slack_request_body.SlackRequestBody,
+    client: botbuilder.adapters.slack.slack_client.SlackClient) -> botbuilder.schema._models_py3.Activity'
+  parent: botbuilder.adapters.slack.slack_helper.SlackHelper
+  uid: botbuilder.adapters.slack.slack_helper.SlackHelper.command_to_activity
+- fullName: botbuilder.adapters.slack.slack_helper.SlackHelper.deserialize_body
+  isExternal: false
+  name: 'deserialize_body(content_type: str, request_body: str) -> botbuilder.adapters.slack.slack_request_body.SlackRequestBody'
+  parent: botbuilder.adapters.slack.slack_helper.SlackHelper
+  uid: botbuilder.adapters.slack.slack_helper.SlackHelper.deserialize_body
+- fullName: botbuilder.adapters.slack.slack_helper.SlackHelper.event_to_activity
+  isExternal: false
+  name: 'event_to_activity(event: botbuilder.adapters.slack.slack_event.SlackEvent,
+    client: botbuilder.adapters.slack.slack_client.SlackClient) -> botbuilder.schema._models_py3.Activity'
+  parent: botbuilder.adapters.slack.slack_helper.SlackHelper
+  uid: botbuilder.adapters.slack.slack_helper.SlackHelper.event_to_activity
+- fullName: botbuilder.adapters.slack.slack_helper.SlackHelper.payload_to_activity
+  isExternal: false
+  name: 'payload_to_activity(payload: botbuilder.adapters.slack.slack_payload.SlackPayload)
+    -> botbuilder.schema._models_py3.Activity'
+  parent: botbuilder.adapters.slack.slack_helper.SlackHelper
+  uid: botbuilder.adapters.slack.slack_helper.SlackHelper.payload_to_activity
+- fullName: botbuilder.adapters.slack.slack_helper.SlackHelper.query_string_to_dictionary
+  isExternal: false
+  name: 'query_string_to_dictionary(query: str) -> {}'
+  parent: botbuilder.adapters.slack.slack_helper.SlackHelper
+  uid: botbuilder.adapters.slack.slack_helper.SlackHelper.query_string_to_dictionary
+- fullName: botbuilder.adapters.slack.slack_helper.SlackHelper.response
+  isExternal: false
+  name: 'response(req: aiohttp.web_request.Request, code: int, text: str = None, encoding:
+    str = None) -> aiohttp.web_response.Response'
+  parent: botbuilder.adapters.slack.slack_helper.SlackHelper
+  uid: botbuilder.adapters.slack.slack_helper.SlackHelper.response

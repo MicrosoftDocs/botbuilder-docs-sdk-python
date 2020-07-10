@@ -10,6 +10,14 @@ items:
   - python
   module: botbuilder.core.teams.teams_activity_extensions
   name: teams_activity_extensions
+  source:
+    id: teams_activity_extensions
+    path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_activity_extensions.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_activity_extensions.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 0
   type: module
   uid: botbuilder.core.teams.teams_activity_extensions
 - fullName: botbuilder.core.teams.teams_activity_extensions.teams_get_channel_id
@@ -18,6 +26,14 @@ items:
   module: botbuilder.core.teams.teams_activity_extensions
   name: 'teams_get_channel_id(activity: botbuilder.schema._models_py3.Activity) ->
     str'
+  source:
+    id: teams_get_channel_id
+    path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_activity_extensions.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_activity_extensions.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 8
   syntax:
     content: 'teams_get_channel_id(activity: botbuilder.schema._models_py3.Activity)
       -> str'
@@ -29,6 +45,14 @@ items:
   module: botbuilder.core.teams.teams_activity_extensions
   name: 'teams_get_team_info(activity: botbuilder.schema._models_py3.Activity) ->
     botbuilder.schema.teams._models_py3.TeamInfo'
+  source:
+    id: teams_get_team_info
+    path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_activity_extensions.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_activity_extensions.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 19
   syntax:
     content: 'teams_get_team_info(activity: botbuilder.schema._models_py3.Activity)
       -> botbuilder.schema.teams._models_py3.TeamInfo'
@@ -39,6 +63,14 @@ items:
   - python
   module: botbuilder.core.teams.teams_activity_extensions
   name: 'teams_notify_user(activity: botbuilder.schema._models_py3.Activity)'
+  source:
+    id: teams_notify_user
+    path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_activity_extensions.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_activity_extensions.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 30
   syntax:
     content: 'teams_notify_user(activity: botbuilder.schema._models_py3.Activity)'
   type: function

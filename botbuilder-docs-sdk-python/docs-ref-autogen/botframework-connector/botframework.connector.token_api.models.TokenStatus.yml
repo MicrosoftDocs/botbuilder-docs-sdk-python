@@ -12,6 +12,14 @@ items:
   - python
   module: botframework.connector.token_api.models
   name: TokenStatus
+  source:
+    id: TokenStatus
+    path: ./libraries/botframework-connector\botframework\connector\token_api\models\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\token_api\models\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 214
   summary: The status of a particular token.
   syntax:
     content: 'TokenStatus(*, channel_id: str = None, connection_name: str = None,

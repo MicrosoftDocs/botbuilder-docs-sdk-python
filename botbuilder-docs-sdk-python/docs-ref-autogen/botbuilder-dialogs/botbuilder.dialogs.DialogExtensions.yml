@@ -11,6 +11,14 @@ items:
   - python
   module: botbuilder.dialogs
   name: DialogExtensions
+  source:
+    id: DialogExtensions
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_extensions.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_extensions.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 22
   syntax: {}
   type: class
   uid: botbuilder.dialogs.DialogExtensions
@@ -22,6 +30,14 @@ items:
   name: 'run_dialog(dialog: botbuilder.dialogs.dialog.Dialog, turn_context: botbuilder.core.turn_context.TurnContext,
     accessor: botbuilder.core.state_property_accessor.StatePropertyAccessor)'
   namewithoutparameters: run_dialog
+  source:
+    id: run_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_extensions.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\dialog_extensions.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 23
   summary: Creates a dialog stack and starts a dialog, pushing it onto the stack.
   syntax:
     content: 'run_dialog(dialog: botbuilder.dialogs.dialog.Dialog, turn_context: botbuilder.core.turn_context.TurnContext,

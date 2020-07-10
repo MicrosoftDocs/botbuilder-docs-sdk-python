@@ -10,6 +10,14 @@ items:
   - python
   module: botbuilder.dialogs.choices.found_value
   name: FoundValue
+  source:
+    id: FoundValue
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\found_value.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\found_value.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 5
   summary: Represents a result from matching user input against a list of choices
   syntax:
     content: 'FoundValue(value: str, index: int, score: float)'

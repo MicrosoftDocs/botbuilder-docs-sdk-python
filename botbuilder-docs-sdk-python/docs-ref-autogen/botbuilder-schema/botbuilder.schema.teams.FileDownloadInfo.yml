@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema.teams
   name: FileDownloadInfo
+  source:
+    id: FileDownloadInfo
+    path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 154
   summary: File download info attachment.
   syntax:
     content: 'FileDownloadInfo(*, download_url: str = None, unique_id: str = None,

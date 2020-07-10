@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema
   name: AttachmentView
+  source:
+    id: AttachmentView
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 1020
   summary: Attachment View name and size.
   syntax:
     content: 'AttachmentView(*, view_id: str = None, size: int = None, **kwargs) ->

@@ -10,6 +10,14 @@ items:
   - python
   module: botbuilder.core.bot_framework_adapter
   name: BotFrameworkAdapterSettings
+  source:
+    id: BotFrameworkAdapterSettings
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 110
   syntax:
     content: 'BotFrameworkAdapterSettings(app_id: str, app_password: str = None, channel_auth_tenant:
       str = None, oauth_endpoint: str = None, open_id_metadata: str = None, channel_provider:

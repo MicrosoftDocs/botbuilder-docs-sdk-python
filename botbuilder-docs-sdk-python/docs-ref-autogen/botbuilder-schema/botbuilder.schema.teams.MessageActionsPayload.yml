@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema.teams
   name: MessageActionsPayload
+  source:
+    id: MessageActionsPayload
+    path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 517
   summary: 'Represents the individual message within a chat or channel where a message
 
     actions is taken.'
@@ -19,8 +27,8 @@ items:
     content: 'MessageActionsPayload(*, id: str = None, reply_to_id: str = None, message_type=None,
       created_date_time: str = None, last_modified_date_time: str = None, deleted:
       bool = None, subject: str = None, summary: str = None, importance=None, locale:
-      str = None, from_property=None, body=None, attachment_layout: str = None, attachments=None,
-      mentions=None, reactions=None, **kwargs) -> None'
+      str = None, link_to_message: str = None, from_property=None, body=None, attachment_layout:
+      str = None, attachments=None, mentions=None, reactions=None, **kwargs) -> None'
     parameters:
     - description: Unique id of the message.
       id: id
@@ -68,6 +76,10 @@ items:
       - str
     - description: Locale of the message set by the client.
       id: locale
+      type:
+      - str
+    - description: Link back to the message.
+      id: link_to_message
       type:
       - str
     - description: Sender of the message.

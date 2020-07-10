@@ -2,6 +2,7 @@
 api_name: []
 items:
 - children:
+  - botbuilder.core.telemetry_constants.TelemetryConstants.ATTACHMENTS_PROPERTY
   - botbuilder.core.telemetry_constants.TelemetryConstants.CHANNEL_ID_PROPERTY
   - botbuilder.core.telemetry_constants.TelemetryConstants.CONVERSATION_ID_PROPERTY
   - botbuilder.core.telemetry_constants.TelemetryConstants.CONVERSATION_NAME_PROPERTY
@@ -23,10 +24,28 @@ items:
   - python
   module: botbuilder.core.telemetry_constants
   name: TelemetryConstants
+  source:
+    id: TelemetryConstants
+    path: ./libraries/botbuilder-core\botbuilder\core\telemetry_constants.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\telemetry_constants.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 5
   summary: Telemetry logger property names.
   syntax: {}
   type: class
   uid: botbuilder.core.telemetry_constants.TelemetryConstants
+- class: botbuilder.core.telemetry_constants.TelemetryConstants
+  fullName: botbuilder.core.telemetry_constants.TelemetryConstants.ATTACHMENTS_PROPERTY
+  langs:
+  - python
+  module: botbuilder.core.telemetry_constants
+  name: ATTACHMENTS_PROPERTY
+  syntax:
+    content: ATTACHMENTS_PROPERTY = 'attachments'
+  type: attribute
+  uid: botbuilder.core.telemetry_constants.TelemetryConstants.ATTACHMENTS_PROPERTY
 - class: botbuilder.core.telemetry_constants.TelemetryConstants
   fullName: botbuilder.core.telemetry_constants.TelemetryConstants.CHANNEL_ID_PROPERTY
   langs:
@@ -158,6 +177,11 @@ items:
   type: attribute
   uid: botbuilder.core.telemetry_constants.TelemetryConstants.USER_ID_PROPERTY
 references:
+- fullName: botbuilder.core.telemetry_constants.TelemetryConstants.ATTACHMENTS_PROPERTY
+  isExternal: false
+  name: ATTACHMENTS_PROPERTY
+  parent: botbuilder.core.telemetry_constants.TelemetryConstants
+  uid: botbuilder.core.telemetry_constants.TelemetryConstants.ATTACHMENTS_PROPERTY
 - fullName: botbuilder.core.telemetry_constants.TelemetryConstants.CHANNEL_ID_PROPERTY
   isExternal: false
   name: CHANNEL_ID_PROPERTY

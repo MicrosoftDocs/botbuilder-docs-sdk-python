@@ -21,6 +21,14 @@ items:
   - python
   module: botbuilder.testing
   name: StorageBaseTests
+  source:
+    id: StorageBaseTests
+    path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 47
   summary: ''
   syntax: {}
   type: class
@@ -32,6 +40,14 @@ items:
   module: botbuilder.testing
   name: create_object(storage) -> bool
   namewithoutparameters: create_object
+  source:
+    id: create_object
+    path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 89
   syntax:
     content: create_object(storage) -> bool
   type: method
@@ -43,6 +59,14 @@ items:
   module: botbuilder.testing
   name: delete_object(storage) -> bool
   namewithoutparameters: delete_object
+  source:
+    id: delete_object
+    path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 219
   syntax:
     content: delete_object(storage) -> bool
   type: method
@@ -54,6 +78,14 @@ items:
   module: botbuilder.testing
   name: delete_unknown_object(storage) -> bool
   namewithoutparameters: delete_unknown_object
+  source:
+    id: delete_unknown_object
+    path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 238
   syntax:
     content: delete_unknown_object(storage) -> bool
   type: method
@@ -65,6 +97,14 @@ items:
   module: botbuilder.testing
   name: does_not_raise_when_writing_no_items(storage) -> bool
   namewithoutparameters: does_not_raise_when_writing_no_items
+  source:
+    id: does_not_raise_when_writing_no_items
+    path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 79
   syntax:
     content: does_not_raise_when_writing_no_items(storage) -> bool
   type: method
@@ -76,6 +116,14 @@ items:
   module: botbuilder.testing
   name: handle_crazy_keys(storage) -> bool
   namewithoutparameters: handle_crazy_keys
+  source:
+    id: handle_crazy_keys
+    path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 112
   syntax:
     content: handle_crazy_keys(storage) -> bool
   type: method
@@ -87,6 +135,14 @@ items:
   module: botbuilder.testing
   name: handle_null_keys_when_reading(storage) -> bool
   namewithoutparameters: handle_null_keys_when_reading
+  source:
+    id: handle_null_keys_when_reading
+    path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 58
   syntax:
     content: handle_null_keys_when_reading(storage) -> bool
   type: method
@@ -98,6 +154,14 @@ items:
   module: botbuilder.testing
   name: handle_null_keys_when_writing(storage) -> bool
   namewithoutparameters: handle_null_keys_when_writing
+  source:
+    id: handle_null_keys_when_writing
+    path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 71
   syntax:
     content: handle_null_keys_when_writing(storage) -> bool
   type: method
@@ -109,6 +173,14 @@ items:
   module: botbuilder.testing
   name: perform_batch_operations(storage) -> bool
   namewithoutparameters: perform_batch_operations
+  source:
+    id: perform_batch_operations
+    path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 248
   syntax:
     content: perform_batch_operations(storage) -> bool
   type: method
@@ -120,6 +192,14 @@ items:
   module: botbuilder.testing
   name: proceeds_through_waterfall(storage) -> bool
   namewithoutparameters: proceeds_through_waterfall
+  source:
+    id: proceeds_through_waterfall
+    path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 279
   syntax:
     content: proceeds_through_waterfall(storage) -> bool
   type: method
@@ -131,6 +211,14 @@ items:
   module: botbuilder.testing
   name: return_empty_object_when_reading_unknown_key(storage) -> bool
   namewithoutparameters: return_empty_object_when_reading_unknown_key
+  source:
+    id: return_empty_object_when_reading_unknown_key
+    path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 49
   syntax:
     content: return_empty_object_when_reading_unknown_key(storage) -> bool
   type: method
@@ -142,6 +230,14 @@ items:
   module: botbuilder.testing
   name: update_object(storage) -> bool
   namewithoutparameters: update_object
+  source:
+    id: update_object
+    path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-testing\botbuilder\testing\storage_base_tests.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 127
   syntax:
     content: update_object(storage) -> bool
   type: method

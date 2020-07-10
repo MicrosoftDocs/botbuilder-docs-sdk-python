@@ -14,6 +14,14 @@ items:
   - python
   module: botbuilder.core.adapters.test_adapter
   name: ExchangeableToken
+  source:
+    id: ExchangeableToken
+    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 58
   summary: ''
   syntax:
     content: 'ExchangeableToken(connection_name: str = None, user_id: str = None,
@@ -28,6 +36,14 @@ items:
   name: 'equals_key(rhs: botbuilder.core.adapters.test_adapter.ExchangeableToken)
     -> bool'
   namewithoutparameters: equals_key
+  source:
+    id: equals_key
+    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 76
   syntax:
     content: 'equals_key(rhs: botbuilder.core.adapters.test_adapter.ExchangeableToken)
       -> bool'
@@ -40,6 +56,14 @@ items:
   module: botbuilder.core.adapters.test_adapter
   name: to_key() -> str
   namewithoutparameters: to_key
+  source:
+    id: to_key
+    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 83
   syntax:
     content: to_key() -> str
   type: method

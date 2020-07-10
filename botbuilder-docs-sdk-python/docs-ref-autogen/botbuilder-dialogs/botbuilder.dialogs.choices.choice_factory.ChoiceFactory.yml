@@ -15,6 +15,14 @@ items:
   - python
   module: botbuilder.dialogs.choices.choice_factory
   name: ChoiceFactory
+  source:
+    id: ChoiceFactory
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 12
   summary: Assists with formatting a message activity that contains a list of choices.
   syntax: {}
   type: class
@@ -28,6 +36,14 @@ items:
     text: str = None, speak: str = None, options: botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
     = None) -> botbuilder.schema._models_py3.Activity'
   namewithoutparameters: for_channel
+  source:
+    id: for_channel
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 17
   summary: "Creates a message activity that includes a list of choices formatted based\
     \ on the\n   capabilities of a given channel.\n\n\n\nchannel_id: A channel ID.\n\
     choices: List of choices to render\ntext: (Optional) Text of the message to send.\n\
@@ -47,6 +63,14 @@ items:
   name: 'hero_card(choices: typing.List[typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
     text: str = None, speak: str = None) -> botbuilder.schema._models_py3.Activity'
   namewithoutparameters: hero_card
+  source:
+    id: hero_card
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 204
   summary: Creates a message activity that includes a lsit of coices that have been
     added as *HeroCard*'s
   syntax:
@@ -63,6 +87,14 @@ items:
     text: str = None, speak: str = None, options: botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
     = None) -> botbuilder.schema._models_py3.Activity'
   namewithoutparameters: inline
+  source:
+    id: inline
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 74
   summary: 'Creates a message activity that includes a list of choices formatted as
     an inline list.
 
@@ -91,6 +123,14 @@ items:
     text: str = None, speak: str = None, options: botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
     = None)'
   namewithoutparameters: list_style
+  source:
+    id: list_style
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 133
   summary: 'Creates a message activity that includes a list of choices formatted as
     a numbered or bulleted list.
 
@@ -121,6 +161,14 @@ items:
   name: 'suggested_action(choices: typing.List[botbuilder.dialogs.choices.choice.Choice],
     text: str = None, speak: str = None) -> botbuilder.schema._models_py3.Activity'
   namewithoutparameters: suggested_action
+  source:
+    id: suggested_action
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\choice_factory.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 189
   summary: Creates a message activity that includes a list of choices that have been
     added as suggested actions.
   syntax:

@@ -14,6 +14,14 @@ items:
   - python
   module: botbuilder.core.channel_service_handler
   name: BotActionNotImplementedError
+  source:
+    id: BotActionNotImplementedError
+    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 27
   summary: Raised when an action is not implemented
   syntax: {}
   type: class

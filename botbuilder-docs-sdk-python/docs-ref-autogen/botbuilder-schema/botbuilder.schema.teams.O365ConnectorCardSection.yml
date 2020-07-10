@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema.teams
   name: O365ConnectorCardSection
+  source:
+    id: O365ConnectorCardSection
+    path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 1400
   summary: O365 connector card section.
   syntax:
     content: 'O365ConnectorCardSection(*, title: str = None, text: str = None, activity_title:

@@ -22,6 +22,7 @@ items:
   - botbuilder.ai.qna.qnamaker_endpoint
   - botbuilder.ai.qna.qnamaker_options
   - botbuilder.ai.qna.qnamaker_telemetry_client
+  - botbuilder.ai.qna.dialogs
   - botbuilder.ai.qna.models
   - botbuilder.ai.qna.utils
   fullName: botbuilder.ai.qna
@@ -30,6 +31,14 @@ items:
   - python
   module: botbuilder.ai.qna
   name: qna
+  source:
+    id: qna
+    path: ./libraries/botbuilder-ai\botbuilder\ai\qna\__init__.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-ai\botbuilder\ai\qna\__init__.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 0
   type: package
   uid: botbuilder.ai.qna
 references:
@@ -133,6 +142,11 @@ references:
   name: qnamaker_telemetry_client
   parent: botbuilder.ai.qna
   uid: botbuilder.ai.qna.qnamaker_telemetry_client
+- fullName: botbuilder.ai.qna.dialogs
+  isExternal: false
+  name: dialogs
+  parent: botbuilder.ai.qna
+  uid: botbuilder.ai.qna.dialogs
 - fullName: botbuilder.ai.qna.models
   isExternal: false
   name: models

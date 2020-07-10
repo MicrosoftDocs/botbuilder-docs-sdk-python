@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema.teams
   name: FileInfoCard
+  source:
+    id: FileInfoCard
+    path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 190
   summary: File info card.
   syntax:
     content: 'FileInfoCard(*, unique_id: str = None, file_type: str = None, etag=None,

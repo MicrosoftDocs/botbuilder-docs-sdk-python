@@ -21,6 +21,14 @@ items:
   - python
   module: botbuilder.core.teams.teams_info
   name: TeamsInfo
+  source:
+    id: TeamsInfo
+    path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_info.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_info.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 18
   summary: ''
   syntax: {}
   type: class
@@ -33,6 +41,14 @@ items:
   name: 'get_member(turn_context: botbuilder.core.turn_context.TurnContext, member_id:
     str) -> botbuilder.schema.teams._models_py3.TeamsChannelAccount'
   namewithoutparameters: get_member
+  source:
+    id: get_member
+    path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_info.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_info.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 166
   syntax:
     content: 'get_member(turn_context: botbuilder.core.turn_context.TurnContext, member_id:
       str) -> botbuilder.schema.teams._models_py3.TeamsChannelAccount'
@@ -45,6 +61,14 @@ items:
   module: botbuilder.core.teams.teams_info
   name: 'get_members(turn_context: botbuilder.core.turn_context.TurnContext) -> typing.List[botbuilder.schema.teams._models_py3.TeamsChannelAccount]'
   namewithoutparameters: get_members
+  source:
+    id: get_members
+    path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_info.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_info.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 99
   syntax:
     content: 'get_members(turn_context: botbuilder.core.turn_context.TurnContext)
       -> typing.List[botbuilder.schema.teams._models_py3.TeamsChannelAccount]'
@@ -58,6 +82,14 @@ items:
   name: 'get_paged_members(turn_context: botbuilder.core.turn_context.TurnContext,
     continuation_token: str = None, page_size: int = None) -> typing.List[botbuilder.schema.teams._models_py3.TeamsPagedMembersResult]'
   namewithoutparameters: get_paged_members
+  source:
+    id: get_paged_members
+    path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_info.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_info.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 129
   syntax:
     content: 'get_paged_members(turn_context: botbuilder.core.turn_context.TurnContext,
       continuation_token: str = None, page_size: int = None) -> typing.List[botbuilder.schema.teams._models_py3.TeamsPagedMembersResult]'
@@ -72,6 +104,14 @@ items:
     team_id: str = '''', continuation_token: str = None, page_size: int = None) ->
     typing.List[botbuilder.schema.teams._models_py3.TeamsPagedMembersResult]'
   namewithoutparameters: get_paged_team_members
+  source:
+    id: get_paged_team_members
+    path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_info.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_info.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 109
   syntax:
     content: 'get_paged_team_members(turn_context: botbuilder.core.turn_context.TurnContext,
       team_id: str = '''', continuation_token: str = None, page_size: int = None)
@@ -86,6 +126,14 @@ items:
   name: 'get_team_channels(turn_context: botbuilder.core.turn_context.TurnContext,
     team_id: str = '''') -> typing.List[botbuilder.schema.teams._models_py3.ChannelInfo]'
   namewithoutparameters: get_team_channels
+  source:
+    id: get_team_channels
+    path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_info.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_info.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 67
   syntax:
     content: 'get_team_channels(turn_context: botbuilder.core.turn_context.TurnContext,
       team_id: str = '''') -> typing.List[botbuilder.schema.teams._models_py3.ChannelInfo]'
@@ -99,6 +147,14 @@ items:
   name: 'get_team_details(turn_context: botbuilder.core.turn_context.TurnContext,
     team_id: str = '''') -> botbuilder.schema.teams._models_py3.TeamDetails'
   namewithoutparameters: get_team_details
+  source:
+    id: get_team_details
+    path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_info.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_info.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 52
   syntax:
     content: 'get_team_details(turn_context: botbuilder.core.turn_context.TurnContext,
       team_id: str = '''') -> botbuilder.schema.teams._models_py3.TeamDetails'
@@ -111,6 +167,14 @@ items:
   module: botbuilder.core.teams.teams_info
   name: 'get_team_id(turn_context: botbuilder.core.turn_context.TurnContext)'
   namewithoutparameters: get_team_id
+  source:
+    id: get_team_id
+    path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_info.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_info.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 192
   syntax:
     content: 'get_team_id(turn_context: botbuilder.core.turn_context.TurnContext)'
   type: method
@@ -123,6 +187,14 @@ items:
   name: 'get_team_member(turn_context: botbuilder.core.turn_context.TurnContext, team_id:
     str = '''', member_id: str = None) -> botbuilder.schema.teams._models_py3.TeamsChannelAccount'
   namewithoutparameters: get_team_member
+  source:
+    id: get_team_member
+    path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_info.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_info.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 146
   syntax:
     content: 'get_team_member(turn_context: botbuilder.core.turn_context.TurnContext,
       team_id: str = '''', member_id: str = None) -> botbuilder.schema.teams._models_py3.TeamsChannelAccount'
@@ -136,6 +208,14 @@ items:
   name: 'get_team_members(turn_context: botbuilder.core.turn_context.TurnContext,
     team_id: str = '''') -> typing.List[botbuilder.schema.teams._models_py3.TeamsChannelAccount]'
   namewithoutparameters: get_team_members
+  source:
+    id: get_team_members
+    path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_info.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_info.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 82
   syntax:
     content: 'get_team_members(turn_context: botbuilder.core.turn_context.TurnContext,
       team_id: str = '''') -> typing.List[botbuilder.schema.teams._models_py3.TeamsChannelAccount]'
@@ -149,6 +229,14 @@ items:
   name: 'get_teams_connector_client(turn_context: botbuilder.core.turn_context.TurnContext)
     -> botframework.connector.teams.teams_connector_client.TeamsConnectorClient'
   namewithoutparameters: get_teams_connector_client
+  source:
+    id: get_teams_connector_client
+    path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_info.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_info.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 180
   syntax:
     content: 'get_teams_connector_client(turn_context: botbuilder.core.turn_context.TurnContext)
       -> botframework.connector.teams.teams_connector_client.TeamsConnectorClient'
@@ -163,6 +251,14 @@ items:
     activity: botbuilder.schema._models_py3.Activity, teams_channel_id: str) -> typing.Tuple[botbuilder.schema._models_py3.ConversationReference,
     str]'
   namewithoutparameters: send_message_to_teams_channel
+  source:
+    id: send_message_to_teams_channel
+    path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_info.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\teams\teams_info.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 19
   syntax:
     content: 'send_message_to_teams_channel(turn_context: botbuilder.core.turn_context.TurnContext,
       activity: botbuilder.schema._models_py3.Activity, teams_channel_id: str) ->

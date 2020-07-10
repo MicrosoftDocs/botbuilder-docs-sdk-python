@@ -12,6 +12,14 @@ items:
   - python
   module: botframework.connector.token_api
   name: TokenApiClient
+  source:
+    id: TokenApiClient
+    path: ./libraries/botframework-connector\botframework\connector\token_api\_token_api_client.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\token_api\_token_api_client.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 21
   syntax:
     content: TokenApiClient(credentials, base_url=None)
     parameters:

@@ -17,6 +17,14 @@ items:
   - python
   module: botframework.connector.auth.simple_channel_provider
   name: SimpleChannelProvider
+  source:
+    id: SimpleChannelProvider
+    path: ./libraries/botframework-connector\botframework\connector\auth\simple_channel_provider.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\auth\simple_channel_provider.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 8
   summary: 'ChannelProvider interface. This interface allows Bots to provide their
     own
 
@@ -34,6 +42,14 @@ items:
   module: botframework.connector.auth.simple_channel_provider
   name: get_channel_service() -> str
   namewithoutparameters: get_channel_service
+  source:
+    id: get_channel_service
+    path: ./libraries/botframework-connector\botframework\connector\auth\simple_channel_provider.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\auth\simple_channel_provider.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 18
   syntax:
     content: get_channel_service() -> str
   type: method
@@ -45,6 +61,14 @@ items:
   module: botframework.connector.auth.simple_channel_provider
   name: is_government() -> bool
   namewithoutparameters: is_government
+  source:
+    id: is_government
+    path: ./libraries/botframework-connector\botframework\connector\auth\simple_channel_provider.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\auth\simple_channel_provider.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 21
   syntax:
     content: is_government() -> bool
   type: method
@@ -56,6 +80,14 @@ items:
   module: botframework.connector.auth.simple_channel_provider
   name: is_public_azure() -> bool
   namewithoutparameters: is_public_azure
+  source:
+    id: is_public_azure
+    path: ./libraries/botframework-connector\botframework\connector\auth\simple_channel_provider.py
+    remote:
+      branch: master
+      path: ./libraries/botframework-connector\botframework\connector\auth\simple_channel_provider.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 24
   syntax:
     content: is_public_azure() -> bool
   type: method

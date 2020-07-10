@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.dialogs.choices.find
   name: Find
+  source:
+    id: Find
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\find.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\find.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 16
   summary: Contains methods for matching user input against a list of choices
   syntax: {}
   type: class
@@ -25,6 +33,14 @@ items:
     options: botbuilder.dialogs.choices.find_choices_options.FindChoicesOptions =
     None)'
   namewithoutparameters: find_choices
+  source:
+    id: find_choices
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\find.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\find.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 19
   summary: Matches user input against a list of choices
   syntax:
     content: 'find_choices(utterance: str, choices: [typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
@@ -41,6 +57,14 @@ items:
     options: botbuilder.dialogs.choices.find_values_options.FindValuesOptions = None)
     -> typing.List[botbuilder.dialogs.choices.model_result.ModelResult]'
   namewithoutparameters: find_values
+  source:
+    id: find_values
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\find.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\find.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 83
   syntax:
     content: 'find_values(utterance: str, values: typing.List[botbuilder.dialogs.choices.sorted_value.SortedValue],
       options: botbuilder.dialogs.choices.find_values_options.FindValuesOptions =

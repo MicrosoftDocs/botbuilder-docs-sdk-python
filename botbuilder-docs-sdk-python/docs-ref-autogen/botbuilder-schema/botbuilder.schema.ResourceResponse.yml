@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema
   name: ResourceResponse
+  source:
+    id: ResourceResponse
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 92
   summary: A response containing a resource ID.
   syntax:
     content: 'ResourceResponse(*, id: str = None, **kwargs) -> None'

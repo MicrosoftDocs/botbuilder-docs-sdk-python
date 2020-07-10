@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.ai.qna.utils.qna_card_builder
   name: QnACardBuilder
+  source:
+    id: QnACardBuilder
+    path: ./libraries/botbuilder-ai\botbuilder\ai\qna\utils\qna_card_builder.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-ai\botbuilder\ai\qna\utils\qna_card_builder.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 10
   summary: Message activity card builder for QnAMaker dialogs.
   syntax: {}
   type: class
@@ -24,6 +32,14 @@ items:
   name: 'get_qna_prompts_card(result: botbuilder.ai.qna.models.query_result.QueryResult,
     card_no_match_text: str) -> botbuilder.schema._models_py3.Activity'
   namewithoutparameters: get_qna_prompts_card
+  source:
+    id: get_qna_prompts_card
+    path: ./libraries/botbuilder-ai\botbuilder\ai\qna\utils\qna_card_builder.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-ai\botbuilder\ai\qna\utils\qna_card_builder.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 49
   summary: Get active learning suggestions card.
   syntax:
     content: 'get_qna_prompts_card(result: botbuilder.ai.qna.models.query_result.QueryResult,
@@ -38,6 +54,14 @@ items:
   name: 'get_suggestions_card(suggestions: [<class ''str''>], card_title: str, card_no_match:
     str) -> botbuilder.schema._models_py3.Activity'
   namewithoutparameters: get_suggestions_card
+  source:
+    id: get_suggestions_card
+    path: ./libraries/botbuilder-ai\botbuilder\ai\qna\utils\qna_card_builder.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-ai\botbuilder\ai\qna\utils\qna_card_builder.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 15
   summary: Get active learning suggestions card.
   syntax:
     content: 'get_suggestions_card(suggestions: [<class ''str''>], card_title: str,

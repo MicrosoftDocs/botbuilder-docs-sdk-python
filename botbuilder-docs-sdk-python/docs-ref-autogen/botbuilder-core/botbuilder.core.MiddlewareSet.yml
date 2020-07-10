@@ -19,6 +19,14 @@ items:
   - python
   module: botbuilder.core
   name: MiddlewareSet
+  source:
+    id: MiddlewareSet
+    path: ./libraries/botbuilder-core\botbuilder\core\middleware_set.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\middleware_set.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 31
   summary: 'A set of *Middleware* plugins. The set itself is middleware so you can
     easily package up a set
 
@@ -38,6 +46,14 @@ items:
   name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
     typing.Awaitable])'
   namewithoutparameters: on_turn
+  source:
+    id: on_turn
+    path: ./libraries/botbuilder-core\botbuilder\core\middleware_set.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\middleware_set.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 60
   syntax:
     content: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
       typing.Awaitable])'
@@ -50,6 +66,14 @@ items:
   module: botbuilder.core
   name: 'receive_activity(context: botbuilder.core.turn_context.TurnContext)'
   namewithoutparameters: receive_activity
+  source:
+    id: receive_activity
+    path: ./libraries/botbuilder-core\botbuilder\core\middleware_set.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\middleware_set.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 57
   syntax:
     content: 'receive_activity(context: botbuilder.core.turn_context.TurnContext)'
   type: method
@@ -63,6 +87,14 @@ items:
     callback: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable],
     next_middleware_index: int = 0)'
   namewithoutparameters: receive_activity_internal
+  source:
+    id: receive_activity_internal
+    path: ./libraries/botbuilder-core\botbuilder\core\middleware_set.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\middleware_set.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 71
   syntax:
     content: 'receive_activity_internal(context: botbuilder.core.turn_context.TurnContext,
       callback: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable],
@@ -77,6 +109,14 @@ items:
   name: 'receive_activity_with_status(context: botbuilder.core.turn_context.TurnContext,
     callback: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable])'
   namewithoutparameters: receive_activity_with_status
+  source:
+    id: receive_activity_with_status
+    path: ./libraries/botbuilder-core\botbuilder\core\middleware_set.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\middleware_set.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 66
   syntax:
     content: 'receive_activity_with_status(context: botbuilder.core.turn_context.TurnContext,
       callback: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable])'
@@ -89,6 +129,14 @@ items:
   module: botbuilder.core
   name: 'use(*middleware: botbuilder.core.middleware_set.Middleware)'
   namewithoutparameters: use
+  source:
+    id: use
+    path: ./libraries/botbuilder-core\botbuilder\core\middleware_set.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\middleware_set.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 42
   summary: 'Registers middleware plugin(s) with the bot or set.
 
     :param middleware :

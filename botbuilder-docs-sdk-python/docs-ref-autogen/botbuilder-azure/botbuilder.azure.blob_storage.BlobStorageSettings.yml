@@ -10,6 +10,14 @@ items:
   - python
   module: botbuilder.azure.blob_storage
   name: BlobStorageSettings
+  source:
+    id: BlobStorageSettings
+    path: ./libraries/botbuilder-azure\botbuilder\azure\blob_storage.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-azure\botbuilder\azure\blob_storage.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 12
   syntax:
     content: 'BlobStorageSettings(container_name: str, account_name: str = '''', account_key:
       str = '''', connection_string: str = '''')'

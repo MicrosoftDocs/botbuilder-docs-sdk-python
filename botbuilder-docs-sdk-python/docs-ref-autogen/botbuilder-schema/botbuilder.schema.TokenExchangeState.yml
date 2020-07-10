@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema
   name: TokenExchangeState
+  source:
+    id: TokenExchangeState
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 2289
   syntax:
     content: 'TokenExchangeState(*, connection_name: str = None, conversation=None,
       relates_to=None, bot_url: str = None, ms_app_id: str = None, **kwargs) -> None'

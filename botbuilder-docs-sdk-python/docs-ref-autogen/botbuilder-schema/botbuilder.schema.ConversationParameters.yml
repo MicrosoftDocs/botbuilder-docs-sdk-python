@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema
   name: ConversationParameters
+  source:
+    id: ConversationParameters
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 1374
   summary: Parameters for creating a new conversation.
   syntax:
     content: 'ConversationParameters(*, is_group: bool = None, bot=None, members=None,

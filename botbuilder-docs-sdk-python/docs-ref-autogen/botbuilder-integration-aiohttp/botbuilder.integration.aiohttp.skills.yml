@@ -10,6 +10,14 @@ items:
   - python
   module: botbuilder.integration.aiohttp.skills
   name: skills
+  source:
+    id: skills
+    path: ./libraries/botbuilder-integration-aiohttp\botbuilder\integration\aiohttp\skills\__init__.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-integration-aiohttp\botbuilder\integration\aiohttp\skills\__init__.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 0
   type: package
   uid: botbuilder.integration.aiohttp.skills
 references:

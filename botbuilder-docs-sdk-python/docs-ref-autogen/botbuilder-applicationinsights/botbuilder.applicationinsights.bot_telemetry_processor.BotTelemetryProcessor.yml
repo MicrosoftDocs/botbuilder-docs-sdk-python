@@ -16,6 +16,14 @@ items:
   - python
   module: botbuilder.applicationinsights.bot_telemetry_processor
   name: BotTelemetryProcessor
+  source:
+    id: BotTelemetryProcessor
+    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\bot_telemetry_processor.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\bot_telemetry_processor.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 11
   summary: Application Insights Telemetry Processor for Bot
   syntax:
     content: 'BotTelemetryProcessor(processors: typing.List[botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor]
@@ -29,6 +37,14 @@ items:
   module: botbuilder.applicationinsights.bot_telemetry_processor
   name: can_process() -> bool
   namewithoutparameters: can_process
+  source:
+    id: can_process
+    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\bot_telemetry_processor.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\bot_telemetry_processor.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 20
   syntax:
     content: can_process() -> bool
   type: method
@@ -40,6 +56,14 @@ items:
   module: botbuilder.applicationinsights.bot_telemetry_processor
   name: get_request_body() -> str
   namewithoutparameters: get_request_body
+  source:
+    id: get_request_body
+    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\bot_telemetry_processor.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\bot_telemetry_processor.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 27
   syntax:
     content: get_request_body() -> str
   type: method

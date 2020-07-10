@@ -62,6 +62,14 @@ items:
     \ to your bot\u2019s logic and then back out again.\nAs each activity flows in\
     \ and out of the bot, each piece of middleware can inspect or act\nupon the activity,\
     \ both before and after the bot logic runs.\n"
+  source:
+    id: BotFrameworkAdapter
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 170
   summary: Defines an adapter to connect a bot to a service endpoint.
   syntax:
     content: 'BotFrameworkAdapter(settings: botbuilder.core.bot_framework_adapter.BotFrameworkAdapterSettings)'
@@ -85,6 +93,14 @@ items:
     function.
 
     '
+  source:
+    id: continue_conversation
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 220
   summary: 'Continues a conversation with a user.
 
 
@@ -116,6 +132,14 @@ items:
   name: 'create_connector_client(service_url: str, identity: botframework.connector.auth.claims_identity.ClaimsIdentity
     = None, audience: str = None) -> botframework.connector.aio._connector_client_async.ConnectorClient'
   namewithoutparameters: create_connector_client
+  source:
+    id: create_connector_client
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 1091
   summary: Implementation of ConnectorClientProvider.create_connector_client.
   syntax:
     content: 'create_connector_client(service_url: str, identity: botframework.connector.auth.claims_identity.ClaimsIdentity
@@ -164,6 +188,14 @@ items:
     will contain the ID of the new conversation.
 
     '
+  source:
+    id: create_conversation
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 294
   summary: Starts a new conversation with a user. Used to direct message to a member
     of a group.
   syntax:
@@ -213,6 +245,14 @@ items:
   name: 'delete_activity(context: botbuilder.core.turn_context.TurnContext, reference:
     botbuilder.schema._models_py3.ConversationReference)'
   namewithoutparameters: delete_activity
+  source:
+    id: delete_activity
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 639
   summary: 'Deletes an activity that was previously sent to a channel. It should be
     noted that not all
 
@@ -252,6 +292,14 @@ items:
   name: 'delete_conversation_member(context: botbuilder.core.turn_context.TurnContext,
     member_id: str) -> None'
   namewithoutparameters: delete_conversation_member
+  source:
+    id: delete_conversation_member
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 722
   summary: Deletes a member from the current conversation.
   syntax:
     content: 'delete_conversation_member(context: botbuilder.core.turn_context.TurnContext,
@@ -280,6 +328,14 @@ items:
     str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
     -> botbuilder.schema._models_py3.TokenResponse'
   namewithoutparameters: exchange_token
+  source:
+    id: exchange_token
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 1212
   syntax:
     content: 'exchange_token(turn_context: botbuilder.core.turn_context.TurnContext,
       connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
@@ -296,6 +352,14 @@ items:
     connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
     -> botbuilder.schema._models_py3.TokenResponse'
   namewithoutparameters: exchange_token_from_credentials
+  source:
+    id: exchange_token_from_credentials
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 1223
   syntax:
     content: 'exchange_token_from_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
       oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
@@ -313,6 +377,14 @@ items:
     botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
     botbuilder.schema._models_py3.TokenResponse]'
   namewithoutparameters: get_aad_tokens
+  source:
+    id: get_aad_tokens
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 1052
   summary: 'Retrieves Azure Active Directory tokens for particular resources on a
     configured connection.
 
@@ -344,6 +416,14 @@ items:
   name: 'get_activity_members(context: botbuilder.core.turn_context.TurnContext, activity_id:
     str)'
   namewithoutparameters: get_activity_members
+  source:
+    id: get_activity_members
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 760
   summary: 'Lists the members of a given activity.
 
 
@@ -364,6 +444,14 @@ items:
   name: 'get_conversation_member(context: botbuilder.core.turn_context.TurnContext,
     member_id: str) -> botbuilder.schema._models_py3.ChannelAccount'
   namewithoutparameters: get_conversation_member
+  source:
+    id: get_conversation_member
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 827
   summary: Retrieve a member of a current conversation.
   syntax:
     content: 'get_conversation_member(context: botbuilder.core.turn_context.TurnContext,
@@ -390,6 +478,14 @@ items:
   module: botbuilder.core.bot_framework_adapter
   name: 'get_conversation_members(context: botbuilder.core.turn_context.TurnContext)'
   namewithoutparameters: get_conversation_members
+  source:
+    id: get_conversation_members
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 800
   summary: Lists the members of a current conversation.
   syntax:
     content: 'get_conversation_members(context: botbuilder.core.turn_context.TurnContext)'
@@ -425,6 +521,14 @@ items:
     credentials are required.
 
     '
+  source:
+    id: get_conversations
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 861
   summary: 'Lists the Conversations in which this bot has participated for a given
     channel server.
 
@@ -455,6 +559,14 @@ items:
     connection_name: str, final_redirect: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None) -> str'
   namewithoutparameters: get_oauth_sign_in_link
+  source:
+    id: get_oauth_sign_in_link
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 975
   summary: Gets the raw sign-in link to be sent to the user for sign-in for a connection
     name.
   syntax:
@@ -493,6 +605,14 @@ items:
   name: 'get_sign_in_resource_from_user(turn_context: botbuilder.core.turn_context.TurnContext,
     connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
   namewithoutparameters: get_sign_in_resource_from_user
+  source:
+    id: get_sign_in_resource_from_user
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 1156
   syntax:
     content: 'get_sign_in_resource_from_user(turn_context: botbuilder.core.turn_context.TurnContext,
       connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
@@ -507,6 +627,14 @@ items:
     oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
     connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
   namewithoutparameters: get_sign_in_resource_from_user_and_credentials
+  source:
+    id: get_sign_in_resource_from_user_and_credentials
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 1167
   syntax:
     content: 'get_sign_in_resource_from_user_and_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
       oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
@@ -522,6 +650,14 @@ items:
     str = None, user_id: str = None, include_filter: str = None, oauth_app_credentials:
     botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.List[botframework.connector.token_api.models._models_py3.TokenStatus]'
   namewithoutparameters: get_token_status
+  source:
+    id: get_token_status
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 1012
   summary: 'Retrieves the token status for each configured connection for the given
     user.
 
@@ -552,6 +688,14 @@ items:
     str, magic_code: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None) -> botbuilder.schema._models_py3.TokenResponse'
   namewithoutparameters: get_user_token
+  source:
+    id: get_user_token
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 891
   summary: 'Attempts to retrieve the token for a user that''s in a login flow.
 
 
@@ -580,6 +724,14 @@ items:
   module: botbuilder.core.bot_framework_adapter
   name: 'key_for_app_credentials(app_id: str, scope: str)'
   namewithoutparameters: key_for_app_credentials
+  source:
+    id: key_for_app_credentials
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 1320
   syntax:
     content: 'key_for_app_credentials(app_id: str, scope: str)'
   type: method
@@ -591,6 +743,14 @@ items:
   module: botbuilder.core.bot_framework_adapter
   name: 'key_for_connector_client(service_url: str, app_id: str, scope: str)'
   namewithoutparameters: key_for_connector_client
+  source:
+    id: key_for_connector_client
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 1261
   syntax:
     content: 'key_for_connector_client(service_url: str, app_id: str, scope: str)'
   type: method
@@ -602,6 +762,14 @@ items:
   module: botbuilder.core.bot_framework_adapter
   name: parse_request(req)
   namewithoutparameters: parse_request
+  source:
+    id: parse_request
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 566
   summary: 'Parses and validates request
 
     :param req:
@@ -636,6 +804,14 @@ items:
     otherwise. *null* is returned.
 
     '
+  source:
+    id: process_activity
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 416
   summary: Creates a turn context and runs the middleware pipeline for an incoming
     activity.
   syntax:
@@ -668,6 +844,14 @@ items:
   name: 'process_activity_with_identity(activity: botbuilder.schema._models_py3.Activity,
     identity: botframework.connector.auth.claims_identity.ClaimsIdentity, logic: typing.Callable)'
   namewithoutparameters: process_activity_with_identity
+  source:
+    id: process_activity_with_identity
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 442
   syntax:
     content: 'process_activity_with_identity(activity: botbuilder.schema._models_py3.Activity,
       identity: botframework.connector.auth.claims_identity.ClaimsIdentity, logic:
@@ -682,6 +866,14 @@ items:
   name: 'send_activities(context: botbuilder.core.turn_context.TurnContext, activities:
     typing.List[botbuilder.schema._models_py3.Activity]) -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
   namewithoutparameters: send_activities
+  source:
+    id: send_activities
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 667
   syntax:
     content: 'send_activities(context: botbuilder.core.turn_context.TurnContext, activities:
       typing.List[botbuilder.schema._models_py3.Activity]) -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
@@ -696,6 +888,14 @@ items:
     str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None)'
   namewithoutparameters: sign_out_user
+  source:
+    id: sign_out_user
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 944
   summary: Signs the user out with the token server.
   syntax:
     content: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
@@ -743,6 +943,14 @@ items:
     of the activity to replace.
 
     '
+  source:
+    id: update_activity
+    path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-core\botbuilder\core\bot_framework_adapter.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 610
   summary: 'Replaces an activity that was previously sent to a channel. It should
     be noted that not all
 

@@ -12,6 +12,14 @@ items:
   - python
   module: botbuilder.schema
   name: AnimationCard
+  source:
+    id: AnimationCard
+    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 835
   summary: 'An animation card (Ex: gif or short video clip).'
   syntax:
     content: 'AnimationCard(*, title: str = None, subtitle: str = None, text: str

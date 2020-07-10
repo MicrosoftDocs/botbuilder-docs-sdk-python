@@ -13,6 +13,14 @@ items:
   - python
   module: botbuilder.integration.applicationinsights.aiohttp
   name: aiohttp
+  source:
+    id: aiohttp
+    path: ./libraries/botbuilder-integration-applicationinsights-aiohttp\botbuilder\integration\applicationinsights\aiohttp\__init__.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-integration-applicationinsights-aiohttp\botbuilder\integration\applicationinsights\aiohttp\__init__.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 0
   type: package
   uid: botbuilder.integration.applicationinsights.aiohttp
 - fullName: botbuilder.integration.applicationinsights.aiohttp.bot_telemetry_middleware
@@ -20,6 +28,14 @@ items:
   - python
   module: botbuilder.integration.applicationinsights.aiohttp
   name: bot_telemetry_middleware(request, handler)
+  source:
+    id: bot_telemetry_middleware
+    path: ./libraries/botbuilder-integration-applicationinsights-aiohttp\botbuilder\integration\applicationinsights\aiohttp\aiohttp_telemetry_middleware.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-integration-applicationinsights-aiohttp\botbuilder\integration\applicationinsights\aiohttp\aiohttp_telemetry_middleware.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 18
   summary: Process the incoming Flask request.
   syntax:
     content: bot_telemetry_middleware(request, handler)

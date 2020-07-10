@@ -25,6 +25,14 @@ items:
   - python
   module: botbuilder.dialogs.prompts.activity_prompt
   name: ActivityPrompt
+  source:
+    id: ActivityPrompt
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\activity_prompt.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\activity_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 23
   summary: "Waits for an activity to be received.\n\n   This prompt requires a validator\
     \ be passed in and is useful when waiting for non-message\n   activities like\
     \ an event to be received. The validator can ignore received events until the\n\
@@ -49,6 +57,14 @@ items:
   name: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     options: botbuilder.dialogs.prompts.prompt_options.PromptOptions = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   namewithoutparameters: begin_dialog
+  source:
+    id: begin_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\activity_prompt.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\activity_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 58
   summary: Called when a prompt dialog is pushed onto the dialog stack and is being
     activated.
   syntax:
@@ -76,6 +92,14 @@ items:
   name: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
     -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   namewithoutparameters: continue_dialog
+  source:
+    id: continue_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\activity_prompt.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\activity_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 100
   summary: Called when a prompt dialog is the active dialog and the user replied with
     a new activity.
   syntax:
@@ -98,6 +122,14 @@ items:
     dict], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions, is_retry:
     bool = False)'
   namewithoutparameters: on_prompt
+  source:
+    id: on_prompt
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\activity_prompt.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\activity_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 182
   summary: Called anytime the derived class should send the user a prompt.
   syntax:
     content: 'on_prompt(context: botbuilder.core.turn_context.TurnContext, state:
@@ -136,6 +168,14 @@ items:
     object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions) ->
     botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
   namewithoutparameters: on_recognize
+  source:
+    id: on_recognize
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\activity_prompt.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\activity_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 208
   summary: When overridden in a derived class, attempts to recognize the incoming
     activity.
   syntax:
@@ -169,6 +209,14 @@ items:
   name: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
     botbuilder.dialogs.dialog_instance.DialogInstance)'
   namewithoutparameters: reprompt_dialog
+  source:
+    id: reprompt_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\activity_prompt.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\activity_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 177
   syntax:
     content: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
       botbuilder.dialogs.dialog_instance.DialogInstance)'
@@ -196,6 +244,14 @@ items:
     simply re-prompt the user.
 
     '
+  source:
+    id: resume_dialog
+    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\activity_prompt.py
+    remote:
+      branch: master
+      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\activity_prompt.py
+      repo: https://github.com/microsoft/botbuilder-python
+    startLine: 152
   summary: 'Called when a prompt dialog resumes being the active dialog on the dialog
     stack, such
 
