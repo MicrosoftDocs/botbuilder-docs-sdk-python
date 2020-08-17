@@ -13,14 +13,6 @@ items:
   - python
   module: botbuilder.core.bot_state_set
   name: BotStateSet
-  source:
-    id: BotStateSet
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_state_set.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_state_set.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 10
   summary: ''
   syntax:
     content: 'BotStateSet(bot_states: typing.List[botbuilder.core.bot_state.BotState])'
@@ -33,14 +25,6 @@ items:
   module: botbuilder.core.bot_state_set
   name: 'add(bot_state: botbuilder.core.bot_state.BotState) -> botbuilder.core.bot_state_set.BotStateSet'
   namewithoutparameters: add
-  source:
-    id: add
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_state_set.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_state_set.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 14
   syntax:
     content: 'add(bot_state: botbuilder.core.bot_state.BotState) -> botbuilder.core.bot_state_set.BotStateSet'
   type: method
@@ -53,14 +37,6 @@ items:
   name: 'load_all(turn_context: botbuilder.core.turn_context.TurnContext, force: bool
     = False)'
   namewithoutparameters: load_all
-  source:
-    id: load_all
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_state_set.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_state_set.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 21
   syntax:
     content: 'load_all(turn_context: botbuilder.core.turn_context.TurnContext, force:
       bool = False)'
@@ -74,14 +50,6 @@ items:
   name: 'save_all_changes(turn_context: botbuilder.core.turn_context.TurnContext,
     force: bool = False)'
   namewithoutparameters: save_all_changes
-  source:
-    id: save_all_changes
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_state_set.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_state_set.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 26
   syntax:
     content: 'save_all_changes(turn_context: botbuilder.core.turn_context.TurnContext,
       force: bool = False)'

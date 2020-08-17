@@ -25,14 +25,6 @@ items:
   - python
   module: botbuilder.core.telemetry_logger_middleware
   name: TelemetryLoggerMiddleware
-  source:
-    id: TelemetryLoggerMiddleware
-    path: ./libraries/botbuilder-core\botbuilder\core\telemetry_logger_middleware.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\telemetry_logger_middleware.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 17
   summary: Middleware for logging incoming, outgoing, updated or deleted Activity
     messages.
   syntax:
@@ -48,14 +40,6 @@ items:
   name: 'fill_delete_event_properties(activity: botbuilder.schema._models_py3.Activity,
     additional_properties: typing.Dict[str, str] = None) -> typing.Dict[str, str]'
   namewithoutparameters: fill_delete_event_properties
-  source:
-    id: fill_delete_event_properties
-    path: ./libraries/botbuilder-core\botbuilder\core\telemetry_logger_middleware.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\telemetry_logger_middleware.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 267
   summary: 'Fills the event properties for the BotMessageDelete.
 
     These properties are logged when an activity message is deleted by the Bot.
@@ -84,14 +68,6 @@ items:
   name: 'fill_receive_event_properties(activity: botbuilder.schema._models_py3.Activity,
     additional_properties: typing.Dict[str, str] = None) -> typing.Dict[str, str]'
   namewithoutparameters: fill_receive_event_properties
-  source:
-    id: fill_receive_event_properties
-    path: ./libraries/botbuilder-core\botbuilder\core\telemetry_logger_middleware.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\telemetry_logger_middleware.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 150
   summary: 'Fills the event properties for the BotMessageReceived.
 
     Adheres to the LogPersonalInformation flag to filter Name, Text and Speak properties.
@@ -120,14 +96,6 @@ items:
   name: 'fill_send_event_properties(activity: botbuilder.schema._models_py3.Activity,
     additional_properties: typing.Dict[str, str] = None) -> typing.Dict[str, str]'
   namewithoutparameters: fill_send_event_properties
-  source:
-    id: fill_send_event_properties
-    path: ./libraries/botbuilder-core\botbuilder\core\telemetry_logger_middleware.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\telemetry_logger_middleware.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 193
   summary: 'Fills the event properties for the BotMessageSend.
 
     These properties are logged when an activity message is sent by the Bot to the
@@ -157,14 +125,6 @@ items:
   name: 'fill_update_event_properties(activity: botbuilder.schema._models_py3.Activity,
     additional_properties: typing.Dict[str, str] = None) -> typing.Dict[str, str]'
   namewithoutparameters: fill_update_event_properties
-  source:
-    id: fill_update_event_properties
-    path: ./libraries/botbuilder-core\botbuilder\core\telemetry_logger_middleware.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\telemetry_logger_middleware.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 234
   summary: 'Fills the event properties for the BotMessageUpdate.
 
     These properties are logged when an activity message is updated by the Bot.
@@ -195,14 +155,6 @@ items:
   - python
   module: botbuilder.core.telemetry_logger_middleware
   name: log_personal_information
-  source:
-    id: log_personal_information
-    path: null
-    remote:
-      branch: master
-      path: null
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: null
   summary: 'Gets a value indicating whether determines whether to log personal
 
     information that came from the user.'
@@ -216,14 +168,6 @@ items:
   module: botbuilder.core.telemetry_logger_middleware
   name: 'on_delete_activity(activity: botbuilder.schema._models_py3.Activity) -> None'
   namewithoutparameters: on_delete_activity
-  source:
-    id: on_delete_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\telemetry_logger_middleware.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\telemetry_logger_middleware.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 139
   summary: 'Invoked when the bot deletes a message.
 
     Performs logging of telemetry data using the BotTelemetryClient.track_event()
@@ -245,14 +189,6 @@ items:
   name: 'on_receive_activity(activity: botbuilder.schema._models_py3.Activity) ->
     None'
   namewithoutparameters: on_receive_activity
-  source:
-    id: on_receive_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\telemetry_logger_middleware.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\telemetry_logger_middleware.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 106
   summary: 'Invoked when a message is received from the user.
 
     Performs logging of telemetry data using the BotTelemetryClient.track_event()
@@ -273,14 +209,6 @@ items:
   module: botbuilder.core.telemetry_logger_middleware
   name: 'on_send_activity(activity: botbuilder.schema._models_py3.Activity) -> None'
   namewithoutparameters: on_send_activity
-  source:
-    id: on_send_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\telemetry_logger_middleware.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\telemetry_logger_middleware.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 117
   summary: 'Invoked when the bot sends a message to the user.
 
     Performs logging of telemetry data using the BotTelemetryClient.track_event()
@@ -302,14 +230,6 @@ items:
   name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic_fn: typing.Callable[botbuilder.core.turn_context.TurnContext,
     typing.Awaitable]) -> None'
   namewithoutparameters: on_turn
-  source:
-    id: on_turn
-    path: ./libraries/botbuilder-core\botbuilder\core\telemetry_logger_middleware.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\telemetry_logger_middleware.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 39
   summary: 'Logs events based on incoming and outgoing activities using
 
     BotTelemetryClient base class'
@@ -335,14 +255,6 @@ items:
   module: botbuilder.core.telemetry_logger_middleware
   name: 'on_update_activity(activity: botbuilder.schema._models_py3.Activity) -> None'
   namewithoutparameters: on_update_activity
-  source:
-    id: on_update_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\telemetry_logger_middleware.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\telemetry_logger_middleware.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 128
   summary: 'Invoked when the bot updates a message.
 
     Performs logging of telemetry data using the BotTelemetryClient.track_event()
@@ -362,14 +274,6 @@ items:
   - python
   module: botbuilder.core.telemetry_logger_middleware
   name: telemetry_client
-  source:
-    id: telemetry_client
-    path: null
-    remote:
-      branch: master
-      path: null
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: null
   summary: Gets the currently configured BotTelemetryClient.
   syntax: {}
   type: attribute

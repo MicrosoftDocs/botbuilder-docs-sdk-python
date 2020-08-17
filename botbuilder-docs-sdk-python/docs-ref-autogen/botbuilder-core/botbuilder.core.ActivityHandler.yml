@@ -7,6 +7,7 @@ items:
   - botbuilder.core.ActivityHandler.on_event
   - botbuilder.core.ActivityHandler.on_event_activity
   - botbuilder.core.ActivityHandler.on_healthcheck
+  - botbuilder.core.ActivityHandler.on_installation_update
   - botbuilder.core.ActivityHandler.on_invoke_activity
   - botbuilder.core.ActivityHandler.on_members_added_activity
   - botbuilder.core.ActivityHandler.on_members_removed_activity
@@ -34,14 +35,6 @@ items:
     in the derived class.
 
     '
-  source:
-    id: ActivityHandler
-    path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 23
   summary: Handles activities and should be subclassed.
   syntax: {}
   type: class
@@ -78,14 +71,6 @@ items:
     this base class method.
 
     '
-  source:
-    id: on_conversation_update_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 106
   summary: 'Invoked when a conversation update activity is received from the channel
     when the base behavior of
 
@@ -109,14 +94,6 @@ items:
   module: botbuilder.core
   name: 'on_end_of_conversation_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
   namewithoutparameters: on_end_of_conversation_activity
-  source:
-    id: on_end_of_conversation_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 343
   summary: Invoked when a conversation end activity is received from the channel.
   syntax:
     content: 'on_end_of_conversation_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
@@ -146,14 +123,6 @@ items:
     events.
 
     '
-  source:
-    id: on_event
-    path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 323
   summary: 'Invoked when an event other than *tokens/response* is received when the
     base behavior of
 
@@ -204,14 +173,6 @@ items:
     the scope of a channel.
 
     '
-  source:
-    id: on_event_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 275
   summary: 'Invoked when an event activity is received from the connector when the
     base behavior of
 
@@ -236,14 +197,6 @@ items:
   name: 'on_healthcheck(turn_context: botbuilder.core.turn_context.TurnContext) ->
     botbuilder.schema.healthcheck_response.HealthCheckResponse'
   namewithoutparameters: on_healthcheck
-  source:
-    id: on_healthcheck
-    path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 433
   summary: 'Invoked when the bot is sent a health check from the hosting infrastructure
     or, in the case of
 
@@ -267,6 +220,28 @@ items:
   type: method
   uid: botbuilder.core.ActivityHandler.on_healthcheck
 - class: botbuilder.core.ActivityHandler
+  fullName: botbuilder.core.ActivityHandler.on_installation_update
+  langs:
+  - python
+  module: botbuilder.core
+  name: 'on_installation_update(turn_context: botbuilder.core.turn_context.TurnContext)'
+  namewithoutparameters: on_installation_update
+  summary: 'Override this in a derived class to provide logic specific to
+
+    ActivityTypes.InstallationUpdate activities.'
+  syntax:
+    content: 'on_installation_update(turn_context: botbuilder.core.turn_context.TurnContext)'
+    parameters:
+    - description: The context object for this turn
+      id: turn_context
+      isRequired: true
+      type:
+      - botbuilder.core.TurnContext
+    return:
+      description: A task that represents the work queued to execute
+  type: method
+  uid: botbuilder.core.ActivityHandler.on_installation_update
+- class: botbuilder.core.ActivityHandler
   fullName: botbuilder.core.ActivityHandler.on_invoke_activity
   langs:
   - python
@@ -274,14 +249,6 @@ items:
   name: 'on_invoke_activity(turn_context: botbuilder.core.turn_context.TurnContext)
     -> typing.Union[botbuilder.core.invoke_response.InvokeResponse, NoneType]'
   namewithoutparameters: on_invoke_activity
-  source:
-    id: on_invoke_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 387
   summary: Registers an activity event handler for the _invoke_ event, emitted for
     every incoming event activity.
   syntax:
@@ -314,14 +281,6 @@ items:
     method.
 
     '
-  source:
-    id: on_members_added_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 143
   summary: 'Override this method in a derived class to provide logic for when members
     other than the bot join
 
@@ -360,14 +319,6 @@ items:
     it calls this method.
 
     '
-  source:
-    id: on_members_removed_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 165
   summary: 'Override this method in a derived class to provide logic for when members
     other than the bot leave
 
@@ -396,14 +347,6 @@ items:
   module: botbuilder.core
   name: 'on_message_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
   namewithoutparameters: on_message_activity
-  source:
-    id: on_message_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 92
   summary: 'Override this method in a derived class to provide logic specific to activities,
 
     such as the conversational logic.'
@@ -440,14 +383,6 @@ items:
     \ reaction activities.\nAdd logic to apply before the reactions added or removed\
     \ logic before the call to the this base class\nmethod.\nAdd logic to apply after\
     \ the reactions added or removed logic after the call to the this base class method.\n"
-  source:
-    id: on_message_reaction_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 188
   summary: 'Invoked when an event activity is received from the connector when the
     base behavior of
 
@@ -489,14 +424,6 @@ items:
     of the result.
 
     '
-  source:
-    id: on_reactions_added
-    path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 228
   summary: 'Override this method in a derived class to provide logic for when reactions
     to a previous activity
 
@@ -543,14 +470,6 @@ items:
     of the result.
 
     '
-  source:
-    id: on_reactions_removed
-    path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 252
   summary: 'Override this method in a derived class to provide logic for when reactions
     to a previous activity
 
@@ -580,14 +499,6 @@ items:
   module: botbuilder.core
   name: 'on_sign_in_invoke(turn_context: botbuilder.core.turn_context.TurnContext)'
   namewithoutparameters: on_sign_in_invoke
-  source:
-    id: on_sign_in_invoke
-    path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 417
   summary: 'Invoked when a signin/verifyState or signin/tokenExchange event is received
     when the base behavior of
 
@@ -625,14 +536,6 @@ items:
     activity to the current dialog.
 
     '
-  source:
-    id: on_token_response_event
-    path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 303
   summary: 'Invoked when a *tokens/response* event is received when the base behavior
     of
 
@@ -675,14 +578,6 @@ items:
     - Add logic to apply after the type-specific logic after calling <xref:botbuilder.core.ActivityHandler.on_turn>.
 
     '
-  source:
-    id: on_turn
-    path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 33
   summary: 'Called by the adapter (for example, <xref:botbuilder.core.BotFrameworkAdapter>)
     at runtime
 
@@ -706,14 +601,6 @@ items:
   module: botbuilder.core
   name: 'on_typing_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
   namewithoutparameters: on_typing_activity
-  source:
-    id: on_typing_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 355
   summary: 'Override this in a derived class to provide logic specific to
 
     ActivityTypes.typing activities, such as the conversational logic.'
@@ -742,14 +629,6 @@ items:
     conversation update, message reaction, or event activity, it calls this method.
 
     '
-  source:
-    id: on_unrecognized_activity_type
-    path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\activity_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 368
   summary: 'Invoked when an activity other than a message, conversation update, or
     event is received when the base
 
@@ -796,6 +675,11 @@ references:
     botbuilder.schema.healthcheck_response.HealthCheckResponse'
   parent: botbuilder.core.ActivityHandler
   uid: botbuilder.core.ActivityHandler.on_healthcheck
+- fullName: botbuilder.core.ActivityHandler.on_installation_update
+  isExternal: false
+  name: 'on_installation_update(turn_context: botbuilder.core.turn_context.TurnContext)'
+  parent: botbuilder.core.ActivityHandler
+  uid: botbuilder.core.ActivityHandler.on_installation_update
 - fullName: botbuilder.core.ActivityHandler.on_invoke_activity
   isExternal: false
   name: 'on_invoke_activity(turn_context: botbuilder.core.turn_context.TurnContext)

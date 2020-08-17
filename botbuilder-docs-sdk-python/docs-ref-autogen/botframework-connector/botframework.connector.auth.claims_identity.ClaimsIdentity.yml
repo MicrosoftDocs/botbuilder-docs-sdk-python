@@ -11,14 +11,6 @@ items:
   - python
   module: botframework.connector.auth.claims_identity
   name: ClaimsIdentity
-  source:
-    id: ClaimsIdentity
-    path: ./libraries/botframework-connector\botframework\connector\auth\claims_identity.py
-    remote:
-      branch: master
-      path: ./libraries/botframework-connector\botframework\connector\auth\claims_identity.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 7
   syntax:
     content: 'ClaimsIdentity(claims: dict, is_authenticated: bool)'
   type: class
@@ -30,14 +22,6 @@ items:
   module: botframework.connector.auth.claims_identity
   name: 'get_claim_value(claim_type: str)'
   namewithoutparameters: get_claim_value
-  source:
-    id: get_claim_value
-    path: ./libraries/botframework-connector\botframework\connector\auth\claims_identity.py
-    remote:
-      branch: master
-      path: ./libraries/botframework-connector\botframework\connector\auth\claims_identity.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 12
   syntax:
     content: 'get_claim_value(claim_type: str)'
   type: method

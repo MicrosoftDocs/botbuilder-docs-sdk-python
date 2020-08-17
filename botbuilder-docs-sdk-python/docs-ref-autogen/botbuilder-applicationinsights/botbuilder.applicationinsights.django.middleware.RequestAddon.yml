@@ -12,14 +12,6 @@ items:
   - python
   module: botbuilder.applicationinsights.django.middleware
   name: RequestAddon
-  source:
-    id: RequestAddon
-    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\middleware.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\middleware.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 242
   summary: ''
   syntax:
     content: RequestAddon(client)
@@ -32,14 +24,6 @@ items:
   module: botbuilder.applicationinsights.django.middleware
   name: measure_duration()
   namewithoutparameters: measure_duration
-  source:
-    id: measure_duration
-    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\middleware.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\middleware.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 267
   syntax:
     content: measure_duration()
     parameters: []
@@ -52,14 +36,6 @@ items:
   module: botbuilder.applicationinsights.django.middleware
   name: start_stopwatch()
   namewithoutparameters: start_stopwatch
-  source:
-    id: start_stopwatch
-    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\middleware.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\middleware.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 264
   syntax:
     content: start_stopwatch()
     parameters: []

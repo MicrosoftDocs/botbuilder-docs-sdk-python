@@ -12,14 +12,6 @@ items:
   - python
   module: botbuilder.schema
   name: TextHighlight
-  source:
-    id: TextHighlight
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 2109
   summary: Refers to a substring of content within another field.
   syntax:
     content: 'TextHighlight(*, text: str = None, occurrence: int = None, **kwargs)

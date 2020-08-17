@@ -2,6 +2,7 @@
 api_name: []
 items:
 - children:
+  - botbuilder.core.adapters.test_adapter.TestFlow.assert_no_reply
   - botbuilder.core.adapters.test_adapter.TestFlow.assert_reply
   - botbuilder.core.adapters.test_adapter.TestFlow.send
   - botbuilder.core.adapters.test_adapter.TestFlow.test
@@ -13,19 +14,27 @@ items:
   - python
   module: botbuilder.core.adapters.test_adapter
   name: TestFlow
-  source:
-    id: TestFlow
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 538
   summary: ''
   syntax:
     content: 'TestFlow(previous: typing.Callable, adapter: botbuilder.core.adapters.test_adapter.TestAdapter)'
   type: class
   uid: botbuilder.core.adapters.test_adapter.TestFlow
+- class: botbuilder.core.adapters.test_adapter.TestFlow
+  fullName: botbuilder.core.adapters.test_adapter.TestFlow.assert_no_reply
+  langs:
+  - python
+  module: botbuilder.core.adapters.test_adapter
+  name: assert_no_reply(description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
+  namewithoutparameters: assert_no_reply
+  summary: 'Generates an assertion if the bot responds when no response is expected.
+
+    :param description:
+
+    :param timeout:'
+  syntax:
+    content: assert_no_reply(description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
+  type: method
+  uid: botbuilder.core.adapters.test_adapter.TestFlow.assert_no_reply
 - class: botbuilder.core.adapters.test_adapter.TestFlow
   fullName: botbuilder.core.adapters.test_adapter.TestFlow.assert_reply
   langs:
@@ -35,14 +44,6 @@ items:
     typing.Callable[[botbuilder.schema._models_py3.Activity, str], NoneType]], description=None,
     timeout=None, is_substring=False) -> botbuilder.core.adapters.test_adapter.TestFlow'
   namewithoutparameters: assert_reply
-  source:
-    id: assert_reply
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 583
   summary: 'Generates an assertion if the bots response doesn''t match the expected
     text/activity.
 
@@ -68,14 +69,6 @@ items:
   module: botbuilder.core.adapters.test_adapter
   name: send(user_says) -> botbuilder.core.adapters.test_adapter.TestFlow
   namewithoutparameters: send
-  source:
-    id: send
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 568
   summary: 'Sends something to the bot.
 
     :param user_says:
@@ -92,14 +85,6 @@ items:
   module: botbuilder.core.adapters.test_adapter
   name: test(user_says, expected, description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
   namewithoutparameters: test
-  source:
-    id: test
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 550
   summary: 'Send something to the bot and expects the bot to return with a given reply.
     This is simply a
 
@@ -122,6 +107,11 @@ items:
   type: method
   uid: botbuilder.core.adapters.test_adapter.TestFlow.test
 references:
+- fullName: botbuilder.core.adapters.test_adapter.TestFlow.assert_no_reply
+  isExternal: false
+  name: assert_no_reply(description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
+  parent: botbuilder.core.adapters.test_adapter.TestFlow
+  uid: botbuilder.core.adapters.test_adapter.TestFlow.assert_no_reply
 - fullName: botbuilder.core.adapters.test_adapter.TestFlow.assert_reply
   isExternal: false
   name: 'assert_reply(expected: typing.Union[str, botbuilder.schema._models_py3.Activity,

@@ -12,14 +12,6 @@ items:
   - python
   module: botbuilder.schema
   name: Entity
-  source:
-    id: Entity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 1498
   summary: Metadata object pertaining to an activity.
   syntax:
     content: 'Entity(*, type: str = None, **kwargs) -> None'

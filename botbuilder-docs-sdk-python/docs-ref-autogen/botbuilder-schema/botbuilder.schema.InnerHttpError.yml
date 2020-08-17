@@ -12,14 +12,6 @@ items:
   - python
   module: botbuilder.schema
   name: InnerHttpError
-  source:
-    id: InnerHttpError
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 1680
   summary: Object representing inner http error.
   syntax:
     content: 'InnerHttpError(*, status_code: int = None, body=None, **kwargs) -> None'

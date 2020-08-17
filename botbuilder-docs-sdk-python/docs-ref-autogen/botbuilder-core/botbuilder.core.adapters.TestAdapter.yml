@@ -48,14 +48,6 @@ items:
   - python
   module: botbuilder.core.adapters
   name: TestAdapter
-  source:
-    id: TestAdapter
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 93
   summary: ''
   syntax:
     content: 'TestAdapter(logic: typing.Coroutine = None, template_or_conversation:
@@ -71,14 +63,6 @@ items:
   name: 'add_exchangeable_token(connection_name: str, channel_id: str, user_id: str,
     exchangeable_item: str, token: str)'
   namewithoutparameters: add_exchangeable_token
-  source:
-    id: add_exchangeable_token
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 433
   syntax:
     content: 'add_exchangeable_token(connection_name: str, channel_id: str, user_id:
       str, exchangeable_item: str, token: str)'
@@ -92,14 +76,6 @@ items:
   name: 'add_user_token(connection_name: str, channel_id: str, user_id: str, token:
     str, magic_code: str = None)'
   namewithoutparameters: add_user_token
-  source:
-    id: add_user_token
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 319
   syntax:
     content: 'add_user_token(connection_name: str, channel_id: str, user_id: str,
       token: str, magic_code: str = None)'
@@ -114,14 +90,6 @@ items:
     callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
     = None, audience: str = None)'
   namewithoutparameters: continue_conversation
-  source:
-    id: continue_conversation
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 200
   summary: 'The *TestAdapter* just calls parent implementation.
 
     :param reference:
@@ -146,14 +114,6 @@ items:
   module: botbuilder.core.adapters
   name: 'create_conversation(channel_id: str, callback: typing.Callable)'
   namewithoutparameters: create_conversation
-  source:
-    id: create_conversation
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 220
   syntax:
     content: 'create_conversation(channel_id: str, callback: typing.Callable)'
   type: method
@@ -166,14 +126,6 @@ items:
   name: 'create_conversation_reference(name: str, user: str = ''User1'', bot: str
     = ''Bot'') -> botbuilder.schema._models_py3.ConversationReference'
   namewithoutparameters: create_conversation_reference
-  source:
-    id: create_conversation_reference
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 305
   syntax:
     content: 'create_conversation_reference(name: str, user: str = ''User1'', bot:
       str = ''Bot'') -> botbuilder.schema._models_py3.ConversationReference'
@@ -186,14 +138,6 @@ items:
   module: botbuilder.core.adapters
   name: 'delete_activity(context, reference: botbuilder.schema._models_py3.ConversationReference)'
   namewithoutparameters: delete_activity
-  source:
-    id: delete_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 180
   summary: 'INTERNAL: called by the logic under test to delete an existing activity.
     These are simply
 
@@ -218,14 +162,6 @@ items:
     str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
     -> botbuilder.schema._models_py3.TokenResponse'
   namewithoutparameters: exchange_token
-  source:
-    id: exchange_token
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 495
   syntax:
     content: 'exchange_token(turn_context: botbuilder.core.turn_context.TurnContext,
       connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
@@ -242,14 +178,6 @@ items:
     connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
     -> botbuilder.schema._models_py3.TokenResponse'
   namewithoutparameters: exchange_token_from_credentials
-  source:
-    id: exchange_token_from_credentials
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 506
   syntax:
     content: 'exchange_token_from_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
       oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
@@ -267,14 +195,6 @@ items:
     botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
     botbuilder.schema._models_py3.TokenResponse]'
   namewithoutparameters: get_aad_tokens
-  source:
-    id: get_aad_tokens
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 423
   syntax:
     content: 'get_aad_tokens(context: botbuilder.core.turn_context.TurnContext, connection_name:
       str, resource_urls: typing.List[str], user_id: str = None, oauth_app_credentials:
@@ -289,14 +209,6 @@ items:
   module: botbuilder.core.adapters
   name: get_next_activity() -> botbuilder.schema._models_py3.Activity
   namewithoutparameters: get_next_activity
-  source:
-    id: get_next_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 258
   syntax:
     content: get_next_activity() -> botbuilder.schema._models_py3.Activity
   type: method
@@ -310,14 +222,6 @@ items:
     connection_name: str, final_redirect: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None) -> str'
   namewithoutparameters: get_oauth_sign_in_link
-  source:
-    id: get_oauth_sign_in_link
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 401
   syntax:
     content: 'get_oauth_sign_in_link(context: botbuilder.core.turn_context.TurnContext,
       connection_name: str, final_redirect: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
@@ -332,14 +236,6 @@ items:
   name: 'get_sign_in_resource_from_user(turn_context: botbuilder.core.turn_context.TurnContext,
     connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
   namewithoutparameters: get_sign_in_resource_from_user
-  source:
-    id: get_sign_in_resource_from_user
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 467
   syntax:
     content: 'get_sign_in_resource_from_user(turn_context: botbuilder.core.turn_context.TurnContext,
       connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
@@ -354,14 +250,6 @@ items:
     oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
     connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
   namewithoutparameters: get_sign_in_resource_from_user_and_credentials
-  source:
-    id: get_sign_in_resource_from_user_and_credentials
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 478
   syntax:
     content: 'get_sign_in_resource_from_user_and_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
       oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
@@ -378,14 +266,6 @@ items:
     botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
     botbuilder.schema._models_py3.TokenResponse]'
   namewithoutparameters: get_token_status
-  source:
-    id: get_token_status
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 413
   syntax:
     content: 'get_token_status(context: botbuilder.core.turn_context.TurnContext,
       connection_name: str = None, user_id: str = None, include_filter: str = None,
@@ -402,14 +282,6 @@ items:
     str, magic_code: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None) -> botbuilder.schema._models_py3.TokenResponse'
   namewithoutparameters: get_user_token
-  source:
-    id: get_user_token
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 341
   syntax:
     content: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, connection_name:
       str, magic_code: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
@@ -424,14 +296,6 @@ items:
   name: 'process_activity(activity: botbuilder.schema._models_py3.Activity, logic:
     typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable])'
   namewithoutparameters: process_activity
-  source:
-    id: process_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 135
   syntax:
     content: 'process_activity(activity: botbuilder.schema._models_py3.Activity, logic:
       typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable])'
@@ -444,14 +308,6 @@ items:
   module: botbuilder.core.adapters
   name: receive_activity(activity)
   namewithoutparameters: receive_activity
-  source:
-    id: receive_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 233
   summary: 'INTERNAL: called by a *TestFlow* instance to simulate a user sending a
     message to the bot.
 
@@ -474,14 +330,6 @@ items:
   module: botbuilder.core.adapters
   name: send(user_says) -> object
   namewithoutparameters: send
-  source:
-    id: send
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 263
   summary: 'Sends something to the bot. This returns a new *TestFlow* instance which
     can be used to add
 
@@ -502,14 +350,6 @@ items:
   name: 'send_activities(context, activities: typing.List[botbuilder.schema._models_py3.Activity])
     -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
   namewithoutparameters: send_activities
-  source:
-    id: send_activities
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 158
   summary: 'INTERNAL: called by the logic under test to send a set of activities.
     These will be buffered
 
@@ -534,14 +374,6 @@ items:
     str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None)'
   namewithoutparameters: sign_out_user
-  source:
-    id: sign_out_user
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 381
   syntax:
     content: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
       str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
@@ -555,14 +387,6 @@ items:
   module: botbuilder.core.adapters
   name: test(user_says, expected, description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
   namewithoutparameters: test
-  source:
-    id: test
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 272
   summary: 'Send something to the bot and expects the bot to return with a given reply.
     This is simply a
 
@@ -591,14 +415,6 @@ items:
   module: botbuilder.core.adapters
   name: tests(*args)
   namewithoutparameters: tests
-  source:
-    id: tests
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 289
   summary: 'Support multiple test cases without having to manually call *test()* repeatedly.
     This is a
 
@@ -621,14 +437,6 @@ items:
   name: 'throw_on_exchange_request(connection_name: str, channel_id: str, user_id:
     str, exchangeable_item: str)'
   namewithoutparameters: throw_on_exchange_request
-  source:
-    id: throw_on_exchange_request
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 450
   syntax:
     content: 'throw_on_exchange_request(connection_name: str, channel_id: str, user_id:
       str, exchangeable_item: str)'
@@ -641,14 +449,6 @@ items:
   module: botbuilder.core.adapters
   name: 'update_activity(context, activity: botbuilder.schema._models_py3.Activity)'
   namewithoutparameters: update_activity
-  source:
-    id: update_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\adapters\test_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 190
   summary: 'INTERNAL: called by the logic under test to replace an existing activity.
     These are simply
 

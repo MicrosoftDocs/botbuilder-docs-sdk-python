@@ -18,14 +18,6 @@ items:
   - python
   module: botbuilder.core.bot_state
   name: BotStatePropertyAccessor
-  source:
-    id: BotStatePropertyAccessor
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 239
   summary: Defines methods for accessing a state property created in a <xref:botbuilder.core.bot_state.BotState>
     object.
   syntax:
@@ -40,14 +32,6 @@ items:
   module: botbuilder.core.bot_state
   name: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
   namewithoutparameters: delete
-  source:
-    id: delete
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 264
   summary: Deletes the property.
   syntax:
     content: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
@@ -67,14 +51,6 @@ items:
   name: 'get(turn_context: botbuilder.core.turn_context.TurnContext, default_value_or_factory:
     object = None) -> object'
   namewithoutparameters: get
-  source:
-    id: get
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 274
   summary: Gets the property value.
   syntax:
     content: 'get(turn_context: botbuilder.core.turn_context.TurnContext, default_value_or_factory:
@@ -96,14 +72,6 @@ items:
   - python
   module: botbuilder.core.bot_state
   name: name
-  source:
-    id: name
-    path: null
-    remote:
-      branch: master
-      path: null
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: null
   summary: The name of the property.
   syntax: {}
   type: attribute
@@ -116,14 +84,6 @@ items:
   name: 'set(turn_context: botbuilder.core.turn_context.TurnContext, value: object)
     -> None'
   namewithoutparameters: set
-  source:
-    id: set
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 303
   summary: Sets the property value.
   syntax:
     content: 'set(turn_context: botbuilder.core.turn_context.TurnContext, value: object)

@@ -19,14 +19,6 @@ items:
   - python
   module: botbuilder.core
   name: CardFactory
-  source:
-    id: CardFactory
-    path: ./libraries/botbuilder-core\botbuilder\core\card_factory.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\card_factory.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 29
   summary: ''
   syntax: {}
   type: class
@@ -38,14 +30,6 @@ items:
   module: botbuilder.core
   name: 'adaptive_card(card: dict) -> botbuilder.schema._models_py3.Attachment'
   namewithoutparameters: adaptive_card
-  source:
-    id: adaptive_card
-    path: ./libraries/botbuilder-core\botbuilder\core\card_factory.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\card_factory.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 32
   summary: 'Returns an attachment for an adaptive card. The attachment will contain
     the card and the
 
@@ -68,14 +52,6 @@ items:
   module: botbuilder.core
   name: 'animation_card(card: botbuilder.schema._models_py3.AnimationCard) -> botbuilder.schema._models_py3.Attachment'
   namewithoutparameters: animation_card
-  source:
-    id: animation_card
-    path: ./libraries/botbuilder-core\botbuilder\core\card_factory.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\card_factory.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 51
   summary: 'Returns an attachment for an animation card. Will raise a TypeError if
     the ''card'' argument is not an
 
@@ -96,14 +72,6 @@ items:
   module: botbuilder.core
   name: 'audio_card(card: botbuilder.schema._models_py3.AudioCard) -> botbuilder.schema._models_py3.Attachment'
   namewithoutparameters: audio_card
-  source:
-    id: audio_card
-    path: ./libraries/botbuilder-core\botbuilder\core\card_factory.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\card_factory.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 69
   summary: 'Returns an attachment for an audio card. Will raise a TypeError if ''card''
     argument is not an AudioCard.
 
@@ -121,14 +89,6 @@ items:
   module: botbuilder.core
   name: 'hero_card(card: botbuilder.schema._models_py3.HeroCard) -> botbuilder.schema._models_py3.Attachment'
   namewithoutparameters: hero_card
-  source:
-    id: hero_card
-    path: ./libraries/botbuilder-core\botbuilder\core\card_factory.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\card_factory.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 86
   summary: 'Returns an attachment for a hero card. Will raise a TypeError if ''card''
     argument is not a HeroCard.
 
@@ -150,14 +110,6 @@ items:
   module: botbuilder.core
   name: 'oauth_card(card: botbuilder.schema._models_py3.OAuthCard) -> botbuilder.schema._models_py3.Attachment'
   namewithoutparameters: oauth_card
-  source:
-    id: oauth_card
-    path: ./libraries/botbuilder-core\botbuilder\core\card_factory.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\card_factory.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 105
   summary: 'Returns an attachment for an OAuth card used by the Bot Frameworks Single
     Sign On (SSO) service. Will raise a
 
@@ -177,14 +129,6 @@ items:
   module: botbuilder.core
   name: 'receipt_card(card: botbuilder.schema._models_py3.ReceiptCard) -> botbuilder.schema._models_py3.Attachment'
   namewithoutparameters: receipt_card
-  source:
-    id: receipt_card
-    path: ./libraries/botbuilder-core\botbuilder\core\card_factory.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\card_factory.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 123
   summary: 'Returns an attachment for a receipt card. Will raise a TypeError if ''card''
     argument is not a ReceiptCard.
 
@@ -202,14 +146,6 @@ items:
   module: botbuilder.core
   name: 'signin_card(card: botbuilder.schema._models_py3.SigninCard) -> botbuilder.schema._models_py3.Attachment'
   namewithoutparameters: signin_card
-  source:
-    id: signin_card
-    path: ./libraries/botbuilder-core\botbuilder\core\card_factory.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\card_factory.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 140
   summary: 'Returns an attachment for a signin card. For channels that don''t natively
     support signin cards an alternative
 
@@ -230,14 +166,6 @@ items:
   module: botbuilder.core
   name: 'thumbnail_card(card: botbuilder.schema._models_py3.ThumbnailCard) -> botbuilder.schema._models_py3.Attachment'
   namewithoutparameters: thumbnail_card
-  source:
-    id: thumbnail_card
-    path: ./libraries/botbuilder-core\botbuilder\core\card_factory.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\card_factory.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 158
   summary: 'Returns an attachment for a thumbnail card. Thumbnail cards are similar
     to
 
@@ -265,14 +193,6 @@ items:
   module: botbuilder.core
   name: 'video_card(card: botbuilder.schema._models_py3.VideoCard) -> botbuilder.schema._models_py3.Attachment'
   namewithoutparameters: video_card
-  source:
-    id: video_card
-    path: ./libraries/botbuilder-core\botbuilder\core\card_factory.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\card_factory.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 178
   summary: 'Returns an attachment for a video card. Will raise a TypeError if ''card''
     argument is not a VideoCard.
 

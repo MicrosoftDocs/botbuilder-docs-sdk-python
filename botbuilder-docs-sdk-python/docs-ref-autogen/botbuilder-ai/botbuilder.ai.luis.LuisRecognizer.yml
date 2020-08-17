@@ -20,14 +20,6 @@ items:
   - python
   module: botbuilder.ai.luis
   name: LuisRecognizer
-  source:
-    id: LuisRecognizer
-    path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_recognizer.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_recognizer.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 21
   summary: A LUIS based implementation of <see cref="IRecognizer"/>.
   syntax:
     content: 'LuisRecognizer(application: typing.Union[botbuilder.ai.luis.luis_application.LuisApplication,
@@ -45,14 +37,6 @@ items:
     turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
     typing.Dict[str, str] = None) -> typing.Dict[str, str]'
   namewithoutparameters: fill_luis_event_properties
-  source:
-    id: fill_luis_event_properties
-    path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_recognizer.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_recognizer.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 177
   summary: 'Fills the event properties for LuisResult event for telemetry.
 
     These properties are logged when the recognizer is called.
@@ -100,14 +84,6 @@ items:
     turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
     typing.Dict[str, str] = None, telemetry_metrics: typing.Dict[str, float] = None)'
   namewithoutparameters: on_recognizer_result
-  source:
-    id: on_recognizer_result
-    path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_recognizer.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_recognizer.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 132
   summary: Invoked prior to a LuisResult being logged.
   syntax:
     content: 'on_recognizer_result(recognizer_result: botbuilder.core.recognizer_result.RecognizerResult,
@@ -153,14 +129,6 @@ items:
     luis_prediction_options: botbuilder.ai.luis.luis_prediction_options.LuisPredictionOptions
     = None) -> botbuilder.core.recognizer_result.RecognizerResult'
   namewithoutparameters: recognize
-  source:
-    id: recognize
-    path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_recognizer.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_recognizer.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 104
   summary: Return results of the analysis (Suggested actions and intents).
   syntax:
     content: 'recognize(turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
@@ -205,14 +173,6 @@ items:
   name: 'top_intent(results: botbuilder.core.recognizer_result.RecognizerResult, default_intent:
     str = ''None'', min_score: float = 0.0) -> str'
   namewithoutparameters: top_intent
-  source:
-    id: top_intent
-    path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_recognizer.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_recognizer.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 72
   summary: 'Returns the name of the top scoring intent from a set of LUIS results.
 
 

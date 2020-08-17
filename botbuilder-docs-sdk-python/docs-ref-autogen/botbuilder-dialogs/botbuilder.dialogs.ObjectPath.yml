@@ -18,14 +18,6 @@ items:
   - python
   module: botbuilder.dialogs
   name: ObjectPath
-  source:
-    id: ObjectPath
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\object_path.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\object_path.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 8
   summary: Helper methods for working with json objects.
   syntax: {}
   type: class
@@ -37,14 +29,6 @@ items:
   module: botbuilder.dialogs
   name: 'assign(start_object, overlay_object, default: object = None)'
   namewithoutparameters: assign
-  source:
-    id: assign
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\object_path.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\object_path.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 13
   summary: Creates a new object by overlaying values in start_object with non-null
     values from overlay_object.
   syntax:
@@ -70,14 +54,6 @@ items:
   module: botbuilder.dialogs
   name: 'get_path_value(obj, path: str, default: object = None) -> object'
   namewithoutparameters: get_path_value
-  source:
-    id: get_path_value
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\object_path.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\object_path.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 108
   summary: Get the value for a path relative to an object.
   syntax:
     content: 'get_path_value(obj, path: str, default: object = None) -> object'
@@ -90,14 +66,6 @@ items:
   module: botbuilder.dialogs
   name: 'has_value(obj, path: str) -> bool'
   namewithoutparameters: has_value
-  source:
-    id: has_value
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\object_path.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\object_path.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 124
   summary: Does an object have a subpath.
   syntax:
     content: 'has_value(obj, path: str) -> bool'
@@ -110,14 +78,6 @@ items:
   module: botbuilder.dialogs
   name: 'is_int(value: str) -> bool'
   namewithoutparameters: is_int
-  source:
-    id: is_int
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\object_path.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\object_path.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 298
   syntax:
     content: 'is_int(value: str) -> bool'
   type: method
@@ -129,14 +89,6 @@ items:
   module: botbuilder.dialogs
   name: 'remove_path_value(obj, path: str)'
   namewithoutparameters: remove_path_value
-  source:
-    id: remove_path_value
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\object_path.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\object_path.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 131
   summary: Remove path from object.
   syntax:
     content: 'remove_path_value(obj, path: str)'
@@ -149,14 +101,6 @@ items:
   module: botbuilder.dialogs
   name: 'set_path_value(obj, path: str, value: object)'
   namewithoutparameters: set_path_value
-  source:
-    id: set_path_value
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\object_path.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\object_path.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 71
   summary: Given an object evaluate a path to set the value.
   syntax:
     content: 'set_path_value(obj, path: str, value: object)'
@@ -169,14 +113,6 @@ items:
   module: botbuilder.dialogs
   name: 'try_get_path_value(obj, path: str) -> object'
   namewithoutparameters: try_get_path_value
-  source:
-    id: try_get_path_value
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\object_path.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\object_path.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 155
   summary: Get the value for a path relative to an object.
   syntax:
     content: 'try_get_path_value(obj, path: str) -> object'
@@ -189,14 +125,6 @@ items:
   module: botbuilder.dialogs
   name: 'try_resolve_path(obj, property_path: str, evaluate: bool = False) -> []'
   namewithoutparameters: try_resolve_path
-  source:
-    id: try_resolve_path
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\object_path.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\object_path.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 201
   syntax:
     content: 'try_resolve_path(obj, property_path: str, evaluate: bool = False) ->
       []'

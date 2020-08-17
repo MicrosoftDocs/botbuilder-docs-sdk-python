@@ -14,14 +14,6 @@ items:
   - python
   module: botframework.connector.auth.jwt_token_extractor
   name: JwtTokenExtractor
-  source:
-    id: JwtTokenExtractor
-    path: ./libraries/botframework-connector\botframework\connector\auth\jwt_token_extractor.py
-    remote:
-      branch: master
-      path: ./libraries/botframework-connector\botframework\connector\auth\jwt_token_extractor.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 15
   summary: ''
   syntax:
     content: 'JwtTokenExtractor(validation_params: botframework.connector.auth.verify_options.VerifyOptions,
@@ -36,14 +28,6 @@ items:
   name: 'get_identity(schema: str, parameter: str, channel_id: str, required_endorsements:
     typing.List[str] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   namewithoutparameters: get_identity
-  source:
-    id: get_identity
-    path: ./libraries/botframework-connector\botframework\connector\auth\jwt_token_extractor.py
-    remote:
-      branch: master
-      path: ./libraries/botframework-connector\botframework\connector\auth\jwt_token_extractor.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 48
   syntax:
     content: 'get_identity(schema: str, parameter: str, channel_id: str, required_endorsements:
       typing.List[str] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
@@ -57,14 +41,6 @@ items:
   name: 'get_identity_from_auth_header(auth_header: str, channel_id: str, required_endorsements:
     typing.List[str] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   namewithoutparameters: get_identity_from_auth_header
-  source:
-    id: get_identity_from_auth_header
-    path: ./libraries/botframework-connector\botframework\connector\auth\jwt_token_extractor.py
-    remote:
-      branch: master
-      path: ./libraries/botframework-connector\botframework\connector\auth\jwt_token_extractor.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 36
   syntax:
     content: 'get_identity_from_auth_header(auth_header: str, channel_id: str, required_endorsements:
       typing.List[str] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
@@ -77,14 +53,6 @@ items:
   module: botframework.connector.auth.jwt_token_extractor
   name: 'get_open_id_metadata(metadata_url: str)'
   namewithoutparameters: get_open_id_metadata
-  source:
-    id: get_open_id_metadata
-    path: ./libraries/botframework-connector\botframework\connector\auth\jwt_token_extractor.py
-    remote:
-      branch: master
-      path: ./libraries/botframework-connector\botframework\connector\auth\jwt_token_extractor.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 28
   syntax:
     content: 'get_open_id_metadata(metadata_url: str)'
   type: method

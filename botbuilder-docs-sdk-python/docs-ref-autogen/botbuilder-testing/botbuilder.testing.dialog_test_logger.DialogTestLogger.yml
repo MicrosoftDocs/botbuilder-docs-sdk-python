@@ -15,14 +15,6 @@ items:
   - python
   module: botbuilder.testing.dialog_test_logger
   name: DialogTestLogger
-  source:
-    id: DialogTestLogger
-    path: ./libraries/botbuilder-testing\botbuilder\testing\dialog_test_logger.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-testing\botbuilder\testing\dialog_test_logger.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 15
   summary: 'A middleware to output incoming and outgoing activities as json strings
     to the console during
 
@@ -40,14 +32,6 @@ items:
   name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
     typing.Awaitable])'
   namewithoutparameters: on_turn
-  source:
-    id: on_turn
-    path: ./libraries/botbuilder-testing\botbuilder\testing\dialog_test_logger.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-testing\botbuilder\testing\dialog_test_logger.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 43
   syntax:
     content: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
       typing.Awaitable])'

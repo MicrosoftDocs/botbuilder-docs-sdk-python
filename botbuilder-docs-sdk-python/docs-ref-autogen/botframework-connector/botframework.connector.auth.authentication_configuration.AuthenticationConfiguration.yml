@@ -10,14 +10,6 @@ items:
   - python
   module: botframework.connector.auth.authentication_configuration
   name: AuthenticationConfiguration
-  source:
-    id: AuthenticationConfiguration
-    path: ./libraries/botframework-connector\botframework\connector\auth\authentication_configuration.py
-    remote:
-      branch: master
-      path: ./libraries/botframework-connector\botframework\connector\auth\authentication_configuration.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 7
   syntax:
     content: 'AuthenticationConfiguration(required_endorsements: typing.List[str]
       = None, claims_validator: typing.Callable[typing.List[typing.Dict], typing.Awaitable]

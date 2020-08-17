@@ -12,14 +12,6 @@ items:
   - python
   module: botbuilder.core.integration
   name: integration
-  source:
-    id: integration
-    path: ./libraries/botbuilder-core\botbuilder\core\integration\__init__.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\integration\__init__.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 0
   type: package
   uid: botbuilder.core.integration
 - fullName: botbuilder.core.integration.aiohttp_channel_service_routes
@@ -28,14 +20,6 @@ items:
   module: botbuilder.core.integration
   name: 'aiohttp_channel_service_routes(handler: botbuilder.core.channel_service_handler.ChannelServiceHandler,
     base_url: str = '''') -> aiohttp.web_routedef.RouteTableDef'
-  source:
-    id: aiohttp_channel_service_routes
-    path: ./libraries/botbuilder-core\botbuilder\core\integration\aiohttp_channel_service.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\integration\aiohttp_channel_service.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 39
   syntax:
     content: 'aiohttp_channel_service_routes(handler: botbuilder.core.channel_service_handler.ChannelServiceHandler,
       base_url: str = '''') -> aiohttp.web_routedef.RouteTableDef'
@@ -46,14 +30,6 @@ items:
   - python
   module: botbuilder.core.integration
   name: aiohttp_error_middleware(request, handler)
-  source:
-    id: aiohttp_error_middleware
-    path: ./libraries/botbuilder-core\botbuilder\core\integration\aiohttp_channel_service_exception_middleware.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\integration\aiohttp_channel_service_exception_middleware.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 15
   syntax:
     content: aiohttp_error_middleware(request, handler)
     parameters:

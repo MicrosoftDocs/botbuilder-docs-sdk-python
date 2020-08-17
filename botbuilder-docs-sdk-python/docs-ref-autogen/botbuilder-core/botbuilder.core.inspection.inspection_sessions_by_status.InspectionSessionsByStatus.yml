@@ -10,14 +10,6 @@ items:
   - python
   module: botbuilder.core.inspection.inspection_sessions_by_status
   name: InspectionSessionsByStatus
-  source:
-    id: InspectionSessionsByStatus
-    path: ./libraries/botbuilder-core\botbuilder\core\inspection\inspection_sessions_by_status.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\inspection\inspection_sessions_by_status.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 9
   syntax:
     content: 'InspectionSessionsByStatus(opened_sessions: typing.Dict[str, botbuilder.schema._models_py3.ConversationReference]
       = None, attached_sessions: typing.Dict[str, botbuilder.schema._models_py3.ConversationReference]

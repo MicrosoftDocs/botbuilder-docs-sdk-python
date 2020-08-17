@@ -43,14 +43,6 @@ items:
   - python
   module: botbuilder.schema
   name: Activity
-  source:
-    id: Activity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 106
   summary: 'An Activity is the basic communication type for the Bot Framework 3.0
 
     protocol.'
@@ -349,14 +341,6 @@ items:
     outgoing activity with the correct delivery information.
 
     '
-  source:
-    id: apply_conversation_reference
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 380
   summary: 'Updates this activity with the delivery information from an existing ConversationReference
 
 
@@ -378,14 +362,6 @@ items:
   module: botbuilder.schema
   name: as_contact_relation_update_activity()
   namewithoutparameters: as_contact_relation_update_activity
-  source:
-    id: as_contact_relation_update_activity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 420
   summary: 'Returns this activity as a ContactRelationUpdateActivity object;
 
     or None, if this is not that type of activity.'
@@ -403,14 +379,6 @@ items:
   module: botbuilder.schema
   name: as_conversation_update_activity()
   namewithoutparameters: as_conversation_update_activity
-  source:
-    id: as_conversation_update_activity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 431
   summary: 'Returns this activity as a ConversationUpdateActivity object;
 
     or None, if this is not that type of activity.'
@@ -428,14 +396,6 @@ items:
   module: botbuilder.schema
   name: as_end_of_conversation_activity()
   namewithoutparameters: as_end_of_conversation_activity
-  source:
-    id: as_end_of_conversation_activity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 440
   summary: 'Returns this activity as an EndOfConversationActivity object;
 
     or None, if this is not that type of activity.'
@@ -453,14 +413,6 @@ items:
   module: botbuilder.schema
   name: as_event_activity()
   namewithoutparameters: as_event_activity
-  source:
-    id: as_event_activity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 449
   summary: 'Returns this activity as an EventActivity object;
 
     or None, if this is not that type of activity.'
@@ -478,14 +430,6 @@ items:
   module: botbuilder.schema
   name: as_handoff_activity()
   namewithoutparameters: as_handoff_activity
-  source:
-    id: as_handoff_activity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 458
   summary: 'Returns this activity as a HandoffActivity object;
 
     or None, if this is not that type of activity.'
@@ -503,14 +447,6 @@ items:
   module: botbuilder.schema
   name: as_installation_update_activity()
   namewithoutparameters: as_installation_update_activity
-  source:
-    id: as_installation_update_activity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 467
   summary: 'Returns this activity as an InstallationUpdateActivity object;
 
     or None, if this is not that type of activity.'
@@ -528,14 +464,6 @@ items:
   module: botbuilder.schema
   name: as_invoke_activity()
   namewithoutparameters: as_invoke_activity
-  source:
-    id: as_invoke_activity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 476
   summary: 'Returns this activity as an InvokeActivity object;
 
     or None, if this is not that type of activity.'
@@ -553,14 +481,6 @@ items:
   module: botbuilder.schema
   name: as_message_activity()
   namewithoutparameters: as_message_activity
-  source:
-    id: as_message_activity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 485
   summary: 'Returns this activity as a MessageActivity object;
 
     or None, if this is not that type of activity.'
@@ -578,14 +498,6 @@ items:
   module: botbuilder.schema
   name: as_message_delete_activity()
   namewithoutparameters: as_message_delete_activity
-  source:
-    id: as_message_delete_activity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 494
   summary: 'Returns this activity as a MessageDeleteActivity object;
 
     or None, if this is not that type of activity.'
@@ -603,14 +515,6 @@ items:
   module: botbuilder.schema
   name: as_message_reaction_activity()
   namewithoutparameters: as_message_reaction_activity
-  source:
-    id: as_message_reaction_activity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 503
   summary: 'Returns this activity as a MessageReactionActivity object;
 
     or None, if this is not that type of activity.'
@@ -628,14 +532,6 @@ items:
   module: botbuilder.schema
   name: as_message_update_activity()
   namewithoutparameters: as_message_update_activity
-  source:
-    id: as_message_update_activity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 512
   summary: 'Returns this activity as an MessageUpdateActivity object;
 
     or None, if this is not that type of activity.'
@@ -653,14 +549,6 @@ items:
   module: botbuilder.schema
   name: as_suggestion_activity()
   namewithoutparameters: as_suggestion_activity
-  source:
-    id: as_suggestion_activity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 521
   summary: 'Returns this activity as a SuggestionActivity object;
 
     or None, if this is not that type of activity.'
@@ -678,14 +566,6 @@ items:
   module: botbuilder.schema
   name: as_trace_activity()
   namewithoutparameters: as_trace_activity
-  source:
-    id: as_trace_activity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 530
   summary: 'Returns this activity as a TraceActivity object;
 
     or None, if this is not that type of activity.'
@@ -703,14 +583,6 @@ items:
   module: botbuilder.schema
   name: as_typing_activity()
   namewithoutparameters: as_typing_activity
-  source:
-    id: as_typing_activity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 539
   summary: 'Returns this activity as a TypingActivity object;
 
     or null, if this is not that type of activity.'
@@ -728,14 +600,6 @@ items:
   module: botbuilder.schema
   name: create_contact_relation_update_activity()
   namewithoutparameters: create_contact_relation_update_activity
-  source:
-    id: create_contact_relation_update_activity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 548
   summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as aContactRelationUpdateActivity
     object.
   syntax:
@@ -751,14 +615,6 @@ items:
   module: botbuilder.schema
   name: create_conversation_update_activity()
   namewithoutparameters: create_conversation_update_activity
-  source:
-    id: create_conversation_update_activity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 557
   summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as a
     ConversationUpdateActivity object.
   syntax:
@@ -774,14 +630,6 @@ items:
   module: botbuilder.schema
   name: create_end_of_conversation_activity()
   namewithoutparameters: create_end_of_conversation_activity
-  source:
-    id: create_end_of_conversation_activity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 566
   summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as an
     EndOfConversationActivity object.
   syntax:
@@ -797,14 +645,6 @@ items:
   module: botbuilder.schema
   name: create_event_activity()
   namewithoutparameters: create_event_activity
-  source:
-    id: create_event_activity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 575
   summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as an
     EventActivity object.
   syntax:
@@ -820,14 +660,6 @@ items:
   module: botbuilder.schema
   name: create_handoff_activity()
   namewithoutparameters: create_handoff_activity
-  source:
-    id: create_handoff_activity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 584
   summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as a
     HandoffActivity object.
   syntax:
@@ -843,14 +675,6 @@ items:
   module: botbuilder.schema
   name: create_invoke_activity()
   namewithoutparameters: create_invoke_activity
-  source:
-    id: create_invoke_activity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 593
   summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as an
     InvokeActivity object.
   syntax:
@@ -866,14 +690,6 @@ items:
   module: botbuilder.schema
   name: create_message_activity()
   namewithoutparameters: create_message_activity
-  source:
-    id: create_message_activity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 602
   summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as a
     MessageActivity object.
   syntax:
@@ -892,14 +708,6 @@ items:
   remarks: 'The new activity sets up routing information based on this activity.
 
     '
-  source:
-    id: create_reply
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 611
   summary: Creates a new message activity as a response to this activity.
   syntax:
     content: 'create_reply(text: str = None, locale: str = None)'
@@ -922,14 +730,6 @@ items:
   name: 'create_trace(name: str, value: object = None, value_type: str = None, label:
     str = None)'
   namewithoutparameters: create_trace
-  source:
-    id: create_trace
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 648
   summary: 'Creates a new trace activity based on this activity.
 
 
@@ -952,14 +752,6 @@ items:
   name: 'create_trace_activity(name: str, value: object = None, value_type: str =
     None, label: str = None)'
   namewithoutparameters: create_trace_activity
-  source:
-    id: create_trace_activity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 690
   summary: 'Creates an instance of the <xref:botbuilder.schema.Activity> class as
     a TraceActivity object.
 
@@ -982,14 +774,6 @@ items:
   module: botbuilder.schema
   name: create_typing_activity()
   namewithoutparameters: create_typing_activity
-  source:
-    id: create_typing_activity
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 716
   summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as a
     TypingActivity object.
   syntax:
@@ -1005,14 +789,6 @@ items:
   module: botbuilder.schema
   name: get_conversation_reference()
   namewithoutparameters: get_conversation_reference
-  source:
-    id: get_conversation_reference
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 725
   summary: Creates a ConversationReference based on this activity.
   syntax:
     content: get_conversation_reference()
@@ -1037,14 +813,6 @@ items:
     ActivityTypes.Message.
 
     '
-  source:
-    id: get_mentions
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 741
   summary: Resolves the mentions from the entities of this activity.
   syntax:
     content: get_mentions() -> [<class 'botbuilder.schema._models_py3.Mention'>]
@@ -1060,14 +828,6 @@ items:
   name: 'get_reply_conversation_reference(reply: botbuilder.schema._models_py3.ResourceResponse)
     -> botbuilder.schema._models_py3.ConversationReference'
   namewithoutparameters: get_reply_conversation_reference
-  source:
-    id: get_reply_conversation_reference
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 755
   summary: 'Create a ConversationReference based on this Activity''s Conversation
     info
 
@@ -1099,14 +859,6 @@ items:
     ActivityTypes.Message.
 
     '
-  source:
-    id: has_content
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 770
   summary: Indicates whether this activity has content.
   syntax:
     content: has_content() -> bool
@@ -1121,14 +873,6 @@ items:
   module: botbuilder.schema
   name: is_from_streaming_connection() -> bool
   namewithoutparameters: is_from_streaming_connection
-  source:
-    id: is_from_streaming_connection
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 795
   summary: 'Determine if the Activity was sent via an Http/Https connection or Streaming
 
     This can be determined by looking at the service_url property:

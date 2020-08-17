@@ -12,14 +12,6 @@ items:
   - python
   module: botbuilder.schema
   name: Mention
-  source:
-    id: Mention
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 66
   summary: 'Mention information (entity type: "mention").'
   syntax:
     content: 'Mention(*, mentioned=None, text: str = None, type: str = None, **kwargs)

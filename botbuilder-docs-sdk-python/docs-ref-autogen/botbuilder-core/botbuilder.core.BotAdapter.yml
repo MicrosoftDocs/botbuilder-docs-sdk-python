@@ -22,14 +22,6 @@ items:
   - python
   module: botbuilder.core
   name: BotAdapter
-  source:
-    id: BotAdapter
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 15
   summary: ''
   syntax:
     content: 'BotAdapter(on_turn_error: typing.Callable[[botbuilder.core.turn_context.TurnContext,
@@ -45,14 +37,6 @@ items:
     callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
     = None, audience: str = None)'
   namewithoutparameters: continue_conversation
-  source:
-    id: continue_conversation
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 80
   summary: 'Sends a proactive message to a conversation. Call this method to proactively
     send a message to a conversation.
 
@@ -101,14 +85,6 @@ items:
   name: 'delete_activity(context: botbuilder.core.turn_context.TurnContext, reference:
     botbuilder.schema._models_py3.ConversationReference)'
   namewithoutparameters: delete_activity
-  source:
-    id: delete_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 55
   summary: Deletes an existing activity.
   syntax:
     content: 'delete_activity(context: botbuilder.core.turn_context.TurnContext, reference:
@@ -135,14 +111,6 @@ items:
     typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable] =
     None)'
   namewithoutparameters: run_pipeline
-  source:
-    id: run_pipeline
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 110
   summary: 'Called by the parent class to run the adapters middleware set and calls
     the passed in *callback()* handler at
 
@@ -172,14 +140,6 @@ items:
   name: 'send_activities(context: botbuilder.core.turn_context.TurnContext, activities:
     typing.List[botbuilder.schema._models_py3.Activity]) -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
   namewithoutparameters: send_activities
-  source:
-    id: send_activities
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 27
   summary: Sends a set of activities to the user. An array of responses from the server
     will be returned.
   syntax:
@@ -206,14 +166,6 @@ items:
   name: 'update_activity(context: botbuilder.core.turn_context.TurnContext, activity:
     botbuilder.schema._models_py3.Activity)'
   namewithoutparameters: update_activity
-  source:
-    id: update_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 42
   summary: Replaces an existing activity.
   syntax:
     content: 'update_activity(context: botbuilder.core.turn_context.TurnContext, activity:
@@ -238,14 +190,6 @@ items:
   module: botbuilder.core
   name: use(middleware)
   namewithoutparameters: use
-  source:
-    id: use
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 70
   summary: Registers a middleware handler with the adapter.
   syntax:
     content: use(middleware)
