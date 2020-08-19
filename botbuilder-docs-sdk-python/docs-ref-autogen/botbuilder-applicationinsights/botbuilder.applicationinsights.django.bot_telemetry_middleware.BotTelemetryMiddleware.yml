@@ -11,14 +11,6 @@ items:
   - python
   module: botbuilder.applicationinsights.django.bot_telemetry_middleware
   name: BotTelemetryMiddleware
-  source:
-    id: BotTelemetryMiddleware
-    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\bot_telemetry_middleware.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\bot_telemetry_middleware.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 23
   summary: "Save off the POST body to later populate bot-specific properties to\n\
     add to Application Insights.\n\nExample activating MIDDLEWARE in Django settings:\n\
     MIDDLEWARE = [\n\n\n   # Ideally add somewhere near top\n   'botbuilder.applicationinsights.django.BotTelemetryMiddleware',\n\
@@ -34,14 +26,6 @@ items:
   module: botbuilder.applicationinsights.django.bot_telemetry_middleware
   name: process_request(request) -> bool
   namewithoutparameters: process_request
-  source:
-    id: process_request
-    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\bot_telemetry_middleware.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\bot_telemetry_middleware.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 45
   summary: Process the incoming Django request.
   syntax:
     content: process_request(request) -> bool

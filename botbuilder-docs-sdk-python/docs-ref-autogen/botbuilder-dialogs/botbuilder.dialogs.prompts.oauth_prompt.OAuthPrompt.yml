@@ -22,14 +22,6 @@ items:
   - python
   module: botbuilder.dialogs.prompts.oauth_prompt
   name: OAuthPrompt
-  source:
-    id: OAuthPrompt
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 56
   summary: ''
   syntax:
     content: 'OAuthPrompt(dialog_id: str, settings: botbuilder.dialogs.prompts.oauth_prompt_settings.OAuthPromptSettings,
@@ -51,14 +43,6 @@ items:
     has been processed.
 
     '
-  source:
-    id: begin_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 122
   summary: 'Starts an authentication prompt dialog. Called when an authentication
     prompt dialog is pushed onto the
 
@@ -103,14 +87,6 @@ items:
     user''s reply as valid input for the prompt.
 
     '
-  source:
-    id: continue_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 190
   summary: Continues a dialog. Called when a prompt dialog is the active dialog and
     the user replied with a new activity.
   syntax:
@@ -142,14 +118,6 @@ items:
     the result contains the user''s token.
 
     '
-  source:
-    id: get_user_token
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 254
   summary: Gets the user's tokeN.
   syntax:
     content: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, code:
@@ -184,14 +152,6 @@ items:
     the result contains the user''s token.
 
     '
-  source:
-    id: sign_out_user
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 287
   summary: Signs out the user
   syntax:
     content: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext)'

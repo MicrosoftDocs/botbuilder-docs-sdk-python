@@ -27,14 +27,6 @@ items:
   - python
   module: botbuilder.dialogs
   name: ComponentDialog
-  source:
-    id: ComponentDialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 16
   summary: A <xref:botbuilder.dialogs.Dialog> that is composed of other dialogs
   syntax:
     content: 'ComponentDialog(dialog_id: str)'
@@ -52,14 +44,6 @@ items:
   module: botbuilder.dialogs
   name: 'add_dialog(dialog: botbuilder.dialogs.dialog.Dialog) -> object'
   namewithoutparameters: add_dialog
-  source:
-    id: add_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 178
   summary: Adds a <xref:botbuilder.dialogs.Dialog> to the component dialog and returns
     the updated component.
   syntax:
@@ -82,14 +66,6 @@ items:
   name: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   namewithoutparameters: begin_dialog
-  source:
-    id: begin_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 43
   summary: 'Called when the dialog is started and pushed onto the parent''s dialog
     stack.
 
@@ -147,14 +123,6 @@ items:
     uses that as it''s return value.
 
     '
-  source:
-    id: continue_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 77
   summary: 'Called when the dialog is continued, where it is the active dialog and
     the
 
@@ -188,14 +156,6 @@ items:
     turn was processed by the dialog.
 
     '
-  source:
-    id: end_component
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 258
   summary: Ends the component dialog in its parent's context.
   syntax:
     content: 'end_component(outer_dc: botbuilder.dialogs.dialog_context.DialogContext,
@@ -226,14 +186,6 @@ items:
   name: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance: botbuilder.dialogs.dialog_instance.DialogInstance,
     reason: botbuilder.dialogs.dialog_reason.DialogReason) -> None'
   namewithoutparameters: end_dialog
-  source:
-    id: end_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 158
   summary: Called when the dialog is ending.
   syntax:
     content: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
@@ -265,14 +217,6 @@ items:
   module: botbuilder.dialogs
   name: 'find_dialog(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
   namewithoutparameters: find_dialog
-  source:
-    id: find_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 191
   summary: Finds a dialog by ID.
   syntax:
     content: 'find_dialog(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
@@ -308,14 +252,6 @@ items:
     Override this method in a derived class to implement interrupt logic.
 
     '
-  source:
-    id: on_begin_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 201
   summary: Called when the dialog is started and pushed onto the parent's dialog stack.
   syntax:
     content: 'on_begin_dialog(inner_dc: botbuilder.dialogs.dialog_context.DialogContext,
@@ -341,14 +277,6 @@ items:
   name: 'on_continue_dialog(inner_dc: botbuilder.dialogs.dialog_context.DialogContext)
     -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   namewithoutparameters: on_continue_dialog
-  source:
-    id: on_continue_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 223
   summary: Called when the dialog is continued, where it is the active dialog and
     the user replies with a new activity.
   syntax:
@@ -371,14 +299,6 @@ items:
     botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)
     -> None'
   namewithoutparameters: on_end_dialog
-  source:
-    id: on_end_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 232
   summary: Ends the component dialog in its parent's context.
   syntax:
     content: 'on_end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
@@ -412,14 +332,6 @@ items:
   name: 'on_reprompt_dialog(turn_context: botbuilder.core.turn_context.TurnContext,
     instance: botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
   namewithoutparameters: on_reprompt_dialog
-  source:
-    id: on_reprompt_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 247
   syntax:
     content: 'on_reprompt_dialog(turn_context: botbuilder.core.turn_context.TurnContext,
       instance: botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
@@ -446,14 +358,6 @@ items:
   name: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
     botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
   namewithoutparameters: reprompt_dialog
-  source:
-    id: reprompt_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 139
   summary: Called when the dialog should re-prompt the user for input.
   syntax:
     content: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
@@ -495,14 +399,6 @@ items:
     ask our inner dialog stack to re-prompt.
 
     '
-  source:
-    id: resume_dialog
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\component_dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 112
   summary: 'Called when a child dialog on the parent''s dialog stack completed this
     turn, returning
 

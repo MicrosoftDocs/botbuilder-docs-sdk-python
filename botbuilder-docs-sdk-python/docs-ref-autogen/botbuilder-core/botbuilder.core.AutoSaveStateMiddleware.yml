@@ -16,14 +16,6 @@ items:
   - python
   module: botbuilder.core
   name: AutoSaveStateMiddleware
-  source:
-    id: AutoSaveStateMiddleware
-    path: ./libraries/botbuilder-core\botbuilder\core\auto_save_state_middleware.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\auto_save_state_middleware.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 12
   summary: ''
   syntax:
     content: 'AutoSaveStateMiddleware(bot_states: typing.Union[typing.List[botbuilder.core.bot_state.BotState],
@@ -37,14 +29,6 @@ items:
   module: botbuilder.core
   name: 'add(bot_state: botbuilder.core.bot_state.BotState) -> botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware'
   namewithoutparameters: add
-  source:
-    id: add
-    path: ./libraries/botbuilder-core\botbuilder\core\auto_save_state_middleware.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\auto_save_state_middleware.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 21
   syntax:
     content: 'add(bot_state: botbuilder.core.bot_state.BotState) -> botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware'
   type: method
@@ -57,14 +41,6 @@ items:
   name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
     typing.Awaitable])'
   namewithoutparameters: on_turn
-  source:
-    id: on_turn
-    path: ./libraries/botbuilder-core\botbuilder\core\auto_save_state_middleware.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\auto_save_state_middleware.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 28
   syntax:
     content: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
       typing.Awaitable])'

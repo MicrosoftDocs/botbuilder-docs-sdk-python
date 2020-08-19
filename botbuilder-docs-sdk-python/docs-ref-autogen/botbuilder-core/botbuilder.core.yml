@@ -98,14 +98,6 @@ items:
   - python
   module: botbuilder.core
   name: core
-  source:
-    id: core
-    path: ./libraries/botbuilder-core\botbuilder\core\__init__.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\__init__.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 0
   type: package
   uid: botbuilder.core
 - fullName: botbuilder.core.calculate_change_hash
@@ -113,14 +105,6 @@ items:
   - python
   module: botbuilder.core
   name: 'calculate_change_hash(item: botbuilder.core.storage.StoreItem) -> str'
-  source:
-    id: calculate_change_hash
-    path: ./libraries/botbuilder-core\botbuilder\core\storage.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\storage.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 59
   summary: 'Utility function to calculate a change hash for a *StoreItem*.
 
     :param item:

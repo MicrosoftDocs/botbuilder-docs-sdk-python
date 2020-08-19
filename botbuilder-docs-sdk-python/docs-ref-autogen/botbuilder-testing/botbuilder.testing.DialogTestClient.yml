@@ -12,14 +12,6 @@ items:
   - python
   module: botbuilder.testing
   name: DialogTestClient
-  source:
-    id: DialogTestClient
-    path: ./libraries/botbuilder-testing\botbuilder\testing\dialog_test_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-testing\botbuilder\testing\dialog_test_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 20
   summary: A client for testing dialogs in isolation.
   syntax:
     content: 'DialogTestClient(channel_or_adapter: typing.Union[str, botbuilder.core.adapters.test_adapter.TestAdapter],
@@ -36,14 +28,6 @@ items:
   module: botbuilder.testing
   name: get_next_reply() -> botbuilder.schema._models_py3.Activity
   namewithoutparameters: get_next_reply
-  source:
-    id: get_next_reply
-    path: ./libraries/botbuilder-testing\botbuilder\testing\dialog_test_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-testing\botbuilder\testing\dialog_test_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 93
   summary: Get the next reply waiting to be delivered (if one exists)
   syntax:
     content: get_next_reply() -> botbuilder.schema._models_py3.Activity
@@ -60,14 +44,6 @@ items:
   module: botbuilder.testing
   name: send_activity(activity) -> botbuilder.schema._models_py3.Activity
   namewithoutparameters: send_activity
-  source:
-    id: send_activity
-    path: ./libraries/botbuilder-testing\botbuilder\testing\dialog_test_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-testing\botbuilder\testing\dialog_test_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 81
   summary: Send an activity into the dialog.
   syntax:
     content: send_activity(activity) -> botbuilder.schema._models_py3.Activity

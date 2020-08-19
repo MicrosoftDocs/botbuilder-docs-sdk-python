@@ -25,14 +25,6 @@ items:
   - python
   module: botbuilder.ai.luis.luis_util
   name: LuisUtil
-  source:
-    id: LuisUtil
-    path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 20
   summary: Utility functions used to extract and transform data from Luis SDK
   syntax: {}
   type: class
@@ -45,14 +37,6 @@ items:
   name: 'add_properties(luis: azure.cognitiveservices.language.luis.runtime.models.luis_result_py3.LuisResult,
     result: botbuilder.core.recognizer_result.RecognizerResult) -> None'
   namewithoutparameters: add_properties
-  source:
-    id: add_properties
-    path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 282
   syntax:
     content: 'add_properties(luis: azure.cognitiveservices.language.luis.runtime.models.luis_result_py3.LuisResult,
       result: botbuilder.core.recognizer_result.RecognizerResult) -> None'
@@ -65,14 +49,6 @@ items:
   module: botbuilder.ai.luis.luis_util
   name: 'add_property(obj: typing.Dict[str, object], key: str, value: object) -> None'
   namewithoutparameters: add_property
-  source:
-    id: add_property
-    path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 273
   syntax:
     content: 'add_property(obj: typing.Dict[str, object], key: str, value: object)
       -> None'
@@ -87,14 +63,6 @@ items:
     entity: azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel)
     -> bool'
   namewithoutparameters: composite_contains_entity
-  source:
-    id: composite_contains_entity
-    path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 264
   syntax:
     content: 'composite_contains_entity(composite_entity_metadata: azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel,
       entity: azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel)
@@ -110,14 +78,6 @@ items:
     composite_entities: typing.List[azure.cognitiveservices.language.luis.runtime.models.composite_entity_model_py3.CompositeEntityModel],
     verbose: bool) -> typing.Dict[str, object]'
   namewithoutparameters: extract_entities_and_metadata
-  source:
-    id: extract_entities_and_metadata
-    path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 44
   syntax:
     content: 'extract_entities_and_metadata(entities: typing.List[azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel],
       composite_entities: typing.List[azure.cognitiveservices.language.luis.runtime.models.composite_entity_model_py3.CompositeEntityModel],
@@ -132,14 +92,6 @@ items:
   name: 'extract_entity_metadata(entity: azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel)
     -> typing.Dict'
   namewithoutparameters: extract_entity_metadata
-  source:
-    id: extract_entity_metadata
-    path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 145
   syntax:
     content: 'extract_entity_metadata(entity: azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel)
       -> typing.Dict'
@@ -153,14 +105,6 @@ items:
   name: 'extract_entity_value(entity: azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel)
     -> object'
   namewithoutparameters: extract_entity_value
-  source:
-    id: extract_entity_value
-    path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 99
   syntax:
     content: 'extract_entity_value(entity: azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel)
       -> object'
@@ -174,14 +118,6 @@ items:
   name: 'extract_normalized_entity_name(entity: azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel)
     -> str'
   namewithoutparameters: extract_normalized_entity_name
-  source:
-    id: extract_normalized_entity_name
-    path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 164
   syntax:
     content: 'extract_normalized_entity_name(entity: azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel)
       -> str'
@@ -195,14 +131,6 @@ items:
   name: 'get_intents(luis_result: azure.cognitiveservices.language.luis.runtime.models.luis_result_py3.LuisResult)
     -> typing.Dict[str, botbuilder.core.intent_score.IntentScore]'
   namewithoutparameters: get_intents
-  source:
-    id: get_intents
-    path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 31
   syntax:
     content: 'get_intents(luis_result: azure.cognitiveservices.language.luis.runtime.models.luis_result_py3.LuisResult)
       -> typing.Dict[str, botbuilder.core.intent_score.IntentScore]'
@@ -215,14 +143,6 @@ items:
   module: botbuilder.ai.luis.luis_util
   name: get_user_agent()
   namewithoutparameters: get_user_agent
-  source:
-    id: get_user_agent
-    path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 290
   syntax:
     content: get_user_agent()
   type: method
@@ -235,14 +155,6 @@ items:
   name: 'intent_score_as_dict(intent_score: botbuilder.core.intent_score.IntentScore)
     -> typing.Dict[str, float]'
   namewithoutparameters: intent_score_as_dict
-  source:
-    id: intent_score_as_dict
-    path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 328
   syntax:
     content: 'intent_score_as_dict(intent_score: botbuilder.core.intent_score.IntentScore)
       -> typing.Dict[str, float]'
@@ -256,14 +168,6 @@ items:
   name: 'luis_result_as_dict(luis_result: azure.cognitiveservices.language.luis.runtime.models.luis_result_py3.LuisResult)
     -> typing.Dict[str, object]'
   namewithoutparameters: luis_result_as_dict
-  source:
-    id: luis_result_as_dict
-    path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 335
   syntax:
     content: 'luis_result_as_dict(luis_result: azure.cognitiveservices.language.luis.runtime.models.luis_result_py3.LuisResult)
       -> typing.Dict[str, object]'
@@ -276,14 +180,6 @@ items:
   module: botbuilder.ai.luis.luis_util
   name: 'normalized_intent(intent: str) -> str'
   namewithoutparameters: normalized_intent
-  source:
-    id: normalized_intent
-    path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 27
   syntax:
     content: 'normalized_intent(intent: str) -> str'
   type: method
@@ -295,14 +191,6 @@ items:
   module: botbuilder.ai.luis.luis_util
   name: 'number(value: object) -> typing.Union[int, float]'
   namewithoutparameters: number
-  source:
-    id: number
-    path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 86
   syntax:
     content: 'number(value: object) -> typing.Union[int, float]'
   type: method
@@ -316,14 +204,6 @@ items:
     entities: typing.List[azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel],
     entities_and_metadata: typing.Dict, verbose: bool) -> typing.List[azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel]'
   namewithoutparameters: populate_composite_entity_model
-  source:
-    id: populate_composite_entity_model
-    path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 188
   syntax:
     content: 'populate_composite_entity_model(composite_entity: azure.cognitiveservices.language.luis.runtime.models.composite_entity_model_py3.CompositeEntityModel,
       entities: typing.List[azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel],
@@ -338,14 +218,6 @@ items:
   name: 'recognizer_result_as_dict(recognizer_result: botbuilder.core.recognizer_result.RecognizerResult)
     -> typing.Dict[str, object]'
   namewithoutparameters: recognizer_result_as_dict
-  source:
-    id: recognizer_result_as_dict
-    path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\luis\luis_util.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 300
   syntax:
     content: 'recognizer_result_as_dict(recognizer_result: botbuilder.core.recognizer_result.RecognizerResult)
       -> typing.Dict[str, object]'

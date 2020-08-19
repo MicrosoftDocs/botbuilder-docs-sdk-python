@@ -22,14 +22,6 @@ items:
   - python
   module: botbuilder.adapters.slack
   name: SlackAdapter
-  source:
-    id: SlackAdapter
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 25
   summary: 'BotAdapter that can handle incoming slack events.  Incoming slack events
     are deserialized to an Activity
 
@@ -49,14 +41,6 @@ items:
     callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
     = None, audience: str = None)'
   namewithoutparameters: continue_conversation
-  source:
-    id: continue_conversation
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 129
   summary: 'Sends a proactive message to a conversation. Call this method to proactively
     send a message to a conversation.
 
@@ -94,14 +78,6 @@ items:
   name: 'delete_activity(context: botbuilder.core.turn_context.TurnContext, reference:
     botbuilder.schema._models_py3.ConversationReference)'
   namewithoutparameters: delete_activity
-  source:
-    id: delete_activity
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 105
   summary: 'Standard BotBuilder adapter method to delete a previous message.
 
 
@@ -126,14 +102,6 @@ items:
   module: botbuilder.adapters.slack
   name: 'process(req: aiohttp.web_request.Request, logic: typing.Callable) -> aiohttp.web_response.Response'
   namewithoutparameters: process
-  source:
-    id: process
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 170
   summary: Accept an incoming webhook request and convert it into a TurnContext which
     can be processed by the bot's logic.
   syntax:
@@ -158,14 +126,6 @@ items:
   name: 'send_activities(context: botbuilder.core.turn_context.TurnContext, activities:
     typing.List[botbuilder.schema._models_py3.Activity]) -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
   namewithoutparameters: send_activities
-  source:
-    id: send_activities
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 40
   summary: Standard BotBuilder adapter method to send a message from the bot to the
     messaging API.
   syntax:
@@ -192,14 +152,6 @@ items:
   name: 'update_activity(context: botbuilder.core.turn_context.TurnContext, activity:
     botbuilder.schema._models_py3.Activity)'
   namewithoutparameters: update_activity
-  source:
-    id: update_activity
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_adapter.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_adapter.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 77
   summary: Standard BotBuilder adapter method to update a previous message with new
     content.
   syntax:

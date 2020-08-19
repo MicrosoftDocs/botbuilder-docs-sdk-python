@@ -69,9 +69,11 @@ items:
   - botbuilder.schema.CallerIdConstants
   - botbuilder.schema.HealthResults
   - botbuilder.schema.HealthCheckResponse
+  - botbuilder.schema.SpeechConstants
   - botbuilder.schema.callerid_constants
   - botbuilder.schema.health_results
   - botbuilder.schema.healthcheck_response
+  - botbuilder.schema.speech_constants
   - botbuilder.schema.teams
   fullName: botbuilder.schema
   kind: import
@@ -79,14 +81,6 @@ items:
   - python
   module: botbuilder.schema
   name: schema
-  source:
-    id: schema
-    path: ./libraries/botbuilder-schema\botbuilder\schema\__init__.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\__init__.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 0
   type: package
   uid: botbuilder.schema
 references:
@@ -425,6 +419,11 @@ references:
   name: HealthCheckResponse
   parent: botbuilder.schema
   uid: botbuilder.schema.HealthCheckResponse
+- fullName: botbuilder.schema.SpeechConstants
+  isExternal: false
+  name: SpeechConstants
+  parent: botbuilder.schema
+  uid: botbuilder.schema.SpeechConstants
 - fullName: botbuilder.schema.callerid_constants
   isExternal: false
   name: callerid_constants
@@ -440,6 +439,11 @@ references:
   name: healthcheck_response
   parent: botbuilder.schema
   uid: botbuilder.schema.healthcheck_response
+- fullName: botbuilder.schema.speech_constants
+  isExternal: false
+  name: speech_constants
+  parent: botbuilder.schema
+  uid: botbuilder.schema.speech_constants
 - fullName: botbuilder.schema.teams
   isExternal: false
   name: teams

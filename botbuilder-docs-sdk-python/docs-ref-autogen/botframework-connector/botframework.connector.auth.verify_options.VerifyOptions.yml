@@ -10,14 +10,6 @@ items:
   - python
   module: botframework.connector.auth.verify_options
   name: VerifyOptions
-  source:
-    id: VerifyOptions
-    path: ./libraries/botframework-connector\botframework\connector\auth\verify_options.py
-    remote:
-      branch: master
-      path: ./libraries/botframework-connector\botframework\connector\auth\verify_options.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 8
   syntax:
     content: VerifyOptions(issuer, audience, clock_tolerance, ignore_expiration)
   type: class

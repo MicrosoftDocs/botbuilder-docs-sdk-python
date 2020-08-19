@@ -11,14 +11,6 @@ items:
   - python
   module: botbuilder.core.bot_state
   name: CachedBotState
-  source:
-    id: CachedBotState
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 15
   summary: Internal cached bot state.
   syntax:
     content: 'CachedBotState(state: typing.Dict[str, object] = None)'
@@ -31,14 +23,6 @@ items:
   module: botbuilder.core.bot_state
   name: 'compute_hash(obj: object) -> str'
   namewithoutparameters: compute_hash
-  source:
-    id: compute_hash
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 29
   syntax:
     content: 'compute_hash(obj: object) -> str'
   type: method

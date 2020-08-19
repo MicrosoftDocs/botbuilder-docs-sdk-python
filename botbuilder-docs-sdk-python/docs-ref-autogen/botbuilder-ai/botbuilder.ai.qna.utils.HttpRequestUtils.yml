@@ -11,14 +11,6 @@ items:
   - python
   module: botbuilder.ai.qna.utils
   name: HttpRequestUtils
-  source:
-    id: HttpRequestUtils
-    path: ./libraries/botbuilder-ai\botbuilder\ai\qna\utils\http_request_utils.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\qna\utils\http_request_utils.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 14
   summary: HTTP request utils class.
   syntax:
     content: 'HttpRequestUtils(http_client: aiohttp.client.ClientSession)'
@@ -32,14 +24,6 @@ items:
   name: 'execute_http_request(request_url: str, payload_body: object, endpoint: botbuilder.ai.qna.qnamaker_endpoint.QnAMakerEndpoint,
     timeout: float = None) -> aiohttp.client_reqrep.ClientResponse'
   namewithoutparameters: execute_http_request
-  source:
-    id: execute_http_request
-    path: ./libraries/botbuilder-ai\botbuilder\ai\qna\utils\http_request_utils.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\qna\utils\http_request_utils.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 20
   summary: 'Execute HTTP request.
 
 

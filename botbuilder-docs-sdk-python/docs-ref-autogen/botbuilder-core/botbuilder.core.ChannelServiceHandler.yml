@@ -36,14 +36,6 @@ items:
   - python
   module: botbuilder.core
   name: ChannelServiceHandler
-  source:
-    id: ChannelServiceHandler
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 31
   summary: 'Initializes a new instance of the <see cref="ChannelServiceHandler"/>
     class,
 
@@ -63,14 +55,6 @@ items:
   name: 'handle_create_conversation(auth_header, parameters: botbuilder.schema._models_py3.ConversationParameters)
     -> botbuilder.schema._models_py3.ConversationResourceResponse'
   namewithoutparameters: handle_create_conversation
-  source:
-    id: handle_create_conversation
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 89
   syntax:
     content: 'handle_create_conversation(auth_header, parameters: botbuilder.schema._models_py3.ConversationParameters)
       -> botbuilder.schema._models_py3.ConversationResourceResponse'
@@ -83,14 +67,6 @@ items:
   module: botbuilder.core
   name: handle_delete_activity(auth_header, conversation_id, activity_id)
   namewithoutparameters: handle_delete_activity
-  source:
-    id: handle_delete_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 77
   syntax:
     content: handle_delete_activity(auth_header, conversation_id, activity_id)
     parameters:
@@ -109,14 +85,6 @@ items:
   module: botbuilder.core
   name: handle_delete_conversation_member(auth_header, conversation_id, member_id)
   namewithoutparameters: handle_delete_conversation_member
-  source:
-    id: handle_delete_conversation_member
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 127
   syntax:
     content: handle_delete_conversation_member(auth_header, conversation_id, member_id)
     parameters:
@@ -136,14 +104,6 @@ items:
   name: handle_get_activity_members(auth_header, conversation_id, activity_id) ->
     typing.List[botbuilder.schema._models_py3.ChannelAccount]
   namewithoutparameters: handle_get_activity_members
-  source:
-    id: handle_get_activity_members
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 81
   syntax:
     content: handle_get_activity_members(auth_header, conversation_id, activity_id)
       -> typing.List[botbuilder.schema._models_py3.ChannelAccount]
@@ -157,14 +117,6 @@ items:
   name: handle_get_conversation_member(auth_header, conversation_id, member_id) ->
     botbuilder.schema._models_py3.ChannelAccount
   namewithoutparameters: handle_get_conversation_member
-  source:
-    id: handle_get_conversation_member
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 107
   syntax:
     content: handle_get_conversation_member(auth_header, conversation_id, member_id)
       -> botbuilder.schema._models_py3.ChannelAccount
@@ -177,14 +129,6 @@ items:
   module: botbuilder.core
   name: handle_get_conversation_members(auth_header, conversation_id) -> typing.List[botbuilder.schema._models_py3.ChannelAccount]
   namewithoutparameters: handle_get_conversation_members
-  source:
-    id: handle_get_conversation_members
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 101
   syntax:
     content: handle_get_conversation_members(auth_header, conversation_id) -> typing.List[botbuilder.schema._models_py3.ChannelAccount]
   type: method
@@ -197,14 +141,6 @@ items:
   name: 'handle_get_conversation_paged_members(auth_header, conversation_id, page_size:
     int = 0, continuation_token: str = '''') -> botbuilder.schema._models_py3.PagedMembersResult'
   namewithoutparameters: handle_get_conversation_paged_members
-  source:
-    id: handle_get_conversation_paged_members
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 115
   syntax:
     content: 'handle_get_conversation_paged_members(auth_header, conversation_id,
       page_size: int = 0, continuation_token: str = '''') -> botbuilder.schema._models_py3.PagedMembersResult'
@@ -218,14 +154,6 @@ items:
   name: 'handle_get_conversations(auth_header, continuation_token: str = '''') ->
     botbuilder.schema._models_py3.ConversationsResult'
   namewithoutparameters: handle_get_conversations
-  source:
-    id: handle_get_conversations
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 95
   syntax:
     content: 'handle_get_conversations(auth_header, continuation_token: str = '''')
       -> botbuilder.schema._models_py3.ConversationsResult'
@@ -239,14 +167,6 @@ items:
   name: handle_reply_to_activity(auth_header, conversation_id, activity_id, activity)
     -> botbuilder.schema._models_py3.ResourceResponse
   namewithoutparameters: handle_reply_to_activity
-  source:
-    id: handle_reply_to_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 61
   syntax:
     content: handle_reply_to_activity(auth_header, conversation_id, activity_id, activity)
       -> botbuilder.schema._models_py3.ResourceResponse
@@ -260,14 +180,6 @@ items:
   name: 'handle_send_conversation_history(auth_header, conversation_id, transcript:
     botbuilder.schema._models_py3.Transcript) -> botbuilder.schema._models_py3.ResourceResponse'
   namewithoutparameters: handle_send_conversation_history
-  source:
-    id: handle_send_conversation_history
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 135
   syntax:
     content: 'handle_send_conversation_history(auth_header, conversation_id, transcript:
       botbuilder.schema._models_py3.Transcript) -> botbuilder.schema._models_py3.ResourceResponse'
@@ -280,14 +192,6 @@ items:
   module: botbuilder.core
   name: handle_send_to_conversation(auth_header, conversation_id, activity) -> botbuilder.schema._models_py3.ResourceResponse
   namewithoutparameters: handle_send_to_conversation
-  source:
-    id: handle_send_to_conversation
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 53
   syntax:
     content: handle_send_to_conversation(auth_header, conversation_id, activity) ->
       botbuilder.schema._models_py3.ResourceResponse
@@ -301,14 +205,6 @@ items:
   name: handle_update_activity(auth_header, conversation_id, activity_id, activity)
     -> botbuilder.schema._models_py3.ResourceResponse
   namewithoutparameters: handle_update_activity
-  source:
-    id: handle_update_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 69
   syntax:
     content: handle_update_activity(auth_header, conversation_id, activity_id, activity)
       -> botbuilder.schema._models_py3.ResourceResponse
@@ -322,14 +218,6 @@ items:
   name: 'handle_upload_attachment(auth_header, conversation_id, attachment_upload:
     botbuilder.schema._models_py3.AttachmentData) -> botbuilder.schema._models_py3.ResourceResponse'
   namewithoutparameters: handle_upload_attachment
-  source:
-    id: handle_upload_attachment
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 143
   syntax:
     content: 'handle_upload_attachment(auth_header, conversation_id, attachment_upload:
       botbuilder.schema._models_py3.AttachmentData) -> botbuilder.schema._models_py3.ResourceResponse'
@@ -343,14 +231,6 @@ items:
   name: 'on_create_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     parameters: botbuilder.schema._models_py3.ConversationParameters) -> botbuilder.schema._models_py3.ConversationResourceResponse'
   namewithoutparameters: on_create_conversation
-  source:
-    id: on_create_conversation
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 176
   summary: 'create_conversation() API for Skill
 
 
@@ -410,14 +290,6 @@ items:
   name: 'on_delete_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity_id: str)'
   namewithoutparameters: on_delete_activity
-  source:
-    id: on_delete_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 319
   summary: 'delete_activity() API for Skill.
 
 
@@ -450,14 +322,6 @@ items:
   name: 'on_delete_conversation_member(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, member_id: str)'
   namewithoutparameters: on_delete_conversation_member
-  source:
-    id: on_delete_conversation_member
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 408
   summary: 'delete_conversation_member() API for Skill.
 
 
@@ -494,14 +358,6 @@ items:
   name: 'on_get_activity_members(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity_id: str) -> typing.List[botbuilder.schema._models_py3.ChannelAccount]'
   namewithoutparameters: on_get_activity_members
-  source:
-    id: on_get_activity_members
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 428
   summary: 'get_activity_members() API for Skill.
 
 
@@ -536,14 +392,6 @@ items:
   name: 'on_get_conversation_member(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, member_id: str) -> botbuilder.schema._models_py3.ChannelAccount'
   namewithoutparameters: on_get_conversation_member
-  source:
-    id: on_get_conversation_member
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 354
   summary: 'get_conversation_member() API for Skill.
 
 
@@ -576,14 +424,6 @@ items:
   name: 'on_get_conversation_members(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str) -> typing.List[botbuilder.schema._models_py3.ChannelAccount]'
   namewithoutparameters: on_get_conversation_members
-  source:
-    id: on_get_conversation_members
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 337
   summary: 'get_conversation_members() API for Skill.
 
 
@@ -614,14 +454,6 @@ items:
     conversation_id: str, page_size: int = None, continuation_token: str = '''') ->
     botbuilder.schema._models_py3.PagedMembersResult'
   namewithoutparameters: on_get_conversation_paged_members
-  source:
-    id: on_get_conversation_paged_members
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 372
   summary: 'get_conversation_paged_members() API for Skill.
 
 
@@ -682,14 +514,6 @@ items:
   name: 'on_get_conversations(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     continuation_token: str = '''') -> botbuilder.schema._models_py3.ConversationsResult'
   namewithoutparameters: on_get_conversations
-  source:
-    id: on_get_conversations
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 151
   summary: 'get_conversations() API for Skill
 
 
@@ -735,14 +559,6 @@ items:
     conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
     -> botbuilder.schema._models_py3.ResourceResponse'
   namewithoutparameters: on_reply_to_activity
-  source:
-    id: on_reply_to_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 287
   summary: 'reply_to_activity() API for Skill.
 
 
@@ -796,14 +612,6 @@ items:
     conversation_id: str, transcript: botbuilder.schema._models_py3.Transcript) ->
     botbuilder.schema._models_py3.ResourceResponse'
   namewithoutparameters: on_send_conversation_history
-  source:
-    id: on_send_conversation_history
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 237
   summary: 'send_conversation_history() API for Skill.
 
 
@@ -843,14 +651,6 @@ items:
   name: 'on_send_to_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity: botbuilder.schema._models_py3.Activity) -> botbuilder.schema._models_py3.ResourceResponse'
   namewithoutparameters: on_send_to_conversation
-  source:
-    id: on_send_to_conversation
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 210
   summary: 'send_to_conversation() API for Skill
 
 
@@ -900,14 +700,6 @@ items:
     conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
     -> botbuilder.schema._models_py3.ResourceResponse'
   namewithoutparameters: on_update_activity
-  source:
-    id: on_update_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 261
   summary: 'update_activity() API for Skill.
 
 
@@ -950,14 +742,6 @@ items:
     conversation_id: str, attachment_upload: botbuilder.schema._models_py3.AttachmentData)
     -> botbuilder.schema._models_py3.ResourceResponse'
   namewithoutparameters: on_upload_attachment
-  source:
-    id: on_upload_attachment
-    path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\channel_service_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 447
   summary: 'upload_attachment() API for Skill.
 
 

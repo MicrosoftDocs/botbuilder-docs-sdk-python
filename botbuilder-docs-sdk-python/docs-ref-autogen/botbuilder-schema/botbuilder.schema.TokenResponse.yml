@@ -12,14 +12,6 @@ items:
   - python
   module: botbuilder.schema
   name: TokenResponse
-  source:
-    id: TokenResponse
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 2351
   summary: A response that includes a user token.
   syntax:
     content: 'TokenResponse(*, connection_name: str = None, token: str = None, expiration:

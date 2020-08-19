@@ -12,14 +12,6 @@ items:
   - python
   module: botbuilder.schema.teams
   name: MessageActionsPayloadBody
-  source:
-    id: MessageActionsPayloadBody
-    path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 340
   summary: Plaintext/HTML representation of the content of the message.
   syntax:
     content: 'MessageActionsPayloadBody(*, content_type=None, content: str = None,

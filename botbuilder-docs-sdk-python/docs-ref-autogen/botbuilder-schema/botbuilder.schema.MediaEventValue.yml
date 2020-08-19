@@ -12,14 +12,6 @@ items:
   - python
   module: botbuilder.schema
   name: MediaEventValue
-  source:
-    id: MediaEventValue
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 1782
   summary: Supplementary parameter for media events.
   syntax:
     content: MediaEventValue(*, card_value=None, **kwargs) -> None

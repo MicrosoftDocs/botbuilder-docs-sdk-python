@@ -9,14 +9,6 @@ items:
   - python
   module: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware
   name: aiohttp_telemetry_middleware
-  source:
-    id: aiohttp_telemetry_middleware
-    path: ./libraries/botbuilder-integration-applicationinsights-aiohttp\botbuilder\integration\applicationinsights\aiohttp\aiohttp_telemetry_middleware.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-integration-applicationinsights-aiohttp\botbuilder\integration\applicationinsights\aiohttp\aiohttp_telemetry_middleware.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 0
   type: module
   uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware
 - fullName: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware.bot_telemetry_middleware
@@ -24,14 +16,6 @@ items:
   - python
   module: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware
   name: bot_telemetry_middleware(request, handler)
-  source:
-    id: bot_telemetry_middleware
-    path: ./libraries/botbuilder-integration-applicationinsights-aiohttp\botbuilder\integration\applicationinsights\aiohttp\aiohttp_telemetry_middleware.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-integration-applicationinsights-aiohttp\botbuilder\integration\applicationinsights\aiohttp\aiohttp_telemetry_middleware.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 18
   summary: Process the incoming Flask request.
   syntax:
     content: bot_telemetry_middleware(request, handler)
@@ -45,14 +29,6 @@ items:
   - python
   module: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware
   name: retrieve_aiohttp_body()
-  source:
-    id: retrieve_aiohttp_body
-    path: ./libraries/botbuilder-integration-applicationinsights-aiohttp\botbuilder\integration\applicationinsights\aiohttp\aiohttp_telemetry_middleware.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-integration-applicationinsights-aiohttp\botbuilder\integration\applicationinsights\aiohttp\aiohttp_telemetry_middleware.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 8
   summary: 'retrieve_flask_body
 
     Retrieve the POST body text from temporary cache.

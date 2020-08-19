@@ -12,14 +12,6 @@ items:
   - python
   module: botbuilder.ai.qna
   name: QueryResults
-  source:
-    id: QueryResults
-    path: ./libraries/botbuilder-ai\botbuilder\ai\qna\models\query_results.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\qna\models\query_results.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 9
   summary: Contains answers for a user query.
   syntax:
     content: 'QueryResults(answers: typing.List[botbuilder.ai.qna.models.query_result.QueryResult],

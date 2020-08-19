@@ -11,14 +11,6 @@ items:
   - python
   module: botbuilder.core
   name: InvokeResponse
-  source:
-    id: InvokeResponse
-    path: ./libraries/botbuilder-core\botbuilder\core\invoke_response.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\invoke_response.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 5
   summary: 'Tuple class containing an HTTP Status Code and a JSON serializable
 
     object. The HTTP Status code is, in the invoke activity scenario, what will
@@ -42,14 +34,6 @@ items:
   module: botbuilder.core
   name: is_successful_status_code() -> bool
   namewithoutparameters: is_successful_status_code
-  source:
-    id: is_successful_status_code
-    path: ./libraries/botbuilder-core\botbuilder\core\invoke_response.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\invoke_response.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 28
   summary: 'Gets a value indicating whether the invoke response was successful.
 
     :return: A value that indicates if the HTTP response was successful. true if status

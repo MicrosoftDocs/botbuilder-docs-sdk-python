@@ -12,14 +12,6 @@ items:
   - python
   module: botbuilder.schema.teams
   name: TaskModuleRequest
-  source:
-    id: TaskModuleRequest
-    path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 8
   summary: Task module invoke request value payload.
   syntax:
     content: TaskModuleRequest(*, data=None, context=None, **kwargs) -> None

@@ -12,14 +12,6 @@ items:
   - python
   module: botbuilder.adapters.slack.slack_options
   name: SlackAdapterOptions
-  source:
-    id: SlackAdapterOptions
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_options.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_options.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 5
   summary: Class for defining implementation of the SlackAdapter Options.
   syntax:
     content: 'SlackAdapterOptions(slack_verification_token: str, slack_bot_token:
@@ -33,14 +25,6 @@ items:
   module: botbuilder.adapters.slack.slack_options
   name: 'get_bot_user_by_team(team_id: str) -> str'
   namewithoutparameters: get_bot_user_by_team
-  source:
-    id: get_bot_user_by_team
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_options.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_options.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 39
   summary: 'A method that receives a Slack team id and returns the bot user id associated
     with that team. Required for
 
@@ -60,14 +44,6 @@ items:
   module: botbuilder.adapters.slack.slack_options
   name: 'get_token_for_team(team_id: str) -> str'
   namewithoutparameters: get_token_for_team
-  source:
-    id: get_token_for_team
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_options.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_options.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 30
   summary: 'A method that receives a Slack team id and returns the bot token associated
     with that team. Required for
 

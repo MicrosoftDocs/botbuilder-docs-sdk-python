@@ -10,14 +10,6 @@ items:
   - python
   module: botbuilder.core.skills.bot_framework_skill
   name: BotFrameworkSkill
-  source:
-    id: BotFrameworkSkill
-    path: ./libraries/botbuilder-core\botbuilder\core\skills\bot_framework_skill.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\skills\bot_framework_skill.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 5
   summary: Registration for a BotFrameworkHttpProtocol based Skill endpoint.
   syntax:
     content: 'BotFrameworkSkill(id: str = None, app_id: str = None, skill_endpoint:

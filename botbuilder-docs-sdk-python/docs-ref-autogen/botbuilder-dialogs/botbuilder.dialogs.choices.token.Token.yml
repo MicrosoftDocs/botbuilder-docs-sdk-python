@@ -10,14 +10,6 @@ items:
   - python
   module: botbuilder.dialogs.choices.token
   name: Token
-  source:
-    id: Token
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\token.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\token.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 5
   summary: Represents an individual token, such as a word in an input string.
   syntax:
     content: 'Token(start: int, end: int, text: str, normalized: str)'

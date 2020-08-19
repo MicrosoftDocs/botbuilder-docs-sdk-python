@@ -15,14 +15,6 @@ items:
   - python
   module: botbuilder.core.skills
   name: SkillHandler
-  source:
-    id: SkillHandler
-    path: ./libraries/botbuilder-core\botbuilder\core\skills\skill_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\skills\skill_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 26
   summary: ''
   syntax:
     content: 'SkillHandler(adapter: botbuilder.core.bot_adapter.BotAdapter, bot: botbuilder.core.bot.Bot,
@@ -42,14 +34,6 @@ items:
     conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
     -> botbuilder.schema._models_py3.ResourceResponse'
   namewithoutparameters: on_reply_to_activity
-  source:
-    id: on_reply_to_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\skills\skill_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\skills\skill_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 87
   summary: 'reply_to_activity() API for Skill.
 
 
@@ -103,14 +87,6 @@ items:
   name: 'on_send_to_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity: botbuilder.schema._models_py3.Activity) -> botbuilder.schema._models_py3.ResourceResponse'
   namewithoutparameters: on_send_to_conversation
-  source:
-    id: on_send_to_conversation
-    path: ./libraries/botbuilder-core\botbuilder\core\skills\skill_handler.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\skills\skill_handler.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 56
   summary: 'send_to_conversation() API for Skill
 
 
