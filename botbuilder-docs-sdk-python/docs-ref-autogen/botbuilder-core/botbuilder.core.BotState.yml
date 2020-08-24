@@ -33,14 +33,6 @@ items:
     You can define additional scopes for your bot.
 
     '
-  source:
-    id: BotState
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 33
   summary: 'Defines a state management object and automates the reading and writing
     of
 
@@ -61,14 +53,6 @@ items:
     to the underlying store.
 
     '
-  source:
-    id: clear_state
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 137
   summary: Clears any state currently stored in this state scope.
   syntax:
     content: 'clear_state(turn_context: botbuilder.core.turn_context.TurnContext)'
@@ -89,14 +73,6 @@ items:
   module: botbuilder.core
   name: 'create_property(name: str) -> botbuilder.core.state_property_accessor.StatePropertyAccessor'
   namewithoutparameters: create_property
-  source:
-    id: create_property
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 77
   summary: Creates a property definition and registers it with this <xref:botbuilder.core.BotState>.
   syntax:
     content: 'create_property(name: str) -> botbuilder.core.state_property_accessor.StatePropertyAccessor'
@@ -119,14 +95,6 @@ items:
   module: botbuilder.core
   name: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
   namewithoutparameters: delete
-  source:
-    id: delete
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 156
   summary: Deletes any state currently stored in this state scope.
   syntax:
     content: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
@@ -148,14 +116,6 @@ items:
   name: 'delete_property_value(turn_context: botbuilder.core.turn_context.TurnContext,
     property_name: str) -> None'
   namewithoutparameters: delete_property_value
-  source:
-    id: delete_property_value
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 198
   summary: Deletes a property from the state cache in the turn context.
   syntax:
     content: 'delete_property_value(turn_context: botbuilder.core.turn_context.TurnContext,
@@ -183,14 +143,6 @@ items:
   name: 'get(turn_context: botbuilder.core.turn_context.TurnContext) -> typing.Dict[str,
     object]'
   namewithoutparameters: get
-  source:
-    id: get
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 90
   syntax:
     content: 'get(turn_context: botbuilder.core.turn_context.TurnContext) -> typing.Dict[str,
       object]'
@@ -203,14 +155,6 @@ items:
   module: botbuilder.core
   name: 'get_cached_state(turn_context: botbuilder.core.turn_context.TurnContext)'
   namewithoutparameters: get_cached_state
-  source:
-    id: get_cached_state
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 65
   summary: 'Gets the cached bot state instance that wraps the raw cached data for
     this "BotState"
 
@@ -235,14 +179,6 @@ items:
   name: 'get_property_value(turn_context: botbuilder.core.turn_context.TurnContext,
     property_name: str)'
   namewithoutparameters: get_property_value
-  source:
-    id: get_property_value
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 176
   summary: Gets the value of the specified property in the turn context.
   syntax:
     content: 'get_property_value(turn_context: botbuilder.core.turn_context.TurnContext,
@@ -270,14 +206,6 @@ items:
   name: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext) ->
     str'
   namewithoutparameters: get_storage_key
-  source:
-    id: get_storage_key
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 172
   syntax:
     content: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext)
       -> str'
@@ -291,14 +219,6 @@ items:
   name: 'load(turn_context: botbuilder.core.turn_context.TurnContext, force: bool
     = False) -> None'
   namewithoutparameters: load
-  source:
-    id: load
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 96
   summary: Reads the current state object and caches it in the context object for
     this turn.
   syntax:
@@ -325,14 +245,6 @@ items:
   name: 'save_changes(turn_context: botbuilder.core.turn_context.TurnContext, force:
     bool = False) -> None'
   namewithoutparameters: save_changes
-  source:
-    id: save_changes
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 115
   summary: 'Saves the state cached in the current context for this turn.
 
     If the state has changed, it saves the state cached in the current context for
@@ -362,14 +274,6 @@ items:
   name: 'set_property_value(turn_context: botbuilder.core.turn_context.TurnContext,
     property_name: str, value: object) -> None'
   namewithoutparameters: set_property_value
-  source:
-    id: set_property_value
-    path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\bot_state.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 217
   summary: Sets a property to the specified value in the turn context.
   syntax:
     content: 'set_property_value(turn_context: botbuilder.core.turn_context.TurnContext,

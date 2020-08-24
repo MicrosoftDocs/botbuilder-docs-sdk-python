@@ -34,14 +34,6 @@ items:
     features.
 
     '
-  source:
-    id: QnAMakerDialog
-    path: ./libraries/botbuilder-ai\botbuilder\ai\qna\dialogs\qnamaker_dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\qna\dialogs\qnamaker_dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 29
   summary: A dialog that supports multi-step and adaptive-learning QnA Maker services.
   syntax: {}
   type: class
@@ -54,14 +46,6 @@ items:
   name: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   namewithoutparameters: begin_dialog
-  source:
-    id: begin_dialog
-    path: ./libraries/botbuilder-ai\botbuilder\ai\qna\dialogs\qnamaker_dialog.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-ai\botbuilder\ai\qna\dialogs\qnamaker_dialog.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 147
   summary: Called when the dialog is started and pushed onto the dialog stack.
   syntax:
     content: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,

@@ -16,14 +16,6 @@ items:
   - python
   module: botbuilder.core.transcript_logger
   name: TranscriptLoggerMiddleware
-  source:
-    id: TranscriptLoggerMiddleware
-    path: ./libraries/botbuilder-core\botbuilder\core\transcript_logger.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\transcript_logger.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 28
   summary: Logs incoming and outgoing activities to a TranscriptStore.
   syntax:
     content: 'TranscriptLoggerMiddleware(logger: botbuilder.core.transcript_logger.TranscriptLogger)'
@@ -37,14 +29,6 @@ items:
   name: 'log_activity(transcript: queue.Queue, activity: botbuilder.schema._models_py3.Activity)
     -> None'
   namewithoutparameters: log_activity
-  source:
-    id: log_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\transcript_logger.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\transcript_logger.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 130
   summary: 'Logs the activity.
 
     :param transcript: transcript.
@@ -63,14 +47,6 @@ items:
   name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
     typing.Awaitable])'
   namewithoutparameters: on_turn
-  source:
-    id: on_turn
-    path: ./libraries/botbuilder-core\botbuilder\core\transcript_logger.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\transcript_logger.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 38
   summary: 'Initialization for middleware.
 
     :param context: Context for the current turn of conversation with the user.

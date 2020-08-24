@@ -10,14 +10,6 @@ items:
   - python
   module: botbuilder.dialogs.prompts.oauth_prompt
   name: CallerInfo
-  source:
-    id: CallerInfo
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\prompts\oauth_prompt.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 50
   syntax:
     content: 'CallerInfo(caller_service_url: str = None, scope: str = None)'
   type: class

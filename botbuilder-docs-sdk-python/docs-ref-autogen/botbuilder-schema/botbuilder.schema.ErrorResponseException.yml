@@ -18,14 +18,6 @@ items:
   - python
   module: botbuilder.schema
   name: ErrorResponseException
-  source:
-    id: ErrorResponseException
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 1552
   summary: 'Server responsed with exception of type: ''ErrorResponse''.'
   syntax:
     content: ErrorResponseException(deserialize, response, *args)

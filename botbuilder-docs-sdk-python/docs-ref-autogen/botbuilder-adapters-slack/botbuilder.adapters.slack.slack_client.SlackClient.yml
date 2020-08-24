@@ -37,14 +37,6 @@ items:
   - python
   module: botbuilder.adapters.slack.slack_client
   name: SlackClient
-  source:
-    id: SlackClient
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 24
   summary: Slack client that extends [https://github.com/slackapi/python-slackclient](https://github.com/slackapi/python-slackclient).
   syntax:
     content: 'SlackClient(options: botbuilder.adapters.slack.slack_options.SlackAdapterOptions)'
@@ -57,14 +49,6 @@ items:
   module: botbuilder.adapters.slack.slack_client
   name: 'channels_list_ex(exclude_archived: bool = True) -> slack.web.slack_response.SlackResponse'
   namewithoutparameters: channels_list_ex
-  source:
-    id: channels_list_ex
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 79
   syntax:
     content: 'channels_list_ex(exclude_archived: bool = True) -> slack.web.slack_response.SlackResponse'
   type: method
@@ -76,14 +60,6 @@ items:
   module: botbuilder.adapters.slack.slack_client
   name: chat_post_ephemeral_ex
   namewithoutparameters: chat_post_ephemeral_ex
-  source:
-    id: chat_post_ephemeral_ex
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 181
   syntax: {}
   type: method
   uid: botbuilder.adapters.slack.slack_client.SlackClient.chat_post_ephemeral_ex
@@ -94,14 +70,6 @@ items:
   module: botbuilder.adapters.slack.slack_client
   name: chat_post_message_ex
   namewithoutparameters: chat_post_message_ex
-  source:
-    id: chat_post_message_ex
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 206
   syntax: {}
   type: method
   uid: botbuilder.adapters.slack.slack_client.SlackClient.chat_post_message_ex
@@ -112,14 +80,6 @@ items:
   module: botbuilder.adapters.slack.slack_client
   name: chat_update_ex
   namewithoutparameters: chat_update_ex
-  source:
-    id: chat_update_ex
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 323
   syntax: {}
   type: method
   uid: botbuilder.adapters.slack.slack_client.SlackClient.chat_update_ex
@@ -130,14 +90,6 @@ items:
   module: botbuilder.adapters.slack.slack_client
   name: 'files_info_ex(file_id: str, page: int = None, count: int = None) -> slack.web.slack_response.SlackResponse'
   namewithoutparameters: files_info_ex
-  source:
-    id: files_info_ex
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 106
   syntax:
     content: 'files_info_ex(file_id: str, page: int = None, count: int = None) ->
       slack.web.slack_response.SlackResponse'
@@ -150,14 +102,6 @@ items:
   module: botbuilder.adapters.slack.slack_client
   name: files_list_ex
   namewithoutparameters: files_list_ex
-  source:
-    id: files_list_ex
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 112
   syntax: {}
   type: method
   uid: botbuilder.adapters.slack.slack_client.SlackClient.files_list_ex
@@ -168,14 +112,6 @@ items:
   module: botbuilder.adapters.slack.slack_client
   name: files_upload_ex
   namewithoutparameters: files_upload_ex
-  source:
-    id: files_upload_ex
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 352
   syntax: {}
   type: method
   uid: botbuilder.adapters.slack.slack_client.SlackClient.files_upload_ex
@@ -187,14 +123,6 @@ items:
   name: 'get_bot_user_by_team(activity: botbuilder.schema._models_py3.Activity) ->
     str'
   namewithoutparameters: get_bot_user_by_team
-  source:
-    id: get_bot_user_by_team
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 377
   syntax:
     content: 'get_bot_user_by_team(activity: botbuilder.schema._models_py3.Activity)
       -> str'
@@ -207,14 +135,6 @@ items:
   module: botbuilder.adapters.slack.slack_client
   name: get_preferences() -> slack.web.slack_response.SlackResponse
   namewithoutparameters: get_preferences
-  source:
-    id: get_preferences
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 160
   syntax:
     content: get_preferences() -> slack.web.slack_response.SlackResponse
   type: method
@@ -226,14 +146,6 @@ items:
   module: botbuilder.adapters.slack.slack_client
   name: 'groups_close(channel: str) -> slack.web.slack_response.SlackResponse'
   namewithoutparameters: groups_close
-  source:
-    id: groups_close
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 177
   syntax:
     content: 'groups_close(channel: str) -> slack.web.slack_response.SlackResponse'
   type: method
@@ -246,14 +158,6 @@ items:
   name: 'groups_history_ex(channel: str, latest: str = None, oldest: str = None, count:
     int = None) -> slack.web.slack_response.SlackResponse'
   namewithoutparameters: groups_history_ex
-  source:
-    id: groups_history_ex
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 141
   syntax:
     content: 'groups_history_ex(channel: str, latest: str = None, oldest: str = None,
       count: int = None) -> slack.web.slack_response.SlackResponse'
@@ -266,14 +170,6 @@ items:
   module: botbuilder.adapters.slack.slack_client
   name: 'groups_list_ex(exclude_archived: bool = True) -> slack.web.slack_response.SlackResponse'
   namewithoutparameters: groups_list_ex
-  source:
-    id: groups_list_ex
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 156
   syntax:
     content: 'groups_list_ex(exclude_archived: bool = True) -> slack.web.slack_response.SlackResponse'
   type: method
@@ -286,14 +182,6 @@ items:
   name: 'im_history_ex(channel: str, latest_timestamp: str = None, oldest_timestamp:
     str = None, count: int = None, unreads: bool = None) -> slack.web.slack_response.SlackResponse'
   namewithoutparameters: im_history_ex
-  source:
-    id: im_history_ex
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 86
   syntax:
     content: 'im_history_ex(channel: str, latest_timestamp: str = None, oldest_timestamp:
       str = None, count: int = None, unreads: bool = None) -> slack.web.slack_response.SlackResponse'
@@ -306,14 +194,6 @@ items:
   module: botbuilder.adapters.slack.slack_client
   name: is_logged_in()
   namewithoutparameters: is_logged_in
-  source:
-    id: is_logged_in
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 72
   syntax:
     content: is_logged_in()
     parameters: []
@@ -326,14 +206,6 @@ items:
   module: botbuilder.adapters.slack.slack_client
   name: login_with_slack()
   namewithoutparameters: login_with_slack
-  source:
-    id: login_with_slack
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 58
   syntax:
     content: login_with_slack()
     parameters: []
@@ -347,14 +219,6 @@ items:
   name: 'post_message_to_slack(message: botbuilder.adapters.slack.slack_message.SlackMessage)
     -> slack.web.slack_response.SlackResponse'
   namewithoutparameters: post_message_to_slack
-  source:
-    id: post_message_to_slack
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 405
   syntax:
     content: 'post_message_to_slack(message: botbuilder.adapters.slack.slack_message.SlackMessage)
       -> slack.web.slack_response.SlackResponse'
@@ -368,14 +232,6 @@ items:
   name: 'search_all_ex(query: str, sorting: str = None, direction: str = None, enable_highlights:
     bool = False, count: int = None, page: int = None) -> slack.web.slack_response.SlackResponse'
   namewithoutparameters: search_all_ex
-  source:
-    id: search_all_ex
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 248
   syntax:
     content: 'search_all_ex(query: str, sorting: str = None, direction: str = None,
       enable_highlights: bool = False, count: int = None, page: int = None) -> slack.web.slack_response.SlackResponse'
@@ -389,14 +245,6 @@ items:
   name: 'search_files_ex(query: str, sorting: str = None, direction: str = None, enable_highlights:
     bool = False, count: int = None, page: int = None) -> slack.web.slack_response.SlackResponse'
   namewithoutparameters: search_files_ex
-  source:
-    id: search_files_ex
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 273
   syntax:
     content: 'search_files_ex(query: str, sorting: str = None, direction: str = None,
       enable_highlights: bool = False, count: int = None, page: int = None) -> slack.web.slack_response.SlackResponse'
@@ -410,14 +258,6 @@ items:
   name: 'search_messages_ex(query: str, sorting: str = None, direction: str = None,
     enable_highlights: bool = False, count: int = None, page: int = None) -> slack.web.slack_response.SlackResponse'
   namewithoutparameters: search_messages_ex
-  source:
-    id: search_messages_ex
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 298
   syntax:
     content: 'search_messages_ex(query: str, sorting: str = None, direction: str =
       None, enable_highlights: bool = False, count: int = None, page: int = None)
@@ -431,14 +271,6 @@ items:
   module: botbuilder.adapters.slack.slack_client
   name: 'stars_list_ex(user: str = None, count: int = None, page: int = None) -> slack.web.slack_response.SlackResponse'
   namewithoutparameters: stars_list_ex
-  source:
-    id: stars_list_ex
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 163
   syntax:
     content: 'stars_list_ex(user: str = None, count: int = None, page: int = None)
       -> slack.web.slack_response.SlackResponse'
@@ -451,14 +283,6 @@ items:
   module: botbuilder.adapters.slack.slack_client
   name: test_auth() -> str
   namewithoutparameters: test_auth
-  source:
-    id: test_auth
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 75
   syntax:
     content: test_auth() -> str
   type: method
@@ -470,14 +294,6 @@ items:
   module: botbuilder.adapters.slack.slack_client
   name: users_counts() -> slack.web.slack_response.SlackResponse
   namewithoutparameters: users_counts
-  source:
-    id: users_counts
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 83
   syntax:
     content: users_counts() -> slack.web.slack_response.SlackResponse
   type: method
@@ -489,14 +305,6 @@ items:
   module: botbuilder.adapters.slack.slack_client
   name: 'verify_signature(req: aiohttp.web_request.Request, body: str) -> bool'
   namewithoutparameters: verify_signature
-  source:
-    id: verify_signature
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 391
   syntax:
     content: 'verify_signature(req: aiohttp.web_request.Request, body: str) -> bool'
   type: method

@@ -25,14 +25,6 @@ items:
   - python
   module: botframework.connector.operations
   name: ConversationsOperations
-  source:
-    id: ConversationsOperations
-    path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-    remote:
-      branch: master
-      path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 18
   summary: "ConversationsOperations operations.\n\nYou should not instantiate directly\
     \ this class, but create a Client instance that will create it for you and attach\n\
     \   it as attribute."
@@ -61,14 +53,6 @@ items:
   module: botframework.connector.operations
   name: create_conversation(parameters, custom_headers=None, raw=False, **operation_config)
   namewithoutparameters: create_conversation
-  source:
-    id: create_conversation
-    path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-    remote:
-      branch: master
-      path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 110
   summary: 'CreateConversation.
 
 
@@ -149,14 +133,6 @@ items:
   name: delete_activity(conversation_id, activity_id, custom_headers=None, raw=False,
     **operation_config)
   namewithoutparameters: delete_activity
-  source:
-    id: delete_activity
-    path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-    remote:
-      branch: master
-      path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 536
   summary: 'DeleteActivity.
 
 
@@ -213,14 +189,6 @@ items:
   name: delete_conversation_member(conversation_id, member_id, custom_headers=None,
     raw=False, **operation_config)
   namewithoutparameters: delete_conversation_member
-  source:
-    id: delete_conversation_member
-    path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-    remote:
-      branch: master
-      path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 907
   summary: 'DeleteConversationMember.
 
 
@@ -281,14 +249,6 @@ items:
   name: get_activity_members(conversation_id, activity_id, custom_headers=None, raw=False,
     **operation_config)
   namewithoutparameters: get_activity_members
-  source:
-    id: get_activity_members
-    path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-    remote:
-      branch: master
-      path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 970
   summary: 'GetActivityMembers.
 
 
@@ -347,14 +307,6 @@ items:
   name: get_conversation_member(conversation_id, member_id, custom_headers=None, raw=False,
     **operation_config)
   namewithoutparameters: get_conversation_member
-  source:
-    id: get_conversation_member
-    path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-    remote:
-      branch: master
-      path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 658
   summary: 'GetConversationMember.
 
 
@@ -411,14 +363,6 @@ items:
   name: get_conversation_members(conversation_id, custom_headers=None, raw=False,
     **operation_config)
   namewithoutparameters: get_conversation_members
-  source:
-    id: get_conversation_members
-    path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-    remote:
-      branch: master
-      path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 597
   summary: 'GetConversationMembers.
 
 
@@ -470,14 +414,6 @@ items:
   name: get_conversation_paged_members(conversation_id, page_size=None, continuation_token=None,
     custom_headers=None, raw=False, **operation_config)
   namewithoutparameters: get_conversation_paged_members
-  source:
-    id: get_conversation_paged_members
-    path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-    remote:
-      branch: master
-      path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 727
   summary: 'GetConversationPagedMembers.
 
 
@@ -561,14 +497,6 @@ items:
   name: get_conversations(continuation_token=None, custom_headers=None, raw=False,
     **operation_config)
   namewithoutparameters: get_conversations
-  source:
-    id: get_conversations
-    path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-    remote:
-      branch: master
-      path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 42
   summary: 'GetConversations.
 
 
@@ -634,14 +562,6 @@ items:
   name: get_teams_conversation_paged_members(conversation_id, page_size=None, continuation_token=None,
     custom_headers=None, raw=False, **operation_config)
   namewithoutparameters: get_teams_conversation_paged_members
-  source:
-    id: get_teams_conversation_paged_members
-    path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-    remote:
-      branch: master
-      path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 817
   summary: 'GetTeamsConversationPagedMembers.
 
 
@@ -725,14 +645,6 @@ items:
   name: reply_to_activity(conversation_id, activity_id, activity, custom_headers=None,
     raw=False, **operation_config)
   namewithoutparameters: reply_to_activity
-  source:
-    id: reply_to_activity
-    path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-    remote:
-      branch: master
-      path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 445
   summary: 'ReplyToActivity.
 
 
@@ -812,14 +724,6 @@ items:
   name: send_conversation_history(conversation_id, activities=None, custom_headers=None,
     raw=False, **operation_config)
   namewithoutparameters: send_conversation_history
-  source:
-    id: send_conversation_history
-    path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-    remote:
-      branch: master
-      path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 277
   summary: 'SendConversationHistory.
 
 
@@ -884,14 +788,6 @@ items:
   name: send_to_conversation(conversation_id, activity, custom_headers=None, raw=False,
     **operation_config)
   namewithoutparameters: send_to_conversation
-  source:
-    id: send_to_conversation
-    path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-    remote:
-      branch: master
-      path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 189
   summary: 'SendToConversation.
 
 
@@ -968,14 +864,6 @@ items:
   name: update_activity(conversation_id, activity_id, activity, custom_headers=None,
     raw=False, **operation_config)
   namewithoutparameters: update_activity
-  source:
-    id: update_activity
-    path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-    remote:
-      branch: master
-      path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 361
   summary: 'UpdateActivity.
 
 
@@ -1041,14 +929,6 @@ items:
   name: upload_attachment(conversation_id, attachment_upload, custom_headers=None,
     raw=False, **operation_config)
   namewithoutparameters: upload_attachment
-  source:
-    id: upload_attachment
-    path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-    remote:
-      branch: master
-      path: ./libraries/botframework-connector\botframework\connector\operations\_conversations_operations.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 1040
   summary: 'UploadAttachment.
 
 

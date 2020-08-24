@@ -15,14 +15,6 @@ items:
   - python
   module: botbuilder.core.transcript_logger
   name: ConsoleTranscriptLogger
-  source:
-    id: ConsoleTranscriptLogger
-    path: ./libraries/botbuilder-core\botbuilder\core\transcript_logger.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\transcript_logger.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 179
   summary: ConsoleTranscriptLogger writes activities to Console output.
   syntax: {}
   type: class
@@ -34,14 +26,6 @@ items:
   module: botbuilder.core.transcript_logger
   name: 'log_activity(activity: botbuilder.schema._models_py3.Activity) -> None'
   namewithoutparameters: log_activity
-  source:
-    id: log_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\transcript_logger.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\transcript_logger.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 182
   summary: 'Log an activity to the transcript.
 
     :param activity:Activity being logged.'

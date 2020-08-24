@@ -22,14 +22,6 @@ items:
   - python
   module: botbuilder.applicationinsights
   name: ApplicationInsightsTelemetryClient
-  source:
-    id: ApplicationInsightsTelemetryClient
-    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\application_insights_telemetry_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\application_insights_telemetry_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 33
   summary: Application Insights Telemetry Client.
   syntax:
     content: 'ApplicationInsightsTelemetryClient(instrumentation_key: str, telemetry_client:
@@ -44,14 +36,6 @@ items:
   module: botbuilder.applicationinsights
   name: flush()
   namewithoutparameters: flush
-  source:
-    id: flush
-    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\application_insights_telemetry_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\application_insights_telemetry_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 250
   summary: 'Flushes data in the queue. Data in the queue will be sent either immediately
     irrespective of what sender is
 
@@ -71,14 +55,6 @@ items:
     typing.Dict[str, object] = None, measurements: typing.Dict[str, object] = None,
     dependency_id: str = None)'
   namewithoutparameters: track_dependency
-  source:
-    id: track_dependency
-    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\application_insights_telemetry_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\application_insights_telemetry_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 202
   summary: "Sends a single dependency telemetry that was captured for the application.\n\
     :param name: the name of the command initiated with this dependency call. Low\
     \ cardinality value.\n\n\n   Examples are stored procedure name and URL path template."
@@ -145,14 +121,6 @@ items:
   name: 'track_event(name: str, properties: typing.Dict[str, object] = None, measurements:
     typing.Dict[str, object] = None) -> None'
   namewithoutparameters: track_event
-  source:
-    id: track_event
-    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\application_insights_telemetry_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\application_insights_telemetry_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 103
   summary: "Send information about a single event that has occurred in the context\
     \ of the application.\n:param name: the data to associate to this event.\n:param\
     \ properties: the set of custom properties the client wants attached to this data\
@@ -176,14 +144,6 @@ items:
   module: botbuilder.applicationinsights
   name: track_exception
   namewithoutparameters: track_exception
-  source:
-    id: track_exception
-    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\application_insights_telemetry_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\application_insights_telemetry_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 81
   summary: "Send information about a single exception that occurred in the application.\n\
     :param exception_type: the type of the exception that was thrown.\n:param value:\
     \ the exception that the client wants to send.\n:param trace: the traceback information\
@@ -208,14 +168,6 @@ items:
     = None, count: int = None, min_val: float = None, max_val: float = None, std_dev:
     float = None, properties: typing.Dict[str, object] = None) -> NotImplemented'
   namewithoutparameters: track_metric
-  source:
-    id: track_metric
-    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\application_insights_telemetry_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\application_insights_telemetry_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 119
   summary: "Send information about a single metric data point that was captured for\
     \ the application.\n:param name: The name of the metric that was captured.\n:param\
     \ value: The value of the metric that was captured.\n:param tel_type: The type\
@@ -256,14 +208,6 @@ items:
   name: 'track_pageview(name: str, url: str, duration: int = 0, properties: typing.Dict[str,
     object] = None, measurements: typing.Dict[str, object] = None) -> None'
   namewithoutparameters: track_pageview
-  source:
-    id: track_pageview
-    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\application_insights_telemetry_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\application_insights_telemetry_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 61
   summary: "Send information about the page viewed in the application (a web page\
     \ for instance).\n:param name: the name of the page that was viewed.\n:param url:\
     \ the URL of the page that was viewed.\n:param duration: the duration of the page\
@@ -292,14 +236,6 @@ items:
     typing.Dict[str, object] = None, measurements: typing.Dict[str, object] = None,
     request_id: str = None)'
   namewithoutparameters: track_request
-  source:
-    id: track_request
-    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\application_insights_telemetry_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\application_insights_telemetry_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 160
   summary: "Sends a single request that was captured for the application.\n:param\
     \ name: The name for this request. All requests with the same name will be grouped\
     \ together.\n:param url: The actual URL for this request (to show in individual\
@@ -349,14 +285,6 @@ items:
   name: 'track_trace(name: str, properties: typing.Dict[str, object] = None, severity:
     botbuilder.core.bot_telemetry_client.Severity = None)'
   namewithoutparameters: track_trace
-  source:
-    id: track_trace
-    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\application_insights_telemetry_client.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\application_insights_telemetry_client.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 149
   summary: 'Sends a single trace statement.
 
     :param name: the trace statement.

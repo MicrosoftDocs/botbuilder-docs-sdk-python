@@ -31,14 +31,6 @@ items:
   - python
   module: botbuilder.core.turn_context
   name: TurnContext
-  source:
-    id: TurnContext
-    path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 20
   summary: ''
   syntax:
     content: 'TurnContext(adapter_or_context, request: botbuilder.schema._models_py3.Activity
@@ -51,14 +43,6 @@ items:
   - python
   module: botbuilder.core.turn_context
   name: activity
-  source:
-    id: activity
-    path: null
-    remote:
-      branch: master
-      path: null
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: null
   summary: 'The received activity.
 
     :return:'
@@ -74,14 +58,6 @@ items:
     reference: botbuilder.schema._models_py3.ConversationReference, is_incoming: bool
     = False) -> botbuilder.schema._models_py3.Activity'
   namewithoutparameters: apply_conversation_reference
-  source:
-    id: apply_conversation_reference
-    path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 332
   summary: 'Updates an activity with the delivery information from a conversation
     reference. Calling
 
@@ -109,14 +85,6 @@ items:
   module: botbuilder.core.turn_context
   name: 'copy_to(context: botbuilder.core.turn_context.TurnContext) -> None'
   namewithoutparameters: copy_to
-  source:
-    id: copy_to
-    path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 61
   summary: 'Called when this TurnContext instance is passed into the constructor of
     a new TurnContext
 
@@ -136,14 +104,6 @@ items:
   module: botbuilder.core.turn_context
   name: 'delete_activity(id_or_reference: typing.Union[str, botbuilder.schema._models_py3.ConversationReference])'
   namewithoutparameters: delete_activity
-  source:
-    id: delete_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 233
   summary: 'Deletes an existing activity.
 
     :param id_or_reference:
@@ -160,14 +120,6 @@ items:
   module: botbuilder.core.turn_context
   name: 'get(key: str) -> object'
   namewithoutparameters: get
-  source:
-    id: get
-    path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 122
   syntax:
     content: 'get(key: str) -> object'
   type: method
@@ -180,14 +132,6 @@ items:
   name: 'get_conversation_reference(activity: botbuilder.schema._models_py3.Activity)
     -> botbuilder.schema._models_py3.ConversationReference'
   namewithoutparameters: get_conversation_reference
-  source:
-    id: get_conversation_reference
-    path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 311
   summary: 'Returns the conversation reference for an activity. This can be saved
     as a plain old JSON
 
@@ -213,14 +157,6 @@ items:
   module: botbuilder.core.turn_context
   name: 'get_mentions(activity: botbuilder.schema._models_py3.Activity) -> typing.List[botbuilder.schema._models_py3.Mention]'
   namewithoutparameters: get_mentions
-  source:
-    id: get_mentions
-    path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 396
   syntax:
     content: 'get_mentions(activity: botbuilder.schema._models_py3.Activity) -> typing.List[botbuilder.schema._models_py3.Mention]'
   type: method
@@ -233,14 +169,6 @@ items:
   name: 'get_reply_conversation_reference(activity: botbuilder.schema._models_py3.Activity,
     reply: botbuilder.schema._models_py3.ResourceResponse) -> botbuilder.schema._models_py3.ConversationReference'
   namewithoutparameters: get_reply_conversation_reference
-  source:
-    id: get_reply_conversation_reference
-    path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 362
   syntax:
     content: 'get_reply_conversation_reference(activity: botbuilder.schema._models_py3.Activity,
       reply: botbuilder.schema._models_py3.ResourceResponse) -> botbuilder.schema._models_py3.ConversationReference'
@@ -253,14 +181,6 @@ items:
   module: botbuilder.core.turn_context
   name: 'has(key: str) -> bool'
   namewithoutparameters: has
-  source:
-    id: has
-    path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 130
   summary: 'Returns True is set() has been called for a key. The cached value may
     be of type ''None''.
 
@@ -278,14 +198,6 @@ items:
   module: botbuilder.core.turn_context
   name: on_delete_activity(handler) -> botbuilder.core.turn_context.TurnContext
   namewithoutparameters: on_delete_activity
-  source:
-    id: on_delete_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 268
   summary: 'Registers a handler to be notified of and potentially intercept an activity
     being deleted.
 
@@ -303,14 +215,6 @@ items:
   module: botbuilder.core.turn_context
   name: on_send_activities(handler) -> botbuilder.core.turn_context.TurnContext
   namewithoutparameters: on_send_activities
-  source:
-    id: on_send_activities
-    path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 250
   summary: 'Registers a handler to be notified of and potentially intercept the sending
     of activities.
 
@@ -328,14 +232,6 @@ items:
   module: botbuilder.core.turn_context
   name: on_update_activity(handler) -> botbuilder.core.turn_context.TurnContext
   namewithoutparameters: on_update_activity
-  source:
-    id: on_update_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 259
   summary: 'Registers a handler to be notified of and potentially intercept an activity
     being updated.
 
@@ -354,14 +250,6 @@ items:
   name: 'remove_mention_text(activity: botbuilder.schema._models_py3.Activity, identifier:
     str) -> str'
   namewithoutparameters: remove_mention_text
-  source:
-    id: remove_mention_text
-    path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 379
   syntax:
     content: 'remove_mention_text(activity: botbuilder.schema._models_py3.Activity,
       identifier: str) -> str'
@@ -375,14 +263,6 @@ items:
   name: 'remove_recipient_mention(activity: botbuilder.schema._models_py3.Activity)
     -> str'
   namewithoutparameters: remove_recipient_mention
-  source:
-    id: remove_recipient_mention
-    path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 375
   syntax:
     content: 'remove_recipient_mention(activity: botbuilder.schema._models_py3.Activity)
       -> str'
@@ -394,14 +274,6 @@ items:
   - python
   module: botbuilder.core.turn_context
   name: responded
-  source:
-    id: responded
-    path: null
-    remote:
-      branch: master
-      path: null
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: null
   summary: 'If *true* at least one response has been sent for the current turn of
     conversation.
 
@@ -417,14 +289,6 @@ items:
   name: 'send_activities(activities: typing.List[botbuilder.schema._models_py3.Activity])
     -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
   namewithoutparameters: send_activities
-  source:
-    id: send_activities
-    path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 173
   syntax:
     content: 'send_activities(activities: typing.List[botbuilder.schema._models_py3.Activity])
       -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
@@ -438,14 +302,6 @@ items:
   name: 'send_activity(activity_or_text: typing.Union[botbuilder.schema._models_py3.Activity,
     str], speak: str = None, input_hint: str = None) -> botbuilder.schema._models_py3.ResourceResponse'
   namewithoutparameters: send_activity
-  source:
-    id: send_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 152
   summary: 'Sends a single activity or message to the user.
 
     :param activity_or_text:
@@ -464,14 +320,6 @@ items:
   name: 'send_trace_activity(name: str, value: object = None, value_type: str = None,
     label: str = None) -> botbuilder.schema._models_py3.ResourceResponse'
   namewithoutparameters: send_trace_activity
-  source:
-    id: send_trace_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 297
   syntax:
     content: 'send_trace_activity(name: str, value: object = None, value_type: str
       = None, label: str = None) -> botbuilder.schema._models_py3.ResourceResponse'
@@ -483,14 +331,6 @@ items:
   - python
   module: botbuilder.core.turn_context
   name: services
-  source:
-    id: services
-    path: null
-    remote:
-      branch: master
-      path: null
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: null
   summary: 'Map of services and other values cached for the lifetime of the turn.
 
     :return:'
@@ -504,14 +344,6 @@ items:
   module: botbuilder.core.turn_context
   name: 'set(key: str, value: object) -> None'
   namewithoutparameters: set
-  source:
-    id: set
-    path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 140
   summary: 'Caches a value for the lifetime of the current turn.
 
     :param key:
@@ -530,14 +362,6 @@ items:
   module: botbuilder.core.turn_context
   name: 'update_activity(activity: botbuilder.schema._models_py3.Activity)'
   namewithoutparameters: update_activity
-  source:
-    id: update_activity
-    path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\turn_context.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 219
   summary: 'Replaces an existing activity.
 
     :param activity:

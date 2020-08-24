@@ -10,14 +10,6 @@ items:
   - python
   module: botbuilder.adapters.slack
   name: SlackMessage
-  source:
-    id: SlackMessage
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_message.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_message.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 8
   syntax:
     content: SlackMessage(**kwargs)
   type: class

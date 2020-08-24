@@ -18,14 +18,6 @@ items:
   - python
   module: botframework.connector.auth.government_constants
   name: GovernmentConstants
-  source:
-    id: GovernmentConstants
-    path: ./libraries/botframework-connector\botframework\connector\auth\government_constants.py
-    remote:
-      branch: master
-      path: ./libraries/botframework-connector\botframework\connector\auth\government_constants.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 6
   summary: Government Channel Service property value
   syntax: {}
   type: class
@@ -36,14 +28,6 @@ items:
   - python
   module: botframework.connector.auth.government_constants
   name: CHANNEL_SERVICE
-  source:
-    id: CHANNEL_SERVICE
-    path: null
-    remote:
-      branch: master
-      path: null
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: null
   summary: '*TO CHANNEL FROM BOT* -- Login URL'
   syntax:
     content: CHANNEL_SERVICE = 'https://botframework.azure.us'
@@ -55,14 +39,6 @@ items:
   - python
   module: botframework.connector.auth.government_constants
   name: TO_BOT_FROM_CHANNEL_OPEN_ID_METADATA_URL
-  source:
-    id: TO_BOT_FROM_CHANNEL_OPEN_ID_METADATA_URL
-    path: null
-    remote:
-      branch: master
-      path: null
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: null
   summary: '*TO BOT FROM GOV EMULATOR* -- OpenID metadata document for tokens coming
     from MSA'
   syntax:
@@ -75,14 +51,6 @@ items:
   - python
   module: botframework.connector.auth.government_constants
   name: TO_BOT_FROM_CHANNEL_TOKEN_ISSUER
-  source:
-    id: TO_BOT_FROM_CHANNEL_TOKEN_ISSUER
-    path: null
-    remote:
-      branch: master
-      path: null
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: null
   summary: '*TO BOT FROM CHANNEL* -- OpenID metadata document for tokens coming from
     MSA'
   syntax:
@@ -95,17 +63,9 @@ items:
   - python
   module: botframework.connector.auth.government_constants
   name: TO_CHANNEL_FROM_BOT_LOGIN_URL
-  source:
-    id: TO_CHANNEL_FROM_BOT_LOGIN_URL
-    path: null
-    remote:
-      branch: master
-      path: null
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: null
   summary: '*TO CHANNEL FROM BOT* -- OAuth scope to request'
   syntax:
-    content: TO_CHANNEL_FROM_BOT_LOGIN_URL = 'https://login.microsoftonline.us/cab8a31a-1906-4287-a0d8-4eef66b95f6e/oauth2/v2.0/token'
+    content: TO_CHANNEL_FROM_BOT_LOGIN_URL = 'https://login.microsoftonline.us/MicrosoftServices.onmicrosoft.us'
   type: attribute
   uid: botframework.connector.auth.government_constants.GovernmentConstants.TO_CHANNEL_FROM_BOT_LOGIN_URL
 - class: botframework.connector.auth.government_constants.GovernmentConstants
@@ -114,14 +74,6 @@ items:
   - python
   module: botframework.connector.auth.government_constants
   name: TO_CHANNEL_FROM_BOT_OAUTH_SCOPE
-  source:
-    id: TO_CHANNEL_FROM_BOT_OAUTH_SCOPE
-    path: null
-    remote:
-      branch: master
-      path: null
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: null
   summary: '*TO BOT FROM CHANNEL* -- Token issuer'
   syntax:
     content: TO_CHANNEL_FROM_BOT_OAUTH_SCOPE = 'https://api.botframework.us/.default'

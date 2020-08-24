@@ -26,14 +26,6 @@ items:
   - python
   module: botbuilder.core.oauth
   name: ExtendedUserTokenProvider
-  source:
-    id: ExtendedUserTokenProvider
-    path: ./libraries/botbuilder-core\botbuilder\core\oauth\extended_user_token_provider.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\oauth\extended_user_token_provider.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 18
   summary: ''
   syntax: {}
   type: class
@@ -47,14 +39,6 @@ items:
     str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
     -> botframework.connector.token_api.models._models_py3.TokenResponse'
   namewithoutparameters: exchange_token
-  source:
-    id: exchange_token
-    path: ./libraries/botbuilder-core\botbuilder\core\oauth\extended_user_token_provider.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\oauth\extended_user_token_provider.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 80
   summary: Performs a token exchange operation such as for single sign-on.
   syntax:
     content: 'exchange_token(turn_context: botbuilder.core.turn_context.TurnContext,
@@ -88,14 +72,6 @@ items:
     connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
     -> botframework.connector.token_api.models._models_py3.TokenResponse'
   namewithoutparameters: exchange_token_from_credentials
-  source:
-    id: exchange_token_from_credentials
-    path: ./libraries/botbuilder-core\botbuilder\core\oauth\extended_user_token_provider.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\oauth\extended_user_token_provider.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 100
   summary: Performs a token exchange operation such as for single sign-on.
   syntax:
     content: 'exchange_token_from_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
@@ -133,14 +109,6 @@ items:
     botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
     botframework.connector.token_api.models._models_py3.TokenResponse]'
   namewithoutparameters: get_aad_tokens
-  source:
-    id: get_aad_tokens
-    path: ./libraries/botbuilder-core\botbuilder\core\oauth\extended_user_token_provider.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\oauth\extended_user_token_provider.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 173
   summary: 'Retrieves Azure Active Directory tokens for particular resources on a
     configured connection.
 
@@ -171,14 +139,6 @@ items:
     connection_name: str, final_redirect: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None) -> str'
   namewithoutparameters: get_oauth_sign_in_link
-  source:
-    id: get_oauth_sign_in_link
-    path: ./libraries/botbuilder-core\botbuilder\core\oauth\extended_user_token_provider.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\oauth\extended_user_token_provider.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 156
   summary: 'Get the raw signin link to be sent to the user for signin for a connection
     name.
 
@@ -209,14 +169,6 @@ items:
     link.
 
     '
-  source:
-    id: get_sign_in_resource
-    path: ./libraries/botbuilder-core\botbuilder\core\oauth\extended_user_token_provider.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\oauth\extended_user_token_provider.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 21
   summary: Get the raw signin link to be sent to the user for signin for a connection
     name.
   syntax:
@@ -245,14 +197,6 @@ items:
     link.
 
     '
-  source:
-    id: get_sign_in_resource_from_user
-    path: ./libraries/botbuilder-core\botbuilder\core\oauth\extended_user_token_provider.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\oauth\extended_user_token_provider.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 36
   summary: Get the raw signin link to be sent to the user for signin for a connection
     name.
   syntax:
@@ -288,14 +232,6 @@ items:
     link.
 
     '
-  source:
-    id: get_sign_in_resource_from_user_and_credentials
-    path: ./libraries/botbuilder-core\botbuilder\core\oauth\extended_user_token_provider.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\oauth\extended_user_token_provider.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 57
   summary: Get the raw signin link to be sent to the user for signin for a connection
     name.
   syntax:
@@ -331,14 +267,6 @@ items:
     str, magic_code: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None) -> botframework.connector.token_api.models._models_py3.TokenResponse'
   namewithoutparameters: get_user_token
-  source:
-    id: get_user_token
-    path: ./libraries/botbuilder-core\botbuilder\core\oauth\extended_user_token_provider.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\oauth\extended_user_token_provider.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 122
   summary: 'Retrieves the OAuth token for a user that is in a sign-in flow.
 
     :param context:
@@ -365,14 +293,6 @@ items:
     str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None)'
   namewithoutparameters: sign_out_user
-  source:
-    id: sign_out_user
-    path: ./libraries/botbuilder-core\botbuilder\core\oauth\extended_user_token_provider.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\oauth\extended_user_token_provider.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 139
   summary: 'Signs the user out with the token server.
 
     :param context:

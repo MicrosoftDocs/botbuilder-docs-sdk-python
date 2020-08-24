@@ -14,14 +14,6 @@ items:
   - python
   module: botbuilder.adapters.slack.activity_resourceresponse
   name: ActivityResourceResponse
-  source:
-    id: ActivityResourceResponse
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\activity_resourceresponse.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\activity_resourceresponse.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 7
   syntax:
     content: 'ActivityResourceResponse(activity_id: str, conversation: botbuilder.schema._models_py3.ConversationAccount,
       **kwargs)'

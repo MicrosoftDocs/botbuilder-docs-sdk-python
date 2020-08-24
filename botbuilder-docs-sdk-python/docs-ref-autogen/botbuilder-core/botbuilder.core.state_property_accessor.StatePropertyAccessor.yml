@@ -15,14 +15,6 @@ items:
   - python
   module: botbuilder.core.state_property_accessor
   name: StatePropertyAccessor
-  source:
-    id: StatePropertyAccessor
-    path: ./libraries/botbuilder-core\botbuilder\core\state_property_accessor.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\state_property_accessor.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 9
   summary: ''
   syntax: {}
   type: class
@@ -34,14 +26,6 @@ items:
   module: botbuilder.core.state_property_accessor
   name: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
   namewithoutparameters: delete
-  source:
-    id: delete
-    path: ./libraries/botbuilder-core\botbuilder\core\state_property_accessor.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\state_property_accessor.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 24
   summary: 'Saves store items to storage.
 
     :param turn_context: Turn Context.
@@ -59,14 +43,6 @@ items:
   name: 'get(turn_context: botbuilder.core.turn_context.TurnContext, default_value_or_factory=None)
     -> object'
   namewithoutparameters: get
-  source:
-    id: get
-    path: ./libraries/botbuilder-core\botbuilder\core\state_property_accessor.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\state_property_accessor.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 10
   summary: 'Get the property value from the source
 
     :param turn_context: Turn Context.
@@ -86,14 +62,6 @@ items:
   module: botbuilder.core.state_property_accessor
   name: 'set(turn_context: botbuilder.core.turn_context.TurnContext, value) -> None'
   namewithoutparameters: set
-  source:
-    id: set
-    path: ./libraries/botbuilder-core\botbuilder\core\state_property_accessor.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\state_property_accessor.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 33
   summary: 'Set the property value on the source.
 
     :param turn_context: Turn Context.

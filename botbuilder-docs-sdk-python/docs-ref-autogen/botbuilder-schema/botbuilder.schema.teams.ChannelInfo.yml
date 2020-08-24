@@ -12,14 +12,6 @@ items:
   - python
   module: botbuilder.schema.teams
   name: ChannelInfo
-  source:
-    id: ChannelInfo
-    path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 49
   summary: A channel info object which describes the channel.
   syntax:
     content: 'ChannelInfo(*, id: str = None, name: str = None, **kwargs) -> None'

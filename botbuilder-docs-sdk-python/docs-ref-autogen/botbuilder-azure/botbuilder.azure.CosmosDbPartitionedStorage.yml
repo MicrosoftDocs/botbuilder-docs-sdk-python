@@ -18,14 +18,6 @@ items:
   - python
   module: botbuilder.azure
   name: CosmosDbPartitionedStorage
-  source:
-    id: CosmosDbPartitionedStorage
-    path: ./libraries/botbuilder-azure\botbuilder\azure\cosmosdb_partitioned_storage.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-azure\botbuilder\azure\cosmosdb_partitioned_storage.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 69
   summary: The class for partitioned CosmosDB middleware for the Azure Bot Framework.
   syntax:
     content: 'CosmosDbPartitionedStorage(config: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedConfig)'
@@ -38,14 +30,6 @@ items:
   module: botbuilder.azure
   name: 'delete(keys: typing.List[str])'
   namewithoutparameters: delete
-  source:
-    id: delete
-    path: ./libraries/botbuilder-azure\botbuilder\azure\cosmosdb_partitioned_storage.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-azure\botbuilder\azure\cosmosdb_partitioned_storage.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 185
   summary: Remove storeitems from storage.
   syntax:
     content: 'delete(keys: typing.List[str])'
@@ -62,14 +46,6 @@ items:
   module: botbuilder.azure
   name: initialize()
   namewithoutparameters: initialize
-  source:
-    id: initialize
-    path: ./libraries/botbuilder-azure\botbuilder\azure\cosmosdb_partitioned_storage.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-azure\botbuilder\azure\cosmosdb_partitioned_storage.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 212
   syntax:
     content: initialize()
     parameters: []
@@ -82,14 +58,6 @@ items:
   module: botbuilder.azure
   name: 'read(keys: typing.List[str]) -> typing.Dict[str, object]'
   namewithoutparameters: read
-  source:
-    id: read
-    path: ./libraries/botbuilder-azure\botbuilder\azure\cosmosdb_partitioned_storage.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-azure\botbuilder\azure\cosmosdb_partitioned_storage.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 98
   summary: Read storeitems from storage.
   syntax:
     content: 'read(keys: typing.List[str]) -> typing.Dict[str, object]'
@@ -106,14 +74,6 @@ items:
   module: botbuilder.azure
   name: 'write(changes: typing.Dict[str, object])'
   namewithoutparameters: write
-  source:
-    id: write
-    path: ./libraries/botbuilder-azure\botbuilder\azure\cosmosdb_partitioned_storage.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-azure\botbuilder\azure\cosmosdb_partitioned_storage.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 139
   summary: Save storeitems to storage.
   syntax:
     content: 'write(changes: typing.Dict[str, object])'

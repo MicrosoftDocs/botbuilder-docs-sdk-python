@@ -11,14 +11,6 @@ items:
   - python
   module: botbuilder.applicationinsights.flask
   name: BotTelemetryMiddleware
-  source:
-    id: BotTelemetryMiddleware
-    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\flask\flask_telemetry_middleware.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\flask\flask_telemetry_middleware.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 22
   summary: "Bot Telemetry Middleware\nSave off the POST body to later populate bot-specific\
     \ properties to\nadd to Application Insights.\n\nExample adding telemetry middleware\
     \ to Flask:\n   app = Flask(__name__)\n   app.wsgi_app = BotTelemetryMiddleware(app.wsgi_app)"
@@ -33,14 +25,6 @@ items:
   module: botbuilder.applicationinsights.flask
   name: process_request(environ) -> bool
   namewithoutparameters: process_request
-  source:
-    id: process_request
-    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\flask\flask_telemetry_middleware.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\flask\flask_telemetry_middleware.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 39
   summary: Process the incoming Flask request.
   syntax:
     content: process_request(environ) -> bool

@@ -13,14 +13,6 @@ items:
   - python
   module: botbuilder.core.oauth
   name: ConnectorClientBuilder
-  source:
-    id: ConnectorClientBuilder
-    path: ./libraries/botbuilder-core\botbuilder\core\oauth\connector_client_builder.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\oauth\connector_client_builder.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 9
   summary: Abstraction to build connector clients.
   syntax: {}
   type: class
@@ -33,14 +25,6 @@ items:
   name: 'create_connector_client(service_url: str, identity: botframework.connector.auth.claims_identity.ClaimsIdentity
     = None, audience: str = None) -> botframework.connector.connector_client.ConnectorClient'
   namewithoutparameters: create_connector_client
-  source:
-    id: create_connector_client
-    path: ./libraries/botbuilder-core\botbuilder\core\oauth\connector_client_builder.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\oauth\connector_client_builder.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 14
   summary: Creates the connector client asynchronous.
   syntax:
     content: 'create_connector_client(service_url: str, identity: botframework.connector.auth.claims_identity.ClaimsIdentity

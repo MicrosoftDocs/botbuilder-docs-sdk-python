@@ -15,14 +15,6 @@ items:
   - python
   module: botbuilder.applicationinsights.processor.telemetry_processor
   name: TelemetryProcessor
-  source:
-    id: TelemetryProcessor
-    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\processor\telemetry_processor.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\processor\telemetry_processor.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 7
   summary: Application Insights Telemetry Processor base class for Bot
   syntax: {}
   type: class
@@ -33,14 +25,6 @@ items:
   - python
   module: botbuilder.applicationinsights.processor.telemetry_processor
   name: activity_json
-  source:
-    id: activity_json
-    path: null
-    remote:
-      branch: master
-      path: null
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: null
   summary: Retrieve the request body as json (Activity).
   syntax: {}
   type: attribute
@@ -52,14 +36,6 @@ items:
   module: botbuilder.applicationinsights.processor.telemetry_processor
   name: can_process() -> bool
   namewithoutparameters: can_process
-  source:
-    id: can_process
-    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\processor\telemetry_processor.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\processor\telemetry_processor.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 17
   summary: 'Whether the processor can process the request body.
 
     :return: True if the request body can be processed, False otherwise.
@@ -76,14 +52,6 @@ items:
   module: botbuilder.applicationinsights.processor.telemetry_processor
   name: get_request_body() -> str
   namewithoutparameters: get_request_body
-  source:
-    id: get_request_body
-    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\processor\telemetry_processor.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\processor\telemetry_processor.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 25
   summary: Retrieve the request body from flask/django middleware component.
   syntax:
     content: get_request_body() -> str

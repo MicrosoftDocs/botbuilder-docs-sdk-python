@@ -12,14 +12,6 @@ items:
   - python
   module: botbuilder.schema
   name: Error
-  source:
-    id: Error
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 1512
   summary: Object representing error information.
   syntax:
     content: 'Error(*, code: str = None, message: str = None, inner_http_error=None,

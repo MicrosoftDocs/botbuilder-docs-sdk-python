@@ -15,14 +15,6 @@ items:
   - python
   module: botbuilder.core.inspection
   name: InspectionState
-  source:
-    id: InspectionState
-    path: ./libraries/botbuilder-core\botbuilder\core\inspection\inspection_state.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\inspection\inspection_state.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 7
   syntax:
     content: 'InspectionState(storage: botbuilder.core.storage.Storage)'
   type: class
@@ -35,14 +27,6 @@ items:
   name: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext) ->
     str'
   namewithoutparameters: get_storage_key
-  source:
-    id: get_storage_key
-    path: ./libraries/botbuilder-core\botbuilder\core\inspection\inspection_state.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\inspection\inspection_state.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 11
   syntax:
     content: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext)
       -> str'

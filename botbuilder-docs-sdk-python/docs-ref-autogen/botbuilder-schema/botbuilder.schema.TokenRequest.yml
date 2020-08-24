@@ -12,14 +12,6 @@ items:
   - python
   module: botbuilder.schema
   name: TokenRequest
-  source:
-    id: TokenRequest
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 2330
   summary: A request to receive a user token.
   syntax:
     content: 'TokenRequest(*, provider: str = None, settings=None, **kwargs) -> None'

@@ -11,14 +11,6 @@ items:
   - python
   module: botbuilder.core.inspection.inspection_session
   name: InspectionSession
-  source:
-    id: InspectionSession
-    path: ./libraries/botbuilder-core\botbuilder\core\inspection\inspection_session.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\inspection\inspection_session.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 12
   syntax:
     content: 'InspectionSession(conversation_reference: botbuilder.schema._models_py3.ConversationReference,
       credentials: botframework.connector.auth.microsoft_app_credentials.MicrosoftAppCredentials)'
@@ -31,14 +23,6 @@ items:
   module: botbuilder.core.inspection.inspection_session
   name: 'send(activity: botbuilder.schema._models_py3.Activity) -> typing.Any'
   namewithoutparameters: send
-  source:
-    id: send
-    path: ./libraries/botbuilder-core\botbuilder\core\inspection\inspection_session.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-core\botbuilder\core\inspection\inspection_session.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 23
   syntax:
     content: 'send(activity: botbuilder.schema._models_py3.Activity) -> typing.Any'
   type: method

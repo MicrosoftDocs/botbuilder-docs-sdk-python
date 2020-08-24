@@ -10,14 +10,6 @@ items:
   - python
   module: botbuilder.adapters.slack.slack_request_body
   name: SlackRequestBody
-  source:
-    id: SlackRequestBody
-    path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_request_body.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-adapters-slack\botbuilder\adapters\slack\slack_request_body.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 8
   syntax:
     content: SlackRequestBody(**kwargs)
   type: class

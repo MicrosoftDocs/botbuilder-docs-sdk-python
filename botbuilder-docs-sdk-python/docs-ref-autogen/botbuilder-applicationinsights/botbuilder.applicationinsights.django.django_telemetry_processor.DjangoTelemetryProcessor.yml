@@ -17,14 +17,6 @@ items:
   - python
   module: botbuilder.applicationinsights.django.django_telemetry_processor
   name: DjangoTelemetryProcessor
-  source:
-    id: DjangoTelemetryProcessor
-    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\django_telemetry_processor.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\django_telemetry_processor.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 10
   summary: ''
   syntax: {}
   type: class
@@ -36,14 +28,6 @@ items:
   module: botbuilder.applicationinsights.django.django_telemetry_processor
   name: can_process() -> bool
   namewithoutparameters: can_process
-  source:
-    id: can_process
-    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\django_telemetry_processor.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\django_telemetry_processor.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 11
   syntax:
     content: can_process() -> bool
   type: method
@@ -55,14 +39,6 @@ items:
   module: botbuilder.applicationinsights.django.django_telemetry_processor
   name: detect_django() -> bool
   namewithoutparameters: detect_django
-  source:
-    id: detect_django
-    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\django_telemetry_processor.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\django_telemetry_processor.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 20
   summary: Detects if running in django.
   syntax:
     content: detect_django() -> bool
@@ -75,14 +51,6 @@ items:
   module: botbuilder.applicationinsights.django.django_telemetry_processor
   name: get_request_body() -> str
   namewithoutparameters: get_request_body
-  source:
-    id: get_request_body
-    path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\django_telemetry_processor.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-applicationinsights\botbuilder\applicationinsights\django\django_telemetry_processor.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 14
   syntax:
     content: get_request_body() -> str
   type: method

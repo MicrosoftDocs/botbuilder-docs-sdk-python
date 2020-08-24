@@ -12,14 +12,6 @@ items:
   - python
   module: botbuilder.schema.teams
   name: MessageActionsPayloadMention
-  source:
-    id: MessageActionsPayloadMention
-    path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\teams\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 430
   summary: Represents the entity that was mentioned in the message.
   syntax:
     content: 'MessageActionsPayloadMention(*, id: int = None, mention_text: str =

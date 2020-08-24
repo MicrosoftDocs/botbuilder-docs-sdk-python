@@ -15,14 +15,6 @@ items:
   - python
   module: botbuilder.dialogs.choices
   name: Channel
-  source:
-    id: Channel
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\channel.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\channel.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 8
   summary: Methods for determining channel-specific functionality.
   syntax: {}
   type: class
@@ -35,14 +27,6 @@ items:
   name: 'get_channel_id(turn_context: botbuilder.core.turn_context.TurnContext) ->
     str'
   namewithoutparameters: get_channel_id
-  source:
-    id: get_channel_id
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\channel.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\channel.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 103
   summary: Get the Channel Id from the current Activity on the Turn Context.
   syntax:
     content: 'get_channel_id(turn_context: botbuilder.core.turn_context.TurnContext)
@@ -66,14 +50,6 @@ items:
   module: botbuilder.dialogs.choices
   name: 'has_message_feed(channel_id: str) -> bool'
   namewithoutparameters: has_message_feed
-  source:
-    id: has_message_feed
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\channel.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\channel.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 75
   summary: Determine if a Channel has a Message Feed.
   syntax:
     content: 'has_message_feed(channel_id: str) -> bool'
@@ -96,14 +72,6 @@ items:
   module: botbuilder.dialogs.choices
   name: 'max_action_title_length(channel_id: str) -> int'
   namewithoutparameters: max_action_title_length
-  source:
-    id: max_action_title_length
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\channel.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\channel.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 88
   summary: Maximum length allowed for Action Titles.
   syntax:
     content: 'max_action_title_length(channel_id: str) -> int'
@@ -127,14 +95,6 @@ items:
   module: botbuilder.dialogs.choices
   name: 'supports_card_actions(channel_id: str, button_cnt: int = 100) -> bool'
   namewithoutparameters: supports_card_actions
-  source:
-    id: supports_card_actions
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\channel.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\channel.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 45
   summary: Determine if a number of Card Actions are supported by a Channel.
   syntax:
     content: 'supports_card_actions(channel_id: str, button_cnt: int = 100) -> bool'
@@ -163,14 +123,6 @@ items:
   module: botbuilder.dialogs.choices
   name: 'supports_suggested_actions(channel_id: str, button_cnt: int = 100) -> bool'
   namewithoutparameters: supports_suggested_actions
-  source:
-    id: supports_suggested_actions
-    path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\channel.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-dialogs\botbuilder\dialogs\choices\channel.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 13
   summary: Determine if a number of Suggested Actions are supported by a Channel.
   syntax:
     content: 'supports_suggested_actions(channel_id: str, button_cnt: int = 100) ->

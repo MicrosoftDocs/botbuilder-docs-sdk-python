@@ -12,14 +12,6 @@ items:
   - python
   module: botbuilder.schema
   name: MessageReaction
-  source:
-    id: MessageReaction
-    path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-    remote:
-      branch: master
-      path: ./libraries/botbuilder-schema\botbuilder\schema\_models_py3.py
-      repo: https://github.com/microsoft/botbuilder-python
-    startLine: 1818
   summary: Message reaction object.
   syntax:
     content: MessageReaction(*, type=None, **kwargs) -> None
