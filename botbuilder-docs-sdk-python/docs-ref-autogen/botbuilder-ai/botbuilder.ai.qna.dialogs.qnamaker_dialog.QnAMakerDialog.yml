@@ -1,234 +1,61 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.begin_dialog
-  - botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_CARD_NO_MATCH_RESPONSE
-  - botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_CARD_NO_MATCH_TEXT
-  - botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_CARD_TITLE
-  - botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_NO_ANSWER
-  - botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_THRESHOLD
-  - botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_TOP_N
-  - botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.KEY_OPTIONS
-  - botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.KEY_PREVIOUS_QNA_ID
-  - botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.KEY_QNA_CONTEXT_DATA
-  - botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.PROPERTY_CURRENT_QUERY
-  - botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.PROPERTY_QNA_DATA
-  class: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - inheritance:
-        - type: builtins.object
-        type: abc.ABC
-      type: botbuilder.dialogs.dialog.Dialog
-    type: botbuilder.dialogs.waterfall_dialog.WaterfallDialog
-  langs:
-  - python
-  module: botbuilder.ai.qna.dialogs.qnamaker_dialog
-  name: QnAMakerDialog
-  remarks: 'An instance of this class targets a specific QnA Maker knowledge base.
+### YamlMime:PythonClass
+uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
+name: QnAMakerDialog
+fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
+module: botbuilder.ai.qna.dialogs.qnamaker_dialog
+inheritances:
+- botbuilder.dialogs.waterfall_dialog.WaterfallDialog
+summary: A dialog that supports multi-step and adaptive-learning QnA Maker services.
+remarks: 'An instance of this class targets a specific QnA Maker knowledge base.
 
-    It supports knowledge bases that include follow-up prompt and active learning
-    features.
+  It supports knowledge bases that include follow-up prompt and active learning features.
 
-    '
-  summary: A dialog that supports multi-step and adaptive-learning QnA Maker services.
-  syntax: {}
-  type: class
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-- class: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.begin_dialog
-  langs:
-  - python
-  module: botbuilder.ai.qna.dialogs.qnamaker_dialog
-  name: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
-  namewithoutparameters: begin_dialog
+  '
+methods:
+- uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.begin_dialog
+  name: begin_dialog
   summary: Called when the dialog is started and pushed onto the dialog stack.
-  syntax:
-    content: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-      options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
-    parameters:
-    - description: The :class:'botbuilder.dialogs.DialogContext' for the current turn
-        of conversation.
-      id: dialog_context
-      isRequired: true
-    - description: Optional, initial information to pass to the dialog.
-      id: options
-      isRequired: true
-  type: method
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.begin_dialog
-- class: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_CARD_NO_MATCH_RESPONSE
-  langs:
-  - python
-  module: botbuilder.ai.qna.dialogs.qnamaker_dialog
-  name: DEFAULT_CARD_NO_MATCH_RESPONSE
-  syntax:
-    content: DEFAULT_CARD_NO_MATCH_RESPONSE = 'Thanks for the feedback.'
-  type: attribute
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_CARD_NO_MATCH_RESPONSE
-- class: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_CARD_NO_MATCH_TEXT
-  langs:
-  - python
-  module: botbuilder.ai.qna.dialogs.qnamaker_dialog
-  name: DEFAULT_CARD_NO_MATCH_TEXT
-  syntax:
-    content: DEFAULT_CARD_NO_MATCH_TEXT = 'None of the above.'
-  type: attribute
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_CARD_NO_MATCH_TEXT
-- class: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_CARD_TITLE
-  langs:
-  - python
-  module: botbuilder.ai.qna.dialogs.qnamaker_dialog
-  name: DEFAULT_CARD_TITLE
-  syntax:
-    content: DEFAULT_CARD_TITLE = 'Did you mean:'
-  type: attribute
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_CARD_TITLE
-- class: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_NO_ANSWER
-  langs:
-  - python
-  module: botbuilder.ai.qna.dialogs.qnamaker_dialog
-  name: DEFAULT_NO_ANSWER
-  syntax:
-    content: DEFAULT_NO_ANSWER = 'No QnAMaker answers found.'
-  type: attribute
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_NO_ANSWER
-- class: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_THRESHOLD
-  langs:
-  - python
-  module: botbuilder.ai.qna.dialogs.qnamaker_dialog
-  name: DEFAULT_THRESHOLD
-  syntax:
-    content: DEFAULT_THRESHOLD = 0.3
-  type: attribute
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_THRESHOLD
-- class: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_TOP_N
-  langs:
-  - python
-  module: botbuilder.ai.qna.dialogs.qnamaker_dialog
-  name: DEFAULT_TOP_N
-  syntax:
-    content: DEFAULT_TOP_N = 3
-  type: attribute
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_TOP_N
-- class: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.KEY_OPTIONS
-  langs:
-  - python
-  module: botbuilder.ai.qna.dialogs.qnamaker_dialog
-  name: KEY_OPTIONS
-  syntax:
-    content: KEY_OPTIONS = 'options'
-  type: attribute
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.KEY_OPTIONS
-- class: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.KEY_PREVIOUS_QNA_ID
-  langs:
-  - python
-  module: botbuilder.ai.qna.dialogs.qnamaker_dialog
-  name: KEY_PREVIOUS_QNA_ID
-  syntax:
-    content: KEY_PREVIOUS_QNA_ID = 'prevQnAId'
-  type: attribute
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.KEY_PREVIOUS_QNA_ID
-- class: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.KEY_QNA_CONTEXT_DATA
-  langs:
-  - python
-  module: botbuilder.ai.qna.dialogs.qnamaker_dialog
-  name: KEY_QNA_CONTEXT_DATA
-  syntax:
-    content: KEY_QNA_CONTEXT_DATA = 'qnaContextData'
-  type: attribute
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.KEY_QNA_CONTEXT_DATA
-- class: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.PROPERTY_CURRENT_QUERY
-  langs:
-  - python
-  module: botbuilder.ai.qna.dialogs.qnamaker_dialog
-  name: PROPERTY_CURRENT_QUERY
-  syntax:
-    content: PROPERTY_CURRENT_QUERY = 'currentQuery'
-  type: attribute
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.PROPERTY_CURRENT_QUERY
-- class: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.PROPERTY_QNA_DATA
-  langs:
-  - python
-  module: botbuilder.ai.qna.dialogs.qnamaker_dialog
-  name: PROPERTY_QNA_DATA
-  syntax:
-    content: PROPERTY_QNA_DATA = 'qnaData'
-  type: attribute
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.PROPERTY_QNA_DATA
-references:
-- fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.begin_dialog
-  isExternal: false
-  name: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+  signature: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
-  parent: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.begin_dialog
-- fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_CARD_NO_MATCH_RESPONSE
-  isExternal: false
+  parameters:
+  - name: dialog_context
+    description: The :class:'botbuilder.dialogs.DialogContext' for the current turn
+      of conversation.
+    isRequired: true
+  - name: options
+    description: Optional, initial information to pass to the dialog.
+    isRequired: true
+attributes:
+- uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_CARD_NO_MATCH_RESPONSE
   name: DEFAULT_CARD_NO_MATCH_RESPONSE
-  parent: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_CARD_NO_MATCH_RESPONSE
-- fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_CARD_NO_MATCH_TEXT
-  isExternal: false
+  signature: DEFAULT_CARD_NO_MATCH_RESPONSE = 'Thanks for the feedback.'
+- uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_CARD_NO_MATCH_TEXT
   name: DEFAULT_CARD_NO_MATCH_TEXT
-  parent: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_CARD_NO_MATCH_TEXT
-- fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_CARD_TITLE
-  isExternal: false
+  signature: DEFAULT_CARD_NO_MATCH_TEXT = 'None of the above.'
+- uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_CARD_TITLE
   name: DEFAULT_CARD_TITLE
-  parent: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_CARD_TITLE
-- fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_NO_ANSWER
-  isExternal: false
+  signature: DEFAULT_CARD_TITLE = 'Did you mean:'
+- uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_NO_ANSWER
   name: DEFAULT_NO_ANSWER
-  parent: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_NO_ANSWER
-- fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_THRESHOLD
-  isExternal: false
+  signature: DEFAULT_NO_ANSWER = 'No QnAMaker answers found.'
+- uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_THRESHOLD
   name: DEFAULT_THRESHOLD
-  parent: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_THRESHOLD
-- fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_TOP_N
-  isExternal: false
+  signature: DEFAULT_THRESHOLD = 0.3
+- uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_TOP_N
   name: DEFAULT_TOP_N
-  parent: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_TOP_N
-- fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.KEY_OPTIONS
-  isExternal: false
+  signature: DEFAULT_TOP_N = 3
+- uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.KEY_OPTIONS
   name: KEY_OPTIONS
-  parent: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.KEY_OPTIONS
-- fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.KEY_PREVIOUS_QNA_ID
-  isExternal: false
+  signature: KEY_OPTIONS = 'options'
+- uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.KEY_PREVIOUS_QNA_ID
   name: KEY_PREVIOUS_QNA_ID
-  parent: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.KEY_PREVIOUS_QNA_ID
-- fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.KEY_QNA_CONTEXT_DATA
-  isExternal: false
+  signature: KEY_PREVIOUS_QNA_ID = 'prevQnAId'
+- uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.KEY_QNA_CONTEXT_DATA
   name: KEY_QNA_CONTEXT_DATA
-  parent: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.KEY_QNA_CONTEXT_DATA
-- fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.PROPERTY_CURRENT_QUERY
-  isExternal: false
+  signature: KEY_QNA_CONTEXT_DATA = 'qnaContextData'
+- uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.PROPERTY_CURRENT_QUERY
   name: PROPERTY_CURRENT_QUERY
-  parent: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.PROPERTY_CURRENT_QUERY
-- fullName: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.PROPERTY_QNA_DATA
-  isExternal: false
+  signature: PROPERTY_CURRENT_QUERY = 'currentQuery'
+- uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.PROPERTY_QNA_DATA
   name: PROPERTY_QNA_DATA
-  parent: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-  uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.PROPERTY_QNA_DATA
+  signature: PROPERTY_QNA_DATA = 'qnaData'

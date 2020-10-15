@@ -1,21 +1,9 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botframework.connector.async_mixin.async_mixin.StreamDownloadGenerator
-  fullName: botframework.connector.async_mixin.async_mixin.StreamDownloadGenerator
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: collections.abc.AsyncIterable
-    type: collections.abc.AsyncIterator
-  langs:
-  - python
-  module: botframework.connector.async_mixin.async_mixin
-  name: StreamDownloadGenerator
-  syntax:
-    content: StreamDownloadGenerator(response, user_callback, block)
-  type: class
-  uid: botframework.connector.async_mixin.async_mixin.StreamDownloadGenerator
-references: []
+### YamlMime:PythonClass
+uid: botframework.connector.async_mixin.async_mixin.StreamDownloadGenerator
+name: StreamDownloadGenerator
+fullName: botframework.connector.async_mixin.async_mixin.StreamDownloadGenerator
+module: botframework.connector.async_mixin.async_mixin
+inheritances:
+- collections.abc.AsyncIterator
+constructor:
+  syntax: StreamDownloadGenerator(response, user_callback, block)

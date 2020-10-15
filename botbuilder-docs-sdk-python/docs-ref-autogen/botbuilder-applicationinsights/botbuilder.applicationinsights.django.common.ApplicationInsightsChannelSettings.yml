@@ -1,68 +1,19 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings.endpoint
-  - botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings.send_interval
-  - botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings.send_time
-  class: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings
-  fullName: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: builtins.tuple
-  langs:
-  - python
-  module: botbuilder.applicationinsights.django.common
-  name: ApplicationInsightsChannelSettings
-  summary: ''
-  syntax:
-    content: ApplicationInsightsChannelSettings(send_interval, send_time, endpoint)
-  type: class
-  uid: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings
-- class: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings
-  fullName: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings.endpoint
-  langs:
-  - python
-  module: botbuilder.applicationinsights.django.common
+### YamlMime:PythonClass
+uid: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings
+name: ApplicationInsightsChannelSettings
+fullName: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings
+module: botbuilder.applicationinsights.django.common
+inheritances:
+- builtins.tuple
+constructor:
+  syntax: ApplicationInsightsChannelSettings(send_interval, send_time, endpoint)
+attributes:
+- uid: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings.endpoint
   name: endpoint
   summary: Alias for field number 2
-  syntax: {}
-  type: attribute
-  uid: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings.endpoint
-- class: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings
-  fullName: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings.send_interval
-  langs:
-  - python
-  module: botbuilder.applicationinsights.django.common
+- uid: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings.send_interval
   name: send_interval
   summary: Alias for field number 0
-  syntax: {}
-  type: attribute
-  uid: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings.send_interval
-- class: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings
-  fullName: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings.send_time
-  langs:
-  - python
-  module: botbuilder.applicationinsights.django.common
+- uid: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings.send_time
   name: send_time
   summary: Alias for field number 1
-  syntax: {}
-  type: attribute
-  uid: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings.send_time
-references:
-- fullName: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings.endpoint
-  isExternal: false
-  name: endpoint
-  parent: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings
-  uid: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings.endpoint
-- fullName: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings.send_interval
-  isExternal: false
-  name: send_interval
-  parent: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings
-  uid: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings.send_interval
-- fullName: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings.send_time
-  isExternal: false
-  name: send_time
-  parent: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings
-  uid: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings.send_time

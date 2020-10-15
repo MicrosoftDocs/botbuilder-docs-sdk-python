@@ -1,34 +1,23 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.CardImage
-  fullName: botbuilder.schema.CardImage
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema
-  name: CardImage
-  summary: An image on a card.
-  syntax:
-    content: 'CardImage(*, url: str = None, alt: str = None, tap=None, **kwargs) ->
-      None'
-    parameters:
-    - description: URL thumbnail image for major content property
-      id: url
-      type:
-      - str
-    - description: Image description intended for screen readers
-      id: alt
-      type:
-      - str
-    - description: Action assigned to specific Attachment
-      id: tap
-      type:
-      - botframework.connector.models.CardAction
-  type: class
-  uid: botbuilder.schema.CardImage
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.schema.CardImage
+name: CardImage
+fullName: botbuilder.schema.CardImage
+module: botbuilder.schema
+inheritances:
+- msrest.serialization.Model
+summary: An image on a card.
+constructor:
+  syntax: 'CardImage(*, url: str = None, alt: str = None, tap=None, **kwargs) -> None'
+  parameters:
+  - name: url
+    description: URL thumbnail image for major content property
+    types:
+    - <xref:str>
+  - name: alt
+    description: Image description intended for screen readers
+    types:
+    - <xref:str>
+  - name: tap
+    description: Action assigned to specific Attachment
+    types:
+    - <xref:botframework.connector.models.CardAction>

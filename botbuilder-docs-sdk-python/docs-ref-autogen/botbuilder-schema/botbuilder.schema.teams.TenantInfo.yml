@@ -1,25 +1,15 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.TenantInfo
-  fullName: botbuilder.schema.teams.TenantInfo
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: TenantInfo
-  summary: Describes a tenant.
-  syntax:
-    content: 'TenantInfo(*, id: str = None, **kwargs) -> None'
-    parameters:
-    - description: Unique identifier representing a tenant
-      id: id
-      type:
-      - str
-  type: class
-  uid: botbuilder.schema.teams.TenantInfo
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.TenantInfo
+name: TenantInfo
+fullName: botbuilder.schema.teams.TenantInfo
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: Describes a tenant.
+constructor:
+  syntax: 'TenantInfo(*, id: str = None, **kwargs) -> None'
+  parameters:
+  - name: id
+    description: Unique identifier representing a tenant
+    types:
+    - <xref:str>

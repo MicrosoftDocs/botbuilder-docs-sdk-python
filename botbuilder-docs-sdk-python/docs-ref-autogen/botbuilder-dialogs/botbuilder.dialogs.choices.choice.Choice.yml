@@ -1,18 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.dialogs.choices.choice.Choice
-  fullName: botbuilder.dialogs.choices.choice.Choice
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.dialogs.choices.choice
-  name: Choice
-  syntax:
-    content: 'Choice(value: str = None, action: botbuilder.schema._models_py3.CardAction
-      = None, synonyms: typing.List[str] = None)'
-  type: class
-  uid: botbuilder.dialogs.choices.choice.Choice
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.choices.choice.Choice
+name: Choice
+fullName: botbuilder.dialogs.choices.choice.Choice
+module: botbuilder.dialogs.choices.choice
+inheritances:
+- builtins.object
+constructor:
+  syntax: 'Choice(value: str = None, action: botbuilder.schema._models_py3.CardAction
+    = None, synonyms: typing.List[str] = None)'

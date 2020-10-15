@@ -1,29 +1,17 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.TaskModuleMessageResponse
-  fullName: botbuilder.schema.teams.TaskModuleMessageResponse
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: msrest.serialization.Model
-    type: botbuilder.schema.teams._models_py3.TaskModuleResponseBase
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: TaskModuleMessageResponse
-  summary: Task Module response with message action.
-  syntax:
-    content: 'TaskModuleMessageResponse(*, value: str = None, **kwargs) -> None'
-    parameters:
-    - description: 'Teams will display the value of value in a popup message
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.TaskModuleMessageResponse
+name: TaskModuleMessageResponse
+fullName: botbuilder.schema.teams.TaskModuleMessageResponse
+module: botbuilder.schema.teams
+inheritances:
+- botbuilder.schema.teams._models_py3.TaskModuleResponseBase
+summary: Task Module response with message action.
+constructor:
+  syntax: 'TaskModuleMessageResponse(*, value: str = None, **kwargs) -> None'
+  parameters:
+  - name: value
+    description: 'Teams will display the value of value in a popup message
 
-        box.'
-      id: value
-      type:
-      - str
-  type: class
-  uid: botbuilder.schema.teams.TaskModuleMessageResponse
-references: []
+      box.'
+    types:
+    - <xref:str>

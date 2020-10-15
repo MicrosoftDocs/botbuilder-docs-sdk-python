@@ -1,30 +1,17 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.adapters.slack.SlackAdapterOptions.get_bot_user_by_team
-  - botbuilder.adapters.slack.SlackAdapterOptions.get_token_for_team
-  class: botbuilder.adapters.slack.SlackAdapterOptions
-  fullName: botbuilder.adapters.slack.SlackAdapterOptions
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.adapters.slack
-  name: SlackAdapterOptions
-  summary: Class for defining implementation of the SlackAdapter Options.
-  syntax:
-    content: 'SlackAdapterOptions(slack_verification_token: str, slack_bot_token:
-      str, slack_client_signing_secret: str)'
-  type: class
-  uid: botbuilder.adapters.slack.SlackAdapterOptions
-- class: botbuilder.adapters.slack.SlackAdapterOptions
-  fullName: botbuilder.adapters.slack.SlackAdapterOptions.get_bot_user_by_team
-  langs:
-  - python
-  module: botbuilder.adapters.slack
-  name: 'get_bot_user_by_team(team_id: str) -> str'
-  namewithoutparameters: get_bot_user_by_team
+### YamlMime:PythonClass
+uid: botbuilder.adapters.slack.SlackAdapterOptions
+name: SlackAdapterOptions
+fullName: botbuilder.adapters.slack.SlackAdapterOptions
+module: botbuilder.adapters.slack
+inheritances:
+- builtins.object
+summary: Class for defining implementation of the SlackAdapter Options.
+constructor:
+  syntax: 'SlackAdapterOptions(slack_verification_token: str, slack_bot_token: str,
+    slack_client_signing_secret: str)'
+methods:
+- uid: botbuilder.adapters.slack.SlackAdapterOptions.get_bot_user_by_team
+  name: get_bot_user_by_team
   summary: 'A method that receives a Slack team id and returns the bot user id associated
     with that team. Required for
 
@@ -33,17 +20,9 @@ items:
     :param team_id:Team ID.
 
     :return:The bot user id associated with that team.'
-  syntax:
-    content: 'get_bot_user_by_team(team_id: str) -> str'
-  type: method
-  uid: botbuilder.adapters.slack.SlackAdapterOptions.get_bot_user_by_team
-- class: botbuilder.adapters.slack.SlackAdapterOptions
-  fullName: botbuilder.adapters.slack.SlackAdapterOptions.get_token_for_team
-  langs:
-  - python
-  module: botbuilder.adapters.slack
-  name: 'get_token_for_team(team_id: str) -> str'
-  namewithoutparameters: get_token_for_team
+  signature: 'get_bot_user_by_team(team_id: str) -> str'
+- uid: botbuilder.adapters.slack.SlackAdapterOptions.get_token_for_team
+  name: get_token_for_team
   summary: 'A method that receives a Slack team id and returns the bot token associated
     with that team. Required for
 
@@ -52,18 +31,4 @@ items:
     :param team_id:Team ID.
 
     :return:The bot token associated with the team.'
-  syntax:
-    content: 'get_token_for_team(team_id: str) -> str'
-  type: method
-  uid: botbuilder.adapters.slack.SlackAdapterOptions.get_token_for_team
-references:
-- fullName: botbuilder.adapters.slack.SlackAdapterOptions.get_bot_user_by_team
-  isExternal: false
-  name: 'get_bot_user_by_team(team_id: str) -> str'
-  parent: botbuilder.adapters.slack.SlackAdapterOptions
-  uid: botbuilder.adapters.slack.SlackAdapterOptions.get_bot_user_by_team
-- fullName: botbuilder.adapters.slack.SlackAdapterOptions.get_token_for_team
-  isExternal: false
-  name: 'get_token_for_team(team_id: str) -> str'
-  parent: botbuilder.adapters.slack.SlackAdapterOptions
-  uid: botbuilder.adapters.slack.SlackAdapterOptions.get_token_for_team
+  signature: 'get_token_for_team(team_id: str) -> str'

@@ -1,129 +1,29 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_ACTION_CARD
-  - botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_DATE_INPUT
-  - botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_HTTP_POST
-  - botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_MULTICHOICE_INPUT
-  - botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_OPEN_URI
-  - botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_TEXT_INPUT
-  - botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_VIEWACTION
-  class: botbuilder.schema.teams.additional_properties.Type
-  fullName: botbuilder.schema.teams.additional_properties.Type
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.schema.teams.additional_properties
-  name: Type
-  summary: ''
-  syntax: {}
-  type: class
-  uid: botbuilder.schema.teams.additional_properties.Type
-- class: botbuilder.schema.teams.additional_properties.Type
-  fullName: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_ACTION_CARD
-  langs:
-  - python
-  module: botbuilder.schema.teams.additional_properties
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.additional_properties.Type
+name: Type
+fullName: botbuilder.schema.teams.additional_properties.Type
+module: botbuilder.schema.teams.additional_properties
+inheritances:
+- builtins.object
+attributes:
+- uid: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_ACTION_CARD
   name: O365_CONNECTOR_CARD_ACTION_CARD
-  syntax:
-    content: O365_CONNECTOR_CARD_ACTION_CARD = 'ActionCard'
-  type: attribute
-  uid: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_ACTION_CARD
-- class: botbuilder.schema.teams.additional_properties.Type
-  fullName: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_DATE_INPUT
-  langs:
-  - python
-  module: botbuilder.schema.teams.additional_properties
+  signature: O365_CONNECTOR_CARD_ACTION_CARD = 'ActionCard'
+- uid: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_DATE_INPUT
   name: O365_CONNECTOR_CARD_DATE_INPUT
-  syntax:
-    content: O365_CONNECTOR_CARD_DATE_INPUT = 'DateInput'
-  type: attribute
-  uid: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_DATE_INPUT
-- class: botbuilder.schema.teams.additional_properties.Type
-  fullName: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_HTTP_POST
-  langs:
-  - python
-  module: botbuilder.schema.teams.additional_properties
+  signature: O365_CONNECTOR_CARD_DATE_INPUT = 'DateInput'
+- uid: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_HTTP_POST
   name: O365_CONNECTOR_CARD_HTTP_POST
-  syntax:
-    content: O365_CONNECTOR_CARD_HTTP_POST = 'HttpPOST'
-  type: attribute
-  uid: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_HTTP_POST
-- class: botbuilder.schema.teams.additional_properties.Type
-  fullName: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_MULTICHOICE_INPUT
-  langs:
-  - python
-  module: botbuilder.schema.teams.additional_properties
+  signature: O365_CONNECTOR_CARD_HTTP_POST = 'HttpPOST'
+- uid: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_MULTICHOICE_INPUT
   name: O365_CONNECTOR_CARD_MULTICHOICE_INPUT
-  syntax:
-    content: O365_CONNECTOR_CARD_MULTICHOICE_INPUT = 'MultichoiceInput'
-  type: attribute
-  uid: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_MULTICHOICE_INPUT
-- class: botbuilder.schema.teams.additional_properties.Type
-  fullName: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_OPEN_URI
-  langs:
-  - python
-  module: botbuilder.schema.teams.additional_properties
+  signature: O365_CONNECTOR_CARD_MULTICHOICE_INPUT = 'MultichoiceInput'
+- uid: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_OPEN_URI
   name: O365_CONNECTOR_CARD_OPEN_URI
-  syntax:
-    content: O365_CONNECTOR_CARD_OPEN_URI = 'OpenUri'
-  type: attribute
-  uid: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_OPEN_URI
-- class: botbuilder.schema.teams.additional_properties.Type
-  fullName: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_TEXT_INPUT
-  langs:
-  - python
-  module: botbuilder.schema.teams.additional_properties
+  signature: O365_CONNECTOR_CARD_OPEN_URI = 'OpenUri'
+- uid: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_TEXT_INPUT
   name: O365_CONNECTOR_CARD_TEXT_INPUT
-  syntax:
-    content: O365_CONNECTOR_CARD_TEXT_INPUT = 'TextInput'
-  type: attribute
-  uid: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_TEXT_INPUT
-- class: botbuilder.schema.teams.additional_properties.Type
-  fullName: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_VIEWACTION
-  langs:
-  - python
-  module: botbuilder.schema.teams.additional_properties
+  signature: O365_CONNECTOR_CARD_TEXT_INPUT = 'TextInput'
+- uid: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_VIEWACTION
   name: O365_CONNECTOR_CARD_VIEWACTION
-  syntax:
-    content: O365_CONNECTOR_CARD_VIEWACTION = 'ViewAction'
-  type: attribute
-  uid: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_VIEWACTION
-references:
-- fullName: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_ACTION_CARD
-  isExternal: false
-  name: O365_CONNECTOR_CARD_ACTION_CARD
-  parent: botbuilder.schema.teams.additional_properties.Type
-  uid: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_ACTION_CARD
-- fullName: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_DATE_INPUT
-  isExternal: false
-  name: O365_CONNECTOR_CARD_DATE_INPUT
-  parent: botbuilder.schema.teams.additional_properties.Type
-  uid: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_DATE_INPUT
-- fullName: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_HTTP_POST
-  isExternal: false
-  name: O365_CONNECTOR_CARD_HTTP_POST
-  parent: botbuilder.schema.teams.additional_properties.Type
-  uid: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_HTTP_POST
-- fullName: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_MULTICHOICE_INPUT
-  isExternal: false
-  name: O365_CONNECTOR_CARD_MULTICHOICE_INPUT
-  parent: botbuilder.schema.teams.additional_properties.Type
-  uid: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_MULTICHOICE_INPUT
-- fullName: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_OPEN_URI
-  isExternal: false
-  name: O365_CONNECTOR_CARD_OPEN_URI
-  parent: botbuilder.schema.teams.additional_properties.Type
-  uid: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_OPEN_URI
-- fullName: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_TEXT_INPUT
-  isExternal: false
-  name: O365_CONNECTOR_CARD_TEXT_INPUT
-  parent: botbuilder.schema.teams.additional_properties.Type
-  uid: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_TEXT_INPUT
-- fullName: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_VIEWACTION
-  isExternal: false
-  name: O365_CONNECTOR_CARD_VIEWACTION
-  parent: botbuilder.schema.teams.additional_properties.Type
-  uid: botbuilder.schema.teams.additional_properties.Type.O365_CONNECTOR_CARD_VIEWACTION
+  signature: O365_CONNECTOR_CARD_VIEWACTION = 'ViewAction'

@@ -1,21 +1,13 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.dialogs.skills.SkillDialogOptions
-  fullName: botbuilder.dialogs.skills.SkillDialogOptions
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.dialogs.skills
-  name: SkillDialogOptions
-  syntax:
-    content: 'SkillDialogOptions(bot_id: str = None, skill_client: botbuilder.core.skills.bot_framework_client.BotFrameworkClient
-      = None, skill_host_endpoint: str = None, skill: botbuilder.core.skills.bot_framework_skill.BotFrameworkSkill
-      = None, conversation_id_factory: botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase
-      = None, conversation_state: botbuilder.core.conversation_state.ConversationState
-      = None, connection_name: str = None)'
-  type: class
-  uid: botbuilder.dialogs.skills.SkillDialogOptions
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.skills.SkillDialogOptions
+name: SkillDialogOptions
+fullName: botbuilder.dialogs.skills.SkillDialogOptions
+module: botbuilder.dialogs.skills
+inheritances:
+- builtins.object
+constructor:
+  syntax: 'SkillDialogOptions(bot_id: str = None, skill_client: botbuilder.core.skills.bot_framework_client.BotFrameworkClient
+    = None, skill_host_endpoint: str = None, skill: botbuilder.core.skills.bot_framework_skill.BotFrameworkSkill
+    = None, conversation_id_factory: botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase
+    = None, conversation_state: botbuilder.core.conversation_state.ConversationState
+    = None, connection_name: str = None)'

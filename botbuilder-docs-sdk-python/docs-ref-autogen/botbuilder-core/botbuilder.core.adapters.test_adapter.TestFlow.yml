@@ -1,49 +1,23 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.adapters.test_adapter.TestFlow.assert_no_reply
-  - botbuilder.core.adapters.test_adapter.TestFlow.assert_reply
-  - botbuilder.core.adapters.test_adapter.TestFlow.send
-  - botbuilder.core.adapters.test_adapter.TestFlow.test
-  class: botbuilder.core.adapters.test_adapter.TestFlow
-  fullName: botbuilder.core.adapters.test_adapter.TestFlow
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.core.adapters.test_adapter
-  name: TestFlow
-  summary: ''
-  syntax:
-    content: 'TestFlow(previous: typing.Callable, adapter: botbuilder.core.adapters.test_adapter.TestAdapter)'
-  type: class
-  uid: botbuilder.core.adapters.test_adapter.TestFlow
-- class: botbuilder.core.adapters.test_adapter.TestFlow
-  fullName: botbuilder.core.adapters.test_adapter.TestFlow.assert_no_reply
-  langs:
-  - python
-  module: botbuilder.core.adapters.test_adapter
-  name: assert_no_reply(description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
-  namewithoutparameters: assert_no_reply
+### YamlMime:PythonClass
+uid: botbuilder.core.adapters.test_adapter.TestFlow
+name: TestFlow
+fullName: botbuilder.core.adapters.test_adapter.TestFlow
+module: botbuilder.core.adapters.test_adapter
+inheritances:
+- builtins.object
+constructor:
+  syntax: 'TestFlow(previous: typing.Callable, adapter: botbuilder.core.adapters.test_adapter.TestAdapter)'
+methods:
+- uid: botbuilder.core.adapters.test_adapter.TestFlow.assert_no_reply
+  name: assert_no_reply
   summary: 'Generates an assertion if the bot responds when no response is expected.
 
     :param description:
 
     :param timeout:'
-  syntax:
-    content: assert_no_reply(description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
-  type: method
-  uid: botbuilder.core.adapters.test_adapter.TestFlow.assert_no_reply
-- class: botbuilder.core.adapters.test_adapter.TestFlow
-  fullName: botbuilder.core.adapters.test_adapter.TestFlow.assert_reply
-  langs:
-  - python
-  module: botbuilder.core.adapters.test_adapter
-  name: 'assert_reply(expected: typing.Union[str, botbuilder.schema._models_py3.Activity,
-    typing.Callable[[botbuilder.schema._models_py3.Activity, str], NoneType]], description=None,
-    timeout=None, is_substring=False) -> botbuilder.core.adapters.test_adapter.TestFlow'
-  namewithoutparameters: assert_reply
+  signature: assert_no_reply(description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
+- uid: botbuilder.core.adapters.test_adapter.TestFlow.assert_reply
+  name: assert_reply
   summary: 'Generates an assertion if the bots response doesn''t match the expected
     text/activity.
 
@@ -56,35 +30,19 @@ items:
     :param is_substring:
 
     :return:'
-  syntax:
-    content: 'assert_reply(expected: typing.Union[str, botbuilder.schema._models_py3.Activity,
-      typing.Callable[[botbuilder.schema._models_py3.Activity, str], NoneType]], description=None,
-      timeout=None, is_substring=False) -> botbuilder.core.adapters.test_adapter.TestFlow'
-  type: method
-  uid: botbuilder.core.adapters.test_adapter.TestFlow.assert_reply
-- class: botbuilder.core.adapters.test_adapter.TestFlow
-  fullName: botbuilder.core.adapters.test_adapter.TestFlow.send
-  langs:
-  - python
-  module: botbuilder.core.adapters.test_adapter
-  name: send(user_says) -> botbuilder.core.adapters.test_adapter.TestFlow
-  namewithoutparameters: send
+  signature: 'assert_reply(expected: typing.Union[str, botbuilder.schema._models_py3.Activity,
+    typing.Callable[[botbuilder.schema._models_py3.Activity, str], NoneType]], description=None,
+    timeout=None, is_substring=False) -> botbuilder.core.adapters.test_adapter.TestFlow'
+- uid: botbuilder.core.adapters.test_adapter.TestFlow.send
+  name: send
   summary: 'Sends something to the bot.
 
     :param user_says:
 
     :return:'
-  syntax:
-    content: send(user_says) -> botbuilder.core.adapters.test_adapter.TestFlow
-  type: method
-  uid: botbuilder.core.adapters.test_adapter.TestFlow.send
-- class: botbuilder.core.adapters.test_adapter.TestFlow
-  fullName: botbuilder.core.adapters.test_adapter.TestFlow.test
-  langs:
-  - python
-  module: botbuilder.core.adapters.test_adapter
-  name: test(user_says, expected, description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
-  namewithoutparameters: test
+  signature: send(user_says) -> botbuilder.core.adapters.test_adapter.TestFlow
+- uid: botbuilder.core.adapters.test_adapter.TestFlow.test
+  name: test
   summary: 'Send something to the bot and expects the bot to return with a given reply.
     This is simply a
 
@@ -102,30 +60,4 @@ items:
     :param timeout:
 
     :return:'
-  syntax:
-    content: test(user_says, expected, description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
-  type: method
-  uid: botbuilder.core.adapters.test_adapter.TestFlow.test
-references:
-- fullName: botbuilder.core.adapters.test_adapter.TestFlow.assert_no_reply
-  isExternal: false
-  name: assert_no_reply(description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
-  parent: botbuilder.core.adapters.test_adapter.TestFlow
-  uid: botbuilder.core.adapters.test_adapter.TestFlow.assert_no_reply
-- fullName: botbuilder.core.adapters.test_adapter.TestFlow.assert_reply
-  isExternal: false
-  name: 'assert_reply(expected: typing.Union[str, botbuilder.schema._models_py3.Activity,
-    typing.Callable[[botbuilder.schema._models_py3.Activity, str], NoneType]], description=None,
-    timeout=None, is_substring=False) -> botbuilder.core.adapters.test_adapter.TestFlow'
-  parent: botbuilder.core.adapters.test_adapter.TestFlow
-  uid: botbuilder.core.adapters.test_adapter.TestFlow.assert_reply
-- fullName: botbuilder.core.adapters.test_adapter.TestFlow.send
-  isExternal: false
-  name: send(user_says) -> botbuilder.core.adapters.test_adapter.TestFlow
-  parent: botbuilder.core.adapters.test_adapter.TestFlow
-  uid: botbuilder.core.adapters.test_adapter.TestFlow.send
-- fullName: botbuilder.core.adapters.test_adapter.TestFlow.test
-  isExternal: false
-  name: test(user_says, expected, description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
-  parent: botbuilder.core.adapters.test_adapter.TestFlow
-  uid: botbuilder.core.adapters.test_adapter.TestFlow.test
+  signature: test(user_says, expected, description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow

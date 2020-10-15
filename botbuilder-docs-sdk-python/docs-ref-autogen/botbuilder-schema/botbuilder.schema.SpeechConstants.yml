@@ -1,34 +1,13 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.schema.SpeechConstants.EMPTY_SPEAK_TAG
-  class: botbuilder.schema.SpeechConstants
-  fullName: botbuilder.schema.SpeechConstants
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.schema
-  name: SpeechConstants
-  summary: Defines constants that can be used in the processing of speech interactions.
-  syntax: {}
-  type: class
-  uid: botbuilder.schema.SpeechConstants
-- class: botbuilder.schema.SpeechConstants
-  fullName: botbuilder.schema.SpeechConstants.EMPTY_SPEAK_TAG
-  langs:
-  - python
-  module: botbuilder.schema
+### YamlMime:PythonClass
+uid: botbuilder.schema.SpeechConstants
+name: SpeechConstants
+fullName: botbuilder.schema.SpeechConstants
+module: botbuilder.schema
+inheritances:
+- builtins.object
+summary: Defines constants that can be used in the processing of speech interactions.
+attributes:
+- uid: botbuilder.schema.SpeechConstants.EMPTY_SPEAK_TAG
   name: EMPTY_SPEAK_TAG
-  syntax:
-    content: EMPTY_SPEAK_TAG = '<speak version="1.0" xmlns="https://www.w3.org/2001/10/synthesis"
-      xml:lang="en-US" />'
-  type: attribute
-  uid: botbuilder.schema.SpeechConstants.EMPTY_SPEAK_TAG
-references:
-- fullName: botbuilder.schema.SpeechConstants.EMPTY_SPEAK_TAG
-  isExternal: false
-  name: EMPTY_SPEAK_TAG
-  parent: botbuilder.schema.SpeechConstants
-  uid: botbuilder.schema.SpeechConstants.EMPTY_SPEAK_TAG
+  signature: EMPTY_SPEAK_TAG = '<speak version="1.0" xmlns="https://www.w3.org/2001/10/synthesis"
+    xml:lang="en-US" />'

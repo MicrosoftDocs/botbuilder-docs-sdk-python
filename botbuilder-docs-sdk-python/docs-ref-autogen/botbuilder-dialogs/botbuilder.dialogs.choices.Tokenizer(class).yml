@@ -1,27 +1,14 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.dialogs.choices.Tokenizer.default_tokenizer
-  class: botbuilder.dialogs.choices.Tokenizer
-  fullName: botbuilder.dialogs.choices.Tokenizer
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.dialogs.choices
-  name: Tokenizer
-  summary: Provides a default tokenizer implementation.
-  syntax: {}
-  type: class
-  uid: botbuilder.dialogs.choices.Tokenizer
-- class: botbuilder.dialogs.choices.Tokenizer
-  fullName: botbuilder.dialogs.choices.Tokenizer.default_tokenizer
-  langs:
-  - python
-  module: botbuilder.dialogs.choices
-  name: 'default_tokenizer(text: str, locale: str = None) -> [<class ''botbuilder.dialogs.choices.token.Token''>]'
-  namewithoutparameters: default_tokenizer
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.choices.Tokenizer
+name: Tokenizer
+fullName: botbuilder.dialogs.choices.Tokenizer
+module: botbuilder.dialogs.choices
+inheritances:
+- builtins.object
+summary: Provides a default tokenizer implementation.
+methods:
+- uid: botbuilder.dialogs.choices.Tokenizer.default_tokenizer
+  name: default_tokenizer
   summary: 'Simple tokenizer that breaks on spaces and punctuation. The only normalization
     is to lowercase.
 
@@ -32,13 +19,4 @@ items:
 
 
     locale: (Optional) Identifies the locale of the input text.'
-  syntax:
-    content: 'default_tokenizer(text: str, locale: str = None) -> [<class ''botbuilder.dialogs.choices.token.Token''>]'
-  type: method
-  uid: botbuilder.dialogs.choices.Tokenizer.default_tokenizer
-references:
-- fullName: botbuilder.dialogs.choices.Tokenizer.default_tokenizer
-  isExternal: false
-  name: 'default_tokenizer(text: str, locale: str = None) -> [<class ''botbuilder.dialogs.choices.token.Token''>]'
-  parent: botbuilder.dialogs.choices.Tokenizer
-  uid: botbuilder.dialogs.choices.Tokenizer.default_tokenizer
+  signature: 'default_tokenizer(text: str, locale: str = None) -> [<class ''botbuilder.dialogs.choices.token.Token''>]'

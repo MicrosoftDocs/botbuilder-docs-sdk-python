@@ -1,59 +1,19 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder.get_qna_prompts_card
-  - botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder.get_suggestions_card
-  class: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder
-  fullName: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.ai.qna.utils.qna_card_builder
-  name: QnACardBuilder
-  summary: Message activity card builder for QnAMaker dialogs.
-  syntax: {}
-  type: class
-  uid: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder
-- class: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder
-  fullName: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder.get_qna_prompts_card
-  langs:
-  - python
-  module: botbuilder.ai.qna.utils.qna_card_builder
-  name: 'get_qna_prompts_card(result: botbuilder.ai.qna.models.query_result.QueryResult,
-    card_no_match_text: str) -> botbuilder.schema._models_py3.Activity'
-  namewithoutparameters: get_qna_prompts_card
+### YamlMime:PythonClass
+uid: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder
+name: QnACardBuilder
+fullName: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder
+module: botbuilder.ai.qna.utils.qna_card_builder
+inheritances:
+- builtins.object
+summary: Message activity card builder for QnAMaker dialogs.
+methods:
+- uid: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder.get_qna_prompts_card
+  name: get_qna_prompts_card
   summary: Get active learning suggestions card.
-  syntax:
-    content: 'get_qna_prompts_card(result: botbuilder.ai.qna.models.query_result.QueryResult,
-      card_no_match_text: str) -> botbuilder.schema._models_py3.Activity'
-  type: method
-  uid: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder.get_qna_prompts_card
-- class: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder
-  fullName: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder.get_suggestions_card
-  langs:
-  - python
-  module: botbuilder.ai.qna.utils.qna_card_builder
-  name: 'get_suggestions_card(suggestions: [<class ''str''>], card_title: str, card_no_match:
-    str) -> botbuilder.schema._models_py3.Activity'
-  namewithoutparameters: get_suggestions_card
-  summary: Get active learning suggestions card.
-  syntax:
-    content: 'get_suggestions_card(suggestions: [<class ''str''>], card_title: str,
-      card_no_match: str) -> botbuilder.schema._models_py3.Activity'
-  type: method
-  uid: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder.get_suggestions_card
-references:
-- fullName: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder.get_qna_prompts_card
-  isExternal: false
-  name: 'get_qna_prompts_card(result: botbuilder.ai.qna.models.query_result.QueryResult,
+  signature: 'get_qna_prompts_card(result: botbuilder.ai.qna.models.query_result.QueryResult,
     card_no_match_text: str) -> botbuilder.schema._models_py3.Activity'
-  parent: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder
-  uid: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder.get_qna_prompts_card
-- fullName: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder.get_suggestions_card
-  isExternal: false
-  name: 'get_suggestions_card(suggestions: [<class ''str''>], card_title: str, card_no_match:
-    str) -> botbuilder.schema._models_py3.Activity'
-  parent: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder
-  uid: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder.get_suggestions_card
+- uid: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder.get_suggestions_card
+  name: get_suggestions_card
+  summary: Get active learning suggestions card.
+  signature: 'get_suggestions_card(suggestions: [<class ''str''>], card_title: str,
+    card_no_match: str) -> botbuilder.schema._models_py3.Activity'

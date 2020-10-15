@@ -1,41 +1,17 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.bot.Bot.on_turn
-  class: botbuilder.core.bot.Bot
-  fullName: botbuilder.core.bot.Bot
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: abc.ABC
-  langs:
-  - python
-  module: botbuilder.core.bot
-  name: Bot
-  summary: Represents a bot that can operate on incoming activities.
-  syntax: {}
-  type: class
-  uid: botbuilder.core.bot.Bot
-- class: botbuilder.core.bot.Bot
-  fullName: botbuilder.core.bot.Bot.on_turn
-  langs:
-  - python
-  module: botbuilder.core.bot
-  name: 'on_turn(context: botbuilder.core.turn_context.TurnContext)'
-  namewithoutparameters: on_turn
+### YamlMime:PythonClass
+uid: botbuilder.core.bot.Bot
+name: Bot
+fullName: botbuilder.core.bot.Bot
+module: botbuilder.core.bot
+inheritances:
+- abc.ABC
+summary: Represents a bot that can operate on incoming activities.
+methods:
+- uid: botbuilder.core.bot.Bot.on_turn
+  name: on_turn
   summary: 'When implemented in a bot, handles an incoming activity.
 
     :param context: The context object for this turn.
 
     :return:'
-  syntax:
-    content: 'on_turn(context: botbuilder.core.turn_context.TurnContext)'
-  type: method
-  uid: botbuilder.core.bot.Bot.on_turn
-references:
-- fullName: botbuilder.core.bot.Bot.on_turn
-  isExternal: false
-  name: 'on_turn(context: botbuilder.core.turn_context.TurnContext)'
-  parent: botbuilder.core.bot.Bot
-  uid: botbuilder.core.bot.Bot.on_turn
+  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext)'

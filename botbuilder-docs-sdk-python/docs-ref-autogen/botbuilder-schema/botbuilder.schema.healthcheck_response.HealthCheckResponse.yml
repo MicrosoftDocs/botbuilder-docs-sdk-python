@@ -1,20 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.healthcheck_response.HealthCheckResponse
-  fullName: botbuilder.schema.healthcheck_response.HealthCheckResponse
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema.healthcheck_response
-  name: HealthCheckResponse
-  syntax:
-    content: 'HealthCheckResponse(*, health_results: botbuilder.schema.health_results.HealthResults
-      = None, **kwargs) -> None'
-  type: class
-  uid: botbuilder.schema.healthcheck_response.HealthCheckResponse
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.schema.healthcheck_response.HealthCheckResponse
+name: HealthCheckResponse
+fullName: botbuilder.schema.healthcheck_response.HealthCheckResponse
+module: botbuilder.schema.healthcheck_response
+inheritances:
+- msrest.serialization.Model
+constructor:
+  syntax: 'HealthCheckResponse(*, health_results: botbuilder.schema.health_results.HealthResults
+    = None, **kwargs) -> None'

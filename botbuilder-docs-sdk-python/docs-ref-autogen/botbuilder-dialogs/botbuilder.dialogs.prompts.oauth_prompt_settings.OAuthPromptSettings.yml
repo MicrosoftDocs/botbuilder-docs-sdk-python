@@ -1,19 +1,11 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.dialogs.prompts.oauth_prompt_settings.OAuthPromptSettings
-  fullName: botbuilder.dialogs.prompts.oauth_prompt_settings.OAuthPromptSettings
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.dialogs.prompts.oauth_prompt_settings
-  name: OAuthPromptSettings
-  syntax:
-    content: 'OAuthPromptSettings(connection_name: str, title: str, text: str = None,
-      timeout: int = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
-      = None, end_on_invalid_message: bool = False)'
-  type: class
-  uid: botbuilder.dialogs.prompts.oauth_prompt_settings.OAuthPromptSettings
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.prompts.oauth_prompt_settings.OAuthPromptSettings
+name: OAuthPromptSettings
+fullName: botbuilder.dialogs.prompts.oauth_prompt_settings.OAuthPromptSettings
+module: botbuilder.dialogs.prompts.oauth_prompt_settings
+inheritances:
+- builtins.object
+constructor:
+  syntax: 'OAuthPromptSettings(connection_name: str, title: str, text: str = None,
+    timeout: int = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+    = None, end_on_invalid_message: bool = False)'

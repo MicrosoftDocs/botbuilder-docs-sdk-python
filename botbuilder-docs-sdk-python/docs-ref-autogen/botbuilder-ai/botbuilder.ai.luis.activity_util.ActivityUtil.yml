@@ -1,81 +1,56 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.ai.luis.activity_util.ActivityUtil.create_trace
-  class: botbuilder.ai.luis.activity_util.ActivityUtil
-  fullName: botbuilder.ai.luis.activity_util.ActivityUtil
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.ai.luis.activity_util
-  name: ActivityUtil
-  syntax: {}
-  type: class
-  uid: botbuilder.ai.luis.activity_util.ActivityUtil
-- class: botbuilder.ai.luis.activity_util.ActivityUtil
-  fullName: botbuilder.ai.luis.activity_util.ActivityUtil.create_trace
-  langs:
-  - python
-  module: botbuilder.ai.luis.activity_util
-  name: 'create_trace(turn_activity: botbuilder.schema._models_py3.Activity, name:
-    str, value: object = None, value_type: str = None, label: str = None) -> botbuilder.schema._models_py3.Activity'
-  namewithoutparameters: create_trace
+### YamlMime:PythonClass
+uid: botbuilder.ai.luis.activity_util.ActivityUtil
+name: ActivityUtil
+fullName: botbuilder.ai.luis.activity_util.ActivityUtil
+module: botbuilder.ai.luis.activity_util
+inheritances:
+- builtins.object
+methods:
+- uid: botbuilder.ai.luis.activity_util.ActivityUtil.create_trace
+  name: create_trace
   summary: Creates a trace activity based on this activity.
-  syntax:
-    content: 'create_trace(turn_activity: botbuilder.schema._models_py3.Activity,
-      name: str, value: object = None, value_type: str = None, label: str = None)
-      -> botbuilder.schema._models_py3.Activity'
-    parameters:
-    - description: ''
-      id: turn_activity
-      isRequired: true
-      type:
-      - Activity
-    - description: The value to assign to the trace activity's <see cref="Activity.name"/>
-        property.
-      id: name
-      isRequired: true
-      type:
-      - str
-    - description: 'The value to assign to the trace activity''s <see cref="Activity.value"/>
-        property., defaults
+  signature: 'create_trace(turn_activity: botbuilder.schema._models_py3.Activity,
+    name: str, value: object = None, value_type: str = None, label: str = None) ->
+    botbuilder.schema._models_py3.Activity'
+  parameters:
+  - name: turn_activity
+    isRequired: true
+    types:
+    - <xref:Activity>
+  - name: name
+    description: The value to assign to the trace activity's <see cref="Activity.name"/>
+      property.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: value
+    description: 'The value to assign to the trace activity''s <see cref="Activity.value"/>
+      property., defaults
 
-        to None'
-      id: value
-      isRequired: true
-    - description: object, optional
-      id: value
-      isRequired: true
-    - description: 'The value to assign to the trace activity''s <see cref="Activity.value_type"/>
-        property,
+      to None'
+    isRequired: true
+  - name: value
+    description: object, optional
+    isRequired: true
+  - name: value_type
+    description: 'The value to assign to the trace activity''s <see cref="Activity.value_type"/>
+      property,
 
-        defaults to None'
-      id: value_type
-      isRequired: true
-    - description: str, optional
-      id: value_type
-      isRequired: true
-    - description: 'The value to assign to the trace activity''s <see cref="Activity.label"/>
-        property, defaults
+      defaults to None'
+    isRequired: true
+  - name: value_type
+    description: str, optional
+    isRequired: true
+  - name: label
+    description: 'The value to assign to the trace activity''s <see cref="Activity.label"/>
+      property, defaults
 
-        to None'
-      id: label
-      isRequired: true
-    - description: str, optional
-      id: label
-      isRequired: true
-    return:
-      description: The created trace activity.
-      type:
-      - Activity
-  type: method
-  uid: botbuilder.ai.luis.activity_util.ActivityUtil.create_trace
-references:
-- fullName: botbuilder.ai.luis.activity_util.ActivityUtil.create_trace
-  isExternal: false
-  name: 'create_trace(turn_activity: botbuilder.schema._models_py3.Activity, name:
-    str, value: object = None, value_type: str = None, label: str = None) -> botbuilder.schema._models_py3.Activity'
-  parent: botbuilder.ai.luis.activity_util.ActivityUtil
-  uid: botbuilder.ai.luis.activity_util.ActivityUtil.create_trace
+      to None'
+    isRequired: true
+  - name: label
+    description: str, optional
+    isRequired: true
+  return:
+    description: The created trace activity.
+    types:
+    - <xref:Activity>

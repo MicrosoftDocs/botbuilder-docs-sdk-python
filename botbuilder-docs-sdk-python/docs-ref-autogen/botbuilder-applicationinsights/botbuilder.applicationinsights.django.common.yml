@@ -1,119 +1,47 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings
-  - botbuilder.applicationinsights.django.common.ApplicationInsightsSettings
-  - botbuilder.applicationinsights.django.common.create_client
-  - botbuilder.applicationinsights.django.common.dummy_client
-  - botbuilder.applicationinsights.django.common.get_telemetry_client_with_processor
-  - botbuilder.applicationinsights.django.common.load_settings
-  fullName: botbuilder.applicationinsights.django.common
-  langs:
-  - python
-  module: botbuilder.applicationinsights.django.common
-  name: common
-  summary: Common utilities for Django middleware.
-  type: module
-  uid: botbuilder.applicationinsights.django.common
-- fullName: botbuilder.applicationinsights.django.common.create_client
-  langs:
-  - python
-  module: botbuilder.applicationinsights.django.common
-  name: 'create_client(aisettings=None, telemetry_processor: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
+### YamlMime:PythonModule
+uid: botbuilder.applicationinsights.django.common
+name: common
+fullName: botbuilder.applicationinsights.django.common
+summary: Common utilities for Django middleware.
+functions:
+- uid: botbuilder.applicationinsights.django.common.create_client
+  name: create_client
+  signature: 'create_client(aisettings=None, telemetry_processor: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
     = None)'
-  syntax:
-    content: 'create_client(aisettings=None, telemetry_processor: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
-      = None)'
-  type: function
-  uid: botbuilder.applicationinsights.django.common.create_client
-- fullName: botbuilder.applicationinsights.django.common.dummy_client
-  langs:
-  - python
-  module: botbuilder.applicationinsights.django.common
-  name: 'dummy_client(reason: str, telemetry_processor: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
-    = None)'
+- uid: botbuilder.applicationinsights.django.common.dummy_client
+  name: dummy_client
   summary: 'Creates a dummy channel so even if we''re not logging telemetry, we can
     still send
 
     along the real object to things that depend on it to exist'
-  syntax:
-    content: 'dummy_client(reason: str, telemetry_processor: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
-      = None)'
-  type: function
-  uid: botbuilder.applicationinsights.django.common.dummy_client
-- fullName: botbuilder.applicationinsights.django.common.get_telemetry_client_with_processor
-  langs:
-  - python
-  module: botbuilder.applicationinsights.django.common
-  name: 'get_telemetry_client_with_processor(key: str, channel: applicationinsights.channel.TelemetryChannel.TelemetryChannel,
-    telemetry_processor: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
-    = None) -> applicationinsights.TelemetryClient.TelemetryClient'
+  signature: 'dummy_client(reason: str, telemetry_processor: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
+    = None)'
+- uid: botbuilder.applicationinsights.django.common.get_telemetry_client_with_processor
+  name: get_telemetry_client_with_processor
   summary: Gets a telemetry client instance with a telemetry processor.
-  syntax:
-    content: 'get_telemetry_client_with_processor(key: str, channel: applicationinsights.channel.TelemetryChannel.TelemetryChannel,
-      telemetry_processor: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
-      = None) -> applicationinsights.TelemetryClient.TelemetryClient'
-    parameters:
-    - description: instrumentation key
-      id: key
-      type:
-      - str
-    - description: Telemetry channel
-      id: channel
-      type:
-      - TelemetryChannel
-    - description: use an existing telemetry processor from caller.
-      id: telemetry_processor
-      type:
-      - TelemetryProcessor
-    return:
-      description: a telemetry client with telemetry processor.
-      type:
-      - TelemetryClient
-  type: function
-  uid: botbuilder.applicationinsights.django.common.get_telemetry_client_with_processor
-- fullName: botbuilder.applicationinsights.django.common.load_settings
-  langs:
-  - python
-  module: botbuilder.applicationinsights.django.common
-  name: load_settings()
-  syntax:
-    content: load_settings()
-  type: function
-  uid: botbuilder.applicationinsights.django.common.load_settings
-references:
-- fullName: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings
-  isExternal: false
-  name: ApplicationInsightsChannelSettings
-  parent: botbuilder.applicationinsights.django.common
-  uid: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings
-- fullName: botbuilder.applicationinsights.django.common.ApplicationInsightsSettings
-  isExternal: false
-  name: ApplicationInsightsSettings
-  parent: botbuilder.applicationinsights.django.common
-  uid: botbuilder.applicationinsights.django.common.ApplicationInsightsSettings
-- fullName: botbuilder.applicationinsights.django.common.create_client
-  isExternal: false
-  name: 'create_client(aisettings=None, telemetry_processor: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
-    = None)'
-  parent: botbuilder.applicationinsights.django.common
-  uid: botbuilder.applicationinsights.django.common.create_client
-- fullName: botbuilder.applicationinsights.django.common.dummy_client
-  isExternal: false
-  name: 'dummy_client(reason: str, telemetry_processor: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
-    = None)'
-  parent: botbuilder.applicationinsights.django.common
-  uid: botbuilder.applicationinsights.django.common.dummy_client
-- fullName: botbuilder.applicationinsights.django.common.get_telemetry_client_with_processor
-  isExternal: false
-  name: 'get_telemetry_client_with_processor(key: str, channel: applicationinsights.channel.TelemetryChannel.TelemetryChannel,
+  signature: 'get_telemetry_client_with_processor(key: str, channel: applicationinsights.channel.TelemetryChannel.TelemetryChannel,
     telemetry_processor: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
     = None) -> applicationinsights.TelemetryClient.TelemetryClient'
-  parent: botbuilder.applicationinsights.django.common
-  uid: botbuilder.applicationinsights.django.common.get_telemetry_client_with_processor
-- fullName: botbuilder.applicationinsights.django.common.load_settings
-  isExternal: false
-  name: load_settings()
-  parent: botbuilder.applicationinsights.django.common
-  uid: botbuilder.applicationinsights.django.common.load_settings
+  parameters:
+  - name: key
+    description: instrumentation key
+    types:
+    - <xref:str>
+  - name: channel
+    description: Telemetry channel
+    types:
+    - <xref:TelemetryChannel>
+  - name: telemetry_processor
+    description: use an existing telemetry processor from caller.
+    types:
+    - <xref:TelemetryProcessor>
+  return:
+    description: a telemetry client with telemetry processor.
+    types:
+    - <xref:TelemetryClient>
+- uid: botbuilder.applicationinsights.django.common.load_settings
+  name: load_settings
+  signature: load_settings()
+classes:
+- botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings
+- botbuilder.applicationinsights.django.common.ApplicationInsightsSettings

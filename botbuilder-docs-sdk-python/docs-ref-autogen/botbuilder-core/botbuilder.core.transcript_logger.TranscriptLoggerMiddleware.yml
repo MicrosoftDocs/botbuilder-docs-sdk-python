@@ -1,72 +1,29 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.transcript_logger.TranscriptLoggerMiddleware.log_activity
-  - botbuilder.core.transcript_logger.TranscriptLoggerMiddleware.on_turn
-  class: botbuilder.core.transcript_logger.TranscriptLoggerMiddleware
-  fullName: botbuilder.core.transcript_logger.TranscriptLoggerMiddleware
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: abc.ABC
-    type: botbuilder.core.middleware_set.Middleware
-  langs:
-  - python
-  module: botbuilder.core.transcript_logger
-  name: TranscriptLoggerMiddleware
-  summary: Logs incoming and outgoing activities to a TranscriptStore.
-  syntax:
-    content: 'TranscriptLoggerMiddleware(logger: botbuilder.core.transcript_logger.TranscriptLogger)'
-  type: class
-  uid: botbuilder.core.transcript_logger.TranscriptLoggerMiddleware
-- class: botbuilder.core.transcript_logger.TranscriptLoggerMiddleware
-  fullName: botbuilder.core.transcript_logger.TranscriptLoggerMiddleware.log_activity
-  langs:
-  - python
-  module: botbuilder.core.transcript_logger
-  name: 'log_activity(transcript: queue.Queue, activity: botbuilder.schema._models_py3.Activity)
-    -> None'
-  namewithoutparameters: log_activity
+### YamlMime:PythonClass
+uid: botbuilder.core.transcript_logger.TranscriptLoggerMiddleware
+name: TranscriptLoggerMiddleware
+fullName: botbuilder.core.transcript_logger.TranscriptLoggerMiddleware
+module: botbuilder.core.transcript_logger
+inheritances:
+- botbuilder.core.middleware_set.Middleware
+summary: Logs incoming and outgoing activities to a TranscriptStore.
+constructor:
+  syntax: 'TranscriptLoggerMiddleware(logger: botbuilder.core.transcript_logger.TranscriptLogger)'
+methods:
+- uid: botbuilder.core.transcript_logger.TranscriptLoggerMiddleware.log_activity
+  name: log_activity
   summary: 'Logs the activity.
 
     :param transcript: transcript.
 
     :param activity: Activity to log.'
-  syntax:
-    content: 'log_activity(transcript: queue.Queue, activity: botbuilder.schema._models_py3.Activity)
-      -> None'
-  type: method
-  uid: botbuilder.core.transcript_logger.TranscriptLoggerMiddleware.log_activity
-- class: botbuilder.core.transcript_logger.TranscriptLoggerMiddleware
-  fullName: botbuilder.core.transcript_logger.TranscriptLoggerMiddleware.on_turn
-  langs:
-  - python
-  module: botbuilder.core.transcript_logger
-  name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
-    typing.Awaitable])'
-  namewithoutparameters: on_turn
+  signature: 'log_activity(transcript: queue.Queue, activity: botbuilder.schema._models_py3.Activity)
+    -> None'
+- uid: botbuilder.core.transcript_logger.TranscriptLoggerMiddleware.on_turn
+  name: on_turn
   summary: 'Initialization for middleware.
 
     :param context: Context for the current turn of conversation with the user.
 
     :param logic: Function to call at the end of the middleware chain.'
-  syntax:
-    content: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
-      typing.Awaitable])'
-  type: method
-  uid: botbuilder.core.transcript_logger.TranscriptLoggerMiddleware.on_turn
-references:
-- fullName: botbuilder.core.transcript_logger.TranscriptLoggerMiddleware.log_activity
-  isExternal: false
-  name: 'log_activity(transcript: queue.Queue, activity: botbuilder.schema._models_py3.Activity)
-    -> None'
-  parent: botbuilder.core.transcript_logger.TranscriptLoggerMiddleware
-  uid: botbuilder.core.transcript_logger.TranscriptLoggerMiddleware.log_activity
-- fullName: botbuilder.core.transcript_logger.TranscriptLoggerMiddleware.on_turn
-  isExternal: false
-  name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
+  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
     typing.Awaitable])'
-  parent: botbuilder.core.transcript_logger.TranscriptLoggerMiddleware
-  uid: botbuilder.core.transcript_logger.TranscriptLoggerMiddleware.on_turn

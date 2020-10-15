@@ -1,30 +1,18 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botframework.connector.token_api.models.SignInUrlResponse
-  fullName: botframework.connector.token_api.models.SignInUrlResponse
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botframework.connector.token_api.models
-  name: SignInUrlResponse
-  summary: SignInUrlResponse.
-  syntax:
-    content: 'SignInUrlResponse(*, sign_in_link: str = None, token_exchange_resource=None,
-      **kwargs) -> None'
-    parameters:
-    - description: ''
-      id: sign_in_link
-      type:
-      - str
-    - description: ''
-      id: token_exchange_resource
-      type:
-      - botframework.tokenapi.models.TokenExchangeResource
-  type: class
-  uid: botframework.connector.token_api.models.SignInUrlResponse
-references: []
+### YamlMime:PythonClass
+uid: botframework.connector.token_api.models.SignInUrlResponse
+name: SignInUrlResponse
+fullName: botframework.connector.token_api.models.SignInUrlResponse
+module: botframework.connector.token_api.models
+inheritances:
+- msrest.serialization.Model
+summary: SignInUrlResponse.
+constructor:
+  syntax: 'SignInUrlResponse(*, sign_in_link: str = None, token_exchange_resource=None,
+    **kwargs) -> None'
+  parameters:
+  - name: sign_in_link
+    types:
+    - <xref:str>
+  - name: token_exchange_resource
+    types:
+    - <xref:botframework.tokenapi.models.TokenExchangeResource>

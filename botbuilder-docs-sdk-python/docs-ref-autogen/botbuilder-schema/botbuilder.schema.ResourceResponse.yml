@@ -1,25 +1,15 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.ResourceResponse
-  fullName: botbuilder.schema.ResourceResponse
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema
-  name: ResourceResponse
-  summary: A response containing a resource ID.
-  syntax:
-    content: 'ResourceResponse(*, id: str = None, **kwargs) -> None'
-    parameters:
-    - description: Id of the resource
-      id: id
-      type:
-      - str
-  type: class
-  uid: botbuilder.schema.ResourceResponse
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.schema.ResourceResponse
+name: ResourceResponse
+fullName: botbuilder.schema.ResourceResponse
+module: botbuilder.schema
+inheritances:
+- msrest.serialization.Model
+summary: A response containing a resource ID.
+constructor:
+  syntax: 'ResourceResponse(*, id: str = None, **kwargs) -> None'
+  parameters:
+  - name: id
+    description: Id of the resource
+    types:
+    - <xref:str>

@@ -1,35 +1,14 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.adapters.test_adapter.UserToken.equals_key
-  class: botbuilder.core.adapters.test_adapter.UserToken
-  fullName: botbuilder.core.adapters.test_adapter.UserToken
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.core.adapters.test_adapter
-  name: UserToken
-  syntax:
-    content: 'UserToken(connection_name: str = None, user_id: str = None, channel_id:
-      str = None, token: str = None)'
-  type: class
-  uid: botbuilder.core.adapters.test_adapter.UserToken
-- class: botbuilder.core.adapters.test_adapter.UserToken
-  fullName: botbuilder.core.adapters.test_adapter.UserToken.equals_key
-  langs:
-  - python
-  module: botbuilder.core.adapters.test_adapter
-  name: 'equals_key(rhs: botbuilder.core.adapters.test_adapter.UserToken)'
-  namewithoutparameters: equals_key
-  syntax:
-    content: 'equals_key(rhs: botbuilder.core.adapters.test_adapter.UserToken)'
-  type: method
-  uid: botbuilder.core.adapters.test_adapter.UserToken.equals_key
-references:
-- fullName: botbuilder.core.adapters.test_adapter.UserToken.equals_key
-  isExternal: false
-  name: 'equals_key(rhs: botbuilder.core.adapters.test_adapter.UserToken)'
-  parent: botbuilder.core.adapters.test_adapter.UserToken
-  uid: botbuilder.core.adapters.test_adapter.UserToken.equals_key
+### YamlMime:PythonClass
+uid: botbuilder.core.adapters.test_adapter.UserToken
+name: UserToken
+fullName: botbuilder.core.adapters.test_adapter.UserToken
+module: botbuilder.core.adapters.test_adapter
+inheritances:
+- builtins.object
+constructor:
+  syntax: 'UserToken(connection_name: str = None, user_id: str = None, channel_id:
+    str = None, token: str = None)'
+methods:
+- uid: botbuilder.core.adapters.test_adapter.UserToken.equals_key
+  name: equals_key
+  signature: 'equals_key(rhs: botbuilder.core.adapters.test_adapter.UserToken)'

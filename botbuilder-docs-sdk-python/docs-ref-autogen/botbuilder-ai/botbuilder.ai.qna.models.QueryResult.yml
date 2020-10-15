@@ -1,20 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.ai.qna.models.QueryResult
-  fullName: botbuilder.ai.qna.models.QueryResult
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.ai.qna.models
-  name: QueryResult
-  summary: Represents an individual result from a knowledge base query.
-  syntax:
-    content: QueryResult(**kwargs)
-  type: class
-  uid: botbuilder.ai.qna.models.QueryResult
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.ai.qna.models.QueryResult
+name: QueryResult
+fullName: botbuilder.ai.qna.models.QueryResult
+module: botbuilder.ai.qna.models
+inheritances:
+- msrest.serialization.Model
+summary: Represents an individual result from a knowledge base query.
+constructor:
+  syntax: QueryResult(**kwargs)

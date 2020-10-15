@@ -1,35 +1,14 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.inspection.inspection_session.InspectionSession.send
-  class: botbuilder.core.inspection.inspection_session.InspectionSession
-  fullName: botbuilder.core.inspection.inspection_session.InspectionSession
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.core.inspection.inspection_session
-  name: InspectionSession
-  syntax:
-    content: 'InspectionSession(conversation_reference: botbuilder.schema._models_py3.ConversationReference,
-      credentials: botframework.connector.auth.microsoft_app_credentials.MicrosoftAppCredentials)'
-  type: class
-  uid: botbuilder.core.inspection.inspection_session.InspectionSession
-- class: botbuilder.core.inspection.inspection_session.InspectionSession
-  fullName: botbuilder.core.inspection.inspection_session.InspectionSession.send
-  langs:
-  - python
-  module: botbuilder.core.inspection.inspection_session
-  name: 'send(activity: botbuilder.schema._models_py3.Activity) -> typing.Any'
-  namewithoutparameters: send
-  syntax:
-    content: 'send(activity: botbuilder.schema._models_py3.Activity) -> typing.Any'
-  type: method
-  uid: botbuilder.core.inspection.inspection_session.InspectionSession.send
-references:
-- fullName: botbuilder.core.inspection.inspection_session.InspectionSession.send
-  isExternal: false
-  name: 'send(activity: botbuilder.schema._models_py3.Activity) -> typing.Any'
-  parent: botbuilder.core.inspection.inspection_session.InspectionSession
-  uid: botbuilder.core.inspection.inspection_session.InspectionSession.send
+### YamlMime:PythonClass
+uid: botbuilder.core.inspection.inspection_session.InspectionSession
+name: InspectionSession
+fullName: botbuilder.core.inspection.inspection_session.InspectionSession
+module: botbuilder.core.inspection.inspection_session
+inheritances:
+- builtins.object
+constructor:
+  syntax: 'InspectionSession(conversation_reference: botbuilder.schema._models_py3.ConversationReference,
+    credentials: botframework.connector.auth.microsoft_app_credentials.MicrosoftAppCredentials)'
+methods:
+- uid: botbuilder.core.inspection.inspection_session.InspectionSession.send
+  name: send
+  signature: 'send(activity: botbuilder.schema._models_py3.Activity) -> typing.Any'

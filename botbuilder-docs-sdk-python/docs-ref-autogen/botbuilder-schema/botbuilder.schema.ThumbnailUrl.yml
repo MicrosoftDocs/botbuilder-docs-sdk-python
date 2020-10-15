@@ -1,29 +1,19 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.ThumbnailUrl
-  fullName: botbuilder.schema.ThumbnailUrl
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema
-  name: ThumbnailUrl
-  summary: Thumbnail URL.
-  syntax:
-    content: 'ThumbnailUrl(*, url: str = None, alt: str = None, **kwargs) -> None'
-    parameters:
-    - description: URL pointing to the thumbnail to use for media content
-      id: url
-      type:
-      - str
-    - description: HTML alt text to include on this thumbnail image
-      id: alt
-      type:
-      - str
-  type: class
-  uid: botbuilder.schema.ThumbnailUrl
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.schema.ThumbnailUrl
+name: ThumbnailUrl
+fullName: botbuilder.schema.ThumbnailUrl
+module: botbuilder.schema
+inheritances:
+- msrest.serialization.Model
+summary: Thumbnail URL.
+constructor:
+  syntax: 'ThumbnailUrl(*, url: str = None, alt: str = None, **kwargs) -> None'
+  parameters:
+  - name: url
+    description: URL pointing to the thumbnail to use for media content
+    types:
+    - <xref:str>
+  - name: alt
+    description: HTML alt text to include on this thumbnail image
+    types:
+    - <xref:str>

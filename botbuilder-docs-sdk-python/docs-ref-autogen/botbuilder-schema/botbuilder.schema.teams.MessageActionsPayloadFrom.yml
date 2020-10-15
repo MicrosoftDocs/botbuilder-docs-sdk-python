@@ -1,37 +1,26 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.MessageActionsPayloadFrom
-  fullName: botbuilder.schema.teams.MessageActionsPayloadFrom
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: MessageActionsPayloadFrom
-  summary: 'Represents a user, application, or conversation type that either sent
-    or
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.MessageActionsPayloadFrom
+name: MessageActionsPayloadFrom
+fullName: botbuilder.schema.teams.MessageActionsPayloadFrom
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: 'Represents a user, application, or conversation type that either sent or
 
-    was referenced in a message.'
-  syntax:
-    content: MessageActionsPayloadFrom(*, user=None, application=None, conversation=None,
-      **kwargs) -> None
-    parameters:
-    - description: Represents details of the user.
-      id: user
-      type:
-      - botframework.connector.teams.models.MessageActionsPayloadUser
-    - description: Represents details of the app.
-      id: application
-      type:
-      - botframework.connector.teams.models.MessageActionsPayloadApp
-    - description: Represents details of the converesation.
-      id: conversation
-      type:
-      - botframework.connector.teams.models.MessageActionsPayloadConversation
-  type: class
-  uid: botbuilder.schema.teams.MessageActionsPayloadFrom
-references: []
+  was referenced in a message.'
+constructor:
+  syntax: MessageActionsPayloadFrom(*, user=None, application=None, conversation=None,
+    **kwargs) -> None
+  parameters:
+  - name: user
+    description: Represents details of the user.
+    types:
+    - <xref:botframework.connector.teams.models.MessageActionsPayloadUser>
+  - name: application
+    description: Represents details of the app.
+    types:
+    - <xref:botframework.connector.teams.models.MessageActionsPayloadApp>
+  - name: conversation
+    description: Represents details of the converesation.
+    types:
+    - <xref:botframework.connector.teams.models.MessageActionsPayloadConversation>

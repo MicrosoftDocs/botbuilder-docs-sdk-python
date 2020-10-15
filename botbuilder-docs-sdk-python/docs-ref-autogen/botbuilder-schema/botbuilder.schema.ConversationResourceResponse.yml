@@ -1,36 +1,26 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.ConversationResourceResponse
-  fullName: botbuilder.schema.ConversationResourceResponse
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema
-  name: ConversationResourceResponse
-  summary: A response containing a resource.
-  syntax:
-    content: 'ConversationResourceResponse(*, activity_id: str = None, service_url:
-      str = None, id: str = None, **kwargs) -> None'
-    parameters:
-    - description: ID of the Activity (if sent)
-      id: activity_id
-      type:
-      - str
-    - description: 'Service endpoint where operations concerning the
+### YamlMime:PythonClass
+uid: botbuilder.schema.ConversationResourceResponse
+name: ConversationResourceResponse
+fullName: botbuilder.schema.ConversationResourceResponse
+module: botbuilder.schema
+inheritances:
+- msrest.serialization.Model
+summary: A response containing a resource.
+constructor:
+  syntax: 'ConversationResourceResponse(*, activity_id: str = None, service_url: str
+    = None, id: str = None, **kwargs) -> None'
+  parameters:
+  - name: activity_id
+    description: ID of the Activity (if sent)
+    types:
+    - <xref:str>
+  - name: service_url
+    description: 'Service endpoint where operations concerning the
 
-        conversation may be performed'
-      id: service_url
-      type:
-      - str
-    - description: Id of the resource
-      id: id
-      type:
-      - str
-  type: class
-  uid: botbuilder.schema.ConversationResourceResponse
-references: []
+      conversation may be performed'
+    types:
+    - <xref:str>
+  - name: id
+    description: Id of the resource
+    types:
+    - <xref:str>

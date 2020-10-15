@@ -1,46 +1,13 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.serializer_helper.deserializer_helper
-  - botbuilder.core.serializer_helper.serializer_helper
-  fullName: botbuilder.core.serializer_helper
-  langs:
-  - python
-  module: botbuilder.core.serializer_helper
+### YamlMime:PythonModule
+uid: botbuilder.core.serializer_helper
+name: serializer_helper
+fullName: botbuilder.core.serializer_helper
+functions:
+- uid: botbuilder.core.serializer_helper.deserializer_helper
+  name: deserializer_helper
+  signature: 'deserializer_helper(msrest_cls: typing.Type[msrest.serialization.Model],
+    dict_to_deserialize: dict) -> msrest.serialization.Model'
+- uid: botbuilder.core.serializer_helper.serializer_helper
   name: serializer_helper
-  type: module
-  uid: botbuilder.core.serializer_helper
-- fullName: botbuilder.core.serializer_helper.deserializer_helper
-  langs:
-  - python
-  module: botbuilder.core.serializer_helper
-  name: 'deserializer_helper(msrest_cls: typing.Type[msrest.serialization.Model],
-    dict_to_deserialize: dict) -> msrest.serialization.Model'
-  syntax:
-    content: 'deserializer_helper(msrest_cls: typing.Type[msrest.serialization.Model],
-      dict_to_deserialize: dict) -> msrest.serialization.Model'
-  type: function
-  uid: botbuilder.core.serializer_helper.deserializer_helper
-- fullName: botbuilder.core.serializer_helper.serializer_helper
-  langs:
-  - python
-  module: botbuilder.core.serializer_helper
-  name: 'serializer_helper(object_to_serialize: msrest.serialization.Model) -> dict'
-  syntax:
-    content: 'serializer_helper(object_to_serialize: msrest.serialization.Model) ->
-      dict'
-  type: function
-  uid: botbuilder.core.serializer_helper.serializer_helper
-references:
-- fullName: botbuilder.core.serializer_helper.deserializer_helper
-  isExternal: false
-  name: 'deserializer_helper(msrest_cls: typing.Type[msrest.serialization.Model],
-    dict_to_deserialize: dict) -> msrest.serialization.Model'
-  parent: botbuilder.core.serializer_helper
-  uid: botbuilder.core.serializer_helper.deserializer_helper
-- fullName: botbuilder.core.serializer_helper.serializer_helper
-  isExternal: false
-  name: 'serializer_helper(object_to_serialize: msrest.serialization.Model) -> dict'
-  parent: botbuilder.core.serializer_helper
-  uid: botbuilder.core.serializer_helper.serializer_helper
+  signature: 'serializer_helper(object_to_serialize: msrest.serialization.Model) ->
+    dict'

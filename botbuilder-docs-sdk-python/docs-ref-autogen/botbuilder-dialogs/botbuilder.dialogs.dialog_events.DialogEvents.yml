@@ -1,102 +1,20 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.dialogs.dialog_events.DialogEvents.activity_received
-  - botbuilder.dialogs.dialog_events.DialogEvents.begin_dialog
-  - botbuilder.dialogs.dialog_events.DialogEvents.cancel_dialog
-  - botbuilder.dialogs.dialog_events.DialogEvents.error
-  - botbuilder.dialogs.dialog_events.DialogEvents.reprompt_dialog
-  class: botbuilder.dialogs.dialog_events.DialogEvents
-  fullName: botbuilder.dialogs.dialog_events.DialogEvents
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: builtins.str
-  - inheritance:
-    - type: builtins.object
-    type: enum.Enum
-  langs:
-  - python
-  module: botbuilder.dialogs.dialog_events
-  name: DialogEvents
-  summary: An enumeration.
-  syntax: {}
-  type: class
-  uid: botbuilder.dialogs.dialog_events.DialogEvents
-- class: botbuilder.dialogs.dialog_events.DialogEvents
-  fullName: botbuilder.dialogs.dialog_events.DialogEvents.activity_received
-  langs:
-  - python
-  module: botbuilder.dialogs.dialog_events
-  name: activity_received
-  syntax:
-    content: activity_received = 'activityReceived'
-  type: attribute
+### YamlMime:PythonEnum
+uid: botbuilder.dialogs.dialog_events.DialogEvents
+name: DialogEvents
+fullName: botbuilder.dialogs.dialog_events.DialogEvents
+summary: An enumeration.
+module: botbuilder.dialogs.dialog_events
+inheritances:
+- builtins.str
+- enum.Enum
+fields:
+- name: activity_received
   uid: botbuilder.dialogs.dialog_events.DialogEvents.activity_received
-- class: botbuilder.dialogs.dialog_events.DialogEvents
-  fullName: botbuilder.dialogs.dialog_events.DialogEvents.begin_dialog
-  langs:
-  - python
-  module: botbuilder.dialogs.dialog_events
-  name: begin_dialog
-  syntax:
-    content: begin_dialog = 'beginDialog'
-  type: attribute
+- name: begin_dialog
   uid: botbuilder.dialogs.dialog_events.DialogEvents.begin_dialog
-- class: botbuilder.dialogs.dialog_events.DialogEvents
-  fullName: botbuilder.dialogs.dialog_events.DialogEvents.cancel_dialog
-  langs:
-  - python
-  module: botbuilder.dialogs.dialog_events
-  name: cancel_dialog
-  syntax:
-    content: cancel_dialog = 'cancelDialog'
-  type: attribute
+- name: cancel_dialog
   uid: botbuilder.dialogs.dialog_events.DialogEvents.cancel_dialog
-- class: botbuilder.dialogs.dialog_events.DialogEvents
-  fullName: botbuilder.dialogs.dialog_events.DialogEvents.error
-  langs:
-  - python
-  module: botbuilder.dialogs.dialog_events
-  name: error
-  syntax:
-    content: error = 'error'
-  type: attribute
+- name: error
   uid: botbuilder.dialogs.dialog_events.DialogEvents.error
-- class: botbuilder.dialogs.dialog_events.DialogEvents
-  fullName: botbuilder.dialogs.dialog_events.DialogEvents.reprompt_dialog
-  langs:
-  - python
-  module: botbuilder.dialogs.dialog_events
-  name: reprompt_dialog
-  syntax:
-    content: reprompt_dialog = 'repromptDialog'
-  type: attribute
-  uid: botbuilder.dialogs.dialog_events.DialogEvents.reprompt_dialog
-references:
-- fullName: botbuilder.dialogs.dialog_events.DialogEvents.activity_received
-  isExternal: false
-  name: activity_received
-  parent: botbuilder.dialogs.dialog_events.DialogEvents
-  uid: botbuilder.dialogs.dialog_events.DialogEvents.activity_received
-- fullName: botbuilder.dialogs.dialog_events.DialogEvents.begin_dialog
-  isExternal: false
-  name: begin_dialog
-  parent: botbuilder.dialogs.dialog_events.DialogEvents
-  uid: botbuilder.dialogs.dialog_events.DialogEvents.begin_dialog
-- fullName: botbuilder.dialogs.dialog_events.DialogEvents.cancel_dialog
-  isExternal: false
-  name: cancel_dialog
-  parent: botbuilder.dialogs.dialog_events.DialogEvents
-  uid: botbuilder.dialogs.dialog_events.DialogEvents.cancel_dialog
-- fullName: botbuilder.dialogs.dialog_events.DialogEvents.error
-  isExternal: false
-  name: error
-  parent: botbuilder.dialogs.dialog_events.DialogEvents
-  uid: botbuilder.dialogs.dialog_events.DialogEvents.error
-- fullName: botbuilder.dialogs.dialog_events.DialogEvents.reprompt_dialog
-  isExternal: false
-  name: reprompt_dialog
-  parent: botbuilder.dialogs.dialog_events.DialogEvents
+- name: reprompt_dialog
   uid: botbuilder.dialogs.dialog_events.DialogEvents.reprompt_dialog

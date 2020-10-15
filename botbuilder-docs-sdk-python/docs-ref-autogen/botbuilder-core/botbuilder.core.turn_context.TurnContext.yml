@@ -1,63 +1,16 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.turn_context.TurnContext.activity
-  - botbuilder.core.turn_context.TurnContext.apply_conversation_reference
-  - botbuilder.core.turn_context.TurnContext.copy_to
-  - botbuilder.core.turn_context.TurnContext.delete_activity
-  - botbuilder.core.turn_context.TurnContext.get
-  - botbuilder.core.turn_context.TurnContext.get_conversation_reference
-  - botbuilder.core.turn_context.TurnContext.get_mentions
-  - botbuilder.core.turn_context.TurnContext.get_reply_conversation_reference
-  - botbuilder.core.turn_context.TurnContext.has
-  - botbuilder.core.turn_context.TurnContext.on_delete_activity
-  - botbuilder.core.turn_context.TurnContext.on_send_activities
-  - botbuilder.core.turn_context.TurnContext.on_update_activity
-  - botbuilder.core.turn_context.TurnContext.remove_mention_text
-  - botbuilder.core.turn_context.TurnContext.remove_recipient_mention
-  - botbuilder.core.turn_context.TurnContext.responded
-  - botbuilder.core.turn_context.TurnContext.send_activities
-  - botbuilder.core.turn_context.TurnContext.send_activity
-  - botbuilder.core.turn_context.TurnContext.send_trace_activity
-  - botbuilder.core.turn_context.TurnContext.services
-  - botbuilder.core.turn_context.TurnContext.set
-  - botbuilder.core.turn_context.TurnContext.update_activity
-  class: botbuilder.core.turn_context.TurnContext
-  fullName: botbuilder.core.turn_context.TurnContext
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.core.turn_context
-  name: TurnContext
-  summary: ''
-  syntax:
-    content: 'TurnContext(adapter_or_context, request: botbuilder.schema._models_py3.Activity
-      = None)'
-  type: class
-  uid: botbuilder.core.turn_context.TurnContext
-- class: botbuilder.core.turn_context.TurnContext
-  fullName: botbuilder.core.turn_context.TurnContext.activity
-  langs:
-  - python
-  module: botbuilder.core.turn_context
-  name: activity
-  summary: 'The received activity.
-
-    :return:'
-  syntax: {}
-  type: attribute
-  uid: botbuilder.core.turn_context.TurnContext.activity
-- class: botbuilder.core.turn_context.TurnContext
-  fullName: botbuilder.core.turn_context.TurnContext.apply_conversation_reference
-  langs:
-  - python
-  module: botbuilder.core.turn_context
-  name: 'apply_conversation_reference(activity: botbuilder.schema._models_py3.Activity,
-    reference: botbuilder.schema._models_py3.ConversationReference, is_incoming: bool
-    = False) -> botbuilder.schema._models_py3.Activity'
-  namewithoutparameters: apply_conversation_reference
+### YamlMime:PythonClass
+uid: botbuilder.core.turn_context.TurnContext
+name: TurnContext
+fullName: botbuilder.core.turn_context.TurnContext
+module: botbuilder.core.turn_context
+inheritances:
+- builtins.object
+constructor:
+  syntax: 'TurnContext(adapter_or_context, request: botbuilder.schema._models_py3.Activity
+    = None)'
+methods:
+- uid: botbuilder.core.turn_context.TurnContext.apply_conversation_reference
+  name: apply_conversation_reference
   summary: 'Updates an activity with the delivery information from a conversation
     reference. Calling
 
@@ -72,19 +25,11 @@ items:
     :param is_incoming:
 
     :return:'
-  syntax:
-    content: 'apply_conversation_reference(activity: botbuilder.schema._models_py3.Activity,
-      reference: botbuilder.schema._models_py3.ConversationReference, is_incoming:
-      bool = False) -> botbuilder.schema._models_py3.Activity'
-  type: method
-  uid: botbuilder.core.turn_context.TurnContext.apply_conversation_reference
-- class: botbuilder.core.turn_context.TurnContext
-  fullName: botbuilder.core.turn_context.TurnContext.copy_to
-  langs:
-  - python
-  module: botbuilder.core.turn_context
-  name: 'copy_to(context: botbuilder.core.turn_context.TurnContext) -> None'
-  namewithoutparameters: copy_to
+  signature: 'apply_conversation_reference(activity: botbuilder.schema._models_py3.Activity,
+    reference: botbuilder.schema._models_py3.ConversationReference, is_incoming: bool
+    = False) -> botbuilder.schema._models_py3.Activity'
+- uid: botbuilder.core.turn_context.TurnContext.copy_to
+  name: copy_to
   summary: 'Called when this TurnContext instance is passed into the constructor of
     a new TurnContext
 
@@ -93,45 +38,20 @@ items:
     :param context:
 
     :return:'
-  syntax:
-    content: 'copy_to(context: botbuilder.core.turn_context.TurnContext) -> None'
-  type: method
-  uid: botbuilder.core.turn_context.TurnContext.copy_to
-- class: botbuilder.core.turn_context.TurnContext
-  fullName: botbuilder.core.turn_context.TurnContext.delete_activity
-  langs:
-  - python
-  module: botbuilder.core.turn_context
-  name: 'delete_activity(id_or_reference: typing.Union[str, botbuilder.schema._models_py3.ConversationReference])'
-  namewithoutparameters: delete_activity
+  signature: 'copy_to(context: botbuilder.core.turn_context.TurnContext) -> None'
+- uid: botbuilder.core.turn_context.TurnContext.delete_activity
+  name: delete_activity
   summary: 'Deletes an existing activity.
 
     :param id_or_reference:
 
     :return:'
-  syntax:
-    content: 'delete_activity(id_or_reference: typing.Union[str, botbuilder.schema._models_py3.ConversationReference])'
-  type: method
-  uid: botbuilder.core.turn_context.TurnContext.delete_activity
-- class: botbuilder.core.turn_context.TurnContext
-  fullName: botbuilder.core.turn_context.TurnContext.get
-  langs:
-  - python
-  module: botbuilder.core.turn_context
-  name: 'get(key: str) -> object'
-  namewithoutparameters: get
-  syntax:
-    content: 'get(key: str) -> object'
-  type: method
-  uid: botbuilder.core.turn_context.TurnContext.get
-- class: botbuilder.core.turn_context.TurnContext
-  fullName: botbuilder.core.turn_context.TurnContext.get_conversation_reference
-  langs:
-  - python
-  module: botbuilder.core.turn_context
-  name: 'get_conversation_reference(activity: botbuilder.schema._models_py3.Activity)
-    -> botbuilder.schema._models_py3.ConversationReference'
-  namewithoutparameters: get_conversation_reference
+  signature: 'delete_activity(id_or_reference: typing.Union[str, botbuilder.schema._models_py3.ConversationReference])'
+- uid: botbuilder.core.turn_context.TurnContext.get
+  name: get
+  signature: 'get(key: str) -> object'
+- uid: botbuilder.core.turn_context.TurnContext.get_conversation_reference
+  name: get_conversation_reference
   summary: 'Returns the conversation reference for an activity. This can be saved
     as a plain old JSON
 
@@ -145,205 +65,78 @@ items:
     :param activity:
 
     :return:'
-  syntax:
-    content: 'get_conversation_reference(activity: botbuilder.schema._models_py3.Activity)
-      -> botbuilder.schema._models_py3.ConversationReference'
-  type: method
-  uid: botbuilder.core.turn_context.TurnContext.get_conversation_reference
-- class: botbuilder.core.turn_context.TurnContext
-  fullName: botbuilder.core.turn_context.TurnContext.get_mentions
-  langs:
-  - python
-  module: botbuilder.core.turn_context
-  name: 'get_mentions(activity: botbuilder.schema._models_py3.Activity) -> typing.List[botbuilder.schema._models_py3.Mention]'
-  namewithoutparameters: get_mentions
-  syntax:
-    content: 'get_mentions(activity: botbuilder.schema._models_py3.Activity) -> typing.List[botbuilder.schema._models_py3.Mention]'
-  type: method
-  uid: botbuilder.core.turn_context.TurnContext.get_mentions
-- class: botbuilder.core.turn_context.TurnContext
-  fullName: botbuilder.core.turn_context.TurnContext.get_reply_conversation_reference
-  langs:
-  - python
-  module: botbuilder.core.turn_context
-  name: 'get_reply_conversation_reference(activity: botbuilder.schema._models_py3.Activity,
+  signature: 'get_conversation_reference(activity: botbuilder.schema._models_py3.Activity)
+    -> botbuilder.schema._models_py3.ConversationReference'
+- uid: botbuilder.core.turn_context.TurnContext.get_mentions
+  name: get_mentions
+  signature: 'get_mentions(activity: botbuilder.schema._models_py3.Activity) -> typing.List[botbuilder.schema._models_py3.Mention]'
+- uid: botbuilder.core.turn_context.TurnContext.get_reply_conversation_reference
+  name: get_reply_conversation_reference
+  signature: 'get_reply_conversation_reference(activity: botbuilder.schema._models_py3.Activity,
     reply: botbuilder.schema._models_py3.ResourceResponse) -> botbuilder.schema._models_py3.ConversationReference'
-  namewithoutparameters: get_reply_conversation_reference
-  syntax:
-    content: 'get_reply_conversation_reference(activity: botbuilder.schema._models_py3.Activity,
-      reply: botbuilder.schema._models_py3.ResourceResponse) -> botbuilder.schema._models_py3.ConversationReference'
-  type: method
-  uid: botbuilder.core.turn_context.TurnContext.get_reply_conversation_reference
-- class: botbuilder.core.turn_context.TurnContext
-  fullName: botbuilder.core.turn_context.TurnContext.has
-  langs:
-  - python
-  module: botbuilder.core.turn_context
-  name: 'has(key: str) -> bool'
-  namewithoutparameters: has
+- uid: botbuilder.core.turn_context.TurnContext.has
+  name: has
   summary: 'Returns True is set() has been called for a key. The cached value may
     be of type ''None''.
 
     :param key:
 
     :return:'
-  syntax:
-    content: 'has(key: str) -> bool'
-  type: method
-  uid: botbuilder.core.turn_context.TurnContext.has
-- class: botbuilder.core.turn_context.TurnContext
-  fullName: botbuilder.core.turn_context.TurnContext.on_delete_activity
-  langs:
-  - python
-  module: botbuilder.core.turn_context
-  name: on_delete_activity(handler) -> botbuilder.core.turn_context.TurnContext
-  namewithoutparameters: on_delete_activity
+  signature: 'has(key: str) -> bool'
+- uid: botbuilder.core.turn_context.TurnContext.on_delete_activity
+  name: on_delete_activity
   summary: 'Registers a handler to be notified of and potentially intercept an activity
     being deleted.
 
     :param handler:
 
     :return:'
-  syntax:
-    content: on_delete_activity(handler) -> botbuilder.core.turn_context.TurnContext
-  type: method
-  uid: botbuilder.core.turn_context.TurnContext.on_delete_activity
-- class: botbuilder.core.turn_context.TurnContext
-  fullName: botbuilder.core.turn_context.TurnContext.on_send_activities
-  langs:
-  - python
-  module: botbuilder.core.turn_context
-  name: on_send_activities(handler) -> botbuilder.core.turn_context.TurnContext
-  namewithoutparameters: on_send_activities
+  signature: on_delete_activity(handler) -> botbuilder.core.turn_context.TurnContext
+- uid: botbuilder.core.turn_context.TurnContext.on_send_activities
+  name: on_send_activities
   summary: 'Registers a handler to be notified of and potentially intercept the sending
     of activities.
 
     :param handler:
 
     :return:'
-  syntax:
-    content: on_send_activities(handler) -> botbuilder.core.turn_context.TurnContext
-  type: method
-  uid: botbuilder.core.turn_context.TurnContext.on_send_activities
-- class: botbuilder.core.turn_context.TurnContext
-  fullName: botbuilder.core.turn_context.TurnContext.on_update_activity
-  langs:
-  - python
-  module: botbuilder.core.turn_context
-  name: on_update_activity(handler) -> botbuilder.core.turn_context.TurnContext
-  namewithoutparameters: on_update_activity
+  signature: on_send_activities(handler) -> botbuilder.core.turn_context.TurnContext
+- uid: botbuilder.core.turn_context.TurnContext.on_update_activity
+  name: on_update_activity
   summary: 'Registers a handler to be notified of and potentially intercept an activity
     being updated.
 
     :param handler:
 
     :return:'
-  syntax:
-    content: on_update_activity(handler) -> botbuilder.core.turn_context.TurnContext
-  type: method
-  uid: botbuilder.core.turn_context.TurnContext.on_update_activity
-- class: botbuilder.core.turn_context.TurnContext
-  fullName: botbuilder.core.turn_context.TurnContext.remove_mention_text
-  langs:
-  - python
-  module: botbuilder.core.turn_context
-  name: 'remove_mention_text(activity: botbuilder.schema._models_py3.Activity, identifier:
-    str) -> str'
-  namewithoutparameters: remove_mention_text
-  syntax:
-    content: 'remove_mention_text(activity: botbuilder.schema._models_py3.Activity,
-      identifier: str) -> str'
-  type: method
-  uid: botbuilder.core.turn_context.TurnContext.remove_mention_text
-- class: botbuilder.core.turn_context.TurnContext
-  fullName: botbuilder.core.turn_context.TurnContext.remove_recipient_mention
-  langs:
-  - python
-  module: botbuilder.core.turn_context
-  name: 'remove_recipient_mention(activity: botbuilder.schema._models_py3.Activity)
+  signature: on_update_activity(handler) -> botbuilder.core.turn_context.TurnContext
+- uid: botbuilder.core.turn_context.TurnContext.remove_mention_text
+  name: remove_mention_text
+  signature: 'remove_mention_text(activity: botbuilder.schema._models_py3.Activity,
+    identifier: str) -> str'
+- uid: botbuilder.core.turn_context.TurnContext.remove_recipient_mention
+  name: remove_recipient_mention
+  signature: 'remove_recipient_mention(activity: botbuilder.schema._models_py3.Activity)
     -> str'
-  namewithoutparameters: remove_recipient_mention
-  syntax:
-    content: 'remove_recipient_mention(activity: botbuilder.schema._models_py3.Activity)
-      -> str'
-  type: method
-  uid: botbuilder.core.turn_context.TurnContext.remove_recipient_mention
-- class: botbuilder.core.turn_context.TurnContext
-  fullName: botbuilder.core.turn_context.TurnContext.responded
-  langs:
-  - python
-  module: botbuilder.core.turn_context
-  name: responded
-  summary: 'If *true* at least one response has been sent for the current turn of
-    conversation.
-
-    :return:'
-  syntax: {}
-  type: attribute
-  uid: botbuilder.core.turn_context.TurnContext.responded
-- class: botbuilder.core.turn_context.TurnContext
-  fullName: botbuilder.core.turn_context.TurnContext.send_activities
-  langs:
-  - python
-  module: botbuilder.core.turn_context
-  name: 'send_activities(activities: typing.List[botbuilder.schema._models_py3.Activity])
+- uid: botbuilder.core.turn_context.TurnContext.send_activities
+  name: send_activities
+  signature: 'send_activities(activities: typing.List[botbuilder.schema._models_py3.Activity])
     -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
-  namewithoutparameters: send_activities
-  syntax:
-    content: 'send_activities(activities: typing.List[botbuilder.schema._models_py3.Activity])
-      -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
-  type: method
-  uid: botbuilder.core.turn_context.TurnContext.send_activities
-- class: botbuilder.core.turn_context.TurnContext
-  fullName: botbuilder.core.turn_context.TurnContext.send_activity
-  langs:
-  - python
-  module: botbuilder.core.turn_context
-  name: 'send_activity(activity_or_text: typing.Union[botbuilder.schema._models_py3.Activity,
-    str], speak: str = None, input_hint: str = None) -> botbuilder.schema._models_py3.ResourceResponse'
-  namewithoutparameters: send_activity
+- uid: botbuilder.core.turn_context.TurnContext.send_activity
+  name: send_activity
   summary: 'Sends a single activity or message to the user.
 
     :param activity_or_text:
 
     :return:'
-  syntax:
-    content: 'send_activity(activity_or_text: typing.Union[botbuilder.schema._models_py3.Activity,
-      str], speak: str = None, input_hint: str = None) -> botbuilder.schema._models_py3.ResourceResponse'
-  type: method
-  uid: botbuilder.core.turn_context.TurnContext.send_activity
-- class: botbuilder.core.turn_context.TurnContext
-  fullName: botbuilder.core.turn_context.TurnContext.send_trace_activity
-  langs:
-  - python
-  module: botbuilder.core.turn_context
-  name: 'send_trace_activity(name: str, value: object = None, value_type: str = None,
-    label: str = None) -> botbuilder.schema._models_py3.ResourceResponse'
-  namewithoutparameters: send_trace_activity
-  syntax:
-    content: 'send_trace_activity(name: str, value: object = None, value_type: str
-      = None, label: str = None) -> botbuilder.schema._models_py3.ResourceResponse'
-  type: method
-  uid: botbuilder.core.turn_context.TurnContext.send_trace_activity
-- class: botbuilder.core.turn_context.TurnContext
-  fullName: botbuilder.core.turn_context.TurnContext.services
-  langs:
-  - python
-  module: botbuilder.core.turn_context
-  name: services
-  summary: 'Map of services and other values cached for the lifetime of the turn.
-
-    :return:'
-  syntax: {}
-  type: attribute
-  uid: botbuilder.core.turn_context.TurnContext.services
-- class: botbuilder.core.turn_context.TurnContext
-  fullName: botbuilder.core.turn_context.TurnContext.set
-  langs:
-  - python
-  module: botbuilder.core.turn_context
-  name: 'set(key: str, value: object) -> None'
-  namewithoutparameters: set
+  signature: 'send_activity(activity_or_text: typing.Union[botbuilder.schema._models_py3.Activity,
+    str], speak: str = None, input_hint: str = None) -> botbuilder.schema._models_py3.ResourceResponse'
+- uid: botbuilder.core.turn_context.TurnContext.send_trace_activity
+  name: send_trace_activity
+  signature: 'send_trace_activity(name: str, value: object = None, value_type: str
+    = None, label: str = None) -> botbuilder.schema._models_py3.ResourceResponse'
+- uid: botbuilder.core.turn_context.TurnContext.set
+  name: set
   summary: 'Caches a value for the lifetime of the current turn.
 
     :param key:
@@ -351,138 +144,29 @@ items:
     :param value:
 
     :return:'
-  syntax:
-    content: 'set(key: str, value: object) -> None'
-  type: method
-  uid: botbuilder.core.turn_context.TurnContext.set
-- class: botbuilder.core.turn_context.TurnContext
-  fullName: botbuilder.core.turn_context.TurnContext.update_activity
-  langs:
-  - python
-  module: botbuilder.core.turn_context
-  name: 'update_activity(activity: botbuilder.schema._models_py3.Activity)'
-  namewithoutparameters: update_activity
+  signature: 'set(key: str, value: object) -> None'
+- uid: botbuilder.core.turn_context.TurnContext.update_activity
+  name: update_activity
   summary: 'Replaces an existing activity.
 
     :param activity:
 
     :return:'
-  syntax:
-    content: 'update_activity(activity: botbuilder.schema._models_py3.Activity)'
-  type: method
-  uid: botbuilder.core.turn_context.TurnContext.update_activity
-references:
-- fullName: botbuilder.core.turn_context.TurnContext.activity
-  isExternal: false
+  signature: 'update_activity(activity: botbuilder.schema._models_py3.Activity)'
+attributes:
+- uid: botbuilder.core.turn_context.TurnContext.activity
   name: activity
-  parent: botbuilder.core.turn_context.TurnContext
-  uid: botbuilder.core.turn_context.TurnContext.activity
-- fullName: botbuilder.core.turn_context.TurnContext.apply_conversation_reference
-  isExternal: false
-  name: 'apply_conversation_reference(activity: botbuilder.schema._models_py3.Activity,
-    reference: botbuilder.schema._models_py3.ConversationReference, is_incoming: bool
-    = False) -> botbuilder.schema._models_py3.Activity'
-  parent: botbuilder.core.turn_context.TurnContext
-  uid: botbuilder.core.turn_context.TurnContext.apply_conversation_reference
-- fullName: botbuilder.core.turn_context.TurnContext.copy_to
-  isExternal: false
-  name: 'copy_to(context: botbuilder.core.turn_context.TurnContext) -> None'
-  parent: botbuilder.core.turn_context.TurnContext
-  uid: botbuilder.core.turn_context.TurnContext.copy_to
-- fullName: botbuilder.core.turn_context.TurnContext.delete_activity
-  isExternal: false
-  name: 'delete_activity(id_or_reference: typing.Union[str, botbuilder.schema._models_py3.ConversationReference])'
-  parent: botbuilder.core.turn_context.TurnContext
-  uid: botbuilder.core.turn_context.TurnContext.delete_activity
-- fullName: botbuilder.core.turn_context.TurnContext.get
-  isExternal: false
-  name: 'get(key: str) -> object'
-  parent: botbuilder.core.turn_context.TurnContext
-  uid: botbuilder.core.turn_context.TurnContext.get
-- fullName: botbuilder.core.turn_context.TurnContext.get_conversation_reference
-  isExternal: false
-  name: 'get_conversation_reference(activity: botbuilder.schema._models_py3.Activity)
-    -> botbuilder.schema._models_py3.ConversationReference'
-  parent: botbuilder.core.turn_context.TurnContext
-  uid: botbuilder.core.turn_context.TurnContext.get_conversation_reference
-- fullName: botbuilder.core.turn_context.TurnContext.get_mentions
-  isExternal: false
-  name: 'get_mentions(activity: botbuilder.schema._models_py3.Activity) -> typing.List[botbuilder.schema._models_py3.Mention]'
-  parent: botbuilder.core.turn_context.TurnContext
-  uid: botbuilder.core.turn_context.TurnContext.get_mentions
-- fullName: botbuilder.core.turn_context.TurnContext.get_reply_conversation_reference
-  isExternal: false
-  name: 'get_reply_conversation_reference(activity: botbuilder.schema._models_py3.Activity,
-    reply: botbuilder.schema._models_py3.ResourceResponse) -> botbuilder.schema._models_py3.ConversationReference'
-  parent: botbuilder.core.turn_context.TurnContext
-  uid: botbuilder.core.turn_context.TurnContext.get_reply_conversation_reference
-- fullName: botbuilder.core.turn_context.TurnContext.has
-  isExternal: false
-  name: 'has(key: str) -> bool'
-  parent: botbuilder.core.turn_context.TurnContext
-  uid: botbuilder.core.turn_context.TurnContext.has
-- fullName: botbuilder.core.turn_context.TurnContext.on_delete_activity
-  isExternal: false
-  name: on_delete_activity(handler) -> botbuilder.core.turn_context.TurnContext
-  parent: botbuilder.core.turn_context.TurnContext
-  uid: botbuilder.core.turn_context.TurnContext.on_delete_activity
-- fullName: botbuilder.core.turn_context.TurnContext.on_send_activities
-  isExternal: false
-  name: on_send_activities(handler) -> botbuilder.core.turn_context.TurnContext
-  parent: botbuilder.core.turn_context.TurnContext
-  uid: botbuilder.core.turn_context.TurnContext.on_send_activities
-- fullName: botbuilder.core.turn_context.TurnContext.on_update_activity
-  isExternal: false
-  name: on_update_activity(handler) -> botbuilder.core.turn_context.TurnContext
-  parent: botbuilder.core.turn_context.TurnContext
-  uid: botbuilder.core.turn_context.TurnContext.on_update_activity
-- fullName: botbuilder.core.turn_context.TurnContext.remove_mention_text
-  isExternal: false
-  name: 'remove_mention_text(activity: botbuilder.schema._models_py3.Activity, identifier:
-    str) -> str'
-  parent: botbuilder.core.turn_context.TurnContext
-  uid: botbuilder.core.turn_context.TurnContext.remove_mention_text
-- fullName: botbuilder.core.turn_context.TurnContext.remove_recipient_mention
-  isExternal: false
-  name: 'remove_recipient_mention(activity: botbuilder.schema._models_py3.Activity)
-    -> str'
-  parent: botbuilder.core.turn_context.TurnContext
-  uid: botbuilder.core.turn_context.TurnContext.remove_recipient_mention
-- fullName: botbuilder.core.turn_context.TurnContext.responded
-  isExternal: false
+  summary: 'The received activity.
+
+    :return:'
+- uid: botbuilder.core.turn_context.TurnContext.responded
   name: responded
-  parent: botbuilder.core.turn_context.TurnContext
-  uid: botbuilder.core.turn_context.TurnContext.responded
-- fullName: botbuilder.core.turn_context.TurnContext.send_activities
-  isExternal: false
-  name: 'send_activities(activities: typing.List[botbuilder.schema._models_py3.Activity])
-    -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
-  parent: botbuilder.core.turn_context.TurnContext
-  uid: botbuilder.core.turn_context.TurnContext.send_activities
-- fullName: botbuilder.core.turn_context.TurnContext.send_activity
-  isExternal: false
-  name: 'send_activity(activity_or_text: typing.Union[botbuilder.schema._models_py3.Activity,
-    str], speak: str = None, input_hint: str = None) -> botbuilder.schema._models_py3.ResourceResponse'
-  parent: botbuilder.core.turn_context.TurnContext
-  uid: botbuilder.core.turn_context.TurnContext.send_activity
-- fullName: botbuilder.core.turn_context.TurnContext.send_trace_activity
-  isExternal: false
-  name: 'send_trace_activity(name: str, value: object = None, value_type: str = None,
-    label: str = None) -> botbuilder.schema._models_py3.ResourceResponse'
-  parent: botbuilder.core.turn_context.TurnContext
-  uid: botbuilder.core.turn_context.TurnContext.send_trace_activity
-- fullName: botbuilder.core.turn_context.TurnContext.services
-  isExternal: false
+  summary: 'If *true* at least one response has been sent for the current turn of
+    conversation.
+
+    :return:'
+- uid: botbuilder.core.turn_context.TurnContext.services
   name: services
-  parent: botbuilder.core.turn_context.TurnContext
-  uid: botbuilder.core.turn_context.TurnContext.services
-- fullName: botbuilder.core.turn_context.TurnContext.set
-  isExternal: false
-  name: 'set(key: str, value: object) -> None'
-  parent: botbuilder.core.turn_context.TurnContext
-  uid: botbuilder.core.turn_context.TurnContext.set
-- fullName: botbuilder.core.turn_context.TurnContext.update_activity
-  isExternal: false
-  name: 'update_activity(activity: botbuilder.schema._models_py3.Activity)'
-  parent: botbuilder.core.turn_context.TurnContext
-  uid: botbuilder.core.turn_context.TurnContext.update_activity
+  summary: 'Map of services and other values cached for the lifetime of the turn.
+
+    :return:'
