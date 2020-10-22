@@ -1,66 +1,34 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.message_factory.MessageFactory.attachment
-  - botbuilder.core.message_factory.MessageFactory.carousel
-  - botbuilder.core.message_factory.MessageFactory.content_url
-  - botbuilder.core.message_factory.MessageFactory.list
-  - botbuilder.core.message_factory.MessageFactory.suggested_actions
-  - botbuilder.core.message_factory.MessageFactory.text
-  class: botbuilder.core.message_factory.MessageFactory
-  fullName: botbuilder.core.message_factory.MessageFactory
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.core.message_factory
-  name: MessageFactory
-  summary: 'A set of utility functions designed to assist with the formatting of the
-    various message types a
+### YamlMime:PythonClass
+uid: botbuilder.core.message_factory.MessageFactory
+name: MessageFactory
+fullName: botbuilder.core.message_factory.MessageFactory
+module: botbuilder.core.message_factory
+inheritances:
+- builtins.object
+summary: 'A set of utility functions designed to assist with the formatting of the
+  various message types a
 
-    bot can return.'
-  syntax: {}
-  type: class
-  uid: botbuilder.core.message_factory.MessageFactory
-- class: botbuilder.core.message_factory.MessageFactory
-  fullName: botbuilder.core.message_factory.MessageFactory.attachment
-  langs:
-  - python
-  module: botbuilder.core.message_factory
-  name: 'attachment(attachment: botbuilder.schema._models_py3.Attachment, text: str
-    = None, speak: str = None, input_hint: str = None)'
-  namewithoutparameters: attachment
+  bot can return.'
+methods:
+- uid: botbuilder.core.message_factory.MessageFactory.attachment
+  name: attachment
   summary: "Returns a single message activity containing an attachment.\n\n\nmessage\
     \ = MessageFactory.attachment(CardFactory.hero_card(HeroCard(title='White T-Shirt',\n\
     \   images=[CardImage(url=\n      '[https://example.com/whiteShirt.jpg](https://example.com/whiteShirt.jpg)'\n\
     \      )],\n\n   buttons=[CardAction(title='buy')])))\n\n\nawait context.send_activity(message)"
-  syntax:
-    content: 'attachment(attachment: botbuilder.schema._models_py3.Attachment, text:
-      str = None, speak: str = None, input_hint: str = None)'
-    parameters:
-    - description: ''
-      id: attachment
-      isRequired: true
-    - description: ''
-      id: text
-      isRequired: true
-    - description: ''
-      id: speak
-      isRequired: true
-    - description: ''
-      id: input_hint
-      isRequired: true
-  type: method
-  uid: botbuilder.core.message_factory.MessageFactory.attachment
-- class: botbuilder.core.message_factory.MessageFactory
-  fullName: botbuilder.core.message_factory.MessageFactory.carousel
-  langs:
-  - python
-  module: botbuilder.core.message_factory
-  name: 'carousel(attachments: typing.List[botbuilder.schema._models_py3.Attachment],
-    text: str = None, speak: str = None, input_hint: str = None) -> botbuilder.schema._models_py3.Activity'
-  namewithoutparameters: carousel
+  signature: 'attachment(attachment: botbuilder.schema._models_py3.Attachment, text:
+    str = None, speak: str = None, input_hint: str = None)'
+  parameters:
+  - name: attachment
+    isRequired: true
+  - name: text
+    isRequired: true
+  - name: speak
+    isRequired: true
+  - name: input_hint
+    isRequired: true
+- uid: botbuilder.core.message_factory.MessageFactory.carousel
+  name: carousel
   summary: "Returns a message that will display a set of attachments using a carousel\
     \ layout.\n\n\nmessage = MessageFactory.carousel([CardFactory.hero_card(HeroCard(title='title1',\n\
     \      images=[CardImage(url='imageUrl1')],\n      buttons=[CardAction(title='button1')])),\n\
@@ -68,68 +36,40 @@ items:
     \      buttons=[CardAction(title='button2')])),\n\n   CardFactory.hero_card(HeroCard(title='title3',\n\
     \      images=[CardImage(url='imageUrl3')],\n      buttons=[CardAction(title='button3')]))])\n\
     \n\nawait context.send_activity(message)"
-  syntax:
-    content: 'carousel(attachments: typing.List[botbuilder.schema._models_py3.Attachment],
-      text: str = None, speak: str = None, input_hint: str = None) -> botbuilder.schema._models_py3.Activity'
-    parameters:
-    - description: ''
-      id: attachments
-      isRequired: true
-    - description: ''
-      id: text
-      isRequired: true
-    - description: ''
-      id: speak
-      isRequired: true
-    - description: ''
-      id: input_hint
-      isRequired: true
-  type: method
-  uid: botbuilder.core.message_factory.MessageFactory.carousel
-- class: botbuilder.core.message_factory.MessageFactory
-  fullName: botbuilder.core.message_factory.MessageFactory.content_url
-  langs:
-  - python
-  module: botbuilder.core.message_factory
-  name: 'content_url(url: str, content_type: str, name: str = None, text: str = None,
-    speak: str = None, input_hint: str = None)'
-  namewithoutparameters: content_url
+  signature: 'carousel(attachments: typing.List[botbuilder.schema._models_py3.Attachment],
+    text: str = None, speak: str = None, input_hint: str = None) -> botbuilder.schema._models_py3.Activity'
+  parameters:
+  - name: attachments
+    isRequired: true
+  - name: text
+    isRequired: true
+  - name: speak
+    isRequired: true
+  - name: input_hint
+    isRequired: true
+- uid: botbuilder.core.message_factory.MessageFactory.content_url
+  name: content_url
   summary: "Returns a message that will display a single image or video to a user.\n\
     \n\nmessage = MessageFactory.content_url('[https://example.com/hawaii.jpg](https://example.com/hawaii.jpg)',\
     \ 'image/jpeg',\n   'Hawaii Trip', 'A photo from our family vacation.')\n\n\n\
     await context.send_activity(message)"
-  syntax:
-    content: 'content_url(url: str, content_type: str, name: str = None, text: str
-      = None, speak: str = None, input_hint: str = None)'
-    parameters:
-    - description: ''
-      id: url
-      isRequired: true
-    - description: ''
-      id: content_type
-      isRequired: true
-    - description: ''
-      id: name
-      isRequired: true
-    - description: ''
-      id: text
-      isRequired: true
-    - description: ''
-      id: speak
-      isRequired: true
-    - description: ''
-      id: input_hint
-      isRequired: true
-  type: method
-  uid: botbuilder.core.message_factory.MessageFactory.content_url
-- class: botbuilder.core.message_factory.MessageFactory
-  fullName: botbuilder.core.message_factory.MessageFactory.list
-  langs:
-  - python
-  module: botbuilder.core.message_factory
-  name: 'list(attachments: typing.List[botbuilder.schema._models_py3.Attachment],
-    text: str = None, speak: str = None, input_hint: str = None) -> botbuilder.schema._models_py3.Activity'
-  namewithoutparameters: list
+  signature: 'content_url(url: str, content_type: str, name: str = None, text: str
+    = None, speak: str = None, input_hint: str = None)'
+  parameters:
+  - name: url
+    isRequired: true
+  - name: content_type
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: text
+    isRequired: true
+  - name: speak
+    isRequired: true
+  - name: input_hint
+    isRequired: true
+- uid: botbuilder.core.message_factory.MessageFactory.list
+  name: list
   summary: "Returns a message that will display a set of attachments in list form.\n\
     \n\nmessage = MessageFactory.list([CardFactory.hero_card(HeroCard(title='title1',\n\
     \      images=[CardImage(url='imageUrl1')],\n      buttons=[CardAction(title='button1')])),\n\
@@ -137,65 +77,38 @@ items:
     \      buttons=[CardAction(title='button2')])),\n\n   CardFactory.hero_card(HeroCard(title='title3',\n\
     \      images=[CardImage(url='imageUrl3')],\n      buttons=[CardAction(title='button3')]))])\n\
     \n\nawait context.send_activity(message)"
-  syntax:
-    content: 'list(attachments: typing.List[botbuilder.schema._models_py3.Attachment],
-      text: str = None, speak: str = None, input_hint: str = None) -> botbuilder.schema._models_py3.Activity'
-    parameters:
-    - description: ''
-      id: attachments
-      isRequired: true
-    - description: ''
-      id: text
-      isRequired: true
-    - description: ''
-      id: speak
-      isRequired: true
-    - description: ''
-      id: input_hint
-      isRequired: true
-  type: method
-  uid: botbuilder.core.message_factory.MessageFactory.list
-- class: botbuilder.core.message_factory.MessageFactory
-  fullName: botbuilder.core.message_factory.MessageFactory.suggested_actions
-  langs:
-  - python
-  module: botbuilder.core.message_factory
-  name: 'suggested_actions(actions: typing.List[botbuilder.schema._models_py3.CardAction],
-    text: str = None, speak: str = None, input_hint: str = <InputHints.accepting_input:
-    ''acceptingInput''>) -> botbuilder.schema._models_py3.Activity'
-  namewithoutparameters: suggested_actions
+  signature: 'list(attachments: typing.List[botbuilder.schema._models_py3.Attachment],
+    text: str = None, speak: str = None, input_hint: str = None) -> botbuilder.schema._models_py3.Activity'
+  parameters:
+  - name: attachments
+    isRequired: true
+  - name: text
+    isRequired: true
+  - name: speak
+    isRequired: true
+  - name: input_hint
+    isRequired: true
+- uid: botbuilder.core.message_factory.MessageFactory.suggested_actions
+  name: suggested_actions
   summary: "Returns a message that includes a set of suggested actions and optional\
     \ text.\n\n\nmessage = MessageFactory.suggested_actions([CardAction(title='a',\
     \ type=ActionTypes.im_back, value='a'),\n   CardAction(title='b', type=ActionTypes.im_back,\
     \ value='b'),\n   CardAction(title='c', type=ActionTypes.im_back, value='c')],\n\
     \   'Choose a color')\n\n\nawait context.send_activity(message)"
-  syntax:
-    content: 'suggested_actions(actions: typing.List[botbuilder.schema._models_py3.CardAction],
-      text: str = None, speak: str = None, input_hint: str = <InputHints.accepting_input:
-      ''acceptingInput''>) -> botbuilder.schema._models_py3.Activity'
-    parameters:
-    - description: ''
-      id: actions
-      isRequired: true
-    - description: ''
-      id: text
-      isRequired: true
-    - description: ''
-      id: speak
-      isRequired: true
-    - description: ''
-      id: input_hint
-      isRequired: true
-  type: method
-  uid: botbuilder.core.message_factory.MessageFactory.suggested_actions
-- class: botbuilder.core.message_factory.MessageFactory
-  fullName: botbuilder.core.message_factory.MessageFactory.text
-  langs:
-  - python
-  module: botbuilder.core.message_factory
-  name: 'text(text: str, speak: str = None, input_hint: str = <InputHints.accepting_input:
+  signature: 'suggested_actions(actions: typing.List[botbuilder.schema._models_py3.CardAction],
+    text: str = None, speak: str = None, input_hint: str = <InputHints.accepting_input:
     ''acceptingInput''>) -> botbuilder.schema._models_py3.Activity'
-  namewithoutparameters: text
+  parameters:
+  - name: actions
+    isRequired: true
+  - name: text
+    isRequired: true
+  - name: speak
+    isRequired: true
+  - name: input_hint
+    isRequired: true
+- uid: botbuilder.core.message_factory.MessageFactory.text
+  name: text
   summary: 'Returns a simple text message.
 
 
@@ -203,56 +116,12 @@ items:
     message = MessageFactory.text(''Greetings from example message'')
 
     await context.send_activity(message)'
-  syntax:
-    content: 'text(text: str, speak: str = None, input_hint: str = <InputHints.accepting_input:
-      ''acceptingInput''>) -> botbuilder.schema._models_py3.Activity'
-    parameters:
-    - description: ''
-      id: text
-      isRequired: true
-    - description: ''
-      id: speak
-      isRequired: true
-    - description: ''
-      id: input_hint
-      isRequired: true
-  type: method
-  uid: botbuilder.core.message_factory.MessageFactory.text
-references:
-- fullName: botbuilder.core.message_factory.MessageFactory.attachment
-  isExternal: false
-  name: 'attachment(attachment: botbuilder.schema._models_py3.Attachment, text: str
-    = None, speak: str = None, input_hint: str = None)'
-  parent: botbuilder.core.message_factory.MessageFactory
-  uid: botbuilder.core.message_factory.MessageFactory.attachment
-- fullName: botbuilder.core.message_factory.MessageFactory.carousel
-  isExternal: false
-  name: 'carousel(attachments: typing.List[botbuilder.schema._models_py3.Attachment],
-    text: str = None, speak: str = None, input_hint: str = None) -> botbuilder.schema._models_py3.Activity'
-  parent: botbuilder.core.message_factory.MessageFactory
-  uid: botbuilder.core.message_factory.MessageFactory.carousel
-- fullName: botbuilder.core.message_factory.MessageFactory.content_url
-  isExternal: false
-  name: 'content_url(url: str, content_type: str, name: str = None, text: str = None,
-    speak: str = None, input_hint: str = None)'
-  parent: botbuilder.core.message_factory.MessageFactory
-  uid: botbuilder.core.message_factory.MessageFactory.content_url
-- fullName: botbuilder.core.message_factory.MessageFactory.list
-  isExternal: false
-  name: 'list(attachments: typing.List[botbuilder.schema._models_py3.Attachment],
-    text: str = None, speak: str = None, input_hint: str = None) -> botbuilder.schema._models_py3.Activity'
-  parent: botbuilder.core.message_factory.MessageFactory
-  uid: botbuilder.core.message_factory.MessageFactory.list
-- fullName: botbuilder.core.message_factory.MessageFactory.suggested_actions
-  isExternal: false
-  name: 'suggested_actions(actions: typing.List[botbuilder.schema._models_py3.CardAction],
-    text: str = None, speak: str = None, input_hint: str = <InputHints.accepting_input:
+  signature: 'text(text: str, speak: str = None, input_hint: str = <InputHints.accepting_input:
     ''acceptingInput''>) -> botbuilder.schema._models_py3.Activity'
-  parent: botbuilder.core.message_factory.MessageFactory
-  uid: botbuilder.core.message_factory.MessageFactory.suggested_actions
-- fullName: botbuilder.core.message_factory.MessageFactory.text
-  isExternal: false
-  name: 'text(text: str, speak: str = None, input_hint: str = <InputHints.accepting_input:
-    ''acceptingInput''>) -> botbuilder.schema._models_py3.Activity'
-  parent: botbuilder.core.message_factory.MessageFactory
-  uid: botbuilder.core.message_factory.MessageFactory.text
+  parameters:
+  - name: text
+    isRequired: true
+  - name: speak
+    isRequired: true
+  - name: input_hint
+    isRequired: true

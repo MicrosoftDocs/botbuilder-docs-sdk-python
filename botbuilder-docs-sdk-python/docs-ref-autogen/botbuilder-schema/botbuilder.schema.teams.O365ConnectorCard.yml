@@ -1,75 +1,37 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.O365ConnectorCard
-  fullName: botbuilder.schema.teams.O365ConnectorCard
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: O365ConnectorCard
-  summary: O365 connector card.
-  syntax:
-    content: 'O365ConnectorCard(*, title: str = None, text: str = None, summary: str
-      = None, theme_color: str = None, sections=None, potential_action=None, **kwargs)
-      -> None'
-    parameters:
-    - description: Title of the item
-      id: title
-      type:
-      - str
-    - description: Text for the card
-      id: text
-      type:
-      - str
-    - description: Summary for the card
-      id: summary
-      type:
-      - str
-    - description: Theme color for the card
-      id: theme_color
-      type:
-      - str
-    - description: Set of sections for the current card
-      id: sections
-      type:
-      - list[botframework.connector.teams.models.O365ConnectorCardSection]
-    - description: Set of actions for the current card
-      id: potential_action
-      type:
-      - list[botframework.connector.teams.models.O365ConnectorCardActionBase]
-  type: class
-  uid: botbuilder.schema.teams.O365ConnectorCard
-references:
-- fullName: list[botframework.connector.teams.models.O365ConnectorCardSection]
-  name: list[O365ConnectorCardSection]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.teams.models.O365ConnectorCardSection
-    name: O365ConnectorCardSection
-    uid: botframework.connector.teams.models.O365ConnectorCardSection
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.teams.models.O365ConnectorCardSection]
-- fullName: list[botframework.connector.teams.models.O365ConnectorCardActionBase]
-  name: list[O365ConnectorCardActionBase]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.teams.models.O365ConnectorCardActionBase
-    name: O365ConnectorCardActionBase
-    uid: botframework.connector.teams.models.O365ConnectorCardActionBase
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.teams.models.O365ConnectorCardActionBase]
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.O365ConnectorCard
+name: O365ConnectorCard
+fullName: botbuilder.schema.teams.O365ConnectorCard
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: O365 connector card.
+constructor:
+  syntax: 'O365ConnectorCard(*, title: str = None, text: str = None, summary: str
+    = None, theme_color: str = None, sections=None, potential_action=None, **kwargs)
+    -> None'
+  parameters:
+  - name: title
+    description: Title of the item
+    types:
+    - <xref:str>
+  - name: text
+    description: Text for the card
+    types:
+    - <xref:str>
+  - name: summary
+    description: Summary for the card
+    types:
+    - <xref:str>
+  - name: theme_color
+    description: Theme color for the card
+    types:
+    - <xref:str>
+  - name: sections
+    description: Set of sections for the current card
+    types:
+    - <xref:list>[<xref:botframework.connector.teams.models.O365ConnectorCardSection>]
+  - name: potential_action
+    description: Set of actions for the current card
+    types:
+    - <xref:list>[<xref:botframework.connector.teams.models.O365ConnectorCardActionBase>]

@@ -1,20 +1,12 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.azure.CosmosDbConfig
-  fullName: botbuilder.azure.CosmosDbConfig
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.azure
-  name: CosmosDbConfig
-  summary: The class for CosmosDB configuration for the Azure Bot Framework.
-  syntax:
-    content: 'CosmosDbConfig(endpoint: str = None, masterkey: str = None, database:
-      str = None, container: str = None, partition_key: str = None, database_creation_options:
-      dict = None, container_creation_options: dict = None, **kwargs)'
-  type: class
-  uid: botbuilder.azure.CosmosDbConfig
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.azure.CosmosDbConfig
+name: CosmosDbConfig
+fullName: botbuilder.azure.CosmosDbConfig
+module: botbuilder.azure
+inheritances:
+- builtins.object
+summary: The class for CosmosDB configuration for the Azure Bot Framework.
+constructor:
+  syntax: 'CosmosDbConfig(endpoint: str = None, masterkey: str = None, database: str
+    = None, container: str = None, partition_key: str = None, database_creation_options:
+    dict = None, container_creation_options: dict = None, **kwargs)'

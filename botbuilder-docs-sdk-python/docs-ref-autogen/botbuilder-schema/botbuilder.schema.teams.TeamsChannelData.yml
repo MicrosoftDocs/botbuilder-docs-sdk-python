@@ -1,44 +1,34 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.TeamsChannelData
-  fullName: botbuilder.schema.teams.TeamsChannelData
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: TeamsChannelData
-  summary: Channel data specific to messages received in Microsoft Teams.
-  syntax:
-    content: 'TeamsChannelData(*, channel=None, eventType: str = None, team=None,
-      notification=None, tenant=None, **kwargs) -> None'
-    parameters:
-    - description: 'Information about the channel in which the message was
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.TeamsChannelData
+name: TeamsChannelData
+fullName: botbuilder.schema.teams.TeamsChannelData
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: Channel data specific to messages received in Microsoft Teams.
+constructor:
+  syntax: 'TeamsChannelData(*, channel=None, eventType: str = None, team=None, notification=None,
+    tenant=None, **kwargs) -> None'
+  parameters:
+  - name: channel
+    description: 'Information about the channel in which the message was
 
-        sent'
-      id: channel
-      type:
-      - botframework.connector.teams.models.ChannelInfo
-    - description: Type of event.
-      id: event_type
-      type:
-      - str
-    - description: Information about the team in which the message was sent
-      id: team
-      type:
-      - botframework.connector.teams.models.TeamInfo
-    - description: Notification settings for the message
-      id: notification
-      type:
-      - botframework.connector.teams.models.NotificationInfo
-    - description: Information about the tenant in which the message was sent
-      id: tenant
-      type:
-      - botframework.connector.teams.models.TenantInfo
-  type: class
-  uid: botbuilder.schema.teams.TeamsChannelData
-references: []
+      sent'
+    types:
+    - <xref:botframework.connector.teams.models.ChannelInfo>
+  - name: event_type
+    description: Type of event.
+    types:
+    - <xref:str>
+  - name: team
+    description: Information about the team in which the message was sent
+    types:
+    - <xref:botframework.connector.teams.models.TeamInfo>
+  - name: notification
+    description: Notification settings for the message
+    types:
+    - <xref:botframework.connector.teams.models.NotificationInfo>
+  - name: tenant
+    description: Information about the tenant in which the message was sent
+    types:
+    - <xref:botframework.connector.teams.models.TenantInfo>

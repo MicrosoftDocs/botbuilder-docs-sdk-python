@@ -1,162 +1,21 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.dialogs.DialogReason.BeginCalled
-  - botbuilder.dialogs.DialogReason.CancelCalled
-  - botbuilder.dialogs.DialogReason.ContinueCalled
-  - botbuilder.dialogs.DialogReason.EndCalled
-  - botbuilder.dialogs.DialogReason.NextCalled
-  - botbuilder.dialogs.DialogReason.ReplaceCalled
-  class: botbuilder.dialogs.DialogReason
-  fullName: botbuilder.dialogs.DialogReason
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: enum.Enum
-  langs:
-  - python
-  module: botbuilder.dialogs
-  name: DialogReason
-  summary: Indicates in which a dialog-related method is being called.
-  syntax:
-    variables:
-    - description: A dialog is being started through a call to <xref:DialogContext.begin>.
-      id: BeginCalled
-      type:
-      - int
-    - description: A dialog is being continued through a call to <xref:botbuilder.dialogs.DialogContext.continue_dialog>.
-      id: ContinueCalled
-      type:
-      - int
-    - description: A dialog ended normally through a call to :meth:>>`<<DialogContext.end_dialog()
-      id: EndCalled
-      type:
-      - int
-    - description: A dialog is ending and replaced through a call to :meth:>>``<<DialogContext.replace_dialog()`.
-      id: ReplaceCalled
-    - description: A dialog was cancelled as part of a call to <xref:botbuilder.dialogs.DialogContext.cancel_all_dialogs>.
-      id: CancelCalled
-      type:
-      - int
-    - description: A preceding step was skipped through a call to <xref:WaterfallStepContext.next>.
-      id: NextCalled
-      type:
-      - int
-  type: class
-  uid: botbuilder.dialogs.DialogReason
-- fullName: botbuilder.dialogs.DialogReason.BeginCalled
-  id: BeginCalled
-  langs:
-  - python
-  module: botbuilder.dialogs
-  name: BeginCalled
-  parent: botbuilder.dialogs.DialogReason
-  syntax:
-    content: BeginCalled = 1
-    return:
-      type:
-      - botbuilder.dialogs.DialogReason
-  type: attribute
+### YamlMime:PythonEnum
+uid: botbuilder.dialogs.DialogReason
+name: DialogReason
+fullName: botbuilder.dialogs.DialogReason
+summary: Indicates in which a dialog-related method is being called.
+module: botbuilder.dialogs
+inheritances:
+- enum.Enum
+fields:
+- name: BeginCalled
   uid: botbuilder.dialogs.DialogReason.BeginCalled
-- fullName: botbuilder.dialogs.DialogReason.CancelCalled
-  id: CancelCalled
-  langs:
-  - python
-  module: botbuilder.dialogs
-  name: CancelCalled
-  parent: botbuilder.dialogs.DialogReason
-  syntax:
-    content: CancelCalled = 5
-    return:
-      type:
-      - botbuilder.dialogs.DialogReason
-  type: attribute
+- name: CancelCalled
   uid: botbuilder.dialogs.DialogReason.CancelCalled
-- fullName: botbuilder.dialogs.DialogReason.ContinueCalled
-  id: ContinueCalled
-  langs:
-  - python
-  module: botbuilder.dialogs
-  name: ContinueCalled
-  parent: botbuilder.dialogs.DialogReason
-  syntax:
-    content: ContinueCalled = 2
-    return:
-      type:
-      - botbuilder.dialogs.DialogReason
-  type: attribute
+- name: ContinueCalled
   uid: botbuilder.dialogs.DialogReason.ContinueCalled
-- fullName: botbuilder.dialogs.DialogReason.EndCalled
-  id: EndCalled
-  langs:
-  - python
-  module: botbuilder.dialogs
-  name: EndCalled
-  parent: botbuilder.dialogs.DialogReason
-  syntax:
-    content: EndCalled = 3
-    return:
-      type:
-      - botbuilder.dialogs.DialogReason
-  type: attribute
+- name: EndCalled
   uid: botbuilder.dialogs.DialogReason.EndCalled
-- fullName: botbuilder.dialogs.DialogReason.NextCalled
-  id: NextCalled
-  langs:
-  - python
-  module: botbuilder.dialogs
-  name: NextCalled
-  parent: botbuilder.dialogs.DialogReason
-  syntax:
-    content: NextCalled = 6
-    return:
-      type:
-      - botbuilder.dialogs.DialogReason
-  type: attribute
+- name: NextCalled
   uid: botbuilder.dialogs.DialogReason.NextCalled
-- fullName: botbuilder.dialogs.DialogReason.ReplaceCalled
-  id: ReplaceCalled
-  langs:
-  - python
-  module: botbuilder.dialogs
-  name: ReplaceCalled
-  parent: botbuilder.dialogs.DialogReason
-  syntax:
-    content: ReplaceCalled = 4
-    return:
-      type:
-      - botbuilder.dialogs.DialogReason
-  type: attribute
-  uid: botbuilder.dialogs.DialogReason.ReplaceCalled
-references:
-- fullName: botbuilder.dialogs.DialogReason.BeginCalled
-  isExternal: false
-  name: BeginCalled
-  parent: botbuilder.dialogs.DialogReason
-  uid: botbuilder.dialogs.DialogReason.BeginCalled
-- fullName: botbuilder.dialogs.DialogReason.CancelCalled
-  isExternal: false
-  name: CancelCalled
-  parent: botbuilder.dialogs.DialogReason
-  uid: botbuilder.dialogs.DialogReason.CancelCalled
-- fullName: botbuilder.dialogs.DialogReason.ContinueCalled
-  isExternal: false
-  name: ContinueCalled
-  parent: botbuilder.dialogs.DialogReason
-  uid: botbuilder.dialogs.DialogReason.ContinueCalled
-- fullName: botbuilder.dialogs.DialogReason.EndCalled
-  isExternal: false
-  name: EndCalled
-  parent: botbuilder.dialogs.DialogReason
-  uid: botbuilder.dialogs.DialogReason.EndCalled
-- fullName: botbuilder.dialogs.DialogReason.NextCalled
-  isExternal: false
-  name: NextCalled
-  parent: botbuilder.dialogs.DialogReason
-  uid: botbuilder.dialogs.DialogReason.NextCalled
-- fullName: botbuilder.dialogs.DialogReason.ReplaceCalled
-  isExternal: false
-  name: ReplaceCalled
-  parent: botbuilder.dialogs.DialogReason
+- name: ReplaceCalled
   uid: botbuilder.dialogs.DialogReason.ReplaceCalled

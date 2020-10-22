@@ -1,434 +1,85 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.adapters.slack.slack_client.SlackClient.channels_list_ex
-  - botbuilder.adapters.slack.slack_client.SlackClient.chat_post_ephemeral_ex
-  - botbuilder.adapters.slack.slack_client.SlackClient.chat_post_message_ex
-  - botbuilder.adapters.slack.slack_client.SlackClient.chat_update_ex
-  - botbuilder.adapters.slack.slack_client.SlackClient.files_info_ex
-  - botbuilder.adapters.slack.slack_client.SlackClient.files_list_ex
-  - botbuilder.adapters.slack.slack_client.SlackClient.files_upload_ex
-  - botbuilder.adapters.slack.slack_client.SlackClient.get_bot_user_by_team
-  - botbuilder.adapters.slack.slack_client.SlackClient.get_preferences
-  - botbuilder.adapters.slack.slack_client.SlackClient.groups_close
-  - botbuilder.adapters.slack.slack_client.SlackClient.groups_history_ex
-  - botbuilder.adapters.slack.slack_client.SlackClient.groups_list_ex
-  - botbuilder.adapters.slack.slack_client.SlackClient.im_history_ex
-  - botbuilder.adapters.slack.slack_client.SlackClient.is_logged_in
-  - botbuilder.adapters.slack.slack_client.SlackClient.login_with_slack
-  - botbuilder.adapters.slack.slack_client.SlackClient.post_message_to_slack
-  - botbuilder.adapters.slack.slack_client.SlackClient.search_all_ex
-  - botbuilder.adapters.slack.slack_client.SlackClient.search_files_ex
-  - botbuilder.adapters.slack.slack_client.SlackClient.search_messages_ex
-  - botbuilder.adapters.slack.slack_client.SlackClient.stars_list_ex
-  - botbuilder.adapters.slack.slack_client.SlackClient.test_auth
-  - botbuilder.adapters.slack.slack_client.SlackClient.users_counts
-  - botbuilder.adapters.slack.slack_client.SlackClient.verify_signature
-  class: botbuilder.adapters.slack.slack_client.SlackClient
-  fullName: botbuilder.adapters.slack.slack_client.SlackClient
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: slack.web.base_client.BaseClient
-    type: slack.web.client.WebClient
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_client
-  name: SlackClient
-  summary: Slack client that extends [https://github.com/slackapi/python-slackclient](https://github.com/slackapi/python-slackclient).
-  syntax:
-    content: 'SlackClient(options: botbuilder.adapters.slack.slack_options.SlackAdapterOptions)'
-  type: class
-  uid: botbuilder.adapters.slack.slack_client.SlackClient
-- class: botbuilder.adapters.slack.slack_client.SlackClient
-  fullName: botbuilder.adapters.slack.slack_client.SlackClient.channels_list_ex
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_client
-  name: 'channels_list_ex(exclude_archived: bool = True) -> slack.web.slack_response.SlackResponse'
-  namewithoutparameters: channels_list_ex
-  syntax:
-    content: 'channels_list_ex(exclude_archived: bool = True) -> slack.web.slack_response.SlackResponse'
-  type: method
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.channels_list_ex
-- class: botbuilder.adapters.slack.slack_client.SlackClient
-  fullName: botbuilder.adapters.slack.slack_client.SlackClient.chat_post_ephemeral_ex
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_client
+### YamlMime:PythonClass
+uid: botbuilder.adapters.slack.slack_client.SlackClient
+name: SlackClient
+fullName: botbuilder.adapters.slack.slack_client.SlackClient
+module: botbuilder.adapters.slack.slack_client
+inheritances:
+- slack.web.client.WebClient
+summary: Slack client that extends [https://github.com/slackapi/python-slackclient](https://github.com/slackapi/python-slackclient).
+constructor:
+  syntax: 'SlackClient(options: botbuilder.adapters.slack.slack_options.SlackAdapterOptions)'
+methods:
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.channels_list_ex
+  name: channels_list_ex
+  signature: 'channels_list_ex(exclude_archived: bool = True) -> slack.web.slack_response.SlackResponse'
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.chat_post_ephemeral_ex
   name: chat_post_ephemeral_ex
-  namewithoutparameters: chat_post_ephemeral_ex
-  syntax: {}
-  type: method
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.chat_post_ephemeral_ex
-- class: botbuilder.adapters.slack.slack_client.SlackClient
-  fullName: botbuilder.adapters.slack.slack_client.SlackClient.chat_post_message_ex
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_client
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.chat_post_message_ex
   name: chat_post_message_ex
-  namewithoutparameters: chat_post_message_ex
-  syntax: {}
-  type: method
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.chat_post_message_ex
-- class: botbuilder.adapters.slack.slack_client.SlackClient
-  fullName: botbuilder.adapters.slack.slack_client.SlackClient.chat_update_ex
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_client
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.chat_update_ex
   name: chat_update_ex
-  namewithoutparameters: chat_update_ex
-  syntax: {}
-  type: method
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.chat_update_ex
-- class: botbuilder.adapters.slack.slack_client.SlackClient
-  fullName: botbuilder.adapters.slack.slack_client.SlackClient.files_info_ex
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_client
-  name: 'files_info_ex(file_id: str, page: int = None, count: int = None) -> slack.web.slack_response.SlackResponse'
-  namewithoutparameters: files_info_ex
-  syntax:
-    content: 'files_info_ex(file_id: str, page: int = None, count: int = None) ->
-      slack.web.slack_response.SlackResponse'
-  type: method
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.files_info_ex
-- class: botbuilder.adapters.slack.slack_client.SlackClient
-  fullName: botbuilder.adapters.slack.slack_client.SlackClient.files_list_ex
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_client
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.files_info_ex
+  name: files_info_ex
+  signature: 'files_info_ex(file_id: str, page: int = None, count: int = None) ->
+    slack.web.slack_response.SlackResponse'
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.files_list_ex
   name: files_list_ex
-  namewithoutparameters: files_list_ex
-  syntax: {}
-  type: method
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.files_list_ex
-- class: botbuilder.adapters.slack.slack_client.SlackClient
-  fullName: botbuilder.adapters.slack.slack_client.SlackClient.files_upload_ex
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_client
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.files_upload_ex
   name: files_upload_ex
-  namewithoutparameters: files_upload_ex
-  syntax: {}
-  type: method
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.files_upload_ex
-- class: botbuilder.adapters.slack.slack_client.SlackClient
-  fullName: botbuilder.adapters.slack.slack_client.SlackClient.get_bot_user_by_team
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_client
-  name: 'get_bot_user_by_team(activity: botbuilder.schema._models_py3.Activity) ->
-    str'
-  namewithoutparameters: get_bot_user_by_team
-  syntax:
-    content: 'get_bot_user_by_team(activity: botbuilder.schema._models_py3.Activity)
-      -> str'
-  type: method
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.get_bot_user_by_team
-- class: botbuilder.adapters.slack.slack_client.SlackClient
-  fullName: botbuilder.adapters.slack.slack_client.SlackClient.get_preferences
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_client
-  name: get_preferences() -> slack.web.slack_response.SlackResponse
-  namewithoutparameters: get_preferences
-  syntax:
-    content: get_preferences() -> slack.web.slack_response.SlackResponse
-  type: method
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.get_preferences
-- class: botbuilder.adapters.slack.slack_client.SlackClient
-  fullName: botbuilder.adapters.slack.slack_client.SlackClient.groups_close
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_client
-  name: 'groups_close(channel: str) -> slack.web.slack_response.SlackResponse'
-  namewithoutparameters: groups_close
-  syntax:
-    content: 'groups_close(channel: str) -> slack.web.slack_response.SlackResponse'
-  type: method
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.groups_close
-- class: botbuilder.adapters.slack.slack_client.SlackClient
-  fullName: botbuilder.adapters.slack.slack_client.SlackClient.groups_history_ex
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_client
-  name: 'groups_history_ex(channel: str, latest: str = None, oldest: str = None, count:
-    int = None) -> slack.web.slack_response.SlackResponse'
-  namewithoutparameters: groups_history_ex
-  syntax:
-    content: 'groups_history_ex(channel: str, latest: str = None, oldest: str = None,
-      count: int = None) -> slack.web.slack_response.SlackResponse'
-  type: method
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.groups_history_ex
-- class: botbuilder.adapters.slack.slack_client.SlackClient
-  fullName: botbuilder.adapters.slack.slack_client.SlackClient.groups_list_ex
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_client
-  name: 'groups_list_ex(exclude_archived: bool = True) -> slack.web.slack_response.SlackResponse'
-  namewithoutparameters: groups_list_ex
-  syntax:
-    content: 'groups_list_ex(exclude_archived: bool = True) -> slack.web.slack_response.SlackResponse'
-  type: method
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.groups_list_ex
-- class: botbuilder.adapters.slack.slack_client.SlackClient
-  fullName: botbuilder.adapters.slack.slack_client.SlackClient.im_history_ex
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_client
-  name: 'im_history_ex(channel: str, latest_timestamp: str = None, oldest_timestamp:
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.get_bot_user_by_team
+  name: get_bot_user_by_team
+  signature: 'get_bot_user_by_team(activity: botbuilder.schema._models_py3.Activity)
+    -> str'
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.get_preferences
+  name: get_preferences
+  signature: get_preferences() -> slack.web.slack_response.SlackResponse
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.groups_close
+  name: groups_close
+  signature: 'groups_close(channel: str) -> slack.web.slack_response.SlackResponse'
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.groups_history_ex
+  name: groups_history_ex
+  signature: 'groups_history_ex(channel: str, latest: str = None, oldest: str = None,
+    count: int = None) -> slack.web.slack_response.SlackResponse'
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.groups_list_ex
+  name: groups_list_ex
+  signature: 'groups_list_ex(exclude_archived: bool = True) -> slack.web.slack_response.SlackResponse'
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.im_history_ex
+  name: im_history_ex
+  signature: 'im_history_ex(channel: str, latest_timestamp: str = None, oldest_timestamp:
     str = None, count: int = None, unreads: bool = None) -> slack.web.slack_response.SlackResponse'
-  namewithoutparameters: im_history_ex
-  syntax:
-    content: 'im_history_ex(channel: str, latest_timestamp: str = None, oldest_timestamp:
-      str = None, count: int = None, unreads: bool = None) -> slack.web.slack_response.SlackResponse'
-  type: method
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.im_history_ex
-- class: botbuilder.adapters.slack.slack_client.SlackClient
-  fullName: botbuilder.adapters.slack.slack_client.SlackClient.is_logged_in
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_client
-  name: is_logged_in()
-  namewithoutparameters: is_logged_in
-  syntax:
-    content: is_logged_in()
-    parameters: []
-  type: method
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.is_logged_in
-- class: botbuilder.adapters.slack.slack_client.SlackClient
-  fullName: botbuilder.adapters.slack.slack_client.SlackClient.login_with_slack
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_client
-  name: login_with_slack()
-  namewithoutparameters: login_with_slack
-  syntax:
-    content: login_with_slack()
-    parameters: []
-  type: method
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.login_with_slack
-- class: botbuilder.adapters.slack.slack_client.SlackClient
-  fullName: botbuilder.adapters.slack.slack_client.SlackClient.post_message_to_slack
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_client
-  name: 'post_message_to_slack(message: botbuilder.adapters.slack.slack_message.SlackMessage)
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.is_logged_in
+  name: is_logged_in
+  signature: is_logged_in()
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.login_with_slack
+  name: login_with_slack
+  signature: login_with_slack()
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.post_message_to_slack
+  name: post_message_to_slack
+  signature: 'post_message_to_slack(message: botbuilder.adapters.slack.slack_message.SlackMessage)
     -> slack.web.slack_response.SlackResponse'
-  namewithoutparameters: post_message_to_slack
-  syntax:
-    content: 'post_message_to_slack(message: botbuilder.adapters.slack.slack_message.SlackMessage)
-      -> slack.web.slack_response.SlackResponse'
-  type: method
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.post_message_to_slack
-- class: botbuilder.adapters.slack.slack_client.SlackClient
-  fullName: botbuilder.adapters.slack.slack_client.SlackClient.search_all_ex
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_client
-  name: 'search_all_ex(query: str, sorting: str = None, direction: str = None, enable_highlights:
-    bool = False, count: int = None, page: int = None) -> slack.web.slack_response.SlackResponse'
-  namewithoutparameters: search_all_ex
-  syntax:
-    content: 'search_all_ex(query: str, sorting: str = None, direction: str = None,
-      enable_highlights: bool = False, count: int = None, page: int = None) -> slack.web.slack_response.SlackResponse'
-  type: method
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.search_all_ex
-- class: botbuilder.adapters.slack.slack_client.SlackClient
-  fullName: botbuilder.adapters.slack.slack_client.SlackClient.search_files_ex
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_client
-  name: 'search_files_ex(query: str, sorting: str = None, direction: str = None, enable_highlights:
-    bool = False, count: int = None, page: int = None) -> slack.web.slack_response.SlackResponse'
-  namewithoutparameters: search_files_ex
-  syntax:
-    content: 'search_files_ex(query: str, sorting: str = None, direction: str = None,
-      enable_highlights: bool = False, count: int = None, page: int = None) -> slack.web.slack_response.SlackResponse'
-  type: method
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.search_files_ex
-- class: botbuilder.adapters.slack.slack_client.SlackClient
-  fullName: botbuilder.adapters.slack.slack_client.SlackClient.search_messages_ex
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_client
-  name: 'search_messages_ex(query: str, sorting: str = None, direction: str = None,
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.search_all_ex
+  name: search_all_ex
+  signature: 'search_all_ex(query: str, sorting: str = None, direction: str = None,
     enable_highlights: bool = False, count: int = None, page: int = None) -> slack.web.slack_response.SlackResponse'
-  namewithoutparameters: search_messages_ex
-  syntax:
-    content: 'search_messages_ex(query: str, sorting: str = None, direction: str =
-      None, enable_highlights: bool = False, count: int = None, page: int = None)
-      -> slack.web.slack_response.SlackResponse'
-  type: method
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.search_messages_ex
-- class: botbuilder.adapters.slack.slack_client.SlackClient
-  fullName: botbuilder.adapters.slack.slack_client.SlackClient.stars_list_ex
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_client
-  name: 'stars_list_ex(user: str = None, count: int = None, page: int = None) -> slack.web.slack_response.SlackResponse'
-  namewithoutparameters: stars_list_ex
-  syntax:
-    content: 'stars_list_ex(user: str = None, count: int = None, page: int = None)
-      -> slack.web.slack_response.SlackResponse'
-  type: method
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.stars_list_ex
-- class: botbuilder.adapters.slack.slack_client.SlackClient
-  fullName: botbuilder.adapters.slack.slack_client.SlackClient.test_auth
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_client
-  name: test_auth() -> str
-  namewithoutparameters: test_auth
-  syntax:
-    content: test_auth() -> str
-  type: method
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.test_auth
-- class: botbuilder.adapters.slack.slack_client.SlackClient
-  fullName: botbuilder.adapters.slack.slack_client.SlackClient.users_counts
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_client
-  name: users_counts() -> slack.web.slack_response.SlackResponse
-  namewithoutparameters: users_counts
-  syntax:
-    content: users_counts() -> slack.web.slack_response.SlackResponse
-  type: method
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.users_counts
-- class: botbuilder.adapters.slack.slack_client.SlackClient
-  fullName: botbuilder.adapters.slack.slack_client.SlackClient.verify_signature
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_client
-  name: 'verify_signature(req: aiohttp.web_request.Request, body: str) -> bool'
-  namewithoutparameters: verify_signature
-  syntax:
-    content: 'verify_signature(req: aiohttp.web_request.Request, body: str) -> bool'
-  type: method
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.verify_signature
-references:
-- fullName: botbuilder.adapters.slack.slack_client.SlackClient.channels_list_ex
-  isExternal: false
-  name: 'channels_list_ex(exclude_archived: bool = True) -> slack.web.slack_response.SlackResponse'
-  parent: botbuilder.adapters.slack.slack_client.SlackClient
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.channels_list_ex
-- fullName: botbuilder.adapters.slack.slack_client.SlackClient.chat_post_ephemeral_ex
-  isExternal: false
-  name: chat_post_ephemeral_ex
-  parent: botbuilder.adapters.slack.slack_client.SlackClient
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.chat_post_ephemeral_ex
-- fullName: botbuilder.adapters.slack.slack_client.SlackClient.chat_post_message_ex
-  isExternal: false
-  name: chat_post_message_ex
-  parent: botbuilder.adapters.slack.slack_client.SlackClient
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.chat_post_message_ex
-- fullName: botbuilder.adapters.slack.slack_client.SlackClient.chat_update_ex
-  isExternal: false
-  name: chat_update_ex
-  parent: botbuilder.adapters.slack.slack_client.SlackClient
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.chat_update_ex
-- fullName: botbuilder.adapters.slack.slack_client.SlackClient.files_info_ex
-  isExternal: false
-  name: 'files_info_ex(file_id: str, page: int = None, count: int = None) -> slack.web.slack_response.SlackResponse'
-  parent: botbuilder.adapters.slack.slack_client.SlackClient
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.files_info_ex
-- fullName: botbuilder.adapters.slack.slack_client.SlackClient.files_list_ex
-  isExternal: false
-  name: files_list_ex
-  parent: botbuilder.adapters.slack.slack_client.SlackClient
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.files_list_ex
-- fullName: botbuilder.adapters.slack.slack_client.SlackClient.files_upload_ex
-  isExternal: false
-  name: files_upload_ex
-  parent: botbuilder.adapters.slack.slack_client.SlackClient
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.files_upload_ex
-- fullName: botbuilder.adapters.slack.slack_client.SlackClient.get_bot_user_by_team
-  isExternal: false
-  name: 'get_bot_user_by_team(activity: botbuilder.schema._models_py3.Activity) ->
-    str'
-  parent: botbuilder.adapters.slack.slack_client.SlackClient
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.get_bot_user_by_team
-- fullName: botbuilder.adapters.slack.slack_client.SlackClient.get_preferences
-  isExternal: false
-  name: get_preferences() -> slack.web.slack_response.SlackResponse
-  parent: botbuilder.adapters.slack.slack_client.SlackClient
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.get_preferences
-- fullName: botbuilder.adapters.slack.slack_client.SlackClient.groups_close
-  isExternal: false
-  name: 'groups_close(channel: str) -> slack.web.slack_response.SlackResponse'
-  parent: botbuilder.adapters.slack.slack_client.SlackClient
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.groups_close
-- fullName: botbuilder.adapters.slack.slack_client.SlackClient.groups_history_ex
-  isExternal: false
-  name: 'groups_history_ex(channel: str, latest: str = None, oldest: str = None, count:
-    int = None) -> slack.web.slack_response.SlackResponse'
-  parent: botbuilder.adapters.slack.slack_client.SlackClient
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.groups_history_ex
-- fullName: botbuilder.adapters.slack.slack_client.SlackClient.groups_list_ex
-  isExternal: false
-  name: 'groups_list_ex(exclude_archived: bool = True) -> slack.web.slack_response.SlackResponse'
-  parent: botbuilder.adapters.slack.slack_client.SlackClient
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.groups_list_ex
-- fullName: botbuilder.adapters.slack.slack_client.SlackClient.im_history_ex
-  isExternal: false
-  name: 'im_history_ex(channel: str, latest_timestamp: str = None, oldest_timestamp:
-    str = None, count: int = None, unreads: bool = None) -> slack.web.slack_response.SlackResponse'
-  parent: botbuilder.adapters.slack.slack_client.SlackClient
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.im_history_ex
-- fullName: botbuilder.adapters.slack.slack_client.SlackClient.is_logged_in
-  isExternal: false
-  name: is_logged_in()
-  parent: botbuilder.adapters.slack.slack_client.SlackClient
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.is_logged_in
-- fullName: botbuilder.adapters.slack.slack_client.SlackClient.login_with_slack
-  isExternal: false
-  name: login_with_slack()
-  parent: botbuilder.adapters.slack.slack_client.SlackClient
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.login_with_slack
-- fullName: botbuilder.adapters.slack.slack_client.SlackClient.post_message_to_slack
-  isExternal: false
-  name: 'post_message_to_slack(message: botbuilder.adapters.slack.slack_message.SlackMessage)
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.search_files_ex
+  name: search_files_ex
+  signature: 'search_files_ex(query: str, sorting: str = None, direction: str = None,
+    enable_highlights: bool = False, count: int = None, page: int = None) -> slack.web.slack_response.SlackResponse'
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.search_messages_ex
+  name: search_messages_ex
+  signature: 'search_messages_ex(query: str, sorting: str = None, direction: str =
+    None, enable_highlights: bool = False, count: int = None, page: int = None) ->
+    slack.web.slack_response.SlackResponse'
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.stars_list_ex
+  name: stars_list_ex
+  signature: 'stars_list_ex(user: str = None, count: int = None, page: int = None)
     -> slack.web.slack_response.SlackResponse'
-  parent: botbuilder.adapters.slack.slack_client.SlackClient
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.post_message_to_slack
-- fullName: botbuilder.adapters.slack.slack_client.SlackClient.search_all_ex
-  isExternal: false
-  name: 'search_all_ex(query: str, sorting: str = None, direction: str = None, enable_highlights:
-    bool = False, count: int = None, page: int = None) -> slack.web.slack_response.SlackResponse'
-  parent: botbuilder.adapters.slack.slack_client.SlackClient
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.search_all_ex
-- fullName: botbuilder.adapters.slack.slack_client.SlackClient.search_files_ex
-  isExternal: false
-  name: 'search_files_ex(query: str, sorting: str = None, direction: str = None, enable_highlights:
-    bool = False, count: int = None, page: int = None) -> slack.web.slack_response.SlackResponse'
-  parent: botbuilder.adapters.slack.slack_client.SlackClient
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.search_files_ex
-- fullName: botbuilder.adapters.slack.slack_client.SlackClient.search_messages_ex
-  isExternal: false
-  name: 'search_messages_ex(query: str, sorting: str = None, direction: str = None,
-    enable_highlights: bool = False, count: int = None, page: int = None) -> slack.web.slack_response.SlackResponse'
-  parent: botbuilder.adapters.slack.slack_client.SlackClient
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.search_messages_ex
-- fullName: botbuilder.adapters.slack.slack_client.SlackClient.stars_list_ex
-  isExternal: false
-  name: 'stars_list_ex(user: str = None, count: int = None, page: int = None) -> slack.web.slack_response.SlackResponse'
-  parent: botbuilder.adapters.slack.slack_client.SlackClient
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.stars_list_ex
-- fullName: botbuilder.adapters.slack.slack_client.SlackClient.test_auth
-  isExternal: false
-  name: test_auth() -> str
-  parent: botbuilder.adapters.slack.slack_client.SlackClient
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.test_auth
-- fullName: botbuilder.adapters.slack.slack_client.SlackClient.users_counts
-  isExternal: false
-  name: users_counts() -> slack.web.slack_response.SlackResponse
-  parent: botbuilder.adapters.slack.slack_client.SlackClient
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.users_counts
-- fullName: botbuilder.adapters.slack.slack_client.SlackClient.verify_signature
-  isExternal: false
-  name: 'verify_signature(req: aiohttp.web_request.Request, body: str) -> bool'
-  parent: botbuilder.adapters.slack.slack_client.SlackClient
-  uid: botbuilder.adapters.slack.slack_client.SlackClient.verify_signature
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.test_auth
+  name: test_auth
+  signature: test_auth() -> str
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.users_counts
+  name: users_counts
+  signature: users_counts() -> slack.web.slack_response.SlackResponse
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.verify_signature
+  name: verify_signature
+  signature: 'verify_signature(req: aiohttp.web_request.Request, body: str) -> bool'

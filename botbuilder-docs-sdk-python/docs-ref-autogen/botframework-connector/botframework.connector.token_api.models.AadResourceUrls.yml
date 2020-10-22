@@ -1,39 +1,14 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botframework.connector.token_api.models.AadResourceUrls
-  fullName: botframework.connector.token_api.models.AadResourceUrls
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botframework.connector.token_api.models
-  name: AadResourceUrls
-  summary: AadResourceUrls.
-  syntax:
-    content: AadResourceUrls(*, resource_urls=None, **kwargs) -> None
-    parameters:
-    - description: ''
-      id: resource_urls
-      type:
-      - list[str]
-  type: class
-  uid: botframework.connector.token_api.models.AadResourceUrls
-references:
-- fullName: list[str]
-  name: list[str]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: str
-    name: str
-    uid: str
-  - fullName: ']'
-    name: ']'
-  uid: list[str]
+### YamlMime:PythonClass
+uid: botframework.connector.token_api.models.AadResourceUrls
+name: AadResourceUrls
+fullName: botframework.connector.token_api.models.AadResourceUrls
+module: botframework.connector.token_api.models
+inheritances:
+- msrest.serialization.Model
+summary: AadResourceUrls.
+constructor:
+  syntax: AadResourceUrls(*, resource_urls=None, **kwargs) -> None
+  parameters:
+  - name: resource_urls
+    types:
+    - <xref:list>[<xref:str>]

@@ -1,42 +1,32 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.TeamDetails
-  fullName: botbuilder.schema.teams.TeamDetails
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: TeamDetails
-  summary: Details related to a team.
-  syntax:
-    content: 'TeamDetails(*, id: str = None, name: str = None, aad_group_id: str =
-      None, member_count: int = None, channel_count: int = None, **kwargs) -> None'
-    parameters:
-    - description: Unique identifier representing a team
-      id: id
-      type:
-      - str
-    - description: Name of team.
-      id: name
-      type:
-      - str
-    - description: Azure Active Directory (AAD) Group Id for the team.
-      id: aad_group_id
-      type:
-      - str
-    - description: The count of channels in the team.
-      id: channel_count
-      type:
-      - int
-    - description: The count of members in the team.
-      id: member_count
-      type:
-      - int
-  type: class
-  uid: botbuilder.schema.teams.TeamDetails
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.TeamDetails
+name: TeamDetails
+fullName: botbuilder.schema.teams.TeamDetails
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: Details related to a team.
+constructor:
+  syntax: 'TeamDetails(*, id: str = None, name: str = None, aad_group_id: str = None,
+    member_count: int = None, channel_count: int = None, **kwargs) -> None'
+  parameters:
+  - name: id
+    description: Unique identifier representing a team
+    types:
+    - <xref:str>
+  - name: name
+    description: Name of team.
+    types:
+    - <xref:str>
+  - name: aad_group_id
+    description: Azure Active Directory (AAD) Group Id for the team.
+    types:
+    - <xref:str>
+  - name: channel_count
+    description: The count of channels in the team.
+    types:
+    - <xref:int>
+  - name: member_count
+    description: The count of members in the team.
+    types:
+    - <xref:int>

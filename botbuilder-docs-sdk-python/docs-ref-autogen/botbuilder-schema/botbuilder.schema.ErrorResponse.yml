@@ -1,25 +1,15 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.ErrorResponse
-  fullName: botbuilder.schema.ErrorResponse
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema
-  name: ErrorResponse
-  summary: An HTTP API response.
-  syntax:
-    content: ErrorResponse(*, error=None, **kwargs) -> None
-    parameters:
-    - description: Error message
-      id: error
-      type:
-      - botframework.connector.models.Error
-  type: class
-  uid: botbuilder.schema.ErrorResponse
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.schema.ErrorResponse
+name: ErrorResponse
+fullName: botbuilder.schema.ErrorResponse
+module: botbuilder.schema
+inheritances:
+- msrest.serialization.Model
+summary: An HTTP API response.
+constructor:
+  syntax: ErrorResponse(*, error=None, **kwargs) -> None
+  parameters:
+  - name: error
+    description: Error message
+    types:
+    - <xref:botframework.connector.models.Error>

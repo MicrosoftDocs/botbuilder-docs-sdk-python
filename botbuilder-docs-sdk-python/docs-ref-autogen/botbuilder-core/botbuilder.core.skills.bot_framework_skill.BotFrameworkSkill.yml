@@ -1,19 +1,11 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.core.skills.bot_framework_skill.BotFrameworkSkill
-  fullName: botbuilder.core.skills.bot_framework_skill.BotFrameworkSkill
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.core.skills.bot_framework_skill
-  name: BotFrameworkSkill
-  summary: Registration for a BotFrameworkHttpProtocol based Skill endpoint.
-  syntax:
-    content: 'BotFrameworkSkill(id: str = None, app_id: str = None, skill_endpoint:
-      str = None)'
-  type: class
-  uid: botbuilder.core.skills.bot_framework_skill.BotFrameworkSkill
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.core.skills.bot_framework_skill.BotFrameworkSkill
+name: BotFrameworkSkill
+fullName: botbuilder.core.skills.bot_framework_skill.BotFrameworkSkill
+module: botbuilder.core.skills.bot_framework_skill
+inheritances:
+- builtins.object
+summary: Registration for a BotFrameworkHttpProtocol based Skill endpoint.
+constructor:
+  syntax: 'BotFrameworkSkill(id: str = None, app_id: str = None, skill_endpoint: str
+    = None)'

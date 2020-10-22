@@ -1,74 +1,25 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.dialogs.prompts.AttachmentPrompt.on_prompt
-  - botbuilder.dialogs.prompts.AttachmentPrompt.on_recognize
-  class: botbuilder.dialogs.prompts.AttachmentPrompt
-  fullName: botbuilder.dialogs.prompts.AttachmentPrompt
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - inheritance:
-        - type: builtins.object
-        type: abc.ABC
-      type: botbuilder.dialogs.dialog.Dialog
-    type: botbuilder.dialogs.prompts.prompt.Prompt
-  langs:
-  - python
-  module: botbuilder.dialogs.prompts
-  name: AttachmentPrompt
-  summary: 'Prompts a user to upload attachments like images.
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.prompts.AttachmentPrompt
+name: AttachmentPrompt
+fullName: botbuilder.dialogs.prompts.AttachmentPrompt
+module: botbuilder.dialogs.prompts
+inheritances:
+- botbuilder.dialogs.prompts.prompt.Prompt
+summary: 'Prompts a user to upload attachments like images.
 
 
-    By default the prompt will return to the calling dialog an *[Attachment]*'
-  syntax:
-    content: 'AttachmentPrompt(dialog_id: str, validator: typing.Callable[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext,
-      bool] = None)'
-  type: class
-  uid: botbuilder.dialogs.prompts.AttachmentPrompt
-- class: botbuilder.dialogs.prompts.AttachmentPrompt
-  fullName: botbuilder.dialogs.prompts.AttachmentPrompt.on_prompt
-  langs:
-  - python
-  module: botbuilder.dialogs.prompts
-  name: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
+  By default the prompt will return to the calling dialog an *[Attachment]*'
+constructor:
+  syntax: 'AttachmentPrompt(dialog_id: str, validator: typing.Callable[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext,
+    bool] = None)'
+methods:
+- uid: botbuilder.dialogs.prompts.AttachmentPrompt.on_prompt
+  name: on_prompt
+  signature: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
     typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
     is_retry: bool)'
-  namewithoutparameters: on_prompt
-  syntax:
-    content: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
-      typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
-      is_retry: bool)'
-  type: method
-  uid: botbuilder.dialogs.prompts.AttachmentPrompt.on_prompt
-- class: botbuilder.dialogs.prompts.AttachmentPrompt
-  fullName: botbuilder.dialogs.prompts.AttachmentPrompt.on_recognize
-  langs:
-  - python
-  module: botbuilder.dialogs.prompts
-  name: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext, state:
-    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
+- uid: botbuilder.dialogs.prompts.AttachmentPrompt.on_recognize
+  name: on_recognize
+  signature: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
+    state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
     -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
-  namewithoutparameters: on_recognize
-  syntax:
-    content: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
-      state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
-      -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
-  type: method
-  uid: botbuilder.dialogs.prompts.AttachmentPrompt.on_recognize
-references:
-- fullName: botbuilder.dialogs.prompts.AttachmentPrompt.on_prompt
-  isExternal: false
-  name: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
-    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
-    is_retry: bool)'
-  parent: botbuilder.dialogs.prompts.AttachmentPrompt
-  uid: botbuilder.dialogs.prompts.AttachmentPrompt.on_prompt
-- fullName: botbuilder.dialogs.prompts.AttachmentPrompt.on_recognize
-  isExternal: false
-  name: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext, state:
-    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
-    -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
-  parent: botbuilder.dialogs.prompts.AttachmentPrompt
-  uid: botbuilder.dialogs.prompts.AttachmentPrompt.on_recognize

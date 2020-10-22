@@ -1,19 +1,11 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.core.inspection.inspection_sessions_by_status.InspectionSessionsByStatus
-  fullName: botbuilder.core.inspection.inspection_sessions_by_status.InspectionSessionsByStatus
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.core.inspection.inspection_sessions_by_status
-  name: InspectionSessionsByStatus
-  syntax:
-    content: 'InspectionSessionsByStatus(opened_sessions: typing.Dict[str, botbuilder.schema._models_py3.ConversationReference]
-      = None, attached_sessions: typing.Dict[str, botbuilder.schema._models_py3.ConversationReference]
-      = None)'
-  type: class
-  uid: botbuilder.core.inspection.inspection_sessions_by_status.InspectionSessionsByStatus
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.core.inspection.inspection_sessions_by_status.InspectionSessionsByStatus
+name: InspectionSessionsByStatus
+fullName: botbuilder.core.inspection.inspection_sessions_by_status.InspectionSessionsByStatus
+module: botbuilder.core.inspection.inspection_sessions_by_status
+inheritances:
+- builtins.object
+constructor:
+  syntax: 'InspectionSessionsByStatus(opened_sessions: typing.Dict[str, botbuilder.schema._models_py3.ConversationReference]
+    = None, attached_sessions: typing.Dict[str, botbuilder.schema._models_py3.ConversationReference]
+    = None)'

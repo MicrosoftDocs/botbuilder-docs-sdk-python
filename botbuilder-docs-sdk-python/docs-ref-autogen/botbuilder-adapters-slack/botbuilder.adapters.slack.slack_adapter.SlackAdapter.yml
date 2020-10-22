@@ -1,46 +1,22 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.adapters.slack.slack_adapter.SlackAdapter.continue_conversation
-  - botbuilder.adapters.slack.slack_adapter.SlackAdapter.delete_activity
-  - botbuilder.adapters.slack.slack_adapter.SlackAdapter.process
-  - botbuilder.adapters.slack.slack_adapter.SlackAdapter.send_activities
-  - botbuilder.adapters.slack.slack_adapter.SlackAdapter.update_activity
-  class: botbuilder.adapters.slack.slack_adapter.SlackAdapter
-  fullName: botbuilder.adapters.slack.slack_adapter.SlackAdapter
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: abc.ABC
-    type: botbuilder.core.bot_adapter.BotAdapter
-  - inheritance:
-    - type: builtins.object
-    type: abc.ABC
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_adapter
-  name: SlackAdapter
-  summary: 'BotAdapter that can handle incoming slack events.  Incoming slack events
-    are deserialized to an Activity
+### YamlMime:PythonClass
+uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter
+name: SlackAdapter
+fullName: botbuilder.adapters.slack.slack_adapter.SlackAdapter
+module: botbuilder.adapters.slack.slack_adapter
+inheritances:
+- botbuilder.core.bot_adapter.BotAdapter
+- abc.ABC
+summary: 'BotAdapter that can handle incoming slack events.  Incoming slack events
+  are deserialized to an Activity
 
-    that is dispatch through the middleware and bot pipeline.'
-  syntax:
-    content: 'SlackAdapter(client: botbuilder.adapters.slack.slack_client.SlackClient,
-      on_turn_error: typing.Callable[[botbuilder.core.turn_context.TurnContext, Exception],
-      typing.Awaitable] = None)'
-  type: class
-  uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter
-- class: botbuilder.adapters.slack.slack_adapter.SlackAdapter
-  fullName: botbuilder.adapters.slack.slack_adapter.SlackAdapter.continue_conversation
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_adapter
-  name: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
-    callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
-    = None, audience: str = None)'
-  namewithoutparameters: continue_conversation
+  that is dispatch through the middleware and bot pipeline.'
+constructor:
+  syntax: 'SlackAdapter(client: botbuilder.adapters.slack.slack_client.SlackClient,
+    on_turn_error: typing.Callable[[botbuilder.core.turn_context.TurnContext, Exception],
+    typing.Awaitable] = None)'
+methods:
+- uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.continue_conversation
+  name: continue_conversation
   summary: 'Sends a proactive message to a conversation. Call this method to proactively
     send a message to a conversation.
 
@@ -48,155 +24,86 @@ items:
     bot can send activities
 
     to the user.'
-  syntax:
-    content: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
-      callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
-      = None, audience: str = None)'
-    parameters:
-    - description: Unused for this override.
-      id: bot_id
-      isRequired: true
-    - description: A reference to the conversation to continue.
-      id: reference
-      isRequired: true
-    - description: The method to call for the resulting bot turn.
-      id: callback
-      isRequired: true
-    - description: A ClaimsIdentity for the conversation.
-      id: claims_identity
-      isRequired: true
-    - description: Unused for this override.
-      id: audience
-      isRequired: true
-  type: method
-  uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.continue_conversation
-- class: botbuilder.adapters.slack.slack_adapter.SlackAdapter
-  fullName: botbuilder.adapters.slack.slack_adapter.SlackAdapter.delete_activity
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_adapter
-  name: 'delete_activity(context: botbuilder.core.turn_context.TurnContext, reference:
-    botbuilder.schema._models_py3.ConversationReference)'
-  namewithoutparameters: delete_activity
+  signature: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
+    callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
+    = None, audience: str = None)'
+  parameters:
+  - name: bot_id
+    description: Unused for this override.
+    isRequired: true
+  - name: reference
+    description: A reference to the conversation to continue.
+    isRequired: true
+  - name: callback
+    description: The method to call for the resulting bot turn.
+    isRequired: true
+  - name: claims_identity
+    description: A ClaimsIdentity for the conversation.
+    isRequired: true
+  - name: audience
+    description: Unused for this override.
+    isRequired: true
+- uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.delete_activity
+  name: delete_activity
   summary: 'Standard BotBuilder adapter method to delete a previous message.
 
 
 
     conversation: { id: *id of slack channel*}}".'
-  syntax:
-    content: 'delete_activity(context: botbuilder.core.turn_context.TurnContext, reference:
-      botbuilder.schema._models_py3.ConversationReference)'
-    parameters:
-    - description: A TurnContext representing the current incoming message and environment.
-      id: context
-      isRequired: true
-    - description: 'An object in the form "{activityId: *id of message to delete*,'
-      id: reference
-      isRequired: true
-  type: method
-  uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.delete_activity
-- class: botbuilder.adapters.slack.slack_adapter.SlackAdapter
-  fullName: botbuilder.adapters.slack.slack_adapter.SlackAdapter.process
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_adapter
-  name: 'process(req: aiohttp.web_request.Request, logic: typing.Callable) -> aiohttp.web_response.Response'
-  namewithoutparameters: process
+  signature: 'delete_activity(context: botbuilder.core.turn_context.TurnContext, reference:
+    botbuilder.schema._models_py3.ConversationReference)'
+  parameters:
+  - name: context
+    description: A TurnContext representing the current incoming message and environment.
+    isRequired: true
+  - name: reference
+    description: 'An object in the form "{activityId: *id of message to delete*,'
+    isRequired: true
+- uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.process
+  name: process
   summary: Accept an incoming webhook request and convert it into a TurnContext which
     can be processed by the bot's logic.
-  syntax:
-    content: 'process(req: aiohttp.web_request.Request, logic: typing.Callable) ->
-      aiohttp.web_response.Response'
-    parameters:
-    - description: The aoihttp Request object
-      id: req
-      isRequired: true
-    - description: The method to call for the resulting bot turn.
-      id: logic
-      isRequired: true
-    return:
-      description: The aoihttp Response
-  type: method
-  uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.process
-- class: botbuilder.adapters.slack.slack_adapter.SlackAdapter
-  fullName: botbuilder.adapters.slack.slack_adapter.SlackAdapter.send_activities
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_adapter
-  name: 'send_activities(context: botbuilder.core.turn_context.TurnContext, activities:
-    typing.List[botbuilder.schema._models_py3.Activity]) -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
-  namewithoutparameters: send_activities
+  signature: 'process(req: aiohttp.web_request.Request, logic: typing.Callable) ->
+    aiohttp.web_response.Response'
+  parameters:
+  - name: req
+    description: The aoihttp Request object
+    isRequired: true
+  - name: logic
+    description: The method to call for the resulting bot turn.
+    isRequired: true
+  return:
+    description: The aoihttp Response
+- uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.send_activities
+  name: send_activities
   summary: Standard BotBuilder adapter method to send a message from the bot to the
     messaging API.
-  syntax:
-    content: 'send_activities(context: botbuilder.core.turn_context.TurnContext, activities:
-      typing.List[botbuilder.schema._models_py3.Activity]) -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
-    parameters:
-    - description: A TurnContext representing the current incoming message and environment.
-      id: context
-      isRequired: true
-    - description: An array of outgoing activities to be sent back to the messaging
-        API.
-      id: activities
-      isRequired: true
-    return:
-      description: An array of ResourceResponse objects containing the IDs that Slack
-        assigned to the sent messages.
-  type: method
-  uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.send_activities
-- class: botbuilder.adapters.slack.slack_adapter.SlackAdapter
-  fullName: botbuilder.adapters.slack.slack_adapter.SlackAdapter.update_activity
-  langs:
-  - python
-  module: botbuilder.adapters.slack.slack_adapter
-  name: 'update_activity(context: botbuilder.core.turn_context.TurnContext, activity:
-    botbuilder.schema._models_py3.Activity)'
-  namewithoutparameters: update_activity
+  signature: 'send_activities(context: botbuilder.core.turn_context.TurnContext, activities:
+    typing.List[botbuilder.schema._models_py3.Activity]) -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
+  parameters:
+  - name: context
+    description: A TurnContext representing the current incoming message and environment.
+    isRequired: true
+  - name: activities
+    description: An array of outgoing activities to be sent back to the messaging
+      API.
+    isRequired: true
+  return:
+    description: An array of ResourceResponse objects containing the IDs that Slack
+      assigned to the sent messages.
+- uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.update_activity
+  name: update_activity
   summary: Standard BotBuilder adapter method to update a previous message with new
     content.
-  syntax:
-    content: 'update_activity(context: botbuilder.core.turn_context.TurnContext, activity:
-      botbuilder.schema._models_py3.Activity)'
-    parameters:
-    - description: A TurnContext representing the current incoming message and environment.
-      id: context
-      isRequired: true
-    - description: 'The updated activity in the form ''{id: *id of activity to update*,
-        ...}''.'
-      id: activity
-      isRequired: true
-    return:
-      description: A resource response with the Id of the updated activity.
-  type: method
-  uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.update_activity
-references:
-- fullName: botbuilder.adapters.slack.slack_adapter.SlackAdapter.continue_conversation
-  isExternal: false
-  name: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
-    callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
-    = None, audience: str = None)'
-  parent: botbuilder.adapters.slack.slack_adapter.SlackAdapter
-  uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.continue_conversation
-- fullName: botbuilder.adapters.slack.slack_adapter.SlackAdapter.delete_activity
-  isExternal: false
-  name: 'delete_activity(context: botbuilder.core.turn_context.TurnContext, reference:
-    botbuilder.schema._models_py3.ConversationReference)'
-  parent: botbuilder.adapters.slack.slack_adapter.SlackAdapter
-  uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.delete_activity
-- fullName: botbuilder.adapters.slack.slack_adapter.SlackAdapter.process
-  isExternal: false
-  name: 'process(req: aiohttp.web_request.Request, logic: typing.Callable) -> aiohttp.web_response.Response'
-  parent: botbuilder.adapters.slack.slack_adapter.SlackAdapter
-  uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.process
-- fullName: botbuilder.adapters.slack.slack_adapter.SlackAdapter.send_activities
-  isExternal: false
-  name: 'send_activities(context: botbuilder.core.turn_context.TurnContext, activities:
-    typing.List[botbuilder.schema._models_py3.Activity]) -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
-  parent: botbuilder.adapters.slack.slack_adapter.SlackAdapter
-  uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.send_activities
-- fullName: botbuilder.adapters.slack.slack_adapter.SlackAdapter.update_activity
-  isExternal: false
-  name: 'update_activity(context: botbuilder.core.turn_context.TurnContext, activity:
+  signature: 'update_activity(context: botbuilder.core.turn_context.TurnContext, activity:
     botbuilder.schema._models_py3.Activity)'
-  parent: botbuilder.adapters.slack.slack_adapter.SlackAdapter
-  uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.update_activity
+  parameters:
+  - name: context
+    description: A TurnContext representing the current incoming message and environment.
+    isRequired: true
+  - name: activity
+    description: 'The updated activity in the form ''{id: *id of activity to update*,
+      ...}''.'
+    isRequired: true
+  return:
+    description: A resource response with the Id of the updated activity.

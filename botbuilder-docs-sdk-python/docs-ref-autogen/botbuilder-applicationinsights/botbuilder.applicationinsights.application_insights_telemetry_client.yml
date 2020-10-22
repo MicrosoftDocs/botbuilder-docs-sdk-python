@@ -1,52 +1,29 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient
-  - botbuilder.applicationinsights.application_insights_telemetry_client.bot_telemetry_processor
-  fullName: botbuilder.applicationinsights.application_insights_telemetry_client
-  langs:
-  - python
-  module: botbuilder.applicationinsights.application_insights_telemetry_client
-  name: application_insights_telemetry_client
-  summary: Application Insights Telemetry Client for Bots.
-  type: module
-  uid: botbuilder.applicationinsights.application_insights_telemetry_client
-- fullName: botbuilder.applicationinsights.application_insights_telemetry_client.bot_telemetry_processor
-  langs:
-  - python
-  module: botbuilder.applicationinsights.application_insights_telemetry_client
-  name: bot_telemetry_processor(data, context) -> bool
+### YamlMime:PythonModule
+uid: botbuilder.applicationinsights.application_insights_telemetry_client
+name: application_insights_telemetry_client
+fullName: botbuilder.applicationinsights.application_insights_telemetry_client
+summary: Application Insights Telemetry Client for Bots.
+functions:
+- uid: botbuilder.applicationinsights.application_insights_telemetry_client.bot_telemetry_processor
+  name: bot_telemetry_processor
   summary: 'Bot Telemetry Processor as a method for backward compatibility. Refer
     to
 
     callable object <xref:botbuilder.applicationinsights.application_insights_telemetry_client.BotTelemetryProcessor>
     for details.'
-  syntax:
-    content: bot_telemetry_processor(data, context) -> bool
-    parameters:
-    - description: Data from Application Insights
-      id: data
-      type:
-      - telemetry item
-    - description: Context from Application Insights
-      id: context
-      type:
-      - context object
-    return:
-      description: determines if the event is passed to the server (False = Filtered).
-      type:
-      - bool
-  type: function
-  uid: botbuilder.applicationinsights.application_insights_telemetry_client.bot_telemetry_processor
-references:
-- fullName: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient
-  isExternal: false
-  name: ApplicationInsightsTelemetryClient
-  parent: botbuilder.applicationinsights.application_insights_telemetry_client
-  uid: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient
-- fullName: botbuilder.applicationinsights.application_insights_telemetry_client.bot_telemetry_processor
-  isExternal: false
-  name: bot_telemetry_processor(data, context) -> bool
-  parent: botbuilder.applicationinsights.application_insights_telemetry_client
-  uid: botbuilder.applicationinsights.application_insights_telemetry_client.bot_telemetry_processor
+  signature: bot_telemetry_processor(data, context) -> bool
+  parameters:
+  - name: data
+    description: Data from Application Insights
+    types:
+    - <xref:telemetry item>
+  - name: context
+    description: Context from Application Insights
+    types:
+    - <xref:context object>
+  return:
+    description: determines if the event is passed to the server (False = Filtered).
+    types:
+    - <xref:bool>
+classes:
+- botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient

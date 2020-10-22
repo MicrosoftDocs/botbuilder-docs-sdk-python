@@ -1,75 +1,22 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botframework.connector.auth.channel_provider.ChannelProvider.get_channel_service
-  - botframework.connector.auth.channel_provider.ChannelProvider.is_government
-  - botframework.connector.auth.channel_provider.ChannelProvider.is_public_azure
-  class: botframework.connector.auth.channel_provider.ChannelProvider
-  fullName: botframework.connector.auth.channel_provider.ChannelProvider
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: abc.ABC
-  langs:
-  - python
-  module: botframework.connector.auth.channel_provider
-  name: ChannelProvider
-  summary: 'ChannelProvider interface. This interface allows Bots to provide their
-    own
+### YamlMime:PythonClass
+uid: botframework.connector.auth.channel_provider.ChannelProvider
+name: ChannelProvider
+fullName: botframework.connector.auth.channel_provider.ChannelProvider
+module: botframework.connector.auth.channel_provider
+inheritances:
+- abc.ABC
+summary: 'ChannelProvider interface. This interface allows Bots to provide their own
 
-    implementation for the configuration parameters to connect to a Bot.
+  implementation for the configuration parameters to connect to a Bot.
 
-    Framework channel service.'
-  syntax: {}
-  type: class
-  uid: botframework.connector.auth.channel_provider.ChannelProvider
-- class: botframework.connector.auth.channel_provider.ChannelProvider
-  fullName: botframework.connector.auth.channel_provider.ChannelProvider.get_channel_service
-  langs:
-  - python
-  module: botframework.connector.auth.channel_provider
-  name: get_channel_service() -> str
-  namewithoutparameters: get_channel_service
-  syntax:
-    content: get_channel_service() -> str
-  type: method
-  uid: botframework.connector.auth.channel_provider.ChannelProvider.get_channel_service
-- class: botframework.connector.auth.channel_provider.ChannelProvider
-  fullName: botframework.connector.auth.channel_provider.ChannelProvider.is_government
-  langs:
-  - python
-  module: botframework.connector.auth.channel_provider
-  name: is_government() -> bool
-  namewithoutparameters: is_government
-  syntax:
-    content: is_government() -> bool
-  type: method
-  uid: botframework.connector.auth.channel_provider.ChannelProvider.is_government
-- class: botframework.connector.auth.channel_provider.ChannelProvider
-  fullName: botframework.connector.auth.channel_provider.ChannelProvider.is_public_azure
-  langs:
-  - python
-  module: botframework.connector.auth.channel_provider
-  name: is_public_azure() -> bool
-  namewithoutparameters: is_public_azure
-  syntax:
-    content: is_public_azure() -> bool
-  type: method
-  uid: botframework.connector.auth.channel_provider.ChannelProvider.is_public_azure
-references:
-- fullName: botframework.connector.auth.channel_provider.ChannelProvider.get_channel_service
-  isExternal: false
-  name: get_channel_service() -> str
-  parent: botframework.connector.auth.channel_provider.ChannelProvider
-  uid: botframework.connector.auth.channel_provider.ChannelProvider.get_channel_service
-- fullName: botframework.connector.auth.channel_provider.ChannelProvider.is_government
-  isExternal: false
-  name: is_government() -> bool
-  parent: botframework.connector.auth.channel_provider.ChannelProvider
-  uid: botframework.connector.auth.channel_provider.ChannelProvider.is_government
-- fullName: botframework.connector.auth.channel_provider.ChannelProvider.is_public_azure
-  isExternal: false
-  name: is_public_azure() -> bool
-  parent: botframework.connector.auth.channel_provider.ChannelProvider
-  uid: botframework.connector.auth.channel_provider.ChannelProvider.is_public_azure
+  Framework channel service.'
+methods:
+- uid: botframework.connector.auth.channel_provider.ChannelProvider.get_channel_service
+  name: get_channel_service
+  signature: get_channel_service() -> str
+- uid: botframework.connector.auth.channel_provider.ChannelProvider.is_government
+  name: is_government
+  signature: is_government() -> bool
+- uid: botframework.connector.auth.channel_provider.ChannelProvider.is_public_azure
+  name: is_public_azure
+  signature: is_public_azure() -> bool

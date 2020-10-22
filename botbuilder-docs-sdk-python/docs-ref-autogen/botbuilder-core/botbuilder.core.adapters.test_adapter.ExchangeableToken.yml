@@ -1,58 +1,18 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.adapters.test_adapter.ExchangeableToken.equals_key
-  - botbuilder.core.adapters.test_adapter.ExchangeableToken.to_key
-  class: botbuilder.core.adapters.test_adapter.ExchangeableToken
-  fullName: botbuilder.core.adapters.test_adapter.ExchangeableToken
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: botbuilder.core.adapters.test_adapter.UserToken
-  langs:
-  - python
-  module: botbuilder.core.adapters.test_adapter
-  name: ExchangeableToken
-  summary: ''
-  syntax:
-    content: 'ExchangeableToken(connection_name: str = None, user_id: str = None,
-      channel_id: str = None, token: str = None, exchangeable_item: str = None)'
-  type: class
-  uid: botbuilder.core.adapters.test_adapter.ExchangeableToken
-- class: botbuilder.core.adapters.test_adapter.ExchangeableToken
-  fullName: botbuilder.core.adapters.test_adapter.ExchangeableToken.equals_key
-  langs:
-  - python
-  module: botbuilder.core.adapters.test_adapter
-  name: 'equals_key(rhs: botbuilder.core.adapters.test_adapter.ExchangeableToken)
+### YamlMime:PythonClass
+uid: botbuilder.core.adapters.test_adapter.ExchangeableToken
+name: ExchangeableToken
+fullName: botbuilder.core.adapters.test_adapter.ExchangeableToken
+module: botbuilder.core.adapters.test_adapter
+inheritances:
+- botbuilder.core.adapters.test_adapter.UserToken
+constructor:
+  syntax: 'ExchangeableToken(connection_name: str = None, user_id: str = None, channel_id:
+    str = None, token: str = None, exchangeable_item: str = None)'
+methods:
+- uid: botbuilder.core.adapters.test_adapter.ExchangeableToken.equals_key
+  name: equals_key
+  signature: 'equals_key(rhs: botbuilder.core.adapters.test_adapter.ExchangeableToken)
     -> bool'
-  namewithoutparameters: equals_key
-  syntax:
-    content: 'equals_key(rhs: botbuilder.core.adapters.test_adapter.ExchangeableToken)
-      -> bool'
-  type: method
-  uid: botbuilder.core.adapters.test_adapter.ExchangeableToken.equals_key
-- class: botbuilder.core.adapters.test_adapter.ExchangeableToken
-  fullName: botbuilder.core.adapters.test_adapter.ExchangeableToken.to_key
-  langs:
-  - python
-  module: botbuilder.core.adapters.test_adapter
-  name: to_key() -> str
-  namewithoutparameters: to_key
-  syntax:
-    content: to_key() -> str
-  type: method
-  uid: botbuilder.core.adapters.test_adapter.ExchangeableToken.to_key
-references:
-- fullName: botbuilder.core.adapters.test_adapter.ExchangeableToken.equals_key
-  isExternal: false
-  name: 'equals_key(rhs: botbuilder.core.adapters.test_adapter.ExchangeableToken)
-    -> bool'
-  parent: botbuilder.core.adapters.test_adapter.ExchangeableToken
-  uid: botbuilder.core.adapters.test_adapter.ExchangeableToken.equals_key
-- fullName: botbuilder.core.adapters.test_adapter.ExchangeableToken.to_key
-  isExternal: false
-  name: to_key() -> str
-  parent: botbuilder.core.adapters.test_adapter.ExchangeableToken
-  uid: botbuilder.core.adapters.test_adapter.ExchangeableToken.to_key
+- uid: botbuilder.core.adapters.test_adapter.ExchangeableToken.to_key
+  name: to_key
+  signature: to_key() -> str

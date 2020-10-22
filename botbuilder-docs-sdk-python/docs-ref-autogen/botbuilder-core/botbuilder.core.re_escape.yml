@@ -1,20 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.re_escape.escape
-  fullName: botbuilder.core.re_escape
-  langs:
-  - python
-  module: botbuilder.core.re_escape
-  name: re_escape
-  type: module
-  uid: botbuilder.core.re_escape
-- fullName: botbuilder.core.re_escape.escape
-  langs:
-  - python
-  module: botbuilder.core.re_escape
-  name: escape(pattern)
+### YamlMime:PythonModule
+uid: botbuilder.core.re_escape
+name: re_escape
+fullName: botbuilder.core.re_escape
+functions:
+- uid: botbuilder.core.re_escape.escape
+  name: escape
   summary: 'Escape special characters in a string.
 
 
@@ -25,15 +15,6 @@ items:
     bot names with regex characters in it would fail in TurnContext.remove_mention_text
 
     without escaping the text.'
-  syntax:
-    content: escape(pattern)
-    parameters:
-    - id: pattern
-  type: function
-  uid: botbuilder.core.re_escape.escape
-references:
-- fullName: botbuilder.core.re_escape.escape
-  isExternal: false
-  name: escape(pattern)
-  parent: botbuilder.core.re_escape
-  uid: botbuilder.core.re_escape.escape
+  signature: escape(pattern)
+  parameters:
+  - name: pattern

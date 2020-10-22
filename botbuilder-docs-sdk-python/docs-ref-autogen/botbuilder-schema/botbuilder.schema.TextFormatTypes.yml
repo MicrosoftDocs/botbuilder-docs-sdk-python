@@ -1,70 +1,16 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.schema.TextFormatTypes.markdown
-  - botbuilder.schema.TextFormatTypes.plain
-  - botbuilder.schema.TextFormatTypes.xml
-  class: botbuilder.schema.TextFormatTypes
-  fullName: botbuilder.schema.TextFormatTypes
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: builtins.str
-  - inheritance:
-    - type: builtins.object
-    type: enum.Enum
-  langs:
-  - python
-  module: botbuilder.schema
-  name: TextFormatTypes
-  summary: An enumeration.
-  syntax: {}
-  type: class
-  uid: botbuilder.schema.TextFormatTypes
-- class: botbuilder.schema.TextFormatTypes
-  fullName: botbuilder.schema.TextFormatTypes.markdown
-  langs:
-  - python
-  module: botbuilder.schema
-  name: markdown
-  syntax:
-    content: markdown = 'markdown'
-  type: attribute
+### YamlMime:PythonEnum
+uid: botbuilder.schema.TextFormatTypes
+name: TextFormatTypes
+fullName: botbuilder.schema.TextFormatTypes
+summary: An enumeration.
+module: botbuilder.schema
+inheritances:
+- builtins.str
+- enum.Enum
+fields:
+- name: markdown
   uid: botbuilder.schema.TextFormatTypes.markdown
-- class: botbuilder.schema.TextFormatTypes
-  fullName: botbuilder.schema.TextFormatTypes.plain
-  langs:
-  - python
-  module: botbuilder.schema
-  name: plain
-  syntax:
-    content: plain = 'plain'
-  type: attribute
+- name: plain
   uid: botbuilder.schema.TextFormatTypes.plain
-- class: botbuilder.schema.TextFormatTypes
-  fullName: botbuilder.schema.TextFormatTypes.xml
-  langs:
-  - python
-  module: botbuilder.schema
-  name: xml
-  syntax:
-    content: xml = 'xml'
-  type: attribute
-  uid: botbuilder.schema.TextFormatTypes.xml
-references:
-- fullName: botbuilder.schema.TextFormatTypes.markdown
-  isExternal: false
-  name: markdown
-  parent: botbuilder.schema.TextFormatTypes
-  uid: botbuilder.schema.TextFormatTypes.markdown
-- fullName: botbuilder.schema.TextFormatTypes.plain
-  isExternal: false
-  name: plain
-  parent: botbuilder.schema.TextFormatTypes
-  uid: botbuilder.schema.TextFormatTypes.plain
-- fullName: botbuilder.schema.TextFormatTypes.xml
-  isExternal: false
-  name: xml
-  parent: botbuilder.schema.TextFormatTypes
+- name: xml
   uid: botbuilder.schema.TextFormatTypes.xml

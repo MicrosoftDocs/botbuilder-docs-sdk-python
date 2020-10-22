@@ -1,42 +1,19 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.ai.luis.luis_recognizer.LuisRecognizer.fill_luis_event_properties
-  - botbuilder.ai.luis.luis_recognizer.LuisRecognizer.on_recognizer_result
-  - botbuilder.ai.luis.luis_recognizer.LuisRecognizer.recognize
-  - botbuilder.ai.luis.luis_recognizer.LuisRecognizer.top_intent
-  - botbuilder.ai.luis.luis_recognizer.LuisRecognizer.luis_trace_label
-  - botbuilder.ai.luis.luis_recognizer.LuisRecognizer.luis_trace_type
-  class: botbuilder.ai.luis.luis_recognizer.LuisRecognizer
-  fullName: botbuilder.ai.luis.luis_recognizer.LuisRecognizer
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: abc.ABC
-    type: botbuilder.core.recognizer.Recognizer
-  langs:
-  - python
-  module: botbuilder.ai.luis.luis_recognizer
-  name: LuisRecognizer
-  summary: A LUIS based implementation of <see cref="IRecognizer"/>.
-  syntax:
-    content: 'LuisRecognizer(application: typing.Union[botbuilder.ai.luis.luis_application.LuisApplication,
-      str], prediction_options: typing.Union[botbuilder.ai.luis.luis_recognizer_options_v2.LuisRecognizerOptionsV2,
-      botbuilder.ai.luis.luis_recognizer_options_v3.LuisRecognizerOptionsV3, botbuilder.ai.luis.luis_prediction_options.LuisPredictionOptions]
-      = None, include_api_results: bool = False)'
-  type: class
-  uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer
-- class: botbuilder.ai.luis.luis_recognizer.LuisRecognizer
-  fullName: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.fill_luis_event_properties
-  langs:
-  - python
-  module: botbuilder.ai.luis.luis_recognizer
-  name: 'fill_luis_event_properties(recognizer_result: botbuilder.core.recognizer_result.RecognizerResult,
-    turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
-    typing.Dict[str, str] = None) -> typing.Dict[str, str]'
-  namewithoutparameters: fill_luis_event_properties
+### YamlMime:PythonClass
+uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer
+name: LuisRecognizer
+fullName: botbuilder.ai.luis.luis_recognizer.LuisRecognizer
+module: botbuilder.ai.luis.luis_recognizer
+inheritances:
+- botbuilder.core.recognizer.Recognizer
+summary: A LUIS based implementation of <see cref="IRecognizer"/>.
+constructor:
+  syntax: 'LuisRecognizer(application: typing.Union[botbuilder.ai.luis.luis_application.LuisApplication,
+    str], prediction_options: typing.Union[botbuilder.ai.luis.luis_recognizer_options_v2.LuisRecognizerOptionsV2,
+    botbuilder.ai.luis.luis_recognizer_options_v3.LuisRecognizerOptionsV3, botbuilder.ai.luis.luis_prediction_options.LuisPredictionOptions]
+    = None, include_api_results: bool = False)'
+methods:
+- uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.fill_luis_event_properties
+  name: fill_luis_event_properties
   summary: 'Fills the event properties for LuisResult event for telemetry.
 
     These properties are logged when the recognizer is called.
@@ -46,133 +23,103 @@ items:
     method for the BotMessageSend event.
 
     :rtype: *typing.Dict[str, str]*'
-  syntax:
-    content: 'fill_luis_event_properties(recognizer_result: botbuilder.core.recognizer_result.RecognizerResult,
-      turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
-      typing.Dict[str, str] = None) -> typing.Dict[str, str]'
-    parameters:
-    - description: Last activity sent from user.
-      id: recognizer_result
-      isRequired: true
-      type:
-      - botbuilder.core.RecognizerResult
-    - description: Context object containing information for a single turn of conversation
-        with a user.
-      id: turn_context
-      isRequired: true
-      type:
-      - botbuilder.core.TurnContext
-    - description: 'Additional properties to be logged to telemetry with the LuisResult
-        event,
+  signature: 'fill_luis_event_properties(recognizer_result: botbuilder.core.recognizer_result.RecognizerResult,
+    turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
+    typing.Dict[str, str] = None) -> typing.Dict[str, str]'
+  parameters:
+  - name: recognizer_result
+    description: Last activity sent from user.
+    isRequired: true
+    types:
+    - <xref:botbuilder.core.RecognizerResult>
+  - name: turn_context
+    description: Context object containing information for a single turn of conversation
+      with a user.
+    isRequired: true
+    types:
+    - <xref:botbuilder.core.TurnContext>
+  - name: telemetry_properties
+    description: 'Additional properties to be logged to telemetry with the LuisResult
+      event,
 
-        defaults to None'
-      id: telemetry_properties
-      isRequired: true
-    - description: <xref:typing.Dict[str, str]>, optional
-      id: telemetry_properties
-      isRequired: true
-    return:
-      description: A dictionary that is sent as "Properties" to <xref:botbuilder.core.BotTelemetryClient.track_event>
-  type: method
-  uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.fill_luis_event_properties
-- class: botbuilder.ai.luis.luis_recognizer.LuisRecognizer
-  fullName: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.on_recognizer_result
-  langs:
-  - python
-  module: botbuilder.ai.luis.luis_recognizer
-  name: 'on_recognizer_result(recognizer_result: botbuilder.core.recognizer_result.RecognizerResult,
+      defaults to None'
+    isRequired: true
+  - name: telemetry_properties
+    description: <xref:typing.Dict[str, str]>, optional
+    isRequired: true
+  return:
+    description: A dictionary that is sent as "Properties" to <xref:botbuilder.core.BotTelemetryClient.track_event>
+- uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.on_recognizer_result
+  name: on_recognizer_result
+  summary: Invoked prior to a LuisResult being logged.
+  signature: 'on_recognizer_result(recognizer_result: botbuilder.core.recognizer_result.RecognizerResult,
     turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
     typing.Dict[str, str] = None, telemetry_metrics: typing.Dict[str, float] = None)'
-  namewithoutparameters: on_recognizer_result
-  summary: Invoked prior to a LuisResult being logged.
-  syntax:
-    content: 'on_recognizer_result(recognizer_result: botbuilder.core.recognizer_result.RecognizerResult,
-      turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
-      typing.Dict[str, str] = None, telemetry_metrics: typing.Dict[str, float] = None)'
-    parameters:
-    - description: The Luis Results for the call.
-      id: recognizer_result
-      isRequired: true
-      type:
-      - botbuilder.core.RecognizerResult
-    - description: Context object containing information for a single turn of conversation
-        with a user.
-      id: turn_context
-      isRequired: true
-      type:
-      - botbuilder.core.TurnContext
-    - description: 'Additional properties to be logged to telemetry with the LuisResult
-        event, defaults
+  parameters:
+  - name: recognizer_result
+    description: The Luis Results for the call.
+    isRequired: true
+    types:
+    - <xref:botbuilder.core.RecognizerResult>
+  - name: turn_context
+    description: Context object containing information for a single turn of conversation
+      with a user.
+    isRequired: true
+    types:
+    - <xref:botbuilder.core.TurnContext>
+  - name: telemetry_properties
+    description: 'Additional properties to be logged to telemetry with the LuisResult
+      event, defaults
 
-        to None.'
-      id: telemetry_properties
-      isRequired: true
-      type:
-      - typing.Dict[str, str], optional
-    - description: 'Additional metrics to be logged to telemetry with the LuisResult
-        event, defaults
+      to None.'
+    isRequired: true
+    types:
+    - <xref:typing.Dict>[<xref:str>, <xref:str>], <xref:optional>
+  - name: telemetry_metrics
+    description: 'Additional metrics to be logged to telemetry with the LuisResult
+      event, defaults
 
-        to None.'
-      id: telemetry_metrics
-      isRequired: true
-      type:
-      - typing.Dict[str, float], optional
-  type: method
-  uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.on_recognizer_result
-- class: botbuilder.ai.luis.luis_recognizer.LuisRecognizer
-  fullName: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.recognize
-  langs:
-  - python
-  module: botbuilder.ai.luis.luis_recognizer
-  name: 'recognize(turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
+      to None.'
+    isRequired: true
+    types:
+    - <xref:typing.Dict>[<xref:str>, <xref:float>], <xref:optional>
+- uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.recognize
+  name: recognize
+  summary: Return results of the analysis (Suggested actions and intents).
+  signature: 'recognize(turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
     typing.Dict[str, str] = None, telemetry_metrics: typing.Dict[str, float] = None,
     luis_prediction_options: botbuilder.ai.luis.luis_prediction_options.LuisPredictionOptions
     = None) -> botbuilder.core.recognizer_result.RecognizerResult'
-  namewithoutparameters: recognize
-  summary: Return results of the analysis (Suggested actions and intents).
-  syntax:
-    content: 'recognize(turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
-      typing.Dict[str, str] = None, telemetry_metrics: typing.Dict[str, float] = None,
-      luis_prediction_options: botbuilder.ai.luis.luis_prediction_options.LuisPredictionOptions
-      = None) -> botbuilder.core.recognizer_result.RecognizerResult'
-    parameters:
-    - description: Context object containing information for a single turn of conversation
-        with a user.
-      id: turn_context
-      isRequired: true
-      type:
-      - botbuilder.core.TurnContext
-    - description: 'Additional properties to be logged to telemetry with the LuisResult
-        event, defaults
+  parameters:
+  - name: turn_context
+    description: Context object containing information for a single turn of conversation
+      with a user.
+    isRequired: true
+    types:
+    - <xref:botbuilder.core.TurnContext>
+  - name: telemetry_properties
+    description: 'Additional properties to be logged to telemetry with the LuisResult
+      event, defaults
 
-        to None.'
-      id: telemetry_properties
-      isRequired: true
-      type:
-      - typing.Dict[str, str], optional
-    - description: 'Additional metrics to be logged to telemetry with the LuisResult
-        event, defaults to
+      to None.'
+    isRequired: true
+    types:
+    - <xref:typing.Dict>[<xref:str>, <xref:str>], <xref:optional>
+  - name: telemetry_metrics
+    description: 'Additional metrics to be logged to telemetry with the LuisResult
+      event, defaults to
 
-        None.'
-      id: telemetry_metrics
-      isRequired: true
-      type:
-      - typing.Dict[str, float], optional
-    return:
-      description: The LUIS results of the analysis of the current message text in
-        the current turn's context activity.
-      type:
-      - botbuilder.core.RecognizerResult
-  type: method
-  uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.recognize
-- class: botbuilder.ai.luis.luis_recognizer.LuisRecognizer
-  fullName: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.top_intent
-  langs:
-  - python
-  module: botbuilder.ai.luis.luis_recognizer
-  name: 'top_intent(results: botbuilder.core.recognizer_result.RecognizerResult, default_intent:
-    str = ''None'', min_score: float = 0.0) -> str'
-  namewithoutparameters: top_intent
+      None.'
+    isRequired: true
+    types:
+    - <xref:typing.Dict>[<xref:str>, <xref:float>], <xref:optional>
+  return:
+    description: The LUIS results of the analysis of the current message text in the
+      current turn's context activity.
+    types:
+    - <xref:botbuilder.core.RecognizerResult>
+- uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.top_intent
+  name: top_intent
   summary: 'Returns the name of the top scoring intent from a set of LUIS results.
 
 
@@ -187,143 +134,27 @@ items:
     :return: The top scoring intent name.
 
     :rtype: str'
-  syntax:
-    content: 'top_intent(results: botbuilder.core.recognizer_result.RecognizerResult,
-      default_intent: str = ''None'', min_score: float = 0.0) -> str'
-    parameters:
-    - description: Result set to be searched.
-      id: results
-      isRequired: true
-      type:
-      - botbuilder.core.RecognizerResult
-    - description: Intent name to return should a top intent be found, defaults to
-        None.
-      id: default_intent
-      isRequired: true
-      type:
-      - str, optional
-    - description: Minimum score needed for an intent to be considered as a top intent.
-        If all intents in
-      id: min_score
-      isRequired: true
-  type: method
-  uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.top_intent
-- class: botbuilder.ai.luis.luis_recognizer.LuisRecognizer
-  fullName: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.luis_trace_label
-  langs:
-  - python
-  module: botbuilder.ai.luis.luis_recognizer
+  signature: 'top_intent(results: botbuilder.core.recognizer_result.RecognizerResult,
+    default_intent: str = ''None'', min_score: float = 0.0) -> str'
+  parameters:
+  - name: results
+    description: Result set to be searched.
+    isRequired: true
+    types:
+    - <xref:botbuilder.core.RecognizerResult>
+  - name: default_intent
+    description: Intent name to return should a top intent be found, defaults to None.
+    isRequired: true
+    types:
+    - <xref:str>, <xref:optional>
+  - name: min_score
+    description: Minimum score needed for an intent to be considered as a top intent.
+      If all intents in
+    isRequired: true
+attributes:
+- uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.luis_trace_label
   name: luis_trace_label
-  syntax:
-    content: luis_trace_label = 'Luis Trace'
-  type: attribute
-  uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.luis_trace_label
-- class: botbuilder.ai.luis.luis_recognizer.LuisRecognizer
-  fullName: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.luis_trace_type
-  langs:
-  - python
-  module: botbuilder.ai.luis.luis_recognizer
+  signature: luis_trace_label = 'Luis Trace'
+- uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.luis_trace_type
   name: luis_trace_type
-  syntax:
-    content: luis_trace_type = 'https://www.luis.ai/schemas/trace'
-  type: attribute
-  uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.luis_trace_type
-references:
-- fullName: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.fill_luis_event_properties
-  isExternal: false
-  name: 'fill_luis_event_properties(recognizer_result: botbuilder.core.recognizer_result.RecognizerResult,
-    turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
-    typing.Dict[str, str] = None) -> typing.Dict[str, str]'
-  parent: botbuilder.ai.luis.luis_recognizer.LuisRecognizer
-  uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.fill_luis_event_properties
-- fullName: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.on_recognizer_result
-  isExternal: false
-  name: 'on_recognizer_result(recognizer_result: botbuilder.core.recognizer_result.RecognizerResult,
-    turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
-    typing.Dict[str, str] = None, telemetry_metrics: typing.Dict[str, float] = None)'
-  parent: botbuilder.ai.luis.luis_recognizer.LuisRecognizer
-  uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.on_recognizer_result
-- fullName: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.recognize
-  isExternal: false
-  name: 'recognize(turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
-    typing.Dict[str, str] = None, telemetry_metrics: typing.Dict[str, float] = None,
-    luis_prediction_options: botbuilder.ai.luis.luis_prediction_options.LuisPredictionOptions
-    = None) -> botbuilder.core.recognizer_result.RecognizerResult'
-  parent: botbuilder.ai.luis.luis_recognizer.LuisRecognizer
-  uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.recognize
-- fullName: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.top_intent
-  isExternal: false
-  name: 'top_intent(results: botbuilder.core.recognizer_result.RecognizerResult, default_intent:
-    str = ''None'', min_score: float = 0.0) -> str'
-  parent: botbuilder.ai.luis.luis_recognizer.LuisRecognizer
-  uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.top_intent
-- fullName: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.luis_trace_label
-  isExternal: false
-  name: luis_trace_label
-  parent: botbuilder.ai.luis.luis_recognizer.LuisRecognizer
-  uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.luis_trace_label
-- fullName: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.luis_trace_type
-  isExternal: false
-  name: luis_trace_type
-  parent: botbuilder.ai.luis.luis_recognizer.LuisRecognizer
-  uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.luis_trace_type
-- fullName: typing.Dict[str, str], optional
-  name: Dict[str, str], optional
-  spec.python:
-  - fullName: typing.Dict
-    name: Dict
-    uid: typing.Dict
-  - fullName: '['
-    name: '['
-  - fullName: str
-    name: str
-    uid: str
-  - fullName: ', '
-    name: ', '
-  - fullName: str
-    name: str
-    uid: str
-  - fullName: ']'
-    name: ']'
-  - fullName: ', '
-    name: ', '
-  - fullName: optional
-    name: optional
-    uid: optional
-  uid: typing.Dict[str, str], optional
-- fullName: typing.Dict[str, float], optional
-  name: Dict[str, float], optional
-  spec.python:
-  - fullName: typing.Dict
-    name: Dict
-    uid: typing.Dict
-  - fullName: '['
-    name: '['
-  - fullName: str
-    name: str
-    uid: str
-  - fullName: ', '
-    name: ', '
-  - fullName: float
-    name: float
-    uid: float
-  - fullName: ']'
-    name: ']'
-  - fullName: ', '
-    name: ', '
-  - fullName: optional
-    name: optional
-    uid: optional
-  uid: typing.Dict[str, float], optional
-- fullName: str, optional
-  name: str, optional
-  spec.python:
-  - fullName: str
-    name: str
-    uid: str
-  - fullName: ', '
-    name: ', '
-  - fullName: optional
-    name: optional
-    uid: optional
-  uid: str, optional
+  signature: luis_trace_type = 'https://www.luis.ai/schemas/trace'

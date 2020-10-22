@@ -1,31 +1,21 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.MediaUrl
-  fullName: botbuilder.schema.MediaUrl
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema
-  name: MediaUrl
-  summary: Media URL.
-  syntax:
-    content: 'MediaUrl(*, url: str = None, profile: str = None, **kwargs) -> None'
-    parameters:
-    - description: Url for the media
-      id: url
-      type:
-      - str
-    - description: 'Optional profile hint to the client to differentiate
+### YamlMime:PythonClass
+uid: botbuilder.schema.MediaUrl
+name: MediaUrl
+fullName: botbuilder.schema.MediaUrl
+module: botbuilder.schema
+inheritances:
+- msrest.serialization.Model
+summary: Media URL.
+constructor:
+  syntax: 'MediaUrl(*, url: str = None, profile: str = None, **kwargs) -> None'
+  parameters:
+  - name: url
+    description: Url for the media
+    types:
+    - <xref:str>
+  - name: profile
+    description: 'Optional profile hint to the client to differentiate
 
-        multiple MediaUrl objects from each other'
-      id: profile
-      type:
-      - str
-  type: class
-  uid: botbuilder.schema.MediaUrl
-references: []
+      multiple MediaUrl objects from each other'
+    types:
+    - <xref:str>

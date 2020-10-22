@@ -1,34 +1,13 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.dialogs.skills.BeginSkillDialogOptions.from_object
-  class: botbuilder.dialogs.skills.BeginSkillDialogOptions
-  fullName: botbuilder.dialogs.skills.BeginSkillDialogOptions
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.dialogs.skills
-  name: BeginSkillDialogOptions
-  syntax:
-    content: 'BeginSkillDialogOptions(activity: botbuilder.schema._models_py3.Activity)'
-  type: class
-  uid: botbuilder.dialogs.skills.BeginSkillDialogOptions
-- class: botbuilder.dialogs.skills.BeginSkillDialogOptions
-  fullName: botbuilder.dialogs.skills.BeginSkillDialogOptions.from_object
-  langs:
-  - python
-  module: botbuilder.dialogs.skills
-  name: 'from_object(obj: object) -> botbuilder.dialogs.skills.begin_skill_dialog_options.BeginSkillDialogOptions'
-  namewithoutparameters: from_object
-  syntax:
-    content: 'from_object(obj: object) -> botbuilder.dialogs.skills.begin_skill_dialog_options.BeginSkillDialogOptions'
-  type: method
-  uid: botbuilder.dialogs.skills.BeginSkillDialogOptions.from_object
-references:
-- fullName: botbuilder.dialogs.skills.BeginSkillDialogOptions.from_object
-  isExternal: false
-  name: 'from_object(obj: object) -> botbuilder.dialogs.skills.begin_skill_dialog_options.BeginSkillDialogOptions'
-  parent: botbuilder.dialogs.skills.BeginSkillDialogOptions
-  uid: botbuilder.dialogs.skills.BeginSkillDialogOptions.from_object
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.skills.BeginSkillDialogOptions
+name: BeginSkillDialogOptions
+fullName: botbuilder.dialogs.skills.BeginSkillDialogOptions
+module: botbuilder.dialogs.skills
+inheritances:
+- builtins.object
+constructor:
+  syntax: 'BeginSkillDialogOptions(activity: botbuilder.schema._models_py3.Activity)'
+methods:
+- uid: botbuilder.dialogs.skills.BeginSkillDialogOptions.from_object
+  name: from_object
+  signature: 'from_object(obj: object) -> botbuilder.dialogs.skills.begin_skill_dialog_options.BeginSkillDialogOptions'

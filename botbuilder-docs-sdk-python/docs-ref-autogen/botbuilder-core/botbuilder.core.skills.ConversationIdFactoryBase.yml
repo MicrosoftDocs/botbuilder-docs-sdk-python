@@ -1,78 +1,43 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.skills.ConversationIdFactoryBase.create_skill_conversation_id
-  - botbuilder.core.skills.ConversationIdFactoryBase.delete_conversation_reference
-  - botbuilder.core.skills.ConversationIdFactoryBase.get_conversation_reference
-  class: botbuilder.core.skills.ConversationIdFactoryBase
-  fullName: botbuilder.core.skills.ConversationIdFactoryBase
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: abc.ABC
-  langs:
-  - python
-  module: botbuilder.core.skills
-  name: ConversationIdFactoryBase
-  remarks: 'Derive from this class to handle creation of conversation ids, retrieval
-    of
+### YamlMime:PythonClass
+uid: botbuilder.core.skills.ConversationIdFactoryBase
+name: ConversationIdFactoryBase
+fullName: botbuilder.core.skills.ConversationIdFactoryBase
+module: botbuilder.core.skills
+inheritances:
+- abc.ABC
+summary: Handles creating conversation ids for skill and should be subclassed.
+remarks: 'Derive from this class to handle creation of conversation ids, retrieval
+  of
 
-    SkillConversationReferences and deletion.
+  SkillConversationReferences and deletion.
 
-    '
-  summary: Handles creating conversation ids for skill and should be subclassed.
-  syntax: {}
-  type: class
-  uid: botbuilder.core.skills.ConversationIdFactoryBase
-- class: botbuilder.core.skills.ConversationIdFactoryBase
-  fullName: botbuilder.core.skills.ConversationIdFactoryBase.create_skill_conversation_id
-  langs:
-  - python
-  module: botbuilder.core.skills
-  name: 'create_skill_conversation_id(options_or_conversation_reference: typing.Union[botbuilder.core.skills.skill_conversation_id_factory_options.SkillConversationIdFactoryOptions,
-    botbuilder.schema._models_py3.ConversationReference]) -> str'
-  namewithoutparameters: create_skill_conversation_id
+  '
+methods:
+- uid: botbuilder.core.skills.ConversationIdFactoryBase.create_skill_conversation_id
+  name: create_skill_conversation_id
   summary: "Using the options passed in, creates a conversation id and <xref:botbuilder.core.skills.SkillConversationReference>,\n\
     \   storing them for future use.\n\n\n> [!NOTE]\n> <xref:botbuilder.core.skills.SkillConversationIdFactoryOptions>\
     \ is the preferred parameter type, while the\n>\n> \n>\n> <xref:botbuilder.core.skills.SkillConversationReference>\
     \ type is provided for backwards compatability.\n>"
-  syntax:
-    content: 'create_skill_conversation_id(options_or_conversation_reference: typing.Union[botbuilder.core.skills.skill_conversation_id_factory_options.SkillConversationIdFactoryOptions,
-      botbuilder.schema._models_py3.ConversationReference]) -> str'
-    parameters:
-    - description: 'The options contain properties useful for generating a
+  signature: 'create_skill_conversation_id(options_or_conversation_reference: typing.Union[botbuilder.core.skills.skill_conversation_id_factory_options.SkillConversationIdFactoryOptions,
+    botbuilder.schema._models_py3.ConversationReference]) -> str'
+  parameters:
+  - name: options_or_conversation_reference
+    description: 'The options contain properties useful for generating a
 
-        <xref:botbuilder.core.skills.SkillConversationReference> and conversation
-        id.'
-      id: options_or_conversation_reference
-      isRequired: true
-      type:
-      - botbuilder.core.skills.Union[SkillConversationIdFactoryOptions, ConversationReference]
-    return:
-      description: A skill conversation id.
-  type: method
-  uid: botbuilder.core.skills.ConversationIdFactoryBase.create_skill_conversation_id
-- class: botbuilder.core.skills.ConversationIdFactoryBase
-  fullName: botbuilder.core.skills.ConversationIdFactoryBase.delete_conversation_reference
-  langs:
-  - python
-  module: botbuilder.core.skills
-  name: 'delete_conversation_reference(skill_conversation_id: str)'
-  namewithoutparameters: delete_conversation_reference
+      <xref:botbuilder.core.skills.SkillConversationReference> and conversation id.'
+    isRequired: true
+    types:
+    - <xref:botbuilder.core.skills.Union>[<xref:SkillConversationIdFactoryOptions>,
+      <xref:ConversationReference>]
+  return:
+    description: A skill conversation id.
+- uid: botbuilder.core.skills.ConversationIdFactoryBase.delete_conversation_reference
+  name: delete_conversation_reference
   summary: Removes any reference to objects keyed on the conversation id passed in.
-  syntax:
-    content: 'delete_conversation_reference(skill_conversation_id: str)'
-  type: method
-  uid: botbuilder.core.skills.ConversationIdFactoryBase.delete_conversation_reference
-- class: botbuilder.core.skills.ConversationIdFactoryBase
-  fullName: botbuilder.core.skills.ConversationIdFactoryBase.get_conversation_reference
-  langs:
-  - python
-  module: botbuilder.core.skills
-  name: 'get_conversation_reference(skill_conversation_id: str) -> typing.Union[botbuilder.core.skills.skill_conversation_reference.SkillConversationReference,
-    botbuilder.schema._models_py3.ConversationReference]'
-  namewithoutparameters: get_conversation_reference
+  signature: 'delete_conversation_reference(skill_conversation_id: str)'
+- uid: botbuilder.core.skills.ConversationIdFactoryBase.get_conversation_reference
+  name: get_conversation_reference
   summary: 'Retrieves a <xref:botbuilder.core.skills.SkillConversationReference> using
     a conversation id passed in.
 
@@ -87,51 +52,11 @@ items:
     > type is provided for backwards compatability.
 
     >'
-  syntax:
-    content: 'get_conversation_reference(skill_conversation_id: str) -> typing.Union[botbuilder.core.skills.skill_conversation_reference.SkillConversationReference,
-      botbuilder.schema._models_py3.ConversationReference]'
-    parameters:
-    - description: The conversation id for which to retrieve the <xref:botbuilder.core.skills.SkillConversationReference>.
-      id: skill_conversation_id
-      isRequired: true
-      type:
-      - str
-  type: method
-  uid: botbuilder.core.skills.ConversationIdFactoryBase.get_conversation_reference
-references:
-- fullName: botbuilder.core.skills.ConversationIdFactoryBase.create_skill_conversation_id
-  isExternal: false
-  name: 'create_skill_conversation_id(options_or_conversation_reference: typing.Union[botbuilder.core.skills.skill_conversation_id_factory_options.SkillConversationIdFactoryOptions,
-    botbuilder.schema._models_py3.ConversationReference]) -> str'
-  parent: botbuilder.core.skills.ConversationIdFactoryBase
-  uid: botbuilder.core.skills.ConversationIdFactoryBase.create_skill_conversation_id
-- fullName: botbuilder.core.skills.ConversationIdFactoryBase.delete_conversation_reference
-  isExternal: false
-  name: 'delete_conversation_reference(skill_conversation_id: str)'
-  parent: botbuilder.core.skills.ConversationIdFactoryBase
-  uid: botbuilder.core.skills.ConversationIdFactoryBase.delete_conversation_reference
-- fullName: botbuilder.core.skills.ConversationIdFactoryBase.get_conversation_reference
-  isExternal: false
-  name: 'get_conversation_reference(skill_conversation_id: str) -> typing.Union[botbuilder.core.skills.skill_conversation_reference.SkillConversationReference,
+  signature: 'get_conversation_reference(skill_conversation_id: str) -> typing.Union[botbuilder.core.skills.skill_conversation_reference.SkillConversationReference,
     botbuilder.schema._models_py3.ConversationReference]'
-  parent: botbuilder.core.skills.ConversationIdFactoryBase
-  uid: botbuilder.core.skills.ConversationIdFactoryBase.get_conversation_reference
-- fullName: botbuilder.core.skills.Union[SkillConversationIdFactoryOptions, ConversationReference]
-  name: Union[SkillConversationIdFactoryOptions, ConversationReference]
-  spec.python:
-  - fullName: botbuilder.core.skills.Union
-    name: Union
-    uid: botbuilder.core.skills.Union
-  - fullName: '['
-    name: '['
-  - fullName: SkillConversationIdFactoryOptions
-    name: SkillConversationIdFactoryOptions
-    uid: SkillConversationIdFactoryOptions
-  - fullName: ', '
-    name: ', '
-  - fullName: ConversationReference
-    name: ConversationReference
-    uid: ConversationReference
-  - fullName: ']'
-    name: ']'
-  uid: botbuilder.core.skills.Union[SkillConversationIdFactoryOptions, ConversationReference]
+  parameters:
+  - name: skill_conversation_id
+    description: The conversation id for which to retrieve the <xref:botbuilder.core.skills.SkillConversationReference>.
+    isRequired: true
+    types:
+    - <xref:str>

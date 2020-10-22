@@ -1,42 +1,13 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.message_factory.MessageFactory
-  - botbuilder.core.message_factory.attachment_activity
-  fullName: botbuilder.core.message_factory
-  langs:
-  - python
-  module: botbuilder.core.message_factory
-  name: message_factory
-  type: module
-  uid: botbuilder.core.message_factory
-- fullName: botbuilder.core.message_factory.attachment_activity
-  langs:
-  - python
-  module: botbuilder.core.message_factory
-  name: 'attachment_activity(attachment_layout: botbuilder.schema._connector_client_enums.AttachmentLayoutTypes,
+### YamlMime:PythonModule
+uid: botbuilder.core.message_factory
+name: message_factory
+fullName: botbuilder.core.message_factory
+functions:
+- uid: botbuilder.core.message_factory.attachment_activity
+  name: attachment_activity
+  signature: 'attachment_activity(attachment_layout: botbuilder.schema._connector_client_enums.AttachmentLayoutTypes,
     attachments: typing.List[botbuilder.schema._models_py3.Attachment], text: str
     = None, speak: str = None, input_hint: str = <InputHints.accepting_input: ''acceptingInput''>)
     -> botbuilder.schema._models_py3.Activity'
-  syntax:
-    content: 'attachment_activity(attachment_layout: botbuilder.schema._connector_client_enums.AttachmentLayoutTypes,
-      attachments: typing.List[botbuilder.schema._models_py3.Attachment], text: str
-      = None, speak: str = None, input_hint: str = <InputHints.accepting_input: ''acceptingInput''>)
-      -> botbuilder.schema._models_py3.Activity'
-  type: function
-  uid: botbuilder.core.message_factory.attachment_activity
-references:
-- fullName: botbuilder.core.message_factory.MessageFactory
-  isExternal: false
-  name: MessageFactory
-  parent: botbuilder.core.message_factory
-  uid: botbuilder.core.message_factory.MessageFactory
-- fullName: botbuilder.core.message_factory.attachment_activity
-  isExternal: false
-  name: 'attachment_activity(attachment_layout: botbuilder.schema._connector_client_enums.AttachmentLayoutTypes,
-    attachments: typing.List[botbuilder.schema._models_py3.Attachment], text: str
-    = None, speak: str = None, input_hint: str = <InputHints.accepting_input: ''acceptingInput''>)
-    -> botbuilder.schema._models_py3.Activity'
-  parent: botbuilder.core.message_factory
-  uid: botbuilder.core.message_factory.attachment_activity
+classes:
+- botbuilder.core.message_factory.MessageFactory

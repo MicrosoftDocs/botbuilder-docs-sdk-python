@@ -1,39 +1,13 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botframework.connector.auth.jwt_token_validation.JwtTokenValidation.authenticate_request
-  - botframework.connector.auth.jwt_token_validation.JwtTokenValidation.get_app_id_from_claims
-  - botframework.connector.auth.jwt_token_validation.JwtTokenValidation.is_government
-  - botframework.connector.auth.jwt_token_validation.JwtTokenValidation.is_valid_token_format
-  - botframework.connector.auth.jwt_token_validation.JwtTokenValidation.validate_auth_header
-  - botframework.connector.auth.jwt_token_validation.JwtTokenValidation.validate_claims
-  class: botframework.connector.auth.jwt_token_validation.JwtTokenValidation
-  fullName: botframework.connector.auth.jwt_token_validation.JwtTokenValidation
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botframework.connector.auth.jwt_token_validation
-  name: JwtTokenValidation
-  summary: ''
-  syntax: {}
-  type: class
-  uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation
-- class: botframework.connector.auth.jwt_token_validation.JwtTokenValidation
-  exceptions:
-  - description: ''
-    type: Exception
-  fullName: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.authenticate_request
-  langs:
-  - python
-  module: botframework.connector.auth.jwt_token_validation
-  name: 'authenticate_request(activity: botbuilder.schema._models_py3.Activity, auth_header:
-    str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
-    channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider]
-    = '''', auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
-    = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  namewithoutparameters: authenticate_request
+### YamlMime:PythonClass
+uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation
+name: JwtTokenValidation
+fullName: botframework.connector.auth.jwt_token_validation.JwtTokenValidation
+module: botframework.connector.auth.jwt_token_validation
+inheritances:
+- builtins.object
+methods:
+- uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.authenticate_request
+  name: authenticate_request
   summary: 'Authenticates the request and sets the service url in the set of trusted
     urls.
 
@@ -53,113 +27,30 @@ items:
     :param auth_configuration: Authentication configuration
 
     :type credentials: CredentialProvider'
-  syntax:
-    content: 'authenticate_request(activity: botbuilder.schema._models_py3.Activity,
-      auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
-      channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider]
-      = '''', auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
-      = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  type: method
-  uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.authenticate_request
-- class: botframework.connector.auth.jwt_token_validation.JwtTokenValidation
-  fullName: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.get_app_id_from_claims
-  langs:
-  - python
-  module: botframework.connector.auth.jwt_token_validation
-  name: 'get_app_id_from_claims(claims: typing.Dict[str, object]) -> str'
-  namewithoutparameters: get_app_id_from_claims
-  syntax:
-    content: 'get_app_id_from_claims(claims: typing.Dict[str, object]) -> str'
-  type: method
-  uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.get_app_id_from_claims
-- class: botframework.connector.auth.jwt_token_validation.JwtTokenValidation
-  fullName: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.is_government
-  langs:
-  - python
-  module: botframework.connector.auth.jwt_token_validation
-  name: 'is_government(channel_service: str) -> bool'
-  namewithoutparameters: is_government
-  syntax:
-    content: 'is_government(channel_service: str) -> bool'
-  type: method
-  uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.is_government
-- class: botframework.connector.auth.jwt_token_validation.JwtTokenValidation
-  fullName: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.is_valid_token_format
-  langs:
-  - python
-  module: botframework.connector.auth.jwt_token_validation
-  name: 'is_valid_token_format(auth_header: str) -> bool'
-  namewithoutparameters: is_valid_token_format
-  syntax:
-    content: 'is_valid_token_format(auth_header: str) -> bool'
-  type: method
-  uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.is_valid_token_format
-- class: botframework.connector.auth.jwt_token_validation.JwtTokenValidation
-  fullName: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.validate_auth_header
-  langs:
-  - python
-  module: botframework.connector.auth.jwt_token_validation
-  name: 'validate_auth_header(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
-    channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
-    channel_id: str, service_url: str = None, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
-    = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  namewithoutparameters: validate_auth_header
-  syntax:
-    content: 'validate_auth_header(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
-      channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
-      channel_id: str, service_url: str = None, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
-      = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  type: method
-  uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.validate_auth_header
-- class: botframework.connector.auth.jwt_token_validation.JwtTokenValidation
-  fullName: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.validate_claims
-  langs:
-  - python
-  module: botframework.connector.auth.jwt_token_validation
-  name: 'validate_claims(auth_config: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration,
-    claims: typing.List[typing.Dict])'
-  namewithoutparameters: validate_claims
-  syntax:
-    content: 'validate_claims(auth_config: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration,
-      claims: typing.List[typing.Dict])'
-  type: method
-  uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.validate_claims
-references:
-- fullName: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.authenticate_request
-  isExternal: false
-  name: 'authenticate_request(activity: botbuilder.schema._models_py3.Activity, auth_header:
-    str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
+  signature: 'authenticate_request(activity: botbuilder.schema._models_py3.Activity,
+    auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
     channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider]
     = '''', auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
     = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  parent: botframework.connector.auth.jwt_token_validation.JwtTokenValidation
-  uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.authenticate_request
-- fullName: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.get_app_id_from_claims
-  isExternal: false
-  name: 'get_app_id_from_claims(claims: typing.Dict[str, object]) -> str'
-  parent: botframework.connector.auth.jwt_token_validation.JwtTokenValidation
-  uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.get_app_id_from_claims
-- fullName: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.is_government
-  isExternal: false
-  name: 'is_government(channel_service: str) -> bool'
-  parent: botframework.connector.auth.jwt_token_validation.JwtTokenValidation
-  uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.is_government
-- fullName: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.is_valid_token_format
-  isExternal: false
-  name: 'is_valid_token_format(auth_header: str) -> bool'
-  parent: botframework.connector.auth.jwt_token_validation.JwtTokenValidation
-  uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.is_valid_token_format
-- fullName: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.validate_auth_header
-  isExternal: false
-  name: 'validate_auth_header(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
+  exceptions:
+  - description: ''
+    type: Exception
+- uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.get_app_id_from_claims
+  name: get_app_id_from_claims
+  signature: 'get_app_id_from_claims(claims: typing.Dict[str, object]) -> str'
+- uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.is_government
+  name: is_government
+  signature: 'is_government(channel_service: str) -> bool'
+- uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.is_valid_token_format
+  name: is_valid_token_format
+  signature: 'is_valid_token_format(auth_header: str) -> bool'
+- uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.validate_auth_header
+  name: validate_auth_header
+  signature: 'validate_auth_header(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
     channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
     channel_id: str, service_url: str = None, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
     = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  parent: botframework.connector.auth.jwt_token_validation.JwtTokenValidation
-  uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.validate_auth_header
-- fullName: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.validate_claims
-  isExternal: false
-  name: 'validate_claims(auth_config: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration,
+- uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.validate_claims
+  name: validate_claims
+  signature: 'validate_claims(auth_config: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration,
     claims: typing.List[typing.Dict])'
-  parent: botframework.connector.auth.jwt_token_validation.JwtTokenValidation
-  uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.validate_claims

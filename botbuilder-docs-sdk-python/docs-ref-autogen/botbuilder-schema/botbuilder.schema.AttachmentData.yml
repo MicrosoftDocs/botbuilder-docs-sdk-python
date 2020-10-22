@@ -1,38 +1,28 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.AttachmentData
-  fullName: botbuilder.schema.AttachmentData
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema
-  name: AttachmentData
-  summary: Attachment data.
-  syntax:
-    content: 'AttachmentData(*, type: str = None, name: str = None, original_base64:
-      bytearray = None, thumbnail_base64: bytearray = None, **kwargs) -> None'
-    parameters:
-    - description: Content-Type of the attachment
-      id: type
-      type:
-      - str
-    - description: Name of the attachment
-      id: name
-      type:
-      - str
-    - description: Attachment content
-      id: original_base64
-      type:
-      - bytearray
-    - description: Attachment thumbnail
-      id: thumbnail_base64
-      type:
-      - bytearray
-  type: class
-  uid: botbuilder.schema.AttachmentData
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.schema.AttachmentData
+name: AttachmentData
+fullName: botbuilder.schema.AttachmentData
+module: botbuilder.schema
+inheritances:
+- msrest.serialization.Model
+summary: Attachment data.
+constructor:
+  syntax: 'AttachmentData(*, type: str = None, name: str = None, original_base64:
+    bytearray = None, thumbnail_base64: bytearray = None, **kwargs) -> None'
+  parameters:
+  - name: type
+    description: Content-Type of the attachment
+    types:
+    - <xref:str>
+  - name: name
+    description: Name of the attachment
+    types:
+    - <xref:str>
+  - name: original_base64
+    description: Attachment content
+    types:
+    - <xref:bytearray>
+  - name: thumbnail_base64
+    description: Attachment thumbnail
+    types:
+    - <xref:bytearray>

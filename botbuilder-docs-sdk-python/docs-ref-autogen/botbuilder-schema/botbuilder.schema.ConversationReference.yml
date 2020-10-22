@@ -1,61 +1,51 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.ConversationReference
-  fullName: botbuilder.schema.ConversationReference
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema
-  name: ConversationReference
-  summary: An object relating to a particular point in a conversation.
-  syntax:
-    content: 'ConversationReference(*, activity_id: str = None, user=None, bot=None,
-      conversation=None, channel_id: str = None, locale: str = None, service_url:
-      str = None, **kwargs) -> None'
-    parameters:
-    - description: (Optional) ID of the activity to refer to
-      id: activity_id
-      type:
-      - str
-    - description: (Optional) User participating in this conversation
-      id: user
-      type:
-      - botframework.connector.models.ChannelAccount
-    - description: Bot participating in this conversation
-      id: bot
-      type:
-      - botframework.connector.models.ChannelAccount
-    - description: Conversation reference
-      id: conversation
-      type:
-      - botframework.connector.models.ConversationAccount
-    - description: Channel ID
-      id: channel_id
-      type:
-      - str
-    - description: 'A locale name for the contents of the text field.
+### YamlMime:PythonClass
+uid: botbuilder.schema.ConversationReference
+name: ConversationReference
+fullName: botbuilder.schema.ConversationReference
+module: botbuilder.schema
+inheritances:
+- msrest.serialization.Model
+summary: An object relating to a particular point in a conversation.
+constructor:
+  syntax: 'ConversationReference(*, activity_id: str = None, user=None, bot=None,
+    conversation=None, channel_id: str = None, locale: str = None, service_url: str
+    = None, **kwargs) -> None'
+  parameters:
+  - name: activity_id
+    description: (Optional) ID of the activity to refer to
+    types:
+    - <xref:str>
+  - name: user
+    description: (Optional) User participating in this conversation
+    types:
+    - <xref:botframework.connector.models.ChannelAccount>
+  - name: bot
+    description: Bot participating in this conversation
+    types:
+    - <xref:botframework.connector.models.ChannelAccount>
+  - name: conversation
+    description: Conversation reference
+    types:
+    - <xref:botframework.connector.models.ConversationAccount>
+  - name: channel_id
+    description: Channel ID
+    types:
+    - <xref:str>
+  - name: locale
+    description: 'A locale name for the contents of the text field.
 
-        The locale name is a combination of an ISO 639 two- or three-letter
+      The locale name is a combination of an ISO 639 two- or three-letter
 
-        culture code associated with a language and an ISO 3166 two-letter
+      culture code associated with a language and an ISO 3166 two-letter
 
-        subculture code associated with a country or region.
+      subculture code associated with a country or region.
 
-        The locale name can also correspond to a valid BCP-47 language tag.'
-      id: locale
-      type:
-      - str
-    - description: 'Service endpoint where operations concerning the
+      The locale name can also correspond to a valid BCP-47 language tag.'
+    types:
+    - <xref:str>
+  - name: service_url
+    description: 'Service endpoint where operations concerning the
 
-        referenced conversation may be performed'
-      id: service_url
-      type:
-      - str
-  type: class
-  uid: botbuilder.schema.ConversationReference
-references: []
+      referenced conversation may be performed'
+    types:
+    - <xref:str>

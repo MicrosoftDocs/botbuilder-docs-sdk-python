@@ -1,241 +1,51 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.telemetry_constants.TelemetryConstants.ATTACHMENTS_PROPERTY
-  - botbuilder.core.telemetry_constants.TelemetryConstants.CHANNEL_ID_PROPERTY
-  - botbuilder.core.telemetry_constants.TelemetryConstants.CONVERSATION_ID_PROPERTY
-  - botbuilder.core.telemetry_constants.TelemetryConstants.CONVERSATION_NAME_PROPERTY
-  - botbuilder.core.telemetry_constants.TelemetryConstants.DIALOG_ID_PROPERTY
-  - botbuilder.core.telemetry_constants.TelemetryConstants.FROM_ID_PROPERTY
-  - botbuilder.core.telemetry_constants.TelemetryConstants.FROM_NAME_PROPERTY
-  - botbuilder.core.telemetry_constants.TelemetryConstants.LOCALE_PROPERTY
-  - botbuilder.core.telemetry_constants.TelemetryConstants.RECIPIENT_ID_PROPERTY
-  - botbuilder.core.telemetry_constants.TelemetryConstants.RECIPIENT_NAME_PROPERTY
-  - botbuilder.core.telemetry_constants.TelemetryConstants.REPLY_ACTIVITY_ID_PROPERTY
-  - botbuilder.core.telemetry_constants.TelemetryConstants.SPEAK_PROPERTY
-  - botbuilder.core.telemetry_constants.TelemetryConstants.TEXT_PROPERTY
-  - botbuilder.core.telemetry_constants.TelemetryConstants.USER_ID_PROPERTY
-  class: botbuilder.core.telemetry_constants.TelemetryConstants
-  fullName: botbuilder.core.telemetry_constants.TelemetryConstants
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.core.telemetry_constants
-  name: TelemetryConstants
-  summary: Telemetry logger property names.
-  syntax: {}
-  type: class
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants
-- class: botbuilder.core.telemetry_constants.TelemetryConstants
-  fullName: botbuilder.core.telemetry_constants.TelemetryConstants.ATTACHMENTS_PROPERTY
-  langs:
-  - python
-  module: botbuilder.core.telemetry_constants
+### YamlMime:PythonClass
+uid: botbuilder.core.telemetry_constants.TelemetryConstants
+name: TelemetryConstants
+fullName: botbuilder.core.telemetry_constants.TelemetryConstants
+module: botbuilder.core.telemetry_constants
+inheritances:
+- builtins.object
+summary: Telemetry logger property names.
+attributes:
+- uid: botbuilder.core.telemetry_constants.TelemetryConstants.ATTACHMENTS_PROPERTY
   name: ATTACHMENTS_PROPERTY
-  syntax:
-    content: ATTACHMENTS_PROPERTY = 'attachments'
-  type: attribute
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.ATTACHMENTS_PROPERTY
-- class: botbuilder.core.telemetry_constants.TelemetryConstants
-  fullName: botbuilder.core.telemetry_constants.TelemetryConstants.CHANNEL_ID_PROPERTY
-  langs:
-  - python
-  module: botbuilder.core.telemetry_constants
+  signature: ATTACHMENTS_PROPERTY = 'attachments'
+- uid: botbuilder.core.telemetry_constants.TelemetryConstants.CHANNEL_ID_PROPERTY
   name: CHANNEL_ID_PROPERTY
-  syntax:
-    content: CHANNEL_ID_PROPERTY = 'channelId'
-  type: attribute
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.CHANNEL_ID_PROPERTY
-- class: botbuilder.core.telemetry_constants.TelemetryConstants
-  fullName: botbuilder.core.telemetry_constants.TelemetryConstants.CONVERSATION_ID_PROPERTY
-  langs:
-  - python
-  module: botbuilder.core.telemetry_constants
+  signature: CHANNEL_ID_PROPERTY = 'channelId'
+- uid: botbuilder.core.telemetry_constants.TelemetryConstants.CONVERSATION_ID_PROPERTY
   name: CONVERSATION_ID_PROPERTY
-  syntax:
-    content: CONVERSATION_ID_PROPERTY = 'conversationId'
-  type: attribute
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.CONVERSATION_ID_PROPERTY
-- class: botbuilder.core.telemetry_constants.TelemetryConstants
-  fullName: botbuilder.core.telemetry_constants.TelemetryConstants.CONVERSATION_NAME_PROPERTY
-  langs:
-  - python
-  module: botbuilder.core.telemetry_constants
+  signature: CONVERSATION_ID_PROPERTY = 'conversationId'
+- uid: botbuilder.core.telemetry_constants.TelemetryConstants.CONVERSATION_NAME_PROPERTY
   name: CONVERSATION_NAME_PROPERTY
-  syntax:
-    content: CONVERSATION_NAME_PROPERTY = 'conversationName'
-  type: attribute
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.CONVERSATION_NAME_PROPERTY
-- class: botbuilder.core.telemetry_constants.TelemetryConstants
-  fullName: botbuilder.core.telemetry_constants.TelemetryConstants.DIALOG_ID_PROPERTY
-  langs:
-  - python
-  module: botbuilder.core.telemetry_constants
+  signature: CONVERSATION_NAME_PROPERTY = 'conversationName'
+- uid: botbuilder.core.telemetry_constants.TelemetryConstants.DIALOG_ID_PROPERTY
   name: DIALOG_ID_PROPERTY
-  syntax:
-    content: DIALOG_ID_PROPERTY = 'dialogId'
-  type: attribute
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.DIALOG_ID_PROPERTY
-- class: botbuilder.core.telemetry_constants.TelemetryConstants
-  fullName: botbuilder.core.telemetry_constants.TelemetryConstants.FROM_ID_PROPERTY
-  langs:
-  - python
-  module: botbuilder.core.telemetry_constants
+  signature: DIALOG_ID_PROPERTY = 'dialogId'
+- uid: botbuilder.core.telemetry_constants.TelemetryConstants.FROM_ID_PROPERTY
   name: FROM_ID_PROPERTY
-  syntax:
-    content: FROM_ID_PROPERTY = 'fromId'
-  type: attribute
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.FROM_ID_PROPERTY
-- class: botbuilder.core.telemetry_constants.TelemetryConstants
-  fullName: botbuilder.core.telemetry_constants.TelemetryConstants.FROM_NAME_PROPERTY
-  langs:
-  - python
-  module: botbuilder.core.telemetry_constants
+  signature: FROM_ID_PROPERTY = 'fromId'
+- uid: botbuilder.core.telemetry_constants.TelemetryConstants.FROM_NAME_PROPERTY
   name: FROM_NAME_PROPERTY
-  syntax:
-    content: FROM_NAME_PROPERTY = 'fromName'
-  type: attribute
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.FROM_NAME_PROPERTY
-- class: botbuilder.core.telemetry_constants.TelemetryConstants
-  fullName: botbuilder.core.telemetry_constants.TelemetryConstants.LOCALE_PROPERTY
-  langs:
-  - python
-  module: botbuilder.core.telemetry_constants
+  signature: FROM_NAME_PROPERTY = 'fromName'
+- uid: botbuilder.core.telemetry_constants.TelemetryConstants.LOCALE_PROPERTY
   name: LOCALE_PROPERTY
-  syntax:
-    content: LOCALE_PROPERTY = 'locale'
-  type: attribute
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.LOCALE_PROPERTY
-- class: botbuilder.core.telemetry_constants.TelemetryConstants
-  fullName: botbuilder.core.telemetry_constants.TelemetryConstants.RECIPIENT_ID_PROPERTY
-  langs:
-  - python
-  module: botbuilder.core.telemetry_constants
+  signature: LOCALE_PROPERTY = 'locale'
+- uid: botbuilder.core.telemetry_constants.TelemetryConstants.RECIPIENT_ID_PROPERTY
   name: RECIPIENT_ID_PROPERTY
-  syntax:
-    content: RECIPIENT_ID_PROPERTY = 'recipientId'
-  type: attribute
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.RECIPIENT_ID_PROPERTY
-- class: botbuilder.core.telemetry_constants.TelemetryConstants
-  fullName: botbuilder.core.telemetry_constants.TelemetryConstants.RECIPIENT_NAME_PROPERTY
-  langs:
-  - python
-  module: botbuilder.core.telemetry_constants
+  signature: RECIPIENT_ID_PROPERTY = 'recipientId'
+- uid: botbuilder.core.telemetry_constants.TelemetryConstants.RECIPIENT_NAME_PROPERTY
   name: RECIPIENT_NAME_PROPERTY
-  syntax:
-    content: RECIPIENT_NAME_PROPERTY = 'recipientName'
-  type: attribute
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.RECIPIENT_NAME_PROPERTY
-- class: botbuilder.core.telemetry_constants.TelemetryConstants
-  fullName: botbuilder.core.telemetry_constants.TelemetryConstants.REPLY_ACTIVITY_ID_PROPERTY
-  langs:
-  - python
-  module: botbuilder.core.telemetry_constants
+  signature: RECIPIENT_NAME_PROPERTY = 'recipientName'
+- uid: botbuilder.core.telemetry_constants.TelemetryConstants.REPLY_ACTIVITY_ID_PROPERTY
   name: REPLY_ACTIVITY_ID_PROPERTY
-  syntax:
-    content: REPLY_ACTIVITY_ID_PROPERTY = 'replyActivityId'
-  type: attribute
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.REPLY_ACTIVITY_ID_PROPERTY
-- class: botbuilder.core.telemetry_constants.TelemetryConstants
-  fullName: botbuilder.core.telemetry_constants.TelemetryConstants.SPEAK_PROPERTY
-  langs:
-  - python
-  module: botbuilder.core.telemetry_constants
+  signature: REPLY_ACTIVITY_ID_PROPERTY = 'replyActivityId'
+- uid: botbuilder.core.telemetry_constants.TelemetryConstants.SPEAK_PROPERTY
   name: SPEAK_PROPERTY
-  syntax:
-    content: SPEAK_PROPERTY = 'speak'
-  type: attribute
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.SPEAK_PROPERTY
-- class: botbuilder.core.telemetry_constants.TelemetryConstants
-  fullName: botbuilder.core.telemetry_constants.TelemetryConstants.TEXT_PROPERTY
-  langs:
-  - python
-  module: botbuilder.core.telemetry_constants
+  signature: SPEAK_PROPERTY = 'speak'
+- uid: botbuilder.core.telemetry_constants.TelemetryConstants.TEXT_PROPERTY
   name: TEXT_PROPERTY
-  syntax:
-    content: TEXT_PROPERTY = 'text'
-  type: attribute
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.TEXT_PROPERTY
-- class: botbuilder.core.telemetry_constants.TelemetryConstants
-  fullName: botbuilder.core.telemetry_constants.TelemetryConstants.USER_ID_PROPERTY
-  langs:
-  - python
-  module: botbuilder.core.telemetry_constants
+  signature: TEXT_PROPERTY = 'text'
+- uid: botbuilder.core.telemetry_constants.TelemetryConstants.USER_ID_PROPERTY
   name: USER_ID_PROPERTY
-  syntax:
-    content: USER_ID_PROPERTY = 'userId'
-  type: attribute
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.USER_ID_PROPERTY
-references:
-- fullName: botbuilder.core.telemetry_constants.TelemetryConstants.ATTACHMENTS_PROPERTY
-  isExternal: false
-  name: ATTACHMENTS_PROPERTY
-  parent: botbuilder.core.telemetry_constants.TelemetryConstants
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.ATTACHMENTS_PROPERTY
-- fullName: botbuilder.core.telemetry_constants.TelemetryConstants.CHANNEL_ID_PROPERTY
-  isExternal: false
-  name: CHANNEL_ID_PROPERTY
-  parent: botbuilder.core.telemetry_constants.TelemetryConstants
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.CHANNEL_ID_PROPERTY
-- fullName: botbuilder.core.telemetry_constants.TelemetryConstants.CONVERSATION_ID_PROPERTY
-  isExternal: false
-  name: CONVERSATION_ID_PROPERTY
-  parent: botbuilder.core.telemetry_constants.TelemetryConstants
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.CONVERSATION_ID_PROPERTY
-- fullName: botbuilder.core.telemetry_constants.TelemetryConstants.CONVERSATION_NAME_PROPERTY
-  isExternal: false
-  name: CONVERSATION_NAME_PROPERTY
-  parent: botbuilder.core.telemetry_constants.TelemetryConstants
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.CONVERSATION_NAME_PROPERTY
-- fullName: botbuilder.core.telemetry_constants.TelemetryConstants.DIALOG_ID_PROPERTY
-  isExternal: false
-  name: DIALOG_ID_PROPERTY
-  parent: botbuilder.core.telemetry_constants.TelemetryConstants
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.DIALOG_ID_PROPERTY
-- fullName: botbuilder.core.telemetry_constants.TelemetryConstants.FROM_ID_PROPERTY
-  isExternal: false
-  name: FROM_ID_PROPERTY
-  parent: botbuilder.core.telemetry_constants.TelemetryConstants
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.FROM_ID_PROPERTY
-- fullName: botbuilder.core.telemetry_constants.TelemetryConstants.FROM_NAME_PROPERTY
-  isExternal: false
-  name: FROM_NAME_PROPERTY
-  parent: botbuilder.core.telemetry_constants.TelemetryConstants
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.FROM_NAME_PROPERTY
-- fullName: botbuilder.core.telemetry_constants.TelemetryConstants.LOCALE_PROPERTY
-  isExternal: false
-  name: LOCALE_PROPERTY
-  parent: botbuilder.core.telemetry_constants.TelemetryConstants
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.LOCALE_PROPERTY
-- fullName: botbuilder.core.telemetry_constants.TelemetryConstants.RECIPIENT_ID_PROPERTY
-  isExternal: false
-  name: RECIPIENT_ID_PROPERTY
-  parent: botbuilder.core.telemetry_constants.TelemetryConstants
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.RECIPIENT_ID_PROPERTY
-- fullName: botbuilder.core.telemetry_constants.TelemetryConstants.RECIPIENT_NAME_PROPERTY
-  isExternal: false
-  name: RECIPIENT_NAME_PROPERTY
-  parent: botbuilder.core.telemetry_constants.TelemetryConstants
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.RECIPIENT_NAME_PROPERTY
-- fullName: botbuilder.core.telemetry_constants.TelemetryConstants.REPLY_ACTIVITY_ID_PROPERTY
-  isExternal: false
-  name: REPLY_ACTIVITY_ID_PROPERTY
-  parent: botbuilder.core.telemetry_constants.TelemetryConstants
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.REPLY_ACTIVITY_ID_PROPERTY
-- fullName: botbuilder.core.telemetry_constants.TelemetryConstants.SPEAK_PROPERTY
-  isExternal: false
-  name: SPEAK_PROPERTY
-  parent: botbuilder.core.telemetry_constants.TelemetryConstants
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.SPEAK_PROPERTY
-- fullName: botbuilder.core.telemetry_constants.TelemetryConstants.TEXT_PROPERTY
-  isExternal: false
-  name: TEXT_PROPERTY
-  parent: botbuilder.core.telemetry_constants.TelemetryConstants
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.TEXT_PROPERTY
-- fullName: botbuilder.core.telemetry_constants.TelemetryConstants.USER_ID_PROPERTY
-  isExternal: false
-  name: USER_ID_PROPERTY
-  parent: botbuilder.core.telemetry_constants.TelemetryConstants
-  uid: botbuilder.core.telemetry_constants.TelemetryConstants.USER_ID_PROPERTY
+  signature: USER_ID_PROPERTY = 'userId'

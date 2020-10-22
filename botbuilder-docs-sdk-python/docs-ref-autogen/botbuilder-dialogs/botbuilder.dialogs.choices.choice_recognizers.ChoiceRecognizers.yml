@@ -1,29 +1,14 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.dialogs.choices.choice_recognizers.ChoiceRecognizers.recognize_choices
-  class: botbuilder.dialogs.choices.choice_recognizers.ChoiceRecognizers
-  fullName: botbuilder.dialogs.choices.choice_recognizers.ChoiceRecognizers
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.dialogs.choices.choice_recognizers
-  name: ChoiceRecognizers
-  summary: Contains methods for matching user input against a list of choices.
-  syntax: {}
-  type: class
-  uid: botbuilder.dialogs.choices.choice_recognizers.ChoiceRecognizers
-- class: botbuilder.dialogs.choices.choice_recognizers.ChoiceRecognizers
-  fullName: botbuilder.dialogs.choices.choice_recognizers.ChoiceRecognizers.recognize_choices
-  langs:
-  - python
-  module: botbuilder.dialogs.choices.choice_recognizers
-  name: 'recognize_choices(utterance: str, choices: typing.List[typing.Union[str,
-    botbuilder.dialogs.choices.choice.Choice]], options: botbuilder.dialogs.choices.find_choices_options.FindChoicesOptions
-    = None) -> typing.List[botbuilder.dialogs.choices.model_result.ModelResult]'
-  namewithoutparameters: recognize_choices
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.choices.choice_recognizers.ChoiceRecognizers
+name: ChoiceRecognizers
+fullName: botbuilder.dialogs.choices.choice_recognizers.ChoiceRecognizers
+module: botbuilder.dialogs.choices.choice_recognizers
+inheritances:
+- builtins.object
+summary: Contains methods for matching user input against a list of choices.
+methods:
+- uid: botbuilder.dialogs.choices.choice_recognizers.ChoiceRecognizers.recognize_choices
+  name: recognize_choices
   summary: "Matches user input against a list of choices.\n\nThis is layered above\
     \ the *Find.find_choices()* function, and adds logic to let the user specify\n\
     their choice by index (they can say \"one\" to pick *choice[0]*) or ordinal position\n\
@@ -33,17 +18,6 @@ items:
     \nutterance: The input.\n\nchoices: The list of choices.\n\noptions: (Optional)\
     \ Options to control the recognition strategy.\n\n\nA list of found choices, sorted\
     \ by most relevant first."
-  syntax:
-    content: 'recognize_choices(utterance: str, choices: typing.List[typing.Union[str,
-      botbuilder.dialogs.choices.choice.Choice]], options: botbuilder.dialogs.choices.find_choices_options.FindChoicesOptions
-      = None) -> typing.List[botbuilder.dialogs.choices.model_result.ModelResult]'
-  type: method
-  uid: botbuilder.dialogs.choices.choice_recognizers.ChoiceRecognizers.recognize_choices
-references:
-- fullName: botbuilder.dialogs.choices.choice_recognizers.ChoiceRecognizers.recognize_choices
-  isExternal: false
-  name: 'recognize_choices(utterance: str, choices: typing.List[typing.Union[str,
+  signature: 'recognize_choices(utterance: str, choices: typing.List[typing.Union[str,
     botbuilder.dialogs.choices.choice.Choice]], options: botbuilder.dialogs.choices.find_choices_options.FindChoicesOptions
     = None) -> typing.List[botbuilder.dialogs.choices.model_result.ModelResult]'
-  parent: botbuilder.dialogs.choices.choice_recognizers.ChoiceRecognizers
-  uid: botbuilder.dialogs.choices.choice_recognizers.ChoiceRecognizers.recognize_choices

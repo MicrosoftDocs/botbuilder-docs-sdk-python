@@ -1,34 +1,17 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware.bot_telemetry_middleware
-  - botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware.retrieve_aiohttp_body
-  fullName: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware
-  langs:
-  - python
-  module: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware
-  name: aiohttp_telemetry_middleware
-  type: module
-  uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware
-- fullName: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware.bot_telemetry_middleware
-  langs:
-  - python
-  module: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware
-  name: bot_telemetry_middleware(request, handler)
+### YamlMime:PythonModule
+uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware
+name: aiohttp_telemetry_middleware
+fullName: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware
+functions:
+- uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware.bot_telemetry_middleware
+  name: bot_telemetry_middleware
   summary: Process the incoming Flask request.
-  syntax:
-    content: bot_telemetry_middleware(request, handler)
-    parameters:
-    - id: request
-    - id: handler
-  type: function
-  uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware.bot_telemetry_middleware
-- fullName: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware.retrieve_aiohttp_body
-  langs:
-  - python
-  module: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware
-  name: retrieve_aiohttp_body()
+  signature: bot_telemetry_middleware(request, handler)
+  parameters:
+  - name: request
+  - name: handler
+- uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware.retrieve_aiohttp_body
+  name: retrieve_aiohttp_body
   summary: 'retrieve_flask_body
 
     Retrieve the POST body text from temporary cache.
@@ -36,18 +19,4 @@ items:
     The POST body corresponds with the thread id and should resides in
 
     cache just for lifetime of request.'
-  syntax:
-    content: retrieve_aiohttp_body()
-  type: function
-  uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware.retrieve_aiohttp_body
-references:
-- fullName: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware.bot_telemetry_middleware
-  isExternal: false
-  name: bot_telemetry_middleware(request, handler)
-  parent: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware
-  uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware.bot_telemetry_middleware
-- fullName: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware.retrieve_aiohttp_body
-  isExternal: false
-  name: retrieve_aiohttp_body()
-  parent: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware
-  uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware.retrieve_aiohttp_body
+  signature: retrieve_aiohttp_body()

@@ -1,81 +1,55 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.O365ConnectorCardMultichoiceInput
-  fullName: botbuilder.schema.teams.O365ConnectorCardMultichoiceInput
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: msrest.serialization.Model
-    type: botbuilder.schema.teams._models_py3.O365ConnectorCardInputBase
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: O365ConnectorCardMultichoiceInput
-  summary: O365 connector card multiple choice input.
-  syntax:
-    content: 'O365ConnectorCardMultichoiceInput(*, type=None, id: str = None, is_required:
-      bool = None, title: str = None, value: str = None, choices=None, style=None,
-      is_multi_select: bool = None, **kwargs) -> None'
-    parameters:
-    - description: 'Input type name. Possible values include: ''textInput'',
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.O365ConnectorCardMultichoiceInput
+name: O365ConnectorCardMultichoiceInput
+fullName: botbuilder.schema.teams.O365ConnectorCardMultichoiceInput
+module: botbuilder.schema.teams
+inheritances:
+- botbuilder.schema.teams._models_py3.O365ConnectorCardInputBase
+summary: O365 connector card multiple choice input.
+constructor:
+  syntax: 'O365ConnectorCardMultichoiceInput(*, type=None, id: str = None, is_required:
+    bool = None, title: str = None, value: str = None, choices=None, style=None, is_multi_select:
+    bool = None, **kwargs) -> None'
+  parameters:
+  - name: type
+    description: 'Input type name. Possible values include: ''textInput'',
 
-        ''dateInput'', ''multichoiceInput'''
-      id: type
-      type:
-      - str
-    - description: Input Id. It must be unique per entire O365 connector card.
-      id: id
-      type:
-      - str
-    - description: 'Define if this input is a required field. Default
+      ''dateInput'', ''multichoiceInput'''
+    types:
+    - <xref:str>
+  - name: id
+    description: Input Id. It must be unique per entire O365 connector card.
+    types:
+    - <xref:str>
+  - name: is_required
+    description: 'Define if this input is a required field. Default
 
-        value is false.'
-      id: is_required
-      type:
-      - bool
-    - description: Input title that will be shown as the placeholder
-      id: title
-      type:
-      - str
-    - description: Default value for this input field
-      id: value
-      type:
-      - str
-    - description: 'Set of choices whose each item can be in any subtype of
+      value is false.'
+    types:
+    - <xref:bool>
+  - name: title
+    description: Input title that will be shown as the placeholder
+    types:
+    - <xref:str>
+  - name: value
+    description: Default value for this input field
+    types:
+    - <xref:str>
+  - name: choices
+    description: 'Set of choices whose each item can be in any subtype of
 
-        O365ConnectorCardMultichoiceInputChoice.'
-      id: choices
-      type:
-      - list[botframework.connector.teams.models.O365ConnectorCardMultichoiceInputChoice]
-    - description: 'Choice item rendering style. Default value is ''compact''.
+      O365ConnectorCardMultichoiceInputChoice.'
+    types:
+    - <xref:list>[<xref:botframework.connector.teams.models.O365ConnectorCardMultichoiceInputChoice>]
+  - name: style
+    description: 'Choice item rendering style. Default value is ''compact''.
 
-        Possible values include: ''compact'', ''expanded'''
-      id: style
-      type:
-      - str
-    - description: 'Define if this input field allows multiple
+      Possible values include: ''compact'', ''expanded'''
+    types:
+    - <xref:str>
+  - name: is_multi_select
+    description: 'Define if this input field allows multiple
 
-        selections. Default value is false.'
-      id: is_multi_select
-      type:
-      - bool
-  type: class
-  uid: botbuilder.schema.teams.O365ConnectorCardMultichoiceInput
-references:
-- fullName: list[botframework.connector.teams.models.O365ConnectorCardMultichoiceInputChoice]
-  name: list[O365ConnectorCardMultichoiceInputChoice]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.teams.models.O365ConnectorCardMultichoiceInputChoice
-    name: O365ConnectorCardMultichoiceInputChoice
-    uid: botframework.connector.teams.models.O365ConnectorCardMultichoiceInputChoice
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.teams.models.O365ConnectorCardMultichoiceInputChoice]
+      selections. Default value is false.'
+    types:
+    - <xref:bool>

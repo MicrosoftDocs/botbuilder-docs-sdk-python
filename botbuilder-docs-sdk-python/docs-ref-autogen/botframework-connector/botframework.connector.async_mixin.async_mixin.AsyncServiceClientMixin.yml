@@ -1,29 +1,13 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin.async_send
-  - botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin.async_send_formdata
-  - botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin.stream_download_async
-  class: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin
-  fullName: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botframework.connector.async_mixin.async_mixin
-  name: AsyncServiceClientMixin
-  summary: ''
-  syntax: {}
-  type: class
-  uid: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin
-- class: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin
-  fullName: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin.async_send
-  langs:
-  - python
-  module: botframework.connector.async_mixin.async_mixin
-  name: async_send(request, headers=None, content=None, **config)
-  namewithoutparameters: async_send
+### YamlMime:PythonClass
+uid: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin
+name: AsyncServiceClientMixin
+fullName: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin
+module: botframework.connector.async_mixin.async_mixin
+inheritances:
+- builtins.object
+methods:
+- uid: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin.async_send
+  name: async_send
   summary: 'Prepare and send request object according to configuration.
 
     :param ClientRequest request: The request object to be sent.
@@ -33,24 +17,16 @@ items:
     :param content: Any body data to add to the request.
 
     :param config: Any specific config overrides'
-  syntax:
-    content: async_send(request, headers=None, content=None, **config)
-    parameters:
-    - id: request
-      isRequired: true
-    - defaultValue: None
-      id: headers
-    - defaultValue: None
-      id: content
-  type: method
-  uid: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin.async_send
-- class: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin
-  fullName: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin.async_send_formdata
-  langs:
-  - python
-  module: botframework.connector.async_mixin.async_mixin
-  name: async_send_formdata(request, headers=None, content=None, **config)
-  namewithoutparameters: async_send_formdata
+  signature: async_send(request, headers=None, content=None, **config)
+  parameters:
+  - name: request
+    isRequired: true
+  - name: headers
+    defaultValue: None
+  - name: content
+    defaultValue: None
+- uid: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin.async_send_formdata
+  name: async_send_formdata
   summary: 'Send data as a multipart form-data request.
 
     We only deal with file-like objects or strings at this point.
@@ -64,51 +40,24 @@ items:
     :param dict content: Dictionary of the fields of the formdata.
 
     :param config: Any specific config overrides.'
-  syntax:
-    content: async_send_formdata(request, headers=None, content=None, **config)
-    parameters:
-    - id: request
-      isRequired: true
-    - defaultValue: None
-      id: headers
-    - defaultValue: None
-      id: content
-  type: method
-  uid: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin.async_send_formdata
-- class: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin
-  fullName: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin.stream_download_async
-  langs:
-  - python
-  module: botframework.connector.async_mixin.async_mixin
-  name: stream_download_async(response, user_callback)
-  namewithoutparameters: stream_download_async
+  signature: async_send_formdata(request, headers=None, content=None, **config)
+  parameters:
+  - name: request
+    isRequired: true
+  - name: headers
+    defaultValue: None
+  - name: content
+    defaultValue: None
+- uid: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin.stream_download_async
+  name: stream_download_async
   summary: 'Async Generator for streaming request body data.
 
     :param response: The initial response
 
     :param user_callback: Custom callback for monitoring progress.'
-  syntax:
-    content: stream_download_async(response, user_callback)
-    parameters:
-    - id: response
-      isRequired: true
-    - id: user_callback
-      isRequired: true
-  type: method
-  uid: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin.stream_download_async
-references:
-- fullName: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin.async_send
-  isExternal: false
-  name: async_send(request, headers=None, content=None, **config)
-  parent: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin
-  uid: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin.async_send
-- fullName: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin.async_send_formdata
-  isExternal: false
-  name: async_send_formdata(request, headers=None, content=None, **config)
-  parent: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin
-  uid: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin.async_send_formdata
-- fullName: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin.stream_download_async
-  isExternal: false
-  name: stream_download_async(response, user_callback)
-  parent: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin
-  uid: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin.stream_download_async
+  signature: stream_download_async(response, user_callback)
+  parameters:
+  - name: response
+    isRequired: true
+  - name: user_callback
+    isRequired: true
