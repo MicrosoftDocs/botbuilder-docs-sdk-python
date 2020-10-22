@@ -1,33 +1,11 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.property_manager.PropertyManager.create_property
-  class: botbuilder.core.property_manager.PropertyManager
-  fullName: botbuilder.core.property_manager.PropertyManager
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.core.property_manager
-  name: PropertyManager
-  syntax: {}
-  type: class
-  uid: botbuilder.core.property_manager.PropertyManager
-- class: botbuilder.core.property_manager.PropertyManager
-  fullName: botbuilder.core.property_manager.PropertyManager.create_property
-  langs:
-  - python
-  module: botbuilder.core.property_manager
-  name: 'create_property(name: str) -> botbuilder.core.state_property_accessor.StatePropertyAccessor'
-  namewithoutparameters: create_property
-  syntax:
-    content: 'create_property(name: str) -> botbuilder.core.state_property_accessor.StatePropertyAccessor'
-  type: method
-  uid: botbuilder.core.property_manager.PropertyManager.create_property
-references:
-- fullName: botbuilder.core.property_manager.PropertyManager.create_property
-  isExternal: false
-  name: 'create_property(name: str) -> botbuilder.core.state_property_accessor.StatePropertyAccessor'
-  parent: botbuilder.core.property_manager.PropertyManager
-  uid: botbuilder.core.property_manager.PropertyManager.create_property
+### YamlMime:PythonClass
+uid: botbuilder.core.property_manager.PropertyManager
+name: PropertyManager
+fullName: botbuilder.core.property_manager.PropertyManager
+module: botbuilder.core.property_manager
+inheritances:
+- builtins.object
+methods:
+- uid: botbuilder.core.property_manager.PropertyManager.create_property
+  name: create_property
+  signature: 'create_property(name: str) -> botbuilder.core.state_property_accessor.StatePropertyAccessor'

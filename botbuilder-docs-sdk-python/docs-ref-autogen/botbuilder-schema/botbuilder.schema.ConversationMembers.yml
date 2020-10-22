@@ -1,43 +1,19 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.ConversationMembers
-  fullName: botbuilder.schema.ConversationMembers
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema
-  name: ConversationMembers
-  summary: Conversation and its members.
-  syntax:
-    content: 'ConversationMembers(*, id: str = None, members=None, **kwargs) -> None'
-    parameters:
-    - description: Conversation ID
-      id: id
-      type:
-      - str
-    - description: List of members in this conversation
-      id: members
-      type:
-      - list[botframework.connector.models.ChannelAccount]
-  type: class
-  uid: botbuilder.schema.ConversationMembers
-references:
-- fullName: list[botframework.connector.models.ChannelAccount]
-  name: list[ChannelAccount]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.models.ChannelAccount
-    name: ChannelAccount
-    uid: botframework.connector.models.ChannelAccount
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.models.ChannelAccount]
+### YamlMime:PythonClass
+uid: botbuilder.schema.ConversationMembers
+name: ConversationMembers
+fullName: botbuilder.schema.ConversationMembers
+module: botbuilder.schema
+inheritances:
+- msrest.serialization.Model
+summary: Conversation and its members.
+constructor:
+  syntax: 'ConversationMembers(*, id: str = None, members=None, **kwargs) -> None'
+  parameters:
+  - name: id
+    description: Conversation ID
+    types:
+    - <xref:str>
+  - name: members
+    description: List of members in this conversation
+    types:
+    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]

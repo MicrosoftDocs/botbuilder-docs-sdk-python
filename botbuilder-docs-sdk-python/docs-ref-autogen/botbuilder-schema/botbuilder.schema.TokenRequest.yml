@@ -1,50 +1,21 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.TokenRequest
-  fullName: botbuilder.schema.TokenRequest
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema
-  name: TokenRequest
-  summary: A request to receive a user token.
-  syntax:
-    content: 'TokenRequest(*, provider: str = None, settings=None, **kwargs) -> None'
-    parameters:
-    - description: The provider to request a user token from
-      id: provider
-      type:
-      - str
-    - description: 'A collection of settings for the specific provider for
+### YamlMime:PythonClass
+uid: botbuilder.schema.TokenRequest
+name: TokenRequest
+fullName: botbuilder.schema.TokenRequest
+module: botbuilder.schema
+inheritances:
+- msrest.serialization.Model
+summary: A request to receive a user token.
+constructor:
+  syntax: 'TokenRequest(*, provider: str = None, settings=None, **kwargs) -> None'
+  parameters:
+  - name: provider
+    description: The provider to request a user token from
+    types:
+    - <xref:str>
+  - name: settings
+    description: 'A collection of settings for the specific provider for
 
-        this request'
-      id: settings
-      type:
-      - dict[str, object]
-  type: class
-  uid: botbuilder.schema.TokenRequest
-references:
-- fullName: dict[str, object]
-  name: dict[str, object]
-  spec.python:
-  - fullName: dict
-    name: dict
-    uid: dict
-  - fullName: '['
-    name: '['
-  - fullName: str
-    name: str
-    uid: str
-  - fullName: ', '
-    name: ', '
-  - fullName: object
-    name: object
-    uid: object
-  - fullName: ']'
-    name: ']'
-  uid: dict[str, object]
+      this request'
+    types:
+    - <xref:dict>[<xref:str>, <xref:object>]

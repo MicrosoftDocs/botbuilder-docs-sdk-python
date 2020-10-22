@@ -1,86 +1,18 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.schema.DeliveryModes.ephemeral
-  - botbuilder.schema.DeliveryModes.expect_replies
-  - botbuilder.schema.DeliveryModes.normal
-  - botbuilder.schema.DeliveryModes.notification
-  class: botbuilder.schema.DeliveryModes
-  fullName: botbuilder.schema.DeliveryModes
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: builtins.str
-  - inheritance:
-    - type: builtins.object
-    type: enum.Enum
-  langs:
-  - python
-  module: botbuilder.schema
-  name: DeliveryModes
-  summary: An enumeration.
-  syntax: {}
-  type: class
-  uid: botbuilder.schema.DeliveryModes
-- class: botbuilder.schema.DeliveryModes
-  fullName: botbuilder.schema.DeliveryModes.ephemeral
-  langs:
-  - python
-  module: botbuilder.schema
-  name: ephemeral
-  syntax:
-    content: ephemeral = 'ephemeral'
-  type: attribute
+### YamlMime:PythonEnum
+uid: botbuilder.schema.DeliveryModes
+name: DeliveryModes
+fullName: botbuilder.schema.DeliveryModes
+summary: An enumeration.
+module: botbuilder.schema
+inheritances:
+- builtins.str
+- enum.Enum
+fields:
+- name: ephemeral
   uid: botbuilder.schema.DeliveryModes.ephemeral
-- class: botbuilder.schema.DeliveryModes
-  fullName: botbuilder.schema.DeliveryModes.expect_replies
-  langs:
-  - python
-  module: botbuilder.schema
-  name: expect_replies
-  syntax:
-    content: expect_replies = 'expectReplies'
-  type: attribute
+- name: expect_replies
   uid: botbuilder.schema.DeliveryModes.expect_replies
-- class: botbuilder.schema.DeliveryModes
-  fullName: botbuilder.schema.DeliveryModes.normal
-  langs:
-  - python
-  module: botbuilder.schema
-  name: normal
-  syntax:
-    content: normal = 'normal'
-  type: attribute
+- name: normal
   uid: botbuilder.schema.DeliveryModes.normal
-- class: botbuilder.schema.DeliveryModes
-  fullName: botbuilder.schema.DeliveryModes.notification
-  langs:
-  - python
-  module: botbuilder.schema
-  name: notification
-  syntax:
-    content: notification = 'notification'
-  type: attribute
-  uid: botbuilder.schema.DeliveryModes.notification
-references:
-- fullName: botbuilder.schema.DeliveryModes.ephemeral
-  isExternal: false
-  name: ephemeral
-  parent: botbuilder.schema.DeliveryModes
-  uid: botbuilder.schema.DeliveryModes.ephemeral
-- fullName: botbuilder.schema.DeliveryModes.expect_replies
-  isExternal: false
-  name: expect_replies
-  parent: botbuilder.schema.DeliveryModes
-  uid: botbuilder.schema.DeliveryModes.expect_replies
-- fullName: botbuilder.schema.DeliveryModes.normal
-  isExternal: false
-  name: normal
-  parent: botbuilder.schema.DeliveryModes
-  uid: botbuilder.schema.DeliveryModes.normal
-- fullName: botbuilder.schema.DeliveryModes.notification
-  isExternal: false
-  name: notification
-  parent: botbuilder.schema.DeliveryModes
+- name: notification
   uid: botbuilder.schema.DeliveryModes.notification

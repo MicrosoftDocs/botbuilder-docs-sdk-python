@@ -1,31 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.ai.about
-  - botbuilder.ai.luis
-  - botbuilder.ai.qna
-  fullName: botbuilder.ai
-  kind: import
-  langs:
-  - python
-  module: botbuilder.ai
-  name: ai
-  type: package
-  uid: botbuilder.ai
-references:
-- fullName: botbuilder.ai.about
-  isExternal: false
-  name: about
-  parent: botbuilder.ai
-  uid: botbuilder.ai.about
-- fullName: botbuilder.ai.luis
-  isExternal: false
-  name: luis
-  parent: botbuilder.ai
-  uid: botbuilder.ai.luis
-- fullName: botbuilder.ai.qna
-  isExternal: false
-  name: qna
-  parent: botbuilder.ai
-  uid: botbuilder.ai.qna
+### YamlMime:PythonPackage
+uid: botbuilder.ai
+name: ai
+fullName: botbuilder.ai
+type: import
+packages:
+- botbuilder.ai.luis
+- botbuilder.ai.qna
+modules:
+- botbuilder.ai.about

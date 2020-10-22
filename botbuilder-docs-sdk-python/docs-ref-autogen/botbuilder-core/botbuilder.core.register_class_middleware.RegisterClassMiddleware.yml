@@ -1,63 +1,22 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.register_class_middleware.RegisterClassMiddleware.fullname
-  - botbuilder.core.register_class_middleware.RegisterClassMiddleware.on_turn
-  class: botbuilder.core.register_class_middleware.RegisterClassMiddleware
-  fullName: botbuilder.core.register_class_middleware.RegisterClassMiddleware
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: abc.ABC
-    type: botbuilder.core.middleware_set.Middleware
-  langs:
-  - python
-  module: botbuilder.core.register_class_middleware
-  name: RegisterClassMiddleware
-  summary: Middleware for adding an object to or registering a service with the current
-    turn context.
-  syntax:
-    content: 'RegisterClassMiddleware(service, key: str = None)'
-  type: class
-  uid: botbuilder.core.register_class_middleware.RegisterClassMiddleware
-- class: botbuilder.core.register_class_middleware.RegisterClassMiddleware
-  fullName: botbuilder.core.register_class_middleware.RegisterClassMiddleware.fullname
-  langs:
-  - python
-  module: botbuilder.core.register_class_middleware
-  name: fullname(obj)
-  namewithoutparameters: fullname
-  syntax:
-    content: fullname(obj)
-    parameters:
-    - id: obj
-      isRequired: true
-  type: method
-  uid: botbuilder.core.register_class_middleware.RegisterClassMiddleware.fullname
-- class: botbuilder.core.register_class_middleware.RegisterClassMiddleware
-  fullName: botbuilder.core.register_class_middleware.RegisterClassMiddleware.on_turn
-  langs:
-  - python
-  module: botbuilder.core.register_class_middleware
-  name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
+### YamlMime:PythonClass
+uid: botbuilder.core.register_class_middleware.RegisterClassMiddleware
+name: RegisterClassMiddleware
+fullName: botbuilder.core.register_class_middleware.RegisterClassMiddleware
+module: botbuilder.core.register_class_middleware
+inheritances:
+- botbuilder.core.middleware_set.Middleware
+summary: Middleware for adding an object to or registering a service with the current
+  turn context.
+constructor:
+  syntax: 'RegisterClassMiddleware(service, key: str = None)'
+methods:
+- uid: botbuilder.core.register_class_middleware.RegisterClassMiddleware.fullname
+  name: fullname
+  signature: fullname(obj)
+  parameters:
+  - name: obj
+    isRequired: true
+- uid: botbuilder.core.register_class_middleware.RegisterClassMiddleware.on_turn
+  name: on_turn
+  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
     typing.Awaitable])'
-  namewithoutparameters: on_turn
-  syntax:
-    content: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
-      typing.Awaitable])'
-  type: method
-  uid: botbuilder.core.register_class_middleware.RegisterClassMiddleware.on_turn
-references:
-- fullName: botbuilder.core.register_class_middleware.RegisterClassMiddleware.fullname
-  isExternal: false
-  name: fullname(obj)
-  parent: botbuilder.core.register_class_middleware.RegisterClassMiddleware
-  uid: botbuilder.core.register_class_middleware.RegisterClassMiddleware.fullname
-- fullName: botbuilder.core.register_class_middleware.RegisterClassMiddleware.on_turn
-  isExternal: false
-  name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
-    typing.Awaitable])'
-  parent: botbuilder.core.register_class_middleware.RegisterClassMiddleware
-  uid: botbuilder.core.register_class_middleware.RegisterClassMiddleware.on_turn

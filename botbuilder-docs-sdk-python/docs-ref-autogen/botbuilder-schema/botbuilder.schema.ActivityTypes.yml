@@ -1,278 +1,42 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.schema.ActivityTypes.contact_relation_update
-  - botbuilder.schema.ActivityTypes.conversation_update
-  - botbuilder.schema.ActivityTypes.delete_user_data
-  - botbuilder.schema.ActivityTypes.end_of_conversation
-  - botbuilder.schema.ActivityTypes.event
-  - botbuilder.schema.ActivityTypes.handoff
-  - botbuilder.schema.ActivityTypes.installation_update
-  - botbuilder.schema.ActivityTypes.invoke
-  - botbuilder.schema.ActivityTypes.invoke_response
-  - botbuilder.schema.ActivityTypes.message
-  - botbuilder.schema.ActivityTypes.message_delete
-  - botbuilder.schema.ActivityTypes.message_reaction
-  - botbuilder.schema.ActivityTypes.message_update
-  - botbuilder.schema.ActivityTypes.suggestion
-  - botbuilder.schema.ActivityTypes.trace
-  - botbuilder.schema.ActivityTypes.typing
-  class: botbuilder.schema.ActivityTypes
-  fullName: botbuilder.schema.ActivityTypes
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: builtins.str
-  - inheritance:
-    - type: builtins.object
-    type: enum.Enum
-  langs:
-  - python
-  module: botbuilder.schema
-  name: ActivityTypes
-  summary: An enumeration.
-  syntax: {}
-  type: class
-  uid: botbuilder.schema.ActivityTypes
-- class: botbuilder.schema.ActivityTypes
-  fullName: botbuilder.schema.ActivityTypes.contact_relation_update
-  langs:
-  - python
-  module: botbuilder.schema
-  name: contact_relation_update
-  syntax:
-    content: contact_relation_update = 'contactRelationUpdate'
-  type: attribute
+### YamlMime:PythonEnum
+uid: botbuilder.schema.ActivityTypes
+name: ActivityTypes
+fullName: botbuilder.schema.ActivityTypes
+summary: An enumeration.
+module: botbuilder.schema
+inheritances:
+- builtins.str
+- enum.Enum
+fields:
+- name: contact_relation_update
   uid: botbuilder.schema.ActivityTypes.contact_relation_update
-- class: botbuilder.schema.ActivityTypes
-  fullName: botbuilder.schema.ActivityTypes.conversation_update
-  langs:
-  - python
-  module: botbuilder.schema
-  name: conversation_update
-  syntax:
-    content: conversation_update = 'conversationUpdate'
-  type: attribute
+- name: conversation_update
   uid: botbuilder.schema.ActivityTypes.conversation_update
-- class: botbuilder.schema.ActivityTypes
-  fullName: botbuilder.schema.ActivityTypes.delete_user_data
-  langs:
-  - python
-  module: botbuilder.schema
-  name: delete_user_data
-  syntax:
-    content: delete_user_data = 'deleteUserData'
-  type: attribute
+- name: delete_user_data
   uid: botbuilder.schema.ActivityTypes.delete_user_data
-- class: botbuilder.schema.ActivityTypes
-  fullName: botbuilder.schema.ActivityTypes.end_of_conversation
-  langs:
-  - python
-  module: botbuilder.schema
-  name: end_of_conversation
-  syntax:
-    content: end_of_conversation = 'endOfConversation'
-  type: attribute
+- name: end_of_conversation
   uid: botbuilder.schema.ActivityTypes.end_of_conversation
-- class: botbuilder.schema.ActivityTypes
-  fullName: botbuilder.schema.ActivityTypes.event
-  langs:
-  - python
-  module: botbuilder.schema
-  name: event
-  syntax:
-    content: event = 'event'
-  type: attribute
+- name: event
   uid: botbuilder.schema.ActivityTypes.event
-- class: botbuilder.schema.ActivityTypes
-  fullName: botbuilder.schema.ActivityTypes.handoff
-  langs:
-  - python
-  module: botbuilder.schema
-  name: handoff
-  syntax:
-    content: handoff = 'handoff'
-  type: attribute
+- name: handoff
   uid: botbuilder.schema.ActivityTypes.handoff
-- class: botbuilder.schema.ActivityTypes
-  fullName: botbuilder.schema.ActivityTypes.installation_update
-  langs:
-  - python
-  module: botbuilder.schema
-  name: installation_update
-  syntax:
-    content: installation_update = 'installationUpdate'
-  type: attribute
+- name: installation_update
   uid: botbuilder.schema.ActivityTypes.installation_update
-- class: botbuilder.schema.ActivityTypes
-  fullName: botbuilder.schema.ActivityTypes.invoke
-  langs:
-  - python
-  module: botbuilder.schema
-  name: invoke
-  syntax:
-    content: invoke = 'invoke'
-  type: attribute
+- name: invoke
   uid: botbuilder.schema.ActivityTypes.invoke
-- class: botbuilder.schema.ActivityTypes
-  fullName: botbuilder.schema.ActivityTypes.invoke_response
-  langs:
-  - python
-  module: botbuilder.schema
-  name: invoke_response
-  syntax:
-    content: invoke_response = 'invokeResponse'
-  type: attribute
+- name: invoke_response
   uid: botbuilder.schema.ActivityTypes.invoke_response
-- class: botbuilder.schema.ActivityTypes
-  fullName: botbuilder.schema.ActivityTypes.message
-  langs:
-  - python
-  module: botbuilder.schema
-  name: message
-  syntax:
-    content: message = 'message'
-  type: attribute
+- name: message
   uid: botbuilder.schema.ActivityTypes.message
-- class: botbuilder.schema.ActivityTypes
-  fullName: botbuilder.schema.ActivityTypes.message_delete
-  langs:
-  - python
-  module: botbuilder.schema
-  name: message_delete
-  syntax:
-    content: message_delete = 'messageDelete'
-  type: attribute
+- name: message_delete
   uid: botbuilder.schema.ActivityTypes.message_delete
-- class: botbuilder.schema.ActivityTypes
-  fullName: botbuilder.schema.ActivityTypes.message_reaction
-  langs:
-  - python
-  module: botbuilder.schema
-  name: message_reaction
-  syntax:
-    content: message_reaction = 'messageReaction'
-  type: attribute
+- name: message_reaction
   uid: botbuilder.schema.ActivityTypes.message_reaction
-- class: botbuilder.schema.ActivityTypes
-  fullName: botbuilder.schema.ActivityTypes.message_update
-  langs:
-  - python
-  module: botbuilder.schema
-  name: message_update
-  syntax:
-    content: message_update = 'messageUpdate'
-  type: attribute
+- name: message_update
   uid: botbuilder.schema.ActivityTypes.message_update
-- class: botbuilder.schema.ActivityTypes
-  fullName: botbuilder.schema.ActivityTypes.suggestion
-  langs:
-  - python
-  module: botbuilder.schema
-  name: suggestion
-  syntax:
-    content: suggestion = 'suggestion'
-  type: attribute
+- name: suggestion
   uid: botbuilder.schema.ActivityTypes.suggestion
-- class: botbuilder.schema.ActivityTypes
-  fullName: botbuilder.schema.ActivityTypes.trace
-  langs:
-  - python
-  module: botbuilder.schema
-  name: trace
-  syntax:
-    content: trace = 'trace'
-  type: attribute
+- name: trace
   uid: botbuilder.schema.ActivityTypes.trace
-- class: botbuilder.schema.ActivityTypes
-  fullName: botbuilder.schema.ActivityTypes.typing
-  langs:
-  - python
-  module: botbuilder.schema
-  name: typing
-  syntax:
-    content: typing = 'typing'
-  type: attribute
-  uid: botbuilder.schema.ActivityTypes.typing
-references:
-- fullName: botbuilder.schema.ActivityTypes.contact_relation_update
-  isExternal: false
-  name: contact_relation_update
-  parent: botbuilder.schema.ActivityTypes
-  uid: botbuilder.schema.ActivityTypes.contact_relation_update
-- fullName: botbuilder.schema.ActivityTypes.conversation_update
-  isExternal: false
-  name: conversation_update
-  parent: botbuilder.schema.ActivityTypes
-  uid: botbuilder.schema.ActivityTypes.conversation_update
-- fullName: botbuilder.schema.ActivityTypes.delete_user_data
-  isExternal: false
-  name: delete_user_data
-  parent: botbuilder.schema.ActivityTypes
-  uid: botbuilder.schema.ActivityTypes.delete_user_data
-- fullName: botbuilder.schema.ActivityTypes.end_of_conversation
-  isExternal: false
-  name: end_of_conversation
-  parent: botbuilder.schema.ActivityTypes
-  uid: botbuilder.schema.ActivityTypes.end_of_conversation
-- fullName: botbuilder.schema.ActivityTypes.event
-  isExternal: false
-  name: event
-  parent: botbuilder.schema.ActivityTypes
-  uid: botbuilder.schema.ActivityTypes.event
-- fullName: botbuilder.schema.ActivityTypes.handoff
-  isExternal: false
-  name: handoff
-  parent: botbuilder.schema.ActivityTypes
-  uid: botbuilder.schema.ActivityTypes.handoff
-- fullName: botbuilder.schema.ActivityTypes.installation_update
-  isExternal: false
-  name: installation_update
-  parent: botbuilder.schema.ActivityTypes
-  uid: botbuilder.schema.ActivityTypes.installation_update
-- fullName: botbuilder.schema.ActivityTypes.invoke
-  isExternal: false
-  name: invoke
-  parent: botbuilder.schema.ActivityTypes
-  uid: botbuilder.schema.ActivityTypes.invoke
-- fullName: botbuilder.schema.ActivityTypes.invoke_response
-  isExternal: false
-  name: invoke_response
-  parent: botbuilder.schema.ActivityTypes
-  uid: botbuilder.schema.ActivityTypes.invoke_response
-- fullName: botbuilder.schema.ActivityTypes.message
-  isExternal: false
-  name: message
-  parent: botbuilder.schema.ActivityTypes
-  uid: botbuilder.schema.ActivityTypes.message
-- fullName: botbuilder.schema.ActivityTypes.message_delete
-  isExternal: false
-  name: message_delete
-  parent: botbuilder.schema.ActivityTypes
-  uid: botbuilder.schema.ActivityTypes.message_delete
-- fullName: botbuilder.schema.ActivityTypes.message_reaction
-  isExternal: false
-  name: message_reaction
-  parent: botbuilder.schema.ActivityTypes
-  uid: botbuilder.schema.ActivityTypes.message_reaction
-- fullName: botbuilder.schema.ActivityTypes.message_update
-  isExternal: false
-  name: message_update
-  parent: botbuilder.schema.ActivityTypes
-  uid: botbuilder.schema.ActivityTypes.message_update
-- fullName: botbuilder.schema.ActivityTypes.suggestion
-  isExternal: false
-  name: suggestion
-  parent: botbuilder.schema.ActivityTypes
-  uid: botbuilder.schema.ActivityTypes.suggestion
-- fullName: botbuilder.schema.ActivityTypes.trace
-  isExternal: false
-  name: trace
-  parent: botbuilder.schema.ActivityTypes
-  uid: botbuilder.schema.ActivityTypes.trace
-- fullName: botbuilder.schema.ActivityTypes.typing
-  isExternal: false
-  name: typing
-  parent: botbuilder.schema.ActivityTypes
+- name: typing
   uid: botbuilder.schema.ActivityTypes.typing

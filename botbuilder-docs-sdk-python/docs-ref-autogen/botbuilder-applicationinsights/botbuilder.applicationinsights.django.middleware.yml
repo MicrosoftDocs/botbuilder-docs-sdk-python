@@ -1,58 +1,18 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.applicationinsights.django.middleware.ApplicationInsightsMiddleware
-  - botbuilder.applicationinsights.django.middleware.RequestAddon
-  - botbuilder.applicationinsights.django.middleware.arg_to_str
-  - botbuilder.applicationinsights.django.middleware.ms_to_duration
-  fullName: botbuilder.applicationinsights.django.middleware
-  langs:
-  - python
-  module: botbuilder.applicationinsights.django.middleware
-  name: middleware
-  type: module
-  uid: botbuilder.applicationinsights.django.middleware
-- fullName: botbuilder.applicationinsights.django.middleware.arg_to_str
-  langs:
-  - python
-  module: botbuilder.applicationinsights.django.middleware
-  name: arg_to_str(arg)
-  syntax:
-    content: arg_to_str(arg)
-    parameters:
-    - id: arg
-  type: function
-  uid: botbuilder.applicationinsights.django.middleware.arg_to_str
-- fullName: botbuilder.applicationinsights.django.middleware.ms_to_duration
-  langs:
-  - python
-  module: botbuilder.applicationinsights.django.middleware
-  name: ms_to_duration(n)
-  syntax:
-    content: ms_to_duration(n)
-    parameters:
-    - id: n
-  type: function
-  uid: botbuilder.applicationinsights.django.middleware.ms_to_duration
-references:
-- fullName: botbuilder.applicationinsights.django.middleware.ApplicationInsightsMiddleware
-  isExternal: false
-  name: ApplicationInsightsMiddleware
-  parent: botbuilder.applicationinsights.django.middleware
-  uid: botbuilder.applicationinsights.django.middleware.ApplicationInsightsMiddleware
-- fullName: botbuilder.applicationinsights.django.middleware.RequestAddon
-  isExternal: false
-  name: RequestAddon
-  parent: botbuilder.applicationinsights.django.middleware
-  uid: botbuilder.applicationinsights.django.middleware.RequestAddon
-- fullName: botbuilder.applicationinsights.django.middleware.arg_to_str
-  isExternal: false
-  name: arg_to_str(arg)
-  parent: botbuilder.applicationinsights.django.middleware
-  uid: botbuilder.applicationinsights.django.middleware.arg_to_str
-- fullName: botbuilder.applicationinsights.django.middleware.ms_to_duration
-  isExternal: false
-  name: ms_to_duration(n)
-  parent: botbuilder.applicationinsights.django.middleware
-  uid: botbuilder.applicationinsights.django.middleware.ms_to_duration
+### YamlMime:PythonModule
+uid: botbuilder.applicationinsights.django.middleware
+name: middleware
+fullName: botbuilder.applicationinsights.django.middleware
+functions:
+- uid: botbuilder.applicationinsights.django.middleware.arg_to_str
+  name: arg_to_str
+  signature: arg_to_str(arg)
+  parameters:
+  - name: arg
+- uid: botbuilder.applicationinsights.django.middleware.ms_to_duration
+  name: ms_to_duration
+  signature: ms_to_duration(n)
+  parameters:
+  - name: n
+classes:
+- botbuilder.applicationinsights.django.middleware.ApplicationInsightsMiddleware
+- botbuilder.applicationinsights.django.middleware.RequestAddon

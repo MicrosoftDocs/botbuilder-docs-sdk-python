@@ -1,137 +1,58 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botframework.connector.auth.emulator_validation.EmulatorValidation.authenticate_emulator_token
-  - botframework.connector.auth.emulator_validation.EmulatorValidation.is_token_from_emulator
-  - botframework.connector.auth.emulator_validation.EmulatorValidation.APP_ID_CLAIM
-  - botframework.connector.auth.emulator_validation.EmulatorValidation.TO_BOT_FROM_EMULATOR_TOKEN_VALIDATION_PARAMETERS
-  - botframework.connector.auth.emulator_validation.EmulatorValidation.VERSION_CLAIM
-  class: botframework.connector.auth.emulator_validation.EmulatorValidation
-  fullName: botframework.connector.auth.emulator_validation.EmulatorValidation
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botframework.connector.auth.emulator_validation
-  name: EmulatorValidation
-  summary: ''
-  syntax: {}
-  type: class
-  uid: botframework.connector.auth.emulator_validation.EmulatorValidation
-- class: botframework.connector.auth.emulator_validation.EmulatorValidation
-  exceptions:
-  - description: ''
-    type: Exception
-  fullName: botframework.connector.auth.emulator_validation.EmulatorValidation.authenticate_emulator_token
-  langs:
-  - python
-  module: botframework.connector.auth.emulator_validation
-  name: 'authenticate_emulator_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
-    channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
-    channel_id: str) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  namewithoutparameters: authenticate_emulator_token
+### YamlMime:PythonClass
+uid: botframework.connector.auth.emulator_validation.EmulatorValidation
+name: EmulatorValidation
+fullName: botframework.connector.auth.emulator_validation.EmulatorValidation
+module: botframework.connector.auth.emulator_validation
+inheritances:
+- builtins.object
+methods:
+- uid: botframework.connector.auth.emulator_validation.EmulatorValidation.authenticate_emulator_token
+  name: authenticate_emulator_token
   summary: 'Validate the incoming Auth Header
 
 
     Validate the incoming Auth Header as a token sent from the Bot Framework Service.
 
     A token issued by the Bot Framework emulator will FAIL this check.'
-  syntax:
-    content: 'authenticate_emulator_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
-      channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
-      channel_id: str) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-    parameters:
-    - description: 'The raw HTTP header in the format: ''Bearer [longString]'''
-      id: auth_header
-      isRequired: true
-      type:
-      - str
-    - description: The user defined set of valid credentials, such as the AppId.
-      id: credentials
-      isRequired: true
-      type:
-      - CredentialProvider
-    return:
-      description: A valid ClaimsIdentity.
-  type: method
-  uid: botframework.connector.auth.emulator_validation.EmulatorValidation.authenticate_emulator_token
-- class: botframework.connector.auth.emulator_validation.EmulatorValidation
-  fullName: botframework.connector.auth.emulator_validation.EmulatorValidation.is_token_from_emulator
-  langs:
-  - python
-  module: botframework.connector.auth.emulator_validation
-  name: 'is_token_from_emulator(auth_header: str) -> bool'
-  namewithoutparameters: is_token_from_emulator
-  summary: Determines if a given Auth header is from the Bot Framework Emulator
-  syntax:
-    content: 'is_token_from_emulator(auth_header: str) -> bool'
-    parameters:
-    - description: Bearer Token, in the 'Bearer [Long String]' Format.
-      id: auth_header
-      isRequired: true
-      type:
-      - str
-    return:
-      description: True, if the token was issued by the Emulator. Otherwise, false.
-  type: method
-  uid: botframework.connector.auth.emulator_validation.EmulatorValidation.is_token_from_emulator
-- class: botframework.connector.auth.emulator_validation.EmulatorValidation
-  fullName: botframework.connector.auth.emulator_validation.EmulatorValidation.APP_ID_CLAIM
-  langs:
-  - python
-  module: botframework.connector.auth.emulator_validation
-  name: APP_ID_CLAIM
-  syntax:
-    content: APP_ID_CLAIM = 'appid'
-  type: attribute
-  uid: botframework.connector.auth.emulator_validation.EmulatorValidation.APP_ID_CLAIM
-- class: botframework.connector.auth.emulator_validation.EmulatorValidation
-  fullName: botframework.connector.auth.emulator_validation.EmulatorValidation.TO_BOT_FROM_EMULATOR_TOKEN_VALIDATION_PARAMETERS
-  langs:
-  - python
-  module: botframework.connector.auth.emulator_validation
-  name: TO_BOT_FROM_EMULATOR_TOKEN_VALIDATION_PARAMETERS
-  syntax:
-    content: TO_BOT_FROM_EMULATOR_TOKEN_VALIDATION_PARAMETERS = <botframework.connector.auth.verify_options.VerifyOptions
-      object>
-  type: attribute
-  uid: botframework.connector.auth.emulator_validation.EmulatorValidation.TO_BOT_FROM_EMULATOR_TOKEN_VALIDATION_PARAMETERS
-- class: botframework.connector.auth.emulator_validation.EmulatorValidation
-  fullName: botframework.connector.auth.emulator_validation.EmulatorValidation.VERSION_CLAIM
-  langs:
-  - python
-  module: botframework.connector.auth.emulator_validation
-  name: VERSION_CLAIM
-  syntax:
-    content: VERSION_CLAIM = 'ver'
-  type: attribute
-  uid: botframework.connector.auth.emulator_validation.EmulatorValidation.VERSION_CLAIM
-references:
-- fullName: botframework.connector.auth.emulator_validation.EmulatorValidation.authenticate_emulator_token
-  isExternal: false
-  name: 'authenticate_emulator_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
+  signature: 'authenticate_emulator_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
     channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
     channel_id: str) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  parent: botframework.connector.auth.emulator_validation.EmulatorValidation
-  uid: botframework.connector.auth.emulator_validation.EmulatorValidation.authenticate_emulator_token
-- fullName: botframework.connector.auth.emulator_validation.EmulatorValidation.is_token_from_emulator
-  isExternal: false
-  name: 'is_token_from_emulator(auth_header: str) -> bool'
-  parent: botframework.connector.auth.emulator_validation.EmulatorValidation
-  uid: botframework.connector.auth.emulator_validation.EmulatorValidation.is_token_from_emulator
-- fullName: botframework.connector.auth.emulator_validation.EmulatorValidation.APP_ID_CLAIM
-  isExternal: false
+  parameters:
+  - name: auth_header
+    description: 'The raw HTTP header in the format: ''Bearer [longString]'''
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: credentials
+    description: The user defined set of valid credentials, such as the AppId.
+    isRequired: true
+    types:
+    - <xref:CredentialProvider>
+  return:
+    description: A valid ClaimsIdentity.
+  exceptions:
+  - description: ''
+    type: Exception
+- uid: botframework.connector.auth.emulator_validation.EmulatorValidation.is_token_from_emulator
+  name: is_token_from_emulator
+  summary: Determines if a given Auth header is from the Bot Framework Emulator
+  signature: 'is_token_from_emulator(auth_header: str) -> bool'
+  parameters:
+  - name: auth_header
+    description: Bearer Token, in the 'Bearer [Long String]' Format.
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: True, if the token was issued by the Emulator. Otherwise, false.
+attributes:
+- uid: botframework.connector.auth.emulator_validation.EmulatorValidation.APP_ID_CLAIM
   name: APP_ID_CLAIM
-  parent: botframework.connector.auth.emulator_validation.EmulatorValidation
-  uid: botframework.connector.auth.emulator_validation.EmulatorValidation.APP_ID_CLAIM
-- fullName: botframework.connector.auth.emulator_validation.EmulatorValidation.TO_BOT_FROM_EMULATOR_TOKEN_VALIDATION_PARAMETERS
-  isExternal: false
+  signature: APP_ID_CLAIM = 'appid'
+- uid: botframework.connector.auth.emulator_validation.EmulatorValidation.TO_BOT_FROM_EMULATOR_TOKEN_VALIDATION_PARAMETERS
   name: TO_BOT_FROM_EMULATOR_TOKEN_VALIDATION_PARAMETERS
-  parent: botframework.connector.auth.emulator_validation.EmulatorValidation
-  uid: botframework.connector.auth.emulator_validation.EmulatorValidation.TO_BOT_FROM_EMULATOR_TOKEN_VALIDATION_PARAMETERS
-- fullName: botframework.connector.auth.emulator_validation.EmulatorValidation.VERSION_CLAIM
-  isExternal: false
+  signature: TO_BOT_FROM_EMULATOR_TOKEN_VALIDATION_PARAMETERS = <botframework.connector.auth.verify_options.VerifyOptions
+    object>
+- uid: botframework.connector.auth.emulator_validation.EmulatorValidation.VERSION_CLAIM
   name: VERSION_CLAIM
-  parent: botframework.connector.auth.emulator_validation.EmulatorValidation
-  uid: botframework.connector.auth.emulator_validation.EmulatorValidation.VERSION_CLAIM
+  signature: VERSION_CLAIM = 'ver'

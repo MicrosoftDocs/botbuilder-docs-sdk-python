@@ -1,30 +1,20 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.MessagingExtensionQueryOptions
-  fullName: botbuilder.schema.teams.MessagingExtensionQueryOptions
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: MessagingExtensionQueryOptions
-  summary: Messaging extension query options.
-  syntax:
-    content: 'MessagingExtensionQueryOptions(*, skip: int = None, count: int = None,
-      **kwargs) -> None'
-    parameters:
-    - description: Number of entities to skip
-      id: skip
-      type:
-      - int
-    - description: Number of entities to fetch
-      id: count
-      type:
-      - int
-  type: class
-  uid: botbuilder.schema.teams.MessagingExtensionQueryOptions
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.MessagingExtensionQueryOptions
+name: MessagingExtensionQueryOptions
+fullName: botbuilder.schema.teams.MessagingExtensionQueryOptions
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: Messaging extension query options.
+constructor:
+  syntax: 'MessagingExtensionQueryOptions(*, skip: int = None, count: int = None,
+    **kwargs) -> None'
+  parameters:
+  - name: skip
+    description: Number of entities to skip
+    types:
+    - <xref:int>
+  - name: count
+    description: Number of entities to fetch
+    types:
+    - <xref:int>

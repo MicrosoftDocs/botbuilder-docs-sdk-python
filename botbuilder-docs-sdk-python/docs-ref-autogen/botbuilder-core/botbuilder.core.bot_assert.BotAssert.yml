@@ -1,153 +1,50 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.bot_assert.BotAssert.activity_list_not_none
-  - botbuilder.core.bot_assert.BotAssert.activity_not_none
-  - botbuilder.core.bot_assert.BotAssert.context_not_none
-  - botbuilder.core.bot_assert.BotAssert.conversation_reference_not_none
-  - botbuilder.core.bot_assert.BotAssert.middleware_list_not_none
-  - botbuilder.core.bot_assert.BotAssert.middleware_not_none
-  class: botbuilder.core.bot_assert.BotAssert
-  fullName: botbuilder.core.bot_assert.BotAssert
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.core.bot_assert
-  name: BotAssert
-  summary: ''
-  syntax: {}
-  type: class
-  uid: botbuilder.core.bot_assert.BotAssert
-- class: botbuilder.core.bot_assert.BotAssert
-  fullName: botbuilder.core.bot_assert.BotAssert.activity_list_not_none
-  langs:
-  - python
-  module: botbuilder.core.bot_assert
-  name: 'activity_list_not_none(activities: typing.List[botbuilder.schema._models_py3.Activity])
-    -> None'
-  namewithoutparameters: activity_list_not_none
+### YamlMime:PythonClass
+uid: botbuilder.core.bot_assert.BotAssert
+name: BotAssert
+fullName: botbuilder.core.bot_assert.BotAssert
+module: botbuilder.core.bot_assert
+inheritances:
+- builtins.object
+methods:
+- uid: botbuilder.core.bot_assert.BotAssert.activity_list_not_none
+  name: activity_list_not_none
   summary: 'Checks that an activity list is not None
 
     :param activities: The activity list'
-  syntax:
-    content: 'activity_list_not_none(activities: typing.List[botbuilder.schema._models_py3.Activity])
-      -> None'
-  type: method
-  uid: botbuilder.core.bot_assert.BotAssert.activity_list_not_none
-- class: botbuilder.core.bot_assert.BotAssert
-  fullName: botbuilder.core.bot_assert.BotAssert.activity_not_none
-  langs:
-  - python
-  module: botbuilder.core.bot_assert
-  name: 'activity_not_none(activity: botbuilder.schema._models_py3.Activity) -> None'
-  namewithoutparameters: activity_not_none
+  signature: 'activity_list_not_none(activities: typing.List[botbuilder.schema._models_py3.Activity])
+    -> None'
+- uid: botbuilder.core.bot_assert.BotAssert.activity_not_none
+  name: activity_not_none
   summary: 'Checks that an activity object is not None
 
     :param activity: The activity object'
-  syntax:
-    content: 'activity_not_none(activity: botbuilder.schema._models_py3.Activity)
-      -> None'
-  type: method
-  uid: botbuilder.core.bot_assert.BotAssert.activity_not_none
-- class: botbuilder.core.bot_assert.BotAssert
-  fullName: botbuilder.core.bot_assert.BotAssert.context_not_none
-  langs:
-  - python
-  module: botbuilder.core.bot_assert
-  name: 'context_not_none(turn_context: botbuilder.core.turn_context.TurnContext)
+  signature: 'activity_not_none(activity: botbuilder.schema._models_py3.Activity)
     -> None'
-  namewithoutparameters: context_not_none
+- uid: botbuilder.core.bot_assert.BotAssert.context_not_none
+  name: context_not_none
   summary: 'Checks that a context object is not None
 
     :param turn_context: The context object'
-  syntax:
-    content: 'context_not_none(turn_context: botbuilder.core.turn_context.TurnContext)
-      -> None'
-  type: method
-  uid: botbuilder.core.bot_assert.BotAssert.context_not_none
-- class: botbuilder.core.bot_assert.BotAssert
-  fullName: botbuilder.core.bot_assert.BotAssert.conversation_reference_not_none
-  langs:
-  - python
-  module: botbuilder.core.bot_assert
-  name: 'conversation_reference_not_none(reference: botbuilder.schema._models_py3.ConversationReference)
+  signature: 'context_not_none(turn_context: botbuilder.core.turn_context.TurnContext)
     -> None'
-  namewithoutparameters: conversation_reference_not_none
+- uid: botbuilder.core.bot_assert.BotAssert.conversation_reference_not_none
+  name: conversation_reference_not_none
   summary: 'Checks that a conversation reference object is not None
 
     :param reference: The conversation reference object'
-  syntax:
-    content: 'conversation_reference_not_none(reference: botbuilder.schema._models_py3.ConversationReference)
-      -> None'
-  type: method
-  uid: botbuilder.core.bot_assert.BotAssert.conversation_reference_not_none
-- class: botbuilder.core.bot_assert.BotAssert
-  fullName: botbuilder.core.bot_assert.BotAssert.middleware_list_not_none
-  langs:
-  - python
-  module: botbuilder.core.bot_assert
-  name: 'middleware_list_not_none(middleware: typing.List[botbuilder.core.middleware_set.Middleware])
+  signature: 'conversation_reference_not_none(reference: botbuilder.schema._models_py3.ConversationReference)
     -> None'
-  namewithoutparameters: middleware_list_not_none
+- uid: botbuilder.core.bot_assert.BotAssert.middleware_list_not_none
+  name: middleware_list_not_none
   summary: 'Checks that a middeware list is not None
 
     :param activities: The middleware list'
-  syntax:
-    content: 'middleware_list_not_none(middleware: typing.List[botbuilder.core.middleware_set.Middleware])
-      -> None'
-  type: method
-  uid: botbuilder.core.bot_assert.BotAssert.middleware_list_not_none
-- class: botbuilder.core.bot_assert.BotAssert
-  fullName: botbuilder.core.bot_assert.BotAssert.middleware_not_none
-  langs:
-  - python
-  module: botbuilder.core.bot_assert
-  name: 'middleware_not_none(middleware: botbuilder.core.middleware_set.Middleware)
+  signature: 'middleware_list_not_none(middleware: typing.List[botbuilder.core.middleware_set.Middleware])
     -> None'
-  namewithoutparameters: middleware_not_none
+- uid: botbuilder.core.bot_assert.BotAssert.middleware_not_none
+  name: middleware_not_none
   summary: 'Checks that a middleware object is not None
 
     :param middleware: The middleware object'
-  syntax:
-    content: 'middleware_not_none(middleware: botbuilder.core.middleware_set.Middleware)
-      -> None'
-  type: method
-  uid: botbuilder.core.bot_assert.BotAssert.middleware_not_none
-references:
-- fullName: botbuilder.core.bot_assert.BotAssert.activity_list_not_none
-  isExternal: false
-  name: 'activity_list_not_none(activities: typing.List[botbuilder.schema._models_py3.Activity])
+  signature: 'middleware_not_none(middleware: botbuilder.core.middleware_set.Middleware)
     -> None'
-  parent: botbuilder.core.bot_assert.BotAssert
-  uid: botbuilder.core.bot_assert.BotAssert.activity_list_not_none
-- fullName: botbuilder.core.bot_assert.BotAssert.activity_not_none
-  isExternal: false
-  name: 'activity_not_none(activity: botbuilder.schema._models_py3.Activity) -> None'
-  parent: botbuilder.core.bot_assert.BotAssert
-  uid: botbuilder.core.bot_assert.BotAssert.activity_not_none
-- fullName: botbuilder.core.bot_assert.BotAssert.context_not_none
-  isExternal: false
-  name: 'context_not_none(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> None'
-  parent: botbuilder.core.bot_assert.BotAssert
-  uid: botbuilder.core.bot_assert.BotAssert.context_not_none
-- fullName: botbuilder.core.bot_assert.BotAssert.conversation_reference_not_none
-  isExternal: false
-  name: 'conversation_reference_not_none(reference: botbuilder.schema._models_py3.ConversationReference)
-    -> None'
-  parent: botbuilder.core.bot_assert.BotAssert
-  uid: botbuilder.core.bot_assert.BotAssert.conversation_reference_not_none
-- fullName: botbuilder.core.bot_assert.BotAssert.middleware_list_not_none
-  isExternal: false
-  name: 'middleware_list_not_none(middleware: typing.List[botbuilder.core.middleware_set.Middleware])
-    -> None'
-  parent: botbuilder.core.bot_assert.BotAssert
-  uid: botbuilder.core.bot_assert.BotAssert.middleware_list_not_none
-- fullName: botbuilder.core.bot_assert.BotAssert.middleware_not_none
-  isExternal: false
-  name: 'middleware_not_none(middleware: botbuilder.core.middleware_set.Middleware)
-    -> None'
-  parent: botbuilder.core.bot_assert.BotAssert
-  uid: botbuilder.core.bot_assert.BotAssert.middleware_not_none

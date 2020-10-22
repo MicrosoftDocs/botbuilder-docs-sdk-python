@@ -1,57 +1,28 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.TokenExchangeInvokeRequest
-  fullName: botbuilder.schema.TokenExchangeInvokeRequest
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema
-  name: TokenExchangeInvokeRequest
-  summary: TokenExchangeInvokeRequest.
-  syntax:
-    content: 'TokenExchangeInvokeRequest(*, id: str = None, connection_name: str =
-      None, token: str = None, properties=None, **kwargs) -> None'
-    parameters:
-    - description: The id from the OAuthCard.
-      id: id
-      type:
-      - str
-    - description: The connection name.
-      id: connection_name
-      type:
-      - str
-    - description: The user token that can be exchanged.
-      id: token
-      type:
-      - str
-    - description: Extension data for overflow of properties.
-      id: properties
-      type:
-      - dict[str, object]
-  type: class
-  uid: botbuilder.schema.TokenExchangeInvokeRequest
-references:
-- fullName: dict[str, object]
-  name: dict[str, object]
-  spec.python:
-  - fullName: dict
-    name: dict
-    uid: dict
-  - fullName: '['
-    name: '['
-  - fullName: str
-    name: str
-    uid: str
-  - fullName: ', '
-    name: ', '
-  - fullName: object
-    name: object
-    uid: object
-  - fullName: ']'
-    name: ']'
-  uid: dict[str, object]
+### YamlMime:PythonClass
+uid: botbuilder.schema.TokenExchangeInvokeRequest
+name: TokenExchangeInvokeRequest
+fullName: botbuilder.schema.TokenExchangeInvokeRequest
+module: botbuilder.schema
+inheritances:
+- msrest.serialization.Model
+summary: TokenExchangeInvokeRequest.
+constructor:
+  syntax: 'TokenExchangeInvokeRequest(*, id: str = None, connection_name: str = None,
+    token: str = None, properties=None, **kwargs) -> None'
+  parameters:
+  - name: id
+    description: The id from the OAuthCard.
+    types:
+    - <xref:str>
+  - name: connection_name
+    description: The connection name.
+    types:
+    - <xref:str>
+  - name: token
+    description: The user token that can be exchanged.
+    types:
+    - <xref:str>
+  - name: properties
+    description: Extension data for overflow of properties.
+    types:
+    - <xref:dict>[<xref:str>, <xref:object>]

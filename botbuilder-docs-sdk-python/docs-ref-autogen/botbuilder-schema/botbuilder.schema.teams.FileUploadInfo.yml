@@ -1,44 +1,34 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.FileUploadInfo
-  fullName: botbuilder.schema.teams.FileUploadInfo
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: FileUploadInfo
-  summary: Information about the file to be uploaded.
-  syntax:
-    content: 'FileUploadInfo(*, name: str = None, upload_url: str = None, content_url:
-      str = None, unique_id: str = None, file_type: str = None, **kwargs) -> None'
-    parameters:
-    - description: Name of the file.
-      id: name
-      type:
-      - str
-    - description: 'URL to an upload session that the bot can use to set
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.FileUploadInfo
+name: FileUploadInfo
+fullName: botbuilder.schema.teams.FileUploadInfo
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: Information about the file to be uploaded.
+constructor:
+  syntax: 'FileUploadInfo(*, name: str = None, upload_url: str = None, content_url:
+    str = None, unique_id: str = None, file_type: str = None, **kwargs) -> None'
+  parameters:
+  - name: name
+    description: Name of the file.
+    types:
+    - <xref:str>
+  - name: upload_url
+    description: 'URL to an upload session that the bot can use to set
 
-        the file contents.'
-      id: upload_url
-      type:
-      - str
-    - description: URL to file.
-      id: content_url
-      type:
-      - str
-    - description: ID that uniquely identifies the file.
-      id: unique_id
-      type:
-      - str
-    - description: Type of the file.
-      id: file_type
-      type:
-      - str
-  type: class
-  uid: botbuilder.schema.teams.FileUploadInfo
-references: []
+      the file contents.'
+    types:
+    - <xref:str>
+  - name: content_url
+    description: URL to file.
+    types:
+    - <xref:str>
+  - name: unique_id
+    description: ID that uniquely identifies the file.
+    types:
+    - <xref:str>
+  - name: file_type
+    description: Type of the file.
+    types:
+    - <xref:str>

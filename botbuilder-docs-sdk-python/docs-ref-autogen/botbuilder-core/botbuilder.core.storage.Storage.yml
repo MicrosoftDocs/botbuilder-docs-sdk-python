@@ -1,88 +1,35 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.storage.Storage.delete
-  - botbuilder.core.storage.Storage.read
-  - botbuilder.core.storage.Storage.write
-  class: botbuilder.core.storage.Storage
-  fullName: botbuilder.core.storage.Storage
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: abc.ABC
-  langs:
-  - python
-  module: botbuilder.core.storage
-  name: Storage
-  summary: ''
-  syntax: {}
-  type: class
-  uid: botbuilder.core.storage.Storage
-- class: botbuilder.core.storage.Storage
-  fullName: botbuilder.core.storage.Storage.delete
-  langs:
-  - python
-  module: botbuilder.core.storage
-  name: 'delete(keys: typing.List[str])'
-  namewithoutparameters: delete
+### YamlMime:PythonClass
+uid: botbuilder.core.storage.Storage
+name: Storage
+fullName: botbuilder.core.storage.Storage
+module: botbuilder.core.storage
+inheritances:
+- abc.ABC
+methods:
+- uid: botbuilder.core.storage.Storage.delete
+  name: delete
   summary: 'Removes store items from storage.
 
     :param keys:
 
     :return:'
-  syntax:
-    content: 'delete(keys: typing.List[str])'
-  type: method
-  uid: botbuilder.core.storage.Storage.delete
-- class: botbuilder.core.storage.Storage
-  fullName: botbuilder.core.storage.Storage.read
-  langs:
-  - python
-  module: botbuilder.core.storage
-  name: 'read(keys: typing.List[str])'
-  namewithoutparameters: read
+  signature: 'delete(keys: typing.List[str])'
+- uid: botbuilder.core.storage.Storage.read
+  name: read
   summary: 'Loads store items from storage.
 
     :param keys:
 
     :return:'
-  syntax:
-    content: 'read(keys: typing.List[str])'
-  type: method
-  uid: botbuilder.core.storage.Storage.read
-- class: botbuilder.core.storage.Storage
-  fullName: botbuilder.core.storage.Storage.write
-  langs:
-  - python
-  module: botbuilder.core.storage
-  name: write(changes)
-  namewithoutparameters: write
+  signature: 'read(keys: typing.List[str])'
+- uid: botbuilder.core.storage.Storage.write
+  name: write
   summary: 'Saves store items to storage.
 
     :param changes:
 
     :return:'
-  syntax:
-    content: write(changes)
-    parameters:
-    - id: changes
-      isRequired: true
-  type: method
-  uid: botbuilder.core.storage.Storage.write
-references:
-- fullName: botbuilder.core.storage.Storage.delete
-  isExternal: false
-  name: 'delete(keys: typing.List[str])'
-  parent: botbuilder.core.storage.Storage
-  uid: botbuilder.core.storage.Storage.delete
-- fullName: botbuilder.core.storage.Storage.read
-  isExternal: false
-  name: 'read(keys: typing.List[str])'
-  parent: botbuilder.core.storage.Storage
-  uid: botbuilder.core.storage.Storage.read
-- fullName: botbuilder.core.storage.Storage.write
-  isExternal: false
-  name: write(changes)
-  parent: botbuilder.core.storage.Storage
-  uid: botbuilder.core.storage.Storage.write
+  signature: write(changes)
+  parameters:
+  - name: changes
+    isRequired: true

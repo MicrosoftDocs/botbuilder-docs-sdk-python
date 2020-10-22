@@ -1,29 +1,19 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.TaskModuleRequest
-  fullName: botbuilder.schema.teams.TaskModuleRequest
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: TaskModuleRequest
-  summary: Task module invoke request value payload.
-  syntax:
-    content: TaskModuleRequest(*, data=None, context=None, **kwargs) -> None
-    parameters:
-    - description: User input data. Free payload with key-value pairs.
-      id: data
-      type:
-      - object
-    - description: Current user context, i.e., the current theme
-      id: context
-      type:
-      - botframework.connector.teams.models.TaskModuleRequestContext
-  type: class
-  uid: botbuilder.schema.teams.TaskModuleRequest
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.TaskModuleRequest
+name: TaskModuleRequest
+fullName: botbuilder.schema.teams.TaskModuleRequest
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: Task module invoke request value payload.
+constructor:
+  syntax: TaskModuleRequest(*, data=None, context=None, **kwargs) -> None
+  parameters:
+  - name: data
+    description: User input data. Free payload with key-value pairs.
+    types:
+    - <xref:object>
+  - name: context
+    description: Current user context, i.e., the current theme
+    types:
+    - <xref:botframework.connector.teams.models.TaskModuleRequestContext>

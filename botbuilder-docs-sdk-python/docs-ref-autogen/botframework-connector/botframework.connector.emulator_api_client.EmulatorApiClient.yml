@@ -1,36 +1,12 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botframework.connector.emulator_api_client.EmulatorApiClient.emulate_oauth_cards
-  class: botframework.connector.emulator_api_client.EmulatorApiClient
-  fullName: botframework.connector.emulator_api_client.EmulatorApiClient
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botframework.connector.emulator_api_client
-  name: EmulatorApiClient
-  syntax: {}
-  type: class
-  uid: botframework.connector.emulator_api_client.EmulatorApiClient
-- class: botframework.connector.emulator_api_client.EmulatorApiClient
-  fullName: botframework.connector.emulator_api_client.EmulatorApiClient.emulate_oauth_cards
-  langs:
-  - python
-  module: botframework.connector.emulator_api_client
-  name: 'emulate_oauth_cards(credentials: botframework.connector.auth.app_credentials.AppCredentials,
+### YamlMime:PythonClass
+uid: botframework.connector.emulator_api_client.EmulatorApiClient
+name: EmulatorApiClient
+fullName: botframework.connector.emulator_api_client.EmulatorApiClient
+module: botframework.connector.emulator_api_client
+inheritances:
+- builtins.object
+methods:
+- uid: botframework.connector.emulator_api_client.EmulatorApiClient.emulate_oauth_cards
+  name: emulate_oauth_cards
+  signature: 'emulate_oauth_cards(credentials: botframework.connector.auth.app_credentials.AppCredentials,
     emulator_url: str, emulate: bool) -> bool'
-  namewithoutparameters: emulate_oauth_cards
-  syntax:
-    content: 'emulate_oauth_cards(credentials: botframework.connector.auth.app_credentials.AppCredentials,
-      emulator_url: str, emulate: bool) -> bool'
-  type: method
-  uid: botframework.connector.emulator_api_client.EmulatorApiClient.emulate_oauth_cards
-references:
-- fullName: botframework.connector.emulator_api_client.EmulatorApiClient.emulate_oauth_cards
-  isExternal: false
-  name: 'emulate_oauth_cards(credentials: botframework.connector.auth.app_credentials.AppCredentials,
-    emulator_url: str, emulate: bool) -> bool'
-  parent: botframework.connector.emulator_api_client.EmulatorApiClient
-  uid: botframework.connector.emulator_api_client.EmulatorApiClient.emulate_oauth_cards

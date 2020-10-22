@@ -1,44 +1,20 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.PagedMembersResult
-  fullName: botbuilder.schema.PagedMembersResult
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema
-  name: PagedMembersResult
-  summary: Page of members.
-  syntax:
-    content: 'PagedMembersResult(*, continuation_token: str = None, members=None,
-      **kwargs) -> None'
-    parameters:
-    - description: Paging token
-      id: continuation_token
-      type:
-      - str
-    - description: The Channel Accounts.
-      id: members
-      type:
-      - list[botframework.connector.models.ChannelAccount]
-  type: class
-  uid: botbuilder.schema.PagedMembersResult
-references:
-- fullName: list[botframework.connector.models.ChannelAccount]
-  name: list[ChannelAccount]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.models.ChannelAccount
-    name: ChannelAccount
-    uid: botframework.connector.models.ChannelAccount
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.models.ChannelAccount]
+### YamlMime:PythonClass
+uid: botbuilder.schema.PagedMembersResult
+name: PagedMembersResult
+fullName: botbuilder.schema.PagedMembersResult
+module: botbuilder.schema
+inheritances:
+- msrest.serialization.Model
+summary: Page of members.
+constructor:
+  syntax: 'PagedMembersResult(*, continuation_token: str = None, members=None, **kwargs)
+    -> None'
+  parameters:
+  - name: continuation_token
+    description: Paging token
+    types:
+    - <xref:str>
+  - name: members
+    description: The Channel Accounts.
+    types:
+    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]

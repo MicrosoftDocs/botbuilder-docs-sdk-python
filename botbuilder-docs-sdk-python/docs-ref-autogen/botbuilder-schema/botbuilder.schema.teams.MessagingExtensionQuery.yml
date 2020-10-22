@@ -1,54 +1,29 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.MessagingExtensionQuery
-  fullName: botbuilder.schema.teams.MessagingExtensionQuery
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: MessagingExtensionQuery
-  summary: Messaging extension query.
-  syntax:
-    content: 'MessagingExtensionQuery(*, command_id: str = None, parameters=None,
-      query_options=None, state: str = None, **kwargs) -> None'
-    parameters:
-    - description: Id of the command assigned by Bot
-      id: command_id
-      type:
-      - str
-    - description: Parameters for the query
-      id: parameters
-      type:
-      - list[botframework.connector.teams.models.MessagingExtensionParameter]
-    - description: ''
-      id: query_options
-      type:
-      - botframework.connector.teams.models.MessagingExtensionQueryOptions
-    - description: 'State parameter passed back to the bot after
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.MessagingExtensionQuery
+name: MessagingExtensionQuery
+fullName: botbuilder.schema.teams.MessagingExtensionQuery
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: Messaging extension query.
+constructor:
+  syntax: 'MessagingExtensionQuery(*, command_id: str = None, parameters=None, query_options=None,
+    state: str = None, **kwargs) -> None'
+  parameters:
+  - name: command_id
+    description: Id of the command assigned by Bot
+    types:
+    - <xref:str>
+  - name: parameters
+    description: Parameters for the query
+    types:
+    - <xref:list>[<xref:botframework.connector.teams.models.MessagingExtensionParameter>]
+  - name: query_options
+    types:
+    - <xref:botframework.connector.teams.models.MessagingExtensionQueryOptions>
+  - name: state
+    description: 'State parameter passed back to the bot after
 
-        authentication/configuration flow'
-      id: state
-      type:
-      - str
-  type: class
-  uid: botbuilder.schema.teams.MessagingExtensionQuery
-references:
-- fullName: list[botframework.connector.teams.models.MessagingExtensionParameter]
-  name: list[MessagingExtensionParameter]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.teams.models.MessagingExtensionParameter
-    name: MessagingExtensionParameter
-    uid: botframework.connector.teams.models.MessagingExtensionParameter
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.teams.models.MessagingExtensionParameter]
+      authentication/configuration flow'
+    types:
+    - <xref:str>

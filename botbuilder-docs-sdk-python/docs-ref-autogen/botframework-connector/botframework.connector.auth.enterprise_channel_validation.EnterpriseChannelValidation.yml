@@ -1,114 +1,31 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.authenticate_channel_token
-  - botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.authenticate_channel_token_with_service_url
-  - botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.validate_identity
-  - botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.TO_BOT_FROM_ENTERPRISE_CHANNEL_TOKEN_VALIDATION_PARAMETERS
-  class: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation
-  fullName: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: abc.ABC
-  langs:
-  - python
-  module: botframework.connector.auth.enterprise_channel_validation
-  name: EnterpriseChannelValidation
-  summary: ''
-  syntax: {}
-  type: class
-  uid: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation
-- class: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation
-  fullName: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.authenticate_channel_token
-  langs:
-  - python
-  module: botframework.connector.auth.enterprise_channel_validation
-  name: 'authenticate_channel_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
+### YamlMime:PythonClass
+uid: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation
+name: EnterpriseChannelValidation
+fullName: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation
+module: botframework.connector.auth.enterprise_channel_validation
+inheritances:
+- abc.ABC
+methods:
+- uid: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.authenticate_channel_token
+  name: authenticate_channel_token
+  signature: 'authenticate_channel_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
     channel_id: str, channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
     auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
     = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  namewithoutparameters: authenticate_channel_token
-  syntax:
-    content: 'authenticate_channel_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
-      channel_id: str, channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
-      auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
-      = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  type: method
-  uid: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.authenticate_channel_token
-- class: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation
-  fullName: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.authenticate_channel_token_with_service_url
-  langs:
-  - python
-  module: botframework.connector.auth.enterprise_channel_validation
-  name: 'authenticate_channel_token_with_service_url(auth_header: str, credentials:
+- uid: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.authenticate_channel_token_with_service_url
+  name: authenticate_channel_token_with_service_url
+  signature: 'authenticate_channel_token_with_service_url(auth_header: str, credentials:
     botframework.connector.auth.credential_provider.CredentialProvider, service_url:
     str, channel_id: str, channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
     auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
     = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  namewithoutparameters: authenticate_channel_token_with_service_url
-  syntax:
-    content: 'authenticate_channel_token_with_service_url(auth_header: str, credentials:
-      botframework.connector.auth.credential_provider.CredentialProvider, service_url:
-      str, channel_id: str, channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
-      auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
-      = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  type: method
-  uid: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.authenticate_channel_token_with_service_url
-- class: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation
-  fullName: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.validate_identity
-  langs:
-  - python
-  module: botframework.connector.auth.enterprise_channel_validation
-  name: 'validate_identity(identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+- uid: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.validate_identity
+  name: validate_identity
+  signature: 'validate_identity(identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     credentials: botframework.connector.auth.credential_provider.CredentialProvider)
     -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  namewithoutparameters: validate_identity
-  syntax:
-    content: 'validate_identity(identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-      credentials: botframework.connector.auth.credential_provider.CredentialProvider)
-      -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  type: method
-  uid: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.validate_identity
-- class: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation
-  fullName: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.TO_BOT_FROM_ENTERPRISE_CHANNEL_TOKEN_VALIDATION_PARAMETERS
-  langs:
-  - python
-  module: botframework.connector.auth.enterprise_channel_validation
+attributes:
+- uid: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.TO_BOT_FROM_ENTERPRISE_CHANNEL_TOKEN_VALIDATION_PARAMETERS
   name: TO_BOT_FROM_ENTERPRISE_CHANNEL_TOKEN_VALIDATION_PARAMETERS
-  syntax:
-    content: TO_BOT_FROM_ENTERPRISE_CHANNEL_TOKEN_VALIDATION_PARAMETERS = <botframework.connector.auth.verify_options.VerifyOptions
-      object>
-  type: attribute
-  uid: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.TO_BOT_FROM_ENTERPRISE_CHANNEL_TOKEN_VALIDATION_PARAMETERS
-references:
-- fullName: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.authenticate_channel_token
-  isExternal: false
-  name: 'authenticate_channel_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
-    channel_id: str, channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
-    auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
-    = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  parent: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation
-  uid: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.authenticate_channel_token
-- fullName: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.authenticate_channel_token_with_service_url
-  isExternal: false
-  name: 'authenticate_channel_token_with_service_url(auth_header: str, credentials:
-    botframework.connector.auth.credential_provider.CredentialProvider, service_url:
-    str, channel_id: str, channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
-    auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
-    = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  parent: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation
-  uid: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.authenticate_channel_token_with_service_url
-- fullName: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.validate_identity
-  isExternal: false
-  name: 'validate_identity(identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    credentials: botframework.connector.auth.credential_provider.CredentialProvider)
-    -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  parent: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation
-  uid: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.validate_identity
-- fullName: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.TO_BOT_FROM_ENTERPRISE_CHANNEL_TOKEN_VALIDATION_PARAMETERS
-  isExternal: false
-  name: TO_BOT_FROM_ENTERPRISE_CHANNEL_TOKEN_VALIDATION_PARAMETERS
-  parent: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation
-  uid: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.TO_BOT_FROM_ENTERPRISE_CHANNEL_TOKEN_VALIDATION_PARAMETERS
+  signature: TO_BOT_FROM_ENTERPRISE_CHANNEL_TOKEN_VALIDATION_PARAMETERS = <botframework.connector.auth.verify_options.VerifyOptions
+    object>

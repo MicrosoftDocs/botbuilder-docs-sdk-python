@@ -1,66 +1,56 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.CardAction
-  fullName: botbuilder.schema.CardAction
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema
-  name: CardAction
-  summary: A clickable action.
-  syntax:
-    content: 'CardAction(*, type=None, title: str = None, image: str = None, text:
-      str = None, display_text: str = None, value=None, channel_data=None, image_alt_text:
-      str = None, **kwargs) -> None'
-    parameters:
-    - description: 'The type of action implemented by this button. Possible
+### YamlMime:PythonClass
+uid: botbuilder.schema.CardAction
+name: CardAction
+fullName: botbuilder.schema.CardAction
+module: botbuilder.schema
+inheritances:
+- msrest.serialization.Model
+summary: A clickable action.
+constructor:
+  syntax: 'CardAction(*, type=None, title: str = None, image: str = None, text: str
+    = None, display_text: str = None, value=None, channel_data=None, image_alt_text:
+    str = None, **kwargs) -> None'
+  parameters:
+  - name: type
+    description: 'The type of action implemented by this button. Possible
 
-        values include: ''openUrl'', ''imBack'', ''postBack'', ''playAudio'', ''playVideo'',
+      values include: ''openUrl'', ''imBack'', ''postBack'', ''playAudio'', ''playVideo'',
 
-        ''showImage'', ''downloadFile'', ''signin'', ''call'', ''messageBack'''
-      id: type
-      type:
-      - str
-      - botframework.connector.models.ActionTypes
-    - description: Text description which appears on the button
-      id: title
-      type:
-      - str
-    - description: 'Image URL which will appear on the button, next to text
+      ''showImage'', ''downloadFile'', ''signin'', ''call'', ''messageBack'''
+    types:
+    - <xref:str>
+    - <xref:botframework.connector.models.ActionTypes>
+  - name: title
+    description: Text description which appears on the button
+    types:
+    - <xref:str>
+  - name: image
+    description: 'Image URL which will appear on the button, next to text
 
-        label'
-      id: image
-      type:
-      - str
-    - description: Text for this action
-      id: text
-      type:
-      - str
-    - description: '(Optional) text to display in the chat feed if the
+      label'
+    types:
+    - <xref:str>
+  - name: text
+    description: Text for this action
+    types:
+    - <xref:str>
+  - name: display_text
+    description: '(Optional) text to display in the chat feed if the
 
-        button is clicked'
-      id: display_text
-      type:
-      - str
-    - description: 'Supplementary parameter for action. Content of this property
+      button is clicked'
+    types:
+    - <xref:str>
+  - name: value
+    description: 'Supplementary parameter for action. Content of this property
 
-        depends on the ActionType'
-      id: value
-      type:
-      - object
-    - description: Channel-specific data associated with this action
-      id: channel_data
-      type:
-      - object
-    - description: Alternate image text to be used in place of the *image* field
-      id: image_alt_text
-      type:
-      - str
-  type: class
-  uid: botbuilder.schema.CardAction
-references: []
+      depends on the ActionType'
+    types:
+    - <xref:object>
+  - name: channel_data
+    description: Channel-specific data associated with this action
+    types:
+    - <xref:object>
+  - name: image_alt_text
+    description: Alternate image text to be used in place of the *image* field
+    types:
+    - <xref:str>

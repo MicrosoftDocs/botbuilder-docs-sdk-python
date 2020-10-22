@@ -1,161 +1,35 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.card_factory.ContentTypes.adaptive_card
-  - botbuilder.core.card_factory.ContentTypes.animation_card
-  - botbuilder.core.card_factory.ContentTypes.audio_card
-  - botbuilder.core.card_factory.ContentTypes.hero_card
-  - botbuilder.core.card_factory.ContentTypes.oauth_card
-  - botbuilder.core.card_factory.ContentTypes.receipt_card
-  - botbuilder.core.card_factory.ContentTypes.signin_card
-  - botbuilder.core.card_factory.ContentTypes.thumbnail_card
-  - botbuilder.core.card_factory.ContentTypes.video_card
-  class: botbuilder.core.card_factory.ContentTypes
-  fullName: botbuilder.core.card_factory.ContentTypes
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.core.card_factory
-  name: ContentTypes
-  summary: ''
-  syntax: {}
-  type: class
-  uid: botbuilder.core.card_factory.ContentTypes
-- class: botbuilder.core.card_factory.ContentTypes
-  fullName: botbuilder.core.card_factory.ContentTypes.adaptive_card
-  langs:
-  - python
-  module: botbuilder.core.card_factory
+### YamlMime:PythonClass
+uid: botbuilder.core.card_factory.ContentTypes
+name: ContentTypes
+fullName: botbuilder.core.card_factory.ContentTypes
+module: botbuilder.core.card_factory
+inheritances:
+- builtins.object
+attributes:
+- uid: botbuilder.core.card_factory.ContentTypes.adaptive_card
   name: adaptive_card
-  syntax:
-    content: adaptive_card = 'application/vnd.microsoft.card.adaptive'
-  type: attribute
-  uid: botbuilder.core.card_factory.ContentTypes.adaptive_card
-- class: botbuilder.core.card_factory.ContentTypes
-  fullName: botbuilder.core.card_factory.ContentTypes.animation_card
-  langs:
-  - python
-  module: botbuilder.core.card_factory
+  signature: adaptive_card = 'application/vnd.microsoft.card.adaptive'
+- uid: botbuilder.core.card_factory.ContentTypes.animation_card
   name: animation_card
-  syntax:
-    content: animation_card = 'application/vnd.microsoft.card.animation'
-  type: attribute
-  uid: botbuilder.core.card_factory.ContentTypes.animation_card
-- class: botbuilder.core.card_factory.ContentTypes
-  fullName: botbuilder.core.card_factory.ContentTypes.audio_card
-  langs:
-  - python
-  module: botbuilder.core.card_factory
+  signature: animation_card = 'application/vnd.microsoft.card.animation'
+- uid: botbuilder.core.card_factory.ContentTypes.audio_card
   name: audio_card
-  syntax:
-    content: audio_card = 'application/vnd.microsoft.card.audio'
-  type: attribute
-  uid: botbuilder.core.card_factory.ContentTypes.audio_card
-- class: botbuilder.core.card_factory.ContentTypes
-  fullName: botbuilder.core.card_factory.ContentTypes.hero_card
-  langs:
-  - python
-  module: botbuilder.core.card_factory
+  signature: audio_card = 'application/vnd.microsoft.card.audio'
+- uid: botbuilder.core.card_factory.ContentTypes.hero_card
   name: hero_card
-  syntax:
-    content: hero_card = 'application/vnd.microsoft.card.hero'
-  type: attribute
-  uid: botbuilder.core.card_factory.ContentTypes.hero_card
-- class: botbuilder.core.card_factory.ContentTypes
-  fullName: botbuilder.core.card_factory.ContentTypes.oauth_card
-  langs:
-  - python
-  module: botbuilder.core.card_factory
+  signature: hero_card = 'application/vnd.microsoft.card.hero'
+- uid: botbuilder.core.card_factory.ContentTypes.oauth_card
   name: oauth_card
-  syntax:
-    content: oauth_card = 'application/vnd.microsoft.card.oauth'
-  type: attribute
-  uid: botbuilder.core.card_factory.ContentTypes.oauth_card
-- class: botbuilder.core.card_factory.ContentTypes
-  fullName: botbuilder.core.card_factory.ContentTypes.receipt_card
-  langs:
-  - python
-  module: botbuilder.core.card_factory
+  signature: oauth_card = 'application/vnd.microsoft.card.oauth'
+- uid: botbuilder.core.card_factory.ContentTypes.receipt_card
   name: receipt_card
-  syntax:
-    content: receipt_card = 'application/vnd.microsoft.card.receipt'
-  type: attribute
-  uid: botbuilder.core.card_factory.ContentTypes.receipt_card
-- class: botbuilder.core.card_factory.ContentTypes
-  fullName: botbuilder.core.card_factory.ContentTypes.signin_card
-  langs:
-  - python
-  module: botbuilder.core.card_factory
+  signature: receipt_card = 'application/vnd.microsoft.card.receipt'
+- uid: botbuilder.core.card_factory.ContentTypes.signin_card
   name: signin_card
-  syntax:
-    content: signin_card = 'application/vnd.microsoft.card.signin'
-  type: attribute
-  uid: botbuilder.core.card_factory.ContentTypes.signin_card
-- class: botbuilder.core.card_factory.ContentTypes
-  fullName: botbuilder.core.card_factory.ContentTypes.thumbnail_card
-  langs:
-  - python
-  module: botbuilder.core.card_factory
+  signature: signin_card = 'application/vnd.microsoft.card.signin'
+- uid: botbuilder.core.card_factory.ContentTypes.thumbnail_card
   name: thumbnail_card
-  syntax:
-    content: thumbnail_card = 'application/vnd.microsoft.card.thumbnail'
-  type: attribute
-  uid: botbuilder.core.card_factory.ContentTypes.thumbnail_card
-- class: botbuilder.core.card_factory.ContentTypes
-  fullName: botbuilder.core.card_factory.ContentTypes.video_card
-  langs:
-  - python
-  module: botbuilder.core.card_factory
+  signature: thumbnail_card = 'application/vnd.microsoft.card.thumbnail'
+- uid: botbuilder.core.card_factory.ContentTypes.video_card
   name: video_card
-  syntax:
-    content: video_card = 'application/vnd.microsoft.card.video'
-  type: attribute
-  uid: botbuilder.core.card_factory.ContentTypes.video_card
-references:
-- fullName: botbuilder.core.card_factory.ContentTypes.adaptive_card
-  isExternal: false
-  name: adaptive_card
-  parent: botbuilder.core.card_factory.ContentTypes
-  uid: botbuilder.core.card_factory.ContentTypes.adaptive_card
-- fullName: botbuilder.core.card_factory.ContentTypes.animation_card
-  isExternal: false
-  name: animation_card
-  parent: botbuilder.core.card_factory.ContentTypes
-  uid: botbuilder.core.card_factory.ContentTypes.animation_card
-- fullName: botbuilder.core.card_factory.ContentTypes.audio_card
-  isExternal: false
-  name: audio_card
-  parent: botbuilder.core.card_factory.ContentTypes
-  uid: botbuilder.core.card_factory.ContentTypes.audio_card
-- fullName: botbuilder.core.card_factory.ContentTypes.hero_card
-  isExternal: false
-  name: hero_card
-  parent: botbuilder.core.card_factory.ContentTypes
-  uid: botbuilder.core.card_factory.ContentTypes.hero_card
-- fullName: botbuilder.core.card_factory.ContentTypes.oauth_card
-  isExternal: false
-  name: oauth_card
-  parent: botbuilder.core.card_factory.ContentTypes
-  uid: botbuilder.core.card_factory.ContentTypes.oauth_card
-- fullName: botbuilder.core.card_factory.ContentTypes.receipt_card
-  isExternal: false
-  name: receipt_card
-  parent: botbuilder.core.card_factory.ContentTypes
-  uid: botbuilder.core.card_factory.ContentTypes.receipt_card
-- fullName: botbuilder.core.card_factory.ContentTypes.signin_card
-  isExternal: false
-  name: signin_card
-  parent: botbuilder.core.card_factory.ContentTypes
-  uid: botbuilder.core.card_factory.ContentTypes.signin_card
-- fullName: botbuilder.core.card_factory.ContentTypes.thumbnail_card
-  isExternal: false
-  name: thumbnail_card
-  parent: botbuilder.core.card_factory.ContentTypes
-  uid: botbuilder.core.card_factory.ContentTypes.thumbnail_card
-- fullName: botbuilder.core.card_factory.ContentTypes.video_card
-  isExternal: false
-  name: video_card
-  parent: botbuilder.core.card_factory.ContentTypes
-  uid: botbuilder.core.card_factory.ContentTypes.video_card
+  signature: video_card = 'application/vnd.microsoft.card.video'

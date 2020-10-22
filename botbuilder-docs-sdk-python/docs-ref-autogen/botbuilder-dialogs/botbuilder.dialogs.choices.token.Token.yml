@@ -1,18 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.dialogs.choices.token.Token
-  fullName: botbuilder.dialogs.choices.token.Token
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.dialogs.choices.token
-  name: Token
-  summary: Represents an individual token, such as a word in an input string.
-  syntax:
-    content: 'Token(start: int, end: int, text: str, normalized: str)'
-  type: class
-  uid: botbuilder.dialogs.choices.token.Token
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.choices.token.Token
+name: Token
+fullName: botbuilder.dialogs.choices.token.Token
+module: botbuilder.dialogs.choices.token
+inheritances:
+- builtins.object
+summary: Represents an individual token, such as a word in an input string.
+constructor:
+  syntax: 'Token(start: int, end: int, text: str, normalized: str)'

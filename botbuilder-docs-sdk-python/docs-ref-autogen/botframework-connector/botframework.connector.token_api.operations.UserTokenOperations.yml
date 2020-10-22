@@ -1,419 +1,254 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botframework.connector.token_api.operations.UserTokenOperations.exchange_async
-  - botframework.connector.token_api.operations.UserTokenOperations.get_aad_tokens
-  - botframework.connector.token_api.operations.UserTokenOperations.get_token
-  - botframework.connector.token_api.operations.UserTokenOperations.get_token_status
-  - botframework.connector.token_api.operations.UserTokenOperations.sign_out
-  - botframework.connector.token_api.operations.UserTokenOperations.models
-  class: botframework.connector.token_api.operations.UserTokenOperations
-  fullName: botframework.connector.token_api.operations.UserTokenOperations
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botframework.connector.token_api.operations
-  name: UserTokenOperations
-  summary: 'UserTokenOperations operations.
+### YamlMime:PythonClass
+uid: botframework.connector.token_api.operations.UserTokenOperations
+name: UserTokenOperations
+fullName: botframework.connector.token_api.operations.UserTokenOperations
+module: botframework.connector.token_api.operations
+inheritances:
+- builtins.object
+summary: 'UserTokenOperations operations.
 
 
-    You should not instantiate directly this class, but create a Client instance that
-    will create it for you and attach
+  You should not instantiate directly this class, but create a Client instance that
+  will create it for you and attach
 
-    it as attribute.'
-  syntax:
-    content: UserTokenOperations(client, config, serializer, deserializer)
-    parameters:
-    - description: Client for service requests.
-      id: client
-    - description: Configuration of service client.
-      id: config
-    - description: An object model serializer.
-      id: serializer
-    - description: An object model deserializer.
-      id: deserializer
-    variables:
-    - description: 'The API version to use for the request. Constant value: "token".'
-      id: api_version
-  type: class
-  uid: botframework.connector.token_api.operations.UserTokenOperations
-- class: botframework.connector.token_api.operations.UserTokenOperations
-  exceptions:
-  - type: botframework.tokenapi.models.ErrorResponseException
-  fullName: botframework.connector.token_api.operations.UserTokenOperations.exchange_async
-  langs:
-  - python
-  module: botframework.connector.token_api.operations
-  name: exchange_async(user_id, connection_name, channel_id, uri=None, token=None,
+  it as attribute.'
+constructor:
+  syntax: UserTokenOperations(client, config, serializer, deserializer)
+  parameters:
+  - name: client
+    description: Client for service requests.
+  - name: config
+    description: Configuration of service client.
+  - name: serializer
+    description: An object model serializer.
+  - name: deserializer
+    description: An object model deserializer.
+variables:
+- description: 'The API version to use for the request. Constant value: "token".'
+  name: api_version
+methods:
+- uid: botframework.connector.token_api.operations.UserTokenOperations.exchange_async
+  name: exchange_async
+  signature: exchange_async(user_id, connection_name, channel_id, uri=None, token=None,
     custom_headers=None, raw=False, **operation_config)
-  namewithoutparameters: exchange_async
-  syntax:
-    content: exchange_async(user_id, connection_name, channel_id, uri=None, token=None,
-      custom_headers=None, raw=False, **operation_config)
-    parameters:
-    - description: ''
-      id: user_id
-      isRequired: true
-      type:
-      - str
-    - description: ''
-      id: connection_name
-      isRequired: true
-      type:
-      - str
-    - description: ''
-      id: channel_id
-      isRequired: true
-      type:
-      - str
-    - defaultValue: None
-      description: ''
-      id: uri
-      type:
-      - str
-    - defaultValue: None
-      description: ''
-      id: token
-      type:
-      - str
-    - defaultValue: None
-      description: headers that will be added to the request
-      id: custom_headers
-      type:
-      - dict
-    - defaultValue: 'False'
-      description: 'returns the direct response alongside the
+  parameters:
+  - name: user_id
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: connection_name
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: channel_id
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: uri
+    defaultValue: None
+    types:
+    - <xref:str>
+  - name: token
+    defaultValue: None
+    types:
+    - <xref:str>
+  - name: custom_headers
+    description: headers that will be added to the request
+    defaultValue: None
+    types:
+    - <xref:dict>
+  - name: raw
+    description: 'returns the direct response alongside the
 
-        deserialized response'
-      id: raw
-      type:
-      - bool
-    - description: '*Operation configuration
+      deserialized response'
+    defaultValue: 'False'
+    types:
+    - <xref:bool>
+  - name: operation_config
+    description: '*Operation configuration
 
-        overrides*.'
-      id: operation_config
-      isRequired: true
-    return:
-      description: object or ClientRawResponse if raw=true
-      type:
-      - object
-      - msrest.pipeline.ClientRawResponse
-  type: method
-  uid: botframework.connector.token_api.operations.UserTokenOperations.exchange_async
-- class: botframework.connector.token_api.operations.UserTokenOperations
+      overrides*.'
+    isRequired: true
+  return:
+    description: object or ClientRawResponse if raw=true
+    types:
+    - <xref:object>
+    - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
   - type: botframework.tokenapi.models.ErrorResponseException
-  fullName: botframework.connector.token_api.operations.UserTokenOperations.get_aad_tokens
-  langs:
-  - python
-  module: botframework.connector.token_api.operations
-  name: get_aad_tokens(user_id, connection_name, channel_id=None, resource_urls=None,
+- uid: botframework.connector.token_api.operations.UserTokenOperations.get_aad_tokens
+  name: get_aad_tokens
+  signature: get_aad_tokens(user_id, connection_name, channel_id=None, resource_urls=None,
     custom_headers=None, raw=False, **operation_config)
-  namewithoutparameters: get_aad_tokens
-  syntax:
-    content: get_aad_tokens(user_id, connection_name, channel_id=None, resource_urls=None,
-      custom_headers=None, raw=False, **operation_config)
-    parameters:
-    - description: ''
-      id: user_id
-      isRequired: true
-      type:
-      - str
-    - description: ''
-      id: connection_name
-      isRequired: true
-      type:
-      - str
-    - defaultValue: None
-      description: ''
-      id: channel_id
-      type:
-      - str
-    - defaultValue: None
-      description: ''
-      id: resource_urls
-      type:
-      - list[str]
-    - defaultValue: None
-      description: headers that will be added to the request
-      id: custom_headers
-      type:
-      - dict
-    - defaultValue: 'False'
-      description: 'returns the direct response alongside the
+  parameters:
+  - name: user_id
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: connection_name
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: channel_id
+    defaultValue: None
+    types:
+    - <xref:str>
+  - name: resource_urls
+    defaultValue: None
+    types:
+    - <xref:list>[<xref:str>]
+  - name: custom_headers
+    description: headers that will be added to the request
+    defaultValue: None
+    types:
+    - <xref:dict>
+  - name: raw
+    description: 'returns the direct response alongside the
 
-        deserialized response'
-      id: raw
-      type:
-      - bool
-    - description: '*Operation configuration
+      deserialized response'
+    defaultValue: 'False'
+    types:
+    - <xref:bool>
+  - name: operation_config
+    description: '*Operation configuration
 
-        overrides*.'
-      id: operation_config
-      isRequired: true
-    return:
-      description: dict or ClientRawResponse if raw=true
-      type:
-      - dict[str, botframework.tokenapi.models.TokenResponse]
-      - msrest.pipeline.ClientRawResponse
-  type: method
-  uid: botframework.connector.token_api.operations.UserTokenOperations.get_aad_tokens
-- class: botframework.connector.token_api.operations.UserTokenOperations
+      overrides*.'
+    isRequired: true
+  return:
+    description: dict or ClientRawResponse if raw=true
+    types:
+    - <xref:dict>[<xref:str>, <xref:botframework.tokenapi.models.TokenResponse>]
+    - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
   - type: botframework.tokenapi.models.ErrorResponseException
-  fullName: botframework.connector.token_api.operations.UserTokenOperations.get_token
-  langs:
-  - python
-  module: botframework.connector.token_api.operations
-  name: get_token(user_id, connection_name, channel_id=None, code=None, custom_headers=None,
+- uid: botframework.connector.token_api.operations.UserTokenOperations.get_token
+  name: get_token
+  signature: get_token(user_id, connection_name, channel_id=None, code=None, custom_headers=None,
     raw=False, **operation_config)
-  namewithoutparameters: get_token
-  syntax:
-    content: get_token(user_id, connection_name, channel_id=None, code=None, custom_headers=None,
-      raw=False, **operation_config)
-    parameters:
-    - description: ''
-      id: user_id
-      isRequired: true
-      type:
-      - str
-    - description: ''
-      id: connection_name
-      isRequired: true
-      type:
-      - str
-    - defaultValue: None
-      description: ''
-      id: channel_id
-      type:
-      - str
-    - defaultValue: None
-      description: ''
-      id: code
-      type:
-      - str
-    - defaultValue: None
-      description: headers that will be added to the request
-      id: custom_headers
-      type:
-      - dict
-    - defaultValue: 'False'
-      description: 'returns the direct response alongside the
+  parameters:
+  - name: user_id
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: connection_name
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: channel_id
+    defaultValue: None
+    types:
+    - <xref:str>
+  - name: code
+    defaultValue: None
+    types:
+    - <xref:str>
+  - name: custom_headers
+    description: headers that will be added to the request
+    defaultValue: None
+    types:
+    - <xref:dict>
+  - name: raw
+    description: 'returns the direct response alongside the
 
-        deserialized response'
-      id: raw
-      type:
-      - bool
-    - description: '*Operation configuration
+      deserialized response'
+    defaultValue: 'False'
+    types:
+    - <xref:bool>
+  - name: operation_config
+    description: '*Operation configuration
 
-        overrides*.'
-      id: operation_config
-      isRequired: true
-    return:
-      description: TokenResponse or ClientRawResponse if raw=true
-      type:
-      - botframework.tokenapi.models.TokenResponse
-      - msrest.pipeline.ClientRawResponse
-  type: method
-  uid: botframework.connector.token_api.operations.UserTokenOperations.get_token
-- class: botframework.connector.token_api.operations.UserTokenOperations
+      overrides*.'
+    isRequired: true
+  return:
+    description: TokenResponse or ClientRawResponse if raw=true
+    types:
+    - <xref:botframework.tokenapi.models.TokenResponse>
+    - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
   - type: botframework.tokenapi.models.ErrorResponseException
-  fullName: botframework.connector.token_api.operations.UserTokenOperations.get_token_status
-  langs:
-  - python
-  module: botframework.connector.token_api.operations
-  name: get_token_status(user_id, channel_id=None, include=None, custom_headers=None,
+- uid: botframework.connector.token_api.operations.UserTokenOperations.get_token_status
+  name: get_token_status
+  signature: get_token_status(user_id, channel_id=None, include=None, custom_headers=None,
     raw=False, **operation_config)
-  namewithoutparameters: get_token_status
-  syntax:
-    content: get_token_status(user_id, channel_id=None, include=None, custom_headers=None,
-      raw=False, **operation_config)
-    parameters:
-    - description: ''
-      id: user_id
-      isRequired: true
-      type:
-      - str
-    - defaultValue: None
-      description: ''
-      id: channel_id
-      type:
-      - str
-    - defaultValue: None
-      description: ''
-      id: include
-      type:
-      - str
-    - defaultValue: None
-      description: headers that will be added to the request
-      id: custom_headers
-      type:
-      - dict
-    - defaultValue: 'False'
-      description: 'returns the direct response alongside the
+  parameters:
+  - name: user_id
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: channel_id
+    defaultValue: None
+    types:
+    - <xref:str>
+  - name: include
+    defaultValue: None
+    types:
+    - <xref:str>
+  - name: custom_headers
+    description: headers that will be added to the request
+    defaultValue: None
+    types:
+    - <xref:dict>
+  - name: raw
+    description: 'returns the direct response alongside the
 
-        deserialized response'
-      id: raw
-      type:
-      - bool
-    - description: '*Operation configuration
+      deserialized response'
+    defaultValue: 'False'
+    types:
+    - <xref:bool>
+  - name: operation_config
+    description: '*Operation configuration
 
-        overrides*.'
-      id: operation_config
-      isRequired: true
-    return:
-      description: list or ClientRawResponse if raw=true
-      type:
-      - list[botframework.tokenapi.models.TokenStatus]
-      - msrest.pipeline.ClientRawResponse
-  type: method
-  uid: botframework.connector.token_api.operations.UserTokenOperations.get_token_status
-- class: botframework.connector.token_api.operations.UserTokenOperations
+      overrides*.'
+    isRequired: true
+  return:
+    description: list or ClientRawResponse if raw=true
+    types:
+    - <xref:list>[<xref:botframework.tokenapi.models.TokenStatus>]
+    - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
   - type: botframework.tokenapi.models.ErrorResponseException
-  fullName: botframework.connector.token_api.operations.UserTokenOperations.sign_out
-  langs:
-  - python
-  module: botframework.connector.token_api.operations
-  name: sign_out(user_id, connection_name=None, channel_id=None, custom_headers=None,
+- uid: botframework.connector.token_api.operations.UserTokenOperations.sign_out
+  name: sign_out
+  signature: sign_out(user_id, connection_name=None, channel_id=None, custom_headers=None,
     raw=False, **operation_config)
-  namewithoutparameters: sign_out
-  syntax:
-    content: sign_out(user_id, connection_name=None, channel_id=None, custom_headers=None,
-      raw=False, **operation_config)
-    parameters:
-    - description: ''
-      id: user_id
-      isRequired: true
-      type:
-      - str
-    - defaultValue: None
-      description: ''
-      id: connection_name
-      type:
-      - str
-    - defaultValue: None
-      description: ''
-      id: channel_id
-      type:
-      - str
-    - defaultValue: None
-      description: headers that will be added to the request
-      id: custom_headers
-      type:
-      - dict
-    - defaultValue: 'False'
-      description: 'returns the direct response alongside the
+  parameters:
+  - name: user_id
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: connection_name
+    defaultValue: None
+    types:
+    - <xref:str>
+  - name: channel_id
+    defaultValue: None
+    types:
+    - <xref:str>
+  - name: custom_headers
+    description: headers that will be added to the request
+    defaultValue: None
+    types:
+    - <xref:dict>
+  - name: raw
+    description: 'returns the direct response alongside the
 
-        deserialized response'
-      id: raw
-      type:
-      - bool
-    - description: '*Operation configuration
+      deserialized response'
+    defaultValue: 'False'
+    types:
+    - <xref:bool>
+  - name: operation_config
+    description: '*Operation configuration
 
-        overrides*.'
-      id: operation_config
-      isRequired: true
-    return:
-      description: object or ClientRawResponse if raw=true
-      type:
-      - object
-      - msrest.pipeline.ClientRawResponse
-  type: method
-  uid: botframework.connector.token_api.operations.UserTokenOperations.sign_out
-- class: botframework.connector.token_api.operations.UserTokenOperations
-  fullName: botframework.connector.token_api.operations.UserTokenOperations.models
-  langs:
-  - python
-  module: botframework.connector.token_api.operations
+      overrides*.'
+    isRequired: true
+  return:
+    description: object or ClientRawResponse if raw=true
+    types:
+    - <xref:object>
+    - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - type: botframework.tokenapi.models.ErrorResponseException
+attributes:
+- uid: botframework.connector.token_api.operations.UserTokenOperations.models
   name: models
-  syntax:
-    content: models = <module 'botframework.connector.token_api.models' from 'c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\site-packages\\botframework\\connector\\token_api\\models\\__init__.py'>
-  type: attribute
-  uid: botframework.connector.token_api.operations.UserTokenOperations.models
-references:
-- fullName: botframework.connector.token_api.operations.UserTokenOperations.exchange_async
-  isExternal: false
-  name: exchange_async(user_id, connection_name, channel_id, uri=None, token=None,
-    custom_headers=None, raw=False, **operation_config)
-  parent: botframework.connector.token_api.operations.UserTokenOperations
-  uid: botframework.connector.token_api.operations.UserTokenOperations.exchange_async
-- fullName: botframework.connector.token_api.operations.UserTokenOperations.get_aad_tokens
-  isExternal: false
-  name: get_aad_tokens(user_id, connection_name, channel_id=None, resource_urls=None,
-    custom_headers=None, raw=False, **operation_config)
-  parent: botframework.connector.token_api.operations.UserTokenOperations
-  uid: botframework.connector.token_api.operations.UserTokenOperations.get_aad_tokens
-- fullName: botframework.connector.token_api.operations.UserTokenOperations.get_token
-  isExternal: false
-  name: get_token(user_id, connection_name, channel_id=None, code=None, custom_headers=None,
-    raw=False, **operation_config)
-  parent: botframework.connector.token_api.operations.UserTokenOperations
-  uid: botframework.connector.token_api.operations.UserTokenOperations.get_token
-- fullName: botframework.connector.token_api.operations.UserTokenOperations.get_token_status
-  isExternal: false
-  name: get_token_status(user_id, channel_id=None, include=None, custom_headers=None,
-    raw=False, **operation_config)
-  parent: botframework.connector.token_api.operations.UserTokenOperations
-  uid: botframework.connector.token_api.operations.UserTokenOperations.get_token_status
-- fullName: botframework.connector.token_api.operations.UserTokenOperations.sign_out
-  isExternal: false
-  name: sign_out(user_id, connection_name=None, channel_id=None, custom_headers=None,
-    raw=False, **operation_config)
-  parent: botframework.connector.token_api.operations.UserTokenOperations
-  uid: botframework.connector.token_api.operations.UserTokenOperations.sign_out
-- fullName: botframework.connector.token_api.operations.UserTokenOperations.models
-  isExternal: false
-  name: models
-  parent: botframework.connector.token_api.operations.UserTokenOperations
-  uid: botframework.connector.token_api.operations.UserTokenOperations.models
-- fullName: list[str]
-  name: list[str]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: str
-    name: str
-    uid: str
-  - fullName: ']'
-    name: ']'
-  uid: list[str]
-- fullName: dict[str, botframework.tokenapi.models.TokenResponse]
-  name: dict[str, TokenResponse]
-  spec.python:
-  - fullName: dict
-    name: dict
-    uid: dict
-  - fullName: '['
-    name: '['
-  - fullName: str
-    name: str
-    uid: str
-  - fullName: ', '
-    name: ', '
-  - fullName: botframework.tokenapi.models.TokenResponse
-    name: TokenResponse
-    uid: botframework.tokenapi.models.TokenResponse
-  - fullName: ']'
-    name: ']'
-  uid: dict[str, botframework.tokenapi.models.TokenResponse]
-- fullName: list[botframework.tokenapi.models.TokenStatus]
-  name: list[TokenStatus]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.tokenapi.models.TokenStatus
-    name: TokenStatus
-    uid: botframework.tokenapi.models.TokenStatus
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.tokenapi.models.TokenStatus]
+  signature: models = <module 'botframework.connector.token_api.models' from 'c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\site-packages\\botframework\\connector\\token_api\\models\\__init__.py'>

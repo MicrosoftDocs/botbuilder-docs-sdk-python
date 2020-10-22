@@ -1,30 +1,19 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.AppBasedLinkQuery
-  fullName: botbuilder.schema.teams.AppBasedLinkQuery
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: AppBasedLinkQuery
-  summary: Invoke request body type for app-based link query.
-  syntax:
-    content: 'AppBasedLinkQuery(*, url: str = None, state: str = None, **kwargs) ->
-      None'
-    parameters:
-    - description: Url queried by user
-      id: url
-      type:
-      - str
-    - description: The magic code for OAuth Flow
-      id: state
-      type:
-      - str
-  type: class
-  uid: botbuilder.schema.teams.AppBasedLinkQuery
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.AppBasedLinkQuery
+name: AppBasedLinkQuery
+fullName: botbuilder.schema.teams.AppBasedLinkQuery
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: Invoke request body type for app-based link query.
+constructor:
+  syntax: 'AppBasedLinkQuery(*, url: str = None, state: str = None, **kwargs) -> None'
+  parameters:
+  - name: url
+    description: Url queried by user
+    types:
+    - <xref:str>
+  - name: state
+    description: The magic code for OAuth Flow
+    types:
+    - <xref:str>

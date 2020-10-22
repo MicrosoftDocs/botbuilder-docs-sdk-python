@@ -1,184 +1,132 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.begin_dialog
-  - botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.continue_dialog
-  - botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.on_prompt
-  - botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.on_recognize
-  - botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.reprompt_dialog
-  - botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.resume_dialog
-  - botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.persisted_options
-  - botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.persisted_state
-  class: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
-  fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: abc.ABC
-    type: botbuilder.dialogs.dialog.Dialog
-  langs:
-  - python
-  module: botbuilder.dialogs.prompts.activity_prompt
-  name: ActivityPrompt
-  summary: "Waits for an activity to be received.\n\n   This prompt requires a validator\
-    \ be passed in and is useful when waiting for non-message\n   activities like\
-    \ an event to be received. The validator can ignore received events until the\n\
-    \   expected activity is received."
-  syntax:
-    content: 'ActivityPrompt(dialog_id: str, validator: typing.Callable[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext,
-      bool])'
-    variables:
-    - description: ''
-      id: persisted_options
-    - description: ''
-      id: persisted_state
-      type:
-      - str
-  type: class
-  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
-- class: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
-  fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.begin_dialog
-  langs:
-  - python
-  module: botbuilder.dialogs.prompts.activity_prompt
-  name: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    options: botbuilder.dialogs.prompts.prompt_options.PromptOptions = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
-  namewithoutparameters: begin_dialog
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
+name: ActivityPrompt
+fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
+module: botbuilder.dialogs.prompts.activity_prompt
+inheritances:
+- botbuilder.dialogs.dialog.Dialog
+summary: "Waits for an activity to be received.\n\n   This prompt requires a validator\
+  \ be passed in and is useful when waiting for non-message\n   activities like an\
+  \ event to be received. The validator can ignore received events until the\n   expected\
+  \ activity is received."
+constructor:
+  syntax: 'ActivityPrompt(dialog_id: str, validator: typing.Callable[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext,
+    bool])'
+variables:
+- name: persisted_options
+- name: persisted_state
+  types:
+  - <xref:str>
+methods:
+- uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.begin_dialog
+  name: begin_dialog
   summary: Called when a prompt dialog is pushed onto the dialog stack and is being
     activated.
-  syntax:
-    content: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-      options: botbuilder.dialogs.prompts.prompt_options.PromptOptions = None) ->
-      botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
-    parameters:
-    - description: The dialog context for the current turn of the conversation.
-      id: dialog_context
-      isRequired: true
-      type:
-      - botbuilder.dialogs.prompts.activity_prompt.DialogContext
-    - description: Optional, additional information to pass to the prompt being started.
-      id: options
-      isRequired: true
-      type:
-      - botbuilder.dialogs.prompts.activity_prompt.PromptOptions
-  type: method
-  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.begin_dialog
-- class: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
-  fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.continue_dialog
-  langs:
-  - python
-  module: botbuilder.dialogs.prompts.activity_prompt
-  name: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
-    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
-  namewithoutparameters: continue_dialog
+  signature: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    options: botbuilder.dialogs.prompts.prompt_options.PromptOptions = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parameters:
+  - name: dialog_context
+    description: The dialog context for the current turn of the conversation.
+    isRequired: true
+    types:
+    - <xref:botbuilder.dialogs.prompts.activity_prompt.DialogContext>
+  - name: options
+    description: Optional, additional information to pass to the prompt being started.
+    isRequired: true
+    types:
+    - <xref:botbuilder.dialogs.prompts.activity_prompt.PromptOptions>
+- uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.continue_dialog
+  name: continue_dialog
   summary: Called when a prompt dialog is the active dialog and the user replied with
     a new activity.
-  syntax:
-    content: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
-      -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
-    parameters:
-    - description: The dialog context for the current turn of the conversation.
-      id: dialog_context
-      isRequired: true
-      type:
-      - botbuilder.dialogs.prompts.activity_prompt.DialogContext
-  type: method
-  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.continue_dialog
-- class: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
-  fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.on_prompt
-  langs:
-  - python
-  module: botbuilder.dialogs.prompts.activity_prompt
-  name: 'on_prompt(context: botbuilder.core.turn_context.TurnContext, state: typing.Dict[str,
-    dict], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions, is_retry:
-    bool = False)'
-  namewithoutparameters: on_prompt
+  signature: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parameters:
+  - name: dialog_context
+    description: The dialog context for the current turn of the conversation.
+    isRequired: true
+    types:
+    - <xref:botbuilder.dialogs.prompts.activity_prompt.DialogContext>
+- uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.on_prompt
+  name: on_prompt
   summary: Called anytime the derived class should send the user a prompt.
-  syntax:
-    content: 'on_prompt(context: botbuilder.core.turn_context.TurnContext, state:
-      typing.Dict[str, dict], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
-      is_retry: bool = False)'
-    parameters:
-    - description: The dialog context for the current turn of the conversation
-      id: dialog_context
-      isRequired: true
-      type:
-      - botbuilder.dialogs.prompts.activity_prompt.DialogContext
-    - description: Additional state being persisted for the prompt.
-      id: state
-      isRequired: true
-      type:
-      - typing.Dict[str, dict]
-    - description: Options that the prompt started with in the call to <xref:DialogContext.prompt>.
-      id: options
-      isRequired: true
-      type:
-      - botbuilder.dialogs.prompts.activity_prompt.PromptOptions
-    - description: If *true* the users response wasn't recognized and the re-prompt
-        should be sent.
-      id: isRetry
-      isRequired: true
-      type:
-      - bool
-  type: method
-  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.on_prompt
-- class: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
-  fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.on_recognize
-  langs:
-  - python
-  module: botbuilder.dialogs.prompts.activity_prompt
-  name: 'on_recognize(context: botbuilder.core.turn_context.TurnContext, state: typing.Dict[str,
-    object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions) ->
-    botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
-  namewithoutparameters: on_recognize
+  signature: 'on_prompt(context: botbuilder.core.turn_context.TurnContext, state:
+    typing.Dict[str, dict], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
+    is_retry: bool = False)'
+  parameters:
+  - name: dialog_context
+    description: The dialog context for the current turn of the conversation
+    isRequired: true
+    types:
+    - <xref:botbuilder.dialogs.prompts.activity_prompt.DialogContext>
+  - name: state
+    description: Additional state being persisted for the prompt.
+    isRequired: true
+    types:
+    - <xref:typing.Dict>[<xref:str>, <xref:dict>]
+  - name: options
+    description: Options that the prompt started with in the call to <xref:DialogContext.prompt>.
+    isRequired: true
+    types:
+    - <xref:botbuilder.dialogs.prompts.activity_prompt.PromptOptions>
+  - name: isRetry
+    description: If *true* the users response wasn't recognized and the re-prompt
+      should be sent.
+    isRequired: true
+    types:
+    - <xref:bool>
+- uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.on_recognize
+  name: on_recognize
   summary: When overridden in a derived class, attempts to recognize the incoming
     activity.
-  syntax:
-    content: 'on_recognize(context: botbuilder.core.turn_context.TurnContext, state:
-      typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
-      -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
-    parameters:
-    - description: Context for the current turn of conversation with the user.
-      id: context
-      isRequired: true
-      type:
-      - botbuilder.core.TurnContext
-    - description: Contains state for the current instance of the prompt on the dialog
-        stack.
-      id: state
-      isRequired: true
-      type:
-      - typing.Dict[str, dict]
-    - description: A prompt options object
-      id: options
-      isRequired: true
-      type:
-      - botbuilder.dialogs.prompts.activity_prompt.PromptOptions
-  type: method
-  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.on_recognize
-- class: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
-  fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.reprompt_dialog
-  langs:
-  - python
-  module: botbuilder.dialogs.prompts.activity_prompt
-  name: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
+  signature: 'on_recognize(context: botbuilder.core.turn_context.TurnContext, state:
+    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
+    -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
+  parameters:
+  - name: context
+    description: Context for the current turn of conversation with the user.
+    isRequired: true
+    types:
+    - <xref:botbuilder.core.TurnContext>
+  - name: state
+    description: Contains state for the current instance of the prompt on the dialog
+      stack.
+    isRequired: true
+    types:
+    - <xref:typing.Dict>[<xref:str>, <xref:dict>]
+  - name: options
+    description: A prompt options object
+    isRequired: true
+    types:
+    - <xref:botbuilder.dialogs.prompts.activity_prompt.PromptOptions>
+- uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.reprompt_dialog
+  name: reprompt_dialog
+  signature: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
     botbuilder.dialogs.dialog_instance.DialogInstance)'
-  namewithoutparameters: reprompt_dialog
-  syntax:
-    content: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
-      botbuilder.dialogs.dialog_instance.DialogInstance)'
-  type: method
-  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.reprompt_dialog
-- class: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
-  fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.resume_dialog
-  langs:
-  - python
-  module: botbuilder.dialogs.prompts.activity_prompt
-  name: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+- uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.resume_dialog
+  name: resume_dialog
+  summary: 'Called when a prompt dialog resumes being the active dialog on the dialog
+    stack, such
+
+    as when the previous active dialog on the stack completes.'
+  signature: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object = None)'
-  namewithoutparameters: resume_dialog
+  parameters:
+  - name: dialog_context
+    description: The dialog context for the current turn of the conversation
+    isRequired: true
+    types:
+    - <xref:botbuilder.dialogs.prompts.activity_prompt.DialogContext>
+  - name: reason
+    description: An enum indicating why the dialog resumed.
+    isRequired: true
+    types:
+    - <xref:botbuilder.dialogs.prompts.activity_prompt.DialogReason>
+  - name: result
+    description: Optional, value returned from the previous dialog on the stack.
+    isRequired: true
+    types:
+    - <xref:object>
   remarks: 'Prompts are typically leaf nodes on the stack but the dev is free to push
     other dialogs
 
@@ -193,116 +141,10 @@ items:
     simply re-prompt the user.
 
     '
-  summary: 'Called when a prompt dialog resumes being the active dialog on the dialog
-    stack, such
-
-    as when the previous active dialog on the stack completes.'
-  syntax:
-    content: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-      reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object = None)'
-    parameters:
-    - description: The dialog context for the current turn of the conversation
-      id: dialog_context
-      isRequired: true
-      type:
-      - botbuilder.dialogs.prompts.activity_prompt.DialogContext
-    - description: An enum indicating why the dialog resumed.
-      id: reason
-      isRequired: true
-      type:
-      - botbuilder.dialogs.prompts.activity_prompt.DialogReason
-    - description: Optional, value returned from the previous dialog on the stack.
-      id: result
-      isRequired: true
-      type:
-      - object
-  type: method
-  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.resume_dialog
-- class: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
-  fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.persisted_options
-  langs:
-  - python
-  module: botbuilder.dialogs.prompts.activity_prompt
+attributes:
+- uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.persisted_options
   name: persisted_options
-  syntax:
-    content: persisted_options = 'options'
-  type: attribute
-  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.persisted_options
-- class: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
-  fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.persisted_state
-  langs:
-  - python
-  module: botbuilder.dialogs.prompts.activity_prompt
+  signature: persisted_options = 'options'
+- uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.persisted_state
   name: persisted_state
-  syntax:
-    content: persisted_state = 'state'
-  type: attribute
-  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.persisted_state
-references:
-- fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.begin_dialog
-  isExternal: false
-  name: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    options: botbuilder.dialogs.prompts.prompt_options.PromptOptions = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
-  parent: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
-  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.begin_dialog
-- fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.continue_dialog
-  isExternal: false
-  name: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
-    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
-  parent: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
-  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.continue_dialog
-- fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.on_prompt
-  isExternal: false
-  name: 'on_prompt(context: botbuilder.core.turn_context.TurnContext, state: typing.Dict[str,
-    dict], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions, is_retry:
-    bool = False)'
-  parent: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
-  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.on_prompt
-- fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.on_recognize
-  isExternal: false
-  name: 'on_recognize(context: botbuilder.core.turn_context.TurnContext, state: typing.Dict[str,
-    object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions) ->
-    botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
-  parent: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
-  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.on_recognize
-- fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.reprompt_dialog
-  isExternal: false
-  name: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
-    botbuilder.dialogs.dialog_instance.DialogInstance)'
-  parent: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
-  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.reprompt_dialog
-- fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.resume_dialog
-  isExternal: false
-  name: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object = None)'
-  parent: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
-  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.resume_dialog
-- fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.persisted_options
-  isExternal: false
-  name: persisted_options
-  parent: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
-  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.persisted_options
-- fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.persisted_state
-  isExternal: false
-  name: persisted_state
-  parent: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
-  uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.persisted_state
-- fullName: typing.Dict[str, dict]
-  name: Dict[str, dict]
-  spec.python:
-  - fullName: typing.Dict
-    name: Dict
-    uid: typing.Dict
-  - fullName: '['
-    name: '['
-  - fullName: str
-    name: str
-    uid: str
-  - fullName: ', '
-    name: ', '
-  - fullName: dict
-    name: dict
-    uid: dict
-  - fullName: ']'
-    name: ']'
-  uid: typing.Dict[str, dict]
+  signature: persisted_state = 'state'

@@ -1,52 +1,31 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.invoke_response.InvokeResponse.is_successful_status_code
-  class: botbuilder.core.invoke_response.InvokeResponse
-  fullName: botbuilder.core.invoke_response.InvokeResponse
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.core.invoke_response
-  name: InvokeResponse
-  summary: 'Tuple class containing an HTTP Status Code and a JSON serializable
+### YamlMime:PythonClass
+uid: botbuilder.core.invoke_response.InvokeResponse
+name: InvokeResponse
+fullName: botbuilder.core.invoke_response.InvokeResponse
+module: botbuilder.core.invoke_response
+inheritances:
+- builtins.object
+summary: 'Tuple class containing an HTTP Status Code and a JSON serializable
 
-    object. The HTTP Status code is, in the invoke activity scenario, what will
+  object. The HTTP Status code is, in the invoke activity scenario, what will
 
-    be set in the resulting POST. The Body of the resulting POST will be
+  be set in the resulting POST. The Body of the resulting POST will be
 
-    JSON serialized content.
+  JSON serialized content.
 
 
-    The body content is defined by the producer.  The caller must know what
+  The body content is defined by the producer.  The caller must know what
 
-    the content is and deserialize as needed.'
-  syntax:
-    content: 'InvokeResponse(status: int = None, body: object = None)'
-  type: class
-  uid: botbuilder.core.invoke_response.InvokeResponse
-- class: botbuilder.core.invoke_response.InvokeResponse
-  fullName: botbuilder.core.invoke_response.InvokeResponse.is_successful_status_code
-  langs:
-  - python
-  module: botbuilder.core.invoke_response
-  name: is_successful_status_code() -> bool
-  namewithoutparameters: is_successful_status_code
+  the content is and deserialize as needed.'
+constructor:
+  syntax: 'InvokeResponse(status: int = None, body: object = None)'
+methods:
+- uid: botbuilder.core.invoke_response.InvokeResponse.is_successful_status_code
+  name: is_successful_status_code
   summary: 'Gets a value indicating whether the invoke response was successful.
 
     :return: A value that indicates if the HTTP response was successful. true if status
     is in
 
     the Successful range (200-299); otherwise false.'
-  syntax:
-    content: is_successful_status_code() -> bool
-  type: method
-  uid: botbuilder.core.invoke_response.InvokeResponse.is_successful_status_code
-references:
-- fullName: botbuilder.core.invoke_response.InvokeResponse.is_successful_status_code
-  isExternal: false
-  name: is_successful_status_code() -> bool
-  parent: botbuilder.core.invoke_response.InvokeResponse
-  uid: botbuilder.core.invoke_response.InvokeResponse.is_successful_status_code
+  signature: is_successful_status_code() -> bool

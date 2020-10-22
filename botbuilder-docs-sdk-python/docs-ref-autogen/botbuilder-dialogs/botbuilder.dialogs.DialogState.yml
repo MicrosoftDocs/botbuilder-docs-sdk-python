@@ -1,40 +1,20 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.dialogs.DialogState.dialog_stack
-  class: botbuilder.dialogs.DialogState
-  fullName: botbuilder.dialogs.DialogState
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.dialogs
-  name: DialogState
-  summary: Contains state information for the dialog stack.
-  syntax:
-    content: 'DialogState(stack: typing.List[botbuilder.dialogs.dialog_instance.DialogInstance]
-      = None)'
-  type: class
-  uid: botbuilder.dialogs.DialogState
-- class: botbuilder.dialogs.DialogState
-  fullName: botbuilder.dialogs.DialogState.dialog_stack
-  langs:
-  - python
-  module: botbuilder.dialogs
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.DialogState
+name: DialogState
+fullName: botbuilder.dialogs.DialogState
+module: botbuilder.dialogs
+inheritances:
+- builtins.object
+summary: Contains state information for the dialog stack.
+constructor:
+  syntax: 'DialogState(stack: typing.List[botbuilder.dialogs.dialog_instance.DialogInstance]
+    = None)'
+attributes:
+- uid: botbuilder.dialogs.DialogState.dialog_stack
   name: dialog_stack
   summary: Initializes a new instance of the <xref:botbuilder.dialogs.DialogState>
     class.
-  syntax:
-    return:
-      description: The state information to initialize the stack with.
-      type:
-      - typing.List
-  type: attribute
-  uid: botbuilder.dialogs.DialogState.dialog_stack
-references:
-- fullName: botbuilder.dialogs.DialogState.dialog_stack
-  isExternal: false
-  name: dialog_stack
-  parent: botbuilder.dialogs.DialogState
-  uid: botbuilder.dialogs.DialogState.dialog_stack
+  return:
+    description: The state information to initialize the stack with.
+    types:
+    - <xref:typing.List>

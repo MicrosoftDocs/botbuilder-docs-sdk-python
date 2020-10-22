@@ -1,73 +1,18 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor.can_process
-  - botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor.detect_aiohttp
-  - botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor.get_request_body
-  class: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor
-  fullName: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: abc.ABC
-    type: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
-  langs:
-  - python
-  module: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor
-  name: AiohttpTelemetryProcessor
-  summary: ''
-  syntax: {}
-  type: class
-  uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor
-- class: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor
-  fullName: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor.can_process
-  langs:
-  - python
-  module: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor
-  name: can_process() -> bool
-  namewithoutparameters: can_process
-  syntax:
-    content: can_process() -> bool
-  type: method
-  uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor.can_process
-- class: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor
-  fullName: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor.detect_aiohttp
-  langs:
-  - python
-  module: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor
-  name: detect_aiohttp() -> bool
-  namewithoutparameters: detect_aiohttp
+### YamlMime:PythonClass
+uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor
+name: AiohttpTelemetryProcessor
+fullName: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor
+module: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor
+inheritances:
+- botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
+methods:
+- uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor.can_process
+  name: can_process
+  signature: can_process() -> bool
+- uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor.detect_aiohttp
+  name: detect_aiohttp
   summary: Detects if running in aiohttp.
-  syntax:
-    content: detect_aiohttp() -> bool
-  type: method
-  uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor.detect_aiohttp
-- class: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor
-  fullName: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor.get_request_body
-  langs:
-  - python
-  module: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor
-  name: get_request_body() -> str
-  namewithoutparameters: get_request_body
-  syntax:
-    content: get_request_body() -> str
-  type: method
-  uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor.get_request_body
-references:
-- fullName: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor.can_process
-  isExternal: false
-  name: can_process() -> bool
-  parent: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor
-  uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor.can_process
-- fullName: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor.detect_aiohttp
-  isExternal: false
-  name: detect_aiohttp() -> bool
-  parent: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor
-  uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor.detect_aiohttp
-- fullName: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor.get_request_body
-  isExternal: false
-  name: get_request_body() -> str
-  parent: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor
-  uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor.get_request_body
+  signature: detect_aiohttp() -> bool
+- uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor.get_request_body
+  name: get_request_body
+  signature: get_request_body() -> str

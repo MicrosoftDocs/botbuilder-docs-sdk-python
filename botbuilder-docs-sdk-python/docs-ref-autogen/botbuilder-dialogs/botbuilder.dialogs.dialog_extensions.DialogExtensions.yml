@@ -1,37 +1,13 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.dialogs.dialog_extensions.DialogExtensions.run_dialog
-  class: botbuilder.dialogs.dialog_extensions.DialogExtensions
-  fullName: botbuilder.dialogs.dialog_extensions.DialogExtensions
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.dialogs.dialog_extensions
-  name: DialogExtensions
-  syntax: {}
-  type: class
-  uid: botbuilder.dialogs.dialog_extensions.DialogExtensions
-- class: botbuilder.dialogs.dialog_extensions.DialogExtensions
-  fullName: botbuilder.dialogs.dialog_extensions.DialogExtensions.run_dialog
-  langs:
-  - python
-  module: botbuilder.dialogs.dialog_extensions
-  name: 'run_dialog(dialog: botbuilder.dialogs.dialog.Dialog, turn_context: botbuilder.core.turn_context.TurnContext,
-    accessor: botbuilder.core.state_property_accessor.StatePropertyAccessor)'
-  namewithoutparameters: run_dialog
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.dialog_extensions.DialogExtensions
+name: DialogExtensions
+fullName: botbuilder.dialogs.dialog_extensions.DialogExtensions
+module: botbuilder.dialogs.dialog_extensions
+inheritances:
+- builtins.object
+methods:
+- uid: botbuilder.dialogs.dialog_extensions.DialogExtensions.run_dialog
+  name: run_dialog
   summary: Creates a dialog stack and starts a dialog, pushing it onto the stack.
-  syntax:
-    content: 'run_dialog(dialog: botbuilder.dialogs.dialog.Dialog, turn_context: botbuilder.core.turn_context.TurnContext,
-      accessor: botbuilder.core.state_property_accessor.StatePropertyAccessor)'
-  type: method
-  uid: botbuilder.dialogs.dialog_extensions.DialogExtensions.run_dialog
-references:
-- fullName: botbuilder.dialogs.dialog_extensions.DialogExtensions.run_dialog
-  isExternal: false
-  name: 'run_dialog(dialog: botbuilder.dialogs.dialog.Dialog, turn_context: botbuilder.core.turn_context.TurnContext,
+  signature: 'run_dialog(dialog: botbuilder.dialogs.dialog.Dialog, turn_context: botbuilder.core.turn_context.TurnContext,
     accessor: botbuilder.core.state_property_accessor.StatePropertyAccessor)'
-  parent: botbuilder.dialogs.dialog_extensions.DialogExtensions
-  uid: botbuilder.dialogs.dialog_extensions.DialogExtensions.run_dialog

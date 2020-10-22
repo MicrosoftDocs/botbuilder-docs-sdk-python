@@ -1,22 +1,12 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.ai.qna.models.QnAResponseContext
-  fullName: botbuilder.ai.qna.models.QnAResponseContext
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.ai.qna.models
-  name: QnAResponseContext
-  summary: 'The context associated with QnA.
+### YamlMime:PythonClass
+uid: botbuilder.ai.qna.models.QnAResponseContext
+name: QnAResponseContext
+fullName: botbuilder.ai.qna.models.QnAResponseContext
+module: botbuilder.ai.qna.models
+inheritances:
+- msrest.serialization.Model
+summary: 'The context associated with QnA.
 
-    Used to mark if the qna response has related prompts.'
-  syntax:
-    content: QnAResponseContext(**kwargs)
-  type: class
-  uid: botbuilder.ai.qna.models.QnAResponseContext
-references: []
+  Used to mark if the qna response has related prompts.'
+constructor:
+  syntax: QnAResponseContext(**kwargs)

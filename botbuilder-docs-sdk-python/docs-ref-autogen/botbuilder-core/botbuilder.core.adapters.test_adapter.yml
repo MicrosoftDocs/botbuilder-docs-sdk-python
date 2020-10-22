@@ -1,25 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.adapters.test_adapter.ExchangeableToken
-  - botbuilder.core.adapters.test_adapter.TestAdapter
-  - botbuilder.core.adapters.test_adapter.TestFlow
-  - botbuilder.core.adapters.test_adapter.TokenMagicCode
-  - botbuilder.core.adapters.test_adapter.UserToken
-  - botbuilder.core.adapters.test_adapter.validate_activity
-  fullName: botbuilder.core.adapters.test_adapter
-  langs:
-  - python
-  module: botbuilder.core.adapters.test_adapter
-  name: test_adapter
-  type: module
-  uid: botbuilder.core.adapters.test_adapter
-- fullName: botbuilder.core.adapters.test_adapter.validate_activity
-  langs:
-  - python
-  module: botbuilder.core.adapters.test_adapter
-  name: validate_activity(activity, expected) -> None
+### YamlMime:PythonModule
+uid: botbuilder.core.adapters.test_adapter
+name: test_adapter
+fullName: botbuilder.core.adapters.test_adapter
+functions:
+- uid: botbuilder.core.adapters.test_adapter.validate_activity
+  name: validate_activity
   summary: 'Helper method that compares activities
 
     :param activity:
@@ -27,38 +12,10 @@ items:
     :param expected:
 
     :return:'
-  syntax:
-    content: validate_activity(activity, expected) -> None
-  type: function
-  uid: botbuilder.core.adapters.test_adapter.validate_activity
-references:
-- fullName: botbuilder.core.adapters.test_adapter.ExchangeableToken
-  isExternal: false
-  name: ExchangeableToken
-  parent: botbuilder.core.adapters.test_adapter
-  uid: botbuilder.core.adapters.test_adapter.ExchangeableToken
-- fullName: botbuilder.core.adapters.test_adapter.TestAdapter
-  isExternal: false
-  name: TestAdapter
-  parent: botbuilder.core.adapters.test_adapter
-  uid: botbuilder.core.adapters.test_adapter.TestAdapter
-- fullName: botbuilder.core.adapters.test_adapter.TestFlow
-  isExternal: false
-  name: TestFlow
-  parent: botbuilder.core.adapters.test_adapter
-  uid: botbuilder.core.adapters.test_adapter.TestFlow
-- fullName: botbuilder.core.adapters.test_adapter.TokenMagicCode
-  isExternal: false
-  name: TokenMagicCode
-  parent: botbuilder.core.adapters.test_adapter
-  uid: botbuilder.core.adapters.test_adapter.TokenMagicCode
-- fullName: botbuilder.core.adapters.test_adapter.UserToken
-  isExternal: false
-  name: UserToken
-  parent: botbuilder.core.adapters.test_adapter
-  uid: botbuilder.core.adapters.test_adapter.UserToken
-- fullName: botbuilder.core.adapters.test_adapter.validate_activity
-  isExternal: false
-  name: validate_activity(activity, expected) -> None
-  parent: botbuilder.core.adapters.test_adapter
-  uid: botbuilder.core.adapters.test_adapter.validate_activity
+  signature: validate_activity(activity, expected) -> None
+classes:
+- botbuilder.core.adapters.test_adapter.ExchangeableToken
+- botbuilder.core.adapters.test_adapter.TestAdapter
+- botbuilder.core.adapters.test_adapter.TestFlow
+- botbuilder.core.adapters.test_adapter.TokenMagicCode
+- botbuilder.core.adapters.test_adapter.UserToken

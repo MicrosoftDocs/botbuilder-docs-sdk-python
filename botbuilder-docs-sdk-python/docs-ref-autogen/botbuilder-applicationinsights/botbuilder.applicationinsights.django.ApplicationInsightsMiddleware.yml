@@ -1,177 +1,100 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_exception
-  - botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_request
-  - botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_response
-  - botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_template_response
-  - botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_view
-  class: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware
-  fullName: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.applicationinsights.django
-  name: ApplicationInsightsMiddleware
-  summary: "This class is a Django middleware that automatically enables request and\
-    \ exception telemetry.  Django versions\n1.7 and newer are supported.\n\nTo enable,\
-    \ add this class to your settings.py file in MIDDLEWARE_CLASSES (pre-1.10) or\
-    \ MIDDLEWARE (1.10 and newer):\n\n<!-- literal_block {\"ids\": [], \"classes\"\
-    : [\"code\", \"python\"], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"\
-    xml:space\": \"preserve\"} -->\n\n````\n\n   # If on Django < 1.10\n   MIDDLEWARE_CLASSES\
-    \ = [\n       # ... or whatever is below for you ...\n       'django.middleware.security.SecurityMiddleware',\n\
-    \       'django.contrib.sessions.middleware.SessionMiddleware',\n       'django.middleware.common.CommonMiddleware',\n\
-    \       'django.middleware.csrf.CsrfViewMiddleware',\n       'django.contrib.auth.middleware.AuthenticationMiddleware',\n\
-    \       'django.contrib.auth.middleware.SessionAuthenticationMiddleware',\n  \
-    \     'django.contrib.messages.middleware.MessageMiddleware',\n       'django.middleware.clickjacking.XFrameOptionsMiddleware',\n\
-    \       # ... or whatever is above for you ...\n       'botbuilder.applicationinsights.django.ApplicationInsightsMiddleware',\
-    \   # Add this middleware to the end\n   ]\n\n   # If on Django >= 1.10\n   MIDDLEWARE\
-    \ = [\n       # ... or whatever is below for you ...\n       'django.middleware.security.SecurityMiddleware',\n\
-    \       'django.contrib.sessions.middleware.SessionMiddleware',\n       'django.middleware.common.CommonMiddleware',\n\
-    \       'django.middleware.csrf.CsrfViewMiddleware',\n       'django.contrib.auth.middleware.AuthenticationMiddleware',\n\
-    \       'django.contrib.messages.middleware.MessageMiddleware',\n       'django.middleware.clickjacking.XFrameOptionsMiddleware',\n\
-    \       # ... or whatever is above for you ...\n       'botbuilder.applicationinsights.django.ApplicationInsightsMiddleware',\
-    \   # Add this middleware to the end\n   ]\n   ````\n\nAnd then, add the following\
-    \ to your settings.py file:\n\n<!-- literal_block {\"ids\": [], \"classes\": [\"\
-    code\", \"python\"], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\"\
-    : \"preserve\"} -->\n\n````\n\n   APPLICATION_INSIGHTS = {\n       # (required)\
-    \ Your Application Insights instrumentation key\n       'ikey': \"00000000-0000-0000-0000-000000000000\"\
-    ,\n\n       # (optional) By default, request names are logged as the request method\n\
-    \       # and relative path of the URL.  To log the fully-qualified view names\n\
-    \       # instead, set this to True.  Defaults to False.\n       'use_view_name':\
-    \ True,\n\n       # (optional) To log arguments passed into the views as custom\
-    \ properties,\n       # set this to True.  Defaults to False.\n       'record_view_arguments':\
-    \ True,\n\n       # (optional) Exceptions are logged by default, to disable, set\
-    \ this to False.\n       'log_exceptions': False,\n\n       # (optional) Events\
-    \ are submitted to Application Insights asynchronously.\n       # send_interval\
-    \ specifies how often the queue is checked for items to submit.\n       # send_time\
-    \ specifies how long the sender waits for new input before recycling\n       #\
-    \ the background thread.\n       'send_interval': 1.0, # Check every second\n\
-    \       'send_time': 3.0, # Wait up to 3 seconds for an event\n\n       # (optional,\
-    \ uncommon) If you must send to an endpoint other than the\n       # default endpoint,\
-    \ specify it here:\n       'endpoint': \"https://dc.services.visualstudio.com/v2/track\"\
-    ,\n   }\n   ````\n\nOnce these are in place, each request will have an *appinsights*\
-    \ object placed on it.\nThis object will have the following properties:\n\n* *client*:\
-    \ This is an instance of the <xref:applicationinsights.TelemetryClient> type,\
-    \ which will submit telemetry to the same instrumentation key, and will parent\
-    \ each telemetry item to the current request. \n\n* *request*: This is the <xref:applicationinsights.channel.contracts.RequestData>\
-    \ instance for the current request.  You can modify properties on this object\
-    \ during the handling of the current request. It will be submitted when the request\
-    \ has finished. \n\n* *context*: This is the <xref:applicationinsights.channel.TelemetryContext>\
-    \ object for the current ApplicationInsights sender. \n\nThese properties will\
-    \ be present even when *DEBUG* is *True*, but it may not submit telemetry unless\n\
-    *debug_ikey* is set in *APPLICATION_INSIGHTS*, above."
-  syntax:
-    content: ApplicationInsightsMiddleware(get_response=None)
-  type: class
-  uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware
-- class: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware
-  fullName: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_exception
-  langs:
-  - python
-  module: botbuilder.applicationinsights.django
-  name: process_exception(request, exception)
-  namewithoutparameters: process_exception
-  syntax:
-    content: process_exception(request, exception)
-    parameters:
-    - id: request
-      isRequired: true
-    - id: exception
-      isRequired: true
-  type: method
-  uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_exception
-- class: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware
-  fullName: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_request
-  langs:
-  - python
-  module: botbuilder.applicationinsights.django
-  name: process_request(request)
-  namewithoutparameters: process_request
-  syntax:
-    content: process_request(request)
-    parameters:
-    - id: request
-      isRequired: true
-  type: method
-  uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_request
-- class: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware
-  fullName: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_response
-  langs:
-  - python
-  module: botbuilder.applicationinsights.django
-  name: process_response(request, response)
-  namewithoutparameters: process_response
-  syntax:
-    content: process_response(request, response)
-    parameters:
-    - id: request
-      isRequired: true
-    - id: response
-      isRequired: true
-  type: method
-  uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_response
-- class: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware
-  fullName: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_template_response
-  langs:
-  - python
-  module: botbuilder.applicationinsights.django
-  name: process_template_response(request, response)
-  namewithoutparameters: process_template_response
-  syntax:
-    content: process_template_response(request, response)
-    parameters:
-    - id: request
-      isRequired: true
-    - id: response
-      isRequired: true
-  type: method
-  uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_template_response
-- class: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware
-  fullName: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_view
-  langs:
-  - python
-  module: botbuilder.applicationinsights.django
-  name: process_view(request, view_func, view_args, view_kwargs)
-  namewithoutparameters: process_view
-  syntax:
-    content: process_view(request, view_func, view_args, view_kwargs)
-    parameters:
-    - id: request
-      isRequired: true
-    - id: view_func
-      isRequired: true
-    - id: view_args
-      isRequired: true
-    - id: view_kwargs
-      isRequired: true
-  type: method
-  uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_view
-references:
-- fullName: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_exception
-  isExternal: false
-  name: process_exception(request, exception)
-  parent: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware
-  uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_exception
-- fullName: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_request
-  isExternal: false
-  name: process_request(request)
-  parent: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware
-  uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_request
-- fullName: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_response
-  isExternal: false
-  name: process_response(request, response)
-  parent: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware
-  uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_response
-- fullName: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_template_response
-  isExternal: false
-  name: process_template_response(request, response)
-  parent: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware
-  uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_template_response
-- fullName: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_view
-  isExternal: false
-  name: process_view(request, view_func, view_args, view_kwargs)
-  parent: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware
-  uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_view
+### YamlMime:PythonClass
+uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware
+name: ApplicationInsightsMiddleware
+fullName: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware
+module: botbuilder.applicationinsights.django
+inheritances:
+- builtins.object
+summary: "This class is a Django middleware that automatically enables request and\
+  \ exception telemetry.  Django versions\n1.7 and newer are supported.\n\nTo enable,\
+  \ add this class to your settings.py file in MIDDLEWARE_CLASSES (pre-1.10) or MIDDLEWARE\
+  \ (1.10 and newer):\n\n<!-- literal_block {\"ids\": [], \"classes\": [\"code\",\
+  \ \"python\"], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\"\
+  : \"preserve\"} -->\n\n````\n\n   # If on Django < 1.10\n   MIDDLEWARE_CLASSES =\
+  \ [\n       # ... or whatever is below for you ...\n       'django.middleware.security.SecurityMiddleware',\n\
+  \       'django.contrib.sessions.middleware.SessionMiddleware',\n       'django.middleware.common.CommonMiddleware',\n\
+  \       'django.middleware.csrf.CsrfViewMiddleware',\n       'django.contrib.auth.middleware.AuthenticationMiddleware',\n\
+  \       'django.contrib.auth.middleware.SessionAuthenticationMiddleware',\n    \
+  \   'django.contrib.messages.middleware.MessageMiddleware',\n       'django.middleware.clickjacking.XFrameOptionsMiddleware',\n\
+  \       # ... or whatever is above for you ...\n       'botbuilder.applicationinsights.django.ApplicationInsightsMiddleware',\
+  \   # Add this middleware to the end\n   ]\n\n   # If on Django >= 1.10\n   MIDDLEWARE\
+  \ = [\n       # ... or whatever is below for you ...\n       'django.middleware.security.SecurityMiddleware',\n\
+  \       'django.contrib.sessions.middleware.SessionMiddleware',\n       'django.middleware.common.CommonMiddleware',\n\
+  \       'django.middleware.csrf.CsrfViewMiddleware',\n       'django.contrib.auth.middleware.AuthenticationMiddleware',\n\
+  \       'django.contrib.messages.middleware.MessageMiddleware',\n       'django.middleware.clickjacking.XFrameOptionsMiddleware',\n\
+  \       # ... or whatever is above for you ...\n       'botbuilder.applicationinsights.django.ApplicationInsightsMiddleware',\
+  \   # Add this middleware to the end\n   ]\n   ````\n\nAnd then, add the following\
+  \ to your settings.py file:\n\n<!-- literal_block {\"ids\": [], \"classes\": [\"\
+  code\", \"python\"], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\"\
+  : \"preserve\"} -->\n\n````\n\n   APPLICATION_INSIGHTS = {\n       # (required)\
+  \ Your Application Insights instrumentation key\n       'ikey': \"00000000-0000-0000-0000-000000000000\"\
+  ,\n\n       # (optional) By default, request names are logged as the request method\n\
+  \       # and relative path of the URL.  To log the fully-qualified view names\n\
+  \       # instead, set this to True.  Defaults to False.\n       'use_view_name':\
+  \ True,\n\n       # (optional) To log arguments passed into the views as custom\
+  \ properties,\n       # set this to True.  Defaults to False.\n       'record_view_arguments':\
+  \ True,\n\n       # (optional) Exceptions are logged by default, to disable, set\
+  \ this to False.\n       'log_exceptions': False,\n\n       # (optional) Events\
+  \ are submitted to Application Insights asynchronously.\n       # send_interval\
+  \ specifies how often the queue is checked for items to submit.\n       # send_time\
+  \ specifies how long the sender waits for new input before recycling\n       # the\
+  \ background thread.\n       'send_interval': 1.0, # Check every second\n      \
+  \ 'send_time': 3.0, # Wait up to 3 seconds for an event\n\n       # (optional, uncommon)\
+  \ If you must send to an endpoint other than the\n       # default endpoint, specify\
+  \ it here:\n       'endpoint': \"https://dc.services.visualstudio.com/v2/track\"\
+  ,\n   }\n   ````\n\nOnce these are in place, each request will have an *appinsights*\
+  \ object placed on it.\nThis object will have the following properties:\n\n* *client*:\
+  \ This is an instance of the <xref:applicationinsights.TelemetryClient> type, which\
+  \ will submit telemetry to the same instrumentation key, and will parent each telemetry\
+  \ item to the current request. \n\n* *request*: This is the <xref:applicationinsights.channel.contracts.RequestData>\
+  \ instance for the current request.  You can modify properties on this object during\
+  \ the handling of the current request. It will be submitted when the request has\
+  \ finished. \n\n* *context*: This is the <xref:applicationinsights.channel.TelemetryContext>\
+  \ object for the current ApplicationInsights sender. \n\nThese properties will be\
+  \ present even when *DEBUG* is *True*, but it may not submit telemetry unless\n\
+  *debug_ikey* is set in *APPLICATION_INSIGHTS*, above."
+constructor:
+  syntax: ApplicationInsightsMiddleware(get_response=None)
+methods:
+- uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_exception
+  name: process_exception
+  signature: process_exception(request, exception)
+  parameters:
+  - name: request
+    isRequired: true
+  - name: exception
+    isRequired: true
+- uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_request
+  name: process_request
+  signature: process_request(request)
+  parameters:
+  - name: request
+    isRequired: true
+- uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_response
+  name: process_response
+  signature: process_response(request, response)
+  parameters:
+  - name: request
+    isRequired: true
+  - name: response
+    isRequired: true
+- uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_template_response
+  name: process_template_response
+  signature: process_template_response(request, response)
+  parameters:
+  - name: request
+    isRequired: true
+  - name: response
+    isRequired: true
+- uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_view
+  name: process_view
+  signature: process_view(request, view_func, view_args, view_kwargs)
+  parameters:
+  - name: request
+    isRequired: true
+  - name: view_func
+    isRequired: true
+  - name: view_args
+    isRequired: true
+  - name: view_kwargs
+    isRequired: true

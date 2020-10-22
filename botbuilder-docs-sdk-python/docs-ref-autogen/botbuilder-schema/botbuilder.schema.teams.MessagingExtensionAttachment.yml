@@ -1,49 +1,36 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.MessagingExtensionAttachment
-  fullName: botbuilder.schema.teams.MessagingExtensionAttachment
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: msrest.serialization.Model
-    type: botbuilder.schema._models_py3.Attachment
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: MessagingExtensionAttachment
-  summary: Messaging extension attachment.
-  syntax:
-    content: 'MessagingExtensionAttachment(*, content_type: str = None, content_url:
-      str = None, content=None, name: str = None, thumbnail_url: str = None, preview=None,
-      **kwargs) -> None'
-    parameters:
-    - description: mimetype/Contenttype for the file
-      id: content_type
-      type:
-      - str
-    - description: Content Url
-      id: content_url
-      type:
-      - str
-    - description: Embedded content
-      id: content
-      type:
-      - object
-    - description: (OPTIONAL) The name of the attachment
-      id: name
-      type:
-      - str
-    - description: (OPTIONAL) Thumbnail associated with attachment
-      id: thumbnail_url
-      type:
-      - str
-    - description: ''
-      id: preview
-      type:
-      - botframework.connector.teams.models.Attachment
-  type: class
-  uid: botbuilder.schema.teams.MessagingExtensionAttachment
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.MessagingExtensionAttachment
+name: MessagingExtensionAttachment
+fullName: botbuilder.schema.teams.MessagingExtensionAttachment
+module: botbuilder.schema.teams
+inheritances:
+- botbuilder.schema._models_py3.Attachment
+summary: Messaging extension attachment.
+constructor:
+  syntax: 'MessagingExtensionAttachment(*, content_type: str = None, content_url:
+    str = None, content=None, name: str = None, thumbnail_url: str = None, preview=None,
+    **kwargs) -> None'
+  parameters:
+  - name: content_type
+    description: mimetype/Contenttype for the file
+    types:
+    - <xref:str>
+  - name: content_url
+    description: Content Url
+    types:
+    - <xref:str>
+  - name: content
+    description: Embedded content
+    types:
+    - <xref:object>
+  - name: name
+    description: (OPTIONAL) The name of the attachment
+    types:
+    - <xref:str>
+  - name: thumbnail_url
+    description: (OPTIONAL) Thumbnail associated with attachment
+    types:
+    - <xref:str>
+  - name: preview
+    types:
+    - <xref:botframework.connector.teams.models.Attachment>

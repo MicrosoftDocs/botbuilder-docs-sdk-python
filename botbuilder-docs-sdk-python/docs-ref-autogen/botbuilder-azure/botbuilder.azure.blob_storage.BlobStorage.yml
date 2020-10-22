@@ -1,73 +1,19 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.azure.blob_storage.BlobStorage.delete
-  - botbuilder.azure.blob_storage.BlobStorage.read
-  - botbuilder.azure.blob_storage.BlobStorage.write
-  class: botbuilder.azure.blob_storage.BlobStorage
-  fullName: botbuilder.azure.blob_storage.BlobStorage
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: abc.ABC
-    type: botbuilder.core.storage.Storage
-  langs:
-  - python
-  module: botbuilder.azure.blob_storage
-  name: BlobStorage
-  summary: ''
-  syntax:
-    content: 'BlobStorage(settings: botbuilder.azure.blob_storage.BlobStorageSettings)'
-  type: class
-  uid: botbuilder.azure.blob_storage.BlobStorage
-- class: botbuilder.azure.blob_storage.BlobStorage
-  fullName: botbuilder.azure.blob_storage.BlobStorage.delete
-  langs:
-  - python
-  module: botbuilder.azure.blob_storage
-  name: 'delete(keys: typing.List[str])'
-  namewithoutparameters: delete
-  syntax:
-    content: 'delete(keys: typing.List[str])'
-  type: method
-  uid: botbuilder.azure.blob_storage.BlobStorage.delete
-- class: botbuilder.azure.blob_storage.BlobStorage
-  fullName: botbuilder.azure.blob_storage.BlobStorage.read
-  langs:
-  - python
-  module: botbuilder.azure.blob_storage
-  name: 'read(keys: typing.List[str]) -> typing.Dict[str, object]'
-  namewithoutparameters: read
-  syntax:
-    content: 'read(keys: typing.List[str]) -> typing.Dict[str, object]'
-  type: method
-  uid: botbuilder.azure.blob_storage.BlobStorage.read
-- class: botbuilder.azure.blob_storage.BlobStorage
-  fullName: botbuilder.azure.blob_storage.BlobStorage.write
-  langs:
-  - python
-  module: botbuilder.azure.blob_storage
-  name: 'write(changes: typing.Dict[str, object])'
-  namewithoutparameters: write
-  syntax:
-    content: 'write(changes: typing.Dict[str, object])'
-  type: method
-  uid: botbuilder.azure.blob_storage.BlobStorage.write
-references:
-- fullName: botbuilder.azure.blob_storage.BlobStorage.delete
-  isExternal: false
-  name: 'delete(keys: typing.List[str])'
-  parent: botbuilder.azure.blob_storage.BlobStorage
-  uid: botbuilder.azure.blob_storage.BlobStorage.delete
-- fullName: botbuilder.azure.blob_storage.BlobStorage.read
-  isExternal: false
-  name: 'read(keys: typing.List[str]) -> typing.Dict[str, object]'
-  parent: botbuilder.azure.blob_storage.BlobStorage
-  uid: botbuilder.azure.blob_storage.BlobStorage.read
-- fullName: botbuilder.azure.blob_storage.BlobStorage.write
-  isExternal: false
-  name: 'write(changes: typing.Dict[str, object])'
-  parent: botbuilder.azure.blob_storage.BlobStorage
-  uid: botbuilder.azure.blob_storage.BlobStorage.write
+### YamlMime:PythonClass
+uid: botbuilder.azure.blob_storage.BlobStorage
+name: BlobStorage
+fullName: botbuilder.azure.blob_storage.BlobStorage
+module: botbuilder.azure.blob_storage
+inheritances:
+- botbuilder.core.storage.Storage
+constructor:
+  syntax: 'BlobStorage(settings: botbuilder.azure.blob_storage.BlobStorageSettings)'
+methods:
+- uid: botbuilder.azure.blob_storage.BlobStorage.delete
+  name: delete
+  signature: 'delete(keys: typing.List[str])'
+- uid: botbuilder.azure.blob_storage.BlobStorage.read
+  name: read
+  signature: 'read(keys: typing.List[str]) -> typing.Dict[str, object]'
+- uid: botbuilder.azure.blob_storage.BlobStorage.write
+  name: write
+  signature: 'write(changes: typing.Dict[str, object])'

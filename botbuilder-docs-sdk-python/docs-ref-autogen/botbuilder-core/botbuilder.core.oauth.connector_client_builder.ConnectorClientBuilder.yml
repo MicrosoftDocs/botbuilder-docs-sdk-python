@@ -1,52 +1,26 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.oauth.connector_client_builder.ConnectorClientBuilder.create_connector_client
-  class: botbuilder.core.oauth.connector_client_builder.ConnectorClientBuilder
-  fullName: botbuilder.core.oauth.connector_client_builder.ConnectorClientBuilder
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: abc.ABC
-  langs:
-  - python
-  module: botbuilder.core.oauth.connector_client_builder
-  name: ConnectorClientBuilder
-  summary: Abstraction to build connector clients.
-  syntax: {}
-  type: class
-  uid: botbuilder.core.oauth.connector_client_builder.ConnectorClientBuilder
-- class: botbuilder.core.oauth.connector_client_builder.ConnectorClientBuilder
-  fullName: botbuilder.core.oauth.connector_client_builder.ConnectorClientBuilder.create_connector_client
-  langs:
-  - python
-  module: botbuilder.core.oauth.connector_client_builder
-  name: 'create_connector_client(service_url: str, identity: botframework.connector.auth.claims_identity.ClaimsIdentity
-    = None, audience: str = None) -> botframework.connector.connector_client.ConnectorClient'
-  namewithoutparameters: create_connector_client
+### YamlMime:PythonClass
+uid: botbuilder.core.oauth.connector_client_builder.ConnectorClientBuilder
+name: ConnectorClientBuilder
+fullName: botbuilder.core.oauth.connector_client_builder.ConnectorClientBuilder
+module: botbuilder.core.oauth.connector_client_builder
+inheritances:
+- abc.ABC
+summary: Abstraction to build connector clients.
+methods:
+- uid: botbuilder.core.oauth.connector_client_builder.ConnectorClientBuilder.create_connector_client
+  name: create_connector_client
   summary: Creates the connector client asynchronous.
-  syntax:
-    content: 'create_connector_client(service_url: str, identity: botframework.connector.auth.claims_identity.ClaimsIdentity
-      = None, audience: str = None) -> botframework.connector.connector_client.ConnectorClient'
-    parameters:
-    - description: The service URL.
-      id: service_url
-      isRequired: true
-    - description: The claims claimsIdentity.
-      id: identity
-      isRequired: true
-    - description: The target audience for the connector.
-      id: audience
-      isRequired: true
-    return:
-      description: ConnectorClient instance
-  type: method
-  uid: botbuilder.core.oauth.connector_client_builder.ConnectorClientBuilder.create_connector_client
-references:
-- fullName: botbuilder.core.oauth.connector_client_builder.ConnectorClientBuilder.create_connector_client
-  isExternal: false
-  name: 'create_connector_client(service_url: str, identity: botframework.connector.auth.claims_identity.ClaimsIdentity
+  signature: 'create_connector_client(service_url: str, identity: botframework.connector.auth.claims_identity.ClaimsIdentity
     = None, audience: str = None) -> botframework.connector.connector_client.ConnectorClient'
-  parent: botbuilder.core.oauth.connector_client_builder.ConnectorClientBuilder
-  uid: botbuilder.core.oauth.connector_client_builder.ConnectorClientBuilder.create_connector_client
+  parameters:
+  - name: service_url
+    description: The service URL.
+    isRequired: true
+  - name: identity
+    description: The claims claimsIdentity.
+    isRequired: true
+  - name: audience
+    description: The target audience for the connector.
+    isRequired: true
+  return:
+    description: ConnectorClient instance

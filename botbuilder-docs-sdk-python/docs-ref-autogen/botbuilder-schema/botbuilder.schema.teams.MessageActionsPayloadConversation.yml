@@ -1,39 +1,29 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.MessageActionsPayloadConversation
-  fullName: botbuilder.schema.teams.MessageActionsPayloadConversation
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: MessageActionsPayloadConversation
-  summary: Represents a team or channel entity.
-  syntax:
-    content: 'MessageActionsPayloadConversation(*, conversation_identity_type=None,
-      id: str = None, display_name: str = None, **kwargs) -> None'
-    parameters:
-    - description: 'The type of conversation, whether a
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.MessageActionsPayloadConversation
+name: MessageActionsPayloadConversation
+fullName: botbuilder.schema.teams.MessageActionsPayloadConversation
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: Represents a team or channel entity.
+constructor:
+  syntax: 'MessageActionsPayloadConversation(*, conversation_identity_type=None, id:
+    str = None, display_name: str = None, **kwargs) -> None'
+  parameters:
+  - name: conversation_identity_type
+    description: 'The type of conversation, whether a
 
-        team or channel. Possible values include: ''team'', ''channel'''
-      id: conversation_identity_type
-      type:
-      - str
-      - botframework.connector.teams.models.enum
-    - description: The id of the team or channel.
-      id: id
-      type:
-      - str
-    - description: 'The plaintext display name of the team or channel
+      team or channel. Possible values include: ''team'', ''channel'''
+    types:
+    - <xref:str>
+    - <xref:botframework.connector.teams.models.enum>
+  - name: id
+    description: The id of the team or channel.
+    types:
+    - <xref:str>
+  - name: display_name
+    description: 'The plaintext display name of the team or channel
 
-        entity.'
-      id: display_name
-      type:
-      - str
-  type: class
-  uid: botbuilder.schema.teams.MessageActionsPayloadConversation
-references: []
+      entity.'
+    types:
+    - <xref:str>

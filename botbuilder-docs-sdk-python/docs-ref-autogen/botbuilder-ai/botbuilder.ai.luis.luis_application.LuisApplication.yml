@@ -1,46 +1,25 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.ai.luis.luis_application.LuisApplication.from_application_endpoint
-  class: botbuilder.ai.luis.luis_application.LuisApplication
-  fullName: botbuilder.ai.luis.luis_application.LuisApplication
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.ai.luis.luis_application
-  name: LuisApplication
-  summary: Data describing a LUIS application.
-  syntax:
-    content: 'LuisApplication(application_id: str, endpoint_key: str, endpoint: str)'
-  type: class
-  uid: botbuilder.ai.luis.luis_application.LuisApplication
-- class: botbuilder.ai.luis.luis_application.LuisApplication
-  fullName: botbuilder.ai.luis.luis_application.LuisApplication.from_application_endpoint
-  langs:
-  - python
-  module: botbuilder.ai.luis.luis_application
-  name: 'from_application_endpoint(application_endpoint: str)'
-  namewithoutparameters: from_application_endpoint
+### YamlMime:PythonClass
+uid: botbuilder.ai.luis.luis_application.LuisApplication
+name: LuisApplication
+fullName: botbuilder.ai.luis.luis_application.LuisApplication
+module: botbuilder.ai.luis.luis_application
+inheritances:
+- builtins.object
+summary: Data describing a LUIS application.
+constructor:
+  syntax: 'LuisApplication(application_id: str, endpoint_key: str, endpoint: str)'
+methods:
+- uid: botbuilder.ai.luis.luis_application.LuisApplication.from_application_endpoint
+  name: from_application_endpoint
   summary: Initializes a new instance of the <xref:botbuilder.ai.luis.luis_application.LuisApplication>
     class.
-  syntax:
-    content: 'from_application_endpoint(application_endpoint: str)'
-    parameters:
-    - description: LUIS application endpoint.
-      id: application_endpoint
-      isRequired: true
-      type:
-      - str
-    return:
-      type:
-      - LuisApplication
-  type: method
-  uid: botbuilder.ai.luis.luis_application.LuisApplication.from_application_endpoint
-references:
-- fullName: botbuilder.ai.luis.luis_application.LuisApplication.from_application_endpoint
-  isExternal: false
-  name: 'from_application_endpoint(application_endpoint: str)'
-  parent: botbuilder.ai.luis.luis_application.LuisApplication
-  uid: botbuilder.ai.luis.luis_application.LuisApplication.from_application_endpoint
+  signature: 'from_application_endpoint(application_endpoint: str)'
+  parameters:
+  - name: application_endpoint
+    description: LUIS application endpoint.
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    types:
+    - <xref:LuisApplication>

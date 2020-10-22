@@ -1,27 +1,17 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.TaskModuleResponseBase
-  fullName: botbuilder.schema.teams.TaskModuleResponseBase
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: TaskModuleResponseBase
-  summary: Base class for Task Module responses.
-  syntax:
-    content: TaskModuleResponseBase(*, type=None, **kwargs) -> None
-    parameters:
-    - description: 'Choice of action options when responding to the task/submit
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.TaskModuleResponseBase
+name: TaskModuleResponseBase
+fullName: botbuilder.schema.teams.TaskModuleResponseBase
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: Base class for Task Module responses.
+constructor:
+  syntax: TaskModuleResponseBase(*, type=None, **kwargs) -> None
+  parameters:
+  - name: type
+    description: 'Choice of action options when responding to the task/submit
 
-        message. Possible values include: ''message'', ''continue'''
-      id: type
-      type:
-      - str
-  type: class
-  uid: botbuilder.schema.teams.TaskModuleResponseBase
-references: []
+      message. Possible values include: ''message'', ''continue'''
+    types:
+    - <xref:str>

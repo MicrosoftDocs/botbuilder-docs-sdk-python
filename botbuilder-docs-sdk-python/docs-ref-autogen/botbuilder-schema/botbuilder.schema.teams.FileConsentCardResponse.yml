@@ -1,41 +1,30 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.FileConsentCardResponse
-  fullName: botbuilder.schema.teams.FileConsentCardResponse
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: FileConsentCardResponse
-  summary: 'Represents the value of the invoke activity sent when the user acts on
-    a
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.FileConsentCardResponse
+name: FileConsentCardResponse
+fullName: botbuilder.schema.teams.FileConsentCardResponse
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: 'Represents the value of the invoke activity sent when the user acts on a
 
-    file consent card.'
-  syntax:
-    content: FileConsentCardResponse(*, action=None, context=None, upload_info=None,
-      **kwargs) -> None
-    parameters:
-    - description: 'The action the user took. Possible values include:
+  file consent card.'
+constructor:
+  syntax: FileConsentCardResponse(*, action=None, context=None, upload_info=None,
+    **kwargs) -> None
+  parameters:
+  - name: action
+    description: 'The action the user took. Possible values include:
 
-        ''accept'', ''decline'''
-      id: action
-      type:
-      - str
-    - description: The context associated with the action.
-      id: context
-      type:
-      - object
-    - description: 'If the user accepted the file, contains information
+      ''accept'', ''decline'''
+    types:
+    - <xref:str>
+  - name: context
+    description: The context associated with the action.
+    types:
+    - <xref:object>
+  - name: upload_info
+    description: 'If the user accepted the file, contains information
 
-        about the file to be uploaded.'
-      id: upload_info
-      type:
-      - botframework.connector.teams.models.FileUploadInfo
-  type: class
-  uid: botbuilder.schema.teams.FileConsentCardResponse
-references: []
+      about the file to be uploaded.'
+    types:
+    - <xref:botframework.connector.teams.models.FileUploadInfo>

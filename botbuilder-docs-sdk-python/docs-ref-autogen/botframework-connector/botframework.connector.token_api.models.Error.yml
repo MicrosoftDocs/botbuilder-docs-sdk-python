@@ -1,34 +1,21 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botframework.connector.token_api.models.Error
-  fullName: botframework.connector.token_api.models.Error
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botframework.connector.token_api.models
-  name: Error
-  summary: Error.
-  syntax:
-    content: 'Error(*, code: str = None, message: str = None, inner_http_error=None,
-      **kwargs) -> None'
-    parameters:
-    - description: ''
-      id: code
-      type:
-      - str
-    - description: ''
-      id: message
-      type:
-      - str
-    - description: ''
-      id: inner_http_error
-      type:
-      - botframework.tokenapi.models.InnerHttpError
-  type: class
-  uid: botframework.connector.token_api.models.Error
-references: []
+### YamlMime:PythonClass
+uid: botframework.connector.token_api.models.Error
+name: Error
+fullName: botframework.connector.token_api.models.Error
+module: botframework.connector.token_api.models
+inheritances:
+- msrest.serialization.Model
+summary: Error.
+constructor:
+  syntax: 'Error(*, code: str = None, message: str = None, inner_http_error=None,
+    **kwargs) -> None'
+  parameters:
+  - name: code
+    types:
+    - <xref:str>
+  - name: message
+    types:
+    - <xref:str>
+  - name: inner_http_error
+    types:
+    - <xref:botframework.tokenapi.models.InnerHttpError>

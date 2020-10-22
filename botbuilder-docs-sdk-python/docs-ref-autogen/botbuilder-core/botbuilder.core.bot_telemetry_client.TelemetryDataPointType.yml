@@ -1,59 +1,13 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.bot_telemetry_client.TelemetryDataPointType.aggregation
-  - botbuilder.core.bot_telemetry_client.TelemetryDataPointType.measurement
-  class: botbuilder.core.bot_telemetry_client.TelemetryDataPointType
-  fullName: botbuilder.core.bot_telemetry_client.TelemetryDataPointType
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: enum.Enum
-  langs:
-  - python
-  module: botbuilder.core.bot_telemetry_client
-  name: TelemetryDataPointType
-  summary: An enumeration.
-  syntax: {}
-  type: class
-  uid: botbuilder.core.bot_telemetry_client.TelemetryDataPointType
-- fullName: botbuilder.core.bot_telemetry_client.TelemetryDataPointType.aggregation
-  id: aggregation
-  langs:
-  - python
-  module: botbuilder.core.bot_telemetry_client
-  name: aggregation
-  parent: botbuilder.core.bot_telemetry_client.TelemetryDataPointType
-  syntax:
-    content: aggregation = 1
-    return:
-      type:
-      - botbuilder.core.bot_telemetry_client.TelemetryDataPointType
-  type: attribute
+### YamlMime:PythonEnum
+uid: botbuilder.core.bot_telemetry_client.TelemetryDataPointType
+name: TelemetryDataPointType
+fullName: botbuilder.core.bot_telemetry_client.TelemetryDataPointType
+summary: An enumeration.
+module: botbuilder.core.bot_telemetry_client
+inheritances:
+- enum.Enum
+fields:
+- name: aggregation
   uid: botbuilder.core.bot_telemetry_client.TelemetryDataPointType.aggregation
-- fullName: botbuilder.core.bot_telemetry_client.TelemetryDataPointType.measurement
-  id: measurement
-  langs:
-  - python
-  module: botbuilder.core.bot_telemetry_client
-  name: measurement
-  parent: botbuilder.core.bot_telemetry_client.TelemetryDataPointType
-  syntax:
-    content: measurement = 0
-    return:
-      type:
-      - botbuilder.core.bot_telemetry_client.TelemetryDataPointType
-  type: attribute
-  uid: botbuilder.core.bot_telemetry_client.TelemetryDataPointType.measurement
-references:
-- fullName: botbuilder.core.bot_telemetry_client.TelemetryDataPointType.aggregation
-  isExternal: false
-  name: aggregation
-  parent: botbuilder.core.bot_telemetry_client.TelemetryDataPointType
-  uid: botbuilder.core.bot_telemetry_client.TelemetryDataPointType.aggregation
-- fullName: botbuilder.core.bot_telemetry_client.TelemetryDataPointType.measurement
-  isExternal: false
-  name: measurement
-  parent: botbuilder.core.bot_telemetry_client.TelemetryDataPointType
+- name: measurement
   uid: botbuilder.core.bot_telemetry_client.TelemetryDataPointType.measurement

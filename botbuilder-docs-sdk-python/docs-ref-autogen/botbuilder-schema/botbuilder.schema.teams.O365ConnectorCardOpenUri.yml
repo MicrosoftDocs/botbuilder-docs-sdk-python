@@ -1,56 +1,30 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.O365ConnectorCardOpenUri
-  fullName: botbuilder.schema.teams.O365ConnectorCardOpenUri
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: msrest.serialization.Model
-    type: botbuilder.schema.teams._models_py3.O365ConnectorCardActionBase
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: O365ConnectorCardOpenUri
-  summary: O365 connector card OpenUri action.
-  syntax:
-    content: 'O365ConnectorCardOpenUri(*, type=None, name: str = None, id: str = None,
-      targets=None, **kwargs) -> None'
-    parameters:
-    - description: 'Type of the action. Possible values include: ''ViewAction'',
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.O365ConnectorCardOpenUri
+name: O365ConnectorCardOpenUri
+fullName: botbuilder.schema.teams.O365ConnectorCardOpenUri
+module: botbuilder.schema.teams
+inheritances:
+- botbuilder.schema.teams._models_py3.O365ConnectorCardActionBase
+summary: O365 connector card OpenUri action.
+constructor:
+  syntax: 'O365ConnectorCardOpenUri(*, type=None, name: str = None, id: str = None,
+    targets=None, **kwargs) -> None'
+  parameters:
+  - name: type
+    description: 'Type of the action. Possible values include: ''ViewAction'',
 
-        ''OpenUri'', ''HttpPOST'', ''ActionCard'''
-      id: type
-      type:
-      - str
-    - description: Name of the action that will be used as button title
-      id: name
-      type:
-      - str
-    - description: Action Id
-      id: id
-      type:
-      - str
-    - description: Target os / urls
-      id: targets
-      type:
-      - list[botframework.connector.teams.models.O365ConnectorCardOpenUriTarget]
-  type: class
-  uid: botbuilder.schema.teams.O365ConnectorCardOpenUri
-references:
-- fullName: list[botframework.connector.teams.models.O365ConnectorCardOpenUriTarget]
-  name: list[O365ConnectorCardOpenUriTarget]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.teams.models.O365ConnectorCardOpenUriTarget
-    name: O365ConnectorCardOpenUriTarget
-    uid: botframework.connector.teams.models.O365ConnectorCardOpenUriTarget
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.teams.models.O365ConnectorCardOpenUriTarget]
+      ''OpenUri'', ''HttpPOST'', ''ActionCard'''
+    types:
+    - <xref:str>
+  - name: name
+    description: Name of the action that will be used as button title
+    types:
+    - <xref:str>
+  - name: id
+    description: Action Id
+    types:
+    - <xref:str>
+  - name: targets
+    description: Target os / urls
+    types:
+    - <xref:list>[<xref:botframework.connector.teams.models.O365ConnectorCardOpenUriTarget>]

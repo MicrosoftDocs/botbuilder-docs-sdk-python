@@ -1,43 +1,32 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botframework.connector.token_api.models.TokenStatus
-  fullName: botframework.connector.token_api.models.TokenStatus
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botframework.connector.token_api.models
-  name: TokenStatus
-  summary: The status of a particular token.
-  syntax:
-    content: 'TokenStatus(*, channel_id: str = None, connection_name: str = None,
-      has_token: bool = None, service_provider_display_name: str = None, **kwargs)
-      -> None'
-    parameters:
-    - description: The channelId of the token status pertains to
-      id: channel_id
-      type:
-      - str
-    - description: 'The name of the connection the token status
+### YamlMime:PythonClass
+uid: botframework.connector.token_api.models.TokenStatus
+name: TokenStatus
+fullName: botframework.connector.token_api.models.TokenStatus
+module: botframework.connector.token_api.models
+inheritances:
+- msrest.serialization.Model
+summary: The status of a particular token.
+constructor:
+  syntax: 'TokenStatus(*, channel_id: str = None, connection_name: str = None, has_token:
+    bool = None, service_provider_display_name: str = None, **kwargs) -> None'
+  parameters:
+  - name: channel_id
+    description: The channelId of the token status pertains to
+    types:
+    - <xref:str>
+  - name: connection_name
+    description: 'The name of the connection the token status
 
-        pertains to'
-      id: connection_name
-      type:
-      - str
-    - description: True if a token is stored for this ConnectionName
-      id: has_token
-      type:
-      - bool
-    - description: 'The display name of the service
+      pertains to'
+    types:
+    - <xref:str>
+  - name: has_token
+    description: True if a token is stored for this ConnectionName
+    types:
+    - <xref:bool>
+  - name: service_provider_display_name
+    description: 'The display name of the service
 
-        provider for which this Token belongs to'
-      id: service_provider_display_name
-      type:
-      - str
-  type: class
-  uid: botframework.connector.token_api.models.TokenStatus
-references: []
+      provider for which this Token belongs to'
+    types:
+    - <xref:str>

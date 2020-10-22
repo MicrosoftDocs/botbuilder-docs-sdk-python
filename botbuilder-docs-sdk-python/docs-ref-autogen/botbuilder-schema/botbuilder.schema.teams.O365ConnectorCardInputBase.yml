@@ -1,46 +1,36 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.O365ConnectorCardInputBase
-  fullName: botbuilder.schema.teams.O365ConnectorCardInputBase
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: O365ConnectorCardInputBase
-  summary: O365 connector card input for ActionCard action.
-  syntax:
-    content: 'O365ConnectorCardInputBase(*, type=None, id: str = None, is_required:
-      bool = None, title: str = None, value: str = None, **kwargs) -> None'
-    parameters:
-    - description: 'Input type name. Possible values include: ''textInput'',
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.O365ConnectorCardInputBase
+name: O365ConnectorCardInputBase
+fullName: botbuilder.schema.teams.O365ConnectorCardInputBase
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: O365 connector card input for ActionCard action.
+constructor:
+  syntax: 'O365ConnectorCardInputBase(*, type=None, id: str = None, is_required: bool
+    = None, title: str = None, value: str = None, **kwargs) -> None'
+  parameters:
+  - name: type
+    description: 'Input type name. Possible values include: ''textInput'',
 
-        ''dateInput'', ''multichoiceInput'''
-      id: type
-      type:
-      - str
-    - description: Input Id. It must be unique per entire O365 connector card.
-      id: id
-      type:
-      - str
-    - description: 'Define if this input is a required field. Default
+      ''dateInput'', ''multichoiceInput'''
+    types:
+    - <xref:str>
+  - name: id
+    description: Input Id. It must be unique per entire O365 connector card.
+    types:
+    - <xref:str>
+  - name: is_required
+    description: 'Define if this input is a required field. Default
 
-        value is false.'
-      id: is_required
-      type:
-      - bool
-    - description: Input title that will be shown as the placeholder
-      id: title
-      type:
-      - str
-    - description: Default value for this input field
-      id: value
-      type:
-      - str
-  type: class
-  uid: botbuilder.schema.teams.O365ConnectorCardInputBase
-references: []
+      value is false.'
+    types:
+    - <xref:bool>
+  - name: title
+    description: Input title that will be shown as the placeholder
+    types:
+    - <xref:str>
+  - name: value
+    description: Default value for this input field
+    types:
+    - <xref:str>

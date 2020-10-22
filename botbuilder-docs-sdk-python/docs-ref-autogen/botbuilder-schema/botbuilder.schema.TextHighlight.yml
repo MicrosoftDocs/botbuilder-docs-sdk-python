@@ -1,32 +1,22 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.TextHighlight
-  fullName: botbuilder.schema.TextHighlight
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema
-  name: TextHighlight
-  summary: Refers to a substring of content within another field.
-  syntax:
-    content: 'TextHighlight(*, text: str = None, occurrence: int = None, **kwargs)
-      -> None'
-    parameters:
-    - description: Defines the snippet of text to highlight
-      id: text
-      type:
-      - str
-    - description: 'Occurrence of the text field within the referenced
+### YamlMime:PythonClass
+uid: botbuilder.schema.TextHighlight
+name: TextHighlight
+fullName: botbuilder.schema.TextHighlight
+module: botbuilder.schema
+inheritances:
+- msrest.serialization.Model
+summary: Refers to a substring of content within another field.
+constructor:
+  syntax: 'TextHighlight(*, text: str = None, occurrence: int = None, **kwargs) ->
+    None'
+  parameters:
+  - name: text
+    description: Defines the snippet of text to highlight
+    types:
+    - <xref:str>
+  - name: occurrence
+    description: 'Occurrence of the text field within the referenced
 
-        text, if multiple exist.'
-      id: occurrence
-      type:
-      - int
-  type: class
-  uid: botbuilder.schema.TextHighlight
-references: []
+      text, if multiple exist.'
+    types:
+    - <xref:int>

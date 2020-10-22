@@ -1,54 +1,27 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.show_typing_middleware.ShowTypingMiddleware.on_turn
-  class: botbuilder.core.show_typing_middleware.ShowTypingMiddleware
-  fullName: botbuilder.core.show_typing_middleware.ShowTypingMiddleware
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: abc.ABC
-    type: botbuilder.core.middleware_set.Middleware
-  langs:
-  - python
-  module: botbuilder.core.show_typing_middleware
-  name: ShowTypingMiddleware
-  summary: 'When added, this middleware will send typing activities back to the user
-    when a Message activity
+### YamlMime:PythonClass
+uid: botbuilder.core.show_typing_middleware.ShowTypingMiddleware
+name: ShowTypingMiddleware
+fullName: botbuilder.core.show_typing_middleware.ShowTypingMiddleware
+module: botbuilder.core.show_typing_middleware
+inheritances:
+- botbuilder.core.middleware_set.Middleware
+summary: 'When added, this middleware will send typing activities back to the user
+  when a Message activity
 
-    is received to let them know that the bot has received the message and is working
-    on the response.
+  is received to let them know that the bot has received the message and is working
+  on the response.
 
-    You can specify a delay before the first typing activity is sent and then a frequency,
-    which
+  You can specify a delay before the first typing activity is sent and then a frequency,
+  which
 
-    determines how often another typing activity is sent. Typing activities will continue
-    to be sent
+  determines how often another typing activity is sent. Typing activities will continue
+  to be sent
 
-    until your bot sends another message back to the user.'
-  syntax:
-    content: 'ShowTypingMiddleware(delay: float = 0.5, period: float = 2.0)'
-  type: class
-  uid: botbuilder.core.show_typing_middleware.ShowTypingMiddleware
-- class: botbuilder.core.show_typing_middleware.ShowTypingMiddleware
-  fullName: botbuilder.core.show_typing_middleware.ShowTypingMiddleware.on_turn
-  langs:
-  - python
-  module: botbuilder.core.show_typing_middleware
-  name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
+  until your bot sends another message back to the user.'
+constructor:
+  syntax: 'ShowTypingMiddleware(delay: float = 0.5, period: float = 2.0)'
+methods:
+- uid: botbuilder.core.show_typing_middleware.ShowTypingMiddleware.on_turn
+  name: on_turn
+  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
     typing.Awaitable])'
-  namewithoutparameters: on_turn
-  syntax:
-    content: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
-      typing.Awaitable])'
-  type: method
-  uid: botbuilder.core.show_typing_middleware.ShowTypingMiddleware.on_turn
-references:
-- fullName: botbuilder.core.show_typing_middleware.ShowTypingMiddleware.on_turn
-  isExternal: false
-  name: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
-    typing.Awaitable])'
-  parent: botbuilder.core.show_typing_middleware.ShowTypingMiddleware
-  uid: botbuilder.core.show_typing_middleware.ShowTypingMiddleware.on_turn

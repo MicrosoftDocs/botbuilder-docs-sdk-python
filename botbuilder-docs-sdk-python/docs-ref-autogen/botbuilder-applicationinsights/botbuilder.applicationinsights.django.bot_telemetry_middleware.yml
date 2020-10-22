@@ -1,39 +1,16 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.applicationinsights.django.bot_telemetry_middleware.BotTelemetryMiddleware
-  - botbuilder.applicationinsights.django.bot_telemetry_middleware.retrieve_bot_body
-  fullName: botbuilder.applicationinsights.django.bot_telemetry_middleware
-  langs:
-  - python
-  module: botbuilder.applicationinsights.django.bot_telemetry_middleware
-  name: bot_telemetry_middleware
-  summary: Bot Telemetry Middleware.
-  type: module
-  uid: botbuilder.applicationinsights.django.bot_telemetry_middleware
-- fullName: botbuilder.applicationinsights.django.bot_telemetry_middleware.retrieve_bot_body
-  langs:
-  - python
-  module: botbuilder.applicationinsights.django.bot_telemetry_middleware
-  name: retrieve_bot_body()
+### YamlMime:PythonModule
+uid: botbuilder.applicationinsights.django.bot_telemetry_middleware
+name: bot_telemetry_middleware
+fullName: botbuilder.applicationinsights.django.bot_telemetry_middleware
+summary: Bot Telemetry Middleware.
+functions:
+- uid: botbuilder.applicationinsights.django.bot_telemetry_middleware.retrieve_bot_body
+  name: retrieve_bot_body
   summary: 'Retrieve the POST body text from temporary cache.
 
     The POST body corresponds with the thread id and should resides in
 
     cache just for lifetime of request.'
-  syntax:
-    content: retrieve_bot_body()
-  type: function
-  uid: botbuilder.applicationinsights.django.bot_telemetry_middleware.retrieve_bot_body
-references:
-- fullName: botbuilder.applicationinsights.django.bot_telemetry_middleware.BotTelemetryMiddleware
-  isExternal: false
-  name: BotTelemetryMiddleware
-  parent: botbuilder.applicationinsights.django.bot_telemetry_middleware
-  uid: botbuilder.applicationinsights.django.bot_telemetry_middleware.BotTelemetryMiddleware
-- fullName: botbuilder.applicationinsights.django.bot_telemetry_middleware.retrieve_bot_body
-  isExternal: false
-  name: retrieve_bot_body()
-  parent: botbuilder.applicationinsights.django.bot_telemetry_middleware
-  uid: botbuilder.applicationinsights.django.bot_telemetry_middleware.retrieve_bot_body
+  signature: retrieve_bot_body()
+classes:
+- botbuilder.applicationinsights.django.bot_telemetry_middleware.BotTelemetryMiddleware
