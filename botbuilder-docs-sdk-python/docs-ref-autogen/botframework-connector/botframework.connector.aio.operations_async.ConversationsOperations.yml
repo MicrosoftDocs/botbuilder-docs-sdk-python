@@ -1,59 +1,30 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botframework.connector.aio.operations_async.ConversationsOperations.create_conversation
-  - botframework.connector.aio.operations_async.ConversationsOperations.delete_activity
-  - botframework.connector.aio.operations_async.ConversationsOperations.delete_conversation_member
-  - botframework.connector.aio.operations_async.ConversationsOperations.get_activity_members
-  - botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_member
-  - botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_members
-  - botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_paged_members
-  - botframework.connector.aio.operations_async.ConversationsOperations.get_conversations
-  - botframework.connector.aio.operations_async.ConversationsOperations.get_teams_conversation_paged_members
-  - botframework.connector.aio.operations_async.ConversationsOperations.reply_to_activity
-  - botframework.connector.aio.operations_async.ConversationsOperations.send_conversation_history
-  - botframework.connector.aio.operations_async.ConversationsOperations.send_to_conversation
-  - botframework.connector.aio.operations_async.ConversationsOperations.update_activity
-  - botframework.connector.aio.operations_async.ConversationsOperations.upload_attachment
-  - botframework.connector.aio.operations_async.ConversationsOperations.models
-  class: botframework.connector.aio.operations_async.ConversationsOperations
-  fullName: botframework.connector.aio.operations_async.ConversationsOperations
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botframework.connector.aio.operations_async
-  name: ConversationsOperations
-  summary: "ConversationsOperations async operations.\n\nYou should not instantiate\
-    \ directly this class, but create a Client instance that will create it for you\
-    \ and attach\n   it as attribute."
-  syntax:
-    content: ConversationsOperations(client, config, serializer, deserializer) ->
-      None
-    parameters:
-    - description: Client for service requests.
-      id: client
-    - description: Configuration of service client.
-      id: config
-    - description: An object model serializer.
-      id: serializer
-    - description: An object model deserializer.
-      id: deserializer
-    variables:
-    - description: 'The API version to use for the request. Constant value: "v3".'
-      id: api_version
-  type: class
-  uid: botframework.connector.aio.operations_async.ConversationsOperations
-- class: botframework.connector.aio.operations_async.ConversationsOperations
-  exceptions:
-  - type: botframework.connector.models.ErrorResponseException
-  fullName: botframework.connector.aio.operations_async.ConversationsOperations.create_conversation
-  langs:
-  - python
-  module: botframework.connector.aio.operations_async
-  name: create_conversation(parameters, *, custom_headers=None, raw=False, **operation_config)
-  namewithoutparameters: create_conversation
+### YamlMime:PythonClass
+uid: botframework.connector.aio.operations_async.ConversationsOperations
+name: ConversationsOperations
+fullName: botframework.connector.aio.operations_async.ConversationsOperations
+module: botframework.connector.aio.operations_async
+inheritances:
+- builtins.object
+summary: "ConversationsOperations async operations.\n\nYou should not instantiate\
+  \ directly this class, but create a Client instance that will create it for you\
+  \ and attach\n   it as attribute."
+constructor:
+  syntax: ConversationsOperations(client, config, serializer, deserializer) -> None
+  parameters:
+  - name: client
+    description: Client for service requests.
+  - name: config
+    description: Configuration of service client.
+  - name: serializer
+    description: An object model serializer.
+  - name: deserializer
+    description: An object model deserializer.
+variables:
+- description: 'The API version to use for the request. Constant value: "v3".'
+  name: api_version
+methods:
+- uid: botframework.connector.aio.operations_async.ConversationsOperations.create_conversation
+  name: create_conversation
   summary: 'CreateConversation.
 
 
@@ -92,48 +63,39 @@ items:
     Activity() ... ) ;
 
     ``.'
-  syntax:
-    content: create_conversation(parameters, *, custom_headers=None, raw=False, **operation_config)
-    parameters:
-    - description: Parameters to create the conversation from
-      id: parameters
-      isRequired: true
-      type:
-      - botframework.connector.models.ConversationParameters
-    - description: headers that will be added to the request
-      id: custom_headers
-      isRequired: true
-      type:
-      - dict
-    - description: 'returns the direct response alongside the
+  signature: create_conversation(parameters, *, custom_headers=None, raw=False, **operation_config)
+  parameters:
+  - name: parameters
+    description: Parameters to create the conversation from
+    isRequired: true
+    types:
+    - <xref:botframework.connector.models.ConversationParameters>
+  - name: custom_headers
+    description: headers that will be added to the request
+    isRequired: true
+    types:
+    - <xref:dict>
+  - name: raw
+    description: 'returns the direct response alongside the
 
-        deserialized response'
-      id: raw
-      isRequired: true
-      type:
-      - bool
-    - description: '*Operation configuration
+      deserialized response'
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: operation_config
+    description: '*Operation configuration
 
-        overrides*.'
-      id: operation_config
-      isRequired: true
-    return:
-      description: ConversationResourceResponse or ClientRawResponse if raw=true
-      type:
-      - botframework.connector.models.ConversationResourceResponse
-      - msrest.pipeline.ClientRawResponse
-  type: method
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.create_conversation
-- class: botframework.connector.aio.operations_async.ConversationsOperations
+      overrides*.'
+    isRequired: true
+  return:
+    description: ConversationResourceResponse or ClientRawResponse if raw=true
+    types:
+    - <xref:botframework.connector.models.ConversationResourceResponse>
+    - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
   - type: botframework.connector.models.ErrorResponseException
-  fullName: botframework.connector.aio.operations_async.ConversationsOperations.delete_activity
-  langs:
-  - python
-  module: botframework.connector.aio.operations_async
-  name: delete_activity(conversation_id, activity_id, *, custom_headers=None, raw=False,
-    **operation_config)
-  namewithoutparameters: delete_activity
+- uid: botframework.connector.aio.operations_async.ConversationsOperations.delete_activity
+  name: delete_activity
   summary: 'DeleteActivity.
 
 
@@ -142,54 +104,45 @@ items:
     Some channels allow you to delete an existing activity, and if
 
     successful this method will remove the specified activity.'
-  syntax:
-    content: delete_activity(conversation_id, activity_id, *, custom_headers=None,
-      raw=False, **operation_config)
-    parameters:
-    - description: Conversation ID
-      id: conversation_id
-      isRequired: true
-      type:
-      - str
-    - description: activityId to delete
-      id: activity_id
-      isRequired: true
-      type:
-      - str
-    - description: headers that will be added to the request
-      id: custom_headers
-      isRequired: true
-      type:
-      - dict
-    - description: 'returns the direct response alongside the
+  signature: delete_activity(conversation_id, activity_id, *, custom_headers=None,
+    raw=False, **operation_config)
+  parameters:
+  - name: conversation_id
+    description: Conversation ID
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: activity_id
+    description: activityId to delete
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: custom_headers
+    description: headers that will be added to the request
+    isRequired: true
+    types:
+    - <xref:dict>
+  - name: raw
+    description: 'returns the direct response alongside the
 
-        deserialized response'
-      id: raw
-      isRequired: true
-      type:
-      - bool
-    - description: '*Operation configuration
+      deserialized response'
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: operation_config
+    description: '*Operation configuration
 
-        overrides*.'
-      id: operation_config
-      isRequired: true
-    return:
-      description: None or ClientRawResponse if raw=true
-      type:
-      - None
-      - msrest.pipeline.ClientRawResponse
-  type: method
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.delete_activity
-- class: botframework.connector.aio.operations_async.ConversationsOperations
+      overrides*.'
+    isRequired: true
+  return:
+    description: None or ClientRawResponse if raw=true
+    types:
+    - <xref:None>
+    - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
   - type: botframework.connector.models.ErrorResponseException
-  fullName: botframework.connector.aio.operations_async.ConversationsOperations.delete_conversation_member
-  langs:
-  - python
-  module: botframework.connector.aio.operations_async
-  name: delete_conversation_member(conversation_id, member_id, *, custom_headers=None,
-    raw=False, **operation_config)
-  namewithoutparameters: delete_conversation_member
+- uid: botframework.connector.aio.operations_async.ConversationsOperations.delete_conversation_member
+  name: delete_conversation_member
   summary: 'DeleteConversationMember.
 
 
@@ -202,54 +155,45 @@ items:
     last member
 
     of the conversation, the conversation will also be deleted.'
-  syntax:
-    content: delete_conversation_member(conversation_id, member_id, *, custom_headers=None,
-      raw=False, **operation_config)
-    parameters:
-    - description: Conversation ID
-      id: conversation_id
-      isRequired: true
-      type:
-      - str
-    - description: ID of the member to delete from this conversation
-      id: member_id
-      isRequired: true
-      type:
-      - str
-    - description: headers that will be added to the request
-      id: custom_headers
-      isRequired: true
-      type:
-      - dict
-    - description: 'returns the direct response alongside the
+  signature: delete_conversation_member(conversation_id, member_id, *, custom_headers=None,
+    raw=False, **operation_config)
+  parameters:
+  - name: conversation_id
+    description: Conversation ID
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: member_id
+    description: ID of the member to delete from this conversation
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: custom_headers
+    description: headers that will be added to the request
+    isRequired: true
+    types:
+    - <xref:dict>
+  - name: raw
+    description: 'returns the direct response alongside the
 
-        deserialized response'
-      id: raw
-      isRequired: true
-      type:
-      - bool
-    - description: '*Operation configuration
+      deserialized response'
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: operation_config
+    description: '*Operation configuration
 
-        overrides*.'
-      id: operation_config
-      isRequired: true
-    return:
-      description: None or ClientRawResponse if raw=true
-      type:
-      - None
-      - msrest.pipeline.ClientRawResponse
-  type: method
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.delete_conversation_member
-- class: botframework.connector.aio.operations_async.ConversationsOperations
+      overrides*.'
+    isRequired: true
+  return:
+    description: None or ClientRawResponse if raw=true
+    types:
+    - <xref:None>
+    - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
   - type: botframework.connector.models.ErrorResponseException
-  fullName: botframework.connector.aio.operations_async.ConversationsOperations.get_activity_members
-  langs:
-  - python
-  module: botframework.connector.aio.operations_async
-  name: get_activity_members(conversation_id, activity_id, *, custom_headers=None,
-    raw=False, **operation_config)
-  namewithoutparameters: get_activity_members
+- uid: botframework.connector.aio.operations_async.ConversationsOperations.get_activity_members
+  name: get_activity_members
   summary: 'GetActivityMembers.
 
 
@@ -260,54 +204,45 @@ items:
     array of ChannelAccount objects representing the members of the
 
     particular activity in the conversation.'
-  syntax:
-    content: get_activity_members(conversation_id, activity_id, *, custom_headers=None,
-      raw=False, **operation_config)
-    parameters:
-    - description: Conversation ID
-      id: conversation_id
-      isRequired: true
-      type:
-      - str
-    - description: Activity ID
-      id: activity_id
-      isRequired: true
-      type:
-      - str
-    - description: headers that will be added to the request
-      id: custom_headers
-      isRequired: true
-      type:
-      - dict
-    - description: 'returns the direct response alongside the
+  signature: get_activity_members(conversation_id, activity_id, *, custom_headers=None,
+    raw=False, **operation_config)
+  parameters:
+  - name: conversation_id
+    description: Conversation ID
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: activity_id
+    description: Activity ID
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: custom_headers
+    description: headers that will be added to the request
+    isRequired: true
+    types:
+    - <xref:dict>
+  - name: raw
+    description: 'returns the direct response alongside the
 
-        deserialized response'
-      id: raw
-      isRequired: true
-      type:
-      - bool
-    - description: '*Operation configuration
+      deserialized response'
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: operation_config
+    description: '*Operation configuration
 
-        overrides*.'
-      id: operation_config
-      isRequired: true
-    return:
-      description: list or ClientRawResponse if raw=true
-      type:
-      - list[botframework.connector.models.ChannelAccount]
-      - msrest.pipeline.ClientRawResponse
-  type: method
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.get_activity_members
-- class: botframework.connector.aio.operations_async.ConversationsOperations
+      overrides*.'
+    isRequired: true
+  return:
+    description: list or ClientRawResponse if raw=true
+    types:
+    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
+    - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
   - type: botframework.connector.models.ErrorResponseException
-  fullName: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_member
-  langs:
-  - python
-  module: botframework.connector.aio.operations_async
-  name: get_conversation_member(conversation_id, member_id, custom_headers=None, raw=False,
-    **operation_config)
-  namewithoutparameters: get_conversation_member
+- uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_member
+  name: get_conversation_member
   summary: 'GetConversationMember.
 
 
@@ -316,54 +251,45 @@ items:
     This REST API takes a ConversationId and memberId and returns a
 
     ChannelAccount object representing the member of the conversation.'
-  syntax:
-    content: get_conversation_member(conversation_id, member_id, custom_headers=None,
-      raw=False, **operation_config)
-    parameters:
-    - description: Conversation Id
-      id: conversation_id
-      isRequired: true
-      type:
-      - str
-    - description: Member Id
-      id: member_id
-      isRequired: true
-      type:
-      - str
-    - defaultValue: None
-      description: headers that will be added to the request
-      id: custom_headers
-      type:
-      - dict
-    - defaultValue: 'False'
-      description: 'returns the direct response alongside the
+  signature: get_conversation_member(conversation_id, member_id, custom_headers=None,
+    raw=False, **operation_config)
+  parameters:
+  - name: conversation_id
+    description: Conversation Id
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: member_id
+    description: Member Id
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: custom_headers
+    description: headers that will be added to the request
+    defaultValue: None
+    types:
+    - <xref:dict>
+  - name: raw
+    description: 'returns the direct response alongside the
 
-        deserialized response'
-      id: raw
-      type:
-      - bool
-    - description: '*Operation configuration
+      deserialized response'
+    defaultValue: 'False'
+    types:
+    - <xref:bool>
+  - name: operation_config
+    description: '*Operation configuration
 
-        overrides*.'
-      id: operation_config
-      isRequired: true
-    return:
-      description: list or ClientRawResponse if raw=true
-      type:
-      - list[botframework.connector.models.ChannelAccount]
-      - msrest.pipeline.ClientRawResponse
-  type: method
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_member
-- class: botframework.connector.aio.operations_async.ConversationsOperations
+      overrides*.'
+    isRequired: true
+  return:
+    description: list or ClientRawResponse if raw=true
+    types:
+    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
+    - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
   - type: botframework.connector.models.ErrorResponseException
-  fullName: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_members
-  langs:
-  - python
-  module: botframework.connector.aio.operations_async
-  name: get_conversation_members(conversation_id, *, custom_headers=None, raw=False,
-    **operation_config)
-  namewithoutparameters: get_conversation_members
+- uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_members
+  name: get_conversation_members
   summary: 'GetConversationMembers.
 
 
@@ -372,49 +298,40 @@ items:
     This REST API takes a ConversationId and returns an array of
 
     ChannelAccount objects representing the members of the conversation.'
-  syntax:
-    content: get_conversation_members(conversation_id, *, custom_headers=None, raw=False,
-      **operation_config)
-    parameters:
-    - description: Conversation ID
-      id: conversation_id
-      isRequired: true
-      type:
-      - str
-    - description: headers that will be added to the request
-      id: custom_headers
-      isRequired: true
-      type:
-      - dict
-    - description: 'returns the direct response alongside the
+  signature: get_conversation_members(conversation_id, *, custom_headers=None, raw=False,
+    **operation_config)
+  parameters:
+  - name: conversation_id
+    description: Conversation ID
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: custom_headers
+    description: headers that will be added to the request
+    isRequired: true
+    types:
+    - <xref:dict>
+  - name: raw
+    description: 'returns the direct response alongside the
 
-        deserialized response'
-      id: raw
-      isRequired: true
-      type:
-      - bool
-    - description: '*Operation configuration
+      deserialized response'
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: operation_config
+    description: '*Operation configuration
 
-        overrides*.'
-      id: operation_config
-      isRequired: true
-    return:
-      description: list or ClientRawResponse if raw=true
-      type:
-      - list[botframework.connector.models.ChannelAccount]
-      - msrest.pipeline.ClientRawResponse
-  type: method
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_members
-- class: botframework.connector.aio.operations_async.ConversationsOperations
+      overrides*.'
+    isRequired: true
+  return:
+    description: list or ClientRawResponse if raw=true
+    types:
+    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
+    - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
-  - type: msrest.exceptions.HttpOperationError
-  fullName: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_paged_members
-  langs:
-  - python
-  module: botframework.connector.aio.operations_async
-  name: get_conversation_paged_members(conversation_id, page_size=None, continuation_token=None,
-    *, custom_headers=None, raw=False, **operation_config)
-  namewithoutparameters: get_conversation_paged_members
+  - type: botframework.connector.models.ErrorResponseException
+- uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_paged_members
+  name: get_conversation_paged_members
   summary: 'GetConversationPagedMembers.
 
 
@@ -445,59 +362,50 @@ items:
     A response to a request that has a continuation token from a prior
 
     request may rarely return members from a previous request.'
-  syntax:
-    content: get_conversation_paged_members(conversation_id, page_size=None, continuation_token=None,
-      *, custom_headers=None, raw=False, **operation_config)
-    parameters:
-    - description: Conversation ID
-      id: conversation_id
-      isRequired: true
-      type:
-      - str
-    - description: Suggested page size
-      id: page_size
-      isRequired: true
-      type:
-      - int
-    - description: Continuation Token
-      id: continuation_token
-      isRequired: true
-      type:
-      - str
-    - description: headers that will be added to the request
-      id: custom_headers
-      isRequired: true
-      type:
-      - dict
-    - description: 'returns the direct response alongside the
+  signature: get_conversation_paged_members(conversation_id, page_size=None, continuation_token=None,
+    *, custom_headers=None, raw=False, **operation_config)
+  parameters:
+  - name: conversation_id
+    description: Conversation ID
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: page_size
+    description: Suggested page size
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: continuation_token
+    description: Continuation Token
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: custom_headers
+    description: headers that will be added to the request
+    isRequired: true
+    types:
+    - <xref:dict>
+  - name: raw
+    description: 'returns the direct response alongside the
 
-        deserialized response'
-      id: raw
-      isRequired: true
-      type:
-      - bool
-    - description: '*Operation configuration
+      deserialized response'
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: operation_config
+    description: '*Operation configuration
 
-        overrides*.'
-      id: operation_config
-      isRequired: true
-    return:
-      description: PagedMembersResult or ClientRawResponse if raw=true
-      type:
-      - botframework.connector.models.PagedMembersResult
-      - msrest.pipeline.ClientRawResponse
-  type: method
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_paged_members
-- class: botframework.connector.aio.operations_async.ConversationsOperations
+      overrides*.'
+    isRequired: true
+  return:
+    description: PagedMembersResult or ClientRawResponse if raw=true
+    types:
+    - <xref:botframework.connector.models.PagedMembersResult>
+    - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
-  - type: botframework.connector.models.ErrorResponseException
-  fullName: botframework.connector.aio.operations_async.ConversationsOperations.get_conversations
-  langs:
-  - python
-  module: botframework.connector.aio.operations_async
-  name: get_conversations(continuation_token=None, *, custom_headers=None, raw=False,
-    **operation_config)
-  namewithoutparameters: get_conversations
+  - type: msrest.exceptions.HttpOperationError
+- uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversations
+  name: get_conversations
   summary: 'GetConversations.
 
 
@@ -520,49 +428,40 @@ items:
     an array of ChannelAccounts that describe the members of the
 
     conversation.'
-  syntax:
-    content: get_conversations(continuation_token=None, *, custom_headers=None, raw=False,
-      **operation_config)
-    parameters:
-    - description: skip or continuation token
-      id: continuation_token
-      isRequired: true
-      type:
-      - str
-    - description: headers that will be added to the request
-      id: custom_headers
-      isRequired: true
-      type:
-      - dict
-    - description: 'returns the direct response alongside the
+  signature: get_conversations(continuation_token=None, *, custom_headers=None, raw=False,
+    **operation_config)
+  parameters:
+  - name: continuation_token
+    description: skip or continuation token
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: custom_headers
+    description: headers that will be added to the request
+    isRequired: true
+    types:
+    - <xref:dict>
+  - name: raw
+    description: 'returns the direct response alongside the
 
-        deserialized response'
-      id: raw
-      isRequired: true
-      type:
-      - bool
-    - description: '*Operation configuration
+      deserialized response'
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: operation_config
+    description: '*Operation configuration
 
-        overrides*.'
-      id: operation_config
-      isRequired: true
-    return:
-      description: ConversationsResult or ClientRawResponse if raw=true
-      type:
-      - botframework.connector.models.ConversationsResult
-      - msrest.pipeline.ClientRawResponse
-  type: method
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversations
-- class: botframework.connector.aio.operations_async.ConversationsOperations
+      overrides*.'
+    isRequired: true
+  return:
+    description: ConversationsResult or ClientRawResponse if raw=true
+    types:
+    - <xref:botframework.connector.models.ConversationsResult>
+    - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
-  - type: msrest.exceptions.HttpOperationError
-  fullName: botframework.connector.aio.operations_async.ConversationsOperations.get_teams_conversation_paged_members
-  langs:
-  - python
-  module: botframework.connector.aio.operations_async
-  name: get_teams_conversation_paged_members(conversation_id, page_size=None, continuation_token=None,
-    custom_headers=None, raw=False, **operation_config)
-  namewithoutparameters: get_teams_conversation_paged_members
+  - type: botframework.connector.models.ErrorResponseException
+- uid: botframework.connector.aio.operations_async.ConversationsOperations.get_teams_conversation_paged_members
+  name: get_teams_conversation_paged_members
   summary: 'GetTeamsConversationPagedMembers.
 
 
@@ -593,59 +492,50 @@ items:
     A response to a request that has a continuation token from a prior
 
     request may rarely return members from a previous request.'
-  syntax:
-    content: get_teams_conversation_paged_members(conversation_id, page_size=None,
-      continuation_token=None, custom_headers=None, raw=False, **operation_config)
-    parameters:
-    - description: Conversation ID
-      id: conversation_id
-      isRequired: true
-      type:
-      - str
-    - defaultValue: None
-      description: Suggested page size
-      id: page_size
-      type:
-      - int
-    - defaultValue: None
-      description: Continuation Token
-      id: continuation_token
-      type:
-      - str
-    - defaultValue: None
-      description: headers that will be added to the request
-      id: custom_headers
-      type:
-      - dict
-    - defaultValue: 'False'
-      description: 'returns the direct response alongside the
+  signature: get_teams_conversation_paged_members(conversation_id, page_size=None,
+    continuation_token=None, custom_headers=None, raw=False, **operation_config)
+  parameters:
+  - name: conversation_id
+    description: Conversation ID
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: page_size
+    description: Suggested page size
+    defaultValue: None
+    types:
+    - <xref:int>
+  - name: continuation_token
+    description: Continuation Token
+    defaultValue: None
+    types:
+    - <xref:str>
+  - name: custom_headers
+    description: headers that will be added to the request
+    defaultValue: None
+    types:
+    - <xref:dict>
+  - name: raw
+    description: 'returns the direct response alongside the
 
-        deserialized response'
-      id: raw
-      type:
-      - bool
-    - description: '*Operation configuration
+      deserialized response'
+    defaultValue: 'False'
+    types:
+    - <xref:bool>
+  - name: operation_config
+    description: '*Operation configuration
 
-        overrides*.'
-      id: operation_config
-      isRequired: true
-    return:
-      description: PagedMembersResult or ClientRawResponse if raw=true
-      type:
-      - botframework.connector.models.PagedMembersResult
-      - msrest.pipeline.ClientRawResponse
-  type: method
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.get_teams_conversation_paged_members
-- class: botframework.connector.aio.operations_async.ConversationsOperations
+      overrides*.'
+    isRequired: true
+  return:
+    description: PagedMembersResult or ClientRawResponse if raw=true
+    types:
+    - <xref:botframework.connector.models.PagedMembersResult>
+    - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
-  - type: botframework.connector.models.ErrorResponseException
-  fullName: botframework.connector.aio.operations_async.ConversationsOperations.reply_to_activity
-  langs:
-  - python
-  module: botframework.connector.aio.operations_async
-  name: reply_to_activity(conversation_id, activity_id, activity, *, custom_headers=None,
-    raw=False, **operation_config)
-  namewithoutparameters: reply_to_activity
+  - type: msrest.exceptions.HttpOperationError
+- uid: botframework.connector.aio.operations_async.ConversationsOperations.reply_to_activity
+  name: reply_to_activity
   summary: 'ReplyToActivity.
 
 
@@ -672,59 +562,50 @@ items:
     conversation.
 
     Use SendToConversation in all other cases.'
-  syntax:
-    content: reply_to_activity(conversation_id, activity_id, activity, *, custom_headers=None,
-      raw=False, **operation_config)
-    parameters:
-    - description: Conversation ID
-      id: conversation_id
-      isRequired: true
-      type:
-      - str
-    - description: activityId the reply is to (OPTIONAL)
-      id: activity_id
-      isRequired: true
-      type:
-      - str
-    - description: Activity to send
-      id: activity
-      isRequired: true
-      type:
-      - botframework.connector.models.Activity
-    - description: headers that will be added to the request
-      id: custom_headers
-      isRequired: true
-      type:
-      - dict
-    - description: 'returns the direct response alongside the
+  signature: reply_to_activity(conversation_id, activity_id, activity, *, custom_headers=None,
+    raw=False, **operation_config)
+  parameters:
+  - name: conversation_id
+    description: Conversation ID
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: activity_id
+    description: activityId the reply is to (OPTIONAL)
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: activity
+    description: Activity to send
+    isRequired: true
+    types:
+    - <xref:botframework.connector.models.Activity>
+  - name: custom_headers
+    description: headers that will be added to the request
+    isRequired: true
+    types:
+    - <xref:dict>
+  - name: raw
+    description: 'returns the direct response alongside the
 
-        deserialized response'
-      id: raw
-      isRequired: true
-      type:
-      - bool
-    - description: '*Operation configuration
+      deserialized response'
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: operation_config
+    description: '*Operation configuration
 
-        overrides*.'
-      id: operation_config
-      isRequired: true
-    return:
-      description: ResourceResponse or ClientRawResponse if raw=true
-      type:
-      - botframework.connector.models.ResourceResponse
-      - msrest.pipeline.ClientRawResponse
-  type: method
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.reply_to_activity
-- class: botframework.connector.aio.operations_async.ConversationsOperations
+      overrides*.'
+    isRequired: true
+  return:
+    description: ResourceResponse or ClientRawResponse if raw=true
+    types:
+    - <xref:botframework.connector.models.ResourceResponse>
+    - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
   - type: botframework.connector.models.ErrorResponseException
-  fullName: botframework.connector.aio.operations_async.ConversationsOperations.send_conversation_history
-  langs:
-  - python
-  module: botframework.connector.aio.operations_async
-  name: send_conversation_history(conversation_id, activities=None, *, custom_headers=None,
-    raw=False, **operation_config)
-  namewithoutparameters: send_conversation_history
+- uid: botframework.connector.aio.operations_async.ConversationsOperations.send_conversation_history
+  name: send_conversation_history
   summary: 'SendConversationHistory.
 
 
@@ -739,56 +620,47 @@ items:
     duplicate activities and the timestamps are used by the client to
 
     render the activities in the right order.'
-  syntax:
-    content: send_conversation_history(conversation_id, activities=None, *, custom_headers=None,
-      raw=False, **operation_config)
-    parameters:
-    - description: Conversation ID
-      id: conversation_id
-      isRequired: true
-      type:
-      - str
-    - description: 'A collection of Activities that conforms to the
+  signature: send_conversation_history(conversation_id, activities=None, *, custom_headers=None,
+    raw=False, **operation_config)
+  parameters:
+  - name: conversation_id
+    description: Conversation ID
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: activities
+    description: 'A collection of Activities that conforms to the
 
-        Transcript schema.'
-      id: activities
-      isRequired: true
-      type:
-      - list[botframework.connector.models.Activity]
-    - description: headers that will be added to the request
-      id: custom_headers
-      isRequired: true
-      type:
-      - dict
-    - description: 'returns the direct response alongside the
+      Transcript schema.'
+    isRequired: true
+    types:
+    - <xref:list>[<xref:botframework.connector.models.Activity>]
+  - name: custom_headers
+    description: headers that will be added to the request
+    isRequired: true
+    types:
+    - <xref:dict>
+  - name: raw
+    description: 'returns the direct response alongside the
 
-        deserialized response'
-      id: raw
-      isRequired: true
-      type:
-      - bool
-    - description: '*Operation configuration
+      deserialized response'
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: operation_config
+    description: '*Operation configuration
 
-        overrides*.'
-      id: operation_config
-      isRequired: true
-    return:
-      description: ResourceResponse or ClientRawResponse if raw=true
-      type:
-      - botframework.connector.models.ResourceResponse
-      - msrest.pipeline.ClientRawResponse
-  type: method
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.send_conversation_history
-- class: botframework.connector.aio.operations_async.ConversationsOperations
+      overrides*.'
+    isRequired: true
+  return:
+    description: ResourceResponse or ClientRawResponse if raw=true
+    types:
+    - <xref:botframework.connector.models.ResourceResponse>
+    - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
   - type: botframework.connector.models.ErrorResponseException
-  fullName: botframework.connector.aio.operations_async.ConversationsOperations.send_to_conversation
-  langs:
-  - python
-  module: botframework.connector.aio.operations_async
-  name: send_to_conversation(conversation_id, activity, *, custom_headers=None, raw=False,
-    **operation_config)
-  namewithoutparameters: send_to_conversation
+- uid: botframework.connector.aio.operations_async.ConversationsOperations.send_to_conversation
+  name: send_to_conversation
   summary: 'SendToConversation.
 
 
@@ -817,54 +689,45 @@ items:
     conversation.
 
     Use SendToConversation in all other cases.'
-  syntax:
-    content: send_to_conversation(conversation_id, activity, *, custom_headers=None,
-      raw=False, **operation_config)
-    parameters:
-    - description: Conversation ID
-      id: conversation_id
-      isRequired: true
-      type:
-      - str
-    - description: Activity to send
-      id: activity
-      isRequired: true
-      type:
-      - botframework.connector.models.Activity
-    - description: headers that will be added to the request
-      id: custom_headers
-      isRequired: true
-      type:
-      - dict
-    - description: 'returns the direct response alongside the
+  signature: send_to_conversation(conversation_id, activity, *, custom_headers=None,
+    raw=False, **operation_config)
+  parameters:
+  - name: conversation_id
+    description: Conversation ID
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: activity
+    description: Activity to send
+    isRequired: true
+    types:
+    - <xref:botframework.connector.models.Activity>
+  - name: custom_headers
+    description: headers that will be added to the request
+    isRequired: true
+    types:
+    - <xref:dict>
+  - name: raw
+    description: 'returns the direct response alongside the
 
-        deserialized response'
-      id: raw
-      isRequired: true
-      type:
-      - bool
-    - description: '*Operation configuration
+      deserialized response'
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: operation_config
+    description: '*Operation configuration
 
-        overrides*.'
-      id: operation_config
-      isRequired: true
-    return:
-      description: ResourceResponse or ClientRawResponse if raw=true
-      type:
-      - botframework.connector.models.ResourceResponse
-      - msrest.pipeline.ClientRawResponse
-  type: method
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.send_to_conversation
-- class: botframework.connector.aio.operations_async.ConversationsOperations
+      overrides*.'
+    isRequired: true
+  return:
+    description: ResourceResponse or ClientRawResponse if raw=true
+    types:
+    - <xref:botframework.connector.models.ResourceResponse>
+    - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
   - type: botframework.connector.models.ErrorResponseException
-  fullName: botframework.connector.aio.operations_async.ConversationsOperations.update_activity
-  langs:
-  - python
-  module: botframework.connector.aio.operations_async
-  name: update_activity(conversation_id, activity_id, activity, *, custom_headers=None,
-    raw=False, **operation_config)
-  namewithoutparameters: update_activity
+- uid: botframework.connector.aio.operations_async.ConversationsOperations.update_activity
+  name: update_activity
   summary: 'UpdateActivity.
 
 
@@ -877,59 +740,50 @@ items:
     For example, you can remove buttons after someone has clicked "Approve"
 
     button.'
-  syntax:
-    content: update_activity(conversation_id, activity_id, activity, *, custom_headers=None,
-      raw=False, **operation_config)
-    parameters:
-    - description: Conversation ID
-      id: conversation_id
-      isRequired: true
-      type:
-      - str
-    - description: activityId to update
-      id: activity_id
-      isRequired: true
-      type:
-      - str
-    - description: replacement Activity
-      id: activity
-      isRequired: true
-      type:
-      - botframework.connector.models.Activity
-    - description: headers that will be added to the request
-      id: custom_headers
-      isRequired: true
-      type:
-      - dict
-    - description: 'returns the direct response alongside the
+  signature: update_activity(conversation_id, activity_id, activity, *, custom_headers=None,
+    raw=False, **operation_config)
+  parameters:
+  - name: conversation_id
+    description: Conversation ID
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: activity_id
+    description: activityId to update
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: activity
+    description: replacement Activity
+    isRequired: true
+    types:
+    - <xref:botframework.connector.models.Activity>
+  - name: custom_headers
+    description: headers that will be added to the request
+    isRequired: true
+    types:
+    - <xref:dict>
+  - name: raw
+    description: 'returns the direct response alongside the
 
-        deserialized response'
-      id: raw
-      isRequired: true
-      type:
-      - bool
-    - description: '*Operation configuration
+      deserialized response'
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: operation_config
+    description: '*Operation configuration
 
-        overrides*.'
-      id: operation_config
-      isRequired: true
-    return:
-      description: ResourceResponse or ClientRawResponse if raw=true
-      type:
-      - botframework.connector.models.ResourceResponse
-      - msrest.pipeline.ClientRawResponse
-  type: method
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.update_activity
-- class: botframework.connector.aio.operations_async.ConversationsOperations
+      overrides*.'
+    isRequired: true
+  return:
+    description: ResourceResponse or ClientRawResponse if raw=true
+    types:
+    - <xref:botframework.connector.models.ResourceResponse>
+    - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
   - type: botframework.connector.models.ErrorResponseException
-  fullName: botframework.connector.aio.operations_async.ConversationsOperations.upload_attachment
-  langs:
-  - python
-  module: botframework.connector.aio.operations_async
-  name: upload_attachment(conversation_id, attachment_upload, *, custom_headers=None,
-    raw=False, **operation_config)
-  namewithoutparameters: upload_attachment
+- uid: botframework.connector.aio.operations_async.ConversationsOperations.upload_attachment
+  name: upload_attachment
   summary: 'UploadAttachment.
 
 
@@ -942,168 +796,44 @@ items:
     The response is a ResourceResponse which contains an AttachmentId which
 
     is suitable for using with the attachments API.'
-  syntax:
-    content: upload_attachment(conversation_id, attachment_upload, *, custom_headers=None,
-      raw=False, **operation_config)
-    parameters:
-    - description: Conversation ID
-      id: conversation_id
-      isRequired: true
-      type:
-      - str
-    - description: Attachment data
-      id: attachment_upload
-      isRequired: true
-      type:
-      - botframework.connector.models.AttachmentData
-    - description: headers that will be added to the request
-      id: custom_headers
-      isRequired: true
-      type:
-      - dict
-    - description: 'returns the direct response alongside the
+  signature: upload_attachment(conversation_id, attachment_upload, *, custom_headers=None,
+    raw=False, **operation_config)
+  parameters:
+  - name: conversation_id
+    description: Conversation ID
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: attachment_upload
+    description: Attachment data
+    isRequired: true
+    types:
+    - <xref:botframework.connector.models.AttachmentData>
+  - name: custom_headers
+    description: headers that will be added to the request
+    isRequired: true
+    types:
+    - <xref:dict>
+  - name: raw
+    description: 'returns the direct response alongside the
 
-        deserialized response'
-      id: raw
-      isRequired: true
-      type:
-      - bool
-    - description: '*Operation configuration
+      deserialized response'
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: operation_config
+    description: '*Operation configuration
 
-        overrides*.'
-      id: operation_config
-      isRequired: true
-    return:
-      description: ResourceResponse or ClientRawResponse if raw=true
-      type:
-      - botframework.connector.models.ResourceResponse
-      - msrest.pipeline.ClientRawResponse
-  type: method
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.upload_attachment
-- class: botframework.connector.aio.operations_async.ConversationsOperations
-  fullName: botframework.connector.aio.operations_async.ConversationsOperations.models
-  langs:
-  - python
-  module: botframework.connector.aio.operations_async
+      overrides*.'
+    isRequired: true
+  return:
+    description: ResourceResponse or ClientRawResponse if raw=true
+    types:
+    - <xref:botframework.connector.models.ResourceResponse>
+    - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - type: botframework.connector.models.ErrorResponseException
+attributes:
+- uid: botframework.connector.aio.operations_async.ConversationsOperations.models
   name: models
-  syntax:
-    content: models = <module 'botframework.connector.models' from 'c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\site-packages\\botframework\\connector\\models\\__init__.py'>
-  type: attribute
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.models
-references:
-- fullName: botframework.connector.aio.operations_async.ConversationsOperations.create_conversation
-  isExternal: false
-  name: create_conversation(parameters, *, custom_headers=None, raw=False, **operation_config)
-  parent: botframework.connector.aio.operations_async.ConversationsOperations
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.create_conversation
-- fullName: botframework.connector.aio.operations_async.ConversationsOperations.delete_activity
-  isExternal: false
-  name: delete_activity(conversation_id, activity_id, *, custom_headers=None, raw=False,
-    **operation_config)
-  parent: botframework.connector.aio.operations_async.ConversationsOperations
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.delete_activity
-- fullName: botframework.connector.aio.operations_async.ConversationsOperations.delete_conversation_member
-  isExternal: false
-  name: delete_conversation_member(conversation_id, member_id, *, custom_headers=None,
-    raw=False, **operation_config)
-  parent: botframework.connector.aio.operations_async.ConversationsOperations
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.delete_conversation_member
-- fullName: botframework.connector.aio.operations_async.ConversationsOperations.get_activity_members
-  isExternal: false
-  name: get_activity_members(conversation_id, activity_id, *, custom_headers=None,
-    raw=False, **operation_config)
-  parent: botframework.connector.aio.operations_async.ConversationsOperations
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.get_activity_members
-- fullName: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_member
-  isExternal: false
-  name: get_conversation_member(conversation_id, member_id, custom_headers=None, raw=False,
-    **operation_config)
-  parent: botframework.connector.aio.operations_async.ConversationsOperations
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_member
-- fullName: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_members
-  isExternal: false
-  name: get_conversation_members(conversation_id, *, custom_headers=None, raw=False,
-    **operation_config)
-  parent: botframework.connector.aio.operations_async.ConversationsOperations
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_members
-- fullName: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_paged_members
-  isExternal: false
-  name: get_conversation_paged_members(conversation_id, page_size=None, continuation_token=None,
-    *, custom_headers=None, raw=False, **operation_config)
-  parent: botframework.connector.aio.operations_async.ConversationsOperations
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_paged_members
-- fullName: botframework.connector.aio.operations_async.ConversationsOperations.get_conversations
-  isExternal: false
-  name: get_conversations(continuation_token=None, *, custom_headers=None, raw=False,
-    **operation_config)
-  parent: botframework.connector.aio.operations_async.ConversationsOperations
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversations
-- fullName: botframework.connector.aio.operations_async.ConversationsOperations.get_teams_conversation_paged_members
-  isExternal: false
-  name: get_teams_conversation_paged_members(conversation_id, page_size=None, continuation_token=None,
-    custom_headers=None, raw=False, **operation_config)
-  parent: botframework.connector.aio.operations_async.ConversationsOperations
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.get_teams_conversation_paged_members
-- fullName: botframework.connector.aio.operations_async.ConversationsOperations.reply_to_activity
-  isExternal: false
-  name: reply_to_activity(conversation_id, activity_id, activity, *, custom_headers=None,
-    raw=False, **operation_config)
-  parent: botframework.connector.aio.operations_async.ConversationsOperations
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.reply_to_activity
-- fullName: botframework.connector.aio.operations_async.ConversationsOperations.send_conversation_history
-  isExternal: false
-  name: send_conversation_history(conversation_id, activities=None, *, custom_headers=None,
-    raw=False, **operation_config)
-  parent: botframework.connector.aio.operations_async.ConversationsOperations
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.send_conversation_history
-- fullName: botframework.connector.aio.operations_async.ConversationsOperations.send_to_conversation
-  isExternal: false
-  name: send_to_conversation(conversation_id, activity, *, custom_headers=None, raw=False,
-    **operation_config)
-  parent: botframework.connector.aio.operations_async.ConversationsOperations
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.send_to_conversation
-- fullName: botframework.connector.aio.operations_async.ConversationsOperations.update_activity
-  isExternal: false
-  name: update_activity(conversation_id, activity_id, activity, *, custom_headers=None,
-    raw=False, **operation_config)
-  parent: botframework.connector.aio.operations_async.ConversationsOperations
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.update_activity
-- fullName: botframework.connector.aio.operations_async.ConversationsOperations.upload_attachment
-  isExternal: false
-  name: upload_attachment(conversation_id, attachment_upload, *, custom_headers=None,
-    raw=False, **operation_config)
-  parent: botframework.connector.aio.operations_async.ConversationsOperations
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.upload_attachment
-- fullName: botframework.connector.aio.operations_async.ConversationsOperations.models
-  isExternal: false
-  name: models
-  parent: botframework.connector.aio.operations_async.ConversationsOperations
-  uid: botframework.connector.aio.operations_async.ConversationsOperations.models
-- fullName: list[botframework.connector.models.ChannelAccount]
-  name: list[ChannelAccount]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.models.ChannelAccount
-    name: ChannelAccount
-    uid: botframework.connector.models.ChannelAccount
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.models.ChannelAccount]
-- fullName: list[botframework.connector.models.Activity]
-  name: list[Activity]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.models.Activity
-    name: Activity
-    uid: botframework.connector.models.Activity
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.models.Activity]
+  signature: models = <module 'botframework.connector.models' from 'c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\site-packages\\botframework\\connector\\models\\__init__.py'>

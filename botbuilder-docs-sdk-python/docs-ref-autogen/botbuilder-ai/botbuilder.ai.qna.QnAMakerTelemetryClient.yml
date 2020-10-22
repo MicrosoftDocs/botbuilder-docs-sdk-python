@@ -1,43 +1,16 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.ai.qna.QnAMakerTelemetryClient.get_answers
-  class: botbuilder.ai.qna.QnAMakerTelemetryClient
-  fullName: botbuilder.ai.qna.QnAMakerTelemetryClient
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: abc.ABC
-  langs:
-  - python
-  module: botbuilder.ai.qna
-  name: QnAMakerTelemetryClient
-  syntax:
-    content: 'QnAMakerTelemetryClient(log_personal_information: bool, telemetry_client:
-      botbuilder.core.bot_telemetry_client.BotTelemetryClient)'
-  type: class
-  uid: botbuilder.ai.qna.QnAMakerTelemetryClient
-- class: botbuilder.ai.qna.QnAMakerTelemetryClient
-  fullName: botbuilder.ai.qna.QnAMakerTelemetryClient.get_answers
-  langs:
-  - python
-  module: botbuilder.ai.qna
-  name: 'get_answers(context: botbuilder.core.turn_context.TurnContext, options: botbuilder.ai.qna.qnamaker_options.QnAMakerOptions
-    = None, telemetry_properties: typing.Dict[str, str] = None, telemetry_metrics:
-    typing.Dict[str, float] = None)'
-  namewithoutparameters: get_answers
-  syntax:
-    content: 'get_answers(context: botbuilder.core.turn_context.TurnContext, options:
-      botbuilder.ai.qna.qnamaker_options.QnAMakerOptions = None, telemetry_properties:
-      typing.Dict[str, str] = None, telemetry_metrics: typing.Dict[str, float] = None)'
-  type: method
-  uid: botbuilder.ai.qna.QnAMakerTelemetryClient.get_answers
-references:
-- fullName: botbuilder.ai.qna.QnAMakerTelemetryClient.get_answers
-  isExternal: false
-  name: 'get_answers(context: botbuilder.core.turn_context.TurnContext, options: botbuilder.ai.qna.qnamaker_options.QnAMakerOptions
-    = None, telemetry_properties: typing.Dict[str, str] = None, telemetry_metrics:
-    typing.Dict[str, float] = None)'
-  parent: botbuilder.ai.qna.QnAMakerTelemetryClient
-  uid: botbuilder.ai.qna.QnAMakerTelemetryClient.get_answers
+### YamlMime:PythonClass
+uid: botbuilder.ai.qna.QnAMakerTelemetryClient
+name: QnAMakerTelemetryClient
+fullName: botbuilder.ai.qna.QnAMakerTelemetryClient
+module: botbuilder.ai.qna
+inheritances:
+- abc.ABC
+constructor:
+  syntax: 'QnAMakerTelemetryClient(log_personal_information: bool, telemetry_client:
+    botbuilder.core.bot_telemetry_client.BotTelemetryClient)'
+methods:
+- uid: botbuilder.ai.qna.QnAMakerTelemetryClient.get_answers
+  name: get_answers
+  signature: 'get_answers(context: botbuilder.core.turn_context.TurnContext, options:
+    botbuilder.ai.qna.qnamaker_options.QnAMakerOptions = None, telemetry_properties:
+    typing.Dict[str, str] = None, telemetry_metrics: typing.Dict[str, float] = None)'

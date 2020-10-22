@@ -1,42 +1,21 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.ai.qna.utils.TrainUtils.call_train
-  class: botbuilder.ai.qna.utils.TrainUtils
-  fullName: botbuilder.ai.qna.utils.TrainUtils
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.ai.qna.utils
-  name: TrainUtils
-  summary: Class for Train API, used in active learning to add suggestions to the
-    knowledge base
-  syntax:
-    content: 'TrainUtils(endpoint: botbuilder.ai.qna.qnamaker_endpoint.QnAMakerEndpoint,
-      http_client: aiohttp.client.ClientSession)'
-  type: class
-  uid: botbuilder.ai.qna.utils.TrainUtils
-- class: botbuilder.ai.qna.utils.TrainUtils
-  fullName: botbuilder.ai.qna.utils.TrainUtils.call_train
-  langs:
-  - python
-  module: botbuilder.ai.qna.utils
-  name: 'call_train(feedback_records: typing.List[botbuilder.ai.qna.models.feedback_record.FeedbackRecord])'
-  namewithoutparameters: call_train
+### YamlMime:PythonClass
+uid: botbuilder.ai.qna.utils.TrainUtils
+name: TrainUtils
+fullName: botbuilder.ai.qna.utils.TrainUtils
+module: botbuilder.ai.qna.utils
+inheritances:
+- builtins.object
+summary: Class for Train API, used in active learning to add suggestions to the knowledge
+  base
+constructor:
+  syntax: 'TrainUtils(endpoint: botbuilder.ai.qna.qnamaker_endpoint.QnAMakerEndpoint,
+    http_client: aiohttp.client.ClientSession)'
+methods:
+- uid: botbuilder.ai.qna.utils.TrainUtils.call_train
+  name: call_train
   summary: 'Train API to provide feedback.
 
 
 
     feedback_records: Feedback record list.'
-  syntax:
-    content: 'call_train(feedback_records: typing.List[botbuilder.ai.qna.models.feedback_record.FeedbackRecord])'
-  type: method
-  uid: botbuilder.ai.qna.utils.TrainUtils.call_train
-references:
-- fullName: botbuilder.ai.qna.utils.TrainUtils.call_train
-  isExternal: false
-  name: 'call_train(feedback_records: typing.List[botbuilder.ai.qna.models.feedback_record.FeedbackRecord])'
-  parent: botbuilder.ai.qna.utils.TrainUtils
-  uid: botbuilder.ai.qna.utils.TrainUtils.call_train
+  signature: 'call_train(feedback_records: typing.List[botbuilder.ai.qna.models.feedback_record.FeedbackRecord])'

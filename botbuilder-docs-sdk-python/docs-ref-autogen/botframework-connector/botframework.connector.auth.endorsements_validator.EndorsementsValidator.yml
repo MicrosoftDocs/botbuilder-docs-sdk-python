@@ -1,33 +1,11 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botframework.connector.auth.endorsements_validator.EndorsementsValidator.validate
-  class: botframework.connector.auth.endorsements_validator.EndorsementsValidator
-  fullName: botframework.connector.auth.endorsements_validator.EndorsementsValidator
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botframework.connector.auth.endorsements_validator
-  name: EndorsementsValidator
-  syntax: {}
-  type: class
-  uid: botframework.connector.auth.endorsements_validator.EndorsementsValidator
-- class: botframework.connector.auth.endorsements_validator.EndorsementsValidator
-  fullName: botframework.connector.auth.endorsements_validator.EndorsementsValidator.validate
-  langs:
-  - python
-  module: botframework.connector.auth.endorsements_validator
-  name: 'validate(expected_endorsement: str, endorsements: typing.List[str])'
-  namewithoutparameters: validate
-  syntax:
-    content: 'validate(expected_endorsement: str, endorsements: typing.List[str])'
-  type: method
-  uid: botframework.connector.auth.endorsements_validator.EndorsementsValidator.validate
-references:
-- fullName: botframework.connector.auth.endorsements_validator.EndorsementsValidator.validate
-  isExternal: false
-  name: 'validate(expected_endorsement: str, endorsements: typing.List[str])'
-  parent: botframework.connector.auth.endorsements_validator.EndorsementsValidator
-  uid: botframework.connector.auth.endorsements_validator.EndorsementsValidator.validate
+### YamlMime:PythonClass
+uid: botframework.connector.auth.endorsements_validator.EndorsementsValidator
+name: EndorsementsValidator
+fullName: botframework.connector.auth.endorsements_validator.EndorsementsValidator
+module: botframework.connector.auth.endorsements_validator
+inheritances:
+- builtins.object
+methods:
+- uid: botframework.connector.auth.endorsements_validator.EndorsementsValidator.validate
+  name: validate
+  signature: 'validate(expected_endorsement: str, endorsements: typing.List[str])'

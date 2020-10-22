@@ -1,70 +1,13 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_conversation_update_activity
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_invoke_activity
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_sign_in_invoke
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_app_based_link_query
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_card_action_invoke
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_channel_created
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_channel_deleted
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_channel_renamed
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_channel_restored
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_file_consent
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_file_consent_accept
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_file_consent_decline
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_added
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_added_dispatch
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_removed
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_removed_dispatch
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_bot_message_preview_edit
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_bot_message_preview_send
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_card_button_clicked
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_configuration_query_settings_url
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_configuration_setting
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_fetch_task
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_query
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_select_item
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_submit_action
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_submit_action_dispatch
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_o365_connector_card_action
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_signin_token_exchange
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_signin_verify_state
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_task_module_fetch
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_task_module_submit
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_archived
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_deleted
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_hard_deleted
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_renamed_activity
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_restored
-  - botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_unarchived
-  class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: botbuilder.core.activity_handler.ActivityHandler
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: TeamsActivityHandler
-  summary: ''
-  syntax: {}
-  type: class
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_conversation_update_activity
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_conversation_update_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
-  namewithoutparameters: on_conversation_update_activity
-  remarks: 'In a derived class, override this method to add logic that applies
-
-    to all conversation update activities.
-
-    '
+### YamlMime:PythonClass
+uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
+name: TeamsActivityHandler
+fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
+module: botbuilder.core.teams.teams_activity_handler
+inheritances:
+- botbuilder.core.activity_handler.ActivityHandler
+methods:
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_conversation_update_activity
+  name: on_conversation_update_activity
   summary: 'Invoked when a conversation update activity is received from the channel.
 
     Conversation update activities are useful when it comes to responding to users
@@ -72,24 +15,31 @@ items:
     being added to or removed from the channel.
 
     For example, a bot could respond to a user being added by greeting the user.'
-  syntax:
-    content: 'on_conversation_update_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
-    parameters:
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    return:
-      description: A task that represents the work queued to execute.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_conversation_update_activity
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_invoke_activity
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_invoke_activity(turn_context: botbuilder.core.turn_context.TurnContext)
+  signature: 'on_conversation_update_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  parameters:
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  return:
+    description: A task that represents the work queued to execute.
+  remarks: 'In a derived class, override this method to add logic that applies
+
+    to all conversation update activities.
+
+    '
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_invoke_activity
+  name: on_invoke_activity
+  summary: 'Invoked when an invoke activity is received from the connector.
+
+    Invoke activities can be used to communicate many different things.'
+  signature: 'on_invoke_activity(turn_context: botbuilder.core.turn_context.TurnContext)
     -> botbuilder.core.invoke_response.InvokeResponse'
-  namewithoutparameters: on_invoke_activity
+  parameters:
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  return:
+    description: An InvokeResponse that represents the work queued to execute.
   remarks: 'Invoke activities communicate programmatic commands from a client or channel
     to a bot.
 
@@ -98,263 +48,153 @@ items:
     which is meaningful within the scope of a channel.
 
     '
-  summary: 'Invoked when an invoke activity is received from the connector.
-
-    Invoke activities can be used to communicate many different things.'
-  syntax:
-    content: 'on_invoke_activity(turn_context: botbuilder.core.turn_context.TurnContext)
-      -> botbuilder.core.invoke_response.InvokeResponse'
-    parameters:
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    return:
-      description: An InvokeResponse that represents the work queued to execute.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_invoke_activity
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_sign_in_invoke
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_sign_in_invoke(turn_context: botbuilder.core.turn_context.TurnContext)'
-  namewithoutparameters: on_sign_in_invoke
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_sign_in_invoke
+  name: on_sign_in_invoke
   summary: Invoked when a signIn invoke activity is received from the connector.
-  syntax:
-    content: 'on_sign_in_invoke(turn_context: botbuilder.core.turn_context.TurnContext)'
-    parameters:
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    return:
-      description: A task that represents the work queued to execute.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_sign_in_invoke
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_app_based_link_query
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_app_based_link_query(turn_context: botbuilder.core.turn_context.TurnContext,
-    query: botbuilder.schema.teams._models_py3.AppBasedLinkQuery) -> botbuilder.schema.teams._models_py3.MessagingExtensionResponse'
-  namewithoutparameters: on_teams_app_based_link_query
+  signature: 'on_sign_in_invoke(turn_context: botbuilder.core.turn_context.TurnContext)'
+  parameters:
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  return:
+    description: A task that represents the work queued to execute.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_app_based_link_query
+  name: on_teams_app_based_link_query
   summary: Invoked when an app based link query activity is received from the connector.
-  syntax:
-    content: 'on_teams_app_based_link_query(turn_context: botbuilder.core.turn_context.TurnContext,
-      query: botbuilder.schema.teams._models_py3.AppBasedLinkQuery) -> botbuilder.schema.teams._models_py3.MessagingExtensionResponse'
-    parameters:
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    - description: The invoke request body type for app-based link query.
-      id: query
-      isRequired: true
-    return:
-      description: The Messaging Extension Response for the query.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_app_based_link_query
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_card_action_invoke
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_card_action_invoke(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> botbuilder.core.invoke_response.InvokeResponse'
-  namewithoutparameters: on_teams_card_action_invoke
+  signature: 'on_teams_app_based_link_query(turn_context: botbuilder.core.turn_context.TurnContext,
+    query: botbuilder.schema.teams._models_py3.AppBasedLinkQuery) -> botbuilder.schema.teams._models_py3.MessagingExtensionResponse'
+  parameters:
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  - name: query
+    description: The invoke request body type for app-based link query.
+    isRequired: true
+  return:
+    description: The Messaging Extension Response for the query.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_card_action_invoke
+  name: on_teams_card_action_invoke
   summary: Invoked when an card action invoke activity is received from the connector.
-  syntax:
-    content: 'on_teams_card_action_invoke(turn_context: botbuilder.core.turn_context.TurnContext)
-      -> botbuilder.core.invoke_response.InvokeResponse'
-    parameters:
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    return:
-      description: An InvokeResponse that represents the work queued to execute.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_card_action_invoke
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_channel_created
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_channel_created(channel_info: botbuilder.schema.teams._models_py3.ChannelInfo,
-    team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
-  namewithoutparameters: on_teams_channel_created
+  signature: 'on_teams_card_action_invoke(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> botbuilder.core.invoke_response.InvokeResponse'
+  parameters:
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  return:
+    description: An InvokeResponse that represents the work queued to execute.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_channel_created
+  name: on_teams_channel_created
   summary: 'Invoked when a Channel Created event activity is received from the connector.
 
     Channel Created correspond to the user creating a new channel.'
-  syntax:
-    content: 'on_teams_channel_created(channel_info: botbuilder.schema.teams._models_py3.ChannelInfo,
-      team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
-    parameters:
-    - description: The channel info object which describes the channel.
-      id: channel_info
-      isRequired: true
-    - description: The team info object representing the team.
-      id: team_info
-      isRequired: true
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    return:
-      description: A task that represents the work queued to execute.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_channel_created
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_channel_deleted
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_channel_deleted(channel_info: botbuilder.schema.teams._models_py3.ChannelInfo,
+  signature: 'on_teams_channel_created(channel_info: botbuilder.schema.teams._models_py3.ChannelInfo,
     team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
-  namewithoutparameters: on_teams_channel_deleted
+  parameters:
+  - name: channel_info
+    description: The channel info object which describes the channel.
+    isRequired: true
+  - name: team_info
+    description: The team info object representing the team.
+    isRequired: true
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  return:
+    description: A task that represents the work queued to execute.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_channel_deleted
+  name: on_teams_channel_deleted
   summary: 'Invoked when a Channel Deleted event activity is received from the connector.
 
     Channel Deleted correspond to the user deleting an existing channel.'
-  syntax:
-    content: 'on_teams_channel_deleted(channel_info: botbuilder.schema.teams._models_py3.ChannelInfo,
-      team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
-    parameters:
-    - description: The channel info object which describes the channel.
-      id: channel_info
-      isRequired: true
-    - description: The team info object representing the team.
-      id: team_info
-      isRequired: true
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    return:
-      description: A task that represents the work queued to execute.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_channel_deleted
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_channel_renamed
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_channel_renamed(channel_info: botbuilder.schema.teams._models_py3.ChannelInfo,
+  signature: 'on_teams_channel_deleted(channel_info: botbuilder.schema.teams._models_py3.ChannelInfo,
     team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
-  namewithoutparameters: on_teams_channel_renamed
+  parameters:
+  - name: channel_info
+    description: The channel info object which describes the channel.
+    isRequired: true
+  - name: team_info
+    description: The team info object representing the team.
+    isRequired: true
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  return:
+    description: A task that represents the work queued to execute.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_channel_renamed
+  name: on_teams_channel_renamed
   summary: 'Invoked when a Channel Renamed event activity is received from the connector.
 
     Channel Renamed correspond to the user renaming an existing channel.'
-  syntax:
-    content: 'on_teams_channel_renamed(channel_info: botbuilder.schema.teams._models_py3.ChannelInfo,
-      team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
-    parameters:
-    - description: The channel info object which describes the channel.
-      id: channel_info
-      isRequired: true
-    - description: The team info object representing the team.
-      id: team_info
-      isRequired: true
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    return:
-      description: A task that represents the work queued to execute.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_channel_renamed
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_channel_restored
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_channel_restored(channel_info: botbuilder.schema.teams._models_py3.ChannelInfo,
+  signature: 'on_teams_channel_renamed(channel_info: botbuilder.schema.teams._models_py3.ChannelInfo,
     team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
-  namewithoutparameters: on_teams_channel_restored
+  parameters:
+  - name: channel_info
+    description: The channel info object which describes the channel.
+    isRequired: true
+  - name: team_info
+    description: The team info object representing the team.
+    isRequired: true
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  return:
+    description: A task that represents the work queued to execute.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_channel_restored
+  name: on_teams_channel_restored
   summary: 'Invoked when a Channel Restored event activity is received from the connector.
 
     Channel Restored correspond to the user restoring a previously deleted channel.'
-  syntax:
-    content: 'on_teams_channel_restored(channel_info: botbuilder.schema.teams._models_py3.ChannelInfo,
-      team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
-    parameters:
-    - description: The channel info object which describes the channel.
-      id: channel_info
-      isRequired: true
-    - description: The team info object representing the team.
-      id: team_info
-      isRequired: true
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    return:
-      description: A task that represents the work queued to execute.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_channel_restored
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_file_consent
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_file_consent(turn_context: botbuilder.core.turn_context.TurnContext,
-    file_consent_card_response: botbuilder.schema.teams._models_py3.FileConsentCardResponse)
-    -> botbuilder.core.invoke_response.InvokeResponse'
-  namewithoutparameters: on_teams_file_consent
+  signature: 'on_teams_channel_restored(channel_info: botbuilder.schema.teams._models_py3.ChannelInfo,
+    team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
+  parameters:
+  - name: channel_info
+    description: The channel info object which describes the channel.
+    isRequired: true
+  - name: team_info
+    description: The team info object representing the team.
+    isRequired: true
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  return:
+    description: A task that represents the work queued to execute.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_file_consent
+  name: on_teams_file_consent
   summary: 'Invoked when a file consent card activity is received from the connector.
 
 
 
     activity sent when the user acts on a file consent card.'
-  syntax:
-    content: 'on_teams_file_consent(turn_context: botbuilder.core.turn_context.TurnContext,
-      file_consent_card_response: botbuilder.schema.teams._models_py3.FileConsentCardResponse)
-      -> botbuilder.core.invoke_response.InvokeResponse'
-    return:
-      description: An InvokeResponse depending on the action of the file consent card.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_file_consent
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_file_consent_accept
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_file_consent_accept(turn_context: botbuilder.core.turn_context.TurnContext,
-    file_consent_card_response: botbuilder.schema.teams._models_py3.FileConsentCardResponse)'
-  namewithoutparameters: on_teams_file_consent_accept
+  signature: 'on_teams_file_consent(turn_context: botbuilder.core.turn_context.TurnContext,
+    file_consent_card_response: botbuilder.schema.teams._models_py3.FileConsentCardResponse)
+    -> botbuilder.core.invoke_response.InvokeResponse'
+  return:
+    description: An InvokeResponse depending on the action of the file consent card.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_file_consent_accept
+  name: on_teams_file_consent_accept
   summary: 'Invoked when a file consent card is accepted by the user.
 
 
 
     activity sent when the user accepts a file consent card.'
-  syntax:
-    content: 'on_teams_file_consent_accept(turn_context: botbuilder.core.turn_context.TurnContext,
-      file_consent_card_response: botbuilder.schema.teams._models_py3.FileConsentCardResponse)'
-    return:
-      description: A task that represents the work queued to execute.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_file_consent_accept
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_file_consent_decline
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_file_consent_decline(turn_context: botbuilder.core.turn_context.TurnContext,
+  signature: 'on_teams_file_consent_accept(turn_context: botbuilder.core.turn_context.TurnContext,
     file_consent_card_response: botbuilder.schema.teams._models_py3.FileConsentCardResponse)'
-  namewithoutparameters: on_teams_file_consent_decline
+  return:
+    description: A task that represents the work queued to execute.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_file_consent_decline
+  name: on_teams_file_consent_decline
   summary: 'Invoked when a file consent card is declined by the user.
 
 
 
     activity sent when the user declines a file consent card.'
-  syntax:
-    content: 'on_teams_file_consent_decline(turn_context: botbuilder.core.turn_context.TurnContext,
-      file_consent_card_response: botbuilder.schema.teams._models_py3.FileConsentCardResponse)'
-    return:
-      description: A task that represents the work queued to execute.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_file_consent_decline
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_added
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_members_added(teams_members_added: [<class ''botbuilder.schema.teams._models_py3.TeamsChannelAccount''>],
-    team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
-  namewithoutparameters: on_teams_members_added
+  signature: 'on_teams_file_consent_decline(turn_context: botbuilder.core.turn_context.TurnContext,
+    file_consent_card_response: botbuilder.schema.teams._models_py3.FileConsentCardResponse)'
+  return:
+    description: A task that represents the work queued to execute.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_added
+  name: on_teams_members_added
   summary: 'Override this in a derived class to provide logic for when members other
     than the bot
 
@@ -367,21 +207,12 @@ items:
     :param team_info: The team info object representing the team.
 
     :param turn_context: A context object for this turn.'
-  syntax:
-    content: 'on_teams_members_added(teams_members_added: [<class ''botbuilder.schema.teams._models_py3.TeamsChannelAccount''>],
-      team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
-    return:
-      description: A task that represents the work queued to execute.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_added
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_added_dispatch
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_members_added_dispatch(members_added: [<class ''botbuilder.schema._models_py3.ChannelAccount''>],
+  signature: 'on_teams_members_added(teams_members_added: [<class ''botbuilder.schema.teams._models_py3.TeamsChannelAccount''>],
     team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
-  namewithoutparameters: on_teams_members_added_dispatch
+  return:
+    description: A task that represents the work queued to execute.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_added_dispatch
+  name: on_teams_members_added_dispatch
   summary: 'Override this in a derived class to provide logic for when members other
     than the bot
 
@@ -396,21 +227,12 @@ items:
     :param team_info: The team info object representing the team.
 
     :param turn_context: A context object for this turn.'
-  syntax:
-    content: 'on_teams_members_added_dispatch(members_added: [<class ''botbuilder.schema._models_py3.ChannelAccount''>],
-      team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
-    return:
-      description: A task that represents the work queued to execute.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_added_dispatch
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_removed
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_members_removed(teams_members_removed: [<class ''botbuilder.schema.teams._models_py3.TeamsChannelAccount''>],
+  signature: 'on_teams_members_added_dispatch(members_added: [<class ''botbuilder.schema._models_py3.ChannelAccount''>],
     team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
-  namewithoutparameters: on_teams_members_removed
+  return:
+    description: A task that represents the work queued to execute.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_removed
+  name: on_teams_members_removed
   summary: 'Override this in a derived class to provide logic for when members other
     than the bot
 
@@ -423,21 +245,12 @@ items:
     :param team_info: The team info object representing the team.
 
     :param turn_context: A context object for this turn.'
-  syntax:
-    content: 'on_teams_members_removed(teams_members_removed: [<class ''botbuilder.schema.teams._models_py3.TeamsChannelAccount''>],
-      team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
-    return:
-      description: A task that represents the work queued to execute.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_removed
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_removed_dispatch
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_members_removed_dispatch(members_removed: [<class ''botbuilder.schema._models_py3.ChannelAccount''>],
+  signature: 'on_teams_members_removed(teams_members_removed: [<class ''botbuilder.schema.teams._models_py3.TeamsChannelAccount''>],
     team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
-  namewithoutparameters: on_teams_members_removed_dispatch
+  return:
+    description: A task that represents the work queued to execute.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_removed_dispatch
+  name: on_teams_members_removed_dispatch
   summary: 'Override this in a derived class to provide logic for when members other
     than the bot
 
@@ -452,732 +265,316 @@ items:
     :param team_info: The team info object representing the team.
 
     :param turn_context: A context object for this turn.'
-  syntax:
-    content: 'on_teams_members_removed_dispatch(members_removed: [<class ''botbuilder.schema._models_py3.ChannelAccount''>],
-      team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
-    return:
-      description: A task that represents the work queued to execute.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_removed_dispatch
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_bot_message_preview_edit
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_messaging_extension_bot_message_preview_edit(turn_context: botbuilder.core.turn_context.TurnContext,
-    action: botbuilder.schema.teams._models_py3.MessagingExtensionAction) -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
-  namewithoutparameters: on_teams_messaging_extension_bot_message_preview_edit
+  signature: 'on_teams_members_removed_dispatch(members_removed: [<class ''botbuilder.schema._models_py3.ChannelAccount''>],
+    team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
+  return:
+    description: A task that represents the work queued to execute.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_bot_message_preview_edit
+  name: on_teams_messaging_extension_bot_message_preview_edit
   summary: Invoked when a messaging extension bot message preview edit activity is
     received from the connector.
-  syntax:
-    content: 'on_teams_messaging_extension_bot_message_preview_edit(turn_context:
-      botbuilder.core.turn_context.TurnContext, action: botbuilder.schema.teams._models_py3.MessagingExtensionAction)
-      -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
-    parameters:
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    - description: The messaging extension action.
-      id: action
-      isRequired: true
-    return:
-      description: The Messaging Extension Action Response for the action.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_bot_message_preview_edit
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_bot_message_preview_send
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_messaging_extension_bot_message_preview_send(turn_context: botbuilder.core.turn_context.TurnContext,
-    action: botbuilder.schema.teams._models_py3.MessagingExtensionAction) -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
-  namewithoutparameters: on_teams_messaging_extension_bot_message_preview_send
+  signature: 'on_teams_messaging_extension_bot_message_preview_edit(turn_context:
+    botbuilder.core.turn_context.TurnContext, action: botbuilder.schema.teams._models_py3.MessagingExtensionAction)
+    -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
+  parameters:
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  - name: action
+    description: The messaging extension action.
+    isRequired: true
+  return:
+    description: The Messaging Extension Action Response for the action.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_bot_message_preview_send
+  name: on_teams_messaging_extension_bot_message_preview_send
   summary: Invoked when a messaging extension bot message preview send activity is
     received from the connector.
-  syntax:
-    content: 'on_teams_messaging_extension_bot_message_preview_send(turn_context:
-      botbuilder.core.turn_context.TurnContext, action: botbuilder.schema.teams._models_py3.MessagingExtensionAction)
-      -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
-    parameters:
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    - description: The messaging extension action.
-      id: action
-      isRequired: true
-    return:
-      description: The Messaging Extension Action Response for the action.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_bot_message_preview_send
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_card_button_clicked
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_messaging_extension_card_button_clicked(turn_context: botbuilder.core.turn_context.TurnContext,
-    card_data)'
-  namewithoutparameters: on_teams_messaging_extension_card_button_clicked
+  signature: 'on_teams_messaging_extension_bot_message_preview_send(turn_context:
+    botbuilder.core.turn_context.TurnContext, action: botbuilder.schema.teams._models_py3.MessagingExtensionAction)
+    -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
+  parameters:
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  - name: action
+    description: The messaging extension action.
+    isRequired: true
+  return:
+    description: The Messaging Extension Action Response for the action.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_card_button_clicked
+  name: on_teams_messaging_extension_card_button_clicked
   summary: Override this in a derived class to provide logic for when a card button
     is clicked in a messaging extension.
-  syntax:
-    content: 'on_teams_messaging_extension_card_button_clicked(turn_context: botbuilder.core.turn_context.TurnContext,
-      card_data)'
-    parameters:
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    - description: Object representing the card data.
-      id: card_data
-      isRequired: true
-    return:
-      description: A task that represents the work queued to execute.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_card_button_clicked
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_configuration_query_settings_url
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_messaging_extension_configuration_query_settings_url(turn_context:
-    botbuilder.core.turn_context.TurnContext, query: botbuilder.schema.teams._models_py3.MessagingExtensionQuery)
-    -> botbuilder.schema.teams._models_py3.MessagingExtensionResponse'
-  namewithoutparameters: on_teams_messaging_extension_configuration_query_settings_url
+  signature: 'on_teams_messaging_extension_card_button_clicked(turn_context: botbuilder.core.turn_context.TurnContext,
+    card_data)'
+  parameters:
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  - name: card_data
+    description: Object representing the card data.
+    isRequired: true
+  return:
+    description: A task that represents the work queued to execute.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_configuration_query_settings_url
+  name: on_teams_messaging_extension_configuration_query_settings_url
   summary: Invoked when a messaging extension configuration query setting url activity
     is received from the connector.
-  syntax:
-    content: 'on_teams_messaging_extension_configuration_query_settings_url(turn_context:
-      botbuilder.core.turn_context.TurnContext, query: botbuilder.schema.teams._models_py3.MessagingExtensionQuery)
-      -> botbuilder.schema.teams._models_py3.MessagingExtensionResponse'
-    parameters:
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    - description: The Messaging extension query.
-      id: query
-      isRequired: true
-    return:
-      description: The Messaging Extension Response for the query.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_configuration_query_settings_url
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_configuration_setting
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_messaging_extension_configuration_setting(turn_context: botbuilder.core.turn_context.TurnContext,
-    settings)'
-  namewithoutparameters: on_teams_messaging_extension_configuration_setting
+  signature: 'on_teams_messaging_extension_configuration_query_settings_url(turn_context:
+    botbuilder.core.turn_context.TurnContext, query: botbuilder.schema.teams._models_py3.MessagingExtensionQuery)
+    -> botbuilder.schema.teams._models_py3.MessagingExtensionResponse'
+  parameters:
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  - name: query
+    description: The Messaging extension query.
+    isRequired: true
+  return:
+    description: The Messaging Extension Response for the query.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_configuration_setting
+  name: on_teams_messaging_extension_configuration_setting
   summary: Override this in a derived class to provide logic for when a configuration
     is set for a messaging extension.
-  syntax:
-    content: 'on_teams_messaging_extension_configuration_setting(turn_context: botbuilder.core.turn_context.TurnContext,
-      settings)'
-    parameters:
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    - description: Object representing the configuration settings.
-      id: settings
-      isRequired: true
-    return:
-      description: A task that represents the work queued to execute.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_configuration_setting
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_fetch_task
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_messaging_extension_fetch_task(turn_context: botbuilder.core.turn_context.TurnContext,
-    action: botbuilder.schema.teams._models_py3.MessagingExtensionAction) -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
-  namewithoutparameters: on_teams_messaging_extension_fetch_task
+  signature: 'on_teams_messaging_extension_configuration_setting(turn_context: botbuilder.core.turn_context.TurnContext,
+    settings)'
+  parameters:
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  - name: settings
+    description: Object representing the configuration settings.
+    isRequired: true
+  return:
+    description: A task that represents the work queued to execute.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_fetch_task
+  name: on_teams_messaging_extension_fetch_task
   summary: Invoked when a Messaging Extension Fetch activity is received from the
     connector.
-  syntax:
-    content: 'on_teams_messaging_extension_fetch_task(turn_context: botbuilder.core.turn_context.TurnContext,
-      action: botbuilder.schema.teams._models_py3.MessagingExtensionAction) -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
-    parameters:
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    - description: The messaging extension action.
-      id: action
-      isRequired: true
-    return:
-      description: The Messaging Extension Action Response for the action.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_fetch_task
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_query
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_messaging_extension_query(turn_context: botbuilder.core.turn_context.TurnContext,
-    query: botbuilder.schema.teams._models_py3.MessagingExtensionQuery) -> botbuilder.schema.teams._models_py3.MessagingExtensionResponse'
-  namewithoutparameters: on_teams_messaging_extension_query
+  signature: 'on_teams_messaging_extension_fetch_task(turn_context: botbuilder.core.turn_context.TurnContext,
+    action: botbuilder.schema.teams._models_py3.MessagingExtensionAction) -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
+  parameters:
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  - name: action
+    description: The messaging extension action.
+    isRequired: true
+  return:
+    description: The Messaging Extension Action Response for the action.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_query
+  name: on_teams_messaging_extension_query
   summary: Invoked when a Messaging Extension Query activity is received from the
     connector.
-  syntax:
-    content: 'on_teams_messaging_extension_query(turn_context: botbuilder.core.turn_context.TurnContext,
-      query: botbuilder.schema.teams._models_py3.MessagingExtensionQuery) -> botbuilder.schema.teams._models_py3.MessagingExtensionResponse'
-    parameters:
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    - description: The query for the search command.
-      id: query
-      isRequired: true
-    return:
-      description: The Messaging Extension Response for the query.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_query
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_select_item
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_messaging_extension_select_item(turn_context: botbuilder.core.turn_context.TurnContext,
-    query) -> botbuilder.schema.teams._models_py3.MessagingExtensionResponse'
-  namewithoutparameters: on_teams_messaging_extension_select_item
+  signature: 'on_teams_messaging_extension_query(turn_context: botbuilder.core.turn_context.TurnContext,
+    query: botbuilder.schema.teams._models_py3.MessagingExtensionQuery) -> botbuilder.schema.teams._models_py3.MessagingExtensionResponse'
+  parameters:
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  - name: query
+    description: The query for the search command.
+    isRequired: true
+  return:
+    description: The Messaging Extension Response for the query.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_select_item
+  name: on_teams_messaging_extension_select_item
   summary: Invoked when a messaging extension select item activity is received from
     the connector.
-  syntax:
-    content: 'on_teams_messaging_extension_select_item(turn_context: botbuilder.core.turn_context.TurnContext,
-      query) -> botbuilder.schema.teams._models_py3.MessagingExtensionResponse'
-    parameters:
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    - description: The object representing the query.
-      id: query
-      isRequired: true
-    return:
-      description: The Messaging Extension Response for the query.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_select_item
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_submit_action
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_messaging_extension_submit_action(turn_context: botbuilder.core.turn_context.TurnContext,
-    action: botbuilder.schema.teams._models_py3.MessagingExtensionAction) -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
-  namewithoutparameters: on_teams_messaging_extension_submit_action
+  signature: 'on_teams_messaging_extension_select_item(turn_context: botbuilder.core.turn_context.TurnContext,
+    query) -> botbuilder.schema.teams._models_py3.MessagingExtensionResponse'
+  parameters:
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  - name: query
+    description: The object representing the query.
+    isRequired: true
+  return:
+    description: The Messaging Extension Response for the query.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_submit_action
+  name: on_teams_messaging_extension_submit_action
   summary: Invoked when a messaging extension submit action activity is received from
     the connector.
-  syntax:
-    content: 'on_teams_messaging_extension_submit_action(turn_context: botbuilder.core.turn_context.TurnContext,
-      action: botbuilder.schema.teams._models_py3.MessagingExtensionAction) -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
-    parameters:
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    - description: The messaging extension action.
-      id: action
-      isRequired: true
-    return:
-      description: The Messaging Extension Action Response for the action.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_submit_action
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_submit_action_dispatch
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_messaging_extension_submit_action_dispatch(turn_context: botbuilder.core.turn_context.TurnContext,
+  signature: 'on_teams_messaging_extension_submit_action(turn_context: botbuilder.core.turn_context.TurnContext,
     action: botbuilder.schema.teams._models_py3.MessagingExtensionAction) -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
-  namewithoutparameters: on_teams_messaging_extension_submit_action_dispatch
+  parameters:
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  - name: action
+    description: The messaging extension action.
+    isRequired: true
+  return:
+    description: The Messaging Extension Action Response for the action.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_submit_action_dispatch
+  name: on_teams_messaging_extension_submit_action_dispatch
   summary: Invoked when a messaging extension submit action dispatch activity is received
     from the connector.
-  syntax:
-    content: 'on_teams_messaging_extension_submit_action_dispatch(turn_context: botbuilder.core.turn_context.TurnContext,
-      action: botbuilder.schema.teams._models_py3.MessagingExtensionAction) -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
-    parameters:
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    - description: The messaging extension action.
-      id: action
-      isRequired: true
-    return:
-      description: The Messaging Extension Action Response for the action.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_submit_action_dispatch
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_o365_connector_card_action
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_o365_connector_card_action(turn_context: botbuilder.core.turn_context.TurnContext,
-    query: botbuilder.schema.teams._models_py3.O365ConnectorCardActionQuery)'
-  namewithoutparameters: on_teams_o365_connector_card_action
+  signature: 'on_teams_messaging_extension_submit_action_dispatch(turn_context: botbuilder.core.turn_context.TurnContext,
+    action: botbuilder.schema.teams._models_py3.MessagingExtensionAction) -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
+  parameters:
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  - name: action
+    description: The messaging extension action.
+    isRequired: true
+  return:
+    description: The Messaging Extension Action Response for the action.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_o365_connector_card_action
+  name: on_teams_o365_connector_card_action
   summary: Invoked when a O365 Connector Card Action activity is received from the
     connector.
-  syntax:
-    content: 'on_teams_o365_connector_card_action(turn_context: botbuilder.core.turn_context.TurnContext,
-      query: botbuilder.schema.teams._models_py3.O365ConnectorCardActionQuery)'
-    parameters:
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    - description: The O365 connector card HttpPOST invoke query.
-      id: query
-      isRequired: true
-    return:
-      description: A task that represents the work queued to execute.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_o365_connector_card_action
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_signin_token_exchange
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_signin_token_exchange(turn_context: botbuilder.core.turn_context.TurnContext)'
-  namewithoutparameters: on_teams_signin_token_exchange
-  syntax:
-    content: 'on_teams_signin_token_exchange(turn_context: botbuilder.core.turn_context.TurnContext)'
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_signin_token_exchange
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_signin_verify_state
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_signin_verify_state(turn_context: botbuilder.core.turn_context.TurnContext)'
-  namewithoutparameters: on_teams_signin_verify_state
+  signature: 'on_teams_o365_connector_card_action(turn_context: botbuilder.core.turn_context.TurnContext,
+    query: botbuilder.schema.teams._models_py3.O365ConnectorCardActionQuery)'
+  parameters:
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  - name: query
+    description: The O365 connector card HttpPOST invoke query.
+    isRequired: true
+  return:
+    description: A task that represents the work queued to execute.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_signin_token_exchange
+  name: on_teams_signin_token_exchange
+  signature: 'on_teams_signin_token_exchange(turn_context: botbuilder.core.turn_context.TurnContext)'
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_signin_verify_state
+  name: on_teams_signin_verify_state
   summary: Invoked when a signIn verify state activity is received from the connector.
-  syntax:
-    content: 'on_teams_signin_verify_state(turn_context: botbuilder.core.turn_context.TurnContext)'
-    parameters:
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    return:
-      description: A task that represents the work queued to execute.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_signin_verify_state
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_task_module_fetch
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_task_module_fetch(turn_context: botbuilder.core.turn_context.TurnContext,
-    task_module_request: botbuilder.schema.teams._models_py3.TaskModuleRequest) ->
-    botbuilder.schema.teams._models_py3.TaskModuleResponse'
-  namewithoutparameters: on_teams_task_module_fetch
+  signature: 'on_teams_signin_verify_state(turn_context: botbuilder.core.turn_context.TurnContext)'
+  parameters:
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  return:
+    description: A task that represents the work queued to execute.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_task_module_fetch
+  name: on_teams_task_module_fetch
   summary: Override this in a derived class to provide logic for when a task module
     is fetched.
-  syntax:
-    content: 'on_teams_task_module_fetch(turn_context: botbuilder.core.turn_context.TurnContext,
-      task_module_request: botbuilder.schema.teams._models_py3.TaskModuleRequest)
-      -> botbuilder.schema.teams._models_py3.TaskModuleResponse'
-    parameters:
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    - description: The task module invoke request value payload.
-      id: task_module_request
-      isRequired: true
-    return:
-      description: A Task Module Response for the request.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_task_module_fetch
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_task_module_submit
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_task_module_submit(turn_context: botbuilder.core.turn_context.TurnContext,
+  signature: 'on_teams_task_module_fetch(turn_context: botbuilder.core.turn_context.TurnContext,
     task_module_request: botbuilder.schema.teams._models_py3.TaskModuleRequest) ->
     botbuilder.schema.teams._models_py3.TaskModuleResponse'
-  namewithoutparameters: on_teams_task_module_submit
+  parameters:
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  - name: task_module_request
+    description: The task module invoke request value payload.
+    isRequired: true
+  return:
+    description: A Task Module Response for the request.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_task_module_submit
+  name: on_teams_task_module_submit
   summary: Override this in a derived class to provide logic for when a task module
     is submitted.
-  syntax:
-    content: 'on_teams_task_module_submit(turn_context: botbuilder.core.turn_context.TurnContext,
-      task_module_request: botbuilder.schema.teams._models_py3.TaskModuleRequest)
-      -> botbuilder.schema.teams._models_py3.TaskModuleResponse'
-    parameters:
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    - description: The task module invoke request value payload.
-      id: task_module_request
-      isRequired: true
-    return:
-      description: A Task Module Response for the request.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_task_module_submit
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_archived
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_team_archived(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
-    turn_context: botbuilder.core.turn_context.TurnContext)'
-  namewithoutparameters: on_teams_team_archived
+  signature: 'on_teams_task_module_submit(turn_context: botbuilder.core.turn_context.TurnContext,
+    task_module_request: botbuilder.schema.teams._models_py3.TaskModuleRequest) ->
+    botbuilder.schema.teams._models_py3.TaskModuleResponse'
+  parameters:
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  - name: task_module_request
+    description: The task module invoke request value payload.
+    isRequired: true
+  return:
+    description: A Task Module Response for the request.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_archived
+  name: on_teams_team_archived
   summary: 'Invoked when a Team Archived event activity is received from the connector.
 
     Team Archived correspond to the user archiving a team.'
-  syntax:
-    content: 'on_teams_team_archived(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
-      turn_context: botbuilder.core.turn_context.TurnContext)'
-    parameters:
-    - description: The team info object representing the team.
-      id: team_info
-      isRequired: true
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    return:
-      description: A task that represents the work queued to execute.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_archived
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_deleted
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_team_deleted(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
+  signature: 'on_teams_team_archived(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
     turn_context: botbuilder.core.turn_context.TurnContext)'
-  namewithoutparameters: on_teams_team_deleted
+  parameters:
+  - name: team_info
+    description: The team info object representing the team.
+    isRequired: true
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  return:
+    description: A task that represents the work queued to execute.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_deleted
+  name: on_teams_team_deleted
   summary: 'Invoked when a Team Deleted event activity is received from the connector.
 
     Team Deleted corresponds to the user deleting a team.'
-  syntax:
-    content: 'on_teams_team_deleted(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
-      turn_context: botbuilder.core.turn_context.TurnContext)'
-    parameters:
-    - description: The team info object representing the team.
-      id: team_info
-      isRequired: true
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    return:
-      description: A task that represents the work queued to execute.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_deleted
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_hard_deleted
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_team_hard_deleted(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
+  signature: 'on_teams_team_deleted(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
     turn_context: botbuilder.core.turn_context.TurnContext)'
-  namewithoutparameters: on_teams_team_hard_deleted
+  parameters:
+  - name: team_info
+    description: The team info object representing the team.
+    isRequired: true
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  return:
+    description: A task that represents the work queued to execute.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_hard_deleted
+  name: on_teams_team_hard_deleted
   summary: 'Invoked when a Team Hard Deleted event activity is received from the connector.
 
     Team Hard Deleted corresponds to the user hard deleting a team.'
-  syntax:
-    content: 'on_teams_team_hard_deleted(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
-      turn_context: botbuilder.core.turn_context.TurnContext)'
-    parameters:
-    - description: The team info object representing the team.
-      id: team_info
-      isRequired: true
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    return:
-      description: A task that represents the work queued to execute.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_hard_deleted
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_renamed_activity
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_team_renamed_activity(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
+  signature: 'on_teams_team_hard_deleted(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
     turn_context: botbuilder.core.turn_context.TurnContext)'
-  namewithoutparameters: on_teams_team_renamed_activity
+  parameters:
+  - name: team_info
+    description: The team info object representing the team.
+    isRequired: true
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  return:
+    description: A task that represents the work queued to execute.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_renamed_activity
+  name: on_teams_team_renamed_activity
   summary: 'Invoked when a Team Renamed event activity is received from the connector.
 
     Team Renamed correspond to the user renaming an existing team.'
-  syntax:
-    content: 'on_teams_team_renamed_activity(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
-      turn_context: botbuilder.core.turn_context.TurnContext)'
-    parameters:
-    - description: The team info object representing the team.
-      id: team_info
-      isRequired: true
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    return:
-      description: A task that represents the work queued to execute.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_renamed_activity
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_restored
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_team_restored(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
+  signature: 'on_teams_team_renamed_activity(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
     turn_context: botbuilder.core.turn_context.TurnContext)'
-  namewithoutparameters: on_teams_team_restored
+  parameters:
+  - name: team_info
+    description: The team info object representing the team.
+    isRequired: true
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  return:
+    description: A task that represents the work queued to execute.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_restored
+  name: on_teams_team_restored
   summary: 'Invoked when a Team Restored event activity is received from the connector.
 
     Team Restored corresponds to the user restoring a team.'
-  syntax:
-    content: 'on_teams_team_restored(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
-      turn_context: botbuilder.core.turn_context.TurnContext)'
-    parameters:
-    - description: The team info object representing the team.
-      id: team_info
-      isRequired: true
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    return:
-      description: A task that represents the work queued to execute.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_restored
-- class: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_unarchived
-  langs:
-  - python
-  module: botbuilder.core.teams.teams_activity_handler
-  name: 'on_teams_team_unarchived(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
+  signature: 'on_teams_team_restored(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
     turn_context: botbuilder.core.turn_context.TurnContext)'
-  namewithoutparameters: on_teams_team_unarchived
+  parameters:
+  - name: team_info
+    description: The team info object representing the team.
+    isRequired: true
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  return:
+    description: A task that represents the work queued to execute.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_unarchived
+  name: on_teams_team_unarchived
   summary: 'Invoked when a Team Unarchived event activity is received from the connector.
 
     Team Unarchived correspond to the user unarchiving a team.'
-  syntax:
-    content: 'on_teams_team_unarchived(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
-      turn_context: botbuilder.core.turn_context.TurnContext)'
-    parameters:
-    - description: The team info object representing the team.
-      id: team_info
-      isRequired: true
-    - description: A context object for this turn.
-      id: turn_context
-      isRequired: true
-    return:
-      description: A task that represents the work queued to execute.
-  type: method
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_unarchived
-references:
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_conversation_update_activity
-  isExternal: false
-  name: 'on_conversation_update_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_conversation_update_activity
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_invoke_activity
-  isExternal: false
-  name: 'on_invoke_activity(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> botbuilder.core.invoke_response.InvokeResponse'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_invoke_activity
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_sign_in_invoke
-  isExternal: false
-  name: 'on_sign_in_invoke(turn_context: botbuilder.core.turn_context.TurnContext)'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_sign_in_invoke
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_app_based_link_query
-  isExternal: false
-  name: 'on_teams_app_based_link_query(turn_context: botbuilder.core.turn_context.TurnContext,
-    query: botbuilder.schema.teams._models_py3.AppBasedLinkQuery) -> botbuilder.schema.teams._models_py3.MessagingExtensionResponse'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_app_based_link_query
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_card_action_invoke
-  isExternal: false
-  name: 'on_teams_card_action_invoke(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> botbuilder.core.invoke_response.InvokeResponse'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_card_action_invoke
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_channel_created
-  isExternal: false
-  name: 'on_teams_channel_created(channel_info: botbuilder.schema.teams._models_py3.ChannelInfo,
-    team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_channel_created
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_channel_deleted
-  isExternal: false
-  name: 'on_teams_channel_deleted(channel_info: botbuilder.schema.teams._models_py3.ChannelInfo,
-    team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_channel_deleted
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_channel_renamed
-  isExternal: false
-  name: 'on_teams_channel_renamed(channel_info: botbuilder.schema.teams._models_py3.ChannelInfo,
-    team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_channel_renamed
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_channel_restored
-  isExternal: false
-  name: 'on_teams_channel_restored(channel_info: botbuilder.schema.teams._models_py3.ChannelInfo,
-    team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_channel_restored
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_file_consent
-  isExternal: false
-  name: 'on_teams_file_consent(turn_context: botbuilder.core.turn_context.TurnContext,
-    file_consent_card_response: botbuilder.schema.teams._models_py3.FileConsentCardResponse)
-    -> botbuilder.core.invoke_response.InvokeResponse'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_file_consent
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_file_consent_accept
-  isExternal: false
-  name: 'on_teams_file_consent_accept(turn_context: botbuilder.core.turn_context.TurnContext,
-    file_consent_card_response: botbuilder.schema.teams._models_py3.FileConsentCardResponse)'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_file_consent_accept
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_file_consent_decline
-  isExternal: false
-  name: 'on_teams_file_consent_decline(turn_context: botbuilder.core.turn_context.TurnContext,
-    file_consent_card_response: botbuilder.schema.teams._models_py3.FileConsentCardResponse)'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_file_consent_decline
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_added
-  isExternal: false
-  name: 'on_teams_members_added(teams_members_added: [<class ''botbuilder.schema.teams._models_py3.TeamsChannelAccount''>],
-    team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_added
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_added_dispatch
-  isExternal: false
-  name: 'on_teams_members_added_dispatch(members_added: [<class ''botbuilder.schema._models_py3.ChannelAccount''>],
-    team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_added_dispatch
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_removed
-  isExternal: false
-  name: 'on_teams_members_removed(teams_members_removed: [<class ''botbuilder.schema.teams._models_py3.TeamsChannelAccount''>],
-    team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_removed
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_removed_dispatch
-  isExternal: false
-  name: 'on_teams_members_removed_dispatch(members_removed: [<class ''botbuilder.schema._models_py3.ChannelAccount''>],
-    team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_removed_dispatch
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_bot_message_preview_edit
-  isExternal: false
-  name: 'on_teams_messaging_extension_bot_message_preview_edit(turn_context: botbuilder.core.turn_context.TurnContext,
-    action: botbuilder.schema.teams._models_py3.MessagingExtensionAction) -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_bot_message_preview_edit
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_bot_message_preview_send
-  isExternal: false
-  name: 'on_teams_messaging_extension_bot_message_preview_send(turn_context: botbuilder.core.turn_context.TurnContext,
-    action: botbuilder.schema.teams._models_py3.MessagingExtensionAction) -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_bot_message_preview_send
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_card_button_clicked
-  isExternal: false
-  name: 'on_teams_messaging_extension_card_button_clicked(turn_context: botbuilder.core.turn_context.TurnContext,
-    card_data)'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_card_button_clicked
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_configuration_query_settings_url
-  isExternal: false
-  name: 'on_teams_messaging_extension_configuration_query_settings_url(turn_context:
-    botbuilder.core.turn_context.TurnContext, query: botbuilder.schema.teams._models_py3.MessagingExtensionQuery)
-    -> botbuilder.schema.teams._models_py3.MessagingExtensionResponse'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_configuration_query_settings_url
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_configuration_setting
-  isExternal: false
-  name: 'on_teams_messaging_extension_configuration_setting(turn_context: botbuilder.core.turn_context.TurnContext,
-    settings)'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_configuration_setting
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_fetch_task
-  isExternal: false
-  name: 'on_teams_messaging_extension_fetch_task(turn_context: botbuilder.core.turn_context.TurnContext,
-    action: botbuilder.schema.teams._models_py3.MessagingExtensionAction) -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_fetch_task
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_query
-  isExternal: false
-  name: 'on_teams_messaging_extension_query(turn_context: botbuilder.core.turn_context.TurnContext,
-    query: botbuilder.schema.teams._models_py3.MessagingExtensionQuery) -> botbuilder.schema.teams._models_py3.MessagingExtensionResponse'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_query
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_select_item
-  isExternal: false
-  name: 'on_teams_messaging_extension_select_item(turn_context: botbuilder.core.turn_context.TurnContext,
-    query) -> botbuilder.schema.teams._models_py3.MessagingExtensionResponse'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_select_item
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_submit_action
-  isExternal: false
-  name: 'on_teams_messaging_extension_submit_action(turn_context: botbuilder.core.turn_context.TurnContext,
-    action: botbuilder.schema.teams._models_py3.MessagingExtensionAction) -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_submit_action
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_submit_action_dispatch
-  isExternal: false
-  name: 'on_teams_messaging_extension_submit_action_dispatch(turn_context: botbuilder.core.turn_context.TurnContext,
-    action: botbuilder.schema.teams._models_py3.MessagingExtensionAction) -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_messaging_extension_submit_action_dispatch
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_o365_connector_card_action
-  isExternal: false
-  name: 'on_teams_o365_connector_card_action(turn_context: botbuilder.core.turn_context.TurnContext,
-    query: botbuilder.schema.teams._models_py3.O365ConnectorCardActionQuery)'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_o365_connector_card_action
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_signin_token_exchange
-  isExternal: false
-  name: 'on_teams_signin_token_exchange(turn_context: botbuilder.core.turn_context.TurnContext)'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_signin_token_exchange
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_signin_verify_state
-  isExternal: false
-  name: 'on_teams_signin_verify_state(turn_context: botbuilder.core.turn_context.TurnContext)'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_signin_verify_state
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_task_module_fetch
-  isExternal: false
-  name: 'on_teams_task_module_fetch(turn_context: botbuilder.core.turn_context.TurnContext,
-    task_module_request: botbuilder.schema.teams._models_py3.TaskModuleRequest) ->
-    botbuilder.schema.teams._models_py3.TaskModuleResponse'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_task_module_fetch
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_task_module_submit
-  isExternal: false
-  name: 'on_teams_task_module_submit(turn_context: botbuilder.core.turn_context.TurnContext,
-    task_module_request: botbuilder.schema.teams._models_py3.TaskModuleRequest) ->
-    botbuilder.schema.teams._models_py3.TaskModuleResponse'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_task_module_submit
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_archived
-  isExternal: false
-  name: 'on_teams_team_archived(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
+  signature: 'on_teams_team_unarchived(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
     turn_context: botbuilder.core.turn_context.TurnContext)'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_archived
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_deleted
-  isExternal: false
-  name: 'on_teams_team_deleted(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
-    turn_context: botbuilder.core.turn_context.TurnContext)'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_deleted
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_hard_deleted
-  isExternal: false
-  name: 'on_teams_team_hard_deleted(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
-    turn_context: botbuilder.core.turn_context.TurnContext)'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_hard_deleted
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_renamed_activity
-  isExternal: false
-  name: 'on_teams_team_renamed_activity(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
-    turn_context: botbuilder.core.turn_context.TurnContext)'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_renamed_activity
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_restored
-  isExternal: false
-  name: 'on_teams_team_restored(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
-    turn_context: botbuilder.core.turn_context.TurnContext)'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_restored
-- fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_unarchived
-  isExternal: false
-  name: 'on_teams_team_unarchived(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
-    turn_context: botbuilder.core.turn_context.TurnContext)'
-  parent: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
-  uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_team_unarchived
+  parameters:
+  - name: team_info
+    description: The team info object representing the team.
+    isRequired: true
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  return:
+    description: A task that represents the work queued to execute.

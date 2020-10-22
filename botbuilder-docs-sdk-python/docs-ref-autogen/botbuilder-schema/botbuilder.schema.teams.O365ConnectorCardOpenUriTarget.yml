@@ -1,32 +1,22 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.O365ConnectorCardOpenUriTarget
-  fullName: botbuilder.schema.teams.O365ConnectorCardOpenUriTarget
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: O365ConnectorCardOpenUriTarget
-  summary: O365 connector card OpenUri target.
-  syntax:
-    content: 'O365ConnectorCardOpenUriTarget(*, os=None, uri: str = None, **kwargs)
-      -> None'
-    parameters:
-    - description: 'Target operating system. Possible values include: ''default'',
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.O365ConnectorCardOpenUriTarget
+name: O365ConnectorCardOpenUriTarget
+fullName: botbuilder.schema.teams.O365ConnectorCardOpenUriTarget
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: O365 connector card OpenUri target.
+constructor:
+  syntax: 'O365ConnectorCardOpenUriTarget(*, os=None, uri: str = None, **kwargs) ->
+    None'
+  parameters:
+  - name: os
+    description: 'Target operating system. Possible values include: ''default'',
 
-        ''iOS'', ''android'', ''windows'''
-      id: os
-      type:
-      - str
-    - description: Target url
-      id: uri
-      type:
-      - str
-  type: class
-  uid: botbuilder.schema.teams.O365ConnectorCardOpenUriTarget
-references: []
+      ''iOS'', ''android'', ''windows'''
+    types:
+    - <xref:str>
+  - name: uri
+    description: Target url
+    types:
+    - <xref:str>

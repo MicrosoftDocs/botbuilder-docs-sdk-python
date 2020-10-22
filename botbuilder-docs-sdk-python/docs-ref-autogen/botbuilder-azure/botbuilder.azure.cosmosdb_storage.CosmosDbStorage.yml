@@ -1,89 +1,33 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.azure.cosmosdb_storage.CosmosDbStorage.delete
-  - botbuilder.azure.cosmosdb_storage.CosmosDbStorage.read
-  - botbuilder.azure.cosmosdb_storage.CosmosDbStorage.write
-  class: botbuilder.azure.cosmosdb_storage.CosmosDbStorage
-  fullName: botbuilder.azure.cosmosdb_storage.CosmosDbStorage
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: abc.ABC
-    type: botbuilder.core.storage.Storage
-  langs:
-  - python
-  module: botbuilder.azure.cosmosdb_storage
-  name: CosmosDbStorage
-  summary: The class for CosmosDB middleware for the Azure Bot Framework.
-  syntax:
-    content: 'CosmosDbStorage(config: botbuilder.azure.cosmosdb_storage.CosmosDbConfig,
-      client: azure.cosmos.cosmos_client.CosmosClient = None)'
-  type: class
-  uid: botbuilder.azure.cosmosdb_storage.CosmosDbStorage
-- class: botbuilder.azure.cosmosdb_storage.CosmosDbStorage
-  fullName: botbuilder.azure.cosmosdb_storage.CosmosDbStorage.delete
-  langs:
-  - python
-  module: botbuilder.azure.cosmosdb_storage
-  name: 'delete(keys: typing.List[str])'
-  namewithoutparameters: delete
+### YamlMime:PythonClass
+uid: botbuilder.azure.cosmosdb_storage.CosmosDbStorage
+name: CosmosDbStorage
+fullName: botbuilder.azure.cosmosdb_storage.CosmosDbStorage
+module: botbuilder.azure.cosmosdb_storage
+inheritances:
+- botbuilder.core.storage.Storage
+summary: The class for CosmosDB middleware for the Azure Bot Framework.
+constructor:
+  syntax: 'CosmosDbStorage(config: botbuilder.azure.cosmosdb_storage.CosmosDbConfig,
+    client: azure.cosmos.cosmos_client.CosmosClient = None)'
+methods:
+- uid: botbuilder.azure.cosmosdb_storage.CosmosDbStorage.delete
+  name: delete
   summary: Remove storeitems from storage.
-  syntax:
-    content: 'delete(keys: typing.List[str])'
-    parameters:
-    - description: ''
-      id: keys
-      isRequired: true
-  type: method
-  uid: botbuilder.azure.cosmosdb_storage.CosmosDbStorage.delete
-- class: botbuilder.azure.cosmosdb_storage.CosmosDbStorage
-  fullName: botbuilder.azure.cosmosdb_storage.CosmosDbStorage.read
-  langs:
-  - python
-  module: botbuilder.azure.cosmosdb_storage
-  name: 'read(keys: typing.List[str]) -> typing.Dict[str, object]'
-  namewithoutparameters: read
+  signature: 'delete(keys: typing.List[str])'
+  parameters:
+  - name: keys
+    isRequired: true
+- uid: botbuilder.azure.cosmosdb_storage.CosmosDbStorage.read
+  name: read
   summary: Read storeitems from storage.
-  syntax:
-    content: 'read(keys: typing.List[str]) -> typing.Dict[str, object]'
-    parameters:
-    - description: ''
-      id: keys
-      isRequired: true
-  type: method
-  uid: botbuilder.azure.cosmosdb_storage.CosmosDbStorage.read
-- class: botbuilder.azure.cosmosdb_storage.CosmosDbStorage
-  fullName: botbuilder.azure.cosmosdb_storage.CosmosDbStorage.write
-  langs:
-  - python
-  module: botbuilder.azure.cosmosdb_storage
-  name: 'write(changes: typing.Dict[str, object])'
-  namewithoutparameters: write
+  signature: 'read(keys: typing.List[str]) -> typing.Dict[str, object]'
+  parameters:
+  - name: keys
+    isRequired: true
+- uid: botbuilder.azure.cosmosdb_storage.CosmosDbStorage.write
+  name: write
   summary: Save storeitems to storage.
-  syntax:
-    content: 'write(changes: typing.Dict[str, object])'
-    parameters:
-    - description: ''
-      id: changes
-      isRequired: true
-  type: method
-  uid: botbuilder.azure.cosmosdb_storage.CosmosDbStorage.write
-references:
-- fullName: botbuilder.azure.cosmosdb_storage.CosmosDbStorage.delete
-  isExternal: false
-  name: 'delete(keys: typing.List[str])'
-  parent: botbuilder.azure.cosmosdb_storage.CosmosDbStorage
-  uid: botbuilder.azure.cosmosdb_storage.CosmosDbStorage.delete
-- fullName: botbuilder.azure.cosmosdb_storage.CosmosDbStorage.read
-  isExternal: false
-  name: 'read(keys: typing.List[str]) -> typing.Dict[str, object]'
-  parent: botbuilder.azure.cosmosdb_storage.CosmosDbStorage
-  uid: botbuilder.azure.cosmosdb_storage.CosmosDbStorage.read
-- fullName: botbuilder.azure.cosmosdb_storage.CosmosDbStorage.write
-  isExternal: false
-  name: 'write(changes: typing.Dict[str, object])'
-  parent: botbuilder.azure.cosmosdb_storage.CosmosDbStorage
-  uid: botbuilder.azure.cosmosdb_storage.CosmosDbStorage.write
+  signature: 'write(changes: typing.Dict[str, object])'
+  parameters:
+  - name: changes
+    isRequired: true

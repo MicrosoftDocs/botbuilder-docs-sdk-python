@@ -1,39 +1,29 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.MessageActionsPayloadApp
-  fullName: botbuilder.schema.teams.MessageActionsPayloadApp
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: MessageActionsPayloadApp
-  summary: Represents an application entity.
-  syntax:
-    content: 'MessageActionsPayloadApp(*, application_identity_type=None, id: str
-      = None, display_name: str = None, **kwargs) -> None'
-    parameters:
-    - description: 'The type of application. Possible values
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.MessageActionsPayloadApp
+name: MessageActionsPayloadApp
+fullName: botbuilder.schema.teams.MessageActionsPayloadApp
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: Represents an application entity.
+constructor:
+  syntax: 'MessageActionsPayloadApp(*, application_identity_type=None, id: str = None,
+    display_name: str = None, **kwargs) -> None'
+  parameters:
+  - name: application_identity_type
+    description: 'The type of application. Possible values
 
-        include: ''aadApplication'', ''bot'', ''tenantBot'', ''office365Connector'',
+      include: ''aadApplication'', ''bot'', ''tenantBot'', ''office365Connector'',
 
-        ''webhook'''
-      id: application_identity_type
-      type:
-      - str
-      - botframework.connector.teams.models.enum
-    - description: The id of the application.
-      id: id
-      type:
-      - str
-    - description: The plaintext display name of the application.
-      id: display_name
-      type:
-      - str
-  type: class
-  uid: botbuilder.schema.teams.MessageActionsPayloadApp
-references: []
+      ''webhook'''
+    types:
+    - <xref:str>
+    - <xref:botframework.connector.teams.models.enum>
+  - name: id
+    description: The id of the application.
+    types:
+    - <xref:str>
+  - name: display_name
+    description: The plaintext display name of the application.
+    types:
+    - <xref:str>

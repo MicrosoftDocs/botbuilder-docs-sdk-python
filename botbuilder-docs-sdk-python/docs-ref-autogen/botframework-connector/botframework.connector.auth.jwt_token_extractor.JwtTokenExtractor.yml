@@ -1,92 +1,26 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_identity
-  - botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_identity_from_auth_header
-  - botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_open_id_metadata
-  - botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.metadataCache
-  class: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor
-  fullName: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botframework.connector.auth.jwt_token_extractor
-  name: JwtTokenExtractor
-  summary: ''
-  syntax:
-    content: 'JwtTokenExtractor(validation_params: botframework.connector.auth.verify_options.VerifyOptions,
-      metadata_url: str, allowed_algorithms: list)'
-  type: class
-  uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor
-- class: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor
-  fullName: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_identity
-  langs:
-  - python
-  module: botframework.connector.auth.jwt_token_extractor
-  name: 'get_identity(schema: str, parameter: str, channel_id: str, required_endorsements:
+### YamlMime:PythonClass
+uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor
+name: JwtTokenExtractor
+fullName: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor
+module: botframework.connector.auth.jwt_token_extractor
+inheritances:
+- builtins.object
+constructor:
+  syntax: 'JwtTokenExtractor(validation_params: botframework.connector.auth.verify_options.VerifyOptions,
+    metadata_url: str, allowed_algorithms: list)'
+methods:
+- uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_identity
+  name: get_identity
+  signature: 'get_identity(schema: str, parameter: str, channel_id: str, required_endorsements:
     typing.List[str] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  namewithoutparameters: get_identity
-  syntax:
-    content: 'get_identity(schema: str, parameter: str, channel_id: str, required_endorsements:
-      typing.List[str] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  type: method
-  uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_identity
-- class: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor
-  fullName: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_identity_from_auth_header
-  langs:
-  - python
-  module: botframework.connector.auth.jwt_token_extractor
-  name: 'get_identity_from_auth_header(auth_header: str, channel_id: str, required_endorsements:
+- uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_identity_from_auth_header
+  name: get_identity_from_auth_header
+  signature: 'get_identity_from_auth_header(auth_header: str, channel_id: str, required_endorsements:
     typing.List[str] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  namewithoutparameters: get_identity_from_auth_header
-  syntax:
-    content: 'get_identity_from_auth_header(auth_header: str, channel_id: str, required_endorsements:
-      typing.List[str] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  type: method
-  uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_identity_from_auth_header
-- class: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor
-  fullName: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_open_id_metadata
-  langs:
-  - python
-  module: botframework.connector.auth.jwt_token_extractor
-  name: 'get_open_id_metadata(metadata_url: str)'
-  namewithoutparameters: get_open_id_metadata
-  syntax:
-    content: 'get_open_id_metadata(metadata_url: str)'
-  type: method
-  uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_open_id_metadata
-- class: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor
-  fullName: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.metadataCache
-  langs:
-  - python
-  module: botframework.connector.auth.jwt_token_extractor
+- uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_open_id_metadata
+  name: get_open_id_metadata
+  signature: 'get_open_id_metadata(metadata_url: str)'
+attributes:
+- uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.metadataCache
   name: metadataCache
-  syntax:
-    content: metadataCache = {}
-  type: attribute
-  uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.metadataCache
-references:
-- fullName: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_identity
-  isExternal: false
-  name: 'get_identity(schema: str, parameter: str, channel_id: str, required_endorsements:
-    typing.List[str] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  parent: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor
-  uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_identity
-- fullName: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_identity_from_auth_header
-  isExternal: false
-  name: 'get_identity_from_auth_header(auth_header: str, channel_id: str, required_endorsements:
-    typing.List[str] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  parent: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor
-  uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_identity_from_auth_header
-- fullName: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_open_id_metadata
-  isExternal: false
-  name: 'get_open_id_metadata(metadata_url: str)'
-  parent: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor
-  uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_open_id_metadata
-- fullName: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.metadataCache
-  isExternal: false
-  name: metadataCache
-  parent: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor
-  uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.metadataCache
+  signature: metadataCache = {}

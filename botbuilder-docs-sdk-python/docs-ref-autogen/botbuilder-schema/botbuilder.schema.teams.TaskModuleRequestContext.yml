@@ -1,25 +1,14 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.TaskModuleRequestContext
-  fullName: botbuilder.schema.teams.TaskModuleRequestContext
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: TaskModuleRequestContext
-  summary: Current user context, i.e., the current theme.
-  syntax:
-    content: 'TaskModuleRequestContext(*, theme: str = None, **kwargs) -> None'
-    parameters:
-    - description: ''
-      id: theme
-      type:
-      - str
-  type: class
-  uid: botbuilder.schema.teams.TaskModuleRequestContext
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.TaskModuleRequestContext
+name: TaskModuleRequestContext
+fullName: botbuilder.schema.teams.TaskModuleRequestContext
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: Current user context, i.e., the current theme.
+constructor:
+  syntax: 'TaskModuleRequestContext(*, theme: str = None, **kwargs) -> None'
+  parameters:
+  - name: theme
+    types:
+    - <xref:str>

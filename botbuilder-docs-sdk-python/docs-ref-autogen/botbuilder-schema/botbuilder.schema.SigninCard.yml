@@ -1,43 +1,19 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.SigninCard
-  fullName: botbuilder.schema.SigninCard
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema
-  name: SigninCard
-  summary: A card representing a request to sign in.
-  syntax:
-    content: 'SigninCard(*, text: str = None, buttons=None, **kwargs) -> None'
-    parameters:
-    - description: Text for signin request
-      id: text
-      type:
-      - str
-    - description: Action to use to perform signin
-      id: buttons
-      type:
-      - list[botframework.connector.models.CardAction]
-  type: class
-  uid: botbuilder.schema.SigninCard
-references:
-- fullName: list[botframework.connector.models.CardAction]
-  name: list[CardAction]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.models.CardAction
-    name: CardAction
-    uid: botframework.connector.models.CardAction
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.models.CardAction]
+### YamlMime:PythonClass
+uid: botbuilder.schema.SigninCard
+name: SigninCard
+fullName: botbuilder.schema.SigninCard
+module: botbuilder.schema
+inheritances:
+- msrest.serialization.Model
+summary: A card representing a request to sign in.
+constructor:
+  syntax: 'SigninCard(*, text: str = None, buttons=None, **kwargs) -> None'
+  parameters:
+  - name: text
+    description: Text for signin request
+    types:
+    - <xref:str>
+  - name: buttons
+    description: Action to use to perform signin
+    types:
+    - <xref:list>[<xref:botframework.connector.models.CardAction>]

@@ -1,20 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.ai.qna.models.GenerateAnswerRequestBody
-  fullName: botbuilder.ai.qna.models.GenerateAnswerRequestBody
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.ai.qna.models
-  name: GenerateAnswerRequestBody
-  summary: Question used as the payload body for QnA Maker's Generate Answer API.
-  syntax:
-    content: GenerateAnswerRequestBody(**kwargs)
-  type: class
-  uid: botbuilder.ai.qna.models.GenerateAnswerRequestBody
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.ai.qna.models.GenerateAnswerRequestBody
+name: GenerateAnswerRequestBody
+fullName: botbuilder.ai.qna.models.GenerateAnswerRequestBody
+module: botbuilder.ai.qna.models
+inheritances:
+- msrest.serialization.Model
+summary: Question used as the payload body for QnA Maker's Generate Answer API.
+constructor:
+  syntax: GenerateAnswerRequestBody(**kwargs)

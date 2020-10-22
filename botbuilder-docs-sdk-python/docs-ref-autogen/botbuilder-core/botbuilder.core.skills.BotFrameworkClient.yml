@@ -1,41 +1,13 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.skills.BotFrameworkClient.post_activity
-  class: botbuilder.core.skills.BotFrameworkClient
-  fullName: botbuilder.core.skills.BotFrameworkClient
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: abc.ABC
-  langs:
-  - python
-  module: botbuilder.core.skills
-  name: BotFrameworkClient
-  syntax: {}
-  type: class
-  uid: botbuilder.core.skills.BotFrameworkClient
-- class: botbuilder.core.skills.BotFrameworkClient
-  fullName: botbuilder.core.skills.BotFrameworkClient.post_activity
-  langs:
-  - python
-  module: botbuilder.core.skills
-  name: 'post_activity(from_bot_id: str, to_bot_id: str, to_url: str, service_url:
+### YamlMime:PythonClass
+uid: botbuilder.core.skills.BotFrameworkClient
+name: BotFrameworkClient
+fullName: botbuilder.core.skills.BotFrameworkClient
+module: botbuilder.core.skills
+inheritances:
+- abc.ABC
+methods:
+- uid: botbuilder.core.skills.BotFrameworkClient.post_activity
+  name: post_activity
+  signature: 'post_activity(from_bot_id: str, to_bot_id: str, to_url: str, service_url:
     str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity) ->
     botbuilder.core.invoke_response.InvokeResponse'
-  namewithoutparameters: post_activity
-  syntax:
-    content: 'post_activity(from_bot_id: str, to_bot_id: str, to_url: str, service_url:
-      str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity)
-      -> botbuilder.core.invoke_response.InvokeResponse'
-  type: method
-  uid: botbuilder.core.skills.BotFrameworkClient.post_activity
-references:
-- fullName: botbuilder.core.skills.BotFrameworkClient.post_activity
-  isExternal: false
-  name: 'post_activity(from_bot_id: str, to_bot_id: str, to_url: str, service_url:
-    str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity) ->
-    botbuilder.core.invoke_response.InvokeResponse'
-  parent: botbuilder.core.skills.BotFrameworkClient
-  uid: botbuilder.core.skills.BotFrameworkClient.post_activity

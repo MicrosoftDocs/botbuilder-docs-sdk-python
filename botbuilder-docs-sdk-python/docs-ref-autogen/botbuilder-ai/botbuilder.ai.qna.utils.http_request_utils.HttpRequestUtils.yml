@@ -1,29 +1,16 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.ai.qna.utils.http_request_utils.HttpRequestUtils.execute_http_request
-  class: botbuilder.ai.qna.utils.http_request_utils.HttpRequestUtils
-  fullName: botbuilder.ai.qna.utils.http_request_utils.HttpRequestUtils
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.ai.qna.utils.http_request_utils
-  name: HttpRequestUtils
-  summary: HTTP request utils class.
-  syntax:
-    content: 'HttpRequestUtils(http_client: aiohttp.client.ClientSession)'
-  type: class
-  uid: botbuilder.ai.qna.utils.http_request_utils.HttpRequestUtils
-- class: botbuilder.ai.qna.utils.http_request_utils.HttpRequestUtils
-  fullName: botbuilder.ai.qna.utils.http_request_utils.HttpRequestUtils.execute_http_request
-  langs:
-  - python
-  module: botbuilder.ai.qna.utils.http_request_utils
-  name: 'execute_http_request(request_url: str, payload_body: object, endpoint: botbuilder.ai.qna.qnamaker_endpoint.QnAMakerEndpoint,
-    timeout: float = None) -> aiohttp.client_reqrep.ClientResponse'
-  namewithoutparameters: execute_http_request
+### YamlMime:PythonClass
+uid: botbuilder.ai.qna.utils.http_request_utils.HttpRequestUtils
+name: HttpRequestUtils
+fullName: botbuilder.ai.qna.utils.http_request_utils.HttpRequestUtils
+module: botbuilder.ai.qna.utils.http_request_utils
+inheritances:
+- builtins.object
+summary: HTTP request utils class.
+constructor:
+  syntax: 'HttpRequestUtils(http_client: aiohttp.client.ClientSession)'
+methods:
+- uid: botbuilder.ai.qna.utils.http_request_utils.HttpRequestUtils.execute_http_request
+  name: execute_http_request
   summary: 'Execute HTTP request.
 
 
@@ -38,16 +25,6 @@ items:
 
 
     timeout: Timeout for HTTP call (milliseconds).'
-  syntax:
-    content: 'execute_http_request(request_url: str, payload_body: object, endpoint:
-      botbuilder.ai.qna.qnamaker_endpoint.QnAMakerEndpoint, timeout: float = None)
-      -> aiohttp.client_reqrep.ClientResponse'
-  type: method
-  uid: botbuilder.ai.qna.utils.http_request_utils.HttpRequestUtils.execute_http_request
-references:
-- fullName: botbuilder.ai.qna.utils.http_request_utils.HttpRequestUtils.execute_http_request
-  isExternal: false
-  name: 'execute_http_request(request_url: str, payload_body: object, endpoint: botbuilder.ai.qna.qnamaker_endpoint.QnAMakerEndpoint,
-    timeout: float = None) -> aiohttp.client_reqrep.ClientResponse'
-  parent: botbuilder.ai.qna.utils.http_request_utils.HttpRequestUtils
-  uid: botbuilder.ai.qna.utils.http_request_utils.HttpRequestUtils.execute_http_request
+  signature: 'execute_http_request(request_url: str, payload_body: object, endpoint:
+    botbuilder.ai.qna.qnamaker_endpoint.QnAMakerEndpoint, timeout: float = None) ->
+    aiohttp.client_reqrep.ClientResponse'

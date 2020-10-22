@@ -1,214 +1,34 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.ai.luis.LuisTelemetryConstants.activity_id_property
-  - botbuilder.ai.luis.LuisTelemetryConstants.application_id_property
-  - botbuilder.ai.luis.LuisTelemetryConstants.entities_property
-  - botbuilder.ai.luis.LuisTelemetryConstants.from_id_property
-  - botbuilder.ai.luis.LuisTelemetryConstants.intent2_property
-  - botbuilder.ai.luis.LuisTelemetryConstants.intent_property
-  - botbuilder.ai.luis.LuisTelemetryConstants.intent_score2_property
-  - botbuilder.ai.luis.LuisTelemetryConstants.intent_score_property
-  - botbuilder.ai.luis.LuisTelemetryConstants.luis_result
-  - botbuilder.ai.luis.LuisTelemetryConstants.question_property
-  - botbuilder.ai.luis.LuisTelemetryConstants.sentiment_label_property
-  - botbuilder.ai.luis.LuisTelemetryConstants.sentiment_score_property
-  class: botbuilder.ai.luis.LuisTelemetryConstants
-  fullName: botbuilder.ai.luis.LuisTelemetryConstants
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: builtins.str
-  - inheritance:
-    - type: builtins.object
-    type: enum.Enum
-  langs:
-  - python
-  module: botbuilder.ai.luis
-  name: LuisTelemetryConstants
-  summary: The IBotTelemetryClient event and property names that logged by default.
-  syntax: {}
-  type: class
-  uid: botbuilder.ai.luis.LuisTelemetryConstants
-- class: botbuilder.ai.luis.LuisTelemetryConstants
-  fullName: botbuilder.ai.luis.LuisTelemetryConstants.activity_id_property
-  langs:
-  - python
-  module: botbuilder.ai.luis
-  name: activity_id_property
-  syntax:
-    content: activity_id_property = 'activityId'
-  type: attribute
+### YamlMime:PythonEnum
+uid: botbuilder.ai.luis.LuisTelemetryConstants
+name: LuisTelemetryConstants
+fullName: botbuilder.ai.luis.LuisTelemetryConstants
+summary: The IBotTelemetryClient event and property names that logged by default.
+module: botbuilder.ai.luis
+inheritances:
+- builtins.str
+- enum.Enum
+fields:
+- name: activity_id_property
   uid: botbuilder.ai.luis.LuisTelemetryConstants.activity_id_property
-- class: botbuilder.ai.luis.LuisTelemetryConstants
-  fullName: botbuilder.ai.luis.LuisTelemetryConstants.application_id_property
-  langs:
-  - python
-  module: botbuilder.ai.luis
-  name: application_id_property
-  syntax:
-    content: application_id_property = 'applicationId'
-  type: attribute
+- name: application_id_property
   uid: botbuilder.ai.luis.LuisTelemetryConstants.application_id_property
-- class: botbuilder.ai.luis.LuisTelemetryConstants
-  fullName: botbuilder.ai.luis.LuisTelemetryConstants.entities_property
-  langs:
-  - python
-  module: botbuilder.ai.luis
-  name: entities_property
-  syntax:
-    content: entities_property = 'entities'
-  type: attribute
+- name: entities_property
   uid: botbuilder.ai.luis.LuisTelemetryConstants.entities_property
-- class: botbuilder.ai.luis.LuisTelemetryConstants
-  fullName: botbuilder.ai.luis.LuisTelemetryConstants.from_id_property
-  langs:
-  - python
-  module: botbuilder.ai.luis
-  name: from_id_property
-  syntax:
-    content: from_id_property = 'fromId'
-  type: attribute
+- name: from_id_property
   uid: botbuilder.ai.luis.LuisTelemetryConstants.from_id_property
-- class: botbuilder.ai.luis.LuisTelemetryConstants
-  fullName: botbuilder.ai.luis.LuisTelemetryConstants.intent2_property
-  langs:
-  - python
-  module: botbuilder.ai.luis
-  name: intent2_property
-  syntax:
-    content: intent2_property = 'intent2'
-  type: attribute
+- name: intent2_property
   uid: botbuilder.ai.luis.LuisTelemetryConstants.intent2_property
-- class: botbuilder.ai.luis.LuisTelemetryConstants
-  fullName: botbuilder.ai.luis.LuisTelemetryConstants.intent_property
-  langs:
-  - python
-  module: botbuilder.ai.luis
-  name: intent_property
-  syntax:
-    content: intent_property = 'intent'
-  type: attribute
+- name: intent_property
   uid: botbuilder.ai.luis.LuisTelemetryConstants.intent_property
-- class: botbuilder.ai.luis.LuisTelemetryConstants
-  fullName: botbuilder.ai.luis.LuisTelemetryConstants.intent_score2_property
-  langs:
-  - python
-  module: botbuilder.ai.luis
-  name: intent_score2_property
-  syntax:
-    content: intent_score2_property = 'intentScore2'
-  type: attribute
+- name: intent_score2_property
   uid: botbuilder.ai.luis.LuisTelemetryConstants.intent_score2_property
-- class: botbuilder.ai.luis.LuisTelemetryConstants
-  fullName: botbuilder.ai.luis.LuisTelemetryConstants.intent_score_property
-  langs:
-  - python
-  module: botbuilder.ai.luis
-  name: intent_score_property
-  syntax:
-    content: intent_score_property = 'intentScore'
-  type: attribute
+- name: intent_score_property
   uid: botbuilder.ai.luis.LuisTelemetryConstants.intent_score_property
-- class: botbuilder.ai.luis.LuisTelemetryConstants
-  fullName: botbuilder.ai.luis.LuisTelemetryConstants.luis_result
-  langs:
-  - python
-  module: botbuilder.ai.luis
-  name: luis_result
-  syntax:
-    content: luis_result = 'LuisResult'
-  type: attribute
+- name: luis_result
   uid: botbuilder.ai.luis.LuisTelemetryConstants.luis_result
-- class: botbuilder.ai.luis.LuisTelemetryConstants
-  fullName: botbuilder.ai.luis.LuisTelemetryConstants.question_property
-  langs:
-  - python
-  module: botbuilder.ai.luis
-  name: question_property
-  syntax:
-    content: question_property = 'question'
-  type: attribute
+- name: question_property
   uid: botbuilder.ai.luis.LuisTelemetryConstants.question_property
-- class: botbuilder.ai.luis.LuisTelemetryConstants
-  fullName: botbuilder.ai.luis.LuisTelemetryConstants.sentiment_label_property
-  langs:
-  - python
-  module: botbuilder.ai.luis
-  name: sentiment_label_property
-  syntax:
-    content: sentiment_label_property = 'sentimentLabel'
-  type: attribute
+- name: sentiment_label_property
   uid: botbuilder.ai.luis.LuisTelemetryConstants.sentiment_label_property
-- class: botbuilder.ai.luis.LuisTelemetryConstants
-  fullName: botbuilder.ai.luis.LuisTelemetryConstants.sentiment_score_property
-  langs:
-  - python
-  module: botbuilder.ai.luis
-  name: sentiment_score_property
-  syntax:
-    content: sentiment_score_property = 'sentimentScore'
-  type: attribute
-  uid: botbuilder.ai.luis.LuisTelemetryConstants.sentiment_score_property
-references:
-- fullName: botbuilder.ai.luis.LuisTelemetryConstants.activity_id_property
-  isExternal: false
-  name: activity_id_property
-  parent: botbuilder.ai.luis.LuisTelemetryConstants
-  uid: botbuilder.ai.luis.LuisTelemetryConstants.activity_id_property
-- fullName: botbuilder.ai.luis.LuisTelemetryConstants.application_id_property
-  isExternal: false
-  name: application_id_property
-  parent: botbuilder.ai.luis.LuisTelemetryConstants
-  uid: botbuilder.ai.luis.LuisTelemetryConstants.application_id_property
-- fullName: botbuilder.ai.luis.LuisTelemetryConstants.entities_property
-  isExternal: false
-  name: entities_property
-  parent: botbuilder.ai.luis.LuisTelemetryConstants
-  uid: botbuilder.ai.luis.LuisTelemetryConstants.entities_property
-- fullName: botbuilder.ai.luis.LuisTelemetryConstants.from_id_property
-  isExternal: false
-  name: from_id_property
-  parent: botbuilder.ai.luis.LuisTelemetryConstants
-  uid: botbuilder.ai.luis.LuisTelemetryConstants.from_id_property
-- fullName: botbuilder.ai.luis.LuisTelemetryConstants.intent2_property
-  isExternal: false
-  name: intent2_property
-  parent: botbuilder.ai.luis.LuisTelemetryConstants
-  uid: botbuilder.ai.luis.LuisTelemetryConstants.intent2_property
-- fullName: botbuilder.ai.luis.LuisTelemetryConstants.intent_property
-  isExternal: false
-  name: intent_property
-  parent: botbuilder.ai.luis.LuisTelemetryConstants
-  uid: botbuilder.ai.luis.LuisTelemetryConstants.intent_property
-- fullName: botbuilder.ai.luis.LuisTelemetryConstants.intent_score2_property
-  isExternal: false
-  name: intent_score2_property
-  parent: botbuilder.ai.luis.LuisTelemetryConstants
-  uid: botbuilder.ai.luis.LuisTelemetryConstants.intent_score2_property
-- fullName: botbuilder.ai.luis.LuisTelemetryConstants.intent_score_property
-  isExternal: false
-  name: intent_score_property
-  parent: botbuilder.ai.luis.LuisTelemetryConstants
-  uid: botbuilder.ai.luis.LuisTelemetryConstants.intent_score_property
-- fullName: botbuilder.ai.luis.LuisTelemetryConstants.luis_result
-  isExternal: false
-  name: luis_result
-  parent: botbuilder.ai.luis.LuisTelemetryConstants
-  uid: botbuilder.ai.luis.LuisTelemetryConstants.luis_result
-- fullName: botbuilder.ai.luis.LuisTelemetryConstants.question_property
-  isExternal: false
-  name: question_property
-  parent: botbuilder.ai.luis.LuisTelemetryConstants
-  uid: botbuilder.ai.luis.LuisTelemetryConstants.question_property
-- fullName: botbuilder.ai.luis.LuisTelemetryConstants.sentiment_label_property
-  isExternal: false
-  name: sentiment_label_property
-  parent: botbuilder.ai.luis.LuisTelemetryConstants
-  uid: botbuilder.ai.luis.LuisTelemetryConstants.sentiment_label_property
-- fullName: botbuilder.ai.luis.LuisTelemetryConstants.sentiment_score_property
-  isExternal: false
-  name: sentiment_score_property
-  parent: botbuilder.ai.luis.LuisTelemetryConstants
+- name: sentiment_score_property
   uid: botbuilder.ai.luis.LuisTelemetryConstants.sentiment_score_property

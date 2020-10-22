@@ -1,27 +1,15 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.TaskModuleContinueResponse
-  fullName: botbuilder.schema.teams.TaskModuleContinueResponse
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: msrest.serialization.Model
-    type: botbuilder.schema.teams._models_py3.TaskModuleResponseBase
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: TaskModuleContinueResponse
-  summary: Task Module Response with continue action.
-  syntax:
-    content: TaskModuleContinueResponse(*, value=None, **kwargs) -> None
-    parameters:
-    - description: The JSON for the Adaptive card to appear in the task module.
-      id: value
-      type:
-      - botframework.connector.teams.models.TaskModuleTaskInfo
-  type: class
-  uid: botbuilder.schema.teams.TaskModuleContinueResponse
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.TaskModuleContinueResponse
+name: TaskModuleContinueResponse
+fullName: botbuilder.schema.teams.TaskModuleContinueResponse
+module: botbuilder.schema.teams
+inheritances:
+- botbuilder.schema.teams._models_py3.TaskModuleResponseBase
+summary: Task Module Response with continue action.
+constructor:
+  syntax: TaskModuleContinueResponse(*, value=None, **kwargs) -> None
+  parameters:
+  - name: value
+    description: The JSON for the Adaptive card to appear in the task module.
+    types:
+    - <xref:botframework.connector.teams.models.TaskModuleTaskInfo>

@@ -1,91 +1,32 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.post_activity
-  - botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.post_buffered_activity
-  - botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.INVOKE_ACTIVITY_NAME
-  class: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient
-  fullName: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: abc.ABC
-    type: botbuilder.core.skills.bot_framework_client.BotFrameworkClient
-  langs:
-  - python
-  module: botbuilder.integration.aiohttp.bot_framework_http_client
-  name: BotFrameworkHttpClient
-  summary: 'A skill host adapter implements API to forward activity to a skill and
+### YamlMime:PythonClass
+uid: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient
+name: BotFrameworkHttpClient
+fullName: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient
+module: botbuilder.integration.aiohttp.bot_framework_http_client
+inheritances:
+- botbuilder.core.skills.bot_framework_client.BotFrameworkClient
+summary: 'A skill host adapter implements API to forward activity to a skill and
 
-    implements routing ChannelAPI calls from the Skill up through the bot/adapter.'
-  syntax:
-    content: 'BotFrameworkHttpClient(credential_provider: botframework.connector.auth.credential_provider.CredentialProvider,
-      channel_provider: botframework.connector.auth.channel_provider.ChannelProvider
-      = None, logger: logging.Logger = None)'
-  type: class
-  uid: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient
-- class: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient
-  fullName: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.post_activity
-  langs:
-  - python
-  module: botbuilder.integration.aiohttp.bot_framework_http_client
-  name: 'post_activity(from_bot_id: str, to_bot_id: str, to_url: str, service_url:
+  implements routing ChannelAPI calls from the Skill up through the bot/adapter.'
+constructor:
+  syntax: 'BotFrameworkHttpClient(credential_provider: botframework.connector.auth.credential_provider.CredentialProvider,
+    channel_provider: botframework.connector.auth.channel_provider.ChannelProvider
+    = None, logger: logging.Logger = None)'
+methods:
+- uid: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.post_activity
+  name: post_activity
+  signature: 'post_activity(from_bot_id: str, to_bot_id: str, to_url: str, service_url:
     str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity) ->
     botbuilder.core.invoke_response.InvokeResponse'
-  namewithoutparameters: post_activity
-  syntax:
-    content: 'post_activity(from_bot_id: str, to_bot_id: str, to_url: str, service_url:
-      str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity)
-      -> botbuilder.core.invoke_response.InvokeResponse'
-  type: method
-  uid: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.post_activity
-- class: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient
-  fullName: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.post_buffered_activity
-  langs:
-  - python
-  module: botbuilder.integration.aiohttp.bot_framework_http_client
-  name: 'post_buffered_activity(from_bot_id: str, to_bot_id: str, to_url: str, service_url:
-    str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity) ->
-    [<class ''botbuilder.schema._models_py3.Activity''>]'
-  namewithoutparameters: post_buffered_activity
+- uid: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.post_buffered_activity
+  name: post_buffered_activity
   summary: 'Helper method to return a list of activities when an Activity is being
 
     sent with DeliveryMode == expectReplies.'
-  syntax:
-    content: 'post_buffered_activity(from_bot_id: str, to_bot_id: str, to_url: str,
-      service_url: str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity)
-      -> [<class ''botbuilder.schema._models_py3.Activity''>]'
-  type: method
-  uid: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.post_buffered_activity
-- class: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient
-  fullName: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.INVOKE_ACTIVITY_NAME
-  langs:
-  - python
-  module: botbuilder.integration.aiohttp.bot_framework_http_client
+  signature: 'post_buffered_activity(from_bot_id: str, to_bot_id: str, to_url: str,
+    service_url: str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity)
+    -> [<class ''botbuilder.schema._models_py3.Activity''>]'
+attributes:
+- uid: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.INVOKE_ACTIVITY_NAME
   name: INVOKE_ACTIVITY_NAME
-  syntax:
-    content: INVOKE_ACTIVITY_NAME = 'SkillEvents.ChannelApiInvoke'
-  type: attribute
-  uid: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.INVOKE_ACTIVITY_NAME
-references:
-- fullName: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.post_activity
-  isExternal: false
-  name: 'post_activity(from_bot_id: str, to_bot_id: str, to_url: str, service_url:
-    str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity) ->
-    botbuilder.core.invoke_response.InvokeResponse'
-  parent: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient
-  uid: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.post_activity
-- fullName: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.post_buffered_activity
-  isExternal: false
-  name: 'post_buffered_activity(from_bot_id: str, to_bot_id: str, to_url: str, service_url:
-    str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity) ->
-    [<class ''botbuilder.schema._models_py3.Activity''>]'
-  parent: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient
-  uid: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.post_buffered_activity
-- fullName: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.INVOKE_ACTIVITY_NAME
-  isExternal: false
-  name: INVOKE_ACTIVITY_NAME
-  parent: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient
-  uid: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.INVOKE_ACTIVITY_NAME
+  signature: INVOKE_ACTIVITY_NAME = 'SkillEvents.ChannelApiInvoke'

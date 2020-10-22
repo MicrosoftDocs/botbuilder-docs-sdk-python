@@ -1,55 +1,43 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.O365ConnectorCardDateInput
-  fullName: botbuilder.schema.teams.O365ConnectorCardDateInput
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: msrest.serialization.Model
-    type: botbuilder.schema.teams._models_py3.O365ConnectorCardInputBase
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: O365ConnectorCardDateInput
-  summary: O365 connector card date input.
-  syntax:
-    content: 'O365ConnectorCardDateInput(*, type=None, id: str = None, is_required:
-      bool = None, title: str = None, value: str = None, include_time: bool = None,
-      **kwargs) -> None'
-    parameters:
-    - description: 'Input type name. Possible values include: ''textInput'',
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.O365ConnectorCardDateInput
+name: O365ConnectorCardDateInput
+fullName: botbuilder.schema.teams.O365ConnectorCardDateInput
+module: botbuilder.schema.teams
+inheritances:
+- botbuilder.schema.teams._models_py3.O365ConnectorCardInputBase
+summary: O365 connector card date input.
+constructor:
+  syntax: 'O365ConnectorCardDateInput(*, type=None, id: str = None, is_required: bool
+    = None, title: str = None, value: str = None, include_time: bool = None, **kwargs)
+    -> None'
+  parameters:
+  - name: type
+    description: 'Input type name. Possible values include: ''textInput'',
 
-        ''dateInput'', ''multichoiceInput'''
-      id: type
-      type:
-      - str
-    - description: Input Id. It must be unique per entire O365 connector card.
-      id: id
-      type:
-      - str
-    - description: 'Define if this input is a required field. Default
+      ''dateInput'', ''multichoiceInput'''
+    types:
+    - <xref:str>
+  - name: id
+    description: Input Id. It must be unique per entire O365 connector card.
+    types:
+    - <xref:str>
+  - name: is_required
+    description: 'Define if this input is a required field. Default
 
-        value is false.'
-      id: is_required
-      type:
-      - bool
-    - description: Input title that will be shown as the placeholder
-      id: title
-      type:
-      - str
-    - description: Default value for this input field
-      id: value
-      type:
-      - str
-    - description: 'Include time input field. Default value  is false
+      value is false.'
+    types:
+    - <xref:bool>
+  - name: title
+    description: Input title that will be shown as the placeholder
+    types:
+    - <xref:str>
+  - name: value
+    description: Default value for this input field
+    types:
+    - <xref:str>
+  - name: include_time
+    description: 'Include time input field. Default value  is false
 
-        (date only).'
-      id: include_time
-      type:
-      - bool
-  type: class
-  uid: botbuilder.schema.teams.O365ConnectorCardDateInput
-references: []
+      (date only).'
+    types:
+    - <xref:bool>

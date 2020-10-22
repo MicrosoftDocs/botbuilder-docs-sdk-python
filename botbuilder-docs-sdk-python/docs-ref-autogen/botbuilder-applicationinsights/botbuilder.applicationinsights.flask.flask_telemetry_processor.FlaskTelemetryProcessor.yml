@@ -1,73 +1,18 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor.can_process
-  - botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor.detect_flask
-  - botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor.get_request_body
-  class: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor
-  fullName: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: abc.ABC
-    type: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
-  langs:
-  - python
-  module: botbuilder.applicationinsights.flask.flask_telemetry_processor
-  name: FlaskTelemetryProcessor
-  summary: ''
-  syntax: {}
-  type: class
-  uid: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor
-- class: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor
-  fullName: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor.can_process
-  langs:
-  - python
-  module: botbuilder.applicationinsights.flask.flask_telemetry_processor
-  name: can_process() -> bool
-  namewithoutparameters: can_process
-  syntax:
-    content: can_process() -> bool
-  type: method
-  uid: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor.can_process
-- class: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor
-  fullName: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor.detect_flask
-  langs:
-  - python
-  module: botbuilder.applicationinsights.flask.flask_telemetry_processor
-  name: detect_flask() -> bool
-  namewithoutparameters: detect_flask
+### YamlMime:PythonClass
+uid: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor
+name: FlaskTelemetryProcessor
+fullName: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor
+module: botbuilder.applicationinsights.flask.flask_telemetry_processor
+inheritances:
+- botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
+methods:
+- uid: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor.can_process
+  name: can_process
+  signature: can_process() -> bool
+- uid: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor.detect_flask
+  name: detect_flask
   summary: Detects if running in flask.
-  syntax:
-    content: detect_flask() -> bool
-  type: method
-  uid: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor.detect_flask
-- class: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor
-  fullName: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor.get_request_body
-  langs:
-  - python
-  module: botbuilder.applicationinsights.flask.flask_telemetry_processor
-  name: get_request_body() -> str
-  namewithoutparameters: get_request_body
-  syntax:
-    content: get_request_body() -> str
-  type: method
-  uid: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor.get_request_body
-references:
-- fullName: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor.can_process
-  isExternal: false
-  name: can_process() -> bool
-  parent: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor
-  uid: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor.can_process
-- fullName: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor.detect_flask
-  isExternal: false
-  name: detect_flask() -> bool
-  parent: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor
-  uid: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor.detect_flask
-- fullName: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor.get_request_body
-  isExternal: false
-  name: get_request_body() -> str
-  parent: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor
-  uid: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor.get_request_body
+  signature: detect_flask() -> bool
+- uid: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor.get_request_body
+  name: get_request_body
+  signature: get_request_body() -> str

@@ -1,30 +1,20 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.O365ConnectorCardFact
-  fullName: botbuilder.schema.teams.O365ConnectorCardFact
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: O365ConnectorCardFact
-  summary: O365 connector card fact.
-  syntax:
-    content: 'O365ConnectorCardFact(*, name: str = None, value: str = None, **kwargs)
-      -> None'
-    parameters:
-    - description: Display name of the fact
-      id: name
-      type:
-      - str
-    - description: Display value for the fact
-      id: value
-      type:
-      - str
-  type: class
-  uid: botbuilder.schema.teams.O365ConnectorCardFact
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.O365ConnectorCardFact
+name: O365ConnectorCardFact
+fullName: botbuilder.schema.teams.O365ConnectorCardFact
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: O365 connector card fact.
+constructor:
+  syntax: 'O365ConnectorCardFact(*, name: str = None, value: str = None, **kwargs)
+    -> None'
+  parameters:
+  - name: name
+    description: Display name of the fact
+    types:
+    - <xref:str>
+  - name: value
+    description: Display value for the fact
+    types:
+    - <xref:str>

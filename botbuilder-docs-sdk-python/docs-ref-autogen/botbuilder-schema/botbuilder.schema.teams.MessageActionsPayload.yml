@@ -1,147 +1,95 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.MessageActionsPayload
-  fullName: botbuilder.schema.teams.MessageActionsPayload
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: MessageActionsPayload
-  summary: 'Represents the individual message within a chat or channel where a message
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.MessageActionsPayload
+name: MessageActionsPayload
+fullName: botbuilder.schema.teams.MessageActionsPayload
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: 'Represents the individual message within a chat or channel where a message
 
-    actions is taken.'
-  syntax:
-    content: 'MessageActionsPayload(*, id: str = None, reply_to_id: str = None, message_type=None,
-      created_date_time: str = None, last_modified_date_time: str = None, deleted:
-      bool = None, subject: str = None, summary: str = None, importance=None, locale:
-      str = None, link_to_message: str = None, from_property=None, body=None, attachment_layout:
-      str = None, attachments=None, mentions=None, reactions=None, **kwargs) -> None'
-    parameters:
-    - description: Unique id of the message.
-      id: id
-      type:
-      - str
-    - description: Id of the parent/root message of the thread.
-      id: reply_to_id
-      type:
-      - str
-    - description: 'Type of message - automatically set to message.
+  actions is taken.'
+constructor:
+  syntax: 'MessageActionsPayload(*, id: str = None, reply_to_id: str = None, message_type=None,
+    created_date_time: str = None, last_modified_date_time: str = None, deleted: bool
+    = None, subject: str = None, summary: str = None, importance=None, locale: str
+    = None, link_to_message: str = None, from_property=None, body=None, attachment_layout:
+    str = None, attachments=None, mentions=None, reactions=None, **kwargs) -> None'
+  parameters:
+  - name: id
+    description: Unique id of the message.
+    types:
+    - <xref:str>
+  - name: reply_to_id
+    description: Id of the parent/root message of the thread.
+    types:
+    - <xref:str>
+  - name: message_type
+    description: 'Type of message - automatically set to message.
 
-        Possible values include: ''message'''
-      id: message_type
-      type:
-      - str
-    - description: Timestamp of when the message was created.
-      id: created_date_time
-      type:
-      - str
-    - description: 'Timestamp of when the message was edited
+      Possible values include: ''message'''
+    types:
+    - <xref:str>
+  - name: created_date_time
+    description: Timestamp of when the message was created.
+    types:
+    - <xref:str>
+  - name: last_modified_date_time
+    description: 'Timestamp of when the message was edited
 
-        or updated.'
-      id: last_modified_date_time
-      type:
-      - str
-    - description: Indicates whether a message has been soft deleted.
-      id: deleted
-      type:
-      - bool
-    - description: Subject line of the message.
-      id: subject
-      type:
-      - str
-    - description: 'Summary text of the message that could be used for
+      or updated.'
+    types:
+    - <xref:str>
+  - name: deleted
+    description: Indicates whether a message has been soft deleted.
+    types:
+    - <xref:bool>
+  - name: subject
+    description: Subject line of the message.
+    types:
+    - <xref:str>
+  - name: summary
+    description: 'Summary text of the message that could be used for
 
-        notifications.'
-      id: summary
-      type:
-      - str
-    - description: 'The importance of the message. Possible values include:
+      notifications.'
+    types:
+    - <xref:str>
+  - name: importance
+    description: 'The importance of the message. Possible values include:
 
-        ''normal'', ''high'', ''urgent'''
-      id: importance
-      type:
-      - str
-    - description: Locale of the message set by the client.
-      id: locale
-      type:
-      - str
-    - description: Link back to the message.
-      id: link_to_message
-      type:
-      - str
-    - description: Sender of the message.
-      id: from_property
-      type:
-      - botframework.connector.teams.models.MessageActionsPayloadFrom
-    - description: Plaintext/HTML representation of the content of the message.
-      id: body
-      type:
-      - botframework.connector.teams.models.MessageActionsPayloadBody
-    - description: 'How the attachment(s) are displayed in the
+      ''normal'', ''high'', ''urgent'''
+    types:
+    - <xref:str>
+  - name: locale
+    description: Locale of the message set by the client.
+    types:
+    - <xref:str>
+  - name: link_to_message
+    description: Link back to the message.
+    types:
+    - <xref:str>
+  - name: from_property
+    description: Sender of the message.
+    types:
+    - <xref:botframework.connector.teams.models.MessageActionsPayloadFrom>
+  - name: body
+    description: Plaintext/HTML representation of the content of the message.
+    types:
+    - <xref:botframework.connector.teams.models.MessageActionsPayloadBody>
+  - name: attachment_layout
+    description: 'How the attachment(s) are displayed in the
 
-        message.'
-      id: attachment_layout
-      type:
-      - str
-    - description: Attachments in the message - card, image, file, etc.
-      id: attachments
-      type:
-      - list[botframework.connector.teams.models.MessageActionsPayloadAttachment]
-    - description: List of entities mentioned in the message.
-      id: mentions
-      type:
-      - list[botframework.connector.teams.models.MessageActionsPayloadMention]
-    - description: Reactions for the message.
-      id: reactions
-      type:
-      - list[botframework.connector.teams.models.MessageActionsPayloadReaction]
-  type: class
-  uid: botbuilder.schema.teams.MessageActionsPayload
-references:
-- fullName: list[botframework.connector.teams.models.MessageActionsPayloadAttachment]
-  name: list[MessageActionsPayloadAttachment]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.teams.models.MessageActionsPayloadAttachment
-    name: MessageActionsPayloadAttachment
-    uid: botframework.connector.teams.models.MessageActionsPayloadAttachment
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.teams.models.MessageActionsPayloadAttachment]
-- fullName: list[botframework.connector.teams.models.MessageActionsPayloadMention]
-  name: list[MessageActionsPayloadMention]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.teams.models.MessageActionsPayloadMention
-    name: MessageActionsPayloadMention
-    uid: botframework.connector.teams.models.MessageActionsPayloadMention
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.teams.models.MessageActionsPayloadMention]
-- fullName: list[botframework.connector.teams.models.MessageActionsPayloadReaction]
-  name: list[MessageActionsPayloadReaction]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.teams.models.MessageActionsPayloadReaction
-    name: MessageActionsPayloadReaction
-    uid: botframework.connector.teams.models.MessageActionsPayloadReaction
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.teams.models.MessageActionsPayloadReaction]
+      message.'
+    types:
+    - <xref:str>
+  - name: attachments
+    description: Attachments in the message - card, image, file, etc.
+    types:
+    - <xref:list>[<xref:botframework.connector.teams.models.MessageActionsPayloadAttachment>]
+  - name: mentions
+    description: List of entities mentioned in the message.
+    types:
+    - <xref:list>[<xref:botframework.connector.teams.models.MessageActionsPayloadMention>]
+  - name: reactions
+    description: Reactions for the message.
+    types:
+    - <xref:list>[<xref:botframework.connector.teams.models.MessageActionsPayloadReaction>]

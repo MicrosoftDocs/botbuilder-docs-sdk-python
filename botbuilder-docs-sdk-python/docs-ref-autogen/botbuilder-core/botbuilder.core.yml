@@ -1,567 +1,107 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.ActivityHandler
-  - botbuilder.core.AdapterExtensions
-  - botbuilder.core.AnonymousReceiveMiddleware
-  - botbuilder.core.AutoSaveStateMiddleware
-  - botbuilder.core.Bot
-  - botbuilder.core.BotActionNotImplementedError
-  - botbuilder.core.BotAdapter
-  - botbuilder.core.BotAssert
-  - botbuilder.core.BotFrameworkAdapter
-  - botbuilder.core.BotFrameworkAdapterSettings
-  - botbuilder.core.BotState
-  - botbuilder.core.BotStateSet
-  - botbuilder.core.BotTelemetryClient
-  - botbuilder.core.calculate_change_hash
-  - botbuilder.core.CardFactory
-  - botbuilder.core.ChannelServiceHandler
-  - botbuilder.core.ConversationState
-  - botbuilder.core.ExtendedUserTokenProvider
-  - botbuilder.core.HealthCheck
-  - botbuilder.core.IntentScore
-  - botbuilder.core.InvokeResponse
-  - botbuilder.core.MemoryStorage
-  - botbuilder.core.MemoryTranscriptStore
-  - botbuilder.core.MessageFactory
-  - botbuilder.core.Middleware
-  - botbuilder.core.MiddlewareSet
-  - botbuilder.core.NullTelemetryClient
-  - botbuilder.core.PrivateConversationState
-  - botbuilder.core.RegisterClassMiddleware
-  - botbuilder.core.Recognizer
-  - botbuilder.core.RecognizerResult
-  - botbuilder.core.Severity
-  - botbuilder.core.ShowTypingMiddleware
-  - botbuilder.core.StatePropertyAccessor
-  - botbuilder.core.StatePropertyInfo
-  - botbuilder.core.Storage
-  - botbuilder.core.StoreItem
-  - botbuilder.core.TelemetryConstants
-  - botbuilder.core.TelemetryLoggerConstants
-  - botbuilder.core.TelemetryLoggerMiddleware
-  - botbuilder.core.TopIntent
-  - botbuilder.core.TurnContext
-  - botbuilder.core.UserState
-  - botbuilder.core.UserTokenProvider
-  - botbuilder.core.about
-  - botbuilder.core.activity_handler
-  - botbuilder.core.adapter_extensions
-  - botbuilder.core.auto_save_state_middleware
-  - botbuilder.core.bot
-  - botbuilder.core.bot_adapter
-  - botbuilder.core.bot_assert
-  - botbuilder.core.bot_framework_adapter
-  - botbuilder.core.bot_state
-  - botbuilder.core.bot_state_set
-  - botbuilder.core.bot_telemetry_client
-  - botbuilder.core.card_factory
-  - botbuilder.core.channel_service_handler
-  - botbuilder.core.conversation_reference_extension
-  - botbuilder.core.conversation_state
-  - botbuilder.core.healthcheck
-  - botbuilder.core.intent_score
-  - botbuilder.core.invoke_response
-  - botbuilder.core.memory_storage
-  - botbuilder.core.memory_transcript_store
-  - botbuilder.core.message_factory
-  - botbuilder.core.middleware_set
-  - botbuilder.core.null_telemetry_client
-  - botbuilder.core.private_conversation_state
-  - botbuilder.core.property_manager
-  - botbuilder.core.re_escape
-  - botbuilder.core.recognizer
-  - botbuilder.core.recognizer_result
-  - botbuilder.core.register_class_middleware
-  - botbuilder.core.serializer_helper
-  - botbuilder.core.show_typing_middleware
-  - botbuilder.core.state_property_accessor
-  - botbuilder.core.state_property_info
-  - botbuilder.core.storage
-  - botbuilder.core.telemetry_constants
-  - botbuilder.core.telemetry_logger_constants
-  - botbuilder.core.telemetry_logger_middleware
-  - botbuilder.core.transcript_logger
-  - botbuilder.core.turn_context
-  - botbuilder.core.user_state
-  - botbuilder.core.adapters
-  - botbuilder.core.inspection
-  - botbuilder.core.integration
-  - botbuilder.core.oauth
-  - botbuilder.core.skills
-  - botbuilder.core.teams
-  fullName: botbuilder.core
-  kind: import
-  langs:
-  - python
-  module: botbuilder.core
-  name: core
-  type: package
-  uid: botbuilder.core
-- fullName: botbuilder.core.calculate_change_hash
-  langs:
-  - python
-  module: botbuilder.core
-  name: 'calculate_change_hash(item: botbuilder.core.storage.StoreItem) -> str'
+### YamlMime:PythonPackage
+uid: botbuilder.core
+name: core
+fullName: botbuilder.core
+type: import
+functions:
+- uid: botbuilder.core.calculate_change_hash
+  name: calculate_change_hash
   summary: 'Utility function to calculate a change hash for a *StoreItem*.
 
     :param item:
 
     :return:'
-  syntax:
-    content: 'calculate_change_hash(item: botbuilder.core.storage.StoreItem) -> str'
-  type: function
-  uid: botbuilder.core.calculate_change_hash
-references:
-- fullName: botbuilder.core.ActivityHandler
-  isExternal: false
-  name: ActivityHandler
-  parent: botbuilder.core
-  uid: botbuilder.core.ActivityHandler
-- fullName: botbuilder.core.AdapterExtensions
-  isExternal: false
-  name: AdapterExtensions
-  parent: botbuilder.core
-  uid: botbuilder.core.AdapterExtensions
-- fullName: botbuilder.core.AnonymousReceiveMiddleware
-  isExternal: false
-  name: AnonymousReceiveMiddleware
-  parent: botbuilder.core
-  uid: botbuilder.core.AnonymousReceiveMiddleware
-- fullName: botbuilder.core.AutoSaveStateMiddleware
-  isExternal: false
-  name: AutoSaveStateMiddleware
-  parent: botbuilder.core
-  uid: botbuilder.core.AutoSaveStateMiddleware
-- fullName: botbuilder.core.Bot
-  isExternal: false
-  name: Bot
-  parent: botbuilder.core
-  uid: botbuilder.core.Bot
-- fullName: botbuilder.core.BotActionNotImplementedError
-  isExternal: false
-  name: BotActionNotImplementedError
-  parent: botbuilder.core
-  uid: botbuilder.core.BotActionNotImplementedError
-- fullName: botbuilder.core.BotAdapter
-  isExternal: false
-  name: BotAdapter
-  parent: botbuilder.core
-  uid: botbuilder.core.BotAdapter
-- fullName: botbuilder.core.BotAssert
-  isExternal: false
-  name: BotAssert
-  parent: botbuilder.core
-  uid: botbuilder.core.BotAssert
-- fullName: botbuilder.core.BotFrameworkAdapter
-  isExternal: false
-  name: BotFrameworkAdapter
-  parent: botbuilder.core
-  uid: botbuilder.core.BotFrameworkAdapter
-- fullName: botbuilder.core.BotFrameworkAdapterSettings
-  isExternal: false
-  name: BotFrameworkAdapterSettings
-  parent: botbuilder.core
-  uid: botbuilder.core.BotFrameworkAdapterSettings
-- fullName: botbuilder.core.BotState
-  isExternal: false
-  name: BotState
-  parent: botbuilder.core
-  uid: botbuilder.core.BotState
-- fullName: botbuilder.core.BotStateSet
-  isExternal: false
-  name: BotStateSet
-  parent: botbuilder.core
-  uid: botbuilder.core.BotStateSet
-- fullName: botbuilder.core.BotTelemetryClient
-  isExternal: false
-  name: BotTelemetryClient
-  parent: botbuilder.core
-  uid: botbuilder.core.BotTelemetryClient
-- fullName: botbuilder.core.calculate_change_hash
-  isExternal: false
-  name: 'calculate_change_hash(item: botbuilder.core.storage.StoreItem) -> str'
-  parent: botbuilder.core
-  uid: botbuilder.core.calculate_change_hash
-- fullName: botbuilder.core.CardFactory
-  isExternal: false
-  name: CardFactory
-  parent: botbuilder.core
-  uid: botbuilder.core.CardFactory
-- fullName: botbuilder.core.ChannelServiceHandler
-  isExternal: false
-  name: ChannelServiceHandler
-  parent: botbuilder.core
-  uid: botbuilder.core.ChannelServiceHandler
-- fullName: botbuilder.core.ConversationState
-  isExternal: false
-  name: ConversationState
-  parent: botbuilder.core
-  uid: botbuilder.core.ConversationState
-- fullName: botbuilder.core.ExtendedUserTokenProvider
-  isExternal: false
-  name: ExtendedUserTokenProvider
-  parent: botbuilder.core
-  uid: botbuilder.core.ExtendedUserTokenProvider
-- fullName: botbuilder.core.HealthCheck
-  isExternal: false
-  name: HealthCheck
-  parent: botbuilder.core
-  uid: botbuilder.core.HealthCheck
-- fullName: botbuilder.core.IntentScore
-  isExternal: false
-  name: IntentScore
-  parent: botbuilder.core
-  uid: botbuilder.core.IntentScore
-- fullName: botbuilder.core.InvokeResponse
-  isExternal: false
-  name: InvokeResponse
-  parent: botbuilder.core
-  uid: botbuilder.core.InvokeResponse
-- fullName: botbuilder.core.MemoryStorage
-  isExternal: false
-  name: MemoryStorage
-  parent: botbuilder.core
-  uid: botbuilder.core.MemoryStorage
-- fullName: botbuilder.core.MemoryTranscriptStore
-  isExternal: false
-  name: MemoryTranscriptStore
-  parent: botbuilder.core
-  uid: botbuilder.core.MemoryTranscriptStore
-- fullName: botbuilder.core.MessageFactory
-  isExternal: false
-  name: MessageFactory
-  parent: botbuilder.core
-  uid: botbuilder.core.MessageFactory
-- fullName: botbuilder.core.Middleware
-  isExternal: false
-  name: Middleware
-  parent: botbuilder.core
-  uid: botbuilder.core.Middleware
-- fullName: botbuilder.core.MiddlewareSet
-  isExternal: false
-  name: MiddlewareSet
-  parent: botbuilder.core
-  uid: botbuilder.core.MiddlewareSet
-- fullName: botbuilder.core.NullTelemetryClient
-  isExternal: false
-  name: NullTelemetryClient
-  parent: botbuilder.core
-  uid: botbuilder.core.NullTelemetryClient
-- fullName: botbuilder.core.PrivateConversationState
-  isExternal: false
-  name: PrivateConversationState
-  parent: botbuilder.core
-  uid: botbuilder.core.PrivateConversationState
-- fullName: botbuilder.core.RegisterClassMiddleware
-  isExternal: false
-  name: RegisterClassMiddleware
-  parent: botbuilder.core
-  uid: botbuilder.core.RegisterClassMiddleware
-- fullName: botbuilder.core.Recognizer
-  isExternal: false
-  name: Recognizer
-  parent: botbuilder.core
-  uid: botbuilder.core.Recognizer
-- fullName: botbuilder.core.RecognizerResult
-  isExternal: false
-  name: RecognizerResult
-  parent: botbuilder.core
-  uid: botbuilder.core.RecognizerResult
-- fullName: botbuilder.core.Severity
-  isExternal: false
-  name: Severity
-  parent: botbuilder.core
-  uid: botbuilder.core.Severity
-- fullName: botbuilder.core.ShowTypingMiddleware
-  isExternal: false
-  name: ShowTypingMiddleware
-  parent: botbuilder.core
-  uid: botbuilder.core.ShowTypingMiddleware
-- fullName: botbuilder.core.StatePropertyAccessor
-  isExternal: false
-  name: StatePropertyAccessor
-  parent: botbuilder.core
-  uid: botbuilder.core.StatePropertyAccessor
-- fullName: botbuilder.core.StatePropertyInfo
-  isExternal: false
-  name: StatePropertyInfo
-  parent: botbuilder.core
-  uid: botbuilder.core.StatePropertyInfo
-- fullName: botbuilder.core.Storage
-  isExternal: false
-  name: Storage
-  parent: botbuilder.core
-  uid: botbuilder.core.Storage
-- fullName: botbuilder.core.StoreItem
-  isExternal: false
-  name: StoreItem
-  parent: botbuilder.core
-  uid: botbuilder.core.StoreItem
-- fullName: botbuilder.core.TelemetryConstants
-  isExternal: false
-  name: TelemetryConstants
-  parent: botbuilder.core
-  uid: botbuilder.core.TelemetryConstants
-- fullName: botbuilder.core.TelemetryLoggerConstants
-  isExternal: false
-  name: TelemetryLoggerConstants
-  parent: botbuilder.core
-  uid: botbuilder.core.TelemetryLoggerConstants
-- fullName: botbuilder.core.TelemetryLoggerMiddleware
-  isExternal: false
-  name: TelemetryLoggerMiddleware
-  parent: botbuilder.core
-  uid: botbuilder.core.TelemetryLoggerMiddleware
-- fullName: botbuilder.core.TopIntent
-  isExternal: false
-  name: TopIntent
-  parent: botbuilder.core
-  uid: botbuilder.core.TopIntent
-- fullName: botbuilder.core.TurnContext
-  isExternal: false
-  name: TurnContext
-  parent: botbuilder.core
-  uid: botbuilder.core.TurnContext
-- fullName: botbuilder.core.UserState
-  isExternal: false
-  name: UserState
-  parent: botbuilder.core
-  uid: botbuilder.core.UserState
-- fullName: botbuilder.core.UserTokenProvider
-  isExternal: false
-  name: UserTokenProvider
-  parent: botbuilder.core
-  uid: botbuilder.core.UserTokenProvider
-- fullName: botbuilder.core.about
-  isExternal: false
-  name: about
-  parent: botbuilder.core
-  uid: botbuilder.core.about
-- fullName: botbuilder.core.activity_handler
-  isExternal: false
-  name: activity_handler
-  parent: botbuilder.core
-  uid: botbuilder.core.activity_handler
-- fullName: botbuilder.core.adapter_extensions
-  isExternal: false
-  name: adapter_extensions
-  parent: botbuilder.core
-  uid: botbuilder.core.adapter_extensions
-- fullName: botbuilder.core.auto_save_state_middleware
-  isExternal: false
-  name: auto_save_state_middleware
-  parent: botbuilder.core
-  uid: botbuilder.core.auto_save_state_middleware
-- fullName: botbuilder.core.bot
-  isExternal: false
-  name: bot
-  parent: botbuilder.core
-  uid: botbuilder.core.bot
-- fullName: botbuilder.core.bot_adapter
-  isExternal: false
-  name: bot_adapter
-  parent: botbuilder.core
-  uid: botbuilder.core.bot_adapter
-- fullName: botbuilder.core.bot_assert
-  isExternal: false
-  name: bot_assert
-  parent: botbuilder.core
-  uid: botbuilder.core.bot_assert
-- fullName: botbuilder.core.bot_framework_adapter
-  isExternal: false
-  name: bot_framework_adapter
-  parent: botbuilder.core
-  uid: botbuilder.core.bot_framework_adapter
-- fullName: botbuilder.core.bot_state
-  isExternal: false
-  name: bot_state
-  parent: botbuilder.core
-  uid: botbuilder.core.bot_state
-- fullName: botbuilder.core.bot_state_set
-  isExternal: false
-  name: bot_state_set
-  parent: botbuilder.core
-  uid: botbuilder.core.bot_state_set
-- fullName: botbuilder.core.bot_telemetry_client
-  isExternal: false
-  name: bot_telemetry_client
-  parent: botbuilder.core
-  uid: botbuilder.core.bot_telemetry_client
-- fullName: botbuilder.core.card_factory
-  isExternal: false
-  name: card_factory
-  parent: botbuilder.core
-  uid: botbuilder.core.card_factory
-- fullName: botbuilder.core.channel_service_handler
-  isExternal: false
-  name: channel_service_handler
-  parent: botbuilder.core
-  uid: botbuilder.core.channel_service_handler
-- fullName: botbuilder.core.conversation_reference_extension
-  isExternal: false
-  name: conversation_reference_extension
-  parent: botbuilder.core
-  uid: botbuilder.core.conversation_reference_extension
-- fullName: botbuilder.core.conversation_state
-  isExternal: false
-  name: conversation_state
-  parent: botbuilder.core
-  uid: botbuilder.core.conversation_state
-- fullName: botbuilder.core.healthcheck
-  isExternal: false
-  name: healthcheck
-  parent: botbuilder.core
-  uid: botbuilder.core.healthcheck
-- fullName: botbuilder.core.intent_score
-  isExternal: false
-  name: intent_score
-  parent: botbuilder.core
-  uid: botbuilder.core.intent_score
-- fullName: botbuilder.core.invoke_response
-  isExternal: false
-  name: invoke_response
-  parent: botbuilder.core
-  uid: botbuilder.core.invoke_response
-- fullName: botbuilder.core.memory_storage
-  isExternal: false
-  name: memory_storage
-  parent: botbuilder.core
-  uid: botbuilder.core.memory_storage
-- fullName: botbuilder.core.memory_transcript_store
-  isExternal: false
-  name: memory_transcript_store
-  parent: botbuilder.core
-  uid: botbuilder.core.memory_transcript_store
-- fullName: botbuilder.core.message_factory
-  isExternal: false
-  name: message_factory
-  parent: botbuilder.core
-  uid: botbuilder.core.message_factory
-- fullName: botbuilder.core.middleware_set
-  isExternal: false
-  name: middleware_set
-  parent: botbuilder.core
-  uid: botbuilder.core.middleware_set
-- fullName: botbuilder.core.null_telemetry_client
-  isExternal: false
-  name: null_telemetry_client
-  parent: botbuilder.core
-  uid: botbuilder.core.null_telemetry_client
-- fullName: botbuilder.core.private_conversation_state
-  isExternal: false
-  name: private_conversation_state
-  parent: botbuilder.core
-  uid: botbuilder.core.private_conversation_state
-- fullName: botbuilder.core.property_manager
-  isExternal: false
-  name: property_manager
-  parent: botbuilder.core
-  uid: botbuilder.core.property_manager
-- fullName: botbuilder.core.re_escape
-  isExternal: false
-  name: re_escape
-  parent: botbuilder.core
-  uid: botbuilder.core.re_escape
-- fullName: botbuilder.core.recognizer
-  isExternal: false
-  name: recognizer
-  parent: botbuilder.core
-  uid: botbuilder.core.recognizer
-- fullName: botbuilder.core.recognizer_result
-  isExternal: false
-  name: recognizer_result
-  parent: botbuilder.core
-  uid: botbuilder.core.recognizer_result
-- fullName: botbuilder.core.register_class_middleware
-  isExternal: false
-  name: register_class_middleware
-  parent: botbuilder.core
-  uid: botbuilder.core.register_class_middleware
-- fullName: botbuilder.core.serializer_helper
-  isExternal: false
-  name: serializer_helper
-  parent: botbuilder.core
-  uid: botbuilder.core.serializer_helper
-- fullName: botbuilder.core.show_typing_middleware
-  isExternal: false
-  name: show_typing_middleware
-  parent: botbuilder.core
-  uid: botbuilder.core.show_typing_middleware
-- fullName: botbuilder.core.state_property_accessor
-  isExternal: false
-  name: state_property_accessor
-  parent: botbuilder.core
-  uid: botbuilder.core.state_property_accessor
-- fullName: botbuilder.core.state_property_info
-  isExternal: false
-  name: state_property_info
-  parent: botbuilder.core
-  uid: botbuilder.core.state_property_info
-- fullName: botbuilder.core.storage
-  isExternal: false
-  name: storage
-  parent: botbuilder.core
-  uid: botbuilder.core.storage
-- fullName: botbuilder.core.telemetry_constants
-  isExternal: false
-  name: telemetry_constants
-  parent: botbuilder.core
-  uid: botbuilder.core.telemetry_constants
-- fullName: botbuilder.core.telemetry_logger_constants
-  isExternal: false
-  name: telemetry_logger_constants
-  parent: botbuilder.core
-  uid: botbuilder.core.telemetry_logger_constants
-- fullName: botbuilder.core.telemetry_logger_middleware
-  isExternal: false
-  name: telemetry_logger_middleware
-  parent: botbuilder.core
-  uid: botbuilder.core.telemetry_logger_middleware
-- fullName: botbuilder.core.transcript_logger
-  isExternal: false
-  name: transcript_logger
-  parent: botbuilder.core
-  uid: botbuilder.core.transcript_logger
-- fullName: botbuilder.core.turn_context
-  isExternal: false
-  name: turn_context
-  parent: botbuilder.core
-  uid: botbuilder.core.turn_context
-- fullName: botbuilder.core.user_state
-  isExternal: false
-  name: user_state
-  parent: botbuilder.core
-  uid: botbuilder.core.user_state
-- fullName: botbuilder.core.adapters
-  isExternal: false
-  name: adapters
-  parent: botbuilder.core
-  uid: botbuilder.core.adapters
-- fullName: botbuilder.core.inspection
-  isExternal: false
-  name: inspection
-  parent: botbuilder.core
-  uid: botbuilder.core.inspection
-- fullName: botbuilder.core.integration
-  isExternal: false
-  name: integration
-  parent: botbuilder.core
-  uid: botbuilder.core.integration
-- fullName: botbuilder.core.oauth
-  isExternal: false
-  name: oauth
-  parent: botbuilder.core
-  uid: botbuilder.core.oauth
-- fullName: botbuilder.core.skills
-  isExternal: false
-  name: skills
-  parent: botbuilder.core
-  uid: botbuilder.core.skills
-- fullName: botbuilder.core.teams
-  isExternal: false
-  name: teams
-  parent: botbuilder.core
-  uid: botbuilder.core.teams
+  signature: 'calculate_change_hash(item: botbuilder.core.storage.StoreItem) -> str'
+classes:
+- botbuilder.core.ActivityHandler
+- botbuilder.core.AdapterExtensions
+- botbuilder.core.AnonymousReceiveMiddleware
+- botbuilder.core.AutoSaveStateMiddleware
+- botbuilder.core.Bot
+- botbuilder.core.BotActionNotImplementedError
+- botbuilder.core.BotAdapter
+- botbuilder.core.BotAssert
+- botbuilder.core.BotFrameworkAdapter
+- botbuilder.core.BotFrameworkAdapterSettings
+- botbuilder.core.BotState
+- botbuilder.core.BotStateSet
+- botbuilder.core.BotTelemetryClient
+- botbuilder.core.CardFactory
+- botbuilder.core.ChannelServiceHandler
+- botbuilder.core.ConversationState
+- botbuilder.core.ExtendedUserTokenProvider
+- botbuilder.core.HealthCheck
+- botbuilder.core.IntentScore
+- botbuilder.core.InvokeResponse
+- botbuilder.core.MemoryStorage
+- botbuilder.core.MemoryTranscriptStore
+- botbuilder.core.MessageFactory
+- botbuilder.core.Middleware
+- botbuilder.core.MiddlewareSet
+- botbuilder.core.NullTelemetryClient
+- botbuilder.core.PrivateConversationState
+- botbuilder.core.RegisterClassMiddleware
+- botbuilder.core.Recognizer
+- botbuilder.core.RecognizerResult
+- botbuilder.core.ShowTypingMiddleware
+- botbuilder.core.StatePropertyAccessor
+- botbuilder.core.StatePropertyInfo
+- botbuilder.core.Storage
+- botbuilder.core.StoreItem
+- botbuilder.core.TelemetryConstants
+- botbuilder.core.TelemetryLoggerConstants
+- botbuilder.core.TelemetryLoggerMiddleware
+- botbuilder.core.TopIntent
+- botbuilder.core.TurnContext
+- botbuilder.core.UserState
+- botbuilder.core.UserTokenProvider
+packages:
+- botbuilder.core.adapters
+- botbuilder.core.inspection
+- botbuilder.core.integration
+- botbuilder.core.oauth
+- botbuilder.core.skills
+- botbuilder.core.teams
+modules:
+- botbuilder.core.about
+- botbuilder.core.activity_handler
+- botbuilder.core.adapter_extensions
+- botbuilder.core.auto_save_state_middleware
+- botbuilder.core.bot
+- botbuilder.core.bot_adapter
+- botbuilder.core.bot_assert
+- botbuilder.core.bot_framework_adapter
+- botbuilder.core.bot_state
+- botbuilder.core.bot_state_set
+- botbuilder.core.bot_telemetry_client
+- botbuilder.core.card_factory
+- botbuilder.core.channel_service_handler
+- botbuilder.core.conversation_reference_extension
+- botbuilder.core.conversation_state
+- botbuilder.core.healthcheck
+- botbuilder.core.intent_score
+- botbuilder.core.invoke_response
+- botbuilder.core.memory_storage
+- botbuilder.core.memory_transcript_store
+- botbuilder.core.message_factory
+- botbuilder.core.middleware_set
+- botbuilder.core.null_telemetry_client
+- botbuilder.core.private_conversation_state
+- botbuilder.core.property_manager
+- botbuilder.core.re_escape
+- botbuilder.core.recognizer
+- botbuilder.core.recognizer_result
+- botbuilder.core.register_class_middleware
+- botbuilder.core.serializer_helper
+- botbuilder.core.show_typing_middleware
+- botbuilder.core.state_property_accessor
+- botbuilder.core.state_property_info
+- botbuilder.core.storage
+- botbuilder.core.telemetry_constants
+- botbuilder.core.telemetry_logger_constants
+- botbuilder.core.telemetry_logger_middleware
+- botbuilder.core.transcript_logger
+- botbuilder.core.turn_context
+- botbuilder.core.user_state
+enums:
+- botbuilder.core.Severity

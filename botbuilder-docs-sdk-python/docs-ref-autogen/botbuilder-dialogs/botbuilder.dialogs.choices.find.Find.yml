@@ -1,64 +1,20 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.dialogs.choices.find.Find.find_choices
-  - botbuilder.dialogs.choices.find.Find.find_values
-  class: botbuilder.dialogs.choices.find.Find
-  fullName: botbuilder.dialogs.choices.find.Find
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.dialogs.choices.find
-  name: Find
-  summary: Contains methods for matching user input against a list of choices
-  syntax: {}
-  type: class
-  uid: botbuilder.dialogs.choices.find.Find
-- class: botbuilder.dialogs.choices.find.Find
-  fullName: botbuilder.dialogs.choices.find.Find.find_choices
-  langs:
-  - python
-  module: botbuilder.dialogs.choices.find
-  name: 'find_choices(utterance: str, choices: [typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
-    options: botbuilder.dialogs.choices.find_choices_options.FindChoicesOptions =
-    None)'
-  namewithoutparameters: find_choices
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.choices.find.Find
+name: Find
+fullName: botbuilder.dialogs.choices.find.Find
+module: botbuilder.dialogs.choices.find
+inheritances:
+- builtins.object
+summary: Contains methods for matching user input against a list of choices
+methods:
+- uid: botbuilder.dialogs.choices.find.Find.find_choices
+  name: find_choices
   summary: Matches user input against a list of choices
-  syntax:
-    content: 'find_choices(utterance: str, choices: [typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
-      options: botbuilder.dialogs.choices.find_choices_options.FindChoicesOptions
-      = None)'
-  type: method
-  uid: botbuilder.dialogs.choices.find.Find.find_choices
-- class: botbuilder.dialogs.choices.find.Find
-  fullName: botbuilder.dialogs.choices.find.Find.find_values
-  langs:
-  - python
-  module: botbuilder.dialogs.choices.find
-  name: 'find_values(utterance: str, values: typing.List[botbuilder.dialogs.choices.sorted_value.SortedValue],
-    options: botbuilder.dialogs.choices.find_values_options.FindValuesOptions = None)
-    -> typing.List[botbuilder.dialogs.choices.model_result.ModelResult]'
-  namewithoutparameters: find_values
-  syntax:
-    content: 'find_values(utterance: str, values: typing.List[botbuilder.dialogs.choices.sorted_value.SortedValue],
-      options: botbuilder.dialogs.choices.find_values_options.FindValuesOptions =
-      None) -> typing.List[botbuilder.dialogs.choices.model_result.ModelResult]'
-  type: method
-  uid: botbuilder.dialogs.choices.find.Find.find_values
-references:
-- fullName: botbuilder.dialogs.choices.find.Find.find_choices
-  isExternal: false
-  name: 'find_choices(utterance: str, choices: [typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
+  signature: 'find_choices(utterance: str, choices: [typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
     options: botbuilder.dialogs.choices.find_choices_options.FindChoicesOptions =
     None)'
-  parent: botbuilder.dialogs.choices.find.Find
-  uid: botbuilder.dialogs.choices.find.Find.find_choices
-- fullName: botbuilder.dialogs.choices.find.Find.find_values
-  isExternal: false
-  name: 'find_values(utterance: str, values: typing.List[botbuilder.dialogs.choices.sorted_value.SortedValue],
+- uid: botbuilder.dialogs.choices.find.Find.find_values
+  name: find_values
+  signature: 'find_values(utterance: str, values: typing.List[botbuilder.dialogs.choices.sorted_value.SortedValue],
     options: botbuilder.dialogs.choices.find_values_options.FindValuesOptions = None)
     -> typing.List[botbuilder.dialogs.choices.model_result.ModelResult]'
-  parent: botbuilder.dialogs.choices.find.Find
-  uid: botbuilder.dialogs.choices.find.Find.find_values

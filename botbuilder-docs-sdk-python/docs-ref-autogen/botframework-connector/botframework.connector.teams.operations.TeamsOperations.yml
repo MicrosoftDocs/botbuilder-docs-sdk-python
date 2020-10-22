@@ -1,145 +1,98 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botframework.connector.teams.operations.TeamsOperations.get_team_details
-  - botframework.connector.teams.operations.TeamsOperations.get_teams_channels
-  - botframework.connector.teams.operations.TeamsOperations.models
-  class: botframework.connector.teams.operations.TeamsOperations
-  fullName: botframework.connector.teams.operations.TeamsOperations
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botframework.connector.teams.operations
-  name: TeamsOperations
-  summary: TeamsOperations operations.
-  syntax:
-    content: TeamsOperations(client, config, serializer, deserializer)
-    parameters:
-    - description: Client for service requests.
-      id: client
-    - description: Configuration of service client.
-      id: config
-    - description: An object model serializer.
-      id: serializer
-    - description: An object model deserializer.
-      id: deserializer
-  type: class
-  uid: botframework.connector.teams.operations.TeamsOperations
-- class: botframework.connector.teams.operations.TeamsOperations
-  exceptions:
-  - type: msrest.exceptions.HttpOperationError
-  fullName: botframework.connector.teams.operations.TeamsOperations.get_team_details
-  langs:
-  - python
-  module: botframework.connector.teams.operations
-  name: get_team_details(team_id, custom_headers=None, raw=False, **operation_config)
-  namewithoutparameters: get_team_details
+### YamlMime:PythonClass
+uid: botframework.connector.teams.operations.TeamsOperations
+name: TeamsOperations
+fullName: botframework.connector.teams.operations.TeamsOperations
+module: botframework.connector.teams.operations
+inheritances:
+- builtins.object
+summary: TeamsOperations operations.
+constructor:
+  syntax: TeamsOperations(client, config, serializer, deserializer)
+  parameters:
+  - name: client
+    description: Client for service requests.
+  - name: config
+    description: Configuration of service client.
+  - name: serializer
+    description: An object model serializer.
+  - name: deserializer
+    description: An object model deserializer.
+methods:
+- uid: botframework.connector.teams.operations.TeamsOperations.get_team_details
+  name: get_team_details
   summary: 'Fetches details related to a team.
 
 
     Fetch details for a team.'
-  syntax:
-    content: get_team_details(team_id, custom_headers=None, raw=False, **operation_config)
-    parameters:
-    - description: Team Id
-      id: team_id
-      isRequired: true
-      type:
-      - str
-    - defaultValue: None
-      description: headers that will be added to the request
-      id: custom_headers
-      type:
-      - dict
-    - defaultValue: 'False'
-      description: 'returns the direct response alongside the
+  signature: get_team_details(team_id, custom_headers=None, raw=False, **operation_config)
+  parameters:
+  - name: team_id
+    description: Team Id
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: custom_headers
+    description: headers that will be added to the request
+    defaultValue: None
+    types:
+    - <xref:dict>
+  - name: raw
+    description: 'returns the direct response alongside the
 
-        deserialized response'
-      id: raw
-      type:
-      - bool
-    - description: '*Operation configuration
+      deserialized response'
+    defaultValue: 'False'
+    types:
+    - <xref:bool>
+  - name: operation_config
+    description: '*Operation configuration
 
-        overrides*.'
-      id: operation_config
-      isRequired: true
-    return:
-      description: TeamDetails or ClientRawResponse if raw=true
-      type:
-      - botframework.connector.teams.models.TeamDetails
-      - msrest.pipeline.ClientRawResponse
-  type: method
-  uid: botframework.connector.teams.operations.TeamsOperations.get_team_details
-- class: botframework.connector.teams.operations.TeamsOperations
+      overrides*.'
+    isRequired: true
+  return:
+    description: TeamDetails or ClientRawResponse if raw=true
+    types:
+    - <xref:botframework.connector.teams.models.TeamDetails>
+    - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
   - type: msrest.exceptions.HttpOperationError
-  fullName: botframework.connector.teams.operations.TeamsOperations.get_teams_channels
-  langs:
-  - python
-  module: botframework.connector.teams.operations
-  name: get_teams_channels(team_id, custom_headers=None, raw=False, **operation_config)
-  namewithoutparameters: get_teams_channels
+- uid: botframework.connector.teams.operations.TeamsOperations.get_teams_channels
+  name: get_teams_channels
   summary: 'Fetches channel list for a given team.
 
 
     Fetch the channel list.'
-  syntax:
-    content: get_teams_channels(team_id, custom_headers=None, raw=False, **operation_config)
-    parameters:
-    - description: Team Id
-      id: team_id
-      isRequired: true
-      type:
-      - str
-    - defaultValue: None
-      description: headers that will be added to the request
-      id: custom_headers
-      type:
-      - dict
-    - defaultValue: 'False'
-      description: 'returns the direct response alongside the
+  signature: get_teams_channels(team_id, custom_headers=None, raw=False, **operation_config)
+  parameters:
+  - name: team_id
+    description: Team Id
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: custom_headers
+    description: headers that will be added to the request
+    defaultValue: None
+    types:
+    - <xref:dict>
+  - name: raw
+    description: 'returns the direct response alongside the
 
-        deserialized response'
-      id: raw
-      type:
-      - bool
-    - description: '*Operation configuration
+      deserialized response'
+    defaultValue: 'False'
+    types:
+    - <xref:bool>
+  - name: operation_config
+    description: '*Operation configuration
 
-        overrides*.'
-      id: operation_config
-      isRequired: true
-    return:
-      description: ConversationList or ClientRawResponse if raw=true
-      type:
-      - botframework.connector.teams.models.ConversationList
-      - msrest.pipeline.ClientRawResponse
-  type: method
-  uid: botframework.connector.teams.operations.TeamsOperations.get_teams_channels
-- class: botframework.connector.teams.operations.TeamsOperations
-  fullName: botframework.connector.teams.operations.TeamsOperations.models
-  langs:
-  - python
-  module: botframework.connector.teams.operations
+      overrides*.'
+    isRequired: true
+  return:
+    description: ConversationList or ClientRawResponse if raw=true
+    types:
+    - <xref:botframework.connector.teams.models.ConversationList>
+    - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - type: msrest.exceptions.HttpOperationError
+attributes:
+- uid: botframework.connector.teams.operations.TeamsOperations.models
   name: models
-  syntax:
-    content: models = <module 'botframework.connector.models' from 'c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\site-packages\\botframework\\connector\\models\\__init__.py'>
-  type: attribute
-  uid: botframework.connector.teams.operations.TeamsOperations.models
-references:
-- fullName: botframework.connector.teams.operations.TeamsOperations.get_team_details
-  isExternal: false
-  name: get_team_details(team_id, custom_headers=None, raw=False, **operation_config)
-  parent: botframework.connector.teams.operations.TeamsOperations
-  uid: botframework.connector.teams.operations.TeamsOperations.get_team_details
-- fullName: botframework.connector.teams.operations.TeamsOperations.get_teams_channels
-  isExternal: false
-  name: get_teams_channels(team_id, custom_headers=None, raw=False, **operation_config)
-  parent: botframework.connector.teams.operations.TeamsOperations
-  uid: botframework.connector.teams.operations.TeamsOperations.get_teams_channels
-- fullName: botframework.connector.teams.operations.TeamsOperations.models
-  isExternal: false
-  name: models
-  parent: botframework.connector.teams.operations.TeamsOperations
-  uid: botframework.connector.teams.operations.TeamsOperations.models
+  signature: models = <module 'botframework.connector.models' from 'c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\site-packages\\botframework\\connector\\models\\__init__.py'>

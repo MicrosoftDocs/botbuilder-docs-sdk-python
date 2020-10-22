@@ -1,19 +1,11 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.core.skills.SkillConversationReference
-  fullName: botbuilder.core.skills.SkillConversationReference
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.core.skills
-  name: SkillConversationReference
-  summary: ConversationReference implementation for Skills ConversationIdFactory.
-  syntax:
-    content: 'SkillConversationReference(conversation_reference: botbuilder.schema._models_py3.ConversationReference,
-      oauth_scope: str)'
-  type: class
-  uid: botbuilder.core.skills.SkillConversationReference
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.core.skills.SkillConversationReference
+name: SkillConversationReference
+fullName: botbuilder.core.skills.SkillConversationReference
+module: botbuilder.core.skills
+inheritances:
+- builtins.object
+summary: ConversationReference implementation for Skills ConversationIdFactory.
+constructor:
+  syntax: 'SkillConversationReference(conversation_reference: botbuilder.schema._models_py3.ConversationReference,
+    oauth_scope: str)'

@@ -1,25 +1,9 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botframework.connector.teams.operations.TeamsOperations
-  - botframework.connector.teams.operations.teams_operations
-  fullName: botframework.connector.teams.operations
-  kind: import
-  langs:
-  - python
-  module: botframework.connector.teams.operations
-  name: operations
-  type: package
-  uid: botframework.connector.teams.operations
-references:
-- fullName: botframework.connector.teams.operations.TeamsOperations
-  isExternal: false
-  name: TeamsOperations
-  parent: botframework.connector.teams.operations
-  uid: botframework.connector.teams.operations.TeamsOperations
-- fullName: botframework.connector.teams.operations.teams_operations
-  isExternal: false
-  name: teams_operations
-  parent: botframework.connector.teams.operations
-  uid: botframework.connector.teams.operations.teams_operations
+### YamlMime:PythonPackage
+uid: botframework.connector.teams.operations
+name: operations
+fullName: botframework.connector.teams.operations
+type: import
+classes:
+- botframework.connector.teams.operations.TeamsOperations
+modules:
+- botframework.connector.teams.operations.teams_operations

@@ -1,346 +1,294 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.schema.Activity.apply_conversation_reference
-  - botbuilder.schema.Activity.as_contact_relation_update_activity
-  - botbuilder.schema.Activity.as_conversation_update_activity
-  - botbuilder.schema.Activity.as_end_of_conversation_activity
-  - botbuilder.schema.Activity.as_event_activity
-  - botbuilder.schema.Activity.as_handoff_activity
-  - botbuilder.schema.Activity.as_installation_update_activity
-  - botbuilder.schema.Activity.as_invoke_activity
-  - botbuilder.schema.Activity.as_message_activity
-  - botbuilder.schema.Activity.as_message_delete_activity
-  - botbuilder.schema.Activity.as_message_reaction_activity
-  - botbuilder.schema.Activity.as_message_update_activity
-  - botbuilder.schema.Activity.as_suggestion_activity
-  - botbuilder.schema.Activity.as_trace_activity
-  - botbuilder.schema.Activity.as_typing_activity
-  - botbuilder.schema.Activity.create_contact_relation_update_activity
-  - botbuilder.schema.Activity.create_conversation_update_activity
-  - botbuilder.schema.Activity.create_end_of_conversation_activity
-  - botbuilder.schema.Activity.create_event_activity
-  - botbuilder.schema.Activity.create_handoff_activity
-  - botbuilder.schema.Activity.create_invoke_activity
-  - botbuilder.schema.Activity.create_message_activity
-  - botbuilder.schema.Activity.create_reply
-  - botbuilder.schema.Activity.create_trace
-  - botbuilder.schema.Activity.create_trace_activity
-  - botbuilder.schema.Activity.create_typing_activity
-  - botbuilder.schema.Activity.get_conversation_reference
-  - botbuilder.schema.Activity.get_mentions
-  - botbuilder.schema.Activity.get_reply_conversation_reference
-  - botbuilder.schema.Activity.has_content
-  - botbuilder.schema.Activity.is_from_streaming_connection
-  class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema
-  name: Activity
-  summary: 'An Activity is the basic communication type for the Bot Framework 3.0
+### YamlMime:PythonClass
+uid: botbuilder.schema.Activity
+name: Activity
+fullName: botbuilder.schema.Activity
+module: botbuilder.schema
+inheritances:
+- msrest.serialization.Model
+summary: 'An Activity is the basic communication type for the Bot Framework 3.0
 
-    protocol.'
-  syntax:
-    content: 'Activity(*, type=None, id: str = None, timestamp=None, local_timestamp=None,
-      local_timezone: str = None, service_url: str = None, channel_id: str = None,
-      from_property=None, conversation=None, recipient=None, text_format=None, attachment_layout=None,
-      members_added=None, members_removed=None, reactions_added=None, reactions_removed=None,
-      topic_name: str = None, history_disclosed: bool = None, locale: str = None,
-      text: str = None, speak: str = None, input_hint=None, summary: str = None, suggested_actions=None,
-      attachments=None, entities=None, channel_data=None, action: str = None, reply_to_id:
-      str = None, label: str = None, value_type: str = None, value=None, name: str
-      = None, relates_to=None, code=None, expiration=None, importance=None, delivery_mode=None,
-      listen_for=None, text_highlights=None, semantic_action=None, caller_id: str
-      = None, **kwargs) -> None'
-    parameters:
-    - description: 'Contains the activity type. Possible values include:
+  protocol.'
+constructor:
+  syntax: 'Activity(*, type=None, id: str = None, timestamp=None, local_timestamp=None,
+    local_timezone: str = None, service_url: str = None, channel_id: str = None, from_property=None,
+    conversation=None, recipient=None, text_format=None, attachment_layout=None, members_added=None,
+    members_removed=None, reactions_added=None, reactions_removed=None, topic_name:
+    str = None, history_disclosed: bool = None, locale: str = None, text: str = None,
+    speak: str = None, input_hint=None, summary: str = None, suggested_actions=None,
+    attachments=None, entities=None, channel_data=None, action: str = None, reply_to_id:
+    str = None, label: str = None, value_type: str = None, value=None, name: str =
+    None, relates_to=None, code=None, expiration=None, importance=None, delivery_mode=None,
+    listen_for=None, text_highlights=None, semantic_action=None, caller_id: str =
+    None, **kwargs) -> None'
+  parameters:
+  - name: type
+    description: 'Contains the activity type. Possible values include:
 
-        ''message'', ''contactRelationUpdate'', ''conversationUpdate'', ''typing'',
+      ''message'', ''contactRelationUpdate'', ''conversationUpdate'', ''typing'',
 
-        ''endOfConversation'', ''event'', ''invoke'', ''deleteUserData'', ''messageUpdate'',
+      ''endOfConversation'', ''event'', ''invoke'', ''deleteUserData'', ''messageUpdate'',
 
-        ''messageDelete'', ''installationUpdate'', ''messageReaction'', ''suggestion'',
+      ''messageDelete'', ''installationUpdate'', ''messageReaction'', ''suggestion'',
 
-        ''trace'', ''handoff'''
-      id: type
-      type:
-      - str
-      - botframework.connector.models.ActivityTypes
-    - description: 'Contains an ID that uniquely identifies the activity on the
+      ''trace'', ''handoff'''
+    types:
+    - <xref:str>
+    - <xref:botframework.connector.models.ActivityTypes>
+  - name: id
+    description: 'Contains an ID that uniquely identifies the activity on the
 
-        channel.'
-      id: id
-      type:
-      - str
-    - description: 'Contains the date and time that the message was sent, in
+      channel.'
+    types:
+    - <xref:str>
+  - name: timestamp
+    description: 'Contains the date and time that the message was sent, in
 
-        UTC, expressed in ISO-8601 format.'
-      id: timestamp
-      type:
-      - datetime
-    - description: 'Contains the local date and time of the message
+      UTC, expressed in ISO-8601 format.'
+    types:
+    - <xref:datetime>
+  - name: local_timestamp
+    description: 'Contains the local date and time of the message
 
-        expressed in ISO-8601 format.
+      expressed in ISO-8601 format.
 
-        For example, 2016-09-23T13:07:49.4714686-07:00.'
-      id: local_timestamp
-      type:
-      - datetime
-    - description: 'Contains the name of the local timezone of the message,
+      For example, 2016-09-23T13:07:49.4714686-07:00.'
+    types:
+    - <xref:datetime>
+  - name: local_timezone
+    description: 'Contains the name of the local timezone of the message,
 
-        expressed in IANA Time Zone database format.
+      expressed in IANA Time Zone database format.
 
-        For example, America/Los_Angeles.'
-      id: local_timezone
-      type:
-      - str
-    - description: 'Contains the URL that specifies the channel''s service
+      For example, America/Los_Angeles.'
+    types:
+    - <xref:str>
+  - name: service_url
+    description: 'Contains the URL that specifies the channel''s service
 
-        endpoint. Set by the channel.'
-      id: service_url
-      type:
-      - str
-    - description: 'Contains an ID that uniquely identifies the channel.
+      endpoint. Set by the channel.'
+    types:
+    - <xref:str>
+  - name: channel_id
+    description: 'Contains an ID that uniquely identifies the channel.
 
-        Set by the channel.'
-      id: channel_id
-      type:
-      - str
-    - description: Identifies the sender of the message.
-      id: from_property
-      type:
-      - botframework.connector.models.ChannelAccount
-    - description: 'Identifies the conversation to which the activity
+      Set by the channel.'
+    types:
+    - <xref:str>
+  - name: from_property
+    description: Identifies the sender of the message.
+    types:
+    - <xref:botframework.connector.models.ChannelAccount>
+  - name: conversation
+    description: 'Identifies the conversation to which the activity
 
-        belongs.'
-      id: conversation
-      type:
-      - botframework.connector.models.ConversationAccount
-    - description: Identifies the recipient of the message.
-      id: recipient
-      type:
-      - botframework.connector.models.ChannelAccount
-    - description: 'Format of text fields Default:markdown. Possible
+      belongs.'
+    types:
+    - <xref:botframework.connector.models.ConversationAccount>
+  - name: recipient
+    description: Identifies the recipient of the message.
+    types:
+    - <xref:botframework.connector.models.ChannelAccount>
+  - name: text_format
+    description: 'Format of text fields Default:markdown. Possible
 
-        values include: ''markdown'', ''plain'', ''xml'''
-      id: text_format
-      type:
-      - str
-      - botframework.connector.models.TextFormatTypes
-    - description: 'The layout hint for multiple attachments.
+      values include: ''markdown'', ''plain'', ''xml'''
+    types:
+    - <xref:str>
+    - <xref:botframework.connector.models.TextFormatTypes>
+  - name: attachment_layout
+    description: 'The layout hint for multiple attachments.
 
-        Default: list. Possible values include: ''list'', ''carousel'''
-      id: attachment_layout
-      type:
-      - str
-      - botframework.connector.models.AttachmentLayoutTypes
-    - description: The collection of members added to the conversation.
-      id: members_added
-      type:
-      - list[botframework.connector.models.ChannelAccount]
-    - description: 'The collection of members removed from the
+      Default: list. Possible values include: ''list'', ''carousel'''
+    types:
+    - <xref:str>
+    - <xref:botframework.connector.models.AttachmentLayoutTypes>
+  - name: members_added
+    description: The collection of members added to the conversation.
+    types:
+    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
+  - name: members_removed
+    description: 'The collection of members removed from the
 
-        conversation.'
-      id: members_removed
-      type:
-      - list[botframework.connector.models.ChannelAccount]
-    - description: 'The collection of reactions added to the
+      conversation.'
+    types:
+    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
+  - name: reactions_added
+    description: 'The collection of reactions added to the
 
-        conversation.'
-      id: reactions_added
-      type:
-      - list[botframework.connector.models.MessageReaction]
-    - description: 'The collection of reactions removed from the
+      conversation.'
+    types:
+    - <xref:list>[<xref:botframework.connector.models.MessageReaction>]
+  - name: reactions_removed
+    description: 'The collection of reactions removed from the
 
-        conversation.'
-      id: reactions_removed
-      type:
-      - list[botframework.connector.models.MessageReaction]
-    - description: The updated topic name of the conversation.
-      id: topic_name
-      type:
-      - str
-    - description: 'Indicates whether the prior history of the
+      conversation.'
+    types:
+    - <xref:list>[<xref:botframework.connector.models.MessageReaction>]
+  - name: topic_name
+    description: The updated topic name of the conversation.
+    types:
+    - <xref:str>
+  - name: history_disclosed
+    description: 'Indicates whether the prior history of the
 
-        channel is disclosed.'
-      id: history_disclosed
-      type:
-      - bool
-    - description: 'A locale name for the contents of the text field.
+      channel is disclosed.'
+    types:
+    - <xref:bool>
+  - name: locale
+    description: 'A locale name for the contents of the text field.
 
-        The locale name is a combination of an ISO 639 two- or three-letter
+      The locale name is a combination of an ISO 639 two- or three-letter
 
-        culture code associated with a language
+      culture code associated with a language
 
-        and an ISO 3166 two-letter subculture code associated with a country or
+      and an ISO 3166 two-letter subculture code associated with a country or
 
-        region.
+      region.
 
-        The locale name can also correspond to a valid BCP-47 language tag.'
-      id: locale
-      type:
-      - str
-    - description: The text content of the message.
-      id: text
-      type:
-      - str
-    - description: The text to speak.
-      id: speak
-      type:
-      - str
-    - description: 'Indicates whether your bot is accepting,
+      The locale name can also correspond to a valid BCP-47 language tag.'
+    types:
+    - <xref:str>
+  - name: text
+    description: The text content of the message.
+    types:
+    - <xref:str>
+  - name: speak
+    description: The text to speak.
+    types:
+    - <xref:str>
+  - name: input_hint
+    description: 'Indicates whether your bot is accepting,
 
-        expecting, or ignoring user input after the message is delivered to the
+      expecting, or ignoring user input after the message is delivered to the
 
-        client. Possible values include: ''acceptingInput'', ''ignoringInput'',
+      client. Possible values include: ''acceptingInput'', ''ignoringInput'',
 
-        ''expectingInput'''
-      id: input_hint
-      type:
-      - str
-      - botframework.connector.models.InputHints
-    - description: The text to display if the channel cannot render cards.
-      id: summary
-      type:
-      - str
-    - description: The suggested actions for the activity.
-      id: suggested_actions
-      type:
-      - botframework.connector.models.SuggestedActions
-    - description: Attachments
-      id: attachments
-      type:
-      - list[botframework.connector.models.Attachment]
-    - description: 'Represents the entities that were mentioned in the
+      ''expectingInput'''
+    types:
+    - <xref:str>
+    - <xref:botframework.connector.models.InputHints>
+  - name: summary
+    description: The text to display if the channel cannot render cards.
+    types:
+    - <xref:str>
+  - name: suggested_actions
+    description: The suggested actions for the activity.
+    types:
+    - <xref:botframework.connector.models.SuggestedActions>
+  - name: attachments
+    description: Attachments
+    types:
+    - <xref:list>[<xref:botframework.connector.models.Attachment>]
+  - name: entities
+    description: 'Represents the entities that were mentioned in the
 
-        message.'
-      id: entities
-      type:
-      - list[botframework.connector.models.Entity]
-    - description: Contains channel-specific content.
-      id: channel_data
-      type:
-      - object
-    - description: 'Indicates whether the recipient of a contactRelationUpdate
+      message.'
+    types:
+    - <xref:list>[<xref:botframework.connector.models.Entity>]
+  - name: channel_data
+    description: Contains channel-specific content.
+    types:
+    - <xref:object>
+  - name: action
+    description: 'Indicates whether the recipient of a contactRelationUpdate
 
-        was added or removed from the sender''s contact list.'
-      id: action
-      type:
-      - str
-    - description: 'Contains the ID of the message to which this message
+      was added or removed from the sender''s contact list.'
+    types:
+    - <xref:str>
+  - name: reply_to_id
+    description: 'Contains the ID of the message to which this message
 
-        is a reply.'
-      id: reply_to_id
-      type:
-      - str
-    - description: A descriptive label for the activity.
-      id: label
-      type:
-      - str
-    - description: The type of the activity's value object.
-      id: value_type
-      type:
-      - str
-    - description: A value that is associated with the activity.
-      id: value
-      type:
-      - object
-    - description: 'The name of the operation associated with an invoke or event
+      is a reply.'
+    types:
+    - <xref:str>
+  - name: label
+    description: A descriptive label for the activity.
+    types:
+    - <xref:str>
+  - name: value_type
+    description: The type of the activity's value object.
+    types:
+    - <xref:str>
+  - name: value
+    description: A value that is associated with the activity.
+    types:
+    - <xref:object>
+  - name: name
+    description: 'The name of the operation associated with an invoke or event
 
-        activity.'
-      id: name
-      type:
-      - str
-    - description: A reference to another conversation or activity.
-      id: relates_to
-      type:
-      - botframework.connector.models.ConversationReference
-    - description: 'The a code for endOfConversation activities that indicates
+      activity.'
+    types:
+    - <xref:str>
+  - name: relates_to
+    description: A reference to another conversation or activity.
+    types:
+    - <xref:botframework.connector.models.ConversationReference>
+  - name: code
+    description: 'The a code for endOfConversation activities that indicates
 
-        why the conversation ended. Possible values include: ''unknown'',
+      why the conversation ended. Possible values include: ''unknown'',
 
-        ''completedSuccessfully'', ''userCancelled'', ''botTimedOut'',
+      ''completedSuccessfully'', ''userCancelled'', ''botTimedOut'',
 
-        ''botIssuedInvalidMessage'', ''channelFailed'''
-      id: code
-      type:
-      - str
-      - botframework.connector.models.EndOfConversationCodes
-    - description: 'The time at which the activity should be considered to
+      ''botIssuedInvalidMessage'', ''channelFailed'''
+    types:
+    - <xref:str>
+    - <xref:botframework.connector.models.EndOfConversationCodes>
+  - name: expiration
+    description: 'The time at which the activity should be considered to
 
-        be "expired" and should not be presented to the recipient.'
-      id: expiration
-      type:
-      - datetime
-    - description: 'The importance of the activity. Possible values
+      be "expired" and should not be presented to the recipient.'
+    types:
+    - <xref:datetime>
+  - name: importance
+    description: 'The importance of the activity. Possible values
 
-        include: ''low'', ''normal'', ''high'''
-      id: importance
-      type:
-      - str
-      - botframework.connector.models.ActivityImportance
-    - description: 'A delivery hint to signal to the recipient alternate
+      include: ''low'', ''normal'', ''high'''
+    types:
+    - <xref:str>
+    - <xref:botframework.connector.models.ActivityImportance>
+  - name: delivery_mode
+    description: 'A delivery hint to signal to the recipient alternate
 
-        delivery paths for the activity.
+      delivery paths for the activity.
 
-        The default delivery mode is "default". Possible values include: ''normal'',
+      The default delivery mode is "default". Possible values include: ''normal'',
 
-        ''notification'', ''expectReplies'', ''ephemeral'''
-      id: delivery_mode
-      type:
-      - str
-      - botframework.connector.models.DeliveryModes
-    - description: 'List of phrases and references that speech and language
+      ''notification'', ''expectReplies'', ''ephemeral'''
+    types:
+    - <xref:str>
+    - <xref:botframework.connector.models.DeliveryModes>
+  - name: listen_for
+    description: 'List of phrases and references that speech and language
 
-        priming systems should listen for'
-      id: listen_for
-      type:
-      - list[str]
-    - description: 'The collection of text fragments to highlight when
+      priming systems should listen for'
+    types:
+    - <xref:list>[<xref:str>]
+  - name: text_highlights
+    description: 'The collection of text fragments to highlight when
 
-        the activity contains a ReplyToId value.'
-      id: text_highlights
-      type:
-      - list[botframework.connector.models.TextHighlight]
-    - description: 'An optional programmatic action accompanying this
+      the activity contains a ReplyToId value.'
+    types:
+    - <xref:list>[<xref:botframework.connector.models.TextHighlight>]
+  - name: semantic_action
+    description: 'An optional programmatic action accompanying this
 
-        request'
-      id: semantic_action
-      type:
-      - botframework.connector.models.SemanticAction
-    - description: 'A string containing an IRI identifying the caller of a
+      request'
+    types:
+    - <xref:botframework.connector.models.SemanticAction>
+  - name: caller_id
+    description: 'A string containing an IRI identifying the caller of a
 
-        bot. This field is not intended to be transmitted over the wire, but is
+      bot. This field is not intended to be transmitted over the wire, but is
 
-        instead populated by bots and clients based on cryptographically
+      instead populated by bots and clients based on cryptographically
 
-        verifiable data that asserts the identity of the callers (e.g. tokens).'
-      id: caller_id
-      type:
-      - str
-  type: class
-  uid: botbuilder.schema.Activity
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.apply_conversation_reference
-  langs:
-  - python
-  module: botbuilder.schema
-  name: 'apply_conversation_reference(reference: botbuilder.schema._models_py3.ConversationReference,
-    is_incoming: bool = False)'
-  namewithoutparameters: apply_conversation_reference
-  remarks: 'Call GetConversationReference on an incoming
-
-    activity to get a conversation reference that you can then use to update an
-
-    outgoing activity with the correct delivery information.
-
-    '
+      verifiable data that asserts the identity of the callers (e.g. tokens).'
+    types:
+    - <xref:str>
+methods:
+- uid: botbuilder.schema.Activity.apply_conversation_reference
+  name: apply_conversation_reference
   summary: 'Updates this activity with the delivery information from an existing ConversationReference
 
 
@@ -348,388 +296,196 @@ items:
     incoming activity, where the bot is the recipient; otherwise, False.
 
     Default is False, and the activity will show the bot as the sender.'
-  syntax:
-    content: 'apply_conversation_reference(reference: botbuilder.schema._models_py3.ConversationReference,
-      is_incoming: bool = False)'
-    return:
-      description: his activity, updated with the delivery information.
-  type: method
-  uid: botbuilder.schema.Activity.apply_conversation_reference
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.as_contact_relation_update_activity
-  langs:
-  - python
-  module: botbuilder.schema
-  name: as_contact_relation_update_activity()
-  namewithoutparameters: as_contact_relation_update_activity
+  signature: 'apply_conversation_reference(reference: botbuilder.schema._models_py3.ConversationReference,
+    is_incoming: bool = False)'
+  return:
+    description: his activity, updated with the delivery information.
+  remarks: 'Call GetConversationReference on an incoming
+
+    activity to get a conversation reference that you can then use to update an
+
+    outgoing activity with the correct delivery information.
+
+    '
+- uid: botbuilder.schema.Activity.as_contact_relation_update_activity
+  name: as_contact_relation_update_activity
   summary: 'Returns this activity as a ContactRelationUpdateActivity object;
 
     or None, if this is not that type of activity.'
-  syntax:
-    content: as_contact_relation_update_activity()
-    parameters: []
-    return:
-      description: This activity as a message activity; or None.
-  type: method
-  uid: botbuilder.schema.Activity.as_contact_relation_update_activity
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.as_conversation_update_activity
-  langs:
-  - python
-  module: botbuilder.schema
-  name: as_conversation_update_activity()
-  namewithoutparameters: as_conversation_update_activity
+  signature: as_contact_relation_update_activity()
+  return:
+    description: This activity as a message activity; or None.
+- uid: botbuilder.schema.Activity.as_conversation_update_activity
+  name: as_conversation_update_activity
   summary: 'Returns this activity as a ConversationUpdateActivity object;
 
     or None, if this is not that type of activity.'
-  syntax:
-    content: as_conversation_update_activity()
-    parameters: []
-    return:
-      description: This activity as a conversation update activity; or None.
-  type: method
-  uid: botbuilder.schema.Activity.as_conversation_update_activity
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.as_end_of_conversation_activity
-  langs:
-  - python
-  module: botbuilder.schema
-  name: as_end_of_conversation_activity()
-  namewithoutparameters: as_end_of_conversation_activity
+  signature: as_conversation_update_activity()
+  return:
+    description: This activity as a conversation update activity; or None.
+- uid: botbuilder.schema.Activity.as_end_of_conversation_activity
+  name: as_end_of_conversation_activity
   summary: 'Returns this activity as an EndOfConversationActivity object;
 
     or None, if this is not that type of activity.'
-  syntax:
-    content: as_end_of_conversation_activity()
-    parameters: []
-    return:
-      description: This activity as an end of conversation activity; or None.
-  type: method
-  uid: botbuilder.schema.Activity.as_end_of_conversation_activity
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.as_event_activity
-  langs:
-  - python
-  module: botbuilder.schema
-  name: as_event_activity()
-  namewithoutparameters: as_event_activity
+  signature: as_end_of_conversation_activity()
+  return:
+    description: This activity as an end of conversation activity; or None.
+- uid: botbuilder.schema.Activity.as_event_activity
+  name: as_event_activity
   summary: 'Returns this activity as an EventActivity object;
 
     or None, if this is not that type of activity.'
-  syntax:
-    content: as_event_activity()
-    parameters: []
-    return:
-      description: This activity as an event activity; or None.
-  type: method
-  uid: botbuilder.schema.Activity.as_event_activity
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.as_handoff_activity
-  langs:
-  - python
-  module: botbuilder.schema
-  name: as_handoff_activity()
-  namewithoutparameters: as_handoff_activity
+  signature: as_event_activity()
+  return:
+    description: This activity as an event activity; or None.
+- uid: botbuilder.schema.Activity.as_handoff_activity
+  name: as_handoff_activity
   summary: 'Returns this activity as a HandoffActivity object;
 
     or None, if this is not that type of activity.'
-  syntax:
-    content: as_handoff_activity()
-    parameters: []
-    return:
-      description: This activity as a handoff activity; or None.
-  type: method
-  uid: botbuilder.schema.Activity.as_handoff_activity
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.as_installation_update_activity
-  langs:
-  - python
-  module: botbuilder.schema
-  name: as_installation_update_activity()
-  namewithoutparameters: as_installation_update_activity
+  signature: as_handoff_activity()
+  return:
+    description: This activity as a handoff activity; or None.
+- uid: botbuilder.schema.Activity.as_installation_update_activity
+  name: as_installation_update_activity
   summary: 'Returns this activity as an InstallationUpdateActivity object;
 
     or None, if this is not that type of activity.'
-  syntax:
-    content: as_installation_update_activity()
-    parameters: []
-    return:
-      description: This activity as an installation update activity; or None.
-  type: method
-  uid: botbuilder.schema.Activity.as_installation_update_activity
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.as_invoke_activity
-  langs:
-  - python
-  module: botbuilder.schema
-  name: as_invoke_activity()
-  namewithoutparameters: as_invoke_activity
+  signature: as_installation_update_activity()
+  return:
+    description: This activity as an installation update activity; or None.
+- uid: botbuilder.schema.Activity.as_invoke_activity
+  name: as_invoke_activity
   summary: 'Returns this activity as an InvokeActivity object;
 
     or None, if this is not that type of activity.'
-  syntax:
-    content: as_invoke_activity()
-    parameters: []
-    return:
-      description: This activity as an invoke activity; or None.
-  type: method
-  uid: botbuilder.schema.Activity.as_invoke_activity
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.as_message_activity
-  langs:
-  - python
-  module: botbuilder.schema
-  name: as_message_activity()
-  namewithoutparameters: as_message_activity
+  signature: as_invoke_activity()
+  return:
+    description: This activity as an invoke activity; or None.
+- uid: botbuilder.schema.Activity.as_message_activity
+  name: as_message_activity
   summary: 'Returns this activity as a MessageActivity object;
 
     or None, if this is not that type of activity.'
-  syntax:
-    content: as_message_activity()
-    parameters: []
-    return:
-      description: This activity as a message activity; or None.
-  type: method
-  uid: botbuilder.schema.Activity.as_message_activity
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.as_message_delete_activity
-  langs:
-  - python
-  module: botbuilder.schema
-  name: as_message_delete_activity()
-  namewithoutparameters: as_message_delete_activity
+  signature: as_message_activity()
+  return:
+    description: This activity as a message activity; or None.
+- uid: botbuilder.schema.Activity.as_message_delete_activity
+  name: as_message_delete_activity
   summary: 'Returns this activity as a MessageDeleteActivity object;
 
     or None, if this is not that type of activity.'
-  syntax:
-    content: as_message_delete_activity()
-    parameters: []
-    return:
-      description: This activity as a message delete request; or None.
-  type: method
-  uid: botbuilder.schema.Activity.as_message_delete_activity
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.as_message_reaction_activity
-  langs:
-  - python
-  module: botbuilder.schema
-  name: as_message_reaction_activity()
-  namewithoutparameters: as_message_reaction_activity
+  signature: as_message_delete_activity()
+  return:
+    description: This activity as a message delete request; or None.
+- uid: botbuilder.schema.Activity.as_message_reaction_activity
+  name: as_message_reaction_activity
   summary: 'Returns this activity as a MessageReactionActivity object;
 
     or None, if this is not that type of activity.'
-  syntax:
-    content: as_message_reaction_activity()
-    parameters: []
-    return:
-      description: This activity as a message reaction activity; or None.
-  type: method
-  uid: botbuilder.schema.Activity.as_message_reaction_activity
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.as_message_update_activity
-  langs:
-  - python
-  module: botbuilder.schema
-  name: as_message_update_activity()
-  namewithoutparameters: as_message_update_activity
+  signature: as_message_reaction_activity()
+  return:
+    description: This activity as a message reaction activity; or None.
+- uid: botbuilder.schema.Activity.as_message_update_activity
+  name: as_message_update_activity
   summary: 'Returns this activity as an MessageUpdateActivity object;
 
     or None, if this is not that type of activity.'
-  syntax:
-    content: as_message_update_activity()
-    parameters: []
-    return:
-      description: This activity as a message update request; or None.
-  type: method
-  uid: botbuilder.schema.Activity.as_message_update_activity
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.as_suggestion_activity
-  langs:
-  - python
-  module: botbuilder.schema
-  name: as_suggestion_activity()
-  namewithoutparameters: as_suggestion_activity
+  signature: as_message_update_activity()
+  return:
+    description: This activity as a message update request; or None.
+- uid: botbuilder.schema.Activity.as_suggestion_activity
+  name: as_suggestion_activity
   summary: 'Returns this activity as a SuggestionActivity object;
 
     or None, if this is not that type of activity.'
-  syntax:
-    content: as_suggestion_activity()
-    parameters: []
-    return:
-      description: This activity as a suggestion activity; or None.
-  type: method
-  uid: botbuilder.schema.Activity.as_suggestion_activity
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.as_trace_activity
-  langs:
-  - python
-  module: botbuilder.schema
-  name: as_trace_activity()
-  namewithoutparameters: as_trace_activity
+  signature: as_suggestion_activity()
+  return:
+    description: This activity as a suggestion activity; or None.
+- uid: botbuilder.schema.Activity.as_trace_activity
+  name: as_trace_activity
   summary: 'Returns this activity as a TraceActivity object;
 
     or None, if this is not that type of activity.'
-  syntax:
-    content: as_trace_activity()
-    parameters: []
-    return:
-      description: This activity as a trace activity; or None.
-  type: method
-  uid: botbuilder.schema.Activity.as_trace_activity
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.as_typing_activity
-  langs:
-  - python
-  module: botbuilder.schema
-  name: as_typing_activity()
-  namewithoutparameters: as_typing_activity
+  signature: as_trace_activity()
+  return:
+    description: This activity as a trace activity; or None.
+- uid: botbuilder.schema.Activity.as_typing_activity
+  name: as_typing_activity
   summary: 'Returns this activity as a TypingActivity object;
 
     or null, if this is not that type of activity.'
-  syntax:
-    content: as_typing_activity()
-    parameters: []
-    return:
-      description: This activity as a typing activity; or null.
-  type: method
-  uid: botbuilder.schema.Activity.as_typing_activity
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.create_contact_relation_update_activity
-  langs:
-  - python
-  module: botbuilder.schema
-  name: create_contact_relation_update_activity()
-  namewithoutparameters: create_contact_relation_update_activity
+  signature: as_typing_activity()
+  return:
+    description: This activity as a typing activity; or null.
+- uid: botbuilder.schema.Activity.create_contact_relation_update_activity
+  name: create_contact_relation_update_activity
   summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as aContactRelationUpdateActivity
     object.
-  syntax:
-    content: create_contact_relation_update_activity()
-    return:
-      description: The new contact relation update activity.
-  type: method
-  uid: botbuilder.schema.Activity.create_contact_relation_update_activity
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.create_conversation_update_activity
-  langs:
-  - python
-  module: botbuilder.schema
-  name: create_conversation_update_activity()
-  namewithoutparameters: create_conversation_update_activity
+  signature: create_contact_relation_update_activity()
+  return:
+    description: The new contact relation update activity.
+- uid: botbuilder.schema.Activity.create_conversation_update_activity
+  name: create_conversation_update_activity
   summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as a
     ConversationUpdateActivity object.
-  syntax:
-    content: create_conversation_update_activity()
-    return:
-      description: The new conversation update activity.
-  type: method
-  uid: botbuilder.schema.Activity.create_conversation_update_activity
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.create_end_of_conversation_activity
-  langs:
-  - python
-  module: botbuilder.schema
-  name: create_end_of_conversation_activity()
-  namewithoutparameters: create_end_of_conversation_activity
+  signature: create_conversation_update_activity()
+  return:
+    description: The new conversation update activity.
+- uid: botbuilder.schema.Activity.create_end_of_conversation_activity
+  name: create_end_of_conversation_activity
   summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as an
     EndOfConversationActivity object.
-  syntax:
-    content: create_end_of_conversation_activity()
-    return:
-      description: The new end of conversation activity.
-  type: method
-  uid: botbuilder.schema.Activity.create_end_of_conversation_activity
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.create_event_activity
-  langs:
-  - python
-  module: botbuilder.schema
-  name: create_event_activity()
-  namewithoutparameters: create_event_activity
+  signature: create_end_of_conversation_activity()
+  return:
+    description: The new end of conversation activity.
+- uid: botbuilder.schema.Activity.create_event_activity
+  name: create_event_activity
   summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as an
     EventActivity object.
-  syntax:
-    content: create_event_activity()
-    return:
-      description: The new event activity.
-  type: method
-  uid: botbuilder.schema.Activity.create_event_activity
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.create_handoff_activity
-  langs:
-  - python
-  module: botbuilder.schema
-  name: create_handoff_activity()
-  namewithoutparameters: create_handoff_activity
+  signature: create_event_activity()
+  return:
+    description: The new event activity.
+- uid: botbuilder.schema.Activity.create_handoff_activity
+  name: create_handoff_activity
   summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as a
     HandoffActivity object.
-  syntax:
-    content: create_handoff_activity()
-    return:
-      description: The new handoff activity.
-  type: method
-  uid: botbuilder.schema.Activity.create_handoff_activity
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.create_invoke_activity
-  langs:
-  - python
-  module: botbuilder.schema
-  name: create_invoke_activity()
-  namewithoutparameters: create_invoke_activity
+  signature: create_handoff_activity()
+  return:
+    description: The new handoff activity.
+- uid: botbuilder.schema.Activity.create_invoke_activity
+  name: create_invoke_activity
   summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as an
     InvokeActivity object.
-  syntax:
-    content: create_invoke_activity()
-    return:
-      description: The new invoke activity.
-  type: method
-  uid: botbuilder.schema.Activity.create_invoke_activity
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.create_message_activity
-  langs:
-  - python
-  module: botbuilder.schema
-  name: create_message_activity()
-  namewithoutparameters: create_message_activity
+  signature: create_invoke_activity()
+  return:
+    description: The new invoke activity.
+- uid: botbuilder.schema.Activity.create_message_activity
+  name: create_message_activity
   summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as a
     MessageActivity object.
-  syntax:
-    content: create_message_activity()
-    return:
-      description: The new message activity.
-  type: method
-  uid: botbuilder.schema.Activity.create_message_activity
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.create_reply
-  langs:
-  - python
-  module: botbuilder.schema
-  name: 'create_reply(text: str = None, locale: str = None)'
-  namewithoutparameters: create_reply
+  signature: create_message_activity()
+  return:
+    description: The new message activity.
+- uid: botbuilder.schema.Activity.create_reply
+  name: create_reply
+  summary: Creates a new message activity as a response to this activity.
+  signature: 'create_reply(text: str = None, locale: str = None)'
+  parameters:
+  - name: text
+    description: The text of the reply.
+    isRequired: true
+  - name: locale
+    description: The language code for the text.
+    isRequired: true
+  return:
+    description: The new message activity.
   remarks: 'The new activity sets up routing information based on this activity.
 
     '
-  summary: Creates a new message activity as a response to this activity.
-  syntax:
-    content: 'create_reply(text: str = None, locale: str = None)'
-    parameters:
-    - description: The text of the reply.
-      id: text
-      isRequired: true
-    - description: The language code for the text.
-      id: locale
-      isRequired: true
-    return:
-      description: The new message activity.
-  type: method
-  uid: botbuilder.schema.Activity.create_reply
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.create_trace
-  langs:
-  - python
-  module: botbuilder.schema
-  name: 'create_trace(name: str, value: object = None, value_type: str = None, label:
-    str = None)'
-  namewithoutparameters: create_trace
+- uid: botbuilder.schema.Activity.create_trace
+  name: create_trace
   summary: 'Creates a new trace activity based on this activity.
 
 
@@ -737,21 +493,12 @@ items:
     Default is the name of type of the value.
 
     :param label: Optional, a descriptive label for this trace operation.'
-  syntax:
-    content: 'create_trace(name: str, value: object = None, value_type: str = None,
-      label: str = None)'
-    return:
-      description: The new trace activity.
-  type: method
-  uid: botbuilder.schema.Activity.create_trace
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.create_trace_activity
-  langs:
-  - python
-  module: botbuilder.schema
-  name: 'create_trace_activity(name: str, value: object = None, value_type: str =
-    None, label: str = None)'
-  namewithoutparameters: create_trace_activity
+  signature: 'create_trace(name: str, value: object = None, value_type: str = None,
+    label: str = None)'
+  return:
+    description: The new trace activity.
+- uid: botbuilder.schema.Activity.create_trace_activity
+  name: create_trace_activity
   summary: 'Creates an instance of the <xref:botbuilder.schema.Activity> class as
     a TraceActivity object.
 
@@ -760,51 +507,30 @@ items:
     Default is the name of type of the value.
 
     :param label: Optional, a descriptive label for this trace operation.'
-  syntax:
-    content: 'create_trace_activity(name: str, value: object = None, value_type: str
-      = None, label: str = None)'
-    return:
-      description: The new trace activity.
-  type: method
-  uid: botbuilder.schema.Activity.create_trace_activity
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.create_typing_activity
-  langs:
-  - python
-  module: botbuilder.schema
-  name: create_typing_activity()
-  namewithoutparameters: create_typing_activity
+  signature: 'create_trace_activity(name: str, value: object = None, value_type: str
+    = None, label: str = None)'
+  return:
+    description: The new trace activity.
+- uid: botbuilder.schema.Activity.create_typing_activity
+  name: create_typing_activity
   summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as a
     TypingActivity object.
-  syntax:
-    content: create_typing_activity()
-    return:
-      description: The new typing activity.
-  type: method
-  uid: botbuilder.schema.Activity.create_typing_activity
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.get_conversation_reference
-  langs:
-  - python
-  module: botbuilder.schema
-  name: get_conversation_reference()
-  namewithoutparameters: get_conversation_reference
+  signature: create_typing_activity()
+  return:
+    description: The new typing activity.
+- uid: botbuilder.schema.Activity.get_conversation_reference
+  name: get_conversation_reference
   summary: Creates a ConversationReference based on this activity.
-  syntax:
-    content: get_conversation_reference()
-    parameters: []
-    return:
-      description: A conversation reference for the conversation that contains this
-        activity.
-  type: method
-  uid: botbuilder.schema.Activity.get_conversation_reference
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.get_mentions
-  langs:
-  - python
-  module: botbuilder.schema
-  name: get_mentions() -> [<class 'botbuilder.schema._models_py3.Mention'>]
-  namewithoutparameters: get_mentions
+  signature: get_conversation_reference()
+  return:
+    description: A conversation reference for the conversation that contains this
+      activity.
+- uid: botbuilder.schema.Activity.get_mentions
+  name: get_mentions
+  summary: Resolves the mentions from the entities of this activity.
+  signature: get_mentions() -> [<class 'botbuilder.schema._models_py3.Mention'>]
+  return:
+    description: The array of mentions; or an empty array, if none are found.
   remarks: 'This method is defined on the <xref:botbuilder.schema.Activity> class,
     but is only intended
 
@@ -813,44 +539,27 @@ items:
     ActivityTypes.Message.
 
     '
-  summary: Resolves the mentions from the entities of this activity.
-  syntax:
-    content: get_mentions() -> [<class 'botbuilder.schema._models_py3.Mention'>]
-    return:
-      description: The array of mentions; or an empty array, if none are found.
-  type: method
-  uid: botbuilder.schema.Activity.get_mentions
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.get_reply_conversation_reference
-  langs:
-  - python
-  module: botbuilder.schema
-  name: 'get_reply_conversation_reference(reply: botbuilder.schema._models_py3.ResourceResponse)
-    -> botbuilder.schema._models_py3.ConversationReference'
-  namewithoutparameters: get_reply_conversation_reference
+- uid: botbuilder.schema.Activity.get_reply_conversation_reference
+  name: get_reply_conversation_reference
   summary: 'Create a ConversationReference based on this Activity''s Conversation
     info
 
     and the ResourceResponse from sending an activity.'
-  syntax:
-    content: 'get_reply_conversation_reference(reply: botbuilder.schema._models_py3.ResourceResponse)
-      -> botbuilder.schema._models_py3.ConversationReference'
-    parameters:
-    - description: ResourceResponse returned from send_activity.
-      id: reply
-      isRequired: true
-    return:
-      description: A ConversationReference that can be stored and used later to delete
-        or update the activity.
-  type: method
-  uid: botbuilder.schema.Activity.get_reply_conversation_reference
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.has_content
-  langs:
-  - python
-  module: botbuilder.schema
-  name: has_content() -> bool
-  namewithoutparameters: has_content
+  signature: 'get_reply_conversation_reference(reply: botbuilder.schema._models_py3.ResourceResponse)
+    -> botbuilder.schema._models_py3.ConversationReference'
+  parameters:
+  - name: reply
+    description: ResourceResponse returned from send_activity.
+    isRequired: true
+  return:
+    description: A ConversationReference that can be stored and used later to delete
+      or update the activity.
+- uid: botbuilder.schema.Activity.has_content
+  name: has_content
+  summary: Indicates whether this activity has content.
+  signature: has_content() -> bool
+  return:
+    description: True, if this activity has any content to send; otherwise, false.
   remarks: 'This method is defined on the <xref:botbuilder.schema.Activity> class,
     but is only intended
 
@@ -859,20 +568,8 @@ items:
     ActivityTypes.Message.
 
     '
-  summary: Indicates whether this activity has content.
-  syntax:
-    content: has_content() -> bool
-    return:
-      description: True, if this activity has any content to send; otherwise, false.
-  type: method
-  uid: botbuilder.schema.Activity.has_content
-- class: botbuilder.schema.Activity
-  fullName: botbuilder.schema.Activity.is_from_streaming_connection
-  langs:
-  - python
-  module: botbuilder.schema
-  name: is_from_streaming_connection() -> bool
-  namewithoutparameters: is_from_streaming_connection
+- uid: botbuilder.schema.Activity.is_from_streaming_connection
+  name: is_from_streaming_connection
   summary: 'Determine if the Activity was sent via an Http/Https connection or Streaming
 
     This can be determined by looking at the service_url property:
@@ -881,267 +578,6 @@ items:
 
     (2) Channels that send messages via streaming have a ServiceUrl that does not
     begin with http/https.'
-  syntax:
-    content: is_from_streaming_connection() -> bool
-    return:
-      description: True if the Activity originated from a streaming connection.
-  type: method
-  uid: botbuilder.schema.Activity.is_from_streaming_connection
-references:
-- fullName: botbuilder.schema.Activity.apply_conversation_reference
-  isExternal: false
-  name: 'apply_conversation_reference(reference: botbuilder.schema._models_py3.ConversationReference,
-    is_incoming: bool = False)'
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.apply_conversation_reference
-- fullName: botbuilder.schema.Activity.as_contact_relation_update_activity
-  isExternal: false
-  name: as_contact_relation_update_activity()
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.as_contact_relation_update_activity
-- fullName: botbuilder.schema.Activity.as_conversation_update_activity
-  isExternal: false
-  name: as_conversation_update_activity()
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.as_conversation_update_activity
-- fullName: botbuilder.schema.Activity.as_end_of_conversation_activity
-  isExternal: false
-  name: as_end_of_conversation_activity()
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.as_end_of_conversation_activity
-- fullName: botbuilder.schema.Activity.as_event_activity
-  isExternal: false
-  name: as_event_activity()
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.as_event_activity
-- fullName: botbuilder.schema.Activity.as_handoff_activity
-  isExternal: false
-  name: as_handoff_activity()
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.as_handoff_activity
-- fullName: botbuilder.schema.Activity.as_installation_update_activity
-  isExternal: false
-  name: as_installation_update_activity()
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.as_installation_update_activity
-- fullName: botbuilder.schema.Activity.as_invoke_activity
-  isExternal: false
-  name: as_invoke_activity()
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.as_invoke_activity
-- fullName: botbuilder.schema.Activity.as_message_activity
-  isExternal: false
-  name: as_message_activity()
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.as_message_activity
-- fullName: botbuilder.schema.Activity.as_message_delete_activity
-  isExternal: false
-  name: as_message_delete_activity()
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.as_message_delete_activity
-- fullName: botbuilder.schema.Activity.as_message_reaction_activity
-  isExternal: false
-  name: as_message_reaction_activity()
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.as_message_reaction_activity
-- fullName: botbuilder.schema.Activity.as_message_update_activity
-  isExternal: false
-  name: as_message_update_activity()
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.as_message_update_activity
-- fullName: botbuilder.schema.Activity.as_suggestion_activity
-  isExternal: false
-  name: as_suggestion_activity()
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.as_suggestion_activity
-- fullName: botbuilder.schema.Activity.as_trace_activity
-  isExternal: false
-  name: as_trace_activity()
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.as_trace_activity
-- fullName: botbuilder.schema.Activity.as_typing_activity
-  isExternal: false
-  name: as_typing_activity()
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.as_typing_activity
-- fullName: botbuilder.schema.Activity.create_contact_relation_update_activity
-  isExternal: false
-  name: create_contact_relation_update_activity()
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.create_contact_relation_update_activity
-- fullName: botbuilder.schema.Activity.create_conversation_update_activity
-  isExternal: false
-  name: create_conversation_update_activity()
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.create_conversation_update_activity
-- fullName: botbuilder.schema.Activity.create_end_of_conversation_activity
-  isExternal: false
-  name: create_end_of_conversation_activity()
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.create_end_of_conversation_activity
-- fullName: botbuilder.schema.Activity.create_event_activity
-  isExternal: false
-  name: create_event_activity()
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.create_event_activity
-- fullName: botbuilder.schema.Activity.create_handoff_activity
-  isExternal: false
-  name: create_handoff_activity()
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.create_handoff_activity
-- fullName: botbuilder.schema.Activity.create_invoke_activity
-  isExternal: false
-  name: create_invoke_activity()
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.create_invoke_activity
-- fullName: botbuilder.schema.Activity.create_message_activity
-  isExternal: false
-  name: create_message_activity()
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.create_message_activity
-- fullName: botbuilder.schema.Activity.create_reply
-  isExternal: false
-  name: 'create_reply(text: str = None, locale: str = None)'
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.create_reply
-- fullName: botbuilder.schema.Activity.create_trace
-  isExternal: false
-  name: 'create_trace(name: str, value: object = None, value_type: str = None, label:
-    str = None)'
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.create_trace
-- fullName: botbuilder.schema.Activity.create_trace_activity
-  isExternal: false
-  name: 'create_trace_activity(name: str, value: object = None, value_type: str =
-    None, label: str = None)'
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.create_trace_activity
-- fullName: botbuilder.schema.Activity.create_typing_activity
-  isExternal: false
-  name: create_typing_activity()
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.create_typing_activity
-- fullName: botbuilder.schema.Activity.get_conversation_reference
-  isExternal: false
-  name: get_conversation_reference()
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.get_conversation_reference
-- fullName: botbuilder.schema.Activity.get_mentions
-  isExternal: false
-  name: get_mentions() -> [<class 'botbuilder.schema._models_py3.Mention'>]
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.get_mentions
-- fullName: botbuilder.schema.Activity.get_reply_conversation_reference
-  isExternal: false
-  name: 'get_reply_conversation_reference(reply: botbuilder.schema._models_py3.ResourceResponse)
-    -> botbuilder.schema._models_py3.ConversationReference'
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.get_reply_conversation_reference
-- fullName: botbuilder.schema.Activity.has_content
-  isExternal: false
-  name: has_content() -> bool
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.has_content
-- fullName: botbuilder.schema.Activity.is_from_streaming_connection
-  isExternal: false
-  name: is_from_streaming_connection() -> bool
-  parent: botbuilder.schema.Activity
-  uid: botbuilder.schema.Activity.is_from_streaming_connection
-- fullName: list[botframework.connector.models.ChannelAccount]
-  name: list[ChannelAccount]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.models.ChannelAccount
-    name: ChannelAccount
-    uid: botframework.connector.models.ChannelAccount
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.models.ChannelAccount]
-- fullName: list[botframework.connector.models.MessageReaction]
-  name: list[MessageReaction]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.models.MessageReaction
-    name: MessageReaction
-    uid: botframework.connector.models.MessageReaction
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.models.MessageReaction]
-- fullName: list[botframework.connector.models.MessageReaction]
-  name: list[MessageReaction]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.models.MessageReaction
-    name: MessageReaction
-    uid: botframework.connector.models.MessageReaction
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.models.MessageReaction]
-- fullName: list[botframework.connector.models.Attachment]
-  name: list[Attachment]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.models.Attachment
-    name: Attachment
-    uid: botframework.connector.models.Attachment
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.models.Attachment]
-- fullName: list[botframework.connector.models.Entity]
-  name: list[Entity]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.models.Entity
-    name: Entity
-    uid: botframework.connector.models.Entity
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.models.Entity]
-- fullName: list[str]
-  name: list[str]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: str
-    name: str
-    uid: str
-  - fullName: ']'
-    name: ']'
-  uid: list[str]
-- fullName: list[botframework.connector.models.TextHighlight]
-  name: list[TextHighlight]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.models.TextHighlight
-    name: TextHighlight
-    uid: botframework.connector.models.TextHighlight
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.models.TextHighlight]
+  signature: is_from_streaming_connection() -> bool
+  return:
+    description: True if the Activity originated from a streaming connection.

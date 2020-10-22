@@ -1,42 +1,15 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.PrivateConversationState.get_storage_key
-  class: botbuilder.core.PrivateConversationState
-  fullName: botbuilder.core.PrivateConversationState
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: botbuilder.core.property_manager.PropertyManager
-    type: botbuilder.core.bot_state.BotState
-  langs:
-  - python
-  module: botbuilder.core
-  name: PrivateConversationState
-  syntax:
-    content: 'PrivateConversationState(storage: botbuilder.core.storage.Storage, namespace:
-      str = '''')'
-  type: class
-  uid: botbuilder.core.PrivateConversationState
-- class: botbuilder.core.PrivateConversationState
-  fullName: botbuilder.core.PrivateConversationState.get_storage_key
-  langs:
-  - python
-  module: botbuilder.core
-  name: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext) ->
-    str'
-  namewithoutparameters: get_storage_key
-  syntax:
-    content: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext)
-      -> str'
-  type: method
-  uid: botbuilder.core.PrivateConversationState.get_storage_key
-references:
-- fullName: botbuilder.core.PrivateConversationState.get_storage_key
-  isExternal: false
-  name: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext) ->
-    str'
-  parent: botbuilder.core.PrivateConversationState
-  uid: botbuilder.core.PrivateConversationState.get_storage_key
+### YamlMime:PythonClass
+uid: botbuilder.core.PrivateConversationState
+name: PrivateConversationState
+fullName: botbuilder.core.PrivateConversationState
+module: botbuilder.core
+inheritances:
+- botbuilder.core.bot_state.BotState
+constructor:
+  syntax: 'PrivateConversationState(storage: botbuilder.core.storage.Storage, namespace:
+    str = '''')'
+methods:
+- uid: botbuilder.core.PrivateConversationState.get_storage_key
+  name: get_storage_key
+  signature: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> str'

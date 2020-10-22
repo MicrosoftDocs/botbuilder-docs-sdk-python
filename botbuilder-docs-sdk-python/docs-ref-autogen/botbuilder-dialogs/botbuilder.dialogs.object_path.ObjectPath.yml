@@ -1,173 +1,53 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.dialogs.object_path.ObjectPath.assign
-  - botbuilder.dialogs.object_path.ObjectPath.get_path_value
-  - botbuilder.dialogs.object_path.ObjectPath.has_value
-  - botbuilder.dialogs.object_path.ObjectPath.is_int
-  - botbuilder.dialogs.object_path.ObjectPath.remove_path_value
-  - botbuilder.dialogs.object_path.ObjectPath.set_path_value
-  - botbuilder.dialogs.object_path.ObjectPath.try_get_path_value
-  - botbuilder.dialogs.object_path.ObjectPath.try_resolve_path
-  class: botbuilder.dialogs.object_path.ObjectPath
-  fullName: botbuilder.dialogs.object_path.ObjectPath
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.dialogs.object_path
-  name: ObjectPath
-  summary: Helper methods for working with json objects.
-  syntax: {}
-  type: class
-  uid: botbuilder.dialogs.object_path.ObjectPath
-- class: botbuilder.dialogs.object_path.ObjectPath
-  fullName: botbuilder.dialogs.object_path.ObjectPath.assign
-  langs:
-  - python
-  module: botbuilder.dialogs.object_path
-  name: 'assign(start_object, overlay_object, default: object = None)'
-  namewithoutparameters: assign
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.object_path.ObjectPath
+name: ObjectPath
+fullName: botbuilder.dialogs.object_path.ObjectPath
+module: botbuilder.dialogs.object_path
+inheritances:
+- builtins.object
+summary: Helper methods for working with json objects.
+methods:
+- uid: botbuilder.dialogs.object_path.ObjectPath.assign
+  name: assign
   summary: Creates a new object by overlaying values in start_object with non-null
     values from overlay_object.
-  syntax:
-    content: 'assign(start_object, overlay_object, default: object = None)'
-    parameters:
-    - description: dict or typed object, the target object to set values on
-      id: start_object
-      isRequired: true
-    - description: dict or typed object, the item to overlay values form
-      id: overlay_object
-      isRequired: true
-    - description: Provides a default object if both source and overlay are None
-      id: default
-      isRequired: true
-    return:
-      description: A copy of start_object, with values from overlay_object
-  type: method
-  uid: botbuilder.dialogs.object_path.ObjectPath.assign
-- class: botbuilder.dialogs.object_path.ObjectPath
-  fullName: botbuilder.dialogs.object_path.ObjectPath.get_path_value
-  langs:
-  - python
-  module: botbuilder.dialogs.object_path
-  name: 'get_path_value(obj, path: str, default: object = None) -> object'
-  namewithoutparameters: get_path_value
+  signature: 'assign(start_object, overlay_object, default: object = None)'
+  parameters:
+  - name: start_object
+    description: dict or typed object, the target object to set values on
+    isRequired: true
+  - name: overlay_object
+    description: dict or typed object, the item to overlay values form
+    isRequired: true
+  - name: default
+    description: Provides a default object if both source and overlay are None
+    isRequired: true
+  return:
+    description: A copy of start_object, with values from overlay_object
+- uid: botbuilder.dialogs.object_path.ObjectPath.get_path_value
+  name: get_path_value
   summary: Get the value for a path relative to an object.
-  syntax:
-    content: 'get_path_value(obj, path: str, default: object = None) -> object'
-  type: method
-  uid: botbuilder.dialogs.object_path.ObjectPath.get_path_value
-- class: botbuilder.dialogs.object_path.ObjectPath
-  fullName: botbuilder.dialogs.object_path.ObjectPath.has_value
-  langs:
-  - python
-  module: botbuilder.dialogs.object_path
-  name: 'has_value(obj, path: str) -> bool'
-  namewithoutparameters: has_value
+  signature: 'get_path_value(obj, path: str, default: object = None) -> object'
+- uid: botbuilder.dialogs.object_path.ObjectPath.has_value
+  name: has_value
   summary: Does an object have a subpath.
-  syntax:
-    content: 'has_value(obj, path: str) -> bool'
-  type: method
-  uid: botbuilder.dialogs.object_path.ObjectPath.has_value
-- class: botbuilder.dialogs.object_path.ObjectPath
-  fullName: botbuilder.dialogs.object_path.ObjectPath.is_int
-  langs:
-  - python
-  module: botbuilder.dialogs.object_path
-  name: 'is_int(value: str) -> bool'
-  namewithoutparameters: is_int
-  syntax:
-    content: 'is_int(value: str) -> bool'
-  type: method
-  uid: botbuilder.dialogs.object_path.ObjectPath.is_int
-- class: botbuilder.dialogs.object_path.ObjectPath
-  fullName: botbuilder.dialogs.object_path.ObjectPath.remove_path_value
-  langs:
-  - python
-  module: botbuilder.dialogs.object_path
-  name: 'remove_path_value(obj, path: str)'
-  namewithoutparameters: remove_path_value
+  signature: 'has_value(obj, path: str) -> bool'
+- uid: botbuilder.dialogs.object_path.ObjectPath.is_int
+  name: is_int
+  signature: 'is_int(value: str) -> bool'
+- uid: botbuilder.dialogs.object_path.ObjectPath.remove_path_value
+  name: remove_path_value
   summary: Remove path from object.
-  syntax:
-    content: 'remove_path_value(obj, path: str)'
-  type: method
-  uid: botbuilder.dialogs.object_path.ObjectPath.remove_path_value
-- class: botbuilder.dialogs.object_path.ObjectPath
-  fullName: botbuilder.dialogs.object_path.ObjectPath.set_path_value
-  langs:
-  - python
-  module: botbuilder.dialogs.object_path
-  name: 'set_path_value(obj, path: str, value: object)'
-  namewithoutparameters: set_path_value
+  signature: 'remove_path_value(obj, path: str)'
+- uid: botbuilder.dialogs.object_path.ObjectPath.set_path_value
+  name: set_path_value
   summary: Given an object evaluate a path to set the value.
-  syntax:
-    content: 'set_path_value(obj, path: str, value: object)'
-  type: method
-  uid: botbuilder.dialogs.object_path.ObjectPath.set_path_value
-- class: botbuilder.dialogs.object_path.ObjectPath
-  fullName: botbuilder.dialogs.object_path.ObjectPath.try_get_path_value
-  langs:
-  - python
-  module: botbuilder.dialogs.object_path
-  name: 'try_get_path_value(obj, path: str) -> object'
-  namewithoutparameters: try_get_path_value
+  signature: 'set_path_value(obj, path: str, value: object)'
+- uid: botbuilder.dialogs.object_path.ObjectPath.try_get_path_value
+  name: try_get_path_value
   summary: Get the value for a path relative to an object.
-  syntax:
-    content: 'try_get_path_value(obj, path: str) -> object'
-  type: method
-  uid: botbuilder.dialogs.object_path.ObjectPath.try_get_path_value
-- class: botbuilder.dialogs.object_path.ObjectPath
-  fullName: botbuilder.dialogs.object_path.ObjectPath.try_resolve_path
-  langs:
-  - python
-  module: botbuilder.dialogs.object_path
-  name: 'try_resolve_path(obj, property_path: str, evaluate: bool = False) -> []'
-  namewithoutparameters: try_resolve_path
-  syntax:
-    content: 'try_resolve_path(obj, property_path: str, evaluate: bool = False) ->
-      []'
-  type: method
-  uid: botbuilder.dialogs.object_path.ObjectPath.try_resolve_path
-references:
-- fullName: botbuilder.dialogs.object_path.ObjectPath.assign
-  isExternal: false
-  name: 'assign(start_object, overlay_object, default: object = None)'
-  parent: botbuilder.dialogs.object_path.ObjectPath
-  uid: botbuilder.dialogs.object_path.ObjectPath.assign
-- fullName: botbuilder.dialogs.object_path.ObjectPath.get_path_value
-  isExternal: false
-  name: 'get_path_value(obj, path: str, default: object = None) -> object'
-  parent: botbuilder.dialogs.object_path.ObjectPath
-  uid: botbuilder.dialogs.object_path.ObjectPath.get_path_value
-- fullName: botbuilder.dialogs.object_path.ObjectPath.has_value
-  isExternal: false
-  name: 'has_value(obj, path: str) -> bool'
-  parent: botbuilder.dialogs.object_path.ObjectPath
-  uid: botbuilder.dialogs.object_path.ObjectPath.has_value
-- fullName: botbuilder.dialogs.object_path.ObjectPath.is_int
-  isExternal: false
-  name: 'is_int(value: str) -> bool'
-  parent: botbuilder.dialogs.object_path.ObjectPath
-  uid: botbuilder.dialogs.object_path.ObjectPath.is_int
-- fullName: botbuilder.dialogs.object_path.ObjectPath.remove_path_value
-  isExternal: false
-  name: 'remove_path_value(obj, path: str)'
-  parent: botbuilder.dialogs.object_path.ObjectPath
-  uid: botbuilder.dialogs.object_path.ObjectPath.remove_path_value
-- fullName: botbuilder.dialogs.object_path.ObjectPath.set_path_value
-  isExternal: false
-  name: 'set_path_value(obj, path: str, value: object)'
-  parent: botbuilder.dialogs.object_path.ObjectPath
-  uid: botbuilder.dialogs.object_path.ObjectPath.set_path_value
-- fullName: botbuilder.dialogs.object_path.ObjectPath.try_get_path_value
-  isExternal: false
-  name: 'try_get_path_value(obj, path: str) -> object'
-  parent: botbuilder.dialogs.object_path.ObjectPath
-  uid: botbuilder.dialogs.object_path.ObjectPath.try_get_path_value
-- fullName: botbuilder.dialogs.object_path.ObjectPath.try_resolve_path
-  isExternal: false
-  name: 'try_resolve_path(obj, property_path: str, evaluate: bool = False) -> []'
-  parent: botbuilder.dialogs.object_path.ObjectPath
-  uid: botbuilder.dialogs.object_path.ObjectPath.try_resolve_path
+  signature: 'try_get_path_value(obj, path: str) -> object'
+- uid: botbuilder.dialogs.object_path.ObjectPath.try_resolve_path
+  name: try_resolve_path
+  signature: 'try_resolve_path(obj, property_path: str, evaluate: bool = False) ->
+    []'

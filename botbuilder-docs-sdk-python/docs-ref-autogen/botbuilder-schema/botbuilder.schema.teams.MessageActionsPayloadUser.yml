@@ -1,36 +1,26 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.MessageActionsPayloadUser
-  fullName: botbuilder.schema.teams.MessageActionsPayloadUser
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: MessageActionsPayloadUser
-  summary: Represents a user entity.
-  syntax:
-    content: 'MessageActionsPayloadUser(*, user_identity_type=None, id: str = None,
-      display_name: str = None, **kwargs) -> None'
-    parameters:
-    - description: 'The identity type of the user. Possible values
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.MessageActionsPayloadUser
+name: MessageActionsPayloadUser
+fullName: botbuilder.schema.teams.MessageActionsPayloadUser
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: Represents a user entity.
+constructor:
+  syntax: 'MessageActionsPayloadUser(*, user_identity_type=None, id: str = None, display_name:
+    str = None, **kwargs) -> None'
+  parameters:
+  - name: user_identity_type
+    description: 'The identity type of the user. Possible values
 
-        include: ''aadUser'', ''onPremiseAadUser'', ''anonymousGuest'', ''federatedUser'''
-      id: user_identity_type
-      type:
-      - str
-    - description: The id of the user.
-      id: id
-      type:
-      - str
-    - description: The plaintext display name of the user.
-      id: display_name
-      type:
-      - str
-  type: class
-  uid: botbuilder.schema.teams.MessageActionsPayloadUser
-references: []
+      include: ''aadUser'', ''onPremiseAadUser'', ''anonymousGuest'', ''federatedUser'''
+    types:
+    - <xref:str>
+  - name: id
+    description: The id of the user.
+    types:
+    - <xref:str>
+  - name: display_name
+    description: The plaintext display name of the user.
+    types:
+    - <xref:str>

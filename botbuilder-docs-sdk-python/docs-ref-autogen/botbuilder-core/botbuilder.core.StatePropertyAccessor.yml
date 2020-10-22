@@ -1,48 +1,21 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.core.StatePropertyAccessor.delete
-  - botbuilder.core.StatePropertyAccessor.get
-  - botbuilder.core.StatePropertyAccessor.set
-  class: botbuilder.core.StatePropertyAccessor
-  fullName: botbuilder.core.StatePropertyAccessor
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: abc.ABC
-  langs:
-  - python
-  module: botbuilder.core
-  name: StatePropertyAccessor
-  summary: ''
-  syntax: {}
-  type: class
-  uid: botbuilder.core.StatePropertyAccessor
-- class: botbuilder.core.StatePropertyAccessor
-  fullName: botbuilder.core.StatePropertyAccessor.delete
-  langs:
-  - python
-  module: botbuilder.core
-  name: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
-  namewithoutparameters: delete
+### YamlMime:PythonClass
+uid: botbuilder.core.StatePropertyAccessor
+name: StatePropertyAccessor
+fullName: botbuilder.core.StatePropertyAccessor
+module: botbuilder.core
+inheritances:
+- abc.ABC
+methods:
+- uid: botbuilder.core.StatePropertyAccessor.delete
+  name: delete
   summary: 'Saves store items to storage.
 
     :param turn_context: Turn Context.
 
     :return:'
-  syntax:
-    content: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
-  type: method
-  uid: botbuilder.core.StatePropertyAccessor.delete
-- class: botbuilder.core.StatePropertyAccessor
-  fullName: botbuilder.core.StatePropertyAccessor.get
-  langs:
-  - python
-  module: botbuilder.core
-  name: 'get(turn_context: botbuilder.core.turn_context.TurnContext, default_value_or_factory=None)
-    -> object'
-  namewithoutparameters: get
+  signature: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
+- uid: botbuilder.core.StatePropertyAccessor.get
+  name: get
   summary: 'Get the property value from the source
 
     :param turn_context: Turn Context.
@@ -50,18 +23,10 @@ items:
     :param default_value_or_factory: Function which defines the property
 
     value to be returned if no value has been set.'
-  syntax:
-    content: 'get(turn_context: botbuilder.core.turn_context.TurnContext, default_value_or_factory=None)
-      -> object'
-  type: method
-  uid: botbuilder.core.StatePropertyAccessor.get
-- class: botbuilder.core.StatePropertyAccessor
-  fullName: botbuilder.core.StatePropertyAccessor.set
-  langs:
-  - python
-  module: botbuilder.core
-  name: 'set(turn_context: botbuilder.core.turn_context.TurnContext, value) -> None'
-  namewithoutparameters: set
+  signature: 'get(turn_context: botbuilder.core.turn_context.TurnContext, default_value_or_factory=None)
+    -> object'
+- uid: botbuilder.core.StatePropertyAccessor.set
+  name: set
   summary: 'Set the property value on the source.
 
     :param turn_context: Turn Context.
@@ -69,25 +34,5 @@ items:
     :param value:
 
     :return:'
-  syntax:
-    content: 'set(turn_context: botbuilder.core.turn_context.TurnContext, value) ->
-      None'
-  type: method
-  uid: botbuilder.core.StatePropertyAccessor.set
-references:
-- fullName: botbuilder.core.StatePropertyAccessor.delete
-  isExternal: false
-  name: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
-  parent: botbuilder.core.StatePropertyAccessor
-  uid: botbuilder.core.StatePropertyAccessor.delete
-- fullName: botbuilder.core.StatePropertyAccessor.get
-  isExternal: false
-  name: 'get(turn_context: botbuilder.core.turn_context.TurnContext, default_value_or_factory=None)
-    -> object'
-  parent: botbuilder.core.StatePropertyAccessor
-  uid: botbuilder.core.StatePropertyAccessor.get
-- fullName: botbuilder.core.StatePropertyAccessor.set
-  isExternal: false
-  name: 'set(turn_context: botbuilder.core.turn_context.TurnContext, value) -> None'
-  parent: botbuilder.core.StatePropertyAccessor
-  uid: botbuilder.core.StatePropertyAccessor.set
+  signature: 'set(turn_context: botbuilder.core.turn_context.TurnContext, value) ->
+    None'

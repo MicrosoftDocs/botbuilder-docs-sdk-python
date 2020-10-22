@@ -1,76 +1,38 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.ThumbnailCard
-  fullName: botbuilder.schema.ThumbnailCard
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema
-  name: ThumbnailCard
-  summary: A thumbnail card (card with a single, small thumbnail image).
-  syntax:
-    content: 'ThumbnailCard(*, title: str = None, subtitle: str = None, text: str
-      = None, images=None, buttons=None, tap=None, **kwargs) -> None'
-    parameters:
-    - description: Title of the card
-      id: title
-      type:
-      - str
-    - description: Subtitle of the card
-      id: subtitle
-      type:
-      - str
-    - description: Text for the card
-      id: text
-      type:
-      - str
-    - description: Array of images for the card
-      id: images
-      type:
-      - list[botframework.connector.models.CardImage]
-    - description: Set of actions applicable to the current card
-      id: buttons
-      type:
-      - list[botframework.connector.models.CardAction]
-    - description: 'This action will be activated when user taps on the card
+### YamlMime:PythonClass
+uid: botbuilder.schema.ThumbnailCard
+name: ThumbnailCard
+fullName: botbuilder.schema.ThumbnailCard
+module: botbuilder.schema
+inheritances:
+- msrest.serialization.Model
+summary: A thumbnail card (card with a single, small thumbnail image).
+constructor:
+  syntax: 'ThumbnailCard(*, title: str = None, subtitle: str = None, text: str = None,
+    images=None, buttons=None, tap=None, **kwargs) -> None'
+  parameters:
+  - name: title
+    description: Title of the card
+    types:
+    - <xref:str>
+  - name: subtitle
+    description: Subtitle of the card
+    types:
+    - <xref:str>
+  - name: text
+    description: Text for the card
+    types:
+    - <xref:str>
+  - name: images
+    description: Array of images for the card
+    types:
+    - <xref:list>[<xref:botframework.connector.models.CardImage>]
+  - name: buttons
+    description: Set of actions applicable to the current card
+    types:
+    - <xref:list>[<xref:botframework.connector.models.CardAction>]
+  - name: tap
+    description: 'This action will be activated when user taps on the card
 
-        itself'
-      id: tap
-      type:
-      - botframework.connector.models.CardAction
-  type: class
-  uid: botbuilder.schema.ThumbnailCard
-references:
-- fullName: list[botframework.connector.models.CardImage]
-  name: list[CardImage]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.models.CardImage
-    name: CardImage
-    uid: botframework.connector.models.CardImage
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.models.CardImage]
-- fullName: list[botframework.connector.models.CardAction]
-  name: list[CardAction]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.models.CardAction
-    name: CardAction
-    uid: botframework.connector.models.CardAction
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.models.CardAction]
+      itself'
+    types:
+    - <xref:botframework.connector.models.CardAction>

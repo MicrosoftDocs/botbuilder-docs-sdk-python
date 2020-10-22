@@ -1,18 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.dialogs.choices.FoundChoice
-  fullName: botbuilder.dialogs.choices.FoundChoice
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.dialogs.choices
-  name: FoundChoice
-  summary: Represents a result from matching user input against a list of choices
-  syntax:
-    content: 'FoundChoice(value: str, index: int, score: float, synonym: str = None)'
-  type: class
-  uid: botbuilder.dialogs.choices.FoundChoice
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.choices.FoundChoice
+name: FoundChoice
+fullName: botbuilder.dialogs.choices.FoundChoice
+module: botbuilder.dialogs.choices
+inheritances:
+- builtins.object
+summary: Represents a result from matching user input against a list of choices
+constructor:
+  syntax: 'FoundChoice(value: str, index: int, score: float, synonym: str = None)'

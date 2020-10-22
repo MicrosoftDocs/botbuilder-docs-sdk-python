@@ -1,56 +1,19 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.integration.applicationinsights.aiohttp.bot_telemetry_middleware
-  - botbuilder.integration.applicationinsights.aiohttp.AiohttpTelemetryProcessor
-  - botbuilder.integration.applicationinsights.aiohttp.about
-  - botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware
-  - botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor
-  fullName: botbuilder.integration.applicationinsights.aiohttp
-  kind: import
-  langs:
-  - python
-  module: botbuilder.integration.applicationinsights.aiohttp
-  name: aiohttp
-  type: package
-  uid: botbuilder.integration.applicationinsights.aiohttp
-- fullName: botbuilder.integration.applicationinsights.aiohttp.bot_telemetry_middleware
-  langs:
-  - python
-  module: botbuilder.integration.applicationinsights.aiohttp
-  name: bot_telemetry_middleware(request, handler)
+### YamlMime:PythonPackage
+uid: botbuilder.integration.applicationinsights.aiohttp
+name: aiohttp
+fullName: botbuilder.integration.applicationinsights.aiohttp
+type: import
+functions:
+- uid: botbuilder.integration.applicationinsights.aiohttp.bot_telemetry_middleware
+  name: bot_telemetry_middleware
   summary: Process the incoming Flask request.
-  syntax:
-    content: bot_telemetry_middleware(request, handler)
-    parameters:
-    - id: request
-    - id: handler
-  type: function
-  uid: botbuilder.integration.applicationinsights.aiohttp.bot_telemetry_middleware
-references:
-- fullName: botbuilder.integration.applicationinsights.aiohttp.bot_telemetry_middleware
-  isExternal: false
-  name: bot_telemetry_middleware(request, handler)
-  parent: botbuilder.integration.applicationinsights.aiohttp
-  uid: botbuilder.integration.applicationinsights.aiohttp.bot_telemetry_middleware
-- fullName: botbuilder.integration.applicationinsights.aiohttp.AiohttpTelemetryProcessor
-  isExternal: false
-  name: AiohttpTelemetryProcessor
-  parent: botbuilder.integration.applicationinsights.aiohttp
-  uid: botbuilder.integration.applicationinsights.aiohttp.AiohttpTelemetryProcessor
-- fullName: botbuilder.integration.applicationinsights.aiohttp.about
-  isExternal: false
-  name: about
-  parent: botbuilder.integration.applicationinsights.aiohttp
-  uid: botbuilder.integration.applicationinsights.aiohttp.about
-- fullName: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware
-  isExternal: false
-  name: aiohttp_telemetry_middleware
-  parent: botbuilder.integration.applicationinsights.aiohttp
-  uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware
-- fullName: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor
-  isExternal: false
-  name: aiohttp_telemetry_processor
-  parent: botbuilder.integration.applicationinsights.aiohttp
-  uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor
+  signature: bot_telemetry_middleware(request, handler)
+  parameters:
+  - name: request
+  - name: handler
+classes:
+- botbuilder.integration.applicationinsights.aiohttp.AiohttpTelemetryProcessor
+modules:
+- botbuilder.integration.applicationinsights.aiohttp.about
+- botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware
+- botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor

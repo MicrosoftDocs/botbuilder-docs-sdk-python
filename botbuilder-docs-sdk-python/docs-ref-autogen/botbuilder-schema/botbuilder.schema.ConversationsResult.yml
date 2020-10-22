@@ -1,44 +1,20 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.ConversationsResult
-  fullName: botbuilder.schema.ConversationsResult
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema
-  name: ConversationsResult
-  summary: Conversations result.
-  syntax:
-    content: 'ConversationsResult(*, continuation_token: str = None, conversations=None,
-      **kwargs) -> None'
-    parameters:
-    - description: Paging token
-      id: continuation_token
-      type:
-      - str
-    - description: List of conversations
-      id: conversations
-      type:
-      - list[botframework.connector.models.ConversationMembers]
-  type: class
-  uid: botbuilder.schema.ConversationsResult
-references:
-- fullName: list[botframework.connector.models.ConversationMembers]
-  name: list[ConversationMembers]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.models.ConversationMembers
-    name: ConversationMembers
-    uid: botframework.connector.models.ConversationMembers
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.models.ConversationMembers]
+### YamlMime:PythonClass
+uid: botbuilder.schema.ConversationsResult
+name: ConversationsResult
+fullName: botbuilder.schema.ConversationsResult
+module: botbuilder.schema
+inheritances:
+- msrest.serialization.Model
+summary: Conversations result.
+constructor:
+  syntax: 'ConversationsResult(*, continuation_token: str = None, conversations=None,
+    **kwargs) -> None'
+  parameters:
+  - name: continuation_token
+    description: Paging token
+    types:
+    - <xref:str>
+  - name: conversations
+    description: List of conversations
+    types:
+    - <xref:list>[<xref:botframework.connector.models.ConversationMembers>]

@@ -1,97 +1,44 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.ReceiptCard
-  fullName: botbuilder.schema.ReceiptCard
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema
-  name: ReceiptCard
-  summary: A receipt card.
-  syntax:
-    content: 'ReceiptCard(*, title: str = None, facts=None, items=None, tap=None,
-      total: str = None, tax: str = None, vat: str = None, buttons=None, **kwargs)
-      -> None'
-    parameters:
-    - description: Title of the card
-      id: title
-      type:
-      - str
-    - description: Array of Fact objects
-      id: facts
-      type:
-      - list[botframework.connector.models.Fact]
-    - description: Array of Receipt Items
-      id: items
-      type:
-      - list[botframework.connector.models.ReceiptItem]
-    - description: This action will be activated when user taps on the card
-      id: tap
-      type:
-      - botframework.connector.models.CardAction
-    - description: Total amount of money paid (or to be paid)
-      id: total
-      type:
-      - str
-    - description: Total amount of tax paid (or to be paid)
-      id: tax
-      type:
-      - str
-    - description: Total amount of VAT paid (or to be paid)
-      id: vat
-      type:
-      - str
-    - description: Set of actions applicable to the current card
-      id: buttons
-      type:
-      - list[botframework.connector.models.CardAction]
-  type: class
-  uid: botbuilder.schema.ReceiptCard
-references:
-- fullName: list[botframework.connector.models.Fact]
-  name: list[Fact]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.models.Fact
-    name: Fact
-    uid: botframework.connector.models.Fact
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.models.Fact]
-- fullName: list[botframework.connector.models.ReceiptItem]
-  name: list[ReceiptItem]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.models.ReceiptItem
-    name: ReceiptItem
-    uid: botframework.connector.models.ReceiptItem
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.models.ReceiptItem]
-- fullName: list[botframework.connector.models.CardAction]
-  name: list[CardAction]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.models.CardAction
-    name: CardAction
-    uid: botframework.connector.models.CardAction
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.models.CardAction]
+### YamlMime:PythonClass
+uid: botbuilder.schema.ReceiptCard
+name: ReceiptCard
+fullName: botbuilder.schema.ReceiptCard
+module: botbuilder.schema
+inheritances:
+- msrest.serialization.Model
+summary: A receipt card.
+constructor:
+  syntax: 'ReceiptCard(*, title: str = None, facts=None, items=None, tap=None, total:
+    str = None, tax: str = None, vat: str = None, buttons=None, **kwargs) -> None'
+  parameters:
+  - name: title
+    description: Title of the card
+    types:
+    - <xref:str>
+  - name: facts
+    description: Array of Fact objects
+    types:
+    - <xref:list>[<xref:botframework.connector.models.Fact>]
+  - name: items
+    description: Array of Receipt Items
+    types:
+    - <xref:list>[<xref:botframework.connector.models.ReceiptItem>]
+  - name: tap
+    description: This action will be activated when user taps on the card
+    types:
+    - <xref:botframework.connector.models.CardAction>
+  - name: total
+    description: Total amount of money paid (or to be paid)
+    types:
+    - <xref:str>
+  - name: tax
+    description: Total amount of tax paid (or to be paid)
+    types:
+    - <xref:str>
+  - name: vat
+    description: Total amount of VAT paid (or to be paid)
+    types:
+    - <xref:str>
+  - name: buttons
+    description: Set of actions applicable to the current card
+    types:
+    - <xref:list>[<xref:botframework.connector.models.CardAction>]

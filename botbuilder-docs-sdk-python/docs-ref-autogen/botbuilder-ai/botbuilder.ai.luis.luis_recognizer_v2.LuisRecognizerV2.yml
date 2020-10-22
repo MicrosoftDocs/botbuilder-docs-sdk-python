@@ -1,73 +1,22 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2.recognizer_internal
-  - botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2.luis_trace_label
-  - botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2.luis_trace_type
-  class: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2
-  fullName: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: abc.ABC
-    type: botbuilder.ai.luis.luis_recognizer_internal.LuisRecognizerInternal
-  langs:
-  - python
-  module: botbuilder.ai.luis.luis_recognizer_v2
-  name: LuisRecognizerV2
-  summary: ''
-  syntax:
-    content: 'LuisRecognizerV2(luis_application: botbuilder.ai.luis.luis_application.LuisApplication,
-      luis_recognizer_options_v2: botbuilder.ai.luis.luis_recognizer_options_v2.LuisRecognizerOptionsV2
-      = None)'
-  type: class
-  uid: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2
-- class: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2
-  fullName: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2.recognizer_internal
-  langs:
-  - python
-  module: botbuilder.ai.luis.luis_recognizer_v2
-  name: 'recognizer_internal(turn_context: botbuilder.core.turn_context.TurnContext)'
-  namewithoutparameters: recognizer_internal
-  syntax:
-    content: 'recognizer_internal(turn_context: botbuilder.core.turn_context.TurnContext)'
-  type: method
-  uid: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2.recognizer_internal
-- class: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2
-  fullName: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2.luis_trace_label
-  langs:
-  - python
-  module: botbuilder.ai.luis.luis_recognizer_v2
+### YamlMime:PythonClass
+uid: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2
+name: LuisRecognizerV2
+fullName: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2
+module: botbuilder.ai.luis.luis_recognizer_v2
+inheritances:
+- botbuilder.ai.luis.luis_recognizer_internal.LuisRecognizerInternal
+constructor:
+  syntax: 'LuisRecognizerV2(luis_application: botbuilder.ai.luis.luis_application.LuisApplication,
+    luis_recognizer_options_v2: botbuilder.ai.luis.luis_recognizer_options_v2.LuisRecognizerOptionsV2
+    = None)'
+methods:
+- uid: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2.recognizer_internal
+  name: recognizer_internal
+  signature: 'recognizer_internal(turn_context: botbuilder.core.turn_context.TurnContext)'
+attributes:
+- uid: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2.luis_trace_label
   name: luis_trace_label
-  syntax:
-    content: luis_trace_label = 'Luis Trace'
-  type: attribute
-  uid: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2.luis_trace_label
-- class: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2
-  fullName: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2.luis_trace_type
-  langs:
-  - python
-  module: botbuilder.ai.luis.luis_recognizer_v2
+  signature: luis_trace_label = 'Luis Trace'
+- uid: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2.luis_trace_type
   name: luis_trace_type
-  syntax:
-    content: luis_trace_type = 'https://www.luis.ai/schemas/trace'
-  type: attribute
-  uid: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2.luis_trace_type
-references:
-- fullName: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2.recognizer_internal
-  isExternal: false
-  name: 'recognizer_internal(turn_context: botbuilder.core.turn_context.TurnContext)'
-  parent: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2
-  uid: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2.recognizer_internal
-- fullName: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2.luis_trace_label
-  isExternal: false
-  name: luis_trace_label
-  parent: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2
-  uid: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2.luis_trace_label
-- fullName: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2.luis_trace_type
-  isExternal: false
-  name: luis_trace_type
-  parent: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2
-  uid: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2.luis_trace_type
+  signature: luis_trace_type = 'https://www.luis.ai/schemas/trace'

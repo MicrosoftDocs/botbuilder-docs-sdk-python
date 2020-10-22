@@ -1,48 +1,24 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.OAuthCard
-  fullName: botbuilder.schema.OAuthCard
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema
-  name: OAuthCard
-  summary: A card representing a request to perform a sign in via OAuth.
-  syntax:
-    content: 'OAuthCard(*, text: str = None, connection_name: str = None, buttons=None,
-      token_exchange_resource=None, **kwargs) -> None'
-    parameters:
-    - description: Text for signin request
-      id: text
-      type:
-      - str
-    - description: The name of the registered connection
-      id: connection_name
-      type:
-      - str
-    - description: Action to use to perform signin
-      id: buttons
-      type:
-      - list[botframework.connector.models.CardAction]
-  type: class
-  uid: botbuilder.schema.OAuthCard
-references:
-- fullName: list[botframework.connector.models.CardAction]
-  name: list[CardAction]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.models.CardAction
-    name: CardAction
-    uid: botframework.connector.models.CardAction
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.models.CardAction]
+### YamlMime:PythonClass
+uid: botbuilder.schema.OAuthCard
+name: OAuthCard
+fullName: botbuilder.schema.OAuthCard
+module: botbuilder.schema
+inheritances:
+- msrest.serialization.Model
+summary: A card representing a request to perform a sign in via OAuth.
+constructor:
+  syntax: 'OAuthCard(*, text: str = None, connection_name: str = None, buttons=None,
+    token_exchange_resource=None, **kwargs) -> None'
+  parameters:
+  - name: text
+    description: Text for signin request
+    types:
+    - <xref:str>
+  - name: connection_name
+    description: The name of the registered connection
+    types:
+    - <xref:str>
+  - name: buttons
+    description: Action to use to perform signin
+    types:
+    - <xref:list>[<xref:botframework.connector.models.CardAction>]

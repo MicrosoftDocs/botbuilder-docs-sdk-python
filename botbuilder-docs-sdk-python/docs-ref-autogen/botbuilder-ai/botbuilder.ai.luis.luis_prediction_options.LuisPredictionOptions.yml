@@ -1,23 +1,15 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.ai.luis.luis_prediction_options.LuisPredictionOptions
-  fullName: botbuilder.ai.luis.luis_prediction_options.LuisPredictionOptions
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.ai.luis.luis_prediction_options
-  name: LuisPredictionOptions
-  summary: Optional parameters for a LUIS prediction request.
-  syntax:
-    content: 'LuisPredictionOptions(bing_spell_check_subscription_key: str = None,
-      include_all_intents: bool = None, include_instance_data: bool = None, log: bool
-      = None, spell_check: bool = None, staging: bool = None, timeout: float = 100000,
-      timezone_offset: float = None, telemetry_client: botbuilder.core.bot_telemetry_client.BotTelemetryClient
-      = <botbuilder.core.null_telemetry_client.NullTelemetryClient object>, log_personal_information:
-      bool = False)'
-  type: class
-  uid: botbuilder.ai.luis.luis_prediction_options.LuisPredictionOptions
-references: []
+### YamlMime:PythonClass
+uid: botbuilder.ai.luis.luis_prediction_options.LuisPredictionOptions
+name: LuisPredictionOptions
+fullName: botbuilder.ai.luis.luis_prediction_options.LuisPredictionOptions
+module: botbuilder.ai.luis.luis_prediction_options
+inheritances:
+- builtins.object
+summary: Optional parameters for a LUIS prediction request.
+constructor:
+  syntax: 'LuisPredictionOptions(bing_spell_check_subscription_key: str = None, include_all_intents:
+    bool = None, include_instance_data: bool = None, log: bool = None, spell_check:
+    bool = None, staging: bool = None, timeout: float = 100000, timezone_offset: float
+    = None, telemetry_client: botbuilder.core.bot_telemetry_client.BotTelemetryClient
+    = <botbuilder.core.null_telemetry_client.NullTelemetryClient object>, log_personal_information:
+    bool = False)'

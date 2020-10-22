@@ -1,54 +1,14 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.schema.RoleTypes.bot
-  - botbuilder.schema.RoleTypes.user
-  class: botbuilder.schema.RoleTypes
-  fullName: botbuilder.schema.RoleTypes
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: builtins.str
-  - inheritance:
-    - type: builtins.object
-    type: enum.Enum
-  langs:
-  - python
-  module: botbuilder.schema
-  name: RoleTypes
-  summary: An enumeration.
-  syntax: {}
-  type: class
-  uid: botbuilder.schema.RoleTypes
-- class: botbuilder.schema.RoleTypes
-  fullName: botbuilder.schema.RoleTypes.bot
-  langs:
-  - python
-  module: botbuilder.schema
-  name: bot
-  syntax:
-    content: bot = 'bot'
-  type: attribute
+### YamlMime:PythonEnum
+uid: botbuilder.schema.RoleTypes
+name: RoleTypes
+fullName: botbuilder.schema.RoleTypes
+summary: An enumeration.
+module: botbuilder.schema
+inheritances:
+- builtins.str
+- enum.Enum
+fields:
+- name: bot
   uid: botbuilder.schema.RoleTypes.bot
-- class: botbuilder.schema.RoleTypes
-  fullName: botbuilder.schema.RoleTypes.user
-  langs:
-  - python
-  module: botbuilder.schema
-  name: user
-  syntax:
-    content: user = 'user'
-  type: attribute
-  uid: botbuilder.schema.RoleTypes.user
-references:
-- fullName: botbuilder.schema.RoleTypes.bot
-  isExternal: false
-  name: bot
-  parent: botbuilder.schema.RoleTypes
-  uid: botbuilder.schema.RoleTypes.bot
-- fullName: botbuilder.schema.RoleTypes.user
-  isExternal: false
-  name: user
-  parent: botbuilder.schema.RoleTypes
+- name: user
   uid: botbuilder.schema.RoleTypes.user

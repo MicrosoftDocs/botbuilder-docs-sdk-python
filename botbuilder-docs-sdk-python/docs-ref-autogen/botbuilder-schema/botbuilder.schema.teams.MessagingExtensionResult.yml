@@ -1,67 +1,42 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.MessagingExtensionResult
-  fullName: botbuilder.schema.teams.MessagingExtensionResult
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: msrest.serialization.Model
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: MessagingExtensionResult
-  summary: Messaging extension result.
-  syntax:
-    content: 'MessagingExtensionResult(*, attachment_layout=None, type=None, attachments=None,
-      suggested_actions=None, text: str = None, activity_preview=None, **kwargs) ->
-      None'
-    parameters:
-    - description: 'Hint for how to deal with multiple attachments.
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.MessagingExtensionResult
+name: MessagingExtensionResult
+fullName: botbuilder.schema.teams.MessagingExtensionResult
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: Messaging extension result.
+constructor:
+  syntax: 'MessagingExtensionResult(*, attachment_layout=None, type=None, attachments=None,
+    suggested_actions=None, text: str = None, activity_preview=None, **kwargs) ->
+    None'
+  parameters:
+  - name: attachment_layout
+    description: 'Hint for how to deal with multiple attachments.
 
-        Possible values include: ''list'', ''grid'''
-      id: attachment_layout
-      type:
-      - str
-    - description: 'The type of the result. Possible values include: ''result'',
+      Possible values include: ''list'', ''grid'''
+    types:
+    - <xref:str>
+  - name: type
+    description: 'The type of the result. Possible values include: ''result'',
 
-        ''auth'', ''config'', ''message'', ''botMessagePreview'''
-      id: type
-      type:
-      - str
-    - description: (Only when type is result) Attachments
-      id: attachments
-      type:
-      - list[botframework.connector.teams.models.MessagingExtensionAttachment]
-    - description: ''
-      id: suggested_actions
-      type:
-      - botframework.connector.teams.models.MessagingExtensionSuggestedAction
-    - description: (Only when type is message) Text
-      id: text
-      type:
-      - str
-    - description: '(Only when type is botMessagePreview) Message
+      ''auth'', ''config'', ''message'', ''botMessagePreview'''
+    types:
+    - <xref:str>
+  - name: attachments
+    description: (Only when type is result) Attachments
+    types:
+    - <xref:list>[<xref:botframework.connector.teams.models.MessagingExtensionAttachment>]
+  - name: suggested_actions
+    types:
+    - <xref:botframework.connector.teams.models.MessagingExtensionSuggestedAction>
+  - name: text
+    description: (Only when type is message) Text
+    types:
+    - <xref:str>
+  - name: activity_preview
+    description: '(Only when type is botMessagePreview) Message
 
-        activity to preview'
-      id: activity_preview
-      type:
-      - botframework.connector.teams.models.Activity
-  type: class
-  uid: botbuilder.schema.teams.MessagingExtensionResult
-references:
-- fullName: list[botframework.connector.teams.models.MessagingExtensionAttachment]
-  name: list[MessagingExtensionAttachment]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.connector.teams.models.MessagingExtensionAttachment
-    name: MessagingExtensionAttachment
-    uid: botframework.connector.teams.models.MessagingExtensionAttachment
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.connector.teams.models.MessagingExtensionAttachment]
+      activity to preview'
+    types:
+    - <xref:botframework.connector.teams.models.Activity>

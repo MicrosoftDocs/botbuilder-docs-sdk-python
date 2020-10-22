@@ -1,70 +1,20 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.dialogs.prompts.text_prompt.TextPrompt.on_prompt
-  - botbuilder.dialogs.prompts.text_prompt.TextPrompt.on_recognize
-  class: botbuilder.dialogs.prompts.text_prompt.TextPrompt
-  fullName: botbuilder.dialogs.prompts.text_prompt.TextPrompt
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - inheritance:
-        - type: builtins.object
-        type: abc.ABC
-      type: botbuilder.dialogs.dialog.Dialog
-    type: botbuilder.dialogs.prompts.prompt.Prompt
-  langs:
-  - python
-  module: botbuilder.dialogs.prompts.text_prompt
-  name: TextPrompt
-  summary: ''
-  syntax:
-    content: 'TextPrompt(dialog_id: str, validator: object = None)'
-  type: class
-  uid: botbuilder.dialogs.prompts.text_prompt.TextPrompt
-- class: botbuilder.dialogs.prompts.text_prompt.TextPrompt
-  fullName: botbuilder.dialogs.prompts.text_prompt.TextPrompt.on_prompt
-  langs:
-  - python
-  module: botbuilder.dialogs.prompts.text_prompt
-  name: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.prompts.text_prompt.TextPrompt
+name: TextPrompt
+fullName: botbuilder.dialogs.prompts.text_prompt.TextPrompt
+module: botbuilder.dialogs.prompts.text_prompt
+inheritances:
+- botbuilder.dialogs.prompts.prompt.Prompt
+constructor:
+  syntax: 'TextPrompt(dialog_id: str, validator: object = None)'
+methods:
+- uid: botbuilder.dialogs.prompts.text_prompt.TextPrompt.on_prompt
+  name: on_prompt
+  signature: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
     typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
     is_retry: bool)'
-  namewithoutparameters: on_prompt
-  syntax:
-    content: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
-      typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
-      is_retry: bool)'
-  type: method
-  uid: botbuilder.dialogs.prompts.text_prompt.TextPrompt.on_prompt
-- class: botbuilder.dialogs.prompts.text_prompt.TextPrompt
-  fullName: botbuilder.dialogs.prompts.text_prompt.TextPrompt.on_recognize
-  langs:
-  - python
-  module: botbuilder.dialogs.prompts.text_prompt
-  name: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext, state:
-    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
+- uid: botbuilder.dialogs.prompts.text_prompt.TextPrompt.on_recognize
+  name: on_recognize
+  signature: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
+    state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
     -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
-  namewithoutparameters: on_recognize
-  syntax:
-    content: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
-      state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
-      -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
-  type: method
-  uid: botbuilder.dialogs.prompts.text_prompt.TextPrompt.on_recognize
-references:
-- fullName: botbuilder.dialogs.prompts.text_prompt.TextPrompt.on_prompt
-  isExternal: false
-  name: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
-    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
-    is_retry: bool)'
-  parent: botbuilder.dialogs.prompts.text_prompt.TextPrompt
-  uid: botbuilder.dialogs.prompts.text_prompt.TextPrompt.on_prompt
-- fullName: botbuilder.dialogs.prompts.text_prompt.TextPrompt.on_recognize
-  isExternal: false
-  name: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext, state:
-    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
-    -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
-  parent: botbuilder.dialogs.prompts.text_prompt.TextPrompt
-  uid: botbuilder.dialogs.prompts.text_prompt.TextPrompt.on_recognize

@@ -1,39 +1,16 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.applicationinsights.flask.flask_telemetry_middleware.BotTelemetryMiddleware
-  - botbuilder.applicationinsights.flask.flask_telemetry_middleware.retrieve_flask_body
-  fullName: botbuilder.applicationinsights.flask.flask_telemetry_middleware
-  langs:
-  - python
-  module: botbuilder.applicationinsights.flask.flask_telemetry_middleware
-  name: flask_telemetry_middleware
-  summary: Flask Telemetry Bot Middleware.
-  type: module
-  uid: botbuilder.applicationinsights.flask.flask_telemetry_middleware
-- fullName: botbuilder.applicationinsights.flask.flask_telemetry_middleware.retrieve_flask_body
-  langs:
-  - python
-  module: botbuilder.applicationinsights.flask.flask_telemetry_middleware
-  name: retrieve_flask_body()
+### YamlMime:PythonModule
+uid: botbuilder.applicationinsights.flask.flask_telemetry_middleware
+name: flask_telemetry_middleware
+fullName: botbuilder.applicationinsights.flask.flask_telemetry_middleware
+summary: Flask Telemetry Bot Middleware.
+functions:
+- uid: botbuilder.applicationinsights.flask.flask_telemetry_middleware.retrieve_flask_body
+  name: retrieve_flask_body
   summary: 'Retrieve the POST body text from temporary cache.
 
     The POST body corresponds with the thread id and should resides in
 
     cache just for lifetime of request.'
-  syntax:
-    content: retrieve_flask_body()
-  type: function
-  uid: botbuilder.applicationinsights.flask.flask_telemetry_middleware.retrieve_flask_body
-references:
-- fullName: botbuilder.applicationinsights.flask.flask_telemetry_middleware.BotTelemetryMiddleware
-  isExternal: false
-  name: BotTelemetryMiddleware
-  parent: botbuilder.applicationinsights.flask.flask_telemetry_middleware
-  uid: botbuilder.applicationinsights.flask.flask_telemetry_middleware.BotTelemetryMiddleware
-- fullName: botbuilder.applicationinsights.flask.flask_telemetry_middleware.retrieve_flask_body
-  isExternal: false
-  name: retrieve_flask_body()
-  parent: botbuilder.applicationinsights.flask.flask_telemetry_middleware
-  uid: botbuilder.applicationinsights.flask.flask_telemetry_middleware.retrieve_flask_body
+  signature: retrieve_flask_body()
+classes:
+- botbuilder.applicationinsights.flask.flask_telemetry_middleware.BotTelemetryMiddleware

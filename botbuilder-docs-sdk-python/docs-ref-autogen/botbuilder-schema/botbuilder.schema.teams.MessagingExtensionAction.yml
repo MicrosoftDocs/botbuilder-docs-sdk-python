@@ -1,74 +1,47 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: botbuilder.schema.teams.MessagingExtensionAction
-  fullName: botbuilder.schema.teams.MessagingExtensionAction
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: msrest.serialization.Model
-    type: botbuilder.schema.teams._models_py3.TaskModuleRequest
-  langs:
-  - python
-  module: botbuilder.schema.teams
-  name: MessagingExtensionAction
-  summary: Messaging extension action.
-  syntax:
-    content: 'MessagingExtensionAction(*, data=None, context=None, command_id: str
-      = None, command_context=None, bot_message_preview_action=None, bot_activity_preview=None,
-      message_payload=None, **kwargs) -> None'
-    parameters:
-    - description: User input data. Free payload with key-value pairs.
-      id: data
-      type:
-      - object
-    - description: Current user context, i.e., the current theme
-      id: context
-      type:
-      - botframework.connector.teams.models.TaskModuleRequestContext
-    - description: Id of the command assigned by Bot
-      id: command_id
-      type:
-      - str
-    - description: 'The context from which the command originates.
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.MessagingExtensionAction
+name: MessagingExtensionAction
+fullName: botbuilder.schema.teams.MessagingExtensionAction
+module: botbuilder.schema.teams
+inheritances:
+- botbuilder.schema.teams._models_py3.TaskModuleRequest
+summary: Messaging extension action.
+constructor:
+  syntax: 'MessagingExtensionAction(*, data=None, context=None, command_id: str =
+    None, command_context=None, bot_message_preview_action=None, bot_activity_preview=None,
+    message_payload=None, **kwargs) -> None'
+  parameters:
+  - name: data
+    description: User input data. Free payload with key-value pairs.
+    types:
+    - <xref:object>
+  - name: context
+    description: Current user context, i.e., the current theme
+    types:
+    - <xref:botframework.connector.teams.models.TaskModuleRequestContext>
+  - name: command_id
+    description: Id of the command assigned by Bot
+    types:
+    - <xref:str>
+  - name: command_context
+    description: 'The context from which the command originates.
 
-        Possible values include: ''message'', ''compose'', ''commandbox'''
-      id: command_context
-      type:
-      - str
-    - description: 'Bot message preview action taken by
+      Possible values include: ''message'', ''compose'', ''commandbox'''
+    types:
+    - <xref:str>
+  - name: bot_message_preview_action
+    description: 'Bot message preview action taken by
 
-        user. Possible values include: ''edit'', ''send'''
-      id: bot_message_preview_action
-      type:
-      - str
-      - botframework.connector.teams.models.enum
-    - description: ''
-      id: bot_activity_preview
-      type:
-      - list[botframework.schema.models.Activity]
-    - description: 'Message content sent as part of the command
+      user. Possible values include: ''edit'', ''send'''
+    types:
+    - <xref:str>
+    - <xref:botframework.connector.teams.models.enum>
+  - name: bot_activity_preview
+    types:
+    - <xref:list>[<xref:botframework.schema.models.Activity>]
+  - name: message_payload
+    description: 'Message content sent as part of the command
 
-        request.'
-      id: message_payload
-      type:
-      - botframework.connector.teams.models.MessageActionsPayload
-  type: class
-  uid: botbuilder.schema.teams.MessagingExtensionAction
-references:
-- fullName: list[botframework.schema.models.Activity]
-  name: list[Activity]
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: '['
-    name: '['
-  - fullName: botframework.schema.models.Activity
-    name: Activity
-    uid: botframework.schema.models.Activity
-  - fullName: ']'
-    name: ']'
-  uid: list[botframework.schema.models.Activity]
+      request.'
+    types:
+    - <xref:botframework.connector.teams.models.MessageActionsPayload>

@@ -1,52 +1,18 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - botbuilder.dialogs.dialog_turn_result.DialogTurnResult.result
-  - botbuilder.dialogs.dialog_turn_result.DialogTurnResult.status
-  class: botbuilder.dialogs.dialog_turn_result.DialogTurnResult
-  fullName: botbuilder.dialogs.dialog_turn_result.DialogTurnResult
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: botbuilder.dialogs.dialog_turn_result
-  name: DialogTurnResult
-  summary: Result returned to the caller of one of the various stack manipulation
-    methods.
-  syntax:
-    content: 'DialogTurnResult(status: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus,
-      result: object = None)'
-  type: class
-  uid: botbuilder.dialogs.dialog_turn_result.DialogTurnResult
-- class: botbuilder.dialogs.dialog_turn_result.DialogTurnResult
-  fullName: botbuilder.dialogs.dialog_turn_result.DialogTurnResult.result
-  langs:
-  - python
-  module: botbuilder.dialogs.dialog_turn_result
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.dialog_turn_result.DialogTurnResult
+name: DialogTurnResult
+fullName: botbuilder.dialogs.dialog_turn_result.DialogTurnResult
+module: botbuilder.dialogs.dialog_turn_result
+inheritances:
+- builtins.object
+summary: Result returned to the caller of one of the various stack manipulation methods.
+constructor:
+  syntax: 'DialogTurnResult(status: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus,
+    result: object = None)'
+attributes:
+- uid: botbuilder.dialogs.dialog_turn_result.DialogTurnResult.result
   name: result
   summary: Final result returned by a dialog that just completed.
-  syntax: {}
-  type: attribute
-  uid: botbuilder.dialogs.dialog_turn_result.DialogTurnResult.result
-- class: botbuilder.dialogs.dialog_turn_result.DialogTurnResult
-  fullName: botbuilder.dialogs.dialog_turn_result.DialogTurnResult.status
-  langs:
-  - python
-  module: botbuilder.dialogs.dialog_turn_result
+- uid: botbuilder.dialogs.dialog_turn_result.DialogTurnResult.status
   name: status
   summary: Gets or sets the current status of the stack.
-  syntax: {}
-  type: attribute
-  uid: botbuilder.dialogs.dialog_turn_result.DialogTurnResult.status
-references:
-- fullName: botbuilder.dialogs.dialog_turn_result.DialogTurnResult.result
-  isExternal: false
-  name: result
-  parent: botbuilder.dialogs.dialog_turn_result.DialogTurnResult
-  uid: botbuilder.dialogs.dialog_turn_result.DialogTurnResult.result
-- fullName: botbuilder.dialogs.dialog_turn_result.DialogTurnResult.status
-  isExternal: false
-  name: status
-  parent: botbuilder.dialogs.dialog_turn_result.DialogTurnResult
-  uid: botbuilder.dialogs.dialog_turn_result.DialogTurnResult.status
