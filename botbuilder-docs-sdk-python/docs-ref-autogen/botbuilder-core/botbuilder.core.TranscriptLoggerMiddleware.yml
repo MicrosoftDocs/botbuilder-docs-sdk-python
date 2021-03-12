@@ -1,0 +1,39 @@
+### YamlMime:PythonClass
+uid: botbuilder.core.TranscriptLoggerMiddleware
+name: TranscriptLoggerMiddleware
+fullName: botbuilder.core.TranscriptLoggerMiddleware
+module: botbuilder.core
+inheritances:
+- botbuilder.core.middleware_set.Middleware
+summary: Logs incoming and outgoing activities to a TranscriptStore.
+constructor:
+  syntax: 'TranscriptLoggerMiddleware(logger: botbuilder.core.transcript_logger.TranscriptLogger)'
+methods:
+- uid: botbuilder.core.TranscriptLoggerMiddleware.log_activity
+  name: log_activity
+  summary: 'Logs the activity.
+
+    :param transcript: transcript.
+
+    :param activity: Activity to log.'
+  signature: 'log_activity(transcript: queue.Queue, activity: botbuilder.schema._models_py3.Activity)
+    -> None'
+  parameters:
+  - name: transcript
+    isRequired: true
+  - name: activity
+    isRequired: true
+- uid: botbuilder.core.TranscriptLoggerMiddleware.on_turn
+  name: on_turn
+  summary: 'Initialization for middleware.
+
+    :param context: Context for the current turn of conversation with the user.
+
+    :param logic: Function to call at the end of the middleware chain.'
+  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
+    typing.Awaitable])'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: logic
+    isRequired: true

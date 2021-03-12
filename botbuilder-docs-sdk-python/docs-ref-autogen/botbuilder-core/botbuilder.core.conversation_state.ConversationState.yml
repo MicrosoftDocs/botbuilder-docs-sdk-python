@@ -27,6 +27,9 @@ methods:
     account id is missing.'
   signature: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext)
     -> object'
+  parameters:
+  - name: turn_context
+    isRequired: true
   return:
     description: The storage key.
     types:

@@ -10,5 +10,6 @@ constructor:
   syntax: ConversationList(*, conversations=None, **kwargs) -> None
   parameters:
   - name: conversations
+    isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.teams.models.ChannelInfo>]

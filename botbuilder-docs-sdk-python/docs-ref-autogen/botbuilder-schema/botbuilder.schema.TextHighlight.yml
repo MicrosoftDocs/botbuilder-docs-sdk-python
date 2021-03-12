@@ -12,11 +12,13 @@ constructor:
   parameters:
   - name: text
     description: Defines the snippet of text to highlight
+    isRequired: true
     types:
     - <xref:str>
   - name: occurrence
     description: 'Occurrence of the text field within the referenced
 
       text, if multiple exist.'
+    isRequired: true
     types:
     - <xref:int>

@@ -43,6 +43,12 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: choices
+    isRequired: true
+  - name: style
+    isRequired: true
+  - name: options
+    defaultValue: None
   return:
     description: A task representing the asynchronous operation
   remarks: 'If the task is successful, the result contains the updated activity.
@@ -78,6 +84,7 @@ methods:
   - name: options
     description: Optional, additional information to pass to the prompt being started
     isRequired: true
+    defaultValue: None
     types:
     - <xref:Object>
   return:

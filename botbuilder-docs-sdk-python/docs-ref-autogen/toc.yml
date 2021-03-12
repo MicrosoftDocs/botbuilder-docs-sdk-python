@@ -221,6 +221,12 @@
           name: botbuilder.ai.qna.models.generate_answer_request_body
         - items:
           - name: Overview
+            uid: botbuilder.ai.qna.models.join_operator
+          - name: botbuilder.ai.qna.models.join_operator.JoinOperator
+            uid: botbuilder.ai.qna.models.join_operator.JoinOperator
+          name: botbuilder.ai.qna.models.join_operator
+        - items:
+          - name: Overview
             uid: botbuilder.ai.qna.models.metadata
           - name: botbuilder.ai.qna.models.metadata.Metadata
             uid: botbuilder.ai.qna.models.metadata.Metadata
@@ -279,6 +285,8 @@
           uid: botbuilder.ai.qna.models.FeedbackRecords
         - name: botbuilder.ai.qna.models.GenerateAnswerRequestBody
           uid: botbuilder.ai.qna.models.GenerateAnswerRequestBody
+        - name: botbuilder.ai.qna.models.JoinOperator
+          uid: botbuilder.ai.qna.models.JoinOperator
         - name: botbuilder.ai.qna.models.Metadata
           uid: botbuilder.ai.qna.models.Metadata
         - name: botbuilder.ai.qna.models.Prompt
@@ -682,6 +690,12 @@
       - name: botbuilder.core.channel_service_handler.ChannelServiceHandler
         uid: botbuilder.core.channel_service_handler.ChannelServiceHandler
       name: botbuilder.core.channel_service_handler
+    - items:
+      - name: Overview
+        uid: botbuilder.core.component_registration
+      - name: botbuilder.core.component_registration.ComponentRegistration
+        uid: botbuilder.core.component_registration.ComponentRegistration
+      name: botbuilder.core.component_registration
     - name: botbuilder.core.conversation_reference_extension
       uid: botbuilder.core.conversation_reference_extension
     - items:
@@ -1034,6 +1048,8 @@
       uid: botbuilder.core.CardFactory
     - name: botbuilder.core.ChannelServiceHandler
       uid: botbuilder.core.ChannelServiceHandler
+    - name: botbuilder.core.ComponentRegistration
+      uid: botbuilder.core.ComponentRegistration
     - name: botbuilder.core.ConversationState
       uid: botbuilder.core.ConversationState
     - name: botbuilder.core.ExtendedUserTokenProvider
@@ -1084,6 +1100,10 @@
       uid: botbuilder.core.TelemetryLoggerMiddleware
     - name: botbuilder.core.TopIntent
       uid: botbuilder.core.TopIntent
+    - name: botbuilder.core.TranscriptLogger
+      uid: botbuilder.core.TranscriptLogger
+    - name: botbuilder.core.TranscriptLoggerMiddleware
+      uid: botbuilder.core.TranscriptLoggerMiddleware
     - name: botbuilder.core.TurnContext
       uid: botbuilder.core.TurnContext
     - name: botbuilder.core.UserState
@@ -1237,10 +1257,22 @@
       name: botbuilder.dialogs.dialog
     - items:
       - name: Overview
+        uid: botbuilder.dialogs.dialog_container
+      - name: botbuilder.dialogs.dialog_container.DialogContainer
+        uid: botbuilder.dialogs.dialog_container.DialogContainer
+      name: botbuilder.dialogs.dialog_container
+    - items:
+      - name: Overview
         uid: botbuilder.dialogs.dialog_context
       - name: botbuilder.dialogs.dialog_context.DialogContext
         uid: botbuilder.dialogs.dialog_context.DialogContext
       name: botbuilder.dialogs.dialog_context
+    - items:
+      - name: Overview
+        uid: botbuilder.dialogs.dialog_event
+      - name: botbuilder.dialogs.dialog_event.DialogEvent
+        uid: botbuilder.dialogs.dialog_event.DialogEvent
+      name: botbuilder.dialogs.dialog_event
     - items:
       - name: Overview
         uid: botbuilder.dialogs.dialog_events
@@ -1259,6 +1291,18 @@
       - name: botbuilder.dialogs.dialog_instance.DialogInstance
         uid: botbuilder.dialogs.dialog_instance.DialogInstance
       name: botbuilder.dialogs.dialog_instance
+    - items:
+      - name: Overview
+        uid: botbuilder.dialogs.dialog_manager
+      - name: botbuilder.dialogs.dialog_manager.DialogManager
+        uid: botbuilder.dialogs.dialog_manager.DialogManager
+      name: botbuilder.dialogs.dialog_manager
+    - items:
+      - name: Overview
+        uid: botbuilder.dialogs.dialog_manager_result
+      - name: botbuilder.dialogs.dialog_manager_result.DialogManagerResult
+        uid: botbuilder.dialogs.dialog_manager_result.DialogManagerResult
+      name: botbuilder.dialogs.dialog_manager_result
     - items:
       - name: Overview
         uid: botbuilder.dialogs.dialog_reason
@@ -1291,10 +1335,228 @@
       name: botbuilder.dialogs.dialog_turn_status
     - items:
       - name: Overview
+        uid: botbuilder.dialogs.dialogs_component_registration
+      - name: botbuilder.dialogs.dialogs_component_registration.DialogsComponentRegistration
+        uid: botbuilder.dialogs.dialogs_component_registration.DialogsComponentRegistration
+      name: botbuilder.dialogs.dialogs_component_registration
+    - items:
+      - name: Overview
+        uid: botbuilder.dialogs.memory
+      - items:
+        - name: Overview
+          uid: botbuilder.dialogs.memory.component_memory_scopes_base
+        - name: botbuilder.dialogs.memory.component_memory_scopes_base.ComponentMemoryScopesBase
+          uid: botbuilder.dialogs.memory.component_memory_scopes_base.ComponentMemoryScopesBase
+        name: botbuilder.dialogs.memory.component_memory_scopes_base
+      - items:
+        - name: Overview
+          uid: botbuilder.dialogs.memory.component_path_resolvers_base
+        - name: botbuilder.dialogs.memory.component_path_resolvers_base.ComponentPathResolversBase
+          uid: botbuilder.dialogs.memory.component_path_resolvers_base.ComponentPathResolversBase
+        name: botbuilder.dialogs.memory.component_path_resolvers_base
+      - items:
+        - name: Overview
+          uid: botbuilder.dialogs.memory.dialog_path
+        - name: botbuilder.dialogs.memory.dialog_path.DialogPath
+          uid: botbuilder.dialogs.memory.dialog_path.DialogPath
+        name: botbuilder.dialogs.memory.dialog_path
+      - items:
+        - name: Overview
+          uid: botbuilder.dialogs.memory.dialog_state_manager
+        - name: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager
+          uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager
+        name: botbuilder.dialogs.memory.dialog_state_manager
+      - items:
+        - name: Overview
+          uid: botbuilder.dialogs.memory.dialog_state_manager_configuration
+        - name: botbuilder.dialogs.memory.dialog_state_manager_configuration.DialogStateManagerConfiguration
+          uid: botbuilder.dialogs.memory.dialog_state_manager_configuration.DialogStateManagerConfiguration
+        name: botbuilder.dialogs.memory.dialog_state_manager_configuration
+      - items:
+        - name: Overview
+          uid: botbuilder.dialogs.memory.path_resolver_base
+        - name: botbuilder.dialogs.memory.path_resolver_base.PathResolverBase
+          uid: botbuilder.dialogs.memory.path_resolver_base.PathResolverBase
+        name: botbuilder.dialogs.memory.path_resolver_base
+      - items:
+        - name: Overview
+          uid: botbuilder.dialogs.memory.path_resolvers
+        - items:
+          - name: Overview
+            uid: botbuilder.dialogs.memory.path_resolvers.alias_path_resolver
+          - name: botbuilder.dialogs.memory.path_resolvers.alias_path_resolver.AliasPathResolver
+            uid: botbuilder.dialogs.memory.path_resolvers.alias_path_resolver.AliasPathResolver
+          name: botbuilder.dialogs.memory.path_resolvers.alias_path_resolver
+        - items:
+          - name: Overview
+            uid: botbuilder.dialogs.memory.path_resolvers.at_at_path_resolver
+          - name: botbuilder.dialogs.memory.path_resolvers.at_at_path_resolver.AtAtPathResolver
+            uid: botbuilder.dialogs.memory.path_resolvers.at_at_path_resolver.AtAtPathResolver
+          name: botbuilder.dialogs.memory.path_resolvers.at_at_path_resolver
+        - items:
+          - name: Overview
+            uid: botbuilder.dialogs.memory.path_resolvers.at_path_resolver
+          - name: botbuilder.dialogs.memory.path_resolvers.at_path_resolver.AtPathResolver
+            uid: botbuilder.dialogs.memory.path_resolvers.at_path_resolver.AtPathResolver
+          name: botbuilder.dialogs.memory.path_resolvers.at_path_resolver
+        - items:
+          - name: Overview
+            uid: botbuilder.dialogs.memory.path_resolvers.dollar_path_resolver
+          - name: botbuilder.dialogs.memory.path_resolvers.dollar_path_resolver.DollarPathResolver
+            uid: botbuilder.dialogs.memory.path_resolvers.dollar_path_resolver.DollarPathResolver
+          name: botbuilder.dialogs.memory.path_resolvers.dollar_path_resolver
+        - items:
+          - name: Overview
+            uid: botbuilder.dialogs.memory.path_resolvers.hash_path_resolver
+          - name: botbuilder.dialogs.memory.path_resolvers.hash_path_resolver.HashPathResolver
+            uid: botbuilder.dialogs.memory.path_resolvers.hash_path_resolver.HashPathResolver
+          name: botbuilder.dialogs.memory.path_resolvers.hash_path_resolver
+        - items:
+          - name: Overview
+            uid: botbuilder.dialogs.memory.path_resolvers.percent_path_resolver
+          - name: botbuilder.dialogs.memory.path_resolvers.percent_path_resolver.PercentPathResolver
+            uid: botbuilder.dialogs.memory.path_resolvers.percent_path_resolver.PercentPathResolver
+          name: botbuilder.dialogs.memory.path_resolvers.percent_path_resolver
+        - name: botbuilder.dialogs.memory.path_resolvers.AliasPathResolver
+          uid: botbuilder.dialogs.memory.path_resolvers.AliasPathResolver
+        - name: botbuilder.dialogs.memory.path_resolvers.AtAtPathResolver
+          uid: botbuilder.dialogs.memory.path_resolvers.AtAtPathResolver
+        - name: botbuilder.dialogs.memory.path_resolvers.AtPathResolver
+          uid: botbuilder.dialogs.memory.path_resolvers.AtPathResolver
+        - name: botbuilder.dialogs.memory.path_resolvers.DollarPathResolver
+          uid: botbuilder.dialogs.memory.path_resolvers.DollarPathResolver
+        - name: botbuilder.dialogs.memory.path_resolvers.HashPathResolver
+          uid: botbuilder.dialogs.memory.path_resolvers.HashPathResolver
+        - name: botbuilder.dialogs.memory.path_resolvers.PercentPathResolver
+          uid: botbuilder.dialogs.memory.path_resolvers.PercentPathResolver
+        name: botbuilder.dialogs.memory.path_resolvers
+      - name: botbuilder.dialogs.memory.scope_path
+        uid: botbuilder.dialogs.memory.scope_path
+      - items:
+        - name: Overview
+          uid: botbuilder.dialogs.memory.scopes
+        - items:
+          - name: Overview
+            uid: botbuilder.dialogs.memory.scopes.bot_state_memory_scope
+          - name: botbuilder.dialogs.memory.scopes.bot_state_memory_scope.BotStateMemoryScope
+            uid: botbuilder.dialogs.memory.scopes.bot_state_memory_scope.BotStateMemoryScope
+          name: botbuilder.dialogs.memory.scopes.bot_state_memory_scope
+        - items:
+          - name: Overview
+            uid: botbuilder.dialogs.memory.scopes.class_memory_scope
+          - name: botbuilder.dialogs.memory.scopes.class_memory_scope.ClassMemoryScope
+            uid: botbuilder.dialogs.memory.scopes.class_memory_scope.ClassMemoryScope
+          name: botbuilder.dialogs.memory.scopes.class_memory_scope
+        - items:
+          - name: Overview
+            uid: botbuilder.dialogs.memory.scopes.conversation_memory_scope
+          - name: botbuilder.dialogs.memory.scopes.conversation_memory_scope.ConversationMemoryScope
+            uid: botbuilder.dialogs.memory.scopes.conversation_memory_scope.ConversationMemoryScope
+          name: botbuilder.dialogs.memory.scopes.conversation_memory_scope
+        - items:
+          - name: Overview
+            uid: botbuilder.dialogs.memory.scopes.dialog_class_memory_scope
+          - name: botbuilder.dialogs.memory.scopes.dialog_class_memory_scope.DialogClassMemoryScope
+            uid: botbuilder.dialogs.memory.scopes.dialog_class_memory_scope.DialogClassMemoryScope
+          name: botbuilder.dialogs.memory.scopes.dialog_class_memory_scope
+        - items:
+          - name: Overview
+            uid: botbuilder.dialogs.memory.scopes.dialog_context_memory_scope
+          - name: botbuilder.dialogs.memory.scopes.dialog_context_memory_scope.DialogContextMemoryScope
+            uid: botbuilder.dialogs.memory.scopes.dialog_context_memory_scope.DialogContextMemoryScope
+          name: botbuilder.dialogs.memory.scopes.dialog_context_memory_scope
+        - items:
+          - name: Overview
+            uid: botbuilder.dialogs.memory.scopes.dialog_memory_scope
+          - name: botbuilder.dialogs.memory.scopes.dialog_memory_scope.DialogMemoryScope
+            uid: botbuilder.dialogs.memory.scopes.dialog_memory_scope.DialogMemoryScope
+          name: botbuilder.dialogs.memory.scopes.dialog_memory_scope
+        - items:
+          - name: Overview
+            uid: botbuilder.dialogs.memory.scopes.memory_scope
+          - name: botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope
+            uid: botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope
+          name: botbuilder.dialogs.memory.scopes.memory_scope
+        - items:
+          - name: Overview
+            uid: botbuilder.dialogs.memory.scopes.settings_memory_scope
+          - name: botbuilder.dialogs.memory.scopes.settings_memory_scope.SettingsMemoryScope
+            uid: botbuilder.dialogs.memory.scopes.settings_memory_scope.SettingsMemoryScope
+          name: botbuilder.dialogs.memory.scopes.settings_memory_scope
+        - items:
+          - name: Overview
+            uid: botbuilder.dialogs.memory.scopes.this_memory_scope
+          - name: botbuilder.dialogs.memory.scopes.this_memory_scope.ThisMemoryScope
+            uid: botbuilder.dialogs.memory.scopes.this_memory_scope.ThisMemoryScope
+          name: botbuilder.dialogs.memory.scopes.this_memory_scope
+        - items:
+          - name: Overview
+            uid: botbuilder.dialogs.memory.scopes.turn_memory_scope
+          - name: botbuilder.dialogs.memory.scopes.turn_memory_scope.CaseInsensitiveDict
+            uid: botbuilder.dialogs.memory.scopes.turn_memory_scope.CaseInsensitiveDict
+          - name: botbuilder.dialogs.memory.scopes.turn_memory_scope.TurnMemoryScope
+            uid: botbuilder.dialogs.memory.scopes.turn_memory_scope.TurnMemoryScope
+          name: botbuilder.dialogs.memory.scopes.turn_memory_scope
+        - items:
+          - name: Overview
+            uid: botbuilder.dialogs.memory.scopes.user_memory_scope
+          - name: botbuilder.dialogs.memory.scopes.user_memory_scope.UserMemoryScope
+            uid: botbuilder.dialogs.memory.scopes.user_memory_scope.UserMemoryScope
+          name: botbuilder.dialogs.memory.scopes.user_memory_scope
+        - name: botbuilder.dialogs.memory.scopes.BotStateMemoryScope
+          uid: botbuilder.dialogs.memory.scopes.BotStateMemoryScope
+        - name: botbuilder.dialogs.memory.scopes.ClassMemoryScope
+          uid: botbuilder.dialogs.memory.scopes.ClassMemoryScope
+        - name: botbuilder.dialogs.memory.scopes.ConversationMemoryScope
+          uid: botbuilder.dialogs.memory.scopes.ConversationMemoryScope
+        - name: botbuilder.dialogs.memory.scopes.DialogClassMemoryScope
+          uid: botbuilder.dialogs.memory.scopes.DialogClassMemoryScope
+        - name: botbuilder.dialogs.memory.scopes.DialogContextMemoryScope
+          uid: botbuilder.dialogs.memory.scopes.DialogContextMemoryScope
+        - name: botbuilder.dialogs.memory.scopes.DialogMemoryScope
+          uid: botbuilder.dialogs.memory.scopes.DialogMemoryScope
+        - name: botbuilder.dialogs.memory.scopes.MemoryScope
+          uid: botbuilder.dialogs.memory.scopes.MemoryScope
+        - name: botbuilder.dialogs.memory.scopes.SettingsMemoryScope
+          uid: botbuilder.dialogs.memory.scopes.SettingsMemoryScope
+        - name: botbuilder.dialogs.memory.scopes.ThisMemoryScope
+          uid: botbuilder.dialogs.memory.scopes.ThisMemoryScope
+        - name: botbuilder.dialogs.memory.scopes.TurnMemoryScope
+          uid: botbuilder.dialogs.memory.scopes.TurnMemoryScope
+        - name: botbuilder.dialogs.memory.scopes.UserMemoryScope
+          uid: botbuilder.dialogs.memory.scopes.UserMemoryScope
+        name: botbuilder.dialogs.memory.scopes
+      - name: botbuilder.dialogs.memory.ComponentMemoryScopesBase
+        uid: botbuilder.dialogs.memory.ComponentMemoryScopesBase
+      - name: botbuilder.dialogs.memory.ComponentPathResolversBase
+        uid: botbuilder.dialogs.memory.ComponentPathResolversBase
+      - name: botbuilder.dialogs.memory.DialogPath
+        uid: botbuilder.dialogs.memory.DialogPath
+      - name: botbuilder.dialogs.memory.DialogStateManager
+        uid: botbuilder.dialogs.memory.DialogStateManager
+      - name: botbuilder.dialogs.memory.DialogStateManagerConfiguration
+        uid: botbuilder.dialogs.memory.DialogStateManagerConfiguration
+      - name: botbuilder.dialogs.memory.PathResolverBase
+        uid: botbuilder.dialogs.memory.PathResolverBase
+      name: botbuilder.dialogs.memory
+    - items:
+      - name: Overview
         uid: botbuilder.dialogs.object_path
       - name: botbuilder.dialogs.object_path.ObjectPath
         uid: botbuilder.dialogs.object_path.ObjectPath
       name: botbuilder.dialogs.object_path
+    - items:
+      - name: Overview
+        uid: botbuilder.dialogs.persisted_state
+      - name: botbuilder.dialogs.persisted_state.PersistedState
+        uid: botbuilder.dialogs.persisted_state.PersistedState
+      name: botbuilder.dialogs.persisted_state
+    - items:
+      - name: Overview
+        uid: botbuilder.dialogs.persisted_state_keys
+      - name: botbuilder.dialogs.persisted_state_keys.PersistedStateKeys
+        uid: botbuilder.dialogs.persisted_state_keys.PersistedStateKeys
+      name: botbuilder.dialogs.persisted_state_keys
     - items:
       - name: Overview
         uid: botbuilder.dialogs.prompts
@@ -1465,14 +1727,22 @@
       uid: botbuilder.dialogs.DateTimeResolution
     - name: botbuilder.dialogs.Dialog
       uid: botbuilder.dialogs.Dialog
+    - name: botbuilder.dialogs.DialogContainer
+      uid: botbuilder.dialogs.DialogContainer
     - name: botbuilder.dialogs.DialogContext
       uid: botbuilder.dialogs.DialogContext
+    - name: botbuilder.dialogs.DialogEvent
+      uid: botbuilder.dialogs.DialogEvent
     - name: botbuilder.dialogs.DialogEvents
       uid: botbuilder.dialogs.DialogEvents
     - name: botbuilder.dialogs.DialogExtensions
       uid: botbuilder.dialogs.DialogExtensions
     - name: botbuilder.dialogs.DialogInstance
       uid: botbuilder.dialogs.DialogInstance
+    - name: botbuilder.dialogs.DialogManager
+      uid: botbuilder.dialogs.DialogManager
+    - name: botbuilder.dialogs.DialogManagerResult
+      uid: botbuilder.dialogs.DialogManagerResult
     - name: botbuilder.dialogs.DialogReason
       uid: botbuilder.dialogs.DialogReason
     - name: botbuilder.dialogs.DialogSet
@@ -1483,6 +1753,8 @@
       uid: botbuilder.dialogs.DialogTurnResult
     - name: botbuilder.dialogs.DialogTurnStatus
       uid: botbuilder.dialogs.DialogTurnStatus
+    - name: botbuilder.dialogs.DialogsComponentRegistration
+      uid: botbuilder.dialogs.DialogsComponentRegistration
     - name: botbuilder.dialogs.NumberPrompt
       uid: botbuilder.dialogs.NumberPrompt
     - name: botbuilder.dialogs.OAuthPrompt
@@ -1491,6 +1763,10 @@
       uid: botbuilder.dialogs.OAuthPromptSettings
     - name: botbuilder.dialogs.ObjectPath
       uid: botbuilder.dialogs.ObjectPath
+    - name: botbuilder.dialogs.PersistedState
+      uid: botbuilder.dialogs.PersistedState
+    - name: botbuilder.dialogs.PersistedStateKeys
+      uid: botbuilder.dialogs.PersistedStateKeys
     - name: botbuilder.dialogs.Prompt
       uid: botbuilder.dialogs.Prompt
     - name: botbuilder.dialogs.PromptOptions
@@ -1607,6 +1883,8 @@
         name: botbuilder.schema.teams.additional_properties
       - name: botbuilder.schema.teams.AppBasedLinkQuery
         uid: botbuilder.schema.teams.AppBasedLinkQuery
+      - name: botbuilder.schema.teams.CacheInfo
+        uid: botbuilder.schema.teams.CacheInfo
       - name: botbuilder.schema.teams.ChannelInfo
         uid: botbuilder.schema.teams.ChannelInfo
       - name: botbuilder.schema.teams.ConversationList
@@ -1621,6 +1899,8 @@
         uid: botbuilder.schema.teams.FileInfoCard
       - name: botbuilder.schema.teams.FileUploadInfo
         uid: botbuilder.schema.teams.FileUploadInfo
+      - name: botbuilder.schema.teams.MeetingParticipantInfo
+        uid: botbuilder.schema.teams.MeetingParticipantInfo
       - name: botbuilder.schema.teams.MessageActionsPayload
         uid: botbuilder.schema.teams.MessageActionsPayload
       - name: botbuilder.schema.teams.MessageActionsPayloadApp
@@ -1693,6 +1973,28 @@
         uid: botbuilder.schema.teams.O365ConnectorCardViewAction
       - name: botbuilder.schema.teams.SigninStateVerificationQuery
         uid: botbuilder.schema.teams.SigninStateVerificationQuery
+      - name: botbuilder.schema.teams.TabContext
+        uid: botbuilder.schema.teams.TabContext
+      - name: botbuilder.schema.teams.TabEntityContext
+        uid: botbuilder.schema.teams.TabEntityContext
+      - name: botbuilder.schema.teams.TabRequest
+        uid: botbuilder.schema.teams.TabRequest
+      - name: botbuilder.schema.teams.TabResponse
+        uid: botbuilder.schema.teams.TabResponse
+      - name: botbuilder.schema.teams.TabResponseCard
+        uid: botbuilder.schema.teams.TabResponseCard
+      - name: botbuilder.schema.teams.TabResponseCards
+        uid: botbuilder.schema.teams.TabResponseCards
+      - name: botbuilder.schema.teams.TabResponsePayload
+        uid: botbuilder.schema.teams.TabResponsePayload
+      - name: botbuilder.schema.teams.TabSubmit
+        uid: botbuilder.schema.teams.TabSubmit
+      - name: botbuilder.schema.teams.TabSubmitData
+        uid: botbuilder.schema.teams.TabSubmitData
+      - name: botbuilder.schema.teams.TabSuggestedActions
+        uid: botbuilder.schema.teams.TabSuggestedActions
+      - name: botbuilder.schema.teams.TaskModuleCardResponse
+        uid: botbuilder.schema.teams.TaskModuleCardResponse
       - name: botbuilder.schema.teams.TaskModuleContinueResponse
         uid: botbuilder.schema.teams.TaskModuleContinueResponse
       - name: botbuilder.schema.teams.TaskModuleMessageResponse
@@ -1715,6 +2017,10 @@
         uid: botbuilder.schema.teams.TeamsChannelAccount
       - name: botbuilder.schema.teams.TeamsChannelData
         uid: botbuilder.schema.teams.TeamsChannelData
+      - name: botbuilder.schema.teams.TeamsMeetingInfo
+        uid: botbuilder.schema.teams.TeamsMeetingInfo
+      - name: botbuilder.schema.teams.TeamsMeetingParticipant
+        uid: botbuilder.schema.teams.TeamsMeetingParticipant
       - name: botbuilder.schema.teams.TeamsPagedMembersResult
         uid: botbuilder.schema.teams.TeamsPagedMembersResult
       - name: botbuilder.schema.teams.TenantInfo
@@ -1724,6 +2030,8 @@
       uid: botbuilder.schema.ActionTypes
     - name: botbuilder.schema.Activity
       uid: botbuilder.schema.Activity
+    - name: botbuilder.schema.ActivityEventNames
+      uid: botbuilder.schema.ActivityEventNames
     - name: botbuilder.schema.ActivityImportance
       uid: botbuilder.schema.ActivityImportance
     - name: botbuilder.schema.ActivityTypes

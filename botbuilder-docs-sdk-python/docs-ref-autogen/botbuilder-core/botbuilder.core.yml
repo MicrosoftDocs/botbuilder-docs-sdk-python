@@ -12,6 +12,8 @@ functions:
 
     :return:'
   signature: 'calculate_change_hash(item: botbuilder.core.storage.StoreItem) -> str'
+  parameters:
+  - name: item
 classes:
 - botbuilder.core.ActivityHandler
 - botbuilder.core.AdapterExtensions
@@ -28,6 +30,7 @@ classes:
 - botbuilder.core.BotTelemetryClient
 - botbuilder.core.CardFactory
 - botbuilder.core.ChannelServiceHandler
+- botbuilder.core.ComponentRegistration
 - botbuilder.core.ConversationState
 - botbuilder.core.ExtendedUserTokenProvider
 - botbuilder.core.HealthCheck
@@ -52,6 +55,8 @@ classes:
 - botbuilder.core.TelemetryLoggerConstants
 - botbuilder.core.TelemetryLoggerMiddleware
 - botbuilder.core.TopIntent
+- botbuilder.core.TranscriptLogger
+- botbuilder.core.TranscriptLoggerMiddleware
 - botbuilder.core.TurnContext
 - botbuilder.core.UserState
 - botbuilder.core.UserTokenProvider
@@ -76,6 +81,7 @@ modules:
 - botbuilder.core.bot_telemetry_client
 - botbuilder.core.card_factory
 - botbuilder.core.channel_service_handler
+- botbuilder.core.component_registration
 - botbuilder.core.conversation_reference_extension
 - botbuilder.core.conversation_state
 - botbuilder.core.healthcheck

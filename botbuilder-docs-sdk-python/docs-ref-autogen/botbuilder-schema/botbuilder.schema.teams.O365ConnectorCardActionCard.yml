@@ -14,20 +14,24 @@ constructor:
     description: 'Type of the action. Possible values include: ''ViewAction'',
 
       ''OpenUri'', ''HttpPOST'', ''ActionCard'''
+    isRequired: true
     types:
     - <xref:str>
   - name: name
     description: Name of the action that will be used as button title
+    isRequired: true
     types:
     - <xref:str>
   - name: id
     description: Action Id
+    isRequired: true
     types:
     - <xref:str>
   - name: inputs
     description: 'Set of inputs contained in this ActionCard whose each item
 
       can be in any subtype of O365ConnectorCardInputBase'
+    isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.teams.models.O365ConnectorCardInputBase>]
   - name: actions
@@ -36,5 +40,6 @@ constructor:
       item can be in any subtype of O365ConnectorCardActionBase except
 
       O365ConnectorCardActionCard, as nested ActionCard is forbidden.'
+    isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.teams.models.O365ConnectorCardActionBase>]

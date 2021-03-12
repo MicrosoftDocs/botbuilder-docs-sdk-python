@@ -11,9 +11,18 @@ methods:
 - uid: botbuilder.core.MemoryStorage.delete
   name: delete
   signature: 'delete(keys: typing.List[str])'
+  parameters:
+  - name: keys
+    isRequired: true
 - uid: botbuilder.core.MemoryStorage.read
   name: read
   signature: 'read(keys: typing.List[str])'
+  parameters:
+  - name: keys
+    isRequired: true
 - uid: botbuilder.core.MemoryStorage.write
   name: write
   signature: 'write(changes: typing.Dict[str, botbuilder.core.storage.StoreItem])'
+  parameters:
+  - name: changes
+    isRequired: true

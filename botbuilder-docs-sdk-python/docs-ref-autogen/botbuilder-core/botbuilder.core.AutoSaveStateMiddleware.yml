@@ -12,7 +12,15 @@ methods:
 - uid: botbuilder.core.AutoSaveStateMiddleware.add
   name: add
   signature: 'add(bot_state: botbuilder.core.bot_state.BotState) -> botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware'
+  parameters:
+  - name: bot_state
+    isRequired: true
 - uid: botbuilder.core.AutoSaveStateMiddleware.on_turn
   name: on_turn
   signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
     typing.Awaitable])'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: logic
+    isRequired: true

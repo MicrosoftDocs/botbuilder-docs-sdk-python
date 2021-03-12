@@ -17,3 +17,6 @@ methods:
     API call.'
   signature: 'get_low_score_variation(qna_search_results: typing.List[botbuilder.ai.qna.models.query_result.QueryResult])
     -> typing.List[botbuilder.ai.qna.models.query_result.QueryResult]'
+  parameters:
+  - name: qna_search_results
+    isRequired: true

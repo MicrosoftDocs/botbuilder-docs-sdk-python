@@ -12,13 +12,16 @@ constructor:
   parameters:
   - name: name
     description: Name of the attachment
+    isRequired: true
     types:
     - <xref:str>
   - name: type
     description: ContentType of the attachment
+    isRequired: true
     types:
     - <xref:str>
   - name: views
     description: attachment views
+    isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.models.AttachmentView>]

@@ -1,0 +1,18 @@
+### YamlMime:PythonClass
+uid: botbuilder.core.TranscriptLogger
+name: TranscriptLogger
+fullName: botbuilder.core.TranscriptLogger
+module: botbuilder.core
+inheritances:
+- abc.ABC
+summary: Transcript logger stores activities for conversations for recall.
+methods:
+- uid: botbuilder.core.TranscriptLogger.log_activity
+  name: log_activity
+  summary: 'Log an activity to the transcript.
+
+    :param activity:Activity being logged.'
+  signature: 'log_activity(activity: botbuilder.schema._models_py3.Activity) -> None'
+  parameters:
+  - name: activity
+    isRequired: true

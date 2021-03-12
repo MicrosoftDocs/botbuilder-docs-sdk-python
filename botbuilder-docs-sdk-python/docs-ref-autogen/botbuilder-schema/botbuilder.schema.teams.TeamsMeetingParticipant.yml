@@ -1,0 +1,30 @@
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.TeamsMeetingParticipant
+name: TeamsMeetingParticipant
+fullName: botbuilder.schema.teams.TeamsMeetingParticipant
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: Teams participant channel account detailing user Azure Active Directory and
+  meeting participant details.
+constructor:
+  syntax: 'TeamsMeetingParticipant(*, user: botbuilder.schema.teams._models_py3.TeamsChannelAccount
+    = None, meeting: botbuilder.schema.teams._models_py3.MeetingParticipantInfo =
+    None, conversation: botbuilder.schema._models_py3.ConversationAccount = None,
+    **kwargs) -> None'
+  parameters:
+  - name: user
+    description: Teams Channel Account information for this meeting participant
+    isRequired: true
+    types:
+    - <xref:TeamsChannelAccount>
+  - name: meeting
+    description: '>Information specific to this participant in the specific meeting.'
+    isRequired: true
+    types:
+    - <xref:MeetingParticipantInfo>
+  - name: conversation
+    description: Conversation Account for the meeting.
+    isRequired: true
+    types:
+    - <xref:ConversationAccount>

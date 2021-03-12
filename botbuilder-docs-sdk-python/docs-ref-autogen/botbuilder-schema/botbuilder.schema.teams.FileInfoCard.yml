@@ -12,13 +12,16 @@ constructor:
   parameters:
   - name: unique_id
     description: Unique Id for the file.
+    isRequired: true
     types:
     - <xref:str>
   - name: file_type
     description: Type of file.
+    isRequired: true
     types:
     - <xref:str>
   - name: etag
     description: ETag for the file.
+    isRequired: true
     types:
     - <xref:object>

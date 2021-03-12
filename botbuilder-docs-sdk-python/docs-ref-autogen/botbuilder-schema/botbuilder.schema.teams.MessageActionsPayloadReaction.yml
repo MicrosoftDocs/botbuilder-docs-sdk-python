@@ -14,15 +14,18 @@ constructor:
     description: 'The type of reaction given to the message. Possible
 
       values include: ''like'', ''heart'', ''laugh'', ''surprised'', ''sad'', ''angry'''
+    isRequired: true
     types:
     - <xref:str>
   - name: created_date_time
     description: 'Timestamp of when the user reacted to the
 
       message.'
+    isRequired: true
     types:
     - <xref:str>
   - name: user
     description: The user with which the reaction is associated.
+    isRequired: true
     types:
     - <xref:botframework.connector.teams.models.MessageActionsPayloadFrom>

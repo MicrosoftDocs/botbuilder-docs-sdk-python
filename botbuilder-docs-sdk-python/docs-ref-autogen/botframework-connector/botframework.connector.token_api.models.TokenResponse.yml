@@ -11,14 +11,18 @@ constructor:
     str = None, expiration: str = None, **kwargs) -> None'
   parameters:
   - name: channel_id
+    isRequired: true
     types:
     - <xref:str>
   - name: connection_name
+    isRequired: true
     types:
     - <xref:str>
   - name: token
+    isRequired: true
     types:
     - <xref:str>
   - name: expiration
+    isRequired: true
     types:
     - <xref:str>

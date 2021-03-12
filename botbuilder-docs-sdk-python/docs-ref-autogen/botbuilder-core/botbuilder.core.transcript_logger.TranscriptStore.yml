@@ -17,6 +17,11 @@ methods:
 
     :result: None'
   signature: 'delete_transcript(channel_id: str, conversation_id: str) -> None'
+  parameters:
+  - name: channel_id
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
 - uid: botbuilder.core.transcript_logger.TranscriptStore.get_transcript_activities
   name: get_transcript_activities
   summary: 'Get activities for a conversation (Aka the transcript).
@@ -33,6 +38,15 @@ methods:
   signature: 'get_transcript_activities(channel_id: str, conversation_id: str, continuation_token:
     str, start_date: <module ''datetime'' from ''c:\\\\hostedtoolcache\\\\windows\\\\python\\\\3.6.8\\\\x64\\\\lib\\\\datetime.py''>)
     -> botbuilder.core.transcript_logger.PagedResult'
+  parameters:
+  - name: channel_id
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
+  - name: continuation_token
+    isRequired: true
+  - name: start_date
+    isRequired: true
 - uid: botbuilder.core.transcript_logger.TranscriptStore.list_transcripts
   name: list_transcripts
   summary: 'List conversations in the channelId.
@@ -43,3 +57,8 @@ methods:
 
     :result: Page of results of TranscriptInfo objects'
   signature: 'list_transcripts(channel_id: str, continuation_token: str) -> botbuilder.core.transcript_logger.PagedResult'
+  parameters:
+  - name: channel_id
+    isRequired: true
+  - name: continuation_token
+    isRequired: true

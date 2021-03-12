@@ -11,9 +11,11 @@ constructor:
   parameters:
   - name: view_id
     description: Id of the attachment
+    isRequired: true
     types:
     - <xref:str>
   - name: size
     description: Size of the attachment
+    isRequired: true
     types:
     - <xref:int>

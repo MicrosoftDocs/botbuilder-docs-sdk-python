@@ -14,6 +14,9 @@ methods:
 - uid: botbuilder.core.RecognizerResult.convert
   name: convert
   signature: 'convert(result: object)'
+  parameters:
+  - name: result
+    isRequired: true
 - uid: botbuilder.core.RecognizerResult.get_top_scoring_intent
   name: get_top_scoring_intent
   summary: Return the top scoring intent and its score.

@@ -13,6 +13,17 @@ constructor:
     channel_provider: botframework.connector.auth.channel_provider.ChannelProvider
     = None, logger: object = None)'
 methods:
+- uid: botbuilder.core.skills.skill_handler.SkillHandler.on_delete_activity
+  name: on_delete_activity
+  signature: 'on_delete_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+    conversation_id: str, activity_id: str)'
+  parameters:
+  - name: claims_identity
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
+  - name: activity_id
+    isRequired: true
 - uid: botbuilder.core.skills.skill_handler.SkillHandler.on_reply_to_activity
   name: on_reply_to_activity
   summary: 'reply_to_activity() API for Skill.
@@ -23,11 +34,11 @@ methods:
 
     This is slightly different from SendToConversation().
 
-    * SendToConversation(conversationId) - will append the activity to the end
+    * SendToConversation(conversation_id) - will append the activity to the end
 
     of the conversation according to the timestamp or semantics of the channel.
 
-    * ReplyToActivity(conversationId,ActivityId) - adds the activity as a reply
+    * ReplyToActivity(conversation_id,ActivityId) - adds the activity as a reply
 
     to another activity, if the channel supports it. If the channel does not
 
@@ -49,6 +60,10 @@ methods:
 
     :type conversation_id: str
 
+    :param activity_id: Activity ID to send.
+
+    :type activity_id: str
+
     :param activity: Activity to send.
 
     :type activity: Activity
@@ -57,6 +72,15 @@ methods:
   signature: 'on_reply_to_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
     -> botbuilder.schema._models_py3.ResourceResponse'
+  parameters:
+  - name: claims_identity
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
+  - name: activity_id
+    isRequired: true
+  - name: activity
+    isRequired: true
 - uid: botbuilder.core.skills.skill_handler.SkillHandler.on_send_to_conversation
   name: on_send_to_conversation
   summary: 'send_to_conversation() API for Skill
@@ -67,11 +91,11 @@ methods:
 
     This is slightly different from ReplyToActivity().
 
-    * SendToConversation(conversationId) - will append the activity to the end
+    * SendToConversation(conversation_id) - will append the activity to the end
 
     of the conversation according to the timestamp or semantics of the channel.
 
-    * ReplyToActivity(conversationId,ActivityId) - adds the activity as a reply
+    * ReplyToActivity(conversation_id,ActivityId) - adds the activity as a reply
 
     to another activity, if the channel supports it. If the channel does not
 
@@ -100,6 +124,27 @@ methods:
     :return:'
   signature: 'on_send_to_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity: botbuilder.schema._models_py3.Activity) -> botbuilder.schema._models_py3.ResourceResponse'
+  parameters:
+  - name: claims_identity
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
+  - name: activity
+    isRequired: true
+- uid: botbuilder.core.skills.skill_handler.SkillHandler.on_update_activity
+  name: on_update_activity
+  signature: 'on_update_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+    conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
+    -> botbuilder.schema._models_py3.ResourceResponse'
+  parameters:
+  - name: claims_identity
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
+  - name: activity_id
+    isRequired: true
+  - name: activity
+    isRequired: true
 attributes:
 - uid: botbuilder.core.skills.skill_handler.SkillHandler.SKILL_CONVERSATION_REFERENCE_KEY
   name: SKILL_CONVERSATION_REFERENCE_KEY

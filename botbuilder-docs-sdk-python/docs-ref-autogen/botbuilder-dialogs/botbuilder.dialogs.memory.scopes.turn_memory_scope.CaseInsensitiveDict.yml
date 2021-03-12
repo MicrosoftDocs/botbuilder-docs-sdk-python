@@ -1,0 +1,34 @@
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.memory.scopes.turn_memory_scope.CaseInsensitiveDict
+name: CaseInsensitiveDict
+fullName: botbuilder.dialogs.memory.scopes.turn_memory_scope.CaseInsensitiveDict
+module: botbuilder.dialogs.memory.scopes.turn_memory_scope
+inheritances:
+- builtins.dict
+constructor:
+  syntax: CaseInsensitiveDict(*args, **kwargs)
+methods:
+- uid: botbuilder.dialogs.memory.scopes.turn_memory_scope.CaseInsensitiveDict.get
+  name: get
+  signature: get(key, *args, **kwargs)
+  parameters:
+  - name: key
+    isRequired: true
+- uid: botbuilder.dialogs.memory.scopes.turn_memory_scope.CaseInsensitiveDict.pop
+  name: pop
+  signature: pop(key, *args, **kwargs)
+  parameters:
+  - name: key
+    isRequired: true
+- uid: botbuilder.dialogs.memory.scopes.turn_memory_scope.CaseInsensitiveDict.setdefault
+  name: setdefault
+  signature: setdefault(key, *args, **kwargs)
+  parameters:
+  - name: key
+    isRequired: true
+- uid: botbuilder.dialogs.memory.scopes.turn_memory_scope.CaseInsensitiveDict.update
+  name: update
+  signature: update(e=None, **f)
+  parameters:
+  - name: e
+    defaultValue: None

@@ -33,6 +33,7 @@ methods:
   - name: options
     description: Optional, additional information to pass to the prompt being started.
     isRequired: true
+    defaultValue: None
     types:
     - <xref:botbuilder.dialogs.prompts.PromptOptions>
 - uid: botbuilder.dialogs.prompts.ActivityPrompt.continue_dialog
@@ -73,6 +74,7 @@ methods:
     description: 'If *true* the users response wasn''t recognized and the re-prompt
       should be sent.'
     isRequired: true
+    defaultValue: 'False'
     types:
     - <xref:bool>
 - uid: botbuilder.dialogs.prompts.ActivityPrompt.on_recognize
@@ -103,6 +105,11 @@ methods:
   name: reprompt_dialog
   signature: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
     botbuilder.dialogs.dialog_instance.DialogInstance)'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: instance
+    isRequired: true
 - uid: botbuilder.dialogs.prompts.ActivityPrompt.resume_dialog
   name: resume_dialog
   summary: 'Called when a prompt dialog resumes being the active dialog on the dialog
@@ -125,6 +132,7 @@ methods:
   - name: result
     description: Optional, value returned from the previous dialog on the stack.
     isRequired: true
+    defaultValue: None
     types:
     - <xref:object>
   remarks: 'Prompts are typically leaf nodes on the stack but the dev is free to push

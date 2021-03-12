@@ -28,6 +28,10 @@ methods:
     isRequired: true
     types:
     - <xref:CredentialProvider>
+  - name: channel_id
+    isRequired: true
+  - name: auth_configuration
+    defaultValue: None
   return:
     description: A valid ClaimsIdentity.
   exceptions:
@@ -61,6 +65,10 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: channel_id
+    isRequired: true
+  - name: auth_configuration
+    defaultValue: None
   return:
     description: A valid ClaimsIdentity.
   exceptions:
@@ -71,6 +79,11 @@ methods:
   signature: 'validate_identity(identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     credentials: botframework.connector.auth.credential_provider.CredentialProvider)
     -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  parameters:
+  - name: identity
+    isRequired: true
+  - name: credentials
+    isRequired: true
 attributes:
 - uid: botframework.connector.auth.channel_validation.ChannelValidation.SERVICE_URL_CLAIM
   name: SERVICE_URL_CLAIM

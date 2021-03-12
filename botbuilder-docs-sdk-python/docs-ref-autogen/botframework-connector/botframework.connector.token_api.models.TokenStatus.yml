@@ -12,21 +12,25 @@ constructor:
   parameters:
   - name: channel_id
     description: The channelId of the token status pertains to
+    isRequired: true
     types:
     - <xref:str>
   - name: connection_name
     description: 'The name of the connection the token status
 
       pertains to'
+    isRequired: true
     types:
     - <xref:str>
   - name: has_token
     description: True if a token is stored for this ConnectionName
+    isRequired: true
     types:
     - <xref:bool>
   - name: service_provider_display_name
     description: 'The display name of the service
 
       provider for which this Token belongs to'
+    isRequired: true
     types:
     - <xref:str>

@@ -13,12 +13,16 @@ constructor:
   parameters:
   - name: client
     description: Client for service requests.
+    isRequired: true
   - name: config
     description: Configuration of service client.
+    isRequired: true
   - name: serializer
     description: An object model serializer.
+    isRequired: true
   - name: deserializer
     description: An object model deserializer.
+    isRequired: true
 variables:
 - description: 'The API version to use for the request. Constant value: "v3".'
   name: api_version
@@ -266,6 +270,7 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
+    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -273,6 +278,7 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
+    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -373,11 +379,13 @@ methods:
   - name: page_size
     description: Suggested page size
     isRequired: true
+    defaultValue: None
     types:
     - <xref:int>
   - name: continuation_token
     description: Continuation Token
     isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
   - name: custom_headers
@@ -434,6 +442,7 @@ methods:
   - name: continuation_token
     description: skip or continuation token
     isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
   - name: custom_headers
@@ -502,16 +511,19 @@ methods:
     - <xref:str>
   - name: page_size
     description: Suggested page size
+    isRequired: true
     defaultValue: None
     types:
     - <xref:int>
   - name: continuation_token
     description: Continuation Token
+    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
+    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -519,6 +531,7 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
+    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -633,6 +646,7 @@ methods:
 
       Transcript schema.'
     isRequired: true
+    defaultValue: None
     types:
     - <xref:list>[<xref:botframework.connector.models.Activity>]
   - name: custom_headers

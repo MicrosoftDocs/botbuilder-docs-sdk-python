@@ -12,23 +12,28 @@ constructor:
   parameters:
   - name: name
     description: Name of the file.
+    isRequired: true
     types:
     - <xref:str>
   - name: upload_url
     description: 'URL to an upload session that the bot can use to set
 
       the file contents.'
+    isRequired: true
     types:
     - <xref:str>
   - name: content_url
     description: URL to file.
+    isRequired: true
     types:
     - <xref:str>
   - name: unique_id
     description: ID that uniquely identifies the file.
+    isRequired: true
     types:
     - <xref:str>
   - name: file_type
     description: Type of the file.
+    isRequired: true
     types:
     - <xref:str>

@@ -9,5 +9,14 @@ functions:
     attachments: typing.List[botbuilder.schema._models_py3.Attachment], text: str
     = None, speak: str = None, input_hint: str = <InputHints.accepting_input: ''acceptingInput''>)
     -> botbuilder.schema._models_py3.Activity'
+  parameters:
+  - name: attachment_layout
+  - name: attachments
+  - name: text
+    defaultValue: None
+  - name: speak
+    defaultValue: None
+  - name: input_hint
+    defaultValue: InputHints.accepting_input
 classes:
 - botbuilder.core.message_factory.MessageFactory
