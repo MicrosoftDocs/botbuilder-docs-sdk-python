@@ -19,8 +19,10 @@ methods:
   - name: identity
     description: The claims claimsIdentity.
     isRequired: true
+    defaultValue: None
   - name: audience
     description: The target audience for the connector.
     isRequired: true
+    defaultValue: None
   return:
     description: ConnectorClient instance

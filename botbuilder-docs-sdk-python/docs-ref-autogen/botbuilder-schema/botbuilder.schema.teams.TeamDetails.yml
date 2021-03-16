@@ -12,21 +12,26 @@ constructor:
   parameters:
   - name: id
     description: Unique identifier representing a team
+    isRequired: true
     types:
     - <xref:str>
   - name: name
     description: Name of team.
+    isRequired: true
     types:
     - <xref:str>
   - name: aad_group_id
     description: Azure Active Directory (AAD) Group Id for the team.
+    isRequired: true
     types:
     - <xref:str>
   - name: channel_count
     description: The count of channels in the team.
+    isRequired: true
     types:
     - <xref:int>
   - name: member_count
     description: The count of members in the team.
+    isRequired: true
     types:
     - <xref:int>

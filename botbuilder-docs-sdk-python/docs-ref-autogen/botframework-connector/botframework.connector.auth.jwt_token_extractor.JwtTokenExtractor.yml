@@ -13,13 +13,32 @@ methods:
   name: get_identity
   signature: 'get_identity(schema: str, parameter: str, channel_id: str, required_endorsements:
     typing.List[str] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  parameters:
+  - name: schema
+    isRequired: true
+  - name: parameter
+    isRequired: true
+  - name: channel_id
+    isRequired: true
+  - name: required_endorsements
+    defaultValue: None
 - uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_identity_from_auth_header
   name: get_identity_from_auth_header
   signature: 'get_identity_from_auth_header(auth_header: str, channel_id: str, required_endorsements:
     typing.List[str] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  parameters:
+  - name: auth_header
+    isRequired: true
+  - name: channel_id
+    isRequired: true
+  - name: required_endorsements
+    defaultValue: None
 - uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_open_id_metadata
   name: get_open_id_metadata
   signature: 'get_open_id_metadata(metadata_url: str)'
+  parameters:
+  - name: metadata_url
+    isRequired: true
 attributes:
 - uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.metadataCache
   name: metadataCache

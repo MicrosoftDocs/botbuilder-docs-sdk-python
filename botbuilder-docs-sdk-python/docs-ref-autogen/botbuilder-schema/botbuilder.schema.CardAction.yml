@@ -17,40 +17,48 @@ constructor:
       values include: ''openUrl'', ''imBack'', ''postBack'', ''playAudio'', ''playVideo'',
 
       ''showImage'', ''downloadFile'', ''signin'', ''call'', ''messageBack'''
+    isRequired: true
     types:
     - <xref:str>
     - <xref:botframework.connector.models.ActionTypes>
   - name: title
     description: Text description which appears on the button
+    isRequired: true
     types:
     - <xref:str>
   - name: image
     description: 'Image URL which will appear on the button, next to text
 
       label'
+    isRequired: true
     types:
     - <xref:str>
   - name: text
     description: Text for this action
+    isRequired: true
     types:
     - <xref:str>
   - name: display_text
     description: '(Optional) text to display in the chat feed if the
 
       button is clicked'
+    isRequired: true
     types:
     - <xref:str>
   - name: value
     description: 'Supplementary parameter for action. Content of this property
 
       depends on the ActionType'
+    isRequired: true
     types:
     - <xref:object>
   - name: channel_data
     description: Channel-specific data associated with this action
+    isRequired: true
     types:
     - <xref:object>
   - name: image_alt_text
     description: Alternate image text to be used in place of the *image* field
+    isRequired: true
     types:
     - <xref:str>

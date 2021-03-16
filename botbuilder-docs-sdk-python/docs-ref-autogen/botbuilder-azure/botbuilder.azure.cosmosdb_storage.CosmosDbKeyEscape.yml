@@ -28,6 +28,12 @@ methods:
 
       cosmosdb_partitioned_config.compatibility_mode to False.'
     isRequired: true
+    defaultValue: 'True'
 - uid: botbuilder.azure.cosmosdb_storage.CosmosDbKeyEscape.truncate_key
   name: truncate_key
   signature: 'truncate_key(key: str, compatibility_mode: bool = True) -> str'
+  parameters:
+  - name: key
+    isRequired: true
+  - name: compatibility_mode
+    defaultValue: 'True'

@@ -1,0 +1,22 @@
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.memory.scopes.TurnMemoryScope
+name: TurnMemoryScope
+fullName: botbuilder.dialogs.memory.scopes.TurnMemoryScope
+module: botbuilder.dialogs.memory.scopes
+inheritances:
+- botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope
+constructor:
+  syntax: TurnMemoryScope()
+methods:
+- uid: botbuilder.dialogs.memory.scopes.TurnMemoryScope.get_memory
+  name: get_memory
+  parameters:
+  - name: dialog_context
+    isRequired: true
+- uid: botbuilder.dialogs.memory.scopes.TurnMemoryScope.set_memory
+  name: set_memory
+  parameters:
+  - name: dialog_context
+    isRequired: true
+  - name: memory
+    isRequired: true

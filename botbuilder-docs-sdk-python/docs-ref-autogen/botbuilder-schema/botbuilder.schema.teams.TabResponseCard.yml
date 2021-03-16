@@ -1,0 +1,16 @@
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.TabResponseCard
+name: TabResponseCard
+fullName: botbuilder.schema.teams.TabResponseCard
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: Envelope for cards for a Tab request.
+constructor:
+  syntax: TabResponseCard(*, card=None, **kwargs) -> None
+  parameters:
+  - name: card
+    description: Gets or sets adaptive card for this card tab response.
+    isRequired: true
+    types:
+    - <xref:object>

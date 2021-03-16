@@ -14,9 +14,11 @@ constructor:
     description: 'Type of the content. Possible values include: ''html'',
 
       ''text'''
+    isRequired: true
     types:
     - <xref:str>
   - name: content
     description: The content of the body.
+    isRequired: true
     types:
     - <xref:str>

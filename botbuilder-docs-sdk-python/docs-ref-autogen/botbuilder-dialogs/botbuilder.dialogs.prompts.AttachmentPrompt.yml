@@ -18,8 +18,24 @@ methods:
   signature: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
     typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
     is_retry: bool)'
+  parameters:
+  - name: turn_context
+    isRequired: true
+  - name: state
+    isRequired: true
+  - name: options
+    isRequired: true
+  - name: is_retry
+    isRequired: true
 - uid: botbuilder.dialogs.prompts.AttachmentPrompt.on_recognize
   name: on_recognize
   signature: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
     state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
     -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
+  parameters:
+  - name: turn_context
+    isRequired: true
+  - name: state
+    isRequired: true
+  - name: options
+    isRequired: true

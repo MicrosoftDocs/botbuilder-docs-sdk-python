@@ -12,13 +12,16 @@ constructor:
   parameters:
   - name: id
     description: Unique identifier representing a team
+    isRequired: true
     types:
     - <xref:str>
   - name: name
     description: Name of team.
+    isRequired: true
     types:
     - <xref:str>
   - name: name
     description: Azure AD Teams group ID.
+    isRequired: true
     types:
     - <xref:str>

@@ -11,8 +11,10 @@ constructor:
     **kwargs) -> None'
   parameters:
   - name: sign_in_link
+    isRequired: true
     types:
     - <xref:str>
   - name: token_exchange_resource
+    isRequired: true
     types:
     - <xref:botframework.tokenapi.models.TokenExchangeResource>

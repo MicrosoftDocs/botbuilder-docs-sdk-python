@@ -12,33 +12,41 @@ constructor:
   parameters:
   - name: title
     description: Title of the card
+    isRequired: true
     types:
     - <xref:str>
   - name: facts
     description: Array of Fact objects
+    isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.models.Fact>]
   - name: items
     description: Array of Receipt Items
+    isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.models.ReceiptItem>]
   - name: tap
     description: This action will be activated when user taps on the card
+    isRequired: true
     types:
     - <xref:botframework.connector.models.CardAction>
   - name: total
     description: Total amount of money paid (or to be paid)
+    isRequired: true
     types:
     - <xref:str>
   - name: tax
     description: Total amount of tax paid (or to be paid)
+    isRequired: true
     types:
     - <xref:str>
   - name: vat
     description: Total amount of VAT paid (or to be paid)
+    isRequired: true
     types:
     - <xref:str>
   - name: buttons
     description: Set of actions applicable to the current card
+    isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.models.CardAction>]

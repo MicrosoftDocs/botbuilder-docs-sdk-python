@@ -11,11 +11,13 @@ constructor:
   parameters:
   - name: provider
     description: The provider to request a user token from
+    isRequired: true
     types:
     - <xref:str>
   - name: settings
     description: 'A collection of settings for the specific provider for
 
       this request'
+    isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:object>]

@@ -27,6 +27,7 @@ methods:
   - name: options
     description: Optional, additional information to pass to the prompt being started
     isRequired: true
+    defaultValue: None
     types:
     - <xref:botbuilder.dialogs.PromptOptions>
   return:
@@ -80,6 +81,7 @@ methods:
   - name: code
     description: (Optional) Optional user entered code to validate.
     isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
   return:

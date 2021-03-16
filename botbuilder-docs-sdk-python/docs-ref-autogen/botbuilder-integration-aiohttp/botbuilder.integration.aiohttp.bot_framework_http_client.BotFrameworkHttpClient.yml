@@ -5,9 +5,10 @@ fullName: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkH
 module: botbuilder.integration.aiohttp.bot_framework_http_client
 inheritances:
 - botbuilder.core.skills.bot_framework_client.BotFrameworkClient
-summary: 'A skill host adapter implements API to forward activity to a skill and
+summary: 'A skill host adapter that implements the API to forward activity to a skill
+  and
 
-  implements routing ChannelAPI calls from the Skill up through the bot/adapter.'
+  implements routing ChannelAPI calls from the skill up through the bot/adapter.'
 constructor:
   syntax: 'BotFrameworkHttpClient(credential_provider: botframework.connector.auth.credential_provider.CredentialProvider,
     channel_provider: botframework.connector.auth.channel_provider.ChannelProvider
@@ -18,6 +19,19 @@ methods:
   signature: 'post_activity(from_bot_id: str, to_bot_id: str, to_url: str, service_url:
     str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity) ->
     botbuilder.core.invoke_response.InvokeResponse'
+  parameters:
+  - name: from_bot_id
+    isRequired: true
+  - name: to_bot_id
+    isRequired: true
+  - name: to_url
+    isRequired: true
+  - name: service_url
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
+  - name: activity
+    isRequired: true
 - uid: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.post_buffered_activity
   name: post_buffered_activity
   summary: 'Helper method to return a list of activities when an Activity is being
@@ -26,6 +40,19 @@ methods:
   signature: 'post_buffered_activity(from_bot_id: str, to_bot_id: str, to_url: str,
     service_url: str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity)
     -> [<class ''botbuilder.schema._models_py3.Activity''>]'
+  parameters:
+  - name: from_bot_id
+    isRequired: true
+  - name: to_bot_id
+    isRequired: true
+  - name: to_url
+    isRequired: true
+  - name: service_url
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
+  - name: activity
+    isRequired: true
 attributes:
 - uid: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.INVOKE_ACTIVITY_NAME
   name: INVOKE_ACTIVITY_NAME

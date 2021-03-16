@@ -21,33 +21,73 @@ methods:
   name: begin_dialog
   signature: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parameters:
+  - name: dialog_context
+    isRequired: true
+  - name: options
+    defaultValue: None
 - uid: botbuilder.dialogs.WaterfallDialog.continue_dialog
   name: continue_dialog
   signature: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext
     = None, reason: botbuilder.dialogs.dialog_reason.DialogReason = None, result:
     object = NotImplementedError()) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parameters:
+  - name: dialog_context
+    defaultValue: None
+  - name: reason
+    defaultValue: None
+  - name: result
 - uid: botbuilder.dialogs.WaterfallDialog.end_dialog
   name: end_dialog
   signature: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
     botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)
     -> None'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: instance
+    isRequired: true
+  - name: reason
+    isRequired: true
 - uid: botbuilder.dialogs.WaterfallDialog.get_step_name
   name: get_step_name
   summary: Give the waterfall step a unique name
   signature: 'get_step_name(index: int) -> str'
+  parameters:
+  - name: index
+    isRequired: true
 - uid: botbuilder.dialogs.WaterfallDialog.on_step
   name: on_step
   signature: 'on_step(step_context: botbuilder.dialogs.waterfall_step_context.WaterfallStepContext)
     -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parameters:
+  - name: step_context
+    isRequired: true
 - uid: botbuilder.dialogs.WaterfallDialog.resume_dialog
   name: resume_dialog
   signature: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)'
+  parameters:
+  - name: dialog_context
+    isRequired: true
+  - name: reason
+    isRequired: true
+  - name: result
+    isRequired: true
 - uid: botbuilder.dialogs.WaterfallDialog.run_step
   name: run_step
   signature: 'run_step(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     index: int, reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)
     -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parameters:
+  - name: dialog_context
+    isRequired: true
+  - name: index
+    isRequired: true
+  - name: reason
+    isRequired: true
+  - name: result
+    isRequired: true
 attributes:
 - uid: botbuilder.dialogs.WaterfallDialog.PersistedInstanceId
   name: PersistedInstanceId

@@ -1,0 +1,16 @@
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.TaskModuleCardResponse
+name: TaskModuleCardResponse
+fullName: botbuilder.schema.teams.TaskModuleCardResponse
+module: botbuilder.schema.teams
+inheritances:
+- botbuilder.schema.teams._models_py3.TaskModuleResponseBase
+summary: Tab Response to 'task/submit' from a tab.
+constructor:
+  syntax: TaskModuleCardResponse(*, value=None, **kwargs) -> None
+  parameters:
+  - name: value
+    description: The JSON for the Adaptive cards to appear in the tab.
+    isRequired: true
+    types:
+    - <xref:botframework.connector.teams.models.TabResponse>

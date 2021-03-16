@@ -12,35 +12,42 @@ constructor:
   parameters:
   - name: title
     description: Title of the Card
+    isRequired: true
     types:
     - <xref:str>
   - name: subtitle
     description: 'Subtitle appears just below Title field, differs from
 
       Title in font styling only'
+    isRequired: true
     types:
     - <xref:str>
   - name: text
     description: 'Text field appears just below subtitle, differs from Subtitle
 
       in font styling only'
+    isRequired: true
     types:
     - <xref:str>
   - name: image
     description: Image
+    isRequired: true
     types:
     - <xref:botframework.connector.models.CardImage>
   - name: price
     description: Amount with currency
+    isRequired: true
     types:
     - <xref:str>
   - name: quantity
     description: Number of items of given kind
+    isRequired: true
     types:
     - <xref:str>
   - name: tap
     description: 'This action will be activated when user taps on the Item
 
       bubble.'
+    isRequired: true
     types:
     - <xref:botframework.connector.models.CardAction>

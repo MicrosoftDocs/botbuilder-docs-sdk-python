@@ -14,9 +14,11 @@ constructor:
     description: 'Target operating system. Possible values include: ''default'',
 
       ''iOS'', ''android'', ''windows'''
+    isRequired: true
     types:
     - <xref:str>
   - name: uri
     description: Target url
+    isRequired: true
     types:
     - <xref:str>

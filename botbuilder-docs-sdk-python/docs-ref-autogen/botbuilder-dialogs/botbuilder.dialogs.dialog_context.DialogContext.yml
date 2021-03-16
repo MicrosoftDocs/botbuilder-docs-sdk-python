@@ -6,8 +6,8 @@ module: botbuilder.dialogs.dialog_context
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'DialogContext(dialog_set: object, turn_context: botbuilder.core.turn_context.TurnContext,
-    state: botbuilder.dialogs.dialog_state.DialogState)'
+  syntax: 'DialogContext(dialog_set: botbuilder.dialogs.dialog_set.DialogSet, turn_context:
+    botbuilder.core.turn_context.TurnContext, state: botbuilder.dialogs.dialog_state.DialogState)'
 methods:
 - uid: botbuilder.dialogs.dialog_context.DialogContext.begin_dialog
   name: begin_dialog
@@ -18,14 +18,31 @@ methods:
     :param options: (Optional) additional argument(s) to pass to the dialog being
     started.'
   signature: 'begin_dialog(dialog_id: str, options: object = None)'
+  parameters:
+  - name: dialog_id
+    isRequired: true
+  - name: options
+    defaultValue: None
 - uid: botbuilder.dialogs.dialog_context.DialogContext.cancel_all_dialogs
   name: cancel_all_dialogs
   summary: 'Deletes any existing dialog stack thus cancelling all dialogs on the stack.
 
-    :param result: (Optional) result to pass to the parent dialogs.
+    :param cancel_parents:
+
+    :param event_name:
+
+    :param event_value:
 
     :return:'
-  signature: cancel_all_dialogs()
+  signature: 'cancel_all_dialogs(cancel_parents: bool = None, event_name: str = None,
+    event_value: object = None)'
+  parameters:
+  - name: cancel_parents
+    defaultValue: None
+  - name: event_name
+    defaultValue: None
+  - name: event_value
+    defaultValue: None
 - uid: botbuilder.dialogs.dialog_context.DialogContext.continue_dialog
   name: continue_dialog
   summary: 'Continues execution of the active dialog, if there is one, by passing
@@ -38,9 +55,43 @@ methods:
 
     :return:'
   signature: continue_dialog()
+- uid: botbuilder.dialogs.dialog_context.DialogContext.emit_event
+  name: emit_event
+  summary: 'Searches for a dialog with a given ID.
+
+    Emits a named event for the current dialog, or someone who started it, to handle.
+
+    :param name: Name of the event to raise.
+
+    :param value: Value to send along with the event.
+
+    :param bubble: Flag to control whether the event should be bubbled to its parent
+    if not handled locally.
+
+    Defaults to a value of *True*.
+
+    :param from_leaf: Whether the event is emitted from a leaf node.
+
+    :param cancellationToken: The cancellation token.
+
+    :return: True if the event was handled.'
+  signature: 'emit_event(name: str, value: object = None, bubble: bool = True, from_leaf:
+    bool = False) -> bool'
+  parameters:
+  - name: name
+    isRequired: true
+  - name: value
+    defaultValue: None
+  - name: bubble
+    defaultValue: 'True'
+  - name: from_leaf
+    defaultValue: 'False'
 - uid: botbuilder.dialogs.dialog_context.DialogContext.end_active_dialog
   name: end_active_dialog
   signature: 'end_active_dialog(reason: botbuilder.dialogs.dialog_reason.DialogReason)'
+  parameters:
+  - name: reason
+    isRequired: true
 - uid: botbuilder.dialogs.dialog_context.DialogContext.end_dialog
   name: end_dialog
   summary: 'Ends a dialog by popping it off the stack and returns an optional result
@@ -66,6 +117,9 @@ methods:
 
     :return:'
   signature: 'end_dialog(result: object = None)'
+  parameters:
+  - name: result
+    defaultValue: None
 - uid: botbuilder.dialogs.dialog_context.DialogContext.find_dialog
   name: find_dialog
   summary: 'If the dialog cannot be found within the current *DialogSet*, the parent
@@ -77,6 +131,23 @@ methods:
 
     :return:'
   signature: 'find_dialog(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
+  parameters:
+  - name: dialog_id
+    isRequired: true
+- uid: botbuilder.dialogs.dialog_context.DialogContext.find_dialog_sync
+  name: find_dialog_sync
+  summary: 'If the dialog cannot be found within the current *DialogSet*, the parent
+    *DialogContext*
+
+    will be searched if there is one.
+
+    :param dialog_id: ID of the dialog to search for.
+
+    :return:'
+  signature: 'find_dialog_sync(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
+  parameters:
+  - name: dialog_id
+    isRequired: true
 - uid: botbuilder.dialogs.dialog_context.DialogContext.prompt
   name: prompt
   summary: 'Helper function to simplify formatting the options for calling a prompt
@@ -91,6 +162,11 @@ methods:
 
     :return:'
   signature: 'prompt(dialog_id: str, options) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parameters:
+  - name: dialog_id
+    isRequired: true
+  - name: options
+    isRequired: true
 - uid: botbuilder.dialogs.dialog_context.DialogContext.replace_dialog
   name: replace_dialog
   summary: 'Ends the active dialog and starts a new dialog in its place. This is particularly
@@ -104,6 +180,11 @@ methods:
 
     :return:'
   signature: 'replace_dialog(dialog_id: str, options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parameters:
+  - name: dialog_id
+    isRequired: true
+  - name: options
+    defaultValue: None
 - uid: botbuilder.dialogs.dialog_context.DialogContext.reprompt_dialog
   name: reprompt_dialog
   summary: 'Calls reprompt on the currently active dialog, if there is one. Used with
@@ -114,6 +195,9 @@ methods:
 attributes:
 - uid: botbuilder.dialogs.dialog_context.DialogContext.active_dialog
   name: active_dialog
+  summary: Return the container link in the database.
+- uid: botbuilder.dialogs.dialog_context.DialogContext.child
+  name: child
   summary: Return the container link in the database.
 - uid: botbuilder.dialogs.dialog_context.DialogContext.context
   name: context

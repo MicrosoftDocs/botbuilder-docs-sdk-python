@@ -7,11 +7,13 @@ inheritances:
 - msrest.serialization.Model
 summary: Specifies if a notification is to be sent for the mentions.
 constructor:
-  syntax: 'NotificationInfo(*, alert: bool = None, **kwargs) -> None'
+  syntax: 'NotificationInfo(*, alert: bool = None, alert_in_meeting: bool = None,
+    external_resource_url: str = None, **kwargs) -> None'
   parameters:
   - name: alert
     description: 'true if notification is to be sent to the user, false
 
       otherwise.'
+    isRequired: true
     types:
     - <xref:bool>

@@ -15,10 +15,32 @@ methods:
   name: add_exchangeable_token
   signature: 'add_exchangeable_token(connection_name: str, channel_id: str, user_id:
     str, exchangeable_item: str, token: str)'
+  parameters:
+  - name: connection_name
+    isRequired: true
+  - name: channel_id
+    isRequired: true
+  - name: user_id
+    isRequired: true
+  - name: exchangeable_item
+    isRequired: true
+  - name: token
+    isRequired: true
 - uid: botbuilder.core.adapters.TestAdapter.add_user_token
   name: add_user_token
   signature: 'add_user_token(connection_name: str, channel_id: str, user_id: str,
     token: str, magic_code: str = None)'
+  parameters:
+  - name: connection_name
+    isRequired: true
+  - name: channel_id
+    isRequired: true
+  - name: user_id
+    isRequired: true
+  - name: token
+    isRequired: true
+  - name: magic_code
+    defaultValue: None
 - uid: botbuilder.core.adapters.TestAdapter.continue_conversation
   name: continue_conversation
   summary: 'The *TestAdapter* just calls parent implementation.
@@ -35,13 +57,43 @@ methods:
   signature: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
     callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
     = None, audience: str = None)'
+  parameters:
+  - name: reference
+    isRequired: true
+  - name: callback
+    isRequired: true
+  - name: bot_id
+    defaultValue: None
+  - name: claims_identity
+    defaultValue: None
+  - name: audience
+    defaultValue: None
 - uid: botbuilder.core.adapters.TestAdapter.create_conversation
   name: create_conversation
   signature: 'create_conversation(channel_id: str, callback: typing.Callable)'
+  parameters:
+  - name: channel_id
+    isRequired: true
+  - name: callback
+    isRequired: true
 - uid: botbuilder.core.adapters.TestAdapter.create_conversation_reference
   name: create_conversation_reference
   signature: 'create_conversation_reference(name: str, user: str = ''User1'', bot:
     str = ''Bot'') -> botbuilder.schema._models_py3.ConversationReference'
+  parameters:
+  - name: name
+    isRequired: true
+  - name: user
+    defaultValue: User1
+  - name: bot
+    defaultValue: Bot
+- uid: botbuilder.core.adapters.TestAdapter.create_turn_context
+  name: create_turn_context
+  signature: 'create_turn_context(activity: botbuilder.schema._models_py3.Activity)
+    -> botbuilder.core.turn_context.TurnContext'
+  parameters:
+  - name: activity
+    isRequired: true
 - uid: botbuilder.core.adapters.TestAdapter.delete_activity
   name: delete_activity
   summary: 'INTERNAL: called by the logic under test to delete an existing activity.
@@ -56,23 +108,59 @@ methods:
 
     :return:'
   signature: 'delete_activity(context, reference: botbuilder.schema._models_py3.ConversationReference)'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: reference
+    isRequired: true
 - uid: botbuilder.core.adapters.TestAdapter.exchange_token
   name: exchange_token
   signature: 'exchange_token(turn_context: botbuilder.core.turn_context.TurnContext,
     connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
     -> botbuilder.schema._models_py3.TokenResponse'
+  parameters:
+  - name: turn_context
+    isRequired: true
+  - name: connection_name
+    isRequired: true
+  - name: user_id
+    isRequired: true
+  - name: exchange_request
+    isRequired: true
 - uid: botbuilder.core.adapters.TestAdapter.exchange_token_from_credentials
   name: exchange_token_from_credentials
   signature: 'exchange_token_from_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
     oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
     connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
     -> botbuilder.schema._models_py3.TokenResponse'
+  parameters:
+  - name: turn_context
+    isRequired: true
+  - name: oauth_app_credentials
+    isRequired: true
+  - name: connection_name
+    isRequired: true
+  - name: user_id
+    isRequired: true
+  - name: exchange_request
+    isRequired: true
 - uid: botbuilder.core.adapters.TestAdapter.get_aad_tokens
   name: get_aad_tokens
   signature: 'get_aad_tokens(context: botbuilder.core.turn_context.TurnContext, connection_name:
     str, resource_urls: typing.List[str], user_id: str = None, oauth_app_credentials:
     botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
     botbuilder.schema._models_py3.TokenResponse]'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: connection_name
+    isRequired: true
+  - name: resource_urls
+    isRequired: true
+  - name: user_id
+    defaultValue: None
+  - name: oauth_app_credentials
+    defaultValue: None
 - uid: botbuilder.core.adapters.TestAdapter.get_next_activity
   name: get_next_activity
   signature: get_next_activity() -> botbuilder.schema._models_py3.Activity
@@ -81,30 +169,84 @@ methods:
   signature: 'get_oauth_sign_in_link(context: botbuilder.core.turn_context.TurnContext,
     connection_name: str, final_redirect: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None) -> str'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: connection_name
+    isRequired: true
+  - name: final_redirect
+    defaultValue: None
+  - name: oauth_app_credentials
+    defaultValue: None
 - uid: botbuilder.core.adapters.TestAdapter.get_sign_in_resource_from_user
   name: get_sign_in_resource_from_user
   signature: 'get_sign_in_resource_from_user(turn_context: botbuilder.core.turn_context.TurnContext,
     connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+  parameters:
+  - name: turn_context
+    isRequired: true
+  - name: connection_name
+    isRequired: true
+  - name: user_id
+    isRequired: true
+  - name: final_redirect
+    defaultValue: None
 - uid: botbuilder.core.adapters.TestAdapter.get_sign_in_resource_from_user_and_credentials
   name: get_sign_in_resource_from_user_and_credentials
   signature: 'get_sign_in_resource_from_user_and_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
     oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
     connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+  parameters:
+  - name: turn_context
+    isRequired: true
+  - name: oauth_app_credentials
+    isRequired: true
+  - name: connection_name
+    isRequired: true
+  - name: user_id
+    isRequired: true
+  - name: final_redirect
+    defaultValue: None
 - uid: botbuilder.core.adapters.TestAdapter.get_token_status
   name: get_token_status
   signature: 'get_token_status(context: botbuilder.core.turn_context.TurnContext,
     connection_name: str = None, user_id: str = None, include_filter: str = None,
     oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None) -> typing.Dict[str, botbuilder.schema._models_py3.TokenResponse]'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: connection_name
+    defaultValue: None
+  - name: user_id
+    defaultValue: None
+  - name: include_filter
+    defaultValue: None
+  - name: oauth_app_credentials
+    defaultValue: None
 - uid: botbuilder.core.adapters.TestAdapter.get_user_token
   name: get_user_token
   signature: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, connection_name:
     str, magic_code: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None) -> botbuilder.schema._models_py3.TokenResponse'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: connection_name
+    isRequired: true
+  - name: magic_code
+    defaultValue: None
+  - name: oauth_app_credentials
+    defaultValue: None
 - uid: botbuilder.core.adapters.TestAdapter.process_activity
   name: process_activity
   signature: 'process_activity(activity: botbuilder.schema._models_py3.Activity, logic:
     typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable])'
+  parameters:
+  - name: activity
+    isRequired: true
+  - name: logic
+    isRequired: true
 - uid: botbuilder.core.adapters.TestAdapter.receive_activity
   name: receive_activity
   summary: 'INTERNAL: called by a *TestFlow* instance to simulate a user sending a
@@ -130,6 +272,9 @@ methods:
 
     :return: A new instance of the TestFlow object'
   signature: send(user_says) -> object
+  parameters:
+  - name: user_says
+    isRequired: true
 - uid: botbuilder.core.adapters.TestAdapter.send_activities
   name: send_activities
   summary: 'INTERNAL: called by the logic under test to send a set of activities.
@@ -144,11 +289,25 @@ methods:
     :return:'
   signature: 'send_activities(context, activities: typing.List[botbuilder.schema._models_py3.Activity])
     -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: activities
+    isRequired: true
 - uid: botbuilder.core.adapters.TestAdapter.sign_out_user
   name: sign_out_user
   signature: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
     str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None)'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: connection_name
+    defaultValue: None
+  - name: user_id
+    defaultValue: None
+  - name: oauth_app_credentials
+    defaultValue: None
 - uid: botbuilder.core.adapters.TestAdapter.test
   name: test
   summary: 'Send something to the bot and expects the bot to return with a given reply.
@@ -169,6 +328,15 @@ methods:
 
     :return:'
   signature: test(user_says, expected, description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
+  parameters:
+  - name: user_says
+    isRequired: true
+  - name: expected
+    isRequired: true
+  - name: description
+    defaultValue: None
+  - name: timeout
+    defaultValue: None
 - uid: botbuilder.core.adapters.TestAdapter.tests
   name: tests
   summary: 'Support multiple test cases without having to manually call *test()* repeatedly.
@@ -185,6 +353,15 @@ methods:
   name: throw_on_exchange_request
   signature: 'throw_on_exchange_request(connection_name: str, channel_id: str, user_id:
     str, exchangeable_item: str)'
+  parameters:
+  - name: connection_name
+    isRequired: true
+  - name: channel_id
+    isRequired: true
+  - name: user_id
+    isRequired: true
+  - name: exchangeable_item
+    isRequired: true
 - uid: botbuilder.core.adapters.TestAdapter.update_activity
   name: update_activity
   summary: 'INTERNAL: called by the logic under test to replace an existing activity.
@@ -199,3 +376,8 @@ methods:
 
     :return:'
   signature: 'update_activity(context, activity: botbuilder.schema._models_py3.Activity)'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: activity
+    isRequired: true

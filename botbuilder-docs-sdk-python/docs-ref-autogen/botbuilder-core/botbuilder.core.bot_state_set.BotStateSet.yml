@@ -11,11 +11,24 @@ methods:
 - uid: botbuilder.core.bot_state_set.BotStateSet.add
   name: add
   signature: 'add(bot_state: botbuilder.core.bot_state.BotState) -> botbuilder.core.bot_state_set.BotStateSet'
+  parameters:
+  - name: bot_state
+    isRequired: true
 - uid: botbuilder.core.bot_state_set.BotStateSet.load_all
   name: load_all
   signature: 'load_all(turn_context: botbuilder.core.turn_context.TurnContext, force:
     bool = False)'
+  parameters:
+  - name: turn_context
+    isRequired: true
+  - name: force
+    defaultValue: 'False'
 - uid: botbuilder.core.bot_state_set.BotStateSet.save_all_changes
   name: save_all_changes
   signature: 'save_all_changes(turn_context: botbuilder.core.turn_context.TurnContext,
     force: bool = False)'
+  parameters:
+  - name: turn_context
+    isRequired: true
+  - name: force
+    defaultValue: 'False'

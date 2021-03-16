@@ -17,79 +17,96 @@ constructor:
   parameters:
   - name: id
     description: Unique id of the message.
+    isRequired: true
     types:
     - <xref:str>
   - name: reply_to_id
     description: Id of the parent/root message of the thread.
+    isRequired: true
     types:
     - <xref:str>
   - name: message_type
     description: 'Type of message - automatically set to message.
 
       Possible values include: ''message'''
+    isRequired: true
     types:
     - <xref:str>
   - name: created_date_time
     description: Timestamp of when the message was created.
+    isRequired: true
     types:
     - <xref:str>
   - name: last_modified_date_time
     description: 'Timestamp of when the message was edited
 
       or updated.'
+    isRequired: true
     types:
     - <xref:str>
   - name: deleted
     description: Indicates whether a message has been soft deleted.
+    isRequired: true
     types:
     - <xref:bool>
   - name: subject
     description: Subject line of the message.
+    isRequired: true
     types:
     - <xref:str>
   - name: summary
     description: 'Summary text of the message that could be used for
 
       notifications.'
+    isRequired: true
     types:
     - <xref:str>
   - name: importance
     description: 'The importance of the message. Possible values include:
 
       ''normal'', ''high'', ''urgent'''
+    isRequired: true
     types:
     - <xref:str>
   - name: locale
     description: Locale of the message set by the client.
+    isRequired: true
     types:
     - <xref:str>
   - name: link_to_message
     description: Link back to the message.
+    isRequired: true
     types:
     - <xref:str>
   - name: from_property
     description: Sender of the message.
+    isRequired: true
     types:
     - <xref:botframework.connector.teams.models.MessageActionsPayloadFrom>
   - name: body
     description: Plaintext/HTML representation of the content of the message.
+    isRequired: true
     types:
     - <xref:botframework.connector.teams.models.MessageActionsPayloadBody>
   - name: attachment_layout
     description: 'How the attachment(s) are displayed in the
 
       message.'
+    isRequired: true
     types:
     - <xref:str>
   - name: attachments
     description: Attachments in the message - card, image, file, etc.
+    isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.teams.models.MessageActionsPayloadAttachment>]
   - name: mentions
     description: List of entities mentioned in the message.
+    isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.teams.models.MessageActionsPayloadMention>]
   - name: reactions
     description: Reactions for the message.
+    isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.teams.models.MessageActionsPayloadReaction>]

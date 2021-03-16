@@ -1,0 +1,333 @@
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager
+name: DialogStateManager
+fullName: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager
+module: botbuilder.dialogs.memory.dialog_state_manager
+inheritances:
+- builtins.object
+methods:
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.add
+  name: add
+  summary: 'Adds an element to the dialog state manager.
+
+    :param key: Key of the element to add.
+
+    :param value: Value of the element to add.
+
+    :return:'
+  signature: 'add(key: str, value: object)'
+  parameters:
+  - name: key
+    isRequired: true
+  - name: value
+    isRequired: true
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.any_path_changed
+  name: any_path_changed
+  summary: 'Check to see if any path has changed since watermark.
+
+    :param counter: Time counter to compare to.
+
+    :param paths: Paths from track_paths to check.
+
+    :return: True if any path has changed since counter.'
+  signature: 'any_path_changed(counter: int, paths: typing.Iterable[str]) -> bool'
+  parameters:
+  - name: counter
+    isRequired: true
+  - name: paths
+    isRequired: true
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.clear
+  name: clear
+  summary: 'Removes all items from the dialog state manager.
+
+    :param key: Key of the element to remove.
+
+    :return:'
+  signature: 'clear(key: str)'
+  parameters:
+  - name: key
+    isRequired: true
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.contains
+  name: contains
+  summary: 'Determines whether the dialog state manager contains a specific value
+    (should use __contains__).
+
+    :param item: The tuple of the item to locate.
+
+    :return bool: True if item is found in the dialog state manager otherwise, False'
+  signature: 'contains(item: typing.Tuple[str, object]) -> bool'
+  parameters:
+  - name: item
+    isRequired: true
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.contains_key
+  name: contains_key
+  summary: 'Determines whether the dialog state manager contains an element with the
+    specified key.
+
+    :param key: The key to locate in the dialog state manager.
+
+    :return: True if the dialog state manager contains an element with the key otherwise,
+    False.'
+  signature: 'contains_key(key: str) -> bool'
+  parameters:
+  - name: key
+    isRequired: true
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.copy_to
+  name: copy_to
+  summary: "Copies the elements of the dialog state manager to an array starting at\
+    \ a particular index.\n:param array: The one-dimensional array that is the destination\
+    \ of the elements copied\n\n\n   from the dialog state manager. The array must\
+    \ have zero-based indexing."
+  signature: 'copy_to(array: typing.List[typing.Tuple[str, object]], array_index:
+    int)'
+  parameters:
+  - name: array_index
+    isRequired: true
+  - name: array_index
+    isRequired: true
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.delete_scopes_memory_async
+  name: delete_scopes_memory_async
+  summary: 'Delete the memory for a scope.
+
+    :param name: name of the scope.
+
+    :return:'
+  signature: 'delete_scopes_memory_async(name: str)'
+  parameters:
+  - name: name
+    isRequired: true
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.get_bool_value
+  name: get_bool_value
+  summary: 'Get a bool value from memory using a path expression.
+
+    :param path_expression: Path expression to use.
+
+    :param default_value: Default value if there is none (OPTIONAL).
+
+    :return:'
+  signature: 'get_bool_value(path_expression: str, default_value: bool = False) ->
+    bool'
+  parameters:
+  - name: path_expression
+    isRequired: true
+  - name: default_value
+    defaultValue: 'False'
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.get_enumerator
+  name: get_enumerator
+  summary: 'Returns an enumerator that iterates through the collection.
+
+    :return: An enumerator that can be used to iterate through the collection.'
+  signature: get_enumerator() -> typing.Iterator[typing.Tuple[str, object]]
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.get_int_value
+  name: get_int_value
+  summary: 'Get an int value from memory using a path expression.
+
+    :param path_expression: Path expression to use.
+
+    :param default_value: Default value if there is none (OPTIONAL).
+
+    :return:'
+  signature: 'get_int_value(path_expression: str, default_value: int = 0) -> int'
+  parameters:
+  - name: path_expression
+    isRequired: true
+  - name: default_value
+    defaultValue: '0'
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.get_memory_scope
+  name: get_memory_scope
+  summary: 'Get MemoryScope by name.
+
+    :param name:
+
+    :return: A memory scope.'
+  signature: 'get_memory_scope(name: str) -> botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope'
+  parameters:
+  - name: name
+    isRequired: true
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.get_memory_snapshot
+  name: get_memory_snapshot
+  summary: 'Gets all memoryscopes suitable for logging.
+
+    :return: object which represents all memory scopes.'
+  signature: get_memory_snapshot() -> typing.Dict[str, object]
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.get_string_value
+  name: get_string_value
+  summary: 'Get a string value from memory using a path expression.
+
+    :param path_expression: Path expression to use.
+
+    :param default_value: Default value if there is none (OPTIONAL).
+
+    :return:'
+  signature: 'get_string_value(path_expression: str, default_value: str = '''') ->
+    str'
+  parameters:
+  - name: path_expression
+    isRequired: true
+  - name: default_value
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.get_value
+  name: get_value
+  summary: 'Get the value from memory using path expression (NOTE: This always returns
+    clone of value).
+
+    :param class_type: The value type to return.
+
+    :param path_expression: Path expression to use.
+
+    :param default_value: Function to give default value if there is none (OPTIONAL).
+
+    :return: Result or null if the path is not valid.'
+  signature: 'get_value(class_type: typing.Type, path_expression: str, default_value:
+    typing.Callable[T] = None) -> T'
+  parameters:
+  - name: class_type
+    isRequired: true
+  - name: path_expression
+    isRequired: true
+  - name: default_value
+    defaultValue: None
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.load_all_scopes
+  name: load_all_scopes
+  summary: 'Load all of the scopes.
+
+    :return:'
+  signature: load_all_scopes()
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.remove
+  name: remove
+  summary: 'Removes the element with the specified key from the dialog state manager.
+
+    :param key: Key of the element to remove.
+
+    :return:'
+  signature: 'remove(key: str)'
+  parameters:
+  - name: key
+    isRequired: true
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.remove_item
+  name: remove_item
+  summary: 'Determines whether the dialog state manager contains a specific value
+    (should use __contains__).
+
+    :param item: The tuple of the item to locate.
+
+    :return bool: True if item is found in the dialog state manager otherwise, False'
+  signature: 'remove_item(item: typing.Tuple[str, object]) -> bool'
+  parameters:
+  - name: item
+    isRequired: true
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.remove_value
+  name: remove_value
+  summary: 'Set memory to value.
+
+    :param path: Path to memory.
+
+    :param value: Object to set.
+
+    :return:'
+  signature: 'remove_value(path: str)'
+  parameters:
+  - name: path
+    isRequired: true
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.resolve_memory_scope
+  name: resolve_memory_scope
+  summary: 'Will find the MemoryScope for and return the remaining path.
+
+    :param path:
+
+    :return: The memory scope and remaining subpath in scope.'
+  signature: 'resolve_memory_scope(path: str) -> typing.Tuple[botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope,
+    str]'
+  parameters:
+  - name: path
+    isRequired: true
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.save_all_changes
+  name: save_all_changes
+  summary: 'Save all changes for all scopes.
+
+    :return:'
+  signature: save_all_changes()
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.set_value
+  name: set_value
+  summary: 'Set memory to value.
+
+    :param path: Path to memory.
+
+    :param value: Object to set.
+
+    :return:'
+  signature: 'set_value(path: str, value: object)'
+  parameters:
+  - name: path
+    isRequired: true
+  - name: value
+    isRequired: true
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.track_paths
+  name: track_paths
+  summary: 'Track when specific paths are changed.
+
+    :param paths: Paths to track.
+
+    :return: Normalized paths to pass to any_path_changed.'
+  signature: 'track_paths(paths: typing.Iterable[str]) -> typing.List[str]'
+  parameters:
+  - name: paths
+    isRequired: true
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.transform_path
+  name: transform_path
+  summary: 'Transform the path using the registered PathTransformers.
+
+    :param path: Path to transform.
+
+    :return: The transformed path.'
+  signature: 'transform_path(path: str) -> str'
+  parameters:
+  - name: path
+    isRequired: true
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.try_get_value
+  name: try_get_value
+  summary: 'Get the value from memory using path expression (NOTE: This always returns
+    clone of value).
+
+    :param class_type: The value type to return.
+
+    :param path: Path expression to use.
+
+    :return: True if found, false if not and the value.'
+  signature: 'try_get_value(path: str, class_type: typing.Type = <class ''object''>)
+    -> typing.Tuple[bool, object]'
+  parameters:
+  - name: path
+    isRequired: true
+  - name: class_type
+    defaultValue: <class 'object'>
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.version
+  name: version
+  summary: 'Version help caller to identify the updates and decide cache or not.
+
+    :return: Current version.'
+  signature: version() -> str
+attributes:
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.configuration
+  name: configuration
+  summary: 'Gets or sets the configured path resolvers and memory scopes for the dialog
+    state manager.
+
+    :return: The configuration object.'
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.is_read_only
+  name: is_read_only
+  summary: 'Gets a value indicating whether the dialog state manager is read-only.
+
+    :return: True.'
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.keys
+  name: keys
+  summary: 'Gets a Iterable containing the keys of the memory scopes
+
+    :return: Keys of the memory scopes.'
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.values
+  name: values
+  summary: 'Gets a Iterable containing the values of the memory scopes.
+
+    :return: Values of the memory scopes.'
+- uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.SEPARATORS
+  name: SEPARATORS
+  signature: SEPARATORS = [',', '[']

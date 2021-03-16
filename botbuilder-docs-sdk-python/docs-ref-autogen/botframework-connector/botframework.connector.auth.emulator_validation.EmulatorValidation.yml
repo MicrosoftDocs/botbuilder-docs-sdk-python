@@ -28,6 +28,10 @@ methods:
     isRequired: true
     types:
     - <xref:CredentialProvider>
+  - name: channel_service_or_provider
+    isRequired: true
+  - name: channel_id
+    isRequired: true
   return:
     description: A valid ClaimsIdentity.
   exceptions:

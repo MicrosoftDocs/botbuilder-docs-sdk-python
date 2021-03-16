@@ -1,0 +1,25 @@
+### YamlMime:PythonEnum
+uid: botbuilder.ai.qna.models.join_operator.JoinOperator
+name: JoinOperator
+fullName: botbuilder.ai.qna.models.join_operator.JoinOperator
+summary: 'Join Operator for Strict Filters.
+
+
+
+  For example, when using multiple filters in a query, if you want results that
+
+  have metadata that matches all filters, then use *AND* operator.
+
+
+  If instead you only wish that the results from knowledge base match
+
+  at least one of the filters, then use *OR* operator.'
+module: botbuilder.ai.qna.models.join_operator
+inheritances:
+- builtins.str
+- enum.Enum
+fields:
+- name: AND
+  uid: botbuilder.ai.qna.models.join_operator.JoinOperator.AND
+- name: OR
+  uid: botbuilder.ai.qna.models.join_operator.JoinOperator.OR

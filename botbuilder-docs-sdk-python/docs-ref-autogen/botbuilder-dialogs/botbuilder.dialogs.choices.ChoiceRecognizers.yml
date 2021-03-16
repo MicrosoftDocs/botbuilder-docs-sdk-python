@@ -21,3 +21,10 @@ methods:
   signature: 'recognize_choices(utterance: str, choices: typing.List[typing.Union[str,
     botbuilder.dialogs.choices.choice.Choice]], options: botbuilder.dialogs.choices.find_choices_options.FindChoicesOptions
     = None) -> typing.List[botbuilder.dialogs.choices.model_result.ModelResult]'
+  parameters:
+  - name: utterance
+    isRequired: true
+  - name: choices
+    isRequired: true
+  - name: options
+    defaultValue: None

@@ -17,9 +17,11 @@ constructor:
   parameters:
   - name: key
     description: The key for this Fact
+    isRequired: true
     types:
     - <xref:str>
   - name: value
     description: The value for this Fact
+    isRequired: true
     types:
     - <xref:str>

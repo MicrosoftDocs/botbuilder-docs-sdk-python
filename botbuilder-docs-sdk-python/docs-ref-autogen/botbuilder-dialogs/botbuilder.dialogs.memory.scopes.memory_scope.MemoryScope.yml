@@ -1,0 +1,41 @@
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope
+name: MemoryScope
+fullName: botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope
+module: botbuilder.dialogs.memory.scopes.memory_scope
+inheritances:
+- abc.ABC
+constructor:
+  syntax: 'MemoryScope(name: str, include_in_snapshot: bool = True)'
+methods:
+- uid: botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope.delete
+  name: delete
+  parameters:
+  - name: dialog_context
+    isRequired: true
+- uid: botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope.get_memory
+  name: get_memory
+  parameters:
+  - name: dialog_context
+    isRequired: true
+- uid: botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope.load
+  name: load
+  parameters:
+  - name: dialog_context
+    isRequired: true
+  - name: force
+    defaultValue: 'False'
+- uid: botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope.save_changes
+  name: save_changes
+  parameters:
+  - name: dialog_context
+    isRequired: true
+  - name: force
+    defaultValue: 'False'
+- uid: botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope.set_memory
+  name: set_memory
+  parameters:
+  - name: dialog_context
+    isRequired: true
+  - name: memory
+    isRequired: true

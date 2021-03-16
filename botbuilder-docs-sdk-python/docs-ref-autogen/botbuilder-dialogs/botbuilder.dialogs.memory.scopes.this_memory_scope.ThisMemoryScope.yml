@@ -1,0 +1,22 @@
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.memory.scopes.this_memory_scope.ThisMemoryScope
+name: ThisMemoryScope
+fullName: botbuilder.dialogs.memory.scopes.this_memory_scope.ThisMemoryScope
+module: botbuilder.dialogs.memory.scopes.this_memory_scope
+inheritances:
+- botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope
+constructor:
+  syntax: ThisMemoryScope()
+methods:
+- uid: botbuilder.dialogs.memory.scopes.this_memory_scope.ThisMemoryScope.get_memory
+  name: get_memory
+  parameters:
+  - name: dialog_context
+    isRequired: true
+- uid: botbuilder.dialogs.memory.scopes.this_memory_scope.ThisMemoryScope.set_memory
+  name: set_memory
+  parameters:
+  - name: dialog_context
+    isRequired: true
+  - name: memory
+    isRequired: true

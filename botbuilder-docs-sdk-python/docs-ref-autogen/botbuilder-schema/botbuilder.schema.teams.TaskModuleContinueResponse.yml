@@ -11,5 +11,6 @@ constructor:
   parameters:
   - name: value
     description: The JSON for the Adaptive card to appear in the task module.
+    isRequired: true
     types:
     - <xref:botframework.connector.teams.models.TaskModuleTaskInfo>

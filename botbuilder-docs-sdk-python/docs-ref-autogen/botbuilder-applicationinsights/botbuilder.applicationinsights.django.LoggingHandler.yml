@@ -8,7 +8,7 @@ inheritances:
 summary: "This class is a LoggingHandler that uses the same settings as the Django\
   \ middleware to configure\nthe telemetry client.  This can be referenced from LOGGING\
   \ in your Django settings.py file.  As an\nexample, this code would send all Django\
-  \ log messages--WARNING and up--to Application Insights:\n\n<!-- literal_block {\"\
+  \ log messages, WARNING and up, to Application Insights:\n\n<!-- literal_block {\"\
   ids\": [], \"classes\": [\"code\", \"python\"], \"names\": [], \"dupnames\": [],\
   \ \"backrefs\": [], \"xml:space\": \"preserve\"} -->\n\n````\n\n   LOGGING = {\n\
   \       'version': 1,\n       'disable_existing_loggers': False,\n       'handlers':\
