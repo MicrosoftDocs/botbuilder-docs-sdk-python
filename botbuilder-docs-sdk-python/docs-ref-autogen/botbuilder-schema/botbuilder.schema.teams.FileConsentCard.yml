@@ -12,10 +12,12 @@ constructor:
   parameters:
   - name: description
     description: File description.
+    isRequired: true
     types:
     - <xref:str>
   - name: size_in_bytes
     description: Size of the file to be uploaded in Bytes.
+    isRequired: true
     types:
     - <xref:long>
   - name: accept_context
@@ -24,11 +26,13 @@ constructor:
       upload. This is free flow schema and is sent back in Value field of
 
       Activity.'
+    isRequired: true
     types:
     - <xref:object>
   - name: decline_context
     description: 'Context sent back to the Bot if user declined.
 
       This is free flow schema and is sent back in Value field of Activity.'
+    isRequired: true
     types:
     - <xref:object>

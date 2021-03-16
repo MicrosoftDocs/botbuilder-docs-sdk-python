@@ -22,32 +22,81 @@ methods:
   - name: default
     description: Provides a default object if both source and overlay are None
     isRequired: true
+    defaultValue: None
   return:
     description: A copy of start_object, with values from overlay_object
+- uid: botbuilder.dialogs.object_path.ObjectPath.for_each_property
+  name: for_each_property
+  signature: 'for_each_property(obj: object, action: typing.Callable[[str, object],
+    NoneType])'
+  parameters:
+  - name: obj
+    isRequired: true
+  - name: action
+    isRequired: true
 - uid: botbuilder.dialogs.object_path.ObjectPath.get_path_value
   name: get_path_value
   summary: Get the value for a path relative to an object.
   signature: 'get_path_value(obj, path: str, default: object = None) -> object'
+  parameters:
+  - name: obj
+    isRequired: true
+  - name: path
+    isRequired: true
+  - name: default
+    defaultValue: None
 - uid: botbuilder.dialogs.object_path.ObjectPath.has_value
   name: has_value
   summary: Does an object have a subpath.
   signature: 'has_value(obj, path: str) -> bool'
+  parameters:
+  - name: obj
+    isRequired: true
+  - name: path
+    isRequired: true
 - uid: botbuilder.dialogs.object_path.ObjectPath.is_int
   name: is_int
   signature: 'is_int(value: str) -> bool'
+  parameters:
+  - name: value
+    isRequired: true
 - uid: botbuilder.dialogs.object_path.ObjectPath.remove_path_value
   name: remove_path_value
   summary: Remove path from object.
   signature: 'remove_path_value(obj, path: str)'
+  parameters:
+  - name: obj
+    isRequired: true
+  - name: path
+    isRequired: true
 - uid: botbuilder.dialogs.object_path.ObjectPath.set_path_value
   name: set_path_value
   summary: Given an object evaluate a path to set the value.
   signature: 'set_path_value(obj, path: str, value: object)'
+  parameters:
+  - name: obj
+    isRequired: true
+  - name: path
+    isRequired: true
+  - name: value
+    isRequired: true
 - uid: botbuilder.dialogs.object_path.ObjectPath.try_get_path_value
   name: try_get_path_value
   summary: Get the value for a path relative to an object.
   signature: 'try_get_path_value(obj, path: str) -> object'
+  parameters:
+  - name: obj
+    isRequired: true
+  - name: path
+    isRequired: true
 - uid: botbuilder.dialogs.object_path.ObjectPath.try_resolve_path
   name: try_resolve_path
   signature: 'try_resolve_path(obj, property_path: str, evaluate: bool = False) ->
     []'
+  parameters:
+  - name: obj
+    isRequired: true
+  - name: property_path
+    isRequired: true
+  - name: evaluate
+    defaultValue: 'False'

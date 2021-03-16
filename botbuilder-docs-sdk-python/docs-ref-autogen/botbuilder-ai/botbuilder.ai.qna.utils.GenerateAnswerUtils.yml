@@ -17,7 +17,17 @@ methods:
   name: get_answers
   signature: 'get_answers(context: botbuilder.core.turn_context.TurnContext, options:
     botbuilder.ai.qna.qnamaker_options.QnAMakerOptions = None) -> typing.List[botbuilder.ai.qna.models.query_result.QueryResult]'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: options
+    defaultValue: None
 - uid: botbuilder.ai.qna.utils.GenerateAnswerUtils.get_answers_raw
   name: get_answers_raw
   signature: 'get_answers_raw(context: botbuilder.core.turn_context.TurnContext, options:
     botbuilder.ai.qna.qnamaker_options.QnAMakerOptions = None) -> botbuilder.ai.qna.models.query_results.QueryResults'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: options
+    defaultValue: None

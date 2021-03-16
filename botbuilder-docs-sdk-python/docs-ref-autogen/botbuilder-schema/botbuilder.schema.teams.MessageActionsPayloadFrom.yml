@@ -14,13 +14,16 @@ constructor:
   parameters:
   - name: user
     description: Represents details of the user.
+    isRequired: true
     types:
     - <xref:botframework.connector.teams.models.MessageActionsPayloadUser>
   - name: application
     description: Represents details of the app.
+    isRequired: true
     types:
     - <xref:botframework.connector.teams.models.MessageActionsPayloadApp>
   - name: conversation
     description: Represents details of the converesation.
+    isRequired: true
     types:
     - <xref:botframework.connector.teams.models.MessageActionsPayloadConversation>

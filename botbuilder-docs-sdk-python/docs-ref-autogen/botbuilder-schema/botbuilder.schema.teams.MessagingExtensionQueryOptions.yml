@@ -12,9 +12,11 @@ constructor:
   parameters:
   - name: skip
     description: Number of entities to skip
+    isRequired: true
     types:
     - <xref:int>
   - name: count
     description: Number of entities to fetch
+    isRequired: true
     types:
     - <xref:int>

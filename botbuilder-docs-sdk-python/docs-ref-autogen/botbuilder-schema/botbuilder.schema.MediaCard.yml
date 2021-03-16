@@ -14,50 +14,60 @@ constructor:
   parameters:
   - name: title
     description: Title of this card
+    isRequired: true
     types:
     - <xref:str>
   - name: subtitle
     description: Subtitle of this card
+    isRequired: true
     types:
     - <xref:str>
   - name: text
     description: Text of this card
+    isRequired: true
     types:
     - <xref:str>
   - name: image
     description: Thumbnail placeholder
+    isRequired: true
     types:
     - <xref:botframework.connector.models.ThumbnailUrl>
   - name: media
     description: 'Media URLs for this card. When this field contains more than
 
       one URL, each URL is an alternative format of the same content.'
+    isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.models.MediaUrl>]
   - name: buttons
     description: Actions on this card
+    isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.models.CardAction>]
   - name: shareable
     description: This content may be shared with others (default:true)
+    isRequired: true
     types:
     - <xref:bool>
   - name: autoloop
     description: 'Should the client loop playback at end of content
 
       (default:true)'
+    isRequired: true
     types:
     - <xref:bool>
   - name: autostart
     description: 'Should the client automatically start playback of media
 
       in this card (default:true)'
+    isRequired: true
     types:
     - <xref:bool>
   - name: aspect
     description: 'Aspect ratio of thumbnail/media placeholder. Allowed values
 
       are "16:9" and "4:3"'
+    isRequired: true
     types:
     - <xref:str>
   - name: duration
@@ -66,9 +76,11 @@ constructor:
       requiring a receiver to open the content. Formatted as an ISO 8601
 
       Duration field.'
+    isRequired: true
     types:
     - <xref:str>
   - name: value
     description: Supplementary parameter for this card
+    isRequired: true
     types:
     - <xref:object>

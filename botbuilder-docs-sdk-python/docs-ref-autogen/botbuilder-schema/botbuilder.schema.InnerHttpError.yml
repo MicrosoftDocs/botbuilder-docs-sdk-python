@@ -11,9 +11,11 @@ constructor:
   parameters:
   - name: status_code
     description: HttpStatusCode from failed request
+    isRequired: true
     types:
     - <xref:int>
   - name: body
     description: Body from failed request
+    isRequired: true
     types:
     - <xref:object>

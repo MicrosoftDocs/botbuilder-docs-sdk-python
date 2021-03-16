@@ -87,6 +87,9 @@ methods:
   name: get
   signature: 'get(turn_context: botbuilder.core.turn_context.TurnContext) -> typing.Dict[str,
     object]'
+  parameters:
+  - name: turn_context
+    isRequired: true
 - uid: botbuilder.core.bot_state.BotState.get_cached_state
   name: get_cached_state
   summary: 'Gets the cached bot state instance that wraps the raw cached data for
@@ -124,6 +127,9 @@ methods:
   name: get_storage_key
   signature: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext)
     -> str'
+  parameters:
+  - name: turn_context
+    isRequired: true
 - uid: botbuilder.core.bot_state.BotState.load
   name: load
   summary: Reads the current state object and caches it in the context object for
@@ -139,6 +145,7 @@ methods:
   - name: force
     description: Optional, true to bypass the cache
     isRequired: true
+    defaultValue: 'False'
     types:
     - <xref:bool>
 - uid: botbuilder.core.bot_state.BotState.save_changes
@@ -159,6 +166,7 @@ methods:
     description: Optional, true to save state to storage whether or not there are
       changes
     isRequired: true
+    defaultValue: 'False'
     types:
     - <xref:bool>
 - uid: botbuilder.core.bot_state.BotState.set_property_value

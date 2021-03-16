@@ -4,7 +4,7 @@ name: ActivityHandler
 fullName: botbuilder.core.ActivityHandler
 module: botbuilder.core
 inheritances:
-- builtins.object
+- botbuilder.core.bot.Bot
 summary: Handles activities and should be subclassed.
 remarks: 'Derive from this class to handle particular activity types.
 
@@ -167,6 +167,34 @@ methods:
     - <xref:botbuilder.core.TurnContext>
   return:
     description: A task that represents the work queued to execute
+- uid: botbuilder.core.ActivityHandler.on_installation_update_add
+  name: on_installation_update_add
+  summary: 'Override this in a derived class to provide logic specific to
+
+    ActivityTypes.InstallationUpdate activities with ''action'' set to ''add''.'
+  signature: 'on_installation_update_add(turn_context: botbuilder.core.turn_context.TurnContext)'
+  parameters:
+  - name: turn_context
+    description: The context object for this turn
+    isRequired: true
+    types:
+    - <xref:botbuilder.core.TurnContext>
+  return:
+    description: A task that represents the work queued to execute
+- uid: botbuilder.core.ActivityHandler.on_installation_update_remove
+  name: on_installation_update_remove
+  summary: 'Override this in a derived class to provide logic specific to
+
+    ActivityTypes.InstallationUpdate activities with ''action'' set to ''remove''.'
+  signature: 'on_installation_update_remove(turn_context: botbuilder.core.turn_context.TurnContext)'
+  parameters:
+  - name: turn_context
+    description: The context object for this turn
+    isRequired: true
+    types:
+    - <xref:botbuilder.core.TurnContext>
+  return:
+    description: A task that represents the work queued to execute
 - uid: botbuilder.core.ActivityHandler.on_invoke_activity
   name: on_invoke_activity
   summary: Registers an activity event handler for the _invoke_ event, emitted for
@@ -199,6 +227,11 @@ methods:
     :type turn_context: <xref:botbuilder.core.TurnContext>'
   signature: 'on_members_added_activity(members_added: typing.List[botbuilder.schema._models_py3.ChannelAccount],
     turn_context: botbuilder.core.turn_context.TurnContext)'
+  parameters:
+  - name: members_added
+    isRequired: true
+  - name: turn_context
+    isRequired: true
   return:
     description: A task that represents the work queued to execute
   remarks: 'When the <xref:botbuilder.core.ActivityHandler.on_conversation_update_activity>
@@ -228,6 +261,11 @@ methods:
     :type turn_context: <xref:botbuilder.core.TurnContext>'
   signature: 'on_members_removed_activity(members_removed: typing.List[botbuilder.schema._models_py3.ChannelAccount],
     turn_context: botbuilder.core.turn_context.TurnContext)'
+  parameters:
+  - name: members_removed
+    isRequired: true
+  - name: turn_context
+    isRequired: true
   return:
     description: A task that represents the work queued to execute
   remarks: 'When the <xref:botbuilder.core.ActivityHandler.on_conversation_update_activity>

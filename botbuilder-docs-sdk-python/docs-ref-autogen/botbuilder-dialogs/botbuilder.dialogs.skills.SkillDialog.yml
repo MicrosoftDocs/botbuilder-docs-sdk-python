@@ -20,21 +20,48 @@ methods:
     started.'
   signature: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     options: object = None)'
+  parameters:
+  - name: dialog_context
+    isRequired: true
+  - name: options
+    defaultValue: None
 - uid: botbuilder.dialogs.skills.SkillDialog.continue_dialog
   name: continue_dialog
   signature: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
+  parameters:
+  - name: dialog_context
+    isRequired: true
 - uid: botbuilder.dialogs.skills.SkillDialog.end_dialog
   name: end_dialog
   signature: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
     botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: instance
+    isRequired: true
+  - name: reason
+    isRequired: true
 - uid: botbuilder.dialogs.skills.SkillDialog.reprompt_dialog
   name: reprompt_dialog
   signature: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
     botbuilder.dialogs.dialog_instance.DialogInstance)'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: instance
+    isRequired: true
 - uid: botbuilder.dialogs.skills.SkillDialog.resume_dialog
   name: resume_dialog
   signature: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)'
+  parameters:
+  - name: dialog_context
+    isRequired: true
+  - name: reason
+    isRequired: true
+  - name: result
+    isRequired: true
 attributes:
 - uid: botbuilder.dialogs.skills.SkillDialog.SKILLCONVERSATIONIDSTATEKEY
   name: SKILLCONVERSATIONIDSTATEKEY

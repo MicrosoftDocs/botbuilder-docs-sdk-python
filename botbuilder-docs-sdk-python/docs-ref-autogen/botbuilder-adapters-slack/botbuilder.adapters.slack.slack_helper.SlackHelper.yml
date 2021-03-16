@@ -8,68 +8,96 @@ inheritances:
 methods:
 - uid: botbuilder.adapters.slack.slack_helper.SlackHelper.activity_to_slack
   name: activity_to_slack
-  summary: 'Formats a BotBuilder activity into an outgoing Slack message.
-
-    :param activity: A BotBuilder Activity object.
-
-    :return: A Slack message object with {text, attachments, channel, thread ts} as
-    well
-
-    as any fields found in activity.channelData'
+  summary: Formats a BotBuilder Activity into an outgoing Slack message.
   signature: 'activity_to_slack(activity: botbuilder.schema._models_py3.Activity)
     -> botbuilder.adapters.slack.slack_message.SlackMessage'
+  parameters:
+  - name: activity
+    description: A BotBuilder Activity object.
+    isRequired: true
+    types:
+    - <xref:botbuilder.schema.Activity>
+  return:
+    description: 'A Slack message object with {text, attachments, channel, thread
+      ts} and any fields found in
+
+      activity.channelData.'
+    types:
+    - <xref:botbuilder.adapters.slack.slack_helper.SlackMessage>
 - uid: botbuilder.adapters.slack.slack_helper.SlackHelper.command_to_activity
   name: command_to_activity
-  summary: Creates an activity based on a slack event related to a slash command.
+  summary: Creates an activity based on a Slack event related to a slash command.
   signature: 'command_to_activity(body: botbuilder.adapters.slack.slack_request_body.SlackRequestBody,
     client: botbuilder.adapters.slack.slack_client.SlackClient) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: body
-    description: The data of the slack event.
+    description: The data of the Slack event.
     isRequired: true
+    types:
+    - <xref:botbuilder.adapters.slack.slack_helper.SlackRequestBody>
   - name: client
     description: The Slack client.
     isRequired: true
+    types:
+    - <xref:botbuilder.adapters.slack.slack_helper.SlackClient>
   return:
     description: An activity containing the event data.
+    types:
+    - <xref:botbuilder.schema.Activity>
 - uid: botbuilder.adapters.slack.slack_helper.SlackHelper.deserialize_body
   name: deserialize_body
   summary: Deserializes the request's body as a SlackRequestBody object.
   signature: 'deserialize_body(content_type: str, request_body: str) -> botbuilder.adapters.slack.slack_request_body.SlackRequestBody'
   parameters:
   - name: content_type
-    description: The content type of the body
+    description: The content type of the body.
     isRequired: true
+    types:
+    - <xref:str>
   - name: request_body
-    description: The body of the request
+    description: The body of the request.
     isRequired: true
+    types:
+    - <xref:str>
   return:
-    description: A SlackRequestBody object
+    description: A SlackRequestBody object.
+    types:
+    - <xref:botbuilder.adapters.slack.slack_helper.SlackRequestBody>
 - uid: botbuilder.adapters.slack.slack_helper.SlackHelper.event_to_activity
   name: event_to_activity
-  summary: Creates an activity based on the slack event data.
+  summary: Creates an activity based on the Slack event data.
   signature: 'event_to_activity(event: botbuilder.adapters.slack.slack_event.SlackEvent,
     client: botbuilder.adapters.slack.slack_client.SlackClient) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: event
-    description: The data of the slack event.
+    description: The data of the Slack event.
     isRequired: true
+    types:
+    - <xref:botbuilder.adapters.slack.slack_helper.SlackEvent>
   - name: client
     description: The Slack client.
     isRequired: true
+    types:
+    - <xref:botbuilder.adapters.slack.slack_helper.SlackClient>
   return:
     description: An activity containing the event data.
+    types:
+    - <xref:botbuilder.schema.Activity>
 - uid: botbuilder.adapters.slack.slack_helper.SlackHelper.payload_to_activity
   name: payload_to_activity
-  summary: Creates an activity based on the slack event payload.
+  summary: Creates an activity based on the Slack event payload.
   signature: 'payload_to_activity(payload: botbuilder.adapters.slack.slack_payload.SlackPayload)
     -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: payload
-    description: The payload of the slack event.
+    description: The payload of the Slack event.
     isRequired: true
+    types:
+    - <xref:botbuilder.adapters.slack.slack_helper.SlackPayload>
   return:
     description: An activity containing the event data.
+    types:
+    - <xref:botbuilder.schema.Activity>
 - uid: botbuilder.adapters.slack.slack_helper.SlackHelper.query_string_to_dictionary
   name: query_string_to_dictionary
   summary: Converts a query string to a dictionary with key-value pairs.
@@ -78,25 +106,41 @@ methods:
   - name: query
     description: The query string to convert.
     isRequired: true
+    types:
+    - <xref:str>
   return:
     description: A dictionary with the query values.
+    types:
+    - <xref:typing.Dict>
 - uid: botbuilder.adapters.slack.slack_helper.SlackHelper.response
   name: response
-  summary: Formats an aiohttp Response
+  summary: Formats an aiohttp Response.
   signature: 'response(req: aiohttp.web_request.Request, code: int, text: str = None,
     encoding: str = None) -> aiohttp.web_response.Response'
   parameters:
   - name: req
-    description: The original aoihttp Request
+    description: The original aiohttp Request.
     isRequired: true
+    types:
+    - '[<xref:aiohttp.web_request.Request>](<xref:aiohttp.web_request.Request.html#>)'
   - name: code
-    description: The HTTP result code to return
+    description: The HTTP result code to return.
     isRequired: true
+    types:
+    - <xref:int>
   - name: text
-    description: The text to return
+    description: The text to return.
     isRequired: true
+    defaultValue: None
+    types:
+    - <xref:str>
   - name: encoding
-    description: The text encoding.  Defaults to utf-8
+    description: The text encoding. Defaults to UTF-8.
     isRequired: true
+    defaultValue: None
+    types:
+    - <xref:str>
   return:
     description: The aoihttp Response
+    types:
+    - '[<xref:aiohttp.web_response.Response>](<xref:aiohttp.web_response.Response.html#>)'

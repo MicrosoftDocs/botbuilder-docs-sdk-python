@@ -36,6 +36,9 @@ methods:
   name: delete_conversation_reference
   summary: Removes any reference to objects keyed on the conversation id passed in.
   signature: 'delete_conversation_reference(skill_conversation_id: str)'
+  parameters:
+  - name: skill_conversation_id
+    isRequired: true
 - uid: botbuilder.core.skills.ConversationIdFactoryBase.get_conversation_reference
   name: get_conversation_reference
   summary: 'Retrieves a <xref:botbuilder.core.skills.SkillConversationReference> using

@@ -10,3 +10,6 @@ methods:
   name: create_healthcheck_response
   signature: 'create_healthcheck_response(connector_client: botframework.connector.connector_client.ConnectorClient)
     -> botbuilder.schema.healthcheck_response.HealthCheckResponse'
+  parameters:
+  - name: connector_client
+    isRequired: true

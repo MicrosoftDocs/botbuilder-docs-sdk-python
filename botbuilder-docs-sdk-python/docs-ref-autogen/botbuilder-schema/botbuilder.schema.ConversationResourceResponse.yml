@@ -12,15 +12,18 @@ constructor:
   parameters:
   - name: activity_id
     description: ID of the Activity (if sent)
+    isRequired: true
     types:
     - <xref:str>
   - name: service_url
     description: 'Service endpoint where operations concerning the
 
       conversation may be performed'
+    isRequired: true
     types:
     - <xref:str>
   - name: id
     description: Id of the resource
+    isRequired: true
     types:
     - <xref:str>

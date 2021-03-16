@@ -1,0 +1,16 @@
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.TeamsMeetingInfo
+name: TeamsMeetingInfo
+fullName: botbuilder.schema.teams.TeamsMeetingInfo
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: Describes a Teams Meeting.
+constructor:
+  syntax: 'TeamsMeetingInfo(*, id: str = None, **kwargs) -> None'
+  parameters:
+  - name: id
+    description: Unique identifier representing a meeting
+    isRequired: true
+    types:
+    - <xref:str>

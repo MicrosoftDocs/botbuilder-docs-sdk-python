@@ -14,11 +14,13 @@ constructor:
     description: 'The results of body string defined in
 
       IO365ConnectorCardHttpPOST with substituted input values'
+    isRequired: true
     types:
     - <xref:str>
   - name: action_id
     description: 'Action Id associated with the HttpPOST action button
 
       triggered, defined in O365ConnectorCardActionBase.'
+    isRequired: true
     types:
     - <xref:str>

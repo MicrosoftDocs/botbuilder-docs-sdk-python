@@ -5,12 +5,17 @@ fullName: botbuilder.dialogs
 type: import
 classes:
 - botbuilder.dialogs.ComponentDialog
+- botbuilder.dialogs.DialogContainer
 - botbuilder.dialogs.DialogContext
+- botbuilder.dialogs.DialogEvent
 - botbuilder.dialogs.DialogInstance
 - botbuilder.dialogs.DialogSet
 - botbuilder.dialogs.DialogState
 - botbuilder.dialogs.DialogTurnResult
+- botbuilder.dialogs.DialogManager
+- botbuilder.dialogs.DialogManagerResult
 - botbuilder.dialogs.Dialog
+- botbuilder.dialogs.DialogsComponentRegistration
 - botbuilder.dialogs.WaterfallDialog
 - botbuilder.dialogs.WaterfallStepContext
 - botbuilder.dialogs.ConfirmPrompt
@@ -19,6 +24,8 @@ classes:
 - botbuilder.dialogs.NumberPrompt
 - botbuilder.dialogs.OAuthPrompt
 - botbuilder.dialogs.OAuthPromptSettings
+- botbuilder.dialogs.PersistedStateKeys
+- botbuilder.dialogs.PersistedState
 - botbuilder.dialogs.PromptRecognizerResult
 - botbuilder.dialogs.PromptValidatorContext
 - botbuilder.dialogs.Prompt
@@ -28,22 +35,30 @@ classes:
 - botbuilder.dialogs.ObjectPath
 packages:
 - botbuilder.dialogs.choices
+- botbuilder.dialogs.memory
 - botbuilder.dialogs.prompts
 - botbuilder.dialogs.skills
 modules:
 - botbuilder.dialogs.about
 - botbuilder.dialogs.component_dialog
 - botbuilder.dialogs.dialog
+- botbuilder.dialogs.dialog_container
 - botbuilder.dialogs.dialog_context
+- botbuilder.dialogs.dialog_event
 - botbuilder.dialogs.dialog_events
 - botbuilder.dialogs.dialog_extensions
 - botbuilder.dialogs.dialog_instance
+- botbuilder.dialogs.dialog_manager
+- botbuilder.dialogs.dialog_manager_result
 - botbuilder.dialogs.dialog_reason
 - botbuilder.dialogs.dialog_set
 - botbuilder.dialogs.dialog_state
 - botbuilder.dialogs.dialog_turn_result
 - botbuilder.dialogs.dialog_turn_status
+- botbuilder.dialogs.dialogs_component_registration
 - botbuilder.dialogs.object_path
+- botbuilder.dialogs.persisted_state
+- botbuilder.dialogs.persisted_state_keys
 - botbuilder.dialogs.waterfall_dialog
 - botbuilder.dialogs.waterfall_step
 - botbuilder.dialogs.waterfall_step_context

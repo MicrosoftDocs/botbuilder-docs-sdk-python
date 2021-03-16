@@ -11,9 +11,11 @@ constructor:
   parameters:
   - name: id
     description: Unique identifier representing a channel
+    isRequired: true
     types:
     - <xref:str>
   - name: name
     description: Name of the channel
+    isRequired: true
     types:
     - <xref:str>

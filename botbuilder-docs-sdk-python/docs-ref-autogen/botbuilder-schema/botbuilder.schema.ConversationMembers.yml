@@ -11,9 +11,11 @@ constructor:
   parameters:
   - name: id
     description: Conversation ID
+    isRequired: true
     types:
     - <xref:str>
   - name: members
     description: List of members in this conversation
+    isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]

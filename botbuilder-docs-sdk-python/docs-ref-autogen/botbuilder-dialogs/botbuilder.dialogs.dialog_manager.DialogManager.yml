@@ -1,0 +1,90 @@
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.dialog_manager.DialogManager
+name: DialogManager
+fullName: botbuilder.dialogs.dialog_manager.DialogManager
+module: botbuilder.dialogs.dialog_manager
+inheritances:
+- builtins.object
+summary: Class which runs the dialog system.
+constructor:
+  syntax: 'DialogManager(root_dialog: botbuilder.dialogs.dialog.Dialog = None, dialog_state_property:
+    str = None)'
+methods:
+- uid: botbuilder.dialogs.dialog_manager.DialogManager.get_active_dialog_context
+  name: get_active_dialog_context
+  summary: 'Recursively walk up the DC stack to find the active DC.
+
+    :param dialog_context:
+
+    :return:'
+  signature: 'get_active_dialog_context(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
+    -> botbuilder.dialogs.dialog_context.DialogContext'
+  parameters:
+  - name: dialog_context
+    isRequired: true
+- uid: botbuilder.dialogs.dialog_manager.DialogManager.handle_bot_on_turn
+  name: handle_bot_on_turn
+  signature: 'handle_bot_on_turn(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parameters:
+  - name: dialog_context
+    isRequired: true
+- uid: botbuilder.dialogs.dialog_manager.DialogManager.handle_skill_on_turn
+  name: handle_skill_on_turn
+  signature: 'handle_skill_on_turn(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  parameters:
+  - name: dialog_context
+    isRequired: true
+- uid: botbuilder.dialogs.dialog_manager.DialogManager.is_from_parent_to_skill
+  name: is_from_parent_to_skill
+  signature: 'is_from_parent_to_skill(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> bool'
+  parameters:
+  - name: turn_context
+    isRequired: true
+- uid: botbuilder.dialogs.dialog_manager.DialogManager.on_turn
+  name: on_turn
+  summary: 'Runs dialog system in the context of an ITurnContext.
+
+    :param context: turn context.
+
+    :return:'
+  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext) -> botbuilder.dialogs.dialog_manager_result.DialogManagerResult'
+  parameters:
+  - name: context
+    isRequired: true
+- uid: botbuilder.dialogs.dialog_manager.DialogManager.send_state_snapshot_trace
+  name: send_state_snapshot_trace
+  summary: 'Helper to send a trace activity with a memory snapshot of the active dialog
+    DC.
+
+    :param dialog_context:
+
+    :param trace_label:
+
+    :return:'
+  signature: 'send_state_snapshot_trace(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+    trace_label: str)'
+  parameters:
+  - name: dialog_context
+    isRequired: true
+  - name: trace_label
+    isRequired: true
+- uid: botbuilder.dialogs.dialog_manager.DialogManager.should_send_end_of_conversation_to_parent
+  name: should_send_end_of_conversation_to_parent
+  summary: 'Helper to determine if we should send an EndOfConversation to the parent
+    or not.
+
+    :param context:
+
+    :param turn_result:
+
+    :return:'
+  signature: 'should_send_end_of_conversation_to_parent(context: botbuilder.core.turn_context.TurnContext,
+    turn_result: botbuilder.dialogs.dialog_turn_result.DialogTurnResult) -> bool'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: turn_result
+    isRequired: true

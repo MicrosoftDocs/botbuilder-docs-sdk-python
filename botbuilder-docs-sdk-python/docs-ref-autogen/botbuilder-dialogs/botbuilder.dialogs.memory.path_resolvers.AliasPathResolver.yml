@@ -1,0 +1,21 @@
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.memory.path_resolvers.AliasPathResolver
+name: AliasPathResolver
+fullName: botbuilder.dialogs.memory.path_resolvers.AliasPathResolver
+module: botbuilder.dialogs.memory.path_resolvers
+inheritances:
+- botbuilder.dialogs.memory.path_resolver_base.PathResolverBase
+constructor:
+  syntax: 'AliasPathResolver(alias: str, prefix: str, postfix: str = None)'
+methods:
+- uid: botbuilder.dialogs.memory.path_resolvers.AliasPathResolver.transform_path
+  name: transform_path
+  summary: 'Transforms the path.
+
+    <param name="path">Path to inspect.</param>
+
+    <returns>Transformed path.</returns>'
+  signature: 'transform_path(path: str)'
+  parameters:
+  - name: path
+    isRequired: true

@@ -1,0 +1,27 @@
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.memory.scopes.DialogContextMemoryScope
+name: DialogContextMemoryScope
+fullName: botbuilder.dialogs.memory.scopes.DialogContextMemoryScope
+module: botbuilder.dialogs.memory.scopes
+inheritances:
+- botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope
+constructor:
+  syntax: DialogContextMemoryScope()
+methods:
+- uid: botbuilder.dialogs.memory.scopes.DialogContextMemoryScope.get_memory
+  name: get_memory
+  summary: 'Gets the backing memory for this scope.
+
+    <param name="dc">The <see cref="DialogContext"/> object for this turn.</param>
+
+    <returns>Memory for the scope.</returns>'
+  parameters:
+  - name: dialog_context
+    isRequired: true
+- uid: botbuilder.dialogs.memory.scopes.DialogContextMemoryScope.set_memory
+  name: set_memory
+  parameters:
+  - name: dialog_context
+    isRequired: true
+  - name: memory
+    isRequired: true

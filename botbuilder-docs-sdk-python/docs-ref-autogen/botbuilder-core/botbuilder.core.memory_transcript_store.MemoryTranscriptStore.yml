@@ -13,13 +13,35 @@ methods:
 - uid: botbuilder.core.memory_transcript_store.MemoryTranscriptStore.delete_transcript
   name: delete_transcript
   signature: 'delete_transcript(channel_id: str, conversation_id: str) -> None'
+  parameters:
+  - name: channel_id
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
 - uid: botbuilder.core.memory_transcript_store.MemoryTranscriptStore.get_transcript_activities
   name: get_transcript_activities
+  parameters:
+  - name: channel_id
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
+  - name: continuation_token
+    defaultValue: None
+  - name: start_date
+    defaultValue: '0001-01-01 00:00:00'
 - uid: botbuilder.core.memory_transcript_store.MemoryTranscriptStore.list_transcripts
   name: list_transcripts
+  parameters:
+  - name: channel_id
+    isRequired: true
+  - name: continuation_token
+    defaultValue: None
 - uid: botbuilder.core.memory_transcript_store.MemoryTranscriptStore.log_activity
   name: log_activity
   signature: 'log_activity(activity: botbuilder.schema._models_py3.Activity) -> None'
+  parameters:
+  - name: activity
+    isRequired: true
 attributes:
 - uid: botbuilder.core.memory_transcript_store.MemoryTranscriptStore.channels
   name: channels

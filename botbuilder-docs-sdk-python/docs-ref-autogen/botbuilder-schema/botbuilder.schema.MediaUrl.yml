@@ -11,11 +11,13 @@ constructor:
   parameters:
   - name: url
     description: Url for the media
+    isRequired: true
     types:
     - <xref:str>
   - name: profile
     description: 'Optional profile hint to the client to differentiate
 
       multiple MediaUrl objects from each other'
+    isRequired: true
     types:
     - <xref:str>

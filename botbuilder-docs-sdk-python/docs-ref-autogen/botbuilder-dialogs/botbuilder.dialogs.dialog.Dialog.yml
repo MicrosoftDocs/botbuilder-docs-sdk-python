@@ -17,6 +17,11 @@ methods:
 
     :param options: (Optional) additional argument(s) to pass to the dialog being
     started.'
+  parameters:
+  - name: dialog_context
+    isRequired: true
+  - name: options
+    defaultValue: None
 - uid: botbuilder.dialogs.dialog.Dialog.continue_dialog
   name: continue_dialog
   summary: 'Method called when an instance of the dialog is the "current" dialog and
@@ -33,6 +38,9 @@ methods:
     :param dialog_context: The dialog context for the current turn of conversation.
 
     :return:'
+  parameters:
+  - name: dialog_context
+    isRequired: true
 - uid: botbuilder.dialogs.dialog.Dialog.end_dialog
   name: end_dialog
   signature: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
@@ -44,6 +52,23 @@ methods:
     isRequired: true
   - name: reason
     isRequired: true
+- uid: botbuilder.dialogs.dialog.Dialog.get_version
+  name: get_version
+  signature: get_version() -> str
+- uid: botbuilder.dialogs.dialog.Dialog.on_dialog_event
+  name: on_dialog_event
+  summary: "Called when an event has been raised, using *DialogContext.emitEvent()*,\
+    \ by either the current dialog or a\n   dialog that the current dialog started."
+  parameters:
+  - name: dialog_context
+    description: The dialog context for the current turn of conversation.
+    isRequired: true
+  - name: dialog_event
+    description: The event being raised.
+    isRequired: true
+  return:
+    description: True if the event is handled by the current dialog and bubbling should
+      stop.
 - uid: botbuilder.dialogs.dialog.Dialog.reprompt_dialog
   name: reprompt_dialog
   signature: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
@@ -77,6 +102,13 @@ methods:
     dependent on the dialog that was called.
 
     :return:'
+  parameters:
+  - name: dialog_context
+    isRequired: true
+  - name: reason
+    isRequired: true
+  - name: result
+    isRequired: true
 attributes:
 - uid: botbuilder.dialogs.dialog.Dialog.telemetry_client
   name: telemetry_client

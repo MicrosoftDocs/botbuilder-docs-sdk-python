@@ -45,6 +45,27 @@ methods:
     str = None, duration: int = None, success: bool = None, result_code: str = None,
     properties: typing.Dict[str, object] = None, measurements: typing.Dict[str, object]
     = None, dependency_id: str = None)'
+  parameters:
+  - name: name
+    isRequired: true
+  - name: data
+    isRequired: true
+  - name: type_name
+    defaultValue: None
+  - name: target
+    defaultValue: None
+  - name: duration
+    defaultValue: None
+  - name: success
+    defaultValue: None
+  - name: result_code
+    defaultValue: None
+  - name: properties
+    defaultValue: None
+  - name: measurements
+    defaultValue: None
+  - name: dependency_id
+    defaultValue: None
 - uid: botbuilder.core.BotTelemetryClient.track_event
   name: track_event
   summary: 'Send information about a single event that has occurred in the context
@@ -59,6 +80,13 @@ methods:
     to this data item.         (defaults to: None)'
   signature: 'track_event(name: str, properties: typing.Dict[str, object] = None,
     measurements: typing.Dict[str, object] = None) -> None'
+  parameters:
+  - name: name
+    isRequired: true
+  - name: properties
+    defaultValue: None
+  - name: measurements
+    defaultValue: None
 - uid: botbuilder.core.BotTelemetryClient.track_exception
   name: track_exception
   summary: 'Send information about a single exception that occurred in the application.
@@ -74,6 +102,17 @@ methods:
 
     :param measurements: the set of custom measurements the client wants to attach
     to this data item.         (defaults to: None)'
+  parameters:
+  - name: exception_type
+    defaultValue: None
+  - name: value
+    defaultValue: None
+  - name: trace
+    defaultValue: None
+  - name: properties
+    defaultValue: None
+  - name: measurements
+    defaultValue: None
 - uid: botbuilder.core.BotTelemetryClient.track_metric
   name: track_metric
   summary: "Send information about a single metric data point that was captured for\
@@ -98,6 +137,18 @@ methods:
       into this data point.         :param properties: the set of custom properties
       the client wants attached to this data item. (defaults to: None)'
     isRequired: true
+  - name: tel_type
+    defaultValue: None
+  - name: count
+    defaultValue: None
+  - name: min_val
+    defaultValue: None
+  - name: max_val
+    defaultValue: None
+  - name: std_dev
+    defaultValue: None
+  - name: properties
+    defaultValue: None
 - uid: botbuilder.core.BotTelemetryClient.track_pageview
   name: track_pageview
   summary: 'Send information about the page viewed in the application (a web page
@@ -117,6 +168,17 @@ methods:
     to this data item.         (defaults to: None)'
   signature: 'track_pageview(name: str, url, duration: int = 0, properties: typing.Dict[str,
     object] = None, measurements: typing.Dict[str, object] = None) -> None'
+  parameters:
+  - name: name
+    isRequired: true
+  - name: url
+    isRequired: true
+  - name: duration
+    defaultValue: '0'
+  - name: properties
+    defaultValue: None
+  - name: measurements
+    defaultValue: None
 - uid: botbuilder.core.BotTelemetryClient.track_request
   name: track_request
   summary: 'Sends a single request that was captured for the application.
@@ -152,6 +214,27 @@ methods:
     None, duration: int = None, response_code: str = None, http_method: str = None,
     properties: typing.Dict[str, object] = None, measurements: typing.Dict[str, object]
     = None, request_id: str = None)'
+  parameters:
+  - name: name
+    isRequired: true
+  - name: url
+    isRequired: true
+  - name: success
+    isRequired: true
+  - name: start_time
+    defaultValue: None
+  - name: duration
+    defaultValue: None
+  - name: response_code
+    defaultValue: None
+  - name: http_method
+    defaultValue: None
+  - name: properties
+    defaultValue: None
+  - name: measurements
+    defaultValue: None
+  - name: request_id
+    defaultValue: None
 - uid: botbuilder.core.BotTelemetryClient.track_trace
   name: track_trace
   summary: 'Sends a single trace statement.
@@ -168,3 +251,6 @@ methods:
     description: the severity level of this trace, one of DEBUG, INFO, WARNING, ERROR,
       CRITICAL
     isRequired: true
+    defaultValue: None
+  - name: severity
+    defaultValue: None

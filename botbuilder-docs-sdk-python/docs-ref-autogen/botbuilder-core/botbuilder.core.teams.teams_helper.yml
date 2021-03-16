@@ -7,7 +7,12 @@ functions:
   name: deserializer_helper
   signature: 'deserializer_helper(msrest_cls: typing.Type[msrest.serialization.Model],
     dict_to_deserialize: dict) -> msrest.serialization.Model'
+  parameters:
+  - name: msrest_cls
+  - name: dict_to_deserialize
 - uid: botbuilder.core.teams.teams_helper.serializer_helper
   name: serializer_helper
   signature: 'serializer_helper(object_to_serialize: msrest.serialization.Model) ->
     dict'
+  parameters:
+  - name: object_to_serialize

@@ -14,6 +14,9 @@ methods:
 
     :return:'
   signature: 'delete(keys: typing.List[str])'
+  parameters:
+  - name: keys
+    isRequired: true
 - uid: botbuilder.core.Storage.read
   name: read
   summary: 'Loads store items from storage.
@@ -22,6 +25,9 @@ methods:
 
     :return:'
   signature: 'read(keys: typing.List[str])'
+  parameters:
+  - name: keys
+    isRequired: true
 - uid: botbuilder.core.Storage.write
   name: write
   summary: 'Saves store items to storage.

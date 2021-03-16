@@ -12,9 +12,11 @@ constructor:
   parameters:
   - name: continuation_token
     description: Paging token
+    isRequired: true
     types:
     - <xref:str>
   - name: conversations
     description: List of conversations
+    isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.models.ConversationMembers>]

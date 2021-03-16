@@ -48,6 +48,14 @@ methods:
   - name: bot_id
     description: The application ID of the bot. This parameter is ignored in
     isRequired: true
+  - name: callback
+    isRequired: true
+  - name: bot_id
+    defaultValue: None
+  - name: claims_identity
+    defaultValue: None
+  - name: audience
+    defaultValue: None
 - uid: botbuilder.core.bot_adapter.BotAdapter.delete_activity
   name: delete_activity
   summary: Deletes an existing activity.
@@ -82,6 +90,7 @@ methods:
   - name: callback
     description: A callback method to run at the end of the pipeline.
     isRequired: true
+    defaultValue: None
     types:
     - <xref:typing.Callable>[[<xref:TurnContext>], <xref:Awaitable>]
 - uid: botbuilder.core.bot_adapter.BotAdapter.send_activities

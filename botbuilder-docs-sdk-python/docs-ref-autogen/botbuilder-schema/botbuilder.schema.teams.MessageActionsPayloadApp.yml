@@ -16,14 +16,17 @@ constructor:
       include: ''aadApplication'', ''bot'', ''tenantBot'', ''office365Connector'',
 
       ''webhook'''
+    isRequired: true
     types:
     - <xref:str>
     - <xref:botframework.connector.teams.models.enum>
   - name: id
     description: The id of the application.
+    isRequired: true
     types:
     - <xref:str>
   - name: display_name
     description: The plaintext display name of the application.
+    isRequired: true
     types:
     - <xref:str>

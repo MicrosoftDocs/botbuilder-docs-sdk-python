@@ -11,9 +11,11 @@ constructor:
   parameters:
   - name: url
     description: URL pointing to the thumbnail to use for media content
+    isRequired: true
     types:
     - <xref:str>
   - name: alt
     description: HTML alt text to include on this thumbnail image
+    isRequired: true
     types:
     - <xref:str>

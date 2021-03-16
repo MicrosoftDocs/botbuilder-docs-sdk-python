@@ -15,9 +15,11 @@ constructor:
       These Ids are relative to the channelId and a subset of all recipients of
 
       the activity'
+    isRequired: true
     types:
     - <xref:list>[<xref:str>]
   - name: actions
     description: Actions that can be shown to the user
+    isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.models.CardAction>]
