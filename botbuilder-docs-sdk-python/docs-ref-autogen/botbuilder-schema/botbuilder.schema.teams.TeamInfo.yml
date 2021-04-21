@@ -7,21 +7,16 @@ inheritances:
 - msrest.serialization.Model
 summary: Describes a team.
 constructor:
-  syntax: 'TeamInfo(*, id: str = None, name: str = None, aad_group_id: str = None,
-    **kwargs) -> None'
+  syntax: 'TeamInfo(*, id: Optional[str] = None, name: Optional[str] = None, aad_group_id:
+    Optional[str] = None, **kwargs)'
   parameters:
   - name: id
     description: Unique identifier representing a team
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: name
     description: Name of team.
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: name
     description: Azure AD Teams group ID.
-    isRequired: true
-    types:
-    - <xref:str>

@@ -6,6 +6,8 @@ module: botbuilder.core.skills.conversation_id_factory
 inheritances:
 - abc.ABC
 summary: Handles creating conversation ids for skill and should be subclassed.
+constructor:
+  syntax: ConversationIdFactoryBase()
 remarks: 'Derive from this class to handle creation of conversation ids, retrieval
   of
 
@@ -15,52 +17,44 @@ remarks: 'Derive from this class to handle creation of conversation ids, retriev
 methods:
 - uid: botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase.create_skill_conversation_id
   name: create_skill_conversation_id
-  summary: "Using the options passed in, creates a conversation id and <xref:botbuilder.core.skills.conversation_id_factory.SkillConversationReference>,\n\
-    \   storing them for future use.\n\n\n> [!NOTE]\n> <xref:botbuilder.core.skills.conversation_id_factory.SkillConversationIdFactoryOptions>\
-    \ is the preferred parameter type, while the\n>\n> \n>\n> <xref:botbuilder.core.skills.conversation_id_factory.SkillConversationReference>\
+  summary: "Using the options passed in, creates a conversation id and `SkillConversationReference`,\n\
+    \   storing them for future use.\n\n\n> [!NOTE]\n> SkillConversationIdFactoryOptions\
+    \ is the preferred parameter type, while the\n>\n> \n>\n> SkillConversationReference\
     \ type is provided for backwards compatability.\n>"
-  signature: 'create_skill_conversation_id(options_or_conversation_reference: typing.Union[botbuilder.core.skills.skill_conversation_id_factory_options.SkillConversationIdFactoryOptions,
-    botbuilder.schema._models_py3.ConversationReference]) -> str'
+  signature: 'create_skill_conversation_id(options_or_conversation_reference: Union[botbuilder.core.skills.skill_conversation_id_factory_options.SkillConversationIdFactoryOptions,
+    botbuilder.schema._models_py3.ConversationReference])'
   parameters:
   - name: options_or_conversation_reference
-    description: 'The options contain properties useful for generating a
-
-      <xref:botbuilder.core.skills.conversation_id_factory.SkillConversationReference>
-      and conversation id.'
+    description: The options contain properties useful for generating a
     isRequired: true
     types:
-    - <xref:botbuilder.core.skills.conversation_id_factory.Union>[<xref:SkillConversationIdFactoryOptions>,
-      <xref:ConversationReference>]
+    - '`Union[SkillConversationIdFactoryOptions, ConversationReference]`'
   return:
     description: A skill conversation id.
 - uid: botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase.delete_conversation_reference
   name: delete_conversation_reference
   summary: Removes any reference to objects keyed on the conversation id passed in.
   signature: 'delete_conversation_reference(skill_conversation_id: str)'
-  parameters:
-  - name: skill_conversation_id
-    isRequired: true
 - uid: botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase.get_conversation_reference
   name: get_conversation_reference
-  summary: 'Retrieves a <xref:botbuilder.core.skills.conversation_id_factory.SkillConversationReference>
-    using a conversation id passed in.
+  summary: 'Retrieves a `SkillConversationReference` using a conversation id passed
+    in.
 
 
 
     > [!NOTE]
 
-    > SkillConversationReference is the preferred return type, while the <xref:botbuilder.core.skills.conversation_id_factory.SkillConversationReference>
+    > SkillConversationReference is the preferred return type, while the SkillConversationReference
 
     >
 
     > type is provided for backwards compatability.
 
     >'
-  signature: 'get_conversation_reference(skill_conversation_id: str) -> typing.Union[botbuilder.core.skills.skill_conversation_reference.SkillConversationReference,
-    botbuilder.schema._models_py3.ConversationReference]'
+  signature: 'get_conversation_reference(skill_conversation_id: str)'
   parameters:
   - name: skill_conversation_id
-    description: The conversation id for which to retrieve the <xref:botbuilder.core.skills.conversation_id_factory.SkillConversationReference>.
+    description: The conversation id for which to retrieve the `SkillConversationReference`.
     isRequired: true
     types:
-    - <xref:str>
+    - str

@@ -5,6 +5,7 @@ fullName: botbuilder.schema.teams
 type: import
 classes:
 - botbuilder.schema.teams.AppBasedLinkQuery
+- botbuilder.schema.teams.CacheInfo
 - botbuilder.schema.teams.ChannelInfo
 - botbuilder.schema.teams.ConversationList
 - botbuilder.schema.teams.FileConsentCard
@@ -12,6 +13,7 @@ classes:
 - botbuilder.schema.teams.FileDownloadInfo
 - botbuilder.schema.teams.FileInfoCard
 - botbuilder.schema.teams.FileUploadInfo
+- botbuilder.schema.teams.MeetingParticipantInfo
 - botbuilder.schema.teams.MessageActionsPayload
 - botbuilder.schema.teams.MessageActionsPayloadApp
 - botbuilder.schema.teams.MessageActionsPayloadAttachment
@@ -48,6 +50,17 @@ classes:
 - botbuilder.schema.teams.O365ConnectorCardTextInput
 - botbuilder.schema.teams.O365ConnectorCardViewAction
 - botbuilder.schema.teams.SigninStateVerificationQuery
+- botbuilder.schema.teams.TabContext
+- botbuilder.schema.teams.TabEntityContext
+- botbuilder.schema.teams.TabRequest
+- botbuilder.schema.teams.TabResponse
+- botbuilder.schema.teams.TabResponseCard
+- botbuilder.schema.teams.TabResponseCards
+- botbuilder.schema.teams.TabResponsePayload
+- botbuilder.schema.teams.TabSubmit
+- botbuilder.schema.teams.TabSubmitData
+- botbuilder.schema.teams.TabSuggestedActions
+- botbuilder.schema.teams.TaskModuleCardResponse
 - botbuilder.schema.teams.TaskModuleContinueResponse
 - botbuilder.schema.teams.TaskModuleMessageResponse
 - botbuilder.schema.teams.TaskModuleRequest
@@ -59,22 +72,9 @@ classes:
 - botbuilder.schema.teams.TeamInfo
 - botbuilder.schema.teams.TeamsChannelAccount
 - botbuilder.schema.teams.TeamsChannelData
-- botbuilder.schema.teams.TeamsPagedMembersResult
-- botbuilder.schema.teams.TenantInfo
 - botbuilder.schema.teams.TeamsMeetingInfo
 - botbuilder.schema.teams.TeamsMeetingParticipant
-- botbuilder.schema.teams.MeetingParticipantInfo
-- botbuilder.schema.teams.CacheInfo
-- botbuilder.schema.teams.TabContext
-- botbuilder.schema.teams.TabEntityContext
-- botbuilder.schema.teams.TabRequest
-- botbuilder.schema.teams.TabResponseCard
-- botbuilder.schema.teams.TabResponseCards
-- botbuilder.schema.teams.TabResponsePayload
-- botbuilder.schema.teams.TabResponse
-- botbuilder.schema.teams.TabSubmit
-- botbuilder.schema.teams.TabSubmitData
-- botbuilder.schema.teams.TabSuggestedActions
-- botbuilder.schema.teams.TaskModuleCardResponse
+- botbuilder.schema.teams.TeamsPagedMembersResult
+- botbuilder.schema.teams.TenantInfo
 modules:
 - botbuilder.schema.teams.additional_properties

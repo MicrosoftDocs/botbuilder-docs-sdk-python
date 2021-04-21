@@ -6,8 +6,8 @@ module: botbuilder.core.bot_adapter
 inheritances:
 - abc.ABC
 constructor:
-  syntax: 'BotAdapter(on_turn_error: typing.Callable[[botbuilder.core.turn_context.TurnContext,
-    Exception], typing.Awaitable] = None)'
+  syntax: 'BotAdapter(on_turn_error: Optional[Callable[[botbuilder.core.turn_context.TurnContext,
+    Exception], Awaitable]] = None)'
 methods:
 - uid: botbuilder.core.bot_adapter.BotAdapter.continue_conversation
   name: continue_conversation
@@ -20,42 +20,33 @@ methods:
     to the user.
 
 
-
     single tenant the Adapters (Console, Test, etc) but is critical to the BotFrameworkAdapter
 
     which is multi-tenant aware.
 
     :param reference: A reference to the conversation to continue.
 
-    :type reference: <xref:botbuilder.schema.ConversationReference>
+    :type reference: `botbuilder.schema.ConversationReference`
 
     :param callback: The method to call for the resulting bot turn.
 
-    :type callback: <xref:typing.Callable>
+    :type callback: `typing.Callable`
 
-    :param claims_identity: A <xref:botframework.connector.auth.ClaimsIdentity> for
-    the conversation.
+    :param claims_identity: A `botframework.connector.auth.ClaimsIdentity` for the
+    conversation.
 
-    :type claims_identity: <xref:botframework.connector.auth.ClaimsIdentity>
+    :type claims_identity: `botframework.connector.auth.ClaimsIdentity`
 
     :param audience:A value signifying the recipient of the proactive message.
 
     :type audience: str'
   signature: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
-    callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
-    = None, audience: str = None)'
+    callback: Callable, bot_id: Optional[str] = None, claims_identity: Optional[botframework.connector.auth.claims_identity.ClaimsIdentity]
+    = None, audience: Optional[str] = None)'
   parameters:
   - name: bot_id
     description: The application ID of the bot. This parameter is ignored in
     isRequired: true
-  - name: callback
-    isRequired: true
-  - name: bot_id
-    defaultValue: None
-  - name: claims_identity
-    defaultValue: None
-  - name: audience
-    defaultValue: None
 - uid: botbuilder.core.bot_adapter.BotAdapter.delete_activity
   name: delete_activity
   summary: Deletes an existing activity.
@@ -66,12 +57,12 @@ methods:
     description: The context object for the turn.
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_adapter.TurnContext>
+    - '`TurnContext`'
   - name: reference
     description: Conversation reference for the activity to delete.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.ConversationReference>
+    - '`botbuilder.schema.ConversationReference`'
 - uid: botbuilder.core.bot_adapter.BotAdapter.run_pipeline
   name: run_pipeline
   summary: 'Called by the parent class to run the adapters middleware set and calls
@@ -79,37 +70,35 @@ methods:
 
     the end of the chain.'
   signature: 'run_pipeline(context: botbuilder.core.turn_context.TurnContext, callback:
-    typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable] =
-    None)'
+    Optional[Callable[botbuilder.core.turn_context.TurnContext, Awaitable]] = None)'
   parameters:
   - name: context
     description: The context object for the turn.
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_adapter.TurnContext>
+    - '`TurnContext`'
   - name: callback
     description: A callback method to run at the end of the pipeline.
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:typing.Callable>[[<xref:TurnContext>], <xref:Awaitable>]
+    - '`typing.Callable[[TurnContext], Awaitable]`'
 - uid: botbuilder.core.bot_adapter.BotAdapter.send_activities
   name: send_activities
   summary: Sends a set of activities to the user. An array of responses from the server
     will be returned.
   signature: 'send_activities(context: botbuilder.core.turn_context.TurnContext, activities:
-    typing.List[botbuilder.schema._models_py3.Activity]) -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
+    List[botbuilder.schema._models_py3.Activity])'
   parameters:
   - name: context
     description: The context object for the turn.
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_adapter.TurnContext>
+    - '`TurnContext`'
   - name: activities
     description: The activities to send.
     isRequired: true
     types:
-    - <xref:typing.List>[<xref:Activity>]
+    - '`typing.List[Activity]`'
 - uid: botbuilder.core.bot_adapter.BotAdapter.update_activity
   name: update_activity
   summary: Replaces an existing activity.
@@ -120,12 +109,12 @@ methods:
     description: The context object for the turn.
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_adapter.TurnContext>
+    - '`TurnContext`'
   - name: activity
     description: New replacement activity.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.Activity>
+    - '`botbuilder.schema.Activity`'
 - uid: botbuilder.core.bot_adapter.BotAdapter.use
   name: use
   summary: Registers a middleware handler with the adapter.

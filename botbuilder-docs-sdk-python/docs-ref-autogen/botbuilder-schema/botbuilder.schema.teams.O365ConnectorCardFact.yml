@@ -7,16 +7,14 @@ inheritances:
 - msrest.serialization.Model
 summary: O365 connector card fact.
 constructor:
-  syntax: 'O365ConnectorCardFact(*, name: str = None, value: str = None, **kwargs)
-    -> None'
+  syntax: 'O365ConnectorCardFact(*, name: Optional[str] = None, value: Optional[str]
+    = None, **kwargs)'
   parameters:
   - name: name
     description: Display name of the fact
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: value
     description: Display value for the fact
-    isRequired: true
     types:
-    - <xref:str>
+    - str

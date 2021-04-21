@@ -7,10 +7,12 @@ inheritances:
 - botbuilder.core.component_registration.ComponentRegistration
 - botbuilder.dialogs.memory.component_memory_scopes_base.ComponentMemoryScopesBase
 - botbuilder.dialogs.memory.component_path_resolvers_base.ComponentPathResolversBase
+constructor:
+  syntax: DialogsComponentRegistration()
 methods:
 - uid: botbuilder.dialogs.dialogs_component_registration.DialogsComponentRegistration.get_memory_scopes
   name: get_memory_scopes
-  signature: get_memory_scopes() -> typing.Iterable[botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope]
+  signature: get_memory_scopes()
 - uid: botbuilder.dialogs.dialogs_component_registration.DialogsComponentRegistration.get_path_resolvers
   name: get_path_resolvers
-  signature: get_path_resolvers() -> typing.Iterable[botbuilder.dialogs.memory.path_resolver_base.PathResolverBase]
+  signature: get_path_resolvers()

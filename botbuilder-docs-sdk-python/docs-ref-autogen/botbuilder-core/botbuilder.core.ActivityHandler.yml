@@ -6,6 +6,8 @@ module: botbuilder.core
 inheritances:
 - botbuilder.core.bot.Bot
 summary: Handles activities and should be subclassed.
+constructor:
+  syntax: ActivityHandler()
 remarks: 'Derive from this class to handle particular activity types.
 
   Yon can add pre and post processing of activities by calling the base class
@@ -145,8 +147,7 @@ methods:
     *healthCheck*, it
 
     calls this method.'
-  signature: 'on_healthcheck(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> botbuilder.schema.healthcheck_response.HealthCheckResponse'
+  signature: 'on_healthcheck(turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -169,9 +170,8 @@ methods:
     description: A task that represents the work queued to execute
 - uid: botbuilder.core.ActivityHandler.on_installation_update_add
   name: on_installation_update_add
-  summary: 'Override this in a derived class to provide logic specific to
-
-    ActivityTypes.InstallationUpdate activities with ''action'' set to ''add''.'
+  summary: "Override this in a derived class to provide logic specific to\nActivityTypes.InstallationUpdate\
+    \ activities with \u2018action\u2019 set to \u2018add\u2019."
   signature: 'on_installation_update_add(turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: turn_context
@@ -183,9 +183,8 @@ methods:
     description: A task that represents the work queued to execute
 - uid: botbuilder.core.ActivityHandler.on_installation_update_remove
   name: on_installation_update_remove
-  summary: 'Override this in a derived class to provide logic specific to
-
-    ActivityTypes.InstallationUpdate activities with ''action'' set to ''remove''.'
+  summary: "Override this in a derived class to provide logic specific to\nActivityTypes.InstallationUpdate\
+    \ activities with \u2018action\u2019 set to \u2018remove\u2019."
   signature: 'on_installation_update_remove(turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: turn_context
@@ -199,8 +198,7 @@ methods:
   name: on_invoke_activity
   summary: Registers an activity event handler for the _invoke_ event, emitted for
     every incoming event activity.
-  signature: 'on_invoke_activity(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> typing.Union[botbuilder.core.invoke_response.InvokeResponse, NoneType]'
+  signature: 'on_invoke_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -211,27 +209,12 @@ methods:
     description: A task that represents the work queued to execute
 - uid: botbuilder.core.ActivityHandler.on_members_added_activity
   name: on_members_added_activity
-  summary: 'Override this method in a derived class to provide logic for when members
-    other than the bot join
-
-    the conversation. You can add your bot''s welcome logic.
-
-
-
-    conversation update activity
-
-    :type members_added: <xref:typing.List>
-
-    :param turn_context: The context object for this turn
-
-    :type turn_context: <xref:botbuilder.core.TurnContext>'
-  signature: 'on_members_added_activity(members_added: typing.List[botbuilder.schema._models_py3.ChannelAccount],
+  summary: "Override this method in a derived class to provide logic for when members\
+    \ other than the bot join\nthe conversation. You can add your bot\u2019s welcome\
+    \ logic.\n\nconversation update activity\n:type members_added: `typing.List`\n\
+    :param turn_context: The context object for this turn\n:type turn_context: <xref:botbuilder.core.TurnContext>"
+  signature: 'on_members_added_activity(members_added: List[botbuilder.schema._models_py3.ChannelAccount],
     turn_context: botbuilder.core.turn_context.TurnContext)'
-  parameters:
-  - name: members_added
-    isRequired: true
-  - name: turn_context
-    isRequired: true
   return:
     description: A task that represents the work queued to execute
   remarks: 'When the <xref:botbuilder.core.ActivityHandler.on_conversation_update_activity>
@@ -245,27 +228,12 @@ methods:
     '
 - uid: botbuilder.core.ActivityHandler.on_members_removed_activity
   name: on_members_removed_activity
-  summary: 'Override this method in a derived class to provide logic for when members
-    other than the bot leave
-
-    the conversation.  You can add your bot''s good-bye logic.
-
-
-
-    conversation update activity
-
-    :type members_added: <xref:typing.List>
-
-    :param turn_context: The context object for this turn
-
-    :type turn_context: <xref:botbuilder.core.TurnContext>'
-  signature: 'on_members_removed_activity(members_removed: typing.List[botbuilder.schema._models_py3.ChannelAccount],
+  summary: "Override this method in a derived class to provide logic for when members\
+    \ other than the bot leave\nthe conversation.  You can add your bot\u2019s good-bye\
+    \ logic.\n\nconversation update activity\n:type members_added: `typing.List`\n\
+    :param turn_context: The context object for this turn\n:type turn_context: <xref:botbuilder.core.TurnContext>"
+  signature: 'on_members_removed_activity(members_removed: List[botbuilder.schema._models_py3.ChannelAccount],
     turn_context: botbuilder.core.turn_context.TurnContext)'
-  parameters:
-  - name: members_removed
-    isRequired: true
-  - name: turn_context
-    isRequired: true
   return:
     description: A task that represents the work queued to execute
   remarks: 'When the <xref:botbuilder.core.ActivityHandler.on_conversation_update_activity>
@@ -306,34 +274,34 @@ methods:
     - <xref:botbuilder.core.TurnContext>
   return:
     description: A task that represents the work queued to execute
-  remarks: "Message reactions correspond to the user adding a 'like' or 'sad' etc.\
-    \ (often an emoji) to a previously\nsent activity.\n\nMessage reactions are only\
-    \ supported by a few channels. The activity that the message reaction corresponds\n\
-    to is indicated in the reply to Id property. The value of this property is the\
-    \ activity id of a previously\nsent activity given back to the bot as the response\
-    \ from a send call.\nWhen the <xref:botbuilder.core.ActivityHandler.on_turn> method\
-    \ receives a message reaction activity, it calls this\nmethod.\n\n* If the message\
-    \ reaction indicates that reactions were added to a message, it calls \n\n<xref:botbuilder.core.ActivityHandler.on_reaction_added>.\n\
-    - If the message reaction indicates that reactions were removed from a message,\
-    \ it calls\n<xref:botbuilder.core.ActivityHandler.on_reaction_removed>.\n\nIn\
-    \ a derived class, override this method to add logic that applies to all message\
-    \ reaction activities.\nAdd logic to apply before the reactions added or removed\
-    \ logic before the call to the this base class\nmethod.\nAdd logic to apply after\
-    \ the reactions added or removed logic after the call to the this base class method.\n"
+  remarks: "Message reactions correspond to the user adding a \u2018like\u2019 or\
+    \ \u2018sad\u2019 etc. (often an emoji) to a previously\nsent activity.\n\nMessage\
+    \ reactions are only supported by a few channels. The activity that the message\
+    \ reaction corresponds\nto is indicated in the reply to Id property. The value\
+    \ of this property is the activity id of a previously\nsent activity given back\
+    \ to the bot as the response from a send call.\nWhen the <xref:botbuilder.core.ActivityHandler.on_turn>\
+    \ method receives a message reaction activity, it calls this\nmethod.\n\n* If\
+    \ the message reaction indicates that reactions were added to a message, it calls\
+    \ \n\n`on_reaction_added()`.\n- If the message reaction indicates that reactions\
+    \ were removed from a message, it calls\n`on_reaction_removed()`.\n\nIn a derived\
+    \ class, override this method to add logic that applies to all message reaction\
+    \ activities.\nAdd logic to apply before the reactions added or removed logic\
+    \ before the call to the this base class\nmethod.\nAdd logic to apply after the\
+    \ reactions added or removed logic after the call to the this base class method.\n"
 - uid: botbuilder.core.ActivityHandler.on_reactions_added
   name: on_reactions_added
   summary: 'Override this method in a derived class to provide logic for when reactions
     to a previous activity
 
     are added to the conversation.'
-  signature: 'on_reactions_added(message_reactions: typing.List[botbuilder.schema._models_py3.MessageReaction],
+  signature: 'on_reactions_added(message_reactions: List[botbuilder.schema._models_py3.MessageReaction],
     turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: message_reactions
     description: The list of reactions added
     isRequired: true
     types:
-    - <xref:typing.List>
+    - '`typing.List`'
   - name: turn_context
     description: The context object for this turn
     isRequired: true
@@ -341,37 +309,27 @@ methods:
     - <xref:botbuilder.core.TurnContext>
   return:
     description: A task that represents the work queued to execute
-  remarks: 'Message reactions correspond to the user adding a ''like'' or ''sad''
-    etc. (often an emoji)
-
-    to a previously sent message on the conversation.
-
-    Message reactions are supported by only a few channels.
-
-    The activity that the message is in reaction to is identified by the activity''s
-    reply to ID property.
-
-    The value of this property is the activity ID of a previously sent activity. When
-    the bot sends an activity,
-
-    the channel assigns an ID to it, which is available in the resource response Id
-    of the result.
-
-    '
+  remarks: "Message reactions correspond to the user adding a \u2018like\u2019 or\
+    \ \u2018sad\u2019 etc. (often an emoji)\nto a previously sent message on the conversation.\n\
+    Message reactions are supported by only a few channels.\nThe activity that the\
+    \ message is in reaction to is identified by the activity\u2019s reply to ID property.\n\
+    The value of this property is the activity ID of a previously sent activity. When\
+    \ the bot sends an activity,\nthe channel assigns an ID to it, which is available\
+    \ in the resource response Id of the result.\n"
 - uid: botbuilder.core.ActivityHandler.on_reactions_removed
   name: on_reactions_removed
   summary: 'Override this method in a derived class to provide logic for when reactions
     to a previous activity
 
     are removed from the conversation.'
-  signature: 'on_reactions_removed(message_reactions: typing.List[botbuilder.schema._models_py3.MessageReaction],
+  signature: 'on_reactions_removed(message_reactions: List[botbuilder.schema._models_py3.MessageReaction],
     turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: message_reactions
     description: The list of reactions removed
     isRequired: true
     types:
-    - <xref:typing.List>
+    - '`typing.List`'
   - name: turn_context
     description: The context object for this turn
     isRequired: true
@@ -379,33 +337,19 @@ methods:
     - <xref:botbuilder.core.TurnContext>
   return:
     description: A task that represents the work queued to execute
-  remarks: 'Message reactions correspond to the user adding a ''like'' or ''sad''
-    etc. (often an emoji)
-
-    to a previously sent message on the conversation. Message reactions are supported
-    by only a few channels.
-
-    The activity that the message is in reaction to is identified by the activity''s
-    reply to Id property.
-
-    The value of this property is the activity ID of a previously sent activity. When
-    the bot sends an activity,
-
-    the channel assigns an ID to it, which is available in the resource response Id
-    of the result.
-
-    '
+  remarks: "Message reactions correspond to the user adding a \u2018like\u2019 or\
+    \ \u2018sad\u2019 etc. (often an emoji)\nto a previously sent message on the conversation.\
+    \ Message reactions are supported by only a few channels.\nThe activity that the\
+    \ message is in reaction to is identified by the activity\u2019s reply to Id property.\n\
+    The value of this property is the activity ID of a previously sent activity. When\
+    \ the bot sends an activity,\nthe channel assigns an ID to it, which is available\
+    \ in the resource response Id of the result.\n"
 - uid: botbuilder.core.ActivityHandler.on_sign_in_invoke
   name: on_sign_in_invoke
-  summary: 'Invoked when a signin/verifyState or signin/tokenExchange event is received
-    when the base behavior of
-
-    on_invoke_activity(TurnContext{InvokeActivity}) is used.
-
-    If using an OAuthPrompt, override this method to forward this Activity"/ to the
-    current dialog.
-
-    By default, this method does nothing.'
+  summary: "Invoked when a signin/verifyState or signin/tokenExchange event is received\
+    \ when the base behavior of\non_invoke_activity(TurnContext{InvokeActivity}) is\
+    \ used.\nIf using an OAuthPrompt, override this method to forward this Activity\u201D\
+    / to the current dialog.\nBy default, this method does nothing."
   signature: 'on_sign_in_invoke(turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: turn_context
@@ -447,7 +391,7 @@ methods:
   summary: 'Called by the adapter (for example, <xref:botbuilder.core.BotFrameworkAdapter>)
     at runtime
 
-    in order to process an inbound <xref:botbuilder.schema.Activity>.'
+    in order to process an inbound `botbuilder.schema.Activity`.'
   signature: 'on_turn(turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: turn_context

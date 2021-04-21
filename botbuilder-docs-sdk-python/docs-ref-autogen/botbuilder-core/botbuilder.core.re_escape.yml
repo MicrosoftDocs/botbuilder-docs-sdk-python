@@ -5,16 +5,10 @@ fullName: botbuilder.core.re_escape
 functions:
 - uid: botbuilder.core.re_escape.escape
   name: escape
-  summary: 'Escape special characters in a string.
-
-
-    This is a copy of the re.escape function in Python 3.8.  This was done
-
-    because the 3.6.x version didn''t escape in the same way and handling
-
-    bot names with regex characters in it would fail in TurnContext.remove_mention_text
-
-    without escaping the text.'
+  summary: "Escape special characters in a string.\n\nThis is a copy of the re.escape\
+    \ function in Python 3.8.  This was done\nbecause the 3.6.x version didn\u2019\
+    t escape in the same way and handling\nbot names with regex characters in it would\
+    \ fail in TurnContext.remove_mention_text\nwithout escaping the text."
   signature: escape(pattern)
   parameters:
   - name: pattern

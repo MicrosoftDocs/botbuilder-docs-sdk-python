@@ -10,11 +10,20 @@ constructor:
     conversation_id_factory: botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase,
     credential_provider: botframework.connector.auth.credential_provider.CredentialProvider,
     auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration,
-    channel_provider: botframework.connector.auth.channel_provider.ChannelProvider
+    channel_provider: Optional[botframework.connector.auth.channel_provider.ChannelProvider]
     = None, logger: object = None)'
 methods:
 - uid: botbuilder.core.skills.skill_handler.SkillHandler.on_delete_activity
   name: on_delete_activity
+  summary: 'delete_activity() API for Skill.
+
+
+    Delete an existing activity.
+
+
+    Some channels allow you to delete an existing activity, and if successful
+
+    this method will remove the specified activity.'
   signature: 'on_delete_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity_id: str)'
   parameters:
@@ -54,7 +63,7 @@ methods:
 
     :param claims_identity: Claims identity for the bot.
 
-    :type claims_identity: <xref:botframework.connector.auth.ClaimsIdentity>
+    :type claims_identity: `botframework.connector.auth.ClaimsIdentity`
 
     :param conversation_id:The conversation ID.
 
@@ -70,17 +79,7 @@ methods:
 
     :return:'
   signature: 'on_reply_to_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
-    -> botbuilder.schema._models_py3.ResourceResponse'
-  parameters:
-  - name: claims_identity
-    isRequired: true
-  - name: conversation_id
-    isRequired: true
-  - name: activity_id
-    isRequired: true
-  - name: activity
-    isRequired: true
+    conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)'
 - uid: botbuilder.core.skills.skill_handler.SkillHandler.on_send_to_conversation
   name: on_send_to_conversation
   summary: 'send_to_conversation() API for Skill
@@ -111,7 +110,7 @@ methods:
 
     :param claims_identity: Claims identity for the bot.
 
-    :type claims_identity: <xref:botframework.connector.auth.ClaimsIdentity>
+    :type claims_identity: `botframework.connector.auth.ClaimsIdentity`
 
     :param conversation_id:The conversation ID.
 
@@ -123,19 +122,15 @@ methods:
 
     :return:'
   signature: 'on_send_to_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str, activity: botbuilder.schema._models_py3.Activity) -> botbuilder.schema._models_py3.ResourceResponse'
-  parameters:
-  - name: claims_identity
-    isRequired: true
-  - name: conversation_id
-    isRequired: true
-  - name: activity
-    isRequired: true
+    conversation_id: str, activity: botbuilder.schema._models_py3.Activity)'
 - uid: botbuilder.core.skills.skill_handler.SkillHandler.on_update_activity
   name: on_update_activity
+  summary: "update_activity() API for Skill.\n\nEdit an existing activity.\n\nSome\
+    \ channels allow you to edit an existing activity to reflect the new\nstate of\
+    \ a bot conversation.\n\nFor example, you can remove buttons after someone has\
+    \ clicked \u201CApprove\u201D\nbutton."
   signature: 'on_update_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
-    -> botbuilder.schema._models_py3.ResourceResponse'
+    conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)'
   parameters:
   - name: claims_identity
     isRequired: true

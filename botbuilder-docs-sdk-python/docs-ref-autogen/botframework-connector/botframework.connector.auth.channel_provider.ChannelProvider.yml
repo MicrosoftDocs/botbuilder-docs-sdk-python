@@ -10,13 +10,15 @@ summary: 'ChannelProvider interface. This interface allows Bots to provide their
   implementation for the configuration parameters to connect to a Bot.
 
   Framework channel service.'
+constructor:
+  syntax: ChannelProvider()
 methods:
 - uid: botframework.connector.auth.channel_provider.ChannelProvider.get_channel_service
   name: get_channel_service
-  signature: get_channel_service() -> str
+  signature: get_channel_service()
 - uid: botframework.connector.auth.channel_provider.ChannelProvider.is_government
   name: is_government
-  signature: is_government() -> bool
+  signature: is_government()
 - uid: botframework.connector.auth.channel_provider.ChannelProvider.is_public_azure
   name: is_public_azure
-  signature: is_public_azure() -> bool
+  signature: is_public_azure()

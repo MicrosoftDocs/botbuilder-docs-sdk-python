@@ -7,52 +7,35 @@ inheritances:
 - msrest.serialization.Model
 summary: Metadata for a Task Module.
 constructor:
-  syntax: 'TaskModuleTaskInfo(*, title: str = None, height=None, width=None, url:
-    str = None, card=None, fallback_url: str = None, completion_bot_id: str = None,
-    **kwargs) -> None'
+  syntax: 'TaskModuleTaskInfo(*, title: Optional[str] = None, height=None, width=None,
+    url: Optional[str] = None, card=None, fallback_url: Optional[str] = None, completion_bot_id:
+    Optional[str] = None, **kwargs)'
   parameters:
   - name: title
     description: Appears below the app name and to the right of the app icon.
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: height
-    description: 'This can be a number, representing the task module''s height
-
-      in pixels, or a string, one of: small, medium, large.'
-    isRequired: true
+    description: "This can be a number, representing the task module\u2019s height"
     types:
-    - <xref:object>
+    - object
   - name: width
-    description: 'This can be a number, representing the task module''s width
-
-      in pixels, or a string, one of: small, medium, large.'
-    isRequired: true
+    description: "This can be a number, representing the task module\u2019s width"
     types:
-    - <xref:object>
+    - object
   - name: url
-    description: 'The URL of what is loaded as an iframe inside the task module.
-
-      One of url or card is required.'
-    isRequired: true
+    description: The URL of what is loaded as an iframe inside the task module.
     types:
-    - <xref:str>
+    - str
   - name: card
     description: The JSON for the Adaptive card to appear in the task module.
-    isRequired: true
     types:
-    - <xref:botframework.connector.teams.models.Attachment>
+    - Attachment
   - name: fallback_url
-    description: 'If a client does not support the task module feature,
-
-      this URL is opened in a browser tab.'
-    isRequired: true
+    description: If a client does not support the task module feature,
     types:
-    - <xref:str>
+    - str
   - name: completion_bot_id
-    description: 'If a client does not support the task module
-
-      feature, this URL is opened in a browser tab.'
-    isRequired: true
+    description: If a client does not support the task module
     types:
-    - <xref:str>
+    - str

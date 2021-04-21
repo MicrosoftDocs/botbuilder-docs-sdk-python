@@ -7,15 +7,13 @@ inheritances:
 - msrest.serialization.Model
 summary: Thumbnail URL.
 constructor:
-  syntax: 'ThumbnailUrl(*, url: str = None, alt: str = None, **kwargs) -> None'
+  syntax: 'ThumbnailUrl(*, url: Optional[str] = None, alt: Optional[str] = None, **kwargs)'
   parameters:
   - name: url
     description: URL pointing to the thumbnail to use for media content
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: alt
     description: HTML alt text to include on this thumbnail image
-    isRequired: true
     types:
-    - <xref:str>
+    - str

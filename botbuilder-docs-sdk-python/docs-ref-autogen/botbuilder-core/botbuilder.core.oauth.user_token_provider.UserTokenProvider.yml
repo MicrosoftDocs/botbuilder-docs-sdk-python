@@ -5,6 +5,8 @@ fullName: botbuilder.core.oauth.user_token_provider.UserTokenProvider
 module: botbuilder.core.oauth.user_token_provider
 inheritances:
 - abc.ABC
+constructor:
+  syntax: UserTokenProvider()
 methods:
 - uid: botbuilder.core.oauth.user_token_provider.UserTokenProvider.get_aad_tokens
   name: get_aad_tokens
@@ -29,20 +31,8 @@ methods:
 
     :return:'
   signature: 'get_aad_tokens(context: botbuilder.core.turn_context.TurnContext, connection_name:
-    str, resource_urls: typing.List[str], user_id: str = None, oauth_app_credentials:
-    botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
-    botbuilder.schema._models_py3.TokenResponse]'
-  parameters:
-  - name: context
-    isRequired: true
-  - name: connection_name
-    isRequired: true
-  - name: resource_urls
-    isRequired: true
-  - name: user_id
-    defaultValue: None
-  - name: oauth_app_credentials
-    defaultValue: None
+    str, resource_urls: List[str], user_id: Optional[str] = None, oauth_app_credentials:
+    Optional[botframework.connector.auth.app_credentials.AppCredentials] = None)'
 - uid: botbuilder.core.oauth.user_token_provider.UserTokenProvider.get_oauth_sign_in_link
   name: get_oauth_sign_in_link
   summary: 'Get the raw signin link to be sent to the user for signin for a connection
@@ -61,54 +51,22 @@ methods:
 
     :return:'
   signature: 'get_oauth_sign_in_link(context: botbuilder.core.turn_context.TurnContext,
-    connection_name: str, final_redirect: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
-    = None) -> str'
-  parameters:
-  - name: context
-    isRequired: true
-  - name: connection_name
-    isRequired: true
-  - name: final_redirect
-    defaultValue: None
-  - name: oauth_app_credentials
-    defaultValue: None
+    connection_name: str, final_redirect: Optional[str] = None, oauth_app_credentials:
+    Optional[botframework.connector.auth.app_credentials.AppCredentials] = None)'
 - uid: botbuilder.core.oauth.user_token_provider.UserTokenProvider.get_token_status
   name: get_token_status
-  summary: 'Retrieves Azure Active Directory tokens for particular resources on a
-    configured connection.
-
-    :param context: Context for the current turn of conversation with the user.
-
-    :param connection_name: Name of the auth connection to use.
-
-    :param user_id: The user Id for which token status is retrieved.
-
-    :param include_filter: Optional comma separated list of connection''s to include.
-    Blank will return token status
-
-    for all configured connections.
-
-    :param oauth_app_credentials: (Optional) AppCredentials for OAuth.  If None is
-    supplied, the
-
-    Bots credentials are used.
-
-    :return:'
+  summary: "Retrieves Azure Active Directory tokens for particular resources on a\
+    \ configured connection.\n:param context: Context for the current turn of conversation\
+    \ with the user.\n:param connection_name: Name of the auth connection to use.\n\
+    :param user_id: The user Id for which token status is retrieved.\n:param include_filter:\
+    \ Optional comma separated list of connection\u2019s to include. Blank will return\
+    \ token status\nfor all configured connections.\n:param oauth_app_credentials:\
+    \ (Optional) AppCredentials for OAuth.  If None is supplied, the\nBots credentials\
+    \ are used.\n:return:"
   signature: 'get_token_status(context: botbuilder.core.turn_context.TurnContext,
-    connection_name: str = None, user_id: str = None, include_filter: str = None,
-    oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
-    = None) -> typing.Dict[str, botbuilder.schema._models_py3.TokenResponse]'
-  parameters:
-  - name: context
-    isRequired: true
-  - name: connection_name
-    defaultValue: None
-  - name: user_id
-    defaultValue: None
-  - name: include_filter
-    defaultValue: None
-  - name: oauth_app_credentials
-    defaultValue: None
+    connection_name: Optional[str] = None, user_id: Optional[str] = None, include_filter:
+    Optional[str] = None, oauth_app_credentials: Optional[botframework.connector.auth.app_credentials.AppCredentials]
+    = None)'
 - uid: botbuilder.core.oauth.user_token_provider.UserTokenProvider.get_user_token
   name: get_user_token
   summary: 'Retrieves the OAuth token for a user that is in a sign-in flow.
@@ -126,17 +84,8 @@ methods:
 
     :return:'
   signature: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, connection_name:
-    str, magic_code: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
-    = None) -> botbuilder.schema._models_py3.TokenResponse'
-  parameters:
-  - name: context
-    isRequired: true
-  - name: connection_name
-    isRequired: true
-  - name: magic_code
-    defaultValue: None
-  - name: oauth_app_credentials
-    defaultValue: None
+    str, magic_code: Optional[str] = None, oauth_app_credentials: Optional[botframework.connector.auth.app_credentials.AppCredentials]
+    = None)'
 - uid: botbuilder.core.oauth.user_token_provider.UserTokenProvider.sign_out_user
   name: sign_out_user
   summary: 'Signs the user out with the token server.
@@ -154,14 +103,5 @@ methods:
 
     :return:'
   signature: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
-    str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+    Optional[str] = None, user_id: Optional[str] = None, oauth_app_credentials: Optional[botframework.connector.auth.app_credentials.AppCredentials]
     = None)'
-  parameters:
-  - name: context
-    isRequired: true
-  - name: connection_name
-    defaultValue: None
-  - name: user_id
-    defaultValue: None
-  - name: oauth_app_credentials
-    defaultValue: None

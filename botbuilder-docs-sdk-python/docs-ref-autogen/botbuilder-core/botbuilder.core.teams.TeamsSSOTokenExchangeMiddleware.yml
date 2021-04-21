@@ -1,0 +1,30 @@
+### YamlMime:PythonClass
+uid: botbuilder.core.teams.TeamsSSOTokenExchangeMiddleware
+name: TeamsSSOTokenExchangeMiddleware
+fullName: botbuilder.core.teams.TeamsSSOTokenExchangeMiddleware
+module: botbuilder.core.teams
+inheritances:
+- botbuilder.core.middleware_set.Middleware
+summary: 'If the activity name is signin/tokenExchange, self middleware will attempt
+  to
+
+  exchange the token, and deduplicate the incoming call, ensuring only one
+
+  exchange request is processed.'
+constructor:
+  syntax: 'TeamsSSOTokenExchangeMiddleware(storage: botbuilder.core.storage.Storage,
+    connection_name: str)'
+remarks: "If a user is signed into multiple Teams clients, the Bot could receive a\n\
+  \u201Csignin/tokenExchange\u201D from each client. Each token exchange request for\
+  \ a\nspecific user login will have an identical Activity.Value.Id.\n\nOnly one of\
+  \ these token exchange requests should be processed by the bot.\nThe others return\
+  \ <see cref=\u201DSystem.Net.HttpStatusCode.PreconditionFailed\u201D/>.\nFor a distributed\
+  \ bot in production, self requires a distributed storage\nensuring only one token\
+  \ exchange is processed. self middleware supports\nCosmosDb storage found in Microsoft.Bot.Builder.Azure,\
+  \ or MemoryStorage for\nlocal development. IStorage\u2019s ETag implementation for\
+  \ token exchange activity\ndeduplication.\n"
+methods:
+- uid: botbuilder.core.teams.TeamsSSOTokenExchangeMiddleware.on_turn
+  name: on_turn
+  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: Callable[botbuilder.core.turn_context.TurnContext,
+    Awaitable])'

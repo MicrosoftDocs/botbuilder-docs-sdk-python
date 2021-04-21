@@ -5,70 +5,39 @@ fullName: botbuilder.testing.StorageBaseTests
 module: botbuilder.testing
 inheritances:
 - builtins.object
+constructor:
+  syntax: StorageBaseTests()
 methods:
 - uid: botbuilder.testing.StorageBaseTests.create_object
   name: create_object
-  signature: create_object(storage) -> bool
-  parameters:
-  - name: storage
-    isRequired: true
+  signature: create_object(storage)
 - uid: botbuilder.testing.StorageBaseTests.delete_object
   name: delete_object
-  signature: delete_object(storage) -> bool
-  parameters:
-  - name: storage
-    isRequired: true
+  signature: delete_object(storage)
 - uid: botbuilder.testing.StorageBaseTests.delete_unknown_object
   name: delete_unknown_object
-  signature: delete_unknown_object(storage) -> bool
-  parameters:
-  - name: storage
-    isRequired: true
+  signature: delete_unknown_object(storage)
 - uid: botbuilder.testing.StorageBaseTests.does_not_raise_when_writing_no_items
   name: does_not_raise_when_writing_no_items
-  signature: does_not_raise_when_writing_no_items(storage) -> bool
-  parameters:
-  - name: storage
-    isRequired: true
+  signature: does_not_raise_when_writing_no_items(storage)
 - uid: botbuilder.testing.StorageBaseTests.handle_crazy_keys
   name: handle_crazy_keys
-  signature: handle_crazy_keys(storage) -> bool
-  parameters:
-  - name: storage
-    isRequired: true
+  signature: handle_crazy_keys(storage)
 - uid: botbuilder.testing.StorageBaseTests.handle_null_keys_when_reading
   name: handle_null_keys_when_reading
-  signature: handle_null_keys_when_reading(storage) -> bool
-  parameters:
-  - name: storage
-    isRequired: true
+  signature: handle_null_keys_when_reading(storage)
 - uid: botbuilder.testing.StorageBaseTests.handle_null_keys_when_writing
   name: handle_null_keys_when_writing
-  signature: handle_null_keys_when_writing(storage) -> bool
-  parameters:
-  - name: storage
-    isRequired: true
+  signature: handle_null_keys_when_writing(storage)
 - uid: botbuilder.testing.StorageBaseTests.perform_batch_operations
   name: perform_batch_operations
-  signature: perform_batch_operations(storage) -> bool
-  parameters:
-  - name: storage
-    isRequired: true
+  signature: perform_batch_operations(storage)
 - uid: botbuilder.testing.StorageBaseTests.proceeds_through_waterfall
   name: proceeds_through_waterfall
-  signature: proceeds_through_waterfall(storage) -> bool
-  parameters:
-  - name: storage
-    isRequired: true
+  signature: proceeds_through_waterfall(storage)
 - uid: botbuilder.testing.StorageBaseTests.return_empty_object_when_reading_unknown_key
   name: return_empty_object_when_reading_unknown_key
-  signature: return_empty_object_when_reading_unknown_key(storage) -> bool
-  parameters:
-  - name: storage
-    isRequired: true
+  signature: return_empty_object_when_reading_unknown_key(storage)
 - uid: botbuilder.testing.StorageBaseTests.update_object
   name: update_object
-  signature: update_object(storage) -> bool
-  parameters:
-  - name: storage
-    isRequired: true
+  signature: update_object(storage)

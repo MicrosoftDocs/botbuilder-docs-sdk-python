@@ -5,12 +5,9 @@ fullName: botframework.connector.auth.endorsements_validator.EndorsementsValidat
 module: botframework.connector.auth.endorsements_validator
 inheritances:
 - builtins.object
+constructor:
+  syntax: EndorsementsValidator()
 methods:
 - uid: botframework.connector.auth.endorsements_validator.EndorsementsValidator.validate
   name: validate
-  signature: 'validate(expected_endorsement: str, endorsements: typing.List[str])'
-  parameters:
-  - name: expected_endorsement
-    isRequired: true
-  - name: endorsements
-    isRequired: true
+  signature: 'validate(expected_endorsement: str, endorsements: List[str])'

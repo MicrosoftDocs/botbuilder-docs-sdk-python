@@ -16,13 +16,7 @@ methods:
     :param transcript: transcript.
 
     :param activity: Activity to log.'
-  signature: 'log_activity(transcript: queue.Queue, activity: botbuilder.schema._models_py3.Activity)
-    -> None'
-  parameters:
-  - name: transcript
-    isRequired: true
-  - name: activity
-    isRequired: true
+  signature: 'log_activity(transcript: queue.Queue, activity: botbuilder.schema._models_py3.Activity)'
 - uid: botbuilder.core.transcript_logger.TranscriptLoggerMiddleware.on_turn
   name: on_turn
   summary: 'Initialization for middleware.
@@ -30,10 +24,5 @@ methods:
     :param context: Context for the current turn of conversation with the user.
 
     :param logic: Function to call at the end of the middleware chain.'
-  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
-    typing.Awaitable])'
-  parameters:
-  - name: context
-    isRequired: true
-  - name: logic
-    isRequired: true
+  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: Callable[botbuilder.core.turn_context.TurnContext,
+    Awaitable])'

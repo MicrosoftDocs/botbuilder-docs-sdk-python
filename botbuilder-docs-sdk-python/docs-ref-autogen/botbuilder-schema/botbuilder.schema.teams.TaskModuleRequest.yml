@@ -8,20 +8,16 @@ inheritances:
 summary: Task module invoke request value payload.
 constructor:
   syntax: TaskModuleRequest(*, data=None, context=None, tab_entity_context=None, **kwargs)
-    -> None
   parameters:
   - name: data
     description: User input data. Free payload with key-value pairs.
-    isRequired: true
     types:
-    - <xref:object>
+    - object
   - name: context
     description: Current user context, i.e., the current theme
-    isRequired: true
     types:
-    - <xref:botframework.connector.teams.models.TaskModuleRequestContext>
+    - TaskModuleRequestContext
   - name: tab_entity_context
     description: Gets or sets current tab request context.
-    isRequired: true
     types:
-    - <xref:botframework.connector.teams.models.TabEntityContext>
+    - TabEntityContext

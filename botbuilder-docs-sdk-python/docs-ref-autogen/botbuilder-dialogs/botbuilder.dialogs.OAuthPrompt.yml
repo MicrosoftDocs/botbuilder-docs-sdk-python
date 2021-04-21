@@ -7,8 +7,8 @@ inheritances:
 - botbuilder.dialogs.dialog.Dialog
 constructor:
   syntax: 'OAuthPrompt(dialog_id: str, settings: botbuilder.dialogs.prompts.oauth_prompt_settings.OAuthPromptSettings,
-    validator: typing.Callable[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext,
-    typing.Awaitable[bool]] = None)'
+    validator: Optional[Callable[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext,
+    Awaitable[bool]]] = None)'
 methods:
 - uid: botbuilder.dialogs.OAuthPrompt.begin_dialog
   name: begin_dialog
@@ -17,7 +17,7 @@ methods:
 
     dialog stack and is being activated.'
   signature: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    options: botbuilder.dialogs.prompts.prompt_options.PromptOptions = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+    options: Optional[botbuilder.dialogs.prompts.prompt_options.PromptOptions] = None)'
   parameters:
   - name: dialog_context
     description: The dialog context for the current turn of the conversation
@@ -27,13 +27,12 @@ methods:
   - name: options
     description: Optional, additional information to pass to the prompt being started
     isRequired: true
-    defaultValue: None
     types:
     - <xref:botbuilder.dialogs.PromptOptions>
   return:
     description: Dialog turn result
     types:
-    - <xref::class`:*DialogTurnResult*>
+    - :class`:*DialogTurnResult*
   remarks: 'If the task is successful, the result indicates whether the prompt is
     still active after the turn
 
@@ -44,8 +43,7 @@ methods:
   name: continue_dialog
   summary: Continues a dialog. Called when a prompt dialog is the active dialog and
     the user replied with a new activity.
-  signature: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
-    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  signature: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
   parameters:
   - name: dialog_context
     description: The dialog context for the current turn of the conversation
@@ -56,44 +54,32 @@ methods:
     description: Dialog turn result
     types:
     - <xref:botbuilder.dialogs.DialogTurnResult>
-  remarks: 'If the task is successful, the result indicates whether the dialog is
-    still
-
-    active after the turn has been processed by the dialog.
-
-    The prompt generally continues to receive the user''s replies until it accepts
-    the
-
-    user''s reply as valid input for the prompt.
-
-    '
+  remarks: "If the task is successful, the result indicates whether the dialog is\
+    \ still\nactive after the turn has been processed by the dialog.\nThe prompt generally\
+    \ continues to receive the user\u2019s replies until it accepts the\nuser\u2019\
+    s reply as valid input for the prompt.\n"
 - uid: botbuilder.dialogs.OAuthPrompt.get_user_token
   name: get_user_token
-  summary: Gets the user's tokeN.
+  summary: "Gets the user\u2019s tokeN."
   signature: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, code:
-    str = None) -> botbuilder.schema._models_py3.TokenResponse'
+    Optional[str] = None)'
   parameters:
   - name: context
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.TurnContext>
+    - '`TurnContext`'
   - name: code
     description: (Optional) Optional user entered code to validate.
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:str>
+    - str
   return:
-    description: A response that includes the user's token
+    description: "A response that includes the user\u2019s token"
     types:
-    - <xref:botbuilder.dialogs.TokenResponse>
-  remarks: 'If the task is successful and the user already has a token or the user
-    successfully signs in,
-
-    the result contains the user''s token.
-
-    '
+    - '`TokenResponse`'
+  remarks: "If the task is successful and the user already has a token or the user\
+    \ successfully signs in,\nthe result contains the user\u2019s token.\n"
 - uid: botbuilder.dialogs.OAuthPrompt.sign_out_user
   name: sign_out_user
   summary: Signs out the user
@@ -103,19 +89,39 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.TurnContext>
+    - '`TurnContext`'
   return:
     description: A task representing the work queued to execute
-  remarks: 'If the task is successful and the user already has a token or the user
-    successfully signs in,
-
-    the result contains the user''s token.
-
-    '
+  remarks: "If the task is successful and the user already has a token or the user\
+    \ successfully signs in,\nthe result contains the user\u2019s token.\n"
 attributes:
 - uid: botbuilder.dialogs.OAuthPrompt.PERSISTED_CALLER
   name: PERSISTED_CALLER
+  summary: Creates a new prompt that asks the user to sign in, using the Bot Framework
+    Single Sign On (SSO) service.
   signature: PERSISTED_CALLER = 'caller'
+  remarks: "The prompt will attempt to retrieve the users current token and if the\
+    \ user isn\u2019t signed in, it\nwill send them an *OAuthCard* containing a button\
+    \ they can press to sign in. Depending on the channel,\nthe user will be sent\
+    \ through one of two possible sign-in flows:\n- The automatic sign-in flow where\
+    \ once the user signs in, the SSO service will forward\nthe bot the users access\
+    \ token using either an *event* or *invoke* activity.\n- The \u201Cmagic code\u201D\
+    \ flow where once the user signs in, they will be prompted by the SSO service\n\
+    to send the bot a six digit code confirming their identity. This code will be\
+    \ sent as a\nstandard *message* activity.\nBoth flows are automatically supported\
+    \ by the *OAuthPrompt* and they only thing you need to be careful of\nis that\
+    \ you don\u2019t block the *event* and *invoke* activities that the prompt might\
+    \ be waiting on.\n\nYou should avoid persisting the access token with your bots\
+    \ other state. The Bot Frameworks SSO service\nwill securely store the token on\
+    \ your behalf. If you store it in your bots state,\nit could expire or be revoked\
+    \ in between turns.\nWhen calling the prompt from within a waterfall step, you\
+    \ should use the token within the step\nfollowing the prompt and then let the\
+    \ token go out of scope at the end of your function.\n\nWhen used with your bots\
+    \ <xref:botbuilder.dialogs.DialogSet>, you can simply add a new instance of the\
+    \ prompt as a named\ndialog using :meth`DialogSet.add()`.\nYou can then start\
+    \ the prompt from a waterfall step using either `DialogContext.begin()` or\n<xref:botbuilder.dialogs.DialogContext.prompt>.\n\
+    The user will be prompted to sign in as needed and their access token will be\
+    \ passed as an argument to\nthe callers next waterfall step.\n"
 - uid: botbuilder.dialogs.OAuthPrompt.PERSISTED_EXPIRES
   name: PERSISTED_EXPIRES
   signature: PERSISTED_EXPIRES = 'expires'

@@ -7,10 +7,9 @@ inheritances:
 - msrest.serialization.Model
 summary: Describes a tenant.
 constructor:
-  syntax: 'TenantInfo(*, id: str = None, **kwargs) -> None'
+  syntax: 'TenantInfo(*, id: Optional[str] = None, **kwargs)'
   parameters:
   - name: id
     description: Unique identifier representing a tenant
-    isRequired: true
     types:
-    - <xref:str>
+    - str

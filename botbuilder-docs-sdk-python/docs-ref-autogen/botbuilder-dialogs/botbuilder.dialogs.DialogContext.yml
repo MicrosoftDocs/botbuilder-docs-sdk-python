@@ -18,11 +18,6 @@ methods:
     :param options: (Optional) additional argument(s) to pass to the dialog being
     started.'
   signature: 'begin_dialog(dialog_id: str, options: object = None)'
-  parameters:
-  - name: dialog_id
-    isRequired: true
-  - name: options
-    defaultValue: None
 - uid: botbuilder.dialogs.DialogContext.cancel_all_dialogs
   name: cancel_all_dialogs
   summary: 'Deletes any existing dialog stack thus cancelling all dialogs on the stack.
@@ -34,15 +29,8 @@ methods:
     :param event_value:
 
     :return:'
-  signature: 'cancel_all_dialogs(cancel_parents: bool = None, event_name: str = None,
-    event_value: object = None)'
-  parameters:
-  - name: cancel_parents
-    defaultValue: None
-  - name: event_name
-    defaultValue: None
-  - name: event_value
-    defaultValue: None
+  signature: 'cancel_all_dialogs(cancel_parents: Optional[bool] = None, event_name:
+    Optional[str] = None, event_value: object = None)'
 - uid: botbuilder.dialogs.DialogContext.continue_dialog
   name: continue_dialog
   summary: 'Continues execution of the active dialog, if there is one, by passing
@@ -76,50 +64,22 @@ methods:
 
     :return: True if the event was handled.'
   signature: 'emit_event(name: str, value: object = None, bubble: bool = True, from_leaf:
-    bool = False) -> bool'
-  parameters:
-  - name: name
-    isRequired: true
-  - name: value
-    defaultValue: None
-  - name: bubble
-    defaultValue: 'True'
-  - name: from_leaf
-    defaultValue: 'False'
+    bool = False)'
 - uid: botbuilder.dialogs.DialogContext.end_active_dialog
   name: end_active_dialog
   signature: 'end_active_dialog(reason: botbuilder.dialogs.dialog_reason.DialogReason)'
-  parameters:
-  - name: reason
-    isRequired: true
 - uid: botbuilder.dialogs.DialogContext.end_dialog
   name: end_dialog
-  summary: 'Ends a dialog by popping it off the stack and returns an optional result
-    to the dialog''s
-
-    parent. The parent dialog is the dialog that started the dialog being ended via
-    a call to
-
-    either "begin_dialog" or "prompt".
-
-    The parent dialog will have its *Dialog.resume_dialog()* method invoked with any
-    returned
-
-    result. If the parent dialog hasn''t implemented a *resume_dialog()* method then
-    it will be
-
-    automatically ended as well and the result passed to its parent. If there are
-    no more
-
-    parent dialogs on the stack then processing of the turn will end.
-
-    :param result: (Optional) result to pass to the parent dialogs.
-
-    :return:'
+  summary: "Ends a dialog by popping it off the stack and returns an optional result\
+    \ to the dialog\u2019s\nparent. The parent dialog is the dialog that started the\
+    \ dialog being ended via a call to\neither \u201Cbegin_dialog\u201D or \u201C\
+    prompt\u201D.\nThe parent dialog will have its *Dialog.resume_dialog()* method\
+    \ invoked with any returned\nresult. If the parent dialog hasn\u2019t implemented\
+    \ a *resume_dialog()* method then it will be\nautomatically ended as well and\
+    \ the result passed to its parent. If there are no more\nparent dialogs on the\
+    \ stack then processing of the turn will end.\n:param result: (Optional) result\
+    \ to pass to the parent dialogs.\n:return:"
   signature: 'end_dialog(result: object = None)'
-  parameters:
-  - name: result
-    defaultValue: None
 - uid: botbuilder.dialogs.DialogContext.find_dialog
   name: find_dialog
   summary: 'If the dialog cannot be found within the current *DialogSet*, the parent
@@ -130,10 +90,7 @@ methods:
     :param dialog_id: ID of the dialog to search for.
 
     :return:'
-  signature: 'find_dialog(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
-  parameters:
-  - name: dialog_id
-    isRequired: true
+  signature: 'find_dialog(dialog_id: str)'
 - uid: botbuilder.dialogs.DialogContext.find_dialog_sync
   name: find_dialog_sync
   summary: 'If the dialog cannot be found within the current *DialogSet*, the parent
@@ -144,10 +101,7 @@ methods:
     :param dialog_id: ID of the dialog to search for.
 
     :return:'
-  signature: 'find_dialog_sync(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
-  parameters:
-  - name: dialog_id
-    isRequired: true
+  signature: 'find_dialog_sync(dialog_id: str)'
 - uid: botbuilder.dialogs.DialogContext.prompt
   name: prompt
   summary: 'Helper function to simplify formatting the options for calling a prompt
@@ -161,12 +115,7 @@ methods:
     Choices.
 
     :return:'
-  signature: 'prompt(dialog_id: str, options) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
-  parameters:
-  - name: dialog_id
-    isRequired: true
-  - name: options
-    isRequired: true
+  signature: 'prompt(dialog_id: str, options)'
 - uid: botbuilder.dialogs.DialogContext.replace_dialog
   name: replace_dialog
   summary: 'Ends the active dialog and starts a new dialog in its place. This is particularly
@@ -179,12 +128,7 @@ methods:
     :param options: (Optional) additional argument(s) to pass to the new dialog.
 
     :return:'
-  signature: 'replace_dialog(dialog_id: str, options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
-  parameters:
-  - name: dialog_id
-    isRequired: true
-  - name: options
-    defaultValue: None
+  signature: 'replace_dialog(dialog_id: str, options: object = None)'
 - uid: botbuilder.dialogs.DialogContext.reprompt_dialog
   name: reprompt_dialog
   summary: 'Calls reprompt on the currently active dialog, if there is one. Used with

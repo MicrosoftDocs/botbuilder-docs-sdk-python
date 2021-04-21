@@ -7,16 +7,14 @@ inheritances:
 - msrest.serialization.Model
 summary: O365 connector card image.
 constructor:
-  syntax: 'O365ConnectorCardImage(*, image: str = None, title: str = None, **kwargs)
-    -> None'
+  syntax: 'O365ConnectorCardImage(*, image: Optional[str] = None, title: Optional[str]
+    = None, **kwargs)'
   parameters:
   - name: image
     description: URL for the image
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: title
     description: Alternative text for the image
-    isRequired: true
     types:
-    - <xref:str>
+    - str

@@ -7,12 +7,9 @@ inheritances:
 - msrest.serialization.Model
 summary: ExpectedReplies.
 constructor:
-  syntax: ExpectedReplies(*, activities=None, **kwargs) -> None
+  syntax: ExpectedReplies(*, activities=None, **kwargs)
   parameters:
   - name: activities
-    description: 'A collection of Activities that conforms to the
-
-      ExpectedReplies schema.'
-    isRequired: true
+    description: A collection of Activities that conforms to the
     types:
-    - <xref:list>[<xref:botframework.connector.models.Activity>]
+    - list[Activity]

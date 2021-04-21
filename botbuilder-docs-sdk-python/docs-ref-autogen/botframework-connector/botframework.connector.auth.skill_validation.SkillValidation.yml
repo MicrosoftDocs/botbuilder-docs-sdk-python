@@ -6,24 +6,14 @@ module: botframework.connector.auth.skill_validation
 inheritances:
 - builtins.object
 summary: Validates JWT tokens sent to and from a Skill.
+constructor:
+  syntax: SkillValidation()
 methods:
 - uid: botframework.connector.auth.skill_validation.SkillValidation.authenticate_channel_token
   name: authenticate_channel_token
   signature: 'authenticate_channel_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
-    channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
-    channel_id: str, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration)
-    -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  parameters:
-  - name: auth_header
-    isRequired: true
-  - name: credentials
-    isRequired: true
-  - name: channel_service_or_provider
-    isRequired: true
-  - name: channel_id
-    isRequired: true
-  - name: auth_configuration
-    isRequired: true
+    channel_service_or_provider: Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
+    channel_id: str, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration)'
 - uid: botframework.connector.auth.skill_validation.SkillValidation.create_anonymous_skill_claim
   name: create_anonymous_skill_claim
   summary: 'Creates a ClaimsIdentity for an anonymous (unauthenticated) skill.
@@ -37,19 +27,10 @@ methods:
     :param claims: A dict of claims.
 
     :return bool:'
-  signature: 'is_skill_claim(claims: typing.Dict[str, object]) -> bool'
-  parameters:
-  - name: claims
-    isRequired: true
+  signature: 'is_skill_claim(claims: Dict[str, object])'
 - uid: botframework.connector.auth.skill_validation.SkillValidation.is_skill_token
   name: is_skill_token
-  summary: 'Determines if a given Auth header is from from a skill to bot or bot to
-    skill request.
-
-    :param auth_header: Bearer Token, in the "Bearer [Long String]" Format.
-
-    :return bool:'
-  signature: 'is_skill_token(auth_header: str) -> bool'
-  parameters:
-  - name: auth_header
-    isRequired: true
+  summary: "Determines if a given Auth header is from from a skill to bot or bot to\
+    \ skill request.\n:param auth_header: Bearer Token, in the \u201CBearer [Long\
+    \ String]\u201D Format.\n:return bool:"
+  signature: 'is_skill_token(auth_header: str)'

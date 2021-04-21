@@ -5,11 +5,9 @@ fullName: botbuilder.core.recognizer.Recognizer
 module: botbuilder.core.recognizer
 inheritances:
 - abc.ABC
+constructor:
+  syntax: Recognizer()
 methods:
 - uid: botbuilder.core.recognizer.Recognizer.recognize
   name: recognize
-  signature: 'recognize(turn_context: botbuilder.core.turn_context.TurnContext) ->
-    botbuilder.core.recognizer_result.RecognizerResult'
-  parameters:
-  - name: turn_context
-    isRequired: true
+  signature: 'recognize(turn_context: botbuilder.core.turn_context.TurnContext)'

@@ -9,330 +9,189 @@ summary: 'An Activity is the basic communication type for the Bot Framework 3.0
 
   protocol.'
 constructor:
-  syntax: 'Activity(*, type=None, id: str = None, timestamp=None, local_timestamp=None,
-    local_timezone: str = None, service_url: str = None, channel_id: str = None, from_property=None,
-    conversation=None, recipient=None, text_format=None, attachment_layout=None, members_added=None,
-    members_removed=None, reactions_added=None, reactions_removed=None, topic_name:
-    str = None, history_disclosed: bool = None, locale: str = None, text: str = None,
-    speak: str = None, input_hint=None, summary: str = None, suggested_actions=None,
-    attachments=None, entities=None, channel_data=None, action: str = None, reply_to_id:
-    str = None, label: str = None, value_type: str = None, value=None, name: str =
-    None, relates_to=None, code=None, expiration=None, importance=None, delivery_mode=None,
-    listen_for=None, text_highlights=None, semantic_action=None, caller_id: str =
-    None, **kwargs) -> None'
+  syntax: 'Activity(*, type=None, id: Optional[str] = None, timestamp=None, local_timestamp=None,
+    local_timezone: Optional[str] = None, service_url: Optional[str] = None, channel_id:
+    Optional[str] = None, from_property=None, conversation=None, recipient=None, text_format=None,
+    attachment_layout=None, members_added=None, members_removed=None, reactions_added=None,
+    reactions_removed=None, topic_name: Optional[str] = None, history_disclosed: Optional[bool]
+    = None, locale: Optional[str] = None, text: Optional[str] = None, speak: Optional[str]
+    = None, input_hint=None, summary: Optional[str] = None, suggested_actions=None,
+    attachments=None, entities=None, channel_data=None, action: Optional[str] = None,
+    reply_to_id: Optional[str] = None, label: Optional[str] = None, value_type: Optional[str]
+    = None, value=None, name: Optional[str] = None, relates_to=None, code=None, expiration=None,
+    importance=None, delivery_mode=None, listen_for=None, text_highlights=None, semantic_action=None,
+    caller_id: Optional[str] = None, **kwargs)'
   parameters:
   - name: type
-    description: 'Contains the activity type. Possible values include:
-
-      ''message'', ''contactRelationUpdate'', ''conversationUpdate'', ''typing'',
-
-      ''endOfConversation'', ''event'', ''invoke'', ''deleteUserData'', ''messageUpdate'',
-
-      ''messageDelete'', ''installationUpdate'', ''messageReaction'', ''suggestion'',
-
-      ''trace'', ''handoff'''
-    isRequired: true
+    description: 'Contains the activity type. Possible values include:'
     types:
-    - <xref:str>
-    - <xref:botframework.connector.models.ActivityTypes>
+    - str or ActivityTypes
   - name: id
-    description: 'Contains an ID that uniquely identifies the activity on the
-
-      channel.'
-    isRequired: true
+    description: Contains an ID that uniquely identifies the activity on the
     types:
-    - <xref:str>
+    - str
   - name: timestamp
-    description: 'Contains the date and time that the message was sent, in
-
-      UTC, expressed in ISO-8601 format.'
-    isRequired: true
+    description: Contains the date and time that the message was sent, in
     types:
-    - <xref:datetime>
+    - datetime
   - name: local_timestamp
-    description: 'Contains the local date and time of the message
-
-      expressed in ISO-8601 format.
-
-      For example, 2016-09-23T13:07:49.4714686-07:00.'
-    isRequired: true
+    description: Contains the local date and time of the message
     types:
-    - <xref:datetime>
+    - datetime
   - name: local_timezone
-    description: 'Contains the name of the local timezone of the message,
-
-      expressed in IANA Time Zone database format.
-
-      For example, America/Los_Angeles.'
-    isRequired: true
+    description: Contains the name of the local timezone of the message,
     types:
-    - <xref:str>
+    - str
   - name: service_url
-    description: 'Contains the URL that specifies the channel''s service
-
-      endpoint. Set by the channel.'
-    isRequired: true
+    description: "Contains the URL that specifies the channel\u2019s service"
     types:
-    - <xref:str>
+    - str
   - name: channel_id
-    description: 'Contains an ID that uniquely identifies the channel.
-
-      Set by the channel.'
-    isRequired: true
+    description: Contains an ID that uniquely identifies the channel.
     types:
-    - <xref:str>
+    - str
   - name: from_property
     description: Identifies the sender of the message.
-    isRequired: true
     types:
-    - <xref:botframework.connector.models.ChannelAccount>
+    - ChannelAccount
   - name: conversation
-    description: 'Identifies the conversation to which the activity
-
-      belongs.'
-    isRequired: true
+    description: Identifies the conversation to which the activity
     types:
-    - <xref:botframework.connector.models.ConversationAccount>
+    - ConversationAccount
   - name: recipient
     description: Identifies the recipient of the message.
-    isRequired: true
     types:
-    - <xref:botframework.connector.models.ChannelAccount>
+    - ChannelAccount
   - name: text_format
-    description: 'Format of text fields Default:markdown. Possible
-
-      values include: ''markdown'', ''plain'', ''xml'''
-    isRequired: true
+    description: Format of text fields Default:markdown. Possible
     types:
-    - <xref:str>
-    - <xref:botframework.connector.models.TextFormatTypes>
+    - str or TextFormatTypes
   - name: attachment_layout
-    description: 'The layout hint for multiple attachments.
-
-      Default: list. Possible values include: ''list'', ''carousel'''
-    isRequired: true
-    types:
-    - <xref:str>
-    - <xref:botframework.connector.models.AttachmentLayoutTypes>
+    description: The layout hint for multiple attachments.
   - name: members_added
     description: The collection of members added to the conversation.
-    isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
+    - list[ChannelAccount]
   - name: members_removed
-    description: 'The collection of members removed from the
-
-      conversation.'
-    isRequired: true
+    description: The collection of members removed from the
     types:
-    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
+    - list[ChannelAccount]
   - name: reactions_added
-    description: 'The collection of reactions added to the
-
-      conversation.'
-    isRequired: true
+    description: The collection of reactions added to the
     types:
-    - <xref:list>[<xref:botframework.connector.models.MessageReaction>]
+    - list[MessageReaction]
   - name: reactions_removed
-    description: 'The collection of reactions removed from the
-
-      conversation.'
-    isRequired: true
+    description: The collection of reactions removed from the
     types:
-    - <xref:list>[<xref:botframework.connector.models.MessageReaction>]
+    - list[MessageReaction]
   - name: topic_name
     description: The updated topic name of the conversation.
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: history_disclosed
-    description: 'Indicates whether the prior history of the
-
-      channel is disclosed.'
-    isRequired: true
+    description: Indicates whether the prior history of the
     types:
-    - <xref:bool>
+    - bool
   - name: locale
-    description: 'A locale name for the contents of the text field.
-
-      The locale name is a combination of an ISO 639 two- or three-letter
-
-      culture code associated with a language
-
-      and an ISO 3166 two-letter subculture code associated with a country or
-
-      region.
-
-      The locale name can also correspond to a valid BCP-47 language tag.'
-    isRequired: true
+    description: A locale name for the contents of the text field.
     types:
-    - <xref:str>
+    - str
   - name: text
     description: The text content of the message.
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: speak
     description: The text to speak.
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: input_hint
-    description: 'Indicates whether your bot is accepting,
-
-      expecting, or ignoring user input after the message is delivered to the
-
-      client. Possible values include: ''acceptingInput'', ''ignoringInput'',
-
-      ''expectingInput'''
-    isRequired: true
+    description: Indicates whether your bot is accepting,
     types:
-    - <xref:str>
-    - <xref:botframework.connector.models.InputHints>
+    - str or InputHints
   - name: summary
     description: The text to display if the channel cannot render cards.
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: suggested_actions
     description: The suggested actions for the activity.
-    isRequired: true
     types:
-    - <xref:botframework.connector.models.SuggestedActions>
+    - SuggestedActions
   - name: attachments
     description: Attachments
-    isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.Attachment>]
+    - list[Attachment]
   - name: entities
-    description: 'Represents the entities that were mentioned in the
-
-      message.'
-    isRequired: true
+    description: Represents the entities that were mentioned in the
     types:
-    - <xref:list>[<xref:botframework.connector.models.Entity>]
+    - list[Entity]
   - name: channel_data
     description: Contains channel-specific content.
-    isRequired: true
     types:
-    - <xref:object>
+    - object
   - name: action
-    description: 'Indicates whether the recipient of a contactRelationUpdate
-
-      was added or removed from the sender''s contact list.'
-    isRequired: true
+    description: Indicates whether the recipient of a contactRelationUpdate
     types:
-    - <xref:str>
+    - str
   - name: reply_to_id
-    description: 'Contains the ID of the message to which this message
-
-      is a reply.'
-    isRequired: true
+    description: Contains the ID of the message to which this message
     types:
-    - <xref:str>
+    - str
   - name: label
     description: A descriptive label for the activity.
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: value_type
-    description: The type of the activity's value object.
-    isRequired: true
+    description: "The type of the activity\u2019s value object."
     types:
-    - <xref:str>
+    - str
   - name: value
     description: A value that is associated with the activity.
-    isRequired: true
     types:
-    - <xref:object>
+    - object
   - name: name
-    description: 'The name of the operation associated with an invoke or event
-
-      activity.'
-    isRequired: true
+    description: The name of the operation associated with an invoke or event
     types:
-    - <xref:str>
+    - str
   - name: relates_to
     description: A reference to another conversation or activity.
-    isRequired: true
     types:
-    - <xref:botframework.connector.models.ConversationReference>
+    - ConversationReference
   - name: code
-    description: 'The a code for endOfConversation activities that indicates
-
-      why the conversation ended. Possible values include: ''unknown'',
-
-      ''completedSuccessfully'', ''userCancelled'', ''botTimedOut'',
-
-      ''botIssuedInvalidMessage'', ''channelFailed'''
-    isRequired: true
+    description: The a code for endOfConversation activities that indicates
     types:
-    - <xref:str>
-    - <xref:botframework.connector.models.EndOfConversationCodes>
+    - str or EndOfConversationCodes
   - name: expiration
-    description: 'The time at which the activity should be considered to
-
-      be "expired" and should not be presented to the recipient.'
-    isRequired: true
+    description: The time at which the activity should be considered to
     types:
-    - <xref:datetime>
+    - datetime
   - name: importance
-    description: 'The importance of the activity. Possible values
-
-      include: ''low'', ''normal'', ''high'''
-    isRequired: true
+    description: The importance of the activity. Possible values
     types:
-    - <xref:str>
-    - <xref:botframework.connector.models.ActivityImportance>
+    - str or ActivityImportance
   - name: delivery_mode
-    description: 'A delivery hint to signal to the recipient alternate
-
-      delivery paths for the activity.
-
-      The default delivery mode is "default". Possible values include: ''normal'',
-
-      ''notification'', ''expectReplies'', ''ephemeral'''
-    isRequired: true
+    description: A delivery hint to signal to the recipient alternate
     types:
-    - <xref:str>
-    - <xref:botframework.connector.models.DeliveryModes>
+    - str or DeliveryModes
   - name: listen_for
-    description: 'List of phrases and references that speech and language
-
-      priming systems should listen for'
-    isRequired: true
+    description: List of phrases and references that speech and language
     types:
-    - <xref:list>[<xref:str>]
+    - list[str]
   - name: text_highlights
-    description: 'The collection of text fragments to highlight when
-
-      the activity contains a ReplyToId value.'
-    isRequired: true
+    description: The collection of text fragments to highlight when
     types:
-    - <xref:list>[<xref:botframework.connector.models.TextHighlight>]
+    - list[TextHighlight]
   - name: semantic_action
-    description: 'An optional programmatic action accompanying this
-
-      request'
-    isRequired: true
+    description: An optional programmatic action accompanying this
     types:
-    - <xref:botframework.connector.models.SemanticAction>
+    - SemanticAction
   - name: caller_id
-    description: 'A string containing an IRI identifying the caller of a
-
-      bot. This field is not intended to be transmitted over the wire, but is
-
-      instead populated by bots and clients based on cryptographically
-
-      verifiable data that asserts the identity of the callers (e.g. tokens).'
-    isRequired: true
+    description: A string containing an IRI identifying the caller of a
     types:
-    - <xref:str>
+    - str
 methods:
 - uid: botbuilder.schema.Activity.apply_conversation_reference
   name: apply_conversation_reference
   summary: 'Updates this activity with the delivery information from an existing ConversationReference
-
 
 
     incoming activity, where the bot is the recipient; otherwise, False.
@@ -340,11 +199,6 @@ methods:
     Default is False, and the activity will show the bot as the sender.'
   signature: 'apply_conversation_reference(reference: botbuilder.schema._models_py3.ConversationReference,
     is_incoming: bool = False)'
-  parameters:
-  - name: reference
-    isRequired: true
-  - name: is_incoming
-    defaultValue: 'False'
   return:
     description: his activity, updated with the delivery information.
   remarks: 'Call GetConversationReference on an incoming
@@ -518,16 +372,14 @@ methods:
 - uid: botbuilder.schema.Activity.create_reply
   name: create_reply
   summary: Creates a new message activity as a response to this activity.
-  signature: 'create_reply(text: str = None, locale: str = None)'
+  signature: 'create_reply(text: Optional[str] = None, locale: Optional[str] = None)'
   parameters:
   - name: text
     description: The text of the reply.
     isRequired: true
-    defaultValue: None
   - name: locale
     description: The language code for the text.
     isRequired: true
-    defaultValue: None
   return:
     description: The new message activity.
   remarks: 'The new activity sets up routing information based on this activity.
@@ -538,21 +390,11 @@ methods:
   summary: 'Creates a new trace activity based on this activity.
 
 
-
     Default is the name of type of the value.
 
     :param label: Optional, a descriptive label for this trace operation.'
-  signature: 'create_trace(name: str, value: object = None, value_type: str = None,
-    label: str = None)'
-  parameters:
-  - name: name
-    isRequired: true
-  - name: value
-    defaultValue: None
-  - name: value_type
-    defaultValue: None
-  - name: label
-    defaultValue: None
+  signature: 'create_trace(name: str, value: object = None, value_type: Optional[str]
+    = None, label: Optional[str] = None)'
   return:
     description: The new trace activity.
 - uid: botbuilder.schema.Activity.create_trace_activity
@@ -561,21 +403,11 @@ methods:
     a TraceActivity object.
 
 
-
     Default is the name of type of the value.
 
     :param label: Optional, a descriptive label for this trace operation.'
-  signature: 'create_trace_activity(name: str, value: object = None, value_type: str
-    = None, label: str = None)'
-  parameters:
-  - name: name
-    isRequired: true
-  - name: value
-    defaultValue: None
-  - name: value_type
-    defaultValue: None
-  - name: label
-    defaultValue: None
+  signature: 'create_trace_activity(name: str, value: object = None, value_type: Optional[str]
+    = None, label: Optional[str] = None)'
   return:
     description: The new trace activity.
 - uid: botbuilder.schema.Activity.create_typing_activity
@@ -595,7 +427,7 @@ methods:
 - uid: botbuilder.schema.Activity.get_mentions
   name: get_mentions
   summary: Resolves the mentions from the entities of this activity.
-  signature: get_mentions() -> [<class 'botbuilder.schema._models_py3.Mention'>]
+  signature: get_mentions()
   return:
     description: The array of mentions; or an empty array, if none are found.
   remarks: 'This method is defined on the <xref:botbuilder.schema.Activity> class,
@@ -608,12 +440,9 @@ methods:
     '
 - uid: botbuilder.schema.Activity.get_reply_conversation_reference
   name: get_reply_conversation_reference
-  summary: 'Create a ConversationReference based on this Activity''s Conversation
-    info
-
-    and the ResourceResponse from sending an activity.'
-  signature: 'get_reply_conversation_reference(reply: botbuilder.schema._models_py3.ResourceResponse)
-    -> botbuilder.schema._models_py3.ConversationReference'
+  summary: "Create a ConversationReference based on this Activity\u2019s Conversation\
+    \ info\nand the ResourceResponse from sending an activity."
+  signature: 'get_reply_conversation_reference(reply: botbuilder.schema._models_py3.ResourceResponse)'
   parameters:
   - name: reply
     description: ResourceResponse returned from send_activity.
@@ -624,7 +453,7 @@ methods:
 - uid: botbuilder.schema.Activity.has_content
   name: has_content
   summary: Indicates whether this activity has content.
-  signature: has_content() -> bool
+  signature: has_content()
   return:
     description: True, if this activity has any content to send; otherwise, false.
   remarks: 'This method is defined on the <xref:botbuilder.schema.Activity> class,
@@ -645,6 +474,6 @@ methods:
 
     (2) Channels that send messages via streaming have a ServiceUrl that does not
     begin with http/https.'
-  signature: is_from_streaming_connection() -> bool
+  signature: is_from_streaming_connection()
   return:
     description: True if the Activity originated from a streaming connection.

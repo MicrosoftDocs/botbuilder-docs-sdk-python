@@ -6,7 +6,7 @@ module: botbuilder.dialogs.dialog_set
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'DialogSet(dialog_state: botbuilder.core.state_property_accessor.StatePropertyAccessor
+  syntax: 'DialogSet(dialog_state: Optional[botbuilder.core.state_property_accessor.StatePropertyAccessor]
     = None)'
 methods:
 - uid: botbuilder.dialogs.dialog_set.DialogSet.add
@@ -15,14 +15,9 @@ methods:
 
     :param dialog: The dialog to add.'
   signature: 'add(dialog: botbuilder.dialogs.dialog.Dialog)'
-  parameters:
-  - name: dialog
-    isRequired: true
 - uid: botbuilder.dialogs.dialog_set.DialogSet.create_context
   name: create_context
-  parameters:
-  - name: turn_context
-    isRequired: true
+  signature: 'create_context(turn_context: botbuilder.core.turn_context.TurnContext)'
 - uid: botbuilder.dialogs.dialog_set.DialogSet.find
   name: find
   summary: 'Finds a dialog that was previously added to the set using add(dialog)
@@ -30,10 +25,7 @@ methods:
     :param dialog_id: ID of the dialog/prompt to look up.
 
     :return: The dialog if found, otherwise null.'
-  signature: 'find(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
-  parameters:
-  - name: dialog_id
-    isRequired: true
+  signature: 'find(dialog_id: str)'
 - uid: botbuilder.dialogs.dialog_set.DialogSet.find_dialog
   name: find_dialog
   summary: 'Finds a dialog that was previously added to the set using add(dialog)
@@ -41,17 +33,14 @@ methods:
     :param dialog_id: ID of the dialog/prompt to look up.
 
     :return: The dialog if found, otherwise null.'
-  signature: 'find_dialog(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
-  parameters:
-  - name: dialog_id
-    isRequired: true
+  signature: 'find_dialog(dialog_id: str)'
 - uid: botbuilder.dialogs.dialog_set.DialogSet.get_version
   name: get_version
   summary: 'Gets a unique string which represents the combined versions of all dialogs
     in this this dialogset.
 
     <returns>Version will change when any of the child dialogs version changes.</returns>'
-  signature: get_version() -> str
+  signature: get_version()
 attributes:
 - uid: botbuilder.dialogs.dialog_set.DialogSet.telemetry_client
   name: telemetry_client

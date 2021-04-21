@@ -9,23 +9,21 @@ summary: "ConversationsOperations async operations.\n\nYou should not instantiat
   \ directly this class, but create a Client instance that will create it for you\
   \ and attach\n   it as attribute."
 constructor:
-  syntax: ConversationsOperations(client, config, serializer, deserializer) -> None
+  syntax: ConversationsOperations(client, config, serializer, deserializer)
   parameters:
   - name: client
     description: Client for service requests.
-    isRequired: true
   - name: config
     description: Configuration of service client.
-    isRequired: true
   - name: serializer
     description: An object model serializer.
-    isRequired: true
   - name: deserializer
     description: An object model deserializer.
-    isRequired: true
 variables:
-- description: 'The API version to use for the request. Constant value: "v3".'
-  name: api_version
+- description: "The API version to use for the request. Constant value: \u201Cv3\u201D\
+    ."
+  name: "api_version \u2013 The API version to use for the request. Constant value:\
+    \ \u201Cv3\u201D"
 methods:
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.create_conversation
   name: create_conversation
@@ -73,31 +71,25 @@ methods:
     description: Parameters to create the conversation from
     isRequired: true
     types:
-    - <xref:botframework.connector.models.ConversationParameters>
+    - ConversationParameters
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - <xref:dict>
+    - dict
   - name: raw
-    description: 'returns the direct response alongside the
-
-      deserialized response'
+    description: returns the direct response alongside the
     isRequired: true
     types:
-    - <xref:bool>
+    - bool
   - name: operation_config
-    description: '*Operation configuration
-
-      overrides*.'
+    description: '*Operation configuration'
     isRequired: true
   return:
     description: ConversationResourceResponse or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.models.ConversationResourceResponse>
-    - <xref:msrest.pipeline.ClientRawResponse>
-  exceptions:
-  - type: botframework.connector.models.ErrorResponseException
+    - ConversationResourceResponse
+    - ClientRawResponse
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.delete_activity
   name: delete_activity
   summary: 'DeleteActivity.
@@ -115,36 +107,30 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: activity_id
     description: activityId to delete
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - <xref:dict>
+    - dict
   - name: raw
-    description: 'returns the direct response alongside the
-
-      deserialized response'
+    description: returns the direct response alongside the
     isRequired: true
     types:
-    - <xref:bool>
+    - bool
   - name: operation_config
-    description: '*Operation configuration
-
-      overrides*.'
+    description: '*Operation configuration'
     isRequired: true
   return:
     description: None or ClientRawResponse if raw=true
     types:
-    - <xref:None>
-    - <xref:msrest.pipeline.ClientRawResponse>
-  exceptions:
-  - type: botframework.connector.models.ErrorResponseException
+    - None
+    - ClientRawResponse
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.delete_conversation_member
   name: delete_conversation_member
   summary: 'DeleteConversationMember.
@@ -166,36 +152,30 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: member_id
     description: ID of the member to delete from this conversation
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - <xref:dict>
+    - dict
   - name: raw
-    description: 'returns the direct response alongside the
-
-      deserialized response'
+    description: returns the direct response alongside the
     isRequired: true
     types:
-    - <xref:bool>
+    - bool
   - name: operation_config
-    description: '*Operation configuration
-
-      overrides*.'
+    description: '*Operation configuration'
     isRequired: true
   return:
     description: None or ClientRawResponse if raw=true
     types:
-    - <xref:None>
-    - <xref:msrest.pipeline.ClientRawResponse>
-  exceptions:
-  - type: botframework.connector.models.ErrorResponseException
+    - None
+    - ClientRawResponse
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.get_activity_members
   name: get_activity_members
   summary: 'GetActivityMembers.
@@ -215,36 +195,30 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: activity_id
     description: Activity ID
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - <xref:dict>
+    - dict
   - name: raw
-    description: 'returns the direct response alongside the
-
-      deserialized response'
+    description: returns the direct response alongside the
     isRequired: true
     types:
-    - <xref:bool>
+    - bool
   - name: operation_config
-    description: '*Operation configuration
-
-      overrides*.'
+    description: '*Operation configuration'
     isRequired: true
   return:
     description: list or ClientRawResponse if raw=true
     types:
-    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
-    - <xref:msrest.pipeline.ClientRawResponse>
-  exceptions:
-  - type: botframework.connector.models.ErrorResponseException
+    - list[ChannelAccount]
+    - ClientRawResponse
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_member
   name: get_conversation_member
   summary: 'GetConversationMember.
@@ -262,38 +236,30 @@ methods:
     description: Conversation Id
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: member_id
     description: Member Id
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:dict>
+    - dict
   - name: raw
-    description: 'returns the direct response alongside the
-
-      deserialized response'
-    isRequired: true
+    description: returns the direct response alongside the
     defaultValue: 'False'
     types:
-    - <xref:bool>
+    - bool
   - name: operation_config
-    description: '*Operation configuration
-
-      overrides*.'
+    description: '*Operation configuration'
     isRequired: true
   return:
     description: list or ClientRawResponse if raw=true
     types:
-    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
-    - <xref:msrest.pipeline.ClientRawResponse>
-  exceptions:
-  - type: botframework.connector.models.ErrorResponseException
+    - list[ChannelAccount]
+    - ClientRawResponse
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_members
   name: get_conversation_members
   summary: 'GetConversationMembers.
@@ -311,31 +277,25 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - <xref:dict>
+    - dict
   - name: raw
-    description: 'returns the direct response alongside the
-
-      deserialized response'
+    description: returns the direct response alongside the
     isRequired: true
     types:
-    - <xref:bool>
+    - bool
   - name: operation_config
-    description: '*Operation configuration
-
-      overrides*.'
+    description: '*Operation configuration'
     isRequired: true
   return:
     description: list or ClientRawResponse if raw=true
     types:
-    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
-    - <xref:msrest.pipeline.ClientRawResponse>
-  exceptions:
-  - type: botframework.connector.models.ErrorResponseException
+    - list[ChannelAccount]
+    - ClientRawResponse
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_paged_members
   name: get_conversation_paged_members
   summary: 'GetConversationPagedMembers.
@@ -375,43 +335,35 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: page_size
     description: Suggested page size
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:int>
+    - int
   - name: continuation_token
     description: Continuation Token
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:str>
+    - str
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - <xref:dict>
+    - dict
   - name: raw
-    description: 'returns the direct response alongside the
-
-      deserialized response'
+    description: returns the direct response alongside the
     isRequired: true
     types:
-    - <xref:bool>
+    - bool
   - name: operation_config
-    description: '*Operation configuration
-
-      overrides*.'
+    description: '*Operation configuration'
     isRequired: true
   return:
     description: PagedMembersResult or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.models.PagedMembersResult>
-    - <xref:msrest.pipeline.ClientRawResponse>
-  exceptions:
-  - type: msrest.exceptions.HttpOperationError
+    - PagedMembersResult
+    - ClientRawResponse
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversations
   name: get_conversations
   summary: 'GetConversations.
@@ -442,33 +394,26 @@ methods:
   - name: continuation_token
     description: skip or continuation token
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:str>
+    - str
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - <xref:dict>
+    - dict
   - name: raw
-    description: 'returns the direct response alongside the
-
-      deserialized response'
+    description: returns the direct response alongside the
     isRequired: true
     types:
-    - <xref:bool>
+    - bool
   - name: operation_config
-    description: '*Operation configuration
-
-      overrides*.'
+    description: '*Operation configuration'
     isRequired: true
   return:
     description: ConversationsResult or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.models.ConversationsResult>
-    - <xref:msrest.pipeline.ClientRawResponse>
-  exceptions:
-  - type: botframework.connector.models.ErrorResponseException
+    - ConversationsResult
+    - ClientRawResponse
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.get_teams_conversation_paged_members
   name: get_teams_conversation_paged_members
   summary: 'GetTeamsConversationPagedMembers.
@@ -508,45 +453,35 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: page_size
     description: Suggested page size
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:int>
+    - int
   - name: continuation_token
     description: Continuation Token
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:str>
+    - str
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:dict>
+    - dict
   - name: raw
-    description: 'returns the direct response alongside the
-
-      deserialized response'
-    isRequired: true
+    description: returns the direct response alongside the
     defaultValue: 'False'
     types:
-    - <xref:bool>
+    - bool
   - name: operation_config
-    description: '*Operation configuration
-
-      overrides*.'
+    description: '*Operation configuration'
     isRequired: true
   return:
     description: PagedMembersResult or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.models.PagedMembersResult>
-    - <xref:msrest.pipeline.ClientRawResponse>
-  exceptions:
-  - type: msrest.exceptions.HttpOperationError
+    - PagedMembersResult
+    - ClientRawResponse
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.reply_to_activity
   name: reply_to_activity
   summary: 'ReplyToActivity.
@@ -582,41 +517,35 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: activity_id
     description: activityId the reply is to (OPTIONAL)
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: activity
     description: Activity to send
     isRequired: true
     types:
-    - <xref:botframework.connector.models.Activity>
+    - Activity
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - <xref:dict>
+    - dict
   - name: raw
-    description: 'returns the direct response alongside the
-
-      deserialized response'
+    description: returns the direct response alongside the
     isRequired: true
     types:
-    - <xref:bool>
+    - bool
   - name: operation_config
-    description: '*Operation configuration
-
-      overrides*.'
+    description: '*Operation configuration'
     isRequired: true
   return:
     description: ResourceResponse or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.models.ResourceResponse>
-    - <xref:msrest.pipeline.ClientRawResponse>
-  exceptions:
-  - type: botframework.connector.models.ErrorResponseException
+    - ResourceResponse
+    - ClientRawResponse
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.send_conversation_history
   name: send_conversation_history
   summary: 'SendConversationHistory.
@@ -640,39 +569,30 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: activities
-    description: 'A collection of Activities that conforms to the
-
-      Transcript schema.'
+    description: A collection of Activities that conforms to the
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:list>[<xref:botframework.connector.models.Activity>]
+    - list[Activity]
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - <xref:dict>
+    - dict
   - name: raw
-    description: 'returns the direct response alongside the
-
-      deserialized response'
+    description: returns the direct response alongside the
     isRequired: true
     types:
-    - <xref:bool>
+    - bool
   - name: operation_config
-    description: '*Operation configuration
-
-      overrides*.'
+    description: '*Operation configuration'
     isRequired: true
   return:
     description: ResourceResponse or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.models.ResourceResponse>
-    - <xref:msrest.pipeline.ClientRawResponse>
-  exceptions:
-  - type: botframework.connector.models.ErrorResponseException
+    - ResourceResponse
+    - ClientRawResponse
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.send_to_conversation
   name: send_to_conversation
   summary: 'SendToConversation.
@@ -710,50 +630,36 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: activity
     description: Activity to send
     isRequired: true
     types:
-    - <xref:botframework.connector.models.Activity>
+    - Activity
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - <xref:dict>
+    - dict
   - name: raw
-    description: 'returns the direct response alongside the
-
-      deserialized response'
+    description: returns the direct response alongside the
     isRequired: true
     types:
-    - <xref:bool>
+    - bool
   - name: operation_config
-    description: '*Operation configuration
-
-      overrides*.'
+    description: '*Operation configuration'
     isRequired: true
   return:
     description: ResourceResponse or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.models.ResourceResponse>
-    - <xref:msrest.pipeline.ClientRawResponse>
-  exceptions:
-  - type: botframework.connector.models.ErrorResponseException
+    - ResourceResponse
+    - ClientRawResponse
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.update_activity
   name: update_activity
-  summary: 'UpdateActivity.
-
-
-    Edit an existing activity.
-
-    Some channels allow you to edit an existing activity to reflect the new
-
-    state of a bot conversation.
-
-    For example, you can remove buttons after someone has clicked "Approve"
-
-    button.'
+  summary: "UpdateActivity.\n\nEdit an existing activity.\nSome channels allow you\
+    \ to edit an existing activity to reflect the new\nstate of a bot conversation.\n\
+    For example, you can remove buttons after someone has clicked \u201CApprove\u201D\
+    \nbutton."
   signature: update_activity(conversation_id, activity_id, activity, *, custom_headers=None,
     raw=False, **operation_config)
   parameters:
@@ -761,55 +667,41 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: activity_id
     description: activityId to update
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: activity
     description: replacement Activity
     isRequired: true
     types:
-    - <xref:botframework.connector.models.Activity>
+    - Activity
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - <xref:dict>
+    - dict
   - name: raw
-    description: 'returns the direct response alongside the
-
-      deserialized response'
+    description: returns the direct response alongside the
     isRequired: true
     types:
-    - <xref:bool>
+    - bool
   - name: operation_config
-    description: '*Operation configuration
-
-      overrides*.'
+    description: '*Operation configuration'
     isRequired: true
   return:
     description: ResourceResponse or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.models.ResourceResponse>
-    - <xref:msrest.pipeline.ClientRawResponse>
-  exceptions:
-  - type: botframework.connector.models.ErrorResponseException
+    - ResourceResponse
+    - ClientRawResponse
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.upload_attachment
   name: upload_attachment
-  summary: 'UploadAttachment.
-
-
-    Upload an attachment directly into a channel''s blob storage.
-
-    This is useful because it allows you to store data in a compliant store
-
-    when dealing with enterprises.
-
-    The response is a ResourceResponse which contains an AttachmentId which
-
-    is suitable for using with the attachments API.'
+  summary: "UploadAttachment.\n\nUpload an attachment directly into a channel\u2019\
+    s blob storage.\nThis is useful because it allows you to store data in a compliant\
+    \ store\nwhen dealing with enterprises.\nThe response is a ResourceResponse which\
+    \ contains an AttachmentId which\nis suitable for using with the attachments API."
   signature: upload_attachment(conversation_id, attachment_upload, *, custom_headers=None,
     raw=False, **operation_config)
   parameters:
@@ -817,37 +709,31 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: attachment_upload
     description: Attachment data
     isRequired: true
     types:
-    - <xref:botframework.connector.models.AttachmentData>
+    - AttachmentData
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - <xref:dict>
+    - dict
   - name: raw
-    description: 'returns the direct response alongside the
-
-      deserialized response'
+    description: returns the direct response alongside the
     isRequired: true
     types:
-    - <xref:bool>
+    - bool
   - name: operation_config
-    description: '*Operation configuration
-
-      overrides*.'
+    description: '*Operation configuration'
     isRequired: true
   return:
     description: ResourceResponse or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.models.ResourceResponse>
-    - <xref:msrest.pipeline.ClientRawResponse>
-  exceptions:
-  - type: botframework.connector.models.ErrorResponseException
+    - ResourceResponse
+    - ClientRawResponse
 attributes:
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.models
   name: models
-  signature: 'models = <module ''botframework.connector.models'' from ''c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\site-packages\\botframework\\connector\\models\\__init__.py''>'
+  signature: models = <module 'botframework.connector.models' from 'c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\site-packages\\botframework\\connector\\models\\__init__.py'>

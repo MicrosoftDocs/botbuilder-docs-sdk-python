@@ -20,10 +20,22 @@
       name: botbuilder.adapters.slack.slack_adapter
     - items:
       - name: Overview
+        uid: botbuilder.adapters.slack.slack_adatper_options
+      - name: botbuilder.adapters.slack.slack_adatper_options.SlackAdapterOptions
+        uid: botbuilder.adapters.slack.slack_adatper_options.SlackAdapterOptions
+      name: botbuilder.adapters.slack.slack_adatper_options
+    - items:
+      - name: Overview
         uid: botbuilder.adapters.slack.slack_client
       - name: botbuilder.adapters.slack.slack_client.SlackClient
         uid: botbuilder.adapters.slack.slack_client.SlackClient
       name: botbuilder.adapters.slack.slack_client
+    - items:
+      - name: Overview
+        uid: botbuilder.adapters.slack.slack_client_options
+      - name: botbuilder.adapters.slack.slack_client_options.SlackClientOptions
+        uid: botbuilder.adapters.slack.slack_client_options.SlackClientOptions
+      name: botbuilder.adapters.slack.slack_client_options
     - items:
       - name: Overview
         uid: botbuilder.adapters.slack.slack_event
@@ -44,12 +56,6 @@
       name: botbuilder.adapters.slack.slack_message
     - items:
       - name: Overview
-        uid: botbuilder.adapters.slack.slack_options
-      - name: botbuilder.adapters.slack.slack_options.SlackAdapterOptions
-        uid: botbuilder.adapters.slack.slack_options.SlackAdapterOptions
-      name: botbuilder.adapters.slack.slack_options
-    - items:
-      - name: Overview
         uid: botbuilder.adapters.slack.slack_payload
       - name: botbuilder.adapters.slack.slack_payload.SlackPayload
         uid: botbuilder.adapters.slack.slack_payload.SlackPayload
@@ -68,6 +74,8 @@
       uid: botbuilder.adapters.slack.SlackAdapterOptions
     - name: botbuilder.adapters.slack.SlackClient
       uid: botbuilder.adapters.slack.SlackClient
+    - name: botbuilder.adapters.slack.SlackClientOptions
+      uid: botbuilder.adapters.slack.SlackClientOptions
     - name: botbuilder.adapters.slack.SlackEvent
       uid: botbuilder.adapters.slack.SlackEvent
     - name: botbuilder.adapters.slack.SlackHelper
@@ -531,6 +539,12 @@
       uid: botbuilder.azure.about
     - items:
       - name: Overview
+        uid: botbuilder.azure.azure_queue_storage
+      - name: botbuilder.azure.azure_queue_storage.AzureQueueStorage
+        uid: botbuilder.azure.azure_queue_storage.AzureQueueStorage
+      name: botbuilder.azure.azure_queue_storage
+    - items:
+      - name: Overview
         uid: botbuilder.azure.blob_storage
       - name: botbuilder.azure.blob_storage.BlobStorage
         uid: botbuilder.azure.blob_storage.BlobStorage
@@ -555,6 +569,8 @@
       - name: botbuilder.azure.cosmosdb_storage.CosmosDbStorage
         uid: botbuilder.azure.cosmosdb_storage.CosmosDbStorage
       name: botbuilder.azure.cosmosdb_storage
+    - name: botbuilder.azure.AzureQueueStorage
+      uid: botbuilder.azure.AzureQueueStorage
     - name: botbuilder.azure.BlobStorage
       uid: botbuilder.azure.BlobStorage
     - name: botbuilder.azure.BlobStorageSettings
@@ -844,6 +860,12 @@
       - name: botbuilder.core.property_manager.PropertyManager
         uid: botbuilder.core.property_manager.PropertyManager
       name: botbuilder.core.property_manager
+    - items:
+      - name: Overview
+        uid: botbuilder.core.queue_storage
+      - name: botbuilder.core.queue_storage.QueueStorage
+        uid: botbuilder.core.queue_storage.QueueStorage
+      name: botbuilder.core.queue_storage
     - name: botbuilder.core.re_escape
       uid: botbuilder.core.re_escape
     - items:
@@ -967,10 +989,18 @@
         - name: botbuilder.core.teams.teams_info.TeamsInfo
           uid: botbuilder.core.teams.teams_info.TeamsInfo
         name: botbuilder.core.teams.teams_info
+      - items:
+        - name: Overview
+          uid: botbuilder.core.teams.teams_sso_token_exchange_middleware
+        - name: botbuilder.core.teams.teams_sso_token_exchange_middleware.TeamsSSOTokenExchangeMiddleware
+          uid: botbuilder.core.teams.teams_sso_token_exchange_middleware.TeamsSSOTokenExchangeMiddleware
+        name: botbuilder.core.teams.teams_sso_token_exchange_middleware
       - name: botbuilder.core.teams.TeamsActivityHandler
         uid: botbuilder.core.teams.TeamsActivityHandler
       - name: botbuilder.core.teams.TeamsInfo
         uid: botbuilder.core.teams.TeamsInfo
+      - name: botbuilder.core.teams.TeamsSSOTokenExchangeMiddleware
+        uid: botbuilder.core.teams.TeamsSSOTokenExchangeMiddleware
       name: botbuilder.core.teams
     - items:
       - name: Overview
@@ -1074,6 +1104,8 @@
       uid: botbuilder.core.NullTelemetryClient
     - name: botbuilder.core.PrivateConversationState
       uid: botbuilder.core.PrivateConversationState
+    - name: botbuilder.core.QueueStorage
+      uid: botbuilder.core.QueueStorage
     - name: botbuilder.core.Recognizer
       uid: botbuilder.core.Recognizer
     - name: botbuilder.core.RecognizerResult
@@ -1624,6 +1656,14 @@
         name: botbuilder.dialogs.prompts.prompt
       - items:
         - name: Overview
+          uid: botbuilder.dialogs.prompts.prompt_culture_models
+        - name: botbuilder.dialogs.prompts.prompt_culture_models.PromptCultureModel
+          uid: botbuilder.dialogs.prompts.prompt_culture_models.PromptCultureModel
+        - name: botbuilder.dialogs.prompts.prompt_culture_models.PromptCultureModels
+          uid: botbuilder.dialogs.prompts.prompt_culture_models.PromptCultureModels
+        name: botbuilder.dialogs.prompts.prompt_culture_models
+      - items:
+        - name: Overview
           uid: botbuilder.dialogs.prompts.prompt_options
         - name: botbuilder.dialogs.prompts.prompt_options.PromptOptions
           uid: botbuilder.dialogs.prompts.prompt_options.PromptOptions
@@ -1634,6 +1674,8 @@
         - name: botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult
           uid: botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult
         name: botbuilder.dialogs.prompts.prompt_recognizer_result
+      - name: botbuilder.dialogs.prompts.prompt_validator
+        uid: botbuilder.dialogs.prompts.prompt_validator
       - items:
         - name: Overview
           uid: botbuilder.dialogs.prompts.prompt_validator_context
@@ -1666,6 +1708,10 @@
         uid: botbuilder.dialogs.prompts.OAuthPromptSettings
       - name: botbuilder.dialogs.prompts.Prompt
         uid: botbuilder.dialogs.prompts.Prompt
+      - name: botbuilder.dialogs.prompts.PromptCultureModel
+        uid: botbuilder.dialogs.prompts.PromptCultureModel
+      - name: botbuilder.dialogs.prompts.PromptCultureModels
+        uid: botbuilder.dialogs.prompts.PromptCultureModels
       - name: botbuilder.dialogs.prompts.PromptOptions
         uid: botbuilder.dialogs.prompts.PromptOptions
       - name: botbuilder.dialogs.prompts.PromptRecognizerResult

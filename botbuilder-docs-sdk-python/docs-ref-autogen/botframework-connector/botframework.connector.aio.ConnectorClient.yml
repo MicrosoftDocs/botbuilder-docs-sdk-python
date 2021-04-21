@@ -22,27 +22,23 @@ constructor:
   syntax: ConnectorClient(credentials, base_url=None)
   parameters:
   - name: credentials
-    description: 'Subscription credentials which uniquely identify
-
-      client subscription.'
-    isRequired: true
+    description: Subscription credentials which uniquely identify
     types:
-    - <xref:None>
+    - None
   - name: base_url
     description: Service URL
-    isRequired: true
     types:
-    - <xref:str>
+    - str
 variables:
 - description: Configuration for client.
   name: config
   types:
-  - <xref:ConnectorClientConfiguration>
+  - ConnectorClientConfiguration
 - description: Attachments operations
-  name: attachments
+  name: config
   types:
   - <xref:botframework.connector.aio.operations_async.AttachmentsOperations>
 - description: Conversations operations
-  name: conversations
+  name: config
   types:
   - <xref:botframework.connector.aio.operations_async.ConversationsOperations>

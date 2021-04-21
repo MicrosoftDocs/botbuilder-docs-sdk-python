@@ -9,23 +9,21 @@ summary: "AttachmentsOperations async operations.\n\nYou should not instantiate 
   \ this class, but create a Client instance that will create it for you and attach\n\
   \   it as attribute."
 constructor:
-  syntax: AttachmentsOperations(client, config, serializer, deserializer) -> None
+  syntax: AttachmentsOperations(client, config, serializer, deserializer)
   parameters:
   - name: client
     description: Client for service requests.
-    isRequired: true
   - name: config
     description: Configuration of service client.
-    isRequired: true
   - name: serializer
     description: An object model serializer.
-    isRequired: true
   - name: deserializer
     description: An object model deserializer.
-    isRequired: true
 variables:
-- description: 'The API version to use for the request. Constant value: "v3".'
-  name: api_version
+- description: "The API version to use for the request. Constant value: \u201Cv3\u201D\
+    ."
+  name: "api_version \u2013 The API version to use for the request. Constant value:\
+    \ \u201Cv3\u201D"
 methods:
 - uid: botframework.connector.aio.operations_async.AttachmentsOperations.get_attachment
   name: get_attachment
@@ -40,47 +38,35 @@ methods:
     description: attachment id
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: view_id
     description: View id from attachmentInfo
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - <xref:dict>
+    - dict
   - name: raw
-    description: 'returns the direct response alongside the
-
-      deserialized response'
+    description: returns the direct response alongside the
     isRequired: true
     types:
-    - <xref:bool>
+    - bool
   - name: callback
-    description: 'When specified, will be called with each chunk of
-
-      data that is streamed. The callback should take two arguments, the
-
-      bytes of the current chunk of data and the response object. If the
-
-      data is uploading, response will be None.'
+    description: When specified, will be called with each chunk of
     isRequired: true
     types:
-    - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
+    - Callable[Bytes, response=None]
   - name: operation_config
-    description: '*Operation configuration
-
-      overrides*.'
+    description: '*Operation configuration'
     isRequired: true
   return:
     description: object or ClientRawResponse if raw=true
     types:
-    - <xref:Generator>
-    - <xref:msrest.pipeline.ClientRawResponse>
-  exceptions:
-  - type: botframework.connector.models.ErrorResponseException
+    - Generator
+    - ClientRawResponse
 - uid: botframework.connector.aio.operations_async.AttachmentsOperations.get_attachment_info
   name: get_attachment_info
   summary: 'GetAttachmentInfo.
@@ -94,32 +80,26 @@ methods:
     description: attachment id
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - <xref:dict>
+    - dict
   - name: raw
-    description: 'returns the direct response alongside the
-
-      deserialized response'
+    description: returns the direct response alongside the
     isRequired: true
     types:
-    - <xref:bool>
+    - bool
   - name: operation_config
-    description: '*Operation configuration
-
-      overrides*.'
+    description: '*Operation configuration'
     isRequired: true
   return:
     description: AttachmentInfo or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.models.AttachmentInfo>
-    - <xref:msrest.pipeline.ClientRawResponse>
-  exceptions:
-  - type: botframework.connector.models.ErrorResponseException
+    - AttachmentInfo
+    - ClientRawResponse
 attributes:
 - uid: botframework.connector.aio.operations_async.AttachmentsOperations.models
   name: models
-  signature: 'models = <module ''botframework.connector.models'' from ''c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\site-packages\\botframework\\connector\\models\\__init__.py''>'
+  signature: models = <module 'botframework.connector.models' from 'c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\site-packages\\botframework\\connector\\models\\__init__.py'>

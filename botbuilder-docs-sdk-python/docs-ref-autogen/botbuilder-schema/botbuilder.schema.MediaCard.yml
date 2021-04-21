@@ -7,80 +7,56 @@ inheritances:
 - msrest.serialization.Model
 summary: Media card.
 constructor:
-  syntax: 'MediaCard(*, title: str = None, subtitle: str = None, text: str = None,
-    image=None, media=None, buttons=None, shareable: bool = None, autoloop: bool =
-    None, autostart: bool = None, aspect: str = None, duration: str = None, value=None,
-    **kwargs) -> None'
+  syntax: 'MediaCard(*, title: Optional[str] = None, subtitle: Optional[str] = None,
+    text: Optional[str] = None, image=None, media=None, buttons=None, shareable: Optional[bool]
+    = None, autoloop: Optional[bool] = None, autostart: Optional[bool] = None, aspect:
+    Optional[str] = None, duration: Optional[str] = None, value=None, **kwargs)'
   parameters:
   - name: title
     description: Title of this card
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: subtitle
     description: Subtitle of this card
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: text
     description: Text of this card
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: image
     description: Thumbnail placeholder
-    isRequired: true
     types:
-    - <xref:botframework.connector.models.ThumbnailUrl>
+    - ThumbnailUrl
   - name: media
-    description: 'Media URLs for this card. When this field contains more than
-
-      one URL, each URL is an alternative format of the same content.'
-    isRequired: true
+    description: Media URLs for this card. When this field contains more than
     types:
-    - <xref:list>[<xref:botframework.connector.models.MediaUrl>]
+    - list[MediaUrl]
   - name: buttons
     description: Actions on this card
-    isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.CardAction>]
+    - list[CardAction]
   - name: shareable
     description: This content may be shared with others (default:true)
-    isRequired: true
     types:
-    - <xref:bool>
+    - bool
   - name: autoloop
-    description: 'Should the client loop playback at end of content
-
-      (default:true)'
-    isRequired: true
+    description: Should the client loop playback at end of content
     types:
-    - <xref:bool>
+    - bool
   - name: autostart
-    description: 'Should the client automatically start playback of media
-
-      in this card (default:true)'
-    isRequired: true
+    description: Should the client automatically start playback of media
     types:
-    - <xref:bool>
+    - bool
   - name: aspect
-    description: 'Aspect ratio of thumbnail/media placeholder. Allowed values
-
-      are "16:9" and "4:3"'
-    isRequired: true
+    description: Aspect ratio of thumbnail/media placeholder. Allowed values
     types:
-    - <xref:str>
+    - str
   - name: duration
-    description: 'Describes the length of the media content without
-
-      requiring a receiver to open the content. Formatted as an ISO 8601
-
-      Duration field.'
-    isRequired: true
+    description: Describes the length of the media content without
     types:
-    - <xref:str>
+    - str
   - name: value
     description: Supplementary parameter for this card
-    isRequired: true
     types:
-    - <xref:object>
+    - object

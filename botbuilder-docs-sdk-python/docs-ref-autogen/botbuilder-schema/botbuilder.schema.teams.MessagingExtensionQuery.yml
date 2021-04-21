@@ -7,27 +7,21 @@ inheritances:
 - msrest.serialization.Model
 summary: Messaging extension query.
 constructor:
-  syntax: 'MessagingExtensionQuery(*, command_id: str = None, parameters=None, query_options=None,
-    state: str = None, **kwargs) -> None'
+  syntax: 'MessagingExtensionQuery(*, command_id: Optional[str] = None, parameters=None,
+    query_options=None, state: Optional[str] = None, **kwargs)'
   parameters:
   - name: command_id
     description: Id of the command assigned by Bot
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: parameters
     description: Parameters for the query
-    isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.teams.models.MessagingExtensionParameter>]
+    - list[MessagingExtensionParameter]
   - name: query_options
-    isRequired: true
     types:
-    - <xref:botframework.connector.teams.models.MessagingExtensionQueryOptions>
+    - MessagingExtensionQueryOptions
   - name: state
-    description: 'State parameter passed back to the bot after
-
-      authentication/configuration flow'
-    isRequired: true
+    description: State parameter passed back to the bot after
     types:
-    - <xref:str>
+    - str

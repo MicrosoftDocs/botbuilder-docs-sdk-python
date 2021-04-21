@@ -17,19 +17,17 @@ constructor:
   parameters:
   - name: client
     description: Client for service requests.
-    isRequired: true
   - name: config
     description: Configuration of service client.
-    isRequired: true
   - name: serializer
     description: An object model serializer.
-    isRequired: true
   - name: deserializer
     description: An object model deserializer.
-    isRequired: true
 variables:
-- description: 'The API version to use for the request. Constant value: "token".'
-  name: api_version
+- description: "The API version to use for the request. Constant value: \u201Ctoken\u201D\
+    ."
+  name: "api_version \u2013 The API version to use for the request. Constant value:\
+    \ \u201Ctoken\u201D"
 methods:
 - uid: botframework.connector.token_api.operations.BotSignInOperations.get_sign_in_resource
   name: get_sign_in_resource
@@ -39,48 +37,37 @@ methods:
   - name: state
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: code_challenge
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:str>
+    - str
   - name: emulator_url
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:str>
+    - str
   - name: final_redirect
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:str>
+    - str
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:dict>
+    - dict
   - name: raw
-    description: 'returns the direct response alongside the
-
-      deserialized response'
-    isRequired: true
+    description: returns the direct response alongside the
     defaultValue: 'False'
     types:
-    - <xref:bool>
+    - bool
   - name: operation_config
-    description: '*Operation configuration
-
-      overrides*.'
+    description: '*Operation configuration'
     isRequired: true
   return:
     description: SignInUrlResponse or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.tokenapi.models.SignInUrlResponse>
-    - <xref:msrest.pipeline.ClientRawResponse>
-  exceptions:
-  - type: msrest.exceptions.HttpOperationError
+    - SignInUrlResponse
+    - ClientRawResponse
 - uid: botframework.connector.token_api.operations.BotSignInOperations.get_sign_in_url
   name: get_sign_in_url
   signature: get_sign_in_url(state, code_challenge=None, emulator_url=None, final_redirect=None,
@@ -89,49 +76,38 @@ methods:
   - name: state
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: code_challenge
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:str>
+    - str
   - name: emulator_url
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:str>
+    - str
   - name: final_redirect
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:str>
+    - str
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:dict>
+    - dict
   - name: raw
-    description: 'returns the direct response alongside the
-
-      deserialized response'
-    isRequired: true
+    description: returns the direct response alongside the
     defaultValue: 'False'
     types:
-    - <xref:bool>
+    - bool
   - name: operation_config
-    description: '*Operation configuration
-
-      overrides*.'
+    description: '*Operation configuration'
     isRequired: true
   return:
     description: str or ClientRawResponse if raw=true
     types:
-    - <xref:str>
-    - <xref:msrest.pipeline.ClientRawResponse>
-  exceptions:
-  - type: msrest.exceptions.HttpOperationError
+    - str
+    - ClientRawResponse
 attributes:
 - uid: botframework.connector.token_api.operations.BotSignInOperations.models
   name: models
-  signature: 'models = <module ''botframework.connector.token_api.models'' from ''c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\site-packages\\botframework\\connector\\token_api\\models\\__init__.py''>'
+  signature: models = <module 'botframework.connector.token_api.models' from 'c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\site-packages\\botframework\\connector\\token_api\\models\\__init__.py'>

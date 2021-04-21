@@ -5,24 +5,17 @@ fullName: botbuilder.core.channel_service_handler.ChannelServiceHandler
 module: botbuilder.core.channel_service_handler
 inheritances:
 - builtins.object
-summary: 'Initializes a new instance of the <see cref="ChannelServiceHandler"/> class,
-
-  using a credential provider.'
+summary: "Initializes a new instance of the <see cref=\u201DChannelServiceHandler\u201D\
+  /> class,\nusing a credential provider."
 constructor:
   syntax: 'ChannelServiceHandler(credential_provider: botframework.connector.auth.credential_provider.CredentialProvider,
     auth_config: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration,
-    channel_provider: botframework.connector.auth.channel_provider.ChannelProvider
+    channel_provider: Optional[botframework.connector.auth.channel_provider.ChannelProvider]
     = None)'
 methods:
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_create_conversation
   name: handle_create_conversation
-  signature: 'handle_create_conversation(auth_header, parameters: botbuilder.schema._models_py3.ConversationParameters)
-    -> botbuilder.schema._models_py3.ConversationResourceResponse'
-  parameters:
-  - name: auth_header
-    isRequired: true
-  - name: parameters
-    isRequired: true
+  signature: 'handle_create_conversation(auth_header, parameters: botbuilder.schema._models_py3.ConversationParameters)'
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_delete_activity
   name: handle_delete_activity
   signature: handle_delete_activity(auth_header, conversation_id, activity_id)
@@ -46,155 +39,51 @@ methods:
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_get_activity_members
   name: handle_get_activity_members
   signature: handle_get_activity_members(auth_header, conversation_id, activity_id)
-    -> typing.List[botbuilder.schema._models_py3.ChannelAccount]
-  parameters:
-  - name: auth_header
-    isRequired: true
-  - name: conversation_id
-    isRequired: true
-  - name: activity_id
-    isRequired: true
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_get_conversation_member
   name: handle_get_conversation_member
   signature: handle_get_conversation_member(auth_header, conversation_id, member_id)
-    -> botbuilder.schema._models_py3.ChannelAccount
-  parameters:
-  - name: auth_header
-    isRequired: true
-  - name: conversation_id
-    isRequired: true
-  - name: member_id
-    isRequired: true
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_get_conversation_members
   name: handle_get_conversation_members
-  signature: handle_get_conversation_members(auth_header, conversation_id) -> typing.List[botbuilder.schema._models_py3.ChannelAccount]
-  parameters:
-  - name: auth_header
-    isRequired: true
-  - name: conversation_id
-    isRequired: true
+  signature: handle_get_conversation_members(auth_header, conversation_id)
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_get_conversation_paged_members
   name: handle_get_conversation_paged_members
   signature: 'handle_get_conversation_paged_members(auth_header, conversation_id,
-    page_size: int = 0, continuation_token: str = '''') -> botbuilder.schema._models_py3.PagedMembersResult'
-  parameters:
-  - name: auth_header
-    isRequired: true
-  - name: conversation_id
-    isRequired: true
-  - name: page_size
-    defaultValue: '0'
-  - name: continuation_token
+    page_size: int = 0, continuation_token: str = '''')'
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_get_conversations
   name: handle_get_conversations
-  signature: 'handle_get_conversations(auth_header, continuation_token: str = '''')
-    -> botbuilder.schema._models_py3.ConversationsResult'
-  parameters:
-  - name: auth_header
-    isRequired: true
-  - name: continuation_token
+  signature: 'handle_get_conversations(auth_header, continuation_token: str = '''')'
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_reply_to_activity
   name: handle_reply_to_activity
   signature: handle_reply_to_activity(auth_header, conversation_id, activity_id, activity)
-    -> botbuilder.schema._models_py3.ResourceResponse
-  parameters:
-  - name: auth_header
-    isRequired: true
-  - name: conversation_id
-    isRequired: true
-  - name: activity_id
-    isRequired: true
-  - name: activity
-    isRequired: true
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_send_conversation_history
   name: handle_send_conversation_history
   signature: 'handle_send_conversation_history(auth_header, conversation_id, transcript:
-    botbuilder.schema._models_py3.Transcript) -> botbuilder.schema._models_py3.ResourceResponse'
-  parameters:
-  - name: auth_header
-    isRequired: true
-  - name: conversation_id
-    isRequired: true
-  - name: transcript
-    isRequired: true
+    botbuilder.schema._models_py3.Transcript)'
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_send_to_conversation
   name: handle_send_to_conversation
-  signature: handle_send_to_conversation(auth_header, conversation_id, activity) ->
-    botbuilder.schema._models_py3.ResourceResponse
-  parameters:
-  - name: auth_header
-    isRequired: true
-  - name: conversation_id
-    isRequired: true
-  - name: activity
-    isRequired: true
+  signature: handle_send_to_conversation(auth_header, conversation_id, activity)
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_update_activity
   name: handle_update_activity
   signature: handle_update_activity(auth_header, conversation_id, activity_id, activity)
-    -> botbuilder.schema._models_py3.ResourceResponse
-  parameters:
-  - name: auth_header
-    isRequired: true
-  - name: conversation_id
-    isRequired: true
-  - name: activity_id
-    isRequired: true
-  - name: activity
-    isRequired: true
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_upload_attachment
   name: handle_upload_attachment
   signature: 'handle_upload_attachment(auth_header, conversation_id, attachment_upload:
-    botbuilder.schema._models_py3.AttachmentData) -> botbuilder.schema._models_py3.ResourceResponse'
-  parameters:
-  - name: auth_header
-    isRequired: true
-  - name: conversation_id
-    isRequired: true
-  - name: attachment_upload
-    isRequired: true
+    botbuilder.schema._models_py3.AttachmentData)'
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.on_create_conversation
   name: on_create_conversation
-  summary: 'create_conversation() API for Skill
-
-
-    Create a new Conversation.
-
-
-    POST to this method with a
-
-    * Bot being the bot creating the conversation
-
-    * IsGroup set to true if this is not a direct message (default is false)
-
-    * Array containing the members to include in the conversation
-
-
-    The return value is a ResourceResponse which contains a conversation id
-
-    which is suitable for use
-
-    in the message payload and REST API uris.
-
-
-    Most channels only support the semantics of bots initiating a direct
-
-    message conversation.  An example of how to do that would be:
-
-
-    var resource = await connector.conversations.CreateConversation(new
-
-    ConversationParameters(){ Bot = bot, members = new ChannelAccount[] { new
-
-    ChannelAccount("user1") } );
-
-    await connect.Conversations.SendToConversationAsync(resource.Id, new
-
-    Activity() ... ) ;
-
-
-    end.'
+  summary: "create_conversation() API for Skill\n\nCreate a new Conversation.\n\n\
+    POST to this method with a\n* Bot being the bot creating the conversation\n* IsGroup\
+    \ set to true if this is not a direct message (default is false)\n* Array containing\
+    \ the members to include in the conversation\n\nThe return value is a ResourceResponse\
+    \ which contains a conversation id\nwhich is suitable for use\nin the message\
+    \ payload and REST API uris.\n\nMost channels only support the semantics of bots\
+    \ initiating a direct\nmessage conversation.  An example of how to do that would\
+    \ be:\n\nvar resource = await connector.conversations.CreateConversation(new\n\
+    ConversationParameters(){ Bot = bot, members = new ChannelAccount[] { new\nChannelAccount(\u201C\
+    user1\u201D) } );\nawait connect.Conversations.SendToConversationAsync(resource.Id,\
+    \ new\nActivity() \u2026 ) ;\n\nend."
   signature: 'on_create_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    parameters: botbuilder.schema._models_py3.ConversationParameters) -> botbuilder.schema._models_py3.ConversationResourceResponse'
+    parameters: botbuilder.schema._models_py3.ConversationParameters)'
   parameters:
   - name: claims_identity
     isRequired: true
@@ -258,7 +147,7 @@ methods:
 
     activity in the conversation.'
   signature: 'on_get_activity_members(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str, activity_id: str) -> typing.List[botbuilder.schema._models_py3.ChannelAccount]'
+    conversation_id: str, activity_id: str)'
   parameters:
   - name: claims_identity
     isRequired: true
@@ -278,7 +167,7 @@ methods:
 
     objects representing the members of the conversation.'
   signature: 'on_get_conversation_member(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str, member_id: str) -> botbuilder.schema._models_py3.ChannelAccount'
+    conversation_id: str, member_id: str)'
   parameters:
   - name: claims_identity
     isRequired: true
@@ -298,7 +187,7 @@ methods:
 
     objects representing the members of the conversation.'
   signature: 'on_get_conversation_members(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str) -> typing.List[botbuilder.schema._models_py3.ChannelAccount]'
+    conversation_id: str)'
   parameters:
   - name: claims_identity
     isRequired: true
@@ -340,8 +229,8 @@ methods:
 
     may rarely return members from a previous request.'
   signature: 'on_get_conversation_paged_members(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str, page_size: int = None, continuation_token: str = '''') ->
-    botbuilder.schema._models_py3.PagedMembersResult'
+    conversation_id: str, page_size: Optional[int] = None, continuation_token: str
+    = '''')'
   parameters:
   - name: claims_identity
     isRequired: true
@@ -349,7 +238,6 @@ methods:
     isRequired: true
   - name: page_size
     isRequired: true
-    defaultValue: None
   - name: continuation_token
     isRequired: true
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.on_get_conversations
@@ -376,7 +264,7 @@ methods:
 
     array of ChannelAccounts that describe the members of the conversation.'
   signature: 'on_get_conversations(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    continuation_token: str = '''') -> botbuilder.schema._models_py3.ConversationsResult'
+    continuation_token: str = '''')'
   parameters:
   - name: claims_identity
     isRequired: true
@@ -412,8 +300,7 @@ methods:
 
     Use SendToConversation in all other cases.'
   signature: 'on_reply_to_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
-    -> botbuilder.schema._models_py3.ResourceResponse'
+    conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)'
   parameters:
   - name: claims_identity
     isRequired: true
@@ -441,8 +328,7 @@ methods:
 
     the activities in the right order.'
   signature: 'on_send_conversation_history(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str, transcript: botbuilder.schema._models_py3.Transcript) ->
-    botbuilder.schema._models_py3.ResourceResponse'
+    conversation_id: str, transcript: botbuilder.schema._models_py3.Transcript)'
   parameters:
   - name: claims_identity
     isRequired: true
@@ -478,7 +364,7 @@ methods:
 
     Use SendToConversation in all other cases.'
   signature: 'on_send_to_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str, activity: botbuilder.schema._models_py3.Activity) -> botbuilder.schema._models_py3.ResourceResponse'
+    conversation_id: str, activity: botbuilder.schema._models_py3.Activity)'
   parameters:
   - name: claims_identity
     isRequired: true
@@ -488,23 +374,12 @@ methods:
     isRequired: true
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.on_update_activity
   name: on_update_activity
-  summary: 'update_activity() API for Skill.
-
-
-    Edit an existing activity.
-
-
-    Some channels allow you to edit an existing activity to reflect the new
-
-    state of a bot conversation.
-
-
-    For example, you can remove buttons after someone has clicked "Approve"
-
-    button.'
+  summary: "update_activity() API for Skill.\n\nEdit an existing activity.\n\nSome\
+    \ channels allow you to edit an existing activity to reflect the new\nstate of\
+    \ a bot conversation.\n\nFor example, you can remove buttons after someone has\
+    \ clicked \u201CApprove\u201D\nbutton."
   signature: 'on_update_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
-    -> botbuilder.schema._models_py3.ResourceResponse'
+    conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)'
   parameters:
   - name: claims_identity
     isRequired: true
@@ -516,23 +391,13 @@ methods:
     isRequired: true
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.on_upload_attachment
   name: on_upload_attachment
-  summary: 'upload_attachment() API for Skill.
-
-
-    Upload an attachment directly into a channel''s blob storage.
-
-
-    This is useful because it allows you to store data in a compliant store
-
-    when dealing with enterprises.
-
-
-    The response is a ResourceResponse which contains an AttachmentId which is
-
-    suitable for using with the attachments API.'
+  summary: "upload_attachment() API for Skill.\n\nUpload an attachment directly into\
+    \ a channel\u2019s blob storage.\n\nThis is useful because it allows you to store\
+    \ data in a compliant store\nwhen dealing with enterprises.\n\nThe response is\
+    \ a ResourceResponse which contains an AttachmentId which is\nsuitable for using\
+    \ with the attachments API."
   signature: 'on_upload_attachment(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str, attachment_upload: botbuilder.schema._models_py3.AttachmentData)
-    -> botbuilder.schema._models_py3.ResourceResponse'
+    conversation_id: str, attachment_upload: botbuilder.schema._models_py3.AttachmentData)'
   parameters:
   - name: claims_identity
     isRequired: true

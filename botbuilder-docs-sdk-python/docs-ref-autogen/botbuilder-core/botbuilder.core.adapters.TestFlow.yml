@@ -6,7 +6,7 @@ module: botbuilder.core.adapters
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'TestFlow(previous: typing.Callable, adapter: botbuilder.core.adapters.test_adapter.TestAdapter)'
+  syntax: 'TestFlow(previous: Callable, adapter: botbuilder.core.adapters.test_adapter.TestAdapter)'
 methods:
 - uid: botbuilder.core.adapters.TestFlow.assert_no_reply
   name: assert_no_reply
@@ -15,38 +15,15 @@ methods:
     :param description:
 
     :param timeout:'
-  signature: assert_no_reply(description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
-  parameters:
-  - name: description
-    defaultValue: None
-  - name: timeout
-    defaultValue: None
+  signature: assert_no_reply(description=None, timeout=None)
 - uid: botbuilder.core.adapters.TestFlow.assert_reply
   name: assert_reply
-  summary: 'Generates an assertion if the bots response doesn''t match the expected
-    text/activity.
-
-    :param expected:
-
-    :param description:
-
-    :param timeout:
-
-    :param is_substring:
-
-    :return:'
-  signature: 'assert_reply(expected: typing.Union[str, botbuilder.schema._models_py3.Activity,
-    typing.Callable[[botbuilder.schema._models_py3.Activity, str], NoneType]], description=None,
-    timeout=None, is_substring=False) -> botbuilder.core.adapters.test_adapter.TestFlow'
-  parameters:
-  - name: expected
-    isRequired: true
-  - name: description
-    defaultValue: None
-  - name: timeout
-    defaultValue: None
-  - name: is_substring
-    defaultValue: 'False'
+  summary: "Generates an assertion if the bots response doesn\u2019t match the expected\
+    \ text/activity.\n:param expected:\n:param description:\n:param timeout:\n:param\
+    \ is_substring:\n:return:"
+  signature: 'assert_reply(expected: Union[str, botbuilder.schema._models_py3.Activity,
+    Callable[[botbuilder.schema._models_py3.Activity, str], None]], description=None,
+    timeout=None, is_substring=False)'
 - uid: botbuilder.core.adapters.TestFlow.send
   name: send
   summary: 'Sends something to the bot.
@@ -54,10 +31,7 @@ methods:
     :param user_says:
 
     :return:'
-  signature: send(user_says) -> botbuilder.core.adapters.test_adapter.TestFlow
-  parameters:
-  - name: user_says
-    isRequired: true
+  signature: send(user_says)
 - uid: botbuilder.core.adapters.TestFlow.test
   name: test
   summary: 'Send something to the bot and expects the bot to return with a given reply.
@@ -77,13 +51,4 @@ methods:
     :param timeout:
 
     :return:'
-  signature: test(user_says, expected, description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
-  parameters:
-  - name: user_says
-    isRequired: true
-  - name: expected
-    isRequired: true
-  - name: description
-    defaultValue: None
-  - name: timeout
-    defaultValue: None
+  signature: test(user_says, expected, description=None, timeout=None)

@@ -7,35 +7,27 @@ inheritances:
 - msrest.serialization.Model
 summary: O365 connector card input for ActionCard action.
 constructor:
-  syntax: 'O365ConnectorCardInputBase(*, type=None, id: str = None, is_required: bool
-    = None, title: str = None, value: str = None, **kwargs) -> None'
+  syntax: 'O365ConnectorCardInputBase(*, type=None, id: Optional[str] = None, is_required:
+    Optional[bool] = None, title: Optional[str] = None, value: Optional[str] = None,
+    **kwargs)'
   parameters:
   - name: type
-    description: 'Input type name. Possible values include: ''textInput'',
-
-      ''dateInput'', ''multichoiceInput'''
-    isRequired: true
+    description: "Input type name. Possible values include: \u2018textInput\u2019,"
     types:
-    - <xref:str>
+    - str
   - name: id
     description: Input Id. It must be unique per entire O365 connector card.
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: is_required
-    description: 'Define if this input is a required field. Default
-
-      value is false.'
-    isRequired: true
+    description: Define if this input is a required field. Default
     types:
-    - <xref:bool>
+    - bool
   - name: title
     description: Input title that will be shown as the placeholder
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: value
     description: Default value for this input field
-    isRequired: true
     types:
-    - <xref:str>
+    - str

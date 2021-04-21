@@ -7,18 +7,14 @@ inheritances:
 - msrest.serialization.Model
 summary: Plaintext/HTML representation of the content of the message.
 constructor:
-  syntax: 'MessageActionsPayloadBody(*, content_type=None, content: str = None, **kwargs)
-    -> None'
+  syntax: 'MessageActionsPayloadBody(*, content_type=None, content: Optional[str]
+    = None, **kwargs)'
   parameters:
   - name: content_type
-    description: 'Type of the content. Possible values include: ''html'',
-
-      ''text'''
-    isRequired: true
+    description: "Type of the content. Possible values include: \u2018html\u2019,"
     types:
-    - <xref:str>
+    - str
   - name: content
     description: The content of the body.
-    isRequired: true
     types:
-    - <xref:str>
+    - str

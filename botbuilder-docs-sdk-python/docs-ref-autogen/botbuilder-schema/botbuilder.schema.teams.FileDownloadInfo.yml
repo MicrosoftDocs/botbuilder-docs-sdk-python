@@ -7,26 +7,22 @@ inheritances:
 - msrest.serialization.Model
 summary: File download info attachment.
 constructor:
-  syntax: 'FileDownloadInfo(*, download_url: str = None, unique_id: str = None, file_type:
-    str = None, etag=None, **kwargs) -> None'
+  syntax: 'FileDownloadInfo(*, download_url: Optional[str] = None, unique_id: Optional[str]
+    = None, file_type: Optional[str] = None, etag=None, **kwargs)'
   parameters:
   - name: download_url
     description: File download url.
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: unique_id
     description: Unique Id for the file.
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: file_type
     description: Type of file.
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: etag
     description: ETag for the file.
-    isRequired: true
     types:
-    - <xref:object>
+    - object

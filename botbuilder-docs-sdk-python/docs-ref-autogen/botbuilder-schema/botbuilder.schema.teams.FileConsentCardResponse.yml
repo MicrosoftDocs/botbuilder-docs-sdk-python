@@ -10,24 +10,17 @@ summary: 'Represents the value of the invoke activity sent when the user acts on
   file consent card.'
 constructor:
   syntax: FileConsentCardResponse(*, action=None, context=None, upload_info=None,
-    **kwargs) -> None
+    **kwargs)
   parameters:
   - name: action
-    description: 'The action the user took. Possible values include:
-
-      ''accept'', ''decline'''
-    isRequired: true
+    description: 'The action the user took. Possible values include:'
     types:
-    - <xref:str>
+    - str
   - name: context
     description: The context associated with the action.
-    isRequired: true
     types:
-    - <xref:object>
+    - object
   - name: upload_info
-    description: 'If the user accepted the file, contains information
-
-      about the file to be uploaded.'
-    isRequired: true
+    description: If the user accepted the file, contains information
     types:
-    - <xref:botframework.connector.teams.models.FileUploadInfo>
+    - FileUploadInfo

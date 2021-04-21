@@ -5,6 +5,8 @@ fullName: botbuilder.core.adapter_extensions.AdapterExtensions
 module: botbuilder.core.adapter_extensions
 inheritances:
 - builtins.object
+constructor:
+  syntax: AdapterExtensions()
 methods:
 - uid: botbuilder.core.adapter_extensions.AdapterExtensions.fullname
   name: fullname
@@ -17,7 +19,7 @@ methods:
   summary: Registers bot state object into the TurnContext. The botstate will be available
     via the turn context.
   signature: 'use_bot_state(bot_adapter: botbuilder.core.bot_adapter.BotAdapter, *bot_states:
-    botbuilder.core.bot_state.BotState, auto: bool = True) -> botbuilder.core.bot_adapter.BotAdapter'
+    botbuilder.core.bot_state.BotState, auto: bool = True)'
   parameters:
   - name: bot_adapter
     description: The BotAdapter on which to register the state objects.
@@ -29,13 +31,11 @@ methods:
     description: The updated adapter.
 - uid: botbuilder.core.adapter_extensions.AdapterExtensions.use_state
   name: use_state
-  summary: '[DEPRECATED] Registers user and conversation state objects with the adapter.
-    These objects will be available via
-
-    the turn context''s *turn_state* property.'
+  summary: "[DEPRECATED] Registers user and conversation state objects with the adapter.\
+    \ These objects will be available via\nthe turn context\u2019s *turn_state* property."
   signature: 'use_state(adapter: botbuilder.core.bot_adapter.BotAdapter, user_state:
     botbuilder.core.user_state.UserState, conversation_state: botbuilder.core.conversation_state.ConversationState,
-    auto: bool = True) -> botbuilder.core.bot_adapter.BotAdapter'
+    auto: bool = True)'
   parameters:
   - name: adapter
     description: The BotAdapter on which to register the state objects.
@@ -49,17 +49,14 @@ methods:
   - name: auto
     description: True to automatically persist state each turn.
     isRequired: true
-    defaultValue: 'True'
   return:
     description: The BotAdapter
 - uid: botbuilder.core.adapter_extensions.AdapterExtensions.use_storage
   name: use_storage
-  summary: 'Registers a storage layer with the adapter. The storage object will be
-    available via the turn context''s
-
-    *turn_state* property.'
+  summary: "Registers a storage layer with the adapter. The storage object will be\
+    \ available via the turn context\u2019s\n*turn_state* property."
   signature: 'use_storage(adapter: botbuilder.core.bot_adapter.BotAdapter, storage:
-    botbuilder.core.storage.Storage) -> botbuilder.core.bot_adapter.BotAdapter'
+    botbuilder.core.storage.Storage)'
   parameters:
   - name: adapter
     description: The BotAdapter on which to register the storage object.

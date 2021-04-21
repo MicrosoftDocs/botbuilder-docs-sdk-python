@@ -6,52 +6,37 @@ summary: Common utilities for Django middleware.
 functions:
 - uid: botbuilder.applicationinsights.django.common.create_client
   name: create_client
-  signature: 'create_client(aisettings=None, telemetry_processor: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
+  signature: 'create_client(aisettings=None, telemetry_processor: Optional[botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor]
     = None)'
-  parameters:
-  - name: aisettings
-    defaultValue: None
-  - name: telemetry_processor
-    defaultValue: None
 - uid: botbuilder.applicationinsights.django.common.dummy_client
   name: dummy_client
-  summary: 'Creates a dummy channel so even if we''re not logging telemetry, we can
-    still send
-
-    along the real object to things that depend on it to exist'
-  signature: 'dummy_client(reason: str, telemetry_processor: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
+  summary: "Creates a dummy channel so even if we\u2019re not logging telemetry, we\
+    \ can still send\nalong the real object to things that depend on it to exist"
+  signature: 'dummy_client(reason: str, telemetry_processor: Optional[botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor]
     = None)'
-  parameters:
-  - name: reason
-  - name: telemetry_processor
-    defaultValue: None
 - uid: botbuilder.applicationinsights.django.common.get_telemetry_client_with_processor
   name: get_telemetry_client_with_processor
   summary: Gets a telemetry client instance with a telemetry processor.
   signature: 'get_telemetry_client_with_processor(key: str, channel: applicationinsights.channel.TelemetryChannel.TelemetryChannel,
-    telemetry_processor: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
-    = None) -> applicationinsights.TelemetryClient.TelemetryClient'
+    telemetry_processor: Optional[botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor]
+    = None)'
   parameters:
   - name: key
     description: instrumentation key
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: channel
     description: Telemetry channel
-    isRequired: true
     types:
-    - <xref:TelemetryChannel>
+    - TelemetryChannel
   - name: telemetry_processor
     description: use an existing telemetry processor from caller.
-    isRequired: true
-    defaultValue: None
     types:
-    - <xref:TelemetryProcessor>
+    - <xref:botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor>
   return:
     description: a telemetry client with telemetry processor.
     types:
-    - <xref:TelemetryClient>
+    - TelemetryClient
 - uid: botbuilder.applicationinsights.django.common.load_settings
   name: load_settings
   signature: load_settings()

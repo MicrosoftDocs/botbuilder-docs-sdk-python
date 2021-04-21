@@ -7,26 +7,22 @@ inheritances:
 - msrest.serialization.Model
 summary: TokenExchangeInvokeRequest.
 constructor:
-  syntax: 'TokenExchangeInvokeRequest(*, id: str = None, connection_name: str = None,
-    token: str = None, properties=None, **kwargs) -> None'
+  syntax: 'TokenExchangeInvokeRequest(*, id: Optional[str] = None, connection_name:
+    Optional[str] = None, token: Optional[str] = None, properties=None, **kwargs)'
   parameters:
   - name: id
     description: The id from the OAuthCard.
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: connection_name
     description: The connection name.
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: token
     description: The user token that can be exchanged.
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: properties
     description: Extension data for overflow of properties.
-    isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:object>]
+    - dict[str, object]

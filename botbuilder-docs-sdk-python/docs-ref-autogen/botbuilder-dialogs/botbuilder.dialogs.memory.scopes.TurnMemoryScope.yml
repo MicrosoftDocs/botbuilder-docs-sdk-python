@@ -10,13 +10,7 @@ constructor:
 methods:
 - uid: botbuilder.dialogs.memory.scopes.TurnMemoryScope.get_memory
   name: get_memory
-  parameters:
-  - name: dialog_context
-    isRequired: true
+  signature: 'get_memory(dialog_context: DialogContext)'
 - uid: botbuilder.dialogs.memory.scopes.TurnMemoryScope.set_memory
   name: set_memory
-  parameters:
-  - name: dialog_context
-    isRequired: true
-  - name: memory
-    isRequired: true
+  signature: 'set_memory(dialog_context: DialogContext, memory: object)'

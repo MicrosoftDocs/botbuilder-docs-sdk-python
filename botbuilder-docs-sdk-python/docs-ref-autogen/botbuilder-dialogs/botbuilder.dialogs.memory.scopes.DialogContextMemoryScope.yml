@@ -10,18 +10,10 @@ constructor:
 methods:
 - uid: botbuilder.dialogs.memory.scopes.DialogContextMemoryScope.get_memory
   name: get_memory
-  summary: 'Gets the backing memory for this scope.
-
-    <param name="dc">The <see cref="DialogContext"/> object for this turn.</param>
-
-    <returns>Memory for the scope.</returns>'
-  parameters:
-  - name: dialog_context
-    isRequired: true
+  summary: "Gets the backing memory for this scope.\n<param name=\u201Ddc\u201D>The\
+    \ <see cref=\u201DDialogContext\u201D/> object for this turn.</param>\n<returns>Memory\
+    \ for the scope.</returns>"
+  signature: 'get_memory(dialog_context: DialogContext)'
 - uid: botbuilder.dialogs.memory.scopes.DialogContextMemoryScope.set_memory
   name: set_memory
-  parameters:
-  - name: dialog_context
-    isRequired: true
-  - name: memory
-    isRequired: true
+  signature: 'set_memory(dialog_context: DialogContext, memory: object)'

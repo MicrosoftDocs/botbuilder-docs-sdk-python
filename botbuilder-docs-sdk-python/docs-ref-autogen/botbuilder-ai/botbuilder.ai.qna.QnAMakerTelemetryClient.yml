@@ -12,14 +12,6 @@ methods:
 - uid: botbuilder.ai.qna.QnAMakerTelemetryClient.get_answers
   name: get_answers
   signature: 'get_answers(context: botbuilder.core.turn_context.TurnContext, options:
-    botbuilder.ai.qna.qnamaker_options.QnAMakerOptions = None, telemetry_properties:
-    typing.Dict[str, str] = None, telemetry_metrics: typing.Dict[str, float] = None)'
-  parameters:
-  - name: context
-    isRequired: true
-  - name: options
-    defaultValue: None
-  - name: telemetry_properties
-    defaultValue: None
-  - name: telemetry_metrics
-    defaultValue: None
+    Optional[botbuilder.ai.qna.qnamaker_options.QnAMakerOptions] = None, telemetry_properties:
+    Optional[Dict[str, str]] = None, telemetry_metrics: Optional[Dict[str, float]]
+    = None)'

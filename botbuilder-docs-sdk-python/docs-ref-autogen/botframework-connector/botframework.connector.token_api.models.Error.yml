@@ -7,18 +7,15 @@ inheritances:
 - msrest.serialization.Model
 summary: Error.
 constructor:
-  syntax: 'Error(*, code: str = None, message: str = None, inner_http_error=None,
-    **kwargs) -> None'
+  syntax: 'Error(*, code: Optional[str] = None, message: Optional[str] = None, inner_http_error=None,
+    **kwargs)'
   parameters:
   - name: code
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: message
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: inner_http_error
-    isRequired: true
     types:
-    - <xref:botframework.tokenapi.models.InnerHttpError>
+    - InnerHttpError

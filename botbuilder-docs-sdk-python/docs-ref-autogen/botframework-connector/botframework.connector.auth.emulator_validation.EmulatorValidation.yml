@@ -5,6 +5,8 @@ fullName: botframework.connector.auth.emulator_validation.EmulatorValidation
 module: botframework.connector.auth.emulator_validation
 inheritances:
 - builtins.object
+constructor:
+  syntax: EmulatorValidation()
 methods:
 - uid: botframework.connector.auth.emulator_validation.EmulatorValidation.authenticate_emulator_token
   name: authenticate_emulator_token
@@ -15,38 +17,31 @@ methods:
 
     A token issued by the Bot Framework emulator will FAIL this check.'
   signature: 'authenticate_emulator_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
-    channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
-    channel_id: str) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+    channel_service_or_provider: Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
+    channel_id: str)'
   parameters:
   - name: auth_header
-    description: 'The raw HTTP header in the format: ''Bearer [longString]'''
+    description: "The raw HTTP header in the format: \u2018Bearer [longString]\u2019"
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: credentials
     description: The user defined set of valid credentials, such as the AppId.
     isRequired: true
     types:
-    - <xref:CredentialProvider>
-  - name: channel_service_or_provider
-    isRequired: true
-  - name: channel_id
-    isRequired: true
+    - <xref:botframework.connector.auth.credential_provider.CredentialProvider>
   return:
     description: A valid ClaimsIdentity.
-  exceptions:
-  - description: ''
-    type: Exception
 - uid: botframework.connector.auth.emulator_validation.EmulatorValidation.is_token_from_emulator
   name: is_token_from_emulator
   summary: Determines if a given Auth header is from the Bot Framework Emulator
-  signature: 'is_token_from_emulator(auth_header: str) -> bool'
+  signature: 'is_token_from_emulator(auth_header: str)'
   parameters:
   - name: auth_header
-    description: Bearer Token, in the 'Bearer [Long String]' Format.
+    description: "Bearer Token, in the \u2018Bearer [Long String]\u2019 Format."
     isRequired: true
     types:
-    - <xref:str>
+    - str
   return:
     description: True, if the token was issued by the Emulator. Otherwise, false.
 attributes:

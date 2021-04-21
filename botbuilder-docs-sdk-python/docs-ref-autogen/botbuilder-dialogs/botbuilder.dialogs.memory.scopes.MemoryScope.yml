@@ -10,32 +10,16 @@ constructor:
 methods:
 - uid: botbuilder.dialogs.memory.scopes.MemoryScope.delete
   name: delete
-  parameters:
-  - name: dialog_context
-    isRequired: true
+  signature: 'delete(dialog_context: DialogContext)'
 - uid: botbuilder.dialogs.memory.scopes.MemoryScope.get_memory
   name: get_memory
-  parameters:
-  - name: dialog_context
-    isRequired: true
+  signature: 'get_memory(dialog_context: DialogContext)'
 - uid: botbuilder.dialogs.memory.scopes.MemoryScope.load
   name: load
-  parameters:
-  - name: dialog_context
-    isRequired: true
-  - name: force
-    defaultValue: 'False'
+  signature: 'load(dialog_context: DialogContext, force: bool = False)'
 - uid: botbuilder.dialogs.memory.scopes.MemoryScope.save_changes
   name: save_changes
-  parameters:
-  - name: dialog_context
-    isRequired: true
-  - name: force
-    defaultValue: 'False'
+  signature: 'save_changes(dialog_context: DialogContext, force: bool = False)'
 - uid: botbuilder.dialogs.memory.scopes.MemoryScope.set_memory
   name: set_memory
-  parameters:
-  - name: dialog_context
-    isRequired: true
-  - name: memory
-    isRequired: true
+  signature: 'set_memory(dialog_context: DialogContext, memory: object)'

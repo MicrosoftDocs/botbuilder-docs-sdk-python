@@ -17,23 +17,14 @@ remarks: 'Conversation state is available in any turn in a specific conversation
 methods:
 - uid: botbuilder.core.conversation_state.ConversationState.get_storage_key
   name: get_storage_key
-  summary: 'Gets the key to use when reading and writing state to and from storage.
-
-
-
-    <xref:botbuilder.schema.Activity> channelId or conversation information or the
-    conversation''s
-
-    account id is missing.'
-  signature: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> object'
-  parameters:
-  - name: turn_context
-    isRequired: true
+  summary: "Gets the key to use when reading and writing state to and from storage.\n\
+    \n`botbuilder.schema.Activity` channelId or conversation information or the conversation\u2019\
+    s\naccount id is missing."
+  signature: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext)'
   return:
     description: The storage key.
     types:
-    - <xref:str>
+    - str
   remarks: 'Conversation state includes the channel ID and conversation ID as part
     of its storage key.
 

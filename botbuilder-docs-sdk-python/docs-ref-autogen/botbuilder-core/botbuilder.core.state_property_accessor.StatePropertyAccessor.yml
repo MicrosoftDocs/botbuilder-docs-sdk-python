@@ -5,6 +5,8 @@ fullName: botbuilder.core.state_property_accessor.StatePropertyAccessor
 module: botbuilder.core.state_property_accessor
 inheritances:
 - abc.ABC
+constructor:
+  syntax: StatePropertyAccessor()
 methods:
 - uid: botbuilder.core.state_property_accessor.StatePropertyAccessor.delete
   name: delete
@@ -13,10 +15,7 @@ methods:
     :param turn_context: Turn Context.
 
     :return:'
-  signature: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
-  parameters:
-  - name: turn_context
-    isRequired: true
+  signature: 'delete(turn_context: botbuilder.core.turn_context.TurnContext)'
 - uid: botbuilder.core.state_property_accessor.StatePropertyAccessor.get
   name: get
   summary: 'Get the property value from the source
@@ -26,13 +25,7 @@ methods:
     :param default_value_or_factory: Function which defines the property
 
     value to be returned if no value has been set.'
-  signature: 'get(turn_context: botbuilder.core.turn_context.TurnContext, default_value_or_factory=None)
-    -> object'
-  parameters:
-  - name: turn_context
-    isRequired: true
-  - name: default_value_or_factory
-    defaultValue: None
+  signature: 'get(turn_context: botbuilder.core.turn_context.TurnContext, default_value_or_factory=None)'
 - uid: botbuilder.core.state_property_accessor.StatePropertyAccessor.set
   name: set
   summary: 'Set the property value on the source.
@@ -42,10 +35,4 @@ methods:
     :param value:
 
     :return:'
-  signature: 'set(turn_context: botbuilder.core.turn_context.TurnContext, value) ->
-    None'
-  parameters:
-  - name: turn_context
-    isRequired: true
-  - name: value
-    isRequired: true
+  signature: 'set(turn_context: botbuilder.core.turn_context.TurnContext, value)'

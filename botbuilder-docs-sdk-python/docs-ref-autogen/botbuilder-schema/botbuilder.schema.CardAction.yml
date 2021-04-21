@@ -7,58 +7,39 @@ inheritances:
 - msrest.serialization.Model
 summary: A clickable action.
 constructor:
-  syntax: 'CardAction(*, type=None, title: str = None, image: str = None, text: str
-    = None, display_text: str = None, value=None, channel_data=None, image_alt_text:
-    str = None, **kwargs) -> None'
+  syntax: 'CardAction(*, type=None, title: Optional[str] = None, image: Optional[str]
+    = None, text: Optional[str] = None, display_text: Optional[str] = None, value=None,
+    channel_data=None, image_alt_text: Optional[str] = None, **kwargs)'
   parameters:
   - name: type
-    description: 'The type of action implemented by this button. Possible
-
-      values include: ''openUrl'', ''imBack'', ''postBack'', ''playAudio'', ''playVideo'',
-
-      ''showImage'', ''downloadFile'', ''signin'', ''call'', ''messageBack'''
-    isRequired: true
+    description: The type of action implemented by this button. Possible
     types:
-    - <xref:str>
-    - <xref:botframework.connector.models.ActionTypes>
+    - str or ActionTypes
   - name: title
     description: Text description which appears on the button
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: image
-    description: 'Image URL which will appear on the button, next to text
-
-      label'
-    isRequired: true
+    description: Image URL which will appear on the button, next to text
     types:
-    - <xref:str>
+    - str
   - name: text
     description: Text for this action
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: display_text
-    description: '(Optional) text to display in the chat feed if the
-
-      button is clicked'
-    isRequired: true
+    description: (Optional) text to display in the chat feed if the
     types:
-    - <xref:str>
+    - str
   - name: value
-    description: 'Supplementary parameter for action. Content of this property
-
-      depends on the ActionType'
-    isRequired: true
+    description: Supplementary parameter for action. Content of this property
     types:
-    - <xref:object>
+    - object
   - name: channel_data
     description: Channel-specific data associated with this action
-    isRequired: true
     types:
-    - <xref:object>
+    - object
   - name: image_alt_text
     description: Alternate image text to be used in place of the *image* field
-    isRequired: true
     types:
-    - <xref:str>
+    - str

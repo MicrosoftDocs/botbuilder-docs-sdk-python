@@ -8,8 +8,9 @@ inheritances:
 summary: Application Insights Telemetry Client.
 constructor:
   syntax: 'ApplicationInsightsTelemetryClient(instrumentation_key: str, telemetry_client:
-    applicationinsights.TelemetryClient.TelemetryClient = None, telemetry_processor:
-    typing.Callable[[object, object], bool] = None, client_queue_size: int = None)'
+    Optional[applicationinsights.TelemetryClient.TelemetryClient] = None, telemetry_processor:
+    Optional[Callable[[object, object], bool]] = None, client_queue_size: Optional[int]
+    = None)'
 methods:
 - uid: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient.flush
   name: flush
@@ -21,346 +22,288 @@ methods:
 - uid: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient.track_dependency
   name: track_dependency
   summary: Sends a single dependency telemetry that was captured for the application.
-  signature: 'track_dependency(name: str, data: str, type_name: str = None, target:
-    str = None, duration: int = None, success: bool = None, result_code: str = None,
-    properties: typing.Dict[str, object] = None, measurements: typing.Dict[str, object]
-    = None, dependency_id: str = None)'
+  signature: 'track_dependency(name: str, data: str, type_name: Optional[str] = None,
+    target: Optional[str] = None, duration: Optional[int] = None, success: Optional[bool]
+    = None, result_code: Optional[str] = None, properties: Optional[Dict[str, object]]
+    = None, measurements: Optional[Dict[str, object]] = None, dependency_id: Optional[str]
+    = None)'
   parameters:
   - name: name
-    description: 'the name of the command initiated with this dependency call. Low
+    description: the name of the command initiated with this dependency call. Low
       cardinality value.
-
-      Examples are stored procedure name and URL path template.'
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: data
-    description: 'the command initiated by this dependency call. Examples are SQL
-      statement and HTTP URL with all
-
-      query parameters.'
+    description: the command initiated by this dependency call. Examples are SQL statement
+      and HTTP URL with all
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: type_name
-    description: "the dependency type name. Low cardinality value for logical grouping\
-      \ of dependencies and\ninterpretation of other fields like commandName and resultCode.\
-      \ Examples are SQL, Azure table, and HTTP.\n\n   (default to: None)"
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:str>
+    - str
   - name: target
     description: 'the target site of a dependency call. Examples are server name,
       host address. (default to: None)'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:str>
+    - str
   - name: duration
     description: 'the number of milliseconds that this dependency call lasted. (defaults
       to: None)'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:int>
+    - int
   - name: success
     description: 'true if the dependency call ended in success, false otherwise. (defaults
       to: None)'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:bool>
+    - bool
   - name: result_code
-    description: 'the result code of a dependency call. Examples are SQL error code
+    description: the result code of a dependency call. Examples are SQL error code
       and HTTP status code.
-
-      (defaults to: None)'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:str>
+    - str
   - name: properties
-    description: 'the set of custom properties the client wants attached to this data
+    description: the set of custom properties the client wants attached to this data
       item.
-
-      (defaults to: None)'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:typing.Dict>[<xref:str>, <xref:object>]
+    - '`typing.Dict[str, object]`'
   - name: measurements
-    description: 'the set of custom measurements the client wants to attach to this
+    description: the set of custom measurements the client wants to attach to this
       data item.
-
-      (defaults to: None)'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:typing.Dict>[<xref:str>, <xref:object>]
+    - '`typing.Dict[str, object]`'
   - name: dependency_id
-    description: 'the id for this dependency call. If None, a new uuid will be generated.
-
-      (defaults to: None)'
+    description: the id for this dependency call. If None, a new uuid will be generated.
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:str>
+    - str
 - uid: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient.track_event
   name: track_event
   summary: Send information about a single event that has occurred in the context
     of the application.
-  signature: 'track_event(name: str, properties: typing.Dict[str, object] = None,
-    measurements: typing.Dict[str, object] = None) -> None'
+  signature: 'track_event(name: str, properties: Optional[Dict[str, object]] = None,
+    measurements: Optional[Dict[str, object]] = None)'
   parameters:
   - name: name
     description: the data to associate to this event.
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:typing.Dict>[<xref:str>, <xref:object>]
+    - '`typing.Dict[str, object]`'
   - name: measurements
     description: 'the set of custom measurements the client wants to attach to this
-      data item. (defaults to:
-
-      None)'
+      data item. (defaults to:'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:typing.Dict>[<xref:str>, <xref:object>]
+    - '`typing.Dict[str, object]`'
 - uid: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient.track_exception
   name: track_exception
   summary: Send information about a single exception that occurred in the application.
+  signature: 'track_exception(exception_type: type = None, value: Exception = None,
+    trace: <module ''traceback'' from ''c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\traceback.py''>
+    = None, properties: Dict[str, object] = None, measurements: Dict[str, object]
+    = None)'
   parameters:
   - name: exception_type
     description: the type of the exception that was thrown.
     isRequired: true
-    defaultValue: None
   - name: value
     description: the exception that the client wants to send.
     isRequired: true
-    defaultValue: None
   - name: trace
-    description: the traceback information as returned by <xref:sys.exc_info>.
+    description: the traceback information as returned by `sys.exc_info()`.
     isRequired: true
-    defaultValue: None
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:typing.Dict>[<xref:str>, <xref:object>]
+    - '`typing.Dict[str, object]`'
   - name: measurements
     description: 'the set of custom measurements the client wants to attach to this
-      data item. (defaults to:
-
-      None)'
+      data item. (defaults to:'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:typing.Dict>[<xref:str>, <xref:object>]
+    - '`typing.Dict[str, object]`'
 - uid: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient.track_metric
   name: track_metric
   summary: Send information about a single metric data point that was captured for
     the application.
-  signature: 'track_metric(name: str, value: float, tel_type: botbuilder.core.bot_telemetry_client.TelemetryDataPointType
-    = None, count: int = None, min_val: float = None, max_val: float = None, std_dev:
-    float = None, properties: typing.Dict[str, object] = None) -> NotImplemented'
+  signature: 'track_metric(name: str, value: float, tel_type: Optional[botbuilder.core.bot_telemetry_client.TelemetryDataPointType]
+    = None, count: Optional[int] = None, min_val: Optional[float] = None, max_val:
+    Optional[float] = None, std_dev: Optional[float] = None, properties: Optional[Dict[str,
+    object]] = None)'
   parameters:
   - name: name
     description: The name of the metric that was captured.
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: value
     description: The value of the metric that was captured.
     isRequired: true
     types:
-    - <xref:float>
+    - float
   - name: tel_type
     description: 'The type of the metric. (defaults to: TelemetryDataPointType.aggregation`)'
     isRequired: true
-    defaultValue: None
   - name: count
     description: 'the number of metrics that were aggregated into this data point.
       (defaults to: None)'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:int>
+    - int
   - name: min_val
     description: 'the minimum of all metrics collected that were aggregated into this
-      data point. (defaults to:
-
-      None)'
+      data point. (defaults to:'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:float>
+    - float
   - name: max_val
     description: 'the maximum of all metrics collected that were aggregated into this
-      data point. (defaults to:
-
-      None)'
+      data point. (defaults to:'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:float>
+    - float
   - name: std_dev
-    description: 'the standard deviation of all metrics collected that were aggregated
+    description: the standard deviation of all metrics collected that were aggregated
       into this data point.
-
-      (defaults to: None)'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:float>
+    - float
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:typing.Dict>[<xref:str>, <xref:object>]
+    - '`typing.Dict[str, object]`'
 - uid: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient.track_pageview
   name: track_pageview
   summary: Send information about the page viewed in the application (a web page for
     instance).
-  signature: 'track_pageview(name: str, url: str, duration: int = 0, properties: typing.Dict[str,
-    object] = None, measurements: typing.Dict[str, object] = None) -> None'
+  signature: 'track_pageview(name: str, url: str, duration: int = 0, properties: Optional[Dict[str,
+    object]] = None, measurements: Optional[Dict[str, object]] = None)'
   parameters:
   - name: name
     description: the name of the page that was viewed.
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: url
     description: the URL of the page that was viewed.
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: duration
     description: 'the duration of the page view in milliseconds. (defaults to: 0)'
     isRequired: true
-    defaultValue: '0'
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:typing.Dict>[<xref:str>, <xref:object>]
+    - '`typing.Dict[str, object]`'
   - name: measurements
     description: 'the set of custom measurements the client wants to attach to this
-      data item. (defaults to:
-
-      None)'
+      data item. (defaults to:'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:typing.Dict>[<xref:str>, <xref:object>]
+    - '`typing.Dict[str, object]`'
 - uid: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient.track_request
   name: track_request
   summary: Sends a single request that was captured for the application.
-  signature: 'track_request(name: str, url: str, success: bool, start_time: str =
-    None, duration: int = None, response_code: str = None, http_method: str = None,
-    properties: typing.Dict[str, object] = None, measurements: typing.Dict[str, object]
-    = None, request_id: str = None)'
+  signature: 'track_request(name: str, url: str, success: bool, start_time: Optional[str]
+    = None, duration: Optional[int] = None, response_code: Optional[str] = None, http_method:
+    Optional[str] = None, properties: Optional[Dict[str, object]] = None, measurements:
+    Optional[Dict[str, object]] = None, request_id: Optional[str] = None)'
   parameters:
   - name: name
     description: The name for this request. All requests with the same name will be
       grouped together.
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: url
     description: The actual URL for this request (to show in individual request instances).
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: success
     description: True if the request ended in success, False otherwise.
     isRequired: true
     types:
-    - <xref:bool>
+    - bool
   - name: start_time
-    description: 'the start time of the request. The value should look the same as
+    description: the start time of the request. The value should look the same as
       the one returned by
-
-      <xref:datetime.isoformat>. (defaults to: None)'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:str>
+    - str
   - name: duration
     description: 'the number of milliseconds that this request lasted. (defaults to:
       None)'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:int>
+    - int
   - name: response_code
     description: 'the response code that this request returned. (defaults to: None)'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:str>
+    - str
   - name: http_method
     description: 'the HTTP method that triggered this request. (defaults to: None)'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:str>
+    - str
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:typing.Dict>[<xref:str>, <xref:object>]
+    - '`typing.Dict[str, object]`'
   - name: measurements
     description: 'the set of custom measurements the client wants to attach to this
-      data item. (defaults to:
-
-      None)'
+      data item. (defaults to:'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:typing.Dict>[<xref:str>, <xref:object>]
+    - '`typing.Dict[str, object]`'
   - name: request_id
     description: 'the id for this request. If None, a new uuid will be generated.
       (defaults to: None)'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:str>
+    - str
 - uid: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient.track_trace
   name: track_trace
   summary: Sends a single trace statement.
-  signature: 'track_trace(name: str, properties: typing.Dict[str, object] = None,
-    severity: botbuilder.core.bot_telemetry_client.Severity = None)'
+  signature: 'track_trace(name: str, properties: Optional[Dict[str, object]] = None,
+    severity: Optional[botbuilder.core.bot_telemetry_client.Severity] = None)'
   parameters:
   - name: name
     description: the trace statement.
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
     isRequired: true
-    defaultValue: None
     types:
-    - <xref:typing.Dict>[<xref:str>, <xref:object>]
+    - '`typing.Dict[str, object]`'
   - name: severity
     description: the severity level of this trace, one of DEBUG, INFO, WARNING, ERROR,
       CRITICAL
     isRequired: true
-    defaultValue: None

@@ -5,6 +5,8 @@ fullName: botbuilder.dialogs.WaterfallDialog
 module: botbuilder.dialogs
 inheritances:
 - botbuilder.dialogs.dialog.Dialog
+constructor:
+  syntax: 'WaterfallDialog(dialog_id: str, steps: [typing.Coroutine] = None)'
 methods:
 - uid: botbuilder.dialogs.WaterfallDialog.add_step
   name: add_step
@@ -19,29 +21,30 @@ methods:
     isRequired: true
 - uid: botbuilder.dialogs.WaterfallDialog.begin_dialog
   name: begin_dialog
+  summary: 'Method called when a new dialog has been pushed onto the stack and is
+    being activated.
+
+    :param dialog_context: The dialog context for the current turn of conversation.
+
+    :param options: (Optional) additional argument(s) to pass to the dialog being
+    started.'
   signature: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
-  parameters:
-  - name: dialog_context
-    isRequired: true
-  - name: options
-    defaultValue: None
+    options: object = None)'
 - uid: botbuilder.dialogs.WaterfallDialog.continue_dialog
   name: continue_dialog
-  signature: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext
-    = None, reason: botbuilder.dialogs.dialog_reason.DialogReason = None, result:
-    object = NotImplementedError()) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
-  parameters:
-  - name: dialog_context
-    defaultValue: None
-  - name: reason
-    defaultValue: None
-  - name: result
+  summary: "Method called when an instance of the dialog is the \u201Ccurrent\u201D\
+    \ dialog and the\nuser replies with a new activity. The dialog will generally\
+    \ continue to receive the user\u2019s\nreplies until it calls either *end_dialog()*\
+    \ or *begin_dialog()*.\nIf this method is NOT implemented then the dialog will\
+    \ automatically be ended when the user replies.\n:param dialog_context: The dialog\
+    \ context for the current turn of conversation.\n:return:"
+  signature: 'continue_dialog(dialog_context: Optional[botbuilder.dialogs.dialog_context.DialogContext]
+    = None, reason: Optional[botbuilder.dialogs.dialog_reason.DialogReason] = None,
+    result: object = NotImplementedError())'
 - uid: botbuilder.dialogs.WaterfallDialog.end_dialog
   name: end_dialog
   signature: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
-    botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)
-    -> None'
+    botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)'
   parameters:
   - name: context
     isRequired: true
@@ -52,42 +55,27 @@ methods:
 - uid: botbuilder.dialogs.WaterfallDialog.get_step_name
   name: get_step_name
   summary: Give the waterfall step a unique name
-  signature: 'get_step_name(index: int) -> str'
-  parameters:
-  - name: index
-    isRequired: true
+  signature: 'get_step_name(index: int)'
 - uid: botbuilder.dialogs.WaterfallDialog.on_step
   name: on_step
-  signature: 'on_step(step_context: botbuilder.dialogs.waterfall_step_context.WaterfallStepContext)
-    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
-  parameters:
-  - name: step_context
-    isRequired: true
+  signature: 'on_step(step_context: botbuilder.dialogs.waterfall_step_context.WaterfallStepContext)'
 - uid: botbuilder.dialogs.WaterfallDialog.resume_dialog
   name: resume_dialog
+  summary: "Method called when an instance of the dialog is being returned to from\
+    \ another\ndialog that was started by the current instance using *begin_dialog()*.\n\
+    If this method is NOT implemented then the dialog will be automatically ended\
+    \ with a call\nto *end_dialog()*. Any result passed from the called dialog will\
+    \ be passed\nto the current dialog\u2019s parent.\n:param dialog_context: The\
+    \ dialog context for the current turn of conversation.\n:param reason: Reason\
+    \ why the dialog resumed.\n:param result: (Optional) value returned from the dialog\
+    \ that was called. The type of the value returned is\ndependent on the dialog\
+    \ that was called.\n:return:"
   signature: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)'
-  parameters:
-  - name: dialog_context
-    isRequired: true
-  - name: reason
-    isRequired: true
-  - name: result
-    isRequired: true
 - uid: botbuilder.dialogs.WaterfallDialog.run_step
   name: run_step
   signature: 'run_step(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    index: int, reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)
-    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
-  parameters:
-  - name: dialog_context
-    isRequired: true
-  - name: index
-    isRequired: true
-  - name: reason
-    isRequired: true
-  - name: result
-    isRequired: true
+    index: int, reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)'
 attributes:
 - uid: botbuilder.dialogs.WaterfallDialog.PersistedInstanceId
   name: PersistedInstanceId

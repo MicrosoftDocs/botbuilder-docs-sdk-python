@@ -7,14 +7,13 @@ type: import
 functions:
 - uid: botbuilder.applicationinsights.django.create_client
   name: create_client
-  summary: 'Returns an <xref:applicationinsights.TelemetryClient> instance using the
-    instrumentation key
-
-    and other settings found in the current Django project''s *settings.py* file.'
+  summary: "Returns an `applicationinsights.TelemetryClient` instance using the instrumentation\
+    \ key\nand other settings found in the current Django project\u2019s *settings.py*\
+    \ file."
   signature: create_client()
 classes:
-- botbuilder.applicationinsights.django.BotTelemetryMiddleware
 - botbuilder.applicationinsights.django.ApplicationInsightsMiddleware
+- botbuilder.applicationinsights.django.BotTelemetryMiddleware
 - botbuilder.applicationinsights.django.LoggingHandler
 modules:
 - botbuilder.applicationinsights.django.bot_telemetry_middleware

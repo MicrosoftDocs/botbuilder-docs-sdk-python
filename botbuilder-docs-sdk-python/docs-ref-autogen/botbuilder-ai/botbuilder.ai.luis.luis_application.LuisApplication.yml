@@ -19,9 +19,7 @@ methods:
     description: LUIS application endpoint.
     isRequired: true
     types:
-    - <xref:str>
-  - name: application_endpoint
-    isRequired: true
+    - str
   return:
     types:
-    - <xref:LuisApplication>
+    - <xref:botbuilder.ai.luis.luis_application.LuisApplication>

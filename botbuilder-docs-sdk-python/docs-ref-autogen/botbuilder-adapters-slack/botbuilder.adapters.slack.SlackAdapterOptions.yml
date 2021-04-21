@@ -5,34 +5,6 @@ fullName: botbuilder.adapters.slack.SlackAdapterOptions
 module: botbuilder.adapters.slack
 inheritances:
 - builtins.object
-summary: Defines the implementation of the SlackAdapter options.
+summary: Class for defining implementation of the SlackAdapter Options.
 constructor:
-  syntax: 'SlackAdapterOptions(slack_verification_token: str, slack_bot_token: str,
-    slack_client_signing_secret: str)'
-methods:
-- uid: botbuilder.adapters.slack.SlackAdapterOptions.get_bot_user_by_team
-  name: get_bot_user_by_team
-  summary: "A method that receives a Slack team ID and returns the bot user ID associated\
-    \ with that team. Required for\n   multi-team apps."
-  signature: 'get_bot_user_by_team(team_id: str) -> str'
-  parameters:
-  - name: team_id
-    description: The team ID.
-    isRequired: true
-    types:
-    - <xref:str>
-  exceptions:
-  - type: NotImplementedError
-- uid: botbuilder.adapters.slack.SlackAdapterOptions.get_token_for_team
-  name: get_token_for_team
-  summary: Receives a Slack team ID and returns the bot token associated with that
-    team. Required for multi-team apps.
-  signature: 'get_token_for_team(team_id: str) -> str'
-  parameters:
-  - name: team_id
-    description: The team ID.
-    isRequired: true
-    types:
-    - <xref:str>
-  exceptions:
-  - type: NotImplementedError
+  syntax: SlackAdapterOptions()

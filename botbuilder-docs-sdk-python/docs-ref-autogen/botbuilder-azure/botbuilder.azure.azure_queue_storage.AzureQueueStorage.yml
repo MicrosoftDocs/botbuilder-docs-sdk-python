@@ -1,0 +1,38 @@
+### YamlMime:PythonClass
+uid: botbuilder.azure.azure_queue_storage.AzureQueueStorage
+name: AzureQueueStorage
+fullName: botbuilder.azure.azure_queue_storage.AzureQueueStorage
+module: botbuilder.azure.azure_queue_storage
+inheritances:
+- botbuilder.core.queue_storage.QueueStorage
+constructor:
+  syntax: 'AzureQueueStorage(queues_storage_connection_string: str, queue_name: str)'
+methods:
+- uid: botbuilder.azure.azure_queue_storage.AzureQueueStorage.queue_activity
+  name: queue_activity
+  summary: 'Enqueues an Activity for later processing. The visibility timeout specifies
+    how long the message should be
+
+    visible to Dequeue and Peek operations.'
+  signature: 'queue_activity(activity: botbuilder.schema._models_py3.Activity, visibility_timeout:
+    Optional[int] = None, time_to_live: Optional[int] = None)'
+  parameters:
+  - name: activity
+    description: The activity to be queued for later processing.
+    isRequired: true
+    types:
+    - '`botbuilder.schema.Activity`'
+  - name: visibility_timeout
+    description: Visibility timeout in seconds. Optional with a default value of 0.
+    isRequired: true
+    types:
+    - int
+  - name: time_to_live
+    description: Specifies the time-to-live interval for the message in seconds.
+    isRequired: true
+    types:
+    - int
+  return:
+    description: QueueMessage as a JSON string.
+    types:
+    - '`azure.storage.queue.QueueMessage`'

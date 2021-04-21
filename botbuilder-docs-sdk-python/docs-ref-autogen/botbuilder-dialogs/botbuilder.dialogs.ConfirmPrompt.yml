@@ -7,58 +7,61 @@ inheritances:
 - botbuilder.dialogs.prompts.prompt.Prompt
 constructor:
   syntax: 'ConfirmPrompt(dialog_id: str, validator: object = None, default_locale:
-    str = None)'
+    Optional[str] = None, choice_defaults: Optional[Dict[str, object]] = None)'
 methods:
-- uid: botbuilder.dialogs.ConfirmPrompt.determine_culture
-  name: determine_culture
-  signature: 'determine_culture(activity: botbuilder.schema._models_py3.Activity)
-    -> str'
-  parameters:
-  - name: activity
-    isRequired: true
 - uid: botbuilder.dialogs.ConfirmPrompt.on_prompt
   name: on_prompt
+  summary: Prompts user for input. When overridden in a derived class, prompts the
+    user for input.
   signature: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
-    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
+    Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
     is_retry: bool)'
   parameters:
   - name: turn_context
+    description: Context for the current turn of conversation with the user
     isRequired: true
+    types:
+    - '`botbuilder.core.TurnContext`'
   - name: state
+    description: Contains state for the current instance of the prompt on the dialog
+      stack
     isRequired: true
+    types:
+    - '`Dict`'
   - name: options
+    description: A prompt options object constructed from:meth:*DialogContext.prompt()*
     isRequired: true
+    types:
+    - <xref:botbuilder.dialogs.PromptOptions>
   - name: is_retry
+    description: Determines whether *prompt* or *retry_prompt* should be used
     isRequired: true
+    types:
+    - bool
+  return:
+    description: A task representing the asynchronous operation.
 - uid: botbuilder.dialogs.ConfirmPrompt.on_recognize
   name: on_recognize
+  summary: "Recognizes the user\u2019s input.\n\n\n> [!NOTE]\n> When overridden in\
+    \ a derived class, attempts to recognize the user\u2019s input.\n>"
   signature: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
-    state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
-    -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
+    state: Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)'
   parameters:
   - name: turn_context
+    description: Context for the current turn of conversation with the user
     isRequired: true
+    types:
+    - '`botbuilder.core.TurnContext`'
   - name: state
+    description: Contains state for the current instance of the prompt on the dialog
+      stack
     isRequired: true
+    types:
+    - '`Dict`'
   - name: options
+    description: A prompt options object constructed from <xref:botbuilder.dialogs.DialogContext.prompt>
     isRequired: true
-attributes:
-- uid: botbuilder.dialogs.ConfirmPrompt.choice_defaults
-  name: choice_defaults
-  signature: 'choice_defaults = {''Spanish'': (<botbuilder.dialogs.choices.choice.Choice
-    object>, <botbuilder.dialogs.choices.choice.Choice object>, <botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
-    object>), ''Dutch'': (<botbuilder.dialogs.choices.choice.Choice object>, <botbuilder.dialogs.choices.choice.Choice
-    object>, <botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
-    object>), ''English'': (<botbuilder.dialogs.choices.choice.Choice object>, <botbuilder.dialogs.choices.choice.Choice
-    object>, <botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
-    object>), ''French'': (<botbuilder.dialogs.choices.choice.Choice object>, <botbuilder.dialogs.choices.choice.Choice
-    object>, <botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
-    object>), ''German'': (<botbuilder.dialogs.choices.choice.Choice object>, <botbuilder.dialogs.choices.choice.Choice
-    object>, <botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
-    object>), ''Japanese'': (<botbuilder.dialogs.choices.choice.Choice object>, <botbuilder.dialogs.choices.choice.Choice
-    object>, <botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
-    object>), ''Portuguese'': (<botbuilder.dialogs.choices.choice.Choice object>,
-    <botbuilder.dialogs.choices.choice.Choice object>, <botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
-    object>), ''Chinese'': (<botbuilder.dialogs.choices.choice.Choice object>, <botbuilder.dialogs.choices.choice.Choice
-    object>, <botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
-    object>)}'
+    types:
+    - <xref:botbuilder.dialogs.PromptOptions>
+  return:
+    description: A task representing the asynchronous operation.

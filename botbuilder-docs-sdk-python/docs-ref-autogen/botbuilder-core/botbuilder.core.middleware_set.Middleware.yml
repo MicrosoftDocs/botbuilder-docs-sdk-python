@@ -5,13 +5,10 @@ fullName: botbuilder.core.middleware_set.Middleware
 module: botbuilder.core.middleware_set
 inheritances:
 - abc.ABC
+constructor:
+  syntax: Middleware()
 methods:
 - uid: botbuilder.core.middleware_set.Middleware.on_turn
   name: on_turn
-  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
-    typing.Awaitable])'
-  parameters:
-  - name: context
-    isRequired: true
-  - name: logic
-    isRequired: true
+  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: Callable[botbuilder.core.turn_context.TurnContext,
+    Awaitable])'

@@ -7,48 +7,35 @@ inheritances:
 - msrest.serialization.Model
 summary: Parameters for creating a new conversation.
 constructor:
-  syntax: 'ConversationParameters(*, is_group: bool = None, bot=None, members=None,
-    topic_name: str = None, activity=None, channel_data=None, tenant_id=None, **kwargs)
-    -> None'
+  syntax: 'ConversationParameters(*, is_group: Optional[bool] = None, bot=None, members=None,
+    topic_name: Optional[str] = None, activity=None, channel_data=None, tenant_id=None,
+    **kwargs)'
   parameters:
   - name: is_group
     description: IsGroup
-    isRequired: true
     types:
-    - <xref:bool>
+    - bool
   - name: bot
     description: The bot address for this conversation
-    isRequired: true
     types:
-    - <xref:botframework.connector.models.ChannelAccount>
+    - ChannelAccount
   - name: members
     description: Members to add to the conversation
-    isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
+    - list[ChannelAccount]
   - name: topic_name
-    description: '(Optional) Topic of the conversation (if supported by
-
-      the channel)'
-    isRequired: true
+    description: (Optional) Topic of the conversation (if supported by
     types:
-    - <xref:str>
+    - str
   - name: activity
-    description: '(Optional) When creating a new conversation, use this
-
-      activity as the initial message to the conversation'
-    isRequired: true
+    description: (Optional) When creating a new conversation, use this
     types:
-    - <xref:botframework.connector.models.Activity>
+    - Activity
   - name: channel_data
-    description: 'Channel specific payload for creating the
-
-      conversation'
-    isRequired: true
+    description: Channel specific payload for creating the
     types:
-    - <xref:object>
+    - object
   - name: tenant_id
     description: (Optional) The tenant ID in which the conversation should be created
-    isRequired: true
     types:
-    - <xref:str>
+    - str

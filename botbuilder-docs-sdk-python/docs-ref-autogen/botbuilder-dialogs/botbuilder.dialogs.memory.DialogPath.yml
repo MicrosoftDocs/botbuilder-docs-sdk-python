@@ -5,13 +5,12 @@ fullName: botbuilder.dialogs.memory.DialogPath
 module: botbuilder.dialogs.memory
 inheritances:
 - builtins.object
+constructor:
+  syntax: DialogPath()
 methods:
 - uid: botbuilder.dialogs.memory.DialogPath.get_property_name
   name: get_property_name
-  signature: 'get_property_name(prop: str) -> str'
-  parameters:
-  - name: prop
-    isRequired: true
+  signature: 'get_property_name(prop: str)'
 attributes:
 - uid: botbuilder.dialogs.memory.DialogPath.DEFAULT_OPERATION
   name: DEFAULT_OPERATION

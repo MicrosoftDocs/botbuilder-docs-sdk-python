@@ -6,7 +6,7 @@ module: botbuilder.core
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'TurnContext(adapter_or_context, request: botbuilder.schema._models_py3.Activity
+  syntax: 'TurnContext(adapter_or_context, request: Optional[botbuilder.schema._models_py3.Activity]
     = None)'
 methods:
 - uid: botbuilder.core.TurnContext.apply_conversation_reference
@@ -27,14 +27,7 @@ methods:
     :return:'
   signature: 'apply_conversation_reference(activity: botbuilder.schema._models_py3.Activity,
     reference: botbuilder.schema._models_py3.ConversationReference, is_incoming: bool
-    = False) -> botbuilder.schema._models_py3.Activity'
-  parameters:
-  - name: activity
-    isRequired: true
-  - name: reference
-    isRequired: true
-  - name: is_incoming
-    defaultValue: 'False'
+    = False)'
 - uid: botbuilder.core.TurnContext.copy_to
   name: copy_to
   summary: 'Called when this TurnContext instance is passed into the constructor of
@@ -45,10 +38,7 @@ methods:
     :param context:
 
     :return:'
-  signature: 'copy_to(context: botbuilder.core.turn_context.TurnContext) -> None'
-  parameters:
-  - name: context
-    isRequired: true
+  signature: 'copy_to(context: botbuilder.core.turn_context.TurnContext)'
 - uid: botbuilder.core.TurnContext.delete_activity
   name: delete_activity
   summary: 'Deletes an existing activity.
@@ -56,16 +46,10 @@ methods:
     :param id_or_reference:
 
     :return:'
-  signature: 'delete_activity(id_or_reference: typing.Union[str, botbuilder.schema._models_py3.ConversationReference])'
-  parameters:
-  - name: id_or_reference
-    isRequired: true
+  signature: 'delete_activity(id_or_reference: Union[str, botbuilder.schema._models_py3.ConversationReference])'
 - uid: botbuilder.core.TurnContext.get
   name: get
-  signature: 'get(key: str) -> object'
-  parameters:
-  - name: key
-    isRequired: true
+  signature: 'get(key: str)'
 - uid: botbuilder.core.TurnContext.get_conversation_reference
   name: get_conversation_reference
   summary: 'Returns the conversation reference for an activity. This can be saved
@@ -81,38 +65,19 @@ methods:
     :param activity:
 
     :return:'
-  signature: 'get_conversation_reference(activity: botbuilder.schema._models_py3.Activity)
-    -> botbuilder.schema._models_py3.ConversationReference'
-  parameters:
-  - name: activity
-    isRequired: true
+  signature: 'get_conversation_reference(activity: botbuilder.schema._models_py3.Activity)'
 - uid: botbuilder.core.TurnContext.get_mentions
   name: get_mentions
-  signature: 'get_mentions(activity: botbuilder.schema._models_py3.Activity) -> typing.List[botbuilder.schema._models_py3.Mention]'
-  parameters:
-  - name: activity
-    isRequired: true
+  signature: 'get_mentions(activity: botbuilder.schema._models_py3.Activity)'
 - uid: botbuilder.core.TurnContext.get_reply_conversation_reference
   name: get_reply_conversation_reference
   signature: 'get_reply_conversation_reference(activity: botbuilder.schema._models_py3.Activity,
-    reply: botbuilder.schema._models_py3.ResourceResponse) -> botbuilder.schema._models_py3.ConversationReference'
-  parameters:
-  - name: activity
-    isRequired: true
-  - name: reply
-    isRequired: true
+    reply: botbuilder.schema._models_py3.ResourceResponse)'
 - uid: botbuilder.core.TurnContext.has
   name: has
-  summary: 'Returns True is set() has been called for a key. The cached value may
-    be of type ''None''.
-
-    :param key:
-
-    :return:'
-  signature: 'has(key: str) -> bool'
-  parameters:
-  - name: key
-    isRequired: true
+  summary: "Returns True is set() has been called for a key. The cached value may\
+    \ be of type \u2018None\u2019.\n:param key:\n:return:"
+  signature: 'has(key: str)'
 - uid: botbuilder.core.TurnContext.on_delete_activity
   name: on_delete_activity
   summary: 'Registers a handler to be notified of and potentially intercept an activity
@@ -121,10 +86,7 @@ methods:
     :param handler:
 
     :return:'
-  signature: on_delete_activity(handler) -> botbuilder.core.turn_context.TurnContext
-  parameters:
-  - name: handler
-    isRequired: true
+  signature: on_delete_activity(handler)
 - uid: botbuilder.core.TurnContext.on_send_activities
   name: on_send_activities
   summary: 'Registers a handler to be notified of and potentially intercept the sending
@@ -133,10 +95,7 @@ methods:
     :param handler:
 
     :return:'
-  signature: on_send_activities(handler) -> botbuilder.core.turn_context.TurnContext
-  parameters:
-  - name: handler
-    isRequired: true
+  signature: on_send_activities(handler)
 - uid: botbuilder.core.TurnContext.on_update_activity
   name: on_update_activity
   summary: 'Registers a handler to be notified of and potentially intercept an activity
@@ -145,33 +104,17 @@ methods:
     :param handler:
 
     :return:'
-  signature: on_update_activity(handler) -> botbuilder.core.turn_context.TurnContext
-  parameters:
-  - name: handler
-    isRequired: true
+  signature: on_update_activity(handler)
 - uid: botbuilder.core.TurnContext.remove_mention_text
   name: remove_mention_text
   signature: 'remove_mention_text(activity: botbuilder.schema._models_py3.Activity,
-    identifier: str) -> str'
-  parameters:
-  - name: activity
-    isRequired: true
-  - name: identifier
-    isRequired: true
+    identifier: str)'
 - uid: botbuilder.core.TurnContext.remove_recipient_mention
   name: remove_recipient_mention
-  signature: 'remove_recipient_mention(activity: botbuilder.schema._models_py3.Activity)
-    -> str'
-  parameters:
-  - name: activity
-    isRequired: true
+  signature: 'remove_recipient_mention(activity: botbuilder.schema._models_py3.Activity)'
 - uid: botbuilder.core.TurnContext.send_activities
   name: send_activities
-  signature: 'send_activities(activities: typing.List[botbuilder.schema._models_py3.Activity])
-    -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
-  parameters:
-  - name: activities
-    isRequired: true
+  signature: 'send_activities(activities: List[botbuilder.schema._models_py3.Activity])'
 - uid: botbuilder.core.TurnContext.send_activity
   name: send_activity
   summary: 'Sends a single activity or message to the user.
@@ -179,28 +122,12 @@ methods:
     :param activity_or_text:
 
     :return:'
-  signature: 'send_activity(activity_or_text: typing.Union[botbuilder.schema._models_py3.Activity,
-    str], speak: str = None, input_hint: str = None) -> botbuilder.schema._models_py3.ResourceResponse'
-  parameters:
-  - name: activity_or_text
-    isRequired: true
-  - name: speak
-    defaultValue: None
-  - name: input_hint
-    defaultValue: None
+  signature: 'send_activity(activity_or_text: Union[botbuilder.schema._models_py3.Activity,
+    str], speak: Optional[str] = None, input_hint: Optional[str] = None)'
 - uid: botbuilder.core.TurnContext.send_trace_activity
   name: send_trace_activity
-  signature: 'send_trace_activity(name: str, value: object = None, value_type: str
-    = None, label: str = None) -> botbuilder.schema._models_py3.ResourceResponse'
-  parameters:
-  - name: name
-    isRequired: true
-  - name: value
-    defaultValue: None
-  - name: value_type
-    defaultValue: None
-  - name: label
-    defaultValue: None
+  signature: 'send_trace_activity(name: str, value: object = None, value_type: Optional[str]
+    = None, label: Optional[str] = None)'
 - uid: botbuilder.core.TurnContext.set
   name: set
   summary: 'Caches a value for the lifetime of the current turn.
@@ -210,12 +137,7 @@ methods:
     :param value:
 
     :return:'
-  signature: 'set(key: str, value: object) -> None'
-  parameters:
-  - name: key
-    isRequired: true
-  - name: value
-    isRequired: true
+  signature: 'set(key: str, value: object)'
 - uid: botbuilder.core.TurnContext.update_activity
   name: update_activity
   summary: 'Replaces an existing activity.
@@ -224,9 +146,6 @@ methods:
 
     :return:'
   signature: 'update_activity(activity: botbuilder.schema._models_py3.Activity)'
-  parameters:
-  - name: activity
-    isRequired: true
 attributes:
 - uid: botbuilder.core.TurnContext.activity
   name: activity
@@ -244,3 +163,5 @@ attributes:
   summary: 'Map of services and other values cached for the lifetime of the turn.
 
     :return:'
+- uid: botbuilder.core.TurnContext.turn_state
+  name: turn_state

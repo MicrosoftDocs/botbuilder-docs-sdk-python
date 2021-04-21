@@ -10,19 +10,25 @@ constructor:
 methods:
 - uid: botbuilder.core.memory_storage.MemoryStorage.delete
   name: delete
-  signature: 'delete(keys: typing.List[str])'
-  parameters:
-  - name: keys
-    isRequired: true
+  summary: 'Removes store items from storage.
+
+    :param keys:
+
+    :return:'
+  signature: 'delete(keys: List[str])'
 - uid: botbuilder.core.memory_storage.MemoryStorage.read
   name: read
-  signature: 'read(keys: typing.List[str])'
-  parameters:
-  - name: keys
-    isRequired: true
+  summary: 'Loads store items from storage.
+
+    :param keys:
+
+    :return:'
+  signature: 'read(keys: List[str])'
 - uid: botbuilder.core.memory_storage.MemoryStorage.write
   name: write
-  signature: 'write(changes: typing.Dict[str, botbuilder.core.storage.StoreItem])'
-  parameters:
-  - name: changes
-    isRequired: true
+  summary: 'Saves store items to storage.
+
+    :param changes:
+
+    :return:'
+  signature: 'write(changes: Dict[str, botbuilder.core.storage.StoreItem])'

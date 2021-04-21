@@ -5,48 +5,24 @@ fullName: botframework.connector.auth.government_channel_validation.GovernmentCh
 module: botframework.connector.auth.government_channel_validation
 inheritances:
 - abc.ABC
+constructor:
+  syntax: GovernmentChannelValidation()
 methods:
 - uid: botframework.connector.auth.government_channel_validation.GovernmentChannelValidation.authenticate_channel_token
   name: authenticate_channel_token
   signature: 'authenticate_channel_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
-    channel_id: str, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
-    = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  parameters:
-  - name: auth_header
-    isRequired: true
-  - name: credentials
-    isRequired: true
-  - name: channel_id
-    isRequired: true
-  - name: auth_configuration
-    defaultValue: None
+    channel_id: str, auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
+    = None)'
 - uid: botframework.connector.auth.government_channel_validation.GovernmentChannelValidation.authenticate_channel_token_with_service_url
   name: authenticate_channel_token_with_service_url
   signature: 'authenticate_channel_token_with_service_url(auth_header: str, credentials:
     botframework.connector.auth.credential_provider.CredentialProvider, service_url:
-    str, channel_id: str, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
-    = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  parameters:
-  - name: auth_header
-    isRequired: true
-  - name: credentials
-    isRequired: true
-  - name: service_url
-    isRequired: true
-  - name: channel_id
-    isRequired: true
-  - name: auth_configuration
-    defaultValue: None
+    str, channel_id: str, auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
+    = None)'
 - uid: botframework.connector.auth.government_channel_validation.GovernmentChannelValidation.validate_identity
   name: validate_identity
   signature: 'validate_identity(identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    credentials: botframework.connector.auth.credential_provider.CredentialProvider)
-    -> botframework.connector.auth.claims_identity.ClaimsIdentity'
-  parameters:
-  - name: identity
-    isRequired: true
-  - name: credentials
-    isRequired: true
+    credentials: botframework.connector.auth.credential_provider.CredentialProvider)'
 attributes:
 - uid: botframework.connector.auth.government_channel_validation.GovernmentChannelValidation.OPEN_ID_METADATA_ENDPOINT
   name: OPEN_ID_METADATA_ENDPOINT

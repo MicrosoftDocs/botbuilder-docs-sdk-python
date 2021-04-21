@@ -7,15 +7,14 @@ inheritances:
 - msrest.serialization.Model
 summary: Invoke request body type for app-based link query.
 constructor:
-  syntax: 'AppBasedLinkQuery(*, url: str = None, state: str = None, **kwargs) -> None'
+  syntax: 'AppBasedLinkQuery(*, url: Optional[str] = None, state: Optional[str] =
+    None, **kwargs)'
   parameters:
   - name: url
     description: Url queried by user
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: state
     description: The magic code for OAuth Flow
-    isRequired: true
     types:
-    - <xref:str>
+    - str

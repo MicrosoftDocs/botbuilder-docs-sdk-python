@@ -42,13 +42,13 @@ methods:
 - uid: botbuilder.core.BotState.create_property
   name: create_property
   summary: Creates a property definition and registers it with this <xref:botbuilder.core.BotState>.
-  signature: 'create_property(name: str) -> botbuilder.core.state_property_accessor.StatePropertyAccessor'
+  signature: 'create_property(name: str)'
   parameters:
   - name: name
     description: The name of the property
     isRequired: true
     types:
-    - <xref:str>
+    - str
   return:
     description: If successful, the state property accessor created
     types:
@@ -56,7 +56,7 @@ methods:
 - uid: botbuilder.core.BotState.delete
   name: delete
   summary: Deletes any state currently stored in this state scope.
-  signature: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
+  signature: 'delete(turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -69,33 +69,27 @@ methods:
   name: delete_property_value
   summary: Deletes a property from the state cache in the turn context.
   signature: 'delete_property_value(turn_context: botbuilder.core.turn_context.TurnContext,
-    property_name: str) -> None'
+    property_name: str)'
   parameters:
   - name: turn_context
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref::TurnContext`>
+    - :TurnContext`
   - name: property_name
     description: The name of the property to delete
     isRequired: true
     types:
-    - <xref:str>
+    - str
   return:
     description: None
 - uid: botbuilder.core.BotState.get
   name: get
-  signature: 'get(turn_context: botbuilder.core.turn_context.TurnContext) -> typing.Dict[str,
-    object]'
-  parameters:
-  - name: turn_context
-    isRequired: true
+  signature: 'get(turn_context: botbuilder.core.turn_context.TurnContext)'
 - uid: botbuilder.core.BotState.get_cached_state
   name: get_cached_state
-  summary: 'Gets the cached bot state instance that wraps the raw cached data for
-    this "BotState"
-
-    from the turn context.'
+  summary: "Gets the cached bot state instance that wraps the raw cached data for\
+    \ this \u201CBotState\u201D\nfrom the turn context."
   signature: 'get_cached_state(turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: turn_context
@@ -120,22 +114,18 @@ methods:
     description: The property name
     isRequired: true
     types:
-    - <xref:str>
+    - str
   return:
     description: The value of the property
 - uid: botbuilder.core.BotState.get_storage_key
   name: get_storage_key
-  signature: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> str'
-  parameters:
-  - name: turn_context
-    isRequired: true
+  signature: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext)'
 - uid: botbuilder.core.BotState.load
   name: load
   summary: Reads the current state object and caches it in the context object for
     this turn.
   signature: 'load(turn_context: botbuilder.core.turn_context.TurnContext, force:
-    bool = False) -> None'
+    bool = False)'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -145,9 +135,8 @@ methods:
   - name: force
     description: Optional, true to bypass the cache
     isRequired: true
-    defaultValue: 'False'
     types:
-    - <xref:bool>
+    - bool
 - uid: botbuilder.core.BotState.save_changes
   name: save_changes
   summary: 'Saves the state cached in the current context for this turn.
@@ -155,7 +144,7 @@ methods:
     If the state has changed, it saves the state cached in the current context for
     this turn.'
   signature: 'save_changes(turn_context: botbuilder.core.turn_context.TurnContext,
-    force: bool = False) -> None'
+    force: bool = False)'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -166,14 +155,13 @@ methods:
     description: Optional, true to save state to storage whether or not there are
       changes
     isRequired: true
-    defaultValue: 'False'
     types:
-    - <xref:bool>
+    - bool
 - uid: botbuilder.core.BotState.set_property_value
   name: set_property_value
   summary: Sets a property to the specified value in the turn context.
   signature: 'set_property_value(turn_context: botbuilder.core.turn_context.TurnContext,
-    property_name: str, value: object) -> None'
+    property_name: str, value: object)'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -184,11 +172,11 @@ methods:
     description: The property name
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: value
     description: The value to assign to the property
     isRequired: true
     types:
-    - <xref:Object>
+    - Object
   return:
     description: None

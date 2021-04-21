@@ -6,25 +6,20 @@ module: botbuilder.dialogs.choices
 inheritances:
 - builtins.object
 summary: Contains methods for matching user input against a list of choices.
+constructor:
+  syntax: ChoiceRecognizers()
 methods:
 - uid: botbuilder.dialogs.choices.ChoiceRecognizers.recognize_choices
   name: recognize_choices
   summary: "Matches user input against a list of choices.\n\nThis is layered above\
     \ the *Find.find_choices()* function, and adds logic to let the user specify\n\
-    their choice by index (they can say \"one\" to pick *choice[0]*) or ordinal position\n\
-    \n\n   (they can say \"the second one\" to pick *choice[1]*.)\n\n\nThe user's\
-    \ utterance is recognized in the following order:\n\n* By name using *find_choices()*\
-    \ \n\n* By 1's based ordinal position. \n\n* By 1's based index position. \n\n\
-    \nutterance: The input.\n\nchoices: The list of choices.\n\noptions: (Optional)\
-    \ Options to control the recognition strategy.\n\n\nA list of found choices, sorted\
-    \ by most relevant first."
-  signature: 'recognize_choices(utterance: str, choices: typing.List[typing.Union[str,
-    botbuilder.dialogs.choices.choice.Choice]], options: botbuilder.dialogs.choices.find_choices_options.FindChoicesOptions
-    = None) -> typing.List[botbuilder.dialogs.choices.model_result.ModelResult]'
-  parameters:
-  - name: utterance
-    isRequired: true
-  - name: choices
-    isRequired: true
-  - name: options
-    defaultValue: None
+    their choice by index (they can say \u201Cone\u201D to pick *choice[0]*) or ordinal\
+    \ position\n\n   (they can say \u201Cthe second one\u201D to pick *choice[1]*.)\n\
+    \nThe user\u2019s utterance is recognized in the following order:\n\n* By name\
+    \ using *find_choices()* \n\n* By 1\u2019s based ordinal position. \n\n* By 1\u2019\
+    s based index position. \n\nutterance: The input.\n\nchoices: The list of choices.\n\
+    \noptions: (Optional) Options to control the recognition strategy.\n\nA list of\
+    \ found choices, sorted by most relevant first."
+  signature: 'recognize_choices(utterance: str, choices: List[Union[str, botbuilder.dialogs.choices.choice.Choice]],
+    options: Optional[botbuilder.dialogs.choices.find_choices_options.FindChoicesOptions]
+    = None)'

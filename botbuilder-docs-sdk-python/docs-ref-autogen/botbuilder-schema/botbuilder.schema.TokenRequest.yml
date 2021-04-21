@@ -7,17 +7,13 @@ inheritances:
 - msrest.serialization.Model
 summary: A request to receive a user token.
 constructor:
-  syntax: 'TokenRequest(*, provider: str = None, settings=None, **kwargs) -> None'
+  syntax: 'TokenRequest(*, provider: Optional[str] = None, settings=None, **kwargs)'
   parameters:
   - name: provider
     description: The provider to request a user token from
-    isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: settings
-    description: 'A collection of settings for the specific provider for
-
-      this request'
-    isRequired: true
+    description: A collection of settings for the specific provider for
     types:
-    - <xref:dict>[<xref:str>, <xref:object>]
+    - dict[str, object]

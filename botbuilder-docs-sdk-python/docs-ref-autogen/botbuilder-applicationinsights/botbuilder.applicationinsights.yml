@@ -11,22 +11,20 @@ functions:
 
     callable object <xref:botbuilder.applicationinsights.BotTelemetryProcessor> for
     details.'
-  signature: bot_telemetry_processor(data, context) -> bool
+  signature: bot_telemetry_processor(data, context)
   parameters:
   - name: data
     description: Data from Application Insights
-    isRequired: true
     types:
-    - <xref:telemetry item>
+    - telemetry item
   - name: context
     description: Context from Application Insights
-    isRequired: true
     types:
-    - <xref:context object>
+    - context object
   return:
     description: determines if the event is passed to the server (False = Filtered).
     types:
-    - <xref:bool>
+    - bool
 - uid: botbuilder.applicationinsights.bot_telemetry_processor
   name: bot_telemetry_processor
   summary: 'Bot Telemetry Processor as a method for backward compatibility. Refer
@@ -34,22 +32,20 @@ functions:
 
     callable object <xref:botbuilder.applicationinsights.BotTelemetryProcessor> for
     details.'
-  signature: bot_telemetry_processor(data, context) -> bool
+  signature: bot_telemetry_processor(data, context)
   parameters:
   - name: data
     description: Data from Application Insights
-    isRequired: true
     types:
-    - <xref:telemetry item>
+    - telemetry item
   - name: context
     description: Context from Application Insights
-    isRequired: true
     types:
-    - <xref:context object>
+    - context object
   return:
     description: determines if the event is passed to the server (False = Filtered).
     types:
-    - <xref:bool>
+    - bool
 classes:
 - botbuilder.applicationinsights.ApplicationInsightsTelemetryClient
 - botbuilder.applicationinsights.BotTelemetryProcessor

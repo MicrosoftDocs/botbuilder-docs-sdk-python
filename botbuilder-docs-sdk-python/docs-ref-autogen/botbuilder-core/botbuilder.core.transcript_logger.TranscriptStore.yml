@@ -6,22 +6,15 @@ module: botbuilder.core.transcript_logger
 inheritances:
 - botbuilder.core.transcript_logger.TranscriptLogger
 summary: Transcript storage for conversations.
+constructor:
+  syntax: TranscriptStore()
 methods:
 - uid: botbuilder.core.transcript_logger.TranscriptStore.delete_transcript
   name: delete_transcript
-  summary: 'Delete a specific conversation and all of it''s activities.
-
-    :param channel_id: Channel Id where conversation took place.
-
-    :param conversation_id: Id of the conversation to delete.
-
-    :result: None'
-  signature: 'delete_transcript(channel_id: str, conversation_id: str) -> None'
-  parameters:
-  - name: channel_id
-    isRequired: true
-  - name: conversation_id
-    isRequired: true
+  summary: "Delete a specific conversation and all of it\u2019s activities.\n:param\
+    \ channel_id: Channel Id where conversation took place.\n:param conversation_id:\
+    \ Id of the conversation to delete.\n:result: None"
+  signature: 'delete_transcript(channel_id: str, conversation_id: str)'
 - uid: botbuilder.core.transcript_logger.TranscriptStore.get_transcript_activities
   name: get_transcript_activities
   summary: 'Get activities for a conversation (Aka the transcript).
@@ -36,17 +29,7 @@ methods:
 
     :result: Page of results of Activity objects'
   signature: 'get_transcript_activities(channel_id: str, conversation_id: str, continuation_token:
-    str, start_date: <module ''datetime'' from ''c:\\\\hostedtoolcache\\\\windows\\\\python\\\\3.6.8\\\\x64\\\\lib\\\\datetime.py''>)
-    -> botbuilder.core.transcript_logger.PagedResult'
-  parameters:
-  - name: channel_id
-    isRequired: true
-  - name: conversation_id
-    isRequired: true
-  - name: continuation_token
-    isRequired: true
-  - name: start_date
-    isRequired: true
+    str, start_date: <module ''datetime'' from ''c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\datetime.py''>)'
 - uid: botbuilder.core.transcript_logger.TranscriptStore.list_transcripts
   name: list_transcripts
   summary: 'List conversations in the channelId.
@@ -56,9 +39,4 @@ methods:
     :param continuation_token : Continuation token to page through results.
 
     :result: Page of results of TranscriptInfo objects'
-  signature: 'list_transcripts(channel_id: str, continuation_token: str) -> botbuilder.core.transcript_logger.PagedResult'
-  parameters:
-  - name: channel_id
-    isRequired: true
-  - name: continuation_token
-    isRequired: true
+  signature: 'list_transcripts(channel_id: str, continuation_token: str)'

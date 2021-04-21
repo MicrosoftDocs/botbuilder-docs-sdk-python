@@ -8,24 +8,17 @@ inheritances:
 summary: Represents the reaction of a user to a message.
 constructor:
   syntax: 'MessageActionsPayloadReaction(*, reaction_type=None, created_date_time:
-    str = None, user=None, **kwargs) -> None'
+    Optional[str] = None, user=None, **kwargs)'
   parameters:
   - name: reaction_type
-    description: 'The type of reaction given to the message. Possible
-
-      values include: ''like'', ''heart'', ''laugh'', ''surprised'', ''sad'', ''angry'''
-    isRequired: true
+    description: The type of reaction given to the message. Possible
     types:
-    - <xref:str>
+    - str
   - name: created_date_time
-    description: 'Timestamp of when the user reacted to the
-
-      message.'
-    isRequired: true
+    description: Timestamp of when the user reacted to the
     types:
-    - <xref:str>
+    - str
   - name: user
     description: The user with which the reaction is associated.
-    isRequired: true
     types:
-    - <xref:botframework.connector.teams.models.MessageActionsPayloadFrom>
+    - MessageActionsPayloadFrom

@@ -7,19 +7,13 @@ inheritances:
 - msrest.serialization.Model
 summary: SuggestedActions that can be performed.
 constructor:
-  syntax: SuggestedActions(*, to=None, actions=None, **kwargs) -> None
+  syntax: SuggestedActions(*, to=None, actions=None, **kwargs)
   parameters:
   - name: to
-    description: 'Ids of the recipients that the actions should be shown to.
-
-      These Ids are relative to the channelId and a subset of all recipients of
-
-      the activity'
-    isRequired: true
+    description: Ids of the recipients that the actions should be shown to.
     types:
-    - <xref:list>[<xref:str>]
+    - list[str]
   - name: actions
     description: Actions that can be shown to the user
-    isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.CardAction>]
+    - list[CardAction]

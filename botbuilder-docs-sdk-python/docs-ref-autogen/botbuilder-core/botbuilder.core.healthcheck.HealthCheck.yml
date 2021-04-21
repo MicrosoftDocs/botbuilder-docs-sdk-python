@@ -5,11 +5,9 @@ fullName: botbuilder.core.healthcheck.HealthCheck
 module: botbuilder.core.healthcheck
 inheritances:
 - builtins.object
+constructor:
+  syntax: HealthCheck()
 methods:
 - uid: botbuilder.core.healthcheck.HealthCheck.create_healthcheck_response
   name: create_healthcheck_response
-  signature: 'create_healthcheck_response(connector_client: botframework.connector.connector_client.ConnectorClient)
-    -> botbuilder.schema.healthcheck_response.HealthCheckResponse'
-  parameters:
-  - name: connector_client
-    isRequired: true
+  signature: 'create_healthcheck_response(connector_client: botframework.connector.connector_client.ConnectorClient)'
