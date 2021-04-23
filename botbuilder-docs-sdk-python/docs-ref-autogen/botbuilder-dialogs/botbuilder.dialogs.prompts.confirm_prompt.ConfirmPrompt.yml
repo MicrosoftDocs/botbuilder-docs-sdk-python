@@ -7,15 +7,8 @@ inheritances:
 - botbuilder.dialogs.prompts.prompt.Prompt
 constructor:
   syntax: 'ConfirmPrompt(dialog_id: str, validator: object = None, default_locale:
-    str = None)'
+    str = None, choice_defaults: typing.Dict[str, object] = None)'
 methods:
-- uid: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.determine_culture
-  name: determine_culture
-  signature: 'determine_culture(activity: botbuilder.schema._models_py3.Activity)
-    -> str'
-  parameters:
-  - name: activity
-    isRequired: true
 - uid: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.on_prompt
   name: on_prompt
   signature: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
@@ -42,23 +35,3 @@ methods:
     isRequired: true
   - name: options
     isRequired: true
-attributes:
-- uid: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.choice_defaults
-  name: choice_defaults
-  signature: 'choice_defaults = {''Spanish'': (<botbuilder.dialogs.choices.choice.Choice
-    object>, <botbuilder.dialogs.choices.choice.Choice object>, <botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
-    object>), ''Dutch'': (<botbuilder.dialogs.choices.choice.Choice object>, <botbuilder.dialogs.choices.choice.Choice
-    object>, <botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
-    object>), ''English'': (<botbuilder.dialogs.choices.choice.Choice object>, <botbuilder.dialogs.choices.choice.Choice
-    object>, <botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
-    object>), ''French'': (<botbuilder.dialogs.choices.choice.Choice object>, <botbuilder.dialogs.choices.choice.Choice
-    object>, <botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
-    object>), ''German'': (<botbuilder.dialogs.choices.choice.Choice object>, <botbuilder.dialogs.choices.choice.Choice
-    object>, <botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
-    object>), ''Japanese'': (<botbuilder.dialogs.choices.choice.Choice object>, <botbuilder.dialogs.choices.choice.Choice
-    object>, <botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
-    object>), ''Portuguese'': (<botbuilder.dialogs.choices.choice.Choice object>,
-    <botbuilder.dialogs.choices.choice.Choice object>, <botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
-    object>), ''Chinese'': (<botbuilder.dialogs.choices.choice.Choice object>, <botbuilder.dialogs.choices.choice.Choice
-    object>, <botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
-    object>)}'

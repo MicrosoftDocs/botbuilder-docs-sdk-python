@@ -7,7 +7,7 @@ inheritances:
 - slack.web.client.WebClient
 summary: Slack client that extends [https://github.com/slackapi/python-slackclient](https://github.com/slackapi/python-slackclient).
 constructor:
-  syntax: 'SlackClient(options: botbuilder.adapters.slack.slack_options.SlackAdapterOptions)'
+  syntax: 'SlackClient(options: botbuilder.adapters.slack.slack_client_options.SlackClientOptions)'
 methods:
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.channels_list_ex
   name: channels_list_ex
@@ -133,9 +133,9 @@ methods:
     defaultValue: None
   - name: file_type
     defaultValue: None
-- uid: botbuilder.adapters.slack.slack_client.SlackClient.get_bot_user_by_team
-  name: get_bot_user_by_team
-  signature: 'get_bot_user_by_team(activity: botbuilder.schema._models_py3.Activity)
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.get_bot_user_identity
+  name: get_bot_user_identity
+  signature: 'get_bot_user_identity(activity: botbuilder.schema._models_py3.Activity)
     -> str'
   parameters:
   - name: activity
@@ -189,9 +189,9 @@ methods:
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.login_with_slack
   name: login_with_slack
   signature: login_with_slack()
-- uid: botbuilder.adapters.slack.slack_client.SlackClient.post_message_to_slack
-  name: post_message_to_slack
-  signature: 'post_message_to_slack(message: botbuilder.adapters.slack.slack_message.SlackMessage)
+- uid: botbuilder.adapters.slack.slack_client.SlackClient.post_message
+  name: post_message
+  signature: 'post_message(message: botbuilder.adapters.slack.slack_message.SlackMessage)
     -> slack.web.slack_response.SlackResponse'
   parameters:
   - name: message
