@@ -11,8 +11,8 @@ methods:
 - uid: botbuilder.core.card_factory.CardFactory.adaptive_card
   name: adaptive_card
   summary: "Returns an attachment for an adaptive card. The attachment will contain\
-    \ the card and the\nappropriate \u2018contentType\u2019. Will raise a TypeError\
-    \ if the \u2018card\u2019 argument is not an\ndict.\n:param card:\n:return:"
+    \ the card and the\nappropriate \u2018contentType'. Will raise a TypeError if\
+    \ the \u2018card' argument is not an\ndict.\n:param card:\n:return:"
   signature: 'adaptive_card(card: dict)'
   parameters:
   - name: card
@@ -20,7 +20,7 @@ methods:
 - uid: botbuilder.core.card_factory.CardFactory.animation_card
   name: animation_card
   summary: "Returns an attachment for an animation card. Will raise a TypeError if\
-    \ the \u2018card\u2019 argument is not an\nAnimationCard.\n:param card:\n:return:"
+    \ the \u2018card' argument is not an\nAnimationCard.\n:param card:\n:return:"
   signature: 'animation_card(card: botbuilder.schema._models_py3.AnimationCard)'
   parameters:
   - name: card
@@ -28,7 +28,7 @@ methods:
 - uid: botbuilder.core.card_factory.CardFactory.audio_card
   name: audio_card
   summary: "Returns an attachment for an audio card. Will raise a TypeError if \u2018\
-    card\u2019 argument is not an AudioCard.\n:param card:\n:return:"
+    card' argument is not an AudioCard.\n:param card:\n:return:"
   signature: 'audio_card(card: botbuilder.schema._models_py3.AudioCard)'
   parameters:
   - name: card
@@ -36,9 +36,9 @@ methods:
 - uid: botbuilder.core.card_factory.CardFactory.hero_card
   name: hero_card
   summary: "Returns an attachment for a hero card. Will raise a TypeError if \u2018\
-    card\u2019 argument is not a HeroCard.\n\nHero cards tend to have one dominant\
-    \ full width image and the cards text & buttons can\nusually be found below the\
-    \ image.\n:return:"
+    card' argument is not a HeroCard.\n\nHero cards tend to have one dominant full\
+    \ width image and the cards text & buttons can\nusually be found below the image.\n\
+    :return:"
   signature: 'hero_card(card: botbuilder.schema._models_py3.HeroCard)'
   parameters:
   - name: card
@@ -46,8 +46,8 @@ methods:
 - uid: botbuilder.core.card_factory.CardFactory.oauth_card
   name: oauth_card
   summary: "Returns an attachment for an OAuth card used by the Bot Frameworks Single\
-    \ Sign On (SSO) service. Will raise a\nTypeError if \u2018card\u2019 argument\
-    \ is not a OAuthCard.\n:param card:\n:return:"
+    \ Sign On (SSO) service. Will raise a\nTypeError if \u2018card' argument is not\
+    \ a OAuthCard.\n:param card:\n:return:"
   signature: 'oauth_card(card: botbuilder.schema._models_py3.OAuthCard)'
   parameters:
   - name: card
@@ -55,17 +55,16 @@ methods:
 - uid: botbuilder.core.card_factory.CardFactory.receipt_card
   name: receipt_card
   summary: "Returns an attachment for a receipt card. Will raise a TypeError if \u2018\
-    card\u2019 argument is not a ReceiptCard.\n:param card:\n:return:"
+    card' argument is not a ReceiptCard.\n:param card:\n:return:"
   signature: 'receipt_card(card: botbuilder.schema._models_py3.ReceiptCard)'
   parameters:
   - name: card
     isRequired: true
 - uid: botbuilder.core.card_factory.CardFactory.signin_card
   name: signin_card
-  summary: "Returns an attachment for a signin card. For channels that don\u2019t\
-    \ natively support signin cards an alternative\nmessage will be rendered. Will\
-    \ raise a TypeError if \u2018card\u2019 argument is not a SigninCard.\n:param\
-    \ card:\n:return:"
+  summary: "Returns an attachment for a signin card. For channels that don't natively\
+    \ support signin cards an alternative\nmessage will be rendered. Will raise a\
+    \ TypeError if \u2018card' argument is not a SigninCard.\n:param card:\n:return:"
   signature: 'signin_card(card: botbuilder.schema._models_py3.SigninCard)'
   parameters:
   - name: card
@@ -73,11 +72,11 @@ methods:
 - uid: botbuilder.core.card_factory.CardFactory.thumbnail_card
   name: thumbnail_card
   summary: "Returns an attachment for a thumbnail card. Thumbnail cards are similar\
-    \ to\nbut instead of a full width image, they\u2019re typically rendered with\
-    \ a smaller thumbnail version of\nthe image on either side and the text will be\
-    \ rendered in column next to the image. Any buttons\nwill typically show up under\
-    \ the card. Will raise a TypeError if \u2018card\u2019 argument is not a ThumbnailCard.\n\
-    :param card:\n:return:"
+    \ to\nbut instead of a full width image, they're typically rendered with a smaller\
+    \ thumbnail version of\nthe image on either side and the text will be rendered\
+    \ in column next to the image. Any buttons\nwill typically show up under the card.\
+    \ Will raise a TypeError if \u2018card' argument is not a ThumbnailCard.\n:param\
+    \ card:\n:return:"
   signature: 'thumbnail_card(card: botbuilder.schema._models_py3.ThumbnailCard)'
   parameters:
   - name: card
@@ -85,7 +84,7 @@ methods:
 - uid: botbuilder.core.card_factory.CardFactory.video_card
   name: video_card
   summary: "Returns an attachment for a video card. Will raise a TypeError if \u2018\
-    card\u2019 argument is not a VideoCard.\n:param card:\n:return:"
+    card' argument is not a VideoCard.\n:param card:\n:return:"
   signature: 'video_card(card: botbuilder.schema._models_py3.VideoCard)'
   parameters:
   - name: card

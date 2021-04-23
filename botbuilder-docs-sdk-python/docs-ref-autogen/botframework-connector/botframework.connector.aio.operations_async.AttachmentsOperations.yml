@@ -20,8 +20,7 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
 variables:
-- description: "The API version to use for the request. Constant value: \u201Cv3\u201D\
-    ."
+- description: 'The API version to use for the request. Constant value: "v3".'
   name: "api_version \u2013 The API version to use for the request. Constant value:\
     \ \u201Cv3\u201D"
 methods:
@@ -50,18 +49,28 @@ methods:
     types:
     - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
-    description: returns the direct response alongside the
+    description: 'returns the direct response alongside the
+
+      deserialized response'
     isRequired: true
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: callback
-    description: When specified, will be called with each chunk of
+    description: 'When specified, will be called with each chunk of
+
+      data that is streamed. The callback should take two arguments, the
+
+      bytes of the current chunk of data and the response object. If the
+
+      data is uploading, response will be None.'
     isRequired: true
     types:
     - <xref:botframework.connector.aio.operations_async.Callable>[<xref:botframework.connector.aio.operations_async.Bytes>,
       <xref:botframework.connector.aio.operations_async.response=None>]
   - name: operation_config
-    description: '*Operation configuration'
+    description: '*Operation configuration
+
+      overrides*.'
     isRequired: true
   return:
     description: object or ClientRawResponse if raw=true
@@ -88,12 +97,16 @@ methods:
     types:
     - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
-    description: returns the direct response alongside the
+    description: 'returns the direct response alongside the
+
+      deserialized response'
     isRequired: true
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
-    description: '*Operation configuration'
+    description: '*Operation configuration
+
+      overrides*.'
     isRequired: true
   return:
     description: AttachmentInfo or ClientRawResponse if raw=true

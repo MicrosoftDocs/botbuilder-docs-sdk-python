@@ -5,8 +5,9 @@ fullName: botbuilder.core.ChannelServiceHandler
 module: botbuilder.core
 inheritances:
 - builtins.object
-summary: "Initializes a new instance of the <see cref=\u201DChannelServiceHandler\u201D\
-  /> class,\nusing a credential provider."
+summary: 'Initializes a new instance of the <see cref="ChannelServiceHandler"/> class,
+
+  using a credential provider.'
 constructor:
   syntax: 'ChannelServiceHandler(credential_provider: botframework.connector.auth.credential_provider.CredentialProvider,
     auth_config: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration,
@@ -154,8 +155,8 @@ methods:
     \ payload and REST API uris.\n\nMost channels only support the semantics of bots\
     \ initiating a direct\nmessage conversation.  An example of how to do that would\
     \ be:\n\nvar resource = await connector.conversations.CreateConversation(new\n\
-    ConversationParameters(){ Bot = bot, members = new ChannelAccount[] { new\nChannelAccount(\u201C\
-    user1\u201D) } );\nawait connect.Conversations.SendToConversationAsync(resource.Id,\
+    ConversationParameters(){ Bot = bot, members = new ChannelAccount[] { new\nChannelAccount(\"\
+    user1\") } );\nawait connect.Conversations.SendToConversationAsync(resource.Id,\
     \ new\nActivity() \u2026 ) ;\n\nend."
   signature: 'on_create_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     parameters: botbuilder.schema._models_py3.ConversationParameters)'
@@ -447,10 +448,20 @@ methods:
     isRequired: true
 - uid: botbuilder.core.ChannelServiceHandler.on_update_activity
   name: on_update_activity
-  summary: "update_activity() API for Skill.\n\nEdit an existing activity.\n\nSome\
-    \ channels allow you to edit an existing activity to reflect the new\nstate of\
-    \ a bot conversation.\n\nFor example, you can remove buttons after someone has\
-    \ clicked \u201CApprove\u201D\nbutton."
+  summary: 'update_activity() API for Skill.
+
+
+    Edit an existing activity.
+
+
+    Some channels allow you to edit an existing activity to reflect the new
+
+    state of a bot conversation.
+
+
+    For example, you can remove buttons after someone has clicked "Approve"
+
+    button.'
   signature: 'on_update_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)'
   parameters:
@@ -464,11 +475,20 @@ methods:
     isRequired: true
 - uid: botbuilder.core.ChannelServiceHandler.on_upload_attachment
   name: on_upload_attachment
-  summary: "upload_attachment() API for Skill.\n\nUpload an attachment directly into\
-    \ a channel\u2019s blob storage.\n\nThis is useful because it allows you to store\
-    \ data in a compliant store\nwhen dealing with enterprises.\n\nThe response is\
-    \ a ResourceResponse which contains an AttachmentId which is\nsuitable for using\
-    \ with the attachments API."
+  summary: 'upload_attachment() API for Skill.
+
+
+    Upload an attachment directly into a channel''s blob storage.
+
+
+    This is useful because it allows you to store data in a compliant store
+
+    when dealing with enterprises.
+
+
+    The response is a ResourceResponse which contains an AttachmentId which is
+
+    suitable for using with the attachments API.'
   signature: 'on_upload_attachment(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, attachment_upload: botbuilder.schema._models_py3.AttachmentData)'
   parameters:

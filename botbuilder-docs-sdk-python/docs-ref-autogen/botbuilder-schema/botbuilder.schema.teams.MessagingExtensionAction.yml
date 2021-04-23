@@ -24,17 +24,21 @@ constructor:
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: command_context
-    description: The context from which the command originates.
+    description: "The context from which the command originates.\nPossible values\
+      \ include: \u2018message', \u2018compose', \u2018commandbox'"
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: bot_message_preview_action
-    description: Bot message preview action taken by
+    description: "Bot message preview action taken by\nuser. Possible values include:\
+      \ \u2018edit', \u2018send'"
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str'
   - name: bot_activity_preview
     types:
     - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.schema.models.Activity>]'
   - name: message_payload
-    description: Message content sent as part of the command
+    description: 'Message content sent as part of the command
+
+      request.'
     types:
     - <xref:botframework.connector.teams.models.MessageActionsPayload>

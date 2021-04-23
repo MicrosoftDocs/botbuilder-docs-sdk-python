@@ -10,6 +10,8 @@ constructor:
   syntax: MediaEventValue(*, card_value=None, **kwargs)
   parameters:
   - name: card_value
-    description: Callback parameter specified in the Value field of the
+    description: 'Callback parameter specified in the Value field of the
+
+      MediaCard that originated this event'
     types:
     - '[object](https://docs.python.org/3.6/library/functions.html#object)'

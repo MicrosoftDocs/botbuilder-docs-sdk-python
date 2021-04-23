@@ -12,7 +12,8 @@ constructor:
     = None, choices=None, style=None, is_multi_select: Optional[bool] = None, **kwargs)'
   parameters:
   - name: type
-    description: "Input type name. Possible values include: \u2018textInput\u2019,"
+    description: "Input type name. Possible values include: \u2018textInput',\n\u2018\
+      dateInput', \u2018multichoiceInput'"
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: id
@@ -20,7 +21,9 @@ constructor:
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: is_required
-    description: Define if this input is a required field. Default
+    description: 'Define if this input is a required field. Default
+
+      value is false.'
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: title
@@ -32,15 +35,19 @@ constructor:
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: choices
-    description: Set of choices whose each item can be in any subtype of
+    description: 'Set of choices whose each item can be in any subtype of
+
+      O365ConnectorCardMultichoiceInputChoice.'
     types:
     - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.O365ConnectorCardMultichoiceInputChoice>]'
   - name: style
-    description: "Choice item rendering style. Default value is \u2018compact\u2019\
-      ."
+    description: "Choice item rendering style. Default value is \u2018compact'.\n\
+      Possible values include: \u2018compact', \u2018expanded'"
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: is_multi_select
-    description: Define if this input field allows multiple
+    description: 'Define if this input field allows multiple
+
+      selections. Default value is false.'
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'

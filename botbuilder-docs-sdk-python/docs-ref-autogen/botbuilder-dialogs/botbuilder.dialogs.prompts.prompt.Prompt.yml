@@ -36,7 +36,7 @@ methods:
     = None)'
   parameters:
   - name: prompt
-    description: "The prompt to append the user\u2019s choice to"
+    description: The prompt to append the user's choice to
     isRequired: true
   - name: channel_id
     description: Id of the channel the prompt is being sent to
@@ -104,11 +104,22 @@ methods:
     description: The dialog turn result
     types:
     - <xref:botbuilder.dialogs.prompts.prompt.DialogTurnResult>
-  remarks: "Called when a prompt dialog is the active dialog and the user replied\
-    \ with a new activity.\n\nIf the task is successful, the result indicates whether\
-    \ the dialog is still active after\nthe turn has been processed by the dialog.\n\
-    \nThe prompt generally continues to receive the user\u2019s replies until it accepts\
-    \ the\nuser\u2019s reply as valid input for the prompt.\n"
+  remarks: 'Called when a prompt dialog is the active dialog and the user replied
+    with a new activity.
+
+
+    If the task is successful, the result indicates whether the dialog is still active
+    after
+
+    the turn has been processed by the dialog.
+
+
+    The prompt generally continues to receive the user''s replies until it accepts
+    the
+
+    user''s reply as valid input for the prompt.
+
+    '
 - uid: botbuilder.dialogs.prompts.prompt.Prompt.on_prompt
   name: on_prompt
   summary: Prompts user for input. When overridden in a derived class, prompts the
@@ -142,8 +153,8 @@ methods:
     description: A task representing the asynchronous operation.
 - uid: botbuilder.dialogs.prompts.prompt.Prompt.on_recognize
   name: on_recognize
-  summary: "Recognizes the user\u2019s input.\n\n\n> [!NOTE]\n> When overridden in\
-    \ a derived class, attempts to recognize the user\u2019s input.\n>"
+  summary: "Recognizes the user's input.\n\n\n> [!NOTE]\n> When overridden in a derived\
+    \ class, attempts to recognize the user\u2019s input.\n>"
   signature: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
     state: Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)'
   parameters:

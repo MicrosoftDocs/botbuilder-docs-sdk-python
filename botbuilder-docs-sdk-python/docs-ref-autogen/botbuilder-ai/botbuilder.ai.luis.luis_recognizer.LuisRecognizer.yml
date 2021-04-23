@@ -33,14 +33,18 @@ methods:
     types:
     - <xref:botbuilder.core.TurnContext>
   - name: telemetry_properties
-    description: Additional properties to be logged to telemetry with the LuisResult
+    description: 'Additional properties to be logged to telemetry with the LuisResult
       event, defaults
+
+      to None.'
     defaultValue: None
     types:
     - <xref:typing.Dict[str, str]>, optional
   return:
-    description: "A dictionary sent as \u201CProperties\u201D to <xref:botbuilder.core.BotTelemetryClient.track_event>\
-      \ for the\nBotMessageSend event."
+    description: 'A dictionary sent as "Properties" to <xref:botbuilder.core.BotTelemetryClient.track_event>
+      for the
+
+      BotMessageSend event.'
     types:
     - '*typing.Dict[str, str]*'
 - uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.on_recognizer_result
@@ -63,14 +67,18 @@ methods:
     types:
     - <xref:botbuilder.core.TurnContext>
   - name: telemetry_properties
-    description: Additional properties to be logged to telemetry with the LuisResult
+    description: 'Additional properties to be logged to telemetry with the LuisResult
       event, defaults
+
+      to None.'
     defaultValue: None
     types:
     - <xref:typing.Dict[str, str]>, optional
   - name: telemetry_metrics
-    description: Additional metrics to be logged to telemetry with the LuisResult
+    description: 'Additional metrics to be logged to telemetry with the LuisResult
       event, defaults
+
+      to None.'
     defaultValue: None
     types:
     - <xref:typing.Dict[str, float]>, optional
@@ -89,22 +97,26 @@ methods:
     types:
     - <xref:botbuilder.core.TurnContext>
   - name: telemetry_properties
-    description: Additional properties to be logged to telemetry with the LuisResult
+    description: 'Additional properties to be logged to telemetry with the LuisResult
       event, defaults
+
+      to None.'
     defaultValue: None
     types:
     - <xref:typing.Dict[str, str]>, optional
   - name: telemetry_metrics
-    description: Additional metrics to be logged to telemetry with the LuisResult
+    description: 'Additional metrics to be logged to telemetry with the LuisResult
       event, defaults to
+
+      None.'
     defaultValue: None
     types:
     - <xref:typing.Dict[str, float]>, optional
   - name: luis_prediction_options
     defaultValue: None
   return:
-    description: "The LUIS results of the analysis of the current message text in\
-      \ the current turn\u2019s context activity."
+    description: The LUIS results of the analysis of the current message text in the
+      current turn's context activity.
     types:
     - <xref:botbuilder.core.RecognizerResult>
 - uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.top_intent
@@ -124,8 +136,10 @@ methods:
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str), <xref:botbuilder.ai.luis.luis_recognizer.optional>'
   - name: min_score
-    description: Minimum score needed for an intent to be considered as a top intent.
+    description: 'Minimum score needed for an intent to be considered as a top intent.
       If all intents in the set
+
+      are below this threshold then the *defaultIntent* is returned, defaults to 0.0.'
     defaultValue: '0.0'
     types:
     - '[float](https://docs.python.org/3.6/library/functions.html#float), <xref:botbuilder.ai.luis.luis_recognizer.optional>'

@@ -11,6 +11,8 @@ constructor:
     = None, external_resource_url: Optional[str] = None, **kwargs)'
   parameters:
   - name: alert
-    description: true if notification is to be sent to the user, false
+    description: 'true if notification is to be sent to the user, false
+
+      otherwise.'
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'

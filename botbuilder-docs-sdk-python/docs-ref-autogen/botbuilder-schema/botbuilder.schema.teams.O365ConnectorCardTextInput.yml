@@ -12,7 +12,8 @@ constructor:
     is_multiline: Optional[bool] = None, max_length: Optional[float] = None, **kwargs)'
   parameters:
   - name: type
-    description: "Input type name. Possible values include: \u2018textInput\u2019,"
+    description: "Input type name. Possible values include: \u2018textInput',\n\u2018\
+      dateInput', \u2018multichoiceInput'"
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: id
@@ -20,7 +21,9 @@ constructor:
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: is_required
-    description: Define if this input is a required field. Default
+    description: 'Define if this input is a required field. Default
+
+      value is false.'
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: title
@@ -32,10 +35,14 @@ constructor:
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: is_multiline
-    description: Define if text input is allowed for multiple lines.
+    description: 'Define if text input is allowed for multiple lines.
+
+      Default value is false.'
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: max_length
-    description: Maximum length of text input. Default value is
+    description: 'Maximum length of text input. Default value is
+
+      unlimited.'
     types:
     - '[float](https://docs.python.org/3.6/library/functions.html#float)'

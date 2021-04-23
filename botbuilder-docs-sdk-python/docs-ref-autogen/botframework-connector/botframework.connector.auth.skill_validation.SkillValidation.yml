@@ -44,9 +44,12 @@ methods:
     isRequired: true
 - uid: botframework.connector.auth.skill_validation.SkillValidation.is_skill_token
   name: is_skill_token
-  summary: "Determines if a given Auth header is from from a skill to bot or bot to\
-    \ skill request.\n:param auth_header: Bearer Token, in the \u201CBearer [Long\
-    \ String]\u201D Format.\n:return bool:"
+  summary: 'Determines if a given Auth header is from from a skill to bot or bot to
+    skill request.
+
+    :param auth_header: Bearer Token, in the "Bearer [Long String]" Format.
+
+    :return bool:'
   signature: 'is_skill_token(auth_header: str)'
   parameters:
   - name: auth_header

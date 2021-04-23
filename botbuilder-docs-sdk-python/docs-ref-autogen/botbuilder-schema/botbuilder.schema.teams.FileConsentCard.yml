@@ -19,10 +19,16 @@ constructor:
     types:
     - <xref:botbuilder.schema.teams.long>
   - name: accept_context
-    description: Context sent back to the Bot if user consented to
+    description: 'Context sent back to the Bot if user consented to
+
+      upload. This is free flow schema and is sent back in Value field of
+
+      Activity.'
     types:
     - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   - name: decline_context
-    description: Context sent back to the Bot if user declined.
+    description: 'Context sent back to the Bot if user declined.
+
+      This is free flow schema and is sent back in Value field of Activity.'
     types:
     - '[object](https://docs.python.org/3.6/library/functions.html#object)'

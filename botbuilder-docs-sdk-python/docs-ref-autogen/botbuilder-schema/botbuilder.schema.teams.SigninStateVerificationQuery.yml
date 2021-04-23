@@ -10,6 +10,10 @@ constructor:
   syntax: 'SigninStateVerificationQuery(*, state: Optional[str] = None, **kwargs)'
   parameters:
   - name: state
-    description: The state string originally received when the signin web
+    description: 'The state string originally received when the signin web
+
+      flow is finished with a state posted back to client via tab SDK
+
+      microsoftTeams.authentication.notifySuccess(state)'
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

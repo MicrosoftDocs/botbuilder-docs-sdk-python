@@ -10,7 +10,11 @@ constructor:
   syntax: SuggestedActions(*, to=None, actions=None, **kwargs)
   parameters:
   - name: to
-    description: Ids of the recipients that the actions should be shown to.
+    description: 'Ids of the recipients that the actions should be shown to.
+
+      These Ids are relative to the channelId and a subset of all recipients of
+
+      the activity'
     types:
     - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[[str](https://docs.python.org/3.6/library/stdtypes.html#str)]'
   - name: actions

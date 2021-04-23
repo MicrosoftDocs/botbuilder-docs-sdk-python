@@ -13,7 +13,8 @@ constructor:
     **kwargs)
   parameters:
   - name: action
-    description: 'The action the user took. Possible values include:'
+    description: "The action the user took. Possible values include:\n\u2018accept',\
+      \ \u2018decline'"
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: context
@@ -21,6 +22,8 @@ constructor:
     types:
     - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   - name: upload_info
-    description: If the user accepted the file, contains information
+    description: 'If the user accepted the file, contains information
+
+      about the file to be uploaded.'
     types:
     - <xref:botframework.connector.teams.models.FileUploadInfo>

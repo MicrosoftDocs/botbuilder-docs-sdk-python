@@ -41,9 +41,14 @@ methods:
     isRequired: true
   return:
     description: An InvokeResponse that represents the work queued to execute.
-  remarks: "Invoke activities communicate programmatic commands from a client or channel\
-    \ to a bot.\nThe meaning of an invoke activity is defined by the \u201Cinvoke_activity.name\u201D\
-    \ property,\nwhich is meaningful within the scope of a channel.\n"
+  remarks: 'Invoke activities communicate programmatic commands from a client or channel
+    to a bot.
+
+    The meaning of an invoke activity is defined by the "invoke_activity.name" property,
+
+    which is meaningful within the scope of a channel.
+
+    '
 - uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_sign_in_invoke
   name: on_sign_in_invoke
   summary: Invoked when a signIn invoke activity is received from the connector.
@@ -201,10 +206,17 @@ methods:
     description: A task that represents the work queued to execute.
 - uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_added
   name: on_teams_members_added
-  summary: "Override this in a derived class to provide logic for when members other\
-    \ than the bot\njoin the channel, such as your bot\u2019s welcome logic.\n\ndescribed\
-    \ by the conversation update activity.\n:param team_info: The team info object\
-    \ representing the team.\n:param turn_context: A context object for this turn."
+  summary: 'Override this in a derived class to provide logic for when members other
+    than the bot
+
+    join the channel, such as your bot''s welcome logic.
+
+
+    described by the conversation update activity.
+
+    :param team_info: The team info object representing the team.
+
+    :param turn_context: A context object for this turn.'
   signature: 'on_teams_members_added(teams_members_added: [<class ''botbuilder.schema.teams._models_py3.TeamsChannelAccount''>],
     team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
@@ -218,11 +230,19 @@ methods:
     description: A task that represents the work queued to execute.
 - uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_added_dispatch
   name: on_teams_members_added_dispatch
-  summary: "Override this in a derived class to provide logic for when members other\
-    \ than the bot\njoin the channel, such as your bot\u2019s welcome logic.\nIt will\
-    \ get the associated members with the provided accounts.\n\ndescribed by the conversation\
-    \ update activity.\n:param team_info: The team info object representing the team.\n\
-    :param turn_context: A context object for this turn."
+  summary: 'Override this in a derived class to provide logic for when members other
+    than the bot
+
+    join the channel, such as your bot''s welcome logic.
+
+    It will get the associated members with the provided accounts.
+
+
+    described by the conversation update activity.
+
+    :param team_info: The team info object representing the team.
+
+    :param turn_context: A context object for this turn.'
   signature: 'on_teams_members_added_dispatch(members_added: [<class ''botbuilder.schema._models_py3.ChannelAccount''>],
     team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
@@ -236,11 +256,17 @@ methods:
     description: A task that represents the work queued to execute.
 - uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_removed
   name: on_teams_members_removed
-  summary: "Override this in a derived class to provide logic for when members other\
-    \ than the bot\nleave the channel, such as your bot\u2019s good-bye logic.\n\n\
-    described by the conversation update activity.\n:param team_info: The team info\
-    \ object representing the team.\n:param turn_context: A context object for this\
-    \ turn."
+  summary: 'Override this in a derived class to provide logic for when members other
+    than the bot
+
+    leave the channel, such as your bot''s good-bye logic.
+
+
+    described by the conversation update activity.
+
+    :param team_info: The team info object representing the team.
+
+    :param turn_context: A context object for this turn.'
   signature: 'on_teams_members_removed(teams_members_removed: [<class ''botbuilder.schema.teams._models_py3.TeamsChannelAccount''>],
     team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
@@ -254,11 +280,19 @@ methods:
     description: A task that represents the work queued to execute.
 - uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_members_removed_dispatch
   name: on_teams_members_removed_dispatch
-  summary: "Override this in a derived class to provide logic for when members other\
-    \ than the bot\nleave the channel, such as your bot\u2019s good-bye logic.\nIt\
-    \ will get the associated members with the provided accounts.\n\ndescribed by\
-    \ the conversation update activity.\n:param team_info: The team info object representing\
-    \ the team.\n:param turn_context: A context object for this turn."
+  summary: 'Override this in a derived class to provide logic for when members other
+    than the bot
+
+    leave the channel, such as your bot''s good-bye logic.
+
+    It will get the associated members with the provided accounts.
+
+
+    described by the conversation update activity.
+
+    :param team_info: The team info object representing the team.
+
+    :param turn_context: A context object for this turn.'
   signature: 'on_teams_members_removed_dispatch(members_removed: [<class ''botbuilder.schema._models_py3.ChannelAccount''>],
     team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:

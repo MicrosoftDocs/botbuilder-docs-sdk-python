@@ -61,15 +61,17 @@ methods:
     types:
     - <xref:botbuilder.core.TurnContext>
   - name: reference
-    description: "An object in the form \u201C{activityId: *id of message to delete*,conversation:\
-      \ { id: *id of Slack"
+    description: 'An object in the form "{activityId: *id of message to delete*,conversation:
+      { id: *id of Slack
+
+      channel*}}".'
     isRequired: true
     types:
     - <xref:botbuilder.schema.ConversationReference>
 - uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.process
   name: process
-  summary: "Accept an incoming webhook request and convert it into a TurnContext which\
-    \ can be processed by the bot\u2019s logic."
+  summary: Accept an incoming webhook request and convert it into a TurnContext which
+    can be processed by the bot's logic.
   signature: 'process(req: aiohttp.web_request.Request, logic: Callable)'
   parameters:
   - name: req
@@ -121,7 +123,7 @@ methods:
     - <xref:botbuilder.core.TurnContext>
   - name: activity
     description: "The updated activity in the form \u2018{id: *id of activity to update*,\
-      \ \u2026}\u2019."
+      \ \u2026}'."
     isRequired: true
     types:
     - <xref:botbuilder.schema.Activity>

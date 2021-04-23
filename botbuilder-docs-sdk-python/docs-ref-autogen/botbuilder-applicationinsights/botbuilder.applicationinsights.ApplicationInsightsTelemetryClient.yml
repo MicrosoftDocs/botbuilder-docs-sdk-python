@@ -29,18 +29,25 @@ methods:
     = None)'
   parameters:
   - name: name
-    description: the name of the command initiated with this dependency call. Low
+    description: 'the name of the command initiated with this dependency call. Low
       cardinality value.
+
+      Examples are stored procedure name and URL path template.'
     isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: data
-    description: the command initiated by this dependency call. Examples are SQL statement
-      and HTTP URL with all
+    description: 'the command initiated by this dependency call. Examples are SQL
+      statement and HTTP URL with all
+
+      query parameters.'
     isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: type_name
+    description: "the dependency type name. Low cardinality value for logical grouping\
+      \ of dependencies and\ninterpretation of other fields like commandName and resultCode.\
+      \ Examples are SQL, Azure table, and HTTP.\n\n   (default to: None)"
     defaultValue: None
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
@@ -63,25 +70,33 @@ methods:
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: result_code
-    description: the result code of a dependency call. Examples are SQL error code
+    description: 'the result code of a dependency call. Examples are SQL error code
       and HTTP status code.
+
+      (defaults to: None)'
     defaultValue: None
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: properties
-    description: the set of custom properties the client wants attached to this data
+    description: 'the set of custom properties the client wants attached to this data
       item.
+
+      (defaults to: None)'
     defaultValue: None
     types:
     - <xref:typing.Dict[str, object]>
   - name: measurements
-    description: the set of custom measurements the client wants to attach to this
+    description: 'the set of custom measurements the client wants to attach to this
       data item.
+
+      (defaults to: None)'
     defaultValue: None
     types:
     - <xref:typing.Dict[str, object]>
   - name: dependency_id
-    description: the id for this dependency call. If None, a new uuid will be generated.
+    description: 'the id for this dependency call. If None, a new uuid will be generated.
+
+      (defaults to: None)'
     defaultValue: None
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
@@ -105,7 +120,9 @@ methods:
     - <xref:typing.Dict[str, object]>
   - name: measurements
     description: 'the set of custom measurements the client wants to attach to this
-      data item. (defaults to:'
+      data item. (defaults to:
+
+      None)'
     defaultValue: None
     types:
     - <xref:typing.Dict[str, object]>
@@ -134,7 +151,9 @@ methods:
     - <xref:typing.Dict[str, object]>
   - name: measurements
     description: 'the set of custom measurements the client wants to attach to this
-      data item. (defaults to:'
+      data item. (defaults to:
+
+      None)'
     defaultValue: None
     types:
     - <xref:typing.Dict[str, object]>
@@ -168,19 +187,25 @@ methods:
     - '[int](https://docs.python.org/3.6/library/functions.html#int)'
   - name: min_val
     description: 'the minimum of all metrics collected that were aggregated into this
-      data point. (defaults to:'
+      data point. (defaults to:
+
+      None)'
     defaultValue: None
     types:
     - '[float](https://docs.python.org/3.6/library/functions.html#float)'
   - name: max_val
     description: 'the maximum of all metrics collected that were aggregated into this
-      data point. (defaults to:'
+      data point. (defaults to:
+
+      None)'
     defaultValue: None
     types:
     - '[float](https://docs.python.org/3.6/library/functions.html#float)'
   - name: std_dev
-    description: the standard deviation of all metrics collected that were aggregated
+    description: 'the standard deviation of all metrics collected that were aggregated
       into this data point.
+
+      (defaults to: None)'
     defaultValue: None
     types:
     - '[float](https://docs.python.org/3.6/library/functions.html#float)'
@@ -218,7 +243,9 @@ methods:
     - <xref:typing.Dict[str, object]>
   - name: measurements
     description: 'the set of custom measurements the client wants to attach to this
-      data item. (defaults to:'
+      data item. (defaults to:
+
+      None)'
     defaultValue: None
     types:
     - <xref:typing.Dict[str, object]>
@@ -247,8 +274,10 @@ methods:
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: start_time
-    description: the start time of the request. The value should look the same as
+    description: 'the start time of the request. The value should look the same as
       the one returned by
+
+      <xref:datetime.isoformat>. (defaults to: None)'
     defaultValue: None
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
@@ -276,7 +305,9 @@ methods:
     - <xref:typing.Dict[str, object]>
   - name: measurements
     description: 'the set of custom measurements the client wants to attach to this
-      data item. (defaults to:'
+      data item. (defaults to:
+
+      None)'
     defaultValue: None
     types:
     - <xref:typing.Dict[str, object]>

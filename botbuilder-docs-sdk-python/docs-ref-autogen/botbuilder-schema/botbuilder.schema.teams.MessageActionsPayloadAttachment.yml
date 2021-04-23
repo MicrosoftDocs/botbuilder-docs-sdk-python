@@ -24,7 +24,9 @@ constructor:
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: content
-    description: The content of the attachment, in case of a code snippet,
+    description: 'The content of the attachment, in case of a code snippet,
+
+      email, or file.'
     types:
     - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   - name: name
@@ -32,6 +34,8 @@ constructor:
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: thumbnail_url
-    description: The url of a thumbnail image that might be embedded
+    description: 'The url of a thumbnail image that might be embedded
+
+      in the attachment, in case of a card.'
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

@@ -94,15 +94,28 @@ methods:
     isRequired: true
 - uid: botbuilder.dialogs.dialog_context.DialogContext.end_dialog
   name: end_dialog
-  summary: "Ends a dialog by popping it off the stack and returns an optional result\
-    \ to the dialog\u2019s\nparent. The parent dialog is the dialog that started the\
-    \ dialog being ended via a call to\neither \u201Cbegin_dialog\u201D or \u201C\
-    prompt\u201D.\nThe parent dialog will have its *Dialog.resume_dialog()* method\
-    \ invoked with any returned\nresult. If the parent dialog hasn\u2019t implemented\
-    \ a *resume_dialog()* method then it will be\nautomatically ended as well and\
-    \ the result passed to its parent. If there are no more\nparent dialogs on the\
-    \ stack then processing of the turn will end.\n:param result: (Optional) result\
-    \ to pass to the parent dialogs.\n:return:"
+  summary: 'Ends a dialog by popping it off the stack and returns an optional result
+    to the dialog''s
+
+    parent. The parent dialog is the dialog that started the dialog being ended via
+    a call to
+
+    either "begin_dialog" or "prompt".
+
+    The parent dialog will have its *Dialog.resume_dialog()* method invoked with any
+    returned
+
+    result. If the parent dialog hasn''t implemented a *resume_dialog()* method then
+    it will be
+
+    automatically ended as well and the result passed to its parent. If there are
+    no more
+
+    parent dialogs on the stack then processing of the turn will end.
+
+    :param result: (Optional) result to pass to the parent dialogs.
+
+    :return:'
   signature: 'end_dialog(result: object = None)'
   parameters:
   - name: result

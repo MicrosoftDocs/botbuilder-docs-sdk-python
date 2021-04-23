@@ -16,15 +16,21 @@ constructor:
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: height
-    description: "This can be a number, representing the task module\u2019s height"
+    description: 'This can be a number, representing the task module''s height
+
+      in pixels, or a string, one of: small, medium, large.'
     types:
     - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   - name: width
-    description: "This can be a number, representing the task module\u2019s width"
+    description: 'This can be a number, representing the task module''s width
+
+      in pixels, or a string, one of: small, medium, large.'
     types:
     - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   - name: url
-    description: The URL of what is loaded as an iframe inside the task module.
+    description: 'The URL of what is loaded as an iframe inside the task module.
+
+      One of url or card is required.'
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: card
@@ -32,10 +38,14 @@ constructor:
     types:
     - <xref:botframework.connector.teams.models.Attachment>
   - name: fallback_url
-    description: If a client does not support the task module feature,
+    description: 'If a client does not support the task module feature,
+
+      this URL is opened in a browser tab.'
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: completion_bot_id
-    description: If a client does not support the task module
+    description: 'If a client does not support the task module
+
+      feature, this URL is opened in a browser tab.'
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

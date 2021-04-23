@@ -24,15 +24,21 @@ constructor:
     types:
     - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ChannelAccount>]'
   - name: topic_name
-    description: (Optional) Topic of the conversation (if supported by
+    description: '(Optional) Topic of the conversation (if supported by
+
+      the channel)'
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: activity
-    description: (Optional) When creating a new conversation, use this
+    description: '(Optional) When creating a new conversation, use this
+
+      activity as the initial message to the conversation'
     types:
     - <xref:botframework.connector.models.Activity>
   - name: channel_data
-    description: Channel specific payload for creating the
+    description: 'Channel specific payload for creating the
+
+      conversation'
     types:
     - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   - name: tenant_id

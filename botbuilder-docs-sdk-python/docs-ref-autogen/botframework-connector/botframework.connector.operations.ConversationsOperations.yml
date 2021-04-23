@@ -20,8 +20,7 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
 variables:
-- description: "The API version to use for the request. Constant value: \u201Cv3\u201D\
-    ."
+- description: 'The API version to use for the request. Constant value: "v3".'
   name: "api_version \u2013 The API version to use for the request. Constant value:\
     \ \u201Cv3\u201D"
 methods:
@@ -78,12 +77,16 @@ methods:
     types:
     - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
-    description: returns the direct response alongside the
+    description: 'returns the direct response alongside the
+
+      deserialized response'
     defaultValue: 'False'
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
-    description: '*Operation configuration'
+    description: '*Operation configuration
+
+      overrides*.'
     isRequired: true
   return:
     description: ConversationResourceResponse or ClientRawResponse if raw=true
@@ -119,12 +122,16 @@ methods:
     types:
     - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
-    description: returns the direct response alongside the
+    description: 'returns the direct response alongside the
+
+      deserialized response'
     defaultValue: 'False'
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
-    description: '*Operation configuration'
+    description: '*Operation configuration
+
+      overrides*.'
     isRequired: true
   return:
     description: None or ClientRawResponse if raw=true
@@ -164,12 +171,16 @@ methods:
     types:
     - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
-    description: returns the direct response alongside the
+    description: 'returns the direct response alongside the
+
+      deserialized response'
     defaultValue: 'False'
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
-    description: '*Operation configuration'
+    description: '*Operation configuration
+
+      overrides*.'
     isRequired: true
   return:
     description: None or ClientRawResponse if raw=true
@@ -207,12 +218,16 @@ methods:
     types:
     - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
-    description: returns the direct response alongside the
+    description: 'returns the direct response alongside the
+
+      deserialized response'
     defaultValue: 'False'
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
-    description: '*Operation configuration'
+    description: '*Operation configuration
+
+      overrides*.'
     isRequired: true
   return:
     description: list or ClientRawResponse if raw=true
@@ -248,12 +263,16 @@ methods:
     types:
     - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
-    description: returns the direct response alongside the
+    description: 'returns the direct response alongside the
+
+      deserialized response'
     defaultValue: 'False'
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
-    description: '*Operation configuration'
+    description: '*Operation configuration
+
+      overrides*.'
     isRequired: true
   return:
     description: list or ClientRawResponse if raw=true
@@ -284,12 +303,16 @@ methods:
     types:
     - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
-    description: returns the direct response alongside the
+    description: 'returns the direct response alongside the
+
+      deserialized response'
     defaultValue: 'False'
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
-    description: '*Operation configuration'
+    description: '*Operation configuration
+
+      overrides*.'
     isRequired: true
   return:
     description: list or ClientRawResponse if raw=true
@@ -352,12 +375,16 @@ methods:
     types:
     - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
-    description: returns the direct response alongside the
+    description: 'returns the direct response alongside the
+
+      deserialized response'
     defaultValue: 'False'
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
-    description: '*Operation configuration'
+    description: '*Operation configuration
+
+      overrides*.'
     isRequired: true
   return:
     description: PagedMembersResult or ClientRawResponse if raw=true
@@ -402,12 +429,16 @@ methods:
     types:
     - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
-    description: returns the direct response alongside the
+    description: 'returns the direct response alongside the
+
+      deserialized response'
     defaultValue: 'False'
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
-    description: '*Operation configuration'
+    description: '*Operation configuration
+
+      overrides*.'
     isRequired: true
   return:
     description: ConversationsResult or ClientRawResponse if raw=true
@@ -470,12 +501,16 @@ methods:
     types:
     - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
-    description: returns the direct response alongside the
+    description: 'returns the direct response alongside the
+
+      deserialized response'
     defaultValue: 'False'
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
-    description: '*Operation configuration'
+    description: '*Operation configuration
+
+      overrides*.'
     isRequired: true
   return:
     description: PagedMembersResult or ClientRawResponse if raw=true
@@ -534,12 +569,16 @@ methods:
     types:
     - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
-    description: returns the direct response alongside the
+    description: 'returns the direct response alongside the
+
+      deserialized response'
     defaultValue: 'False'
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
-    description: '*Operation configuration'
+    description: '*Operation configuration
+
+      overrides*.'
     isRequired: true
   return:
     description: ResourceResponse or ClientRawResponse if raw=true
@@ -571,7 +610,9 @@ methods:
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: activities
-    description: A collection of Activities that conforms to the
+    description: 'A collection of Activities that conforms to the
+
+      Transcript schema.'
     defaultValue: None
     types:
     - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.Activity>]'
@@ -581,12 +622,16 @@ methods:
     types:
     - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
-    description: returns the direct response alongside the
+    description: 'returns the direct response alongside the
+
+      deserialized response'
     defaultValue: 'False'
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
-    description: '*Operation configuration'
+    description: '*Operation configuration
+
+      overrides*.'
     isRequired: true
   return:
     description: ResourceResponse or ClientRawResponse if raw=true
@@ -642,12 +687,16 @@ methods:
     types:
     - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
-    description: returns the direct response alongside the
+    description: 'returns the direct response alongside the
+
+      deserialized response'
     defaultValue: 'False'
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
-    description: '*Operation configuration'
+    description: '*Operation configuration
+
+      overrides*.'
     isRequired: true
   return:
     description: ResourceResponse or ClientRawResponse if raw=true
@@ -656,10 +705,18 @@ methods:
     - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.ConversationsOperations.update_activity
   name: update_activity
-  summary: "UpdateActivity.\n\nEdit an existing activity.\nSome channels allow you\
-    \ to edit an existing activity to reflect the new\nstate of a bot conversation.\n\
-    For example, you can remove buttons after someone has clicked \u201CApprove\u201D\
-    \nbutton."
+  summary: 'UpdateActivity.
+
+
+    Edit an existing activity.
+
+    Some channels allow you to edit an existing activity to reflect the new
+
+    state of a bot conversation.
+
+    For example, you can remove buttons after someone has clicked "Approve"
+
+    button.'
   signature: update_activity(conversation_id, activity_id, activity, custom_headers=None,
     raw=False, **operation_config)
   parameters:
@@ -684,12 +741,16 @@ methods:
     types:
     - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
-    description: returns the direct response alongside the
+    description: 'returns the direct response alongside the
+
+      deserialized response'
     defaultValue: 'False'
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
-    description: '*Operation configuration'
+    description: '*Operation configuration
+
+      overrides*.'
     isRequired: true
   return:
     description: ResourceResponse or ClientRawResponse if raw=true
@@ -698,10 +759,18 @@ methods:
     - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.ConversationsOperations.upload_attachment
   name: upload_attachment
-  summary: "UploadAttachment.\n\nUpload an attachment directly into a channel\u2019\
-    s blob storage.\nThis is useful because it allows you to store data in a compliant\
-    \ store\nwhen dealing with enterprises.\nThe response is a ResourceResponse which\
-    \ contains an AttachmentId which\nis suitable for using with the attachments API."
+  summary: 'UploadAttachment.
+
+
+    Upload an attachment directly into a channel''s blob storage.
+
+    This is useful because it allows you to store data in a compliant store
+
+    when dealing with enterprises.
+
+    The response is a ResourceResponse which contains an AttachmentId which
+
+    is suitable for using with the attachments API.'
   signature: upload_attachment(conversation_id, attachment_upload, custom_headers=None,
     raw=False, **operation_config)
   parameters:
@@ -721,12 +790,16 @@ methods:
     types:
     - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
-    description: returns the direct response alongside the
+    description: 'returns the direct response alongside the
+
+      deserialized response'
     defaultValue: 'False'
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
-    description: '*Operation configuration'
+    description: '*Operation configuration
+
+      overrides*.'
     isRequired: true
   return:
     description: ResourceResponse or ClientRawResponse if raw=true

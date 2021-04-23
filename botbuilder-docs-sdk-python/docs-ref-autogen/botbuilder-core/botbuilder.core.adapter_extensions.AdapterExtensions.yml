@@ -31,8 +31,10 @@ methods:
     description: The updated adapter.
 - uid: botbuilder.core.adapter_extensions.AdapterExtensions.use_state
   name: use_state
-  summary: "[DEPRECATED] Registers user and conversation state objects with the adapter.\
-    \ These objects will be available via\nthe turn context\u2019s *turn_state* property."
+  summary: '[DEPRECATED] Registers user and conversation state objects with the adapter.
+    These objects will be available via
+
+    the turn context''s *turn_state* property.'
   signature: 'use_state(adapter: botbuilder.core.bot_adapter.BotAdapter, user_state:
     botbuilder.core.user_state.UserState, conversation_state: botbuilder.core.conversation_state.ConversationState,
     auto: bool = True)'
@@ -53,8 +55,10 @@ methods:
     description: The BotAdapter
 - uid: botbuilder.core.adapter_extensions.AdapterExtensions.use_storage
   name: use_storage
-  summary: "Registers a storage layer with the adapter. The storage object will be\
-    \ available via the turn context\u2019s\n*turn_state* property."
+  summary: 'Registers a storage layer with the adapter. The storage object will be
+    available via the turn context''s
+
+    *turn_state* property.'
   signature: 'use_storage(adapter: botbuilder.core.bot_adapter.BotAdapter, storage:
     botbuilder.core.storage.Storage)'
   parameters:

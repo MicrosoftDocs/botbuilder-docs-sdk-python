@@ -19,17 +19,25 @@ methods:
     isRequired: true
 - uid: botbuilder.dialogs.prompts.prompt_culture_models.PromptCultureModels.map_to_nearest_language
   name: map_to_nearest_language
-  summary: "Normalize various potential locale strings to a standard.\n:param culture_code:\
-    \ Represents locale. Examples: \u201Cen-US, en-us, EN\u201D.\n:return: Normalized\
-    \ locale.\n:rtype: str"
+  summary: 'Normalize various potential locale strings to a standard.
+
+    :param culture_code: Represents locale. Examples: "en-US, en-us, EN".
+
+    :return: Normalized locale.
+
+    :rtype: str'
   signature: 'map_to_nearest_language(culture_code: str)'
   parameters:
   - name: cls
     isRequired: true
   - name: culture_code
     isRequired: true
-  remarks: "In our other SDKs, this method is a copy/paste of the ones from the Recognizers-Text\
-    \ library.\nHowever, that doesn\u2019t exist in Python.\n"
+  remarks: 'In our other SDKs, this method is a copy/paste of the ones from the Recognizers-Text
+    library.
+
+    However, that doesn''t exist in Python.
+
+    '
 attributes:
 - uid: botbuilder.dialogs.prompts.prompt_culture_models.PromptCultureModels.Chinese
   name: Chinese

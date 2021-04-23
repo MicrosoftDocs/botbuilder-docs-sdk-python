@@ -11,7 +11,8 @@ constructor:
     = None, display_name: Optional[str] = None, **kwargs)'
   parameters:
   - name: user_identity_type
-    description: The identity type of the user. Possible values
+    description: "The identity type of the user. Possible values\ninclude: \u2018\
+      aadUser', \u2018onPremiseAadUser', \u2018anonymousGuest', \u2018federatedUser'"
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: id

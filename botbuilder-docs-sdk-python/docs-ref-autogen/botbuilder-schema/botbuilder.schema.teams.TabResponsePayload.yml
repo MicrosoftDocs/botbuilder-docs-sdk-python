@@ -10,11 +10,13 @@ constructor:
   syntax: TabResponsePayload(*, type=None, value=None, suggested_actions=None, **kwargs)
   parameters:
   - name: type
-    description: Gets or sets choice of action options when responding to the
+    description: "Gets or sets choice of action options when responding to the\ntab/fetch\
+      \ message. Possible values include: \u2018continue', \u2018auth' or \u2018silentAuth'"
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: value
-    description: Gets or sets the TabResponseCards when responding to
+    description: "Gets or sets the TabResponseCards when responding to\ntab/fetch\
+      \ activity with type of \u2018continue'."
     types:
     - <xref:botbuilder.schema.teams.TabResponseCards>
   - name: suggested_actions

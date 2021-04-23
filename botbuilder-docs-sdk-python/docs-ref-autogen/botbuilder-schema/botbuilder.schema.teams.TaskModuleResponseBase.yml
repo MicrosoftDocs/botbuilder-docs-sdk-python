@@ -10,6 +10,7 @@ constructor:
   syntax: TaskModuleResponseBase(*, type=None, **kwargs)
   parameters:
   - name: type
-    description: Choice of action options when responding to the task/submit
+    description: "Choice of action options when responding to the task/submit\nmessage.\
+      \ Possible values include: \u2018message', \u2018continue'"
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

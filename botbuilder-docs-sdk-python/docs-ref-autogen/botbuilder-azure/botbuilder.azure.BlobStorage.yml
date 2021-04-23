@@ -5,13 +5,23 @@ fullName: botbuilder.azure.BlobStorage
 module: botbuilder.azure
 inheritances:
 - botbuilder.core.storage.Storage
-summary: "An Azure Blob based storage provider for a bot.\n\nThis class uses a single\
-  \ Azure Storage Blob Container.\nEach entity or StoreItem is serialized into a JSON\
-  \ string and stored in an individual text blob.\nEach blob is named after the store\
-  \ item key,  which is encoded so that it conforms a valid blob name.\nIf an entity\
-  \ is an StoreItem, the storage object will set the entity\u2019s e_tag\nproperty\
-  \ value to the blob\u2019s e_tag upon read. Afterward, an match_condition with the\
-  \ ETag value\nwill be generated during Write. New entities start with a null e_tag."
+summary: 'An Azure Blob based storage provider for a bot.
+
+
+  This class uses a single Azure Storage Blob Container.
+
+  Each entity or StoreItem is serialized into a JSON string and stored in an individual
+  text blob.
+
+  Each blob is named after the store item key,  which is encoded so that it conforms
+  a valid blob name.
+
+  If an entity is an StoreItem, the storage object will set the entity''s e_tag
+
+  property value to the blob''s e_tag upon read. Afterward, an match_condition with
+  the ETag value
+
+  will be generated during Write. New entities start with a null e_tag.'
 constructor:
   syntax: 'BlobStorage(settings: botbuilder.azure.blob_storage.BlobStorageSettings)'
   parameters:

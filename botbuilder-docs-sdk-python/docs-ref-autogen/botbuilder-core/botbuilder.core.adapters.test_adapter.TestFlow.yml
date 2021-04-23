@@ -23,9 +23,18 @@ methods:
     defaultValue: None
 - uid: botbuilder.core.adapters.test_adapter.TestFlow.assert_reply
   name: assert_reply
-  summary: "Generates an assertion if the bots response doesn\u2019t match the expected\
-    \ text/activity.\n:param expected:\n:param description:\n:param timeout:\n:param\
-    \ is_substring:\n:return:"
+  summary: 'Generates an assertion if the bots response doesn''t match the expected
+    text/activity.
+
+    :param expected:
+
+    :param description:
+
+    :param timeout:
+
+    :param is_substring:
+
+    :return:'
   signature: 'assert_reply(expected: Union[str, botbuilder.schema._models_py3.Activity,
     Callable[[botbuilder.schema._models_py3.Activity, str], None]], description=None,
     timeout=None, is_substring=False)'

@@ -11,8 +11,8 @@ constructor:
     Optional[str] = None, inputs=None, actions=None, **kwargs)'
   parameters:
   - name: type
-    description: "Type of the action. Possible values include: \u2018ViewAction\u2019\
-      ,"
+    description: "Type of the action. Possible values include: \u2018ViewAction',\n\
+      \u2018OpenUri', \u2018HttpPOST', \u2018ActionCard'"
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: name
@@ -24,10 +24,16 @@ constructor:
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: inputs
-    description: Set of inputs contained in this ActionCard whose each item
+    description: 'Set of inputs contained in this ActionCard whose each item
+
+      can be in any subtype of O365ConnectorCardInputBase'
     types:
     - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.O365ConnectorCardInputBase>]'
   - name: actions
-    description: Set of actions contained in this ActionCard whose each
+    description: 'Set of actions contained in this ActionCard whose each
+
+      item can be in any subtype of O365ConnectorCardActionBase except
+
+      O365ConnectorCardActionCard, as nested ActionCard is forbidden.'
     types:
     - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.O365ConnectorCardActionBase>]'

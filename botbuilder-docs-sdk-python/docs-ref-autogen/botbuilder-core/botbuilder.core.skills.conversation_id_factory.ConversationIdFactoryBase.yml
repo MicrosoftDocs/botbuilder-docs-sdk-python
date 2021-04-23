@@ -25,7 +25,10 @@ methods:
     botbuilder.schema._models_py3.ConversationReference])'
   parameters:
   - name: options_or_conversation_reference
-    description: The options contain properties useful for generating a
+    description: 'The options contain properties useful for generating a
+
+      <xref:botbuilder.core.skills.conversation_id_factory.SkillConversationReference>
+      and conversation id.'
     isRequired: true
     types:
     - <xref:botbuilder.core.skills.conversation_id_factory.Union[SkillConversationIdFactoryOptions,

@@ -16,7 +16,9 @@ constructor:
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: connection_name
-    description: The name of the connection the token status
+    description: 'The name of the connection the token status
+
+      pertains to'
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: has_token
@@ -24,6 +26,8 @@ constructor:
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: service_provider_display_name
-    description: The display name of the service
+    description: 'The display name of the service
+
+      provider for which this Token belongs to'
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

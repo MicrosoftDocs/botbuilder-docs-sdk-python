@@ -12,11 +12,18 @@ constructor:
 methods:
 - uid: botbuilder.core.TelemetryLoggerMiddleware.fill_delete_event_properties
   name: fill_delete_event_properties
-  summary: "Fills the event properties for the BotMessageDelete.\nThese properties\
-    \ are logged when an activity message is deleted by the Bot.\n:param activity:\
-    \ activity sent from user.\n:param additional_properties: Additional properties\
-    \ to add to the event.\nAdditional properties can override \u201Cstock\u201D properties.\n\
-    \nBotTelemetryClient.track_event method for the BotMessageUpdate event."
+  summary: 'Fills the event properties for the BotMessageDelete.
+
+    These properties are logged when an activity message is deleted by the Bot.
+
+    :param activity: activity sent from user.
+
+    :param additional_properties: Additional properties to add to the event.
+
+    Additional properties can override "stock" properties.
+
+
+    BotTelemetryClient.track_event method for the BotMessageUpdate event.'
   signature: 'fill_delete_event_properties(activity: botbuilder.schema._models_py3.Activity,
     additional_properties: Optional[Dict[str, str]] = None)'
   parameters:
@@ -25,15 +32,21 @@ methods:
   - name: additional_properties
     defaultValue: None
   return:
-    description: "A dictionary that is sent as \u201CProperties\u201D to the"
+    description: A dictionary that is sent as "Properties" to the
 - uid: botbuilder.core.TelemetryLoggerMiddleware.fill_receive_event_properties
   name: fill_receive_event_properties
-  summary: "Fills the event properties for the BotMessageReceived.\nAdheres to the\
-    \ LogPersonalInformation flag to filter Name, Text and Speak properties.\n:param\
-    \ activity: activity sent from user.\n:param additional_properties: Additional\
-    \ properties to add to the event.\nAdditional properties can override \u201Cstock\u201D\
-    \ properties.\n\nBotTelemetryClient.track_event method for the BotMessageReceived\
-    \ event."
+  summary: 'Fills the event properties for the BotMessageReceived.
+
+    Adheres to the LogPersonalInformation flag to filter Name, Text and Speak properties.
+
+    :param activity: activity sent from user.
+
+    :param additional_properties: Additional properties to add to the event.
+
+    Additional properties can override "stock" properties.
+
+
+    BotTelemetryClient.track_event method for the BotMessageReceived event.'
   signature: 'fill_receive_event_properties(activity: botbuilder.schema._models_py3.Activity,
     additional_properties: Optional[Dict[str, str]] = None)'
   parameters:
@@ -42,14 +55,22 @@ methods:
   - name: additional_properties
     defaultValue: None
   return:
-    description: "A dictionary that is sent as \u201CProperties\u201D to"
+    description: A dictionary that is sent as "Properties" to
 - uid: botbuilder.core.TelemetryLoggerMiddleware.fill_send_event_properties
   name: fill_send_event_properties
-  summary: "Fills the event properties for the BotMessageSend.\nThese properties are\
-    \ logged when an activity message is sent by the Bot to the user.\n:param activity:\
-    \ activity sent from user.\n:param additional_properties: Additional properties\
-    \ to add to the event.\nAdditional properties can override \u201Cstock\u201D properties.\n\
-    \nBotTelemetryClient.track_event method for the BotMessageSend event."
+  summary: 'Fills the event properties for the BotMessageSend.
+
+    These properties are logged when an activity message is sent by the Bot to the
+    user.
+
+    :param activity: activity sent from user.
+
+    :param additional_properties: Additional properties to add to the event.
+
+    Additional properties can override "stock" properties.
+
+
+    BotTelemetryClient.track_event method for the BotMessageSend event.'
   signature: 'fill_send_event_properties(activity: botbuilder.schema._models_py3.Activity,
     additional_properties: Optional[Dict[str, str]] = None)'
   parameters:
@@ -58,16 +79,25 @@ methods:
   - name: additional_properties
     defaultValue: None
   return:
-    description: "A dictionary that is sent as \u201CProperties\u201D to the"
+    description: A dictionary that is sent as "Properties" to the
 - uid: botbuilder.core.TelemetryLoggerMiddleware.fill_update_event_properties
   name: fill_update_event_properties
-  summary: "Fills the event properties for the BotMessageUpdate.\nThese properties\
-    \ are logged when an activity message is updated by the Bot.\nFor example, if\
-    \ a card is interacted with by the use, and the card needs\nto be updated to reflect\
-    \ some interaction.\n:param activity: activity sent from user.\n:param additional_properties:\
-    \ Additional properties to add to the event.\nAdditional properties can override\
-    \ \u201Cstock\u201D properties.\n\nBotTelemetryClient.track_event method for the\
-    \ BotMessageUpdate event."
+  summary: 'Fills the event properties for the BotMessageUpdate.
+
+    These properties are logged when an activity message is updated by the Bot.
+
+    For example, if a card is interacted with by the use, and the card needs
+
+    to be updated to reflect some interaction.
+
+    :param activity: activity sent from user.
+
+    :param additional_properties: Additional properties to add to the event.
+
+    Additional properties can override "stock" properties.
+
+
+    BotTelemetryClient.track_event method for the BotMessageUpdate event.'
   signature: 'fill_update_event_properties(activity: botbuilder.schema._models_py3.Activity,
     additional_properties: Optional[Dict[str, str]] = None)'
   parameters:
@@ -76,33 +106,45 @@ methods:
   - name: additional_properties
     defaultValue: None
   return:
-    description: "A dictionary that is sent as \u201CProperties\u201D to the"
+    description: A dictionary that is sent as "Properties" to the
 - uid: botbuilder.core.TelemetryLoggerMiddleware.on_delete_activity
   name: on_delete_activity
-  summary: "Invoked when the bot deletes a message.\nPerforms logging of telemetry\
-    \ data using the BotTelemetryClient.track_event() method.\nThis event name used\
-    \ is \u201CBotMessageDelete\u201D.\n:param activity: Current activity sent from\
-    \ user."
+  summary: 'Invoked when the bot deletes a message.
+
+    Performs logging of telemetry data using the BotTelemetryClient.track_event()
+    method.
+
+    This event name used is "BotMessageDelete".
+
+    :param activity: Current activity sent from user.'
   signature: 'on_delete_activity(activity: botbuilder.schema._models_py3.Activity)'
   parameters:
   - name: activity
     isRequired: true
 - uid: botbuilder.core.TelemetryLoggerMiddleware.on_receive_activity
   name: on_receive_activity
-  summary: "Invoked when a message is received from the user.\nPerforms logging of\
-    \ telemetry data using the BotTelemetryClient.track_event() method.\nThis event\
-    \ name used is \u201CBotMessageReceived\u201D.\n:param activity: Current activity\
-    \ sent from user."
+  summary: 'Invoked when a message is received from the user.
+
+    Performs logging of telemetry data using the BotTelemetryClient.track_event()
+    method.
+
+    This event name used is "BotMessageReceived".
+
+    :param activity: Current activity sent from user.'
   signature: 'on_receive_activity(activity: botbuilder.schema._models_py3.Activity)'
   parameters:
   - name: activity
     isRequired: true
 - uid: botbuilder.core.TelemetryLoggerMiddleware.on_send_activity
   name: on_send_activity
-  summary: "Invoked when the bot sends a message to the user.\nPerforms logging of\
-    \ telemetry data using the BotTelemetryClient.track_event() method.\nThis event\
-    \ name used is \u201CBotMessageSend\u201D.\n:param activity: Current activity\
-    \ sent from bot."
+  summary: 'Invoked when the bot sends a message to the user.
+
+    Performs logging of telemetry data using the BotTelemetryClient.track_event()
+    method.
+
+    This event name used is "BotMessageSend".
+
+    :param activity: Current activity sent from bot.'
   signature: 'on_send_activity(activity: botbuilder.schema._models_py3.Activity)'
   parameters:
   - name: activity
@@ -125,10 +167,14 @@ methods:
     description: None
 - uid: botbuilder.core.TelemetryLoggerMiddleware.on_update_activity
   name: on_update_activity
-  summary: "Invoked when the bot updates a message.\nPerforms logging of telemetry\
-    \ data using the BotTelemetryClient.track_event() method.\nThis event name used\
-    \ is \u201CBotMessageUpdate\u201D.\n:param activity: Current activity sent from\
-    \ user."
+  summary: 'Invoked when the bot updates a message.
+
+    Performs logging of telemetry data using the BotTelemetryClient.track_event()
+    method.
+
+    This event name used is "BotMessageUpdate".
+
+    :param activity: Current activity sent from user.'
   signature: 'on_update_activity(activity: botbuilder.schema._models_py3.Activity)'
   parameters:
   - name: activity

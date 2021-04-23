@@ -24,8 +24,7 @@ constructor:
   - name: deserializer
     description: An object model deserializer.
 variables:
-- description: "The API version to use for the request. Constant value: \u201Ctoken\u201D\
-    ."
+- description: 'The API version to use for the request. Constant value: "token".'
   name: "api_version \u2013 The API version to use for the request. Constant value:\
     \ \u201Ctoken\u201D"
 methods:
@@ -56,12 +55,16 @@ methods:
     types:
     - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
-    description: returns the direct response alongside the
+    description: 'returns the direct response alongside the
+
+      deserialized response'
     defaultValue: 'False'
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
-    description: '*Operation configuration'
+    description: '*Operation configuration
+
+      overrides*.'
     isRequired: true
   return:
     description: SignInUrlResponse or ClientRawResponse if raw=true
@@ -95,12 +98,16 @@ methods:
     types:
     - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
-    description: returns the direct response alongside the
+    description: 'returns the direct response alongside the
+
+      deserialized response'
     defaultValue: 'False'
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
-    description: '*Operation configuration'
+    description: '*Operation configuration
+
+      overrides*.'
     isRequired: true
   return:
     description: str or ClientRawResponse if raw=true

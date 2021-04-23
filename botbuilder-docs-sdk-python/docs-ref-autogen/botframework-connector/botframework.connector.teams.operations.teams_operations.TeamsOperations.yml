@@ -45,12 +45,16 @@ methods:
     types:
     - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
-    description: returns the direct response alongside the
+    description: 'returns the direct response alongside the
+
+      deserialized response'
     defaultValue: 'False'
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
-    description: '*Operation configuration'
+    description: '*Operation configuration
+
+      overrides*.'
     isRequired: true
   return:
     description: TeamsMeetingParticipant or ClientRawResponse if raw=true
@@ -76,12 +80,16 @@ methods:
     types:
     - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
-    description: returns the direct response alongside the
+    description: 'returns the direct response alongside the
+
+      deserialized response'
     defaultValue: 'False'
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
-    description: '*Operation configuration'
+    description: '*Operation configuration
+
+      overrides*.'
     isRequired: true
   return:
     description: TeamDetails or ClientRawResponse if raw=true
@@ -107,12 +115,16 @@ methods:
     types:
     - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
-    description: returns the direct response alongside the
+    description: 'returns the direct response alongside the
+
+      deserialized response'
     defaultValue: 'False'
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
-    description: '*Operation configuration'
+    description: '*Operation configuration
+
+      overrides*.'
     isRequired: true
   return:
     description: ConversationList or ClientRawResponse if raw=true

@@ -12,7 +12,10 @@ constructor:
     channel_data=None, image_alt_text: Optional[str] = None, **kwargs)'
   parameters:
   - name: type
-    description: The type of action implemented by this button. Possible
+    description: "The type of action implemented by this button. Possible\nvalues\
+      \ include: \u2018openUrl', \u2018imBack', \u2018postBack', \u2018playAudio',\
+      \ \u2018playVideo',\n\u2018showImage', \u2018downloadFile', \u2018signin', \u2018\
+      call', \u2018messageBack'"
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.ActionTypes>'
   - name: title
@@ -20,7 +23,9 @@ constructor:
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: image
-    description: Image URL which will appear on the button, next to text
+    description: 'Image URL which will appear on the button, next to text
+
+      label'
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: text
@@ -28,11 +33,15 @@ constructor:
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: display_text
-    description: (Optional) text to display in the chat feed if the
+    description: '(Optional) text to display in the chat feed if the
+
+      button is clicked'
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: value
-    description: Supplementary parameter for action. Content of this property
+    description: 'Supplementary parameter for action. Content of this property
+
+      depends on the ActionType'
     types:
     - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   - name: channel_data

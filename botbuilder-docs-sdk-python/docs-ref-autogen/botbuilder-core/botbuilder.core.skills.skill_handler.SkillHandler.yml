@@ -141,10 +141,20 @@ methods:
     isRequired: true
 - uid: botbuilder.core.skills.skill_handler.SkillHandler.on_update_activity
   name: on_update_activity
-  summary: "update_activity() API for Skill.\n\nEdit an existing activity.\n\nSome\
-    \ channels allow you to edit an existing activity to reflect the new\nstate of\
-    \ a bot conversation.\n\nFor example, you can remove buttons after someone has\
-    \ clicked \u201CApprove\u201D\nbutton."
+  summary: 'update_activity() API for Skill.
+
+
+    Edit an existing activity.
+
+
+    Some channels allow you to edit an existing activity to reflect the new
+
+    state of a bot conversation.
+
+
+    For example, you can remove buttons after someone has clicked "Approve"
+
+    button.'
   signature: 'on_update_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)'
   parameters:

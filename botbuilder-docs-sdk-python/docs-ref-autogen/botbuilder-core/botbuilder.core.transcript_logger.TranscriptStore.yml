@@ -11,9 +11,13 @@ constructor:
 methods:
 - uid: botbuilder.core.transcript_logger.TranscriptStore.delete_transcript
   name: delete_transcript
-  summary: "Delete a specific conversation and all of it\u2019s activities.\n:param\
-    \ channel_id: Channel Id where conversation took place.\n:param conversation_id:\
-    \ Id of the conversation to delete.\n:result: None"
+  summary: 'Delete a specific conversation and all of it''s activities.
+
+    :param channel_id: Channel Id where conversation took place.
+
+    :param conversation_id: Id of the conversation to delete.
+
+    :result: None'
   signature: 'delete_transcript(channel_id: str, conversation_id: str)'
   parameters:
   - name: channel_id

@@ -11,12 +11,13 @@ constructor:
     suggested_actions=None, text: Optional[str] = None, activity_preview=None, **kwargs)'
   parameters:
   - name: attachment_layout
-    description: Hint for how to deal with multiple attachments.
+    description: "Hint for how to deal with multiple attachments.\nPossible values\
+      \ include: \u2018list', \u2018grid'"
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: type
-    description: "The type of the result. Possible values include: \u2018result\u2019\
-      ,"
+    description: "The type of the result. Possible values include: \u2018result',\n\
+      \u2018auth', \u2018config', \u2018message', \u2018botMessagePreview'"
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: attachments
@@ -31,6 +32,8 @@ constructor:
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: activity_preview
-    description: (Only when type is botMessagePreview) Message
+    description: '(Only when type is botMessagePreview) Message
+
+      activity to preview'
     types:
     - <xref:botframework.connector.teams.models.Activity>

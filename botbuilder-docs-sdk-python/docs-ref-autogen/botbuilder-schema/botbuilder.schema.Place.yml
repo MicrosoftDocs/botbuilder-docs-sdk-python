@@ -5,22 +5,27 @@ fullName: botbuilder.schema.Place
 module: botbuilder.schema
 inheritances:
 - msrest.serialization.Model
-summary: "Place (entity type: \u201C[https://schema.org/Place](https://schema.org/Place)\u201D\
-  )."
+summary: 'Place (entity type: "[https://schema.org/Place](https://schema.org/Place)").'
 constructor:
   syntax: 'Place(*, address=None, geo=None, has_map=None, type: Optional[str] = None,
     name: Optional[str] = None, **kwargs)'
   parameters:
   - name: address
-    description: Address of the place (may be *string* or complex object of
+    description: 'Address of the place (may be *string* or complex object of
+
+      type *PostalAddress*)'
     types:
     - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   - name: geo
-    description: Geo coordinates of the place (may be complex object of type
+    description: 'Geo coordinates of the place (may be complex object of type
+
+      *GeoCoordinates* or *GeoShape*)'
     types:
     - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   - name: has_map
-    description: Map to the place (may be *string* (URL) or complex object
+    description: 'Map to the place (may be *string* (URL) or complex object
+
+      of type *Map*)'
     types:
     - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   - name: type

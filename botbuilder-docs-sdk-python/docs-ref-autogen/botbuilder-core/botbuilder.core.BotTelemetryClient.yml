@@ -135,8 +135,10 @@ methods:
     object]] = None)'
   parameters:
   - name: max_val
-    description: the maximum of all metrics collected that were aggregated into this
+    description: 'the maximum of all metrics collected that were aggregated into this
       data point.
+
+      (defaults to: None)'
     isRequired: true
   - name: std_dev
     description: 'the standard deviation of all metrics collected that were aggregated

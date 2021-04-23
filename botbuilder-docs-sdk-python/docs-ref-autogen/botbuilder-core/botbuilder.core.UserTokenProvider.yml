@@ -75,14 +75,26 @@ methods:
     defaultValue: None
 - uid: botbuilder.core.UserTokenProvider.get_token_status
   name: get_token_status
-  summary: "Retrieves Azure Active Directory tokens for particular resources on a\
-    \ configured connection.\n:param context: Context for the current turn of conversation\
-    \ with the user.\n:param connection_name: Name of the auth connection to use.\n\
-    :param user_id: The user Id for which token status is retrieved.\n:param include_filter:\
-    \ Optional comma separated list of connection\u2019s to include. Blank will return\
-    \ token status\nfor all configured connections.\n:param oauth_app_credentials:\
-    \ (Optional) AppCredentials for OAuth.  If None is supplied, the\nBots credentials\
-    \ are used.\n:return:"
+  summary: 'Retrieves Azure Active Directory tokens for particular resources on a
+    configured connection.
+
+    :param context: Context for the current turn of conversation with the user.
+
+    :param connection_name: Name of the auth connection to use.
+
+    :param user_id: The user Id for which token status is retrieved.
+
+    :param include_filter: Optional comma separated list of connection''s to include.
+    Blank will return token status
+
+    for all configured connections.
+
+    :param oauth_app_credentials: (Optional) AppCredentials for OAuth.  If None is
+    supplied, the
+
+    Bots credentials are used.
+
+    :return:'
   signature: 'get_token_status(context: botbuilder.core.turn_context.TurnContext,
     connection_name: Optional[str] = None, user_id: Optional[str] = None, include_filter:
     Optional[str] = None, oauth_app_credentials: Optional[botframework.connector.auth.app_credentials.AppCredentials]

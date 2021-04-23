@@ -20,28 +20,34 @@ methods:
     types:
     - <xref:botbuilder.ai.luis.activity_util.Activity>
   - name: name
-    description: "The value to assign to the trace activity\u2019s <see cref=\u201D\
-      Activity.name\u201D/> property."
+    description: The value to assign to the trace activity's <see cref="Activity.name"/>
+      property.
     isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: value
-    description: "The value to assign to the trace activity\u2019s <see cref=\u201D\
-      Activity.value\u201D/> property., defaults"
+    description: 'The value to assign to the trace activity''s <see cref="Activity.value"/>
+      property., defaults
+
+      to None'
     defaultValue: None
   - name: value
     description: object, optional
     defaultValue: None
   - name: value_type
-    description: "The value to assign to the trace activity\u2019s <see cref=\u201D\
-      Activity.value_type\u201D/> property,"
+    description: 'The value to assign to the trace activity''s <see cref="Activity.value_type"/>
+      property,
+
+      defaults to None'
     defaultValue: None
   - name: value_type
     description: str, optional
     isRequired: true
   - name: label
-    description: "The value to assign to the trace activity\u2019s <see cref=\u201D\
-      Activity.label\u201D/> property, defaults"
+    description: 'The value to assign to the trace activity''s <see cref="Activity.label"/>
+      property, defaults
+
+      to None'
     isRequired: true
   - name: label
     description: str, optional

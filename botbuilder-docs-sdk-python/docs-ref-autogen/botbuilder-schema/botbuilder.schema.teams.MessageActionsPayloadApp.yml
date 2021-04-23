@@ -11,7 +11,8 @@ constructor:
     = None, display_name: Optional[str] = None, **kwargs)'
   parameters:
   - name: application_identity_type
-    description: The type of application. Possible values
+    description: "The type of application. Possible values\ninclude: \u2018aadApplication',\
+      \ \u2018bot', \u2018tenantBot', \u2018office365Connector',\n\u2018webhook'"
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str'
   - name: id

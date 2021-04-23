@@ -54,13 +54,20 @@ methods:
     description: Dialog turn result
     types:
     - <xref:botbuilder.dialogs.DialogTurnResult>
-  remarks: "If the task is successful, the result indicates whether the dialog is\
-    \ still\nactive after the turn has been processed by the dialog.\nThe prompt generally\
-    \ continues to receive the user\u2019s replies until it accepts the\nuser\u2019\
-    s reply as valid input for the prompt.\n"
+  remarks: 'If the task is successful, the result indicates whether the dialog is
+    still
+
+    active after the turn has been processed by the dialog.
+
+    The prompt generally continues to receive the user''s replies until it accepts
+    the
+
+    user''s reply as valid input for the prompt.
+
+    '
 - uid: botbuilder.dialogs.OAuthPrompt.get_user_token
   name: get_user_token
-  summary: "Gets the user\u2019s tokeN."
+  summary: Gets the user's tokeN.
   signature: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, code:
     Optional[str] = None)'
   parameters:
@@ -75,11 +82,15 @@ methods:
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   return:
-    description: "A response that includes the user\u2019s token"
+    description: A response that includes the user's token
     types:
     - <xref:botbuilder.dialogs.TokenResponse>
-  remarks: "If the task is successful and the user already has a token or the user\
-    \ successfully signs in,\nthe result contains the user\u2019s token.\n"
+  remarks: 'If the task is successful and the user already has a token or the user
+    successfully signs in,
+
+    the result contains the user''s token.
+
+    '
 - uid: botbuilder.dialogs.OAuthPrompt.sign_out_user
   name: sign_out_user
   summary: Signs out the user
@@ -92,37 +103,76 @@ methods:
     - <xref:botbuilder.dialogs.TurnContext>
   return:
     description: A task representing the work queued to execute
-  remarks: "If the task is successful and the user already has a token or the user\
-    \ successfully signs in,\nthe result contains the user\u2019s token.\n"
+  remarks: 'If the task is successful and the user already has a token or the user
+    successfully signs in,
+
+    the result contains the user''s token.
+
+    '
 attributes:
 - uid: botbuilder.dialogs.OAuthPrompt.PERSISTED_CALLER
   name: PERSISTED_CALLER
   summary: Creates a new prompt that asks the user to sign in, using the Bot Framework
     Single Sign On (SSO) service.
   signature: PERSISTED_CALLER = 'caller'
-  remarks: "The prompt will attempt to retrieve the users current token and if the\
-    \ user isn\u2019t signed in, it\nwill send them an *OAuthCard* containing a button\
-    \ they can press to sign in. Depending on the channel,\nthe user will be sent\
-    \ through one of two possible sign-in flows:\n- The automatic sign-in flow where\
-    \ once the user signs in, the SSO service will forward\nthe bot the users access\
-    \ token using either an *event* or *invoke* activity.\n- The \u201Cmagic code\u201D\
-    \ flow where once the user signs in, they will be prompted by the SSO service\n\
-    to send the bot a six digit code confirming their identity. This code will be\
-    \ sent as a\nstandard *message* activity.\nBoth flows are automatically supported\
-    \ by the *OAuthPrompt* and they only thing you need to be careful of\nis that\
-    \ you don\u2019t block the *event* and *invoke* activities that the prompt might\
-    \ be waiting on.\n\nYou should avoid persisting the access token with your bots\
-    \ other state. The Bot Frameworks SSO service\nwill securely store the token on\
-    \ your behalf. If you store it in your bots state,\nit could expire or be revoked\
-    \ in between turns.\nWhen calling the prompt from within a waterfall step, you\
-    \ should use the token within the step\nfollowing the prompt and then let the\
-    \ token go out of scope at the end of your function.\n\nWhen used with your bots\
-    \ <xref:botbuilder.dialogs.DialogSet>, you can simply add a new instance of the\
-    \ prompt as a named\ndialog using :meth`DialogSet.add()`.\nYou can then start\
-    \ the prompt from a waterfall step using either <xref:DialogContext.begin> or\n\
-    <xref:botbuilder.dialogs.DialogContext.prompt>.\nThe user will be prompted to\
-    \ sign in as needed and their access token will be passed as an argument to\n\
-    the callers next waterfall step.\n"
+  remarks: 'The prompt will attempt to retrieve the users current token and if the
+    user isn''t signed in, it
+
+    will send them an *OAuthCard* containing a button they can press to sign in. Depending
+    on the channel,
+
+    the user will be sent through one of two possible sign-in flows:
+
+    - The automatic sign-in flow where once the user signs in, the SSO service will
+    forward
+
+    the bot the users access token using either an *event* or *invoke* activity.
+
+    - The "magic code" flow where once the user signs in, they will be prompted by
+    the SSO service
+
+    to send the bot a six digit code confirming their identity. This code will be
+    sent as a
+
+    standard *message* activity.
+
+    Both flows are automatically supported by the *OAuthPrompt* and they only thing
+    you need to be careful of
+
+    is that you don''t block the *event* and *invoke* activities that the prompt might
+    be waiting on.
+
+
+    You should avoid persisting the access token with your bots other state. The Bot
+    Frameworks SSO service
+
+    will securely store the token on your behalf. If you store it in your bots state,
+
+    it could expire or be revoked in between turns.
+
+    When calling the prompt from within a waterfall step, you should use the token
+    within the step
+
+    following the prompt and then let the token go out of scope at the end of your
+    function.
+
+
+    When used with your bots <xref:botbuilder.dialogs.DialogSet>, you can simply add
+    a new instance of the prompt as a named
+
+    dialog using :meth`DialogSet.add()`.
+
+    You can then start the prompt from a waterfall step using either <xref:DialogContext.begin>
+    or
+
+    <xref:botbuilder.dialogs.DialogContext.prompt>.
+
+    The user will be prompted to sign in as needed and their access token will be
+    passed as an argument to
+
+    the callers next waterfall step.
+
+    '
 - uid: botbuilder.dialogs.OAuthPrompt.PERSISTED_EXPIRES
   name: PERSISTED_EXPIRES
   signature: PERSISTED_EXPIRES = 'expires'

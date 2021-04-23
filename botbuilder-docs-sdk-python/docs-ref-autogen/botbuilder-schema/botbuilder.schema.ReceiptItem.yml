@@ -16,11 +16,15 @@ constructor:
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: subtitle
-    description: Subtitle appears just below Title field, differs from
+    description: 'Subtitle appears just below Title field, differs from
+
+      Title in font styling only'
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: text
-    description: Text field appears just below subtitle, differs from Subtitle
+    description: 'Text field appears just below subtitle, differs from Subtitle
+
+      in font styling only'
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: image
@@ -36,6 +40,8 @@ constructor:
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: tap
-    description: This action will be activated when user taps on the Item
+    description: 'This action will be activated when user taps on the Item
+
+      bubble.'
     types:
     - <xref:botframework.connector.models.CardAction>

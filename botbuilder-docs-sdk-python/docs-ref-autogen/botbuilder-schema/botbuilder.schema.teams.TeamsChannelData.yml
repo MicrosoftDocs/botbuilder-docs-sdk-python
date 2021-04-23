@@ -11,7 +11,9 @@ constructor:
     notification=None, tenant=None, meeting=None, **kwargs)'
   parameters:
   - name: channel
-    description: Information about the channel in which the message was
+    description: 'Information about the channel in which the message was
+
+      sent'
     types:
     - <xref:botframework.connector.teams.models.ChannelInfo>
   - name: event_type
