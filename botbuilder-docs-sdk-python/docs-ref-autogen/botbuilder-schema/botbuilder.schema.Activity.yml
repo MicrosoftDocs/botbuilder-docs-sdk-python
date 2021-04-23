@@ -25,7 +25,7 @@ constructor:
   - name: type
     description: 'Contains the activity type. Possible values include:'
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.ActivityTypes.yml>'
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.ActivityTypes>'
   - name: id
     description: Contains an ID that uniquely identifies the activity on the
     types:
@@ -33,11 +33,11 @@ constructor:
   - name: timestamp
     description: Contains the date and time that the message was sent, in
     types:
-    - <xref:botbuilder.schema.datetime.yml>
+    - <xref:botbuilder.schema.datetime>
   - name: local_timestamp
     description: Contains the local date and time of the message
     types:
-    - <xref:botbuilder.schema.datetime.yml>
+    - <xref:botbuilder.schema.datetime>
   - name: local_timezone
     description: Contains the name of the local timezone of the message,
     types:
@@ -53,19 +53,19 @@ constructor:
   - name: from_property
     description: Identifies the sender of the message.
     types:
-    - <xref:botframework.connector.models.ChannelAccount.yml>
+    - <xref:botframework.connector.models.ChannelAccount>
   - name: conversation
     description: Identifies the conversation to which the activity
     types:
-    - <xref:botframework.connector.models.ConversationAccount.yml>
+    - <xref:botframework.connector.models.ConversationAccount>
   - name: recipient
     description: Identifies the recipient of the message.
     types:
-    - <xref:botframework.connector.models.ChannelAccount.yml>
+    - <xref:botframework.connector.models.ChannelAccount>
   - name: text_format
     description: Format of text fields Default:markdown. Possible
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.TextFormatTypes.yml>'
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.TextFormatTypes>'
   - name: attachment_layout
     description: The layout hint for multiple attachments.
     types:
@@ -73,19 +73,19 @@ constructor:
   - name: members_added
     description: The collection of members added to the conversation.
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ChannelAccount.yml>]'
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ChannelAccount>]'
   - name: members_removed
     description: The collection of members removed from the
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ChannelAccount.yml>]'
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ChannelAccount>]'
   - name: reactions_added
     description: The collection of reactions added to the
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.MessageReaction.yml>]'
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.MessageReaction>]'
   - name: reactions_removed
     description: The collection of reactions removed from the
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.MessageReaction.yml>]'
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.MessageReaction>]'
   - name: topic_name
     description: The updated topic name of the conversation.
     types:
@@ -109,7 +109,7 @@ constructor:
   - name: input_hint
     description: Indicates whether your bot is accepting,
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.InputHints.yml>'
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.InputHints>'
   - name: summary
     description: The text to display if the channel cannot render cards.
     types:
@@ -117,15 +117,15 @@ constructor:
   - name: suggested_actions
     description: The suggested actions for the activity.
     types:
-    - <xref:botframework.connector.models.SuggestedActions.yml>
+    - <xref:botframework.connector.models.SuggestedActions>
   - name: attachments
     description: Attachments
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.Attachment.yml>]'
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.Attachment>]'
   - name: entities
     description: Represents the entities that were mentioned in the
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.Entity.yml>]'
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.Entity>]'
   - name: channel_data
     description: Contains channel-specific content.
     types:
@@ -157,23 +157,23 @@ constructor:
   - name: relates_to
     description: A reference to another conversation or activity.
     types:
-    - <xref:botframework.connector.models.ConversationReference.yml>
+    - <xref:botframework.connector.models.ConversationReference>
   - name: code
     description: The a code for endOfConversation activities that indicates
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.EndOfConversationCodes.yml>'
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.EndOfConversationCodes>'
   - name: expiration
     description: The time at which the activity should be considered to
     types:
-    - <xref:botbuilder.schema.datetime.yml>
+    - <xref:botbuilder.schema.datetime>
   - name: importance
     description: The importance of the activity. Possible values
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.ActivityImportance.yml>'
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.ActivityImportance>'
   - name: delivery_mode
     description: A delivery hint to signal to the recipient alternate
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.DeliveryModes.yml>'
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.DeliveryModes>'
   - name: listen_for
     description: List of phrases and references that speech and language
     types:
@@ -181,11 +181,11 @@ constructor:
   - name: text_highlights
     description: The collection of text fragments to highlight when
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.TextHighlight.yml>]'
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.TextHighlight>]'
   - name: semantic_action
     description: An optional programmatic action accompanying this
     types:
-    - <xref:botframework.connector.models.SemanticAction.yml>
+    - <xref:botframework.connector.models.SemanticAction>
   - name: caller_id
     description: A string containing an IRI identifying the caller of a
     types:

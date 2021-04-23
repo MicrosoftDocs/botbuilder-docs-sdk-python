@@ -26,16 +26,16 @@ methods:
 
     :param reference: A reference to the conversation to continue.
 
-    :type reference: <xref:botbuilder.schema.ConversationReference.yml>
+    :type reference: <xref:botbuilder.schema.ConversationReference>
 
     :param callback: The method to call for the resulting bot turn.
 
-    :type callback: <xref:typing.Callable.yml>
+    :type callback: <xref:typing.Callable>
 
-    :param claims_identity: A <xref:botframework.connector.auth.ClaimsIdentity.yml>
-    for the conversation.
+    :param claims_identity: A <xref:botframework.connector.auth.ClaimsIdentity> for
+    the conversation.
 
-    :type claims_identity: <xref:botframework.connector.auth.ClaimsIdentity.yml>
+    :type claims_identity: <xref:botframework.connector.auth.ClaimsIdentity>
 
     :param audience:A value signifying the recipient of the proactive message.
 
@@ -65,12 +65,12 @@ methods:
     description: The context object for the turn.
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_adapter.TurnContext.yml>
+    - <xref:botbuilder.core.bot_adapter.TurnContext>
   - name: reference
     description: Conversation reference for the activity to delete.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.ConversationReference.yml>
+    - <xref:botbuilder.schema.ConversationReference>
 - uid: botbuilder.core.bot_adapter.BotAdapter.run_pipeline
   name: run_pipeline
   summary: 'Called by the parent class to run the adapters middleware set and calls
@@ -84,12 +84,12 @@ methods:
     description: The context object for the turn.
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_adapter.TurnContext.yml>
+    - <xref:botbuilder.core.bot_adapter.TurnContext>
   - name: callback
     description: A callback method to run at the end of the pipeline.
     defaultValue: None
     types:
-    - <xref:typing.Callable[[TurnContext], Awaitable].yml>
+    - <xref:typing.Callable[[TurnContext], Awaitable]>
 - uid: botbuilder.core.bot_adapter.BotAdapter.send_activities
   name: send_activities
   summary: Sends a set of activities to the user. An array of responses from the server
@@ -101,12 +101,12 @@ methods:
     description: The context object for the turn.
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_adapter.TurnContext.yml>
+    - <xref:botbuilder.core.bot_adapter.TurnContext>
   - name: activities
     description: The activities to send.
     isRequired: true
     types:
-    - <xref:typing.List[Activity].yml>
+    - <xref:typing.List[Activity]>
 - uid: botbuilder.core.bot_adapter.BotAdapter.update_activity
   name: update_activity
   summary: Replaces an existing activity.
@@ -117,12 +117,12 @@ methods:
     description: The context object for the turn.
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_adapter.TurnContext.yml>
+    - <xref:botbuilder.core.bot_adapter.TurnContext>
   - name: activity
     description: New replacement activity.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.Activity.yml>
+    - <xref:botbuilder.schema.Activity>
 - uid: botbuilder.core.bot_adapter.BotAdapter.use
   name: use
   summary: Registers a middleware handler with the adapter.

@@ -20,13 +20,13 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext.yml>
+    - <xref:botbuilder.core.TurnContext>
   - name: state
     description: Contains state for the current instance of the prompt on the dialog
       stack
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.Dict.yml>
+    - <xref:botbuilder.dialogs.Dict>
   - name: options
     description: A prompt options object constructed from:meth:*DialogContext.prompt()*
     isRequired: true
@@ -50,13 +50,13 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext.yml>
+    - <xref:botbuilder.core.TurnContext>
   - name: state
     description: Contains state for the current instance of the prompt on the dialog
       stack
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.Dict.yml>
+    - <xref:botbuilder.dialogs.Dict>
   - name: options
     description: A prompt options object constructed from <xref:botbuilder.dialogs.DialogContext.prompt>
     isRequired: true

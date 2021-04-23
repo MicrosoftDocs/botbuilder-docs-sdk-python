@@ -17,14 +17,14 @@ methods:
     description: A BotBuilder Activity object.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.Activity.yml>
+    - <xref:botbuilder.schema.Activity>
   return:
     description: 'A Slack message object with {text, attachments, channel, thread
       ts} and any fields found in
 
       activity.channelData.'
     types:
-    - <xref:botbuilder.adapters.slack.slack_helper.SlackMessage.yml>
+    - <xref:botbuilder.adapters.slack.slack_helper.SlackMessage>
 - uid: botbuilder.adapters.slack.slack_helper.SlackHelper.command_to_activity
   name: command_to_activity
   summary: Creates an activity based on a Slack event related to a slash command.
@@ -35,16 +35,16 @@ methods:
     description: The data of the Slack event.
     isRequired: true
     types:
-    - <xref:botbuilder.adapters.slack.slack_helper.SlackRequestBody.yml>
+    - <xref:botbuilder.adapters.slack.slack_helper.SlackRequestBody>
   - name: client
     description: The Slack client.
     isRequired: true
     types:
-    - <xref:botbuilder.adapters.slack.slack_helper.SlackClient.yml>
+    - <xref:botbuilder.adapters.slack.slack_helper.SlackClient>
   return:
     description: An activity containing the event data.
     types:
-    - <xref:botbuilder.schema.Activity.yml>
+    - <xref:botbuilder.schema.Activity>
 - uid: botbuilder.adapters.slack.slack_helper.SlackHelper.deserialize_body
   name: deserialize_body
   summary: "Deserializes the request\u2019s body as a SlackRequestBody object."
@@ -63,7 +63,7 @@ methods:
   return:
     description: A SlackRequestBody object.
     types:
-    - <xref:botbuilder.adapters.slack.slack_helper.SlackRequestBody.yml>
+    - <xref:botbuilder.adapters.slack.slack_helper.SlackRequestBody>
 - uid: botbuilder.adapters.slack.slack_helper.SlackHelper.event_to_activity
   name: event_to_activity
   summary: Creates an activity based on the Slack event data.
@@ -74,16 +74,16 @@ methods:
     description: The data of the Slack event.
     isRequired: true
     types:
-    - <xref:botbuilder.adapters.slack.slack_helper.SlackEvent.yml>
+    - <xref:botbuilder.adapters.slack.slack_helper.SlackEvent>
   - name: client
     description: The Slack client.
     isRequired: true
     types:
-    - <xref:botbuilder.adapters.slack.slack_helper.SlackClient.yml>
+    - <xref:botbuilder.adapters.slack.slack_helper.SlackClient>
   return:
     description: An activity containing the event data.
     types:
-    - <xref:botbuilder.schema.Activity.yml>
+    - <xref:botbuilder.schema.Activity>
 - uid: botbuilder.adapters.slack.slack_helper.SlackHelper.payload_to_activity
   name: payload_to_activity
   summary: Creates an activity based on the Slack event payload.
@@ -93,11 +93,11 @@ methods:
     description: The payload of the Slack event.
     isRequired: true
     types:
-    - <xref:botbuilder.adapters.slack.slack_helper.SlackPayload.yml>
+    - <xref:botbuilder.adapters.slack.slack_helper.SlackPayload>
   return:
     description: An activity containing the event data.
     types:
-    - <xref:botbuilder.schema.Activity.yml>
+    - <xref:botbuilder.schema.Activity>
 - uid: botbuilder.adapters.slack.slack_helper.SlackHelper.query_string_to_dictionary
   name: query_string_to_dictionary
   summary: Converts a query string to a dictionary with key-value pairs.
@@ -122,7 +122,7 @@ methods:
     description: The original aiohttp Request.
     isRequired: true
     types:
-    - '[aiohttp.web_request.Request](aiohttp.web_request.Request.yml)'
+    - '[aiohttp.web_request.Request](aiohttp.web_request.Request)'
   - name: code
     description: The HTTP result code to return.
     isRequired: true
@@ -141,4 +141,4 @@ methods:
   return:
     description: The aoihttp Response
     types:
-    - '[aiohttp.web_response.Response](aiohttp.web_response.Response.yml)'
+    - '[aiohttp.web_response.Response](aiohttp.web_response.Response)'

@@ -71,7 +71,7 @@ methods:
     description: Parameters to create the conversation from
     isRequired: true
     types:
-    - <xref:botframework.connector.models.ConversationParameters.yml>
+    - <xref:botframework.connector.models.ConversationParameters>
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
@@ -88,8 +88,8 @@ methods:
   return:
     description: ConversationResourceResponse or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.models.ConversationResourceResponse.yml>
-    - <xref:msrest.pipeline.ClientRawResponse.yml>
+    - <xref:botframework.connector.models.ConversationResourceResponse>
+    - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.ConversationsOperations.delete_activity
   name: delete_activity
   summary: 'DeleteActivity.
@@ -130,7 +130,7 @@ methods:
     description: None or ClientRawResponse if raw=true
     types:
     - '[None](https://docs.python.org/3.6/library/constants.html#None)'
-    - <xref:msrest.pipeline.ClientRawResponse.yml>
+    - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.ConversationsOperations.delete_conversation_member
   name: delete_conversation_member
   summary: 'DeleteConversationMember.
@@ -175,7 +175,7 @@ methods:
     description: None or ClientRawResponse if raw=true
     types:
     - '[None](https://docs.python.org/3.6/library/constants.html#None)'
-    - <xref:msrest.pipeline.ClientRawResponse.yml>
+    - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.ConversationsOperations.get_activity_members
   name: get_activity_members
   summary: 'GetActivityMembers.
@@ -217,8 +217,8 @@ methods:
   return:
     description: list or ClientRawResponse if raw=true
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ChannelAccount.yml>]'
-    - <xref:msrest.pipeline.ClientRawResponse.yml>
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ChannelAccount>]'
+    - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.ConversationsOperations.get_conversation_member
   name: get_conversation_member
   summary: 'GetConversationMember.
@@ -258,8 +258,8 @@ methods:
   return:
     description: list or ClientRawResponse if raw=true
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ChannelAccount.yml>]'
-    - <xref:msrest.pipeline.ClientRawResponse.yml>
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ChannelAccount>]'
+    - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.ConversationsOperations.get_conversation_members
   name: get_conversation_members
   summary: 'GetConversationMembers.
@@ -294,8 +294,8 @@ methods:
   return:
     description: list or ClientRawResponse if raw=true
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ChannelAccount.yml>]'
-    - <xref:msrest.pipeline.ClientRawResponse.yml>
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ChannelAccount>]'
+    - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.ConversationsOperations.get_conversation_paged_members
   name: get_conversation_paged_members
   summary: 'GetConversationPagedMembers.
@@ -362,8 +362,8 @@ methods:
   return:
     description: PagedMembersResult or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.models.PagedMembersResult.yml>
-    - <xref:msrest.pipeline.ClientRawResponse.yml>
+    - <xref:botframework.connector.models.PagedMembersResult>
+    - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.ConversationsOperations.get_conversations
   name: get_conversations
   summary: 'GetConversations.
@@ -412,8 +412,8 @@ methods:
   return:
     description: ConversationsResult or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.models.ConversationsResult.yml>
-    - <xref:msrest.pipeline.ClientRawResponse.yml>
+    - <xref:botframework.connector.models.ConversationsResult>
+    - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.ConversationsOperations.get_teams_conversation_paged_members
   name: get_teams_conversation_paged_members
   summary: 'GetTeamsConversationPagedMembers.
@@ -480,8 +480,8 @@ methods:
   return:
     description: PagedMembersResult or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.models.PagedMembersResult.yml>
-    - <xref:msrest.pipeline.ClientRawResponse.yml>
+    - <xref:botframework.connector.models.PagedMembersResult>
+    - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.ConversationsOperations.reply_to_activity
   name: reply_to_activity
   summary: 'ReplyToActivity.
@@ -527,7 +527,7 @@ methods:
     description: Activity to send
     isRequired: true
     types:
-    - <xref:botframework.connector.models.Activity.yml>
+    - <xref:botframework.connector.models.Activity>
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
@@ -544,8 +544,8 @@ methods:
   return:
     description: ResourceResponse or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.models.ResourceResponse.yml>
-    - <xref:msrest.pipeline.ClientRawResponse.yml>
+    - <xref:botframework.connector.models.ResourceResponse>
+    - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.ConversationsOperations.send_conversation_history
   name: send_conversation_history
   summary: 'SendConversationHistory.
@@ -574,7 +574,7 @@ methods:
     description: A collection of Activities that conforms to the
     defaultValue: None
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.Activity.yml>]'
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.Activity>]'
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
@@ -591,8 +591,8 @@ methods:
   return:
     description: ResourceResponse or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.models.ResourceResponse.yml>
-    - <xref:msrest.pipeline.ClientRawResponse.yml>
+    - <xref:botframework.connector.models.ResourceResponse>
+    - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.ConversationsOperations.send_to_conversation
   name: send_to_conversation
   summary: 'SendToConversation.
@@ -635,7 +635,7 @@ methods:
     description: Activity to send
     isRequired: true
     types:
-    - <xref:botframework.connector.models.Activity.yml>
+    - <xref:botframework.connector.models.Activity>
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
@@ -652,8 +652,8 @@ methods:
   return:
     description: ResourceResponse or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.models.ResourceResponse.yml>
-    - <xref:msrest.pipeline.ClientRawResponse.yml>
+    - <xref:botframework.connector.models.ResourceResponse>
+    - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.ConversationsOperations.update_activity
   name: update_activity
   summary: "UpdateActivity.\n\nEdit an existing activity.\nSome channels allow you\
@@ -677,7 +677,7 @@ methods:
     description: replacement Activity
     isRequired: true
     types:
-    - <xref:botframework.connector.models.Activity.yml>
+    - <xref:botframework.connector.models.Activity>
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
@@ -694,8 +694,8 @@ methods:
   return:
     description: ResourceResponse or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.models.ResourceResponse.yml>
-    - <xref:msrest.pipeline.ClientRawResponse.yml>
+    - <xref:botframework.connector.models.ResourceResponse>
+    - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.ConversationsOperations.upload_attachment
   name: upload_attachment
   summary: "UploadAttachment.\n\nUpload an attachment directly into a channel\u2019\
@@ -714,7 +714,7 @@ methods:
     description: Attachment data
     isRequired: true
     types:
-    - <xref:botframework.connector.models.AttachmentData.yml>
+    - <xref:botframework.connector.models.AttachmentData>
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
@@ -731,8 +731,8 @@ methods:
   return:
     description: ResourceResponse or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.models.ResourceResponse.yml>
-    - <xref:msrest.pipeline.ClientRawResponse.yml>
+    - <xref:botframework.connector.models.ResourceResponse>
+    - <xref:msrest.pipeline.ClientRawResponse>
 attributes:
 - uid: botframework.connector.operations.ConversationsOperations.models
   name: models

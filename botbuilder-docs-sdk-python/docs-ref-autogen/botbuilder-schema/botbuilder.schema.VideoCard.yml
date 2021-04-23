@@ -27,15 +27,15 @@ constructor:
   - name: image
     description: Thumbnail placeholder
     types:
-    - <xref:botframework.connector.models.ThumbnailUrl.yml>
+    - <xref:botframework.connector.models.ThumbnailUrl>
   - name: media
     description: Media URLs for this card. When this field contains more than
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.MediaUrl.yml>]'
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.MediaUrl>]'
   - name: buttons
     description: Actions on this card
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.CardAction.yml>]'
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.CardAction>]'
   - name: shareable
     description: This content may be shared with others (default:true)
     types:

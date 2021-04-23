@@ -5,7 +5,7 @@ fullName: botbuilder.ai.luis.luis_recognizer.LuisRecognizer
 module: botbuilder.ai.luis.luis_recognizer
 inheritances:
 - botbuilder.core.recognizer.Recognizer
-summary: A LUIS based implementation of <xref:botbuilder.core.Recognizer.yml>.
+summary: A LUIS based implementation of <xref:botbuilder.core.Recognizer>.
 constructor:
   syntax: 'LuisRecognizer(application: Union[botbuilder.ai.luis.luis_application.LuisApplication,
     str], prediction_options: Optional[Union[botbuilder.ai.luis.luis_recognizer_options_v2.LuisRecognizerOptionsV2,
@@ -25,21 +25,21 @@ methods:
     description: Last activity sent from user.
     isRequired: true
     types:
-    - <xref:botbuilder.core.RecognizerResult.yml>
+    - <xref:botbuilder.core.RecognizerResult>
   - name: turn_context
     description: Context object containing information for a single turn of conversation
       with a user.
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext.yml>
+    - <xref:botbuilder.core.TurnContext>
   - name: telemetry_properties
     description: Additional properties to be logged to telemetry with the LuisResult
       event, defaults
     defaultValue: None
     types:
-    - <xref:typing.Dict[str, str].yml>, optional
+    - <xref:typing.Dict[str, str]>, optional
   return:
-    description: "A dictionary sent as \u201CProperties\u201D to <xref:botbuilder.core.BotTelemetryClient.track_event.yml>\
+    description: "A dictionary sent as \u201CProperties\u201D to <xref:botbuilder.core.BotTelemetryClient.track_event>\
       \ for the\nBotMessageSend event."
     types:
     - '*typing.Dict[str, str]*'
@@ -55,25 +55,25 @@ methods:
     description: The LuisResult for the call.
     isRequired: true
     types:
-    - <xref:botbuilder.core.RecognizerResult.yml>
+    - <xref:botbuilder.core.RecognizerResult>
   - name: turn_context
     description: Context object containing information for a single turn of conversation
       with a user.
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext.yml>
+    - <xref:botbuilder.core.TurnContext>
   - name: telemetry_properties
     description: Additional properties to be logged to telemetry with the LuisResult
       event, defaults
     defaultValue: None
     types:
-    - <xref:typing.Dict[str, str].yml>, optional
+    - <xref:typing.Dict[str, str]>, optional
   - name: telemetry_metrics
     description: Additional metrics to be logged to telemetry with the LuisResult
       event, defaults
     defaultValue: None
     types:
-    - <xref:typing.Dict[str, float].yml>, optional
+    - <xref:typing.Dict[str, float]>, optional
 - uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.recognize
   name: recognize
   summary: Return results of the analysis (suggested actions and intents).
@@ -87,26 +87,26 @@ methods:
       with a user.
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext.yml>
+    - <xref:botbuilder.core.TurnContext>
   - name: telemetry_properties
     description: Additional properties to be logged to telemetry with the LuisResult
       event, defaults
     defaultValue: None
     types:
-    - <xref:typing.Dict[str, str].yml>, optional
+    - <xref:typing.Dict[str, str]>, optional
   - name: telemetry_metrics
     description: Additional metrics to be logged to telemetry with the LuisResult
       event, defaults to
     defaultValue: None
     types:
-    - <xref:typing.Dict[str, float].yml>, optional
+    - <xref:typing.Dict[str, float]>, optional
   - name: luis_prediction_options
     defaultValue: None
   return:
     description: "The LUIS results of the analysis of the current message text in\
       \ the current turn\u2019s context activity."
     types:
-    - <xref:botbuilder.core.RecognizerResult.yml>
+    - <xref:botbuilder.core.RecognizerResult>
 - uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.top_intent
   name: top_intent
   summary: Returns the name of the top scoring intent from a set of LUIS results.
@@ -117,18 +117,18 @@ methods:
     description: Result set to be searched.
     isRequired: true
     types:
-    - <xref:botbuilder.core.RecognizerResult.yml>
+    - <xref:botbuilder.core.RecognizerResult>
   - name: default_intent
     description: Intent name to return should a top intent be found, defaults to None.
     defaultValue: None
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str), <xref:botbuilder.ai.luis.luis_recognizer.optional.yml>'
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str), <xref:botbuilder.ai.luis.luis_recognizer.optional>'
   - name: min_score
     description: Minimum score needed for an intent to be considered as a top intent.
       If all intents in the set
     defaultValue: '0.0'
     types:
-    - '[float](https://docs.python.org/3.6/library/functions.html#float), <xref:botbuilder.ai.luis.luis_recognizer.optional.yml>'
+    - '[float](https://docs.python.org/3.6/library/functions.html#float), <xref:botbuilder.ai.luis.luis_recognizer.optional>'
   return:
     description: The top scoring intent name.
     types:

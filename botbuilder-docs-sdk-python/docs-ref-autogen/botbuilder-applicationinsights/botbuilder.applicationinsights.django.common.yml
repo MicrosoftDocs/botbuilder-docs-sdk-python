@@ -37,7 +37,7 @@ functions:
   - name: channel
     description: Telemetry channel
     types:
-    - <xref:botbuilder.applicationinsights.django.common.TelemetryChannel.yml>
+    - <xref:botbuilder.applicationinsights.django.common.TelemetryChannel>
   - name: telemetry_processor
     description: use an existing telemetry processor from caller.
     defaultValue: None
@@ -46,7 +46,7 @@ functions:
   return:
     description: a telemetry client with telemetry processor.
     types:
-    - <xref:botbuilder.applicationinsights.django.common.TelemetryClient.yml>
+    - <xref:botbuilder.applicationinsights.django.common.TelemetryClient>
 - uid: botbuilder.applicationinsights.django.common.load_settings
   name: load_settings
   signature: load_settings()

@@ -292,9 +292,9 @@ methods:
     \ to the bot as the response from a send call.\nWhen the <xref:botbuilder.core.activity_handler.ActivityHandler.on_turn>\
     \ method receives a message reaction activity, it calls this\nmethod.\n\n* If\
     \ the message reaction indicates that reactions were added to a message, it calls\
-    \ \n\n<xref:botbuilder.core.activity_handler.ActivityHandler.on_reaction_added.yml>.\n\
+    \ \n\n<xref:botbuilder.core.activity_handler.ActivityHandler.on_reaction_added>.\n\
     - If the message reaction indicates that reactions were removed from a message,\
-    \ it calls\n<xref:botbuilder.core.activity_handler.ActivityHandler.on_reaction_removed.yml>.\n\
+    \ it calls\n<xref:botbuilder.core.activity_handler.ActivityHandler.on_reaction_removed>.\n\
     \nIn a derived class, override this method to add logic that applies to all message\
     \ reaction activities.\nAdd logic to apply before the reactions added or removed\
     \ logic before the call to the this base class\nmethod.\nAdd logic to apply after\
@@ -399,10 +399,10 @@ methods:
     '
 - uid: botbuilder.core.activity_handler.ActivityHandler.on_turn
   name: on_turn
-  summary: 'Called by the adapter (for example, <xref:botbuilder.core.activity_handler.BotFrameworkAdapter.yml>)
+  summary: 'Called by the adapter (for example, <xref:botbuilder.core.activity_handler.BotFrameworkAdapter>)
     at runtime
 
-    in order to process an inbound <xref:botbuilder.schema.Activity.yml>.'
+    in order to process an inbound <xref:botbuilder.schema.Activity>.'
   signature: 'on_turn(turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: turn_context

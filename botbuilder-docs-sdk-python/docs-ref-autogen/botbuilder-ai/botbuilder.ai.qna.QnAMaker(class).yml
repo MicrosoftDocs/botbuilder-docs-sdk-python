@@ -22,7 +22,7 @@ methods:
     description: Feedback records.
     isRequired: true
     types:
-    - <xref:typing.List[FeedbackRecord].yml>
+    - <xref:typing.List[FeedbackRecord]>
 - uid: botbuilder.ai.qna.QnAMaker.close
   name: close
   signature: close()
@@ -42,21 +42,21 @@ methods:
       with a user.
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext.yml>
+    - <xref:botbuilder.core.TurnContext>
   - name: telemetry_properties
     description: Properties to add/override for the event.
     defaultValue: None
     types:
-    - <xref:typing.Dict[str, str].yml>
+    - <xref:typing.Dict[str, str]>
   - name: telemetry_metrics
     description: Metrics to add/override for the event.
     defaultValue: None
     types:
-    - <xref:typing.Dict[str, float].yml>
+    - <xref:typing.Dict[str, float]>
   return:
     description: Event properties and metrics for the QnaMessage event for telemetry.
     types:
-    - <xref:botbuilder.ai.qna.EventData.yml>
+    - <xref:botbuilder.ai.qna.EventData>
 - uid: botbuilder.ai.qna.QnAMaker.get_answers
   name: get_answers
   summary: Generates answers from the knowledge base.
@@ -77,7 +77,7 @@ methods:
     description: "A list of answers for the user\u2019s query, sorted in decreasing\
       \ order of ranking score."
     types:
-    - <xref:typing.List[QueryResult].yml>
+    - <xref:typing.List[QueryResult]>
 - uid: botbuilder.ai.qna.QnAMaker.get_answers_raw
   name: get_answers_raw
   summary: Generates raw answers from the knowledge base.
@@ -112,7 +112,7 @@ methods:
   return:
     description: Filtered array of ambiguous questions.
     types:
-    - <xref:typing.List[QueryResult].yml>
+    - <xref:typing.List[QueryResult]>
 - uid: botbuilder.ai.qna.QnAMaker.on_qna_result
   name: on_qna_result
   signature: 'on_qna_result(query_results: [<class ''botbuilder.ai.qna.models.query_result.QueryResult''>],

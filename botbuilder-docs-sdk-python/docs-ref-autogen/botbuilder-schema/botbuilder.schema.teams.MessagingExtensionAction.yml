@@ -18,7 +18,7 @@ constructor:
   - name: context
     description: Current user context, i.e., the current theme
     types:
-    - <xref:botframework.connector.teams.models.TaskModuleRequestContext.yml>
+    - <xref:botframework.connector.teams.models.TaskModuleRequestContext>
   - name: command_id
     description: Id of the command assigned by Bot
     types:
@@ -33,8 +33,8 @@ constructor:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str'
   - name: bot_activity_preview
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.schema.models.Activity.yml>]'
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.schema.models.Activity>]'
   - name: message_payload
     description: Message content sent as part of the command
     types:
-    - <xref:botframework.connector.teams.models.MessageActionsPayload.yml>
+    - <xref:botframework.connector.teams.models.MessageActionsPayload>

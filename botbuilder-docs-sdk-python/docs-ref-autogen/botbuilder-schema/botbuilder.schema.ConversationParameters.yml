@@ -18,11 +18,11 @@ constructor:
   - name: bot
     description: The bot address for this conversation
     types:
-    - <xref:botframework.connector.models.ChannelAccount.yml>
+    - <xref:botframework.connector.models.ChannelAccount>
   - name: members
     description: Members to add to the conversation
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ChannelAccount.yml>]'
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ChannelAccount>]'
   - name: topic_name
     description: (Optional) Topic of the conversation (if supported by
     types:
@@ -30,7 +30,7 @@ constructor:
   - name: activity
     description: (Optional) When creating a new conversation, use this
     types:
-    - <xref:botframework.connector.models.Activity.yml>
+    - <xref:botframework.connector.models.Activity>
   - name: channel_data
     description: Channel specific payload for creating the
     types:

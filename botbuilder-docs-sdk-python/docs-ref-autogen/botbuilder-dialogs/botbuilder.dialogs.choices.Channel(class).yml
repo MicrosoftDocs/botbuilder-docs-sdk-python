@@ -18,7 +18,7 @@ methods:
     description: "The Turn Context to retrieve the Activity\u2019s Channel Id from."
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.choices.TurnContext.yml>
+    - <xref:botbuilder.dialogs.choices.TurnContext>
   return:
     description: "The Channel Id from the Turn Context\u2019s Activity."
     types:
@@ -66,7 +66,7 @@ methods:
     description: Defaults to 100. The number of Card Actions to check for the Channel.
     defaultValue: '100'
     types:
-    - '[int](https://docs.python.org/3.6/library/functions.html#int), <xref:botbuilder.dialogs.choices.optional.yml>'
+    - '[int](https://docs.python.org/3.6/library/functions.html#int), <xref:botbuilder.dialogs.choices.optional>'
   return:
     description: "True if the Channel supports the button_cnt total Card Actions,\
       \ False if the Channel does not support\n   that number of Card Actions."
@@ -87,7 +87,7 @@ methods:
       Channel.
     defaultValue: '100'
     types:
-    - '[int](https://docs.python.org/3.6/library/functions.html#int), <xref:botbuilder.dialogs.choices.optional.yml>'
+    - '[int](https://docs.python.org/3.6/library/functions.html#int), <xref:botbuilder.dialogs.choices.optional>'
   return:
     description: "True if the Channel supports the button_cnt total Suggested Actions,\
       \ False if the Channel does not\n   support that number of Suggested Actions."

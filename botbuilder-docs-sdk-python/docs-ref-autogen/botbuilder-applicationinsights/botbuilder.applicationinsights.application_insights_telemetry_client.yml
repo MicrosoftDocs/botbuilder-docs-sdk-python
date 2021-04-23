@@ -9,7 +9,7 @@ functions:
   summary: 'Bot Telemetry Processor as a method for backward compatibility. Refer
     to
 
-    callable object <xref:botbuilder.applicationinsights.application_insights_telemetry_client.BotTelemetryProcessor.yml>
+    callable object <xref:botbuilder.applicationinsights.application_insights_telemetry_client.BotTelemetryProcessor>
     for details.'
   signature: bot_telemetry_processor(data, context)
   parameters:
@@ -17,12 +17,12 @@ functions:
     description: Data from Application Insights
     types:
     - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.telemetry
-      item.yml>
+      item>
   - name: context
     description: Context from Application Insights
     types:
     - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.context
-      object.yml>
+      object>
   return:
     description: determines if the event is passed to the server (False = Filtered).
     types:

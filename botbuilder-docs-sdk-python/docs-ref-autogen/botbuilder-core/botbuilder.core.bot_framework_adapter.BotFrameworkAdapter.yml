@@ -26,15 +26,15 @@ methods:
 
     and is generally found in the *MicrosoftAppId* parameter in *config.py*.
 
-    :type bot_id: <xref:typing.str.yml>
+    :type bot_id: <xref:typing.str>
 
     :param claims_identity: The bot claims identity
 
-    :type claims_identity: <xref:botframework.connector.auth.ClaimsIdentity.yml>
+    :type claims_identity: <xref:botframework.connector.auth.ClaimsIdentity>
 
     :param audience:
 
-    :type audience: <xref:typing.str.yml>'
+    :type audience: <xref:typing.str>'
   signature: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
     callback: Callable, bot_id: Optional[str] = None, claims_identity: Optional[botframework.connector.auth.claims_identity.ClaimsIdentity]
     = None, audience: Optional[str] = None)'
@@ -75,7 +75,7 @@ methods:
   - name: audience
     defaultValue: None
   return:
-    description: An instance of the <xref:botbuilder.core.bot_framework_adapter.ConnectorClient.yml>
+    description: An instance of the <xref:botbuilder.core.bot_framework_adapter.ConnectorClient>
       class
 - uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.create_conversation
   name: create_conversation
@@ -91,12 +91,12 @@ methods:
     description: The conversation reference that contains the tenant
     isRequired: true
     types:
-    - <xref:botbuilder.schema.ConversationReference.yml>
+    - <xref:botbuilder.schema.ConversationReference>
   - name: logic
     description: The logic to use for the creation of the conversation
     defaultValue: None
     types:
-    - <xref:typing.Callable.yml>
+    - <xref:typing.Callable>
   - name: conversation_parameters
     description: The information to use to create the conversation
     defaultValue: None
@@ -104,17 +104,17 @@ methods:
     description: The ID for the channel.
     defaultValue: None
     types:
-    - <xref:typing.str.yml>
+    - <xref:typing.str>
   - name: service_url
     description: "The channel\u2019s service URL endpoint."
     defaultValue: None
     types:
-    - <xref:typing.str.yml>
+    - <xref:typing.str>
   - name: credentials
     description: The application credentials for the bot.
     defaultValue: None
     types:
-    - <xref:botframework.connector.auth.AppCredentials.yml>
+    - <xref:botframework.connector.auth.AppCredentials>
   return:
     description: A task representing the work queued to execute.
   remarks: "To start a conversation, your bot must know its account information and\
@@ -135,7 +135,7 @@ methods:
 
     > [!NOTE]
 
-    > The activity_id of the <xref:botbuilder.schema.ConversationReference.yml> identifies
+    > The activity_id of the <xref:botbuilder.schema.ConversationReference> identifies
     the activity to delete.
 
     >'
@@ -151,7 +151,7 @@ methods:
     description: Conversation reference for the activity to delete
     isRequired: true
     types:
-    - <xref:botbuilder.schema.ConversationReference.yml>
+    - <xref:botbuilder.schema.ConversationReference>
   return:
     description: A task that represents the work queued to execute
 - uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.delete_conversation_member
@@ -230,7 +230,7 @@ methods:
 
     :param oauth_app_credentials: (Optional) AppCredentials for OAuth.
 
-    :type oauth_app_credentials: <xref:botframework.connector.auth.AppCredential.yml>'
+    :type oauth_app_credentials: <xref:botframework.connector.auth.AppCredential>'
   signature: 'get_aad_tokens(context: botbuilder.core.turn_context.TurnContext, connection_name:
     str, resource_urls: List[str], user_id: Optional[str] = None, oauth_app_credentials:
     Optional[botframework.connector.auth.app_credentials.AppCredentials] = None)'
@@ -348,7 +348,7 @@ methods:
     description: (Optional) AppCredentials for OAuth.
     defaultValue: None
     types:
-    - <xref:botframework.connector.auth.AppCredential.yml>
+    - <xref:botframework.connector.auth.AppCredential>
   return:
     description: If the task completes successfully, the result contains the raw sign-in
       link
@@ -418,7 +418,7 @@ methods:
 
     :param oauth_app_credentials: (Optional) AppCredentials for OAuth.
 
-    :type oauth_app_credentials: <xref:botframework.connector.auth.AppCredential.yml>'
+    :type oauth_app_credentials: <xref:botframework.connector.auth.AppCredential>'
   signature: 'get_token_status(context: botbuilder.core.turn_context.TurnContext,
     connection_name: Optional[str] = None, user_id: Optional[str] = None, include_filter:
     Optional[str] = None, oauth_app_credentials: Optional[botframework.connector.auth.app_credentials.AppCredentials]
@@ -435,13 +435,13 @@ methods:
   - name: oauth_app_credentials
     defaultValue: None
   return:
-    description: Array of <xref:botframework.connector.token_api.modelsTokenStatus.yml>
+    description: Array of <xref:botframework.connector.token_api.modelsTokenStatus>
 - uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_user_token
   name: get_user_token
   summary: "Attempts to retrieve the token for a user that\u2019s in a login flow.\n\
     \n:param magic_code\u201D (Optional) user entered code to validate\n:str magic_code\u201D\
     \ str\n:param oauth_app_credentials: (Optional) AppCredentials for OAuth.\n:type\
-    \ oauth_app_credentials: <xref:botframework.connector.auth.AppCredential.yml>"
+    \ oauth_app_credentials: <xref:botframework.connector.auth.AppCredential>"
   signature: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, connection_name:
     str, magic_code: Optional[str] = None, oauth_app_credentials: Optional[botframework.connector.auth.app_credentials.AppCredentials]
     = None)'
@@ -457,7 +457,7 @@ methods:
   return:
     description: Token Response
     types:
-    - <xref::class:'botbuilder.schema.TokenResponse`.yml>
+    - <xref::class:'botbuilder.schema.TokenResponse`>
 - uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.key_for_app_credentials
   name: key_for_app_credentials
   signature: 'key_for_app_credentials(app_id: str, scope: str)'
@@ -497,25 +497,25 @@ methods:
     description: The incoming activity
     isRequired: true
     types:
-    - <xref:typing.str.yml>
+    - <xref:typing.str>
   - name: auth_header
     description: The HTTP authentication header of the request
     isRequired: true
     types:
-    - <xref:typing.str.yml>
+    - <xref:typing.str>
   - name: logic
     description: "The logic to execute at the end of the adapter\u2019s middleware\
       \ pipeline."
     isRequired: true
     types:
-    - <xref:typing.Callable.yml>
+    - <xref:typing.Callable>
   return:
     description: A task that represents the work queued to execute.
   remarks: "This class processes an activity received by the bots web server. This\
     \ includes any messages\nsent from a user and is the method that drives what\u2019\
     s often referred to as the\nbots *reactive messaging* flow.\nCall this method\
     \ to reactively send a message to a conversation.\nIf the task completes successfully,\
-    \ then an <xref:botbuilder.core.bot_framework_adapter.InvokeResponse.yml> is returned;\n\
+    \ then an <xref:botbuilder.core.bot_framework_adapter.InvokeResponse> is returned;\n\
     otherwise. *null* is returned.\n"
 - uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.process_activity_with_identity
   name: process_activity_with_identity
@@ -539,12 +539,12 @@ methods:
     description: The context object for the turn.
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_framework_adapter.TurnContext.yml>
+    - <xref:botbuilder.core.bot_framework_adapter.TurnContext>
   - name: activities
     description: The activities to send.
     isRequired: true
     types:
-    - <xref:typing.List[Activity].yml>
+    - <xref:typing.List[Activity]>
 - uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.sign_out_user
   name: sign_out_user
   summary: Signs the user out with the token server.
@@ -571,7 +571,7 @@ methods:
     description: (Optional) AppCredentials for OAuth.
     defaultValue: None
     types:
-    - <xref:botframework.connector.auth.AppCredential.yml>
+    - <xref:botframework.connector.auth.AppCredential>
 - uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.update_activity
   name: update_activity
   summary: 'Replaces an activity that was previously sent to a channel. It should
@@ -590,12 +590,12 @@ methods:
     description: New replacement activity
     isRequired: true
     types:
-    - <xref:botbuilder.schema.Activity.yml>
+    - <xref:botbuilder.schema.Activity>
   return:
     description: A task that represents the work queued to execute
   remarks: 'If the activity is successfully sent, the task result contains
 
-    a <xref:botbuilder.schema.ResourceResponse.yml> object containing the ID that
+    a <xref:botbuilder.schema.ResourceResponse> object containing the ID that
 
     the receiving channel assigned to the activity.
 

@@ -5,24 +5,23 @@ fullName: botbuilder.dialogs.prompts.prompt.Prompt
 module: botbuilder.dialogs.prompts.prompt
 inheritances:
 - botbuilder.dialogs.dialog.Dialog
-summary: Defines the core behavior of prompt dialogs. Extends the <xref:botbuilder.dialogs.prompts.prompt.Dialog.yml>
+summary: Defines the core behavior of prompt dialogs. Extends the <xref:botbuilder.dialogs.prompts.prompt.Dialog>
   base class.
 constructor:
   syntax: 'Prompt(dialog_id: str, validator: object = None)'
 remarks: 'When the prompt ends, it returns an object that represents the value it
   was prompted for.
 
-  Use <xref:DialogSet.add.yml> or <xref:ComponentDialog.add_dialog.yml> to add a prompt
-  to
+  Use <xref:DialogSet.add> or <xref:ComponentDialog.add_dialog> to add a prompt to
 
   a dialog set or component dialog, respectively.
 
 
-  Use <xref:DialogContext.prompt.yml> or <xref:DialogContext.begin_dialog.yml> to
-  start the prompt.
+  Use <xref:DialogContext.prompt> or <xref:DialogContext.begin_dialog> to start the
+  prompt.
 
-  If you start a prompt from a <xref:botbuilder.dialogs.prompts.prompt.WaterfallStep.yml>
-  in a <xref:botbuilder.dialogs.prompts.prompt.WaterfallDialog.yml>, then the
+  If you start a prompt from a <xref:botbuilder.dialogs.prompts.prompt.WaterfallStep>
+  in a <xref:botbuilder.dialogs.prompts.prompt.WaterfallDialog>, then the
 
   prompt result will be available in the next step of the waterfall.
 
@@ -81,16 +80,16 @@ methods:
     description: The dialog context for the current turn of the conversation
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.prompt.DialogContext.yml>
+    - <xref:botbuilder.dialogs.prompts.prompt.DialogContext>
   - name: options
     description: Optional, additional information to pass to the prompt being started
     defaultValue: None
     types:
-    - <xref:botbuilder.dialogs.prompts.prompt.Object.yml>
+    - <xref:botbuilder.dialogs.prompts.prompt.Object>
   return:
     description: The dialog turn result
     types:
-    - <xref:botbuilder.dialogs.prompts.prompt.DialogTurnResult.yml>
+    - <xref:botbuilder.dialogs.prompts.prompt.DialogTurnResult>
 - uid: botbuilder.dialogs.prompts.prompt.Prompt.continue_dialog
   name: continue_dialog
   summary: Continues a dialog.
@@ -100,11 +99,11 @@ methods:
     description: The dialog context for the current turn of the conversation
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.prompt.DialogContext.yml>
+    - <xref:botbuilder.dialogs.prompts.prompt.DialogContext>
   return:
     description: The dialog turn result
     types:
-    - <xref:botbuilder.dialogs.prompts.prompt.DialogTurnResult.yml>
+    - <xref:botbuilder.dialogs.prompts.prompt.DialogTurnResult>
   remarks: "Called when a prompt dialog is the active dialog and the user replied\
     \ with a new activity.\n\nIf the task is successful, the result indicates whether\
     \ the dialog is still active after\nthe turn has been processed by the dialog.\n\
@@ -122,18 +121,18 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext.yml>
+    - <xref:botbuilder.core.TurnContext>
   - name: state
     description: Contains state for the current instance of the prompt on the dialog
       stack
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.prompt.Dict.yml>
+    - <xref:botbuilder.dialogs.prompts.prompt.Dict>
   - name: options
     description: A prompt options object constructed from:meth:*DialogContext.prompt()*
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.prompt.PromptOptions.yml>
+    - <xref:botbuilder.dialogs.prompts.prompt.PromptOptions>
   - name: is_retry
     description: Determines whether *prompt* or *retry_prompt* should be used
     isRequired: true
@@ -152,18 +151,18 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext.yml>
+    - <xref:botbuilder.core.TurnContext>
   - name: state
     description: Contains state for the current instance of the prompt on the dialog
       stack
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.prompt.Dict.yml>
+    - <xref:botbuilder.dialogs.prompts.prompt.Dict>
   - name: options
-    description: A prompt options object constructed from <xref:DialogContext.prompt.yml>
+    description: A prompt options object constructed from <xref:DialogContext.prompt>
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.prompt.PromptOptions.yml>
+    - <xref:botbuilder.dialogs.prompts.prompt.PromptOptions>
   return:
     description: A task representing the asynchronous operation.
 - uid: botbuilder.dialogs.prompts.prompt.Prompt.reprompt_dialog
@@ -176,12 +175,12 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext.yml>
+    - <xref:botbuilder.core.TurnContext>
   - name: instance
     description: The instance of the dialog on the stack
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.prompt.DialogInstance.yml>
+    - <xref:botbuilder.dialogs.prompts.prompt.DialogInstance>
   return:
     description: A task representing the asynchronous operation
 - uid: botbuilder.dialogs.prompts.prompt.Prompt.resume_dialog
@@ -194,12 +193,12 @@ methods:
     description: The dialog context for the current turn of the conversation.
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.prompt.DialogContext.yml>
+    - <xref:botbuilder.dialogs.prompts.prompt.DialogContext>
   - name: reason
     description: An enum indicating why the dialog resumed.
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.prompt.DialogReason.yml>
+    - <xref:botbuilder.dialogs.prompts.prompt.DialogReason>
   - name: result
     description: Optional, value returned from the previous dialog on the stack.
     isRequired: true
@@ -208,7 +207,7 @@ methods:
   return:
     description: The dialog turn result
     types:
-    - <xref:botbuilder.dialogs.prompts.prompt.DialogTurnResult.yml>
+    - <xref:botbuilder.dialogs.prompts.prompt.DialogTurnResult>
   remarks: 'Called when a prompt dialog resumes being the active dialog on the dialog
     stack,
 

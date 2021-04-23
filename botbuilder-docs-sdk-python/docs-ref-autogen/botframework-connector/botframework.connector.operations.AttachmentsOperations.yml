@@ -58,16 +58,16 @@ methods:
     description: When specified, will be called with each chunk of
     defaultValue: None
     types:
-    - <xref:botframework.connector.operations.Callable.yml>[<xref:botframework.connector.operations.Bytes.yml>,
-      <xref:botframework.connector.operations.response=None.yml>]
+    - <xref:botframework.connector.operations.Callable>[<xref:botframework.connector.operations.Bytes>,
+      <xref:botframework.connector.operations.response=None>]
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: object or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.operations.Generator.yml>
-    - <xref:msrest.pipeline.ClientRawResponse.yml>
+    - <xref:botframework.connector.operations.Generator>
+    - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.AttachmentsOperations.get_attachment_info
   name: get_attachment_info
   summary: 'GetAttachmentInfo.
@@ -97,8 +97,8 @@ methods:
   return:
     description: AttachmentInfo or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.models.AttachmentInfo.yml>
-    - <xref:msrest.pipeline.ClientRawResponse.yml>
+    - <xref:botframework.connector.models.AttachmentInfo>
+    - <xref:msrest.pipeline.ClientRawResponse>
 attributes:
 - uid: botframework.connector.operations.AttachmentsOperations.models
   name: models

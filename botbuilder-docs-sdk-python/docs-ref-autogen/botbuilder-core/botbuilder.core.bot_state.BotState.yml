@@ -16,8 +16,8 @@ remarks: 'Each state management object defines a scope for a storage layer.
 
   State properties are created within a state management scope, and the Bot Framework
 
-  defines these scopes: <xref:botbuilder.core.bot_state.ConversationState.yml>, <xref:botbuilder.core.bot_state.UserState.yml>,
-  and <xref:botbuilder.core.bot_state.PrivateConversationState.yml>.
+  defines these scopes: <xref:botbuilder.core.bot_state.ConversationState>, <xref:botbuilder.core.bot_state.UserState>,
+  and <xref:botbuilder.core.bot_state.PrivateConversationState>.
 
   You can define additional scopes for your bot.
 
@@ -32,7 +32,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.TurnContext.yml>
+    - <xref:botbuilder.core.bot_state.TurnContext>
   return:
     description: None
   remarks: 'This function must be called in order for the cleared state to be persisted
@@ -52,7 +52,7 @@ methods:
   return:
     description: If successful, the state property accessor created
     types:
-    - <xref:botbuilder.core.bot_state.StatePropertyAccessor.yml>
+    - <xref:botbuilder.core.bot_state.StatePropertyAccessor>
 - uid: botbuilder.core.bot_state.BotState.delete
   name: delete
   summary: Deletes any state currently stored in this state scope.
@@ -62,7 +62,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.TurnContext.yml>
+    - <xref:botbuilder.core.bot_state.TurnContext>
   return:
     description: None
 - uid: botbuilder.core.bot_state.BotState.delete_property_value
@@ -75,7 +75,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.:TurnContext`.yml>
+    - <xref:botbuilder.core.bot_state.:TurnContext`>
   - name: property_name
     description: The name of the property to delete
     isRequired: true
@@ -99,7 +99,7 @@ methods:
     description: The context object for this turn.
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.TurnContext.yml>
+    - <xref:botbuilder.core.bot_state.TurnContext>
   return:
     description: The cached bot state instance.
 - uid: botbuilder.core.bot_state.BotState.get_property_value
@@ -112,7 +112,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.TurnContext.yml>
+    - <xref:botbuilder.core.bot_state.TurnContext>
   - name: property_name
     description: The property name
     isRequired: true
@@ -137,7 +137,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.TurnContext.yml>
+    - <xref:botbuilder.core.bot_state.TurnContext>
   - name: force
     description: Optional, true to bypass the cache
     defaultValue: 'False'
@@ -156,7 +156,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.TurnContext.yml>
+    - <xref:botbuilder.core.bot_state.TurnContext>
   - name: force
     description: Optional, true to save state to storage whether or not there are
       changes
@@ -173,7 +173,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.TurnContext.yml>
+    - <xref:botbuilder.core.bot_state.TurnContext>
   - name: property_name
     description: The property name
     isRequired: true
@@ -183,6 +183,6 @@ methods:
     description: The value to assign to the property
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.Object.yml>
+    - <xref:botbuilder.core.bot_state.Object>
   return:
     description: None

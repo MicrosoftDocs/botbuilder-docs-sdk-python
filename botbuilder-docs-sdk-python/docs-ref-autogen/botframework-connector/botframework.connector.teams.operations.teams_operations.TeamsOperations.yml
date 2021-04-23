@@ -55,8 +55,8 @@ methods:
   return:
     description: TeamsMeetingParticipant or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.teams.models.TeamsParticipantChannelAccount.yml>
-    - <xref:msrest.pipeline.ClientRawResponse.yml>
+    - <xref:botframework.connector.teams.models.TeamsParticipantChannelAccount>
+    - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.teams.operations.teams_operations.TeamsOperations.get_team_details
   name: get_team_details
   summary: 'Fetches details related to a team.
@@ -86,8 +86,8 @@ methods:
   return:
     description: TeamDetails or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.teams.models.TeamDetails.yml>
-    - <xref:msrest.pipeline.ClientRawResponse.yml>
+    - <xref:botframework.connector.teams.models.TeamDetails>
+    - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.teams.operations.teams_operations.TeamsOperations.get_teams_channels
   name: get_teams_channels
   summary: 'Fetches channel list for a given team.
@@ -117,8 +117,8 @@ methods:
   return:
     description: ConversationList or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.teams.models.ConversationList.yml>
-    - <xref:msrest.pipeline.ClientRawResponse.yml>
+    - <xref:botframework.connector.teams.models.ConversationList>
+    - <xref:msrest.pipeline.ClientRawResponse>
 attributes:
 - uid: botframework.connector.teams.operations.teams_operations.TeamsOperations.models
   name: models

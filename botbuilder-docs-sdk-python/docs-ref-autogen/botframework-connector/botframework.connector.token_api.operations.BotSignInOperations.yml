@@ -66,8 +66,8 @@ methods:
   return:
     description: SignInUrlResponse or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.tokenapi.models.SignInUrlResponse.yml>
-    - <xref:msrest.pipeline.ClientRawResponse.yml>
+    - <xref:botframework.tokenapi.models.SignInUrlResponse>
+    - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.token_api.operations.BotSignInOperations.get_sign_in_url
   name: get_sign_in_url
   signature: get_sign_in_url(state, code_challenge=None, emulator_url=None, final_redirect=None,
@@ -106,7 +106,7 @@ methods:
     description: str or ClientRawResponse if raw=true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
-    - <xref:msrest.pipeline.ClientRawResponse.yml>
+    - <xref:msrest.pipeline.ClientRawResponse>
 attributes:
 - uid: botframework.connector.token_api.operations.BotSignInOperations.models
   name: models

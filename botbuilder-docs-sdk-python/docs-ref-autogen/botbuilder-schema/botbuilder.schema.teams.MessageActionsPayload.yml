@@ -63,11 +63,11 @@ constructor:
   - name: from_property
     description: Sender of the message.
     types:
-    - <xref:botframework.connector.teams.models.MessageActionsPayloadFrom.yml>
+    - <xref:botframework.connector.teams.models.MessageActionsPayloadFrom>
   - name: body
     description: Plaintext/HTML representation of the content of the message.
     types:
-    - <xref:botframework.connector.teams.models.MessageActionsPayloadBody.yml>
+    - <xref:botframework.connector.teams.models.MessageActionsPayloadBody>
   - name: attachment_layout
     description: How the attachment(s) are displayed in the
     types:
@@ -75,12 +75,12 @@ constructor:
   - name: attachments
     description: Attachments in the message - card, image, file, etc.
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.MessageActionsPayloadAttachment.yml>]'
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.MessageActionsPayloadAttachment>]'
   - name: mentions
     description: List of entities mentioned in the message.
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.MessageActionsPayloadMention.yml>]'
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.MessageActionsPayloadMention>]'
   - name: reactions
     description: Reactions for the message.
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.MessageActionsPayloadReaction.yml>]'
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.MessageActionsPayloadReaction>]'

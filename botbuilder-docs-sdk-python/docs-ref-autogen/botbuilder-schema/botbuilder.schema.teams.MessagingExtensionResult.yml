@@ -22,10 +22,10 @@ constructor:
   - name: attachments
     description: (Only when type is result) Attachments
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.MessagingExtensionAttachment.yml>]'
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.MessagingExtensionAttachment>]'
   - name: suggested_actions
     types:
-    - <xref:botframework.connector.teams.models.MessagingExtensionSuggestedAction.yml>
+    - <xref:botframework.connector.teams.models.MessagingExtensionSuggestedAction>
   - name: text
     description: (Only when type is message) Text
     types:
@@ -33,4 +33,4 @@ constructor:
   - name: activity_preview
     description: (Only when type is botMessagePreview) Message
     types:
-    - <xref:botframework.connector.teams.models.Activity.yml>
+    - <xref:botframework.connector.teams.models.Activity>

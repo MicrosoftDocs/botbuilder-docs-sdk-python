@@ -18,8 +18,8 @@ constructor:
     description: Entities associated with this action
     types:
     - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)[[str](https://docs.python.org/3.6/library/stdtypes.html#str),
-      <xref:botframework.connector.models.Entity.yml>]'
+      <xref:botframework.connector.models.Entity>]'
   - name: state
     description: 'State of this action. Allowed values: *start*, *continue*, *done*'
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.SemanticActionStates.yml>'
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.SemanticActionStates>'

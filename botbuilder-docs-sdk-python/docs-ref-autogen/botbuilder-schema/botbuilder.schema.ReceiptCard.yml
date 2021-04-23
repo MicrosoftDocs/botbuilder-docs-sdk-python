@@ -18,15 +18,15 @@ constructor:
   - name: facts
     description: Array of Fact objects
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.Fact.yml>]'
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.Fact>]'
   - name: items
     description: Array of Receipt Items
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ReceiptItem.yml>]'
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ReceiptItem>]'
   - name: tap
     description: This action will be activated when user taps on the card
     types:
-    - <xref:botframework.connector.models.CardAction.yml>
+    - <xref:botframework.connector.models.CardAction>
   - name: total
     description: Total amount of money paid (or to be paid)
     types:
@@ -42,4 +42,4 @@ constructor:
   - name: buttons
     description: Set of actions applicable to the current card
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.CardAction.yml>]'
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.CardAction>]'

@@ -11,7 +11,7 @@ constructor:
 variables:
 - name: state
   types:
-  - <xref:botbuilder.dialogs.persisted_dialog.yml>
+  - <xref:botbuilder.dialogs.persisted_dialog>
 methods:
 - uid: botbuilder.dialogs.ComponentDialog.add_dialog
   name: add_dialog
@@ -110,7 +110,7 @@ methods:
     description: The context object for this turn.
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext.yml>
+    - <xref:botbuilder.core.TurnContext>
   - name: instance
     description: State information associated with the instance of this component
       dialog.
@@ -174,11 +174,11 @@ methods:
     botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)'
   parameters:
   - name: turn_context
-    description: The <xref:botbuilder.core.TurnContext.yml> for the current turn of
-      the conversation.
+    description: The <xref:botbuilder.core.TurnContext> for the current turn of the
+      conversation.
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext.yml>
+    - <xref:botbuilder.core.TurnContext>
   - name: instance
     description: State information associated with the inner dialog stack of this
       component dialog.
@@ -196,8 +196,8 @@ methods:
     instance: botbuilder.dialogs.dialog_instance.DialogInstance)'
   parameters:
   - name: turn_context
-    description: The <xref:botbuilder.core.TurnContext.yml> for the current turn of
-      the conversation.
+    description: The <xref:botbuilder.core.TurnContext> for the current turn of the
+      conversation.
     isRequired: true
     types:
     - <xref:botbuilder.dialogs.DialogInstance>
@@ -217,7 +217,7 @@ methods:
     description: The context object for this turn.
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext.yml>
+    - <xref:botbuilder.core.TurnContext>
   - name: instance
     description: State information for this dialog.
     isRequired: true

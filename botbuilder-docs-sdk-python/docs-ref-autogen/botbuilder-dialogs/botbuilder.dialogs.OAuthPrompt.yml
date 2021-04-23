@@ -68,7 +68,7 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.TurnContext.yml>
+    - <xref:botbuilder.dialogs.TurnContext>
   - name: code
     description: (Optional) Optional user entered code to validate.
     defaultValue: None
@@ -77,7 +77,7 @@ methods:
   return:
     description: "A response that includes the user\u2019s token"
     types:
-    - <xref:botbuilder.dialogs.TokenResponse.yml>
+    - <xref:botbuilder.dialogs.TokenResponse>
   remarks: "If the task is successful and the user already has a token or the user\
     \ successfully signs in,\nthe result contains the user\u2019s token.\n"
 - uid: botbuilder.dialogs.OAuthPrompt.sign_out_user
@@ -89,7 +89,7 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.TurnContext.yml>
+    - <xref:botbuilder.dialogs.TurnContext>
   return:
     description: A task representing the work queued to execute
   remarks: "If the task is successful and the user already has a token or the user\
@@ -119,9 +119,9 @@ attributes:
     \ token go out of scope at the end of your function.\n\nWhen used with your bots\
     \ <xref:botbuilder.dialogs.DialogSet>, you can simply add a new instance of the\
     \ prompt as a named\ndialog using :meth`DialogSet.add()`.\nYou can then start\
-    \ the prompt from a waterfall step using either <xref:DialogContext.begin.yml>\
-    \ or\n<xref:botbuilder.dialogs.DialogContext.prompt>.\nThe user will be prompted\
-    \ to sign in as needed and their access token will be passed as an argument to\n\
+    \ the prompt from a waterfall step using either <xref:DialogContext.begin> or\n\
+    <xref:botbuilder.dialogs.DialogContext.prompt>.\nThe user will be prompted to\
+    \ sign in as needed and their access token will be passed as an argument to\n\
     the callers next waterfall step.\n"
 - uid: botbuilder.dialogs.OAuthPrompt.PERSISTED_EXPIRES
   name: PERSISTED_EXPIRES

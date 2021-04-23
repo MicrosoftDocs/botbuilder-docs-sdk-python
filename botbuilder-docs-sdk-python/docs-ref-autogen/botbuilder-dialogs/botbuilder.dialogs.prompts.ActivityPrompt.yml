@@ -29,7 +29,7 @@ methods:
     description: The dialog context for the current turn of the conversation.
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.DialogContext.yml>
+    - <xref:botbuilder.dialogs.prompts.DialogContext>
   - name: options
     description: Optional, additional information to pass to the prompt being started.
     defaultValue: None
@@ -45,7 +45,7 @@ methods:
     description: The dialog context for the current turn of the conversation.
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.DialogContext.yml>
+    - <xref:botbuilder.dialogs.prompts.DialogContext>
 - uid: botbuilder.dialogs.prompts.ActivityPrompt.on_prompt
   name: on_prompt
   summary: Called anytime the derived class should send the user a prompt.
@@ -57,14 +57,14 @@ methods:
     description: The dialog context for the current turn of the conversation
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.DialogContext.yml>
+    - <xref:botbuilder.dialogs.prompts.DialogContext>
   - name: state
     description: Additional state being persisted for the prompt.
     isRequired: true
     types:
-    - <xref:typing.Dict[str, dict].yml>
+    - <xref:typing.Dict[str, dict]>
   - name: options
-    description: Options that the prompt started with in the call to <xref:DialogContext.prompt.yml>.
+    description: Options that the prompt started with in the call to <xref:DialogContext.prompt>.
     isRequired: true
     types:
     - <xref:botbuilder.dialogs.prompts.PromptOptions>
@@ -85,13 +85,13 @@ methods:
     description: Context for the current turn of conversation with the user.
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext.yml>
+    - <xref:botbuilder.core.TurnContext>
   - name: state
     description: Contains state for the current instance of the prompt on the dialog
       stack.
     isRequired: true
     types:
-    - <xref:typing.Dict[str, dict].yml>
+    - <xref:typing.Dict[str, dict]>
   - name: options
     description: A prompt options object
     isRequired: true
@@ -100,7 +100,7 @@ methods:
   return:
     types:
     - constructed from the options initially provided in the call to <xref:botbuilder.dialogs.prompts.ActivityPrompt.async
-      def on_prompt.yml>
+      def on_prompt>
 - uid: botbuilder.dialogs.prompts.ActivityPrompt.reprompt_dialog
   name: reprompt_dialog
   signature: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
@@ -123,12 +123,12 @@ methods:
     description: The dialog context for the current turn of the conversation
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.DialogContext.yml>
+    - <xref:botbuilder.dialogs.prompts.DialogContext>
   - name: reason
     description: An enum indicating why the dialog resumed.
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.DialogReason.yml>
+    - <xref:botbuilder.dialogs.prompts.DialogReason>
   - name: result
     description: Optional, value returned from the previous dialog on the stack.
     defaultValue: None

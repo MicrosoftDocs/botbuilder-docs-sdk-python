@@ -46,12 +46,12 @@ summary: "This class is a Django middleware that automatically enables request a
   \ it here:\n       'endpoint': \"https://dc.services.visualstudio.com/v2/track\"\
   ,\n   }\n   ````\n\nOnce these are in place, each request will have an *appinsights*\
   \ object placed on it.\nThis object will have the following properties:\n\n* *client*:\
-  \ This is an instance of the <xref:applicationinsights.TelemetryClient.yml> type,\
-  \ which will submit telemetry to the same instrumentation key, and will parent each\
-  \ telemetry item to the current request. \n\n* *request*: This is the <xref:applicationinsights.channel.contracts.RequestData.yml>\
+  \ This is an instance of the <xref:applicationinsights.TelemetryClient> type, which\
+  \ will submit telemetry to the same instrumentation key, and will parent each telemetry\
+  \ item to the current request. \n\n* *request*: This is the <xref:applicationinsights.channel.contracts.RequestData>\
   \ instance for the current request.  You can modify properties on this object during\
   \ the handling of the current request. It will be submitted when the request has\
-  \ finished. \n\n* *context*: This is the <xref:applicationinsights.channel.TelemetryContext.yml>\
+  \ finished. \n\n* *context*: This is the <xref:applicationinsights.channel.TelemetryContext>\
   \ object for the current ApplicationInsights sender. \n\nThese properties will be\
   \ present even when *DEBUG* is *True*, but it may not submit telemetry unless\n\
   *debug_ikey* is set in *APPLICATION_INSIGHTS*, above."
