@@ -8,6 +8,9 @@ functions:
   name: aiohttp_channel_service_routes
   signature: 'aiohttp_channel_service_routes(handler: botbuilder.core.channel_service_handler.ChannelServiceHandler,
     base_url: str = '''')'
+  parameters:
+  - name: handler
+  - name: base_url
 - uid: botbuilder.integration.aiohttp.aiohttp_error_middleware
   name: aiohttp_error_middleware
   signature: aiohttp_error_middleware(request, handler)

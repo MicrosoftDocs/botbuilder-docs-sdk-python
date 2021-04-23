@@ -25,11 +25,11 @@ methods:
   - name: attachment
     isRequired: true
   - name: text
-    isRequired: true
+    defaultValue: None
   - name: speak
-    isRequired: true
+    defaultValue: None
   - name: input_hint
-    isRequired: true
+    defaultValue: None
 - uid: botbuilder.core.MessageFactory.carousel
   name: carousel
   summary: "Returns a message that will display a set of attachments using a carousel\
@@ -47,11 +47,11 @@ methods:
   - name: attachments
     isRequired: true
   - name: text
-    isRequired: true
+    defaultValue: None
   - name: speak
-    isRequired: true
+    defaultValue: None
   - name: input_hint
-    isRequired: true
+    defaultValue: None
 - uid: botbuilder.core.MessageFactory.content_url
   name: content_url
   summary: "Returns a message that will display a single image or video to a user.\n\
@@ -67,13 +67,13 @@ methods:
   - name: content_type
     isRequired: true
   - name: name
-    isRequired: true
+    defaultValue: None
   - name: text
-    isRequired: true
+    defaultValue: None
   - name: speak
-    isRequired: true
+    defaultValue: None
   - name: input_hint
-    isRequired: true
+    defaultValue: None
 - uid: botbuilder.core.MessageFactory.list
   name: list
   summary: "Returns a message that will display a set of attachments in list form.\n\
@@ -91,11 +91,11 @@ methods:
   - name: attachments
     isRequired: true
   - name: text
-    isRequired: true
+    defaultValue: None
   - name: speak
-    isRequired: true
+    defaultValue: None
   - name: input_hint
-    isRequired: true
+    defaultValue: None
 - uid: botbuilder.core.MessageFactory.suggested_actions
   name: suggested_actions
   summary: "Returns a message that includes a set of suggested actions and optional\
@@ -111,11 +111,11 @@ methods:
   - name: actions
     isRequired: true
   - name: text
-    isRequired: true
+    defaultValue: None
   - name: speak
-    isRequired: true
+    defaultValue: None
   - name: input_hint
-    isRequired: true
+    defaultValue: InputHints.accepting_input
 - uid: botbuilder.core.MessageFactory.text
   name: text
   summary: "Returns a simple text message.\n\nmessage = MessageFactory.text(\u2018\
@@ -126,6 +126,6 @@ methods:
   - name: text
     isRequired: true
   - name: speak
-    isRequired: true
+    defaultValue: None
   - name: input_hint
-    isRequired: true
+    defaultValue: InputHints.accepting_input

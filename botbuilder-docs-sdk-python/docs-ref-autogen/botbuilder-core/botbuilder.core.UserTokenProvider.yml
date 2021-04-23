@@ -33,6 +33,17 @@ methods:
   signature: 'get_aad_tokens(context: botbuilder.core.turn_context.TurnContext, connection_name:
     str, resource_urls: List[str], user_id: Optional[str] = None, oauth_app_credentials:
     Optional[botframework.connector.auth.app_credentials.AppCredentials] = None)'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: connection_name
+    isRequired: true
+  - name: resource_urls
+    isRequired: true
+  - name: user_id
+    defaultValue: None
+  - name: oauth_app_credentials
+    defaultValue: None
 - uid: botbuilder.core.UserTokenProvider.get_oauth_sign_in_link
   name: get_oauth_sign_in_link
   summary: 'Get the raw signin link to be sent to the user for signin for a connection
@@ -53,6 +64,15 @@ methods:
   signature: 'get_oauth_sign_in_link(context: botbuilder.core.turn_context.TurnContext,
     connection_name: str, final_redirect: Optional[str] = None, oauth_app_credentials:
     Optional[botframework.connector.auth.app_credentials.AppCredentials] = None)'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: connection_name
+    isRequired: true
+  - name: final_redirect
+    defaultValue: None
+  - name: oauth_app_credentials
+    defaultValue: None
 - uid: botbuilder.core.UserTokenProvider.get_token_status
   name: get_token_status
   summary: "Retrieves Azure Active Directory tokens for particular resources on a\
@@ -67,6 +87,17 @@ methods:
     connection_name: Optional[str] = None, user_id: Optional[str] = None, include_filter:
     Optional[str] = None, oauth_app_credentials: Optional[botframework.connector.auth.app_credentials.AppCredentials]
     = None)'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: connection_name
+    defaultValue: None
+  - name: user_id
+    defaultValue: None
+  - name: include_filter
+    defaultValue: None
+  - name: oauth_app_credentials
+    defaultValue: None
 - uid: botbuilder.core.UserTokenProvider.get_user_token
   name: get_user_token
   summary: 'Retrieves the OAuth token for a user that is in a sign-in flow.
@@ -86,6 +117,15 @@ methods:
   signature: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, connection_name:
     str, magic_code: Optional[str] = None, oauth_app_credentials: Optional[botframework.connector.auth.app_credentials.AppCredentials]
     = None)'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: connection_name
+    isRequired: true
+  - name: magic_code
+    defaultValue: None
+  - name: oauth_app_credentials
+    defaultValue: None
 - uid: botbuilder.core.UserTokenProvider.sign_out_user
   name: sign_out_user
   summary: 'Signs the user out with the token server.
@@ -105,3 +145,12 @@ methods:
   signature: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
     Optional[str] = None, user_id: Optional[str] = None, oauth_app_credentials: Optional[botframework.connector.auth.app_credentials.AppCredentials]
     = None)'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: connection_name
+    defaultValue: None
+  - name: user_id
+    defaultValue: None
+  - name: oauth_app_credentials
+    defaultValue: None

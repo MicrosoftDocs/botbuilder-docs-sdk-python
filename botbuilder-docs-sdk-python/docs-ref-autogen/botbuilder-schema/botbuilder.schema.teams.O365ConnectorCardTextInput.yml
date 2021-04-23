@@ -14,28 +14,28 @@ constructor:
   - name: type
     description: "Input type name. Possible values include: \u2018textInput\u2019,"
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: id
     description: Input Id. It must be unique per entire O365 connector card.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: is_required
     description: Define if this input is a required field. Default
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: title
     description: Input title that will be shown as the placeholder
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: value
     description: Default value for this input field
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: is_multiline
     description: Define if text input is allowed for multiple lines.
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: max_length
     description: Maximum length of text input. Default value is
     types:
-    - float
+    - '[float](https://docs.python.org/3.6/library/functions.html#float)'

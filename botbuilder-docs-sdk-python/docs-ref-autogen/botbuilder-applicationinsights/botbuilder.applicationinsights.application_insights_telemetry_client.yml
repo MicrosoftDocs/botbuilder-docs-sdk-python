@@ -9,20 +9,23 @@ functions:
   summary: 'Bot Telemetry Processor as a method for backward compatibility. Refer
     to
 
-    callable object `BotTelemetryProcessor` for details.'
+    callable object <xref:botbuilder.applicationinsights.application_insights_telemetry_client.BotTelemetryProcessor.yml>
+    for details.'
   signature: bot_telemetry_processor(data, context)
   parameters:
   - name: data
     description: Data from Application Insights
     types:
-    - telemetry item
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.telemetry
+      item.yml>
   - name: context
     description: Context from Application Insights
     types:
-    - context object
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.context
+      object.yml>
   return:
     description: determines if the event is passed to the server (False = Filtered).
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
 classes:
 - botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient

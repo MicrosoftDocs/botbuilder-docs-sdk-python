@@ -13,16 +13,16 @@ constructor:
   - name: id
     description: 'Channel id for the user or bot on this channel (Example:'
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: name
     description: Display friendly name
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: aad_object_id
     description: "This account\u2019s object ID within Azure Active"
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: role
     description: 'Role of the entity behind the account (Example: User, Bot,'
     types:
-    - str or RoleTypes
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.RoleTypes.yml>'

@@ -14,28 +14,28 @@ constructor:
   - name: title
     description: Appears below the app name and to the right of the app icon.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: height
     description: "This can be a number, representing the task module\u2019s height"
     types:
-    - object
+    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   - name: width
     description: "This can be a number, representing the task module\u2019s width"
     types:
-    - object
+    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   - name: url
     description: The URL of what is loaded as an iframe inside the task module.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: card
     description: The JSON for the Adaptive card to appear in the task module.
     types:
-    - Attachment
+    - <xref:botframework.connector.teams.models.Attachment.yml>
   - name: fallback_url
     description: If a client does not support the task module feature,
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: completion_bot_id
     description: If a client does not support the task module
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

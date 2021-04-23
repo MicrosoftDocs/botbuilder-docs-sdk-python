@@ -7,28 +7,28 @@ module: botbuilder.dialogs
 constructor:
   syntax: DialogReason(value)
 variables:
-- description: A dialog is being started through a call to `DialogContext.begin()`.
+- description: A dialog is being started through a call to <xref:DialogContext.begin.yml>.
   name: BeginCalled
   types:
-  - int
+  - '[int](https://docs.python.org/3.6/library/functions.html#int)'
 - description: A dialog is being continued through a call to <xref:botbuilder.dialogs.DialogContext.continue_dialog>.
   name: BeginCalled
   types:
-  - int
+  - '[int](https://docs.python.org/3.6/library/functions.html#int)'
 - description: A dialog ended normally through a call to :meth:>>`<<DialogContext.end_dialog()
   name: BeginCalled
   types:
-  - int
+  - '[int](https://docs.python.org/3.6/library/functions.html#int)'
 - description: A dialog is ending and replaced through a call to :meth:>>``<<DialogContext.replace_dialog()`.
   name: BeginCalled
 - description: A dialog was cancelled as part of a call to <xref:botbuilder.dialogs.DialogContext.cancel_all_dialogs>.
   name: BeginCalled
   types:
-  - int
+  - '[int](https://docs.python.org/3.6/library/functions.html#int)'
 - description: A preceding step was skipped through a call to <xref:botbuilder.dialogs.WaterfallStepContext.next>.
   name: BeginCalled
   types:
-  - int
+  - '[int](https://docs.python.org/3.6/library/functions.html#int)'
 inheritances:
 - enum.Enum
 fields:

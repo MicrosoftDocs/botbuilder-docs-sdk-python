@@ -19,6 +19,11 @@ methods:
     \nBotTelemetryClient.track_event method for the BotMessageUpdate event."
   signature: 'fill_delete_event_properties(activity: botbuilder.schema._models_py3.Activity,
     additional_properties: Optional[Dict[str, str]] = None)'
+  parameters:
+  - name: activity
+    isRequired: true
+  - name: additional_properties
+    defaultValue: None
   return:
     description: "A dictionary that is sent as \u201CProperties\u201D to the"
 - uid: botbuilder.core.TelemetryLoggerMiddleware.fill_receive_event_properties
@@ -31,6 +36,11 @@ methods:
     \ event."
   signature: 'fill_receive_event_properties(activity: botbuilder.schema._models_py3.Activity,
     additional_properties: Optional[Dict[str, str]] = None)'
+  parameters:
+  - name: activity
+    isRequired: true
+  - name: additional_properties
+    defaultValue: None
   return:
     description: "A dictionary that is sent as \u201CProperties\u201D to"
 - uid: botbuilder.core.TelemetryLoggerMiddleware.fill_send_event_properties
@@ -42,6 +52,11 @@ methods:
     \nBotTelemetryClient.track_event method for the BotMessageSend event."
   signature: 'fill_send_event_properties(activity: botbuilder.schema._models_py3.Activity,
     additional_properties: Optional[Dict[str, str]] = None)'
+  parameters:
+  - name: activity
+    isRequired: true
+  - name: additional_properties
+    defaultValue: None
   return:
     description: "A dictionary that is sent as \u201CProperties\u201D to the"
 - uid: botbuilder.core.TelemetryLoggerMiddleware.fill_update_event_properties
@@ -55,6 +70,11 @@ methods:
     \ BotMessageUpdate event."
   signature: 'fill_update_event_properties(activity: botbuilder.schema._models_py3.Activity,
     additional_properties: Optional[Dict[str, str]] = None)'
+  parameters:
+  - name: activity
+    isRequired: true
+  - name: additional_properties
+    defaultValue: None
   return:
     description: "A dictionary that is sent as \u201CProperties\u201D to the"
 - uid: botbuilder.core.TelemetryLoggerMiddleware.on_delete_activity
@@ -64,6 +84,9 @@ methods:
     \ is \u201CBotMessageDelete\u201D.\n:param activity: Current activity sent from\
     \ user."
   signature: 'on_delete_activity(activity: botbuilder.schema._models_py3.Activity)'
+  parameters:
+  - name: activity
+    isRequired: true
 - uid: botbuilder.core.TelemetryLoggerMiddleware.on_receive_activity
   name: on_receive_activity
   summary: "Invoked when a message is received from the user.\nPerforms logging of\
@@ -71,6 +94,9 @@ methods:
     \ name used is \u201CBotMessageReceived\u201D.\n:param activity: Current activity\
     \ sent from user."
   signature: 'on_receive_activity(activity: botbuilder.schema._models_py3.Activity)'
+  parameters:
+  - name: activity
+    isRequired: true
 - uid: botbuilder.core.TelemetryLoggerMiddleware.on_send_activity
   name: on_send_activity
   summary: "Invoked when the bot sends a message to the user.\nPerforms logging of\
@@ -78,6 +104,9 @@ methods:
     \ name used is \u201CBotMessageSend\u201D.\n:param activity: Current activity\
     \ sent from bot."
   signature: 'on_send_activity(activity: botbuilder.schema._models_py3.Activity)'
+  parameters:
+  - name: activity
+    isRequired: true
 - uid: botbuilder.core.TelemetryLoggerMiddleware.on_turn
   name: on_turn
   summary: 'Logs events based on incoming and outgoing activities using
@@ -101,6 +130,9 @@ methods:
     \ is \u201CBotMessageUpdate\u201D.\n:param activity: Current activity sent from\
     \ user."
   signature: 'on_update_activity(activity: botbuilder.schema._models_py3.Activity)'
+  parameters:
+  - name: activity
+    isRequired: true
 attributes:
 - uid: botbuilder.core.TelemetryLoggerMiddleware.log_personal_information
   name: log_personal_information

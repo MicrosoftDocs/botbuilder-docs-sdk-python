@@ -13,12 +13,13 @@ constructor:
   - name: id
     description: ID of this action
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: entities
     description: Entities associated with this action
     types:
-    - dict[str, Entity]
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)[[str](https://docs.python.org/3.6/library/stdtypes.html#str),
+      <xref:botframework.connector.models.Entity.yml>]'
   - name: state
     description: 'State of this action. Allowed values: *start*, *continue*, *done*'
     types:
-    - str or SemanticActionStates
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.SemanticActionStates.yml>'

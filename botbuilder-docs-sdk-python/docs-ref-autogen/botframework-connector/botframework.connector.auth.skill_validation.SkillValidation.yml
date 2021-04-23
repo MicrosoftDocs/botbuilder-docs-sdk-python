@@ -14,6 +14,17 @@ methods:
   signature: 'authenticate_channel_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
     channel_service_or_provider: Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
     channel_id: str, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration)'
+  parameters:
+  - name: auth_header
+    isRequired: true
+  - name: credentials
+    isRequired: true
+  - name: channel_service_or_provider
+    isRequired: true
+  - name: channel_id
+    isRequired: true
+  - name: auth_configuration
+    isRequired: true
 - uid: botframework.connector.auth.skill_validation.SkillValidation.create_anonymous_skill_claim
   name: create_anonymous_skill_claim
   summary: 'Creates a ClaimsIdentity for an anonymous (unauthenticated) skill.
@@ -28,9 +39,15 @@ methods:
 
     :return bool:'
   signature: 'is_skill_claim(claims: Dict[str, object])'
+  parameters:
+  - name: claims
+    isRequired: true
 - uid: botframework.connector.auth.skill_validation.SkillValidation.is_skill_token
   name: is_skill_token
   summary: "Determines if a given Auth header is from from a skill to bot or bot to\
     \ skill request.\n:param auth_header: Bearer Token, in the \u201CBearer [Long\
     \ String]\u201D Format.\n:return bool:"
   signature: 'is_skill_token(auth_header: str)'
+  parameters:
+  - name: auth_header
+    isRequired: true

@@ -16,6 +16,11 @@ methods:
 - uid: botbuilder.core.ChannelServiceHandler.handle_create_conversation
   name: handle_create_conversation
   signature: 'handle_create_conversation(auth_header, parameters: botbuilder.schema._models_py3.ConversationParameters)'
+  parameters:
+  - name: auth_header
+    isRequired: true
+  - name: parameters
+    isRequired: true
 - uid: botbuilder.core.ChannelServiceHandler.handle_delete_activity
   name: handle_delete_activity
   signature: handle_delete_activity(auth_header, conversation_id, activity_id)
@@ -39,36 +44,106 @@ methods:
 - uid: botbuilder.core.ChannelServiceHandler.handle_get_activity_members
   name: handle_get_activity_members
   signature: handle_get_activity_members(auth_header, conversation_id, activity_id)
+  parameters:
+  - name: auth_header
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
+  - name: activity_id
+    isRequired: true
 - uid: botbuilder.core.ChannelServiceHandler.handle_get_conversation_member
   name: handle_get_conversation_member
   signature: handle_get_conversation_member(auth_header, conversation_id, member_id)
+  parameters:
+  - name: auth_header
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
+  - name: member_id
+    isRequired: true
 - uid: botbuilder.core.ChannelServiceHandler.handle_get_conversation_members
   name: handle_get_conversation_members
   signature: handle_get_conversation_members(auth_header, conversation_id)
+  parameters:
+  - name: auth_header
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
 - uid: botbuilder.core.ChannelServiceHandler.handle_get_conversation_paged_members
   name: handle_get_conversation_paged_members
   signature: 'handle_get_conversation_paged_members(auth_header, conversation_id,
     page_size: int = 0, continuation_token: str = '''')'
+  parameters:
+  - name: auth_header
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
+  - name: page_size
+    defaultValue: '0'
+  - name: continuation_token
 - uid: botbuilder.core.ChannelServiceHandler.handle_get_conversations
   name: handle_get_conversations
   signature: 'handle_get_conversations(auth_header, continuation_token: str = '''')'
+  parameters:
+  - name: auth_header
+    isRequired: true
+  - name: continuation_token
 - uid: botbuilder.core.ChannelServiceHandler.handle_reply_to_activity
   name: handle_reply_to_activity
   signature: handle_reply_to_activity(auth_header, conversation_id, activity_id, activity)
+  parameters:
+  - name: auth_header
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
+  - name: activity_id
+    isRequired: true
+  - name: activity
+    isRequired: true
 - uid: botbuilder.core.ChannelServiceHandler.handle_send_conversation_history
   name: handle_send_conversation_history
   signature: 'handle_send_conversation_history(auth_header, conversation_id, transcript:
     botbuilder.schema._models_py3.Transcript)'
+  parameters:
+  - name: auth_header
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
+  - name: transcript
+    isRequired: true
 - uid: botbuilder.core.ChannelServiceHandler.handle_send_to_conversation
   name: handle_send_to_conversation
   signature: handle_send_to_conversation(auth_header, conversation_id, activity)
+  parameters:
+  - name: auth_header
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
+  - name: activity
+    isRequired: true
 - uid: botbuilder.core.ChannelServiceHandler.handle_update_activity
   name: handle_update_activity
   signature: handle_update_activity(auth_header, conversation_id, activity_id, activity)
+  parameters:
+  - name: auth_header
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
+  - name: activity_id
+    isRequired: true
+  - name: activity
+    isRequired: true
 - uid: botbuilder.core.ChannelServiceHandler.handle_upload_attachment
   name: handle_upload_attachment
   signature: 'handle_upload_attachment(auth_header, conversation_id, attachment_upload:
     botbuilder.schema._models_py3.AttachmentData)'
+  parameters:
+  - name: auth_header
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
+  - name: attachment_upload
+    isRequired: true
 - uid: botbuilder.core.ChannelServiceHandler.on_create_conversation
   name: on_create_conversation
   summary: "create_conversation() API for Skill\n\nCreate a new Conversation.\n\n\
@@ -237,9 +312,8 @@ methods:
   - name: conversation_id
     isRequired: true
   - name: page_size
-    isRequired: true
+    defaultValue: None
   - name: continuation_token
-    isRequired: true
 - uid: botbuilder.core.ChannelServiceHandler.on_get_conversations
   name: on_get_conversations
   summary: 'get_conversations() API for Skill
@@ -269,7 +343,6 @@ methods:
   - name: claims_identity
     isRequired: true
   - name: conversation_id
-    isRequired: true
   - name: continuation_token
     isRequired: true
 - uid: botbuilder.core.ChannelServiceHandler.on_reply_to_activity

@@ -26,16 +26,16 @@ methods:
 
     :param reference: A reference to the conversation to continue.
 
-    :type reference: `botbuilder.schema.ConversationReference`
+    :type reference: <xref:botbuilder.schema.ConversationReference.yml>
 
     :param callback: The method to call for the resulting bot turn.
 
-    :type callback: `typing.Callable`
+    :type callback: <xref:typing.Callable.yml>
 
-    :param claims_identity: A `botframework.connector.auth.ClaimsIdentity` for the
-    conversation.
+    :param claims_identity: A <xref:botframework.connector.auth.ClaimsIdentity.yml>
+    for the conversation.
 
-    :type claims_identity: `botframework.connector.auth.ClaimsIdentity`
+    :type claims_identity: <xref:botframework.connector.auth.ClaimsIdentity.yml>
 
     :param audience:A value signifying the recipient of the proactive message.
 
@@ -47,6 +47,14 @@ methods:
   - name: bot_id
     description: The application ID of the bot. This parameter is ignored in
     isRequired: true
+  - name: callback
+    isRequired: true
+  - name: bot_id
+    defaultValue: None
+  - name: claims_identity
+    defaultValue: None
+  - name: audience
+    defaultValue: None
 - uid: botbuilder.core.BotAdapter.delete_activity
   name: delete_activity
   summary: Deletes an existing activity.
@@ -62,7 +70,7 @@ methods:
     description: Conversation reference for the activity to delete.
     isRequired: true
     types:
-    - '`botbuilder.schema.ConversationReference`'
+    - <xref:botbuilder.schema.ConversationReference.yml>
 - uid: botbuilder.core.BotAdapter.run_pipeline
   name: run_pipeline
   summary: 'Called by the parent class to run the adapters middleware set and calls
@@ -79,9 +87,9 @@ methods:
     - <xref:botbuilder.core.TurnContext>
   - name: callback
     description: A callback method to run at the end of the pipeline.
-    isRequired: true
+    defaultValue: None
     types:
-    - '`typing.Callable[[TurnContext], Awaitable]`'
+    - <xref:typing.Callable[[TurnContext], Awaitable].yml>
 - uid: botbuilder.core.BotAdapter.send_activities
   name: send_activities
   summary: Sends a set of activities to the user. An array of responses from the server
@@ -98,7 +106,7 @@ methods:
     description: The activities to send.
     isRequired: true
     types:
-    - '`typing.List[Activity]`'
+    - <xref:typing.List[Activity].yml>
 - uid: botbuilder.core.BotAdapter.update_activity
   name: update_activity
   summary: Replaces an existing activity.
@@ -114,7 +122,7 @@ methods:
     description: New replacement activity.
     isRequired: true
     types:
-    - '`botbuilder.schema.Activity`'
+    - <xref:botbuilder.schema.Activity.yml>
 - uid: botbuilder.core.BotAdapter.use
   name: use
   summary: Registers a middleware handler with the adapter.

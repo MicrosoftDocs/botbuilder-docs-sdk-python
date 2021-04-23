@@ -15,48 +15,48 @@ constructor:
   - name: title
     description: Title of this card
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: subtitle
     description: Subtitle of this card
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: text
     description: Text of this card
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: image
     description: Thumbnail placeholder
     types:
-    - ThumbnailUrl
+    - <xref:botframework.connector.models.ThumbnailUrl.yml>
   - name: media
     description: Media URLs for this card. When this field contains more than
     types:
-    - list[MediaUrl]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.MediaUrl.yml>]'
   - name: buttons
     description: Actions on this card
     types:
-    - list[CardAction]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.CardAction.yml>]'
   - name: shareable
     description: This content may be shared with others (default:true)
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: autoloop
     description: Should the client loop playback at end of content
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: autostart
     description: Should the client automatically start playback of media
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: aspect
     description: Aspect ratio of thumbnail/media placeholder. Allowed values
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: duration
     description: Describes the length of the media content without
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: value
     description: Supplementary parameter for this card
     types:
-    - object
+    - '[object](https://docs.python.org/3.6/library/functions.html#object)'

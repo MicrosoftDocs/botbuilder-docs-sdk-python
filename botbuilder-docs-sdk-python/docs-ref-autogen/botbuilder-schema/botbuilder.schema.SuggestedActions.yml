@@ -12,8 +12,8 @@ constructor:
   - name: to
     description: Ids of the recipients that the actions should be shown to.
     types:
-    - list[str]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[[str](https://docs.python.org/3.6/library/stdtypes.html#str)]'
   - name: actions
     description: Actions that can be shown to the user
     types:
-    - list[CardAction]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.CardAction.yml>]'

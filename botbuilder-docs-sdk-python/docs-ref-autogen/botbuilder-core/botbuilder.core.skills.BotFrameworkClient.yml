@@ -12,3 +12,16 @@ methods:
   name: post_activity
   signature: 'post_activity(from_bot_id: str, to_bot_id: str, to_url: str, service_url:
     str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity)'
+  parameters:
+  - name: from_bot_id
+    isRequired: true
+  - name: to_bot_id
+    isRequired: true
+  - name: to_url
+    isRequired: true
+  - name: service_url
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
+  - name: activity
+    isRequired: true

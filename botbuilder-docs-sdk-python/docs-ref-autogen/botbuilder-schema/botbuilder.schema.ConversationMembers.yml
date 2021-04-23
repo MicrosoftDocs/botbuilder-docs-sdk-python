@@ -12,8 +12,8 @@ constructor:
   - name: id
     description: Conversation ID
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: members
     description: List of members in this conversation
     types:
-    - list[ChannelAccount]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ChannelAccount.yml>]'

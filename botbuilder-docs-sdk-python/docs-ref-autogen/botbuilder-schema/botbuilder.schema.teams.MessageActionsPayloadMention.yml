@@ -13,12 +13,12 @@ constructor:
   - name: id
     description: The id of the mentioned entity.
     types:
-    - int
+    - '[int](https://docs.python.org/3.6/library/functions.html#int)'
   - name: mention_text
     description: The plaintext display name of the mentioned entity.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: mentioned
     description: Provides more details on the mentioned entity.
     types:
-    - MessageActionsPayloadFrom
+    - <xref:botframework.connector.teams.models.MessageActionsPayloadFrom.yml>

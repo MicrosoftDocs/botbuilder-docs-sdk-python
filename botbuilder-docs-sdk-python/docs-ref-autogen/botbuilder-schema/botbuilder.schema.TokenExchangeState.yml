@@ -13,21 +13,21 @@ constructor:
   - name: connection_name
     description: The connection name that was used.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: conversation
     description: Gets or sets a reference to the conversation.
     types:
-    - ConversationReference
+    - <xref:botframework.connector.models.ConversationReference.yml>
   - name: relates_to
     description: Gets or sets a reference to a related parent conversation for this
       token exchange.
     types:
-    - ConversationReference
+    - <xref:botframework.connector.models.ConversationReference.yml>
   - name: bot_ur
     description: The URL of the bot messaging endpoint.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: ms_app_id
     description: "The bot\u2019s registered application ID."
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

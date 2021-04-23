@@ -22,7 +22,7 @@ methods:
     description: Feedback records.
     isRequired: true
     types:
-    - '`typing.List[FeedbackRecord]`'
+    - <xref:typing.List[FeedbackRecord].yml>
 - uid: botbuilder.ai.qna.QnAMaker.close
   name: close
   signature: close()
@@ -42,21 +42,21 @@ methods:
       with a user.
     isRequired: true
     types:
-    - '`botbuilder.core.TurnContext`'
+    - <xref:botbuilder.core.TurnContext.yml>
   - name: telemetry_properties
     description: Properties to add/override for the event.
-    isRequired: true
+    defaultValue: None
     types:
-    - '`typing.Dict[str, str]`'
+    - <xref:typing.Dict[str, str].yml>
   - name: telemetry_metrics
     description: Metrics to add/override for the event.
-    isRequired: true
+    defaultValue: None
     types:
-    - '`typing.Dict[str, float]`'
+    - <xref:typing.Dict[str, float].yml>
   return:
     description: Event properties and metrics for the QnaMessage event for telemetry.
     types:
-    - '`EventData`'
+    - <xref:botbuilder.ai.qna.EventData.yml>
 - uid: botbuilder.ai.qna.QnAMaker.get_answers
   name: get_answers
   summary: Generates answers from the knowledge base.
@@ -64,11 +64,20 @@ methods:
     Optional[botbuilder.ai.qna.qnamaker_options.QnAMakerOptions] = None, telemetry_properties:
     Optional[Dict[str, str]] = None, telemetry_metrics: Optional[Dict[str, int]] =
     None)'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: options
+    defaultValue: None
+  - name: telemetry_properties
+    defaultValue: None
+  - name: telemetry_metrics
+    defaultValue: None
   return:
     description: "A list of answers for the user\u2019s query, sorted in decreasing\
       \ order of ranking score."
     types:
-    - '`typing.List[QueryResult]`'
+    - <xref:typing.List[QueryResult].yml>
 - uid: botbuilder.ai.qna.QnAMaker.get_answers_raw
   name: get_answers_raw
   summary: Generates raw answers from the knowledge base.
@@ -76,6 +85,15 @@ methods:
     Optional[botbuilder.ai.qna.qnamaker_options.QnAMakerOptions] = None, telemetry_properties:
     Optional[Dict[str, str]] = None, telemetry_metrics: Optional[Dict[str, int]] =
     None)'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: options
+    defaultValue: None
+  - name: telemetry_properties
+    defaultValue: None
+  - name: telemetry_metrics
+    defaultValue: None
   return:
     description: "A list of answers for the user\u2019s query, sorted in decreasing\
       \ order of ranking score."
@@ -94,10 +112,19 @@ methods:
   return:
     description: Filtered array of ambiguous questions.
     types:
-    - '`typing.List[QueryResult]`'
+    - <xref:typing.List[QueryResult].yml>
 - uid: botbuilder.ai.qna.QnAMaker.on_qna_result
   name: on_qna_result
   signature: 'on_qna_result(query_results: [<class ''botbuilder.ai.qna.models.query_result.QueryResult''>],
     turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
     Optional[Dict[str, str]] = None, telemetry_metrics: Optional[Dict[str, float]]
     = None)'
+  parameters:
+  - name: query_results
+    isRequired: true
+  - name: turn_context
+    isRequired: true
+  - name: telemetry_properties
+    defaultValue: None
+  - name: telemetry_metrics
+    defaultValue: None

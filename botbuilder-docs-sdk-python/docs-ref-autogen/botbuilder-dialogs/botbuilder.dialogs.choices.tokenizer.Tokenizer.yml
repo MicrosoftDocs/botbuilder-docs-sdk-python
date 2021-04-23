@@ -20,3 +20,8 @@ methods:
 
     locale: (Optional) Identifies the locale of the input text.'
   signature: 'default_tokenizer(text: str, locale: Optional[str] = None)'
+  parameters:
+  - name: text
+    isRequired: true
+  - name: locale
+    defaultValue: None

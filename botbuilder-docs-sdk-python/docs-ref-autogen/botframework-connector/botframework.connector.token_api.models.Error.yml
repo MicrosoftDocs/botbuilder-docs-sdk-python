@@ -12,10 +12,10 @@ constructor:
   parameters:
   - name: code
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: message
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: inner_http_error
     types:
-    - InnerHttpError
+    - <xref:botframework.tokenapi.models.InnerHttpError.yml>

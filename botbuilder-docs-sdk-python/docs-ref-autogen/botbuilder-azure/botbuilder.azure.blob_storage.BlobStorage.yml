@@ -29,7 +29,8 @@ methods:
     description: An array of entity keys.
     isRequired: true
     types:
-    - Dict[str, object]
+    - <xref:botbuilder.azure.blob_storage.Dict.yml>[[str](https://docs.python.org/3.6/library/stdtypes.html#str),
+      [object](https://docs.python.org/3.6/library/functions.html#object)]
 - uid: botbuilder.azure.blob_storage.BlobStorage.read
   name: read
   summary: Retrieve entities from the configured blob container.
@@ -39,7 +40,8 @@ methods:
     description: An array of entity keys.
     isRequired: true
     types:
-    - Dict[str, object]
+    - <xref:botbuilder.azure.blob_storage.Dict.yml>[[str](https://docs.python.org/3.6/library/stdtypes.html#str),
+      [object](https://docs.python.org/3.6/library/functions.html#object)]
 - uid: botbuilder.azure.blob_storage.BlobStorage.write
   name: write
   summary: Stores a new entity in the configured blob container.
@@ -49,4 +51,5 @@ methods:
     description: The changes to write to storage.
     isRequired: true
     types:
-    - Dict[str, object]
+    - <xref:botbuilder.azure.blob_storage.Dict.yml>[[str](https://docs.python.org/3.6/library/stdtypes.html#str),
+      [object](https://docs.python.org/3.6/library/functions.html#object)]

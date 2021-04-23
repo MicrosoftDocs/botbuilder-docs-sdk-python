@@ -16,6 +16,9 @@ methods:
 
     :return:'
   signature: 'delete(keys: List[str])'
+  parameters:
+  - name: keys
+    isRequired: true
 - uid: botbuilder.core.MemoryStorage.read
   name: read
   summary: 'Loads store items from storage.
@@ -24,6 +27,9 @@ methods:
 
     :return:'
   signature: 'read(keys: List[str])'
+  parameters:
+  - name: keys
+    isRequired: true
 - uid: botbuilder.core.MemoryStorage.write
   name: write
   summary: 'Saves store items to storage.
@@ -32,3 +38,6 @@ methods:
 
     :return:'
   signature: 'write(changes: Dict[str, botbuilder.core.storage.StoreItem])'
+  parameters:
+  - name: changes
+    isRequired: true

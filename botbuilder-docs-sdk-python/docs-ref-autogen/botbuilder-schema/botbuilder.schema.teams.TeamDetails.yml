@@ -14,20 +14,20 @@ constructor:
   - name: id
     description: Unique identifier representing a team
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: name
     description: Name of team.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: aad_group_id
     description: Azure Active Directory (AAD) Group Id for the team.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: channel_count
     description: The count of channels in the team.
     types:
-    - int
+    - '[int](https://docs.python.org/3.6/library/functions.html#int)'
   - name: member_count
     description: The count of members in the team.
     types:
-    - int
+    - '[int](https://docs.python.org/3.6/library/functions.html#int)'

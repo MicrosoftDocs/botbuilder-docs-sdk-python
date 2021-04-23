@@ -14,6 +14,17 @@ methods:
     channel_id: str, channel_service_or_provider: Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
     auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
     = None)'
+  parameters:
+  - name: auth_header
+    isRequired: true
+  - name: credentials
+    isRequired: true
+  - name: channel_id
+    isRequired: true
+  - name: channel_service_or_provider
+    isRequired: true
+  - name: auth_configuration
+    defaultValue: None
 - uid: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.authenticate_channel_token_with_service_url
   name: authenticate_channel_token_with_service_url
   signature: 'authenticate_channel_token_with_service_url(auth_header: str, credentials:
@@ -21,10 +32,28 @@ methods:
     str, channel_id: str, channel_service_or_provider: Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
     auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
     = None)'
+  parameters:
+  - name: auth_header
+    isRequired: true
+  - name: credentials
+    isRequired: true
+  - name: service_url
+    isRequired: true
+  - name: channel_id
+    isRequired: true
+  - name: channel_service_or_provider
+    isRequired: true
+  - name: auth_configuration
+    defaultValue: None
 - uid: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.validate_identity
   name: validate_identity
   signature: 'validate_identity(identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     credentials: botframework.connector.auth.credential_provider.CredentialProvider)'
+  parameters:
+  - name: identity
+    isRequired: true
+  - name: credentials
+    isRequired: true
 attributes:
 - uid: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.TO_BOT_FROM_ENTERPRISE_CHANNEL_TOKEN_VALIDATION_PARAMETERS
   name: TO_BOT_FROM_ENTERPRISE_CHANNEL_TOKEN_VALIDATION_PARAMETERS

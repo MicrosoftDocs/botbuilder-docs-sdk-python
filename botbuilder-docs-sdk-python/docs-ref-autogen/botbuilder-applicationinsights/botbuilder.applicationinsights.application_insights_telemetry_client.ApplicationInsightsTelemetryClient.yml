@@ -33,58 +33,58 @@ methods:
       cardinality value.
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: data
     description: the command initiated by this dependency call. Examples are SQL statement
       and HTTP URL with all
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: type_name
-    isRequired: true
+    defaultValue: None
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: target
     description: 'the target site of a dependency call. Examples are server name,
       host address. (default to: None)'
-    isRequired: true
+    defaultValue: None
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: duration
     description: 'the number of milliseconds that this dependency call lasted. (defaults
       to: None)'
-    isRequired: true
+    defaultValue: None
     types:
-    - int
+    - '[int](https://docs.python.org/3.6/library/functions.html#int)'
   - name: success
     description: 'true if the dependency call ended in success, false otherwise. (defaults
       to: None)'
-    isRequired: true
+    defaultValue: None
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: result_code
     description: the result code of a dependency call. Examples are SQL error code
       and HTTP status code.
-    isRequired: true
+    defaultValue: None
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: properties
     description: the set of custom properties the client wants attached to this data
       item.
-    isRequired: true
+    defaultValue: None
     types:
-    - '`typing.Dict[str, object]`'
+    - <xref:typing.Dict[str, object].yml>
   - name: measurements
     description: the set of custom measurements the client wants to attach to this
       data item.
-    isRequired: true
+    defaultValue: None
     types:
-    - '`typing.Dict[str, object]`'
+    - <xref:typing.Dict[str, object].yml>
   - name: dependency_id
     description: the id for this dependency call. If None, a new uuid will be generated.
-    isRequired: true
+    defaultValue: None
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
 - uid: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient.track_event
   name: track_event
   summary: Send information about a single event that has occurred in the context
@@ -96,19 +96,19 @@ methods:
     description: the data to associate to this event.
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
-    isRequired: true
+    defaultValue: None
     types:
-    - '`typing.Dict[str, object]`'
+    - <xref:typing.Dict[str, object].yml>
   - name: measurements
     description: 'the set of custom measurements the client wants to attach to this
       data item. (defaults to:'
-    isRequired: true
+    defaultValue: None
     types:
-    - '`typing.Dict[str, object]`'
+    - <xref:typing.Dict[str, object].yml>
 - uid: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient.track_exception
   name: track_exception
   summary: Send information about a single exception that occurred in the application.
@@ -119,25 +119,25 @@ methods:
   parameters:
   - name: exception_type
     description: the type of the exception that was thrown.
-    isRequired: true
+    defaultValue: None
   - name: value
     description: the exception that the client wants to send.
-    isRequired: true
+    defaultValue: None
   - name: trace
-    description: the traceback information as returned by `sys.exc_info()`.
-    isRequired: true
+    description: the traceback information as returned by [sys.exc_info()](https://docs.python.org/3.6/library/sys.html#sys.exc_info).
+    defaultValue: None
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
-    isRequired: true
+    defaultValue: None
     types:
-    - '`typing.Dict[str, object]`'
+    - <xref:typing.Dict[str, object].yml>
   - name: measurements
     description: 'the set of custom measurements the client wants to attach to this
       data item. (defaults to:'
-    isRequired: true
+    defaultValue: None
     types:
-    - '`typing.Dict[str, object]`'
+    - <xref:typing.Dict[str, object].yml>
 - uid: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient.track_metric
   name: track_metric
   summary: Send information about a single metric data point that was captured for
@@ -151,45 +151,45 @@ methods:
     description: The name of the metric that was captured.
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: value
     description: The value of the metric that was captured.
     isRequired: true
     types:
-    - float
+    - '[float](https://docs.python.org/3.6/library/functions.html#float)'
   - name: tel_type
     description: 'The type of the metric. (defaults to: TelemetryDataPointType.aggregation`)'
-    isRequired: true
+    defaultValue: None
   - name: count
     description: 'the number of metrics that were aggregated into this data point.
       (defaults to: None)'
-    isRequired: true
+    defaultValue: None
     types:
-    - int
+    - '[int](https://docs.python.org/3.6/library/functions.html#int)'
   - name: min_val
     description: 'the minimum of all metrics collected that were aggregated into this
       data point. (defaults to:'
-    isRequired: true
+    defaultValue: None
     types:
-    - float
+    - '[float](https://docs.python.org/3.6/library/functions.html#float)'
   - name: max_val
     description: 'the maximum of all metrics collected that were aggregated into this
       data point. (defaults to:'
-    isRequired: true
+    defaultValue: None
     types:
-    - float
+    - '[float](https://docs.python.org/3.6/library/functions.html#float)'
   - name: std_dev
     description: the standard deviation of all metrics collected that were aggregated
       into this data point.
-    isRequired: true
+    defaultValue: None
     types:
-    - float
+    - '[float](https://docs.python.org/3.6/library/functions.html#float)'
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
-    isRequired: true
+    defaultValue: None
     types:
-    - '`typing.Dict[str, object]`'
+    - <xref:typing.Dict[str, object].yml>
 - uid: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient.track_pageview
   name: track_pageview
   summary: Send information about the page viewed in the application (a web page for
@@ -201,27 +201,27 @@ methods:
     description: the name of the page that was viewed.
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: url
     description: the URL of the page that was viewed.
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: duration
     description: 'the duration of the page view in milliseconds. (defaults to: 0)'
-    isRequired: true
+    defaultValue: '0'
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
-    isRequired: true
+    defaultValue: None
     types:
-    - '`typing.Dict[str, object]`'
+    - <xref:typing.Dict[str, object].yml>
   - name: measurements
     description: 'the set of custom measurements the client wants to attach to this
       data item. (defaults to:'
-    isRequired: true
+    defaultValue: None
     types:
-    - '`typing.Dict[str, object]`'
+    - <xref:typing.Dict[str, object].yml>
 - uid: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient.track_request
   name: track_request
   summary: Sends a single request that was captured for the application.
@@ -235,57 +235,57 @@ methods:
       grouped together.
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: url
     description: The actual URL for this request (to show in individual request instances).
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: success
     description: True if the request ended in success, False otherwise.
     isRequired: true
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: start_time
     description: the start time of the request. The value should look the same as
       the one returned by
-    isRequired: true
+    defaultValue: None
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: duration
     description: 'the number of milliseconds that this request lasted. (defaults to:
       None)'
-    isRequired: true
+    defaultValue: None
     types:
-    - int
+    - '[int](https://docs.python.org/3.6/library/functions.html#int)'
   - name: response_code
     description: 'the response code that this request returned. (defaults to: None)'
-    isRequired: true
+    defaultValue: None
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: http_method
     description: 'the HTTP method that triggered this request. (defaults to: None)'
-    isRequired: true
+    defaultValue: None
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
-    isRequired: true
+    defaultValue: None
     types:
-    - '`typing.Dict[str, object]`'
+    - <xref:typing.Dict[str, object].yml>
   - name: measurements
     description: 'the set of custom measurements the client wants to attach to this
       data item. (defaults to:'
-    isRequired: true
+    defaultValue: None
     types:
-    - '`typing.Dict[str, object]`'
+    - <xref:typing.Dict[str, object].yml>
   - name: request_id
     description: 'the id for this request. If None, a new uuid will be generated.
       (defaults to: None)'
-    isRequired: true
+    defaultValue: None
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
 - uid: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient.track_trace
   name: track_trace
   summary: Sends a single trace statement.
@@ -296,14 +296,14 @@ methods:
     description: the trace statement.
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
-    isRequired: true
+    defaultValue: None
     types:
-    - '`typing.Dict[str, object]`'
+    - <xref:typing.Dict[str, object].yml>
   - name: severity
     description: the severity level of this trace, one of DEBUG, INFO, WARNING, ERROR,
       CRITICAL
-    isRequired: true
+    defaultValue: None

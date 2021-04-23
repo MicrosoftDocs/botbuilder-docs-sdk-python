@@ -13,8 +13,8 @@ constructor:
   - name: continuation_token
     description: Paging token
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: members
     description: The Teams Channel Accounts.
     types:
-    - list[TeamsChannelAccount]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.TeamsChannelAccount.yml>]'

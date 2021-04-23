@@ -25,23 +25,23 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - '`botbuilder.core.TurnContext`'
+    - <xref:botbuilder.core.TurnContext.yml>
   - name: state
     description: Contains state for the current instance of the prompt on the dialog
       stack
     isRequired: true
     types:
-    - '`Dict`'
+    - <xref:botbuilder.dialogs.prompts.choice_prompt.Dict.yml>
   - name: options
     description: A prompt options object constructed from:meth:*DialogContext.prompt()*
     isRequired: true
     types:
-    - '`PromptOptions`'
+    - <xref:botbuilder.dialogs.prompts.choice_prompt.PromptOptions.yml>
   - name: is_retry
     description: Determines whether *prompt* or *retry_prompt* should be used
     isRequired: true
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   return:
     description: A task representing the asynchronous operation.
 - uid: botbuilder.dialogs.prompts.choice_prompt.ChoicePrompt.on_recognize
@@ -55,17 +55,17 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - '`botbuilder.core.TurnContext`'
+    - <xref:botbuilder.core.TurnContext.yml>
   - name: state
     description: Contains state for the current instance of the prompt on the dialog
       stack
     isRequired: true
     types:
-    - '`Dict`'
+    - <xref:botbuilder.dialogs.prompts.choice_prompt.Dict.yml>
   - name: options
-    description: A prompt options object constructed from `DialogContext.prompt()`
+    description: A prompt options object constructed from <xref:DialogContext.prompt.yml>
     isRequired: true
     types:
-    - '`PromptOptions`'
+    - <xref:botbuilder.dialogs.prompts.choice_prompt.PromptOptions.yml>
   return:
     description: A task representing the asynchronous operation.

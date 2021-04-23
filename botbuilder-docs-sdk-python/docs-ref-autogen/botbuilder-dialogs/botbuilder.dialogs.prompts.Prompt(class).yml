@@ -5,20 +5,24 @@ fullName: botbuilder.dialogs.prompts.Prompt
 module: botbuilder.dialogs.prompts
 inheritances:
 - botbuilder.dialogs.dialog.Dialog
-summary: Defines the core behavior of prompt dialogs. Extends the `Dialog` base class.
+summary: Defines the core behavior of prompt dialogs. Extends the <xref:botbuilder.dialogs.prompts.Dialog.yml>
+  base class.
 constructor:
   syntax: 'Prompt(dialog_id: str, validator: object = None)'
 remarks: 'When the prompt ends, it returns an object that represents the value it
   was prompted for.
 
-  Use `DialogSet.add()` or `ComponentDialog.add_dialog()` to add a prompt to
+  Use <xref:DialogSet.add.yml> or <xref:ComponentDialog.add_dialog.yml> to add a prompt
+  to
 
   a dialog set or component dialog, respectively.
 
 
-  Use `DialogContext.prompt()` or `DialogContext.begin_dialog()` to start the prompt.
+  Use <xref:DialogContext.prompt.yml> or <xref:DialogContext.begin_dialog.yml> to
+  start the prompt.
 
-  If you start a prompt from a `WaterfallStep` in a `WaterfallDialog`, then the
+  If you start a prompt from a <xref:botbuilder.dialogs.prompts.WaterfallStep.yml>
+  in a <xref:botbuilder.dialogs.prompts.WaterfallDialog.yml>, then the
 
   prompt result will be available in the next step of the waterfall.
 
@@ -39,7 +43,13 @@ methods:
     description: Id of the channel the prompt is being sent to
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+  - name: choices
+    isRequired: true
+  - name: style
+    isRequired: true
+  - name: options
+    defaultValue: None
   return:
     description: A task representing the asynchronous operation
   remarks: 'If the task is successful, the result contains the updated activity.
@@ -71,16 +81,16 @@ methods:
     description: The dialog context for the current turn of the conversation
     isRequired: true
     types:
-    - '`DialogContext`'
+    - <xref:botbuilder.dialogs.prompts.DialogContext.yml>
   - name: options
     description: Optional, additional information to pass to the prompt being started
-    isRequired: true
+    defaultValue: None
     types:
-    - Object
+    - <xref:botbuilder.dialogs.prompts.Object.yml>
   return:
     description: The dialog turn result
     types:
-    - '`DialogTurnResult`'
+    - <xref:botbuilder.dialogs.prompts.DialogTurnResult.yml>
 - uid: botbuilder.dialogs.prompts.Prompt.continue_dialog
   name: continue_dialog
   summary: Continues a dialog.
@@ -90,11 +100,11 @@ methods:
     description: The dialog context for the current turn of the conversation
     isRequired: true
     types:
-    - '`DialogContext`'
+    - <xref:botbuilder.dialogs.prompts.DialogContext.yml>
   return:
     description: The dialog turn result
     types:
-    - '`DialogTurnResult`'
+    - <xref:botbuilder.dialogs.prompts.DialogTurnResult.yml>
   remarks: "Called when a prompt dialog is the active dialog and the user replied\
     \ with a new activity.\n\nIf the task is successful, the result indicates whether\
     \ the dialog is still active after\nthe turn has been processed by the dialog.\n\
@@ -112,13 +122,13 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - '`botbuilder.core.TurnContext`'
+    - <xref:botbuilder.core.TurnContext.yml>
   - name: state
     description: Contains state for the current instance of the prompt on the dialog
       stack
     isRequired: true
     types:
-    - '`Dict`'
+    - <xref:botbuilder.dialogs.prompts.Dict.yml>
   - name: options
     description: A prompt options object constructed from:meth:*DialogContext.prompt()*
     isRequired: true
@@ -128,7 +138,7 @@ methods:
     description: Determines whether *prompt* or *retry_prompt* should be used
     isRequired: true
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   return:
     description: A task representing the asynchronous operation.
 - uid: botbuilder.dialogs.prompts.Prompt.on_recognize
@@ -142,15 +152,15 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - '`botbuilder.core.TurnContext`'
+    - <xref:botbuilder.core.TurnContext.yml>
   - name: state
     description: Contains state for the current instance of the prompt on the dialog
       stack
     isRequired: true
     types:
-    - '`Dict`'
+    - <xref:botbuilder.dialogs.prompts.Dict.yml>
   - name: options
-    description: A prompt options object constructed from `DialogContext.prompt()`
+    description: A prompt options object constructed from <xref:DialogContext.prompt.yml>
     isRequired: true
     types:
     - <xref:botbuilder.dialogs.prompts.PromptOptions>
@@ -166,12 +176,12 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - '`botbuilder.core.TurnContext`'
+    - <xref:botbuilder.core.TurnContext.yml>
   - name: instance
     description: The instance of the dialog on the stack
     isRequired: true
     types:
-    - '`DialogInstance`'
+    - <xref:botbuilder.dialogs.prompts.DialogInstance.yml>
   return:
     description: A task representing the asynchronous operation
 - uid: botbuilder.dialogs.prompts.Prompt.resume_dialog
@@ -184,21 +194,21 @@ methods:
     description: The dialog context for the current turn of the conversation.
     isRequired: true
     types:
-    - '`DialogContext`'
+    - <xref:botbuilder.dialogs.prompts.DialogContext.yml>
   - name: reason
     description: An enum indicating why the dialog resumed.
     isRequired: true
     types:
-    - '`DialogReason`'
+    - <xref:botbuilder.dialogs.prompts.DialogReason.yml>
   - name: result
     description: Optional, value returned from the previous dialog on the stack.
     isRequired: true
     types:
-    - object
+    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   return:
     description: The dialog turn result
     types:
-    - '`DialogTurnResult`'
+    - <xref:botbuilder.dialogs.prompts.DialogTurnResult.yml>
   remarks: 'Called when a prompt dialog resumes being the active dialog on the dialog
     stack,
 

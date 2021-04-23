@@ -15,3 +15,12 @@ methods:
     Optional[botbuilder.ai.qna.qnamaker_options.QnAMakerOptions] = None, telemetry_properties:
     Optional[Dict[str, str]] = None, telemetry_metrics: Optional[Dict[str, float]]
     = None)'
+  parameters:
+  - name: context
+    isRequired: true
+  - name: options
+    defaultValue: None
+  - name: telemetry_properties
+    defaultValue: None
+  - name: telemetry_metrics
+    defaultValue: None

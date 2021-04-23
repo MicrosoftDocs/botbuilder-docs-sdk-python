@@ -24,12 +24,16 @@ methods:
     description: "The raw HTTP header in the format: \u2018Bearer [longString]\u2019"
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: credentials
     description: The user defined set of valid credentials, such as the AppId.
     isRequired: true
     types:
     - <xref:botframework.connector.auth.credential_provider.CredentialProvider>
+  - name: channel_id
+    isRequired: true
+  - name: auth_configuration
+    defaultValue: None
   return:
     description: A valid ClaimsIdentity.
 - uid: botframework.connector.auth.channel_validation.ChannelValidation.authenticate_channel_token_with_service_url
@@ -49,7 +53,7 @@ methods:
     description: "The raw HTTP header in the format: \u2018Bearer [longString]\u2019"
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: credentials
     description: The user defined set of valid credentials, such as the AppId.
     isRequired: true
@@ -59,13 +63,22 @@ methods:
     description: Claim value that must match in the identity.
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+  - name: channel_id
+    isRequired: true
+  - name: auth_configuration
+    defaultValue: None
   return:
     description: A valid ClaimsIdentity.
 - uid: botframework.connector.auth.channel_validation.ChannelValidation.validate_identity
   name: validate_identity
   signature: 'validate_identity(identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     credentials: botframework.connector.auth.credential_provider.CredentialProvider)'
+  parameters:
+  - name: identity
+    isRequired: true
+  - name: credentials
+    isRequired: true
 attributes:
 - uid: botframework.connector.auth.channel_validation.ChannelValidation.SERVICE_URL_CLAIM
   name: SERVICE_URL_CLAIM

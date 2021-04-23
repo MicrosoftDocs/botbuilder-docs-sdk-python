@@ -29,9 +29,15 @@ methods:
 - uid: botbuilder.dialogs.DialogContainer.create_child_context
   name: create_child_context
   signature: 'create_child_context(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
+  parameters:
+  - name: dialog_context
+    isRequired: true
 - uid: botbuilder.dialogs.DialogContainer.find_dialog
   name: find_dialog
   signature: 'find_dialog(dialog_id: str)'
+  parameters:
+  - name: dialog_id
+    isRequired: true
 - uid: botbuilder.dialogs.DialogContainer.get_internal_version
   name: get_internal_version
   summary: "GetInternalVersion - Returns internal version identifier for this container.\n\

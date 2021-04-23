@@ -14,8 +14,20 @@ methods:
   summary: Get active learning suggestions card.
   signature: 'get_qna_prompts_card(result: botbuilder.ai.qna.models.query_result.QueryResult,
     card_no_match_text: str)'
+  parameters:
+  - name: result
+    isRequired: true
+  - name: card_no_match_text
+    isRequired: true
 - uid: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder.get_suggestions_card
   name: get_suggestions_card
   summary: Get active learning suggestions card.
   signature: 'get_suggestions_card(suggestions: List[str], card_title: str, card_no_match:
     str)'
+  parameters:
+  - name: suggestions
+    isRequired: true
+  - name: card_title
+    isRequired: true
+  - name: card_no_match
+    isRequired: true

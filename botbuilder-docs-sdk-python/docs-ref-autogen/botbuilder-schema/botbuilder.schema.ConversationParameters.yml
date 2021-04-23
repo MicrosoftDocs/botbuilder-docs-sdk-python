@@ -14,28 +14,28 @@ constructor:
   - name: is_group
     description: IsGroup
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: bot
     description: The bot address for this conversation
     types:
-    - ChannelAccount
+    - <xref:botframework.connector.models.ChannelAccount.yml>
   - name: members
     description: Members to add to the conversation
     types:
-    - list[ChannelAccount]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ChannelAccount.yml>]'
   - name: topic_name
     description: (Optional) Topic of the conversation (if supported by
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: activity
     description: (Optional) When creating a new conversation, use this
     types:
-    - Activity
+    - <xref:botframework.connector.models.Activity.yml>
   - name: channel_data
     description: Channel specific payload for creating the
     types:
-    - object
+    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   - name: tenant_id
     description: (Optional) The tenant ID in which the conversation should be created
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

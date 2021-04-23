@@ -14,24 +14,24 @@ constructor:
   - name: type
     description: "Input type name. Possible values include: \u2018textInput\u2019,"
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: id
     description: Input Id. It must be unique per entire O365 connector card.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: is_required
     description: Define if this input is a required field. Default
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: title
     description: Input title that will be shown as the placeholder
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: value
     description: Default value for this input field
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: include_time
     description: Include time input field. Default value  is false
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'

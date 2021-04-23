@@ -23,10 +23,10 @@ methods:
     description: The dialog context for the current turn of the conversation
     isRequired: true
     types:
-    - '`DialogContext`'
+    - <xref:botbuilder.dialogs.prompts.DialogContext.yml>
   - name: options
     description: Optional, additional information to pass to the prompt being started
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:botbuilder.dialogs.prompts.PromptOptions>
   return:
@@ -49,11 +49,11 @@ methods:
     description: The dialog context for the current turn of the conversation
     isRequired: true
     types:
-    - '`DialogContext`'
+    - <xref:botbuilder.dialogs.prompts.DialogContext.yml>
   return:
     description: Dialog turn result
     types:
-    - '`DialogTurnResult`'
+    - <xref:botbuilder.dialogs.prompts.DialogTurnResult.yml>
   remarks: "If the task is successful, the result indicates whether the dialog is\
     \ still\nactive after the turn has been processed by the dialog.\nThe prompt generally\
     \ continues to receive the user\u2019s replies until it accepts the\nuser\u2019\
@@ -68,16 +68,16 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - '`TurnContext`'
+    - <xref:botbuilder.dialogs.prompts.TurnContext.yml>
   - name: code
     description: (Optional) Optional user entered code to validate.
-    isRequired: true
+    defaultValue: None
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   return:
     description: "A response that includes the user\u2019s token"
     types:
-    - '`TokenResponse`'
+    - <xref:botbuilder.dialogs.prompts.TokenResponse.yml>
   remarks: "If the task is successful and the user already has a token or the user\
     \ successfully signs in,\nthe result contains the user\u2019s token.\n"
 - uid: botbuilder.dialogs.prompts.OAuthPrompt.sign_out_user
@@ -89,7 +89,7 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - '`TurnContext`'
+    - <xref:botbuilder.dialogs.prompts.TurnContext.yml>
   return:
     description: A task representing the work queued to execute
   remarks: "If the task is successful and the user already has a token or the user\
@@ -117,11 +117,12 @@ attributes:
     \ in between turns.\nWhen calling the prompt from within a waterfall step, you\
     \ should use the token within the step\nfollowing the prompt and then let the\
     \ token go out of scope at the end of your function.\n\nWhen used with your bots\
-    \ `DialogSet`, you can simply add a new instance of the prompt as a named\ndialog\
-    \ using :meth`DialogSet.add()`.\nYou can then start the prompt from a waterfall\
-    \ step using either `DialogContext.begin()` or\n`DialogContext.prompt()`.\nThe\
-    \ user will be prompted to sign in as needed and their access token will be passed\
-    \ as an argument to\nthe callers next waterfall step.\n"
+    \ <xref:botbuilder.dialogs.prompts.DialogSet.yml>, you can simply add a new instance\
+    \ of the prompt as a named\ndialog using :meth`DialogSet.add()`.\nYou can then\
+    \ start the prompt from a waterfall step using either <xref:DialogContext.begin.yml>\
+    \ or\n<xref:DialogContext.prompt.yml>.\nThe user will be prompted to sign in as\
+    \ needed and their access token will be passed as an argument to\nthe callers\
+    \ next waterfall step.\n"
 - uid: botbuilder.dialogs.prompts.OAuthPrompt.PERSISTED_EXPIRES
   name: PERSISTED_EXPIRES
   signature: PERSISTED_EXPIRES = 'expires'

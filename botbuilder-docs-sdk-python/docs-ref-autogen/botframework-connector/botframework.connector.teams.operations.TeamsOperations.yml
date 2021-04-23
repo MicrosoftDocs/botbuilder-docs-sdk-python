@@ -28,35 +28,35 @@ methods:
     description: Teams meeting id
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: participant_id
     description: Teams meeting participant id
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: tenant_id
     description: Teams meeting tenant id
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
+    defaultValue: None
     types:
-    - dict
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
     description: returns the direct response alongside the
-    isRequired: true
+    defaultValue: 'False'
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: TeamsMeetingParticipant or ClientRawResponse if raw=true
     types:
-    - TeamsParticipantChannelAccount
-    - ClientRawResponse
+    - <xref:botframework.connector.teams.models.TeamsParticipantChannelAccount.yml>
+    - <xref:msrest.pipeline.ClientRawResponse.yml>
 - uid: botframework.connector.teams.operations.TeamsOperations.get_team_details
   name: get_team_details
   summary: 'Fetches details related to a team.
@@ -69,25 +69,25 @@ methods:
     description: Team Id
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - dict
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
     description: returns the direct response alongside the
     defaultValue: 'False'
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: TeamDetails or ClientRawResponse if raw=true
     types:
-    - TeamDetails
-    - ClientRawResponse
+    - <xref:botframework.connector.teams.models.TeamDetails.yml>
+    - <xref:msrest.pipeline.ClientRawResponse.yml>
 - uid: botframework.connector.teams.operations.TeamsOperations.get_teams_channels
   name: get_teams_channels
   summary: 'Fetches channel list for a given team.
@@ -100,25 +100,25 @@ methods:
     description: Team Id
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - dict
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
     description: returns the direct response alongside the
     defaultValue: 'False'
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: ConversationList or ClientRawResponse if raw=true
     types:
-    - ConversationList
-    - ClientRawResponse
+    - <xref:botframework.connector.teams.models.ConversationList.yml>
+    - <xref:msrest.pipeline.ClientRawResponse.yml>
 attributes:
 - uid: botframework.connector.teams.operations.TeamsOperations.models
   name: models

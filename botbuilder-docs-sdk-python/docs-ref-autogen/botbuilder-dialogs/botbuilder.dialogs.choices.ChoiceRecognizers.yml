@@ -23,3 +23,10 @@ methods:
   signature: 'recognize_choices(utterance: str, choices: List[Union[str, botbuilder.dialogs.choices.choice.Choice]],
     options: Optional[botbuilder.dialogs.choices.find_choices_options.FindChoicesOptions]
     = None)'
+  parameters:
+  - name: utterance
+    isRequired: true
+  - name: choices
+    isRequired: true
+  - name: options
+    defaultValue: None

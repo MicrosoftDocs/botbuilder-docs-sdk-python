@@ -8,12 +8,21 @@ functions:
   name: create_client
   signature: 'create_client(aisettings=None, telemetry_processor: Optional[botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor]
     = None)'
+  parameters:
+  - name: aisettings
+    defaultValue: None
+  - name: telemetry_processor
+    defaultValue: None
 - uid: botbuilder.applicationinsights.django.common.dummy_client
   name: dummy_client
   summary: "Creates a dummy channel so even if we\u2019re not logging telemetry, we\
     \ can still send\nalong the real object to things that depend on it to exist"
   signature: 'dummy_client(reason: str, telemetry_processor: Optional[botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor]
     = None)'
+  parameters:
+  - name: reason
+  - name: telemetry_processor
+    defaultValue: None
 - uid: botbuilder.applicationinsights.django.common.get_telemetry_client_with_processor
   name: get_telemetry_client_with_processor
   summary: Gets a telemetry client instance with a telemetry processor.
@@ -24,19 +33,20 @@ functions:
   - name: key
     description: instrumentation key
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: channel
     description: Telemetry channel
     types:
-    - TelemetryChannel
+    - <xref:botbuilder.applicationinsights.django.common.TelemetryChannel.yml>
   - name: telemetry_processor
     description: use an existing telemetry processor from caller.
+    defaultValue: None
     types:
     - <xref:botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor>
   return:
     description: a telemetry client with telemetry processor.
     types:
-    - TelemetryClient
+    - <xref:botbuilder.applicationinsights.django.common.TelemetryClient.yml>
 - uid: botbuilder.applicationinsights.django.common.load_settings
   name: load_settings
   signature: load_settings()

@@ -13,16 +13,17 @@ constructor:
   - name: id
     description: The id from the OAuthCard.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: connection_name
     description: The connection name.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: failure_detail
     description: The details of why the token exchange failed.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: properties
     description: Extension data for overflow of properties.
     types:
-    - dict[str, object]
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)[[str](https://docs.python.org/3.6/library/stdtypes.html#str),
+      [object](https://docs.python.org/3.6/library/functions.html#object)]'

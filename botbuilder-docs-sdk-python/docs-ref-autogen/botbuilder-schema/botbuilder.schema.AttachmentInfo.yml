@@ -13,12 +13,12 @@ constructor:
   - name: name
     description: Name of the attachment
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: type
     description: ContentType of the attachment
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: views
     description: attachment views
     types:
-    - list[AttachmentView]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.AttachmentView.yml>]'

@@ -21,7 +21,7 @@ remarks: 'When the prompt ends, it returns an object that represents the value i
   Use <xref:botbuilder.dialogs.DialogContext.prompt> or <xref:botbuilder.dialogs.DialogContext.begin_dialog>
   to start the prompt.
 
-  If you start a prompt from a `WaterfallStep` in a <xref:botbuilder.dialogs.WaterfallDialog>,
+  If you start a prompt from a <xref:botbuilder.dialogs.WaterfallStep.yml> in a <xref:botbuilder.dialogs.WaterfallDialog>,
   then the
 
   prompt result will be available in the next step of the waterfall.
@@ -43,7 +43,13 @@ methods:
     description: Id of the channel the prompt is being sent to
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+  - name: choices
+    isRequired: true
+  - name: style
+    isRequired: true
+  - name: options
+    defaultValue: None
   return:
     description: A task representing the asynchronous operation
   remarks: 'If the task is successful, the result contains the updated activity.
@@ -78,9 +84,9 @@ methods:
     - <xref:botbuilder.dialogs.DialogContext>
   - name: options
     description: Optional, additional information to pass to the prompt being started
-    isRequired: true
+    defaultValue: None
     types:
-    - Object
+    - <xref:botbuilder.dialogs.Object.yml>
   return:
     description: The dialog turn result
     types:
@@ -116,13 +122,13 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - '`botbuilder.core.TurnContext`'
+    - <xref:botbuilder.core.TurnContext.yml>
   - name: state
     description: Contains state for the current instance of the prompt on the dialog
       stack
     isRequired: true
     types:
-    - '`Dict`'
+    - <xref:botbuilder.dialogs.Dict.yml>
   - name: options
     description: A prompt options object constructed from:meth:*DialogContext.prompt()*
     isRequired: true
@@ -132,7 +138,7 @@ methods:
     description: Determines whether *prompt* or *retry_prompt* should be used
     isRequired: true
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   return:
     description: A task representing the asynchronous operation.
 - uid: botbuilder.dialogs.Prompt.on_recognize
@@ -146,13 +152,13 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - '`botbuilder.core.TurnContext`'
+    - <xref:botbuilder.core.TurnContext.yml>
   - name: state
     description: Contains state for the current instance of the prompt on the dialog
       stack
     isRequired: true
     types:
-    - '`Dict`'
+    - <xref:botbuilder.dialogs.Dict.yml>
   - name: options
     description: A prompt options object constructed from <xref:botbuilder.dialogs.DialogContext.prompt>
     isRequired: true
@@ -170,7 +176,7 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - '`botbuilder.core.TurnContext`'
+    - <xref:botbuilder.core.TurnContext.yml>
   - name: instance
     description: The instance of the dialog on the stack
     isRequired: true
@@ -198,7 +204,7 @@ methods:
     description: Optional, value returned from the previous dialog on the stack.
     isRequired: true
     types:
-    - object
+    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   return:
     description: The dialog turn result
     types:

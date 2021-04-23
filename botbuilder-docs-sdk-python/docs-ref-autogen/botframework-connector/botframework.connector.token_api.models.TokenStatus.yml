@@ -14,16 +14,16 @@ constructor:
   - name: channel_id
     description: The channelId of the token status pertains to
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: connection_name
     description: The name of the connection the token status
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: has_token
     description: True if a token is stored for this ConnectionName
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: service_provider_display_name
     description: The display name of the service
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

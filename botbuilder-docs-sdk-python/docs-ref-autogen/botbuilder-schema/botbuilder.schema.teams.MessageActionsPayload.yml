@@ -19,68 +19,68 @@ constructor:
   - name: id
     description: Unique id of the message.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: reply_to_id
     description: Id of the parent/root message of the thread.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: message_type
     description: Type of message - automatically set to message.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: created_date_time
     description: Timestamp of when the message was created.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: last_modified_date_time
     description: Timestamp of when the message was edited
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: deleted
     description: Indicates whether a message has been soft deleted.
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: subject
     description: Subject line of the message.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: summary
     description: Summary text of the message that could be used for
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: importance
     description: 'The importance of the message. Possible values include:'
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: locale
     description: Locale of the message set by the client.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: link_to_message
     description: Link back to the message.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: from_property
     description: Sender of the message.
     types:
-    - MessageActionsPayloadFrom
+    - <xref:botframework.connector.teams.models.MessageActionsPayloadFrom.yml>
   - name: body
     description: Plaintext/HTML representation of the content of the message.
     types:
-    - MessageActionsPayloadBody
+    - <xref:botframework.connector.teams.models.MessageActionsPayloadBody.yml>
   - name: attachment_layout
     description: How the attachment(s) are displayed in the
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: attachments
     description: Attachments in the message - card, image, file, etc.
     types:
-    - list[MessageActionsPayloadAttachment]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.MessageActionsPayloadAttachment.yml>]'
   - name: mentions
     description: List of entities mentioned in the message.
     types:
-    - list[MessageActionsPayloadMention]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.MessageActionsPayloadMention.yml>]'
   - name: reactions
     description: Reactions for the message.
     types:
-    - list[MessageActionsPayloadReaction]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.MessageActionsPayloadReaction.yml>]'

@@ -13,15 +13,15 @@ constructor:
   - name: command_id
     description: Id of the command assigned by Bot
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: parameters
     description: Parameters for the query
     types:
-    - list[MessagingExtensionParameter]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.MessagingExtensionParameter.yml>]'
   - name: query_options
     types:
-    - MessagingExtensionQueryOptions
+    - <xref:botframework.connector.teams.models.MessagingExtensionQueryOptions.yml>
   - name: state
     description: State parameter passed back to the bot after
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

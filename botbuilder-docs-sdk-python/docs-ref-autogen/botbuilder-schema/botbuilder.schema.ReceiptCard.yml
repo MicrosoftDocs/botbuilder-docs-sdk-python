@@ -14,32 +14,32 @@ constructor:
   - name: title
     description: Title of the card
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: facts
     description: Array of Fact objects
     types:
-    - list[Fact]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.Fact.yml>]'
   - name: items
     description: Array of Receipt Items
     types:
-    - list[ReceiptItem]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ReceiptItem.yml>]'
   - name: tap
     description: This action will be activated when user taps on the card
     types:
-    - CardAction
+    - <xref:botframework.connector.models.CardAction.yml>
   - name: total
     description: Total amount of money paid (or to be paid)
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: tax
     description: Total amount of tax paid (or to be paid)
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: vat
     description: Total amount of VAT paid (or to be paid)
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: buttons
     description: Set of actions applicable to the current card
     types:
-    - list[CardAction]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.CardAction.yml>]'

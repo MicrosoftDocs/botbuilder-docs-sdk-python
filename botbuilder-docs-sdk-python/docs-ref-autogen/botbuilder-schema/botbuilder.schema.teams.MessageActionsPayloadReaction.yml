@@ -13,12 +13,12 @@ constructor:
   - name: reaction_type
     description: The type of reaction given to the message. Possible
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: created_date_time
     description: Timestamp of when the user reacted to the
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: user
     description: The user with which the reaction is associated.
     types:
-    - MessageActionsPayloadFrom
+    - <xref:botframework.connector.teams.models.MessageActionsPayloadFrom.yml>

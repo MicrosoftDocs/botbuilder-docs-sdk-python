@@ -13,16 +13,16 @@ constructor:
   - name: container_name
     description: Name of the Blob container.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: account_name
     description: Name of the Blob Storage account. Required if not using connection_string.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: account_key
     description: Key of the Blob Storage account. Required if not using connection_string.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: connection_string
     description: Connection string of the Blob Storage account.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

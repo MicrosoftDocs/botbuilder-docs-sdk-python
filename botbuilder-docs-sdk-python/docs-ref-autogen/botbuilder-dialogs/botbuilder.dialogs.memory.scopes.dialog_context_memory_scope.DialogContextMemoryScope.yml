@@ -14,6 +14,14 @@ methods:
     \ <see cref=\u201DDialogContext\u201D/> object for this turn.</param>\n<returns>Memory\
     \ for the scope.</returns>"
   signature: 'get_memory(dialog_context: DialogContext)'
+  parameters:
+  - name: dialog_context
+    isRequired: true
 - uid: botbuilder.dialogs.memory.scopes.dialog_context_memory_scope.DialogContextMemoryScope.set_memory
   name: set_memory
   signature: 'set_memory(dialog_context: DialogContext, memory: object)'
+  parameters:
+  - name: dialog_context
+    isRequired: true
+  - name: memory
+    isRequired: true

@@ -16,3 +16,14 @@ methods:
   signature: 'post_activity_to_skill(from_bot_id: str, to_skill: botbuilder.core.skills.bot_framework_skill.BotFrameworkSkill,
     service_url: str, activity: botbuilder.schema._models_py3.Activity, originating_audience:
     Optional[str] = None)'
+  parameters:
+  - name: from_bot_id
+    isRequired: true
+  - name: to_skill
+    isRequired: true
+  - name: service_url
+    isRequired: true
+  - name: activity
+    isRequired: true
+  - name: originating_audience
+    defaultValue: None

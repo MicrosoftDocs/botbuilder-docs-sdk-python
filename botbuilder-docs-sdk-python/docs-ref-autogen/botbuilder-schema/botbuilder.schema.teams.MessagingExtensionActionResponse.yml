@@ -13,11 +13,11 @@ constructor:
   - name: task
     description: The JSON for the Adaptive card to appear in the task module.
     types:
-    - TaskModuleResponseBase
+    - <xref:botframework.connector.teams.models.TaskModuleResponseBase.yml>
   - name: compose_extension
     types:
-    - MessagingExtensionResult
+    - <xref:botframework.connector.teams.models.MessagingExtensionResult.yml>
   - name: cache_info
     description: CacheInfo for this MessagingExtensionActionResponse.
     types:
-    - CacheInfo
+    - <xref:botframework.connector.teams.models.CacheInfo.yml>

@@ -71,25 +71,25 @@ methods:
     description: Parameters to create the conversation from
     isRequired: true
     types:
-    - ConversationParameters
+    - <xref:botframework.connector.models.ConversationParameters.yml>
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - dict
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
     description: returns the direct response alongside the
     isRequired: true
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: ConversationResourceResponse or ClientRawResponse if raw=true
     types:
-    - ConversationResourceResponse
-    - ClientRawResponse
+    - <xref:botframework.connector.models.ConversationResourceResponse.yml>
+    - <xref:msrest.pipeline.ClientRawResponse.yml>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.delete_activity
   name: delete_activity
   summary: 'DeleteActivity.
@@ -107,30 +107,30 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: activity_id
     description: activityId to delete
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - dict
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
     description: returns the direct response alongside the
     isRequired: true
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: None or ClientRawResponse if raw=true
     types:
-    - None
-    - ClientRawResponse
+    - '[None](https://docs.python.org/3.6/library/constants.html#None)'
+    - <xref:msrest.pipeline.ClientRawResponse.yml>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.delete_conversation_member
   name: delete_conversation_member
   summary: 'DeleteConversationMember.
@@ -152,30 +152,30 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: member_id
     description: ID of the member to delete from this conversation
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - dict
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
     description: returns the direct response alongside the
     isRequired: true
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: None or ClientRawResponse if raw=true
     types:
-    - None
-    - ClientRawResponse
+    - '[None](https://docs.python.org/3.6/library/constants.html#None)'
+    - <xref:msrest.pipeline.ClientRawResponse.yml>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.get_activity_members
   name: get_activity_members
   summary: 'GetActivityMembers.
@@ -195,30 +195,30 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: activity_id
     description: Activity ID
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - dict
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
     description: returns the direct response alongside the
     isRequired: true
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: list or ClientRawResponse if raw=true
     types:
-    - list[ChannelAccount]
-    - ClientRawResponse
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ChannelAccount.yml>]'
+    - <xref:msrest.pipeline.ClientRawResponse.yml>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_member
   name: get_conversation_member
   summary: 'GetConversationMember.
@@ -236,30 +236,30 @@ methods:
     description: Conversation Id
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: member_id
     description: Member Id
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - dict
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
     description: returns the direct response alongside the
     defaultValue: 'False'
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: list or ClientRawResponse if raw=true
     types:
-    - list[ChannelAccount]
-    - ClientRawResponse
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ChannelAccount.yml>]'
+    - <xref:msrest.pipeline.ClientRawResponse.yml>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_members
   name: get_conversation_members
   summary: 'GetConversationMembers.
@@ -277,25 +277,25 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - dict
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
     description: returns the direct response alongside the
     isRequired: true
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: list or ClientRawResponse if raw=true
     types:
-    - list[ChannelAccount]
-    - ClientRawResponse
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ChannelAccount.yml>]'
+    - <xref:msrest.pipeline.ClientRawResponse.yml>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_paged_members
   name: get_conversation_paged_members
   summary: 'GetConversationPagedMembers.
@@ -335,35 +335,35 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: page_size
     description: Suggested page size
-    isRequired: true
+    defaultValue: None
     types:
-    - int
+    - '[int](https://docs.python.org/3.6/library/functions.html#int)'
   - name: continuation_token
     description: Continuation Token
-    isRequired: true
+    defaultValue: None
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - dict
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
     description: returns the direct response alongside the
     isRequired: true
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: PagedMembersResult or ClientRawResponse if raw=true
     types:
-    - PagedMembersResult
-    - ClientRawResponse
+    - <xref:botframework.connector.models.PagedMembersResult.yml>
+    - <xref:msrest.pipeline.ClientRawResponse.yml>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversations
   name: get_conversations
   summary: 'GetConversations.
@@ -393,27 +393,27 @@ methods:
   parameters:
   - name: continuation_token
     description: skip or continuation token
-    isRequired: true
+    defaultValue: None
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - dict
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
     description: returns the direct response alongside the
     isRequired: true
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: ConversationsResult or ClientRawResponse if raw=true
     types:
-    - ConversationsResult
-    - ClientRawResponse
+    - <xref:botframework.connector.models.ConversationsResult.yml>
+    - <xref:msrest.pipeline.ClientRawResponse.yml>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.get_teams_conversation_paged_members
   name: get_teams_conversation_paged_members
   summary: 'GetTeamsConversationPagedMembers.
@@ -453,35 +453,35 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: page_size
     description: Suggested page size
     defaultValue: None
     types:
-    - int
+    - '[int](https://docs.python.org/3.6/library/functions.html#int)'
   - name: continuation_token
     description: Continuation Token
     defaultValue: None
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - dict
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
     description: returns the direct response alongside the
     defaultValue: 'False'
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: PagedMembersResult or ClientRawResponse if raw=true
     types:
-    - PagedMembersResult
-    - ClientRawResponse
+    - <xref:botframework.connector.models.PagedMembersResult.yml>
+    - <xref:msrest.pipeline.ClientRawResponse.yml>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.reply_to_activity
   name: reply_to_activity
   summary: 'ReplyToActivity.
@@ -517,35 +517,35 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: activity_id
     description: activityId the reply is to (OPTIONAL)
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: activity
     description: Activity to send
     isRequired: true
     types:
-    - Activity
+    - <xref:botframework.connector.models.Activity.yml>
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - dict
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
     description: returns the direct response alongside the
     isRequired: true
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: ResourceResponse or ClientRawResponse if raw=true
     types:
-    - ResourceResponse
-    - ClientRawResponse
+    - <xref:botframework.connector.models.ResourceResponse.yml>
+    - <xref:msrest.pipeline.ClientRawResponse.yml>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.send_conversation_history
   name: send_conversation_history
   summary: 'SendConversationHistory.
@@ -569,30 +569,30 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: activities
     description: A collection of Activities that conforms to the
-    isRequired: true
+    defaultValue: None
     types:
-    - list[Activity]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.Activity.yml>]'
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - dict
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
     description: returns the direct response alongside the
     isRequired: true
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: ResourceResponse or ClientRawResponse if raw=true
     types:
-    - ResourceResponse
-    - ClientRawResponse
+    - <xref:botframework.connector.models.ResourceResponse.yml>
+    - <xref:msrest.pipeline.ClientRawResponse.yml>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.send_to_conversation
   name: send_to_conversation
   summary: 'SendToConversation.
@@ -630,30 +630,30 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: activity
     description: Activity to send
     isRequired: true
     types:
-    - Activity
+    - <xref:botframework.connector.models.Activity.yml>
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - dict
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
     description: returns the direct response alongside the
     isRequired: true
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: ResourceResponse or ClientRawResponse if raw=true
     types:
-    - ResourceResponse
-    - ClientRawResponse
+    - <xref:botframework.connector.models.ResourceResponse.yml>
+    - <xref:msrest.pipeline.ClientRawResponse.yml>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.update_activity
   name: update_activity
   summary: "UpdateActivity.\n\nEdit an existing activity.\nSome channels allow you\
@@ -667,35 +667,35 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: activity_id
     description: activityId to update
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: activity
     description: replacement Activity
     isRequired: true
     types:
-    - Activity
+    - <xref:botframework.connector.models.Activity.yml>
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - dict
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
     description: returns the direct response alongside the
     isRequired: true
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: ResourceResponse or ClientRawResponse if raw=true
     types:
-    - ResourceResponse
-    - ClientRawResponse
+    - <xref:botframework.connector.models.ResourceResponse.yml>
+    - <xref:msrest.pipeline.ClientRawResponse.yml>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.upload_attachment
   name: upload_attachment
   summary: "UploadAttachment.\n\nUpload an attachment directly into a channel\u2019\
@@ -709,30 +709,30 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: attachment_upload
     description: Attachment data
     isRequired: true
     types:
-    - AttachmentData
+    - <xref:botframework.connector.models.AttachmentData.yml>
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - dict
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
     description: returns the direct response alongside the
     isRequired: true
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: ResourceResponse or ClientRawResponse if raw=true
     types:
-    - ResourceResponse
-    - ClientRawResponse
+    - <xref:botframework.connector.models.ResourceResponse.yml>
+    - <xref:msrest.pipeline.ClientRawResponse.yml>
 attributes:
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.models
   name: models

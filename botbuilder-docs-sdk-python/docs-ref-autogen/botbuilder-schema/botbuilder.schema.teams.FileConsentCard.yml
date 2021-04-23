@@ -13,16 +13,16 @@ constructor:
   - name: description
     description: File description.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: size_in_bytes
     description: Size of the file to be uploaded in Bytes.
     types:
-    - long
+    - <xref:botbuilder.schema.teams.long.yml>
   - name: accept_context
     description: Context sent back to the Bot if user consented to
     types:
-    - object
+    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   - name: decline_context
     description: Context sent back to the Bot if user declined.
     types:
-    - object
+    - '[object](https://docs.python.org/3.6/library/functions.html#object)'

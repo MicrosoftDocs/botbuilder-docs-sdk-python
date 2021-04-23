@@ -14,32 +14,32 @@ constructor:
   - name: type
     description: The type of action implemented by this button. Possible
     types:
-    - str or ActionTypes
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.ActionTypes.yml>'
   - name: title
     description: Text description which appears on the button
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: image
     description: Image URL which will appear on the button, next to text
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: text
     description: Text for this action
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: display_text
     description: (Optional) text to display in the chat feed if the
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: value
     description: Supplementary parameter for action. Content of this property
     types:
-    - object
+    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   - name: channel_data
     description: Channel-specific data associated with this action
     types:
-    - object
+    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   - name: image_alt_text
     description: Alternate image text to be used in place of the *image* field
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

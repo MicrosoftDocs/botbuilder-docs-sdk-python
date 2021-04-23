@@ -16,6 +16,9 @@ methods:
 
     :return:'
   signature: 'delete(turn_context: botbuilder.core.turn_context.TurnContext)'
+  parameters:
+  - name: turn_context
+    isRequired: true
 - uid: botbuilder.core.StatePropertyAccessor.get
   name: get
   summary: 'Get the property value from the source
@@ -26,6 +29,11 @@ methods:
 
     value to be returned if no value has been set.'
   signature: 'get(turn_context: botbuilder.core.turn_context.TurnContext, default_value_or_factory=None)'
+  parameters:
+  - name: turn_context
+    isRequired: true
+  - name: default_value_or_factory
+    defaultValue: None
 - uid: botbuilder.core.StatePropertyAccessor.set
   name: set
   summary: 'Set the property value on the source.
@@ -36,3 +44,8 @@ methods:
 
     :return:'
   signature: 'set(turn_context: botbuilder.core.turn_context.TurnContext, value)'
+  parameters:
+  - name: turn_context
+    isRequired: true
+  - name: value
+    isRequired: true

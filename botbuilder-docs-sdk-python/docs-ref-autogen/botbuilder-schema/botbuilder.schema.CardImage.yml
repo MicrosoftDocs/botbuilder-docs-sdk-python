@@ -13,12 +13,12 @@ constructor:
   - name: url
     description: URL thumbnail image for major content property
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: alt
     description: Image description intended for screen readers
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: tap
     description: Action assigned to specific Attachment
     types:
-    - CardAction
+    - <xref:botframework.connector.models.CardAction.yml>

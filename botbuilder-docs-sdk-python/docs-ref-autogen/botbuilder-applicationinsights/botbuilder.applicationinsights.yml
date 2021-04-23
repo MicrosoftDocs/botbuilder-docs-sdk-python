@@ -16,15 +16,15 @@ functions:
   - name: data
     description: Data from Application Insights
     types:
-    - telemetry item
+    - <xref:botbuilder.applicationinsights.telemetry item.yml>
   - name: context
     description: Context from Application Insights
     types:
-    - context object
+    - <xref:botbuilder.applicationinsights.context object.yml>
   return:
     description: determines if the event is passed to the server (False = Filtered).
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
 - uid: botbuilder.applicationinsights.bot_telemetry_processor
   name: bot_telemetry_processor
   summary: 'Bot Telemetry Processor as a method for backward compatibility. Refer
@@ -37,15 +37,15 @@ functions:
   - name: data
     description: Data from Application Insights
     types:
-    - telemetry item
+    - <xref:botbuilder.applicationinsights.telemetry item.yml>
   - name: context
     description: Context from Application Insights
     types:
-    - context object
+    - <xref:botbuilder.applicationinsights.context object.yml>
   return:
     description: determines if the event is passed to the server (False = Filtered).
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
 classes:
 - botbuilder.applicationinsights.ApplicationInsightsTelemetryClient
 - botbuilder.applicationinsights.BotTelemetryProcessor

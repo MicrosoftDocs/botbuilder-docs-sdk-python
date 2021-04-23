@@ -18,12 +18,30 @@ methods:
   signature: 'for_channel(channel_id: str, choices: List[Union[str, botbuilder.dialogs.choices.choice.Choice]],
     text: Optional[str] = None, speak: Optional[str] = None, options: Optional[botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions]
     = None)'
+  parameters:
+  - name: channel_id
+    isRequired: true
+  - name: choices
+    isRequired: true
+  - name: text
+    defaultValue: None
+  - name: speak
+    defaultValue: None
+  - name: options
+    defaultValue: None
 - uid: botbuilder.dialogs.choices.choice_factory.ChoiceFactory.hero_card
   name: hero_card
   summary: "Creates a message activity that includes a lsit of coices that have been\
     \ added as *HeroCard*\u2019s"
   signature: 'hero_card(choices: List[Union[str, botbuilder.dialogs.choices.choice.Choice]],
     text: Optional[str] = None, speak: Optional[str] = None)'
+  parameters:
+  - name: choices
+    isRequired: true
+  - name: text
+    defaultValue: None
+  - name: speak
+    defaultValue: None
 - uid: botbuilder.dialogs.choices.choice_factory.ChoiceFactory.inline
   name: inline
   summary: 'Creates a message activity that includes a list of choices formatted as
@@ -40,6 +58,15 @@ methods:
   signature: 'inline(choices: List[Union[str, botbuilder.dialogs.choices.choice.Choice]],
     text: Optional[str] = None, speak: Optional[str] = None, options: Optional[botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions]
     = None)'
+  parameters:
+  - name: choices
+    isRequired: true
+  - name: text
+    defaultValue: None
+  - name: speak
+    defaultValue: None
+  - name: options
+    defaultValue: None
 - uid: botbuilder.dialogs.choices.choice_factory.ChoiceFactory.list_style
   name: list_style
   summary: 'Creates a message activity that includes a list of choices formatted as
@@ -59,9 +86,25 @@ methods:
   signature: 'list_style(choices: List[Union[str, botbuilder.dialogs.choices.choice.Choice]],
     text: Optional[str] = None, speak: Optional[str] = None, options: Optional[botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions]
     = None)'
+  parameters:
+  - name: choices
+    isRequired: true
+  - name: text
+    defaultValue: None
+  - name: speak
+    defaultValue: None
+  - name: options
+    defaultValue: None
 - uid: botbuilder.dialogs.choices.choice_factory.ChoiceFactory.suggested_action
   name: suggested_action
   summary: Creates a message activity that includes a list of choices that have been
     added as suggested actions.
   signature: 'suggested_action(choices: List[botbuilder.dialogs.choices.choice.Choice],
     text: Optional[str] = None, speak: Optional[str] = None)'
+  parameters:
+  - name: choices
+    isRequired: true
+  - name: text
+    defaultValue: None
+  - name: speak
+    defaultValue: None

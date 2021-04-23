@@ -14,24 +14,24 @@ constructor:
   - name: title
     description: Title of the item
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: text
     description: Text for the card
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: summary
     description: Summary for the card
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: theme_color
     description: Theme color for the card
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: sections
     description: Set of sections for the current card
     types:
-    - list[O365ConnectorCardSection]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.O365ConnectorCardSection.yml>]'
   - name: potential_action
     description: Set of actions for the current card
     types:
-    - list[O365ConnectorCardActionBase]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.O365ConnectorCardActionBase.yml>]'

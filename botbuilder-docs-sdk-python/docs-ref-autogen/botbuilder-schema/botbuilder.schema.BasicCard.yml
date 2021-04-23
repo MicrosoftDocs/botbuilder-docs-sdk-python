@@ -13,24 +13,24 @@ constructor:
   - name: title
     description: Title of the card
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: subtitle
     description: Subtitle of the card
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: text
     description: Text for the card
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: images
     description: Array of images for the card
     types:
-    - list[CardImage]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.CardImage.yml>]'
   - name: buttons
     description: Set of actions applicable to the current card
     types:
-    - list[CardAction]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.CardAction.yml>]'
   - name: tap
     description: This action will be activated when user taps on the card
     types:
-    - CardAction
+    - <xref:botframework.connector.models.CardAction.yml>

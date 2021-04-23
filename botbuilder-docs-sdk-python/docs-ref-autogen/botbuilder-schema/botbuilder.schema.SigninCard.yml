@@ -12,8 +12,8 @@ constructor:
   - name: text
     description: Text for signin request
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: buttons
     description: Action to use to perform signin
     types:
-    - list[CardAction]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.CardAction.yml>]'

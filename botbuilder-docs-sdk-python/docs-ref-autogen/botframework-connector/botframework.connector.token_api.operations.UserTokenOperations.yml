@@ -37,41 +37,41 @@ methods:
   - name: user_id
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: connection_name
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: channel_id
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: uri
     defaultValue: None
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: token
     defaultValue: None
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - dict
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
     description: returns the direct response alongside the
     defaultValue: 'False'
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: object or ClientRawResponse if raw=true
     types:
-    - object
-    - ClientRawResponse
+    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
+    - <xref:msrest.pipeline.ClientRawResponse.yml>
 - uid: botframework.connector.token_api.operations.UserTokenOperations.get_aad_tokens
   name: get_aad_tokens
   signature: get_aad_tokens(user_id, connection_name, channel_id=None, resource_urls=None,
@@ -80,37 +80,38 @@ methods:
   - name: user_id
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: connection_name
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: channel_id
     defaultValue: None
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: resource_urls
     defaultValue: None
     types:
-    - list[str]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[[str](https://docs.python.org/3.6/library/stdtypes.html#str)]'
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - dict
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
     description: returns the direct response alongside the
     defaultValue: 'False'
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: dict or ClientRawResponse if raw=true
     types:
-    - dict[str, TokenResponse]
-    - ClientRawResponse
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)[[str](https://docs.python.org/3.6/library/stdtypes.html#str),
+      <xref:botframework.tokenapi.models.TokenResponse.yml>]'
+    - <xref:msrest.pipeline.ClientRawResponse.yml>
 - uid: botframework.connector.token_api.operations.UserTokenOperations.get_token
   name: get_token
   signature: get_token(user_id, connection_name, channel_id=None, code=None, custom_headers=None,
@@ -119,37 +120,37 @@ methods:
   - name: user_id
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: connection_name
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: channel_id
     defaultValue: None
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: code
     defaultValue: None
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - dict
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
     description: returns the direct response alongside the
     defaultValue: 'False'
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: TokenResponse or ClientRawResponse if raw=true
     types:
-    - TokenResponse
-    - ClientRawResponse
+    - <xref:botframework.tokenapi.models.TokenResponse.yml>
+    - <xref:msrest.pipeline.ClientRawResponse.yml>
 - uid: botframework.connector.token_api.operations.UserTokenOperations.get_token_status
   name: get_token_status
   signature: get_token_status(user_id, channel_id=None, include=None, custom_headers=None,
@@ -158,33 +159,33 @@ methods:
   - name: user_id
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: channel_id
     defaultValue: None
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: include
     defaultValue: None
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - dict
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
     description: returns the direct response alongside the
     defaultValue: 'False'
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: list or ClientRawResponse if raw=true
     types:
-    - list[TokenStatus]
-    - ClientRawResponse
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.tokenapi.models.TokenStatus.yml>]'
+    - <xref:msrest.pipeline.ClientRawResponse.yml>
 - uid: botframework.connector.token_api.operations.UserTokenOperations.sign_out
   name: sign_out
   signature: sign_out(user_id, connection_name=None, channel_id=None, custom_headers=None,
@@ -193,33 +194,33 @@ methods:
   - name: user_id
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: connection_name
     defaultValue: None
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: channel_id
     defaultValue: None
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - dict
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
     description: returns the direct response alongside the
     defaultValue: 'False'
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: object or ClientRawResponse if raw=true
     types:
-    - object
-    - ClientRawResponse
+    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
+    - <xref:msrest.pipeline.ClientRawResponse.yml>
 attributes:
 - uid: botframework.connector.token_api.operations.UserTokenOperations.models
   name: models

@@ -14,28 +14,28 @@ constructor:
   - name: activity_id
     description: (Optional) ID of the activity to refer to
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: user
     description: (Optional) User participating in this conversation
     types:
-    - ChannelAccount
+    - <xref:botframework.connector.models.ChannelAccount.yml>
   - name: bot
     description: Bot participating in this conversation
     types:
-    - ChannelAccount
+    - <xref:botframework.connector.models.ChannelAccount.yml>
   - name: conversation
     description: Conversation reference
     types:
-    - ConversationAccount
+    - <xref:botframework.connector.models.ConversationAccount.yml>
   - name: channel_id
     description: Channel ID
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: locale
     description: A locale name for the contents of the text field.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: service_url
     description: Service endpoint where operations concerning the
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

@@ -38,35 +38,36 @@ methods:
     description: attachment id
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: view_id
     description: View id from attachmentInfo
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - dict
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
     description: returns the direct response alongside the
     isRequired: true
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: callback
     description: When specified, will be called with each chunk of
     isRequired: true
     types:
-    - Callable[Bytes, response=None]
+    - <xref:botframework.connector.aio.operations_async.Callable.yml>[<xref:botframework.connector.aio.operations_async.Bytes.yml>,
+      <xref:botframework.connector.aio.operations_async.response=None.yml>]
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: object or ClientRawResponse if raw=true
     types:
-    - Generator
-    - ClientRawResponse
+    - <xref:botframework.connector.aio.operations_async.Generator.yml>
+    - <xref:msrest.pipeline.ClientRawResponse.yml>
 - uid: botframework.connector.aio.operations_async.AttachmentsOperations.get_attachment_info
   name: get_attachment_info
   summary: 'GetAttachmentInfo.
@@ -80,25 +81,25 @@ methods:
     description: attachment id
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - dict
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
   - name: raw
     description: returns the direct response alongside the
     isRequired: true
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: operation_config
     description: '*Operation configuration'
     isRequired: true
   return:
     description: AttachmentInfo or ClientRawResponse if raw=true
     types:
-    - AttachmentInfo
-    - ClientRawResponse
+    - <xref:botframework.connector.models.AttachmentInfo.yml>
+    - <xref:msrest.pipeline.ClientRawResponse.yml>
 attributes:
 - uid: botframework.connector.aio.operations_async.AttachmentsOperations.models
   name: models

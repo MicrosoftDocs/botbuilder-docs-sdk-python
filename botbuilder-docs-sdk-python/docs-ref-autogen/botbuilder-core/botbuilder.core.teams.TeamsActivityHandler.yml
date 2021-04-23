@@ -162,6 +162,11 @@ methods:
     activity sent when the user acts on a file consent card.'
   signature: 'on_teams_file_consent(turn_context: botbuilder.core.turn_context.TurnContext,
     file_consent_card_response: botbuilder.schema.teams._models_py3.FileConsentCardResponse)'
+  parameters:
+  - name: turn_context
+    isRequired: true
+  - name: file_consent_card_response
+    isRequired: true
   return:
     description: An InvokeResponse depending on the action of the file consent card.
 - uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_file_consent_accept
@@ -172,6 +177,11 @@ methods:
     activity sent when the user accepts a file consent card.'
   signature: 'on_teams_file_consent_accept(turn_context: botbuilder.core.turn_context.TurnContext,
     file_consent_card_response: botbuilder.schema.teams._models_py3.FileConsentCardResponse)'
+  parameters:
+  - name: turn_context
+    isRequired: true
+  - name: file_consent_card_response
+    isRequired: true
   return:
     description: A task that represents the work queued to execute.
 - uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_file_consent_decline
@@ -182,6 +192,11 @@ methods:
     activity sent when the user declines a file consent card.'
   signature: 'on_teams_file_consent_decline(turn_context: botbuilder.core.turn_context.TurnContext,
     file_consent_card_response: botbuilder.schema.teams._models_py3.FileConsentCardResponse)'
+  parameters:
+  - name: turn_context
+    isRequired: true
+  - name: file_consent_card_response
+    isRequired: true
   return:
     description: A task that represents the work queued to execute.
 - uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_members_added
@@ -192,6 +207,13 @@ methods:
     \ representing the team.\n:param turn_context: A context object for this turn."
   signature: 'on_teams_members_added(teams_members_added: [<class ''botbuilder.schema.teams._models_py3.TeamsChannelAccount''>],
     team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
+  parameters:
+  - name: teams_members_added
+    isRequired: true
+  - name: team_info
+    isRequired: true
+  - name: turn_context
+    isRequired: true
   return:
     description: A task that represents the work queued to execute.
 - uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_members_added_dispatch
@@ -203,6 +225,13 @@ methods:
     :param turn_context: A context object for this turn."
   signature: 'on_teams_members_added_dispatch(members_added: [<class ''botbuilder.schema._models_py3.ChannelAccount''>],
     team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
+  parameters:
+  - name: members_added
+    isRequired: true
+  - name: team_info
+    isRequired: true
+  - name: turn_context
+    isRequired: true
   return:
     description: A task that represents the work queued to execute.
 - uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_members_removed
@@ -214,6 +243,13 @@ methods:
     \ turn."
   signature: 'on_teams_members_removed(teams_members_removed: [<class ''botbuilder.schema.teams._models_py3.TeamsChannelAccount''>],
     team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
+  parameters:
+  - name: teams_members_removed
+    isRequired: true
+  - name: team_info
+    isRequired: true
+  - name: turn_context
+    isRequired: true
   return:
     description: A task that represents the work queued to execute.
 - uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_members_removed_dispatch
@@ -225,6 +261,13 @@ methods:
     \ the team.\n:param turn_context: A context object for this turn."
   signature: 'on_teams_members_removed_dispatch(members_removed: [<class ''botbuilder.schema._models_py3.ChannelAccount''>],
     team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
+  parameters:
+  - name: members_removed
+    isRequired: true
+  - name: team_info
+    isRequired: true
+  - name: turn_context
+    isRequired: true
   return:
     description: A task that represents the work queued to execute.
 - uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_messaging_extension_bot_message_preview_edit
@@ -395,6 +438,9 @@ methods:
 - uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_signin_token_exchange
   name: on_teams_signin_token_exchange
   signature: 'on_teams_signin_token_exchange(turn_context: botbuilder.core.turn_context.TurnContext)'
+  parameters:
+  - name: turn_context
+    isRequired: true
 - uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_signin_verify_state
   name: on_teams_signin_verify_state
   summary: Invoked when a signIn verify state activity is received from the connector.

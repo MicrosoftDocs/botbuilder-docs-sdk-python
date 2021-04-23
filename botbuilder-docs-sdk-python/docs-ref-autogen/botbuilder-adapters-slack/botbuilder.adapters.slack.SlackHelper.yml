@@ -17,7 +17,7 @@ methods:
     description: A BotBuilder Activity object.
     isRequired: true
     types:
-    - '`botbuilder.schema.Activity`'
+    - <xref:botbuilder.schema.Activity.yml>
   return:
     description: 'A Slack message object with {text, attachments, channel, thread
       ts} and any fields found in
@@ -44,7 +44,7 @@ methods:
   return:
     description: An activity containing the event data.
     types:
-    - '`botbuilder.schema.Activity`'
+    - <xref:botbuilder.schema.Activity.yml>
 - uid: botbuilder.adapters.slack.SlackHelper.deserialize_body
   name: deserialize_body
   summary: "Deserializes the request\u2019s body as a SlackRequestBody object."
@@ -54,12 +54,12 @@ methods:
     description: The content type of the body.
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: request_body
     description: The body of the request.
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   return:
     description: A SlackRequestBody object.
     types:
@@ -83,7 +83,7 @@ methods:
   return:
     description: An activity containing the event data.
     types:
-    - '`botbuilder.schema.Activity`'
+    - <xref:botbuilder.schema.Activity.yml>
 - uid: botbuilder.adapters.slack.SlackHelper.payload_to_activity
   name: payload_to_activity
   summary: Creates an activity based on the Slack event payload.
@@ -97,7 +97,7 @@ methods:
   return:
     description: An activity containing the event data.
     types:
-    - '`botbuilder.schema.Activity`'
+    - <xref:botbuilder.schema.Activity.yml>
 - uid: botbuilder.adapters.slack.SlackHelper.query_string_to_dictionary
   name: query_string_to_dictionary
   summary: Converts a query string to a dictionary with key-value pairs.
@@ -107,11 +107,11 @@ methods:
     description: The query string to convert.
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   return:
     description: A dictionary with the query values.
     types:
-    - '`typing.Dict`'
+    - '[typing.Dict](https://docs.python.org/3.6/library/typing.html#typing.Dict)'
 - uid: botbuilder.adapters.slack.SlackHelper.response
   name: response
   summary: Formats an aiohttp Response.
@@ -122,23 +122,23 @@ methods:
     description: The original aiohttp Request.
     isRequired: true
     types:
-    - '`aiohttp.web_request.Request`'
+    - '[aiohttp.web_request.Request](aiohttp.web_request.Request.yml)'
   - name: code
     description: The HTTP result code to return.
     isRequired: true
     types:
-    - int
+    - '[int](https://docs.python.org/3.6/library/functions.html#int)'
   - name: text
     description: The text to return.
-    isRequired: true
+    defaultValue: None
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: encoding
     description: The text encoding. Defaults to UTF-8.
-    isRequired: true
+    defaultValue: None
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   return:
     description: The aoihttp Response
     types:
-    - '`aiohttp.web_response.Response`'
+    - '[aiohttp.web_response.Response](aiohttp.web_response.Response.yml)'

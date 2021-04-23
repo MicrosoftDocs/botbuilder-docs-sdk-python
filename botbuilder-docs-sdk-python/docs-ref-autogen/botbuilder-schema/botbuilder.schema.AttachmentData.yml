@@ -14,16 +14,16 @@ constructor:
   - name: type
     description: Content-Type of the attachment
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: name
     description: Name of the attachment
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: original_base64
     description: Attachment content
     types:
-    - bytearray
+    - '[bytearray](https://docs.python.org/3.6/library/stdtypes.html#bytearray)'
   - name: thumbnail_base64
     description: Attachment thumbnail
     types:
-    - bytearray
+    - '[bytearray](https://docs.python.org/3.6/library/stdtypes.html#bytearray)'

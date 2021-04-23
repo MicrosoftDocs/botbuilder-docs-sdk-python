@@ -11,6 +11,14 @@ methods:
 - uid: botbuilder.dialogs.memory.scopes.ThisMemoryScope.get_memory
   name: get_memory
   signature: 'get_memory(dialog_context: DialogContext)'
+  parameters:
+  - name: dialog_context
+    isRequired: true
 - uid: botbuilder.dialogs.memory.scopes.ThisMemoryScope.set_memory
   name: set_memory
   signature: 'set_memory(dialog_context: DialogContext, memory: object)'
+  parameters:
+  - name: dialog_context
+    isRequired: true
+  - name: memory
+    isRequired: true

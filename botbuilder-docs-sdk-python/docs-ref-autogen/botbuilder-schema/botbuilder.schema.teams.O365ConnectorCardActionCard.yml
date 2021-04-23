@@ -14,20 +14,20 @@ constructor:
     description: "Type of the action. Possible values include: \u2018ViewAction\u2019\
       ,"
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: name
     description: Name of the action that will be used as button title
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: id
     description: Action Id
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: inputs
     description: Set of inputs contained in this ActionCard whose each item
     types:
-    - list[O365ConnectorCardInputBase]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.O365ConnectorCardInputBase.yml>]'
   - name: actions
     description: Set of actions contained in this ActionCard whose each
     types:
-    - list[O365ConnectorCardActionBase]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.O365ConnectorCardActionBase.yml>]'

@@ -15,12 +15,12 @@ constructor:
   - name: action
     description: 'The action the user took. Possible values include:'
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: context
     description: The context associated with the action.
     types:
-    - object
+    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   - name: upload_info
     description: If the user accepted the file, contains information
     types:
-    - FileUploadInfo
+    - <xref:botframework.connector.teams.models.FileUploadInfo.yml>

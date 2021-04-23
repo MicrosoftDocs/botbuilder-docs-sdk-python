@@ -13,24 +13,24 @@ constructor:
   - name: attachment_layout
     description: Hint for how to deal with multiple attachments.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: type
     description: "The type of the result. Possible values include: \u2018result\u2019\
       ,"
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: attachments
     description: (Only when type is result) Attachments
     types:
-    - list[MessagingExtensionAttachment]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.MessagingExtensionAttachment.yml>]'
   - name: suggested_actions
     types:
-    - MessagingExtensionSuggestedAction
+    - <xref:botframework.connector.teams.models.MessagingExtensionSuggestedAction.yml>
   - name: text
     description: (Only when type is message) Text
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: activity_preview
     description: (Only when type is botMessagePreview) Message
     types:
-    - Activity
+    - <xref:botframework.connector.teams.models.Activity.yml>

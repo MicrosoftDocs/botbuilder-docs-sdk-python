@@ -14,28 +14,28 @@ constructor:
   - name: title
     description: Title of the Card
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: subtitle
     description: Subtitle appears just below Title field, differs from
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: text
     description: Text field appears just below subtitle, differs from Subtitle
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: image
     description: Image
     types:
-    - CardImage
+    - <xref:botframework.connector.models.CardImage.yml>
   - name: price
     description: Amount with currency
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: quantity
     description: Number of items of given kind
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: tap
     description: This action will be activated when user taps on the Item
     types:
-    - CardAction
+    - <xref:botframework.connector.models.CardAction.yml>

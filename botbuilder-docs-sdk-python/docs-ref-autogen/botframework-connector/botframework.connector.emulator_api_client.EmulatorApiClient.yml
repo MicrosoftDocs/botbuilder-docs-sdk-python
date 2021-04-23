@@ -12,3 +12,10 @@ methods:
   name: emulate_oauth_cards
   signature: 'emulate_oauth_cards(credentials: botframework.connector.auth.app_credentials.AppCredentials,
     emulator_url: str, emulate: bool)'
+  parameters:
+  - name: credentials
+    isRequired: true
+  - name: emulator_url
+    isRequired: true
+  - name: emulate
+    isRequired: true

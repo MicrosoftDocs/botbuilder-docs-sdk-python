@@ -211,10 +211,15 @@ methods:
   name: on_members_added_activity
   summary: "Override this method in a derived class to provide logic for when members\
     \ other than the bot join\nthe conversation. You can add your bot\u2019s welcome\
-    \ logic.\n\nconversation update activity\n:type members_added: `typing.List`\n\
+    \ logic.\n\nconversation update activity\n:type members_added: [typing.List](https://docs.python.org/3.6/library/typing.html#typing.List)\n\
     :param turn_context: The context object for this turn\n:type turn_context: <xref:botbuilder.core.TurnContext>"
   signature: 'on_members_added_activity(members_added: List[botbuilder.schema._models_py3.ChannelAccount],
     turn_context: botbuilder.core.turn_context.TurnContext)'
+  parameters:
+  - name: members_added
+    isRequired: true
+  - name: turn_context
+    isRequired: true
   return:
     description: A task that represents the work queued to execute
   remarks: 'When the <xref:botbuilder.core.ActivityHandler.on_conversation_update_activity>
@@ -230,10 +235,15 @@ methods:
   name: on_members_removed_activity
   summary: "Override this method in a derived class to provide logic for when members\
     \ other than the bot leave\nthe conversation.  You can add your bot\u2019s good-bye\
-    \ logic.\n\nconversation update activity\n:type members_added: `typing.List`\n\
+    \ logic.\n\nconversation update activity\n:type members_added: [typing.List](https://docs.python.org/3.6/library/typing.html#typing.List)\n\
     :param turn_context: The context object for this turn\n:type turn_context: <xref:botbuilder.core.TurnContext>"
   signature: 'on_members_removed_activity(members_removed: List[botbuilder.schema._models_py3.ChannelAccount],
     turn_context: botbuilder.core.turn_context.TurnContext)'
+  parameters:
+  - name: members_removed
+    isRequired: true
+  - name: turn_context
+    isRequired: true
   return:
     description: A task that represents the work queued to execute
   remarks: 'When the <xref:botbuilder.core.ActivityHandler.on_conversation_update_activity>
@@ -282,8 +292,9 @@ methods:
     \ to the bot as the response from a send call.\nWhen the <xref:botbuilder.core.ActivityHandler.on_turn>\
     \ method receives a message reaction activity, it calls this\nmethod.\n\n* If\
     \ the message reaction indicates that reactions were added to a message, it calls\
-    \ \n\n`on_reaction_added()`.\n- If the message reaction indicates that reactions\
-    \ were removed from a message, it calls\n`on_reaction_removed()`.\n\nIn a derived\
+    \ \n\n<xref:botbuilder.core.ActivityHandler.on_reaction_added.yml>.\n- If the\
+    \ message reaction indicates that reactions were removed from a message, it calls\n\
+    <xref:botbuilder.core.ActivityHandler.on_reaction_removed.yml>.\n\nIn a derived\
     \ class, override this method to add logic that applies to all message reaction\
     \ activities.\nAdd logic to apply before the reactions added or removed logic\
     \ before the call to the this base class\nmethod.\nAdd logic to apply after the\
@@ -301,7 +312,7 @@ methods:
     description: The list of reactions added
     isRequired: true
     types:
-    - '`typing.List`'
+    - '[typing.List](https://docs.python.org/3.6/library/typing.html#typing.List)'
   - name: turn_context
     description: The context object for this turn
     isRequired: true
@@ -329,7 +340,7 @@ methods:
     description: The list of reactions removed
     isRequired: true
     types:
-    - '`typing.List`'
+    - '[typing.List](https://docs.python.org/3.6/library/typing.html#typing.List)'
   - name: turn_context
     description: The context object for this turn
     isRequired: true
@@ -391,7 +402,7 @@ methods:
   summary: 'Called by the adapter (for example, <xref:botbuilder.core.BotFrameworkAdapter>)
     at runtime
 
-    in order to process an inbound `botbuilder.schema.Activity`.'
+    in order to process an inbound <xref:botbuilder.schema.Activity.yml>.'
   signature: 'on_turn(turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: turn_context

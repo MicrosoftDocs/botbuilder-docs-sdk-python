@@ -24,12 +24,16 @@ methods:
     description: "The raw HTTP header in the format: \u2018Bearer [longString]\u2019"
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: credentials
     description: The user defined set of valid credentials, such as the AppId.
     isRequired: true
     types:
     - <xref:botframework.connector.auth.credential_provider.CredentialProvider>
+  - name: channel_service_or_provider
+    isRequired: true
+  - name: channel_id
+    isRequired: true
   return:
     description: A valid ClaimsIdentity.
 - uid: botframework.connector.auth.emulator_validation.EmulatorValidation.is_token_from_emulator
@@ -41,7 +45,7 @@ methods:
     description: "Bearer Token, in the \u2018Bearer [Long String]\u2019 Format."
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   return:
     description: True, if the token was issued by the Emulator. Otherwise, false.
 attributes:

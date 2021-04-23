@@ -13,3 +13,10 @@ methods:
   summary: Creates a dialog stack and starts a dialog, pushing it onto the stack.
   signature: 'run_dialog(dialog: botbuilder.dialogs.dialog.Dialog, turn_context: botbuilder.core.turn_context.TurnContext,
     accessor: botbuilder.core.state_property_accessor.StatePropertyAccessor)'
+  parameters:
+  - name: dialog
+    isRequired: true
+  - name: turn_context
+    isRequired: true
+  - name: accessor
+    isRequired: true

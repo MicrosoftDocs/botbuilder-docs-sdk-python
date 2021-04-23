@@ -16,7 +16,8 @@ remarks: 'Each state management object defines a scope for a storage layer.
 
   State properties are created within a state management scope, and the Bot Framework
 
-  defines these scopes: `ConversationState`, `UserState`, and `PrivateConversationState`.
+  defines these scopes: <xref:botbuilder.core.bot_state.ConversationState.yml>, <xref:botbuilder.core.bot_state.UserState.yml>,
+  and <xref:botbuilder.core.bot_state.PrivateConversationState.yml>.
 
   You can define additional scopes for your bot.
 
@@ -31,7 +32,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - '`TurnContext`'
+    - <xref:botbuilder.core.bot_state.TurnContext.yml>
   return:
     description: None
   remarks: 'This function must be called in order for the cleared state to be persisted
@@ -47,11 +48,11 @@ methods:
     description: The name of the property
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   return:
     description: If successful, the state property accessor created
     types:
-    - '`StatePropertyAccessor`'
+    - <xref:botbuilder.core.bot_state.StatePropertyAccessor.yml>
 - uid: botbuilder.core.bot_state.BotState.delete
   name: delete
   summary: Deletes any state currently stored in this state scope.
@@ -61,7 +62,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - '`TurnContext`'
+    - <xref:botbuilder.core.bot_state.TurnContext.yml>
   return:
     description: None
 - uid: botbuilder.core.bot_state.BotState.delete_property_value
@@ -74,17 +75,20 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - :TurnContext`
+    - <xref:botbuilder.core.bot_state.:TurnContext`.yml>
   - name: property_name
     description: The name of the property to delete
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   return:
     description: None
 - uid: botbuilder.core.bot_state.BotState.get
   name: get
   signature: 'get(turn_context: botbuilder.core.turn_context.TurnContext)'
+  parameters:
+  - name: turn_context
+    isRequired: true
 - uid: botbuilder.core.bot_state.BotState.get_cached_state
   name: get_cached_state
   summary: "Gets the cached bot state instance that wraps the raw cached data for\
@@ -95,7 +99,7 @@ methods:
     description: The context object for this turn.
     isRequired: true
     types:
-    - '`TurnContext`'
+    - <xref:botbuilder.core.bot_state.TurnContext.yml>
   return:
     description: The cached bot state instance.
 - uid: botbuilder.core.bot_state.BotState.get_property_value
@@ -108,17 +112,20 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - '`TurnContext`'
+    - <xref:botbuilder.core.bot_state.TurnContext.yml>
   - name: property_name
     description: The property name
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   return:
     description: The value of the property
 - uid: botbuilder.core.bot_state.BotState.get_storage_key
   name: get_storage_key
   signature: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext)'
+  parameters:
+  - name: turn_context
+    isRequired: true
 - uid: botbuilder.core.bot_state.BotState.load
   name: load
   summary: Reads the current state object and caches it in the context object for
@@ -130,12 +137,12 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - '`TurnContext`'
+    - <xref:botbuilder.core.bot_state.TurnContext.yml>
   - name: force
     description: Optional, true to bypass the cache
-    isRequired: true
+    defaultValue: 'False'
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
 - uid: botbuilder.core.bot_state.BotState.save_changes
   name: save_changes
   summary: 'Saves the state cached in the current context for this turn.
@@ -149,13 +156,13 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - '`TurnContext`'
+    - <xref:botbuilder.core.bot_state.TurnContext.yml>
   - name: force
     description: Optional, true to save state to storage whether or not there are
       changes
-    isRequired: true
+    defaultValue: 'False'
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
 - uid: botbuilder.core.bot_state.BotState.set_property_value
   name: set_property_value
   summary: Sets a property to the specified value in the turn context.
@@ -166,16 +173,16 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - '`TurnContext`'
+    - <xref:botbuilder.core.bot_state.TurnContext.yml>
   - name: property_name
     description: The property name
     isRequired: true
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: value
     description: The value to assign to the property
     isRequired: true
     types:
-    - Object
+    - <xref:botbuilder.core.bot_state.Object.yml>
   return:
     description: None

@@ -14,24 +14,24 @@ constructor:
   - name: id
     description: The id of the attachment.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: content_type
     description: The type of the attachment.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: content_url
     description: The url of the attachment, in case of a external link.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: content
     description: The content of the attachment, in case of a code snippet,
     types:
-    - object
+    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   - name: name
     description: The plaintext display name of the attachment.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: thumbnail_url
     description: The url of a thumbnail image that might be embedded
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

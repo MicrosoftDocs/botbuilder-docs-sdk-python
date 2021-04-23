@@ -19,6 +19,11 @@ methods:
 
     :return:'
   signature: 'add(key: str, value: object)'
+  parameters:
+  - name: key
+    isRequired: true
+  - name: value
+    isRequired: true
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.any_path_changed
   name: any_path_changed
   summary: 'Check to see if any path has changed since watermark.
@@ -29,6 +34,11 @@ methods:
 
     :return: True if any path has changed since counter.'
   signature: 'any_path_changed(counter: int, paths: Iterable[str])'
+  parameters:
+  - name: counter
+    isRequired: true
+  - name: paths
+    isRequired: true
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.clear
   name: clear
   summary: 'Removes all items from the dialog state manager.
@@ -37,6 +47,9 @@ methods:
 
     :return:'
   signature: 'clear(key: str)'
+  parameters:
+  - name: key
+    isRequired: true
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.contains
   name: contains
   summary: 'Determines whether the dialog state manager contains a specific value
@@ -46,6 +59,9 @@ methods:
 
     :return bool: True if item is found in the dialog state manager otherwise, False'
   signature: 'contains(item: Tuple[str, object])'
+  parameters:
+  - name: item
+    isRequired: true
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.contains_key
   name: contains_key
   summary: 'Determines whether the dialog state manager contains an element with the
@@ -56,6 +72,9 @@ methods:
     :return: True if the dialog state manager contains an element with the key otherwise,
     False.'
   signature: 'contains_key(key: str)'
+  parameters:
+  - name: key
+    isRequired: true
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.copy_to
   name: copy_to
   summary: "Copies the elements of the dialog state manager to an array starting at\
@@ -66,6 +85,8 @@ methods:
   parameters:
   - name: array_index
     isRequired: true
+  - name: array_index
+    isRequired: true
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.delete_scopes_memory_async
   name: delete_scopes_memory_async
   summary: 'Delete the memory for a scope.
@@ -74,6 +95,9 @@ methods:
 
     :return:'
   signature: 'delete_scopes_memory_async(name: str)'
+  parameters:
+  - name: name
+    isRequired: true
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.get_bool_value
   name: get_bool_value
   summary: 'Get a bool value from memory using a path expression.
@@ -84,6 +108,11 @@ methods:
 
     :return:'
   signature: 'get_bool_value(path_expression: str, default_value: bool = False)'
+  parameters:
+  - name: path_expression
+    isRequired: true
+  - name: default_value
+    defaultValue: 'False'
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.get_enumerator
   name: get_enumerator
   summary: 'Returns an enumerator that iterates through the collection.
@@ -100,6 +129,11 @@ methods:
 
     :return:'
   signature: 'get_int_value(path_expression: str, default_value: int = 0)'
+  parameters:
+  - name: path_expression
+    isRequired: true
+  - name: default_value
+    defaultValue: '0'
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.get_memory_scope
   name: get_memory_scope
   summary: 'Get MemoryScope by name.
@@ -108,6 +142,9 @@ methods:
 
     :return: A memory scope.'
   signature: 'get_memory_scope(name: str)'
+  parameters:
+  - name: name
+    isRequired: true
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.get_memory_snapshot
   name: get_memory_snapshot
   summary: 'Gets all memoryscopes suitable for logging.
@@ -124,6 +161,10 @@ methods:
 
     :return:'
   signature: 'get_string_value(path_expression: str, default_value: str = '''')'
+  parameters:
+  - name: path_expression
+    isRequired: true
+  - name: default_value
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.get_value
   name: get_value
   summary: 'Get the value from memory using path expression (NOTE: This always returns
@@ -138,6 +179,13 @@ methods:
     :return: Result or null if the path is not valid.'
   signature: 'get_value(class_type: Type, path_expression: str, default_value: Optional[Callable[T]]
     = None)'
+  parameters:
+  - name: class_type
+    isRequired: true
+  - name: path_expression
+    isRequired: true
+  - name: default_value
+    defaultValue: None
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.load_all_scopes
   name: load_all_scopes
   summary: 'Load all of the scopes.
@@ -152,6 +200,9 @@ methods:
 
     :return:'
   signature: 'remove(key: str)'
+  parameters:
+  - name: key
+    isRequired: true
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.remove_item
   name: remove_item
   summary: 'Determines whether the dialog state manager contains a specific value
@@ -161,6 +212,9 @@ methods:
 
     :return bool: True if item is found in the dialog state manager otherwise, False'
   signature: 'remove_item(item: Tuple[str, object])'
+  parameters:
+  - name: item
+    isRequired: true
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.remove_value
   name: remove_value
   summary: 'Set memory to value.
@@ -171,6 +225,9 @@ methods:
 
     :return:'
   signature: 'remove_value(path: str)'
+  parameters:
+  - name: path
+    isRequired: true
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.resolve_memory_scope
   name: resolve_memory_scope
   summary: 'Will find the MemoryScope for and return the remaining path.
@@ -179,6 +236,9 @@ methods:
 
     :return: The memory scope and remaining subpath in scope.'
   signature: 'resolve_memory_scope(path: str)'
+  parameters:
+  - name: path
+    isRequired: true
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.save_all_changes
   name: save_all_changes
   summary: 'Save all changes for all scopes.
@@ -195,6 +255,11 @@ methods:
 
     :return:'
   signature: 'set_value(path: str, value: object)'
+  parameters:
+  - name: path
+    isRequired: true
+  - name: value
+    isRequired: true
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.track_paths
   name: track_paths
   summary: 'Track when specific paths are changed.
@@ -203,6 +268,9 @@ methods:
 
     :return: Normalized paths to pass to any_path_changed.'
   signature: 'track_paths(paths: Iterable[str])'
+  parameters:
+  - name: paths
+    isRequired: true
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.transform_path
   name: transform_path
   summary: 'Transform the path using the registered PathTransformers.
@@ -211,6 +279,9 @@ methods:
 
     :return: The transformed path.'
   signature: 'transform_path(path: str)'
+  parameters:
+  - name: path
+    isRequired: true
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.try_get_value
   name: try_get_value
   summary: 'Get the value from memory using path expression (NOTE: This always returns
@@ -222,6 +293,11 @@ methods:
 
     :return: True if found, false if not and the value.'
   signature: 'try_get_value(path: str, class_type: Type = <class ''object''>)'
+  parameters:
+  - name: path
+    isRequired: true
+  - name: class_type
+    defaultValue: <class 'object'>
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.version
   name: version
   summary: 'Version help caller to identify the updates and decide cache or not.

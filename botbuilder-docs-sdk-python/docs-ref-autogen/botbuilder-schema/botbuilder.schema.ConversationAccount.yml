@@ -15,32 +15,32 @@ constructor:
   - name: is_group
     description: Indicates whether the conversation contains more than two
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: conversation_type
     description: Indicates the type of the conversation in
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: id
     description: 'Channel id for the user or bot on this channel (Example:'
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: name
     description: Display friendly name
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: aad_object_id
     description: "This account\u2019s object ID within Azure Active"
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: role
     description: 'Role of the entity behind the account (Example: User, Bot, Skill'
     types:
-    - str or RoleTypes
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.RoleTypes.yml>'
   - name: tenant_id
     description: "This conversation\u2019s tenant ID"
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: properties
     description: "This conversation\u2019s properties"
     types:
-    - object
+    - '[object](https://docs.python.org/3.6/library/functions.html#object)'

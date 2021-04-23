@@ -16,42 +16,44 @@ constructor:
   - name: title
     description: Title of the section
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: text
     description: Text for the section
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: activity_title
     description: Activity title
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: activity_subtitle
     description: Activity subtitle
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: activity_text
     description: Activity text
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: activity_image
     description: Activity image
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: activity_image_type
     description: Describes how Activity image is rendered.
+    types:
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str'
   - name: markdown
     description: Use markdown for all text contents. Default value is
     types:
-    - bool
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: facts
     description: Set of facts for the current section
     types:
-    - list[O365ConnectorCardFact]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.O365ConnectorCardFact.yml>]'
   - name: images
     description: Set of images for the current section
     types:
-    - list[O365ConnectorCardImage]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.O365ConnectorCardImage.yml>]'
   - name: potential_action
     description: Set of actions for the current section
     types:
-    - list[O365ConnectorCardActionBase]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.O365ConnectorCardActionBase.yml>]'

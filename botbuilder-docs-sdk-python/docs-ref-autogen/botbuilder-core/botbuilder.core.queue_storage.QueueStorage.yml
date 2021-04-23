@@ -22,16 +22,16 @@ methods:
     description: The activity to be queued for later processing.
     isRequired: true
     types:
-    - '`botbuilder.schema.Activity`'
+    - <xref:botbuilder.schema.Activity.yml>
   - name: visibility_timeout
     description: Visibility timeout in seconds. Optional with a default value of 0.
-    isRequired: true
+    defaultValue: None
     types:
-    - int
+    - '[int](https://docs.python.org/3.6/library/functions.html#int)'
   - name: time_to_live
     description: Specifies the time-to-live interval for the message in seconds.
-    isRequired: true
+    defaultValue: None
     types:
-    - int
+    - '[int](https://docs.python.org/3.6/library/functions.html#int)'
   return:
     description: String representing the read receipt.

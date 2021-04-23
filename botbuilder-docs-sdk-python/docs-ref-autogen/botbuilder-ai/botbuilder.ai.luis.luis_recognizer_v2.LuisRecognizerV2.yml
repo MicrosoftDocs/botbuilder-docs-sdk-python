@@ -13,6 +13,9 @@ methods:
 - uid: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2.recognizer_internal
   name: recognizer_internal
   signature: 'recognizer_internal(turn_context: botbuilder.core.turn_context.TurnContext)'
+  parameters:
+  - name: turn_context
+    isRequired: true
 attributes:
 - uid: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2.luis_trace_label
   name: luis_trace_label

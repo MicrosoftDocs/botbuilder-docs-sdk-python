@@ -18,6 +18,19 @@ methods:
   name: post_activity
   signature: 'post_activity(from_bot_id: str, to_bot_id: str, to_url: str, service_url:
     str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity)'
+  parameters:
+  - name: from_bot_id
+    isRequired: true
+  - name: to_bot_id
+    isRequired: true
+  - name: to_url
+    isRequired: true
+  - name: service_url
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
+  - name: activity
+    isRequired: true
 - uid: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.post_buffered_activity
   name: post_buffered_activity
   summary: 'Helper method to return a list of activities when an Activity is being
@@ -25,6 +38,19 @@ methods:
     sent with DeliveryMode == expectReplies.'
   signature: 'post_buffered_activity(from_bot_id: str, to_bot_id: str, to_url: str,
     service_url: str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity)'
+  parameters:
+  - name: from_bot_id
+    isRequired: true
+  - name: to_bot_id
+    isRequired: true
+  - name: to_url
+    isRequired: true
+  - name: service_url
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
+  - name: activity
+    isRequired: true
 attributes:
 - uid: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.INVOKE_ACTIVITY_NAME
   name: INVOKE_ACTIVITY_NAME

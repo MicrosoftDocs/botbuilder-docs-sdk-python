@@ -13,12 +13,12 @@ constructor:
   - name: code
     description: Error code
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: message
     description: Error message
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: inner_http_error
     description: Error from inner http call
     types:
-    - InnerHttpError
+    - <xref:botframework.connector.models.InnerHttpError.yml>

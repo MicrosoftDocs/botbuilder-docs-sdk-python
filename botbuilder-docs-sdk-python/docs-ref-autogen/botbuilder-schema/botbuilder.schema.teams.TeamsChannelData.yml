@@ -13,24 +13,24 @@ constructor:
   - name: channel
     description: Information about the channel in which the message was
     types:
-    - ChannelInfo
+    - <xref:botframework.connector.teams.models.ChannelInfo.yml>
   - name: event_type
     description: Type of event.
     types:
-    - str
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: team
     description: Information about the team in which the message was sent
     types:
-    - TeamInfo
+    - <xref:botframework.connector.teams.models.TeamInfo.yml>
   - name: notification
     description: Notification settings for the message
     types:
-    - NotificationInfo
+    - <xref:botframework.connector.teams.models.NotificationInfo.yml>
   - name: tenant
     description: Information about the tenant in which the message was sent
     types:
-    - TenantInfo
+    - <xref:botframework.connector.teams.models.TenantInfo.yml>
   - name: meeting
     description: Information about the meeting in which the message was sent
     types:
-    - TeamsMeetingInfo
+    - <xref:botframework.connector.teams.models.TeamsMeetingInfo.yml>
