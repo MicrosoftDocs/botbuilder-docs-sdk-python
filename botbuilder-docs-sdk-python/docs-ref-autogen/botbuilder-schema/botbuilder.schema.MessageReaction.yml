@@ -7,10 +7,11 @@ inheritances:
 - msrest.serialization.Model
 summary: Message reaction object.
 constructor:
-  syntax: MessageReaction(*, type=None, **kwargs)
+  syntax: MessageReaction(*, type=None, **kwargs) -> None
   parameters:
   - name: type
-    description: "Message reaction type. Possible values include: \u2018like',\n\u2018\
-      plusOne'"
+    description: 'Message reaction type. Possible values include: ''like'',
+
+      ''plusOne'''
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.MessageReactionTypes>'

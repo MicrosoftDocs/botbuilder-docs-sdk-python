@@ -20,7 +20,7 @@ methods:
 - uid: botbuilder.azure.CosmosDbStorage.read
   name: read
   summary: Read storeitems from storage.
-  signature: 'read(keys: List[str])'
+  signature: 'read(keys: List[str]) -> Dict[str, object]'
   parameters:
   - name: keys
     isRequired: true

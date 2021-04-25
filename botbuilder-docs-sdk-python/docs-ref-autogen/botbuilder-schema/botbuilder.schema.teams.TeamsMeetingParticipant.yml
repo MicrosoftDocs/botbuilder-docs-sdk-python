@@ -11,7 +11,7 @@ constructor:
   syntax: 'TeamsMeetingParticipant(*, user: Optional[botbuilder.schema.teams._models_py3.TeamsChannelAccount]
     = None, meeting: Optional[botbuilder.schema.teams._models_py3.MeetingParticipantInfo]
     = None, conversation: Optional[botbuilder.schema._models_py3.ConversationAccount]
-    = None, **kwargs)'
+    = None, **kwargs) -> None'
   parameters:
   - name: user
     description: Teams Channel Account information for this meeting participant

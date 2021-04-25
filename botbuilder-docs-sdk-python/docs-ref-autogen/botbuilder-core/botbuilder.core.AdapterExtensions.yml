@@ -19,7 +19,7 @@ methods:
   summary: Registers bot state object into the TurnContext. The botstate will be available
     via the turn context.
   signature: 'use_bot_state(bot_adapter: botbuilder.core.bot_adapter.BotAdapter, *bot_states:
-    botbuilder.core.bot_state.BotState, auto: bool = True)'
+    botbuilder.core.bot_state.BotState, auto: bool = True) -> botbuilder.core.bot_adapter.BotAdapter'
   parameters:
   - name: bot_adapter
     description: The BotAdapter on which to register the state objects.
@@ -37,7 +37,7 @@ methods:
     the turn context''s *turn_state* property.'
   signature: 'use_state(adapter: botbuilder.core.bot_adapter.BotAdapter, user_state:
     botbuilder.core.user_state.UserState, conversation_state: botbuilder.core.conversation_state.ConversationState,
-    auto: bool = True)'
+    auto: bool = True) -> botbuilder.core.bot_adapter.BotAdapter'
   parameters:
   - name: adapter
     description: The BotAdapter on which to register the state objects.
@@ -60,7 +60,7 @@ methods:
 
     *turn_state* property.'
   signature: 'use_storage(adapter: botbuilder.core.bot_adapter.BotAdapter, storage:
-    botbuilder.core.storage.Storage)'
+    botbuilder.core.storage.Storage) -> botbuilder.core.bot_adapter.BotAdapter'
   parameters:
   - name: adapter
     description: The BotAdapter on which to register the storage object.

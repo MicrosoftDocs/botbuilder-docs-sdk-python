@@ -15,7 +15,7 @@ methods:
 - uid: botbuilder.core.inspection.InspectionMiddleware.process_attach_command
   name: process_attach_command
   signature: 'process_attach_command(context: botbuilder.core.turn_context.TurnContext,
-    session_id: str)'
+    session_id: str) -> None'
   parameters:
   - name: context
     isRequired: true
@@ -23,7 +23,8 @@ methods:
     isRequired: true
 - uid: botbuilder.core.inspection.InspectionMiddleware.process_command
   name: process_command
-  signature: 'process_command(context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'process_command(context: botbuilder.core.turn_context.TurnContext) ->
+    Any'
   parameters:
   - name: context
     isRequired: true

@@ -72,7 +72,7 @@ methods:
   name: process
   summary: Accept an incoming webhook request and convert it into a TurnContext which
     can be processed by the bot's logic.
-  signature: 'process(req: aiohttp.web_request.Request, logic: Callable)'
+  signature: 'process(req: aiohttp.web_request.Request, logic: Callable) -> aiohttp.web_response.Response'
   parameters:
   - name: req
     description: The aiohttp Request object.
@@ -92,7 +92,7 @@ methods:
   name: send_activities
   summary: Send a message from the bot to the messaging API.
   signature: 'send_activities(context: botbuilder.core.turn_context.TurnContext, activities:
-    List[botbuilder.schema._models_py3.Activity])'
+    List[botbuilder.schema._models_py3.Activity]) -> List[botbuilder.schema._models_py3.ResourceResponse]'
   parameters:
   - name: context
     description: A TurnContext representing the current incoming message and environment.
@@ -122,8 +122,8 @@ methods:
     types:
     - <xref:botbuilder.core.TurnContext>
   - name: activity
-    description: "The updated activity in the form \u2018{id: *id of activity to update*,\
-      \ \u2026}'."
+    description: 'The updated activity in the form ''{id: *id of activity to update*,
+      ...}''.'
     isRequired: true
     types:
     - <xref:botbuilder.schema.Activity>

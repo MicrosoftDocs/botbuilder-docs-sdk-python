@@ -15,7 +15,7 @@ methods:
   name: post_activity_to_skill
   signature: 'post_activity_to_skill(from_bot_id: str, to_skill: botbuilder.core.skills.bot_framework_skill.BotFrameworkSkill,
     service_url: str, activity: botbuilder.schema._models_py3.Activity, originating_audience:
-    Optional[str] = None)'
+    Optional[str] = None) -> botbuilder.core.invoke_response.InvokeResponse'
   parameters:
   - name: from_bot_id
     isRequired: true

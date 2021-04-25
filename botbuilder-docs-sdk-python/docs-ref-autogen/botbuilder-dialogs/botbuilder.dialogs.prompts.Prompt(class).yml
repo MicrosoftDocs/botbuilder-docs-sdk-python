@@ -33,7 +33,7 @@ methods:
   signature: 'append_choices(prompt: botbuilder.schema._models_py3.Activity, channel_id:
     str, choices: List[botbuilder.dialogs.choices.choice.Choice], style: botbuilder.dialogs.choices.list_style.ListStyle,
     options: Optional[botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions]
-    = None)'
+    = None) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: prompt
     description: The prompt to append the user's choice to
@@ -74,7 +74,7 @@ methods:
 
     >'
   signature: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    options: object = None)'
+    options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: dialog_context
     description: The dialog context for the current turn of the conversation
@@ -198,7 +198,7 @@ methods:
   name: resume_dialog
   summary: Resumes a dialog.
   signature: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)'
+    reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: dialog_context
     description: The dialog context for the current turn of the conversation.

@@ -79,7 +79,8 @@ methods:
 
     :return:'
   signature: 'on_reply_to_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)'
+    conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
+    -> botbuilder.schema._models_py3.ResourceResponse'
   parameters:
   - name: claims_identity
     isRequired: true
@@ -131,7 +132,7 @@ methods:
 
     :return:'
   signature: 'on_send_to_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str, activity: botbuilder.schema._models_py3.Activity)'
+    conversation_id: str, activity: botbuilder.schema._models_py3.Activity) -> botbuilder.schema._models_py3.ResourceResponse'
   parameters:
   - name: claims_identity
     isRequired: true
@@ -156,7 +157,8 @@ methods:
 
     button.'
   signature: 'on_update_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)'
+    conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
+    -> botbuilder.schema._models_py3.ResourceResponse'
   parameters:
   - name: claims_identity
     isRequired: true

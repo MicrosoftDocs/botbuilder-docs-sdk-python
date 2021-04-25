@@ -9,7 +9,7 @@ summary: "AttachmentsOperations async operations.\n\nYou should not instantiate 
   \ this class, but create a Client instance that will create it for you and attach\n\
   \   it as attribute."
 constructor:
-  syntax: AttachmentsOperations(client, config, serializer, deserializer)
+  syntax: AttachmentsOperations(client, config, serializer, deserializer) -> None
   parameters:
   - name: client
     description: Client for service requests.

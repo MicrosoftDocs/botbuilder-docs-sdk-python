@@ -11,7 +11,7 @@ methods:
 - uid: botframework.connector.EmulatorApiClient.emulate_oauth_cards
   name: emulate_oauth_cards
   signature: 'emulate_oauth_cards(credentials: botframework.connector.auth.app_credentials.AppCredentials,
-    emulator_url: str, emulate: bool)'
+    emulator_url: str, emulate: bool) -> bool'
   parameters:
   - name: credentials
     isRequired: true

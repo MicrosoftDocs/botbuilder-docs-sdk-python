@@ -95,7 +95,7 @@ methods:
   summary: Sends a set of activities to the user. An array of responses from the server
     will be returned.
   signature: 'send_activities(context: botbuilder.core.turn_context.TurnContext, activities:
-    List[botbuilder.schema._models_py3.Activity])'
+    List[botbuilder.schema._models_py3.Activity]) -> List[botbuilder.schema._models_py3.ResourceResponse]'
   parameters:
   - name: context
     description: The context object for the turn.

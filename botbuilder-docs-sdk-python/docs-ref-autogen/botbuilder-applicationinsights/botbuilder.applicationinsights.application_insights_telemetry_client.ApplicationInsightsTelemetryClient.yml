@@ -105,7 +105,7 @@ methods:
   summary: Send information about a single event that has occurred in the context
     of the application.
   signature: 'track_event(name: str, properties: Optional[Dict[str, object]] = None,
-    measurements: Optional[Dict[str, object]] = None)'
+    measurements: Optional[Dict[str, object]] = None) -> None'
   parameters:
   - name: name
     description: the data to associate to this event.
@@ -132,7 +132,7 @@ methods:
   signature: 'track_exception(exception_type: type = None, value: Exception = None,
     trace: <module ''traceback'' from ''c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\traceback.py''>
     = None, properties: Dict[str, object] = None, measurements: Dict[str, object]
-    = None)'
+    = None) -> None'
   parameters:
   - name: exception_type
     description: the type of the exception that was thrown.
@@ -164,7 +164,7 @@ methods:
   signature: 'track_metric(name: str, value: float, tel_type: Optional[botbuilder.core.bot_telemetry_client.TelemetryDataPointType]
     = None, count: Optional[int] = None, min_val: Optional[float] = None, max_val:
     Optional[float] = None, std_dev: Optional[float] = None, properties: Optional[Dict[str,
-    object]] = None)'
+    object]] = None) -> NotImplemented'
   parameters:
   - name: name
     description: The name of the metric that was captured.
@@ -220,7 +220,7 @@ methods:
   summary: Send information about the page viewed in the application (a web page for
     instance).
   signature: 'track_pageview(name: str, url: str, duration: int = 0, properties: Optional[Dict[str,
-    object]] = None, measurements: Optional[Dict[str, object]] = None)'
+    object]] = None, measurements: Optional[Dict[str, object]] = None) -> None'
   parameters:
   - name: name
     description: the name of the page that was viewed.

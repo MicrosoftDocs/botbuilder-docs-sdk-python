@@ -5,12 +5,12 @@ fullName: botbuilder.schema.teams.TabSubmitData
 module: botbuilder.schema.teams
 inheritances:
 - msrest.serialization.Model
-summary: "Invoke (\u2018tab/submit') request value payload data."
+summary: Invoke ('tab/submit') request value payload data.
 constructor:
-  syntax: TabSubmitData(*, type=None, properties=None, **kwargs)
+  syntax: TabSubmitData(*, type=None, properties=None, **kwargs) -> None
   parameters:
   - name: type
-    description: "Currently, \u2018tab/submit'."
+    description: Currently, 'tab/submit'.
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: properties

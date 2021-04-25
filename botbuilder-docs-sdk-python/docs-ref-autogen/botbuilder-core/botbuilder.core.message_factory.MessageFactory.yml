@@ -16,7 +16,7 @@ methods:
   name: attachment
   summary: "Returns a single message activity containing an attachment.\n\nmessage\
     \ = MessageFactory.attachment(CardFactory.hero_card(HeroCard(title='White T-Shirt',\n\
-    \   images=[CardImage(url=\n      \u2018[https://example.com/whiteShirt.jpg](https://example.com/whiteShirt.jpg)'\n\
+    \   images=[CardImage(url=\n      '[https://example.com/whiteShirt.jpg](https://example.com/whiteShirt.jpg)'\n\
     \      )],\n\n   buttons=[CardAction(title='buy')])))\n\nawait context.send_activity(message)"
   signature: 'attachment(attachment: botbuilder.schema._models_py3.Attachment, text:
     Optional[str] = None, speak: Optional[str] = None, input_hint: Optional[str] =
@@ -41,7 +41,7 @@ methods:
     \nawait context.send_activity(message)"
   signature: 'carousel(attachments: List[botbuilder.schema._models_py3.Attachment],
     text: Optional[str] = None, speak: Optional[str] = None, input_hint: Optional[str]
-    = None)'
+    = None) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: attachments
     isRequired: true
@@ -54,9 +54,9 @@ methods:
 - uid: botbuilder.core.message_factory.MessageFactory.content_url
   name: content_url
   summary: "Returns a message that will display a single image or video to a user.\n\
-    \nmessage = MessageFactory.content_url(\u2018[https://example.com/hawaii.jpg](https://example.com/hawaii.jpg)',\
-    \ \u2018image/jpeg',\n   \u2018Hawaii Trip', \u2018A photo from our family vacation.')\n\
-    \nawait context.send_activity(message)"
+    \nmessage = MessageFactory.content_url('[https://example.com/hawaii.jpg](https://example.com/hawaii.jpg)',\
+    \ 'image/jpeg',\n   'Hawaii Trip', 'A photo from our family vacation.')\n\nawait\
+    \ context.send_activity(message)"
   signature: 'content_url(url: str, content_type: str, name: Optional[str] = None,
     text: Optional[str] = None, speak: Optional[str] = None, input_hint: Optional[str]
     = None)'
@@ -84,7 +84,7 @@ methods:
     \nawait context.send_activity(message)"
   signature: 'list(attachments: List[botbuilder.schema._models_py3.Attachment], text:
     Optional[str] = None, speak: Optional[str] = None, input_hint: Optional[str] =
-    None)'
+    None) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: attachments
     isRequired: true
@@ -99,11 +99,11 @@ methods:
   summary: "Returns a message that includes a set of suggested actions and optional\
     \ text.\n\nmessage = MessageFactory.suggested_actions([CardAction(title='a', type=ActionTypes.im_back,\
     \ value='a'),\n   CardAction(title='b', type=ActionTypes.im_back, value='b'),\n\
-    \   CardAction(title='c', type=ActionTypes.im_back, value='c')],\n   \u2018Choose\
-    \ a color')\n\nawait context.send_activity(message)"
+    \   CardAction(title='c', type=ActionTypes.im_back, value='c')],\n   'Choose a\
+    \ color')\n\nawait context.send_activity(message)"
   signature: 'suggested_actions(actions: List[botbuilder.schema._models_py3.CardAction],
     text: Optional[str] = None, speak: Optional[str] = None, input_hint: str = <InputHints.accepting_input:
-    ''acceptingInput''>)'
+    ''acceptingInput''>) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: actions
     isRequired: true
@@ -115,10 +115,14 @@ methods:
     defaultValue: InputHints.accepting_input
 - uid: botbuilder.core.message_factory.MessageFactory.text
   name: text
-  summary: "Returns a simple text message.\n\nmessage = MessageFactory.text(\u2018\
-    Greetings from example message')\nawait context.send_activity(message)"
+  summary: 'Returns a simple text message.
+
+
+    message = MessageFactory.text(''Greetings from example message'')
+
+    await context.send_activity(message)'
   signature: 'text(text: str, speak: Optional[str] = None, input_hint: str = <InputHints.accepting_input:
-    ''acceptingInput''>)'
+    ''acceptingInput''>) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: text
     isRequired: true

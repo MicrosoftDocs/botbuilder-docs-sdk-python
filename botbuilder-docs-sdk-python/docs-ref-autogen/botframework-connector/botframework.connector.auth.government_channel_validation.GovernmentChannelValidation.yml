@@ -12,7 +12,7 @@ methods:
   name: authenticate_channel_token
   signature: 'authenticate_channel_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
     channel_id: str, auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
-    = None)'
+    = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: auth_header
     isRequired: true
@@ -27,7 +27,7 @@ methods:
   signature: 'authenticate_channel_token_with_service_url(auth_header: str, credentials:
     botframework.connector.auth.credential_provider.CredentialProvider, service_url:
     str, channel_id: str, auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
-    = None)'
+    = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: auth_header
     isRequired: true
@@ -42,7 +42,8 @@ methods:
 - uid: botframework.connector.auth.government_channel_validation.GovernmentChannelValidation.validate_identity
   name: validate_identity
   signature: 'validate_identity(identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    credentials: botframework.connector.auth.credential_provider.CredentialProvider)'
+    credentials: botframework.connector.auth.credential_provider.CredentialProvider)
+    -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: identity
     isRequired: true

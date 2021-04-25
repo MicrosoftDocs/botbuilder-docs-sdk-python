@@ -7,8 +7,7 @@ inheritances:
 - msrest.serialization.Model
 summary: Envelope for Card Tab Response Payload.
 constructor:
-  syntax: TabResponse(*, tab=None, **kwargs)
+  syntax: TabResponse(*, tab=None, **kwargs) -> None
   parameters:
   - name: tab
-    description: "Possible values include: \u2018continue', \u2018auth' or \u2018\
-      silentAuth'"
+    description: 'Possible values include: ''continue'', ''auth'' or ''silentAuth'''

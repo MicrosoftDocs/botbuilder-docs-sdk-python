@@ -21,7 +21,7 @@ methods:
     :param conversation_id: Id of the conversation to delete.
 
     :result: None'
-  signature: 'delete_transcript(channel_id: str, conversation_id: str)'
+  signature: 'delete_transcript(channel_id: str, conversation_id: str) -> None'
   parameters:
   - name: channel_id
     isRequired: true
@@ -42,7 +42,7 @@ methods:
     :result: Page of results of Activity objects'
   signature: 'get_transcript_activities(channel_id: str, conversation_id: str, continuation_token:
     str = None, start_date: <module ''datetime'' from ''c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\datetime.py''>
-    = datetime.datetime(1, 1, 1, 0, 0))'
+    = datetime.datetime(1, 1, 1, 0, 0)) -> ''PagedResult[Activity]'''
   parameters:
   - name: channel_id
     isRequired: true
@@ -61,7 +61,8 @@ methods:
     :param continuation_token : Continuation token to page through results.
 
     :result: Page of results of TranscriptInfo objects'
-  signature: 'list_transcripts(channel_id: str, continuation_token: str = None)'
+  signature: 'list_transcripts(channel_id: str, continuation_token: str = None) ->
+    ''PagedResult[TranscriptInfo]'''
   parameters:
   - name: channel_id
     isRequired: true
@@ -72,7 +73,7 @@ methods:
   summary: 'Log an activity to the transcript.
 
     :param activity:Activity being logged.'
-  signature: 'log_activity(activity: botbuilder.schema._models_py3.Activity)'
+  signature: 'log_activity(activity: botbuilder.schema._models_py3.Activity) -> None'
   parameters:
   - name: activity
     isRequired: true

@@ -18,7 +18,7 @@ methods:
 - uid: botbuilder.applicationinsights.django.BotTelemetryMiddleware.process_request
   name: process_request
   summary: Process the incoming Django request.
-  signature: process_request(request)
+  signature: process_request(request) -> bool
   parameters:
   - name: request
     isRequired: true

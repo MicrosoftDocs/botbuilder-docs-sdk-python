@@ -8,7 +8,8 @@ inheritances:
 summary: A response that includes a user token.
 constructor:
   syntax: 'TokenResponse(*, connection_name: Optional[str] = None, token: Optional[str]
-    = None, expiration: Optional[str] = None, channel_id: Optional[str] = None, **kwargs)'
+    = None, expiration: Optional[str] = None, channel_id: Optional[str] = None, **kwargs)
+    -> None'
   parameters:
   - name: connection_name
     description: The connection name

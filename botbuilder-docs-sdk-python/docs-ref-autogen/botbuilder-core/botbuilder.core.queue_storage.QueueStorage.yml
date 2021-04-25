@@ -16,7 +16,7 @@ methods:
 
     visible to Dequeue and Peek operations.'
   signature: 'queue_activity(activity: botbuilder.schema._models_py3.Activity, visibility_timeout:
-    Optional[int] = None, time_to_live: Optional[int] = None)'
+    Optional[int] = None, time_to_live: Optional[int] = None) -> str'
   parameters:
   - name: activity
     description: The activity to be queued for later processing.

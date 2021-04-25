@@ -5,9 +5,9 @@ fullName: botbuilder.schema.teams.TabSuggestedActions
 module: botbuilder.schema.teams
 inheritances:
 - msrest.serialization.Model
-summary: "Tab SuggestedActions (Only when type is \u2018auth' or \u2018silentAuth')."
+summary: Tab SuggestedActions (Only when type is 'auth' or 'silentAuth').
 constructor:
-  syntax: TabSuggestedActions(*, actions=None, **kwargs)
+  syntax: TabSuggestedActions(*, actions=None, **kwargs) -> None
   parameters:
   - name: actions
     description: Gets or sets adaptive card for this card tab response.

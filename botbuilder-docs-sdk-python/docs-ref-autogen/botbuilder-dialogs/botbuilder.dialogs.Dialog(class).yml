@@ -56,12 +56,13 @@ methods:
     isRequired: true
 - uid: botbuilder.dialogs.Dialog.get_version
   name: get_version
-  signature: get_version()
+  signature: get_version() -> str
 - uid: botbuilder.dialogs.Dialog.on_dialog_event
   name: on_dialog_event
   summary: "Called when an event has been raised, using *DialogContext.emitEvent()*,\
     \ by either the current dialog or a\n   dialog that the current dialog started."
-  signature: 'on_dialog_event(dialog_context: DialogContext, dialog_event: botbuilder.dialogs.dialog_event.DialogEvent)'
+  signature: 'on_dialog_event(dialog_context: DialogContext, dialog_event: botbuilder.dialogs.dialog_event.DialogEvent)
+    -> bool'
   parameters:
   - name: dialog_context
     description: The dialog context for the current turn of conversation.

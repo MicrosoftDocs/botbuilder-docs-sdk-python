@@ -5,22 +5,26 @@ fullName: botbuilder.core.teams.teams_activity_extensions
 functions:
 - uid: botbuilder.core.teams.teams_activity_extensions.teams_get_channel_data
   name: teams_get_channel_data
-  signature: 'teams_get_channel_data(activity: botbuilder.schema._models_py3.Activity)'
+  signature: 'teams_get_channel_data(activity: botbuilder.schema._models_py3.Activity)
+    -> botbuilder.schema.teams._models_py3.TeamsChannelData'
   parameters:
   - name: activity
 - uid: botbuilder.core.teams.teams_activity_extensions.teams_get_channel_id
   name: teams_get_channel_id
-  signature: 'teams_get_channel_id(activity: botbuilder.schema._models_py3.Activity)'
+  signature: 'teams_get_channel_id(activity: botbuilder.schema._models_py3.Activity)
+    -> str'
   parameters:
   - name: activity
 - uid: botbuilder.core.teams.teams_activity_extensions.teams_get_meeting_info
   name: teams_get_meeting_info
-  signature: 'teams_get_meeting_info(activity: botbuilder.schema._models_py3.Activity)'
+  signature: 'teams_get_meeting_info(activity: botbuilder.schema._models_py3.Activity)
+    -> botbuilder.schema.teams._models_py3.TeamsMeetingInfo'
   parameters:
   - name: activity
 - uid: botbuilder.core.teams.teams_activity_extensions.teams_get_team_info
   name: teams_get_team_info
-  signature: 'teams_get_team_info(activity: botbuilder.schema._models_py3.Activity)'
+  signature: 'teams_get_team_info(activity: botbuilder.schema._models_py3.Activity)
+    -> botbuilder.schema.teams._models_py3.TeamInfo'
   parameters:
   - name: activity
 - uid: botbuilder.core.teams.teams_activity_extensions.teams_notify_user

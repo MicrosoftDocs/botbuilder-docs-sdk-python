@@ -9,7 +9,7 @@ summary: An item on a receipt card.
 constructor:
   syntax: 'ReceiptItem(*, title: Optional[str] = None, subtitle: Optional[str] = None,
     text: Optional[str] = None, image=None, price: Optional[str] = None, quantity:
-    Optional[str] = None, tap=None, **kwargs)'
+    Optional[str] = None, tap=None, **kwargs) -> None'
   parameters:
   - name: title
     description: Title of the Card

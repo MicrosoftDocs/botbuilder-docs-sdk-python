@@ -27,7 +27,7 @@ methods:
     :return:'
   signature: 'apply_conversation_reference(activity: botbuilder.schema._models_py3.Activity,
     reference: botbuilder.schema._models_py3.ConversationReference, is_incoming: bool
-    = False)'
+    = False) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: activity
     isRequired: true
@@ -45,7 +45,7 @@ methods:
     :param context:
 
     :return:'
-  signature: 'copy_to(context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'copy_to(context: botbuilder.core.turn_context.TurnContext) -> None'
   parameters:
   - name: context
     isRequired: true
@@ -62,7 +62,7 @@ methods:
     isRequired: true
 - uid: botbuilder.core.turn_context.TurnContext.get
   name: get
-  signature: 'get(key: str)'
+  signature: 'get(key: str) -> object'
   parameters:
   - name: key
     isRequired: true
@@ -81,20 +81,21 @@ methods:
     :param activity:
 
     :return:'
-  signature: 'get_conversation_reference(activity: botbuilder.schema._models_py3.Activity)'
+  signature: 'get_conversation_reference(activity: botbuilder.schema._models_py3.Activity)
+    -> botbuilder.schema._models_py3.ConversationReference'
   parameters:
   - name: activity
     isRequired: true
 - uid: botbuilder.core.turn_context.TurnContext.get_mentions
   name: get_mentions
-  signature: 'get_mentions(activity: botbuilder.schema._models_py3.Activity)'
+  signature: 'get_mentions(activity: botbuilder.schema._models_py3.Activity) -> List[botbuilder.schema._models_py3.Mention]'
   parameters:
   - name: activity
     isRequired: true
 - uid: botbuilder.core.turn_context.TurnContext.get_reply_conversation_reference
   name: get_reply_conversation_reference
   signature: 'get_reply_conversation_reference(activity: botbuilder.schema._models_py3.Activity,
-    reply: botbuilder.schema._models_py3.ResourceResponse)'
+    reply: botbuilder.schema._models_py3.ResourceResponse) -> botbuilder.schema._models_py3.ConversationReference'
   parameters:
   - name: activity
     isRequired: true
@@ -102,9 +103,13 @@ methods:
     isRequired: true
 - uid: botbuilder.core.turn_context.TurnContext.has
   name: has
-  summary: "Returns True is set() has been called for a key. The cached value may\
-    \ be of type \u2018None'.\n:param key:\n:return:"
-  signature: 'has(key: str)'
+  summary: 'Returns True is set() has been called for a key. The cached value may
+    be of type ''None''.
+
+    :param key:
+
+    :return:'
+  signature: 'has(key: str) -> bool'
   parameters:
   - name: key
     isRequired: true
@@ -116,7 +121,7 @@ methods:
     :param handler:
 
     :return:'
-  signature: on_delete_activity(handler)
+  signature: on_delete_activity(handler) -> 'TurnContext'
   parameters:
   - name: handler
     isRequired: true
@@ -128,7 +133,7 @@ methods:
     :param handler:
 
     :return:'
-  signature: on_send_activities(handler)
+  signature: on_send_activities(handler) -> 'TurnContext'
   parameters:
   - name: handler
     isRequired: true
@@ -140,14 +145,14 @@ methods:
     :param handler:
 
     :return:'
-  signature: on_update_activity(handler)
+  signature: on_update_activity(handler) -> 'TurnContext'
   parameters:
   - name: handler
     isRequired: true
 - uid: botbuilder.core.turn_context.TurnContext.remove_mention_text
   name: remove_mention_text
   signature: 'remove_mention_text(activity: botbuilder.schema._models_py3.Activity,
-    identifier: str)'
+    identifier: str) -> str'
   parameters:
   - name: activity
     isRequired: true
@@ -155,13 +160,15 @@ methods:
     isRequired: true
 - uid: botbuilder.core.turn_context.TurnContext.remove_recipient_mention
   name: remove_recipient_mention
-  signature: 'remove_recipient_mention(activity: botbuilder.schema._models_py3.Activity)'
+  signature: 'remove_recipient_mention(activity: botbuilder.schema._models_py3.Activity)
+    -> str'
   parameters:
   - name: activity
     isRequired: true
 - uid: botbuilder.core.turn_context.TurnContext.send_activities
   name: send_activities
-  signature: 'send_activities(activities: List[botbuilder.schema._models_py3.Activity])'
+  signature: 'send_activities(activities: List[botbuilder.schema._models_py3.Activity])
+    -> List[botbuilder.schema._models_py3.ResourceResponse]'
   parameters:
   - name: activities
     isRequired: true
@@ -173,7 +180,7 @@ methods:
 
     :return:'
   signature: 'send_activity(activity_or_text: Union[botbuilder.schema._models_py3.Activity,
-    str], speak: Optional[str] = None, input_hint: Optional[str] = None)'
+    str], speak: Optional[str] = None, input_hint: Optional[str] = None) -> botbuilder.schema._models_py3.ResourceResponse'
   parameters:
   - name: activity_or_text
     isRequired: true
@@ -184,7 +191,7 @@ methods:
 - uid: botbuilder.core.turn_context.TurnContext.send_trace_activity
   name: send_trace_activity
   signature: 'send_trace_activity(name: str, value: object = None, value_type: Optional[str]
-    = None, label: Optional[str] = None)'
+    = None, label: Optional[str] = None) -> botbuilder.schema._models_py3.ResourceResponse'
   parameters:
   - name: name
     isRequired: true
@@ -203,7 +210,7 @@ methods:
     :param value:
 
     :return:'
-  signature: 'set(key: str, value: object)'
+  signature: 'set(key: str, value: object) -> None'
   parameters:
   - name: key
     isRequired: true

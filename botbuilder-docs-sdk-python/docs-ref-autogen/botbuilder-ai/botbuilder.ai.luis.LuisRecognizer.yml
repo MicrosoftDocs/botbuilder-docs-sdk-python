@@ -19,7 +19,7 @@ methods:
     These properties are logged when the recognizer is called.'
   signature: 'fill_luis_event_properties(recognizer_result: botbuilder.core.recognizer_result.RecognizerResult,
     turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
-    Optional[Dict[str, str]] = None)'
+    Optional[Dict[str, str]] = None) -> Dict[str, str]'
   parameters:
   - name: recognizer_result
     description: Last activity sent from user.
@@ -88,7 +88,7 @@ methods:
   signature: 'recognize(turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
     Optional[Dict[str, str]] = None, telemetry_metrics: Optional[Dict[str, float]]
     = None, luis_prediction_options: Optional[botbuilder.ai.luis.luis_prediction_options.LuisPredictionOptions]
-    = None)'
+    = None) -> botbuilder.core.recognizer_result.RecognizerResult'
   parameters:
   - name: turn_context
     description: Context object containing information for a single conversation turn
@@ -123,7 +123,7 @@ methods:
   name: top_intent
   summary: Returns the name of the top scoring intent from a set of LUIS results.
   signature: 'top_intent(results: botbuilder.core.recognizer_result.RecognizerResult,
-    default_intent: str = ''None'', min_score: float = 0.0)'
+    default_intent: str = ''None'', min_score: float = 0.0) -> str'
   parameters:
   - name: results
     description: Result set to be searched.

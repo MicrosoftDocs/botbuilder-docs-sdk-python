@@ -8,7 +8,7 @@ inheritances:
 summary: Invoke request body type for app-based link query.
 constructor:
   syntax: 'AppBasedLinkQuery(*, url: Optional[str] = None, state: Optional[str] =
-    None, **kwargs)'
+    None, **kwargs) -> None'
   parameters:
   - name: url
     description: Url queried by user

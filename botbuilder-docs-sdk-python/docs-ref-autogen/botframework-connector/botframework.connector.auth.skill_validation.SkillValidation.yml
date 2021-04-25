@@ -13,7 +13,8 @@ methods:
   name: authenticate_channel_token
   signature: 'authenticate_channel_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
     channel_service_or_provider: Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
-    channel_id: str, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration)'
+    channel_id: str, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration)
+    -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: auth_header
     isRequired: true
@@ -38,7 +39,7 @@ methods:
     :param claims: A dict of claims.
 
     :return bool:'
-  signature: 'is_skill_claim(claims: Dict[str, object])'
+  signature: 'is_skill_claim(claims: Dict[str, object]) -> bool'
   parameters:
   - name: claims
     isRequired: true
@@ -50,7 +51,7 @@ methods:
     :param auth_header: Bearer Token, in the "Bearer [Long String]" Format.
 
     :return bool:'
-  signature: 'is_skill_token(auth_header: str)'
+  signature: 'is_skill_token(auth_header: str) -> bool'
   parameters:
   - name: auth_header
     isRequired: true

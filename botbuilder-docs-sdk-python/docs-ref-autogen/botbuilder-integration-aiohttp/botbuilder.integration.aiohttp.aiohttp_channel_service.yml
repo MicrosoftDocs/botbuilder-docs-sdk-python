@@ -6,20 +6,20 @@ functions:
 - uid: botbuilder.integration.aiohttp.aiohttp_channel_service.aiohttp_channel_service_routes
   name: aiohttp_channel_service_routes
   signature: 'aiohttp_channel_service_routes(handler: botbuilder.core.channel_service_handler.ChannelServiceHandler,
-    base_url: str = '''')'
+    base_url: str = '''') -> aiohttp.web_routedef.RouteTableDef'
   parameters:
   - name: handler
   - name: base_url
 - uid: botbuilder.integration.aiohttp.aiohttp_channel_service.deserialize_from_body
   name: deserialize_from_body
   signature: 'deserialize_from_body(request: aiohttp.web_request.Request, target_model:
-    Type[msrest.serialization.Model])'
+    Type[msrest.serialization.Model]) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: request
   - name: target_model
 - uid: botbuilder.integration.aiohttp.aiohttp_channel_service.get_serialized_response
   name: get_serialized_response
   signature: 'get_serialized_response(model_or_list: Union[msrest.serialization.Model,
-    List[msrest.serialization.Model]])'
+    List[msrest.serialization.Model]]) -> aiohttp.web_response.Response'
   parameters:
   - name: model_or_list

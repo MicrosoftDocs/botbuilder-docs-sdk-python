@@ -11,7 +11,7 @@ constructor:
     = None, activity_title: Optional[str] = None, activity_subtitle: Optional[str]
     = None, activity_text: Optional[str] = None, activity_image: Optional[str] = None,
     activity_image_type=None, markdown: Optional[bool] = None, facts=None, images=None,
-    potential_action=None, **kwargs)'
+    potential_action=None, **kwargs) -> None'
   parameters:
   - name: title
     description: Title of the section
@@ -38,8 +38,9 @@ constructor:
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: activity_image_type
-    description: "Describes how Activity image is rendered.\nPossible values include:\
-      \ \u2018avatar', \u2018article'"
+    description: 'Describes how Activity image is rendered.
+
+      Possible values include: ''avatar'', ''article'''
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str'
   - name: markdown

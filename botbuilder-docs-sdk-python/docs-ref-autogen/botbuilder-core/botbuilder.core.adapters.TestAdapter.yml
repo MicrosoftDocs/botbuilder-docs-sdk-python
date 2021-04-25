@@ -79,7 +79,7 @@ methods:
 - uid: botbuilder.core.adapters.TestAdapter.create_conversation_reference
   name: create_conversation_reference
   signature: 'create_conversation_reference(name: str, user: str = ''User1'', bot:
-    str = ''Bot'')'
+    str = ''Bot'') -> botbuilder.schema._models_py3.ConversationReference'
   parameters:
   - name: name
     isRequired: true
@@ -89,7 +89,8 @@ methods:
     defaultValue: Bot
 - uid: botbuilder.core.adapters.TestAdapter.create_turn_context
   name: create_turn_context
-  signature: 'create_turn_context(activity: botbuilder.schema._models_py3.Activity)'
+  signature: 'create_turn_context(activity: botbuilder.schema._models_py3.Activity)
+    -> botbuilder.core.turn_context.TurnContext'
   parameters:
   - name: activity
     isRequired: true
@@ -116,7 +117,8 @@ methods:
   name: exchange_token
   summary: Performs a token exchange operation such as for single sign-on.
   signature: 'exchange_token(turn_context: botbuilder.core.turn_context.TurnContext,
-    connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)'
+    connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
+    -> botbuilder.schema._models_py3.TokenResponse'
   parameters:
   - name: turn_context
     description: Context for the current turn of conversation with the user.
@@ -138,7 +140,8 @@ methods:
   summary: Performs a token exchange operation such as for single sign-on.
   signature: 'exchange_token_from_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
     oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
-    connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)'
+    connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
+    -> botbuilder.schema._models_py3.TokenResponse'
   parameters:
   - name: turn_context
     description: Context for the current turn of conversation with the user.
@@ -176,7 +179,8 @@ methods:
     :return:'
   signature: 'get_aad_tokens(context: botbuilder.core.turn_context.TurnContext, connection_name:
     str, resource_urls: List[str], user_id: Optional[str] = None, oauth_app_credentials:
-    Optional[botframework.connector.auth.app_credentials.AppCredentials] = None)'
+    Optional[botframework.connector.auth.app_credentials.AppCredentials] = None) ->
+    Dict[str, botbuilder.schema._models_py3.TokenResponse]'
   parameters:
   - name: context
     isRequired: true
@@ -190,7 +194,7 @@ methods:
     defaultValue: None
 - uid: botbuilder.core.adapters.TestAdapter.get_next_activity
   name: get_next_activity
-  signature: get_next_activity()
+  signature: get_next_activity() -> botbuilder.schema._models_py3.Activity
 - uid: botbuilder.core.adapters.TestAdapter.get_oauth_sign_in_link
   name: get_oauth_sign_in_link
   summary: 'Get the raw signin link to be sent to the user for signin for a connection
@@ -207,7 +211,8 @@ methods:
     :return:'
   signature: 'get_oauth_sign_in_link(context: botbuilder.core.turn_context.TurnContext,
     connection_name: str, final_redirect: Optional[str] = None, oauth_app_credentials:
-    Optional[botframework.connector.auth.app_credentials.AppCredentials] = None)'
+    Optional[botframework.connector.auth.app_credentials.AppCredentials] = None) ->
+    str'
   parameters:
   - name: context
     isRequired: true
@@ -222,7 +227,7 @@ methods:
   summary: Get the raw signin link to be sent to the user for signin for a connection
     name.
   signature: 'get_sign_in_resource_from_user(turn_context: botbuilder.core.turn_context.TurnContext,
-    connection_name: str, user_id: str, final_redirect: Optional[str] = None)'
+    connection_name: str, user_id: str, final_redirect: Optional[str] = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
   parameters:
   - name: turn_context
     description: Context for the current turn of conversation with the user.
@@ -248,7 +253,7 @@ methods:
     name.
   signature: 'get_sign_in_resource_from_user_and_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
     oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
-    connection_name: str, user_id: str, final_redirect: Optional[str] = None)'
+    connection_name: str, user_id: str, final_redirect: Optional[str] = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
   parameters:
   - name: turn_context
     description: Context for the current turn of conversation with the user.
@@ -296,7 +301,7 @@ methods:
   signature: 'get_token_status(context: botbuilder.core.turn_context.TurnContext,
     connection_name: Optional[str] = None, user_id: Optional[str] = None, include_filter:
     Optional[str] = None, oauth_app_credentials: Optional[botframework.connector.auth.app_credentials.AppCredentials]
-    = None)'
+    = None) -> Dict[str, botbuilder.schema._models_py3.TokenResponse]'
   parameters:
   - name: context
     isRequired: true
@@ -323,7 +328,7 @@ methods:
     :return:'
   signature: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, connection_name:
     str, magic_code: Optional[str] = None, oauth_app_credentials: Optional[botframework.connector.auth.app_credentials.AppCredentials]
-    = None)'
+    = None) -> botbuilder.schema._models_py3.TokenResponse'
   parameters:
   - name: context
     isRequired: true
@@ -366,7 +371,7 @@ methods:
     :param user_says:
 
     :return: A new instance of the TestFlow object'
-  signature: send(user_says)
+  signature: send(user_says) -> object
   parameters:
   - name: user_says
     isRequired: true
@@ -382,7 +387,8 @@ methods:
     :param activities:
 
     :return:'
-  signature: 'send_activities(context, activities: List[botbuilder.schema._models_py3.Activity])'
+  signature: 'send_activities(context, activities: List[botbuilder.schema._models_py3.Activity])
+    -> List[botbuilder.schema._models_py3.ResourceResponse]'
   parameters:
   - name: context
     isRequired: true
@@ -432,7 +438,7 @@ methods:
     :param timeout:
 
     :return:'
-  signature: test(user_says, expected, description=None, timeout=None)
+  signature: test(user_says, expected, description=None, timeout=None) -> 'TestFlow'
   parameters:
   - name: user_says
     isRequired: true

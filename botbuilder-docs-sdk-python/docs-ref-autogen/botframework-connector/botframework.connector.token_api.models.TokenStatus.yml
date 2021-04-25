@@ -9,7 +9,7 @@ summary: The status of a particular token.
 constructor:
   syntax: 'TokenStatus(*, channel_id: Optional[str] = None, connection_name: Optional[str]
     = None, has_token: Optional[bool] = None, service_provider_display_name: Optional[str]
-    = None, **kwargs)'
+    = None, **kwargs) -> None'
   parameters:
   - name: channel_id
     description: The channelId of the token status pertains to

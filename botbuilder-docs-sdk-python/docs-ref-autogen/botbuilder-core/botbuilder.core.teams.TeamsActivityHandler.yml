@@ -34,7 +34,8 @@ methods:
   summary: 'Invoked when an invoke activity is received from the connector.
 
     Invoke activities can be used to communicate many different things.'
-  signature: 'on_invoke_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'on_invoke_activity(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> botbuilder.core.invoke_response.InvokeResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -63,7 +64,7 @@ methods:
   name: on_teams_app_based_link_query
   summary: Invoked when an app based link query activity is received from the connector.
   signature: 'on_teams_app_based_link_query(turn_context: botbuilder.core.turn_context.TurnContext,
-    query: botbuilder.schema.teams._models_py3.AppBasedLinkQuery)'
+    query: botbuilder.schema.teams._models_py3.AppBasedLinkQuery) -> botbuilder.schema.teams._models_py3.MessagingExtensionResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -76,7 +77,8 @@ methods:
 - uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_card_action_invoke
   name: on_teams_card_action_invoke
   summary: Invoked when an card action invoke activity is received from the connector.
-  signature: 'on_teams_card_action_invoke(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'on_teams_card_action_invoke(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> botbuilder.core.invoke_response.InvokeResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -166,7 +168,8 @@ methods:
 
     activity sent when the user acts on a file consent card.'
   signature: 'on_teams_file_consent(turn_context: botbuilder.core.turn_context.TurnContext,
-    file_consent_card_response: botbuilder.schema.teams._models_py3.FileConsentCardResponse)'
+    file_consent_card_response: botbuilder.schema.teams._models_py3.FileConsentCardResponse)
+    -> botbuilder.core.invoke_response.InvokeResponse'
   parameters:
   - name: turn_context
     isRequired: true
@@ -309,7 +312,8 @@ methods:
   summary: Invoked when a messaging extension bot message preview edit activity is
     received from the connector.
   signature: 'on_teams_messaging_extension_bot_message_preview_edit(turn_context:
-    botbuilder.core.turn_context.TurnContext, action: botbuilder.schema.teams._models_py3.MessagingExtensionAction)'
+    botbuilder.core.turn_context.TurnContext, action: botbuilder.schema.teams._models_py3.MessagingExtensionAction)
+    -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -324,7 +328,8 @@ methods:
   summary: Invoked when a messaging extension bot message preview send activity is
     received from the connector.
   signature: 'on_teams_messaging_extension_bot_message_preview_send(turn_context:
-    botbuilder.core.turn_context.TurnContext, action: botbuilder.schema.teams._models_py3.MessagingExtensionAction)'
+    botbuilder.core.turn_context.TurnContext, action: botbuilder.schema.teams._models_py3.MessagingExtensionAction)
+    -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -354,7 +359,8 @@ methods:
   summary: Invoked when a messaging extension configuration query setting url activity
     is received from the connector.
   signature: 'on_teams_messaging_extension_configuration_query_settings_url(turn_context:
-    botbuilder.core.turn_context.TurnContext, query: botbuilder.schema.teams._models_py3.MessagingExtensionQuery)'
+    botbuilder.core.turn_context.TurnContext, query: botbuilder.schema.teams._models_py3.MessagingExtensionQuery)
+    -> botbuilder.schema.teams._models_py3.MessagingExtensionResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -384,7 +390,7 @@ methods:
   summary: Invoked when a Messaging Extension Fetch activity is received from the
     connector.
   signature: 'on_teams_messaging_extension_fetch_task(turn_context: botbuilder.core.turn_context.TurnContext,
-    action: botbuilder.schema.teams._models_py3.MessagingExtensionAction)'
+    action: botbuilder.schema.teams._models_py3.MessagingExtensionAction) -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -399,7 +405,7 @@ methods:
   summary: Invoked when a Messaging Extension Query activity is received from the
     connector.
   signature: 'on_teams_messaging_extension_query(turn_context: botbuilder.core.turn_context.TurnContext,
-    query: botbuilder.schema.teams._models_py3.MessagingExtensionQuery)'
+    query: botbuilder.schema.teams._models_py3.MessagingExtensionQuery) -> botbuilder.schema.teams._models_py3.MessagingExtensionResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -414,7 +420,7 @@ methods:
   summary: Invoked when a messaging extension select item activity is received from
     the connector.
   signature: 'on_teams_messaging_extension_select_item(turn_context: botbuilder.core.turn_context.TurnContext,
-    query)'
+    query) -> botbuilder.schema.teams._models_py3.MessagingExtensionResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -429,7 +435,7 @@ methods:
   summary: Invoked when a messaging extension submit action activity is received from
     the connector.
   signature: 'on_teams_messaging_extension_submit_action(turn_context: botbuilder.core.turn_context.TurnContext,
-    action: botbuilder.schema.teams._models_py3.MessagingExtensionAction)'
+    action: botbuilder.schema.teams._models_py3.MessagingExtensionAction) -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -444,7 +450,7 @@ methods:
   summary: Invoked when a messaging extension submit action dispatch activity is received
     from the connector.
   signature: 'on_teams_messaging_extension_submit_action_dispatch(turn_context: botbuilder.core.turn_context.TurnContext,
-    action: botbuilder.schema.teams._models_py3.MessagingExtensionAction)'
+    action: botbuilder.schema.teams._models_py3.MessagingExtensionAction) -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -518,7 +524,8 @@ methods:
   summary: Override this in a derived class to provide logic for when a task module
     is fetched.
   signature: 'on_teams_task_module_fetch(turn_context: botbuilder.core.turn_context.TurnContext,
-    task_module_request: botbuilder.schema.teams._models_py3.TaskModuleRequest)'
+    task_module_request: botbuilder.schema.teams._models_py3.TaskModuleRequest) ->
+    botbuilder.schema.teams._models_py3.TaskModuleResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -533,7 +540,8 @@ methods:
   summary: Override this in a derived class to provide logic for when a task module
     is submitted.
   signature: 'on_teams_task_module_submit(turn_context: botbuilder.core.turn_context.TurnContext,
-    task_module_request: botbuilder.schema.teams._models_py3.TaskModuleRequest)'
+    task_module_request: botbuilder.schema.teams._models_py3.TaskModuleRequest) ->
+    botbuilder.schema.teams._models_py3.TaskModuleResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.

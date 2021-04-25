@@ -8,7 +8,8 @@ inheritances:
 summary: TokenResponse.
 constructor:
   syntax: 'TokenResponse(*, channel_id: Optional[str] = None, connection_name: Optional[str]
-    = None, token: Optional[str] = None, expiration: Optional[str] = None, **kwargs)'
+    = None, token: Optional[str] = None, expiration: Optional[str] = None, **kwargs)
+    -> None'
   parameters:
   - name: channel_id
     types:

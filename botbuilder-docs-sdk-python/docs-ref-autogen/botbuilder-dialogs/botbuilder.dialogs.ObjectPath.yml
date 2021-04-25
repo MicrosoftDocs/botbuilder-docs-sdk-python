@@ -37,7 +37,7 @@ methods:
 - uid: botbuilder.dialogs.ObjectPath.get_path_value
   name: get_path_value
   summary: Get the value for a path relative to an object.
-  signature: 'get_path_value(obj, path: str, default: object = None)'
+  signature: 'get_path_value(obj, path: str, default: object = None) -> object'
   parameters:
   - name: obj
     isRequired: true
@@ -48,7 +48,7 @@ methods:
 - uid: botbuilder.dialogs.ObjectPath.has_value
   name: has_value
   summary: Does an object have a subpath.
-  signature: 'has_value(obj, path: str)'
+  signature: 'has_value(obj, path: str) -> bool'
   parameters:
   - name: obj
     isRequired: true
@@ -56,7 +56,7 @@ methods:
     isRequired: true
 - uid: botbuilder.dialogs.ObjectPath.is_int
   name: is_int
-  signature: 'is_int(value: str)'
+  signature: 'is_int(value: str) -> bool'
   parameters:
   - name: value
     isRequired: true
@@ -83,7 +83,7 @@ methods:
 - uid: botbuilder.dialogs.ObjectPath.try_get_path_value
   name: try_get_path_value
   summary: Get the value for a path relative to an object.
-  signature: 'try_get_path_value(obj, path: str)'
+  signature: 'try_get_path_value(obj, path: str) -> object'
   parameters:
   - name: obj
     isRequired: true
@@ -91,7 +91,8 @@ methods:
     isRequired: true
 - uid: botbuilder.dialogs.ObjectPath.try_resolve_path
   name: try_resolve_path
-  signature: 'try_resolve_path(obj, property_path: str, evaluate: bool = False)'
+  signature: 'try_resolve_path(obj, property_path: str, evaluate: bool = False) ->
+    []'
   parameters:
   - name: obj
     isRequired: true

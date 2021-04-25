@@ -30,7 +30,7 @@ functions:
   summary: Gets a telemetry client instance with a telemetry processor.
   signature: 'get_telemetry_client_with_processor(key: str, channel: applicationinsights.channel.TelemetryChannel.TelemetryChannel,
     telemetry_processor: Optional[botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor]
-    = None)'
+    = None) -> applicationinsights.TelemetryClient.TelemetryClient'
   parameters:
   - name: key
     description: instrumentation key

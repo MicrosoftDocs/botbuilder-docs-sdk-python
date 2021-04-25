@@ -9,7 +9,7 @@ summary: Information about the file to be uploaded.
 constructor:
   syntax: 'FileUploadInfo(*, name: Optional[str] = None, upload_url: Optional[str]
     = None, content_url: Optional[str] = None, unique_id: Optional[str] = None, file_type:
-    Optional[str] = None, **kwargs)'
+    Optional[str] = None, **kwargs) -> None'
   parameters:
   - name: name
     description: Name of the file.

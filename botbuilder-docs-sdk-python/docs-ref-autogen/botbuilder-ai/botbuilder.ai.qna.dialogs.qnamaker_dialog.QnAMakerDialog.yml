@@ -23,7 +23,7 @@ methods:
   name: begin_dialog
   summary: Called when the dialog is started and pushed onto the dialog stack.
   signature: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    options: object = None)'
+    options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: dialog_context
     description: The :class:'botbuilder.dialogs.DialogContext' for the current turn

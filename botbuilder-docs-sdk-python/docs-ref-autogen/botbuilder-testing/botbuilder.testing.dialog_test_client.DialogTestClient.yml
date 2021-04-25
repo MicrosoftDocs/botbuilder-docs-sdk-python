@@ -16,7 +16,7 @@ methods:
 - uid: botbuilder.testing.dialog_test_client.DialogTestClient.get_next_reply
   name: get_next_reply
   summary: Get the next reply waiting to be delivered (if one exists)
-  signature: get_next_reply()
+  signature: get_next_reply() -> botbuilder.schema._models_py3.Activity
   return:
     description: a TestFlow that can be used to assert replies etc.
     types:
@@ -24,7 +24,7 @@ methods:
 - uid: botbuilder.testing.dialog_test_client.DialogTestClient.send_activity
   name: send_activity
   summary: Send an activity into the dialog.
-  signature: send_activity(activity)
+  signature: send_activity(activity) -> botbuilder.schema._models_py3.Activity
   parameters:
   - name: activity
     description: an activity potentially with text.

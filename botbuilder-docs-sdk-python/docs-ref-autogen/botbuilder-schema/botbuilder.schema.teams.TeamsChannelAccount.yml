@@ -10,7 +10,7 @@ constructor:
   syntax: 'TeamsChannelAccount(*, id: Optional[str] = None, name: Optional[str] =
     None, given_name: Optional[str] = None, surname: Optional[str] = None, email:
     Optional[str] = None, user_principal_name: Optional[str] = None, tenant_id: Optional[str]
-    = None, user_role: Optional[str] = None, **kwargs)'
+    = None, user_role: Optional[str] = None, **kwargs) -> None'
   parameters:
   - name: id
     description: 'Channel id for the user or bot on this channel (Example:

@@ -23,7 +23,8 @@ methods:
   summary: Called when a prompt dialog is pushed onto the dialog stack and is being
     activated.
   signature: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    options: Optional[botbuilder.dialogs.prompts.prompt_options.PromptOptions] = None)'
+    options: Optional[botbuilder.dialogs.prompts.prompt_options.PromptOptions] = None)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: dialog_context
     description: The dialog context for the current turn of the conversation.
@@ -39,7 +40,8 @@ methods:
   name: continue_dialog
   summary: Called when a prompt dialog is the active dialog and the user replied with
     a new activity.
-  signature: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
+  signature: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: dialog_context
     description: The dialog context for the current turn of the conversation.
@@ -79,7 +81,8 @@ methods:
   summary: When overridden in a derived class, attempts to recognize the incoming
     activity.
   signature: 'on_recognize(context: botbuilder.core.turn_context.TurnContext, state:
-    Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)'
+    Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
+    -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
   parameters:
   - name: context
     description: Context for the current turn of conversation with the user.

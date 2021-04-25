@@ -13,7 +13,7 @@ methods:
   summary: Creates a trace activity based on this activity.
   signature: 'create_trace(turn_activity: botbuilder.schema._models_py3.Activity,
     name: str, value: object = None, value_type: Optional[str] = None, label: Optional[str]
-    = None)'
+    = None) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: turn_activity
     isRequired: true

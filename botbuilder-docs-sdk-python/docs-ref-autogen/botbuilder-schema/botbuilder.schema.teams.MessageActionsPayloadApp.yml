@@ -8,11 +8,14 @@ inheritances:
 summary: Represents an application entity.
 constructor:
   syntax: 'MessageActionsPayloadApp(*, application_identity_type=None, id: Optional[str]
-    = None, display_name: Optional[str] = None, **kwargs)'
+    = None, display_name: Optional[str] = None, **kwargs) -> None'
   parameters:
   - name: application_identity_type
-    description: "The type of application. Possible values\ninclude: \u2018aadApplication',\
-      \ \u2018bot', \u2018tenantBot', \u2018office365Connector',\n\u2018webhook'"
+    description: 'The type of application. Possible values
+
+      include: ''aadApplication'', ''bot'', ''tenantBot'', ''office365Connector'',
+
+      ''webhook'''
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str'
   - name: id

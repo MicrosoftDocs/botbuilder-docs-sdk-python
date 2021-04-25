@@ -12,7 +12,8 @@ methods:
 - uid: botbuilder.dialogs.choices.channel.Channel.get_channel_id
   name: get_channel_id
   summary: Get the Channel Id from the current Activity on the Turn Context.
-  signature: 'get_channel_id(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'get_channel_id(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> str'
   parameters:
   - name: turn_context
     description: The Turn Context to retrieve the Activity's Channel Id from.
@@ -26,7 +27,7 @@ methods:
 - uid: botbuilder.dialogs.choices.channel.Channel.has_message_feed
   name: has_message_feed
   summary: Determine if a Channel has a Message Feed.
-  signature: 'has_message_feed(channel_id: str)'
+  signature: 'has_message_feed(channel_id: str) -> bool'
   parameters:
   - name: channel_id
     description: The Channel to check for Message Feed.
@@ -40,7 +41,7 @@ methods:
 - uid: botbuilder.dialogs.choices.channel.Channel.max_action_title_length
   name: max_action_title_length
   summary: Maximum length allowed for Action Titles.
-  signature: 'max_action_title_length(channel_id: str)'
+  signature: 'max_action_title_length(channel_id: str) -> int'
   parameters:
   - name: channel_id
     description: The Channel to determine Maximum Action Title Length.
@@ -55,7 +56,7 @@ methods:
 - uid: botbuilder.dialogs.choices.channel.Channel.supports_card_actions
   name: supports_card_actions
   summary: Determine if a number of Card Actions are supported by a Channel.
-  signature: 'supports_card_actions(channel_id: str, button_cnt: int = 100)'
+  signature: 'supports_card_actions(channel_id: str, button_cnt: int = 100) -> bool'
   parameters:
   - name: channel_id
     description: The Channel to check if the Card Actions are supported in.
@@ -75,7 +76,8 @@ methods:
 - uid: botbuilder.dialogs.choices.channel.Channel.supports_suggested_actions
   name: supports_suggested_actions
   summary: Determine if a number of Suggested Actions are supported by a Channel.
-  signature: 'supports_suggested_actions(channel_id: str, button_cnt: int = 100)'
+  signature: 'supports_suggested_actions(channel_id: str, button_cnt: int = 100) ->
+    bool'
   parameters:
   - name: channel_id
     description: The Channel to check the if Suggested Actions are supported in.

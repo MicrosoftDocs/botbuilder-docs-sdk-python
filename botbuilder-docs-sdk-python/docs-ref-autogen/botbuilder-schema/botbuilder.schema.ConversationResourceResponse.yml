@@ -8,7 +8,7 @@ inheritances:
 summary: A response containing a resource.
 constructor:
   syntax: 'ConversationResourceResponse(*, activity_id: Optional[str] = None, service_url:
-    Optional[str] = None, id: Optional[str] = None, **kwargs)'
+    Optional[str] = None, id: Optional[str] = None, **kwargs) -> None'
   parameters:
   - name: activity_id
     description: ID of the Activity (if sent)

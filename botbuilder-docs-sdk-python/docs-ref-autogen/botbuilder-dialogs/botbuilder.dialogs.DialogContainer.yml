@@ -28,13 +28,14 @@ methods:
     description: task.
 - uid: botbuilder.dialogs.DialogContainer.create_child_context
   name: create_child_context
-  signature: 'create_child_context(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
+  signature: 'create_child_context(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
+    -> botbuilder.dialogs.dialog_context.DialogContext'
   parameters:
   - name: dialog_context
     isRequired: true
 - uid: botbuilder.dialogs.DialogContainer.find_dialog
   name: find_dialog
-  signature: 'find_dialog(dialog_id: str)'
+  signature: 'find_dialog(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
   parameters:
   - name: dialog_id
     isRequired: true
@@ -57,13 +58,13 @@ methods:
     which is then examined via calls to check_for_version_change_async().
 
     :return: version which represents the change of the internals of this container.'
-  signature: get_internal_version()
+  signature: get_internal_version() -> str
 - uid: botbuilder.dialogs.DialogContainer.on_dialog_event
   name: on_dialog_event
   summary: "Called when an event has been raised, using *DialogContext.emitEvent()*,\
     \ by either the current dialog or a\n   dialog that the current dialog started."
   signature: 'on_dialog_event(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    dialog_event: botbuilder.dialogs.dialog_event.DialogEvent)'
+    dialog_event: botbuilder.dialogs.dialog_event.DialogEvent) -> bool'
   parameters:
   - name: dialog_context
     description: The dialog context for the current turn of conversation.

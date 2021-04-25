@@ -9,7 +9,7 @@ summary: Messaging extension attachment.
 constructor:
   syntax: 'MessagingExtensionAttachment(*, content_type: Optional[str] = None, content_url:
     Optional[str] = None, content=None, name: Optional[str] = None, thumbnail_url:
-    Optional[str] = None, preview=None, **kwargs)'
+    Optional[str] = None, preview=None, **kwargs) -> None'
   parameters:
   - name: content_type
     description: mimetype/Contenttype for the file

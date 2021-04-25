@@ -44,7 +44,7 @@ methods:
 - uid: botbuilder.azure.blob_storage.BlobStorage.read
   name: read
   summary: Retrieve entities from the configured blob container.
-  signature: 'read(keys: List[str])'
+  signature: 'read(keys: List[str]) -> Dict[str, object]'
   parameters:
   - name: keys
     description: An array of entity keys.

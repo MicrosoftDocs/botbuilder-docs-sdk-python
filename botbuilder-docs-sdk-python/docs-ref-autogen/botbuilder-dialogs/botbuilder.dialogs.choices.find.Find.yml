@@ -26,7 +26,7 @@ methods:
   name: find_values
   signature: 'find_values(utterance: str, values: List[botbuilder.dialogs.choices.sorted_value.SortedValue],
     options: Optional[botbuilder.dialogs.choices.find_values_options.FindValuesOptions]
-    = None)'
+    = None) -> List[botbuilder.dialogs.choices.model_result.ModelResult]'
   parameters:
   - name: utterance
     isRequired: true

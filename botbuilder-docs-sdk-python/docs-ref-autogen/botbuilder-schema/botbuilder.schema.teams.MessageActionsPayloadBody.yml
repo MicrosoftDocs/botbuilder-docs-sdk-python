@@ -8,11 +8,12 @@ inheritances:
 summary: Plaintext/HTML representation of the content of the message.
 constructor:
   syntax: 'MessageActionsPayloadBody(*, content_type=None, content: Optional[str]
-    = None, **kwargs)'
+    = None, **kwargs) -> None'
   parameters:
   - name: content_type
-    description: "Type of the content. Possible values include: \u2018html',\n\u2018\
-      text'"
+    description: 'Type of the content. Possible values include: ''html'',
+
+      ''text'''
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: content

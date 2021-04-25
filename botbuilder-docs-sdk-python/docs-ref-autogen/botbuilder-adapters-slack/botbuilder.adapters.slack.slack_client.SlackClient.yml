@@ -11,7 +11,7 @@ constructor:
 methods:
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.channels_list_ex
   name: channels_list_ex
-  signature: 'channels_list_ex(exclude_archived: bool = True)'
+  signature: 'channels_list_ex(exclude_archived: bool = True) -> slack.web.slack_response.SlackResponse'
   parameters:
   - name: exclude_archived
     defaultValue: 'True'
@@ -19,7 +19,7 @@ methods:
   name: chat_post_ephemeral_ex
   signature: 'chat_post_ephemeral_ex(channel: str, text: str, target_user: str, parse:
     Optional[str] = None, link_names: bool = False, attachments: Optional[List[str]]
-    = None, as_user: bool = False)'
+    = None, as_user: bool = False) -> slack.web.slack_response.SlackResponse'
   parameters:
   - name: channel
     isRequired: true
@@ -40,7 +40,8 @@ methods:
   signature: 'chat_post_message_ex(channel: str, text: str, bot_name: Optional[str]
     = None, parse: Optional[str] = None, link_names: bool = False, blocks: Optional[List[str]]
     = None, attachments: Optional[List[str]] = None, unfurl_links: bool = False, icon_url:
-    Optional[str] = None, icon_emoji: Optional[str] = None, as_user: bool = False)'
+    Optional[str] = None, icon_emoji: Optional[str] = None, as_user: bool = False)
+    -> slack.web.slack_response.SlackResponse'
   parameters:
   - name: channel
     isRequired: true
@@ -89,7 +90,7 @@ methods:
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.files_info_ex
   name: files_info_ex
   signature: 'files_info_ex(file_id: str, page: Optional[int] = None, count: Optional[int]
-    = None)'
+    = None) -> slack.web.slack_response.SlackResponse'
   parameters:
   - name: file_id
     isRequired: true
@@ -101,7 +102,7 @@ methods:
   name: files_list_ex
   signature: 'files_list_ex(user_id: Optional[str] = None, date_from: Optional[str]
     = None, date_to: Optional[str] = None, count: Optional[int] = None, page: Optional[int]
-    = None, types: Optional[List[str]] = None)'
+    = None, types: Optional[List[str]] = None) -> slack.web.slack_response.SlackResponse'
   parameters:
   - name: user_id
     defaultValue: None
@@ -135,23 +136,24 @@ methods:
     defaultValue: None
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.get_bot_user_identity
   name: get_bot_user_identity
-  signature: 'get_bot_user_identity(activity: botbuilder.schema._models_py3.Activity)'
+  signature: 'get_bot_user_identity(activity: botbuilder.schema._models_py3.Activity)
+    -> str'
   parameters:
   - name: activity
     isRequired: true
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.get_preferences
   name: get_preferences
-  signature: get_preferences()
+  signature: get_preferences() -> slack.web.slack_response.SlackResponse
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.groups_close
   name: groups_close
-  signature: 'groups_close(channel: str)'
+  signature: 'groups_close(channel: str) -> slack.web.slack_response.SlackResponse'
   parameters:
   - name: channel
     isRequired: true
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.groups_history_ex
   name: groups_history_ex
   signature: 'groups_history_ex(channel: str, latest: Optional[str] = None, oldest:
-    Optional[str] = None, count: Optional[int] = None)'
+    Optional[str] = None, count: Optional[int] = None) -> slack.web.slack_response.SlackResponse'
   parameters:
   - name: channel
     isRequired: true
@@ -163,7 +165,7 @@ methods:
     defaultValue: None
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.groups_list_ex
   name: groups_list_ex
-  signature: 'groups_list_ex(exclude_archived: bool = True)'
+  signature: 'groups_list_ex(exclude_archived: bool = True) -> slack.web.slack_response.SlackResponse'
   parameters:
   - name: exclude_archived
     defaultValue: 'True'
@@ -171,7 +173,7 @@ methods:
   name: im_history_ex
   signature: 'im_history_ex(channel: str, latest_timestamp: Optional[str] = None,
     oldest_timestamp: Optional[str] = None, count: Optional[int] = None, unreads:
-    Optional[bool] = None)'
+    Optional[bool] = None) -> slack.web.slack_response.SlackResponse'
   parameters:
   - name: channel
     isRequired: true
@@ -191,7 +193,8 @@ methods:
   signature: login_with_slack()
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.post_message
   name: post_message
-  signature: 'post_message(message: botbuilder.adapters.slack.slack_message.SlackMessage)'
+  signature: 'post_message(message: botbuilder.adapters.slack.slack_message.SlackMessage)
+    -> slack.web.slack_response.SlackResponse'
   parameters:
   - name: message
     isRequired: true
@@ -199,7 +202,7 @@ methods:
   name: search_all_ex
   signature: 'search_all_ex(query: str, sorting: Optional[str] = None, direction:
     Optional[str] = None, enable_highlights: bool = False, count: Optional[int] =
-    None, page: Optional[int] = None)'
+    None, page: Optional[int] = None) -> slack.web.slack_response.SlackResponse'
   parameters:
   - name: query
     isRequired: true
@@ -217,7 +220,7 @@ methods:
   name: search_files_ex
   signature: 'search_files_ex(query: str, sorting: Optional[str] = None, direction:
     Optional[str] = None, enable_highlights: bool = False, count: Optional[int] =
-    None, page: Optional[int] = None)'
+    None, page: Optional[int] = None) -> slack.web.slack_response.SlackResponse'
   parameters:
   - name: query
     isRequired: true
@@ -235,7 +238,7 @@ methods:
   name: search_messages_ex
   signature: 'search_messages_ex(query: str, sorting: Optional[str] = None, direction:
     Optional[str] = None, enable_highlights: bool = False, count: Optional[int] =
-    None, page: Optional[int] = None)'
+    None, page: Optional[int] = None) -> slack.web.slack_response.SlackResponse'
   parameters:
   - name: query
     isRequired: true
@@ -252,7 +255,7 @@ methods:
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.stars_list_ex
   name: stars_list_ex
   signature: 'stars_list_ex(user: Optional[str] = None, count: Optional[int] = None,
-    page: Optional[int] = None)'
+    page: Optional[int] = None) -> slack.web.slack_response.SlackResponse'
   parameters:
   - name: user
     defaultValue: None
@@ -262,13 +265,13 @@ methods:
     defaultValue: None
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.test_auth
   name: test_auth
-  signature: test_auth()
+  signature: test_auth() -> str
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.users_counts
   name: users_counts
-  signature: users_counts()
+  signature: users_counts() -> slack.web.slack_response.SlackResponse
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.verify_signature
   name: verify_signature
-  signature: 'verify_signature(req: aiohttp.web_request.Request, body: str)'
+  signature: 'verify_signature(req: aiohttp.web_request.Request, body: str) -> bool'
   parameters:
   - name: req
     isRequired: true

@@ -8,7 +8,7 @@ inheritances:
 summary: File download info attachment.
 constructor:
   syntax: 'FileDownloadInfo(*, download_url: Optional[str] = None, unique_id: Optional[str]
-    = None, file_type: Optional[str] = None, etag=None, **kwargs)'
+    = None, file_type: Optional[str] = None, etag=None, **kwargs) -> None'
   parameters:
   - name: download_url
     description: File download url.

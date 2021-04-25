@@ -8,11 +8,12 @@ inheritances:
 summary: Represents a team or channel entity.
 constructor:
   syntax: 'MessageActionsPayloadConversation(*, conversation_identity_type=None, id:
-    Optional[str] = None, display_name: Optional[str] = None, **kwargs)'
+    Optional[str] = None, display_name: Optional[str] = None, **kwargs) -> None'
   parameters:
   - name: conversation_identity_type
-    description: "The type of conversation, whether a\nteam or channel. Possible values\
-      \ include: \u2018team', \u2018channel'"
+    description: 'The type of conversation, whether a
+
+      team or channel. Possible values include: ''team'', ''channel'''
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str'
   - name: id

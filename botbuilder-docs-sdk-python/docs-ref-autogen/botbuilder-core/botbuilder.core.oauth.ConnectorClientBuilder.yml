@@ -13,7 +13,7 @@ methods:
   name: create_connector_client
   summary: Creates the connector client asynchronous.
   signature: 'create_connector_client(service_url: str, identity: Optional[botframework.connector.auth.claims_identity.ClaimsIdentity]
-    = None, audience: Optional[str] = None)'
+    = None, audience: Optional[str] = None) -> botframework.connector.connector_client.ConnectorClient'
   parameters:
   - name: service_url
     description: The service URL.

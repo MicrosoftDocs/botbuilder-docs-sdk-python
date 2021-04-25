@@ -17,7 +17,8 @@ methods:
 - uid: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.post_activity
   name: post_activity
   signature: 'post_activity(from_bot_id: str, to_bot_id: str, to_url: str, service_url:
-    str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity)'
+    str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity) ->
+    botbuilder.core.invoke_response.InvokeResponse'
   parameters:
   - name: from_bot_id
     isRequired: true
@@ -37,7 +38,8 @@ methods:
 
     sent with DeliveryMode == expectReplies.'
   signature: 'post_buffered_activity(from_bot_id: str, to_bot_id: str, to_url: str,
-    service_url: str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity)'
+    service_url: str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity)
+    -> [<class ''botbuilder.schema._models_py3.Activity''>]'
   parameters:
   - name: from_bot_id
     isRequired: true

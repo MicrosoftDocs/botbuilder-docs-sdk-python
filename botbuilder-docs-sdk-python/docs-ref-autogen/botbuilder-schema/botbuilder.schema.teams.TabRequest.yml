@@ -5,9 +5,10 @@ fullName: botbuilder.schema.teams.TabRequest
 module: botbuilder.schema.teams
 inheritances:
 - msrest.serialization.Model
-summary: "Invoke (\u2018tab/fetch') request value payload."
+summary: Invoke ('tab/fetch') request value payload.
 constructor:
   syntax: TabRequest(*, tab_entity_context=None, context=None, state=None, **kwargs)
+    -> None
   parameters:
   - name: tab_entity_context
     description: Gets or sets current tab entity request context.

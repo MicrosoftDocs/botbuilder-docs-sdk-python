@@ -13,7 +13,7 @@ methods:
 - uid: botbuilder.dialogs.prompts.prompt_culture_models.PromptCultureModels.get_supported_cultures
   name: get_supported_cultures
   summary: Gets a list of the supported culture models.
-  signature: get_supported_cultures()
+  signature: get_supported_cultures() -> List[botbuilder.dialogs.prompts.prompt_culture_models.PromptCultureModel]
   parameters:
   - name: cls
     isRequired: true
@@ -26,7 +26,7 @@ methods:
     :return: Normalized locale.
 
     :rtype: str'
-  signature: 'map_to_nearest_language(culture_code: str)'
+  signature: 'map_to_nearest_language(culture_code: str) -> str'
   parameters:
   - name: cls
     isRequired: true

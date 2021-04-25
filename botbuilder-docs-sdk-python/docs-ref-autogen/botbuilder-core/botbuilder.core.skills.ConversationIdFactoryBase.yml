@@ -22,7 +22,7 @@ methods:
     \ is the preferred parameter type, while the\n>\n> \n>\n> <xref:botbuilder.core.skills.SkillConversationReference>\
     \ type is provided for backwards compatability.\n>"
   signature: 'create_skill_conversation_id(options_or_conversation_reference: Union[botbuilder.core.skills.skill_conversation_id_factory_options.SkillConversationIdFactoryOptions,
-    botbuilder.schema._models_py3.ConversationReference])'
+    botbuilder.schema._models_py3.ConversationReference]) -> str'
   parameters:
   - name: options_or_conversation_reference
     description: 'The options contain properties useful for generating a
@@ -56,7 +56,8 @@ methods:
     > type is provided for backwards compatability.
 
     >'
-  signature: 'get_conversation_reference(skill_conversation_id: str)'
+  signature: 'get_conversation_reference(skill_conversation_id: str) -> Union[botbuilder.core.skills.skill_conversation_reference.SkillConversationReference,
+    botbuilder.schema._models_py3.ConversationReference]'
   parameters:
   - name: skill_conversation_id
     description: The conversation id for which to retrieve the <xref:botbuilder.core.skills.SkillConversationReference>.

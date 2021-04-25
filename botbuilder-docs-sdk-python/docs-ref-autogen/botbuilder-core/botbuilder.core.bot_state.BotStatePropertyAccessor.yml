@@ -14,7 +14,7 @@ methods:
 - uid: botbuilder.core.bot_state.BotStatePropertyAccessor.delete
   name: delete
   summary: Deletes the property.
-  signature: 'delete(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -25,7 +25,7 @@ methods:
   name: get
   summary: Gets the property value.
   signature: 'get(turn_context: botbuilder.core.turn_context.TurnContext, default_value_or_factory:
-    object = None)'
+    object = None) -> object'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -38,7 +38,8 @@ methods:
 - uid: botbuilder.core.bot_state.BotStatePropertyAccessor.set
   name: set
   summary: Sets the property value.
-  signature: 'set(turn_context: botbuilder.core.turn_context.TurnContext, value: object)'
+  signature: 'set(turn_context: botbuilder.core.turn_context.TurnContext, value: object)
+    -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn

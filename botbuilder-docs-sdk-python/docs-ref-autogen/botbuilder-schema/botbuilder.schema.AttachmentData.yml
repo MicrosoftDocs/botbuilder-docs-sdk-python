@@ -9,7 +9,7 @@ summary: Attachment data.
 constructor:
   syntax: 'AttachmentData(*, type: Optional[str] = None, name: Optional[str] = None,
     original_base64: Optional[bytearray] = None, thumbnail_base64: Optional[bytearray]
-    = None, **kwargs)'
+    = None, **kwargs) -> None'
   parameters:
   - name: type
     description: Content-Type of the attachment

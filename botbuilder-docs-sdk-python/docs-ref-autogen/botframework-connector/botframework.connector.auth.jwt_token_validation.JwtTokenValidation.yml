@@ -33,7 +33,7 @@ methods:
     auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
     channel_service_or_provider: Union[str, botframework.connector.auth.channel_provider.ChannelProvider]
     = '''', auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
-    = None)'
+    = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: activity
     isRequired: true
@@ -46,19 +46,19 @@ methods:
     defaultValue: None
 - uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.get_app_id_from_claims
   name: get_app_id_from_claims
-  signature: 'get_app_id_from_claims(claims: Dict[str, object])'
+  signature: 'get_app_id_from_claims(claims: Dict[str, object]) -> str'
   parameters:
   - name: claims
     isRequired: true
 - uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.is_government
   name: is_government
-  signature: 'is_government(channel_service: str)'
+  signature: 'is_government(channel_service: str) -> bool'
   parameters:
   - name: channel_service
     isRequired: true
 - uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.is_valid_token_format
   name: is_valid_token_format
-  signature: 'is_valid_token_format(auth_header: str)'
+  signature: 'is_valid_token_format(auth_header: str) -> bool'
   parameters:
   - name: auth_header
     isRequired: true
@@ -67,7 +67,7 @@ methods:
   signature: 'validate_auth_header(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
     channel_service_or_provider: Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
     channel_id: str, service_url: Optional[str] = None, auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
-    = None)'
+    = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: auth_header
     isRequired: true

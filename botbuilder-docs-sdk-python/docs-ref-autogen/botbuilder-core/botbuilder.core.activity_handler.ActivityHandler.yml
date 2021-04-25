@@ -147,7 +147,8 @@ methods:
     *healthCheck*, it
 
     calls this method.'
-  signature: 'on_healthcheck(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'on_healthcheck(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> botbuilder.schema.healthcheck_response.HealthCheckResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -170,8 +171,9 @@ methods:
     description: A task that represents the work queued to execute
 - uid: botbuilder.core.activity_handler.ActivityHandler.on_installation_update_add
   name: on_installation_update_add
-  summary: "Override this in a derived class to provide logic specific to\nActivityTypes.InstallationUpdate\
-    \ activities with \u2018action' set to \u2018add'."
+  summary: 'Override this in a derived class to provide logic specific to
+
+    ActivityTypes.InstallationUpdate activities with ''action'' set to ''add''.'
   signature: 'on_installation_update_add(turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: turn_context
@@ -183,8 +185,9 @@ methods:
     description: A task that represents the work queued to execute
 - uid: botbuilder.core.activity_handler.ActivityHandler.on_installation_update_remove
   name: on_installation_update_remove
-  summary: "Override this in a derived class to provide logic specific to\nActivityTypes.InstallationUpdate\
-    \ activities with \u2018action' set to \u2018remove'."
+  summary: 'Override this in a derived class to provide logic specific to
+
+    ActivityTypes.InstallationUpdate activities with ''action'' set to ''remove''.'
   signature: 'on_installation_update_remove(turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: turn_context
@@ -198,7 +201,8 @@ methods:
   name: on_invoke_activity
   summary: Registers an activity event handler for the _invoke_ event, emitted for
     every incoming event activity.
-  signature: 'on_invoke_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'on_invoke_activity(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> Union[botbuilder.core.invoke_response.InvokeResponse, NoneType]'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -302,12 +306,12 @@ methods:
     - <xref:botbuilder.core.TurnContext>
   return:
     description: A task that represents the work queued to execute
-  remarks: "Message reactions correspond to the user adding a \u2018like' or \u2018\
-    sad' etc. (often an emoji) to a previously\nsent activity.\n\nMessage reactions\
-    \ are only supported by a few channels. The activity that the message reaction\
-    \ corresponds\nto is indicated in the reply to Id property. The value of this\
-    \ property is the activity id of a previously\nsent activity given back to the\
-    \ bot as the response from a send call.\nWhen the <xref:botbuilder.core.activity_handler.ActivityHandler.on_turn>\
+  remarks: "Message reactions correspond to the user adding a 'like' or 'sad' etc.\
+    \ (often an emoji) to a previously\nsent activity.\n\nMessage reactions are only\
+    \ supported by a few channels. The activity that the message reaction corresponds\n\
+    to is indicated in the reply to Id property. The value of this property is the\
+    \ activity id of a previously\nsent activity given back to the bot as the response\
+    \ from a send call.\nWhen the <xref:botbuilder.core.activity_handler.ActivityHandler.on_turn>\
     \ method receives a message reaction activity, it calls this\nmethod.\n\n* If\
     \ the message reaction indicates that reactions were added to a message, it calls\
     \ \n\n<xref:botbuilder.core.activity_handler.ActivityHandler.on_reaction_added>.\n\
@@ -338,13 +342,23 @@ methods:
     - <xref:botbuilder.core.TurnContext>
   return:
     description: A task that represents the work queued to execute
-  remarks: "Message reactions correspond to the user adding a \u2018like' or \u2018\
-    sad' etc. (often an emoji)\nto a previously sent message on the conversation.\n\
-    Message reactions are supported by only a few channels.\nThe activity that the\
-    \ message is in reaction to is identified by the activity's reply to ID property.\n\
-    The value of this property is the activity ID of a previously sent activity. When\
-    \ the bot sends an activity,\nthe channel assigns an ID to it, which is available\
-    \ in the resource response Id of the result.\n"
+  remarks: 'Message reactions correspond to the user adding a ''like'' or ''sad''
+    etc. (often an emoji)
+
+    to a previously sent message on the conversation.
+
+    Message reactions are supported by only a few channels.
+
+    The activity that the message is in reaction to is identified by the activity''s
+    reply to ID property.
+
+    The value of this property is the activity ID of a previously sent activity. When
+    the bot sends an activity,
+
+    the channel assigns an ID to it, which is available in the resource response Id
+    of the result.
+
+    '
 - uid: botbuilder.core.activity_handler.ActivityHandler.on_reactions_removed
   name: on_reactions_removed
   summary: 'Override this method in a derived class to provide logic for when reactions
@@ -366,13 +380,22 @@ methods:
     - <xref:botbuilder.core.TurnContext>
   return:
     description: A task that represents the work queued to execute
-  remarks: "Message reactions correspond to the user adding a \u2018like' or \u2018\
-    sad' etc. (often an emoji)\nto a previously sent message on the conversation.\
-    \ Message reactions are supported by only a few channels.\nThe activity that the\
-    \ message is in reaction to is identified by the activity's reply to Id property.\n\
-    The value of this property is the activity ID of a previously sent activity. When\
-    \ the bot sends an activity,\nthe channel assigns an ID to it, which is available\
-    \ in the resource response Id of the result.\n"
+  remarks: 'Message reactions correspond to the user adding a ''like'' or ''sad''
+    etc. (often an emoji)
+
+    to a previously sent message on the conversation. Message reactions are supported
+    by only a few channels.
+
+    The activity that the message is in reaction to is identified by the activity''s
+    reply to Id property.
+
+    The value of this property is the activity ID of a previously sent activity. When
+    the bot sends an activity,
+
+    the channel assigns an ID to it, which is available in the resource response Id
+    of the result.
+
+    '
 - uid: botbuilder.core.activity_handler.ActivityHandler.on_sign_in_invoke
   name: on_sign_in_invoke
   summary: 'Invoked when a signin/verifyState or signin/tokenExchange event is received

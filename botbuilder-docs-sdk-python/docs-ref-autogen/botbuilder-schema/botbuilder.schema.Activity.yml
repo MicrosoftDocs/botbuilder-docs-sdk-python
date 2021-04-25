@@ -20,14 +20,18 @@ constructor:
     reply_to_id: Optional[str] = None, label: Optional[str] = None, value_type: Optional[str]
     = None, value=None, name: Optional[str] = None, relates_to=None, code=None, expiration=None,
     importance=None, delivery_mode=None, listen_for=None, text_highlights=None, semantic_action=None,
-    caller_id: Optional[str] = None, **kwargs)'
+    caller_id: Optional[str] = None, **kwargs) -> None'
   parameters:
   - name: type
-    description: "Contains the activity type. Possible values include:\n\u2018message',\
-      \ \u2018contactRelationUpdate', \u2018conversationUpdate', \u2018typing',\n\u2018\
-      endOfConversation', \u2018event', \u2018invoke', \u2018deleteUserData', \u2018\
-      messageUpdate',\n\u2018messageDelete', \u2018installationUpdate', \u2018messageReaction',\
-      \ \u2018suggestion',\n\u2018trace', \u2018handoff'"
+    description: 'Contains the activity type. Possible values include:
+
+      ''message'', ''contactRelationUpdate'', ''conversationUpdate'', ''typing'',
+
+      ''endOfConversation'', ''event'', ''invoke'', ''deleteUserData'', ''messageUpdate'',
+
+      ''messageDelete'', ''installationUpdate'', ''messageReaction'', ''suggestion'',
+
+      ''trace'', ''handoff'''
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.ActivityTypes>'
   - name: id
@@ -85,13 +89,15 @@ constructor:
     types:
     - <xref:botframework.connector.models.ChannelAccount>
   - name: text_format
-    description: "Format of text fields Default:markdown. Possible\nvalues include:\
-      \ \u2018markdown', \u2018plain', \u2018xml'"
+    description: 'Format of text fields Default:markdown. Possible
+
+      values include: ''markdown'', ''plain'', ''xml'''
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.TextFormatTypes>'
   - name: attachment_layout
-    description: "The layout hint for multiple attachments.\nDefault: list. Possible\
-      \ values include: \u2018list', \u2018carousel'"
+    description: 'The layout hint for multiple attachments.
+
+      Default: list. Possible values include: ''list'', ''carousel'''
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str'
   - name: members_added
@@ -149,9 +155,13 @@ constructor:
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: input_hint
-    description: "Indicates whether your bot is accepting,\nexpecting, or ignoring\
-      \ user input after the message is delivered to the\nclient. Possible values\
-      \ include: \u2018acceptingInput', \u2018ignoringInput',\n\u2018expectingInput'"
+    description: 'Indicates whether your bot is accepting,
+
+      expecting, or ignoring user input after the message is delivered to the
+
+      client. Possible values include: ''acceptingInput'', ''ignoringInput'',
+
+      ''expectingInput'''
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.InputHints>'
   - name: summary
@@ -211,10 +221,13 @@ constructor:
     types:
     - <xref:botframework.connector.models.ConversationReference>
   - name: code
-    description: "The a code for endOfConversation activities that indicates\nwhy\
-      \ the conversation ended. Possible values include: \u2018unknown',\n\u2018completedSuccessfully',\
-      \ \u2018userCancelled', \u2018botTimedOut',\n\u2018botIssuedInvalidMessage',\
-      \ \u2018channelFailed'"
+    description: 'The a code for endOfConversation activities that indicates
+
+      why the conversation ended. Possible values include: ''unknown'',
+
+      ''completedSuccessfully'', ''userCancelled'', ''botTimedOut'',
+
+      ''botIssuedInvalidMessage'', ''channelFailed'''
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.EndOfConversationCodes>'
   - name: expiration
@@ -224,15 +237,19 @@ constructor:
     types:
     - <xref:botbuilder.schema.datetime>
   - name: importance
-    description: "The importance of the activity. Possible values\ninclude: \u2018\
-      low', \u2018normal', \u2018high'"
+    description: 'The importance of the activity. Possible values
+
+      include: ''low'', ''normal'', ''high'''
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.ActivityImportance>'
   - name: delivery_mode
-    description: "A delivery hint to signal to the recipient alternate\ndelivery paths\
-      \ for the activity.\nThe default delivery mode is \"default\". Possible values\
-      \ include: \u2018normal',\n\u2018notification', \u2018expectReplies', \u2018\
-      ephemeral'"
+    description: 'A delivery hint to signal to the recipient alternate
+
+      delivery paths for the activity.
+
+      The default delivery mode is "default". Possible values include: ''normal'',
+
+      ''notification'', ''expectReplies'', ''ephemeral'''
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.DeliveryModes>'
   - name: listen_for
@@ -525,7 +542,7 @@ methods:
 - uid: botbuilder.schema.Activity.get_mentions
   name: get_mentions
   summary: Resolves the mentions from the entities of this activity.
-  signature: get_mentions()
+  signature: get_mentions() -> [<class 'botbuilder.schema._models_py3.Mention'>]
   return:
     description: The array of mentions; or an empty array, if none are found.
   remarks: 'This method is defined on the <xref:botbuilder.schema.Activity> class,
@@ -542,7 +559,8 @@ methods:
     info
 
     and the ResourceResponse from sending an activity.'
-  signature: 'get_reply_conversation_reference(reply: botbuilder.schema._models_py3.ResourceResponse)'
+  signature: 'get_reply_conversation_reference(reply: botbuilder.schema._models_py3.ResourceResponse)
+    -> botbuilder.schema._models_py3.ConversationReference'
   parameters:
   - name: reply
     description: ResourceResponse returned from send_activity.
@@ -553,7 +571,7 @@ methods:
 - uid: botbuilder.schema.Activity.has_content
   name: has_content
   summary: Indicates whether this activity has content.
-  signature: has_content()
+  signature: has_content() -> bool
   return:
     description: True, if this activity has any content to send; otherwise, false.
   remarks: 'This method is defined on the <xref:botbuilder.schema.Activity> class,
@@ -574,6 +592,6 @@ methods:
 
     (2) Channels that send messages via streaming have a ServiceUrl that does not
     begin with http/https.'
-  signature: is_from_streaming_connection()
+  signature: is_from_streaming_connection() -> bool
   return:
     description: True if the Activity originated from a streaming connection.

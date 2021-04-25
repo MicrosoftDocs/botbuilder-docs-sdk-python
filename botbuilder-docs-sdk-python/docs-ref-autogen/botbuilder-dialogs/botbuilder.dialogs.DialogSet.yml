@@ -20,7 +20,8 @@ methods:
     isRequired: true
 - uid: botbuilder.dialogs.DialogSet.create_context
   name: create_context
-  signature: 'create_context(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'create_context(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> ''DialogContext'''
   parameters:
   - name: turn_context
     isRequired: true
@@ -31,7 +32,7 @@ methods:
     :param dialog_id: ID of the dialog/prompt to look up.
 
     :return: The dialog if found, otherwise null.'
-  signature: 'find(dialog_id: str)'
+  signature: 'find(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
   parameters:
   - name: dialog_id
     isRequired: true
@@ -42,7 +43,7 @@ methods:
     :param dialog_id: ID of the dialog/prompt to look up.
 
     :return: The dialog if found, otherwise null.'
-  signature: 'find_dialog(dialog_id: str)'
+  signature: 'find_dialog(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
   parameters:
   - name: dialog_id
     isRequired: true
@@ -52,7 +53,7 @@ methods:
     in this this dialogset.
 
     <returns>Version will change when any of the child dialogs version changes.</returns>'
-  signature: get_version()
+  signature: get_version() -> str
 attributes:
 - uid: botbuilder.dialogs.DialogSet.telemetry_client
   name: telemetry_client

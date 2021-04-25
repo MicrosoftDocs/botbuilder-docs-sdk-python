@@ -8,7 +8,7 @@ inheritances:
 summary: Error.
 constructor:
   syntax: 'Error(*, code: Optional[str] = None, message: Optional[str] = None, inner_http_error=None,
-    **kwargs)'
+    **kwargs) -> None'
   parameters:
   - name: code
     types:

@@ -82,7 +82,7 @@ methods:
     :param measurements: the set of custom measurements the client wants to attach
     to this data item.         (defaults to: None)'
   signature: 'track_event(name: str, properties: Optional[Dict[str, object]] = None,
-    measurements: Optional[Dict[str, object]] = None)'
+    measurements: Optional[Dict[str, object]] = None) -> None'
   parameters:
   - name: name
     isRequired: true
@@ -108,7 +108,7 @@ methods:
   signature: 'track_exception(exception_type: type = None, value: Exception = None,
     trace: <module ''traceback'' from ''c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\traceback.py''>
     = None, properties: Dict[str, object] = None, measurements: Dict[str, object]
-    = None)'
+    = None) -> None'
   parameters:
   - name: exception_type
     defaultValue: None
@@ -132,7 +132,7 @@ methods:
   signature: 'track_metric(name: str, value: float, tel_type: Optional[botbuilder.core.bot_telemetry_client.TelemetryDataPointType]
     = None, count: Optional[int] = None, min_val: Optional[float] = None, max_val:
     Optional[float] = None, std_dev: Optional[float] = None, properties: Optional[Dict[str,
-    object]] = None)'
+    object]] = None) -> NotImplemented'
   parameters:
   - name: max_val
     description: 'the maximum of all metrics collected that were aggregated into this
@@ -175,7 +175,7 @@ methods:
     :param measurements: the set of custom measurements the client wants to attach
     to this data item.         (defaults to: None)'
   signature: 'track_pageview(name: str, url, duration: int = 0, properties: Optional[Dict[str,
-    object]] = None, measurements: Optional[Dict[str, object]] = None)'
+    object]] = None, measurements: Optional[Dict[str, object]] = None) -> None'
   parameters:
   - name: name
     isRequired: true

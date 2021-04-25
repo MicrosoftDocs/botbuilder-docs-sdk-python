@@ -8,7 +8,7 @@ inheritances:
 summary: Conversations result.
 constructor:
   syntax: 'ConversationsResult(*, continuation_token: Optional[str] = None, conversations=None,
-    **kwargs)'
+    **kwargs) -> None'
   parameters:
   - name: continuation_token
     description: Paging token

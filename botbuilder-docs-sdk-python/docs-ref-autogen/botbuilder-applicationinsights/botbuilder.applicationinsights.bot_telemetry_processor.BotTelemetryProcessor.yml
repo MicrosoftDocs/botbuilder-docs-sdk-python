@@ -17,8 +17,8 @@ methods:
     :return: True if the request body can be processed, False otherwise.
 
     :rtype: bool'
-  signature: can_process()
+  signature: can_process() -> bool
 - uid: botbuilder.applicationinsights.bot_telemetry_processor.BotTelemetryProcessor.get_request_body
   name: get_request_body
   summary: Retrieve the request body from flask/django middleware component.
-  signature: get_request_body()
+  signature: get_request_body() -> str

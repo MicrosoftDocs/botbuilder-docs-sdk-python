@@ -6,28 +6,30 @@ functions:
 - uid: botbuilder.core.inspection.trace_activity.from_activity
   name: from_activity
   signature: 'from_activity(activity: botbuilder.schema._models_py3.Activity, name:
-    str, label: str)'
+    str, label: str) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: activity
   - name: name
   - name: label
 - uid: botbuilder.core.inspection.trace_activity.from_conversation_reference
   name: from_conversation_reference
-  signature: 'from_conversation_reference(conversation_reference: botbuilder.schema._models_py3.ConversationReference)'
+  signature: 'from_conversation_reference(conversation_reference: botbuilder.schema._models_py3.ConversationReference)
+    -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: conversation_reference
 - uid: botbuilder.core.inspection.trace_activity.from_error
   name: from_error
-  signature: 'from_error(error_message: str)'
+  signature: 'from_error(error_message: str) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: error_message
 - uid: botbuilder.core.inspection.trace_activity.from_state
   name: from_state
-  signature: 'from_state(bot_state: Union[botbuilder.core.bot_state.BotState, Dict])'
+  signature: 'from_state(bot_state: Union[botbuilder.core.bot_state.BotState, Dict])
+    -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: bot_state
 - uid: botbuilder.core.inspection.trace_activity.make_command_activity
   name: make_command_activity
-  signature: 'make_command_activity(command: str)'
+  signature: 'make_command_activity(command: str) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: command

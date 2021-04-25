@@ -10,11 +10,12 @@ summary: 'Represents the value of the invoke activity sent when the user acts on
   file consent card.'
 constructor:
   syntax: FileConsentCardResponse(*, action=None, context=None, upload_info=None,
-    **kwargs)
+    **kwargs) -> None
   parameters:
   - name: action
-    description: "The action the user took. Possible values include:\n\u2018accept',\
-      \ \u2018decline'"
+    description: 'The action the user took. Possible values include:
+
+      ''accept'', ''decline'''
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: context

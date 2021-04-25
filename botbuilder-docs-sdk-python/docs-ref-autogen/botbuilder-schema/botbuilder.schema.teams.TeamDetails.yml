@@ -9,7 +9,7 @@ summary: Details related to a team.
 constructor:
   syntax: 'TeamDetails(*, id: Optional[str] = None, name: Optional[str] = None, aad_group_id:
     Optional[str] = None, member_count: Optional[int] = None, channel_count: Optional[int]
-    = None, **kwargs)'
+    = None, **kwargs) -> None'
   parameters:
   - name: id
     description: Unique identifier representing a team
