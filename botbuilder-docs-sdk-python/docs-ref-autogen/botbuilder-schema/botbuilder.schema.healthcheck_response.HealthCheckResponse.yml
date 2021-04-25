@@ -6,5 +6,5 @@ module: botbuilder.schema.healthcheck_response
 inheritances:
 - msrest.serialization.Model
 constructor:
-  syntax: 'HealthCheckResponse(*, health_results: botbuilder.schema.health_results.HealthResults
+  syntax: 'HealthCheckResponse(*, health_results: Optional[botbuilder.schema.health_results.HealthResults]
     = None, **kwargs) -> None'

@@ -11,7 +11,7 @@ constructor:
 variables:
 - name: state
   types:
-  - <xref:persisted_dialog>
+  - <xref:botbuilder.dialogs.persisted_dialog>
 methods:
 - uid: botbuilder.dialogs.ComponentDialog.add_dialog
   name: add_dialog
@@ -46,10 +46,9 @@ methods:
     - <xref:botbuilder.dialogs.DialogContext>
   - name: options
     description: Optional, initial information to pass to the dialog.
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:object>
+    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   return:
     description: Signals the end of the turn
     types:
@@ -103,13 +102,13 @@ methods:
     description: The parent dialog context for the current turn of conversation.
     isRequired: true
     types:
-    - <xref:class:botbuilder.dialogs.DialogContext>
+    - class:botbuilder.dialogs.DialogContext
   - name: result
     description: Optional, value to return from the dialog component to the parent
       context.
     isRequired: true
     types:
-    - <xref:object>
+    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   return:
     description: Value to return.
     types:
@@ -170,7 +169,7 @@ methods:
     description: Optional, initial information to pass to the dialog.
     isRequired: true
     types:
-    - <xref:object>
+    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   remarks: 'If the task is successful, the result indicates whether the dialog is
     still
 
@@ -240,7 +239,7 @@ methods:
     - <xref:botbuilder.dialogs.DialogInstance>
 - uid: botbuilder.dialogs.ComponentDialog.reprompt_dialog
   name: reprompt_dialog
-  summary: 'Called when the dialog should re-prompt the user for input.'
+  summary: Called when the dialog should re-prompt the user for input.
   signature: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
     botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
   parameters:
@@ -276,10 +275,9 @@ methods:
     - <xref:botbuilder.dialogs.DialogReason>
   - name: result
     description: Optional, value returned from the dialog that was called.
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:object>
+    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   return:
     description: Signals the end of the turn
     types:

@@ -7,31 +7,27 @@ inheritances:
 - msrest.serialization.Model
 summary: Details related to a team.
 constructor:
-  syntax: 'TeamDetails(*, id: str = None, name: str = None, aad_group_id: str = None,
-    member_count: int = None, channel_count: int = None, **kwargs) -> None'
+  syntax: 'TeamDetails(*, id: Optional[str] = None, name: Optional[str] = None, aad_group_id:
+    Optional[str] = None, member_count: Optional[int] = None, channel_count: Optional[int]
+    = None, **kwargs) -> None'
   parameters:
   - name: id
     description: Unique identifier representing a team
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: name
     description: Name of team.
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: aad_group_id
     description: Azure Active Directory (AAD) Group Id for the team.
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: channel_count
     description: The count of channels in the team.
-    isRequired: true
     types:
-    - <xref:int>
+    - '[int](https://docs.python.org/3.6/library/functions.html#int)'
   - name: member_count
     description: The count of members in the team.
-    isRequired: true
     types:
-    - <xref:int>
+    - '[int](https://docs.python.org/3.6/library/functions.html#int)'

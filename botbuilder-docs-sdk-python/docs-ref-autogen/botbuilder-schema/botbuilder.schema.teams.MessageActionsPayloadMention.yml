@@ -7,21 +7,18 @@ inheritances:
 - msrest.serialization.Model
 summary: Represents the entity that was mentioned in the message.
 constructor:
-  syntax: 'MessageActionsPayloadMention(*, id: int = None, mention_text: str = None,
-    mentioned=None, **kwargs) -> None'
+  syntax: 'MessageActionsPayloadMention(*, id: Optional[int] = None, mention_text:
+    Optional[str] = None, mentioned=None, **kwargs) -> None'
   parameters:
   - name: id
     description: The id of the mentioned entity.
-    isRequired: true
     types:
-    - <xref:int>
+    - '[int](https://docs.python.org/3.6/library/functions.html#int)'
   - name: mention_text
     description: The plaintext display name of the mentioned entity.
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: mentioned
     description: Provides more details on the mentioned entity.
-    isRequired: true
     types:
     - <xref:botframework.connector.teams.models.MessageActionsPayloadFrom>

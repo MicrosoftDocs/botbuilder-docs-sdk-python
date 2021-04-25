@@ -5,6 +5,8 @@ fullName: botframework.connector.auth.channel_validation.ChannelValidation
 module: botframework.connector.auth.channel_validation
 inheritances:
 - builtins.object
+constructor:
+  syntax: ChannelValidation()
 methods:
 - uid: botframework.connector.auth.channel_validation.ChannelValidation.authenticate_channel_token
   name: authenticate_channel_token
@@ -15,28 +17,25 @@ methods:
 
     A token issued by the Bot Framework emulator will FAIL this check.'
   signature: 'authenticate_channel_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
-    channel_id: str, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
+    channel_id: str, auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
     = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: auth_header
     description: 'The raw HTTP header in the format: ''Bearer [longString]'''
     isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: credentials
     description: The user defined set of valid credentials, such as the AppId.
     isRequired: true
     types:
-    - <xref:CredentialProvider>
+    - <xref:botframework.connector.auth.credential_provider.CredentialProvider>
   - name: channel_id
     isRequired: true
   - name: auth_configuration
     defaultValue: None
   return:
     description: A valid ClaimsIdentity.
-  exceptions:
-  - description: ''
-    type: Exception
 - uid: botframework.connector.auth.channel_validation.ChannelValidation.authenticate_channel_token_with_service_url
   name: authenticate_channel_token_with_service_url
   summary: 'Validate the incoming Auth Header
@@ -47,33 +46,30 @@ methods:
     A token issued by the Bot Framework emulator will FAIL this check.'
   signature: 'authenticate_channel_token_with_service_url(auth_header: str, credentials:
     botframework.connector.auth.credential_provider.CredentialProvider, service_url:
-    str, channel_id: str, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
+    str, channel_id: str, auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
     = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: auth_header
     description: 'The raw HTTP header in the format: ''Bearer [longString]'''
     isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: credentials
     description: The user defined set of valid credentials, such as the AppId.
     isRequired: true
     types:
-    - <xref:CredentialProvider>
+    - <xref:botframework.connector.auth.credential_provider.CredentialProvider>
   - name: service_url
     description: Claim value that must match in the identity.
     isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: channel_id
     isRequired: true
   - name: auth_configuration
     defaultValue: None
   return:
     description: A valid ClaimsIdentity.
-  exceptions:
-  - description: ''
-    type: Exception
 - uid: botframework.connector.auth.channel_validation.ChannelValidation.validate_identity
   name: validate_identity
   signature: 'validate_identity(identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
@@ -94,4 +90,4 @@ attributes:
     object>
 - uid: botframework.connector.auth.channel_validation.ChannelValidation.open_id_metadata_endpoint
   name: open_id_metadata_endpoint
-  signature: open_id_metadata_endpoint = None
+  signature: 'open_id_metadata_endpoint: str = None'

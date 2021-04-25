@@ -6,11 +6,11 @@ module: botbuilder.core.bot_state_set
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'BotStateSet(bot_states: typing.List[botbuilder.core.bot_state.BotState])'
+  syntax: 'BotStateSet(bot_states: List[botbuilder.core.bot_state.BotState])'
 methods:
 - uid: botbuilder.core.bot_state_set.BotStateSet.add
   name: add
-  signature: 'add(bot_state: botbuilder.core.bot_state.BotState) -> botbuilder.core.bot_state_set.BotStateSet'
+  signature: 'add(bot_state: botbuilder.core.bot_state.BotState) -> ''BotStateSet'''
   parameters:
   - name: bot_state
     isRequired: true

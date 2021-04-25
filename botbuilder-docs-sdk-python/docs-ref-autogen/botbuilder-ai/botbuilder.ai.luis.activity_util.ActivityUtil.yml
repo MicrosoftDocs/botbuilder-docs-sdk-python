@@ -5,41 +5,40 @@ fullName: botbuilder.ai.luis.activity_util.ActivityUtil
 module: botbuilder.ai.luis.activity_util
 inheritances:
 - builtins.object
+constructor:
+  syntax: ActivityUtil()
 methods:
 - uid: botbuilder.ai.luis.activity_util.ActivityUtil.create_trace
   name: create_trace
   summary: Creates a trace activity based on this activity.
   signature: 'create_trace(turn_activity: botbuilder.schema._models_py3.Activity,
-    name: str, value: object = None, value_type: str = None, label: str = None) ->
-    botbuilder.schema._models_py3.Activity'
+    name: str, value: object = None, value_type: Optional[str] = None, label: Optional[str]
+    = None) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: turn_activity
     isRequired: true
     types:
-    - <xref:Activity>
+    - <xref:botbuilder.ai.luis.activity_util.Activity>
   - name: name
     description: The value to assign to the trace activity's <see cref="Activity.name"/>
       property.
     isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: value
     description: 'The value to assign to the trace activity''s <see cref="Activity.value"/>
       property., defaults
 
       to None'
-    isRequired: true
     defaultValue: None
   - name: value
     description: object, optional
-    isRequired: true
     defaultValue: None
   - name: value_type
     description: 'The value to assign to the trace activity''s <see cref="Activity.value_type"/>
       property,
 
       defaults to None'
-    isRequired: true
     defaultValue: None
   - name: value_type
     description: str, optional
@@ -56,4 +55,4 @@ methods:
   return:
     description: The created trace activity.
     types:
-    - <xref:Activity>
+    - <xref:botbuilder.ai.luis.activity_util.Activity>

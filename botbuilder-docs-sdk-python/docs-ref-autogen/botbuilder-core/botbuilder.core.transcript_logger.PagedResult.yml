@@ -6,10 +6,12 @@ module: botbuilder.core.transcript_logger
 inheritances:
 - builtins.object
 summary: Paged results for transcript data.
+constructor:
+  syntax: PagedResult()
 attributes:
 - uid: botbuilder.core.transcript_logger.PagedResult.continuation_token
   name: continuation_token
-  signature: continuation_token = None
+  signature: 'continuation_token: str = None'
 - uid: botbuilder.core.transcript_logger.PagedResult.items
   name: items
-  signature: items = None
+  signature: 'items: List[object] = None'

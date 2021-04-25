@@ -5,6 +5,8 @@ fullName: botbuilder.core.adapter_extensions.AdapterExtensions
 module: botbuilder.core.adapter_extensions
 inheritances:
 - builtins.object
+constructor:
+  syntax: AdapterExtensions()
 methods:
 - uid: botbuilder.core.adapter_extensions.AdapterExtensions.fullname
   name: fullname
@@ -48,7 +50,6 @@ methods:
     isRequired: true
   - name: auto
     description: True to automatically persist state each turn.
-    isRequired: true
     defaultValue: 'True'
   return:
     description: The BotAdapter

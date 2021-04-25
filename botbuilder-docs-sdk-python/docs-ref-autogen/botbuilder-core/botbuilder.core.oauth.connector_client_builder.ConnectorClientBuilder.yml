@@ -6,23 +6,23 @@ module: botbuilder.core.oauth.connector_client_builder
 inheritances:
 - abc.ABC
 summary: Abstraction to build connector clients.
+constructor:
+  syntax: ConnectorClientBuilder()
 methods:
 - uid: botbuilder.core.oauth.connector_client_builder.ConnectorClientBuilder.create_connector_client
   name: create_connector_client
   summary: Creates the connector client asynchronous.
-  signature: 'create_connector_client(service_url: str, identity: botframework.connector.auth.claims_identity.ClaimsIdentity
-    = None, audience: str = None) -> botframework.connector.connector_client.ConnectorClient'
+  signature: 'create_connector_client(service_url: str, identity: Optional[botframework.connector.auth.claims_identity.ClaimsIdentity]
+    = None, audience: Optional[str] = None) -> botframework.connector.connector_client.ConnectorClient'
   parameters:
   - name: service_url
     description: The service URL.
     isRequired: true
   - name: identity
     description: The claims claimsIdentity.
-    isRequired: true
     defaultValue: None
   - name: audience
     description: The target audience for the connector.
-    isRequired: true
     defaultValue: None
   return:
     description: ConnectorClient instance

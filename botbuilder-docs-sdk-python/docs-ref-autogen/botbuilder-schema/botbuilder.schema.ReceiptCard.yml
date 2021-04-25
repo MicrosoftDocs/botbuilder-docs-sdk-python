@@ -7,46 +7,39 @@ inheritances:
 - msrest.serialization.Model
 summary: A receipt card.
 constructor:
-  syntax: 'ReceiptCard(*, title: str = None, facts=None, items=None, tap=None, total:
-    str = None, tax: str = None, vat: str = None, buttons=None, **kwargs) -> None'
+  syntax: 'ReceiptCard(*, title: Optional[str] = None, facts=None, items=None, tap=None,
+    total: Optional[str] = None, tax: Optional[str] = None, vat: Optional[str] = None,
+    buttons=None, **kwargs) -> None'
   parameters:
   - name: title
     description: Title of the card
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: facts
     description: Array of Fact objects
-    isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.Fact>]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.Fact>]'
   - name: items
     description: Array of Receipt Items
-    isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.ReceiptItem>]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ReceiptItem>]'
   - name: tap
     description: This action will be activated when user taps on the card
-    isRequired: true
     types:
     - <xref:botframework.connector.models.CardAction>
   - name: total
     description: Total amount of money paid (or to be paid)
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: tax
     description: Total amount of tax paid (or to be paid)
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: vat
     description: Total amount of VAT paid (or to be paid)
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: buttons
     description: Set of actions applicable to the current card
-    isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.CardAction>]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.CardAction>]'

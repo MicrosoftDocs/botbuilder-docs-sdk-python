@@ -7,4 +7,5 @@ inheritances:
 - builtins.object
 summary: Represents a result from matching user input against a list of choices
 constructor:
-  syntax: 'FoundChoice(value: str, index: int, score: float, synonym: str = None)'
+  syntax: 'FoundChoice(value: str, index: int, score: float, synonym: Optional[str]
+    = None)'

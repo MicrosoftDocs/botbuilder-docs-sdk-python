@@ -19,9 +19,9 @@ methods:
     description: LUIS application endpoint.
     isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: application_endpoint
     isRequired: true
   return:
     types:
-    - <xref:LuisApplication>
+    - <xref:botbuilder.ai.luis.LuisApplication>

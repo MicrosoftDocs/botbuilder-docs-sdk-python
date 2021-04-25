@@ -11,11 +11,9 @@ constructor:
     -> None
   parameters:
   - name: compose_extension
-    isRequired: true
     types:
     - <xref:botframework.connector.teams.models.MessagingExtensionResult>
   - name: cache_info
     description: CacheInfo for this MessagingExtensionResponse.
-    isRequired: true
     types:
     - <xref:botframework.connector.teams.models.CacheInfo>

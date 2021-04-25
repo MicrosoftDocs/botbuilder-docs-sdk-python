@@ -16,18 +16,15 @@ constructor:
     description: 'The action the user took. Possible values include:
 
       ''accept'', ''decline'''
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: context
     description: The context associated with the action.
-    isRequired: true
     types:
-    - <xref:object>
+    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   - name: upload_info
     description: 'If the user accepted the file, contains information
 
       about the file to be uploaded.'
-    isRequired: true
     types:
     - <xref:botframework.connector.teams.models.FileUploadInfo>

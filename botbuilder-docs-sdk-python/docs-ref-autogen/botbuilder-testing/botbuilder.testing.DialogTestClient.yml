@@ -7,10 +7,10 @@ inheritances:
 - builtins.object
 summary: A client for testing dialogs in isolation.
 constructor:
-  syntax: 'DialogTestClient(channel_or_adapter: typing.Union[str, botbuilder.core.adapters.test_adapter.TestAdapter],
+  syntax: 'DialogTestClient(channel_or_adapter: Union[str, botbuilder.core.adapters.test_adapter.TestAdapter],
     target_dialog: botbuilder.dialogs.dialog.Dialog, initial_dialog_options: object
-    = None, middlewares: typing.List[botbuilder.core.middleware_set.Middleware] =
-    None, conversation_state: botbuilder.core.conversation_state.ConversationState
+    = None, middlewares: Optional[List[botbuilder.core.middleware_set.Middleware]]
+    = None, conversation_state: Optional[botbuilder.core.conversation_state.ConversationState]
     = None)'
 methods:
 - uid: botbuilder.testing.DialogTestClient.get_next_reply
@@ -20,7 +20,7 @@ methods:
   return:
     description: a TestFlow that can be used to assert replies etc.
     types:
-    - <xref:Activity>
+    - <xref:botbuilder.testing.Activity>
 - uid: botbuilder.testing.DialogTestClient.send_activity
   name: send_activity
   summary: Send an activity into the dialog.
@@ -32,4 +32,4 @@ methods:
   return:
     description: a TestFlow that can be used to assert replies etc.
     types:
-    - <xref:Activity>
+    - <xref:botbuilder.testing.Activity>

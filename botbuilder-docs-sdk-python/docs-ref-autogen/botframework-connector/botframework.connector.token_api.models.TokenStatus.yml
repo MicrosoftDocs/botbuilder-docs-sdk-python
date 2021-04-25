@@ -7,30 +7,27 @@ inheritances:
 - msrest.serialization.Model
 summary: The status of a particular token.
 constructor:
-  syntax: 'TokenStatus(*, channel_id: str = None, connection_name: str = None, has_token:
-    bool = None, service_provider_display_name: str = None, **kwargs) -> None'
+  syntax: 'TokenStatus(*, channel_id: Optional[str] = None, connection_name: Optional[str]
+    = None, has_token: Optional[bool] = None, service_provider_display_name: Optional[str]
+    = None, **kwargs) -> None'
   parameters:
   - name: channel_id
     description: The channelId of the token status pertains to
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: connection_name
     description: 'The name of the connection the token status
 
       pertains to'
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: has_token
     description: True if a token is stored for this ConnectionName
-    isRequired: true
     types:
-    - <xref:bool>
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: service_provider_display_name
     description: 'The display name of the service
 
       provider for which this Token belongs to'
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

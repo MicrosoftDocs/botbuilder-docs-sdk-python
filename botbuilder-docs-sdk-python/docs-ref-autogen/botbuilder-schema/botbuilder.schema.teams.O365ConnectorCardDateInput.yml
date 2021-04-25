@@ -7,43 +7,37 @@ inheritances:
 - botbuilder.schema.teams._models_py3.O365ConnectorCardInputBase
 summary: O365 connector card date input.
 constructor:
-  syntax: 'O365ConnectorCardDateInput(*, type=None, id: str = None, is_required: bool
-    = None, title: str = None, value: str = None, include_time: bool = None, **kwargs)
-    -> None'
+  syntax: 'O365ConnectorCardDateInput(*, type=None, id: Optional[str] = None, is_required:
+    Optional[bool] = None, title: Optional[str] = None, value: Optional[str] = None,
+    include_time: Optional[bool] = None, **kwargs) -> None'
   parameters:
   - name: type
     description: 'Input type name. Possible values include: ''textInput'',
 
       ''dateInput'', ''multichoiceInput'''
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: id
     description: Input Id. It must be unique per entire O365 connector card.
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: is_required
     description: 'Define if this input is a required field. Default
 
       value is false.'
-    isRequired: true
     types:
-    - <xref:bool>
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: title
     description: Input title that will be shown as the placeholder
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: value
     description: Default value for this input field
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: include_time
     description: 'Include time input field. Default value  is false
 
       (date only).'
-    isRequired: true
     types:
-    - <xref:bool>
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'

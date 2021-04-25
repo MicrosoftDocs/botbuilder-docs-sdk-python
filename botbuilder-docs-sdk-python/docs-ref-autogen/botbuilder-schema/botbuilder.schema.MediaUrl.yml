@@ -7,17 +7,16 @@ inheritances:
 - msrest.serialization.Model
 summary: Media URL.
 constructor:
-  syntax: 'MediaUrl(*, url: str = None, profile: str = None, **kwargs) -> None'
+  syntax: 'MediaUrl(*, url: Optional[str] = None, profile: Optional[str] = None, **kwargs)
+    -> None'
   parameters:
   - name: url
     description: Url for the media
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: profile
     description: 'Optional profile hint to the client to differentiate
 
       multiple MediaUrl objects from each other'
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

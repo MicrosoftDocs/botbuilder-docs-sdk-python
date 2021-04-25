@@ -5,19 +5,21 @@ fullName: botframework.connector.auth.authentication_constants.AuthenticationCon
 module: botframework.connector.auth.authentication_constants
 inheritances:
 - abc.ABC
+constructor:
+  syntax: AuthenticationConstants()
 attributes:
 - uid: botframework.connector.auth.authentication_constants.AuthenticationConstants.AUDIENCE_CLAIM
   name: AUDIENCE_CLAIM
   summary: "Issuer Claim. From RFC 7519.\n   [https://tools.ietf.org/html/rfc7519#section-4.1.1](https://tools.ietf.org/html/rfc7519#section-4.1.1)\n\
-    \n\nThe \"iss\" (issuer) claim identifies the principal that issued the\nJWT.\
-    \  The processing of this claim is generally application specific.\nThe \"iss\"\
-    \ value is a case-sensitive string containing a StringOrURI\nvalue.  Use of this\
-    \ claim is OPTIONAL."
+    \nThe \"iss\" (issuer) claim identifies the principal that issued the\nJWT.  The\
+    \ processing of this claim is generally application specific.\nThe \"iss\" value\
+    \ is a case-sensitive string containing a StringOrURI\nvalue.  Use of this claim\
+    \ is OPTIONAL."
   signature: AUDIENCE_CLAIM = 'aud'
 - uid: botframework.connector.auth.authentication_constants.AuthenticationConstants.AUTHORIZED_PARTY
   name: AUTHORIZED_PARTY
   summary: "Audience Claim. From RFC 7519.\n   [https://tools.ietf.org/html/rfc7519#section-4.1.3](https://tools.ietf.org/html/rfc7519#section-4.1.3)\n\
-    \n\nThe \"aud\" (audience) claim identifies the recipients that the JWT is\nintended\
+    \nThe \"aud\" (audience) claim identifies the recipients that the JWT is\nintended\
     \ for.  Each principal intended to process the JWT MUST\nidentify itself with\
     \ a value in the audience claim.If the principal\nprocessing the claim does not\
     \ identify itself with a value in the\n\"aud\" claim when this claim is present,\
@@ -30,9 +32,9 @@ attributes:
 - uid: botframework.connector.auth.authentication_constants.AuthenticationConstants.ISSUER_CLAIM
   name: ISSUER_CLAIM
   summary: "From RFC 7515\n   [https://tools.ietf.org/html/rfc7515#section-4.1.4](https://tools.ietf.org/html/rfc7515#section-4.1.4)\n\
-    \n\nThe \"kid\" (key ID) Header Parameter is a hint indicating which key\nwas\
-    \ used to secure the JWS. This parameter allows originators to\nexplicitly signal\
-    \ a change of key to recipients. The structure of\nthe \"kid\" value is unspecified.\
+    \nThe \"kid\" (key ID) Header Parameter is a hint indicating which key\nwas used\
+    \ to secure the JWS. This parameter allows originators to\nexplicitly signal a\
+    \ change of key to recipients. The structure of\nthe \"kid\" value is unspecified.\
     \ Its value MUST be a case-sensitive\nstring. Use of this Header Parameter is\
     \ OPTIONAL.\nWhen used with a JWK, the \"kid\" value is used to match a JWK \"\
     kid\"\nparameter value."

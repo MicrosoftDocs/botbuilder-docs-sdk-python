@@ -13,7 +13,5 @@ constructor:
     description: 'Message reaction type. Possible values include: ''like'',
 
       ''plusOne'''
-    isRequired: true
     types:
-    - <xref:str>
-    - <xref:botframework.connector.models.MessageReactionTypes>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.MessageReactionTypes>'

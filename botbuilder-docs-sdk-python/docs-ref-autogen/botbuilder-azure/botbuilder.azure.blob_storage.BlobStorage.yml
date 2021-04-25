@@ -27,37 +27,39 @@ constructor:
   parameters:
   - name: settings
     description: Settings used to instantiate the Blob service.
-    isRequired: true
     types:
     - <xref:botbuilder.azure.BlobStorageSettings>
 methods:
 - uid: botbuilder.azure.blob_storage.BlobStorage.delete
   name: delete
   summary: Deletes entity blobs from the configured container.
-  signature: 'delete(keys: typing.List[str])'
+  signature: 'delete(keys: List[str])'
   parameters:
   - name: keys
     description: An array of entity keys.
     isRequired: true
     types:
-    - <xref:Dict>[<xref:str>, <xref:object>]
+    - <xref:botbuilder.azure.blob_storage.Dict>[[str](https://docs.python.org/3.6/library/stdtypes.html#str),
+      [object](https://docs.python.org/3.6/library/functions.html#object)]
 - uid: botbuilder.azure.blob_storage.BlobStorage.read
   name: read
   summary: Retrieve entities from the configured blob container.
-  signature: 'read(keys: typing.List[str]) -> typing.Dict[str, object]'
+  signature: 'read(keys: List[str]) -> Dict[str, object]'
   parameters:
   - name: keys
     description: An array of entity keys.
     isRequired: true
     types:
-    - <xref:Dict>[<xref:str>, <xref:object>]
+    - <xref:botbuilder.azure.blob_storage.Dict>[[str](https://docs.python.org/3.6/library/stdtypes.html#str),
+      [object](https://docs.python.org/3.6/library/functions.html#object)]
 - uid: botbuilder.azure.blob_storage.BlobStorage.write
   name: write
   summary: Stores a new entity in the configured blob container.
-  signature: 'write(changes: typing.Dict[str, object])'
+  signature: 'write(changes: Dict[str, object])'
   parameters:
   - name: changes
     description: The changes to write to storage.
     isRequired: true
     types:
-    - <xref:Dict>[<xref:str>, <xref:object>]
+    - <xref:botbuilder.azure.blob_storage.Dict>[[str](https://docs.python.org/3.6/library/stdtypes.html#str),
+      [object](https://docs.python.org/3.6/library/functions.html#object)]

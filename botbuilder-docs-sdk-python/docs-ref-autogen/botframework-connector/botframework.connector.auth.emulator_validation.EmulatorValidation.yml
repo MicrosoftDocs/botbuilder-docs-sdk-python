@@ -5,6 +5,8 @@ fullName: botframework.connector.auth.emulator_validation.EmulatorValidation
 module: botframework.connector.auth.emulator_validation
 inheritances:
 - builtins.object
+constructor:
+  syntax: EmulatorValidation()
 methods:
 - uid: botframework.connector.auth.emulator_validation.EmulatorValidation.authenticate_emulator_token
   name: authenticate_emulator_token
@@ -15,28 +17,25 @@ methods:
 
     A token issued by the Bot Framework emulator will FAIL this check.'
   signature: 'authenticate_emulator_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
-    channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
+    channel_service_or_provider: Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
     channel_id: str) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: auth_header
     description: 'The raw HTTP header in the format: ''Bearer [longString]'''
     isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: credentials
     description: The user defined set of valid credentials, such as the AppId.
     isRequired: true
     types:
-    - <xref:CredentialProvider>
+    - <xref:botframework.connector.auth.credential_provider.CredentialProvider>
   - name: channel_service_or_provider
     isRequired: true
   - name: channel_id
     isRequired: true
   return:
     description: A valid ClaimsIdentity.
-  exceptions:
-  - description: ''
-    type: Exception
 - uid: botframework.connector.auth.emulator_validation.EmulatorValidation.is_token_from_emulator
   name: is_token_from_emulator
   summary: Determines if a given Auth header is from the Bot Framework Emulator
@@ -46,7 +45,7 @@ methods:
     description: Bearer Token, in the 'Bearer [Long String]' Format.
     isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   return:
     description: True, if the token was issued by the Emulator. Otherwise, false.
 attributes:

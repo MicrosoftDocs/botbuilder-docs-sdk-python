@@ -8,16 +8,14 @@ inheritances:
 summary: A cache info object which notifies Teams how long an object should be cached
   for.
 constructor:
-  syntax: 'CacheInfo(*, cache_type: str = None, cache_duration: int = None, **kwargs)
-    -> None'
+  syntax: 'CacheInfo(*, cache_type: Optional[str] = None, cache_duration: Optional[int]
+    = None, **kwargs) -> None'
   parameters:
   - name: cache_type
     description: Type of Cache Info
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: cache_duration
     description: Duration of the Cached Info.
-    isRequired: true
     types:
-    - <xref:int>
+    - '[int](https://docs.python.org/3.6/library/functions.html#int)'

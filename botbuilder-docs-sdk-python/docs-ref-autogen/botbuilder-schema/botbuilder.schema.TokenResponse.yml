@@ -7,28 +7,25 @@ inheritances:
 - msrest.serialization.Model
 summary: A response that includes a user token.
 constructor:
-  syntax: 'TokenResponse(*, connection_name: str = None, token: str = None, expiration:
-    str = None, channel_id: str = None, **kwargs) -> None'
+  syntax: 'TokenResponse(*, connection_name: Optional[str] = None, token: Optional[str]
+    = None, expiration: Optional[str] = None, channel_id: Optional[str] = None, **kwargs)
+    -> None'
   parameters:
   - name: connection_name
     description: The connection name
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: token
     description: The user token
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: expiration
     description: 'Expiration for the token, in ISO 8601 format (e.g.
 
       "2007-04-05T14:30Z")'
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: channel_id
     description: The channelId of the TokenResponse
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

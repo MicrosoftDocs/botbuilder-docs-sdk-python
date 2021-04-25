@@ -7,9 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: Current user context, i.e., the current theme.
 constructor:
-  syntax: 'TaskModuleRequestContext(*, theme: str = None, **kwargs) -> None'
+  syntax: 'TaskModuleRequestContext(*, theme: Optional[str] = None, **kwargs) -> None'
   parameters:
   - name: theme
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

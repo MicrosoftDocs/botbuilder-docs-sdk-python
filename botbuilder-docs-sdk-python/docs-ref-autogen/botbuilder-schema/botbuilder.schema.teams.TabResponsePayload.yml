@@ -14,18 +14,15 @@ constructor:
     description: 'Gets or sets choice of action options when responding to the
 
       tab/fetch message. Possible values include: ''continue'', ''auth'' or ''silentAuth'''
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: value
     description: 'Gets or sets the TabResponseCards when responding to
 
       tab/fetch activity with type of ''continue''.'
-    isRequired: true
     types:
-    - <xref:TabResponseCards>
+    - <xref:botbuilder.schema.teams.TabResponseCards>
   - name: suggested_actions
     description: Gets or sets the Suggested Actions for this card tab.
-    isRequired: true
     types:
-    - <xref:TabSuggestedActions>
+    - <xref:botbuilder.schema.teams.TabSuggestedActions>

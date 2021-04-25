@@ -7,31 +7,27 @@ inheritances:
 - msrest.serialization.Model
 summary: An attachment within an activity.
 constructor:
-  syntax: 'Attachment(*, content_type: str = None, content_url: str = None, content=None,
-    name: str = None, thumbnail_url: str = None, **kwargs) -> None'
+  syntax: 'Attachment(*, content_type: Optional[str] = None, content_url: Optional[str]
+    = None, content=None, name: Optional[str] = None, thumbnail_url: Optional[str]
+    = None, **kwargs) -> None'
   parameters:
   - name: content_type
     description: mimetype/Contenttype for the file
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: content_url
     description: Content Url
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: content
     description: Embedded content
-    isRequired: true
     types:
-    - <xref:object>
+    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   - name: name
     description: (OPTIONAL) The name of the attachment
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: thumbnail_url
     description: (OPTIONAL) Thumbnail associated with attachment
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

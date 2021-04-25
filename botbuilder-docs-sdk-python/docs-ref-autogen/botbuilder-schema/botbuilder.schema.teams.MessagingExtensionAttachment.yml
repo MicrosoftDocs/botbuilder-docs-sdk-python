@@ -7,36 +7,30 @@ inheritances:
 - botbuilder.schema._models_py3.Attachment
 summary: Messaging extension attachment.
 constructor:
-  syntax: 'MessagingExtensionAttachment(*, content_type: str = None, content_url:
-    str = None, content=None, name: str = None, thumbnail_url: str = None, preview=None,
-    **kwargs) -> None'
+  syntax: 'MessagingExtensionAttachment(*, content_type: Optional[str] = None, content_url:
+    Optional[str] = None, content=None, name: Optional[str] = None, thumbnail_url:
+    Optional[str] = None, preview=None, **kwargs) -> None'
   parameters:
   - name: content_type
     description: mimetype/Contenttype for the file
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: content_url
     description: Content Url
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: content
     description: Embedded content
-    isRequired: true
     types:
-    - <xref:object>
+    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   - name: name
     description: (OPTIONAL) The name of the attachment
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: thumbnail_url
     description: (OPTIONAL) Thumbnail associated with attachment
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: preview
-    isRequired: true
     types:
     - <xref:botframework.connector.teams.models.Attachment>

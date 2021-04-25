@@ -20,7 +20,6 @@ methods:
   summary: 'Gets the key to use when reading and writing state to and from storage.
 
 
-
     <xref:botbuilder.schema.Activity> channelId or conversation information or the
     conversation''s
 
@@ -33,7 +32,7 @@ methods:
   return:
     description: The storage key.
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   remarks: 'Conversation state includes the channel ID and conversation ID as part
     of its storage key.
 

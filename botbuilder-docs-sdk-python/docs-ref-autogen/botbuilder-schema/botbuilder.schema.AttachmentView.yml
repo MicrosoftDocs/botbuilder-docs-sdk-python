@@ -7,15 +7,14 @@ inheritances:
 - msrest.serialization.Model
 summary: Attachment View name and size.
 constructor:
-  syntax: 'AttachmentView(*, view_id: str = None, size: int = None, **kwargs) -> None'
+  syntax: 'AttachmentView(*, view_id: Optional[str] = None, size: Optional[int] =
+    None, **kwargs) -> None'
   parameters:
   - name: view_id
     description: Id of the attachment
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: size
     description: Size of the attachment
-    isRequired: true
     types:
-    - <xref:int>
+    - '[int](https://docs.python.org/3.6/library/functions.html#int)'

@@ -7,38 +7,32 @@ inheritances:
 - msrest.serialization.Model
 summary: Channel data specific to messages received in Microsoft Teams.
 constructor:
-  syntax: 'TeamsChannelData(*, channel=None, eventType: str = None, team=None, notification=None,
-    tenant=None, meeting=None, **kwargs) -> None'
+  syntax: 'TeamsChannelData(*, channel=None, eventType: Optional[str] = None, team=None,
+    notification=None, tenant=None, meeting=None, **kwargs) -> None'
   parameters:
   - name: channel
     description: 'Information about the channel in which the message was
 
       sent'
-    isRequired: true
     types:
     - <xref:botframework.connector.teams.models.ChannelInfo>
   - name: event_type
     description: Type of event.
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: team
     description: Information about the team in which the message was sent
-    isRequired: true
     types:
     - <xref:botframework.connector.teams.models.TeamInfo>
   - name: notification
     description: Notification settings for the message
-    isRequired: true
     types:
     - <xref:botframework.connector.teams.models.NotificationInfo>
   - name: tenant
     description: Information about the tenant in which the message was sent
-    isRequired: true
     types:
     - <xref:botframework.connector.teams.models.TenantInfo>
   - name: meeting
     description: Information about the meeting in which the message was sent
-    isRequired: true
     types:
     - <xref:botframework.connector.teams.models.TeamsMeetingInfo>

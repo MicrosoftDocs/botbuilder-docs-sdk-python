@@ -6,17 +6,18 @@ module: botbuilder.ai.qna
 inheritances:
 - builtins.object
 summary: Active learning helper class
+constructor:
+  syntax: ActiveLearningUtils()
 methods:
 - uid: botbuilder.ai.qna.ActiveLearningUtils.get_low_score_variation
   name: get_low_score_variation
   summary: 'Returns a list of QnA search results, which have low score variation.
 
 
-
     qna_serach_results: A list of QnA QueryResults returned from the QnA GenerateAnswer
     API call.'
-  signature: 'get_low_score_variation(qna_search_results: typing.List[botbuilder.ai.qna.models.query_result.QueryResult])
-    -> typing.List[botbuilder.ai.qna.models.query_result.QueryResult]'
+  signature: 'get_low_score_variation(qna_search_results: List[botbuilder.ai.qna.models.query_result.QueryResult])
+    -> List[botbuilder.ai.qna.models.query_result.QueryResult]'
   parameters:
   - name: qna_search_results
     isRequired: true

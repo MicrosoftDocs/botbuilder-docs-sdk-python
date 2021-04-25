@@ -13,15 +13,14 @@ summary: 'Set of key-value pairs. Advantage of this section is that key and valu
 
   So there is no need for developer to specify style information.'
 constructor:
-  syntax: 'Fact(*, key: str = None, value: str = None, **kwargs) -> None'
+  syntax: 'Fact(*, key: Optional[str] = None, value: Optional[str] = None, **kwargs)
+    -> None'
   parameters:
   - name: key
     description: The key for this Fact
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: value
     description: The value for this Fact
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

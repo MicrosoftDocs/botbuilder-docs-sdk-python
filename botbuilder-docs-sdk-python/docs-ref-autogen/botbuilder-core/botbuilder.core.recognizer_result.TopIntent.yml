@@ -6,6 +6,8 @@ module: botbuilder.core.recognizer_result
 inheritances:
 - builtins.tuple
 summary: The top scoring intent and its score.
+constructor:
+  syntax: 'TopIntent(intent: str, score: float)'
 attributes:
 - uid: botbuilder.core.recognizer_result.TopIntent.intent
   name: intent

@@ -5,13 +5,15 @@ fullName: botbuilder.core.BotAssert
 module: botbuilder.core
 inheritances:
 - builtins.object
+constructor:
+  syntax: BotAssert()
 methods:
 - uid: botbuilder.core.BotAssert.activity_list_not_none
   name: activity_list_not_none
   summary: 'Checks that an activity list is not None
 
     :param activities: The activity list'
-  signature: 'activity_list_not_none(activities: typing.List[botbuilder.schema._models_py3.Activity])
+  signature: 'activity_list_not_none(activities: List[botbuilder.schema._models_py3.Activity])
     -> None'
   parameters:
   - name: activities
@@ -51,7 +53,7 @@ methods:
   summary: 'Checks that a middeware list is not None
 
     :param activities: The middleware list'
-  signature: 'middleware_list_not_none(middleware: typing.List[botbuilder.core.middleware_set.Middleware])
+  signature: 'middleware_list_not_none(middleware: List[botbuilder.core.middleware_set.Middleware])
     -> None'
   parameters:
   - name: middleware

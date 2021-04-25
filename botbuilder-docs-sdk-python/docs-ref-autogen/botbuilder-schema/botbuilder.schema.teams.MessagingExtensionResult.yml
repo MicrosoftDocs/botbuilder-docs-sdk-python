@@ -8,41 +8,35 @@ inheritances:
 summary: Messaging extension result.
 constructor:
   syntax: 'MessagingExtensionResult(*, attachment_layout=None, type=None, attachments=None,
-    suggested_actions=None, text: str = None, activity_preview=None, **kwargs) ->
-    None'
+    suggested_actions=None, text: Optional[str] = None, activity_preview=None, **kwargs)
+    -> None'
   parameters:
   - name: attachment_layout
     description: 'Hint for how to deal with multiple attachments.
 
       Possible values include: ''list'', ''grid'''
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: type
     description: 'The type of the result. Possible values include: ''result'',
 
       ''auth'', ''config'', ''message'', ''botMessagePreview'''
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: attachments
     description: (Only when type is result) Attachments
-    isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.teams.models.MessagingExtensionAttachment>]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.MessagingExtensionAttachment>]'
   - name: suggested_actions
-    isRequired: true
     types:
     - <xref:botframework.connector.teams.models.MessagingExtensionSuggestedAction>
   - name: text
     description: (Only when type is message) Text
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: activity_preview
     description: '(Only when type is botMessagePreview) Message
 
       activity to preview'
-    isRequired: true
     types:
     - <xref:botframework.connector.teams.models.Activity>

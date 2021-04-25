@@ -31,8 +31,8 @@ methods:
   name: append_choices
   summary: Composes an output activity containing a set of choices.
   signature: 'append_choices(prompt: botbuilder.schema._models_py3.Activity, channel_id:
-    str, choices: typing.List[botbuilder.dialogs.choices.choice.Choice], style: botbuilder.dialogs.choices.list_style.ListStyle,
-    options: botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
+    str, choices: List[botbuilder.dialogs.choices.choice.Choice], style: botbuilder.dialogs.choices.list_style.ListStyle,
+    options: Optional[botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions]
     = None) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: prompt
@@ -42,7 +42,7 @@ methods:
     description: Id of the channel the prompt is being sent to
     isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: choices
     isRequired: true
   - name: style
@@ -83,10 +83,9 @@ methods:
     - <xref:botbuilder.dialogs.prompts.DialogContext>
   - name: options
     description: Optional, additional information to pass to the prompt being started
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:Object>
+    - <xref:botbuilder.dialogs.prompts.Object>
   return:
     description: The dialog turn result
     types:
@@ -126,7 +125,7 @@ methods:
   summary: Prompts user for input. When overridden in a derived class, prompts the
     user for input.
   signature: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
-    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
+    Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
     is_retry: bool)'
   parameters:
   - name: turn_context
@@ -149,22 +148,15 @@ methods:
     description: Determines whether *prompt* or *retry_prompt* should be used
     isRequired: true
     types:
-    - <xref:bool>
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   return:
     description: A task representing the asynchronous operation.
 - uid: botbuilder.dialogs.prompts.Prompt.on_recognize
   name: on_recognize
-  summary: 'Recognizes the user''s input.
-
-
-
-    > [!NOTE]
-
-    > When overridden in a derived class, attempts to recognize the user''s input.
-
-    >'
+  summary: "Recognizes the user's input.\n\n\n> [!NOTE]\n> When overridden in a derived\
+    \ class, attempts to recognize the user\u2019s input.\n>"
   signature: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
-    state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)'
+    state: Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)'
   parameters:
   - name: turn_context
     description: Context for the current turn of conversation with the user
@@ -222,7 +214,7 @@ methods:
     description: Optional, value returned from the previous dialog on the stack.
     isRequired: true
     types:
-    - <xref:object>
+    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   return:
     description: The dialog turn result
     types:

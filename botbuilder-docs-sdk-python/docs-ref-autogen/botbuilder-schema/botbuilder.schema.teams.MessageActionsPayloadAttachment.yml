@@ -7,41 +7,35 @@ inheritances:
 - msrest.serialization.Model
 summary: Represents the attachment in a message.
 constructor:
-  syntax: 'MessageActionsPayloadAttachment(*, id: str = None, content_type: str =
-    None, content_url: str = None, content=None, name: str = None, thumbnail_url:
-    str = None, **kwargs) -> None'
+  syntax: 'MessageActionsPayloadAttachment(*, id: Optional[str] = None, content_type:
+    Optional[str] = None, content_url: Optional[str] = None, content=None, name: Optional[str]
+    = None, thumbnail_url: Optional[str] = None, **kwargs) -> None'
   parameters:
   - name: id
     description: The id of the attachment.
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: content_type
     description: The type of the attachment.
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: content_url
     description: The url of the attachment, in case of a external link.
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: content
     description: 'The content of the attachment, in case of a code snippet,
 
       email, or file.'
-    isRequired: true
     types:
-    - <xref:object>
+    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   - name: name
     description: The plaintext display name of the attachment.
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: thumbnail_url
     description: 'The url of a thumbnail image that might be embedded
 
       in the attachment, in case of a card.'
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

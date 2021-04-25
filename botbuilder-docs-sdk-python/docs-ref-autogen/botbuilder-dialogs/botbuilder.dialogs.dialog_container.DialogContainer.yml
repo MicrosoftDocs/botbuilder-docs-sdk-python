@@ -7,7 +7,7 @@ inheritances:
 - botbuilder.dialogs.dialog.Dialog
 - abc.ABC
 constructor:
-  syntax: 'DialogContainer(dialog_id: str = None)'
+  syntax: 'DialogContainer(dialog_id: Optional[str] = None)'
 methods:
 - uid: botbuilder.dialogs.dialog_container.DialogContainer.check_for_version_change_async
   name: check_for_version_change_async

@@ -7,22 +7,19 @@ inheritances:
 - msrest.serialization.Model
 summary: Represents a reference to a programmatic action.
 constructor:
-  syntax: 'SemanticAction(*, id: str = None, entities=None, state=None, **kwargs)
-    -> None'
+  syntax: 'SemanticAction(*, id: Optional[str] = None, entities=None, state=None,
+    **kwargs) -> None'
   parameters:
   - name: id
     description: ID of this action
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: entities
     description: Entities associated with this action
-    isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:botframework.connector.models.Entity>]
+    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)[[str](https://docs.python.org/3.6/library/stdtypes.html#str),
+      <xref:botframework.connector.models.Entity>]'
   - name: state
     description: 'State of this action. Allowed values: *start*, *continue*, *done*'
-    isRequired: true
     types:
-    - <xref:str>
-    - <xref:botframework.connector.models.SemanticActionStates>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.SemanticActionStates>'

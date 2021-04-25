@@ -7,15 +7,14 @@ inheritances:
 - msrest.serialization.Model
 summary: Conversation and its members.
 constructor:
-  syntax: 'ConversationMembers(*, id: str = None, members=None, **kwargs) -> None'
+  syntax: 'ConversationMembers(*, id: Optional[str] = None, members=None, **kwargs)
+    -> None'
   parameters:
   - name: id
     description: Conversation ID
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: members
     description: List of members in this conversation
-    isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ChannelAccount>]'

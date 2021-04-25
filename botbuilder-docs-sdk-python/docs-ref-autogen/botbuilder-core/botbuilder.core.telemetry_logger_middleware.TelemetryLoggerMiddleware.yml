@@ -23,10 +23,9 @@ methods:
     Additional properties can override "stock" properties.
 
 
-
     BotTelemetryClient.track_event method for the BotMessageUpdate event.'
   signature: 'fill_delete_event_properties(activity: botbuilder.schema._models_py3.Activity,
-    additional_properties: typing.Dict[str, str] = None) -> typing.Dict[str, str]'
+    additional_properties: Optional[Dict[str, str]] = None) -> Dict[str, str]'
   parameters:
   - name: activity
     isRequired: true
@@ -47,10 +46,9 @@ methods:
     Additional properties can override "stock" properties.
 
 
-
     BotTelemetryClient.track_event method for the BotMessageReceived event.'
   signature: 'fill_receive_event_properties(activity: botbuilder.schema._models_py3.Activity,
-    additional_properties: typing.Dict[str, str] = None) -> typing.Dict[str, str]'
+    additional_properties: Optional[Dict[str, str]] = None) -> Dict[str, str]'
   parameters:
   - name: activity
     isRequired: true
@@ -72,10 +70,9 @@ methods:
     Additional properties can override "stock" properties.
 
 
-
     BotTelemetryClient.track_event method for the BotMessageSend event.'
   signature: 'fill_send_event_properties(activity: botbuilder.schema._models_py3.Activity,
-    additional_properties: typing.Dict[str, str] = None) -> typing.Dict[str, str]'
+    additional_properties: Optional[Dict[str, str]] = None) -> Dict[str, str]'
   parameters:
   - name: activity
     isRequired: true
@@ -100,10 +97,9 @@ methods:
     Additional properties can override "stock" properties.
 
 
-
     BotTelemetryClient.track_event method for the BotMessageUpdate event.'
   signature: 'fill_update_event_properties(activity: botbuilder.schema._models_py3.Activity,
-    additional_properties: typing.Dict[str, str] = None) -> typing.Dict[str, str]'
+    additional_properties: Optional[Dict[str, str]] = None) -> Dict[str, str]'
   parameters:
   - name: activity
     isRequired: true
@@ -162,8 +158,7 @@ methods:
 
     BotTelemetryClient base class'
   signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic_fn:
-    typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable]) ->
-    None'
+    Callable[botbuilder.core.turn_context.TurnContext, Awaitable]) -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn.

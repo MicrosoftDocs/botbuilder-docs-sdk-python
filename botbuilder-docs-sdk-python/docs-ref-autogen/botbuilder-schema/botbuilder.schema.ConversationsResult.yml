@@ -7,16 +7,14 @@ inheritances:
 - msrest.serialization.Model
 summary: Conversations result.
 constructor:
-  syntax: 'ConversationsResult(*, continuation_token: str = None, conversations=None,
+  syntax: 'ConversationsResult(*, continuation_token: Optional[str] = None, conversations=None,
     **kwargs) -> None'
   parameters:
   - name: continuation_token
     description: Paging token
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: conversations
     description: List of conversations
-    isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.ConversationMembers>]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ConversationMembers>]'

@@ -9,9 +9,18 @@ summary: 'This provider is most useful for simulating production storage when ru
   locally against the
 
   emulator or as part of a unit test.'
+constructor:
+  syntax: MemoryTranscriptStore()
 methods:
 - uid: botbuilder.core.MemoryTranscriptStore.delete_transcript
   name: delete_transcript
+  summary: 'Delete a specific conversation and all of it''s activities.
+
+    :param channel_id: Channel Id where conversation took place.
+
+    :param conversation_id: Id of the conversation to delete.
+
+    :result: None'
   signature: 'delete_transcript(channel_id: str, conversation_id: str) -> None'
   parameters:
   - name: channel_id
@@ -20,6 +29,20 @@ methods:
     isRequired: true
 - uid: botbuilder.core.MemoryTranscriptStore.get_transcript_activities
   name: get_transcript_activities
+  summary: 'Get activities for a conversation (Aka the transcript).
+
+    :param channel_id: Channel Id where conversation took place.
+
+    :param conversation_id: Conversation ID
+
+    :param continuation_token: Continuation token to page through results.
+
+    :param start_date: Earliest time to include
+
+    :result: Page of results of Activity objects'
+  signature: 'get_transcript_activities(channel_id: str, conversation_id: str, continuation_token:
+    str = None, start_date: <module ''datetime'' from ''c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\datetime.py''>
+    = datetime.datetime(1, 1, 1, 0, 0)) -> ''PagedResult[Activity]'''
   parameters:
   - name: channel_id
     isRequired: true
@@ -31,6 +54,15 @@ methods:
     defaultValue: '0001-01-01 00:00:00'
 - uid: botbuilder.core.MemoryTranscriptStore.list_transcripts
   name: list_transcripts
+  summary: 'List conversations in the channelId.
+
+    :param channel_id: Channel Id where conversation took place.
+
+    :param continuation_token : Continuation token to page through results.
+
+    :result: Page of results of TranscriptInfo objects'
+  signature: 'list_transcripts(channel_id: str, continuation_token: str = None) ->
+    ''PagedResult[TranscriptInfo]'''
   parameters:
   - name: channel_id
     isRequired: true
@@ -38,6 +70,9 @@ methods:
     defaultValue: None
 - uid: botbuilder.core.MemoryTranscriptStore.log_activity
   name: log_activity
+  summary: 'Log an activity to the transcript.
+
+    :param activity:Activity being logged.'
   signature: 'log_activity(activity: botbuilder.schema._models_py3.Activity) -> None'
   parameters:
   - name: activity
@@ -45,4 +80,5 @@ methods:
 attributes:
 - uid: botbuilder.core.MemoryTranscriptStore.channels
   name: channels
-  signature: channels = {}
+  signature: 'channels: Dict[str, Dict[str, botbuilder.schema._models_py3.Activity]]
+    = {}'

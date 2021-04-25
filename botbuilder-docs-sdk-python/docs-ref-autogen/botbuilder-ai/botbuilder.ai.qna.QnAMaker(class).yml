@@ -8,20 +8,21 @@ inheritances:
 summary: Class used to query a QnA Maker knowledge base for answers.
 constructor:
   syntax: 'QnAMaker(endpoint: botbuilder.ai.qna.qnamaker_endpoint.QnAMakerEndpoint,
-    options: botbuilder.ai.qna.qnamaker_options.QnAMakerOptions = None, http_client:
-    aiohttp.client.ClientSession = None, telemetry_client: botbuilder.core.bot_telemetry_client.BotTelemetryClient
-    = None, log_personal_information: bool = None)'
+    options: Optional[botbuilder.ai.qna.qnamaker_options.QnAMakerOptions] = None,
+    http_client: Optional[aiohttp.client.ClientSession] = None, telemetry_client:
+    Optional[botbuilder.core.bot_telemetry_client.BotTelemetryClient] = None, log_personal_information:
+    Optional[bool] = None)'
 methods:
 - uid: botbuilder.ai.qna.QnAMaker.call_train
   name: call_train
   summary: Sends feedback to the knowledge base.
-  signature: 'call_train(feedback_records: typing.List[botbuilder.ai.qna.models.feedback_record.FeedbackRecord])'
+  signature: 'call_train(feedback_records: List[botbuilder.ai.qna.models.feedback_record.FeedbackRecord])'
   parameters:
   - name: feedback_records
     description: Feedback records.
     isRequired: true
     types:
-    - <xref:typing.List>[<xref:FeedbackRecord>]
+    - <xref:typing.List[FeedbackRecord]>
 - uid: botbuilder.ai.qna.QnAMaker.close
   name: close
   signature: close()
@@ -30,8 +31,8 @@ methods:
   summary: Fills the event properties and metrics for the QnaMessage event for telemetry.
   signature: 'fill_qna_event(query_results: [<class ''botbuilder.ai.qna.models.query_result.QueryResult''>],
     turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
-    typing.Dict[str, str] = None, telemetry_metrics: typing.Dict[str, float] = None)
-    -> botbuilder.ai.qna.qnamaker.EventData'
+    Optional[Dict[str, str]] = None, telemetry_metrics: Optional[Dict[str, float]]
+    = None) -> botbuilder.ai.qna.qnamaker.EventData'
   parameters:
   - name: query_results
     description: QnA service results.
@@ -44,16 +45,14 @@ methods:
     - <xref:botbuilder.core.TurnContext>
   - name: telemetry_properties
     description: Properties to add/override for the event.
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:typing.Dict>[<xref:str>, <xref:str>]
+    - <xref:typing.Dict[str, str]>
   - name: telemetry_metrics
     description: Metrics to add/override for the event.
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:typing.Dict>[<xref:str>, <xref:float>]
+    - <xref:typing.Dict[str, float]>
   return:
     description: Event properties and metrics for the QnaMessage event for telemetry.
     types:
@@ -62,9 +61,9 @@ methods:
   name: get_answers
   summary: Generates answers from the knowledge base.
   signature: 'get_answers(context: botbuilder.core.turn_context.TurnContext, options:
-    botbuilder.ai.qna.qnamaker_options.QnAMakerOptions = None, telemetry_properties:
-    typing.Dict[str, str] = None, telemetry_metrics: typing.Dict[str, int] = None)
-    -> [<class ''botbuilder.ai.qna.models.query_result.QueryResult''>]'
+    Optional[botbuilder.ai.qna.qnamaker_options.QnAMakerOptions] = None, telemetry_properties:
+    Optional[Dict[str, str]] = None, telemetry_metrics: Optional[Dict[str, int]] =
+    None) -> [<class ''botbuilder.ai.qna.models.query_result.QueryResult''>]'
   parameters:
   - name: context
     isRequired: true
@@ -78,14 +77,14 @@ methods:
     description: A list of answers for the user's query, sorted in decreasing order
       of ranking score.
     types:
-    - <xref:typing.List>[<xref:QueryResult>]
+    - <xref:typing.List[QueryResult]>
 - uid: botbuilder.ai.qna.QnAMaker.get_answers_raw
   name: get_answers_raw
   summary: Generates raw answers from the knowledge base.
   signature: 'get_answers_raw(context: botbuilder.core.turn_context.TurnContext, options:
-    botbuilder.ai.qna.qnamaker_options.QnAMakerOptions = None, telemetry_properties:
-    typing.Dict[str, str] = None, telemetry_metrics: typing.Dict[str, int] = None)
-    -> botbuilder.ai.qna.models.query_results.QueryResults'
+    Optional[botbuilder.ai.qna.qnamaker_options.QnAMakerOptions] = None, telemetry_properties:
+    Optional[Dict[str, str]] = None, telemetry_metrics: Optional[Dict[str, int]] =
+    None) -> botbuilder.ai.qna.models.query_results.QueryResults'
   parameters:
   - name: context
     isRequired: true
@@ -104,7 +103,7 @@ methods:
   name: get_low_score_variation
   summary: Filters the ambiguous question for active learning.
   signature: 'get_low_score_variation(query_result: botbuilder.ai.qna.models.query_result.QueryResult)
-    -> typing.List[botbuilder.ai.qna.models.query_result.QueryResult]'
+    -> List[botbuilder.ai.qna.models.query_result.QueryResult]'
   parameters:
   - name: query_result
     description: User query output.
@@ -114,12 +113,13 @@ methods:
   return:
     description: Filtered array of ambiguous questions.
     types:
-    - <xref:typing.List>[<xref:QueryResult>]
+    - <xref:typing.List[QueryResult]>
 - uid: botbuilder.ai.qna.QnAMaker.on_qna_result
   name: on_qna_result
   signature: 'on_qna_result(query_results: [<class ''botbuilder.ai.qna.models.query_result.QueryResult''>],
     turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
-    typing.Dict[str, str] = None, telemetry_metrics: typing.Dict[str, float] = None)'
+    Optional[Dict[str, str]] = None, telemetry_metrics: Optional[Dict[str, float]]
+    = None)'
   parameters:
   - name: query_results
     isRequired: true

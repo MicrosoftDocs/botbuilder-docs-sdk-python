@@ -5,6 +5,8 @@ fullName: botbuilder.core.bot_telemetry_client.BotTelemetryClient
 module: botbuilder.core.bot_telemetry_client
 inheritances:
 - abc.ABC
+constructor:
+  syntax: BotTelemetryClient()
 methods:
 - uid: botbuilder.core.bot_telemetry_client.BotTelemetryClient.track_dependency
   name: track_dependency
@@ -41,10 +43,11 @@ methods:
 
     :param dependency_id: the id for this dependency call. If None, a new uuid will
     be generated.         (defaults to: None)'
-  signature: 'track_dependency(name: str, data: str, type_name: str = None, target:
-    str = None, duration: int = None, success: bool = None, result_code: str = None,
-    properties: typing.Dict[str, object] = None, measurements: typing.Dict[str, object]
-    = None, dependency_id: str = None)'
+  signature: 'track_dependency(name: str, data: str, type_name: Optional[str] = None,
+    target: Optional[str] = None, duration: Optional[int] = None, success: Optional[bool]
+    = None, result_code: Optional[str] = None, properties: Optional[Dict[str, object]]
+    = None, measurements: Optional[Dict[str, object]] = None, dependency_id: Optional[str]
+    = None)'
   parameters:
   - name: name
     isRequired: true
@@ -78,8 +81,8 @@ methods:
 
     :param measurements: the set of custom measurements the client wants to attach
     to this data item.         (defaults to: None)'
-  signature: 'track_event(name: str, properties: typing.Dict[str, object] = None,
-    measurements: typing.Dict[str, object] = None) -> None'
+  signature: 'track_event(name: str, properties: Optional[Dict[str, object]] = None,
+    measurements: Optional[Dict[str, object]] = None) -> None'
   parameters:
   - name: name
     isRequired: true
@@ -95,13 +98,17 @@ methods:
 
     :param value: the exception that the client wants to send.
 
-    :param trace: the traceback information as returned by <xref:sys.exc_info>.
+    :param trace: the traceback information as returned by [sys.exc_info()](https://docs.python.org/3.6/library/sys.html#sys.exc_info).
 
     :param properties: the set of custom properties the client wants attached to this
     data item. (defaults to: None)
 
     :param measurements: the set of custom measurements the client wants to attach
     to this data item.         (defaults to: None)'
+  signature: 'track_exception(exception_type: type = None, value: Exception = None,
+    trace: <module ''traceback'' from ''c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\traceback.py''>
+    = None, properties: Dict[str, object] = None, measurements: Dict[str, object]
+    = None) -> None'
   parameters:
   - name: exception_type
     defaultValue: None
@@ -121,10 +128,11 @@ methods:
     \ of the metric. (defaults to: TelemetryDataPointType.aggregation`)\n:param count:\
     \ the number of metrics that were aggregated into this data point. (defaults to:\
     \ None)\n:param min_val: the minimum of all metrics collected that were aggregated\
-    \ into this data point.\n\n\n   (defaults to: None)"
-  signature: 'track_metric(name: str, value: float, tel_type: botbuilder.core.bot_telemetry_client.TelemetryDataPointType
-    = None, count: int = None, min_val: float = None, max_val: float = None, std_dev:
-    float = None, properties: typing.Dict[str, object] = None) -> NotImplemented'
+    \ into this data point.\n\n   (defaults to: None)"
+  signature: 'track_metric(name: str, value: float, tel_type: Optional[botbuilder.core.bot_telemetry_client.TelemetryDataPointType]
+    = None, count: Optional[int] = None, min_val: Optional[float] = None, max_val:
+    Optional[float] = None, std_dev: Optional[float] = None, properties: Optional[Dict[str,
+    object]] = None) -> NotImplemented'
   parameters:
   - name: max_val
     description: 'the maximum of all metrics collected that were aggregated into this
@@ -166,8 +174,8 @@ methods:
 
     :param measurements: the set of custom measurements the client wants to attach
     to this data item.         (defaults to: None)'
-  signature: 'track_pageview(name: str, url, duration: int = 0, properties: typing.Dict[str,
-    object] = None, measurements: typing.Dict[str, object] = None) -> None'
+  signature: 'track_pageview(name: str, url, duration: int = 0, properties: Optional[Dict[str,
+    object]] = None, measurements: Optional[Dict[str, object]] = None) -> None'
   parameters:
   - name: name
     isRequired: true
@@ -210,10 +218,10 @@ methods:
 
     :param request_id: the id for this request. If None, a new uuid will be generated.
     (defaults to: None)'
-  signature: 'track_request(name: str, url: str, success: bool, start_time: str =
-    None, duration: int = None, response_code: str = None, http_method: str = None,
-    properties: typing.Dict[str, object] = None, measurements: typing.Dict[str, object]
-    = None, request_id: str = None)'
+  signature: 'track_request(name: str, url: str, success: bool, start_time: Optional[str]
+    = None, duration: Optional[int] = None, response_code: Optional[str] = None, http_method:
+    Optional[str] = None, properties: Optional[Dict[str, object]] = None, measurements:
+    Optional[Dict[str, object]] = None, request_id: Optional[str] = None)'
   parameters:
   - name: name
     isRequired: true
@@ -240,7 +248,7 @@ methods:
   summary: 'Sends a single trace statement.
 
     :param name: the trace statement.'
-  signature: 'track_trace(name, properties=None, severity: botbuilder.core.bot_telemetry_client.Severity
+  signature: 'track_trace(name, properties=None, severity: Optional[botbuilder.core.bot_telemetry_client.Severity]
     = None)'
   parameters:
   - name: properties
@@ -250,7 +258,6 @@ methods:
   - name: severity
     description: the severity level of this trace, one of DEBUG, INFO, WARNING, ERROR,
       CRITICAL
-    isRequired: true
     defaultValue: None
   - name: severity
     defaultValue: None

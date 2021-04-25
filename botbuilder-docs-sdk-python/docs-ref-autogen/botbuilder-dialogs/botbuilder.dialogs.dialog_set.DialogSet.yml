@@ -6,7 +6,7 @@ module: botbuilder.dialogs.dialog_set
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'DialogSet(dialog_state: botbuilder.core.state_property_accessor.StatePropertyAccessor
+  syntax: 'DialogSet(dialog_state: Optional[botbuilder.core.state_property_accessor.StatePropertyAccessor]
     = None)'
 methods:
 - uid: botbuilder.dialogs.dialog_set.DialogSet.add
@@ -20,6 +20,8 @@ methods:
     isRequired: true
 - uid: botbuilder.dialogs.dialog_set.DialogSet.create_context
   name: create_context
+  signature: 'create_context(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> ''DialogContext'''
   parameters:
   - name: turn_context
     isRequired: true

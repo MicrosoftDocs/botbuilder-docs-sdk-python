@@ -5,6 +5,8 @@ fullName: botbuilder.adapters.slack.SlackHelper
 module: botbuilder.adapters.slack
 inheritances:
 - builtins.object
+constructor:
+  syntax: SlackHelper()
 methods:
 - uid: botbuilder.adapters.slack.SlackHelper.activity_to_slack
   name: activity_to_slack
@@ -53,12 +55,12 @@ methods:
     description: The content type of the body.
     isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: request_body
     description: The body of the request.
     isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   return:
     description: A SlackRequestBody object.
     types:
@@ -107,40 +109,38 @@ methods:
     description: The query string to convert.
     isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   return:
     description: A dictionary with the query values.
     types:
-    - <xref:typing.Dict>
+    - '[typing.Dict](https://docs.python.org/3.6/library/typing.html#typing.Dict)'
 - uid: botbuilder.adapters.slack.SlackHelper.response
   name: response
   summary: Formats an aiohttp Response.
-  signature: 'response(req: aiohttp.web_request.Request, code: int, text: str = None,
-    encoding: str = None) -> aiohttp.web_response.Response'
+  signature: 'response(req: aiohttp.web_request.Request, code: int, text: Optional[str]
+    = None, encoding: Optional[str] = None) -> aiohttp.web_response.Response'
   parameters:
   - name: req
     description: The original aiohttp Request.
     isRequired: true
     types:
-    - '[<xref:aiohttp.web_request.Request>](<xref:aiohttp.web_request.Request.html#>)'
+    - '[aiohttp.web_request.Request](aiohttp.web_request.Request)'
   - name: code
     description: The HTTP result code to return.
     isRequired: true
     types:
-    - <xref:int>
+    - '[int](https://docs.python.org/3.6/library/functions.html#int)'
   - name: text
     description: The text to return.
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: encoding
     description: The text encoding. Defaults to UTF-8.
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   return:
     description: The aoihttp Response
     types:
-    - '[<xref:aiohttp.web_response.Response>](<xref:aiohttp.web_response.Response.html#>)'
+    - '[aiohttp.web_response.Response](aiohttp.web_response.Response)'

@@ -18,7 +18,7 @@ summary: 'Tuple class containing an HTTP Status Code and a JSON serializable
 
   the content is and deserialize as needed.'
 constructor:
-  syntax: 'InvokeResponse(status: int = None, body: object = None)'
+  syntax: 'InvokeResponse(status: Optional[int] = None, body: object = None)'
 methods:
 - uid: botbuilder.core.invoke_response.InvokeResponse.is_successful_status_code
   name: is_successful_status_code

@@ -48,7 +48,7 @@ methods:
     description: The name of the property
     isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   return:
     description: If successful, the state property accessor created
     types:
@@ -75,17 +75,17 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref::TurnContext`>
+    - <xref:botbuilder.core.:TurnContext`>
   - name: property_name
     description: The name of the property to delete
     isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   return:
     description: None
 - uid: botbuilder.core.BotState.get
   name: get
-  signature: 'get(turn_context: botbuilder.core.turn_context.TurnContext) -> typing.Dict[str,
+  signature: 'get(turn_context: botbuilder.core.turn_context.TurnContext) -> Dict[str,
     object]'
   parameters:
   - name: turn_context
@@ -120,7 +120,7 @@ methods:
     description: The property name
     isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   return:
     description: The value of the property
 - uid: botbuilder.core.BotState.get_storage_key
@@ -144,10 +144,9 @@ methods:
     - <xref:botbuilder.core.TurnContext>
   - name: force
     description: Optional, true to bypass the cache
-    isRequired: true
     defaultValue: 'False'
     types:
-    - <xref:bool>
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
 - uid: botbuilder.core.BotState.save_changes
   name: save_changes
   summary: 'Saves the state cached in the current context for this turn.
@@ -165,10 +164,9 @@ methods:
   - name: force
     description: Optional, true to save state to storage whether or not there are
       changes
-    isRequired: true
     defaultValue: 'False'
     types:
-    - <xref:bool>
+    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
 - uid: botbuilder.core.BotState.set_property_value
   name: set_property_value
   summary: Sets a property to the specified value in the turn context.
@@ -184,11 +182,11 @@ methods:
     description: The property name
     isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: value
     description: The value to assign to the property
     isRequired: true
     types:
-    - <xref:Object>
+    - <xref:botbuilder.core.Object>
   return:
     description: None

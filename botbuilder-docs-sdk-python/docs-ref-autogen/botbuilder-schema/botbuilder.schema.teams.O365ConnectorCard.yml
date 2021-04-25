@@ -7,37 +7,31 @@ inheritances:
 - msrest.serialization.Model
 summary: O365 connector card.
 constructor:
-  syntax: 'O365ConnectorCard(*, title: str = None, text: str = None, summary: str
-    = None, theme_color: str = None, sections=None, potential_action=None, **kwargs)
-    -> None'
+  syntax: 'O365ConnectorCard(*, title: Optional[str] = None, text: Optional[str] =
+    None, summary: Optional[str] = None, theme_color: Optional[str] = None, sections=None,
+    potential_action=None, **kwargs) -> None'
   parameters:
   - name: title
     description: Title of the item
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: text
     description: Text for the card
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: summary
     description: Summary for the card
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: theme_color
     description: Theme color for the card
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: sections
     description: Set of sections for the current card
-    isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.teams.models.O365ConnectorCardSection>]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.O365ConnectorCardSection>]'
   - name: potential_action
     description: Set of actions for the current card
-    isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.teams.models.O365ConnectorCardActionBase>]
+    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.O365ConnectorCardActionBase>]'

@@ -7,23 +7,20 @@ inheritances:
 - msrest.serialization.Model
 summary: Represents a user entity.
 constructor:
-  syntax: 'MessageActionsPayloadUser(*, user_identity_type=None, id: str = None, display_name:
-    str = None, **kwargs) -> None'
+  syntax: 'MessageActionsPayloadUser(*, user_identity_type=None, id: Optional[str]
+    = None, display_name: Optional[str] = None, **kwargs) -> None'
   parameters:
   - name: user_identity_type
     description: 'The identity type of the user. Possible values
 
       include: ''aadUser'', ''onPremiseAadUser'', ''anonymousGuest'', ''federatedUser'''
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: id
     description: The id of the user.
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: display_name
     description: The plaintext display name of the user.
-    isRequired: true
     types:
-    - <xref:str>
+    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
