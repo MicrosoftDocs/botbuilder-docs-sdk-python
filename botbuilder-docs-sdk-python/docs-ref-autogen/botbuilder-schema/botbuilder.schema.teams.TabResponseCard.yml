@@ -7,9 +7,10 @@ inheritances:
 - msrest.serialization.Model
 summary: Envelope for cards for a Tab request.
 constructor:
-  syntax: TabResponseCard(*, card=None, **kwargs) -> None
+  syntax: TabResponseCard(*, card = None, **kwargs) -> None
   parameters:
   - name: card
     description: Gets or sets adaptive card for this card tab response.
+    isRequired: true
     types:
     - '[object](https://docs.python.org/3.6/library/functions.html#object)'

@@ -7,7 +7,7 @@ inheritances:
 - botbuilder.ai.luis.luis_recognizer_internal.LuisRecognizerInternal
 constructor:
   syntax: 'LuisRecognizerV3(luis_application: botbuilder.ai.luis.luis_application.LuisApplication,
-    luis_recognizer_options_v3: Optional[botbuilder.ai.luis.luis_recognizer_options_v3.LuisRecognizerOptionsV3]
+    luis_recognizer_options_v3: botbuilder.ai.luis.luis_recognizer_options_v3.LuisRecognizerOptionsV3
     = None)'
 methods:
 - uid: botbuilder.ai.luis.luis_recognizer_v3.LuisRecognizerV3.recognizer_internal

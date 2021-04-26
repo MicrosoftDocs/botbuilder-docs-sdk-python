@@ -15,10 +15,12 @@ functions:
   parameters:
   - name: data
     description: Data from Application Insights
+    isRequired: true
     types:
     - <xref:botbuilder.applicationinsights.telemetry item>
   - name: context
     description: Context from Application Insights
+    isRequired: true
     types:
     - <xref:botbuilder.applicationinsights.context object>
   return:
@@ -36,10 +38,12 @@ functions:
   parameters:
   - name: data
     description: Data from Application Insights
+    isRequired: true
     types:
     - <xref:botbuilder.applicationinsights.telemetry item>
   - name: context
     description: Context from Application Insights
+    isRequired: true
     types:
     - <xref:botbuilder.applicationinsights.context object>
   return:

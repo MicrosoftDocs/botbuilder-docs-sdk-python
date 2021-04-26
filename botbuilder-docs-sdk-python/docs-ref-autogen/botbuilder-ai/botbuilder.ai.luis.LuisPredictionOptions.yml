@@ -7,10 +7,9 @@ inheritances:
 - builtins.object
 summary: Optional parameters for a LUIS prediction request.
 constructor:
-  syntax: 'LuisPredictionOptions(bing_spell_check_subscription_key: Optional[str]
-    = None, include_all_intents: Optional[bool] = None, include_instance_data: Optional[bool]
-    = None, log: Optional[bool] = None, spell_check: Optional[bool] = None, staging:
-    Optional[bool] = None, timeout: float = 100000, timezone_offset: Optional[float]
+  syntax: 'LuisPredictionOptions(bing_spell_check_subscription_key: str = None, include_all_intents:
+    bool = None, include_instance_data: bool = None, log: bool = None, spell_check:
+    bool = None, staging: bool = None, timeout: float = 100000, timezone_offset: float
     = None, telemetry_client: botbuilder.core.bot_telemetry_client.BotTelemetryClient
-    = <botbuilder.core.null_telemetry_client.NullTelemetryClient object>, log_personal_information:
-    bool = False)'
+    = <botbuilder.core.null_telemetry_client.NullTelemetryClient object at 0x0000027B632B0F28>,
+    log_personal_information: bool = False)'

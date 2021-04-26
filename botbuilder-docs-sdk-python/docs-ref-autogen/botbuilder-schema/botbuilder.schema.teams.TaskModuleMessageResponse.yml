@@ -7,12 +7,12 @@ inheritances:
 - botbuilder.schema.teams._models_py3.TaskModuleResponseBase
 summary: Task Module response with message action.
 constructor:
-  syntax: 'TaskModuleMessageResponse(*, value: Optional[str] = None, **kwargs) ->
-    None'
+  syntax: 'TaskModuleMessageResponse(*, value: str = None, **kwargs) -> None'
   parameters:
   - name: value
     description: 'Teams will display the value of value in a popup message
 
       box.'
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

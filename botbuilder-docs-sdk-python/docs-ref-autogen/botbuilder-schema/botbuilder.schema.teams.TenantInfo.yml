@@ -7,9 +7,10 @@ inheritances:
 - msrest.serialization.Model
 summary: Describes a tenant.
 constructor:
-  syntax: 'TenantInfo(*, id: Optional[str] = None, **kwargs) -> None'
+  syntax: 'TenantInfo(*, id: str = None, **kwargs) -> None'
   parameters:
   - name: id
     description: Unique identifier representing a tenant
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

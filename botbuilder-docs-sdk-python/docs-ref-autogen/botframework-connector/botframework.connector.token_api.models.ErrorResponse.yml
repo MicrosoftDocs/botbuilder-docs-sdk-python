@@ -7,8 +7,9 @@ inheritances:
 - msrest.serialization.Model
 summary: ErrorResponse.
 constructor:
-  syntax: ErrorResponse(*, error=None, **kwargs) -> None
+  syntax: ErrorResponse(*, error = None, **kwargs) -> None
   parameters:
   - name: error
+    isRequired: true
     types:
     - <xref:botframework.tokenapi.models.Error>

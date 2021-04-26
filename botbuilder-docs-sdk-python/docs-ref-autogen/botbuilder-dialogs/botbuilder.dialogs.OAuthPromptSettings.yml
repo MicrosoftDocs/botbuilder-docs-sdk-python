@@ -6,6 +6,6 @@ module: botbuilder.dialogs
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'OAuthPromptSettings(connection_name: str, title: str, text: Optional[str]
-    = None, timeout: Optional[int] = None, oauth_app_credentials: Optional[botframework.connector.auth.app_credentials.AppCredentials]
+  syntax: 'OAuthPromptSettings(connection_name: str, title: str, text: str = None,
+    timeout: int = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None, end_on_invalid_message: bool = False)'

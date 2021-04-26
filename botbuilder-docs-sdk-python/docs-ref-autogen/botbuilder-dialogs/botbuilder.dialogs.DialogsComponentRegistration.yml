@@ -12,7 +12,7 @@ constructor:
 methods:
 - uid: botbuilder.dialogs.DialogsComponentRegistration.get_memory_scopes
   name: get_memory_scopes
-  signature: get_memory_scopes() -> Iterable[botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope]
+  signature: get_memory_scopes(self) -> Iterable[botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope]
 - uid: botbuilder.dialogs.DialogsComponentRegistration.get_path_resolvers
   name: get_path_resolvers
-  signature: get_path_resolvers() -> Iterable[botbuilder.dialogs.memory.path_resolver_base.PathResolverBase]
+  signature: get_path_resolvers(self) -> Iterable[botbuilder.dialogs.memory.path_resolver_base.PathResolverBase]

@@ -7,13 +7,15 @@ inheritances:
 - msrest.serialization.Model
 summary: A card representing a request to sign in.
 constructor:
-  syntax: 'SigninCard(*, text: Optional[str] = None, buttons=None, **kwargs) -> None'
+  syntax: 'SigninCard(*, text: str = None, buttons = None, **kwargs) -> None'
   parameters:
   - name: text
     description: Text for signin request
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: buttons
     description: Action to use to perform signin
+    isRequired: true
     types:
     - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.CardAction>]'

@@ -7,8 +7,8 @@ inheritances:
 - botbuilder.dialogs.dialog.Dialog
 constructor:
   syntax: 'OAuthPrompt(dialog_id: str, settings: botbuilder.dialogs.prompts.oauth_prompt_settings.OAuthPromptSettings,
-    validator: Optional[Callable[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext,
-    Awaitable[bool]]] = None)'
+    validator: Callable[[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext],
+    Awaitable[bool]] = None)'
 methods:
 - uid: botbuilder.dialogs.prompts.OAuthPrompt.begin_dialog
   name: begin_dialog
@@ -17,8 +17,7 @@ methods:
 
     dialog stack and is being activated.'
   signature: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    options: Optional[botbuilder.dialogs.prompts.prompt_options.PromptOptions] = None)
-    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+    options: botbuilder.dialogs.prompts.prompt_options.PromptOptions = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: dialog_context
     description: The dialog context for the current turn of the conversation
@@ -71,7 +70,7 @@ methods:
   name: get_user_token
   summary: Gets the user's tokeN.
   signature: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, code:
-    Optional[str] = None) -> botbuilder.schema._models_py3.TokenResponse'
+    str = None) -> botbuilder.schema._models_py3.TokenResponse'
   parameters:
   - name: context
     description: Context for the current turn of conversation with the user

@@ -51,9 +51,9 @@ methods:
     :param dialog_context: The dialog context for the current turn of conversation.
 
     :return:'
-  signature: 'continue_dialog(dialog_context: Optional[botbuilder.dialogs.dialog_context.DialogContext]
-    = None, reason: Optional[botbuilder.dialogs.dialog_reason.DialogReason] = None,
-    result: object = NotImplementedError()) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  signature: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext
+    = None, reason: botbuilder.dialogs.dialog_reason.DialogReason = None, result:
+    object = NotImplementedError()) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: dialog_context
     defaultValue: None

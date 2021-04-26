@@ -7,7 +7,7 @@ inheritances:
 - botbuilder.dialogs.prompts.prompt.Prompt
 constructor:
   syntax: 'DateTimePrompt(dialog_id: str, validator: object = None, default_locale:
-    Optional[str] = None)'
+    str = None)'
 methods:
 - uid: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt.on_prompt
   name: on_prompt

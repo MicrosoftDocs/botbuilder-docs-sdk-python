@@ -7,18 +7,21 @@ inheritances:
 - msrest.serialization.Model
 summary: 'Mention information (entity type: "mention").'
 constructor:
-  syntax: 'Mention(*, mentioned=None, text: Optional[str] = None, type: Optional[str]
-    = None, **kwargs) -> None'
+  syntax: 'Mention(*, mentioned = None, text: str = None, type: str = None, **kwargs)
+    -> None'
   parameters:
   - name: mentioned
     description: The mentioned user
+    isRequired: true
     types:
     - <xref:botframework.connector.models.ChannelAccount>
   - name: text
     description: Sub Text which represents the mention (can be null or empty)
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: type
     description: Type of this entity (RFC 3987 IRI)
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

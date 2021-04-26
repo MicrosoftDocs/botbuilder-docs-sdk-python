@@ -15,7 +15,8 @@ summary: 'Join Operator for Strict Filters.
   at least one of the filters, then use *OR* operator.'
 module: botbuilder.ai.qna.models.join_operator
 constructor:
-  syntax: JoinOperator(value)
+  syntax: JoinOperator(value, names = None, *, module = None, qualname = None, type
+    = None, start = 1)
 inheritances:
 - builtins.str
 - enum.Enum

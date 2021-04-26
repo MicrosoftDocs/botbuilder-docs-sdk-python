@@ -7,40 +7,47 @@ inheritances:
 - botbuilder.schema.teams._models_py3.TaskModuleRequest
 summary: Messaging extension action.
 constructor:
-  syntax: 'MessagingExtensionAction(*, data=None, context=None, command_id: Optional[str]
-    = None, command_context=None, bot_message_preview_action=None, bot_activity_preview=None,
-    message_payload=None, **kwargs) -> None'
+  syntax: 'MessagingExtensionAction(*, data = None, context = None, command_id: str
+    = None, command_context = None, bot_message_preview_action = None, bot_activity_preview
+    = None, message_payload = None, **kwargs) -> None'
   parameters:
   - name: data
     description: User input data. Free payload with key-value pairs.
+    isRequired: true
     types:
     - '[object](https://docs.python.org/3.6/library/functions.html#object)'
   - name: context
     description: Current user context, i.e., the current theme
+    isRequired: true
     types:
     - <xref:botframework.connector.teams.models.TaskModuleRequestContext>
   - name: command_id
     description: Id of the command assigned by Bot
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: command_context
     description: 'The context from which the command originates.
 
       Possible values include: ''message'', ''compose'', ''commandbox'''
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: bot_message_preview_action
     description: 'Bot message preview action taken by
 
       user. Possible values include: ''edit'', ''send'''
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str'
   - name: bot_activity_preview
+    isRequired: true
     types:
     - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.schema.models.Activity>]'
   - name: message_payload
     description: 'Message content sent as part of the command
 
       request.'
+    isRequired: true
     types:
     - <xref:botframework.connector.teams.models.MessageActionsPayload>

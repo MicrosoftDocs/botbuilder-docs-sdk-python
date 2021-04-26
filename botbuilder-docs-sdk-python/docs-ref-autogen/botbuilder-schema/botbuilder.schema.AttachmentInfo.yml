@@ -7,18 +7,21 @@ inheritances:
 - msrest.serialization.Model
 summary: Metadata for an attachment.
 constructor:
-  syntax: 'AttachmentInfo(*, name: Optional[str] = None, type: Optional[str] = None,
-    views=None, **kwargs) -> None'
+  syntax: 'AttachmentInfo(*, name: str = None, type: str = None, views = None, **kwargs)
+    -> None'
   parameters:
   - name: name
     description: Name of the attachment
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: type
     description: ContentType of the attachment
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: views
     description: attachment views
+    isRequired: true
     types:
     - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.AttachmentView>]'

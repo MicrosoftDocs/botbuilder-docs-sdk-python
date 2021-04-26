@@ -7,41 +7,48 @@ inheritances:
 - msrest.serialization.Model
 summary: An item on a receipt card.
 constructor:
-  syntax: 'ReceiptItem(*, title: Optional[str] = None, subtitle: Optional[str] = None,
-    text: Optional[str] = None, image=None, price: Optional[str] = None, quantity:
-    Optional[str] = None, tap=None, **kwargs) -> None'
+  syntax: 'ReceiptItem(*, title: str = None, subtitle: str = None, text: str = None,
+    image = None, price: str = None, quantity: str = None, tap = None, **kwargs) ->
+    None'
   parameters:
   - name: title
     description: Title of the Card
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: subtitle
     description: 'Subtitle appears just below Title field, differs from
 
       Title in font styling only'
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: text
     description: 'Text field appears just below subtitle, differs from Subtitle
 
       in font styling only'
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: image
     description: Image
+    isRequired: true
     types:
     - <xref:botframework.connector.models.CardImage>
   - name: price
     description: Amount with currency
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: quantity
     description: Number of items of given kind
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: tap
     description: 'This action will be activated when user taps on the Item
 
       bubble.'
+    isRequired: true
     types:
     - <xref:botframework.connector.models.CardAction>

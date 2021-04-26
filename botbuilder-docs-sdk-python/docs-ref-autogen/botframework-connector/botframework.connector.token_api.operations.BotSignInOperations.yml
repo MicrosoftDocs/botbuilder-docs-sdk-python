@@ -17,12 +17,16 @@ constructor:
   parameters:
   - name: client
     description: Client for service requests.
+    isRequired: true
   - name: config
     description: Configuration of service client.
+    isRequired: true
   - name: serializer
     description: An object model serializer.
+    isRequired: true
   - name: deserializer
     description: An object model deserializer.
+    isRequired: true
 variables:
 - description: 'The API version to use for the request. Constant value: "token".'
   name: "api_version \u2013 The API version to use for the request. Constant value:\
@@ -30,8 +34,8 @@ variables:
 methods:
 - uid: botframework.connector.token_api.operations.BotSignInOperations.get_sign_in_resource
   name: get_sign_in_resource
-  signature: get_sign_in_resource(state, code_challenge=None, emulator_url=None, final_redirect=None,
-    custom_headers=None, raw=False, **operation_config)
+  signature: get_sign_in_resource(state, code_challenge = None, emulator_url = None,
+    final_redirect = None, custom_headers = None, raw = False, **operation_config)
   parameters:
   - name: state
     isRequired: true
@@ -73,8 +77,8 @@ methods:
     - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.token_api.operations.BotSignInOperations.get_sign_in_url
   name: get_sign_in_url
-  signature: get_sign_in_url(state, code_challenge=None, emulator_url=None, final_redirect=None,
-    custom_headers=None, raw=False, **operation_config)
+  signature: get_sign_in_url(state, code_challenge = None, emulator_url = None, final_redirect
+    = None, custom_headers = None, raw = False, **operation_config)
   parameters:
   - name: state
     isRequired: true

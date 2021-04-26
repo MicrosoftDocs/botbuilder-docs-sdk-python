@@ -7,14 +7,15 @@ inheritances:
 - msrest.serialization.Model
 summary: Object representing inner http error.
 constructor:
-  syntax: 'InnerHttpError(*, status_code: Optional[int] = None, body=None, **kwargs)
-    -> None'
+  syntax: 'InnerHttpError(*, status_code: int = None, body = None, **kwargs) -> None'
   parameters:
   - name: status_code
     description: HttpStatusCode from failed request
+    isRequired: true
     types:
     - '[int](https://docs.python.org/3.6/library/functions.html#int)'
   - name: body
     description: Body from failed request
+    isRequired: true
     types:
     - '[object](https://docs.python.org/3.6/library/functions.html#object)'

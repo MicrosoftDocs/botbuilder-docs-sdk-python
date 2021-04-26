@@ -10,6 +10,5 @@ constructor:
   syntax: 'QnAMakerTraceInfo(message: botbuilder.schema._models_py3.Activity, query_results:
     List[botbuilder.ai.qna.models.query_result.QueryResult], knowledge_base_id: str,
     score_threshold: float, top: int, strict_filters: List[botbuilder.ai.qna.models.metadata.Metadata],
-    context: Optional[botbuilder.ai.qna.models.qna_request_context.QnARequestContext]
-    = None, qna_id: Optional[int] = None, is_test: bool = False, ranker_type: str
-    = ''Default'')'
+    context: botbuilder.ai.qna.models.qna_request_context.QnARequestContext = None,
+    qna_id: int = None, is_test: bool = False, ranker_type: str = ''Default'')'

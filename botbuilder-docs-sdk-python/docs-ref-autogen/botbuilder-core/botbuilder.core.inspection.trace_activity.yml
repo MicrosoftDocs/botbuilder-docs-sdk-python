@@ -9,27 +9,34 @@ functions:
     str, label: str) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: activity
+    isRequired: true
   - name: name
+    isRequired: true
   - name: label
+    isRequired: true
 - uid: botbuilder.core.inspection.trace_activity.from_conversation_reference
   name: from_conversation_reference
   signature: 'from_conversation_reference(conversation_reference: botbuilder.schema._models_py3.ConversationReference)
     -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: conversation_reference
+    isRequired: true
 - uid: botbuilder.core.inspection.trace_activity.from_error
   name: from_error
   signature: 'from_error(error_message: str) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: error_message
+    isRequired: true
 - uid: botbuilder.core.inspection.trace_activity.from_state
   name: from_state
   signature: 'from_state(bot_state: Union[botbuilder.core.bot_state.BotState, Dict])
     -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: bot_state
+    isRequired: true
 - uid: botbuilder.core.inspection.trace_activity.make_command_activity
   name: make_command_activity
   signature: 'make_command_activity(command: str) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: command
+    isRequired: true

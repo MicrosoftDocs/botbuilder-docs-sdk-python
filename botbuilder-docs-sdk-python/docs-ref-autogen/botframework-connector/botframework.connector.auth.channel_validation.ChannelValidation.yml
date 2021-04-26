@@ -17,7 +17,7 @@ methods:
 
     A token issued by the Bot Framework emulator will FAIL this check.'
   signature: 'authenticate_channel_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
-    channel_id: str, auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
+    channel_id: str, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
     = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: auth_header
@@ -46,7 +46,7 @@ methods:
     A token issued by the Bot Framework emulator will FAIL this check.'
   signature: 'authenticate_channel_token_with_service_url(auth_header: str, credentials:
     botframework.connector.auth.credential_provider.CredentialProvider, service_url:
-    str, channel_id: str, auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
+    str, channel_id: str, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
     = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: auth_header

@@ -117,8 +117,8 @@ methods:
 - uid: botbuilder.adapters.slack.SlackHelper.response
   name: response
   summary: Formats an aiohttp Response.
-  signature: 'response(req: aiohttp.web_request.Request, code: int, text: Optional[str]
-    = None, encoding: Optional[str] = None) -> aiohttp.web_response.Response'
+  signature: 'response(req: aiohttp.web_request.Request, code: int, text: str = None,
+    encoding: str = None) -> aiohttp.web_response.Response'
   parameters:
   - name: req
     description: The original aiohttp Request.

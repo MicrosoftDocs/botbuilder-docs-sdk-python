@@ -7,18 +7,21 @@ inheritances:
 - msrest.serialization.Model
 summary: An image on a card.
 constructor:
-  syntax: 'CardImage(*, url: Optional[str] = None, alt: Optional[str] = None, tap=None,
-    **kwargs) -> None'
+  syntax: 'CardImage(*, url: str = None, alt: str = None, tap = None, **kwargs) ->
+    None'
   parameters:
   - name: url
     description: URL thumbnail image for major content property
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: alt
     description: Image description intended for screen readers
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: tap
     description: Action assigned to specific Attachment
+    isRequired: true
     types:
     - <xref:botframework.connector.models.CardAction>

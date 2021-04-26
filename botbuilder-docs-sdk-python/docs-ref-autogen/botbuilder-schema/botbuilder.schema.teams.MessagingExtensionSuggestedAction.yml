@@ -7,9 +7,10 @@ inheritances:
 - msrest.serialization.Model
 summary: Messaging extension Actions (Only when type is auth or config).
 constructor:
-  syntax: MessagingExtensionSuggestedAction(*, actions=None, **kwargs) -> None
+  syntax: MessagingExtensionSuggestedAction(*, actions = None, **kwargs) -> None
   parameters:
   - name: actions
     description: Actions
+    isRequired: true
     types:
     - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.CardAction>]'

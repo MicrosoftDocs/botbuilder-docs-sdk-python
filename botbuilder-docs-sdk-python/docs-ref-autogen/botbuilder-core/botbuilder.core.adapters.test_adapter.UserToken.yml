@@ -6,12 +6,12 @@ module: botbuilder.core.adapters.test_adapter
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'UserToken(connection_name: Optional[str] = None, user_id: Optional[str]
-    = None, channel_id: Optional[str] = None, token: Optional[str] = None)'
+  syntax: 'UserToken(connection_name: str = None, user_id: str = None, channel_id:
+    str = None, token: str = None)'
 methods:
 - uid: botbuilder.core.adapters.test_adapter.UserToken.equals_key
   name: equals_key
-  signature: 'equals_key(rhs: botbuilder.core.adapters.test_adapter.UserToken)'
+  signature: 'equals_key(rhs: ''UserToken'')'
   parameters:
   - name: rhs
     isRequired: true

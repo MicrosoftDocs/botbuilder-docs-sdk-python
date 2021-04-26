@@ -9,14 +9,13 @@ summary: A client for testing dialogs in isolation.
 constructor:
   syntax: 'DialogTestClient(channel_or_adapter: Union[str, botbuilder.core.adapters.test_adapter.TestAdapter],
     target_dialog: botbuilder.dialogs.dialog.Dialog, initial_dialog_options: object
-    = None, middlewares: Optional[List[botbuilder.core.middleware_set.Middleware]]
-    = None, conversation_state: Optional[botbuilder.core.conversation_state.ConversationState]
-    = None)'
+    = None, middlewares: List[botbuilder.core.middleware_set.Middleware] = None, conversation_state:
+    botbuilder.core.conversation_state.ConversationState = None)'
 methods:
 - uid: botbuilder.testing.dialog_test_client.DialogTestClient.get_next_reply
   name: get_next_reply
   summary: Get the next reply waiting to be delivered (if one exists)
-  signature: get_next_reply() -> botbuilder.schema._models_py3.Activity
+  signature: get_next_reply(self) -> botbuilder.schema._models_py3.Activity
   return:
     description: a TestFlow that can be used to assert replies etc.
     types:

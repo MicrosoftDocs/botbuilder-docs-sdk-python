@@ -7,9 +7,10 @@ inheritances:
 - msrest.serialization.Model
 summary: An HTTP API response.
 constructor:
-  syntax: ErrorResponse(*, error=None, **kwargs) -> None
+  syntax: ErrorResponse(*, error = None, **kwargs) -> None
   parameters:
   - name: error
     description: Error message
+    isRequired: true
     types:
     - <xref:botframework.connector.models.Error>

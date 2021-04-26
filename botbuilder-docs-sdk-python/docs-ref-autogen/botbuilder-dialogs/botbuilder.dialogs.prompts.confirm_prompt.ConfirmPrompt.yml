@@ -7,7 +7,7 @@ inheritances:
 - botbuilder.dialogs.prompts.prompt.Prompt
 constructor:
   syntax: 'ConfirmPrompt(dialog_id: str, validator: object = None, default_locale:
-    Optional[str] = None, choice_defaults: Optional[Dict[str, object]] = None)'
+    str = None, choice_defaults: Dict[str, object] = None)'
 methods:
 - uid: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.on_prompt
   name: on_prompt

@@ -7,12 +7,14 @@ inheritances:
 - msrest.serialization.Model
 summary: TokenExchangeRequest.
 constructor:
-  syntax: 'TokenExchangeRequest(*, uri: Optional[str] = None, token: Optional[str]
-    = None, **kwargs) -> None'
+  syntax: 'TokenExchangeRequest(*, uri: str = None, token: str = None, **kwargs) ->
+    None'
   parameters:
   - name: uri
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: token
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

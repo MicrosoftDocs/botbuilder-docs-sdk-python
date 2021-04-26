@@ -7,24 +7,27 @@ inheritances:
 - msrest.serialization.Model
 summary: TokenExchangeInvokeRequest.
 constructor:
-  syntax: 'TokenExchangeInvokeRequest(*, id: Optional[str] = None, connection_name:
-    Optional[str] = None, token: Optional[str] = None, properties=None, **kwargs)
-    -> None'
+  syntax: 'TokenExchangeInvokeRequest(*, id: str = None, connection_name: str = None,
+    token: str = None, properties = None, **kwargs) -> None'
   parameters:
   - name: id
     description: The id from the OAuthCard.
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: connection_name
     description: The connection name.
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: token
     description: The user token that can be exchanged.
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: properties
     description: Extension data for overflow of properties.
+    isRequired: true
     types:
     - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)[[str](https://docs.python.org/3.6/library/stdtypes.html#str),
       [object](https://docs.python.org/3.6/library/functions.html#object)]'

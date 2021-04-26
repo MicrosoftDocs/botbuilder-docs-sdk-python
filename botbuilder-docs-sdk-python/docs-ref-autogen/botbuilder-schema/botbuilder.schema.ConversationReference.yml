@@ -7,28 +7,33 @@ inheritances:
 - msrest.serialization.Model
 summary: An object relating to a particular point in a conversation.
 constructor:
-  syntax: 'ConversationReference(*, activity_id: Optional[str] = None, user=None,
-    bot=None, conversation=None, channel_id: Optional[str] = None, locale: Optional[str]
-    = None, service_url: Optional[str] = None, **kwargs) -> None'
+  syntax: 'ConversationReference(*, activity_id: str = None, user = None, bot = None,
+    conversation = None, channel_id: str = None, locale: str = None, service_url:
+    str = None, **kwargs) -> None'
   parameters:
   - name: activity_id
     description: (Optional) ID of the activity to refer to
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: user
     description: (Optional) User participating in this conversation
+    isRequired: true
     types:
     - <xref:botframework.connector.models.ChannelAccount>
   - name: bot
     description: Bot participating in this conversation
+    isRequired: true
     types:
     - <xref:botframework.connector.models.ChannelAccount>
   - name: conversation
     description: Conversation reference
+    isRequired: true
     types:
     - <xref:botframework.connector.models.ConversationAccount>
   - name: channel_id
     description: Channel ID
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: locale
@@ -41,11 +46,13 @@ constructor:
       subculture code associated with a country or region.
 
       The locale name can also correspond to a valid BCP-47 language tag.'
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: service_url
     description: 'Service endpoint where operations concerning the
 
       referenced conversation may be performed'
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

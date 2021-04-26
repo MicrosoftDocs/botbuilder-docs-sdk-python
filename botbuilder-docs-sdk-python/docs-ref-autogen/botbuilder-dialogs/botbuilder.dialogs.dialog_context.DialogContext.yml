@@ -34,8 +34,8 @@ methods:
     :param event_value:
 
     :return:'
-  signature: 'cancel_all_dialogs(cancel_parents: Optional[bool] = None, event_name:
-    Optional[str] = None, event_value: object = None)'
+  signature: 'cancel_all_dialogs(cancel_parents: bool = None, event_name: str = None,
+    event_value: object = None)'
   parameters:
   - name: cancel_parents
     defaultValue: None
@@ -54,7 +54,7 @@ methods:
     to determine if a dialog was run and a reply was sent to the user.
 
     :return:'
-  signature: continue_dialog()
+  signature: continue_dialog(self)
 - uid: botbuilder.dialogs.dialog_context.DialogContext.emit_event
   name: emit_event
   summary: 'Searches for a dialog with a given ID.
@@ -191,7 +191,7 @@ methods:
     Prompts that have a reprompt behavior.
 
     :return:'
-  signature: reprompt_dialog()
+  signature: reprompt_dialog(self)
 attributes:
 - uid: botbuilder.dialogs.dialog_context.DialogContext.active_dialog
   name: active_dialog

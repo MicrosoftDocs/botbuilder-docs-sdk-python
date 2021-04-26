@@ -29,8 +29,8 @@ methods:
 
     timeout: Timeout for HTTP call (milliseconds).'
   signature: 'execute_http_request(request_url: str, payload_body: object, endpoint:
-    botbuilder.ai.qna.qnamaker_endpoint.QnAMakerEndpoint, timeout: Optional[float]
-    = None) -> Any'
+    botbuilder.ai.qna.qnamaker_endpoint.QnAMakerEndpoint, timeout: float = None) ->
+    Any'
   parameters:
   - name: request_url
     isRequired: true

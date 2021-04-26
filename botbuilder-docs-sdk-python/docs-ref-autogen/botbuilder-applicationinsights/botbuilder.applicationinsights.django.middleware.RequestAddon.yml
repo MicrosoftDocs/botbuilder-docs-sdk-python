@@ -10,10 +10,10 @@ constructor:
 methods:
 - uid: botbuilder.applicationinsights.django.middleware.RequestAddon.measure_duration
   name: measure_duration
-  signature: measure_duration()
+  signature: measure_duration(self)
 - uid: botbuilder.applicationinsights.django.middleware.RequestAddon.start_stopwatch
   name: start_stopwatch
-  signature: start_stopwatch()
+  signature: start_stopwatch(self)
 attributes:
 - uid: botbuilder.applicationinsights.django.middleware.RequestAddon.client
   name: client

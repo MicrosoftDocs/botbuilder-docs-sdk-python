@@ -10,7 +10,7 @@ constructor:
     conversation_id_factory: botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase,
     credential_provider: botframework.connector.auth.credential_provider.CredentialProvider,
     auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration,
-    channel_provider: Optional[botframework.connector.auth.channel_provider.ChannelProvider]
+    channel_provider: botframework.connector.auth.channel_provider.ChannelProvider
     = None, logger: object = None)'
 methods:
 - uid: botbuilder.core.skills.SkillHandler.on_delete_activity

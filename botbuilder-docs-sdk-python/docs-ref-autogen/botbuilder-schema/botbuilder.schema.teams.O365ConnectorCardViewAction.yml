@@ -7,24 +7,28 @@ inheritances:
 - botbuilder.schema.teams._models_py3.O365ConnectorCardActionBase
 summary: O365 connector card ViewAction action.
 constructor:
-  syntax: 'O365ConnectorCardViewAction(*, type=None, name: Optional[str] = None, id:
-    Optional[str] = None, target=None, **kwargs) -> None'
+  syntax: 'O365ConnectorCardViewAction(*, type = None, name: str = None, id: str =
+    None, target = None, **kwargs) -> None'
   parameters:
   - name: type
     description: 'Type of the action. Possible values include: ''ViewAction'',
 
       ''OpenUri'', ''HttpPOST'', ''ActionCard'''
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: name
     description: Name of the action that will be used as button title
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: id
     description: Action Id
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: target
     description: Target urls, only the first url effective for card button
+    isRequired: true
     types:
     - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[[str](https://docs.python.org/3.6/library/stdtypes.html#str)]'

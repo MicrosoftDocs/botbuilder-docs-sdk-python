@@ -33,7 +33,7 @@ methods:
   summary: Composes an output activity containing a set of choices.
   signature: 'append_choices(prompt: botbuilder.schema._models_py3.Activity, channel_id:
     str, choices: List[botbuilder.dialogs.choices.choice.Choice], style: botbuilder.dialogs.choices.list_style.ListStyle,
-    options: Optional[botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions]
+    options: botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
     = None) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: prompt

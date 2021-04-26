@@ -11,8 +11,8 @@ summary: 'A skill host adapter that implements the API to forward activity to a 
   implements routing ChannelAPI calls from the skill up through the bot/adapter.'
 constructor:
   syntax: 'BotFrameworkHttpClient(credential_provider: botframework.connector.auth.credential_provider.CredentialProvider,
-    channel_provider: Optional[botframework.connector.auth.channel_provider.ChannelProvider]
-    = None, logger: Optional[logging.Logger] = None)'
+    channel_provider: botframework.connector.auth.channel_provider.ChannelProvider
+    = None, logger: logging.Logger = None)'
 methods:
 - uid: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.post_activity
   name: post_activity

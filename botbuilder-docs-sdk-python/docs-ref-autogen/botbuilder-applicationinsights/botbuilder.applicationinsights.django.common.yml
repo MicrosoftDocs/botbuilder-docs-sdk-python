@@ -6,7 +6,7 @@ summary: Common utilities for Django middleware.
 functions:
 - uid: botbuilder.applicationinsights.django.common.create_client
   name: create_client
-  signature: 'create_client(aisettings=None, telemetry_processor: Optional[botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor]
+  signature: 'create_client(aisettings = None, telemetry_processor: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
     = None)'
   parameters:
   - name: aisettings
@@ -19,25 +19,28 @@ functions:
     still send
 
     along the real object to things that depend on it to exist'
-  signature: 'dummy_client(reason: str, telemetry_processor: Optional[botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor]
+  signature: 'dummy_client(reason: str, telemetry_processor: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
     = None)'
   parameters:
   - name: reason
+    isRequired: true
   - name: telemetry_processor
     defaultValue: None
 - uid: botbuilder.applicationinsights.django.common.get_telemetry_client_with_processor
   name: get_telemetry_client_with_processor
   summary: Gets a telemetry client instance with a telemetry processor.
   signature: 'get_telemetry_client_with_processor(key: str, channel: applicationinsights.channel.TelemetryChannel.TelemetryChannel,
-    telemetry_processor: Optional[botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor]
+    telemetry_processor: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
     = None) -> applicationinsights.TelemetryClient.TelemetryClient'
   parameters:
   - name: key
     description: instrumentation key
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: channel
     description: Telemetry channel
+    isRequired: true
     types:
     - <xref:botbuilder.applicationinsights.django.common.TelemetryChannel>
   - name: telemetry_processor

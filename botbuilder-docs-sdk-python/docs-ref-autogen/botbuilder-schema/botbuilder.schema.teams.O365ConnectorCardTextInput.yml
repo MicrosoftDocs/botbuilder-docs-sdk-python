@@ -7,44 +7,50 @@ inheritances:
 - botbuilder.schema.teams._models_py3.O365ConnectorCardInputBase
 summary: O365 connector card text input.
 constructor:
-  syntax: 'O365ConnectorCardTextInput(*, type=None, id: Optional[str] = None, is_required:
-    Optional[bool] = None, title: Optional[str] = None, value: Optional[str] = None,
-    is_multiline: Optional[bool] = None, max_length: Optional[float] = None, **kwargs)
-    -> None'
+  syntax: 'O365ConnectorCardTextInput(*, type = None, id: str = None, is_required:
+    bool = None, title: str = None, value: str = None, is_multiline: bool = None,
+    max_length: float = None, **kwargs) -> None'
   parameters:
   - name: type
     description: 'Input type name. Possible values include: ''textInput'',
 
       ''dateInput'', ''multichoiceInput'''
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: id
     description: Input Id. It must be unique per entire O365 connector card.
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: is_required
     description: 'Define if this input is a required field. Default
 
       value is false.'
+    isRequired: true
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: title
     description: Input title that will be shown as the placeholder
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: value
     description: Default value for this input field
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: is_multiline
     description: 'Define if text input is allowed for multiple lines.
 
       Default value is false.'
+    isRequired: true
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: max_length
     description: 'Maximum length of text input. Default value is
 
       unlimited.'
+    isRequired: true
     types:
     - '[float](https://docs.python.org/3.6/library/functions.html#float)'

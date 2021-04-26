@@ -10,11 +10,11 @@ summary: "Waits for an activity to be received.\n\n   This prompt requires a val
   \ event to be received. The validator can ignore received events until the\n   expected\
   \ activity is received."
 constructor:
-  syntax: 'ActivityPrompt(dialog_id: str, validator: Callable[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext,
+  syntax: 'ActivityPrompt(dialog_id: str, validator: Callable[[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext],
     bool])'
 variables:
-- name: "persisted_options \u2013 \n\npersisted_state"
-- name: "persisted_options \u2013 \n\npersisted_state"
+- name: "persisted_options \u2013"
+- name: persisted_state
   types:
   - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
 methods:
@@ -23,8 +23,7 @@ methods:
   summary: Called when a prompt dialog is pushed onto the dialog stack and is being
     activated.
   signature: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    options: Optional[botbuilder.dialogs.prompts.prompt_options.PromptOptions] = None)
-    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+    options: botbuilder.dialogs.prompts.prompt_options.PromptOptions = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: dialog_context
     description: The dialog context for the current turn of the conversation.

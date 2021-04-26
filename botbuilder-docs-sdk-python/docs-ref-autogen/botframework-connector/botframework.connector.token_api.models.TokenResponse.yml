@@ -7,19 +7,22 @@ inheritances:
 - msrest.serialization.Model
 summary: TokenResponse.
 constructor:
-  syntax: 'TokenResponse(*, channel_id: Optional[str] = None, connection_name: Optional[str]
-    = None, token: Optional[str] = None, expiration: Optional[str] = None, **kwargs)
-    -> None'
+  syntax: 'TokenResponse(*, channel_id: str = None, connection_name: str = None, token:
+    str = None, expiration: str = None, **kwargs) -> None'
   parameters:
   - name: channel_id
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: connection_name
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: token
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: expiration
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'

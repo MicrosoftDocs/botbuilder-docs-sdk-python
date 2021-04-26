@@ -15,7 +15,7 @@ methods:
     :return: True if the request body can be processed, False otherwise.
 
     :rtype: bool'
-  signature: can_process() -> bool
+  signature: can_process(self) -> bool
 - uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor.detect_aiohttp
   name: detect_aiohttp
   summary: Detects if running in aiohttp.
@@ -23,4 +23,4 @@ methods:
 - uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor.get_request_body
   name: get_request_body
   summary: Retrieve the request body from flask/django middleware component.
-  signature: get_request_body() -> str
+  signature: get_request_body(self) -> str

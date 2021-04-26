@@ -11,16 +11,16 @@ summary: "BotAdapter that can handle incoming Slack events. Incoming Slack event
   \ and bot pipeline."
 constructor:
   syntax: 'SlackAdapter(client: botbuilder.adapters.slack.slack_client.SlackClient,
-    on_turn_error: Optional[Callable[[botbuilder.core.turn_context.TurnContext, Exception],
-    Awaitable]] = None, options: Optional[botbuilder.adapters.slack.slack_adatper_options.SlackAdapterOptions]
+    on_turn_error: Callable[[botbuilder.core.turn_context.TurnContext, Exception],
+    Awaitable] = None, options: botbuilder.adapters.slack.slack_adatper_options.SlackAdapterOptions
     = None)'
 methods:
 - uid: botbuilder.adapters.slack.SlackAdapter.continue_conversation
   name: continue_conversation
   summary: Send a proactive message to a conversation.
   signature: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
-    callback: Callable, bot_id: Optional[str] = None, claims_identity: Optional[botframework.connector.auth.claims_identity.ClaimsIdentity]
-    = None, audience: Optional[str] = None)'
+    callback: Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
+    = None, audience: str = None)'
   parameters:
   - name: reference
     description: A reference to the conversation to continue.

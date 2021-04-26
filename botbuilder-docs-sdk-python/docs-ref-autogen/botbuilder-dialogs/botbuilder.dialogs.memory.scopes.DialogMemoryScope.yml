@@ -10,19 +10,19 @@ constructor:
 methods:
 - uid: botbuilder.dialogs.memory.scopes.DialogMemoryScope.get_memory
   name: get_memory
-  signature: 'get_memory(dialog_context: DialogContext) -> object'
+  signature: 'get_memory(dialog_context: ''DialogContext'') -> object'
   parameters:
   - name: dialog_context
     isRequired: true
 - uid: botbuilder.dialogs.memory.scopes.DialogMemoryScope.is_container
   name: is_container
-  signature: 'is_container(dialog_context: DialogContext)'
+  signature: 'is_container(dialog_context: ''DialogContext'')'
   parameters:
   - name: dialog_context
     isRequired: true
 - uid: botbuilder.dialogs.memory.scopes.DialogMemoryScope.set_memory
   name: set_memory
-  signature: 'set_memory(dialog_context: DialogContext, memory: object)'
+  signature: 'set_memory(dialog_context: ''DialogContext'', memory: object)'
   parameters:
   - name: dialog_context
     isRequired: true

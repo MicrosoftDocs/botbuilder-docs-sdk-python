@@ -11,7 +11,7 @@ summary: 'Initializes a new instance of the <see cref="ChannelServiceHandler"/> 
 constructor:
   syntax: 'ChannelServiceHandler(credential_provider: botframework.connector.auth.credential_provider.CredentialProvider,
     auth_config: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration,
-    channel_provider: Optional[botframework.connector.auth.channel_provider.ChannelProvider]
+    channel_provider: botframework.connector.auth.channel_provider.ChannelProvider
     = None)'
 methods:
 - uid: botbuilder.core.ChannelServiceHandler.handle_create_conversation
@@ -340,8 +340,8 @@ methods:
 
     may rarely return members from a previous request.'
   signature: 'on_get_conversation_paged_members(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str, page_size: Optional[int] = None, continuation_token: str
-    = '''') -> botbuilder.schema._models_py3.PagedMembersResult'
+    conversation_id: str, page_size: int = None, continuation_token: str = '''') ->
+    botbuilder.schema._models_py3.PagedMembersResult'
   parameters:
   - name: claims_identity
     isRequired: true

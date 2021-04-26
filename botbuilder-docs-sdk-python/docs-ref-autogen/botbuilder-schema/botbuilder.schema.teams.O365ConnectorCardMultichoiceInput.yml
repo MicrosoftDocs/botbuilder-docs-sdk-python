@@ -7,50 +7,57 @@ inheritances:
 - botbuilder.schema.teams._models_py3.O365ConnectorCardInputBase
 summary: O365 connector card multiple choice input.
 constructor:
-  syntax: 'O365ConnectorCardMultichoiceInput(*, type=None, id: Optional[str] = None,
-    is_required: Optional[bool] = None, title: Optional[str] = None, value: Optional[str]
-    = None, choices=None, style=None, is_multi_select: Optional[bool] = None, **kwargs)
-    -> None'
+  syntax: 'O365ConnectorCardMultichoiceInput(*, type = None, id: str = None, is_required:
+    bool = None, title: str = None, value: str = None, choices = None, style = None,
+    is_multi_select: bool = None, **kwargs) -> None'
   parameters:
   - name: type
     description: 'Input type name. Possible values include: ''textInput'',
 
       ''dateInput'', ''multichoiceInput'''
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: id
     description: Input Id. It must be unique per entire O365 connector card.
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: is_required
     description: 'Define if this input is a required field. Default
 
       value is false.'
+    isRequired: true
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
   - name: title
     description: Input title that will be shown as the placeholder
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: value
     description: Default value for this input field
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: choices
     description: 'Set of choices whose each item can be in any subtype of
 
       O365ConnectorCardMultichoiceInputChoice.'
+    isRequired: true
     types:
     - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.O365ConnectorCardMultichoiceInputChoice>]'
   - name: style
     description: 'Choice item rendering style. Default value is ''compact''.
 
       Possible values include: ''compact'', ''expanded'''
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: is_multi_select
     description: 'Define if this input field allows multiple
 
       selections. Default value is false.'
+    isRequired: true
     types:
     - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'

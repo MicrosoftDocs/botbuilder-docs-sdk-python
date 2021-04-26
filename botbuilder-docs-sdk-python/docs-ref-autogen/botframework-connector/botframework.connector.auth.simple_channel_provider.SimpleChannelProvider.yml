@@ -11,14 +11,14 @@ summary: 'ChannelProvider interface. This interface allows Bots to provide their
 
   Framework channel service.'
 constructor:
-  syntax: 'SimpleChannelProvider(channel_service: Optional[str] = None)'
+  syntax: 'SimpleChannelProvider(channel_service: str = None)'
 methods:
 - uid: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider.get_channel_service
   name: get_channel_service
-  signature: get_channel_service() -> str
+  signature: get_channel_service(self) -> str
 - uid: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider.is_government
   name: is_government
-  signature: is_government() -> bool
+  signature: is_government(self) -> bool
 - uid: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider.is_public_azure
   name: is_public_azure
-  signature: is_public_azure() -> bool
+  signature: is_public_azure(self) -> bool

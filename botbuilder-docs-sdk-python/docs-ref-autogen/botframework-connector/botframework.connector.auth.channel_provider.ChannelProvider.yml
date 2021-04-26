@@ -15,10 +15,10 @@ constructor:
 methods:
 - uid: botframework.connector.auth.channel_provider.ChannelProvider.get_channel_service
   name: get_channel_service
-  signature: get_channel_service() -> str
+  signature: get_channel_service(self) -> str
 - uid: botframework.connector.auth.channel_provider.ChannelProvider.is_government
   name: is_government
-  signature: is_government() -> bool
+  signature: is_government(self) -> bool
 - uid: botframework.connector.auth.channel_provider.ChannelProvider.is_public_azure
   name: is_public_azure
-  signature: is_public_azure() -> bool
+  signature: is_public_azure(self) -> bool

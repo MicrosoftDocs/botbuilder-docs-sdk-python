@@ -32,7 +32,7 @@ methods:
   signature: 'authenticate_request(activity: botbuilder.schema._models_py3.Activity,
     auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
     channel_service_or_provider: Union[str, botframework.connector.auth.channel_provider.ChannelProvider]
-    = '''', auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
+    = '''', auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
     = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: activity
@@ -66,7 +66,7 @@ methods:
   name: validate_auth_header
   signature: 'validate_auth_header(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
     channel_service_or_provider: Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
-    channel_id: str, service_url: Optional[str] = None, auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
+    channel_id: str, service_url: str = None, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
     = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: auth_header

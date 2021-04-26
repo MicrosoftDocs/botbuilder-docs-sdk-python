@@ -30,7 +30,7 @@ methods:
     :param context: Context for the current turn of conversation with the user.
 
     :param logic: Function to call at the end of the middleware chain.'
-  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: Callable[botbuilder.core.turn_context.TurnContext,
+  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: Callable[[botbuilder.core.turn_context.TurnContext],
     Awaitable])'
   parameters:
   - name: context

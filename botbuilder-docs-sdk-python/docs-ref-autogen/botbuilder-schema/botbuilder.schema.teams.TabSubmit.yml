@@ -7,19 +7,22 @@ inheritances:
 - msrest.serialization.Model
 summary: Initializes a new instance of the TabSubmit class.
 constructor:
-  syntax: TabSubmit(*, tab_entity_context=None, context=None, data=None, **kwargs)
+  syntax: TabSubmit(*, tab_entity_context = None, context = None, data = None, **kwargs)
     -> None
   parameters:
   - name: tab_entity_context
     description: Gets or sets current tab entity request context.
+    isRequired: true
     types:
     - <xref:botframework.connector.teams.models.TabEntityContext>
   - name: context
     description: Gets or sets current user context, i.e., the current theme.
+    isRequired: true
     types:
     - <xref:botframework.connector.teams.models.TabContext>
   - name: data
     description: User input data. Free payload containing properties of key-value
       pairs.
+    isRequired: true
     types:
     - <xref:botframework.connector.teams.models.TabSubmitData>

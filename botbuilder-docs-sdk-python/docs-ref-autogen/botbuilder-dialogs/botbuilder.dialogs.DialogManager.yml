@@ -7,8 +7,8 @@ inheritances:
 - builtins.object
 summary: Class which runs the dialog system.
 constructor:
-  syntax: 'DialogManager(root_dialog: Optional[botbuilder.dialogs.dialog.Dialog] =
-    None, dialog_state_property: Optional[str] = None)'
+  syntax: 'DialogManager(root_dialog: botbuilder.dialogs.dialog.Dialog = None, dialog_state_property:
+    str = None)'
 methods:
 - uid: botbuilder.dialogs.DialogManager.get_active_dialog_context
   name: get_active_dialog_context

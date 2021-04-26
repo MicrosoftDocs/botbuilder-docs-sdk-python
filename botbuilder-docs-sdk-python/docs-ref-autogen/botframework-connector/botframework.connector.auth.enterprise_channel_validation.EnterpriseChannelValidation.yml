@@ -12,7 +12,7 @@ methods:
   name: authenticate_channel_token
   signature: 'authenticate_channel_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
     channel_id: str, channel_service_or_provider: Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
-    auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
+    auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
     = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: auth_header
@@ -30,7 +30,7 @@ methods:
   signature: 'authenticate_channel_token_with_service_url(auth_header: str, credentials:
     botframework.connector.auth.credential_provider.CredentialProvider, service_url:
     str, channel_id: str, channel_service_or_provider: Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
-    auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
+    auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
     = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: auth_header

@@ -31,9 +31,8 @@ methods:
 
     :return:'
   signature: 'get_aad_tokens(context: botbuilder.core.turn_context.TurnContext, connection_name:
-    str, resource_urls: List[str], user_id: Optional[str] = None, oauth_app_credentials:
-    Optional[botframework.connector.auth.app_credentials.AppCredentials] = None) ->
-    Dict[str, botbuilder.schema._models_py3.TokenResponse]'
+    str, resource_urls: List[str], user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+    = None) -> Dict[str, botbuilder.schema._models_py3.TokenResponse]'
   parameters:
   - name: context
     isRequired: true
@@ -63,9 +62,8 @@ methods:
 
     :return:'
   signature: 'get_oauth_sign_in_link(context: botbuilder.core.turn_context.TurnContext,
-    connection_name: str, final_redirect: Optional[str] = None, oauth_app_credentials:
-    Optional[botframework.connector.auth.app_credentials.AppCredentials] = None) ->
-    str'
+    connection_name: str, final_redirect: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
+    = None) -> str'
   parameters:
   - name: context
     isRequired: true
@@ -98,8 +96,8 @@ methods:
 
     :return:'
   signature: 'get_token_status(context: botbuilder.core.turn_context.TurnContext,
-    connection_name: Optional[str] = None, user_id: Optional[str] = None, include_filter:
-    Optional[str] = None, oauth_app_credentials: Optional[botframework.connector.auth.app_credentials.AppCredentials]
+    connection_name: str = None, user_id: str = None, include_filter: str = None,
+    oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None) -> Dict[str, botbuilder.schema._models_py3.TokenResponse]'
   parameters:
   - name: context
@@ -129,7 +127,7 @@ methods:
 
     :return:'
   signature: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, connection_name:
-    str, magic_code: Optional[str] = None, oauth_app_credentials: Optional[botframework.connector.auth.app_credentials.AppCredentials]
+    str, magic_code: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None) -> botbuilder.schema._models_py3.TokenResponse'
   parameters:
   - name: context
@@ -157,7 +155,7 @@ methods:
 
     :return:'
   signature: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
-    Optional[str] = None, user_id: Optional[str] = None, oauth_app_credentials: Optional[botframework.connector.auth.app_credentials.AppCredentials]
+    str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None)'
   parameters:
   - name: context

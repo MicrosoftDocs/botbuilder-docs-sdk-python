@@ -7,9 +7,8 @@ inheritances:
 - botbuilder.core.inspection.interception_middleware.InterceptionMiddleware
 constructor:
   syntax: 'InspectionMiddleware(inspection_state: botbuilder.core.inspection.inspection_state.InspectionState,
-    user_state: Optional[botbuilder.core.user_state.UserState] = None, conversation_state:
-    Optional[botbuilder.core.conversation_state.ConversationState] = None, credentials:
-    Optional[botframework.connector.auth.microsoft_app_credentials.MicrosoftAppCredentials]
+    user_state: botbuilder.core.user_state.UserState = None, conversation_state: botbuilder.core.conversation_state.ConversationState
+    = None, credentials: botframework.connector.auth.microsoft_app_credentials.MicrosoftAppCredentials
     = None)'
 methods:
 - uid: botbuilder.core.inspection.InspectionMiddleware.process_attach_command

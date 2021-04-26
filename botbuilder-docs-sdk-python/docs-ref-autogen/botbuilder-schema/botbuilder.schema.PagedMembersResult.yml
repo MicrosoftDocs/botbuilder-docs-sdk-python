@@ -7,14 +7,16 @@ inheritances:
 - msrest.serialization.Model
 summary: Page of members.
 constructor:
-  syntax: 'PagedMembersResult(*, continuation_token: Optional[str] = None, members=None,
-    **kwargs) -> None'
+  syntax: 'PagedMembersResult(*, continuation_token: str = None, members = None, **kwargs)
+    -> None'
   parameters:
   - name: continuation_token
     description: Paging token
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: members
     description: The Channel Accounts.
+    isRequired: true
     types:
     - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ChannelAccount>]'

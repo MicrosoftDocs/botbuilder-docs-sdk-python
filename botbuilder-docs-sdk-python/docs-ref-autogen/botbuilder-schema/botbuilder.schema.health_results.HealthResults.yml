@@ -6,6 +6,6 @@ module: botbuilder.schema.health_results
 inheritances:
 - msrest.serialization.Model
 constructor:
-  syntax: 'HealthResults(*, success: Optional[bool] = None, authorization: Optional[str]
-    = None, user_agent: Optional[str] = None, messages: Optional[List[str]] = None,
-    diagnostics: object = None, **kwargs) -> None'
+  syntax: 'HealthResults(*, success: bool = None, authorization: str = None, user_agent:
+    str = None, messages: List[str] = None, diagnostics: object = None, **kwargs)
+    -> None'

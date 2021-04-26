@@ -7,33 +7,38 @@ inheritances:
 - msrest.serialization.Model
 summary: A basic card.
 constructor:
-  syntax: 'BasicCard(*, title: Optional[str] = None, subtitle: Optional[str] = None,
-    text: Optional[str] = None, images=None, buttons=None, tap=None, **kwargs) ->
-    None'
+  syntax: 'BasicCard(*, title: str = None, subtitle: str = None, text: str = None,
+    images = None, buttons = None, tap = None, **kwargs) -> None'
   parameters:
   - name: title
     description: Title of the card
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: subtitle
     description: Subtitle of the card
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: text
     description: Text for the card
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: images
     description: Array of images for the card
+    isRequired: true
     types:
     - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.CardImage>]'
   - name: buttons
     description: Set of actions applicable to the current card
+    isRequired: true
     types:
     - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.CardAction>]'
   - name: tap
     description: 'This action will be activated when user taps on the card
 
       itself'
+    isRequired: true
     types:
     - <xref:botframework.connector.models.CardAction>

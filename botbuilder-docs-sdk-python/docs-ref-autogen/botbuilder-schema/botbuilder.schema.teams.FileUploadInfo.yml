@@ -7,29 +7,33 @@ inheritances:
 - msrest.serialization.Model
 summary: Information about the file to be uploaded.
 constructor:
-  syntax: 'FileUploadInfo(*, name: Optional[str] = None, upload_url: Optional[str]
-    = None, content_url: Optional[str] = None, unique_id: Optional[str] = None, file_type:
-    Optional[str] = None, **kwargs) -> None'
+  syntax: 'FileUploadInfo(*, name: str = None, upload_url: str = None, content_url:
+    str = None, unique_id: str = None, file_type: str = None, **kwargs) -> None'
   parameters:
   - name: name
     description: Name of the file.
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: upload_url
     description: 'URL to an upload session that the bot can use to set
 
       the file contents.'
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: content_url
     description: URL to file.
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: unique_id
     description: ID that uniquely identifies the file.
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
   - name: file_type
     description: Type of the file.
+    isRequired: true
     types:
     - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
