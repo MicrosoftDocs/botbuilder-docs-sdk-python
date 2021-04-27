@@ -8,7 +8,7 @@ inheritances:
 constructor:
   syntax: 'PromptValidatorContext(turn_context: botbuilder.core.turn_context.TurnContext,
     recognized: botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult,
-    state: Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)'
+    state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)'
 attributes:
 - uid: botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext.attempt_count
   name: attempt_count

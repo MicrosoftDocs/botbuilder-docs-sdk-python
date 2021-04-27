@@ -7,36 +7,36 @@ inheritances:
 - msrest.serialization.Model
 summary: Metadata for a Task Module.
 constructor:
-  syntax: 'TaskModuleTaskInfo(*, title: str = None, height = None, width = None, url:
-    str = None, card = None, fallback_url: str = None, completion_bot_id: str = None,
+  syntax: 'TaskModuleTaskInfo(*, title: str = None, height=None, width=None, url:
+    str = None, card=None, fallback_url: str = None, completion_bot_id: str = None,
     **kwargs) -> None'
   parameters:
   - name: title
     description: Appears below the app name and to the right of the app icon.
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: height
     description: 'This can be a number, representing the task module''s height
 
       in pixels, or a string, one of: small, medium, large.'
     isRequired: true
     types:
-    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
+    - <xref:object>
   - name: width
     description: 'This can be a number, representing the task module''s width
 
       in pixels, or a string, one of: small, medium, large.'
     isRequired: true
     types:
-    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
+    - <xref:object>
   - name: url
     description: 'The URL of what is loaded as an iframe inside the task module.
 
       One of url or card is required.'
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: card
     description: The JSON for the Adaptive card to appear in the task module.
     isRequired: true
@@ -48,11 +48,11 @@ constructor:
       this URL is opened in a browser tab.'
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: completion_bot_id
     description: 'If a client does not support the task module
 
       feature, this URL is opened in a browser tab.'
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>

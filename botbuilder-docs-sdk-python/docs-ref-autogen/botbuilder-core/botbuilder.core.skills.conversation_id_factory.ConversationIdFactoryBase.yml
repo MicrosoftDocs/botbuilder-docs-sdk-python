@@ -17,22 +17,20 @@ remarks: 'Derive from this class to handle creation of conversation ids, retriev
 methods:
 - uid: botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase.create_skill_conversation_id
   name: create_skill_conversation_id
-  summary: "Using the options passed in, creates a conversation id and <xref:botbuilder.core.skills.conversation_id_factory.SkillConversationReference>,\n\
-    \   storing them for future use.\n\n\n> [!NOTE]\n> <xref:botbuilder.core.skills.conversation_id_factory.SkillConversationIdFactoryOptions>\
-    \ is the preferred parameter type, while the\n>\n> \n>\n> <xref:botbuilder.core.skills.conversation_id_factory.SkillConversationReference>\
+  summary: "Using the options passed in, creates a conversation id and <xref:SkillConversationReference>,\n\
+    \   storing them for future use.\n\n\n> [!NOTE]\n> <xref:SkillConversationIdFactoryOptions>\
+    \ is the preferred parameter type, while the\n>\n> \n>\n> <xref:SkillConversationReference>\
     \ type is provided for backwards compatability.\n>"
-  signature: 'create_skill_conversation_id(options_or_conversation_reference: Union[botbuilder.core.skills.skill_conversation_id_factory_options.SkillConversationIdFactoryOptions,
+  signature: 'create_skill_conversation_id(options_or_conversation_reference: typing.Union[botbuilder.core.skills.skill_conversation_id_factory_options.SkillConversationIdFactoryOptions,
     botbuilder.schema._models_py3.ConversationReference]) -> str'
   parameters:
   - name: options_or_conversation_reference
     description: 'The options contain properties useful for generating a
 
-      <xref:botbuilder.core.skills.conversation_id_factory.SkillConversationReference>
-      and conversation id.'
+      <xref:SkillConversationReference> and conversation id.'
     isRequired: true
     types:
-    - <xref:botbuilder.core.skills.conversation_id_factory.Union[SkillConversationIdFactoryOptions,
-      ConversationReference]>
+    - <xref:Union[SkillConversationIdFactoryOptions, ConversationReference]>
   return:
     description: A skill conversation id.
 - uid: botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase.delete_conversation_reference
@@ -44,25 +42,25 @@ methods:
     isRequired: true
 - uid: botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase.get_conversation_reference
   name: get_conversation_reference
-  summary: 'Retrieves a <xref:botbuilder.core.skills.conversation_id_factory.SkillConversationReference>
-    using a conversation id passed in.
+  summary: 'Retrieves a <xref:SkillConversationReference> using a conversation id
+    passed in.
 
 
 
     > [!NOTE]
 
-    > SkillConversationReference is the preferred return type, while the <xref:botbuilder.core.skills.conversation_id_factory.SkillConversationReference>
+    > SkillConversationReference is the preferred return type, while the <xref:SkillConversationReference>
 
     >
 
     > type is provided for backwards compatability.
 
     >'
-  signature: 'get_conversation_reference(skill_conversation_id: str) -> Union[botbuilder.core.skills.skill_conversation_reference.SkillConversationReference,
+  signature: 'get_conversation_reference(skill_conversation_id: str) -> typing.Union[botbuilder.core.skills.skill_conversation_reference.SkillConversationReference,
     botbuilder.schema._models_py3.ConversationReference]'
   parameters:
   - name: skill_conversation_id
-    description: The conversation id for which to retrieve the <xref:botbuilder.core.skills.conversation_id_factory.SkillConversationReference>.
+    description: The conversation id for which to retrieve the <xref:SkillConversationReference>.
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>

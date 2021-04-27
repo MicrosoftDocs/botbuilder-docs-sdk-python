@@ -7,7 +7,7 @@ inheritances:
 - msrest.serialization.Model
 summary: Invoke ('tab/fetch') request value payload.
 constructor:
-  syntax: TabRequest(*, tab_entity_context = None, context = None, state = None, **kwargs)
+  syntax: TabRequest(*, tab_entity_context=None, context=None, state=None, **kwargs)
     -> None
   parameters:
   - name: tab_entity_context
@@ -24,4 +24,4 @@ constructor:
     description: Gets or sets state, which is the magic code for OAuth Flow.
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>

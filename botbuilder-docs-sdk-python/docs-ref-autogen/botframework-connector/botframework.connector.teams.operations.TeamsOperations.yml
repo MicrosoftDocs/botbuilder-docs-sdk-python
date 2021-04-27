@@ -26,35 +26,35 @@ methods:
   name: fetch_participant
   summary: Fetches Teams meeting participant details.
   signature: 'fetch_participant(meeting_id: str, participant_id: str, tenant_id: str,
-    custom_headers = None, raw = False, **operation_config)'
+    custom_headers=None, raw=False, **operation_config)'
   parameters:
   - name: meeting_id
     description: Teams meeting id
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: participant_id
     description: Teams meeting participant id
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: tenant_id
     description: Teams meeting tenant id
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
     defaultValue: 'False'
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: operation_config
     description: '*Operation configuration
 
@@ -71,25 +71,25 @@ methods:
 
 
     Fetch details for a team.'
-  signature: get_team_details(team_id, custom_headers = None, raw = False, **operation_config)
+  signature: get_team_details(team_id, custom_headers=None, raw=False, **operation_config)
   parameters:
   - name: team_id
     description: Team Id
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
     defaultValue: 'False'
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: operation_config
     description: '*Operation configuration
 
@@ -106,25 +106,25 @@ methods:
 
 
     Fetch the channel list.'
-  signature: get_teams_channels(team_id, custom_headers = None, raw = False, **operation_config)
+  signature: get_teams_channels(team_id, custom_headers=None, raw=False, **operation_config)
   parameters:
   - name: team_id
     description: Team Id
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
     defaultValue: 'False'
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: operation_config
     description: '*Operation configuration
 

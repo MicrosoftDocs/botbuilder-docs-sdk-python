@@ -8,7 +8,7 @@ inheritances:
 summary: Channel account information needed to route a message.
 constructor:
   syntax: 'ChannelAccount(*, id: str = None, name: str = None, aad_object_id: str
-    = None, role = None, **kwargs) -> None'
+    = None, role=None, **kwargs) -> None'
   parameters:
   - name: id
     description: 'Channel id for the user or bot on this channel (Example:
@@ -16,23 +16,23 @@ constructor:
       <xref:mailto:joe@smith.com>, or @joesmith or 123456)'
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: name
     description: Display friendly name
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: aad_object_id
     description: 'This account''s object ID within Azure Active
 
       Directory (AAD)'
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: role
     description: 'Role of the entity behind the account (Example: User, Bot,
 
       etc.). Possible values include: ''user'', ''bot'''
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str) or <xref:botframework.connector.models.RoleTypes>'
+    - <xref:str> or <xref:botframework.connector.models.RoleTypes>

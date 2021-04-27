@@ -7,9 +7,9 @@ inheritances:
 - msrest.serialization.Model
 summary: AadResourceUrls.
 constructor:
-  syntax: AadResourceUrls(*, resource_urls = None, **kwargs) -> None
+  syntax: AadResourceUrls(*, resource_urls=None, **kwargs) -> None
   parameters:
   - name: resource_urls
     isRequired: true
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[[str](https://docs.python.org/3.6/library/stdtypes.html#str)]'
+    - <xref:list>[<xref:str>]

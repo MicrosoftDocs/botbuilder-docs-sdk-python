@@ -10,7 +10,7 @@ constructor:
 methods:
 - uid: botframework.connector.auth.endorsements_validator.EndorsementsValidator.validate
   name: validate
-  signature: 'validate(expected_endorsement: str, endorsements: List[str])'
+  signature: 'validate(expected_endorsement: str, endorsements: typing.List[str])'
   parameters:
   - name: expected_endorsement
     isRequired: true

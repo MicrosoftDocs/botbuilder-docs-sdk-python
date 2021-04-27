@@ -58,7 +58,7 @@ methods:
     which is then examined via calls to check_for_version_change_async().
 
     :return: version which represents the change of the internals of this container.'
-  signature: get_internal_version(self) -> str
+  signature: get_internal_version() -> str
 - uid: botbuilder.dialogs.dialog_container.DialogContainer.on_dialog_event
   name: on_dialog_event
   summary: "Called when an event has been raised, using *DialogContext.emitEvent()*,\

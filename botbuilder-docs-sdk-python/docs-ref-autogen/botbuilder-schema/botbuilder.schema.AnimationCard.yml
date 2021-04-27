@@ -8,25 +8,25 @@ inheritances:
 summary: 'An animation card (Ex: gif or short video clip).'
 constructor:
   syntax: 'AnimationCard(*, title: str = None, subtitle: str = None, text: str = None,
-    image = None, media = None, buttons = None, shareable: bool = None, autoloop:
-    bool = None, autostart: bool = None, aspect: str = None, duration: str = None,
-    value = None, **kwargs) -> None'
+    image=None, media=None, buttons=None, shareable: bool = None, autoloop: bool =
+    None, autostart: bool = None, aspect: str = None, duration: str = None, value=None,
+    **kwargs) -> None'
   parameters:
   - name: title
     description: Title of this card
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: subtitle
     description: Subtitle of this card
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: text
     description: Text of this card
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: image
     description: Thumbnail placeholder
     isRequired: true
@@ -38,38 +38,38 @@ constructor:
       one URL, each URL is an alternative format of the same content.'
     isRequired: true
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.MediaUrl>]'
+    - <xref:list>[<xref:botframework.connector.models.MediaUrl>]
   - name: buttons
     description: Actions on this card
     isRequired: true
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.CardAction>]'
+    - <xref:list>[<xref:botframework.connector.models.CardAction>]
   - name: shareable
     description: This content may be shared with others (default:true)
     isRequired: true
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: autoloop
     description: 'Should the client loop playback at end of content
 
       (default:true)'
     isRequired: true
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: autostart
     description: 'Should the client automatically start playback of media
 
       in this card (default:true)'
     isRequired: true
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: aspect
     description: 'Aspect ratio of thumbnail/media placeholder. Allowed values
 
       are "16:9" and "4:3"'
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: duration
     description: 'Describes the length of the media content without
 
@@ -78,9 +78,9 @@ constructor:
       Duration field.'
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: value
     description: Supplementary parameter for this card
     isRequired: true
     types:
-    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
+    - <xref:object>

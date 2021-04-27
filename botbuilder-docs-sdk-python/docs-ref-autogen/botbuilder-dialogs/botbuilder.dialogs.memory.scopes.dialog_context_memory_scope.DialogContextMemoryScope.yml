@@ -15,13 +15,13 @@ methods:
     <param name="dc">The <see cref="DialogContext"/> object for this turn.</param>
 
     <returns>Memory for the scope.</returns>'
-  signature: 'get_memory(dialog_context: ''DialogContext'') -> object'
+  signature: 'get_memory(dialog_context: DialogContext) -> object'
   parameters:
   - name: dialog_context
     isRequired: true
 - uid: botbuilder.dialogs.memory.scopes.dialog_context_memory_scope.DialogContextMemoryScope.set_memory
   name: set_memory
-  signature: 'set_memory(dialog_context: ''DialogContext'', memory: object)'
+  signature: 'set_memory(dialog_context: DialogContext, memory: object)'
   parameters:
   - name: dialog_context
     isRequired: true

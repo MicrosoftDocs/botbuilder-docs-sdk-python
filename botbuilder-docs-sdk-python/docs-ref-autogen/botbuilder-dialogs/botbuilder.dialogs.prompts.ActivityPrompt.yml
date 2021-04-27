@@ -10,13 +10,13 @@ summary: "Waits for an activity to be received.\n\n   This prompt requires a val
   \ event to be received. The validator can ignore received events until the\n   expected\
   \ activity is received."
 constructor:
-  syntax: 'ActivityPrompt(dialog_id: str, validator: Callable[[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext],
+  syntax: 'ActivityPrompt(dialog_id: str, validator: typing.Callable[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext,
     bool])'
 variables:
 - name: "persisted_options \u2013"
 - name: persisted_state
   types:
-  - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+  - <xref:str>
 methods:
 - uid: botbuilder.dialogs.prompts.ActivityPrompt.begin_dialog
   name: begin_dialog
@@ -29,7 +29,7 @@ methods:
     description: The dialog context for the current turn of the conversation.
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.DialogContext>
+    - <xref:DialogContext>
   - name: options
     description: Optional, additional information to pass to the prompt being started.
     defaultValue: None
@@ -46,19 +46,19 @@ methods:
     description: The dialog context for the current turn of the conversation.
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.DialogContext>
+    - <xref:DialogContext>
 - uid: botbuilder.dialogs.prompts.ActivityPrompt.on_prompt
   name: on_prompt
   summary: Called anytime the derived class should send the user a prompt.
   signature: 'on_prompt(context: botbuilder.core.turn_context.TurnContext, state:
-    Dict[str, dict], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
+    typing.Dict[str, dict], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
     is_retry: bool = False)'
   parameters:
   - name: dialog_context
     description: The dialog context for the current turn of the conversation
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.DialogContext>
+    - <xref:DialogContext>
   - name: state
     description: Additional state being persisted for the prompt.
     isRequired: true
@@ -74,13 +74,13 @@ methods:
       should be sent.
     defaultValue: 'False'
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
 - uid: botbuilder.dialogs.prompts.ActivityPrompt.on_recognize
   name: on_recognize
   summary: When overridden in a derived class, attempts to recognize the incoming
     activity.
   signature: 'on_recognize(context: botbuilder.core.turn_context.TurnContext, state:
-    Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
+    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
     -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
   parameters:
   - name: context
@@ -101,8 +101,8 @@ methods:
     - <xref:botbuilder.dialogs.prompts.PromptOptions>
   return:
     types:
-    - constructed from the options initially provided in the call to <xref:botbuilder.dialogs.prompts.ActivityPrompt.async
-      def on_prompt>
+    - constructed from the options initially provided in the call to <xref:async def
+      on_prompt>
 - uid: botbuilder.dialogs.prompts.ActivityPrompt.reprompt_dialog
   name: reprompt_dialog
   signature: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
@@ -125,17 +125,17 @@ methods:
     description: The dialog context for the current turn of the conversation
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.DialogContext>
+    - <xref:DialogContext>
   - name: reason
     description: An enum indicating why the dialog resumed.
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.DialogReason>
+    - <xref:DialogReason>
   - name: result
     description: Optional, value returned from the previous dialog on the stack.
     defaultValue: None
     types:
-    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
+    - <xref:object>
   remarks: 'Prompts are typically leaf nodes on the stack but the dev is free to push
     other dialogs
 

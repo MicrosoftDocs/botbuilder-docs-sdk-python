@@ -34,37 +34,37 @@ variables:
 methods:
 - uid: botframework.connector.token_api.operations.BotSignInOperations.get_sign_in_resource
   name: get_sign_in_resource
-  signature: get_sign_in_resource(state, code_challenge = None, emulator_url = None,
-    final_redirect = None, custom_headers = None, raw = False, **operation_config)
+  signature: get_sign_in_resource(state, code_challenge=None, emulator_url=None, final_redirect=None,
+    custom_headers=None, raw=False, **operation_config)
   parameters:
   - name: state
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: code_challenge
     defaultValue: None
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: emulator_url
     defaultValue: None
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: final_redirect
     defaultValue: None
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
     defaultValue: 'False'
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: operation_config
     description: '*Operation configuration
 
@@ -77,37 +77,37 @@ methods:
     - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.token_api.operations.BotSignInOperations.get_sign_in_url
   name: get_sign_in_url
-  signature: get_sign_in_url(state, code_challenge = None, emulator_url = None, final_redirect
-    = None, custom_headers = None, raw = False, **operation_config)
+  signature: get_sign_in_url(state, code_challenge=None, emulator_url=None, final_redirect=None,
+    custom_headers=None, raw=False, **operation_config)
   parameters:
   - name: state
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: code_challenge
     defaultValue: None
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: emulator_url
     defaultValue: None
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: final_redirect
     defaultValue: None
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
     defaultValue: 'False'
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: operation_config
     description: '*Operation configuration
 
@@ -116,7 +116,7 @@ methods:
   return:
     description: str or ClientRawResponse if raw=true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
     - <xref:msrest.pipeline.ClientRawResponse>
 attributes:
 - uid: botframework.connector.token_api.operations.BotSignInOperations.models

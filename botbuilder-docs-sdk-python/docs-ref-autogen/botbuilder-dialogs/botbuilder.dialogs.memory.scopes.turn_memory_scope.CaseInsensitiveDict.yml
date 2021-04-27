@@ -6,24 +6,24 @@ module: botbuilder.dialogs.memory.scopes.turn_memory_scope
 inheritances:
 - builtins.dict
 constructor:
-  syntax: CaseInsensitiveDict(*args, **kwargs)
+  syntax: CaseInsensitivetyping.Dict(*args, **kwargs)
 methods:
 - uid: botbuilder.dialogs.memory.scopes.turn_memory_scope.CaseInsensitiveDict.get
   name: get
-  signature: get(key, *args, **kwargs)
+  signature: get(k[,d])
   parameters:
   - name: key
     isRequired: true
 - uid: botbuilder.dialogs.memory.scopes.turn_memory_scope.CaseInsensitiveDict.pop
   name: pop
   summary: If key is not found, d is returned if given, otherwise KeyError is raised
-  signature: pop(key, *args, **kwargs)
+  signature: pop(k[,d])
   parameters:
   - name: key
     isRequired: true
 - uid: botbuilder.dialogs.memory.scopes.turn_memory_scope.CaseInsensitiveDict.setdefault
   name: setdefault
-  signature: setdefault(key, *args, **kwargs)
+  signature: setdefault(k[,d])
   parameters:
   - name: key
     isRequired: true
@@ -36,7 +36,7 @@ methods:
     v
 
     In either case, this is followed by: for k in F:  D[k] = F[k]'
-  signature: update(e = None, **f)
+  signature: update([E, ]**F)
   parameters:
   - name: e
     defaultValue: None

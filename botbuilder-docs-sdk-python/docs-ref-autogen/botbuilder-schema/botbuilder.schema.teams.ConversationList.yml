@@ -7,9 +7,9 @@ inheritances:
 - msrest.serialization.Model
 summary: List of channels under a team.
 constructor:
-  syntax: ConversationList(*, conversations = None, **kwargs) -> None
+  syntax: Conversationtyping.List(*, conversations=None, **kwargs) -> None
   parameters:
   - name: conversations
     isRequired: true
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.teams.models.ChannelInfo>]'
+    - <xref:list>[<xref:botframework.connector.teams.models.ChannelInfo>]

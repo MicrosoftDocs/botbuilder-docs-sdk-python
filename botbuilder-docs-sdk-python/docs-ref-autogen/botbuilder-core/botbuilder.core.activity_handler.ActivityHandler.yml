@@ -202,7 +202,7 @@ methods:
   summary: Registers an activity event handler for the _invoke_ event, emitted for
     every incoming event activity.
   signature: 'on_invoke_activity(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> Union[botbuilder.core.invoke_response.InvokeResponse, NoneType]'
+    -> typing.Union[botbuilder.core.invoke_response.InvokeResponse, NoneType]'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -221,12 +221,12 @@ methods:
 
     conversation update activity
 
-    :type members_added: [typing.List](https://docs.python.org/3.6/library/typing.html#typing.List)
+    :type members_added: <xref:typing.List>
 
     :param turn_context: The context object for this turn
 
     :type turn_context: <xref:botbuilder.core.TurnContext>'
-  signature: 'on_members_added_activity(members_added: List[botbuilder.schema._models_py3.ChannelAccount],
+  signature: 'on_members_added_activity(members_added: typing.List[botbuilder.schema._models_py3.ChannelAccount],
     turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: members_added
@@ -254,12 +254,12 @@ methods:
 
     conversation update activity
 
-    :type members_added: [typing.List](https://docs.python.org/3.6/library/typing.html#typing.List)
+    :type members_added: <xref:typing.List>
 
     :param turn_context: The context object for this turn
 
     :type turn_context: <xref:botbuilder.core.TurnContext>'
-  signature: 'on_members_removed_activity(members_removed: List[botbuilder.schema._models_py3.ChannelAccount],
+  signature: 'on_members_removed_activity(members_removed: typing.List[botbuilder.schema._models_py3.ChannelAccount],
     turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: members_removed
@@ -314,27 +314,26 @@ methods:
     \ from a send call.\nWhen the <xref:botbuilder.core.activity_handler.ActivityHandler.on_turn>\
     \ method receives a message reaction activity, it calls this\nmethod.\n\n* If\
     \ the message reaction indicates that reactions were added to a message, it calls\
-    \ \n\n<xref:botbuilder.core.activity_handler.ActivityHandler.on_reaction_added>.\n\
-    - If the message reaction indicates that reactions were removed from a message,\
-    \ it calls\n<xref:botbuilder.core.activity_handler.ActivityHandler.on_reaction_removed>.\n\
-    \nIn a derived class, override this method to add logic that applies to all message\
-    \ reaction activities.\nAdd logic to apply before the reactions added or removed\
-    \ logic before the call to the this base class\nmethod.\nAdd logic to apply after\
-    \ the reactions added or removed logic after the call to the this base class method.\n"
+    \ \n\n<xref:on_reaction_added>.\n- If the message reaction indicates that reactions\
+    \ were removed from a message, it calls\n<xref:on_reaction_removed>.\n\nIn a derived\
+    \ class, override this method to add logic that applies to all message reaction\
+    \ activities.\nAdd logic to apply before the reactions added or removed logic\
+    \ before the call to the this base class\nmethod.\nAdd logic to apply after the\
+    \ reactions added or removed logic after the call to the this base class method.\n"
 - uid: botbuilder.core.activity_handler.ActivityHandler.on_reactions_added
   name: on_reactions_added
   summary: 'Override this method in a derived class to provide logic for when reactions
     to a previous activity
 
     are added to the conversation.'
-  signature: 'on_reactions_added(message_reactions: List[botbuilder.schema._models_py3.MessageReaction],
+  signature: 'on_reactions_added(message_reactions: typing.List[botbuilder.schema._models_py3.MessageReaction],
     turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: message_reactions
     description: The list of reactions added
     isRequired: true
     types:
-    - '[typing.List](https://docs.python.org/3.6/library/typing.html#typing.List)'
+    - <xref:typing.List>
   - name: turn_context
     description: The context object for this turn
     isRequired: true
@@ -365,14 +364,14 @@ methods:
     to a previous activity
 
     are removed from the conversation.'
-  signature: 'on_reactions_removed(message_reactions: List[botbuilder.schema._models_py3.MessageReaction],
+  signature: 'on_reactions_removed(message_reactions: typing.List[botbuilder.schema._models_py3.MessageReaction],
     turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: message_reactions
     description: The list of reactions removed
     isRequired: true
     types:
-    - '[typing.List](https://docs.python.org/3.6/library/typing.html#typing.List)'
+    - <xref:typing.List>
   - name: turn_context
     description: The context object for this turn
     isRequired: true
@@ -445,8 +444,7 @@ methods:
     '
 - uid: botbuilder.core.activity_handler.ActivityHandler.on_turn
   name: on_turn
-  summary: 'Called by the adapter (for example, <xref:botbuilder.core.activity_handler.BotFrameworkAdapter>)
-    at runtime
+  summary: 'Called by the adapter (for example, <xref:BotFrameworkAdapter>) at runtime
 
     in order to process an inbound <xref:botbuilder.schema.Activity>.'
   signature: 'on_turn(turn_context: botbuilder.core.turn_context.TurnContext)'

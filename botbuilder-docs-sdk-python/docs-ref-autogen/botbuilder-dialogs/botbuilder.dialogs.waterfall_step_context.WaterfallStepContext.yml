@@ -7,7 +7,7 @@ inheritances:
 - botbuilder.dialogs.dialog_context.DialogContext
 constructor:
   syntax: 'WaterfallStepContext(parent, dc: botbuilder.dialogs.dialog_context.DialogContext,
-    options: object, values: Dict[str, object], index: int, reason: botbuilder.dialogs.dialog_reason.DialogReason,
+    options: object, values: typing.Dict[str, object], index: int, reason: botbuilder.dialogs.dialog_reason.DialogReason,
     result: object = None)'
 methods:
 - uid: botbuilder.dialogs.waterfall_step_context.WaterfallStepContext.next

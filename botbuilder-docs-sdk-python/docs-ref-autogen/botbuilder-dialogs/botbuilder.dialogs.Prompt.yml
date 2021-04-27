@@ -21,7 +21,7 @@ remarks: 'When the prompt ends, it returns an object that represents the value i
   Use <xref:botbuilder.dialogs.DialogContext.prompt> or <xref:botbuilder.dialogs.DialogContext.begin_dialog>
   to start the prompt.
 
-  If you start a prompt from a <xref:botbuilder.dialogs.WaterfallStep> in a <xref:botbuilder.dialogs.WaterfallDialog>,
+  If you start a prompt from a <xref:WaterfallStep> in a <xref:botbuilder.dialogs.WaterfallDialog>,
   then the
 
   prompt result will be available in the next step of the waterfall.
@@ -32,7 +32,7 @@ methods:
   name: append_choices
   summary: Composes an output activity containing a set of choices.
   signature: 'append_choices(prompt: botbuilder.schema._models_py3.Activity, channel_id:
-    str, choices: List[botbuilder.dialogs.choices.choice.Choice], style: botbuilder.dialogs.choices.list_style.ListStyle,
+    str, choices: typing.List[botbuilder.dialogs.choices.choice.Choice], style: botbuilder.dialogs.choices.list_style.typing.ListStyle,
     options: botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
     = None) -> botbuilder.schema._models_py3.Activity'
   parameters:
@@ -43,7 +43,7 @@ methods:
     description: Id of the channel the prompt is being sent to
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: choices
     isRequired: true
   - name: style
@@ -86,7 +86,7 @@ methods:
     description: Optional, additional information to pass to the prompt being started
     defaultValue: None
     types:
-    - <xref:botbuilder.dialogs.Object>
+    - <xref:Object>
   return:
     description: The dialog turn result
     types:
@@ -126,7 +126,7 @@ methods:
   summary: Prompts user for input. When overridden in a derived class, prompts the
     user for input.
   signature: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
-    Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
+    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
     is_retry: bool)'
   parameters:
   - name: turn_context
@@ -139,7 +139,7 @@ methods:
       stack
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.Dict>
+    - <xref:Dict>
   - name: options
     description: A prompt options object constructed from:meth:*DialogContext.prompt()*
     isRequired: true
@@ -149,7 +149,7 @@ methods:
     description: Determines whether *prompt* or *retry_prompt* should be used
     isRequired: true
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   return:
     description: A task representing the asynchronous operation.
 - uid: botbuilder.dialogs.Prompt.on_recognize
@@ -157,7 +157,7 @@ methods:
   summary: "Recognizes the user's input.\n\n\n> [!NOTE]\n> When overridden in a derived\
     \ class, attempts to recognize the user\u2019s input.\n>"
   signature: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
-    state: Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)'
+    state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)'
   parameters:
   - name: turn_context
     description: Context for the current turn of conversation with the user
@@ -169,7 +169,7 @@ methods:
       stack
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.Dict>
+    - <xref:Dict>
   - name: options
     description: A prompt options object constructed from <xref:botbuilder.dialogs.DialogContext.prompt>
     isRequired: true
@@ -215,7 +215,7 @@ methods:
     description: Optional, value returned from the previous dialog on the stack.
     isRequired: true
     types:
-    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
+    - <xref:object>
   return:
     description: The dialog turn result
     types:

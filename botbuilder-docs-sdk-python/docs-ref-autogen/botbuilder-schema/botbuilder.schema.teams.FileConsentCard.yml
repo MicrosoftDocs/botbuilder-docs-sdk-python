@@ -8,18 +8,18 @@ inheritances:
 summary: File consent card attachment.
 constructor:
   syntax: 'FileConsentCard(*, description: str = None, size_in_bytes: int = None,
-    accept_context = None, decline_context = None, **kwargs) -> None'
+    accept_context=None, decline_context=None, **kwargs) -> None'
   parameters:
   - name: description
     description: File description.
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: size_in_bytes
     description: Size of the file to be uploaded in Bytes.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.teams.long>
+    - <xref:long>
   - name: accept_context
     description: 'Context sent back to the Bot if user consented to
 
@@ -28,11 +28,11 @@ constructor:
       Activity.'
     isRequired: true
     types:
-    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
+    - <xref:object>
   - name: decline_context
     description: 'Context sent back to the Bot if user declined.
 
       This is free flow schema and is sent back in Value field of Activity.'
     isRequired: true
     types:
-    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
+    - <xref:object>

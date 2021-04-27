@@ -7,16 +7,16 @@ inheritances:
 - msrest.serialization.Model
 summary: Messaging extension query parameters.
 constructor:
-  syntax: 'MessagingExtensionParameter(*, name: str = None, value = None, **kwargs)
+  syntax: 'MessagingExtensionParameter(*, name: str = None, value=None, **kwargs)
     -> None'
   parameters:
   - name: name
     description: Name of the parameter
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: value
     description: Value of the parameter
     isRequired: true
     types:
-    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
+    - <xref:object>

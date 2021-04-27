@@ -68,7 +68,7 @@ methods:
     Activity() ... ) ;
 
     ``.'
-  signature: create_conversation(parameters, custom_headers = None, raw = False, **operation_config)
+  signature: create_conversation(parameters, custom_headers=None, raw=False, **operation_config)
   parameters:
   - name: parameters
     description: Parameters to create the conversation from
@@ -79,14 +79,14 @@ methods:
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
     defaultValue: 'False'
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: operation_config
     description: '*Operation configuration
 
@@ -107,31 +107,31 @@ methods:
     Some channels allow you to delete an existing activity, and if
 
     successful this method will remove the specified activity.'
-  signature: delete_activity(conversation_id, activity_id, custom_headers = None,
-    raw = False, **operation_config)
+  signature: delete_activity(conversation_id, activity_id, custom_headers=None, raw=False,
+    **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: activity_id
     description: activityId to delete
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
     defaultValue: 'False'
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: operation_config
     description: '*Operation configuration
 
@@ -140,7 +140,7 @@ methods:
   return:
     description: None or ClientRawResponse if raw=true
     types:
-    - '[None](https://docs.python.org/3.6/library/constants.html#None)'
+    - <xref:None>
     - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.ConversationsOperations.delete_conversation_member
   name: delete_conversation_member
@@ -156,31 +156,31 @@ methods:
     last member
 
     of the conversation, the conversation will also be deleted.'
-  signature: delete_conversation_member(conversation_id, member_id, custom_headers
-    = None, raw = False, **operation_config)
+  signature: delete_conversation_member(conversation_id, member_id, custom_headers=None,
+    raw=False, **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: member_id
     description: ID of the member to delete from this conversation
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
     defaultValue: 'False'
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: operation_config
     description: '*Operation configuration
 
@@ -189,7 +189,7 @@ methods:
   return:
     description: None or ClientRawResponse if raw=true
     types:
-    - '[None](https://docs.python.org/3.6/library/constants.html#None)'
+    - <xref:None>
     - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.ConversationsOperations.get_activity_members
   name: get_activity_members
@@ -203,31 +203,31 @@ methods:
     array of ChannelAccount objects representing the members of the
 
     particular activity in the conversation.'
-  signature: get_activity_members(conversation_id, activity_id, custom_headers = None,
-    raw = False, **operation_config)
+  signature: get_activity_members(conversation_id, activity_id, custom_headers=None,
+    raw=False, **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: activity_id
     description: Activity ID
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
     defaultValue: 'False'
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: operation_config
     description: '*Operation configuration
 
@@ -236,7 +236,7 @@ methods:
   return:
     description: list or ClientRawResponse if raw=true
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ChannelAccount>]'
+    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
     - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.ConversationsOperations.get_conversation_member
   name: get_conversation_member
@@ -248,31 +248,31 @@ methods:
     This REST API takes a ConversationId and memberId and returns a
 
     ChannelAccount object representing the member of the conversation.'
-  signature: get_conversation_member(conversation_id, member_id, custom_headers =
-    None, raw = False, **operation_config)
+  signature: get_conversation_member(conversation_id, member_id, custom_headers=None,
+    raw=False, **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation Id
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: member_id
     description: Member Id
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
     defaultValue: 'False'
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: operation_config
     description: '*Operation configuration
 
@@ -281,7 +281,7 @@ methods:
   return:
     description: list or ClientRawResponse if raw=true
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ChannelAccount>]'
+    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
     - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.ConversationsOperations.get_conversation_members
   name: get_conversation_members
@@ -293,26 +293,26 @@ methods:
     This REST API takes a ConversationId and returns an array of
 
     ChannelAccount objects representing the members of the conversation.'
-  signature: get_conversation_members(conversation_id, custom_headers = None, raw
-    = False, **operation_config)
+  signature: get_conversation_members(conversation_id, custom_headers=None, raw=False,
+    **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
     defaultValue: 'False'
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: operation_config
     description: '*Operation configuration
 
@@ -321,7 +321,7 @@ methods:
   return:
     description: list or ClientRawResponse if raw=true
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ChannelAccount>]'
+    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
     - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.ConversationsOperations.get_conversation_paged_members
   name: get_conversation_paged_members
@@ -355,36 +355,36 @@ methods:
     A response to a request that has a continuation token from a prior
 
     request may rarely return members from a previous request.'
-  signature: get_conversation_paged_members(conversation_id, page_size = None, continuation_token
-    = None, custom_headers = None, raw = False, **operation_config)
+  signature: get_conversation_paged_members(conversation_id, page_size=None, continuation_token=None,
+    custom_headers=None, raw=False, **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: page_size
     description: Suggested page size
     defaultValue: None
     types:
-    - '[int](https://docs.python.org/3.6/library/functions.html#int)'
+    - <xref:int>
   - name: continuation_token
     description: Continuation Token
     defaultValue: None
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
     defaultValue: 'False'
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: operation_config
     description: '*Operation configuration
 
@@ -419,26 +419,26 @@ methods:
     an array of ChannelAccounts that describe the members of the
 
     conversation.'
-  signature: get_conversations(continuation_token = None, custom_headers = None, raw
-    = False, **operation_config)
+  signature: get_conversations(continuation_token=None, custom_headers=None, raw=False,
+    **operation_config)
   parameters:
   - name: continuation_token
     description: skip or continuation token
     defaultValue: None
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
     defaultValue: 'False'
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: operation_config
     description: '*Operation configuration
 
@@ -481,36 +481,36 @@ methods:
     A response to a request that has a continuation token from a prior
 
     request may rarely return members from a previous request.'
-  signature: get_teams_conversation_paged_members(conversation_id, page_size = None,
-    continuation_token = None, custom_headers = None, raw = False, **operation_config)
+  signature: get_teams_conversation_paged_members(conversation_id, page_size=None,
+    continuation_token=None, custom_headers=None, raw=False, **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: page_size
     description: Suggested page size
     defaultValue: None
     types:
-    - '[int](https://docs.python.org/3.6/library/functions.html#int)'
+    - <xref:int>
   - name: continuation_token
     description: Continuation Token
     defaultValue: None
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
     defaultValue: 'False'
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: operation_config
     description: '*Operation configuration
 
@@ -549,19 +549,19 @@ methods:
     conversation.
 
     Use SendToConversation in all other cases.'
-  signature: reply_to_activity(conversation_id, activity_id, activity, custom_headers
-    = None, raw = False, **operation_config)
+  signature: reply_to_activity(conversation_id, activity_id, activity, custom_headers=None,
+    raw=False, **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: activity_id
     description: activityId the reply is to (OPTIONAL)
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: activity
     description: Activity to send
     isRequired: true
@@ -571,14 +571,14 @@ methods:
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
     defaultValue: 'False'
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: operation_config
     description: '*Operation configuration
 
@@ -605,33 +605,33 @@ methods:
     duplicate activities and the timestamps are used by the client to
 
     render the activities in the right order.'
-  signature: send_conversation_history(conversation_id, activities = None, custom_headers
-    = None, raw = False, **operation_config)
+  signature: send_conversation_history(conversation_id, activities=None, custom_headers=None,
+    raw=False, **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: activities
     description: 'A collection of Activities that conforms to the
 
       Transcript schema.'
     defaultValue: None
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.Activity>]'
+    - <xref:list>[<xref:botframework.connector.models.Activity>]
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
     defaultValue: 'False'
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: operation_config
     description: '*Operation configuration
 
@@ -672,14 +672,14 @@ methods:
     conversation.
 
     Use SendToConversation in all other cases.'
-  signature: send_to_conversation(conversation_id, activity, custom_headers = None,
-    raw = False, **operation_config)
+  signature: send_to_conversation(conversation_id, activity, custom_headers=None,
+    raw=False, **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: activity
     description: Activity to send
     isRequired: true
@@ -689,14 +689,14 @@ methods:
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
     defaultValue: 'False'
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: operation_config
     description: '*Operation configuration
 
@@ -721,19 +721,19 @@ methods:
     For example, you can remove buttons after someone has clicked "Approve"
 
     button.'
-  signature: update_activity(conversation_id, activity_id, activity, custom_headers
-    = None, raw = False, **operation_config)
+  signature: update_activity(conversation_id, activity_id, activity, custom_headers=None,
+    raw=False, **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: activity_id
     description: activityId to update
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: activity
     description: replacement Activity
     isRequired: true
@@ -743,14 +743,14 @@ methods:
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
     defaultValue: 'False'
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: operation_config
     description: '*Operation configuration
 
@@ -775,14 +775,14 @@ methods:
     The response is a ResourceResponse which contains an AttachmentId which
 
     is suitable for using with the attachments API.'
-  signature: upload_attachment(conversation_id, attachment_upload, custom_headers
-    = None, raw = False, **operation_config)
+  signature: upload_attachment(conversation_id, attachment_upload, custom_headers=None,
+    raw=False, **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: attachment_upload
     description: Attachment data
     isRequired: true
@@ -792,14 +792,14 @@ methods:
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
     defaultValue: 'False'
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: operation_config
     description: '*Operation configuration
 

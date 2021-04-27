@@ -7,8 +7,8 @@ inheritances:
 - botbuilder.core.recognizer.Recognizer
 summary: A LUIS based implementation of <xref:botbuilder.core.Recognizer>.
 constructor:
-  syntax: 'LuisRecognizer(application: Union[botbuilder.ai.luis.luis_application.LuisApplication,
-    str], prediction_options: Union[botbuilder.ai.luis.luis_recognizer_options_v2.LuisRecognizerOptionsV2,
+  syntax: 'LuisRecognizer(application: typing.Union[botbuilder.ai.luis.luis_application.LuisApplication,
+    str], prediction_options: typing.Union[botbuilder.ai.luis.luis_recognizer_options_v2.LuisRecognizerOptionsV2,
     botbuilder.ai.luis.luis_recognizer_options_v3.LuisRecognizerOptionsV3, botbuilder.ai.luis.luis_prediction_options.LuisPredictionOptions]
     = None, include_api_results: bool = False)'
 methods:
@@ -19,7 +19,7 @@ methods:
     These properties are logged when the recognizer is called.'
   signature: 'fill_luis_event_properties(recognizer_result: botbuilder.core.recognizer_result.RecognizerResult,
     turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
-    Dict[str, str] = None) -> Dict[str, str]'
+    typing.Dict[str, str] = None) -> typing.Dict[str, str]'
   parameters:
   - name: recognizer_result
     description: Last activity sent from user.
@@ -52,7 +52,7 @@ methods:
   summary: Invoked prior to a LuisResult being logged.
   signature: 'on_recognizer_result(recognizer_result: botbuilder.core.recognizer_result.RecognizerResult,
     turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
-    Dict[str, str] = None, telemetry_metrics: Dict[str, float] = None)'
+    typing.Dict[str, str] = None, telemetry_metrics: typing.Dict[str, float] = None)'
   parameters:
   - name: recognizer_result
     description: The LuisResult for the call.
@@ -85,8 +85,9 @@ methods:
   name: recognize
   summary: Return results of the analysis (suggested actions and intents).
   signature: 'recognize(turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
-    Dict[str, str] = None, telemetry_metrics: Dict[str, float] = None, luis_prediction_options:
-    botbuilder.ai.luis.luis_prediction_options.LuisPredictionOptions = None) -> botbuilder.core.recognizer_result.RecognizerResult'
+    typing.Dict[str, str] = None, telemetry_metrics: typing.Dict[str, float] = None,
+    luis_prediction_options: botbuilder.ai.luis.luis_prediction_options.LuisPredictionOptions
+    = None) -> botbuilder.core.recognizer_result.RecognizerResult'
   parameters:
   - name: turn_context
     description: Context object containing information for a single conversation turn
@@ -132,7 +133,7 @@ methods:
     description: Intent name to return should a top intent be found, defaults to None.
     defaultValue: None
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str), <xref:botbuilder.ai.luis.luis_recognizer.optional>'
+    - <xref:str>, <xref:optional>
   - name: min_score
     description: 'Minimum score needed for an intent to be considered as a top intent.
       If all intents in the set
@@ -140,11 +141,11 @@ methods:
       are below this threshold then the *defaultIntent* is returned, defaults to 0.0.'
     defaultValue: '0.0'
     types:
-    - '[float](https://docs.python.org/3.6/library/functions.html#float), <xref:botbuilder.ai.luis.luis_recognizer.optional>'
+    - <xref:float>, <xref:optional>
   return:
     description: The top scoring intent name.
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
 attributes:
 - uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.luis_trace_label
   name: luis_trace_label

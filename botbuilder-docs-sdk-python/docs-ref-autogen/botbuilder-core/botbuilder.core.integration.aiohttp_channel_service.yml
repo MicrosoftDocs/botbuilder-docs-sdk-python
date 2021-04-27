@@ -22,8 +22,8 @@ functions:
     isRequired: true
 - uid: botbuilder.core.integration.aiohttp_channel_service.get_serialized_response
   name: get_serialized_response
-  signature: 'get_serialized_response(model_or_list: Union[msrest.serialization.Model,
-    List[msrest.serialization.Model]]) -> aiohttp.web_response.Response'
+  signature: 'get_serialized_response(model_or_list: typing.Union[msrest.serialization.Model,
+    typing.List[msrest.serialization.Model]]) -> aiohttp.web_response.Response'
   parameters:
   - name: model_or_list
     isRequired: true

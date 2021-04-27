@@ -11,12 +11,11 @@ constructor:
 variables:
 - name: state
   types:
-  - <xref:botbuilder.dialogs.component_dialog.persisted_dialog>
+  - <xref:persisted_dialog>
 methods:
 - uid: botbuilder.dialogs.component_dialog.ComponentDialog.add_dialog
   name: add_dialog
-  summary: Adds a <xref:botbuilder.dialogs.component_dialog.Dialog> to the component
-    dialog and returns the updated component.
+  summary: Adds a <xref:Dialog> to the component dialog and returns the updated component.
   signature: 'add_dialog(dialog: botbuilder.dialogs.dialog.Dialog) -> object'
   parameters:
   - name: dialog
@@ -48,7 +47,7 @@ methods:
     description: Optional, initial information to pass to the dialog.
     defaultValue: None
     types:
-    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
+    - <xref:object>
   return:
     description: Signals the end of the turn
     types:
@@ -108,7 +107,7 @@ methods:
       context.
     isRequired: true
     types:
-    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
+    - <xref:object>
   return:
     description: Value to return.
     types:
@@ -169,7 +168,7 @@ methods:
     description: Optional, initial information to pass to the dialog.
     isRequired: true
     types:
-    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
+    - <xref:object>
   remarks: 'If the task is successful, the result indicates whether the dialog is
     still
 
@@ -277,7 +276,7 @@ methods:
     description: Optional, value returned from the dialog that was called.
     defaultValue: None
     types:
-    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
+    - <xref:object>
   return:
     description: Signals the end of the turn
     types:

@@ -6,7 +6,7 @@ summary: Common utilities for Django middleware.
 functions:
 - uid: botbuilder.applicationinsights.django.common.create_client
   name: create_client
-  signature: 'create_client(aisettings = None, telemetry_processor: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
+  signature: 'create_client(aisettings=None, telemetry_processor: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
     = None)'
   parameters:
   - name: aisettings
@@ -37,12 +37,12 @@ functions:
     description: instrumentation key
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: channel
     description: Telemetry channel
     isRequired: true
     types:
-    - <xref:botbuilder.applicationinsights.django.common.TelemetryChannel>
+    - <xref:TelemetryChannel>
   - name: telemetry_processor
     description: use an existing telemetry processor from caller.
     defaultValue: None
@@ -51,7 +51,7 @@ functions:
   return:
     description: a telemetry client with telemetry processor.
     types:
-    - <xref:botbuilder.applicationinsights.django.common.TelemetryClient>
+    - <xref:TelemetryClient>
 - uid: botbuilder.applicationinsights.django.common.load_settings
   name: load_settings
   signature: load_settings()

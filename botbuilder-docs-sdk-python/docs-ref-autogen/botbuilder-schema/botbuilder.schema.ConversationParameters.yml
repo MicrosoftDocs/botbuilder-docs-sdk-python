@@ -7,15 +7,15 @@ inheritances:
 - msrest.serialization.Model
 summary: Parameters for creating a new conversation.
 constructor:
-  syntax: 'ConversationParameters(*, is_group: bool = None, bot = None, members =
-    None, topic_name: str = None, activity = None, channel_data = None, tenant_id
-    = None, **kwargs) -> None'
+  syntax: 'ConversationParameters(*, is_group: bool = None, bot=None, members=None,
+    topic_name: str = None, activity=None, channel_data=None, tenant_id=None, **kwargs)
+    -> None'
   parameters:
   - name: is_group
     description: IsGroup
     isRequired: true
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: bot
     description: The bot address for this conversation
     isRequired: true
@@ -25,14 +25,14 @@ constructor:
     description: Members to add to the conversation
     isRequired: true
     types:
-    - '[list](https://docs.python.org/3.6/library/stdtypes.html#list)[<xref:botframework.connector.models.ChannelAccount>]'
+    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
   - name: topic_name
     description: '(Optional) Topic of the conversation (if supported by
 
       the channel)'
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: activity
     description: '(Optional) When creating a new conversation, use this
 
@@ -46,9 +46,9 @@ constructor:
       conversation'
     isRequired: true
     types:
-    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
+    - <xref:object>
   - name: tenant_id
     description: (Optional) The tenant ID in which the conversation should be created
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>

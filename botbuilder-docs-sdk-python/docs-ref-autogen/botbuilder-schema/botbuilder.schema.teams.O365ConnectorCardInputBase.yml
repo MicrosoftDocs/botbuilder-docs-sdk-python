@@ -7,8 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: O365 connector card input for ActionCard action.
 constructor:
-  syntax: 'O365ConnectorCardInputBase(*, type = None, id: str = None, is_required:
-    bool = None, title: str = None, value: str = None, **kwargs) -> None'
+  syntax: 'O365ConnectorCardInputBase(*, type=None, id: str = None, is_required: bool
+    = None, title: str = None, value: str = None, **kwargs) -> None'
   parameters:
   - name: type
     description: 'Input type name. Possible values include: ''textInput'',
@@ -16,26 +16,26 @@ constructor:
       ''dateInput'', ''multichoiceInput'''
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: id
     description: Input Id. It must be unique per entire O365 connector card.
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: is_required
     description: 'Define if this input is a required field. Default
 
       value is false.'
     isRequired: true
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: title
     description: Input title that will be shown as the placeholder
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: value
     description: Default value for this input field
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>

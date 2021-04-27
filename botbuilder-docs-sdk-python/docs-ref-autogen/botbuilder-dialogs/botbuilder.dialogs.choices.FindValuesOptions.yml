@@ -9,5 +9,5 @@ summary: Contains search options, used to control how choices are recognized in 
   user's utterance.
 constructor:
   syntax: 'FindValuesOptions(allow_partial_matches: bool = None, locale: str = None,
-    max_token_distance: int = None, tokenizer: Callable[[str, str], List[botbuilder.dialogs.choices.token.Token]]
+    max_token_distance: int = None, tokenizer: typing.Callable[[str, str], typing.List[botbuilder.dialogs.choices.token.Token]]
     = None)'

@@ -17,14 +17,14 @@ methods:
 
     A token issued by the Bot Framework emulator will FAIL this check.'
   signature: 'authenticate_emulator_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
-    channel_service_or_provider: Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
+    channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
     channel_id: str) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: auth_header
     description: 'The raw HTTP header in the format: ''Bearer [longString]'''
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: credentials
     description: The user defined set of valid credentials, such as the AppId.
     isRequired: true
@@ -45,7 +45,7 @@ methods:
     description: Bearer Token, in the 'Bearer [Long String]' Format.
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   return:
     description: True, if the token was issued by the Emulator. Otherwise, false.
 attributes:

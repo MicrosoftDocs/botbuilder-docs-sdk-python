@@ -7,7 +7,7 @@ inheritances:
 - botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
 summary: Application Insights Telemetry Processor for Bot
 constructor:
-  syntax: 'BotTelemetryProcessor(processors: List[botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor]
+  syntax: 'BotTelemetryProcessor(processors: typing.List[botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor]
     = None)'
 methods:
 - uid: botbuilder.applicationinsights.BotTelemetryProcessor.can_process
@@ -17,8 +17,8 @@ methods:
     :return: True if the request body can be processed, False otherwise.
 
     :rtype: bool'
-  signature: can_process(self) -> bool
+  signature: can_process() -> bool
 - uid: botbuilder.applicationinsights.BotTelemetryProcessor.get_request_body
   name: get_request_body
   summary: Retrieve the request body from flask/django middleware component.
-  signature: get_request_body(self) -> str
+  signature: get_request_body() -> str

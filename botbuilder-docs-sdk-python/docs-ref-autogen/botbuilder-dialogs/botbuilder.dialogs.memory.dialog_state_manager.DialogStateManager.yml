@@ -6,7 +6,7 @@ module: botbuilder.dialogs.memory.dialog_state_manager
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'DialogStateManager(dialog_context: ''DialogContext'', configuration: botbuilder.dialogs.memory.dialog_state_manager_configuration.DialogStateManagerConfiguration
+  syntax: 'DialogStateManager(dialog_context: DialogContext, configuration: botbuilder.dialogs.memory.dialog_state_manager_configuration.DialogStateManagerConfiguration
     = None)'
 methods:
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.add
@@ -81,7 +81,7 @@ methods:
     \ a particular index.\n:param array: The one-dimensional array that is the destination\
     \ of the elements copied\n\n   from the dialog state manager. The array must have\
     \ zero-based indexing."
-  signature: 'copy_to(array: List[Tuple[str, object]], array_index: int)'
+  signature: 'copy_to(array: typing.List[Tuple[str, object]], array_index: int)'
   parameters:
   - name: array_index
     isRequired: true
@@ -119,7 +119,7 @@ methods:
   summary: 'Returns an enumerator that iterates through the collection.
 
     :return: An enumerator that can be used to iterate through the collection.'
-  signature: get_enumerator(self) -> Iterator[Tuple[str, object]]
+  signature: get_enumerator() -> Iterator[Tuple[str, object]]
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.get_int_value
   name: get_int_value
   summary: 'Get an int value from memory using a path expression.
@@ -151,7 +151,7 @@ methods:
   summary: 'Gets all memoryscopes suitable for logging.
 
     :return: object which represents all memory scopes.'
-  signature: get_memory_snapshot(self) -> Dict[str, object]
+  signature: get_memory_snapshot() -> typing.Dict[str, object]
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.get_string_value
   name: get_string_value
   summary: 'Get a string value from memory using a path expression.
@@ -179,8 +179,8 @@ methods:
     :param default_value: Function to give default value if there is none (OPTIONAL).
 
     :return: Result or null if the path is not valid.'
-  signature: 'get_value(class_type: Type, path_expression: str, default_value: Callable[[],
-    ~T] = None) -> ~T'
+  signature: 'get_value(class_type: Type, path_expression: str, default_value: typing.Callable[T]
+    = None) -> ~T'
   parameters:
   - name: class_type
     isRequired: true
@@ -193,7 +193,7 @@ methods:
   summary: 'Load all of the scopes.
 
     :return:'
-  signature: load_all_scopes(self)
+  signature: load_all_scopes()
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.remove
   name: remove
   summary: 'Removes the element with the specified key from the dialog state manager.
@@ -247,7 +247,7 @@ methods:
   summary: 'Save all changes for all scopes.
 
     :return:'
-  signature: save_all_changes(self)
+  signature: save_all_changes()
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.set_value
   name: set_value
   summary: 'Set memory to value.
@@ -270,7 +270,7 @@ methods:
     :param paths: Paths to track.
 
     :return: Normalized paths to pass to any_path_changed.'
-  signature: 'track_paths(paths: Iterable[str]) -> List[str]'
+  signature: 'track_paths(paths: Iterable[str]) -> typing.List[str]'
   parameters:
   - name: paths
     isRequired: true
@@ -307,7 +307,7 @@ methods:
   summary: 'Version help caller to identify the updates and decide cache or not.
 
     :return: Current version.'
-  signature: version(self) -> str
+  signature: version() -> str
 attributes:
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.configuration
   name: configuration

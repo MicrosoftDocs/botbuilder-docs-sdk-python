@@ -7,17 +7,17 @@ inheritances:
 - msrest.serialization.Model
 summary: Invoke ('tab/submit') request value payload data.
 constructor:
-  syntax: TabSubmitData(*, type = None, properties = None, **kwargs) -> None
+  syntax: TabSubmitData(*, type=None, properties=None, **kwargs) -> None
   parameters:
   - name: type
     description: Currently, 'tab/submit'.
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: properties
     description: 'Gets or sets properties that are not otherwise defined by the TabSubmit
 
       type but that might appear in the serialized REST JSON object.'
     isRequired: true
     types:
-    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
+    - <xref:object>

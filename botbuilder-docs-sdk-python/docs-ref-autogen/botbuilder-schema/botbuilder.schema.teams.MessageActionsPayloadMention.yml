@@ -8,18 +8,18 @@ inheritances:
 summary: Represents the entity that was mentioned in the message.
 constructor:
   syntax: 'MessageActionsPayloadMention(*, id: int = None, mention_text: str = None,
-    mentioned = None, **kwargs) -> None'
+    mentioned=None, **kwargs) -> None'
   parameters:
   - name: id
     description: The id of the mentioned entity.
     isRequired: true
     types:
-    - '[int](https://docs.python.org/3.6/library/functions.html#int)'
+    - <xref:int>
   - name: mention_text
     description: The plaintext display name of the mentioned entity.
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: mentioned
     description: Provides more details on the mentioned entity.
     isRequired: true

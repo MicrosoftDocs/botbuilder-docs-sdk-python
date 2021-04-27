@@ -7,7 +7,7 @@ inheritances:
 - msrest.serialization.Model
 summary: Supplementary parameter for media events.
 constructor:
-  syntax: MediaEventValue(*, card_value = None, **kwargs) -> None
+  syntax: MediaEventValue(*, card_value=None, **kwargs) -> None
   parameters:
   - name: card_value
     description: 'Callback parameter specified in the Value field of the
@@ -15,4 +15,4 @@ constructor:
       MediaCard that originated this event'
     isRequired: true
     types:
-    - '[object](https://docs.python.org/3.6/library/functions.html#object)'
+    - <xref:object>

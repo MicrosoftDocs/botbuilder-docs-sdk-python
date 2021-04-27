@@ -54,7 +54,7 @@ methods:
     to determine if a dialog was run and a reply was sent to the user.
 
     :return:'
-  signature: continue_dialog(self)
+  signature: continue_dialog()
 - uid: botbuilder.dialogs.DialogContext.emit_event
   name: emit_event
   summary: 'Searches for a dialog with a given ID.
@@ -191,7 +191,7 @@ methods:
     Prompts that have a reprompt behavior.
 
     :return:'
-  signature: reprompt_dialog(self)
+  signature: reprompt_dialog()
 attributes:
 - uid: botbuilder.dialogs.DialogContext.active_dialog
   name: active_dialog

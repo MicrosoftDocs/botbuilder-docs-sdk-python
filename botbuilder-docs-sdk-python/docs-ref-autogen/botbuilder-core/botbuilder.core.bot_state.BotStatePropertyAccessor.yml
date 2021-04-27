@@ -20,7 +20,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.TurnContext>
+    - <xref:TurnContext>
 - uid: botbuilder.core.bot_state.BotStatePropertyAccessor.get
   name: get
   summary: Gets the property value.
@@ -31,7 +31,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.TurnContext>
+    - <xref:TurnContext>
   - name: default_value_or_factory
     description: Defines the default value for the property
     defaultValue: None
@@ -45,7 +45,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.TurnContext>
+    - <xref:TurnContext>
   - name: value
     description: The value to assign to the property
     isRequired: true

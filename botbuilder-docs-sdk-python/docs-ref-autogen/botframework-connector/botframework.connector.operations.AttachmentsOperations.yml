@@ -34,31 +34,31 @@ methods:
 
 
     Get the named view as binary content.'
-  signature: get_attachment(attachment_id, view_id, custom_headers = None, raw = False,
-    callback = None, **operation_config)
+  signature: get_attachment(attachment_id, view_id, custom_headers=None, raw=False,
+    callback=None, **operation_config)
   parameters:
   - name: attachment_id
     description: attachment id
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: view_id
     description: View id from attachmentInfo
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
     defaultValue: 'False'
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: callback
     description: 'When specified, will be called with each chunk of
 
@@ -69,8 +69,7 @@ methods:
       data is uploading, response will be None.'
     defaultValue: None
     types:
-    - <xref:botframework.connector.operations.Callable>[<xref:botframework.connector.operations.Bytes>,
-      <xref:botframework.connector.operations.response=None>]
+    - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
   - name: operation_config
     description: '*Operation configuration
 
@@ -79,7 +78,7 @@ methods:
   return:
     description: object or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.operations.Generator>
+    - <xref:Generator>
     - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.AttachmentsOperations.get_attachment_info
   name: get_attachment_info
@@ -87,26 +86,25 @@ methods:
 
 
     Get AttachmentInfo structure describing the attachment views.'
-  signature: get_attachment_info(attachment_id, custom_headers = None, raw = False,
-    **operation_config)
+  signature: get_attachment_info(attachment_id, custom_headers=None, raw=False, **operation_config)
   parameters:
   - name: attachment_id
     description: attachment id
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - '[dict](https://docs.python.org/3.6/library/stdtypes.html#dict)'
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
     defaultValue: 'False'
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: operation_config
     description: '*Operation configuration
 

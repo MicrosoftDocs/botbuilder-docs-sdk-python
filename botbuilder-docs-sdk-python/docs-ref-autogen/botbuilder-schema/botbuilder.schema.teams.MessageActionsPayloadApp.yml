@@ -7,8 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: Represents an application entity.
 constructor:
-  syntax: 'MessageActionsPayloadApp(*, application_identity_type = None, id: str =
-    None, display_name: str = None, **kwargs) -> None'
+  syntax: 'MessageActionsPayloadApp(*, application_identity_type=None, id: str = None,
+    display_name: str = None, **kwargs) -> None'
   parameters:
   - name: application_identity_type
     description: 'The type of application. Possible values
@@ -17,15 +17,13 @@ constructor:
 
       ''webhook'''
     isRequired: true
-    types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str'
   - name: id
     description: The id of the application.
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: display_name
     description: The plaintext display name of the application.
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>

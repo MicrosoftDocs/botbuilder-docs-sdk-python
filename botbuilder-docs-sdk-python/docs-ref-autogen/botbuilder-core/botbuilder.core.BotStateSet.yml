@@ -6,7 +6,7 @@ module: botbuilder.core
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'BotStateSet(bot_states: List[botbuilder.core.bot_state.BotState])'
+  syntax: 'BotStateSet(bot_states: typing.List[botbuilder.core.bot_state.BotState])'
 methods:
 - uid: botbuilder.core.BotStateSet.add
   name: add

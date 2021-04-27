@@ -19,11 +19,11 @@ methods:
     description: The Turn Context to retrieve the Activity's Channel Id from.
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.choices.TurnContext>
+    - <xref:TurnContext>
   return:
     description: The Channel Id from the Turn Context's Activity.
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
 - uid: botbuilder.dialogs.choices.Channel.has_message_feed
   name: has_message_feed
   summary: Determine if a Channel has a Message Feed.
@@ -33,11 +33,11 @@ methods:
     description: The Channel to check for Message Feed.
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   return:
     description: True if the Channel has a Message Feed, False if it does not.
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
 - uid: botbuilder.dialogs.choices.Channel.max_action_title_length
   name: max_action_title_length
   summary: Maximum length allowed for Action Titles.
@@ -47,12 +47,12 @@ methods:
     description: The Channel to determine Maximum Action Title Length.
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   return:
     description: The total number of characters allowed for an Action Title on a specific
       Channel.
     types:
-    - '[int](https://docs.python.org/3.6/library/functions.html#int)'
+    - <xref:int>
 - uid: botbuilder.dialogs.choices.Channel.supports_card_actions
   name: supports_card_actions
   summary: Determine if a number of Card Actions are supported by a Channel.
@@ -62,17 +62,17 @@ methods:
     description: The Channel to check if the Card Actions are supported in.
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: button_cnt
     description: Defaults to 100. The number of Card Actions to check for the Channel.
     defaultValue: '100'
     types:
-    - '[int](https://docs.python.org/3.6/library/functions.html#int), <xref:botbuilder.dialogs.choices.optional>'
+    - <xref:int>, <xref:optional>
   return:
     description: "True if the Channel supports the button_cnt total Card Actions,\
       \ False if the Channel does not support\n   that number of Card Actions."
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
 - uid: botbuilder.dialogs.choices.Channel.supports_suggested_actions
   name: supports_suggested_actions
   summary: Determine if a number of Suggested Actions are supported by a Channel.
@@ -83,15 +83,15 @@ methods:
     description: The Channel to check the if Suggested Actions are supported in.
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: button_cnt
     description: Defaults to 100. The number of Suggested Actions to check for the
       Channel.
     defaultValue: '100'
     types:
-    - '[int](https://docs.python.org/3.6/library/functions.html#int), <xref:botbuilder.dialogs.choices.optional>'
+    - <xref:int>, <xref:optional>
   return:
     description: "True if the Channel supports the button_cnt total Suggested Actions,\
       \ False if the Channel does not\n   support that number of Suggested Actions."
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>

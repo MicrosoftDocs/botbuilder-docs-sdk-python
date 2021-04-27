@@ -19,7 +19,7 @@ methods:
     :param content: Any body data to add to the request.
 
     :param config: Any specific config overrides'
-  signature: async_send(request, headers = None, content = None, **config)
+  signature: async_send(request, headers=None, content=None, **config)
   parameters:
   - name: request
     isRequired: true
@@ -42,7 +42,7 @@ methods:
     :param dict content: Dictionary of the fields of the formdata.
 
     :param config: Any specific config overrides.'
-  signature: async_send_formdata(request, headers = None, content = None, **config)
+  signature: async_send_formdata(request, headers=None, content=None, **config)
   parameters:
   - name: request
     isRequired: true

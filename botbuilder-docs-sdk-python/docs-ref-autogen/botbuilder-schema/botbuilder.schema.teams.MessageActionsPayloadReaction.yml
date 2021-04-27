@@ -7,8 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: Represents the reaction of a user to a message.
 constructor:
-  syntax: 'MessageActionsPayloadReaction(*, reaction_type = None, created_date_time:
-    str = None, user = None, **kwargs) -> None'
+  syntax: 'MessageActionsPayloadReaction(*, reaction_type=None, created_date_time:
+    str = None, user=None, **kwargs) -> None'
   parameters:
   - name: reaction_type
     description: 'The type of reaction given to the message. Possible
@@ -16,14 +16,14 @@ constructor:
       values include: ''like'', ''heart'', ''laugh'', ''surprised'', ''sad'', ''angry'''
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: created_date_time
     description: 'Timestamp of when the user reacted to the
 
       message.'
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: user
     description: The user with which the reaction is associated.
     isRequired: true

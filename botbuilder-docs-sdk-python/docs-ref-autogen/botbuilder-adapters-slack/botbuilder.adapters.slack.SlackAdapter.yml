@@ -11,15 +11,15 @@ summary: "BotAdapter that can handle incoming Slack events. Incoming Slack event
   \ and bot pipeline."
 constructor:
   syntax: 'SlackAdapter(client: botbuilder.adapters.slack.slack_client.SlackClient,
-    on_turn_error: Callable[[botbuilder.core.turn_context.TurnContext, Exception],
-    Awaitable] = None, options: botbuilder.adapters.slack.slack_adatper_options.SlackAdapterOptions
+    on_turn_error: typing.Callable[[botbuilder.core.turn_context.TurnContext, Exception],
+    typing.Awaitable] = None, options: botbuilder.adapters.slack.slack_adatper_options.SlackAdapterOptions
     = None)'
 methods:
 - uid: botbuilder.adapters.slack.SlackAdapter.continue_conversation
   name: continue_conversation
   summary: Send a proactive message to a conversation.
   signature: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
-    callback: Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
+    callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
     = None, audience: str = None)'
   parameters:
   - name: reference
@@ -36,7 +36,7 @@ methods:
     description: Unused for this override.
     defaultValue: None
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: claims_identity
     description: A ClaimsIdentity for the conversation.
     defaultValue: None
@@ -46,7 +46,7 @@ methods:
     description: Unused for this override.
     defaultValue: None
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   remarks: "Most channels require a user to initiate a conversation with a bot before\
     \ the bot can send activities to the\n   user.\n"
 - uid: botbuilder.adapters.slack.SlackAdapter.delete_activity
@@ -72,7 +72,8 @@ methods:
   name: process
   summary: Accept an incoming webhook request and convert it into a TurnContext which
     can be processed by the bot's logic.
-  signature: 'process(req: aiohttp.web_request.Request, logic: Callable) -> aiohttp.web_response.Response'
+  signature: 'process(req: aiohttp.web_request.Request, logic: typing.Callable) ->
+    aiohttp.web_response.Response'
   parameters:
   - name: req
     description: The aiohttp Request object.
@@ -92,7 +93,7 @@ methods:
   name: send_activities
   summary: Send a message from the bot to the messaging API.
   signature: 'send_activities(context: botbuilder.core.turn_context.TurnContext, activities:
-    List[botbuilder.schema._models_py3.Activity]) -> List[botbuilder.schema._models_py3.ResourceResponse]'
+    typing.List[botbuilder.schema._models_py3.Activity]) -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
   parameters:
   - name: context
     description: A TurnContext representing the current incoming message and environment.

@@ -12,24 +12,24 @@ methods:
 - uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.delete
   name: delete
   summary: Remove storeitems from storage.
-  signature: 'delete(keys: List[str])'
+  signature: 'delete(keys: typing.List[str])'
   parameters:
   - name: keys
     isRequired: true
 - uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.initialize
   name: initialize
-  signature: initialize(self)
+  signature: initialize()
 - uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.read
   name: read
   summary: Read storeitems from storage.
-  signature: 'read(keys: List[str]) -> Dict[str, object]'
+  signature: 'read(keys: typing.List[str]) -> typing.Dict[str, object]'
   parameters:
   - name: keys
     isRequired: true
 - uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.write
   name: write
   summary: Save storeitems to storage.
-  signature: 'write(changes: Dict[str, object])'
+  signature: 'write(changes: typing.Dict[str, object])'
   parameters:
   - name: changes
     isRequired: true

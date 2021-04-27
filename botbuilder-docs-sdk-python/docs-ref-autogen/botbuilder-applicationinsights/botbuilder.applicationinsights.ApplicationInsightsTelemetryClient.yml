@@ -9,7 +9,7 @@ summary: Application Insights Telemetry Client.
 constructor:
   syntax: 'ApplicationInsightsTelemetryClient(instrumentation_key: str, telemetry_client:
     applicationinsights.TelemetryClient.TelemetryClient = None, telemetry_processor:
-    Callable[[object, object], bool] = None, client_queue_size: int = None)'
+    typing.Callable[[object, object], bool] = None, client_queue_size: int = None)'
 methods:
 - uid: botbuilder.applicationinsights.ApplicationInsightsTelemetryClient.flush
   name: flush
@@ -17,14 +17,14 @@ methods:
     irrespective of what sender is
 
     being used.'
-  signature: flush(self)
+  signature: flush()
 - uid: botbuilder.applicationinsights.ApplicationInsightsTelemetryClient.track_dependency
   name: track_dependency
   summary: Sends a single dependency telemetry that was captured for the application.
   signature: 'track_dependency(name: str, data: str, type_name: str = None, target:
     str = None, duration: int = None, success: bool = None, result_code: str = None,
-    properties: Dict[str, object] = None, measurements: Dict[str, object] = None,
-    dependency_id: str = None)'
+    properties: typing.Dict[str, object] = None, measurements: typing.Dict[str, object]
+    = None, dependency_id: str = None)'
   parameters:
   - name: name
     description: 'the name of the command initiated with this dependency call. Low
@@ -33,7 +33,7 @@ methods:
       Examples are stored procedure name and URL path template.'
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: data
     description: 'the command initiated by this dependency call. Examples are SQL
       statement and HTTP URL with all
@@ -41,32 +41,32 @@ methods:
       query parameters.'
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: type_name
     description: "the dependency type name. Low cardinality value for logical grouping\
       \ of dependencies and\ninterpretation of other fields like commandName and resultCode.\
       \ Examples are SQL, Azure table, and HTTP.\n\n   (default to: None)"
     defaultValue: None
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: target
     description: 'the target site of a dependency call. Examples are server name,
       host address. (default to: None)'
     defaultValue: None
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: duration
     description: 'the number of milliseconds that this dependency call lasted. (defaults
       to: None)'
     defaultValue: None
     types:
-    - '[int](https://docs.python.org/3.6/library/functions.html#int)'
+    - <xref:int>
   - name: success
     description: 'true if the dependency call ended in success, false otherwise. (defaults
       to: None)'
     defaultValue: None
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: result_code
     description: 'the result code of a dependency call. Examples are SQL error code
       and HTTP status code.
@@ -74,7 +74,7 @@ methods:
       (defaults to: None)'
     defaultValue: None
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item.
@@ -97,19 +97,19 @@ methods:
       (defaults to: None)'
     defaultValue: None
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
 - uid: botbuilder.applicationinsights.ApplicationInsightsTelemetryClient.track_event
   name: track_event
   summary: Send information about a single event that has occurred in the context
     of the application.
-  signature: 'track_event(name: str, properties: Dict[str, object] = None, measurements:
-    Dict[str, object] = None) -> None'
+  signature: 'track_event(name: str, properties: typing.Dict[str, object] = None,
+    measurements: typing.Dict[str, object] = None) -> None'
   parameters:
   - name: name
     description: the data to associate to this event.
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
@@ -128,9 +128,9 @@ methods:
   name: track_exception
   summary: Send information about a single exception that occurred in the application.
   signature: 'track_exception(exception_type: type = None, value: Exception = None,
-    trace: <module ''traceback'' from ''c: \\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\traceback.py''>
-    = None, properties: Dict[str, object] = None, measurements: Dict[str, object]
-    = None) -> None'
+    trace: <module ''traceback'' from ''c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\traceback.py''>
+    = None, properties: typing.Dict[str, object] = None, measurements: typing.Dict[str,
+    object] = None) -> None'
   parameters:
   - name: exception_type
     description: the type of the exception that was thrown.
@@ -139,7 +139,7 @@ methods:
     description: the exception that the client wants to send.
     defaultValue: None
   - name: trace
-    description: the traceback information as returned by [sys.exc_info()](https://docs.python.org/3.6/library/sys.html#sys.exc_info).
+    description: the traceback information as returned by <xref:sys.exc_info>.
     defaultValue: None
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
@@ -161,18 +161,18 @@ methods:
     the application.
   signature: 'track_metric(name: str, value: float, tel_type: botbuilder.core.bot_telemetry_client.TelemetryDataPointType
     = None, count: int = None, min_val: float = None, max_val: float = None, std_dev:
-    float = None, properties: Dict[str, object] = None) -> NotImplemented'
+    float = None, properties: typing.Dict[str, object] = None) -> NotImplemented'
   parameters:
   - name: name
     description: The name of the metric that was captured.
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: value
     description: The value of the metric that was captured.
     isRequired: true
     types:
-    - '[float](https://docs.python.org/3.6/library/functions.html#float)'
+    - <xref:float>
   - name: tel_type
     description: 'The type of the metric. (defaults to: TelemetryDataPointType.aggregation`)'
     defaultValue: None
@@ -181,7 +181,7 @@ methods:
       (defaults to: None)'
     defaultValue: None
     types:
-    - '[int](https://docs.python.org/3.6/library/functions.html#int)'
+    - <xref:int>
   - name: min_val
     description: 'the minimum of all metrics collected that were aggregated into this
       data point. (defaults to:
@@ -189,7 +189,7 @@ methods:
       None)'
     defaultValue: None
     types:
-    - '[float](https://docs.python.org/3.6/library/functions.html#float)'
+    - <xref:float>
   - name: max_val
     description: 'the maximum of all metrics collected that were aggregated into this
       data point. (defaults to:
@@ -197,7 +197,7 @@ methods:
       None)'
     defaultValue: None
     types:
-    - '[float](https://docs.python.org/3.6/library/functions.html#float)'
+    - <xref:float>
   - name: std_dev
     description: 'the standard deviation of all metrics collected that were aggregated
       into this data point.
@@ -205,7 +205,7 @@ methods:
       (defaults to: None)'
     defaultValue: None
     types:
-    - '[float](https://docs.python.org/3.6/library/functions.html#float)'
+    - <xref:float>
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
@@ -216,19 +216,19 @@ methods:
   name: track_pageview
   summary: Send information about the page viewed in the application (a web page for
     instance).
-  signature: 'track_pageview(name: str, url: str, duration: int = 0, properties: Dict[str,
-    object] = None, measurements: Dict[str, object] = None) -> None'
+  signature: 'track_pageview(name: str, url: str, duration: int = 0, properties: typing.Dict[str,
+    object] = None, measurements: typing.Dict[str, object] = None) -> None'
   parameters:
   - name: name
     description: the name of the page that was viewed.
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: url
     description: the URL of the page that was viewed.
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: duration
     description: 'the duration of the page view in milliseconds. (defaults to: 0)'
     defaultValue: '0'
@@ -251,25 +251,25 @@ methods:
   summary: Sends a single request that was captured for the application.
   signature: 'track_request(name: str, url: str, success: bool, start_time: str =
     None, duration: int = None, response_code: str = None, http_method: str = None,
-    properties: Dict[str, object] = None, measurements: Dict[str, object] = None,
-    request_id: str = None)'
+    properties: typing.Dict[str, object] = None, measurements: typing.Dict[str, object]
+    = None, request_id: str = None)'
   parameters:
   - name: name
     description: The name for this request. All requests with the same name will be
       grouped together.
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: url
     description: The actual URL for this request (to show in individual request instances).
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: success
     description: True if the request ended in success, False otherwise.
     isRequired: true
     types:
-    - '[bool](https://docs.python.org/3.6/library/functions.html#bool)'
+    - <xref:bool>
   - name: start_time
     description: 'the start time of the request. The value should look the same as
       the one returned by
@@ -277,23 +277,23 @@ methods:
       <xref:datetime.isoformat>. (defaults to: None)'
     defaultValue: None
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: duration
     description: 'the number of milliseconds that this request lasted. (defaults to:
       None)'
     defaultValue: None
     types:
-    - '[int](https://docs.python.org/3.6/library/functions.html#int)'
+    - <xref:int>
   - name: response_code
     description: 'the response code that this request returned. (defaults to: None)'
     defaultValue: None
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: http_method
     description: 'the HTTP method that triggered this request. (defaults to: None)'
     defaultValue: None
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
@@ -313,18 +313,18 @@ methods:
       (defaults to: None)'
     defaultValue: None
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
 - uid: botbuilder.applicationinsights.ApplicationInsightsTelemetryClient.track_trace
   name: track_trace
   summary: Sends a single trace statement.
-  signature: 'track_trace(name: str, properties: Dict[str, object] = None, severity:
-    botbuilder.core.bot_telemetry_client.Severity = None)'
+  signature: 'track_trace(name: str, properties: typing.Dict[str, object] = None,
+    severity: botbuilder.core.bot_telemetry_client.Severity = None)'
   parameters:
   - name: name
     description: the trace statement.
     isRequired: true
     types:
-    - '[str](https://docs.python.org/3.6/library/stdtypes.html#str)'
+    - <xref:str>
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
