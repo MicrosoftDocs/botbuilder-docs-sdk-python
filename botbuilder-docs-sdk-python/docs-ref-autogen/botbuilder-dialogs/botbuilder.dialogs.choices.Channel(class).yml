@@ -19,11 +19,11 @@ methods:
     description: The Turn Context to retrieve the Activity's Channel Id from.
     isRequired: true
     types:
-    - <xref:TurnContext>
+    - <xref:botbuilder.dialogs.choices.TurnContext>
   return:
     description: The Channel Id from the Turn Context's Activity.
     types:
-    - <xref:str>
+    - <xref:botbuilder.dialogs.choices.str>
 - uid: botbuilder.dialogs.choices.Channel.has_message_feed
   name: has_message_feed
   summary: Determine if a Channel has a Message Feed.
@@ -33,7 +33,7 @@ methods:
     description: The Channel to check for Message Feed.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.dialogs.choices.str>
   return:
     description: True if the Channel has a Message Feed, False if it does not.
     types:
@@ -47,12 +47,12 @@ methods:
     description: The Channel to determine Maximum Action Title Length.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.dialogs.choices.str>
   return:
     description: The total number of characters allowed for an Action Title on a specific
       Channel.
     types:
-    - <xref:int>
+    - <xref:botbuilder.dialogs.choices.int>
 - uid: botbuilder.dialogs.choices.Channel.supports_card_actions
   name: supports_card_actions
   summary: Determine if a number of Card Actions are supported by a Channel.
@@ -62,12 +62,13 @@ methods:
     description: The Channel to check if the Card Actions are supported in.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.dialogs.choices.str>
   - name: button_cnt
     description: Defaults to 100. The number of Card Actions to check for the Channel.
+    isRequired: true
     defaultValue: '100'
     types:
-    - <xref:int>, <xref:optional>
+    - <xref:botbuilder.dialogs.choices.int>, <xref:botbuilder.dialogs.choices.optional>
   return:
     description: "True if the Channel supports the button_cnt total Card Actions,\
       \ False if the Channel does not support\n   that number of Card Actions."
@@ -83,13 +84,14 @@ methods:
     description: The Channel to check the if Suggested Actions are supported in.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.dialogs.choices.str>
   - name: button_cnt
     description: Defaults to 100. The number of Suggested Actions to check for the
       Channel.
+    isRequired: true
     defaultValue: '100'
     types:
-    - <xref:int>, <xref:optional>
+    - <xref:botbuilder.dialogs.choices.int>, <xref:botbuilder.dialogs.choices.optional>
   return:
     description: "True if the Channel supports the button_cnt total Suggested Actions,\
       \ False if the Channel does not\n   support that number of Suggested Actions."

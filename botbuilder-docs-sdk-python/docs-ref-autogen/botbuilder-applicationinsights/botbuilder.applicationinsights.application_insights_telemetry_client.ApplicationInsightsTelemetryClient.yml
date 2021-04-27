@@ -33,7 +33,7 @@ methods:
       Examples are stored procedure name and URL path template.'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.str>
   - name: data
     description: 'the command initiated by this dependency call. Examples are SQL
       statement and HTTP URL with all
@@ -41,29 +41,33 @@ methods:
       query parameters.'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.str>
   - name: type_name
     description: "the dependency type name. Low cardinality value for logical grouping\
       \ of dependencies and\ninterpretation of other fields like commandName and resultCode.\
       \ Examples are SQL, Azure table, and HTTP.\n\n   (default to: None)"
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:str>
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.str>
   - name: target
     description: 'the target site of a dependency call. Examples are server name,
       host address. (default to: None)'
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:str>
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.str>
   - name: duration
     description: 'the number of milliseconds that this dependency call lasted. (defaults
       to: None)'
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:int>
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.int>
   - name: success
     description: 'true if the dependency call ended in success, false otherwise. (defaults
       to: None)'
+    isRequired: true
     defaultValue: None
     types:
     - <xref:bool>
@@ -72,14 +76,16 @@ methods:
       and HTTP status code.
 
       (defaults to: None)'
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:str>
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.str>
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item.
 
       (defaults to: None)'
+    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict[str, object]>
@@ -88,6 +94,7 @@ methods:
       data item.
 
       (defaults to: None)'
+    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict[str, object]>
@@ -95,9 +102,10 @@ methods:
     description: 'the id for this dependency call. If None, a new uuid will be generated.
 
       (defaults to: None)'
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:str>
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.str>
 - uid: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient.track_event
   name: track_event
   summary: Send information about a single event that has occurred in the context
@@ -109,10 +117,11 @@ methods:
     description: the data to associate to this event.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.str>
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
+    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict[str, object]>
@@ -121,6 +130,7 @@ methods:
       data item. (defaults to:
 
       None)'
+    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict[str, object]>
@@ -134,16 +144,20 @@ methods:
   parameters:
   - name: exception_type
     description: the type of the exception that was thrown.
+    isRequired: true
     defaultValue: None
   - name: value
     description: the exception that the client wants to send.
+    isRequired: true
     defaultValue: None
   - name: trace
     description: the traceback information as returned by <xref:sys.exc_info>.
+    isRequired: true
     defaultValue: None
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
+    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict[str, object]>
@@ -152,6 +166,7 @@ methods:
       data item. (defaults to:
 
       None)'
+    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict[str, object]>
@@ -159,7 +174,7 @@ methods:
   name: track_metric
   summary: Send information about a single metric data point that was captured for
     the application.
-  signature: 'track_metric(name: str, value: float, tel_type: botbuilder.core.bot_telemetry_client.TelemetryDataPointType
+  signature: 'track_metric(name: str, value: float, tel_type: botbuilder.core.bot_telemetry_client.TelemetryDataPointtyping.Type
     = None, count: int = None, min_val: float = None, max_val: float = None, std_dev:
     float = None, properties: typing.Dict[str, object] = None) -> NotImplemented'
   parameters:
@@ -167,48 +182,54 @@ methods:
     description: The name of the metric that was captured.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.str>
   - name: value
     description: The value of the metric that was captured.
     isRequired: true
     types:
-    - <xref:float>
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.float>
   - name: tel_type
     description: 'The type of the metric. (defaults to: TelemetryDataPointType.aggregation`)'
+    isRequired: true
     defaultValue: None
   - name: count
     description: 'the number of metrics that were aggregated into this data point.
       (defaults to: None)'
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:int>
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.int>
   - name: min_val
     description: 'the minimum of all metrics collected that were aggregated into this
       data point. (defaults to:
 
       None)'
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:float>
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.float>
   - name: max_val
     description: 'the maximum of all metrics collected that were aggregated into this
       data point. (defaults to:
 
       None)'
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:float>
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.float>
   - name: std_dev
     description: 'the standard deviation of all metrics collected that were aggregated
       into this data point.
 
       (defaults to: None)'
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:float>
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.float>
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
+    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict[str, object]>
@@ -223,18 +244,20 @@ methods:
     description: the name of the page that was viewed.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.str>
   - name: url
     description: the URL of the page that was viewed.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.str>
   - name: duration
     description: 'the duration of the page view in milliseconds. (defaults to: 0)'
+    isRequired: true
     defaultValue: '0'
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
+    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict[str, object]>
@@ -243,6 +266,7 @@ methods:
       data item. (defaults to:
 
       None)'
+    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict[str, object]>
@@ -259,12 +283,12 @@ methods:
       grouped together.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.str>
   - name: url
     description: The actual URL for this request (to show in individual request instances).
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.str>
   - name: success
     description: True if the request ended in success, False otherwise.
     isRequired: true
@@ -275,28 +299,33 @@ methods:
       the one returned by
 
       <xref:datetime.isoformat>. (defaults to: None)'
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:str>
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.str>
   - name: duration
     description: 'the number of milliseconds that this request lasted. (defaults to:
       None)'
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:int>
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.int>
   - name: response_code
     description: 'the response code that this request returned. (defaults to: None)'
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:str>
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.str>
   - name: http_method
     description: 'the HTTP method that triggered this request. (defaults to: None)'
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:str>
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.str>
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
+    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict[str, object]>
@@ -305,15 +334,17 @@ methods:
       data item. (defaults to:
 
       None)'
+    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict[str, object]>
   - name: request_id
     description: 'the id for this request. If None, a new uuid will be generated.
       (defaults to: None)'
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:str>
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.str>
 - uid: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient.track_trace
   name: track_trace
   summary: Sends a single trace statement.
@@ -324,14 +355,16 @@ methods:
     description: the trace statement.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.applicationinsights.application_insights_telemetry_client.str>
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
+    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict[str, object]>
   - name: severity
     description: the severity level of this trace, one of DEBUG, INFO, WARNING, ERROR,
       CRITICAL
+    isRequired: true
     defaultValue: None

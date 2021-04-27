@@ -16,19 +16,19 @@ constructor:
       ''OpenUri'', ''HttpPOST'', ''ActionCard'''
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: name
     description: Name of the action that will be used as button title
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: id
     description: Action Id
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: body
     description: Content to be posted back to bots via invoke
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>

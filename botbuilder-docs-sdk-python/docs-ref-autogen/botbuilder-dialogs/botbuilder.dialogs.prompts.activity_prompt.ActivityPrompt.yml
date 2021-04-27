@@ -16,7 +16,7 @@ variables:
 - name: "persisted_options \u2013"
 - name: persisted_state
   types:
-  - <xref:str>
+  - <xref:botbuilder.dialogs.prompts.activity_prompt.str>
 methods:
 - uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.begin_dialog
   name: begin_dialog
@@ -29,12 +29,13 @@ methods:
     description: The dialog context for the current turn of the conversation.
     isRequired: true
     types:
-    - <xref:DialogContext>
+    - <xref:botbuilder.dialogs.prompts.activity_prompt.DialogContext>
   - name: options
     description: Optional, additional information to pass to the prompt being started.
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:PromptOptions>
+    - <xref:botbuilder.dialogs.prompts.activity_prompt.PromptOptions>
 - uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.continue_dialog
   name: continue_dialog
   summary: Called when a prompt dialog is the active dialog and the user replied with
@@ -46,7 +47,7 @@ methods:
     description: The dialog context for the current turn of the conversation.
     isRequired: true
     types:
-    - <xref:DialogContext>
+    - <xref:botbuilder.dialogs.prompts.activity_prompt.DialogContext>
 - uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.on_prompt
   name: on_prompt
   summary: Called anytime the derived class should send the user a prompt.
@@ -58,7 +59,7 @@ methods:
     description: The dialog context for the current turn of the conversation
     isRequired: true
     types:
-    - <xref:DialogContext>
+    - <xref:botbuilder.dialogs.prompts.activity_prompt.DialogContext>
   - name: state
     description: Additional state being persisted for the prompt.
     isRequired: true
@@ -68,10 +69,11 @@ methods:
     description: Options that the prompt started with in the call to <xref:DialogContext.prompt>.
     isRequired: true
     types:
-    - <xref:PromptOptions>
+    - <xref:botbuilder.dialogs.prompts.activity_prompt.PromptOptions>
   - name: isRetry
     description: If *true* the users response wasn't recognized and the re-prompt
       should be sent.
+    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -98,11 +100,11 @@ methods:
     description: A prompt options object
     isRequired: true
     types:
-    - <xref:PromptOptions>
+    - <xref:botbuilder.dialogs.prompts.activity_prompt.PromptOptions>
   return:
     types:
-    - constructed from the options initially provided in the call to <xref:async def
-      on_prompt>
+    - constructed from the options initially provided in the call to <xref:botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.async
+      def on_prompt>
 - uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.reprompt_dialog
   name: reprompt_dialog
   signature: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
@@ -125,17 +127,18 @@ methods:
     description: The dialog context for the current turn of the conversation
     isRequired: true
     types:
-    - <xref:DialogContext>
+    - <xref:botbuilder.dialogs.prompts.activity_prompt.DialogContext>
   - name: reason
     description: An enum indicating why the dialog resumed.
     isRequired: true
     types:
-    - <xref:DialogReason>
+    - <xref:botbuilder.dialogs.prompts.activity_prompt.DialogReason>
   - name: result
     description: Optional, value returned from the previous dialog on the stack.
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:object>
+    - <xref:botbuilder.dialogs.prompts.activity_prompt.object>
   remarks: 'Prompts are typically leaf nodes on the stack but the dev is free to push
     other dialogs
 

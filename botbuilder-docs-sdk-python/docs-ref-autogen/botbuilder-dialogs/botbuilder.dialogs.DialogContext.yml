@@ -22,6 +22,7 @@ methods:
   - name: dialog_id
     isRequired: true
   - name: options
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.dialogs.DialogContext.cancel_all_dialogs
   name: cancel_all_dialogs
@@ -38,10 +39,13 @@ methods:
     event_value: object = None)'
   parameters:
   - name: cancel_parents
+    isRequired: true
     defaultValue: None
   - name: event_name
+    isRequired: true
     defaultValue: None
   - name: event_value
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.dialogs.DialogContext.continue_dialog
   name: continue_dialog
@@ -81,10 +85,13 @@ methods:
   - name: name
     isRequired: true
   - name: value
+    isRequired: true
     defaultValue: None
   - name: bubble
+    isRequired: true
     defaultValue: 'True'
   - name: from_leaf
+    isRequired: true
     defaultValue: 'False'
 - uid: botbuilder.dialogs.DialogContext.end_active_dialog
   name: end_active_dialog
@@ -119,6 +126,7 @@ methods:
   signature: 'end_dialog(result: object = None)'
   parameters:
   - name: result
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.dialogs.DialogContext.find_dialog
   name: find_dialog
@@ -184,6 +192,7 @@ methods:
   - name: dialog_id
     isRequired: true
   - name: options
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.dialogs.DialogContext.reprompt_dialog
   name: reprompt_dialog

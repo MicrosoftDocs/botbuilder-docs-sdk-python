@@ -14,21 +14,21 @@ constructor:
     description: Name of the Blob container.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.azure.blob_storage.str>
   - name: account_name
     description: Name of the Blob Storage account. Required if not using connection_string.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.azure.blob_storage.str>
   - name: account_key
     description: Key of the Blob Storage account. Required if not using connection_string.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.azure.blob_storage.str>
   - name: connection_string
     description: 'Connection string of the Blob Storage account.
 
       Required if not using account_name and account_key.'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.azure.blob_storage.str>

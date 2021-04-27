@@ -14,27 +14,27 @@ constructor:
     description: Title of the card
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: subtitle
     description: Subtitle of the card
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: text
     description: Text for the card
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: images
     description: Array of images for the card
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.CardImage>]
+    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.CardImage>]
   - name: buttons
     description: Set of actions applicable to the current card
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.CardAction>]
+    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.CardAction>]
   - name: tap
     description: 'This action will be activated when user taps on the card
 

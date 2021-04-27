@@ -25,7 +25,7 @@ methods:
 
       activity.channelData.'
     types:
-    - <xref:SlackMessage>
+    - <xref:botbuilder.adapters.slack.slack_helper.SlackMessage>
 - uid: botbuilder.adapters.slack.slack_helper.SlackHelper.command_to_activity
   name: command_to_activity
   summary: Creates an activity based on a Slack event related to a slash command.
@@ -36,12 +36,12 @@ methods:
     description: The data of the Slack event.
     isRequired: true
     types:
-    - <xref:SlackRequestBody>
+    - <xref:botbuilder.adapters.slack.slack_helper.SlackRequestBody>
   - name: client
     description: The Slack client.
     isRequired: true
     types:
-    - <xref:SlackClient>
+    - <xref:botbuilder.adapters.slack.slack_helper.SlackClient>
   return:
     description: An activity containing the event data.
     types:
@@ -55,16 +55,16 @@ methods:
     description: The content type of the body.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.adapters.slack.slack_helper.str>
   - name: request_body
     description: The body of the request.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.adapters.slack.slack_helper.str>
   return:
     description: A SlackRequestBody object.
     types:
-    - <xref:SlackRequestBody>
+    - <xref:botbuilder.adapters.slack.slack_helper.SlackRequestBody>
 - uid: botbuilder.adapters.slack.slack_helper.SlackHelper.event_to_activity
   name: event_to_activity
   summary: Creates an activity based on the Slack event data.
@@ -75,12 +75,12 @@ methods:
     description: The data of the Slack event.
     isRequired: true
     types:
-    - <xref:SlackEvent>
+    - <xref:botbuilder.adapters.slack.slack_helper.SlackEvent>
   - name: client
     description: The Slack client.
     isRequired: true
     types:
-    - <xref:SlackClient>
+    - <xref:botbuilder.adapters.slack.slack_helper.SlackClient>
   return:
     description: An activity containing the event data.
     types:
@@ -95,7 +95,7 @@ methods:
     description: The payload of the Slack event.
     isRequired: true
     types:
-    - <xref:SlackPayload>
+    - <xref:botbuilder.adapters.slack.slack_helper.SlackPayload>
   return:
     description: An activity containing the event data.
     types:
@@ -109,7 +109,7 @@ methods:
     description: The query string to convert.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.adapters.slack.slack_helper.str>
   return:
     description: A dictionary with the query values.
     types:
@@ -129,17 +129,19 @@ methods:
     description: The HTTP result code to return.
     isRequired: true
     types:
-    - <xref:int>
+    - <xref:botbuilder.adapters.slack.slack_helper.int>
   - name: text
     description: The text to return.
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:str>
+    - <xref:botbuilder.adapters.slack.slack_helper.str>
   - name: encoding
     description: The text encoding. Defaults to UTF-8.
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:str>
+    - <xref:botbuilder.adapters.slack.slack_helper.str>
   return:
     description: The aoihttp Response
     types:

@@ -16,19 +16,19 @@ constructor:
       ''OpenUri'', ''HttpPOST'', ''ActionCard'''
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: name
     description: Name of the action that will be used as button title
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: id
     description: Action Id
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: target
     description: Target urls, only the first url effective for card button
     isRequired: true
     types:
-    - <xref:list>[<xref:str>]
+    - <xref:botbuilder.schema.teams.list>[<xref:botbuilder.schema.teams.str>]

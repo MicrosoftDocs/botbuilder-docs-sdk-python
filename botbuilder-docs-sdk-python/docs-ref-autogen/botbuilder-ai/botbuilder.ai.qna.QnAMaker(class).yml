@@ -44,18 +44,20 @@ methods:
     - <xref:botbuilder.core.TurnContext>
   - name: telemetry_properties
     description: Properties to add/override for the event.
+    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict[str, str]>
   - name: telemetry_metrics
     description: Metrics to add/override for the event.
+    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict[str, float]>
   return:
     description: Event properties and metrics for the QnaMessage event for telemetry.
     types:
-    - <xref:EventData>
+    - <xref:botbuilder.ai.qna.EventData>
 - uid: botbuilder.ai.qna.QnAMaker.get_answers
   name: get_answers
   summary: Generates answers from the knowledge base.
@@ -67,10 +69,13 @@ methods:
   - name: context
     isRequired: true
   - name: options
+    isRequired: true
     defaultValue: None
   - name: telemetry_properties
+    isRequired: true
     defaultValue: None
   - name: telemetry_metrics
+    isRequired: true
     defaultValue: None
   return:
     description: A list of answers for the user's query, sorted in decreasing order
@@ -88,10 +93,13 @@ methods:
   - name: context
     isRequired: true
   - name: options
+    isRequired: true
     defaultValue: None
   - name: telemetry_properties
+    isRequired: true
     defaultValue: None
   - name: telemetry_metrics
+    isRequired: true
     defaultValue: None
   return:
     description: A list of answers for the user's query, sorted in decreasing order
@@ -124,6 +132,8 @@ methods:
   - name: turn_context
     isRequired: true
   - name: telemetry_properties
+    isRequired: true
     defaultValue: None
   - name: telemetry_metrics
+    isRequired: true
     defaultValue: None

@@ -17,19 +17,19 @@ constructor:
       Possible values include: ''list'', ''grid'''
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: type
     description: 'The type of the result. Possible values include: ''result'',
 
       ''auth'', ''config'', ''message'', ''botMessagePreview'''
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: attachments
     description: (Only when type is result) Attachments
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.teams.models.MessagingExtensionAttachment>]
+    - <xref:botbuilder.schema.teams.list>[<xref:botframework.connector.teams.models.MessagingExtensionAttachment>]
   - name: suggested_actions
     isRequired: true
     types:
@@ -38,7 +38,7 @@ constructor:
     description: (Only when type is message) Text
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: activity_preview
     description: '(Only when type is botMessagePreview) Message
 

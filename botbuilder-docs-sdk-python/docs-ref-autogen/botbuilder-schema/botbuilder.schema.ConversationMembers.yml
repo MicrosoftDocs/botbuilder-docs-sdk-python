@@ -13,9 +13,9 @@ constructor:
     description: Conversation ID
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: members
     description: List of members in this conversation
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
+    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.ChannelAccount>]

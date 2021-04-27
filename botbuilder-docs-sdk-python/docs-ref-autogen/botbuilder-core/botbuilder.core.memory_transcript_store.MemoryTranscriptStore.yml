@@ -49,8 +49,10 @@ methods:
   - name: conversation_id
     isRequired: true
   - name: continuation_token
+    isRequired: true
     defaultValue: None
   - name: start_date
+    isRequired: true
     defaultValue: '0001-01-01 00:00:00'
 - uid: botbuilder.core.memory_transcript_store.MemoryTranscriptStore.list_transcripts
   name: list_transcripts
@@ -67,6 +69,7 @@ methods:
   - name: channel_id
     isRequired: true
   - name: continuation_token
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.memory_transcript_store.MemoryTranscriptStore.log_activity
   name: log_activity

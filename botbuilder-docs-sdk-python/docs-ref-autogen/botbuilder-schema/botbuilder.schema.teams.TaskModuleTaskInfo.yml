@@ -15,28 +15,28 @@ constructor:
     description: Appears below the app name and to the right of the app icon.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: height
     description: 'This can be a number, representing the task module''s height
 
       in pixels, or a string, one of: small, medium, large.'
     isRequired: true
     types:
-    - <xref:object>
+    - <xref:botbuilder.schema.teams.object>
   - name: width
     description: 'This can be a number, representing the task module''s width
 
       in pixels, or a string, one of: small, medium, large.'
     isRequired: true
     types:
-    - <xref:object>
+    - <xref:botbuilder.schema.teams.object>
   - name: url
     description: 'The URL of what is loaded as an iframe inside the task module.
 
       One of url or card is required.'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: card
     description: The JSON for the Adaptive card to appear in the task module.
     isRequired: true
@@ -48,11 +48,11 @@ constructor:
       this URL is opened in a browser tab.'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: completion_bot_id
     description: 'If a client does not support the task module
 
       feature, this URL is opened in a browser tab.'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>

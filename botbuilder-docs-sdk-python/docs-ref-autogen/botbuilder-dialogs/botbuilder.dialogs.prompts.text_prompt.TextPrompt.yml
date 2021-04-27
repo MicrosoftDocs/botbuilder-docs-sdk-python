@@ -31,7 +31,7 @@ methods:
     description: A prompt options object constructed from:meth:*DialogContext.prompt()*
     isRequired: true
     types:
-    - <xref:PromptOptions>
+    - <xref:botbuilder.dialogs.prompts.text_prompt.PromptOptions>
   - name: is_retry
     description: Determines whether *prompt* or *retry_prompt* should be used
     isRequired: true
@@ -62,6 +62,6 @@ methods:
     description: A prompt options object constructed from <xref:DialogContext.prompt>
     isRequired: true
     types:
-    - <xref:PromptOptions>
+    - <xref:botbuilder.dialogs.prompts.text_prompt.PromptOptions>
   return:
     description: A task representing the asynchronous operation.

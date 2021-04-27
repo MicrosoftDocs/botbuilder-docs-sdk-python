@@ -14,14 +14,14 @@ constructor:
     description: ID of this action
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: entities
     description: Entities associated with this action
     isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:botframework.connector.models.Entity>]
+    - <xref:botbuilder.schema.dict>[<xref:botbuilder.schema.str>, <xref:botframework.connector.models.Entity>]
   - name: state
     description: 'State of this action. Allowed values: *start*, *continue*, *done*'
     isRequired: true
     types:
-    - <xref:str> or <xref:botframework.connector.models.SemanticActionStates>
+    - <xref:botbuilder.schema.str> or <xref:botframework.connector.models.SemanticActionStates>

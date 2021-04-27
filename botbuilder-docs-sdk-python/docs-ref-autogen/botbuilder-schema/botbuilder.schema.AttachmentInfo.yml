@@ -14,14 +14,14 @@ constructor:
     description: Name of the attachment
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: type
     description: ContentType of the attachment
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: views
     description: attachment views
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.AttachmentView>]
+    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.AttachmentView>]

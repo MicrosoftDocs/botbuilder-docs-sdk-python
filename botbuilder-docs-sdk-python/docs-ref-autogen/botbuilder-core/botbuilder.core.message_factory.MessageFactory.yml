@@ -24,10 +24,13 @@ methods:
   - name: attachment
     isRequired: true
   - name: text
+    isRequired: true
     defaultValue: None
   - name: speak
+    isRequired: true
     defaultValue: None
   - name: input_hint
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.message_factory.MessageFactory.carousel
   name: carousel
@@ -44,10 +47,13 @@ methods:
   - name: attachments
     isRequired: true
   - name: text
+    isRequired: true
     defaultValue: None
   - name: speak
+    isRequired: true
     defaultValue: None
   - name: input_hint
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.message_factory.MessageFactory.content_url
   name: content_url
@@ -63,12 +69,16 @@ methods:
   - name: content_type
     isRequired: true
   - name: name
+    isRequired: true
     defaultValue: None
   - name: text
+    isRequired: true
     defaultValue: None
   - name: speak
+    isRequired: true
     defaultValue: None
   - name: input_hint
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.message_factory.MessageFactory.list
   name: list
@@ -85,10 +95,13 @@ methods:
   - name: attachments
     isRequired: true
   - name: text
+    isRequired: true
     defaultValue: None
   - name: speak
+    isRequired: true
     defaultValue: None
   - name: input_hint
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.message_factory.MessageFactory.suggested_actions
   name: suggested_actions
@@ -104,10 +117,13 @@ methods:
   - name: actions
     isRequired: true
   - name: text
+    isRequired: true
     defaultValue: None
   - name: speak
+    isRequired: true
     defaultValue: None
   - name: input_hint
+    isRequired: true
     defaultValue: InputHints.accepting_input
 - uid: botbuilder.core.message_factory.MessageFactory.text
   name: text
@@ -123,6 +139,8 @@ methods:
   - name: text
     isRequired: true
   - name: speak
+    isRequired: true
     defaultValue: None
   - name: input_hint
+    isRequired: true
     defaultValue: InputHints.accepting_input

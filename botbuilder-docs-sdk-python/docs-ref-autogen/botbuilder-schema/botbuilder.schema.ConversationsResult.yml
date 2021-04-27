@@ -14,9 +14,9 @@ constructor:
     description: Paging token
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: conversations
     description: List of conversations
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.ConversationMembers>]
+    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.ConversationMembers>]

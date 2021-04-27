@@ -13,9 +13,9 @@ constructor:
     description: Text for signin request
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: buttons
     description: Action to use to perform signin
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.CardAction>]
+    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.CardAction>]

@@ -14,12 +14,12 @@ constructor:
     description: Id of the command assigned by Bot
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: parameters
     description: Parameters for the query
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.teams.models.MessagingExtensionParameter>]
+    - <xref:botbuilder.schema.teams.list>[<xref:botframework.connector.teams.models.MessagingExtensionParameter>]
   - name: query_options
     isRequired: true
     types:
@@ -30,4 +30,4 @@ constructor:
       authentication/configuration flow'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>

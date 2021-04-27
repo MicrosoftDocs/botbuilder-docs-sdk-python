@@ -16,32 +16,32 @@ constructor:
     description: Title of the section
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: text
     description: Text for the section
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: activity_title
     description: Activity title
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: activity_subtitle
     description: Activity subtitle
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: activity_text
     description: Activity text
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: activity_image
     description: Activity image
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: activity_image_type
     description: 'Describes how Activity image is rendered.
 
@@ -58,14 +58,14 @@ constructor:
     description: Set of facts for the current section
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.teams.models.O365ConnectorCardFact>]
+    - <xref:botbuilder.schema.teams.list>[<xref:botframework.connector.teams.models.O365ConnectorCardFact>]
   - name: images
     description: Set of images for the current section
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.teams.models.O365ConnectorCardImage>]
+    - <xref:botbuilder.schema.teams.list>[<xref:botframework.connector.teams.models.O365ConnectorCardImage>]
   - name: potential_action
     description: Set of actions for the current section
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.teams.models.O365ConnectorCardActionBase>]
+    - <xref:botbuilder.schema.teams.list>[<xref:botframework.connector.teams.models.O365ConnectorCardActionBase>]

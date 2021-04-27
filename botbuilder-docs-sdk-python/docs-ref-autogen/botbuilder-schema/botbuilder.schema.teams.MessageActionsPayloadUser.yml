@@ -16,14 +16,14 @@ constructor:
       include: ''aadUser'', ''onPremiseAadUser'', ''anonymousGuest'', ''federatedUser'''
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: id
     description: The id of the user.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: display_name
     description: The plaintext display name of the user.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>

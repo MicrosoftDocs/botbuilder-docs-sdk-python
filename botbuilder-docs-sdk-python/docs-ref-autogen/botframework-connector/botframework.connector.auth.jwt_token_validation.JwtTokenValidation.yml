@@ -42,7 +42,9 @@ methods:
   - name: credentials
     isRequired: true
   - name: channel_service_or_provider
+    isRequired: true
   - name: auth_configuration
+    isRequired: true
     defaultValue: None
 - uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.get_app_id_from_claims
   name: get_app_id_from_claims
@@ -78,8 +80,10 @@ methods:
   - name: channel_id
     isRequired: true
   - name: service_url
+    isRequired: true
     defaultValue: None
   - name: auth_configuration
+    isRequired: true
     defaultValue: None
 - uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.validate_claims
   name: validate_claims

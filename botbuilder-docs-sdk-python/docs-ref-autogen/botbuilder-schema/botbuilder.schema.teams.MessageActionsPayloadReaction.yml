@@ -16,14 +16,14 @@ constructor:
       values include: ''like'', ''heart'', ''laugh'', ''surprised'', ''sad'', ''angry'''
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: created_date_time
     description: 'Timestamp of when the user reacted to the
 
       message.'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: user
     description: The user with which the reaction is associated.
     isRequired: true

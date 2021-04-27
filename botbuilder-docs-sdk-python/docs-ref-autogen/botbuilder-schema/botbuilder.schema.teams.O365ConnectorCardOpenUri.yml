@@ -16,19 +16,19 @@ constructor:
       ''OpenUri'', ''HttpPOST'', ''ActionCard'''
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: name
     description: Name of the action that will be used as button title
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: id
     description: Action Id
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: targets
     description: Target os / urls
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.teams.models.O365ConnectorCardOpenUriTarget>]
+    - <xref:botbuilder.schema.teams.list>[<xref:botframework.connector.teams.models.O365ConnectorCardOpenUriTarget>]

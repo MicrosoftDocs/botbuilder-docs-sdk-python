@@ -14,12 +14,12 @@ constructor:
     description: The id of the mentioned entity.
     isRequired: true
     types:
-    - <xref:int>
+    - <xref:botbuilder.schema.teams.int>
   - name: mention_text
     description: The plaintext display name of the mentioned entity.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: mentioned
     description: Provides more details on the mentioned entity.
     isRequired: true

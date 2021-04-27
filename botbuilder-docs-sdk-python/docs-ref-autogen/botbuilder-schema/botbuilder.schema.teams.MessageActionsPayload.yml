@@ -19,31 +19,31 @@ constructor:
     description: Unique id of the message.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: reply_to_id
     description: Id of the parent/root message of the thread.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: message_type
     description: 'Type of message - automatically set to message.
 
       Possible values include: ''message'''
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: created_date_time
     description: Timestamp of when the message was created.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: last_modified_date_time
     description: 'Timestamp of when the message was edited
 
       or updated.'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: deleted
     description: Indicates whether a message has been soft deleted.
     isRequired: true
@@ -53,31 +53,31 @@ constructor:
     description: Subject line of the message.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: summary
     description: 'Summary text of the message that could be used for
 
       notifications.'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: importance
     description: 'The importance of the message. Possible values include:
 
       ''normal'', ''high'', ''urgent'''
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: locale
     description: Locale of the message set by the client.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: link_to_message
     description: Link back to the message.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: from_property
     description: Sender of the message.
     isRequired: true
@@ -94,19 +94,19 @@ constructor:
       message.'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: attachments
     description: Attachments in the message - card, image, file, etc.
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.teams.models.MessageActionsPayloadAttachment>]
+    - <xref:botbuilder.schema.teams.list>[<xref:botframework.connector.teams.models.MessageActionsPayloadAttachment>]
   - name: mentions
     description: List of entities mentioned in the message.
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.teams.models.MessageActionsPayloadMention>]
+    - <xref:botbuilder.schema.teams.list>[<xref:botframework.connector.teams.models.MessageActionsPayloadMention>]
   - name: reactions
     description: Reactions for the message.
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.teams.models.MessageActionsPayloadReaction>]
+    - <xref:botbuilder.schema.teams.list>[<xref:botframework.connector.teams.models.MessageActionsPayloadReaction>]

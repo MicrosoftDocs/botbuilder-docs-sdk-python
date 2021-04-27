@@ -16,17 +16,17 @@ constructor:
     description: Title of this card
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: subtitle
     description: Subtitle of this card
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: text
     description: Text of this card
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: image
     description: Thumbnail placeholder
     isRequired: true
@@ -38,12 +38,12 @@ constructor:
       one URL, each URL is an alternative format of the same content.'
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.MediaUrl>]
+    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.MediaUrl>]
   - name: buttons
     description: Actions on this card
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.CardAction>]
+    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.CardAction>]
   - name: shareable
     description: This content may be shared with others (default:true)
     isRequired: true
@@ -69,7 +69,7 @@ constructor:
       are "16:9" and "4:3"'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: duration
     description: 'Describes the length of the media content without
 
@@ -78,9 +78,9 @@ constructor:
       Duration field.'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: value
     description: Supplementary parameter for this card
     isRequired: true
     types:
-    - <xref:object>
+    - <xref:botbuilder.schema.object>

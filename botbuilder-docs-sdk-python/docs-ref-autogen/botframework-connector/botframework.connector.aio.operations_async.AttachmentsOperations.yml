@@ -41,17 +41,17 @@ methods:
     description: attachment id
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botframework.connector.aio.operations_async.str>
   - name: view_id
     description: View id from attachmentInfo
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botframework.connector.aio.operations_async.str>
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - <xref:dict>
+    - <xref:botframework.connector.aio.operations_async.dict>
   - name: raw
     description: 'returns the direct response alongside the
 
@@ -69,7 +69,8 @@ methods:
       data is uploading, response will be None.'
     isRequired: true
     types:
-    - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
+    - <xref:botframework.connector.aio.operations_async.Callable>[<xref:botframework.connector.aio.operations_async.Bytes>,
+      <xref:botframework.connector.aio.operations_async.response=None>]
   - name: operation_config
     description: '*Operation configuration
 
@@ -78,7 +79,7 @@ methods:
   return:
     description: object or ClientRawResponse if raw=true
     types:
-    - <xref:Generator>
+    - <xref:botframework.connector.aio.operations_async.Generator>
     - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.aio.operations_async.AttachmentsOperations.get_attachment_info
   name: get_attachment_info
@@ -93,12 +94,12 @@ methods:
     description: attachment id
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botframework.connector.aio.operations_async.str>
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
     types:
-    - <xref:dict>
+    - <xref:botframework.connector.aio.operations_async.dict>
   - name: raw
     description: 'returns the direct response alongside the
 

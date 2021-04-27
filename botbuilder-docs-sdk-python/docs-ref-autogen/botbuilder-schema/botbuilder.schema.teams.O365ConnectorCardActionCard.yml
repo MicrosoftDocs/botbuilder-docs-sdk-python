@@ -16,24 +16,24 @@ constructor:
       ''OpenUri'', ''HttpPOST'', ''ActionCard'''
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: name
     description: Name of the action that will be used as button title
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: id
     description: Action Id
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: inputs
     description: 'Set of inputs contained in this ActionCard whose each item
 
       can be in any subtype of O365ConnectorCardInputBase'
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.teams.models.O365ConnectorCardInputBase>]
+    - <xref:botbuilder.schema.teams.list>[<xref:botframework.connector.teams.models.O365ConnectorCardInputBase>]
   - name: actions
     description: 'Set of actions contained in this ActionCard whose each
 
@@ -42,4 +42,4 @@ constructor:
       O365ConnectorCardActionCard, as nested ActionCard is forbidden.'
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.teams.models.O365ConnectorCardActionBase>]
+    - <xref:botbuilder.schema.teams.list>[<xref:botframework.connector.teams.models.O365ConnectorCardActionBase>]

@@ -17,12 +17,12 @@ constructor:
       ''dateInput'', ''multichoiceInput'''
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: id
     description: Input Id. It must be unique per entire O365 connector card.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: is_required
     description: 'Define if this input is a required field. Default
 
@@ -34,26 +34,26 @@ constructor:
     description: Input title that will be shown as the placeholder
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: value
     description: Default value for this input field
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: choices
     description: 'Set of choices whose each item can be in any subtype of
 
       O365ConnectorCardMultichoiceInputChoice.'
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.teams.models.O365ConnectorCardMultichoiceInputChoice>]
+    - <xref:botbuilder.schema.teams.list>[<xref:botframework.connector.teams.models.O365ConnectorCardMultichoiceInputChoice>]
   - name: style
     description: 'Choice item rendering style. Default value is ''compact''.
 
       Possible values include: ''compact'', ''expanded'''
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: is_multi_select
     description: 'Define if this input field allows multiple
 

@@ -34,6 +34,7 @@ methods:
   - name: reference
     isRequired: true
   - name: is_incoming
+    isRequired: true
     defaultValue: 'False'
 - uid: botbuilder.core.turn_context.TurnContext.copy_to
   name: copy_to
@@ -185,8 +186,10 @@ methods:
   - name: activity_or_text
     isRequired: true
   - name: speak
+    isRequired: true
     defaultValue: None
   - name: input_hint
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.turn_context.TurnContext.send_trace_activity
   name: send_trace_activity
@@ -196,10 +199,13 @@ methods:
   - name: name
     isRequired: true
   - name: value
+    isRequired: true
     defaultValue: None
   - name: value_type
+    isRequired: true
     defaultValue: None
   - name: label
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.turn_context.TurnContext.set
   name: set

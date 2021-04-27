@@ -11,7 +11,7 @@ constructor:
 variables:
 - name: state
   types:
-  - <xref:persisted_dialog>
+  - <xref:botbuilder.dialogs.persisted_dialog>
 methods:
 - uid: botbuilder.dialogs.ComponentDialog.add_dialog
   name: add_dialog
@@ -46,9 +46,10 @@ methods:
     - <xref:botbuilder.dialogs.DialogContext>
   - name: options
     description: Optional, initial information to pass to the dialog.
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:object>
+    - <xref:botbuilder.dialogs.object>
   return:
     description: Signals the end of the turn
     types:
@@ -108,7 +109,7 @@ methods:
       context.
     isRequired: true
     types:
-    - <xref:object>
+    - <xref:botbuilder.dialogs.object>
   return:
     description: Value to return.
     types:
@@ -169,7 +170,7 @@ methods:
     description: Optional, initial information to pass to the dialog.
     isRequired: true
     types:
-    - <xref:object>
+    - <xref:botbuilder.dialogs.object>
   remarks: 'If the task is successful, the result indicates whether the dialog is
     still
 
@@ -275,9 +276,10 @@ methods:
     - <xref:botbuilder.dialogs.DialogReason>
   - name: result
     description: Optional, value returned from the dialog that was called.
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:object>
+    - <xref:botbuilder.dialogs.object>
   return:
     description: Signals the end of the turn
     types:

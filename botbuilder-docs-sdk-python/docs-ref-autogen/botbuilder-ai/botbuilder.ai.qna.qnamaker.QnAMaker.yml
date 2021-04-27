@@ -44,11 +44,13 @@ methods:
     - <xref:botbuilder.core.TurnContext>
   - name: telemetry_properties
     description: Properties to add/override for the event.
+    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict[str, str]>
   - name: telemetry_metrics
     description: Metrics to add/override for the event.
+    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict[str, float]>
@@ -67,10 +69,13 @@ methods:
   - name: context
     isRequired: true
   - name: options
+    isRequired: true
     defaultValue: None
   - name: telemetry_properties
+    isRequired: true
     defaultValue: None
   - name: telemetry_metrics
+    isRequired: true
     defaultValue: None
   return:
     description: A list of answers for the user's query, sorted in decreasing order
@@ -88,16 +93,19 @@ methods:
   - name: context
     isRequired: true
   - name: options
+    isRequired: true
     defaultValue: None
   - name: telemetry_properties
+    isRequired: true
     defaultValue: None
   - name: telemetry_metrics
+    isRequired: true
     defaultValue: None
   return:
     description: A list of answers for the user's query, sorted in decreasing order
       of ranking score.
     types:
-    - <xref:QueryResult>
+    - <xref:botbuilder.ai.qna.qnamaker.QueryResult>
 - uid: botbuilder.ai.qna.qnamaker.QnAMaker.get_low_score_variation
   name: get_low_score_variation
   summary: Filters the ambiguous question for active learning.
@@ -108,7 +116,7 @@ methods:
     description: User query output.
     isRequired: true
     types:
-    - <xref:QueryResult>
+    - <xref:botbuilder.ai.qna.qnamaker.QueryResult>
   return:
     description: Filtered array of ambiguous questions.
     types:
@@ -124,6 +132,8 @@ methods:
   - name: turn_context
     isRequired: true
   - name: telemetry_properties
+    isRequired: true
     defaultValue: None
   - name: telemetry_metrics
+    isRequired: true
     defaultValue: None

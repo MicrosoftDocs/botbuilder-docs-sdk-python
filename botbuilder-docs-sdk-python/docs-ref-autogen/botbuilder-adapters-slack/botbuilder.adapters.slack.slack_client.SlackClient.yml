@@ -14,6 +14,7 @@ methods:
   signature: 'channels_list_ex(exclude_archived: bool = True) -> slack.web.slack_response.SlackResponse'
   parameters:
   - name: exclude_archived
+    isRequired: true
     defaultValue: 'True'
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.chat_post_ephemeral_ex
   name: chat_post_ephemeral_ex
@@ -28,12 +29,16 @@ methods:
   - name: target_user
     isRequired: true
   - name: parse
+    isRequired: true
     defaultValue: None
   - name: link_names
+    isRequired: true
     defaultValue: 'False'
   - name: attachments
+    isRequired: true
     defaultValue: None
   - name: as_user
+    isRequired: true
     defaultValue: 'False'
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.chat_post_message_ex
   name: chat_post_message_ex
@@ -47,22 +52,31 @@ methods:
   - name: text
     isRequired: true
   - name: bot_name
+    isRequired: true
     defaultValue: None
   - name: parse
+    isRequired: true
     defaultValue: None
   - name: link_names
+    isRequired: true
     defaultValue: 'False'
   - name: blocks
+    isRequired: true
     defaultValue: None
   - name: attachments
+    isRequired: true
     defaultValue: None
   - name: unfurl_links
+    isRequired: true
     defaultValue: 'False'
   - name: icon_url
+    isRequired: true
     defaultValue: None
   - name: icon_emoji
+    isRequired: true
     defaultValue: None
   - name: as_user
+    isRequired: true
     defaultValue: 'False'
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.chat_update_ex
   name: chat_update_ex
@@ -77,14 +91,19 @@ methods:
   - name: text
     isRequired: true
   - name: bot_name
+    isRequired: true
     defaultValue: None
   - name: parse
+    isRequired: true
     defaultValue: None
   - name: link_names
+    isRequired: true
     defaultValue: 'False'
   - name: attachments
+    isRequired: true
     defaultValue: None
   - name: as_user
+    isRequired: true
     defaultValue: 'False'
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.files_info_ex
   name: files_info_ex
@@ -94,8 +113,10 @@ methods:
   - name: file_id
     isRequired: true
   - name: page
+    isRequired: true
     defaultValue: None
   - name: count
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.files_list_ex
   name: files_list_ex
@@ -104,16 +125,22 @@ methods:
     slack.web.slack_response.SlackResponse'
   parameters:
   - name: user_id
+    isRequired: true
     defaultValue: None
   - name: date_from
+    isRequired: true
     defaultValue: None
   - name: date_to
+    isRequired: true
     defaultValue: None
   - name: count
+    isRequired: true
     defaultValue: None
   - name: page
+    isRequired: true
     defaultValue: None
   - name: types
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.files_upload_ex
   name: files_upload_ex
@@ -122,16 +149,22 @@ methods:
     str = None, file_type: str = None)'
   parameters:
   - name: file
+    isRequired: true
     defaultValue: None
   - name: content
+    isRequired: true
     defaultValue: None
   - name: channels
+    isRequired: true
     defaultValue: None
   - name: title
+    isRequired: true
     defaultValue: None
   - name: initial_comment
+    isRequired: true
     defaultValue: None
   - name: file_type
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.get_bot_user_identity
   name: get_bot_user_identity
@@ -157,16 +190,20 @@ methods:
   - name: channel
     isRequired: true
   - name: latest
+    isRequired: true
     defaultValue: None
   - name: oldest
+    isRequired: true
     defaultValue: None
   - name: count
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.groups_list_ex
   name: groups_list_ex
   signature: 'groups_list_ex(exclude_archived: bool = True) -> slack.web.slack_response.SlackResponse'
   parameters:
   - name: exclude_archived
+    isRequired: true
     defaultValue: 'True'
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.im_history_ex
   name: im_history_ex
@@ -176,12 +213,16 @@ methods:
   - name: channel
     isRequired: true
   - name: latest_timestamp
+    isRequired: true
     defaultValue: None
   - name: oldest_timestamp
+    isRequired: true
     defaultValue: None
   - name: count
+    isRequired: true
     defaultValue: None
   - name: unreads
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.is_logged_in
   name: is_logged_in
@@ -204,14 +245,19 @@ methods:
   - name: query
     isRequired: true
   - name: sorting
+    isRequired: true
     defaultValue: None
   - name: direction
+    isRequired: true
     defaultValue: None
   - name: enable_highlights
+    isRequired: true
     defaultValue: 'False'
   - name: count
+    isRequired: true
     defaultValue: None
   - name: page
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.search_files_ex
   name: search_files_ex
@@ -221,14 +267,19 @@ methods:
   - name: query
     isRequired: true
   - name: sorting
+    isRequired: true
     defaultValue: None
   - name: direction
+    isRequired: true
     defaultValue: None
   - name: enable_highlights
+    isRequired: true
     defaultValue: 'False'
   - name: count
+    isRequired: true
     defaultValue: None
   - name: page
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.search_messages_ex
   name: search_messages_ex
@@ -239,14 +290,19 @@ methods:
   - name: query
     isRequired: true
   - name: sorting
+    isRequired: true
     defaultValue: None
   - name: direction
+    isRequired: true
     defaultValue: None
   - name: enable_highlights
+    isRequired: true
     defaultValue: 'False'
   - name: count
+    isRequired: true
     defaultValue: None
   - name: page
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.stars_list_ex
   name: stars_list_ex
@@ -254,10 +310,13 @@ methods:
     -> slack.web.slack_response.SlackResponse'
   parameters:
   - name: user
+    isRequired: true
     defaultValue: None
   - name: count
+    isRequired: true
     defaultValue: None
   - name: page
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.test_auth
   name: test_auth

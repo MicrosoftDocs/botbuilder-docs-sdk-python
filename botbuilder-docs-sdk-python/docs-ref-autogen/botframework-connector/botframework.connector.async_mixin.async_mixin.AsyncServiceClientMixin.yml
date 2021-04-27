@@ -24,8 +24,10 @@ methods:
   - name: request
     isRequired: true
   - name: headers
+    isRequired: true
     defaultValue: None
   - name: content
+    isRequired: true
     defaultValue: None
 - uid: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin.async_send_formdata
   name: async_send_formdata
@@ -47,8 +49,10 @@ methods:
   - name: request
     isRequired: true
   - name: headers
+    isRequired: true
     defaultValue: None
   - name: content
+    isRequired: true
     defaultValue: None
 - uid: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin.stream_download_async
   name: stream_download_async

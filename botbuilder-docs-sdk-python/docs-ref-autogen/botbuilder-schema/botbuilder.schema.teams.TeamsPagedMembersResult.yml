@@ -15,9 +15,9 @@ constructor:
     description: Paging token
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: members
     description: The Teams Channel Accounts.
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.TeamsChannelAccount>]
+    - <xref:botbuilder.schema.teams.list>[<xref:botframework.connector.models.TeamsChannelAccount>]

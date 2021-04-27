@@ -32,26 +32,28 @@ methods:
     description: Teams meeting id
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botframework.connector.teams.operations.teams_operations.str>
   - name: participant_id
     description: Teams meeting participant id
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botframework.connector.teams.operations.teams_operations.str>
   - name: tenant_id
     description: Teams meeting tenant id
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botframework.connector.teams.operations.teams_operations.str>
   - name: custom_headers
     description: headers that will be added to the request
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:dict>
+    - <xref:botframework.connector.teams.operations.teams_operations.dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
+    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -77,16 +79,18 @@ methods:
     description: Team Id
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botframework.connector.teams.operations.teams_operations.str>
   - name: custom_headers
     description: headers that will be added to the request
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:dict>
+    - <xref:botframework.connector.teams.operations.teams_operations.dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
+    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -112,16 +116,18 @@ methods:
     description: Team Id
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botframework.connector.teams.operations.teams_operations.str>
   - name: custom_headers
     description: headers that will be added to the request
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:dict>
+    - <xref:botframework.connector.teams.operations.teams_operations.dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
+    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>

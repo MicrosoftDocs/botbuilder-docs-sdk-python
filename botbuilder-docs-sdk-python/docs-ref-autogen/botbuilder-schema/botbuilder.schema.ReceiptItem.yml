@@ -14,21 +14,21 @@ constructor:
     description: Title of the Card
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: subtitle
     description: 'Subtitle appears just below Title field, differs from
 
       Title in font styling only'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: text
     description: 'Text field appears just below subtitle, differs from Subtitle
 
       in font styling only'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: image
     description: Image
     isRequired: true
@@ -38,12 +38,12 @@ constructor:
     description: Amount with currency
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: quantity
     description: Number of items of given kind
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: tap
     description: 'This action will be activated when user taps on the Item
 

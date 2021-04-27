@@ -50,10 +50,13 @@ methods:
   - name: callback
     isRequired: true
   - name: bot_id
+    isRequired: true
     defaultValue: None
   - name: claims_identity
+    isRequired: true
     defaultValue: None
   - name: audience
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.bot_adapter.BotAdapter.delete_activity
   name: delete_activity
@@ -65,7 +68,7 @@ methods:
     description: The context object for the turn.
     isRequired: true
     types:
-    - <xref:TurnContext>
+    - <xref:botbuilder.core.bot_adapter.TurnContext>
   - name: reference
     description: Conversation reference for the activity to delete.
     isRequired: true
@@ -85,9 +88,10 @@ methods:
     description: The context object for the turn.
     isRequired: true
     types:
-    - <xref:TurnContext>
+    - <xref:botbuilder.core.bot_adapter.TurnContext>
   - name: callback
     description: A callback method to run at the end of the pipeline.
+    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Callable[[TurnContext], Awaitable]>
@@ -102,7 +106,7 @@ methods:
     description: The context object for the turn.
     isRequired: true
     types:
-    - <xref:TurnContext>
+    - <xref:botbuilder.core.bot_adapter.TurnContext>
   - name: activities
     description: The activities to send.
     isRequired: true
@@ -118,7 +122,7 @@ methods:
     description: The context object for the turn.
     isRequired: true
     types:
-    - <xref:TurnContext>
+    - <xref:botbuilder.core.bot_adapter.TurnContext>
   - name: activity
     description: New replacement activity.
     isRequired: true

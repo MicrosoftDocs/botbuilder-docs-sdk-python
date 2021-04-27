@@ -83,8 +83,10 @@ methods:
   - name: conversation_id
     isRequired: true
   - name: page_size
+    isRequired: true
     defaultValue: '0'
   - name: continuation_token
+    isRequired: true
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_get_conversations
   name: handle_get_conversations
   signature: 'handle_get_conversations(auth_header, continuation_token: str = '''')
@@ -93,6 +95,7 @@ methods:
   - name: auth_header
     isRequired: true
   - name: continuation_token
+    isRequired: true
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_reply_to_activity
   name: handle_reply_to_activity
   signature: handle_reply_to_activity(auth_header, conversation_id, activity_id, activity)
@@ -348,8 +351,10 @@ methods:
   - name: conversation_id
     isRequired: true
   - name: page_size
+    isRequired: true
     defaultValue: None
   - name: continuation_token
+    isRequired: true
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.on_get_conversations
   name: on_get_conversations
   summary: 'get_conversations() API for Skill
@@ -379,6 +384,7 @@ methods:
   - name: claims_identity
     isRequired: true
   - name: conversation_id
+    isRequired: true
   - name: continuation_token
     isRequired: true
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.on_reply_to_activity

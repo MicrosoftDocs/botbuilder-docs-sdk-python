@@ -15,7 +15,7 @@ constructor:
     description: User input data. Free payload with key-value pairs.
     isRequired: true
     types:
-    - <xref:object>
+    - <xref:botbuilder.schema.teams.object>
   - name: context
     description: Current user context, i.e., the current theme
     isRequired: true
@@ -25,14 +25,14 @@ constructor:
     description: Id of the command assigned by Bot
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: command_context
     description: 'The context from which the command originates.
 
       Possible values include: ''message'', ''compose'', ''commandbox'''
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.teams.str>
   - name: bot_message_preview_action
     description: 'Bot message preview action taken by
 
@@ -41,7 +41,7 @@ constructor:
   - name: bot_activity_preview
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.schema.models.Activity>]
+    - <xref:botbuilder.schema.teams.list>[<xref:botframework.schema.models.Activity>]
   - name: message_payload
     description: 'Message content sent as part of the command
 

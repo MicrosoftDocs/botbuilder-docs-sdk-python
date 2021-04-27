@@ -16,23 +16,23 @@ constructor:
       <xref:mailto:joe@smith.com>, or @joesmith or 123456)'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: name
     description: Display friendly name
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: aad_object_id
     description: 'This account''s object ID within Azure Active
 
       Directory (AAD)'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: role
     description: 'Role of the entity behind the account (Example: User, Bot,
 
       etc.). Possible values include: ''user'', ''bot'''
     isRequired: true
     types:
-    - <xref:str> or <xref:botframework.connector.models.RoleTypes>
+    - <xref:botbuilder.schema.str> or <xref:botframework.connector.models.RoleTypes>

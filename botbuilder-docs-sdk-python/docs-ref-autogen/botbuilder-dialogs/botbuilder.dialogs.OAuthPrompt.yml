@@ -26,6 +26,7 @@ methods:
     - <xref:botbuilder.dialogs.DialogContext>
   - name: options
     description: Optional, additional information to pass to the prompt being started
+    isRequired: true
     defaultValue: None
     types:
     - <xref:botbuilder.dialogs.PromptOptions>
@@ -76,16 +77,17 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - <xref:TurnContext>
+    - <xref:botbuilder.dialogs.TurnContext>
   - name: code
     description: (Optional) Optional user entered code to validate.
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:str>
+    - <xref:botbuilder.dialogs.str>
   return:
     description: A response that includes the user's token
     types:
-    - <xref:TokenResponse>
+    - <xref:botbuilder.dialogs.TokenResponse>
   remarks: 'If the task is successful and the user already has a token or the user
     successfully signs in,
 
@@ -101,7 +103,7 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - <xref:TurnContext>
+    - <xref:botbuilder.dialogs.TurnContext>
   return:
     description: A task representing the work queued to execute
   remarks: 'If the task is successful and the user already has a token or the user

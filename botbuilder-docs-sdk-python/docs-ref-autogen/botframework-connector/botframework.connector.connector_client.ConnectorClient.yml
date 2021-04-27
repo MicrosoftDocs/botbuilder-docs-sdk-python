@@ -32,12 +32,12 @@ constructor:
     description: Service URL
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botframework.connector.connector_client.str>
 variables:
 - description: Configuration for client.
   name: config
   types:
-  - <xref:ConnectorClientConfiguration>
+  - <xref:botframework.connector.connector_client.ConnectorClientConfiguration>
 - description: Attachments operations
   name: attachments
   types:

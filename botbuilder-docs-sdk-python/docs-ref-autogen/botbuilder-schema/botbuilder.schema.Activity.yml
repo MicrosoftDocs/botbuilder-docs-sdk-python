@@ -33,21 +33,21 @@ constructor:
       ''trace'', ''handoff'''
     isRequired: true
     types:
-    - <xref:str> or <xref:botframework.connector.models.ActivityTypes>
+    - <xref:botbuilder.schema.str> or <xref:botframework.connector.models.ActivityTypes>
   - name: id
     description: 'Contains an ID that uniquely identifies the activity on the
 
       channel.'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: timestamp
     description: 'Contains the date and time that the message was sent, in
 
       UTC, expressed in ISO-8601 format.'
     isRequired: true
     types:
-    - <xref:datetime>
+    - <xref:botbuilder.schema.datetime>
   - name: local_timestamp
     description: 'Contains the local date and time of the message
 
@@ -56,7 +56,7 @@ constructor:
       For example, 2016-09-23T13:07:49.4714686-07:00.'
     isRequired: true
     types:
-    - <xref:datetime>
+    - <xref:botbuilder.schema.datetime>
   - name: local_timezone
     description: 'Contains the name of the local timezone of the message,
 
@@ -65,21 +65,21 @@ constructor:
       For example, America/Los_Angeles.'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: service_url
     description: 'Contains the URL that specifies the channel''s service
 
       endpoint. Set by the channel.'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: channel_id
     description: 'Contains an ID that uniquely identifies the channel.
 
       Set by the channel.'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: from_property
     description: Identifies the sender of the message.
     isRequired: true
@@ -103,7 +103,7 @@ constructor:
       values include: ''markdown'', ''plain'', ''xml'''
     isRequired: true
     types:
-    - <xref:str> or <xref:botframework.connector.models.TextFormatTypes>
+    - <xref:botbuilder.schema.str> or <xref:botframework.connector.models.TextFormatTypes>
   - name: attachment_layout
     description: 'The layout hint for multiple attachments.
 
@@ -113,33 +113,33 @@ constructor:
     description: The collection of members added to the conversation.
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
+    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.ChannelAccount>]
   - name: members_removed
     description: 'The collection of members removed from the
 
       conversation.'
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
+    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.ChannelAccount>]
   - name: reactions_added
     description: 'The collection of reactions added to the
 
       conversation.'
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.MessageReaction>]
+    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.MessageReaction>]
   - name: reactions_removed
     description: 'The collection of reactions removed from the
 
       conversation.'
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.MessageReaction>]
+    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.MessageReaction>]
   - name: topic_name
     description: The updated topic name of the conversation.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: history_disclosed
     description: 'Indicates whether the prior history of the
 
@@ -161,17 +161,17 @@ constructor:
       The locale name can also correspond to a valid BCP-47 language tag.'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: text
     description: The text content of the message.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: speak
     description: The text to speak.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: input_hint
     description: 'Indicates whether your bot is accepting,
 
@@ -182,12 +182,12 @@ constructor:
       ''expectingInput'''
     isRequired: true
     types:
-    - <xref:str> or <xref:botframework.connector.models.InputHints>
+    - <xref:botbuilder.schema.str> or <xref:botframework.connector.models.InputHints>
   - name: summary
     description: The text to display if the channel cannot render cards.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: suggested_actions
     description: The suggested actions for the activity.
     isRequired: true
@@ -197,55 +197,55 @@ constructor:
     description: Attachments
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.Attachment>]
+    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.Attachment>]
   - name: entities
     description: 'Represents the entities that were mentioned in the
 
       message.'
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.Entity>]
+    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.Entity>]
   - name: channel_data
     description: Contains channel-specific content.
     isRequired: true
     types:
-    - <xref:object>
+    - <xref:botbuilder.schema.object>
   - name: action
     description: 'Indicates whether the recipient of a contactRelationUpdate
 
       was added or removed from the sender''s contact list.'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: reply_to_id
     description: 'Contains the ID of the message to which this message
 
       is a reply.'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: label
     description: A descriptive label for the activity.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: value_type
     description: The type of the activity's value object.
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: value
     description: A value that is associated with the activity.
     isRequired: true
     types:
-    - <xref:object>
+    - <xref:botbuilder.schema.object>
   - name: name
     description: 'The name of the operation associated with an invoke or event
 
       activity.'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
   - name: relates_to
     description: A reference to another conversation or activity.
     isRequired: true
@@ -261,21 +261,21 @@ constructor:
       ''botIssuedInvalidMessage'', ''channelFailed'''
     isRequired: true
     types:
-    - <xref:str> or <xref:botframework.connector.models.EndOfConversationCodes>
+    - <xref:botbuilder.schema.str> or <xref:botframework.connector.models.EndOfConversationCodes>
   - name: expiration
     description: 'The time at which the activity should be considered to
 
       be "expired" and should not be presented to the recipient.'
     isRequired: true
     types:
-    - <xref:datetime>
+    - <xref:botbuilder.schema.datetime>
   - name: importance
     description: 'The importance of the activity. Possible values
 
       include: ''low'', ''normal'', ''high'''
     isRequired: true
     types:
-    - <xref:str> or <xref:botframework.connector.models.ActivityImportance>
+    - <xref:botbuilder.schema.str> or <xref:botframework.connector.models.ActivityImportance>
   - name: delivery_mode
     description: 'A delivery hint to signal to the recipient alternate
 
@@ -286,21 +286,21 @@ constructor:
       ''notification'', ''expectReplies'', ''ephemeral'''
     isRequired: true
     types:
-    - <xref:str> or <xref:botframework.connector.models.DeliveryModes>
+    - <xref:botbuilder.schema.str> or <xref:botframework.connector.models.DeliveryModes>
   - name: listen_for
     description: 'List of phrases and references that speech and language
 
       priming systems should listen for'
     isRequired: true
     types:
-    - <xref:list>[<xref:str>]
+    - <xref:botbuilder.schema.list>[<xref:botbuilder.schema.str>]
   - name: text_highlights
     description: 'The collection of text fragments to highlight when
 
       the activity contains a ReplyToId value.'
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.TextHighlight>]
+    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.TextHighlight>]
   - name: semantic_action
     description: 'An optional programmatic action accompanying this
 
@@ -318,7 +318,7 @@ constructor:
       verifiable data that asserts the identity of the callers (e.g. tokens).'
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botbuilder.schema.str>
 methods:
 - uid: botbuilder.schema.Activity.apply_conversation_reference
   name: apply_conversation_reference
@@ -334,6 +334,7 @@ methods:
   - name: reference
     isRequired: true
   - name: is_incoming
+    isRequired: true
     defaultValue: 'False'
   return:
     description: his activity, updated with the delivery information.
@@ -512,9 +513,11 @@ methods:
   parameters:
   - name: text
     description: The text of the reply.
+    isRequired: true
     defaultValue: None
   - name: locale
     description: The language code for the text.
+    isRequired: true
     defaultValue: None
   return:
     description: The new message activity.
@@ -535,10 +538,13 @@ methods:
   - name: name
     isRequired: true
   - name: value
+    isRequired: true
     defaultValue: None
   - name: value_type
+    isRequired: true
     defaultValue: None
   - name: label
+    isRequired: true
     defaultValue: None
   return:
     description: The new trace activity.
@@ -557,10 +563,13 @@ methods:
   - name: name
     isRequired: true
   - name: value
+    isRequired: true
     defaultValue: None
   - name: value_type
+    isRequired: true
     defaultValue: None
   - name: label
+    isRequired: true
     defaultValue: None
   return:
     description: The new trace activity.

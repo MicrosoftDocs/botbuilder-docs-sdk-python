@@ -42,8 +42,10 @@ methods:
   - name: resource_urls
     isRequired: true
   - name: user_id
+    isRequired: true
     defaultValue: None
   - name: oauth_app_credentials
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.oauth.user_token_provider.UserTokenProvider.get_oauth_sign_in_link
   name: get_oauth_sign_in_link
@@ -71,8 +73,10 @@ methods:
   - name: connection_name
     isRequired: true
   - name: final_redirect
+    isRequired: true
     defaultValue: None
   - name: oauth_app_credentials
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.oauth.user_token_provider.UserTokenProvider.get_token_status
   name: get_token_status
@@ -104,12 +108,16 @@ methods:
   - name: context
     isRequired: true
   - name: connection_name
+    isRequired: true
     defaultValue: None
   - name: user_id
+    isRequired: true
     defaultValue: None
   - name: include_filter
+    isRequired: true
     defaultValue: None
   - name: oauth_app_credentials
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.oauth.user_token_provider.UserTokenProvider.get_user_token
   name: get_user_token
@@ -136,8 +144,10 @@ methods:
   - name: connection_name
     isRequired: true
   - name: magic_code
+    isRequired: true
     defaultValue: None
   - name: oauth_app_credentials
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.oauth.user_token_provider.UserTokenProvider.sign_out_user
   name: sign_out_user
@@ -162,8 +172,11 @@ methods:
   - name: context
     isRequired: true
   - name: connection_name
+    isRequired: true
     defaultValue: None
   - name: user_id
+    isRequired: true
     defaultValue: None
   - name: oauth_app_credentials
+    isRequired: true
     defaultValue: None

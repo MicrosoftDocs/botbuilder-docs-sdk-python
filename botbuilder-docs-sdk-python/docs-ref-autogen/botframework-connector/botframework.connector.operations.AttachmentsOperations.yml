@@ -41,21 +41,23 @@ methods:
     description: attachment id
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botframework.connector.operations.str>
   - name: view_id
     description: View id from attachmentInfo
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botframework.connector.operations.str>
   - name: custom_headers
     description: headers that will be added to the request
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:dict>
+    - <xref:botframework.connector.operations.dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
+    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -67,9 +69,11 @@ methods:
       bytes of the current chunk of data and the response object. If the
 
       data is uploading, response will be None.'
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
+    - <xref:botframework.connector.operations.Callable>[<xref:botframework.connector.operations.Bytes>,
+      <xref:botframework.connector.operations.response=None>]
   - name: operation_config
     description: '*Operation configuration
 
@@ -78,7 +82,7 @@ methods:
   return:
     description: object or ClientRawResponse if raw=true
     types:
-    - <xref:Generator>
+    - <xref:botframework.connector.operations.Generator>
     - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.AttachmentsOperations.get_attachment_info
   name: get_attachment_info
@@ -92,16 +96,18 @@ methods:
     description: attachment id
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:botframework.connector.operations.str>
   - name: custom_headers
     description: headers that will be added to the request
+    isRequired: true
     defaultValue: None
     types:
-    - <xref:dict>
+    - <xref:botframework.connector.operations.dict>
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
+    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>

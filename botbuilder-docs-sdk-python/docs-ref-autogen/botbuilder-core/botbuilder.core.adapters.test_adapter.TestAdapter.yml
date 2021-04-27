@@ -7,7 +7,7 @@ inheritances:
 - botbuilder.core.bot_adapter.BotAdapter
 - botbuilder.core.oauth.extended_user_token_provider.ExtendedUserTokenProvider
 constructor:
-  syntax: 'TestAdapter(logic: Coroutine = None, template_or_conversation: typing.Union[botbuilder.schema._models_py3.Activity,
+  syntax: 'TestAdapter(logic: typing.Coroutine = None, template_or_conversation: typing.Union[botbuilder.schema._models_py3.Activity,
     botbuilder.schema._models_py3.ConversationReference] = None, send_trace_activities:
     bool = False)'
 methods:
@@ -40,6 +40,7 @@ methods:
   - name: token
     isRequired: true
   - name: magic_code
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.adapters.test_adapter.TestAdapter.continue_conversation
   name: continue_conversation
@@ -63,10 +64,13 @@ methods:
   - name: callback
     isRequired: true
   - name: bot_id
+    isRequired: true
     defaultValue: None
   - name: claims_identity
+    isRequired: true
     defaultValue: None
   - name: audience
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.adapters.test_adapter.TestAdapter.create_conversation
   name: create_conversation
@@ -84,8 +88,10 @@ methods:
   - name: name
     isRequired: true
   - name: user
+    isRequired: true
     defaultValue: User1
   - name: bot
+    isRequired: true
     defaultValue: Bot
 - uid: botbuilder.core.adapters.test_adapter.TestAdapter.create_turn_context
   name: create_turn_context
@@ -189,8 +195,10 @@ methods:
   - name: resource_urls
     isRequired: true
   - name: user_id
+    isRequired: true
     defaultValue: None
   - name: oauth_app_credentials
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.adapters.test_adapter.TestAdapter.get_next_activity
   name: get_next_activity
@@ -218,8 +226,10 @@ methods:
   - name: connection_name
     isRequired: true
   - name: final_redirect
+    isRequired: true
     defaultValue: None
   - name: oauth_app_credentials
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.adapters.test_adapter.TestAdapter.get_sign_in_resource_from_user
   name: get_sign_in_resource_from_user
@@ -239,6 +249,7 @@ methods:
     isRequired: true
   - name: final_redirect
     description: The final URL that the OAuth flow will redirect to.
+    isRequired: true
     defaultValue: None
   return:
     description: A task that represents the work queued to execute.
@@ -268,6 +279,7 @@ methods:
     isRequired: true
   - name: final_redirect
     description: The final URL that the OAuth flow will redirect to.
+    isRequired: true
     defaultValue: None
   return:
     description: A task that represents the work queued to execute.
@@ -305,12 +317,16 @@ methods:
   - name: context
     isRequired: true
   - name: connection_name
+    isRequired: true
     defaultValue: None
   - name: user_id
+    isRequired: true
     defaultValue: None
   - name: include_filter
+    isRequired: true
     defaultValue: None
   - name: oauth_app_credentials
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.adapters.test_adapter.TestAdapter.get_user_token
   name: get_user_token
@@ -334,8 +350,10 @@ methods:
   - name: connection_name
     isRequired: true
   - name: magic_code
+    isRequired: true
     defaultValue: None
   - name: oauth_app_credentials
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.adapters.test_adapter.TestAdapter.process_activity
   name: process_activity
@@ -413,10 +431,13 @@ methods:
   - name: context
     isRequired: true
   - name: connection_name
+    isRequired: true
     defaultValue: None
   - name: user_id
+    isRequired: true
     defaultValue: None
   - name: oauth_app_credentials
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.adapters.test_adapter.TestAdapter.test
   name: test
@@ -444,8 +465,10 @@ methods:
   - name: expected
     isRequired: true
   - name: description
+    isRequired: true
     defaultValue: None
   - name: timeout
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.adapters.test_adapter.TestAdapter.tests
   name: tests
