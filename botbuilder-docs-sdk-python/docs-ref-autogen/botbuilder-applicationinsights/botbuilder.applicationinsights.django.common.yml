@@ -10,10 +10,8 @@ functions:
     = None)'
   parameters:
   - name: aisettings
-    isRequired: true
     defaultValue: None
   - name: telemetry_processor
-    isRequired: true
     defaultValue: None
 - uid: botbuilder.applicationinsights.django.common.dummy_client
   name: dummy_client
@@ -27,7 +25,6 @@ functions:
   - name: reason
     isRequired: true
   - name: telemetry_processor
-    isRequired: true
     defaultValue: None
 - uid: botbuilder.applicationinsights.django.common.get_telemetry_client_with_processor
   name: get_telemetry_client_with_processor
@@ -40,7 +37,7 @@ functions:
     description: instrumentation key
     isRequired: true
     types:
-    - <xref:botbuilder.applicationinsights.django.common.str>
+    - <xref:str>
   - name: channel
     description: Telemetry channel
     isRequired: true
@@ -48,7 +45,6 @@ functions:
     - <xref:botbuilder.applicationinsights.django.common.TelemetryChannel>
   - name: telemetry_processor
     description: use an existing telemetry processor from caller.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor>

@@ -17,13 +17,10 @@ methods:
   - name: turn_context
     isRequired: true
   - name: meeting_id
-    isRequired: true
     defaultValue: None
   - name: participant_id
-    isRequired: true
     defaultValue: None
   - name: tenant_id
-    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.teams.teams_info.TeamsInfo.get_member
   name: get_member
@@ -49,10 +46,8 @@ methods:
   - name: turn_context
     isRequired: true
   - name: continuation_token
-    isRequired: true
     defaultValue: None
   - name: page_size
-    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.teams.teams_info.TeamsInfo.get_paged_team_members
   name: get_paged_team_members
@@ -63,12 +58,9 @@ methods:
   - name: turn_context
     isRequired: true
   - name: team_id
-    isRequired: true
   - name: continuation_token
-    isRequired: true
     defaultValue: None
   - name: page_size
-    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.teams.teams_info.TeamsInfo.get_team_channels
   name: get_team_channels
@@ -78,7 +70,6 @@ methods:
   - name: turn_context
     isRequired: true
   - name: team_id
-    isRequired: true
 - uid: botbuilder.core.teams.teams_info.TeamsInfo.get_team_details
   name: get_team_details
   signature: 'get_team_details(turn_context: botbuilder.core.turn_context.TurnContext,
@@ -87,7 +78,6 @@ methods:
   - name: turn_context
     isRequired: true
   - name: team_id
-    isRequired: true
 - uid: botbuilder.core.teams.teams_info.TeamsInfo.get_team_id
   name: get_team_id
   signature: 'get_team_id(turn_context: botbuilder.core.turn_context.TurnContext)'
@@ -102,9 +92,7 @@ methods:
   - name: turn_context
     isRequired: true
   - name: team_id
-    isRequired: true
   - name: member_id
-    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.teams.teams_info.TeamsInfo.get_team_members
   name: get_team_members
@@ -114,7 +102,6 @@ methods:
   - name: turn_context
     isRequired: true
   - name: team_id
-    isRequired: true
 - uid: botbuilder.core.teams.teams_info.TeamsInfo.get_teams_connector_client
   name: get_teams_connector_client
   signature: 'get_teams_connector_client(turn_context: botbuilder.core.turn_context.TurnContext)

@@ -40,28 +40,25 @@ methods:
   - name: user_id
     isRequired: true
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: connection_name
     isRequired: true
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: channel_id
     isRequired: true
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: uri
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: token
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.token_api.operations.dict>
@@ -69,7 +66,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -91,24 +87,21 @@ methods:
   - name: user_id
     isRequired: true
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: connection_name
     isRequired: true
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: channel_id
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: resource_urls
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botframework.connector.token_api.operations.list>[<xref:botframework.connector.token_api.operations.str>]
+    - <xref:botframework.connector.token_api.operations.list>[<xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.token_api.operations.dict>
@@ -116,7 +109,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -128,8 +120,7 @@ methods:
   return:
     description: dict or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.token_api.operations.dict>[<xref:botframework.connector.token_api.operations.str>,
-      <xref:botframework.tokenapi.models.TokenResponse>]
+    - <xref:botframework.connector.token_api.operations.dict>[<xref:str>, <xref:botframework.tokenapi.models.TokenResponse>]
     - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.token_api.operations.UserTokenOperations.get_token
   name: get_token
@@ -139,24 +130,21 @@ methods:
   - name: user_id
     isRequired: true
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: connection_name
     isRequired: true
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: channel_id
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: code
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.token_api.operations.dict>
@@ -164,7 +152,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -186,20 +173,17 @@ methods:
   - name: user_id
     isRequired: true
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: channel_id
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: include
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.token_api.operations.dict>
@@ -207,7 +191,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -229,20 +212,17 @@ methods:
   - name: user_id
     isRequired: true
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: connection_name
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: channel_id
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.token_api.operations.dict>
@@ -250,7 +230,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>

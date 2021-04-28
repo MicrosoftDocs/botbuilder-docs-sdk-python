@@ -18,10 +18,8 @@ methods:
   signature: assert_no_reply(description=None, timeout=None) -> 'TestFlow'
   parameters:
   - name: description
-    isRequired: true
     defaultValue: None
   - name: timeout
-    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.adapters.TestFlow.assert_reply
   name: assert_reply
@@ -44,13 +42,10 @@ methods:
   - name: expected
     isRequired: true
   - name: description
-    isRequired: true
     defaultValue: None
   - name: timeout
-    isRequired: true
     defaultValue: None
   - name: is_substring
-    isRequired: true
     defaultValue: 'False'
 - uid: botbuilder.core.adapters.TestFlow.send
   name: send
@@ -89,8 +84,6 @@ methods:
   - name: expected
     isRequired: true
   - name: description
-    isRequired: true
     defaultValue: None
   - name: timeout
-    isRequired: true
     defaultValue: None

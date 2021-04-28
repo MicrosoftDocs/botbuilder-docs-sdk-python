@@ -34,7 +34,6 @@ methods:
   - name: dialog_context
     isRequired: true
   - name: options
-    isRequired: true
     defaultValue: None
 - uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.continue_dialog
   name: continue_dialog
@@ -57,13 +56,10 @@ methods:
     object = NotImplementedError()) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: dialog_context
-    isRequired: true
     defaultValue: None
   - name: reason
-    isRequired: true
     defaultValue: None
   - name: result
-    isRequired: true
 - uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.end_dialog
   name: end_dialog
   signature: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:

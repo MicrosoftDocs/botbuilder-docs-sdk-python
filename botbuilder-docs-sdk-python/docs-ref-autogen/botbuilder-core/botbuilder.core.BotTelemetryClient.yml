@@ -53,28 +53,20 @@ methods:
   - name: data
     isRequired: true
   - name: type_name
-    isRequired: true
     defaultValue: None
   - name: target
-    isRequired: true
     defaultValue: None
   - name: duration
-    isRequired: true
     defaultValue: None
   - name: success
-    isRequired: true
     defaultValue: None
   - name: result_code
-    isRequired: true
     defaultValue: None
   - name: properties
-    isRequired: true
     defaultValue: None
   - name: measurements
-    isRequired: true
     defaultValue: None
   - name: dependency_id
-    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.BotTelemetryClient.track_event
   name: track_event
@@ -94,10 +86,8 @@ methods:
   - name: name
     isRequired: true
   - name: properties
-    isRequired: true
     defaultValue: None
   - name: measurements
-    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.BotTelemetryClient.track_exception
   name: track_exception
@@ -120,19 +110,14 @@ methods:
     object] = None) -> None'
   parameters:
   - name: exception_type
-    isRequired: true
     defaultValue: None
   - name: value
-    isRequired: true
     defaultValue: None
   - name: trace
-    isRequired: true
     defaultValue: None
   - name: properties
-    isRequired: true
     defaultValue: None
   - name: measurements
-    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.BotTelemetryClient.track_metric
   name: track_metric
@@ -159,22 +144,16 @@ methods:
       the client wants attached to this data item. (defaults to: None)'
     isRequired: true
   - name: tel_type
-    isRequired: true
     defaultValue: None
   - name: count
-    isRequired: true
     defaultValue: None
   - name: min_val
-    isRequired: true
     defaultValue: None
   - name: max_val
-    isRequired: true
     defaultValue: None
   - name: std_dev
-    isRequired: true
     defaultValue: None
   - name: properties
-    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.BotTelemetryClient.track_pageview
   name: track_pageview
@@ -201,13 +180,10 @@ methods:
   - name: url
     isRequired: true
   - name: duration
-    isRequired: true
     defaultValue: '0'
   - name: properties
-    isRequired: true
     defaultValue: None
   - name: measurements
-    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.BotTelemetryClient.track_request
   name: track_request
@@ -252,25 +228,18 @@ methods:
   - name: success
     isRequired: true
   - name: start_time
-    isRequired: true
     defaultValue: None
   - name: duration
-    isRequired: true
     defaultValue: None
   - name: response_code
-    isRequired: true
     defaultValue: None
   - name: http_method
-    isRequired: true
     defaultValue: None
   - name: properties
-    isRequired: true
     defaultValue: None
   - name: measurements
-    isRequired: true
     defaultValue: None
   - name: request_id
-    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.BotTelemetryClient.track_trace
   name: track_trace
@@ -287,8 +256,6 @@ methods:
   - name: severity
     description: the severity level of this trace, one of DEBUG, INFO, WARNING, ERROR,
       CRITICAL
-    isRequired: true
     defaultValue: None
   - name: severity
-    isRequired: true
     defaultValue: None

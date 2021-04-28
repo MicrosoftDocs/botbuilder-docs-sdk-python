@@ -33,14 +33,14 @@ constructor:
       ''trace'', ''handoff'''
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str> or <xref:botframework.connector.models.ActivityTypes>
+    - <xref:str> or <xref:botframework.connector.models.ActivityTypes>
   - name: id
     description: 'Contains an ID that uniquely identifies the activity on the
 
       channel.'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: timestamp
     description: 'Contains the date and time that the message was sent, in
 
@@ -65,21 +65,21 @@ constructor:
       For example, America/Los_Angeles.'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: service_url
     description: 'Contains the URL that specifies the channel''s service
 
       endpoint. Set by the channel.'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: channel_id
     description: 'Contains an ID that uniquely identifies the channel.
 
       Set by the channel.'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: from_property
     description: Identifies the sender of the message.
     isRequired: true
@@ -103,7 +103,7 @@ constructor:
       values include: ''markdown'', ''plain'', ''xml'''
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str> or <xref:botframework.connector.models.TextFormatTypes>
+    - <xref:str> or <xref:botframework.connector.models.TextFormatTypes>
   - name: attachment_layout
     description: 'The layout hint for multiple attachments.
 
@@ -139,7 +139,7 @@ constructor:
     description: The updated topic name of the conversation.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: history_disclosed
     description: 'Indicates whether the prior history of the
 
@@ -161,17 +161,17 @@ constructor:
       The locale name can also correspond to a valid BCP-47 language tag.'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: text
     description: The text content of the message.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: speak
     description: The text to speak.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: input_hint
     description: 'Indicates whether your bot is accepting,
 
@@ -182,12 +182,12 @@ constructor:
       ''expectingInput'''
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str> or <xref:botframework.connector.models.InputHints>
+    - <xref:str> or <xref:botframework.connector.models.InputHints>
   - name: summary
     description: The text to display if the channel cannot render cards.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: suggested_actions
     description: The suggested actions for the activity.
     isRequired: true
@@ -216,24 +216,24 @@ constructor:
       was added or removed from the sender''s contact list.'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: reply_to_id
     description: 'Contains the ID of the message to which this message
 
       is a reply.'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: label
     description: A descriptive label for the activity.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: value_type
     description: The type of the activity's value object.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: value
     description: A value that is associated with the activity.
     isRequired: true
@@ -245,7 +245,7 @@ constructor:
       activity.'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: relates_to
     description: A reference to another conversation or activity.
     isRequired: true
@@ -261,7 +261,7 @@ constructor:
       ''botIssuedInvalidMessage'', ''channelFailed'''
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str> or <xref:botframework.connector.models.EndOfConversationCodes>
+    - <xref:str> or <xref:botframework.connector.models.EndOfConversationCodes>
   - name: expiration
     description: 'The time at which the activity should be considered to
 
@@ -275,7 +275,7 @@ constructor:
       include: ''low'', ''normal'', ''high'''
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str> or <xref:botframework.connector.models.ActivityImportance>
+    - <xref:str> or <xref:botframework.connector.models.ActivityImportance>
   - name: delivery_mode
     description: 'A delivery hint to signal to the recipient alternate
 
@@ -286,14 +286,14 @@ constructor:
       ''notification'', ''expectReplies'', ''ephemeral'''
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str> or <xref:botframework.connector.models.DeliveryModes>
+    - <xref:str> or <xref:botframework.connector.models.DeliveryModes>
   - name: listen_for
     description: 'List of phrases and references that speech and language
 
       priming systems should listen for'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.list>[<xref:botbuilder.schema.str>]
+    - <xref:botbuilder.schema.list>[<xref:str>]
   - name: text_highlights
     description: 'The collection of text fragments to highlight when
 
@@ -318,7 +318,7 @@ constructor:
       verifiable data that asserts the identity of the callers (e.g. tokens).'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
 methods:
 - uid: botbuilder.schema.Activity.apply_conversation_reference
   name: apply_conversation_reference
@@ -334,7 +334,6 @@ methods:
   - name: reference
     isRequired: true
   - name: is_incoming
-    isRequired: true
     defaultValue: 'False'
   return:
     description: his activity, updated with the delivery information.
@@ -513,11 +512,9 @@ methods:
   parameters:
   - name: text
     description: The text of the reply.
-    isRequired: true
     defaultValue: None
   - name: locale
     description: The language code for the text.
-    isRequired: true
     defaultValue: None
   return:
     description: The new message activity.
@@ -538,13 +535,10 @@ methods:
   - name: name
     isRequired: true
   - name: value
-    isRequired: true
     defaultValue: None
   - name: value_type
-    isRequired: true
     defaultValue: None
   - name: label
-    isRequired: true
     defaultValue: None
   return:
     description: The new trace activity.
@@ -563,13 +557,10 @@ methods:
   - name: name
     isRequired: true
   - name: value
-    isRequired: true
     defaultValue: None
   - name: value_type
-    isRequired: true
     defaultValue: None
   - name: label
-    isRequired: true
     defaultValue: None
   return:
     description: The new trace activity.

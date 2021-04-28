@@ -26,7 +26,6 @@ methods:
     - <xref:botbuilder.dialogs.prompts.DialogContext>
   - name: options
     description: Optional, additional information to pass to the prompt being started
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botbuilder.dialogs.prompts.PromptOptions>
@@ -80,10 +79,9 @@ methods:
     - <xref:botbuilder.dialogs.prompts.TurnContext>
   - name: code
     description: (Optional) Optional user entered code to validate.
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botbuilder.dialogs.prompts.str>
+    - <xref:str>
   return:
     description: A response that includes the user's token
     types:

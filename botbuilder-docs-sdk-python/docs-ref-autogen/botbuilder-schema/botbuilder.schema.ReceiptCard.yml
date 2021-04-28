@@ -14,7 +14,7 @@ constructor:
     description: Title of the card
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: facts
     description: Array of Fact objects
     isRequired: true
@@ -34,17 +34,17 @@ constructor:
     description: Total amount of money paid (or to be paid)
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: tax
     description: Total amount of tax paid (or to be paid)
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: vat
     description: Total amount of VAT paid (or to be paid)
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: buttons
     description: Set of actions applicable to the current card
     isRequired: true

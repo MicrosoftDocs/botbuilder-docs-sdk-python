@@ -16,17 +16,17 @@ constructor:
     description: Title of this card
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: subtitle
     description: Subtitle of this card
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: text
     description: Text of this card
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: image
     description: Thumbnail placeholder
     isRequired: true
@@ -69,7 +69,7 @@ constructor:
       are "16:9" and "4:3"'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: duration
     description: 'Describes the length of the media content without
 
@@ -78,7 +78,7 @@ constructor:
       Duration field.'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: value
     description: Supplementary parameter for this card
     isRequired: true

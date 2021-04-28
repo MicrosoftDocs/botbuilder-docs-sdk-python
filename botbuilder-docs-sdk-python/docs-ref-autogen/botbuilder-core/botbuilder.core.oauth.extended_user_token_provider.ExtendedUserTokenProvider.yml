@@ -85,10 +85,8 @@ methods:
   - name: resource_urls
     isRequired: true
   - name: user_id
-    isRequired: true
     defaultValue: None
   - name: oauth_app_credentials
-    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.oauth.extended_user_token_provider.ExtendedUserTokenProvider.get_oauth_sign_in_link
   name: get_oauth_sign_in_link
@@ -113,10 +111,8 @@ methods:
   - name: connection_name
     isRequired: true
   - name: final_redirect
-    isRequired: true
     defaultValue: None
   - name: oauth_app_credentials
-    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.oauth.extended_user_token_provider.ExtendedUserTokenProvider.get_sign_in_resource
   name: get_sign_in_resource
@@ -155,7 +151,6 @@ methods:
     isRequired: true
   - name: final_redirect
     description: The final URL that the OAuth flow will redirect to.
-    isRequired: true
     defaultValue: None
   return:
     description: A task that represents the work queued to execute.
@@ -185,7 +180,6 @@ methods:
     isRequired: true
   - name: final_redirect
     description: The final URL that the OAuth flow will redirect to.
-    isRequired: true
     defaultValue: None
   return:
     description: A task that represents the work queued to execute.
@@ -215,10 +209,8 @@ methods:
   - name: connection_name
     isRequired: true
   - name: magic_code
-    isRequired: true
     defaultValue: None
   - name: oauth_app_credentials
-    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.oauth.extended_user_token_provider.ExtendedUserTokenProvider.sign_out_user
   name: sign_out_user
@@ -240,11 +232,8 @@ methods:
   - name: context
     isRequired: true
   - name: connection_name
-    isRequired: true
     defaultValue: None
   - name: user_id
-    isRequired: true
     defaultValue: None
   - name: oauth_app_credentials
-    isRequired: true
     defaultValue: None

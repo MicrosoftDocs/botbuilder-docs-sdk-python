@@ -56,13 +56,10 @@ methods:
   - name: callback
     isRequired: true
   - name: bot_id
-    isRequired: true
     defaultValue: None
   - name: claims_identity
-    isRequired: true
     defaultValue: None
   - name: audience
-    isRequired: true
     defaultValue: None
   return:
     description: A task that represents the work queued to execute.
@@ -86,10 +83,8 @@ methods:
     isRequired: true
   - name: identity
     description: The claims identity
-    isRequired: true
     defaultValue: None
   - name: audience
-    isRequired: true
     defaultValue: None
   return:
     description: An instance of the <xref:botbuilder.core.bot_framework_adapter.ConnectorClient>
@@ -111,29 +106,24 @@ methods:
     - <xref:botbuilder.schema.ConversationReference>
   - name: logic
     description: The logic to use for the creation of the conversation
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Callable>
   - name: conversation_parameters
     description: The information to use to create the conversation
-    isRequired: true
     defaultValue: None
   - name: channel_id
     description: The ID for the channel.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.str>
   - name: service_url
     description: The channel's service URL endpoint.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.str>
   - name: credentials
     description: The application credentials for the bot.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.auth.AppCredentials>
@@ -202,7 +192,7 @@ methods:
     description: The ID of the member to remove from the conversation
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_framework_adapter.str>
+    - <xref:str>
   return:
     description: A task that represents the work queued to execute.</returns
 - uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.exchange_token
@@ -278,10 +268,8 @@ methods:
   - name: resource_urls
     isRequired: true
   - name: user_id
-    isRequired: true
     defaultValue: None
   - name: oauth_app_credentials
-    isRequired: true
     defaultValue: None
   return:
     description: Dictionary of resource Urls to the corresponding :class:'botbuilder.schema.TokenResponse`
@@ -317,7 +305,7 @@ methods:
     description: The member Id
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_framework_adapter.str>
+    - <xref:str>
   return:
     description: A member of the current conversation
 - uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_conversation_members
@@ -348,11 +336,10 @@ methods:
     description: The continuation token from the previous page of results
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_framework_adapter.str>
+    - <xref:str>
   - name: credentials
     isRequired: true
   - name: continuation_token
-    isRequired: true
     defaultValue: None
   return:
     description: A task that represents the work queued to execute
@@ -387,14 +374,12 @@ methods:
     description: Name of the auth connection to use
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_framework_adapter.str>
+    - <xref:str>
   - name: final_redirect
     description: The final URL that the OAuth flow will redirect to.
-    isRequired: true
     defaultValue: None
   - name: oauth_app_credentials
     description: (Optional) AppCredentials for OAuth.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.auth.AppCredential>
@@ -419,7 +404,6 @@ methods:
     isRequired: true
   - name: final_redirect
     description: The final URL that the OAuth flow will redirect to.
-    isRequired: true
     defaultValue: None
   return:
     description: A task that represents the work queued to execute.
@@ -449,7 +433,6 @@ methods:
     isRequired: true
   - name: final_redirect
     description: The final URL that the OAuth flow will redirect to.
-    isRequired: true
     defaultValue: None
   return:
     description: A task that represents the work queued to execute.
@@ -478,16 +461,12 @@ methods:
   - name: context
     isRequired: true
   - name: connection_name
-    isRequired: true
     defaultValue: None
   - name: user_id
-    isRequired: true
     defaultValue: None
   - name: include_filter
-    isRequired: true
     defaultValue: None
   - name: oauth_app_credentials
-    isRequired: true
     defaultValue: None
   return:
     description: Array of <xref:botframework.connector.token_api.modelsTokenStatus>
@@ -512,10 +491,8 @@ methods:
   - name: connection_name
     isRequired: true
   - name: magic_code
-    isRequired: true
     defaultValue: None
   - name: oauth_app_credentials
-    isRequired: true
     defaultValue: None
   return:
     description: Token Response
@@ -630,19 +607,16 @@ methods:
     - <xref:botbuilder.core.TurnContext>
   - name: connection_name
     description: Name of the auth connection to use
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botbuilder.core.bot_framework_adapter.str>
+    - <xref:str>
   - name: user_id
     description: User id of user to sign out
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botbuilder.core.bot_framework_adapter.str>
+    - <xref:str>
   - name: oauth_app_credentials
     description: (Optional) AppCredentials for OAuth.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.auth.AppCredential>

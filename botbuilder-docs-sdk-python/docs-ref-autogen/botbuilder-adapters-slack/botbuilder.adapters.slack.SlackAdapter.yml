@@ -34,22 +34,19 @@ methods:
     - <xref:typing.Callable>
   - name: bot_id
     description: Unused for this override.
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botbuilder.adapters.slack.str>
+    - <xref:str>
   - name: claims_identity
     description: A ClaimsIdentity for the conversation.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.auth.ClaimsIdentity>
   - name: audience
     description: Unused for this override.
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botbuilder.adapters.slack.str>
+    - <xref:str>
   remarks: "Most channels require a user to initiate a conversation with a bot before\
     \ the bot can send activities to the\n   user.\n"
 - uid: botbuilder.adapters.slack.SlackAdapter.delete_activity

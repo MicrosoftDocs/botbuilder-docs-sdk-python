@@ -23,7 +23,7 @@ methods:
   return:
     description: The Channel Id from the Turn Context's Activity.
     types:
-    - <xref:botbuilder.dialogs.choices.str>
+    - <xref:str>
 - uid: botbuilder.dialogs.choices.Channel.has_message_feed
   name: has_message_feed
   summary: Determine if a Channel has a Message Feed.
@@ -33,7 +33,7 @@ methods:
     description: The Channel to check for Message Feed.
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.choices.str>
+    - <xref:str>
   return:
     description: True if the Channel has a Message Feed, False if it does not.
     types:
@@ -47,7 +47,7 @@ methods:
     description: The Channel to determine Maximum Action Title Length.
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.choices.str>
+    - <xref:str>
   return:
     description: The total number of characters allowed for an Action Title on a specific
       Channel.
@@ -62,10 +62,9 @@ methods:
     description: The Channel to check if the Card Actions are supported in.
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.choices.str>
+    - <xref:str>
   - name: button_cnt
     description: Defaults to 100. The number of Card Actions to check for the Channel.
-    isRequired: true
     defaultValue: '100'
     types:
     - <xref:botbuilder.dialogs.choices.int>, <xref:botbuilder.dialogs.choices.optional>
@@ -84,11 +83,10 @@ methods:
     description: The Channel to check the if Suggested Actions are supported in.
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.choices.str>
+    - <xref:str>
   - name: button_cnt
     description: Defaults to 100. The number of Suggested Actions to check for the
       Channel.
-    isRequired: true
     defaultValue: '100'
     types:
     - <xref:botbuilder.dialogs.choices.int>, <xref:botbuilder.dialogs.choices.optional>

@@ -16,7 +16,7 @@ variables:
 - name: "persisted_options \u2013"
 - name: persisted_state
   types:
-  - <xref:botbuilder.dialogs.prompts.str>
+  - <xref:str>
 methods:
 - uid: botbuilder.dialogs.prompts.ActivityPrompt.begin_dialog
   name: begin_dialog
@@ -32,7 +32,6 @@ methods:
     - <xref:botbuilder.dialogs.prompts.DialogContext>
   - name: options
     description: Optional, additional information to pass to the prompt being started.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botbuilder.dialogs.prompts.PromptOptions>
@@ -73,7 +72,6 @@ methods:
   - name: isRetry
     description: If *true* the users response wasn't recognized and the re-prompt
       should be sent.
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -135,7 +133,6 @@ methods:
     - <xref:botbuilder.dialogs.prompts.DialogReason>
   - name: result
     description: Optional, value returned from the previous dialog on the stack.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botbuilder.dialogs.prompts.object>

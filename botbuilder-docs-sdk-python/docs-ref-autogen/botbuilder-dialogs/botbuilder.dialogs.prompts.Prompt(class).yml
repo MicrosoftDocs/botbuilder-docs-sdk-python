@@ -42,13 +42,12 @@ methods:
     description: Id of the channel the prompt is being sent to
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.str>
+    - <xref:str>
   - name: choices
     isRequired: true
   - name: style
     isRequired: true
   - name: options
-    isRequired: true
     defaultValue: None
   return:
     description: A task representing the asynchronous operation
@@ -84,7 +83,6 @@ methods:
     - <xref:botbuilder.dialogs.prompts.DialogContext>
   - name: options
     description: Optional, additional information to pass to the prompt being started
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botbuilder.dialogs.prompts.Object>

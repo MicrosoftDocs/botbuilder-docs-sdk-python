@@ -14,14 +14,14 @@ constructor:
     description: The channelId of the token status pertains to
     isRequired: true
     types:
-    - <xref:botframework.connector.token_api.models.str>
+    - <xref:str>
   - name: connection_name
     description: 'The name of the connection the token status
 
       pertains to'
     isRequired: true
     types:
-    - <xref:botframework.connector.token_api.models.str>
+    - <xref:str>
   - name: has_token
     description: True if a token is stored for this ConnectionName
     isRequired: true
@@ -33,4 +33,4 @@ constructor:
       provider for which this Token belongs to'
     isRequired: true
     types:
-    - <xref:botframework.connector.token_api.models.str>
+    - <xref:str>

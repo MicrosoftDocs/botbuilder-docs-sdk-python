@@ -77,7 +77,6 @@ methods:
     - <xref:botframework.connector.models.ConversationParameters>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.operations.dict>
@@ -85,7 +84,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -116,15 +114,14 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - <xref:botframework.connector.operations.str>
+    - <xref:str>
   - name: activity_id
     description: activityId to delete
     isRequired: true
     types:
-    - <xref:botframework.connector.operations.str>
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.operations.dict>
@@ -132,7 +129,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -167,15 +163,14 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - <xref:botframework.connector.operations.str>
+    - <xref:str>
   - name: member_id
     description: ID of the member to delete from this conversation
     isRequired: true
     types:
-    - <xref:botframework.connector.operations.str>
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.operations.dict>
@@ -183,7 +178,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -216,15 +210,14 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - <xref:botframework.connector.operations.str>
+    - <xref:str>
   - name: activity_id
     description: Activity ID
     isRequired: true
     types:
-    - <xref:botframework.connector.operations.str>
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.operations.dict>
@@ -232,7 +225,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -263,15 +255,14 @@ methods:
     description: Conversation Id
     isRequired: true
     types:
-    - <xref:botframework.connector.operations.str>
+    - <xref:str>
   - name: member_id
     description: Member Id
     isRequired: true
     types:
-    - <xref:botframework.connector.operations.str>
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.operations.dict>
@@ -279,7 +270,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -310,10 +300,9 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - <xref:botframework.connector.operations.str>
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.operations.dict>
@@ -321,7 +310,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -374,22 +362,19 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - <xref:botframework.connector.operations.str>
+    - <xref:str>
   - name: page_size
     description: Suggested page size
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.operations.int>
   - name: continuation_token
     description: Continuation Token
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botframework.connector.operations.str>
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.operations.dict>
@@ -397,7 +382,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -440,13 +424,11 @@ methods:
   parameters:
   - name: continuation_token
     description: skip or continuation token
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botframework.connector.operations.str>
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.operations.dict>
@@ -454,7 +436,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -507,22 +488,19 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - <xref:botframework.connector.operations.str>
+    - <xref:str>
   - name: page_size
     description: Suggested page size
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.operations.int>
   - name: continuation_token
     description: Continuation Token
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botframework.connector.operations.str>
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.operations.dict>
@@ -530,7 +508,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -579,12 +556,12 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - <xref:botframework.connector.operations.str>
+    - <xref:str>
   - name: activity_id
     description: activityId the reply is to (OPTIONAL)
     isRequired: true
     types:
-    - <xref:botframework.connector.operations.str>
+    - <xref:str>
   - name: activity
     description: Activity to send
     isRequired: true
@@ -592,7 +569,6 @@ methods:
     - <xref:botframework.connector.models.Activity>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.operations.dict>
@@ -600,7 +576,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -637,18 +612,16 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - <xref:botframework.connector.operations.str>
+    - <xref:str>
   - name: activities
     description: 'A collection of Activities that conforms to the
 
       Transcript schema.'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.operations.list>[<xref:botframework.connector.models.Activity>]
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.operations.dict>
@@ -656,7 +629,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -707,7 +679,7 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - <xref:botframework.connector.operations.str>
+    - <xref:str>
   - name: activity
     description: Activity to send
     isRequired: true
@@ -715,7 +687,6 @@ methods:
     - <xref:botframework.connector.models.Activity>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.operations.dict>
@@ -723,7 +694,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -758,12 +728,12 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - <xref:botframework.connector.operations.str>
+    - <xref:str>
   - name: activity_id
     description: activityId to update
     isRequired: true
     types:
-    - <xref:botframework.connector.operations.str>
+    - <xref:str>
   - name: activity
     description: replacement Activity
     isRequired: true
@@ -771,7 +741,6 @@ methods:
     - <xref:botframework.connector.models.Activity>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.operations.dict>
@@ -779,7 +748,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -814,7 +782,7 @@ methods:
     description: Conversation ID
     isRequired: true
     types:
-    - <xref:botframework.connector.operations.str>
+    - <xref:str>
   - name: attachment_upload
     description: Attachment data
     isRequired: true
@@ -822,7 +790,6 @@ methods:
     - <xref:botframework.connector.models.AttachmentData>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.operations.dict>
@@ -830,7 +797,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>

@@ -50,13 +50,10 @@ methods:
   - name: callback
     isRequired: true
   - name: bot_id
-    isRequired: true
     defaultValue: None
   - name: claims_identity
-    isRequired: true
     defaultValue: None
   - name: audience
-    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.BotAdapter.delete_activity
   name: delete_activity
@@ -91,7 +88,6 @@ methods:
     - <xref:botbuilder.core.TurnContext>
   - name: callback
     description: A callback method to run at the end of the pipeline.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Callable[[TurnContext], Awaitable]>

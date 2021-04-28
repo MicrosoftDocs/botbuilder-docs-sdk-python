@@ -55,12 +55,12 @@ methods:
     description: The content type of the body.
     isRequired: true
     types:
-    - <xref:botbuilder.adapters.slack.str>
+    - <xref:str>
   - name: request_body
     description: The body of the request.
     isRequired: true
     types:
-    - <xref:botbuilder.adapters.slack.str>
+    - <xref:str>
   return:
     description: A SlackRequestBody object.
     types:
@@ -109,7 +109,7 @@ methods:
     description: The query string to convert.
     isRequired: true
     types:
-    - <xref:botbuilder.adapters.slack.str>
+    - <xref:str>
   return:
     description: A dictionary with the query values.
     types:
@@ -132,16 +132,14 @@ methods:
     - <xref:botbuilder.adapters.slack.int>
   - name: text
     description: The text to return.
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botbuilder.adapters.slack.str>
+    - <xref:str>
   - name: encoding
     description: The text encoding. Defaults to UTF-8.
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botbuilder.adapters.slack.str>
+    - <xref:str>
   return:
     description: The aoihttp Response
     types:

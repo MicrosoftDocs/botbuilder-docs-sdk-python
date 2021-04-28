@@ -15,7 +15,7 @@ constructor:
     description: (Optional) ID of the activity to refer to
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: user
     description: (Optional) User participating in this conversation
     isRequired: true
@@ -35,7 +35,7 @@ constructor:
     description: Channel ID
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: locale
     description: 'A locale name for the contents of the text field.
 
@@ -48,11 +48,11 @@ constructor:
       The locale name can also correspond to a valid BCP-47 language tag.'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: service_url
     description: 'Service endpoint where operations concerning the
 
       referenced conversation may be performed'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>

@@ -40,7 +40,7 @@ methods:
     description: An array of entity keys.
     isRequired: true
     types:
-    - <xref:Dict>[<xref:botbuilder.azure.str>, <xref:botbuilder.azure.object>]
+    - <xref:Dict>[<xref:str>, <xref:botbuilder.azure.object>]
 - uid: botbuilder.azure.BlobStorage.read
   name: read
   summary: Retrieve entities from the configured blob container.
@@ -50,7 +50,7 @@ methods:
     description: An array of entity keys.
     isRequired: true
     types:
-    - <xref:Dict>[<xref:botbuilder.azure.str>, <xref:botbuilder.azure.object>]
+    - <xref:Dict>[<xref:str>, <xref:botbuilder.azure.object>]
 - uid: botbuilder.azure.BlobStorage.write
   name: write
   summary: Stores a new entity in the configured blob container.
@@ -60,4 +60,4 @@ methods:
     description: The changes to write to storage.
     isRequired: true
     types:
-    - <xref:Dict>[<xref:botbuilder.azure.str>, <xref:botbuilder.azure.object>]
+    - <xref:Dict>[<xref:str>, <xref:botbuilder.azure.object>]

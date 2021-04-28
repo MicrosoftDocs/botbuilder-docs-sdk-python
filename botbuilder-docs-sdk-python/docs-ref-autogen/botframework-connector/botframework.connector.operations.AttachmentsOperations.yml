@@ -41,15 +41,14 @@ methods:
     description: attachment id
     isRequired: true
     types:
-    - <xref:botframework.connector.operations.str>
+    - <xref:str>
   - name: view_id
     description: View id from attachmentInfo
     isRequired: true
     types:
-    - <xref:botframework.connector.operations.str>
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.operations.dict>
@@ -57,7 +56,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -69,7 +67,6 @@ methods:
       bytes of the current chunk of data and the response object. If the
 
       data is uploading, response will be None.'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.operations.Callable>[<xref:botframework.connector.operations.Bytes>,
@@ -96,10 +93,9 @@ methods:
     description: attachment id
     isRequired: true
     types:
-    - <xref:botframework.connector.operations.str>
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.operations.dict>
@@ -107,7 +103,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>

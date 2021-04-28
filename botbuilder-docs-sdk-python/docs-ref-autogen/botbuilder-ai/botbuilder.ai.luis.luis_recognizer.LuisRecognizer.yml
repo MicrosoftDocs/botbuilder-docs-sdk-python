@@ -37,7 +37,6 @@ methods:
       event, defaults
 
       to None.'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict[str, str]>, optional
@@ -71,7 +70,6 @@ methods:
       event, defaults
 
       to None.'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict[str, str]>, optional
@@ -80,7 +78,6 @@ methods:
       event, defaults
 
       to None.'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict[str, float]>, optional
@@ -103,7 +100,6 @@ methods:
       event, defaults
 
       to None.'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict[str, str]>, optional
@@ -112,12 +108,10 @@ methods:
       event, defaults to
 
       None.'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict[str, float]>, optional
   - name: luis_prediction_options
-    isRequired: true
     defaultValue: None
   return:
     description: The LUIS results of the analysis of the current message text in the
@@ -137,23 +131,21 @@ methods:
     - <xref:botbuilder.core.RecognizerResult>
   - name: default_intent
     description: Intent name to return should a top intent be found, defaults to None.
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botbuilder.ai.luis.luis_recognizer.str>, <xref:botbuilder.ai.luis.luis_recognizer.optional>
+    - <xref:str>, <xref:botbuilder.ai.luis.luis_recognizer.optional>
   - name: min_score
     description: 'Minimum score needed for an intent to be considered as a top intent.
       If all intents in the set
 
       are below this threshold then the *defaultIntent* is returned, defaults to 0.0.'
-    isRequired: true
     defaultValue: '0.0'
     types:
     - <xref:botbuilder.ai.luis.luis_recognizer.float>, <xref:botbuilder.ai.luis.luis_recognizer.optional>
   return:
     description: The top scoring intent name.
     types:
-    - <xref:botbuilder.ai.luis.luis_recognizer.str>
+    - <xref:str>
 attributes:
 - uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.luis_trace_label
   name: luis_trace_label

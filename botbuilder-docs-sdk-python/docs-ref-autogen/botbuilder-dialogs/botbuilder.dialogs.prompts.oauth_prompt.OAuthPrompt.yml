@@ -26,7 +26,6 @@ methods:
     - <xref:botbuilder.dialogs.prompts.oauth_prompt.DialogContext>
   - name: options
     description: Optional, additional information to pass to the prompt being started
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botbuilder.dialogs.prompts.oauth_prompt.PromptOptions>
@@ -80,10 +79,9 @@ methods:
     - <xref:botbuilder.dialogs.prompts.oauth_prompt.TurnContext>
   - name: code
     description: (Optional) Optional user entered code to validate.
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botbuilder.dialogs.prompts.oauth_prompt.str>
+    - <xref:str>
   return:
     description: A response that includes the user's token
     types:

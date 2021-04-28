@@ -14,12 +14,12 @@ constructor:
     description: mimetype/Contenttype for the file
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: content_url
     description: Content Url
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: content
     description: Embedded content
     isRequired: true
@@ -29,9 +29,9 @@ constructor:
     description: (OPTIONAL) The name of the attachment
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>
   - name: thumbnail_url
     description: (OPTIONAL) Thumbnail associated with attachment
     isRequired: true
     types:
-    - <xref:botbuilder.schema.str>
+    - <xref:str>

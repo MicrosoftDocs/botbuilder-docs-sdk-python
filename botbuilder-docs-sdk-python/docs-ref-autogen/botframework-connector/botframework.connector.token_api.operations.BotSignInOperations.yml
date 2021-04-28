@@ -40,25 +40,21 @@ methods:
   - name: state
     isRequired: true
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: code_challenge
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: emulator_url
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: final_redirect
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.token_api.operations.dict>
@@ -66,7 +62,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -88,25 +83,21 @@ methods:
   - name: state
     isRequired: true
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: code_challenge
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: emulator_url
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: final_redirect
-    isRequired: true
     defaultValue: None
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.token_api.operations.dict>
@@ -114,7 +105,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -126,7 +116,7 @@ methods:
   return:
     description: str or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.token_api.operations.str>
+    - <xref:str>
     - <xref:msrest.pipeline.ClientRawResponse>
 attributes:
 - uid: botframework.connector.token_api.operations.BotSignInOperations.models

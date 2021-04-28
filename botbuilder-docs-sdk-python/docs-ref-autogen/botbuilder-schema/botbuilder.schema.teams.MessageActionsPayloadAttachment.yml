@@ -15,17 +15,17 @@ constructor:
     description: The id of the attachment.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.teams.str>
+    - <xref:str>
   - name: content_type
     description: The type of the attachment.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.teams.str>
+    - <xref:str>
   - name: content_url
     description: The url of the attachment, in case of a external link.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.teams.str>
+    - <xref:str>
   - name: content
     description: 'The content of the attachment, in case of a code snippet,
 
@@ -37,11 +37,11 @@ constructor:
     description: The plaintext display name of the attachment.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.teams.str>
+    - <xref:str>
   - name: thumbnail_url
     description: 'The url of a thumbnail image that might be embedded
 
       in the attachment, in case of a card.'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.teams.str>
+    - <xref:str>

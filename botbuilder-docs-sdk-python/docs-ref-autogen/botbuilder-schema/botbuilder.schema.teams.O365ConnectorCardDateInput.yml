@@ -17,12 +17,12 @@ constructor:
       ''dateInput'', ''multichoiceInput'''
     isRequired: true
     types:
-    - <xref:botbuilder.schema.teams.str>
+    - <xref:str>
   - name: id
     description: Input Id. It must be unique per entire O365 connector card.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.teams.str>
+    - <xref:str>
   - name: is_required
     description: 'Define if this input is a required field. Default
 
@@ -34,12 +34,12 @@ constructor:
     description: Input title that will be shown as the placeholder
     isRequired: true
     types:
-    - <xref:botbuilder.schema.teams.str>
+    - <xref:str>
   - name: value
     description: Default value for this input field
     isRequired: true
     types:
-    - <xref:botbuilder.schema.teams.str>
+    - <xref:str>
   - name: include_time
     description: 'Include time input field. Default value  is false
 
