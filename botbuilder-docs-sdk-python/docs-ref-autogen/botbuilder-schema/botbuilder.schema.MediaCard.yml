@@ -38,12 +38,12 @@ constructor:
       one URL, each URL is an alternative format of the same content.'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.MediaUrl>]
+    - <xref:list>[<xref:botframework.connector.models.MediaUrl>]
   - name: buttons
     description: Actions on this card
     isRequired: true
     types:
-    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.CardAction>]
+    - <xref:list>[<xref:botframework.connector.models.CardAction>]
   - name: shareable
     description: This content may be shared with others (default:true)
     isRequired: true
@@ -83,4 +83,4 @@ constructor:
     description: Supplementary parameter for this card
     isRequired: true
     types:
-    - <xref:botbuilder.schema.object>
+    - <xref:object>

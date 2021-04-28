@@ -19,7 +19,7 @@ constructor:
     description: Entities associated with this action
     isRequired: true
     types:
-    - <xref:botbuilder.schema.dict>[<xref:str>, <xref:botframework.connector.models.Entity>]
+    - <xref:dict>[<xref:str>, <xref:botframework.connector.models.Entity>]
   - name: state
     description: 'State of this action. Allowed values: *start*, *continue*, *done*'
     isRequired: true

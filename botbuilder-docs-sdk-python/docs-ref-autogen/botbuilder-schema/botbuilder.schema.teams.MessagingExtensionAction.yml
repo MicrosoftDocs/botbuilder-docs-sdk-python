@@ -15,7 +15,7 @@ constructor:
     description: User input data. Free payload with key-value pairs.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.teams.object>
+    - <xref:object>
   - name: context
     description: Current user context, i.e., the current theme
     isRequired: true
@@ -41,7 +41,7 @@ constructor:
   - name: bot_activity_preview
     isRequired: true
     types:
-    - <xref:botbuilder.schema.teams.list>[<xref:botframework.schema.models.Activity>]
+    - <xref:list>[<xref:botframework.schema.models.Activity>]
   - name: message_payload
     description: 'Message content sent as part of the command
 

@@ -58,14 +58,14 @@ constructor:
     description: Set of facts for the current section
     isRequired: true
     types:
-    - <xref:botbuilder.schema.teams.list>[<xref:botframework.connector.teams.models.O365ConnectorCardFact>]
+    - <xref:list>[<xref:botframework.connector.teams.models.O365ConnectorCardFact>]
   - name: images
     description: Set of images for the current section
     isRequired: true
     types:
-    - <xref:botbuilder.schema.teams.list>[<xref:botframework.connector.teams.models.O365ConnectorCardImage>]
+    - <xref:list>[<xref:botframework.connector.teams.models.O365ConnectorCardImage>]
   - name: potential_action
     description: Set of actions for the current section
     isRequired: true
     types:
-    - <xref:botbuilder.schema.teams.list>[<xref:botframework.connector.teams.models.O365ConnectorCardActionBase>]
+    - <xref:list>[<xref:botframework.connector.teams.models.O365ConnectorCardActionBase>]

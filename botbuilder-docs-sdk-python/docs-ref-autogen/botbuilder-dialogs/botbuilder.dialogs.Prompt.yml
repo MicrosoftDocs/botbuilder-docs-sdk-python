@@ -139,7 +139,7 @@ methods:
       stack
     isRequired: true
     types:
-    - <xref:Dict>
+    - <xref:botbuilder.dialogs.Dict>
   - name: options
     description: A prompt options object constructed from:meth:*DialogContext.prompt()*
     isRequired: true
@@ -169,7 +169,7 @@ methods:
       stack
     isRequired: true
     types:
-    - <xref:Dict>
+    - <xref:botbuilder.dialogs.Dict>
   - name: options
     description: A prompt options object constructed from <xref:botbuilder.dialogs.DialogContext.prompt>
     isRequired: true
@@ -215,7 +215,7 @@ methods:
     description: Optional, value returned from the previous dialog on the stack.
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.object>
+    - <xref:object>
   return:
     description: The dialog turn result
     types:

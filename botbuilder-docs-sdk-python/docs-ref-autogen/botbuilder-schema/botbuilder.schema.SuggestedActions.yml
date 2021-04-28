@@ -17,9 +17,9 @@ constructor:
       the activity'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.list>[<xref:str>]
+    - <xref:list>[<xref:str>]
   - name: actions
     description: Actions that can be shown to the user
     isRequired: true
     types:
-    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.CardAction>]
+    - <xref:list>[<xref:botframework.connector.models.CardAction>]

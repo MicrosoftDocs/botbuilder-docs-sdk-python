@@ -79,7 +79,7 @@ methods:
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - <xref:botframework.connector.operations.dict>
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
@@ -124,7 +124,7 @@ methods:
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - <xref:botframework.connector.operations.dict>
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
@@ -173,7 +173,7 @@ methods:
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - <xref:botframework.connector.operations.dict>
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
@@ -220,7 +220,7 @@ methods:
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - <xref:botframework.connector.operations.dict>
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
@@ -236,7 +236,7 @@ methods:
   return:
     description: list or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.operations.list>[<xref:botframework.connector.models.ChannelAccount>]
+    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
     - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.ConversationsOperations.get_conversation_member
   name: get_conversation_member
@@ -265,7 +265,7 @@ methods:
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - <xref:botframework.connector.operations.dict>
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
@@ -281,7 +281,7 @@ methods:
   return:
     description: list or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.operations.list>[<xref:botframework.connector.models.ChannelAccount>]
+    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
     - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.ConversationsOperations.get_conversation_members
   name: get_conversation_members
@@ -305,7 +305,7 @@ methods:
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - <xref:botframework.connector.operations.dict>
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
@@ -321,7 +321,7 @@ methods:
   return:
     description: list or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.operations.list>[<xref:botframework.connector.models.ChannelAccount>]
+    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
     - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.operations.ConversationsOperations.get_conversation_paged_members
   name: get_conversation_paged_members
@@ -367,7 +367,7 @@ methods:
     description: Suggested page size
     defaultValue: None
     types:
-    - <xref:botframework.connector.operations.int>
+    - <xref:int>
   - name: continuation_token
     description: Continuation Token
     defaultValue: None
@@ -377,7 +377,7 @@ methods:
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - <xref:botframework.connector.operations.dict>
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
@@ -431,7 +431,7 @@ methods:
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - <xref:botframework.connector.operations.dict>
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
@@ -493,7 +493,7 @@ methods:
     description: Suggested page size
     defaultValue: None
     types:
-    - <xref:botframework.connector.operations.int>
+    - <xref:int>
   - name: continuation_token
     description: Continuation Token
     defaultValue: None
@@ -503,7 +503,7 @@ methods:
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - <xref:botframework.connector.operations.dict>
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
@@ -571,7 +571,7 @@ methods:
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - <xref:botframework.connector.operations.dict>
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
@@ -619,12 +619,12 @@ methods:
       Transcript schema.'
     defaultValue: None
     types:
-    - <xref:botframework.connector.operations.list>[<xref:botframework.connector.models.Activity>]
+    - <xref:list>[<xref:botframework.connector.models.Activity>]
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - <xref:botframework.connector.operations.dict>
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
@@ -689,7 +689,7 @@ methods:
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - <xref:botframework.connector.operations.dict>
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
@@ -743,7 +743,7 @@ methods:
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - <xref:botframework.connector.operations.dict>
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
@@ -792,7 +792,7 @@ methods:
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - <xref:botframework.connector.operations.dict>
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 

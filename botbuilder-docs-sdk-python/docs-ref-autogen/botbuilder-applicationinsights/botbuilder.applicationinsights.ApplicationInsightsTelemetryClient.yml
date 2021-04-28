@@ -60,7 +60,7 @@ methods:
       to: None)'
     defaultValue: None
     types:
-    - <xref:botbuilder.applicationinsights.int>
+    - <xref:int>
   - name: success
     description: 'true if the dependency call ended in success, false otherwise. (defaults
       to: None)'
@@ -172,7 +172,7 @@ methods:
     description: The value of the metric that was captured.
     isRequired: true
     types:
-    - <xref:botbuilder.applicationinsights.float>
+    - <xref:float>
   - name: tel_type
     description: 'The type of the metric. (defaults to: TelemetryDataPointType.aggregation`)'
     defaultValue: None
@@ -181,7 +181,7 @@ methods:
       (defaults to: None)'
     defaultValue: None
     types:
-    - <xref:botbuilder.applicationinsights.int>
+    - <xref:int>
   - name: min_val
     description: 'the minimum of all metrics collected that were aggregated into this
       data point. (defaults to:
@@ -189,7 +189,7 @@ methods:
       None)'
     defaultValue: None
     types:
-    - <xref:botbuilder.applicationinsights.float>
+    - <xref:float>
   - name: max_val
     description: 'the maximum of all metrics collected that were aggregated into this
       data point. (defaults to:
@@ -197,7 +197,7 @@ methods:
       None)'
     defaultValue: None
     types:
-    - <xref:botbuilder.applicationinsights.float>
+    - <xref:float>
   - name: std_dev
     description: 'the standard deviation of all metrics collected that were aggregated
       into this data point.
@@ -205,7 +205,7 @@ methods:
       (defaults to: None)'
     defaultValue: None
     types:
-    - <xref:botbuilder.applicationinsights.float>
+    - <xref:float>
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
@@ -283,7 +283,7 @@ methods:
       None)'
     defaultValue: None
     types:
-    - <xref:botbuilder.applicationinsights.int>
+    - <xref:int>
   - name: response_code
     description: 'the response code that this request returned. (defaults to: None)'
     defaultValue: None

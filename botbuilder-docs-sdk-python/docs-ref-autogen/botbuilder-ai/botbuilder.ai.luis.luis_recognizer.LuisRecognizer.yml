@@ -133,7 +133,7 @@ methods:
     description: Intent name to return should a top intent be found, defaults to None.
     defaultValue: None
     types:
-    - <xref:str>, <xref:botbuilder.ai.luis.luis_recognizer.optional>
+    - <xref:str>, <xref:optional>
   - name: min_score
     description: 'Minimum score needed for an intent to be considered as a top intent.
       If all intents in the set
@@ -141,7 +141,7 @@ methods:
       are below this threshold then the *defaultIntent* is returned, defaults to 0.0.'
     defaultValue: '0.0'
     types:
-    - <xref:botbuilder.ai.luis.luis_recognizer.float>, <xref:botbuilder.ai.luis.luis_recognizer.optional>
+    - <xref:float>, <xref:optional>
   return:
     description: The top scoring intent name.
     types:

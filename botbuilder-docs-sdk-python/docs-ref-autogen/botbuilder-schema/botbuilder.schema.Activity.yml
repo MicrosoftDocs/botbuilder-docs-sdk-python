@@ -113,28 +113,28 @@ constructor:
     description: The collection of members added to the conversation.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.ChannelAccount>]
+    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
   - name: members_removed
     description: 'The collection of members removed from the
 
       conversation.'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.ChannelAccount>]
+    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
   - name: reactions_added
     description: 'The collection of reactions added to the
 
       conversation.'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.MessageReaction>]
+    - <xref:list>[<xref:botframework.connector.models.MessageReaction>]
   - name: reactions_removed
     description: 'The collection of reactions removed from the
 
       conversation.'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.MessageReaction>]
+    - <xref:list>[<xref:botframework.connector.models.MessageReaction>]
   - name: topic_name
     description: The updated topic name of the conversation.
     isRequired: true
@@ -197,19 +197,19 @@ constructor:
     description: Attachments
     isRequired: true
     types:
-    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.Attachment>]
+    - <xref:list>[<xref:botframework.connector.models.Attachment>]
   - name: entities
     description: 'Represents the entities that were mentioned in the
 
       message.'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.Entity>]
+    - <xref:list>[<xref:botframework.connector.models.Entity>]
   - name: channel_data
     description: Contains channel-specific content.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.object>
+    - <xref:object>
   - name: action
     description: 'Indicates whether the recipient of a contactRelationUpdate
 
@@ -238,7 +238,7 @@ constructor:
     description: A value that is associated with the activity.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.object>
+    - <xref:object>
   - name: name
     description: 'The name of the operation associated with an invoke or event
 
@@ -293,14 +293,14 @@ constructor:
       priming systems should listen for'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.list>[<xref:str>]
+    - <xref:list>[<xref:str>]
   - name: text_highlights
     description: 'The collection of text fragments to highlight when
 
       the activity contains a ReplyToId value.'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.list>[<xref:botframework.connector.models.TextHighlight>]
+    - <xref:list>[<xref:botframework.connector.models.TextHighlight>]
   - name: semantic_action
     description: 'An optional programmatic action accompanying this
 

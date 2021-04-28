@@ -29,12 +29,12 @@ methods:
       Cannot be larger than 7 days.'
     defaultValue: None
     types:
-    - <xref:botbuilder.azure.int>
+    - <xref:int>
   - name: time_to_live
     description: Specifies the time-to-live interval for the message in seconds.
     defaultValue: None
     types:
-    - <xref:botbuilder.azure.int>
+    - <xref:int>
   return:
     description: QueueMessage as a JSON string.
     types:

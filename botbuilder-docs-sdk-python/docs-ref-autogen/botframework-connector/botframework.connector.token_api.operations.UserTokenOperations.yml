@@ -61,7 +61,7 @@ methods:
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - <xref:botframework.connector.token_api.operations.dict>
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
@@ -77,7 +77,7 @@ methods:
   return:
     description: object or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.token_api.operations.object>
+    - <xref:object>
     - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.token_api.operations.UserTokenOperations.get_aad_tokens
   name: get_aad_tokens
@@ -99,12 +99,12 @@ methods:
   - name: resource_urls
     defaultValue: None
     types:
-    - <xref:botframework.connector.token_api.operations.list>[<xref:str>]
+    - <xref:list>[<xref:str>]
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - <xref:botframework.connector.token_api.operations.dict>
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
@@ -120,7 +120,7 @@ methods:
   return:
     description: dict or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.token_api.operations.dict>[<xref:str>, <xref:botframework.tokenapi.models.TokenResponse>]
+    - <xref:dict>[<xref:str>, <xref:botframework.tokenapi.models.TokenResponse>]
     - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.token_api.operations.UserTokenOperations.get_token
   name: get_token
@@ -147,7 +147,7 @@ methods:
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - <xref:botframework.connector.token_api.operations.dict>
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
@@ -186,7 +186,7 @@ methods:
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - <xref:botframework.connector.token_api.operations.dict>
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
@@ -202,7 +202,7 @@ methods:
   return:
     description: list or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.token_api.operations.list>[<xref:botframework.tokenapi.models.TokenStatus>]
+    - <xref:list>[<xref:botframework.tokenapi.models.TokenStatus>]
     - <xref:msrest.pipeline.ClientRawResponse>
 - uid: botframework.connector.token_api.operations.UserTokenOperations.sign_out
   name: sign_out
@@ -225,7 +225,7 @@ methods:
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - <xref:botframework.connector.token_api.operations.dict>
+    - <xref:dict>
   - name: raw
     description: 'returns the direct response alongside the
 
@@ -241,7 +241,7 @@ methods:
   return:
     description: object or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.token_api.operations.object>
+    - <xref:object>
     - <xref:msrest.pipeline.ClientRawResponse>
 attributes:
 - uid: botframework.connector.token_api.operations.UserTokenOperations.models

@@ -48,7 +48,7 @@ methods:
     description: Optional, initial information to pass to the dialog.
     defaultValue: None
     types:
-    - <xref:botbuilder.dialogs.component_dialog.object>
+    - <xref:object>
   return:
     description: Signals the end of the turn
     types:
@@ -108,7 +108,7 @@ methods:
       context.
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.component_dialog.object>
+    - <xref:object>
   return:
     description: Value to return.
     types:
@@ -169,7 +169,7 @@ methods:
     description: Optional, initial information to pass to the dialog.
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.component_dialog.object>
+    - <xref:object>
   remarks: 'If the task is successful, the result indicates whether the dialog is
     still
 
@@ -277,7 +277,7 @@ methods:
     description: Optional, value returned from the dialog that was called.
     defaultValue: None
     types:
-    - <xref:botbuilder.dialogs.component_dialog.object>
+    - <xref:object>
   return:
     description: Signals the end of the turn
     types:
