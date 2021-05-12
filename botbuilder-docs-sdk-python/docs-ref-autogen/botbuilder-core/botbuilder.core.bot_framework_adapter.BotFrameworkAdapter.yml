@@ -19,6 +19,13 @@ remarks: "The bot adapter encapsulates authentication processes and sends activi
   \ the bot, each piece of middleware can inspect or act\nupon the activity, both\
   \ before and after the bot logic runs.\n"
 methods:
+- uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.can_process_outgoing_activity
+  name: can_process_outgoing_activity
+  signature: 'can_process_outgoing_activity(activity: botbuilder.schema._models_py3.Activity)
+    -> bool'
+  parameters:
+  - name: activity
+    isRequired: true
 - uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.continue_conversation
   name: continue_conversation
   summary: 'Continues a conversation with a user.
@@ -536,6 +543,15 @@ methods:
   - name: identity
     isRequired: true
   - name: logic
+    isRequired: true
+- uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.process_outgoing_activity
+  name: process_outgoing_activity
+  signature: 'process_outgoing_activity(turn_context: botbuilder.core.turn_context.TurnContext,
+    activity: botbuilder.schema._models_py3.Activity) -> botbuilder.schema._models_py3.ResourceResponse'
+  parameters:
+  - name: turn_context
+    isRequired: true
+  - name: activity
     isRequired: true
 - uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.send_activities
   name: send_activities
