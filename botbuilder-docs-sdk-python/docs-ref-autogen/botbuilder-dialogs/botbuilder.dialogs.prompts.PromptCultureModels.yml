@@ -1,0 +1,83 @@
+### YamlMime:PythonClass
+uid: botbuilder.dialogs.prompts.PromptCultureModels
+name: PromptCultureModels
+fullName: botbuilder.dialogs.prompts.PromptCultureModels
+module: botbuilder.dialogs.prompts
+inheritances:
+- builtins.object
+summary: Class container for currently-supported Culture Models in Confirm and Choice
+  Prompt.
+methods:
+- uid: botbuilder.dialogs.prompts.PromptCultureModels.get_supported_cultures
+  name: get_supported_cultures
+  summary: Gets a list of the supported culture models.
+  signature: get_supported_cultures() -> typing.List[botbuilder.dialogs.prompts.prompt_culture_models.PromptCultureModel]
+  parameters:
+  - name: cls
+    isRequired: true
+- uid: botbuilder.dialogs.prompts.PromptCultureModels.map_to_nearest_language
+  name: map_to_nearest_language
+  summary: 'Normalize various potential locale strings to a standard.
+
+    :param culture_code: Represents locale. Examples: "en-US, en-us, EN".
+
+    :return: Normalized locale.
+
+    :rtype: str'
+  signature: 'map_to_nearest_language(culture_code: str) -> str'
+  parameters:
+  - name: cls
+    isRequired: true
+  - name: culture_code
+    isRequired: true
+  remarks: 'In our other SDKs, this method is a copy/paste of the ones from the Recognizers-Text
+    library.
+
+    However, that doesn''t exist in Python.
+
+    '
+attributes:
+- uid: botbuilder.dialogs.prompts.PromptCultureModels.Chinese
+  name: Chinese
+  signature: Chinese = <botbuilder.dialogs.prompts.prompt_culture_models.PromptCultureModel
+    object>
+- uid: botbuilder.dialogs.prompts.PromptCultureModels.Dutch
+  name: Dutch
+  signature: Dutch = <botbuilder.dialogs.prompts.prompt_culture_models.PromptCultureModel
+    object>
+- uid: botbuilder.dialogs.prompts.PromptCultureModels.English
+  name: English
+  signature: English = <botbuilder.dialogs.prompts.prompt_culture_models.PromptCultureModel
+    object>
+- uid: botbuilder.dialogs.prompts.PromptCultureModels.French
+  name: French
+  signature: French = <botbuilder.dialogs.prompts.prompt_culture_models.PromptCultureModel
+    object>
+- uid: botbuilder.dialogs.prompts.PromptCultureModels.German
+  name: German
+  signature: German = <botbuilder.dialogs.prompts.prompt_culture_models.PromptCultureModel
+    object>
+- uid: botbuilder.dialogs.prompts.PromptCultureModels.Italian
+  name: Italian
+  signature: Italian = <botbuilder.dialogs.prompts.prompt_culture_models.PromptCultureModel
+    object>
+- uid: botbuilder.dialogs.prompts.PromptCultureModels.Japanese
+  name: Japanese
+  signature: Japanese = <botbuilder.dialogs.prompts.prompt_culture_models.PromptCultureModel
+    object>
+- uid: botbuilder.dialogs.prompts.PromptCultureModels.Korean
+  name: Korean
+  signature: Korean = <botbuilder.dialogs.prompts.prompt_culture_models.PromptCultureModel
+    object>
+- uid: botbuilder.dialogs.prompts.PromptCultureModels.Portuguese
+  name: Portuguese
+  signature: Portuguese = <botbuilder.dialogs.prompts.prompt_culture_models.PromptCultureModel
+    object>
+- uid: botbuilder.dialogs.prompts.PromptCultureModels.Spanish
+  name: Spanish
+  signature: Spanish = <botbuilder.dialogs.prompts.prompt_culture_models.PromptCultureModel
+    object>
+- uid: botbuilder.dialogs.prompts.PromptCultureModels.Turkish
+  name: Turkish
+  signature: Turkish = <botbuilder.dialogs.prompts.prompt_culture_models.PromptCultureModel
+    object>
