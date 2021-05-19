@@ -12,7 +12,8 @@ summary: "BotAdapter that can handle incoming Slack events. Incoming Slack event
 constructor:
   syntax: 'SlackAdapter(client: botbuilder.adapters.slack.slack_client.SlackClient,
     on_turn_error: typing.Callable[[botbuilder.core.turn_context.TurnContext, Exception],
-    typing.Awaitable] = None)'
+    typing.Awaitable] = None, options: botbuilder.adapters.slack.slack_adatper_options.SlackAdapterOptions
+    = None)'
 methods:
 - uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.continue_conversation
   name: continue_conversation

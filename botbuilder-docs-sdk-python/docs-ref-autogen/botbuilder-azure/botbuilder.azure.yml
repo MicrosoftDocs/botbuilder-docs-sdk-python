@@ -4,6 +4,7 @@ name: azure
 fullName: botbuilder.azure
 type: import
 classes:
+- botbuilder.azure.AzureQueueStorage
 - botbuilder.azure.BlobStorage
 - botbuilder.azure.BlobStorageSettings
 - botbuilder.azure.CosmosDbStorage
@@ -13,6 +14,7 @@ classes:
 - botbuilder.azure.CosmosDbPartitionedConfig
 modules:
 - botbuilder.azure.about
+- botbuilder.azure.azure_queue_storage
 - botbuilder.azure.blob_storage
 - botbuilder.azure.cosmosdb_partitioned_storage
 - botbuilder.azure.cosmosdb_storage
