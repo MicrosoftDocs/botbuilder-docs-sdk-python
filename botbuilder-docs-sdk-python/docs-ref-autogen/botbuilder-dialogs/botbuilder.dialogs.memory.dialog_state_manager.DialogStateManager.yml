@@ -180,7 +180,7 @@ methods:
     :param default_value: Function to give default value if there is none (OPTIONAL).
 
     :return: Result or null if the path is not valid.'
-  signature: 'get_value(class_type:typing. Type, path_expression: str, default_value:
+  signature: 'get_value(class_type: typing.Type, path_expression: str, default_value:
     typing.Callable[T] = None) -> T'
   parameters:
   - name: class_type
@@ -296,7 +296,7 @@ methods:
     :param path: Path expression to use.
 
     :return: True if found, false if not and the value.'
-  signature: 'try_get_value(path: str, class_type:typing. Type = <class ''object''>)
+  signature: 'try_get_value(path: str, class_type: typing.Type = <class ''object''>)
     -> typing.Tuple[bool, object]'
   parameters:
   - name: path
