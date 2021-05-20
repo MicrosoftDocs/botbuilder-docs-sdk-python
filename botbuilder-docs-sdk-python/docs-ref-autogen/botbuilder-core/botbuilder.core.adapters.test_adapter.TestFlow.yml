@@ -15,7 +15,7 @@ methods:
     :param description:
 
     :param timeout:'
-  signature: assert_no_reply(description=None, timeout=None) -> 'TestFlow'
+  signature: assert_no_reply(description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
   parameters:
   - name: description
     defaultValue: None
@@ -37,7 +37,7 @@ methods:
     :return:'
   signature: 'assert_reply(expected: typing.Union[str, botbuilder.schema._models_py3.Activity,
     typing.Callable[[botbuilder.schema._models_py3.Activity, str], None]], description=None,
-    timeout=None, is_substring=False) -> ''TestFlow'''
+    timeout=None, is_substring=False) -> botbuilder.core.adapters.test_adapter.TestFlow'
   parameters:
   - name: expected
     isRequired: true
@@ -54,7 +54,7 @@ methods:
     :param user_says:
 
     :return:'
-  signature: send(user_says) -> 'TestFlow'
+  signature: send(user_says) -> botbuilder.core.adapters.test_adapter.TestFlow
   parameters:
   - name: user_says
     isRequired: true
@@ -77,7 +77,7 @@ methods:
     :param timeout:
 
     :return:'
-  signature: test(user_says, expected, description=None, timeout=None) -> 'TestFlow'
+  signature: test(user_says, expected, description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
   parameters:
   - name: user_says
     isRequired: true

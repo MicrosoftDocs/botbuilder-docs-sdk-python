@@ -39,7 +39,7 @@ methods:
     :result: Page of results of Activity objects'
   signature: 'get_transcript_activities(channel_id: str, conversation_id: str, continuation_token:
     str, start_date: <module ''datetime'' from ''c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\datetime.py''>)
-    -> ''PagedResult'''
+    -> botbuilder.core.transcript_logger.PagedResult'
   parameters:
   - name: channel_id
     isRequired: true
@@ -58,7 +58,7 @@ methods:
     :param continuation_token : Continuation token to page through results.
 
     :result: Page of results of TranscriptInfo objects'
-  signature: 'list_transcripts(channel_id: str, continuation_token: str) -> ''PagedResult'''
+  signature: 'list_transcripts(channel_id: str, continuation_token: str) -> botbuilder.core.transcript_logger.PagedResult'
   parameters:
   - name: channel_id
     isRequired: true

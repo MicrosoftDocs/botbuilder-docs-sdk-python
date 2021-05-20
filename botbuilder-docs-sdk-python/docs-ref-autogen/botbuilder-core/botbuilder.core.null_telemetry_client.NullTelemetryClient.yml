@@ -128,7 +128,7 @@ methods:
     \ the number of metrics that were aggregated into this data point. (defaults to:\
     \ None\n:param min_val: the minimum of all metrics collected that were aggregated\
     \ into this data point.\n\n   (defaults to: None)"
-  signature: 'track_metric(name: str, value: float, tel_type: botbuilder.core.bot_telemetry_client.TelemetryDataPointtyping.Type
+  signature: 'track_metric(name: str, value: float, tel_type: botbuilder.core.bot_telemetry_client.TelemetryDataPointType
     = None, count: int = None, min_val: float = None, max_val: float = None, std_dev:
     float = None, properties: typing.Dict[str, object] = None) -> NotImplemented'
   parameters:

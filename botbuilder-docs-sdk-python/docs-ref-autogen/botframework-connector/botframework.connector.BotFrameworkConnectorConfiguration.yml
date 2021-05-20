@@ -6,6 +6,6 @@ module: botframework.connector
 inheritances:
 - botframework.connector._configuration.ConnectorClientConfiguration
 constructor:
-  syntax: 'BotFrameworkConnectorConfiguration(credentials, base_url: str, *, pipeline_type:
-    typing.Type[msrest.pipeline.async_abc.AsyncPipeline] = None, sender: msrest.pipeline.async_abc.AsyncHTTPSender
+  syntax: 'BotFrameworkConnectorConfiguration(credentials, base_url: str, *, pipeline_type:typing.
+    Type[msrest.pipeline.async_abc.AsyncPipeline] = None, sender: msrest.pipeline.async_abc.AsyncHTTPSender
     = None, driver: msrest.universal_http.async_abc.AsyncHTTPSender = None)'
