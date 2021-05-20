@@ -33,7 +33,8 @@ constructor:
       ''trace'', ''handoff'''
     isRequired: true
     types:
-    - <xref:str> or <xref:botframework.connector.models.ActivityTypes>
+    - <xref:str>
+    - <xref:botframework.connector.models.ActivityTypes>
   - name: id
     description: 'Contains an ID that uniquely identifies the activity on the
 
@@ -47,7 +48,7 @@ constructor:
       UTC, expressed in ISO-8601 format.'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.datetime>
+    - <xref:datetime>
   - name: local_timestamp
     description: 'Contains the local date and time of the message
 
@@ -56,7 +57,7 @@ constructor:
       For example, 2016-09-23T13:07:49.4714686-07:00.'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.datetime>
+    - <xref:datetime>
   - name: local_timezone
     description: 'Contains the name of the local timezone of the message,
 
@@ -103,7 +104,8 @@ constructor:
       values include: ''markdown'', ''plain'', ''xml'''
     isRequired: true
     types:
-    - <xref:str> or <xref:botframework.connector.models.TextFormatTypes>
+    - <xref:str>
+    - <xref:botframework.connector.models.TextFormatTypes>
   - name: attachment_layout
     description: 'The layout hint for multiple attachments.
 
@@ -182,7 +184,8 @@ constructor:
       ''expectingInput'''
     isRequired: true
     types:
-    - <xref:str> or <xref:botframework.connector.models.InputHints>
+    - <xref:str>
+    - <xref:botframework.connector.models.InputHints>
   - name: summary
     description: The text to display if the channel cannot render cards.
     isRequired: true
@@ -261,21 +264,23 @@ constructor:
       ''botIssuedInvalidMessage'', ''channelFailed'''
     isRequired: true
     types:
-    - <xref:str> or <xref:botframework.connector.models.EndOfConversationCodes>
+    - <xref:str>
+    - <xref:botframework.connector.models.EndOfConversationCodes>
   - name: expiration
     description: 'The time at which the activity should be considered to
 
       be "expired" and should not be presented to the recipient.'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.datetime>
+    - <xref:datetime>
   - name: importance
     description: 'The importance of the activity. Possible values
 
       include: ''low'', ''normal'', ''high'''
     isRequired: true
     types:
-    - <xref:str> or <xref:botframework.connector.models.ActivityImportance>
+    - <xref:str>
+    - <xref:botframework.connector.models.ActivityImportance>
   - name: delivery_mode
     description: 'A delivery hint to signal to the recipient alternate
 
@@ -286,7 +291,8 @@ constructor:
       ''notification'', ''expectReplies'', ''ephemeral'''
     isRequired: true
     types:
-    - <xref:str> or <xref:botframework.connector.models.DeliveryModes>
+    - <xref:str>
+    - <xref:botframework.connector.models.DeliveryModes>
   - name: listen_for
     description: 'List of phrases and references that speech and language
 

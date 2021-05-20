@@ -51,7 +51,8 @@ constructor:
       etc.). Possible values include: ''user'', ''bot'', ''skill'''
     isRequired: true
     types:
-    - <xref:str> or <xref:botframework.connector.models.RoleTypes>
+    - <xref:str>
+    - <xref:botframework.connector.models.RoleTypes>
   - name: tenant_id
     description: This conversation's tenant ID
     isRequired: true
