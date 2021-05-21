@@ -7,7 +7,7 @@ inheritances:
 - botbuilder.core.transcript_logger.TranscriptLogger
 summary: Transcript storage for conversations.
 constructor:
-  syntax: TranscriptStore()
+  syntax: TranscriptStore() -> None
 methods:
 - uid: botbuilder.core.transcript_logger.TranscriptStore.delete_transcript
   name: delete_transcript

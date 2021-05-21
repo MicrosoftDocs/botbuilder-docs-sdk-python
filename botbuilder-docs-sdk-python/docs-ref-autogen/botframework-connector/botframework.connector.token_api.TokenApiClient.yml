@@ -6,7 +6,7 @@ module: botframework.connector.token_api
 inheritances:
 - msrest.service_client.SDKClient
 constructor:
-  syntax: TokenApiClient(credentials, base_url=None)
+  syntax: TokenApiClient(credentials, base_url=None) -> None
   parameters:
   - name: credentials
     description: 'Subscription credentials which uniquely identify
@@ -26,10 +26,10 @@ variables:
   types:
   - <xref:botframework.connector.token_api.TokenApiClientConfiguration>
 - description: BotSignIn operations
-  name: bot_sign_in
+  name: config
   types:
   - <xref:botframework.tokenapi.operations.BotSignInOperations>
 - description: UserToken operations
-  name: user_token
+  name: config
   types:
   - <xref:botframework.tokenapi.operations.UserTokenOperations>

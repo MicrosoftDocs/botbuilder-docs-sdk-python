@@ -9,7 +9,7 @@ summary: "AttachmentsOperations operations.\n\nYou should not instantiate direct
   \ this class, but create a Client instance that will create it for you and attach\n\
   \   it as attribute."
 constructor:
-  syntax: AttachmentsOperations(client, config, serializer, deserializer)
+  syntax: AttachmentsOperations(client, config, serializer, deserializer) -> None
   parameters:
   - name: client
     description: Client for service requests.
@@ -25,8 +25,7 @@ constructor:
     isRequired: true
 variables:
 - description: 'The API version to use for the request. Constant value: "v3".'
-  name: "api_version \u2013 The API version to use for the request. Constant value:\
-    \ \u201Cv3\u201D"
+  name: api_version
 methods:
 - uid: botframework.connector.operations.AttachmentsOperations.get_attachment
   name: get_attachment
@@ -35,7 +34,7 @@ methods:
 
     Get the named view as binary content.'
   signature: get_attachment(attachment_id, view_id, custom_headers=None, raw=False,
-    callback=None, **operation_config)
+    callback=None, **operation_config) -> None
   parameters:
   - name: attachment_id
     description: attachment id
@@ -88,6 +87,7 @@ methods:
 
     Get AttachmentInfo structure describing the attachment views.'
   signature: get_attachment_info(attachment_id, custom_headers=None, raw=False, **operation_config)
+    -> None
   parameters:
   - name: attachment_id
     description: attachment id

@@ -8,7 +8,7 @@ inheritances:
 summary: A card representing a request to perform a sign in via OAuth.
 constructor:
   syntax: 'OAuthCard(*, text: str = None, connection_name: str = None, buttons=None,
-    token_exchange_resource=None, **kwargs)'
+    token_exchange_resource=None, **kwargs) -> None'
   parameters:
   - name: text
     description: Text for signin request

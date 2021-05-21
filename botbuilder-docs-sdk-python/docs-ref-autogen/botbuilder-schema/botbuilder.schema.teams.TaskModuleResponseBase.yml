@@ -7,7 +7,7 @@ inheritances:
 - msrest.serialization.Model
 summary: Base class for Task Module responses.
 constructor:
-  syntax: TaskModuleResponseBase(*, type=None, **kwargs)
+  syntax: TaskModuleResponseBase(*, type=None, **kwargs) -> None
   parameters:
   - name: type
     description: 'Choice of action options when responding to the task/submit

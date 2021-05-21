@@ -8,7 +8,7 @@ inheritances:
 summary: TokenExchangeInvokeResponse.
 constructor:
   syntax: 'TokenExchangeInvokeResponse(*, id: str = None, connection_name: str = None,
-    failure_detail: str = None, properties=None, **kwargs)'
+    failure_detail: str = None, properties=None, **kwargs) -> None'
   parameters:
   - name: id
     description: The id from the OAuthCard.

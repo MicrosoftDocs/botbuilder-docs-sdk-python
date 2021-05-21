@@ -7,7 +7,7 @@ inheritances:
 - botbuilder.core.bot.Bot
 summary: Handles activities and should be subclassed.
 constructor:
-  syntax: ActivityHandler()
+  syntax: ActivityHandler() -> None
 remarks: 'Derive from this class to handle particular activity types.
 
   Yon can add pre and post processing of activities by calling the base class
@@ -22,7 +22,8 @@ methods:
     when the base behavior of
 
     <xref:botbuilder.core.activity_handler.ActivityHandler.on_turn> is used.'
-  signature: 'on_conversation_update_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'on_conversation_update_activity(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -59,7 +60,8 @@ methods:
 - uid: botbuilder.core.activity_handler.ActivityHandler.on_end_of_conversation_activity
   name: on_end_of_conversation_activity
   summary: Invoked when a conversation end activity is received from the channel.
-  signature: 'on_end_of_conversation_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'on_end_of_conversation_activity(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -74,7 +76,8 @@ methods:
     base behavior of
 
     <xref:botbuilder.core.activity_handler.ActivityHandler.on_event_activity> is used.'
-  signature: 'on_event(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'on_event(turn_context: botbuilder.core.turn_context.TurnContext) ->
+    None'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -98,7 +101,8 @@ methods:
     base behavior of
 
     <xref:botbuilder.core.activity_handler.ActivityHandler.on_turn> is used.'
-  signature: 'on_event_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'on_event_activity(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -160,7 +164,8 @@ methods:
   summary: 'Override this in a derived class to provide logic specific to
 
     ActivityTypes.InstallationUpdate activities.'
-  signature: 'on_installation_update(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'on_installation_update(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -174,7 +179,8 @@ methods:
   summary: 'Override this in a derived class to provide logic specific to
 
     ActivityTypes.InstallationUpdate activities with ''action'' set to ''add''.'
-  signature: 'on_installation_update_add(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'on_installation_update_add(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -188,7 +194,8 @@ methods:
   summary: 'Override this in a derived class to provide logic specific to
 
     ActivityTypes.InstallationUpdate activities with ''action'' set to ''remove''.'
-  signature: 'on_installation_update_remove(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'on_installation_update_remove(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -227,7 +234,7 @@ methods:
 
     :type turn_context: <xref:botbuilder.core.TurnContext>'
   signature: 'on_members_added_activity(members_added: typing.List[botbuilder.schema._models_py3.ChannelAccount],
-    turn_context: botbuilder.core.turn_context.TurnContext)'
+    turn_context: botbuilder.core.turn_context.TurnContext) -> None'
   parameters:
   - name: members_added
     isRequired: true
@@ -260,7 +267,7 @@ methods:
 
     :type turn_context: <xref:botbuilder.core.TurnContext>'
   signature: 'on_members_removed_activity(members_removed: typing.List[botbuilder.schema._models_py3.ChannelAccount],
-    turn_context: botbuilder.core.turn_context.TurnContext)'
+    turn_context: botbuilder.core.turn_context.TurnContext) -> None'
   parameters:
   - name: members_removed
     isRequired: true
@@ -282,7 +289,8 @@ methods:
   summary: 'Override this method in a derived class to provide logic specific to activities,
 
     such as the conversational logic.'
-  signature: 'on_message_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'on_message_activity(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -297,7 +305,8 @@ methods:
     base behavior of
 
     <xref:botbuilder.core.activity_handler.ActivityHandler.on_turn> is used.'
-  signature: 'on_message_reaction_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'on_message_reaction_activity(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -328,7 +337,7 @@ methods:
 
     are added to the conversation.'
   signature: 'on_reactions_added(message_reactions: typing.List[botbuilder.schema._models_py3.MessageReaction],
-    turn_context: botbuilder.core.turn_context.TurnContext)'
+    turn_context: botbuilder.core.turn_context.TurnContext) -> None'
   parameters:
   - name: message_reactions
     description: The list of reactions added
@@ -366,7 +375,7 @@ methods:
 
     are removed from the conversation.'
   signature: 'on_reactions_removed(message_reactions: typing.List[botbuilder.schema._models_py3.MessageReaction],
-    turn_context: botbuilder.core.turn_context.TurnContext)'
+    turn_context: botbuilder.core.turn_context.TurnContext) -> None'
   parameters:
   - name: message_reactions
     description: The list of reactions removed
@@ -407,7 +416,8 @@ methods:
     current dialog.
 
     By default, this method does nothing.'
-  signature: 'on_sign_in_invoke(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'on_sign_in_invoke(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -425,7 +435,8 @@ methods:
 
     If using an *oauth_prompt*, override this method to forward this activity to the
     current dialog.'
-  signature: 'on_token_response_event(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'on_token_response_event(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -449,7 +460,7 @@ methods:
     at runtime
 
     in order to process an inbound <xref:botbuilder.schema.Activity>.'
-  signature: 'on_turn(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'on_turn(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -479,7 +490,8 @@ methods:
   summary: 'Override this in a derived class to provide logic specific to
 
     ActivityTypes.typing activities, such as the conversational logic.'
-  signature: 'on_typing_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'on_typing_activity(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -498,7 +510,8 @@ methods:
 
     If overridden, this method could potentially respond to any of the other activity
     types.'
-  signature: 'on_unrecognized_activity_type(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'on_unrecognized_activity_type(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn

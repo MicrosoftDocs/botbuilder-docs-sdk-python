@@ -6,7 +6,7 @@ module: botbuilder.ai.qna.qnamaker
 inheritances:
 - builtins.tuple
 constructor:
-  syntax: EventData(properties, metrics)
+  syntax: EventData(properties, metrics) -> None
 attributes:
 - uid: botbuilder.ai.qna.qnamaker.EventData.metrics
   name: metrics

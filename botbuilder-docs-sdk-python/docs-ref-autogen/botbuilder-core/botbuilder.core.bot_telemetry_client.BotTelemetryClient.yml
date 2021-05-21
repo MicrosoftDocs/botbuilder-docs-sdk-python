@@ -6,7 +6,7 @@ module: botbuilder.core.bot_telemetry_client
 inheritances:
 - abc.ABC
 constructor:
-  syntax: BotTelemetryClient()
+  syntax: BotTelemetryClient() -> None
 methods:
 - uid: botbuilder.core.bot_telemetry_client.BotTelemetryClient.track_dependency
   name: track_dependency
@@ -46,7 +46,7 @@ methods:
   signature: 'track_dependency(name: str, data: str, type_name: str = None, target:
     str = None, duration: int = None, success: bool = None, result_code: str = None,
     properties: typing.Dict[str, object] = None, measurements: typing.Dict[str, object]
-    = None, dependency_id: str = None)'
+    = None, dependency_id: str = None) -> None'
   parameters:
   - name: name
     isRequired: true
@@ -219,7 +219,7 @@ methods:
   signature: 'track_request(name: str, url: str, success: bool, start_time: str =
     None, duration: int = None, response_code: str = None, http_method: str = None,
     properties: typing.Dict[str, object] = None, measurements: typing.Dict[str, object]
-    = None, request_id: str = None)'
+    = None, request_id: str = None) -> None'
   parameters:
   - name: name
     isRequired: true
@@ -247,7 +247,7 @@ methods:
 
     :param name: the trace statement.'
   signature: 'track_trace(name, properties=None, severity: botbuilder.core.bot_telemetry_client.Severity
-    = None)'
+    = None) -> None'
   parameters:
   - name: properties
     description: 'the set of custom properties the client wants attached to this data

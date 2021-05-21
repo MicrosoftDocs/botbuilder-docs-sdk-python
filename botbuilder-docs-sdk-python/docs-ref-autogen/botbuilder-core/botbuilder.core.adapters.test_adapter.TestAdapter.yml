@@ -9,12 +9,12 @@ inheritances:
 constructor:
   syntax: 'TestAdapter(logic: typing.Coroutine = None, template_or_conversation: typing.Union[botbuilder.schema._models_py3.Activity,
     botbuilder.schema._models_py3.ConversationReference] = None, send_trace_activities:
-    bool = False)'
+    bool = False) -> None'
 methods:
 - uid: botbuilder.core.adapters.test_adapter.TestAdapter.add_exchangeable_token
   name: add_exchangeable_token
   signature: 'add_exchangeable_token(connection_name: str, channel_id: str, user_id:
-    str, exchangeable_item: str, token: str)'
+    str, exchangeable_item: str, token: str) -> None'
   parameters:
   - name: connection_name
     isRequired: true
@@ -29,7 +29,7 @@ methods:
 - uid: botbuilder.core.adapters.test_adapter.TestAdapter.add_user_token
   name: add_user_token
   signature: 'add_user_token(connection_name: str, channel_id: str, user_id: str,
-    token: str, magic_code: str = None)'
+    token: str, magic_code: str = None) -> None'
   parameters:
   - name: connection_name
     isRequired: true
@@ -56,7 +56,7 @@ methods:
     :return:'
   signature: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
     callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
-    = None, audience: str = None)'
+    = None, audience: str = None) -> None'
   parameters:
   - name: reference
     isRequired: true
@@ -70,7 +70,7 @@ methods:
     defaultValue: None
 - uid: botbuilder.core.adapters.test_adapter.TestAdapter.create_conversation
   name: create_conversation
-  signature: 'create_conversation(channel_id: str, callback: typing.Callable)'
+  signature: 'create_conversation(channel_id: str, callback: typing.Callable) -> None'
   parameters:
   - name: channel_id
     isRequired: true
@@ -107,7 +107,8 @@ methods:
     :param reference:
 
     :return:'
-  signature: 'delete_activity(context, reference: botbuilder.schema._models_py3.ConversationReference)'
+  signature: 'delete_activity(context, reference: botbuilder.schema._models_py3.ConversationReference)
+    -> None'
   parameters:
   - name: context
     isRequired: true
@@ -340,7 +341,8 @@ methods:
 - uid: botbuilder.core.adapters.test_adapter.TestAdapter.process_activity
   name: process_activity
   signature: 'process_activity(activity: botbuilder.schema._models_py3.Activity, logic:
-    typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable])'
+    typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable]) ->
+    None'
   parameters:
   - name: activity
     isRequired: true
@@ -356,7 +358,7 @@ methods:
     :param activity:
 
     :return:'
-  signature: receive_activity(activity)
+  signature: receive_activity(activity) -> None
   parameters:
   - name: activity
     isRequired: true
@@ -408,7 +410,7 @@ methods:
     :return:'
   signature: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
     str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
-    = None)'
+    = None) -> None'
   parameters:
   - name: context
     isRequired: true
@@ -458,11 +460,11 @@ methods:
     :param args:
 
     :return:'
-  signature: tests(*args)
+  signature: tests(*args) -> None
 - uid: botbuilder.core.adapters.test_adapter.TestAdapter.throw_on_exchange_request
   name: throw_on_exchange_request
   signature: 'throw_on_exchange_request(connection_name: str, channel_id: str, user_id:
-    str, exchangeable_item: str)'
+    str, exchangeable_item: str) -> None'
   parameters:
   - name: connection_name
     isRequired: true
@@ -485,7 +487,8 @@ methods:
     :param activity:
 
     :return:'
-  signature: 'update_activity(context, activity: botbuilder.schema._models_py3.Activity)'
+  signature: 'update_activity(context, activity: botbuilder.schema._models_py3.Activity)
+    -> None'
   parameters:
   - name: context
     isRequired: true

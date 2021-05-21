@@ -6,7 +6,7 @@ module: botbuilder.dialogs.memory.scopes
 inheritances:
 - botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope
 constructor:
-  syntax: DialogMemoryScope()
+  syntax: DialogMemoryScope() -> None
 methods:
 - uid: botbuilder.dialogs.memory.scopes.DialogMemoryScope.get_memory
   name: get_memory
@@ -16,13 +16,13 @@ methods:
     isRequired: true
 - uid: botbuilder.dialogs.memory.scopes.DialogMemoryScope.is_container
   name: is_container
-  signature: 'is_container(dialog_context: DialogContext)'
+  signature: 'is_container(dialog_context: DialogContext) -> None'
   parameters:
   - name: dialog_context
     isRequired: true
 - uid: botbuilder.dialogs.memory.scopes.DialogMemoryScope.set_memory
   name: set_memory
-  signature: 'set_memory(dialog_context: DialogContext, memory: object)'
+  signature: 'set_memory(dialog_context: DialogContext, memory: object) -> None'
   parameters:
   - name: dialog_context
     isRequired: true

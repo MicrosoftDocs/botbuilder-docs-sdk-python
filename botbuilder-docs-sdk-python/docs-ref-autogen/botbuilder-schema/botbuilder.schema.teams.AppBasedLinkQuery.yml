@@ -7,7 +7,7 @@ inheritances:
 - msrest.serialization.Model
 summary: Invoke request body type for app-based link query.
 constructor:
-  syntax: 'AppBasedLinkQuery(*, url: str = None, state: str = None, **kwargs)'
+  syntax: 'AppBasedLinkQuery(*, url: str = None, state: str = None, **kwargs) -> None'
   parameters:
   - name: url
     description: Url queried by user

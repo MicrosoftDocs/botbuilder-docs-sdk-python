@@ -7,7 +7,7 @@ inheritances:
 - botbuilder.core.oauth.user_token_provider.UserTokenProvider
 - abc.ABC
 constructor:
-  syntax: ExtendedUserTokenProvider()
+  syntax: ExtendedUserTokenProvider() -> None
 methods:
 - uid: botbuilder.core.oauth.extended_user_token_provider.ExtendedUserTokenProvider.exchange_token
   name: exchange_token
@@ -227,7 +227,7 @@ methods:
     :return:'
   signature: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
     str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
-    = None)'
+    = None) -> None'
   parameters:
   - name: context
     isRequired: true

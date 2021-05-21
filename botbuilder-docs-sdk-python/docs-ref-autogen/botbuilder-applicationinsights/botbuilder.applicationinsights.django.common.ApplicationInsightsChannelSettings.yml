@@ -6,7 +6,8 @@ module: botbuilder.applicationinsights.django.common
 inheritances:
 - builtins.tuple
 constructor:
-  syntax: ApplicationInsightsChannelSettings(send_interval, send_time, endpoint)
+  syntax: ApplicationInsightsChannelSettings(send_interval, send_time, endpoint) ->
+    None
 attributes:
 - uid: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings.endpoint
   name: endpoint

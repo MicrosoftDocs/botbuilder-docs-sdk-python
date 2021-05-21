@@ -7,7 +7,8 @@ inheritances:
 - builtins.object
 constructor:
   syntax: 'InspectionSession(conversation_reference: botbuilder.schema._models_py3.ConversationReference,
-    credentials: botframework.connector.auth.microsoft_app_credentials.MicrosoftAppCredentials)'
+    credentials: botframework.connector.auth.microsoft_app_credentials.MicrosoftAppCredentials)
+    -> None'
 methods:
 - uid: botbuilder.core.inspection.inspection_session.InspectionSession.send
   name: send

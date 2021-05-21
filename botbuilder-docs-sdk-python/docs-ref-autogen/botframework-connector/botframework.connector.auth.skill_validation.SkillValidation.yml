@@ -7,7 +7,7 @@ inheritances:
 - builtins.object
 summary: Validates JWT tokens sent to and from a Skill.
 constructor:
-  syntax: SkillValidation()
+  syntax: SkillValidation() -> None
 methods:
 - uid: botframework.connector.auth.skill_validation.SkillValidation.authenticate_channel_token
   name: authenticate_channel_token
@@ -31,7 +31,7 @@ methods:
   summary: 'Creates a ClaimsIdentity for an anonymous (unauthenticated) skill.
 
     :return ClaimsIdentity:'
-  signature: create_anonymous_skill_claim()
+  signature: create_anonymous_skill_claim() -> None
 - uid: botframework.connector.auth.skill_validation.SkillValidation.is_skill_claim
   name: is_skill_claim
   summary: 'Checks if the given list of claims represents a skill.

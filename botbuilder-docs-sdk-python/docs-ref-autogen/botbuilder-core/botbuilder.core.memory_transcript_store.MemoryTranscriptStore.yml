@@ -10,7 +10,7 @@ summary: 'This provider is most useful for simulating production storage when ru
 
   emulator or as part of a unit test.'
 constructor:
-  syntax: MemoryTranscriptStore()
+  syntax: MemoryTranscriptStore() -> None
 methods:
 - uid: botbuilder.core.memory_transcript_store.MemoryTranscriptStore.delete_transcript
   name: delete_transcript

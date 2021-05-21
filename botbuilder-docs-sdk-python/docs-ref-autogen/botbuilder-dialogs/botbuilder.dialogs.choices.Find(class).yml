@@ -7,14 +7,14 @@ inheritances:
 - builtins.object
 summary: Contains methods for matching user input against a list of choices
 constructor:
-  syntax: Find()
+  syntax: Find() -> None
 methods:
 - uid: botbuilder.dialogs.choices.Find.find_choices
   name: find_choices
   summary: Matches user input against a list of choices
   signature: 'find_choices(utterance: str, choices: [typing.typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
     options: botbuilder.dialogs.choices.find_choices_options.FindChoicesOptions =
-    None)'
+    None) -> None'
   parameters:
   - name: utterance
     isRequired: true

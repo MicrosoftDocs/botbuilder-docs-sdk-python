@@ -8,7 +8,7 @@ inheritances:
 summary: File info card.
 constructor:
   syntax: 'FileInfoCard(*, unique_id: str = None, file_type: str = None, etag=None,
-    **kwargs)'
+    **kwargs) -> None'
   parameters:
   - name: unique_id
     description: Unique Id for the file.

@@ -13,7 +13,7 @@ summary: 'UserTokenOperations operations.
 
   it as attribute.'
 constructor:
-  syntax: UserTokenOperations(client, config, serializer, deserializer)
+  syntax: UserTokenOperations(client, config, serializer, deserializer) -> None
   parameters:
   - name: client
     description: Client for service requests.
@@ -29,13 +29,12 @@ constructor:
     isRequired: true
 variables:
 - description: 'The API version to use for the request. Constant value: "token".'
-  name: "api_version \u2013 The API version to use for the request. Constant value:\
-    \ \u201Ctoken\u201D"
+  name: api_version
 methods:
 - uid: botframework.connector.token_api.operations.UserTokenOperations.exchange_async
   name: exchange_async
   signature: exchange_async(user_id, connection_name, channel_id, uri=None, token=None,
-    custom_headers=None, raw=False, **operation_config)
+    custom_headers=None, raw=False, **operation_config) -> None
   parameters:
   - name: user_id
     isRequired: true
@@ -82,7 +81,7 @@ methods:
 - uid: botframework.connector.token_api.operations.UserTokenOperations.get_aad_tokens
   name: get_aad_tokens
   signature: get_aad_tokens(user_id, connection_name, channel_id=None, resource_urls=None,
-    custom_headers=None, raw=False, **operation_config)
+    custom_headers=None, raw=False, **operation_config) -> None
   parameters:
   - name: user_id
     isRequired: true
@@ -125,7 +124,7 @@ methods:
 - uid: botframework.connector.token_api.operations.UserTokenOperations.get_token
   name: get_token
   signature: get_token(user_id, connection_name, channel_id=None, code=None, custom_headers=None,
-    raw=False, **operation_config)
+    raw=False, **operation_config) -> None
   parameters:
   - name: user_id
     isRequired: true
@@ -168,7 +167,7 @@ methods:
 - uid: botframework.connector.token_api.operations.UserTokenOperations.get_token_status
   name: get_token_status
   signature: get_token_status(user_id, channel_id=None, include=None, custom_headers=None,
-    raw=False, **operation_config)
+    raw=False, **operation_config) -> None
   parameters:
   - name: user_id
     isRequired: true
@@ -207,7 +206,7 @@ methods:
 - uid: botframework.connector.token_api.operations.UserTokenOperations.sign_out
   name: sign_out
   signature: sign_out(user_id, connection_name=None, channel_id=None, custom_headers=None,
-    raw=False, **operation_config)
+    raw=False, **operation_config) -> None
   parameters:
   - name: user_id
     isRequired: true

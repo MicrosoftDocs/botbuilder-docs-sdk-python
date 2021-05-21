@@ -13,7 +13,7 @@ constructor:
     created_date_time: str = None, last_modified_date_time: str = None, deleted: bool
     = None, subject: str = None, summary: str = None, importance=None, locale: str
     = None, link_to_message: str = None, from_property=None, body=None, attachment_layout:
-    str = None, attachments=None, mentions=None, reactions=None, **kwargs)'
+    str = None, attachments=None, mentions=None, reactions=None, **kwargs) -> None'
   parameters:
   - name: id
     description: Unique id of the message.

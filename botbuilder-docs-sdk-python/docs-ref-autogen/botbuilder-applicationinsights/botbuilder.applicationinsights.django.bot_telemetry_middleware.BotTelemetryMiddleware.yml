@@ -13,7 +13,7 @@ summary: "Save off the POST body to later populate bot-specific properties to ad
   \   MIDDLEWARE = [\n       # Ideally add somewhere near top\n       'botbuilder.applicationinsights.django.BotTelemetryMiddleware',\n\
   \       ...\n       ]\n   ````"
 constructor:
-  syntax: BotTelemetryMiddleware(get_response)
+  syntax: BotTelemetryMiddleware(get_response) -> None
 methods:
 - uid: botbuilder.applicationinsights.django.bot_telemetry_middleware.BotTelemetryMiddleware.process_request
   name: process_request

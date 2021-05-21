@@ -6,7 +6,7 @@ module: botbuilder.dialogs.memory.component_path_resolvers_base
 inheritances:
 - abc.ABC
 constructor:
-  syntax: ComponentPathResolversBase()
+  syntax: ComponentPathResolversBase() -> None
 methods:
 - uid: botbuilder.dialogs.memory.component_path_resolvers_base.ComponentPathResolversBase.get_path_resolvers
   name: get_path_resolvers

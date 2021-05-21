@@ -7,13 +7,14 @@ inheritances:
 - builtins.object
 summary: Data describing a LUIS application.
 constructor:
-  syntax: 'LuisApplication(application_id: str, endpoint_key: str, endpoint: str)'
+  syntax: 'LuisApplication(application_id: str, endpoint_key: str, endpoint: str)
+    -> None'
 methods:
 - uid: botbuilder.ai.luis.luis_application.LuisApplication.from_application_endpoint
   name: from_application_endpoint
   summary: Initializes a new instance of the <xref:botbuilder.ai.luis.luis_application.LuisApplication>
     class.
-  signature: 'from_application_endpoint(application_endpoint: str)'
+  signature: 'from_application_endpoint(application_endpoint: str) -> None'
   parameters:
   - name: application_endpoint
     description: LUIS application endpoint.

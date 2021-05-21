@@ -7,7 +7,7 @@ inheritances:
 - botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope
 constructor:
   syntax: 'BotStateMemoryScope(bot_state_type: typing.Type[botbuilder.core.bot_state.BotState],
-    name: str)'
+    name: str) -> None'
 methods:
 - uid: botbuilder.dialogs.memory.scopes.BotStateMemoryScope.get_memory
   name: get_memory
@@ -17,7 +17,7 @@ methods:
     isRequired: true
 - uid: botbuilder.dialogs.memory.scopes.BotStateMemoryScope.load
   name: load
-  signature: 'load(dialog_context: DialogContext, force: bool = False)'
+  signature: 'load(dialog_context: DialogContext, force: bool = False) -> None'
   parameters:
   - name: dialog_context
     isRequired: true
@@ -25,7 +25,8 @@ methods:
     defaultValue: 'False'
 - uid: botbuilder.dialogs.memory.scopes.BotStateMemoryScope.save_changes
   name: save_changes
-  signature: 'save_changes(dialog_context: DialogContext, force: bool = False)'
+  signature: 'save_changes(dialog_context: DialogContext, force: bool = False) ->
+    None'
   parameters:
   - name: dialog_context
     isRequired: true
@@ -33,7 +34,7 @@ methods:
     defaultValue: 'False'
 - uid: botbuilder.dialogs.memory.scopes.BotStateMemoryScope.set_memory
   name: set_memory
-  signature: 'set_memory(dialog_context: DialogContext, memory: object)'
+  signature: 'set_memory(dialog_context: DialogContext, memory: object) -> None'
   parameters:
   - name: dialog_context
     isRequired: true

@@ -6,7 +6,8 @@ module: botbuilder.core
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'BotStateSet(bot_states: typing.List[botbuilder.core.bot_state.BotState])'
+  syntax: 'BotStateSet(bot_states: typing.List[botbuilder.core.bot_state.BotState])
+    -> None'
 methods:
 - uid: botbuilder.core.BotStateSet.add
   name: add
@@ -17,7 +18,7 @@ methods:
 - uid: botbuilder.core.BotStateSet.load_all
   name: load_all
   signature: 'load_all(turn_context: botbuilder.core.turn_context.TurnContext, force:
-    bool = False)'
+    bool = False) -> None'
   parameters:
   - name: turn_context
     isRequired: true
@@ -26,7 +27,7 @@ methods:
 - uid: botbuilder.core.BotStateSet.save_all_changes
   name: save_all_changes
   signature: 'save_all_changes(turn_context: botbuilder.core.turn_context.TurnContext,
-    force: bool = False)'
+    force: bool = False) -> None'
   parameters:
   - name: turn_context
     isRequired: true

@@ -7,7 +7,7 @@ inheritances:
 - botbuilder.core.transcript_logger.TranscriptLogger
 summary: ConsoleTranscriptLogger writes activities to Console output.
 constructor:
-  syntax: ConsoleTranscriptLogger()
+  syntax: ConsoleTranscriptLogger() -> None
 methods:
 - uid: botbuilder.core.transcript_logger.ConsoleTranscriptLogger.log_activity
   name: log_activity

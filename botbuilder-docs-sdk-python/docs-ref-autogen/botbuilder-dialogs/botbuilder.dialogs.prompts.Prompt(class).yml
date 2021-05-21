@@ -8,7 +8,7 @@ inheritances:
 summary: Defines the core behavior of prompt dialogs. Extends the <xref:botbuilder.dialogs.prompts.Dialog>
   base class.
 constructor:
-  syntax: 'Prompt(dialog_id: str, validator: object = None)'
+  syntax: 'Prompt(dialog_id: str, validator: object = None) -> None'
 remarks: 'When the prompt ends, it returns an object that represents the value it
   was prompted for.
 
@@ -93,7 +93,8 @@ methods:
 - uid: botbuilder.dialogs.prompts.Prompt.continue_dialog
   name: continue_dialog
   summary: Continues a dialog.
-  signature: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
+  signature: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
+    -> None'
   parameters:
   - name: dialog_context
     description: The dialog context for the current turn of the conversation
@@ -126,7 +127,7 @@ methods:
     user for input.
   signature: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
     typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
-    is_retry: bool)'
+    is_retry: bool) -> None'
   parameters:
   - name: turn_context
     description: Context for the current turn of conversation with the user
@@ -153,10 +154,18 @@ methods:
     description: A task representing the asynchronous operation.
 - uid: botbuilder.dialogs.prompts.Prompt.on_recognize
   name: on_recognize
-  summary: "Recognizes the user's input.\n\n\n> [!NOTE]\n> When overridden in a derived\
-    \ class, attempts to recognize the user\u2019s input.\n>"
+  summary: 'Recognizes the user''s input.
+
+
+
+    > [!NOTE]
+
+    > When overridden in a derived class, attempts to recognize the user''s input.
+
+    >'
   signature: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
-    state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)'
+    state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
+    -> None'
   parameters:
   - name: turn_context
     description: Context for the current turn of conversation with the user
@@ -180,7 +189,7 @@ methods:
   name: reprompt_dialog
   summary: Reprompts user for input.
   signature: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
-    botbuilder.dialogs.dialog_instance.DialogInstance)'
+    botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
   parameters:
   - name: context
     description: Context for the current turn of conversation with the user

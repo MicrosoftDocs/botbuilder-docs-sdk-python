@@ -7,7 +7,7 @@ inheritances:
 - msrest.serialization.Model
 constructor:
   syntax: 'TokenExchangeState(*, connection_name: str = None, conversation=None, relates_to=None,
-    bot_url: str = None, ms_app_id: str = None, **kwargs)'
+    bot_url: str = None, ms_app_id: str = None, **kwargs) -> None'
   parameters:
   - name: connection_name
     description: The connection name that was used.

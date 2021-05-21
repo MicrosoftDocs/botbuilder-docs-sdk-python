@@ -6,7 +6,7 @@ module: botbuilder.adapters.slack.slack_helper
 inheritances:
 - builtins.object
 constructor:
-  syntax: SlackHelper()
+  syntax: SlackHelper() -> None
 methods:
 - uid: botbuilder.adapters.slack.slack_helper.SlackHelper.activity_to_slack
   name: activity_to_slack

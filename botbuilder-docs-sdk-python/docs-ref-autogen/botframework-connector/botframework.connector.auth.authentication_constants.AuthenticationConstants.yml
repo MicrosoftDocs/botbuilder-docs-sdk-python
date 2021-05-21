@@ -6,7 +6,7 @@ module: botframework.connector.auth.authentication_constants
 inheritances:
 - abc.ABC
 constructor:
-  syntax: AuthenticationConstants()
+  syntax: AuthenticationConstants() -> None
 attributes:
 - uid: botframework.connector.auth.authentication_constants.AuthenticationConstants.AUDIENCE_CLAIM
   name: AUDIENCE_CLAIM

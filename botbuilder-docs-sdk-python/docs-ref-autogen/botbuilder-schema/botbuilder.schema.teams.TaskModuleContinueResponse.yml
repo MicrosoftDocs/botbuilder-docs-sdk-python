@@ -7,7 +7,7 @@ inheritances:
 - botbuilder.schema.teams._models_py3.TaskModuleResponseBase
 summary: Task Module Response with continue action.
 constructor:
-  syntax: TaskModuleContinueResponse(*, value=None, **kwargs)
+  syntax: TaskModuleContinueResponse(*, value=None, **kwargs) -> None
   parameters:
   - name: value
     description: The JSON for the Adaptive card to appear in the task module.

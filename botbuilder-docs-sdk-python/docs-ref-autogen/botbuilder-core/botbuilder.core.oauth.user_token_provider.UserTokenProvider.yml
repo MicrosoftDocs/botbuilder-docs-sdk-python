@@ -6,7 +6,7 @@ module: botbuilder.core.oauth.user_token_provider
 inheritances:
 - abc.ABC
 constructor:
-  syntax: UserTokenProvider()
+  syntax: UserTokenProvider() -> None
 methods:
 - uid: botbuilder.core.oauth.user_token_provider.UserTokenProvider.get_aad_tokens
   name: get_aad_tokens
@@ -157,7 +157,7 @@ methods:
     :return:'
   signature: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
     str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
-    = None)'
+    = None) -> None'
   parameters:
   - name: context
     isRequired: true

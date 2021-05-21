@@ -6,7 +6,8 @@ module: botbuilder.dialogs
 inheritances:
 - botbuilder.dialogs.dialog.Dialog
 constructor:
-  syntax: 'WaterfallDialog(dialog_id: str, steps: [typing.typing.Coroutine] = None)'
+  syntax: 'WaterfallDialog(dialog_id: str, steps: [typing.typing.Coroutine] = None)
+    -> None'
 methods:
 - uid: botbuilder.dialogs.WaterfallDialog.add_step
   name: add_step
@@ -15,7 +16,7 @@ methods:
     :param step: Step to add
 
     :return: Waterfall dialog for fluent calls to *add_step()*.'
-  signature: add_step(step)
+  signature: add_step(step) -> None
   parameters:
   - name: step
     isRequired: true
@@ -111,7 +112,7 @@ methods:
 
     :return:'
   signature: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)'
+    reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object) -> None'
   parameters:
   - name: dialog_context
     isRequired: true

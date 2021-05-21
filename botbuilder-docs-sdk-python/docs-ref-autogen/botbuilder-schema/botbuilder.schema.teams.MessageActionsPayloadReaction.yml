@@ -8,7 +8,7 @@ inheritances:
 summary: Represents the reaction of a user to a message.
 constructor:
   syntax: 'MessageActionsPayloadReaction(*, reaction_type=None, created_date_time:
-    str = None, user=None, **kwargs)'
+    str = None, user=None, **kwargs) -> None'
   parameters:
   - name: reaction_type
     description: 'The type of reaction given to the message. Possible

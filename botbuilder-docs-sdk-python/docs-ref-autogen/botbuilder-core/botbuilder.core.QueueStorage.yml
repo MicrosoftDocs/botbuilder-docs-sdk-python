@@ -7,7 +7,7 @@ inheritances:
 - abc.ABC
 summary: A base class for enqueueing an Activity for later processing.
 constructor:
-  syntax: QueueStorage()
+  syntax: QueueStorage() -> None
 methods:
 - uid: botbuilder.core.QueueStorage.queue_activity
   name: queue_activity

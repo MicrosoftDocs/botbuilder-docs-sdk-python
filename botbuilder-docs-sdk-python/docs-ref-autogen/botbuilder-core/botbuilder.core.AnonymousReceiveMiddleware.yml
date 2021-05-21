@@ -6,12 +6,12 @@ module: botbuilder.core
 inheritances:
 - botbuilder.core.middleware_set.Middleware
 constructor:
-  syntax: AnonymousReceiveMiddleware(anonymous_handler)
+  syntax: AnonymousReceiveMiddleware(anonymous_handler) -> None
 methods:
 - uid: botbuilder.core.AnonymousReceiveMiddleware.on_turn
   name: on_turn
   signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
-    typing.Awaitable])'
+    typing.Awaitable]) -> None'
   parameters:
   - name: context
     isRequired: true

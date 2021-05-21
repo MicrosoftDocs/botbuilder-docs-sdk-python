@@ -6,7 +6,7 @@ module: botframework.connector.async_mixin.async_mixin
 inheritances:
 - builtins.object
 constructor:
-  syntax: AsyncServiceClientMixin()
+  syntax: AsyncServiceClientMixin() -> None
 methods:
 - uid: botframework.connector.async_mixin.async_mixin.AsyncServiceClientMixin.async_send
   name: async_send
@@ -19,7 +19,7 @@ methods:
     :param content: Any body data to add to the request.
 
     :param config: Any specific config overrides'
-  signature: async_send(request, headers=None, content=None, **config)
+  signature: async_send(request, headers=None, content=None, **config) -> None
   parameters:
   - name: request
     isRequired: true
@@ -42,7 +42,8 @@ methods:
     :param dict content: Dictionary of the fields of the formdata.
 
     :param config: Any specific config overrides.'
-  signature: async_send_formdata(request, headers=None, content=None, **config)
+  signature: async_send_formdata(request, headers=None, content=None, **config) ->
+    None
   parameters:
   - name: request
     isRequired: true
@@ -57,7 +58,7 @@ methods:
     :param response: The initial response
 
     :param user_callback: Custom callback for monitoring progress.'
-  signature: stream_download_async(response, user_callback)
+  signature: stream_download_async(response, user_callback) -> None
   parameters:
   - name: response
     isRequired: true

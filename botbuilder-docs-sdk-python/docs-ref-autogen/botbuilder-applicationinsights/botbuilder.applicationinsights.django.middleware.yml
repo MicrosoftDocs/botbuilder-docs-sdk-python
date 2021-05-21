@@ -5,13 +5,13 @@ fullName: botbuilder.applicationinsights.django.middleware
 functions:
 - uid: botbuilder.applicationinsights.django.middleware.arg_to_str
   name: arg_to_str
-  signature: arg_to_str(arg)
+  signature: arg_to_str(arg) -> None
   parameters:
   - name: arg
     isRequired: true
 - uid: botbuilder.applicationinsights.django.middleware.ms_to_duration
   name: ms_to_duration
-  signature: ms_to_duration(n)
+  signature: ms_to_duration(n) -> None
   parameters:
   - name: n
     isRequired: true

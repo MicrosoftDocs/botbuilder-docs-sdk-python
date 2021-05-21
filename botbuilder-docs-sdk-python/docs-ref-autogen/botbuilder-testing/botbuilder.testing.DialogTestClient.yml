@@ -11,7 +11,7 @@ constructor:
     target_dialog: botbuilder.dialogs.dialog.Dialog, initial_dialog_options: object
     = None, middlewares: typing.List[botbuilder.core.middleware_set.Middleware] =
     None, conversation_state: botbuilder.core.conversation_state.ConversationState
-    = None)'
+    = None) -> None'
 methods:
 - uid: botbuilder.testing.DialogTestClient.get_next_reply
   name: get_next_reply

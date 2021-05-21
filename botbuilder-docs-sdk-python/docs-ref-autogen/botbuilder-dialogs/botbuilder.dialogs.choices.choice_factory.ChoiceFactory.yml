@@ -7,7 +7,7 @@ inheritances:
 - builtins.object
 summary: Assists with formatting a message activity that contains a list of choices.
 constructor:
-  syntax: ChoiceFactory()
+  syntax: ChoiceFactory() -> None
 methods:
 - uid: botbuilder.dialogs.choices.choice_factory.ChoiceFactory.for_channel
   name: for_channel
@@ -86,7 +86,7 @@ methods:
     options: (Optional) The formatting options to use to tweak rendering of list.'
   signature: 'list_style(choices: typing.List[typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
     text: str = None, speak: str = None, options: botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
-    = None)'
+    = None) -> None'
   parameters:
   - name: choices
     isRequired: true

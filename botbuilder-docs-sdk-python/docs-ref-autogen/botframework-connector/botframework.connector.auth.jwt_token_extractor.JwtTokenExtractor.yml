@@ -7,7 +7,7 @@ inheritances:
 - builtins.object
 constructor:
   syntax: 'JwtTokenExtractor(validation_params: botframework.connector.auth.verify_options.VerifyOptions,
-    metadata_url: str, allowed_algorithms: list)'
+    metadata_url: str, allowed_algorithms: list) -> None'
 methods:
 - uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_identity
   name: get_identity
@@ -35,7 +35,7 @@ methods:
     defaultValue: None
 - uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_open_id_metadata
   name: get_open_id_metadata
-  signature: 'get_open_id_metadata(metadata_url: str)'
+  signature: 'get_open_id_metadata(metadata_url: str) -> None'
   parameters:
   - name: metadata_url
     isRequired: true

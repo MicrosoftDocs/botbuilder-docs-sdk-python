@@ -6,14 +6,14 @@ module: botbuilder.core.show_typing_middleware
 inheritances:
 - builtins.object
 constructor:
-  syntax: Timer()
+  syntax: Timer() -> None
 methods:
 - uid: botbuilder.core.show_typing_middleware.Timer.set_clear_timer
   name: set_clear_timer
-  signature: set_clear_timer()
+  signature: set_clear_timer() -> None
 - uid: botbuilder.core.show_typing_middleware.Timer.set_timeout
   name: set_timeout
-  signature: set_timeout(func, span)
+  signature: set_timeout(func, span) -> None
   parameters:
   - name: func
     isRequired: true

@@ -9,7 +9,7 @@ summary: "ConversationsOperations operations.\n\nYou should not instantiate dire
   \ this class, but create a Client instance that will create it for you and attach\n\
   \   it as attribute."
 constructor:
-  syntax: ConversationsOperations(client, config, serializer, deserializer)
+  syntax: ConversationsOperations(client, config, serializer, deserializer) -> None
   parameters:
   - name: client
     description: Client for service requests.
@@ -25,8 +25,7 @@ constructor:
     isRequired: true
 variables:
 - description: 'The API version to use for the request. Constant value: "v3".'
-  name: "api_version \u2013 The API version to use for the request. Constant value:\
-    \ \u201Cv3\u201D"
+  name: api_version
 methods:
 - uid: botframework.connector.operations.ConversationsOperations.create_conversation
   name: create_conversation
@@ -69,6 +68,7 @@ methods:
 
     ``.'
   signature: create_conversation(parameters, custom_headers=None, raw=False, **operation_config)
+    -> None
   parameters:
   - name: parameters
     description: Parameters to create the conversation from
@@ -108,7 +108,7 @@ methods:
 
     successful this method will remove the specified activity.'
   signature: delete_activity(conversation_id, activity_id, custom_headers=None, raw=False,
-    **operation_config)
+    **operation_config) -> None
   parameters:
   - name: conversation_id
     description: Conversation ID
@@ -157,7 +157,7 @@ methods:
 
     of the conversation, the conversation will also be deleted.'
   signature: delete_conversation_member(conversation_id, member_id, custom_headers=None,
-    raw=False, **operation_config)
+    raw=False, **operation_config) -> None
   parameters:
   - name: conversation_id
     description: Conversation ID
@@ -204,7 +204,7 @@ methods:
 
     particular activity in the conversation.'
   signature: get_activity_members(conversation_id, activity_id, custom_headers=None,
-    raw=False, **operation_config)
+    raw=False, **operation_config) -> None
   parameters:
   - name: conversation_id
     description: Conversation ID
@@ -249,7 +249,7 @@ methods:
 
     ChannelAccount object representing the member of the conversation.'
   signature: get_conversation_member(conversation_id, member_id, custom_headers=None,
-    raw=False, **operation_config)
+    raw=False, **operation_config) -> None
   parameters:
   - name: conversation_id
     description: Conversation Id
@@ -294,7 +294,7 @@ methods:
 
     ChannelAccount objects representing the members of the conversation.'
   signature: get_conversation_members(conversation_id, custom_headers=None, raw=False,
-    **operation_config)
+    **operation_config) -> None
   parameters:
   - name: conversation_id
     description: Conversation ID
@@ -356,7 +356,7 @@ methods:
 
     request may rarely return members from a previous request.'
   signature: get_conversation_paged_members(conversation_id, page_size=None, continuation_token=None,
-    custom_headers=None, raw=False, **operation_config)
+    custom_headers=None, raw=False, **operation_config) -> None
   parameters:
   - name: conversation_id
     description: Conversation ID
@@ -420,7 +420,7 @@ methods:
 
     conversation.'
   signature: get_conversations(continuation_token=None, custom_headers=None, raw=False,
-    **operation_config)
+    **operation_config) -> None
   parameters:
   - name: continuation_token
     description: skip or continuation token
@@ -482,7 +482,8 @@ methods:
 
     request may rarely return members from a previous request.'
   signature: get_teams_conversation_paged_members(conversation_id, page_size=None,
-    continuation_token=None, custom_headers=None, raw=False, **operation_config)
+    continuation_token=None, custom_headers=None, raw=False, **operation_config) ->
+    None
   parameters:
   - name: conversation_id
     description: Conversation ID
@@ -550,7 +551,7 @@ methods:
 
     Use SendToConversation in all other cases.'
   signature: reply_to_activity(conversation_id, activity_id, activity, custom_headers=None,
-    raw=False, **operation_config)
+    raw=False, **operation_config) -> None
   parameters:
   - name: conversation_id
     description: Conversation ID
@@ -606,7 +607,7 @@ methods:
 
     render the activities in the right order.'
   signature: send_conversation_history(conversation_id, activities=None, custom_headers=None,
-    raw=False, **operation_config)
+    raw=False, **operation_config) -> None
   parameters:
   - name: conversation_id
     description: Conversation ID
@@ -673,7 +674,7 @@ methods:
 
     Use SendToConversation in all other cases.'
   signature: send_to_conversation(conversation_id, activity, custom_headers=None,
-    raw=False, **operation_config)
+    raw=False, **operation_config) -> None
   parameters:
   - name: conversation_id
     description: Conversation ID
@@ -722,7 +723,7 @@ methods:
 
     button.'
   signature: update_activity(conversation_id, activity_id, activity, custom_headers=None,
-    raw=False, **operation_config)
+    raw=False, **operation_config) -> None
   parameters:
   - name: conversation_id
     description: Conversation ID
@@ -776,7 +777,7 @@ methods:
 
     is suitable for using with the attachments API.'
   signature: upload_attachment(conversation_id, attachment_upload, custom_headers=None,
-    raw=False, **operation_config)
+    raw=False, **operation_config) -> None
   parameters:
   - name: conversation_id
     description: Conversation ID

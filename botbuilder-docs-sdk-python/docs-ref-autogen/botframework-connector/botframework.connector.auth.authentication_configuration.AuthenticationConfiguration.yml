@@ -8,4 +8,4 @@ inheritances:
 constructor:
   syntax: 'AuthenticationConfiguration(required_endorsements: typing.List[str] = None,
     claims_validator: typing.Callable[typing.List[typing.Dict], typing.Awaitable]
-    = None)'
+    = None) -> None'

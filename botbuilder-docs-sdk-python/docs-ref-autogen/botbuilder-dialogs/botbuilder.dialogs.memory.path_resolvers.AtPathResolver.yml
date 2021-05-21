@@ -6,7 +6,7 @@ module: botbuilder.dialogs.memory.path_resolvers
 inheritances:
 - botbuilder.dialogs.memory.path_resolvers.alias_path_resolver.AliasPathResolver
 constructor:
-  syntax: AtPathResolver()
+  syntax: AtPathResolver() -> None
 methods:
 - uid: botbuilder.dialogs.memory.path_resolvers.AtPathResolver.transform_path
   name: transform_path
@@ -15,7 +15,7 @@ methods:
     <param name="path">Path to inspect.</param>
 
     <returns>Transformed path.</returns>'
-  signature: 'transform_path(path: str)'
+  signature: 'transform_path(path: str) -> None'
   parameters:
   - name: path
     isRequired: true

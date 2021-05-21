@@ -6,7 +6,7 @@ module: botframework.connector.auth.jwt_token_validation
 inheritances:
 - builtins.object
 constructor:
-  syntax: JwtTokenValidation()
+  syntax: JwtTokenValidation() -> None
 methods:
 - uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.authenticate_request
   name: authenticate_request
@@ -84,7 +84,7 @@ methods:
 - uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.validate_claims
   name: validate_claims
   signature: 'validate_claims(auth_config: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration,
-    claims: typing.List[typing.Dict])'
+    claims: typing.List[typing.Dict]) -> None'
   parameters:
   - name: auth_config
     isRequired: true

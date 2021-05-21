@@ -8,7 +8,7 @@ inheritances:
 summary: Middleware for logging incoming, outgoing, updated or deleted Activity messages.
 constructor:
   syntax: 'TelemetryLoggerMiddleware(telemetry_client: botbuilder.core.bot_telemetry_client.BotTelemetryClient,
-    log_personal_information: bool)'
+    log_personal_information: bool) -> None'
 methods:
 - uid: botbuilder.core.TelemetryLoggerMiddleware.fill_delete_event_properties
   name: fill_delete_event_properties

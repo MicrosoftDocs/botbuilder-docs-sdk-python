@@ -7,7 +7,7 @@ inheritances:
 - builtins.object
 summary: Utility functions used to extract and transform data from Luis SDK
 constructor:
-  syntax: LuisUtil()
+  syntax: LuisUtil() -> None
 methods:
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.add_properties
   name: add_properties
@@ -81,7 +81,7 @@ methods:
     isRequired: true
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.get_user_agent
   name: get_user_agent
-  signature: get_user_agent()
+  signature: get_user_agent() -> None
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.intent_score_as_dict
   name: intent_score_as_dict
   signature: 'intent_score_as_dict(intent_score: botbuilder.core.intent_score.IntentScore)

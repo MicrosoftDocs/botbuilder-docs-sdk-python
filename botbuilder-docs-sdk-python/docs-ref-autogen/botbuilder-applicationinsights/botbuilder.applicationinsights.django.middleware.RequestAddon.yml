@@ -6,14 +6,14 @@ module: botbuilder.applicationinsights.django.middleware
 inheritances:
 - builtins.object
 constructor:
-  syntax: RequestAddon(client)
+  syntax: RequestAddon(client) -> None
 methods:
 - uid: botbuilder.applicationinsights.django.middleware.RequestAddon.measure_duration
   name: measure_duration
-  signature: measure_duration()
+  signature: measure_duration() -> None
 - uid: botbuilder.applicationinsights.django.middleware.RequestAddon.start_stopwatch
   name: start_stopwatch
-  signature: start_stopwatch()
+  signature: start_stopwatch() -> None
 attributes:
 - uid: botbuilder.applicationinsights.django.middleware.RequestAddon.client
   name: client

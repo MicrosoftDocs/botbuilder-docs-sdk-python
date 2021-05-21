@@ -7,7 +7,7 @@ inheritances:
 - builtins.object
 constructor:
   syntax: 'DialogStateManager(dialog_context: DialogContext, configuration: botbuilder.dialogs.memory.dialog_state_manager_configuration.DialogStateManagerConfiguration
-    = None)'
+    = None) -> None'
 methods:
 - uid: botbuilder.dialogs.memory.DialogStateManager.add
   name: add
@@ -18,7 +18,7 @@ methods:
     :param value: Value of the element to add.
 
     :return:'
-  signature: 'add(key: str, value: object)'
+  signature: 'add(key: str, value: object) -> None'
   parameters:
   - name: key
     isRequired: true
@@ -46,7 +46,7 @@ methods:
     :param key: Key of the element to remove.
 
     :return:'
-  signature: 'clear(key: str)'
+  signature: 'clear(key: str) -> None'
   parameters:
   - name: key
     isRequired: true
@@ -82,7 +82,7 @@ methods:
     \ of the elements copied\n\n   from the dialog state manager. The array must have\
     \ zero-based indexing."
   signature: 'copy_to(array: typing.List[typing.Tuple[str, object]], array_index:
-    int)'
+    int) -> None'
   parameters:
   - name: array_index
     isRequired: true
@@ -95,7 +95,7 @@ methods:
     :param name: name of the scope.
 
     :return:'
-  signature: 'delete_scopes_memory_async(name: str)'
+  signature: 'delete_scopes_memory_async(name: str) -> None'
   parameters:
   - name: name
     isRequired: true
@@ -194,7 +194,7 @@ methods:
   summary: 'Load all of the scopes.
 
     :return:'
-  signature: load_all_scopes()
+  signature: load_all_scopes() -> None
 - uid: botbuilder.dialogs.memory.DialogStateManager.remove
   name: remove
   summary: 'Removes the element with the specified key from the dialog state manager.
@@ -202,7 +202,7 @@ methods:
     :param key: Key of the element to remove.
 
     :return:'
-  signature: 'remove(key: str)'
+  signature: 'remove(key: str) -> None'
   parameters:
   - name: key
     isRequired: true
@@ -227,7 +227,7 @@ methods:
     :param value: Object to set.
 
     :return:'
-  signature: 'remove_value(path: str)'
+  signature: 'remove_value(path: str) -> None'
   parameters:
   - name: path
     isRequired: true
@@ -248,7 +248,7 @@ methods:
   summary: 'Save all changes for all scopes.
 
     :return:'
-  signature: save_all_changes()
+  signature: save_all_changes() -> None
 - uid: botbuilder.dialogs.memory.DialogStateManager.set_value
   name: set_value
   summary: 'Set memory to value.
@@ -258,7 +258,7 @@ methods:
     :param value: Object to set.
 
     :return:'
-  signature: 'set_value(path: str, value: object)'
+  signature: 'set_value(path: str, value: object) -> None'
   parameters:
   - name: path
     isRequired: true

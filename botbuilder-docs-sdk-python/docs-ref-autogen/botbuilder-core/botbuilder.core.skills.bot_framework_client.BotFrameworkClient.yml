@@ -6,7 +6,7 @@ module: botbuilder.core.skills.bot_framework_client
 inheritances:
 - abc.ABC
 constructor:
-  syntax: BotFrameworkClient()
+  syntax: BotFrameworkClient() -> None
 methods:
 - uid: botbuilder.core.skills.bot_framework_client.BotFrameworkClient.post_activity
   name: post_activity

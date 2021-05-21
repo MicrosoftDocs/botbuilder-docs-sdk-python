@@ -7,7 +7,7 @@ inheritances:
 - botbuilder.core.middleware_set.Middleware
 constructor:
   syntax: 'AutoSaveStateMiddleware(bot_states: typing.Union[typing.List[botbuilder.core.bot_state.BotState],
-    botbuilder.core.bot_state_set.BotStateSet] = None)'
+    botbuilder.core.bot_state_set.BotStateSet] = None) -> None'
 methods:
 - uid: botbuilder.core.AutoSaveStateMiddleware.add
   name: add
@@ -18,7 +18,7 @@ methods:
 - uid: botbuilder.core.AutoSaveStateMiddleware.on_turn
   name: on_turn
   signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
-    typing.Awaitable])'
+    typing.Awaitable]) -> None'
   parameters:
   - name: context
     isRequired: true

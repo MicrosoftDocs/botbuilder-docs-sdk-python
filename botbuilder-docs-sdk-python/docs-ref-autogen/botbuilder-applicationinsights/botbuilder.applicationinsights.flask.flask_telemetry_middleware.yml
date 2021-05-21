@@ -11,6 +11,6 @@ functions:
     The POST body corresponds with the thread id and should resides in
 
     cache just for lifetime of request.'
-  signature: retrieve_flask_body()
+  signature: retrieve_flask_body() -> None
 classes:
 - botbuilder.applicationinsights.flask.flask_telemetry_middleware.BotTelemetryMiddleware

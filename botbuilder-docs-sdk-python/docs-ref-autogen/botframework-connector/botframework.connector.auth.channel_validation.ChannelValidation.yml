@@ -6,7 +6,7 @@ module: botframework.connector.auth.channel_validation
 inheritances:
 - builtins.object
 constructor:
-  syntax: ChannelValidation()
+  syntax: ChannelValidation() -> None
 methods:
 - uid: botframework.connector.auth.channel_validation.ChannelValidation.authenticate_channel_token
   name: authenticate_channel_token

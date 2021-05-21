@@ -7,7 +7,8 @@ inheritances:
 - slack.web.client.WebClient
 summary: Slack client that extends [https://github.com/slackapi/python-slackclient](https://github.com/slackapi/python-slackclient).
 constructor:
-  syntax: 'SlackClient(options: botbuilder.adapters.slack.slack_client_options.SlackClientOptions)'
+  syntax: 'SlackClient(options: botbuilder.adapters.slack.slack_client_options.SlackClientOptions)
+    -> None'
 methods:
 - uid: botbuilder.adapters.slack.SlackClient.channels_list_ex
   name: channels_list_ex
@@ -68,7 +69,7 @@ methods:
   name: chat_update_ex
   signature: 'chat_update_ex(timestamp: str, channel: str, text: str, bot_name: str
     = None, parse: str = None, link_names: bool = False, attachments: typing.List[str]
-    = None, as_user: bool = False)'
+    = None, as_user: bool = False) -> None'
   parameters:
   - name: timestamp
     isRequired: true
@@ -119,7 +120,7 @@ methods:
   name: files_upload_ex
   signature: 'files_upload_ex(file: typing.Union[str, io.IOBase] = None, content:
     str = None, channels: typing.List[str] = None, title: str = None, initial_comment:
-    str = None, file_type: str = None)'
+    str = None, file_type: str = None) -> None'
   parameters:
   - name: file
     defaultValue: None
@@ -185,10 +186,10 @@ methods:
     defaultValue: None
 - uid: botbuilder.adapters.slack.SlackClient.is_logged_in
   name: is_logged_in
-  signature: is_logged_in()
+  signature: is_logged_in() -> None
 - uid: botbuilder.adapters.slack.SlackClient.login_with_slack
   name: login_with_slack
-  signature: login_with_slack()
+  signature: login_with_slack() -> None
 - uid: botbuilder.adapters.slack.SlackClient.post_message
   name: post_message
   signature: 'post_message(message: botbuilder.adapters.slack.slack_message.SlackMessage)

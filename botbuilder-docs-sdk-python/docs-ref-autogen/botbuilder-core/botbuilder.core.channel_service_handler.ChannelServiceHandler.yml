@@ -12,7 +12,7 @@ constructor:
   syntax: 'ChannelServiceHandler(credential_provider: botframework.connector.auth.credential_provider.CredentialProvider,
     auth_config: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration,
     channel_provider: botframework.connector.auth.channel_provider.ChannelProvider
-    = None)'
+    = None) -> None'
 methods:
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_create_conversation
   name: handle_create_conversation
@@ -25,7 +25,8 @@ methods:
     isRequired: true
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_delete_activity
   name: handle_delete_activity
-  signature: handle_delete_activity(auth_header, conversation_id, activity_id)
+  signature: handle_delete_activity(auth_header, conversation_id, activity_id) ->
+    None
   parameters:
   - name: auth_header
     isRequired: true
@@ -36,6 +37,7 @@ methods:
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_delete_conversation_member
   name: handle_delete_conversation_member
   signature: handle_delete_conversation_member(auth_header, conversation_id, member_id)
+    -> None
   parameters:
   - name: auth_header
     isRequired: true
@@ -212,7 +214,7 @@ methods:
 
     this method will remove the specified activity.'
   signature: 'on_delete_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str, activity_id: str)'
+    conversation_id: str, activity_id: str) -> None'
   parameters:
   - name: claims_identity
     isRequired: true
@@ -236,7 +238,7 @@ methods:
 
     of the conversation, the conversation will also be deleted.'
   signature: 'on_delete_conversation_member(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str, member_id: str)'
+    conversation_id: str, member_id: str) -> None'
   parameters:
   - name: claims_identity
     isRequired: true

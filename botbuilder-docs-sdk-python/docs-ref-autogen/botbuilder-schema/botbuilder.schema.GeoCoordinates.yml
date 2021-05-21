@@ -8,7 +8,7 @@ inheritances:
 summary: 'GeoCoordinates (entity type: "[https://schema.org/GeoCoordinates](https://schema.org/GeoCoordinates)").'
 constructor:
   syntax: 'GeoCoordinates(*, elevation: float = None, latitude: float = None, longitude:
-    float = None, type: str = None, name: str = None, **kwargs)'
+    float = None, type: str = None, name: str = None, **kwargs) -> None'
   parameters:
   - name: elevation
     description: 'Elevation of the location [WGS

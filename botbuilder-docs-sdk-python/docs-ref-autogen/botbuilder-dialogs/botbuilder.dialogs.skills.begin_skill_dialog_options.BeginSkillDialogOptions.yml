@@ -6,7 +6,8 @@ module: botbuilder.dialogs.skills.begin_skill_dialog_options
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'BeginSkillDialogOptions(activity: botbuilder.schema._models_py3.Activity)'
+  syntax: 'BeginSkillDialogOptions(activity: botbuilder.schema._models_py3.Activity)
+    -> None'
 methods:
 - uid: botbuilder.dialogs.skills.begin_skill_dialog_options.BeginSkillDialogOptions.from_object
   name: from_object

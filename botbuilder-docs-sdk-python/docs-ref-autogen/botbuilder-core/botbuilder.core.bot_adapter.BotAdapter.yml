@@ -7,7 +7,7 @@ inheritances:
 - abc.ABC
 constructor:
   syntax: 'BotAdapter(on_turn_error: typing.Callable[[botbuilder.core.turn_context.TurnContext,
-    Exception], typing.Awaitable] = None)'
+    Exception], typing.Awaitable] = None) -> None'
 methods:
 - uid: botbuilder.core.bot_adapter.BotAdapter.continue_conversation
   name: continue_conversation
@@ -42,7 +42,7 @@ methods:
     :type audience: str'
   signature: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
     callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
-    = None, audience: str = None)'
+    = None, audience: str = None) -> None'
   parameters:
   - name: bot_id
     description: The application ID of the bot. This parameter is ignored in
@@ -59,7 +59,7 @@ methods:
   name: delete_activity
   summary: Deletes an existing activity.
   signature: 'delete_activity(context: botbuilder.core.turn_context.TurnContext, reference:
-    botbuilder.schema._models_py3.ConversationReference)'
+    botbuilder.schema._models_py3.ConversationReference) -> None'
   parameters:
   - name: context
     description: The context object for the turn.
@@ -79,7 +79,7 @@ methods:
     the end of the chain.'
   signature: 'run_pipeline(context: botbuilder.core.turn_context.TurnContext, callback:
     typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable] =
-    None)'
+    None) -> None'
   parameters:
   - name: context
     description: The context object for the turn.
@@ -112,7 +112,7 @@ methods:
   name: update_activity
   summary: Replaces an existing activity.
   signature: 'update_activity(context: botbuilder.core.turn_context.TurnContext, activity:
-    botbuilder.schema._models_py3.Activity)'
+    botbuilder.schema._models_py3.Activity) -> None'
   parameters:
   - name: context
     description: The context object for the turn.
@@ -127,7 +127,7 @@ methods:
 - uid: botbuilder.core.bot_adapter.BotAdapter.use
   name: use
   summary: Registers a middleware handler with the adapter.
-  signature: use(middleware)
+  signature: use(middleware) -> None
   parameters:
   - name: middleware
     description: The middleware to register.

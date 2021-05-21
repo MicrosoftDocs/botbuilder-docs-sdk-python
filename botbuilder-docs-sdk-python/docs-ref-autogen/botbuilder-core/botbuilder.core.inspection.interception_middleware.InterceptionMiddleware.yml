@@ -6,12 +6,12 @@ module: botbuilder.core.inspection.interception_middleware
 inheritances:
 - botbuilder.core.middleware_set.Middleware
 constructor:
-  syntax: InterceptionMiddleware()
+  syntax: InterceptionMiddleware() -> None
 methods:
 - uid: botbuilder.core.inspection.interception_middleware.InterceptionMiddleware.on_turn
   name: on_turn
   signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
-    typing.Awaitable])'
+    typing.Awaitable]) -> None'
   parameters:
   - name: context
     isRequired: true

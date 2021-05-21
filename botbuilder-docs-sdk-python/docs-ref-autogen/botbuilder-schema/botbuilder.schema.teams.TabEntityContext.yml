@@ -7,7 +7,7 @@ inheritances:
 - msrest.serialization.Model
 summary: Current TabRequest entity context, or 'tabEntityId'.
 constructor:
-  syntax: TabEntityContext(*, tab_entity_id=None, **kwargs)
+  syntax: TabEntityContext(*, tab_entity_id=None, **kwargs) -> None
   parameters:
   - name: tab_entity_id
     description: Gets or sets the entity id of the tab.

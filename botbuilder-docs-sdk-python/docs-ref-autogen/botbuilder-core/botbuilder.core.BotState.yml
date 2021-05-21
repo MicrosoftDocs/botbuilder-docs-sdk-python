@@ -11,7 +11,7 @@ summary: 'Defines a state management object and automates the reading and writin
   associated state properties to a storage layer.'
 constructor:
   syntax: 'BotState(storage: botbuilder.core.storage.Storage, context_service_key:
-    str)'
+    str) -> None'
 remarks: 'Each state management object defines a scope for a storage layer.
 
   State properties are created within a state management scope, and the Bot Framework
@@ -26,7 +26,8 @@ methods:
 - uid: botbuilder.core.BotState.clear_state
   name: clear_state
   summary: Clears any state currently stored in this state scope.
-  signature: 'clear_state(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'clear_state(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -96,7 +97,8 @@ methods:
     this "BotState"
 
     from the turn context.'
-  signature: 'get_cached_state(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'get_cached_state(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn.
@@ -109,7 +111,7 @@ methods:
   name: get_property_value
   summary: Gets the value of the specified property in the turn context.
   signature: 'get_property_value(turn_context: botbuilder.core.turn_context.TurnContext,
-    property_name: str)'
+    property_name: str) -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn

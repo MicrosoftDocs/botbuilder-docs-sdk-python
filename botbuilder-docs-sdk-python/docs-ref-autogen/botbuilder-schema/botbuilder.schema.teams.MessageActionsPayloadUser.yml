@@ -8,7 +8,7 @@ inheritances:
 summary: Represents a user entity.
 constructor:
   syntax: 'MessageActionsPayloadUser(*, user_identity_type=None, id: str = None, display_name:
-    str = None, **kwargs)'
+    str = None, **kwargs) -> None'
   parameters:
   - name: user_identity_type
     description: 'The identity type of the user. Possible values

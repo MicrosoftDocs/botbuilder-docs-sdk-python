@@ -6,11 +6,11 @@ module: botbuilder.core
 inheritances:
 - builtins.object
 constructor:
-  syntax: AdapterExtensions()
+  syntax: AdapterExtensions() -> None
 methods:
 - uid: botbuilder.core.AdapterExtensions.fullname
   name: fullname
-  signature: fullname(obj)
+  signature: fullname(obj) -> None
   parameters:
   - name: obj
     isRequired: true

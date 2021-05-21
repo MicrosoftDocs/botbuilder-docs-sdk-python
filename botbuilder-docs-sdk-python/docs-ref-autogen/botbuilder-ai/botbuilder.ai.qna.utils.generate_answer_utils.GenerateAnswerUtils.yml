@@ -11,7 +11,7 @@ summary: 'Helper class for Generate Answer API, which is used to make queries to
 constructor:
   syntax: 'GenerateAnswerUtils(telemetry_client: botbuilder.core.bot_telemetry_client.BotTelemetryClient,
     endpoint: botbuilder.ai.qna.qnamaker_endpoint.QnAMakerEndpoint, options: botbuilder.ai.qna.qnamaker_options.QnAMakerOptions,
-    http_client: aiohttp.client.ClientSession)'
+    http_client: aiohttp.client.ClientSession) -> None'
 methods:
 - uid: botbuilder.ai.qna.utils.generate_answer_utils.GenerateAnswerUtils.get_answers
   name: get_answers

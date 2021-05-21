@@ -6,7 +6,7 @@ module: botbuilder.core
 inheritances:
 - builtins.object
 constructor:
-  syntax: CardFactory()
+  syntax: CardFactory() -> None
 methods:
 - uid: botbuilder.core.CardFactory.adaptive_card
   name: adaptive_card

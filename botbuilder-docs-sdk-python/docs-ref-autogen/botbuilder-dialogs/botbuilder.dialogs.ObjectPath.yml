@@ -7,13 +7,13 @@ inheritances:
 - builtins.object
 summary: Helper methods for working with json objects.
 constructor:
-  syntax: ObjectPath()
+  syntax: ObjectPath() -> None
 methods:
 - uid: botbuilder.dialogs.ObjectPath.assign
   name: assign
   summary: Creates a new object by overlaying values in start_object with non-null
     values from overlay_object.
-  signature: 'assign(start_object, overlay_object, default: object = None)'
+  signature: 'assign(start_object, overlay_object, default: object = None) -> None'
   parameters:
   - name: start_object
     description: dict or typed object, the target object to set values on
@@ -29,7 +29,7 @@ methods:
 - uid: botbuilder.dialogs.ObjectPath.for_each_property
   name: for_each_property
   signature: 'for_each_property(obj: object, action: typing.Callable[[str, object],
-    None])'
+    None]) -> None'
   parameters:
   - name: obj
     isRequired: true
@@ -64,7 +64,7 @@ methods:
 - uid: botbuilder.dialogs.ObjectPath.remove_path_value
   name: remove_path_value
   summary: Remove path from object.
-  signature: 'remove_path_value(obj, path: str)'
+  signature: 'remove_path_value(obj, path: str) -> None'
   parameters:
   - name: obj
     isRequired: true
@@ -73,7 +73,7 @@ methods:
 - uid: botbuilder.dialogs.ObjectPath.set_path_value
   name: set_path_value
   summary: Given an object evaluate a path to set the value.
-  signature: 'set_path_value(obj, path: str, value: object)'
+  signature: 'set_path_value(obj, path: str, value: object) -> None'
   parameters:
   - name: obj
     isRequired: true

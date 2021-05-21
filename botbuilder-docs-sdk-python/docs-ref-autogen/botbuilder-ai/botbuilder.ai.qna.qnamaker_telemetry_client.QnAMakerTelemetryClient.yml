@@ -7,13 +7,14 @@ inheritances:
 - abc.ABC
 constructor:
   syntax: 'QnAMakerTelemetryClient(log_personal_information: bool, telemetry_client:
-    botbuilder.core.bot_telemetry_client.BotTelemetryClient)'
+    botbuilder.core.bot_telemetry_client.BotTelemetryClient) -> None'
 methods:
 - uid: botbuilder.ai.qna.qnamaker_telemetry_client.QnAMakerTelemetryClient.get_answers
   name: get_answers
   signature: 'get_answers(context: botbuilder.core.turn_context.TurnContext, options:
     botbuilder.ai.qna.qnamaker_options.QnAMakerOptions = None, telemetry_properties:
-    typing.Dict[str, str] = None, telemetry_metrics: typing.Dict[str, float] = None)'
+    typing.Dict[str, str] = None, telemetry_metrics: typing.Dict[str, float] = None)
+    -> None'
   parameters:
   - name: context
     isRequired: true

@@ -9,7 +9,8 @@ summary: Application Insights Telemetry Client.
 constructor:
   syntax: 'ApplicationInsightsTelemetryClient(instrumentation_key: str, telemetry_client:
     applicationinsights.TelemetryClient.TelemetryClient = None, telemetry_processor:
-    typing.Callable[[object, object], bool] = None, client_queue_size: int = None)'
+    typing.Callable[[object, object], bool] = None, client_queue_size: int = None)
+    -> None'
 methods:
 - uid: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient.flush
   name: flush
@@ -17,14 +18,14 @@ methods:
     irrespective of what sender is
 
     being used.'
-  signature: flush()
+  signature: flush() -> None
 - uid: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient.track_dependency
   name: track_dependency
   summary: Sends a single dependency telemetry that was captured for the application.
   signature: 'track_dependency(name: str, data: str, type_name: str = None, target:
     str = None, duration: int = None, success: bool = None, result_code: str = None,
     properties: typing.Dict[str, object] = None, measurements: typing.Dict[str, object]
-    = None, dependency_id: str = None)'
+    = None, dependency_id: str = None) -> None'
   parameters:
   - name: name
     description: 'the name of the command initiated with this dependency call. Low
@@ -252,7 +253,7 @@ methods:
   signature: 'track_request(name: str, url: str, success: bool, start_time: str =
     None, duration: int = None, response_code: str = None, http_method: str = None,
     properties: typing.Dict[str, object] = None, measurements: typing.Dict[str, object]
-    = None, request_id: str = None)'
+    = None, request_id: str = None) -> None'
   parameters:
   - name: name
     description: The name for this request. All requests with the same name will be
@@ -318,7 +319,7 @@ methods:
   name: track_trace
   summary: Sends a single trace statement.
   signature: 'track_trace(name: str, properties: typing.Dict[str, object] = None,
-    severity: botbuilder.core.bot_telemetry_client.Severity = None)'
+    severity: botbuilder.core.bot_telemetry_client.Severity = None) -> None'
   parameters:
   - name: name
     description: the trace statement.

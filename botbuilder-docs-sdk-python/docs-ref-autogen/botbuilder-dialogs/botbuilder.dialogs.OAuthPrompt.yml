@@ -8,7 +8,7 @@ inheritances:
 constructor:
   syntax: 'OAuthPrompt(dialog_id: str, settings: botbuilder.dialogs.prompts.oauth_prompt_settings.OAuthPromptSettings,
     validator: typing.Callable[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext,
-    typing.Awaitable[bool]] = None)'
+    typing.Awaitable[bool]] = None) -> None'
 methods:
 - uid: botbuilder.dialogs.OAuthPrompt.begin_dialog
   name: begin_dialog
@@ -95,7 +95,8 @@ methods:
 - uid: botbuilder.dialogs.OAuthPrompt.sign_out_user
   name: sign_out_user
   summary: Signs out the user
-  signature: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext) ->
+    None'
   parameters:
   - name: context
     description: Context for the current turn of conversation with the user

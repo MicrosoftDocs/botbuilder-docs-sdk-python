@@ -11,7 +11,7 @@ constructor:
     credential_provider: botframework.connector.auth.credential_provider.CredentialProvider,
     auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration,
     channel_provider: botframework.connector.auth.channel_provider.ChannelProvider
-    = None, logger: object = None)'
+    = None, logger: object = None) -> None'
 methods:
 - uid: botbuilder.core.skills.SkillHandler.on_delete_activity
   name: on_delete_activity
@@ -25,7 +25,7 @@ methods:
 
     this method will remove the specified activity.'
   signature: 'on_delete_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str, activity_id: str)'
+    conversation_id: str, activity_id: str) -> None'
   parameters:
   - name: claims_identity
     isRequired: true

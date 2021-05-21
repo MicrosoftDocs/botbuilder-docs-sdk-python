@@ -9,7 +9,7 @@ constructor:
   syntax: 'SkillHttpClient(credential_provider: botframework.connector.auth.credential_provider.SimpleCredentialProvider,
     skill_conversation_id_factory: botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase,
     channel_provider: botframework.connector.auth.channel_provider.ChannelProvider
-    = None, logger: logging.Logger = None)'
+    = None, logger: logging.Logger = None) -> None'
 methods:
 - uid: botbuilder.integration.aiohttp.skills.SkillHttpClient.post_activity_to_skill
   name: post_activity_to_skill

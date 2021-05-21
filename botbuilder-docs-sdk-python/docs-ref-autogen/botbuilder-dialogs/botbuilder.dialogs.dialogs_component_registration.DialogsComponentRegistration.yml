@@ -8,7 +8,7 @@ inheritances:
 - botbuilder.dialogs.memory.component_memory_scopes_base.ComponentMemoryScopesBase
 - botbuilder.dialogs.memory.component_path_resolvers_base.ComponentPathResolversBase
 constructor:
-  syntax: DialogsComponentRegistration()
+  syntax: DialogsComponentRegistration() -> None
 methods:
 - uid: botbuilder.dialogs.dialogs_component_registration.DialogsComponentRegistration.get_memory_scopes
   name: get_memory_scopes

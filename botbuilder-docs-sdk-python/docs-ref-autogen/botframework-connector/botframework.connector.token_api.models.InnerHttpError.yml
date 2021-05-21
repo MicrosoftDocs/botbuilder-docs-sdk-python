@@ -7,7 +7,7 @@ inheritances:
 - msrest.serialization.Model
 summary: InnerHttpError.
 constructor:
-  syntax: 'InnerHttpError(*, status_code: int = None, body=None, **kwargs)'
+  syntax: 'InnerHttpError(*, status_code: int = None, body=None, **kwargs) -> None'
   parameters:
   - name: status_code
     isRequired: true

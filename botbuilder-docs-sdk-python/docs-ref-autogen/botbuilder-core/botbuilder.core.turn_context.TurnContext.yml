@@ -7,7 +7,7 @@ inheritances:
 - builtins.object
 constructor:
   syntax: 'TurnContext(adapter_or_context, request: botbuilder.schema._models_py3.Activity
-    = None)'
+    = None) -> None'
 methods:
 - uid: botbuilder.core.turn_context.TurnContext.apply_conversation_reference
   name: apply_conversation_reference
@@ -56,7 +56,8 @@ methods:
     :param id_or_reference:
 
     :return:'
-  signature: 'delete_activity(id_or_reference: typing.Union[str, botbuilder.schema._models_py3.ConversationReference])'
+  signature: 'delete_activity(id_or_reference: typing.Union[str, botbuilder.schema._models_py3.ConversationReference])
+    -> None'
   parameters:
   - name: id_or_reference
     isRequired: true
@@ -223,7 +224,8 @@ methods:
     :param activity:
 
     :return:'
-  signature: 'update_activity(activity: botbuilder.schema._models_py3.Activity)'
+  signature: 'update_activity(activity: botbuilder.schema._models_py3.Activity) ->
+    None'
   parameters:
   - name: activity
     isRequired: true

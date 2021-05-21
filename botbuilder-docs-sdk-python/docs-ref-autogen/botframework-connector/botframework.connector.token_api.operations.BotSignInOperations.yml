@@ -13,7 +13,7 @@ summary: 'BotSignInOperations operations.
 
   attach it as attribute.'
 constructor:
-  syntax: BotSignInOperations(client, config, serializer, deserializer)
+  syntax: BotSignInOperations(client, config, serializer, deserializer) -> None
   parameters:
   - name: client
     description: Client for service requests.
@@ -29,13 +29,12 @@ constructor:
     isRequired: true
 variables:
 - description: 'The API version to use for the request. Constant value: "token".'
-  name: "api_version \u2013 The API version to use for the request. Constant value:\
-    \ \u201Ctoken\u201D"
+  name: api_version
 methods:
 - uid: botframework.connector.token_api.operations.BotSignInOperations.get_sign_in_resource
   name: get_sign_in_resource
   signature: get_sign_in_resource(state, code_challenge=None, emulator_url=None, final_redirect=None,
-    custom_headers=None, raw=False, **operation_config)
+    custom_headers=None, raw=False, **operation_config) -> None
   parameters:
   - name: state
     isRequired: true
@@ -78,7 +77,7 @@ methods:
 - uid: botframework.connector.token_api.operations.BotSignInOperations.get_sign_in_url
   name: get_sign_in_url
   signature: get_sign_in_url(state, code_challenge=None, emulator_url=None, final_redirect=None,
-    custom_headers=None, raw=False, **operation_config)
+    custom_headers=None, raw=False, **operation_config) -> None
   parameters:
   - name: state
     isRequired: true

@@ -7,7 +7,7 @@ inheritances:
 - msrest.serialization.Model
 summary: Signin state (part of signin action auth flow) verification invoke query.
 constructor:
-  syntax: 'SigninStateVerificationQuery(*, state: str = None, **kwargs)'
+  syntax: 'SigninStateVerificationQuery(*, state: str = None, **kwargs) -> None'
   parameters:
   - name: state
     description: 'The state string originally received when the signin web

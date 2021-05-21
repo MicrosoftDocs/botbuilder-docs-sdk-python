@@ -7,7 +7,7 @@ inheritances:
 - msrest.serialization.Model
 summary: Invoke ('tab/submit') request value payload data.
 constructor:
-  syntax: TabSubmitData(*, type=None, properties=None, **kwargs)
+  syntax: TabSubmitData(*, type=None, properties=None, **kwargs) -> None
   parameters:
   - name: type
     description: Currently, 'tab/submit'.

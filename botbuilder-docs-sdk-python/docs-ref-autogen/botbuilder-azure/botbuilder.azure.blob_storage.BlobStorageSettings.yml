@@ -8,7 +8,7 @@ inheritances:
 summary: The class for Azure Blob configuration for the Azure Bot Framework.
 constructor:
   syntax: 'BlobStorageSettings(container_name: str, account_name: str = '''', account_key:
-    str = '''', connection_string: str = '''')'
+    str = '''', connection_string: str = '''') -> None'
   parameters:
   - name: container_name
     description: Name of the Blob container.

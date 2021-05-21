@@ -7,7 +7,7 @@ inheritances:
 - abc.ABC
 summary: Represents a bot that can operate on incoming activities.
 constructor:
-  syntax: Bot()
+  syntax: Bot() -> None
 methods:
 - uid: botbuilder.core.Bot.on_turn
   name: on_turn
@@ -16,7 +16,7 @@ methods:
     :param context: The context object for this turn.
 
     :return:'
-  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext) -> None'
   parameters:
   - name: context
     isRequired: true
