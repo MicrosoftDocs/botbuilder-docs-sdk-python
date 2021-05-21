@@ -124,7 +124,7 @@ methods:
   summary: Called when the dialog is ending.
   signature: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
     botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)
-    -> None -> None'
+    -> None'
   parameters:
   - name: context
     description: The context object for this turn.
@@ -201,7 +201,7 @@ methods:
   summary: Ends the component dialog in its parent's context.
   signature: 'on_end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
     botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)
-    -> None -> None'
+    -> None'
   parameters:
   - name: turn_context
     description: The <xref:botbuilder.core.TurnContext> for the current turn of the
@@ -223,7 +223,7 @@ methods:
 - uid: botbuilder.dialogs.component_dialog.ComponentDialog.on_reprompt_dialog
   name: on_reprompt_dialog
   signature: 'on_reprompt_dialog(turn_context: botbuilder.core.turn_context.TurnContext,
-    instance: botbuilder.dialogs.dialog_instance.DialogInstance) -> None -> None'
+    instance: botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
   parameters:
   - name: turn_context
     description: The <xref:botbuilder.core.TurnContext> for the current turn of the
@@ -241,7 +241,7 @@ methods:
   name: reprompt_dialog
   summary: Called when the dialog should re-prompt the user for input.
   signature: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
-    botbuilder.dialogs.dialog_instance.DialogInstance) -> None -> None'
+    botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
   parameters:
   - name: context
     description: The context object for this turn.
