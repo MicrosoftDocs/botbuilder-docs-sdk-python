@@ -7,7 +7,7 @@ inheritances:
 - botbuilder.dialogs.dialog.Dialog
 constructor:
   syntax: 'SkillDialog(dialog_options: botbuilder.dialogs.skills.skill_dialog_options.SkillDialogOptions,
-    dialog_id: str) -> None'
+    dialog_id: str)'
 methods:
 - uid: botbuilder.dialogs.skills.skill_dialog.SkillDialog.begin_dialog
   name: begin_dialog
@@ -19,7 +19,7 @@ methods:
     :param options: (Optional) additional argument(s) to pass to the dialog being
     started.'
   signature: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    options: object = None) -> None'
+    options: object = None)'
   parameters:
   - name: dialog_context
     isRequired: true
@@ -41,16 +41,14 @@ methods:
     :param dialog_context: The dialog context for the current turn of conversation.
 
     :return:'
-  signature: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
-    -> None'
+  signature: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
   parameters:
   - name: dialog_context
     isRequired: true
 - uid: botbuilder.dialogs.skills.skill_dialog.SkillDialog.end_dialog
   name: end_dialog
   signature: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
-    botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)
-    -> None'
+    botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)'
   parameters:
   - name: context
     isRequired: true
@@ -61,7 +59,7 @@ methods:
 - uid: botbuilder.dialogs.skills.skill_dialog.SkillDialog.reprompt_dialog
   name: reprompt_dialog
   signature: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
-    botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
+    botbuilder.dialogs.dialog_instance.DialogInstance)'
   parameters:
   - name: context
     isRequired: true
@@ -92,7 +90,7 @@ methods:
 
     :return:'
   signature: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object) -> None'
+    reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)'
   parameters:
   - name: dialog_context
     isRequired: true

@@ -56,11 +56,11 @@ summary: "This class is a Django middleware that automatically enables request a
   \ present even when *DEBUG* is *True*, but it may not submit telemetry unless\n\
   *debug_ikey* is set in *APPLICATION_INSIGHTS*, above."
 constructor:
-  syntax: ApplicationInsightsMiddleware(get_response=None) -> None
+  syntax: ApplicationInsightsMiddleware(get_response=None)
 methods:
 - uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_exception
   name: process_exception
-  signature: process_exception(request, exception) -> None
+  signature: process_exception(request, exception)
   parameters:
   - name: request
     isRequired: true
@@ -68,13 +68,13 @@ methods:
     isRequired: true
 - uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_request
   name: process_request
-  signature: process_request(request) -> None
+  signature: process_request(request)
   parameters:
   - name: request
     isRequired: true
 - uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_response
   name: process_response
-  signature: process_response(request, response) -> None
+  signature: process_response(request, response)
   parameters:
   - name: request
     isRequired: true
@@ -82,7 +82,7 @@ methods:
     isRequired: true
 - uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_template_response
   name: process_template_response
-  signature: process_template_response(request, response) -> None
+  signature: process_template_response(request, response)
   parameters:
   - name: request
     isRequired: true
@@ -90,7 +90,7 @@ methods:
     isRequired: true
 - uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_view
   name: process_view
-  signature: process_view(request, view_func, view_args, view_kwargs) -> None
+  signature: process_view(request, view_func, view_args, view_kwargs)
   parameters:
   - name: request
     isRequired: true

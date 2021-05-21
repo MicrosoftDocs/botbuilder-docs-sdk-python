@@ -118,7 +118,7 @@ methods:
 
     :param activity: Current activity sent from user.'
   signature: 'on_delete_activity(activity: botbuilder.schema._models_py3.Activity)
-    -> None'
+    -> None -> None'
   parameters:
   - name: activity
     isRequired: true
@@ -133,7 +133,7 @@ methods:
 
     :param activity: Current activity sent from user.'
   signature: 'on_receive_activity(activity: botbuilder.schema._models_py3.Activity)
-    -> None'
+    -> None -> None'
   parameters:
   - name: activity
     isRequired: true
@@ -148,7 +148,7 @@ methods:
 
     :param activity: Current activity sent from bot.'
   signature: 'on_send_activity(activity: botbuilder.schema._models_py3.Activity) ->
-    None'
+    None -> None'
   parameters:
   - name: activity
     isRequired: true
@@ -159,7 +159,7 @@ methods:
     BotTelemetryClient base class'
   signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic_fn:
     typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable]) ->
-    None'
+    None -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn.
@@ -180,7 +180,7 @@ methods:
 
     :param activity: Current activity sent from user.'
   signature: 'on_update_activity(activity: botbuilder.schema._models_py3.Activity)
-    -> None'
+    -> None -> None'
   parameters:
   - name: activity
     isRequired: true

@@ -9,8 +9,7 @@ inheritances:
 - botbuilder.core.oauth.connector_client_builder.ConnectorClientBuilder
 summary: Defines an adapter to connect a bot to a service endpoint.
 constructor:
-  syntax: 'BotFrameworkAdapter(settings: botbuilder.core.bot_framework_adapter.BotFrameworkAdapterSettings)
-    -> None'
+  syntax: 'BotFrameworkAdapter(settings: botbuilder.core.bot_framework_adapter.BotFrameworkAdapterSettings)'
 remarks: 'The bot adapter encapsulates authentication processes and sends activities
   to and
 
@@ -50,7 +49,7 @@ methods:
     :type audience: <xref:typing.str>'
   signature: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
     callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
-    = None, audience: str = None) -> None'
+    = None, audience: str = None)'
   parameters:
   - name: reference
     isRequired: true
@@ -64,6 +63,8 @@ methods:
     defaultValue: None
   return:
     description: A task that represents the work queued to execute.
+  exceptions:
+  - It raises an argument null exception.
   remarks: 'This is often referred to as the bots *proactive messaging* flow as it
     lets the bot proactively
 
@@ -97,7 +98,7 @@ methods:
     logic: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable]
     = None, conversation_parameters: botbuilder.schema._models_py3.ConversationParameters
     = None, channel_id: str = None, service_url: str = None, credentials: botframework.connector.auth.app_credentials.AppCredentials
-    = None) -> None'
+    = None)'
   parameters:
   - name: reference
     description: The conversation reference that contains the tenant
@@ -129,6 +130,8 @@ methods:
     - <xref:botframework.connector.auth.AppCredentials>
   return:
     description: A task representing the work queued to execute.
+  exceptions:
+  - It raises a generic exception error.
   remarks: 'To start a conversation, your bot must know its account information and
     the user''s
 
@@ -163,7 +166,7 @@ methods:
 
     >'
   signature: 'delete_activity(context: botbuilder.core.turn_context.TurnContext, reference:
-    botbuilder.schema._models_py3.ConversationReference) -> None'
+    botbuilder.schema._models_py3.ConversationReference)'
   parameters:
   - name: context
     description: The context object for the turn
@@ -177,11 +180,13 @@ methods:
     - <xref:botbuilder.schema.ConversationReference>
   return:
     description: A task that represents the work queued to execute
+  exceptions:
+  - A exception error
 - uid: botbuilder.core.BotFrameworkAdapter.delete_conversation_member
   name: delete_conversation_member
   summary: Deletes a member from the current conversation.
   signature: 'delete_conversation_member(context: botbuilder.core.turn_context.TurnContext,
-    member_id: str) -> None'
+    member_id: str) -> None -> None'
   parameters:
   - name: context
     description: The context object for the turn
@@ -195,6 +200,8 @@ methods:
     - <xref:str>
   return:
     description: A task that represents the work queued to execute.</returns
+  exceptions:
+  - A exception error
 - uid: botbuilder.core.BotFrameworkAdapter.exchange_token
   name: exchange_token
   summary: Performs a token exchange operation such as for single sign-on.
@@ -282,7 +289,7 @@ methods:
 
     If not specified the current activities ID will be used.'
   signature: 'get_activity_members(context: botbuilder.core.turn_context.TurnContext,
-    activity_id: str) -> None'
+    activity_id: str)'
   parameters:
   - name: context
     isRequired: true
@@ -290,6 +297,8 @@ methods:
     isRequired: true
   return:
     description: List of Members of the activity
+  exceptions:
+  - An exception error
 - uid: botbuilder.core.BotFrameworkAdapter.get_conversation_member
   name: get_conversation_member
   summary: Retrieve a member of a current conversation.
@@ -308,11 +317,13 @@ methods:
     - <xref:str>
   return:
     description: A member of the current conversation
+  exceptions:
+  - A TypeError if missing member_id, service_url,
+  - conversation.id
 - uid: botbuilder.core.BotFrameworkAdapter.get_conversation_members
   name: get_conversation_members
   summary: Lists the members of a current conversation.
-  signature: 'get_conversation_members(context: botbuilder.core.turn_context.TurnContext)
-    -> None'
+  signature: 'get_conversation_members(context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: context
     description: The context object for the turn
@@ -321,6 +332,9 @@ methods:
     - <xref:botbuilder.core.TurnContext>
   return:
     description: List of members of the current conversation
+  exceptions:
+  - TypeError if missing service_url
+  - conversation.id
 - uid: botbuilder.core.BotFrameworkAdapter.get_conversations
   name: get_conversations
   summary: 'Lists the Conversations in which this bot has participated for a given
@@ -331,7 +345,7 @@ methods:
 
     :type service_url: str'
   signature: 'get_conversations(service_url: str, credentials: botframework.connector.auth.app_credentials.AppCredentials,
-    continuation_token: str = None) -> None'
+    continuation_token: str = None)'
   parameters:
   - name: continuation_token
     description: The continuation token from the previous page of results
@@ -344,6 +358,8 @@ methods:
     defaultValue: None
   return:
     description: A task that represents the work queued to execute
+  exceptions:
+  - A generic exception error
   remarks: 'The channel server returns results in pages and each page will include
     a *continuationToken* that
 
@@ -499,9 +515,11 @@ methods:
     description: Token Response
     types:
     - <xref::class:'botbuilder.schema.TokenResponse`>
+  exceptions:
+  - An exception error
 - uid: botbuilder.core.BotFrameworkAdapter.key_for_app_credentials
   name: key_for_app_credentials
-  signature: 'key_for_app_credentials(app_id: str, scope: str) -> None'
+  signature: 'key_for_app_credentials(app_id: str, scope: str)'
   parameters:
   - name: app_id
     isRequired: true
@@ -509,8 +527,7 @@ methods:
     isRequired: true
 - uid: botbuilder.core.BotFrameworkAdapter.key_for_connector_client
   name: key_for_connector_client
-  signature: 'key_for_connector_client(service_url: str, app_id: str, scope: str)
-    -> None'
+  signature: 'key_for_connector_client(service_url: str, app_id: str, scope: str)'
   parameters:
   - name: service_url
     isRequired: true
@@ -525,7 +542,7 @@ methods:
     :param req:
 
     :return:'
-  signature: parse_request(req) -> None
+  signature: parse_request(req)
   parameters:
   - name: req
     isRequired: true
@@ -533,7 +550,7 @@ methods:
   name: process_activity
   summary: Creates a turn context and runs the middleware pipeline for an incoming
     activity.
-  signature: 'process_activity(req, auth_header: str, logic: typing.Callable) -> None'
+  signature: 'process_activity(req, auth_header: str, logic: typing.Callable)'
   parameters:
   - name: req
     description: The incoming activity
@@ -570,8 +587,7 @@ methods:
 - uid: botbuilder.core.BotFrameworkAdapter.process_activity_with_identity
   name: process_activity_with_identity
   signature: 'process_activity_with_identity(activity: botbuilder.schema._models_py3.Activity,
-    identity: botframework.connector.auth.claims_identity.ClaimsIdentity, logic: typing.Callable)
-    -> None'
+    identity: botframework.connector.auth.claims_identity.ClaimsIdentity, logic: typing.Callable)'
   parameters:
   - name: activity
     isRequired: true
@@ -601,7 +617,7 @@ methods:
   summary: Signs the user out with the token server.
   signature: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
     str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
-    = None) -> None'
+    = None)'
   parameters:
   - name: context
     description: Context for the current turn of conversation with the user
@@ -630,7 +646,7 @@ methods:
 
     channels support this feature.'
   signature: 'update_activity(context: botbuilder.core.turn_context.TurnContext, activity:
-    botbuilder.schema._models_py3.Activity) -> None'
+    botbuilder.schema._models_py3.Activity)'
   parameters:
   - name: context
     description: The context object for the turn
@@ -644,6 +660,8 @@ methods:
     - <xref:botbuilder.schema.Activity>
   return:
     description: A task that represents the work queued to execute
+  exceptions:
+  - A generic exception error
   remarks: 'If the activity is successfully sent, the task result contains
 
     a <xref:botbuilder.schema.ResourceResponse> object containing the ID that

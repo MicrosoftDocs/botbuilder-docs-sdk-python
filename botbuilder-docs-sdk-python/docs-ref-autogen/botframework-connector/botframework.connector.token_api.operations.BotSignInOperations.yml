@@ -13,7 +13,7 @@ summary: 'BotSignInOperations operations.
 
   attach it as attribute.'
 constructor:
-  syntax: BotSignInOperations(client, config, serializer, deserializer) -> None
+  syntax: BotSignInOperations(client, config, serializer, deserializer)
   parameters:
   - name: client
     description: Client for service requests.
@@ -34,7 +34,7 @@ methods:
 - uid: botframework.connector.token_api.operations.BotSignInOperations.get_sign_in_resource
   name: get_sign_in_resource
   signature: get_sign_in_resource(state, code_challenge=None, emulator_url=None, final_redirect=None,
-    custom_headers=None, raw=False, **operation_config) -> None
+    custom_headers=None, raw=False, **operation_config)
   parameters:
   - name: state
     isRequired: true
@@ -74,10 +74,12 @@ methods:
     types:
     - <xref:botframework.tokenapi.models.SignInUrlResponse>
     - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - <xref:msrest.exceptions.HttpOperationError>
 - uid: botframework.connector.token_api.operations.BotSignInOperations.get_sign_in_url
   name: get_sign_in_url
   signature: get_sign_in_url(state, code_challenge=None, emulator_url=None, final_redirect=None,
-    custom_headers=None, raw=False, **operation_config) -> None
+    custom_headers=None, raw=False, **operation_config)
   parameters:
   - name: state
     isRequired: true
@@ -117,6 +119,8 @@ methods:
     types:
     - <xref:str>
     - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - <xref:msrest.exceptions.HttpOperationError>
 attributes:
 - uid: botframework.connector.token_api.operations.BotSignInOperations.models
   name: models

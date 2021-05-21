@@ -7,11 +7,11 @@ inheritances:
 - builtins.object
 constructor:
   syntax: 'ClaimsIdentity(claims: dict, is_authenticated: bool, authentication_type:
-    str = None) -> None'
+    str = None)'
 methods:
 - uid: botframework.connector.auth.claims_identity.ClaimsIdentity.get_claim_value
   name: get_claim_value
-  signature: 'get_claim_value(claim_type: str) -> None'
+  signature: 'get_claim_value(claim_type: str)'
   parameters:
   - name: claim_type
     isRequired: true

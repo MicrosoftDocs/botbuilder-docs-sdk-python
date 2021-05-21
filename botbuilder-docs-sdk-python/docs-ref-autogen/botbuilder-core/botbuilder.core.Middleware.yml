@@ -6,12 +6,12 @@ module: botbuilder.core
 inheritances:
 - abc.ABC
 constructor:
-  syntax: Middleware() -> None
+  syntax: Middleware()
 methods:
 - uid: botbuilder.core.Middleware.on_turn
   name: on_turn
   signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
-    typing.Awaitable]) -> None'
+    typing.Awaitable])'
   parameters:
   - name: context
     isRequired: true

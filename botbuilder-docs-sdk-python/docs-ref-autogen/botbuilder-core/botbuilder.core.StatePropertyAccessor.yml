@@ -6,7 +6,7 @@ module: botbuilder.core
 inheritances:
 - abc.ABC
 constructor:
-  syntax: StatePropertyAccessor() -> None
+  syntax: StatePropertyAccessor()
 methods:
 - uid: botbuilder.core.StatePropertyAccessor.delete
   name: delete
@@ -15,7 +15,8 @@ methods:
     :param turn_context: Turn Context.
 
     :return:'
-  signature: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
+  signature: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None
+    -> None'
   parameters:
   - name: turn_context
     isRequired: true
@@ -45,7 +46,7 @@ methods:
 
     :return:'
   signature: 'set(turn_context: botbuilder.core.turn_context.TurnContext, value) ->
-    None'
+    None -> None'
   parameters:
   - name: turn_context
     isRequired: true

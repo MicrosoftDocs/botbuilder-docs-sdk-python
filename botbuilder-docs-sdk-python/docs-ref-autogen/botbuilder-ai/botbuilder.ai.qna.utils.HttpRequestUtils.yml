@@ -11,7 +11,7 @@ summary: 'HTTP request utils class.
   http_client: Client to make HTTP requests with. Default client used in the SDK is
   *aiohttp.ClientSession*.'
 constructor:
-  syntax: 'HttpRequestUtils(http_client: typing.Any) -> None'
+  syntax: 'HttpRequestUtils(http_client: typing.Any)'
 methods:
 - uid: botbuilder.ai.qna.utils.HttpRequestUtils.execute_http_request
   name: execute_http_request

@@ -6,11 +6,11 @@ module: botbuilder.dialogs.memory
 inheritances:
 - abc.ABC
 constructor:
-  syntax: PathResolverBase() -> None
+  syntax: PathResolverBase()
 methods:
 - uid: botbuilder.dialogs.memory.PathResolverBase.transform_path
   name: transform_path
-  signature: 'transform_path(path: str) -> None'
+  signature: 'transform_path(path: str)'
   parameters:
   - name: path
     isRequired: true

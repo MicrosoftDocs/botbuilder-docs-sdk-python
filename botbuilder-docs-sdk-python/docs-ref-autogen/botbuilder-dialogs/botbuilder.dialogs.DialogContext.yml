@@ -7,8 +7,7 @@ inheritances:
 - builtins.object
 constructor:
   syntax: 'DialogContext(dialog_set: botbuilder.dialogs.dialog_set.DialogSet, turn_context:
-    botbuilder.core.turn_context.TurnContext, state: botbuilder.dialogs.dialog_state.DialogState)
-    -> None'
+    botbuilder.core.turn_context.TurnContext, state: botbuilder.dialogs.dialog_state.DialogState)'
 methods:
 - uid: botbuilder.dialogs.DialogContext.begin_dialog
   name: begin_dialog
@@ -18,7 +17,7 @@ methods:
 
     :param options: (Optional) additional argument(s) to pass to the dialog being
     started.'
-  signature: 'begin_dialog(dialog_id: str, options: object = None) -> None'
+  signature: 'begin_dialog(dialog_id: str, options: object = None)'
   parameters:
   - name: dialog_id
     isRequired: true
@@ -36,7 +35,7 @@ methods:
 
     :return:'
   signature: 'cancel_all_dialogs(cancel_parents: bool = None, event_name: str = None,
-    event_value: object = None) -> None'
+    event_value: object = None)'
   parameters:
   - name: cancel_parents
     defaultValue: None
@@ -55,7 +54,7 @@ methods:
     to determine if a dialog was run and a reply was sent to the user.
 
     :return:'
-  signature: continue_dialog() -> None
+  signature: continue_dialog()
 - uid: botbuilder.dialogs.DialogContext.emit_event
   name: emit_event
   summary: 'Searches for a dialog with a given ID.
@@ -89,8 +88,7 @@ methods:
     defaultValue: 'False'
 - uid: botbuilder.dialogs.DialogContext.end_active_dialog
   name: end_active_dialog
-  signature: 'end_active_dialog(reason: botbuilder.dialogs.dialog_reason.DialogReason)
-    -> None'
+  signature: 'end_active_dialog(reason: botbuilder.dialogs.dialog_reason.DialogReason)'
   parameters:
   - name: reason
     isRequired: true
@@ -118,7 +116,7 @@ methods:
     :param result: (Optional) result to pass to the parent dialogs.
 
     :return:'
-  signature: 'end_dialog(result: object = None) -> None'
+  signature: 'end_dialog(result: object = None)'
   parameters:
   - name: result
     defaultValue: None
@@ -193,7 +191,7 @@ methods:
     Prompts that have a reprompt behavior.
 
     :return:'
-  signature: reprompt_dialog() -> None
+  signature: reprompt_dialog()
 attributes:
 - uid: botbuilder.dialogs.DialogContext.active_dialog
   name: active_dialog

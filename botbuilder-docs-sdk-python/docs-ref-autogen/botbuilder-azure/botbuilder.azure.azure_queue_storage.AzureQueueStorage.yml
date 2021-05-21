@@ -6,8 +6,7 @@ module: botbuilder.azure.azure_queue_storage
 inheritances:
 - botbuilder.core.queue_storage.QueueStorage
 constructor:
-  syntax: 'AzureQueueStorage(queues_storage_connection_string: str, queue_name: str)
-    -> None'
+  syntax: 'AzureQueueStorage(queues_storage_connection_string: str, queue_name: str)'
 methods:
 - uid: botbuilder.azure.azure_queue_storage.AzureQueueStorage.queue_activity
   name: queue_activity

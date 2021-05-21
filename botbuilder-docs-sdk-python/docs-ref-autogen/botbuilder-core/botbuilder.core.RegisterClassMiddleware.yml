@@ -8,18 +8,18 @@ inheritances:
 summary: Middleware for adding an object to or registering a service with the current
   turn context.
 constructor:
-  syntax: 'RegisterClassMiddleware(service, key: str = None) -> None'
+  syntax: 'RegisterClassMiddleware(service, key: str = None)'
 methods:
 - uid: botbuilder.core.RegisterClassMiddleware.fullname
   name: fullname
-  signature: fullname(obj) -> None
+  signature: fullname(obj)
   parameters:
   - name: obj
     isRequired: true
 - uid: botbuilder.core.RegisterClassMiddleware.on_turn
   name: on_turn
   signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
-    typing.Awaitable]) -> None'
+    typing.Awaitable])'
   parameters:
   - name: context
     isRequired: true

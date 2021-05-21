@@ -8,7 +8,7 @@ inheritances:
 summary: Defines the core behavior of prompt dialogs. Extends the <xref:botbuilder.dialogs.prompts.prompt.Dialog>
   base class.
 constructor:
-  syntax: 'Prompt(dialog_id: str, validator: object = None) -> None'
+  syntax: 'Prompt(dialog_id: str, validator: object = None)'
 remarks: 'When the prompt ends, it returns an object that represents the value it
   was prompted for.
 
@@ -93,8 +93,7 @@ methods:
 - uid: botbuilder.dialogs.prompts.prompt.Prompt.continue_dialog
   name: continue_dialog
   summary: Continues a dialog.
-  signature: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
-    -> None'
+  signature: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
   parameters:
   - name: dialog_context
     description: The dialog context for the current turn of the conversation
@@ -127,7 +126,7 @@ methods:
     user for input.
   signature: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
     typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
-    is_retry: bool) -> None'
+    is_retry: bool)'
   parameters:
   - name: turn_context
     description: Context for the current turn of conversation with the user
@@ -164,8 +163,7 @@ methods:
 
     >'
   signature: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
-    state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
-    -> None'
+    state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)'
   parameters:
   - name: turn_context
     description: Context for the current turn of conversation with the user
@@ -189,7 +187,7 @@ methods:
   name: reprompt_dialog
   summary: Reprompts user for input.
   signature: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
-    botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
+    botbuilder.dialogs.dialog_instance.DialogInstance)'
   parameters:
   - name: context
     description: Context for the current turn of conversation with the user

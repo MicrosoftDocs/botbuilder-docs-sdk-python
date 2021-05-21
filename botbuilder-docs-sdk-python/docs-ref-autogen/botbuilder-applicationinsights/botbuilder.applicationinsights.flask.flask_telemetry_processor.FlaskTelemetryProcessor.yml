@@ -6,7 +6,7 @@ module: botbuilder.applicationinsights.flask.flask_telemetry_processor
 inheritances:
 - botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
 constructor:
-  syntax: FlaskTelemetryProcessor() -> None
+  syntax: FlaskTelemetryProcessor()
 methods:
 - uid: botbuilder.applicationinsights.flask.flask_telemetry_processor.FlaskTelemetryProcessor.can_process
   name: can_process

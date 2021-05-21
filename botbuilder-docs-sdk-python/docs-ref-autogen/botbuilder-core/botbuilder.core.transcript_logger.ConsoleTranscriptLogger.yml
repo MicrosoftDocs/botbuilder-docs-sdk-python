@@ -7,14 +7,15 @@ inheritances:
 - botbuilder.core.transcript_logger.TranscriptLogger
 summary: ConsoleTranscriptLogger writes activities to Console output.
 constructor:
-  syntax: ConsoleTranscriptLogger() -> None
+  syntax: ConsoleTranscriptLogger()
 methods:
 - uid: botbuilder.core.transcript_logger.ConsoleTranscriptLogger.log_activity
   name: log_activity
   summary: 'Log an activity to the transcript.
 
     :param activity:Activity being logged.'
-  signature: 'log_activity(activity: botbuilder.schema._models_py3.Activity) -> None'
+  signature: 'log_activity(activity: botbuilder.schema._models_py3.Activity) -> None
+    -> None'
   parameters:
   - name: activity
     isRequired: true

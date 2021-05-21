@@ -7,14 +7,15 @@ inheritances:
 - abc.ABC
 summary: Transcript logger stores activities for conversations for recall.
 constructor:
-  syntax: TranscriptLogger() -> None
+  syntax: TranscriptLogger()
 methods:
 - uid: botbuilder.core.transcript_logger.TranscriptLogger.log_activity
   name: log_activity
   summary: 'Log an activity to the transcript.
 
     :param activity:Activity being logged.'
-  signature: 'log_activity(activity: botbuilder.schema._models_py3.Activity) -> None'
+  signature: 'log_activity(activity: botbuilder.schema._models_py3.Activity) -> None
+    -> None'
   parameters:
   - name: activity
     isRequired: true

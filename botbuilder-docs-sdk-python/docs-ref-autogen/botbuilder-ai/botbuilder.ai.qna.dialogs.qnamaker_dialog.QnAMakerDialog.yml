@@ -12,7 +12,7 @@ constructor:
     active_learning_card_title: str = ''Did you mean:'', card_no_match_text: str =
     ''None of the above.'', top: int = 3, card_no_match_response: botbuilder.schema._models_py3.Activity
     = None, strict_filters: [<class ''botbuilder.ai.qna.models.metadata.Metadata''>]
-    = None, dialog_id: str = ''QnAMakerDialog'') -> None'
+    = None, dialog_id: str = ''QnAMakerDialog'')'
 remarks: 'An instance of this class targets a specific QnA Maker knowledge base.
 
   It supports knowledge bases that include follow-up prompt and active learning features.

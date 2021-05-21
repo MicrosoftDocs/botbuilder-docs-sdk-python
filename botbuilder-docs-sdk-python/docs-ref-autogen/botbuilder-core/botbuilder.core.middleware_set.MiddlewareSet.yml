@@ -13,12 +13,12 @@ summary: 'A set of *Middleware* plugins. The set itself is middleware so you can
 
   another middleware set using *set.use(mySet)*.'
 constructor:
-  syntax: MiddlewareSet() -> None
+  syntax: MiddlewareSet()
 methods:
 - uid: botbuilder.core.middleware_set.MiddlewareSet.on_turn
   name: on_turn
   signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
-    typing.Awaitable]) -> None'
+    typing.Awaitable])'
   parameters:
   - name: context
     isRequired: true
@@ -26,8 +26,7 @@ methods:
     isRequired: true
 - uid: botbuilder.core.middleware_set.MiddlewareSet.receive_activity
   name: receive_activity
-  signature: 'receive_activity(context: botbuilder.core.turn_context.TurnContext)
-    -> None'
+  signature: 'receive_activity(context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: context
     isRequired: true
@@ -35,7 +34,7 @@ methods:
   name: receive_activity_internal
   signature: 'receive_activity_internal(context: botbuilder.core.turn_context.TurnContext,
     callback: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable],
-    next_middleware_index: int = 0) -> None'
+    next_middleware_index: int = 0)'
   parameters:
   - name: context
     isRequired: true
@@ -46,8 +45,7 @@ methods:
 - uid: botbuilder.core.middleware_set.MiddlewareSet.receive_activity_with_status
   name: receive_activity_with_status
   signature: 'receive_activity_with_status(context: botbuilder.core.turn_context.TurnContext,
-    callback: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable])
-    -> None'
+    callback: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable])'
   parameters:
   - name: context
     isRequired: true
@@ -60,4 +58,4 @@ methods:
     :param middleware :
 
     :return:'
-  signature: 'use(*middleware: botbuilder.core.middleware_set.Middleware) -> None'
+  signature: 'use(*middleware: botbuilder.core.middleware_set.Middleware)'

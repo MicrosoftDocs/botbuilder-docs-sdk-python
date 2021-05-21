@@ -6,7 +6,7 @@ module: botbuilder.integration.applicationinsights.aiohttp
 inheritances:
 - botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
 constructor:
-  syntax: AiohttpTelemetryProcessor() -> None
+  syntax: AiohttpTelemetryProcessor()
 methods:
 - uid: botbuilder.integration.applicationinsights.aiohttp.AiohttpTelemetryProcessor.can_process
   name: can_process

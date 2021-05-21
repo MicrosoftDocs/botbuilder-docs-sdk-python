@@ -10,7 +10,7 @@ summary: 'This provider is most useful for simulating production storage when ru
 
   emulator or as part of a unit test.'
 constructor:
-  syntax: MemoryTranscriptStore() -> None
+  syntax: MemoryTranscriptStore()
 methods:
 - uid: botbuilder.core.MemoryTranscriptStore.delete_transcript
   name: delete_transcript
@@ -21,7 +21,8 @@ methods:
     :param conversation_id: Id of the conversation to delete.
 
     :result: None'
-  signature: 'delete_transcript(channel_id: str, conversation_id: str) -> None'
+  signature: 'delete_transcript(channel_id: str, conversation_id: str) -> None ->
+    None'
   parameters:
   - name: channel_id
     isRequired: true
@@ -73,7 +74,8 @@ methods:
   summary: 'Log an activity to the transcript.
 
     :param activity:Activity being logged.'
-  signature: 'log_activity(activity: botbuilder.schema._models_py3.Activity) -> None'
+  signature: 'log_activity(activity: botbuilder.schema._models_py3.Activity) -> None
+    -> None'
   parameters:
   - name: activity
     isRequired: true

@@ -13,7 +13,7 @@ summary: 'UserTokenOperations operations.
 
   it as attribute.'
 constructor:
-  syntax: UserTokenOperations(client, config, serializer, deserializer) -> None
+  syntax: UserTokenOperations(client, config, serializer, deserializer)
   parameters:
   - name: client
     description: Client for service requests.
@@ -34,7 +34,7 @@ methods:
 - uid: botframework.connector.token_api.operations.UserTokenOperations.exchange_async
   name: exchange_async
   signature: exchange_async(user_id, connection_name, channel_id, uri=None, token=None,
-    custom_headers=None, raw=False, **operation_config) -> None
+    custom_headers=None, raw=False, **operation_config)
   parameters:
   - name: user_id
     isRequired: true
@@ -78,10 +78,12 @@ methods:
     types:
     - <xref:object>
     - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - <xref:botframework.tokenapi.models.ErrorResponseException>
 - uid: botframework.connector.token_api.operations.UserTokenOperations.get_aad_tokens
   name: get_aad_tokens
   signature: get_aad_tokens(user_id, connection_name, channel_id=None, resource_urls=None,
-    custom_headers=None, raw=False, **operation_config) -> None
+    custom_headers=None, raw=False, **operation_config)
   parameters:
   - name: user_id
     isRequired: true
@@ -121,10 +123,12 @@ methods:
     types:
     - <xref:dict>[<xref:str>, <xref:botframework.tokenapi.models.TokenResponse>]
     - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - <xref:botframework.tokenapi.models.ErrorResponseException>
 - uid: botframework.connector.token_api.operations.UserTokenOperations.get_token
   name: get_token
   signature: get_token(user_id, connection_name, channel_id=None, code=None, custom_headers=None,
-    raw=False, **operation_config) -> None
+    raw=False, **operation_config)
   parameters:
   - name: user_id
     isRequired: true
@@ -164,10 +168,12 @@ methods:
     types:
     - <xref:botframework.tokenapi.models.TokenResponse>
     - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - <xref:botframework.tokenapi.models.ErrorResponseException>
 - uid: botframework.connector.token_api.operations.UserTokenOperations.get_token_status
   name: get_token_status
   signature: get_token_status(user_id, channel_id=None, include=None, custom_headers=None,
-    raw=False, **operation_config) -> None
+    raw=False, **operation_config)
   parameters:
   - name: user_id
     isRequired: true
@@ -203,10 +209,12 @@ methods:
     types:
     - <xref:list>[<xref:botframework.tokenapi.models.TokenStatus>]
     - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - <xref:botframework.tokenapi.models.ErrorResponseException>
 - uid: botframework.connector.token_api.operations.UserTokenOperations.sign_out
   name: sign_out
   signature: sign_out(user_id, connection_name=None, channel_id=None, custom_headers=None,
-    raw=False, **operation_config) -> None
+    raw=False, **operation_config)
   parameters:
   - name: user_id
     isRequired: true
@@ -242,6 +250,8 @@ methods:
     types:
     - <xref:object>
     - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - <xref:botframework.tokenapi.models.ErrorResponseException>
 attributes:
 - uid: botframework.connector.token_api.operations.UserTokenOperations.models
   name: models

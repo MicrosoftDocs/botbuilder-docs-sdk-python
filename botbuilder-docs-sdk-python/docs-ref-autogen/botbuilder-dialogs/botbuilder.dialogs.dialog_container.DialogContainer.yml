@@ -7,7 +7,7 @@ inheritances:
 - botbuilder.dialogs.dialog.Dialog
 - abc.ABC
 constructor:
-  syntax: 'DialogContainer(dialog_id: str = None) -> None'
+  syntax: 'DialogContainer(dialog_id: str = None)'
 methods:
 - uid: botbuilder.dialogs.dialog_container.DialogContainer.check_for_version_change_async
   name: check_for_version_change_async
@@ -19,8 +19,7 @@ methods:
 
     This should be called at the start of *beginDialog()*, *continueDialog()*, and
     *resumeDialog()*.'
-  signature: 'check_for_version_change_async(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
-    -> None'
+  signature: 'check_for_version_change_async(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
   parameters:
   - name: dialog_context
     description: dialog context.

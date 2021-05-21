@@ -6,7 +6,7 @@ module: botbuilder.core.teams.teams_info
 inheritances:
 - builtins.object
 constructor:
-  syntax: TeamsInfo() -> None
+  syntax: TeamsInfo()
 methods:
 - uid: botbuilder.core.teams.teams_info.TeamsInfo.get_meeting_participant
   name: get_meeting_participant
@@ -80,8 +80,7 @@ methods:
   - name: team_id
 - uid: botbuilder.core.teams.teams_info.TeamsInfo.get_team_id
   name: get_team_id
-  signature: 'get_team_id(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> None'
+  signature: 'get_team_id(turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: turn_context
     isRequired: true

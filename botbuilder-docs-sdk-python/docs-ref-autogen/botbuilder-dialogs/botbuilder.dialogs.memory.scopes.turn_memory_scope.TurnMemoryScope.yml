@@ -6,7 +6,7 @@ module: botbuilder.dialogs.memory.scopes.turn_memory_scope
 inheritances:
 - botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope
 constructor:
-  syntax: TurnMemoryScope() -> None
+  syntax: TurnMemoryScope()
 methods:
 - uid: botbuilder.dialogs.memory.scopes.turn_memory_scope.TurnMemoryScope.get_memory
   name: get_memory
@@ -16,7 +16,7 @@ methods:
     isRequired: true
 - uid: botbuilder.dialogs.memory.scopes.turn_memory_scope.TurnMemoryScope.set_memory
   name: set_memory
-  signature: 'set_memory(dialog_context: DialogContext, memory: object) -> None'
+  signature: 'set_memory(dialog_context: DialogContext, memory: object)'
   parameters:
   - name: dialog_context
     isRequired: true

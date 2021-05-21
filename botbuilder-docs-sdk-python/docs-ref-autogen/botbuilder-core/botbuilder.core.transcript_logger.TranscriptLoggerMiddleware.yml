@@ -7,8 +7,7 @@ inheritances:
 - botbuilder.core.middleware_set.Middleware
 summary: Logs incoming and outgoing activities to a TranscriptStore.
 constructor:
-  syntax: 'TranscriptLoggerMiddleware(logger: botbuilder.core.transcript_logger.TranscriptLogger)
-    -> None'
+  syntax: 'TranscriptLoggerMiddleware(logger: botbuilder.core.transcript_logger.TranscriptLogger)'
 methods:
 - uid: botbuilder.core.transcript_logger.TranscriptLoggerMiddleware.log_activity
   name: log_activity
@@ -18,7 +17,7 @@ methods:
 
     :param activity: Activity to log.'
   signature: 'log_activity(transcript: queue.Queue, activity: botbuilder.schema._models_py3.Activity)
-    -> None'
+    -> None -> None'
   parameters:
   - name: transcript
     isRequired: true
@@ -32,7 +31,7 @@ methods:
 
     :param logic: Function to call at the end of the middleware chain.'
   signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
-    typing.Awaitable]) -> None'
+    typing.Awaitable])'
   parameters:
   - name: context
     isRequired: true

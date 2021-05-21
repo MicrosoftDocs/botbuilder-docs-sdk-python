@@ -7,19 +7,18 @@ inheritances:
 - botbuilder.core.storage.Storage
 summary: A CosmosDB based storage provider using partitioning for a bot.
 constructor:
-  syntax: 'CosmosDbPartitionedStorage(config: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedConfig)
-    -> None'
+  syntax: 'CosmosDbPartitionedStorage(config: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedConfig)'
 methods:
 - uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.delete
   name: delete
   summary: Remove storeitems from storage.
-  signature: 'delete(keys: typing.List[str]) -> None'
+  signature: 'delete(keys: typing.List[str])'
   parameters:
   - name: keys
     isRequired: true
 - uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.initialize
   name: initialize
-  signature: initialize() -> None
+  signature: initialize()
 - uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.read
   name: read
   summary: Read storeitems from storage.
@@ -30,7 +29,7 @@ methods:
 - uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.write
   name: write
   summary: Save storeitems to storage.
-  signature: 'write(changes: typing.Dict[str, object]) -> None'
+  signature: 'write(changes: typing.Dict[str, object])'
   parameters:
   - name: changes
     isRequired: true

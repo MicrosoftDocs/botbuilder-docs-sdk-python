@@ -6,8 +6,7 @@ module: botbuilder.core.adapters.test_adapter
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'TestFlow(previous: typing.Callable, adapter: botbuilder.core.adapters.test_adapter.TestAdapter)
-    -> None'
+  syntax: 'TestFlow(previous: typing.Callable, adapter: botbuilder.core.adapters.test_adapter.TestAdapter)'
 methods:
 - uid: botbuilder.core.adapters.test_adapter.TestFlow.assert_no_reply
   name: assert_no_reply

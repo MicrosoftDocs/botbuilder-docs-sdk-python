@@ -10,13 +10,12 @@ constructor:
   syntax: 'QnAMaker(endpoint: botbuilder.ai.qna.qnamaker_endpoint.QnAMakerEndpoint,
     options: botbuilder.ai.qna.qnamaker_options.QnAMakerOptions = None, http_client:
     aiohttp.client.ClientSession = None, telemetry_client: botbuilder.core.bot_telemetry_client.BotTelemetryClient
-    = None, log_personal_information: bool = None) -> None'
+    = None, log_personal_information: bool = None)'
 methods:
 - uid: botbuilder.ai.qna.QnAMaker.call_train
   name: call_train
   summary: Sends feedback to the knowledge base.
-  signature: 'call_train(feedback_records: typing.List[botbuilder.ai.qna.models.feedback_record.FeedbackRecord])
-    -> None'
+  signature: 'call_train(feedback_records: typing.List[botbuilder.ai.qna.models.feedback_record.FeedbackRecord])'
   parameters:
   - name: feedback_records
     description: Feedback records.
@@ -25,7 +24,7 @@ methods:
     - <xref:typing.List[FeedbackRecord]>
 - uid: botbuilder.ai.qna.QnAMaker.close
   name: close
-  signature: close() -> None
+  signature: close()
 - uid: botbuilder.ai.qna.QnAMaker.fill_qna_event
   name: fill_qna_event
   summary: Fills the event properties and metrics for the QnaMessage event for telemetry.
@@ -118,8 +117,7 @@ methods:
   name: on_qna_result
   signature: 'on_qna_result(query_results: [<class ''botbuilder.ai.qna.models.query_result.QueryResult''>],
     turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
-    typing.Dict[str, str] = None, telemetry_metrics: typing.Dict[str, float] = None)
-    -> None'
+    typing.Dict[str, str] = None, telemetry_metrics: typing.Dict[str, float] = None)'
   parameters:
   - name: query_results
     isRequired: true

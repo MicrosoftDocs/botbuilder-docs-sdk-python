@@ -34,7 +34,7 @@ methods:
 
     Get the named view as binary content.'
   signature: get_attachment(attachment_id, view_id, *, custom_headers=None, raw=False,
-    callback=None, **operation_config) -> None
+    callback=None, **operation_config)
   parameters:
   - name: attachment_id
     description: attachment id
@@ -80,6 +80,8 @@ methods:
     types:
     - <xref:botframework.connector.aio.operations_async.Generator>
     - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - <xref:botframework.connector.models.ErrorResponseException>
 - uid: botframework.connector.aio.operations_async.AttachmentsOperations.get_attachment_info
   name: get_attachment_info
   summary: 'GetAttachmentInfo.
@@ -87,7 +89,7 @@ methods:
 
     Get AttachmentInfo structure describing the attachment views.'
   signature: get_attachment_info(attachment_id, *, custom_headers=None, raw=False,
-    **operation_config) -> None
+    **operation_config)
   parameters:
   - name: attachment_id
     description: attachment id
@@ -116,6 +118,8 @@ methods:
     types:
     - <xref:botframework.connector.models.AttachmentInfo>
     - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - <xref:botframework.connector.models.ErrorResponseException>
 attributes:
 - uid: botframework.connector.aio.operations_async.AttachmentsOperations.models
   name: models

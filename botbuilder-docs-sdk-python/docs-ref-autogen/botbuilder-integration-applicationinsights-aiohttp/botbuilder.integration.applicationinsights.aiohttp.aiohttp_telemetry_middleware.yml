@@ -6,7 +6,7 @@ functions:
 - uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware.bot_telemetry_middleware
   name: bot_telemetry_middleware
   summary: Process the incoming Flask request.
-  signature: bot_telemetry_middleware(request, handler) -> None
+  signature: bot_telemetry_middleware(request, handler)
   parameters:
   - name: request
     isRequired: true
@@ -20,4 +20,4 @@ functions:
     The POST body corresponds with the thread id and should resides in
 
     cache just for lifetime of request.'
-  signature: retrieve_aiohttp_body() -> None
+  signature: retrieve_aiohttp_body()

@@ -6,7 +6,7 @@ module: botbuilder.dialogs.prompts
 inheritances:
 - botbuilder.dialogs.prompts.prompt.Prompt
 constructor:
-  syntax: 'TextPrompt(dialog_id: str, validator: object = None) -> None'
+  syntax: 'TextPrompt(dialog_id: str, validator: object = None)'
 methods:
 - uid: botbuilder.dialogs.prompts.TextPrompt.on_prompt
   name: on_prompt
@@ -14,7 +14,7 @@ methods:
     user for input.
   signature: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
     typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
-    is_retry: bool) -> None'
+    is_retry: bool)'
   parameters:
   - name: turn_context
     description: Context for the current turn of conversation with the user

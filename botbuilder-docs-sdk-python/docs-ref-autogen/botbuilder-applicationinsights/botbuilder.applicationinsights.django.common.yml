@@ -7,7 +7,7 @@ functions:
 - uid: botbuilder.applicationinsights.django.common.create_client
   name: create_client
   signature: 'create_client(aisettings=None, telemetry_processor: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
-    = None) -> None'
+    = None)'
   parameters:
   - name: aisettings
     defaultValue: None
@@ -20,7 +20,7 @@ functions:
 
     along the real object to things that depend on it to exist'
   signature: 'dummy_client(reason: str, telemetry_processor: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
-    = None) -> None'
+    = None)'
   parameters:
   - name: reason
     isRequired: true
@@ -54,7 +54,7 @@ functions:
     - <xref:botbuilder.applicationinsights.django.common.TelemetryClient>
 - uid: botbuilder.applicationinsights.django.common.load_settings
   name: load_settings
-  signature: load_settings() -> None
+  signature: load_settings()
 classes:
 - botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings
 - botbuilder.applicationinsights.django.common.ApplicationInsightsSettings

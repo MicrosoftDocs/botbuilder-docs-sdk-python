@@ -6,13 +6,13 @@ module: botbuilder.dialogs
 inheritances:
 - builtins.object
 constructor:
-  syntax: DialogExtensions() -> None
+  syntax: DialogExtensions()
 methods:
 - uid: botbuilder.dialogs.DialogExtensions.run_dialog
   name: run_dialog
   summary: Creates a dialog stack and starts a dialog, pushing it onto the stack.
   signature: 'run_dialog(dialog: botbuilder.dialogs.dialog.Dialog, turn_context: botbuilder.core.turn_context.TurnContext,
-    accessor: botbuilder.core.state_property_accessor.StatePropertyAccessor) -> None'
+    accessor: botbuilder.core.state_property_accessor.StatePropertyAccessor)'
   parameters:
   - name: dialog
     isRequired: true

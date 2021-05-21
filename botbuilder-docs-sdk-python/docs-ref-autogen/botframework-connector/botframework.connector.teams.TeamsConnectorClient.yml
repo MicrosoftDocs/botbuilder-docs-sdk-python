@@ -17,7 +17,7 @@ summary: "\uFEFF\uFEFFThe Bot Connector REST API extension for Microsoft Teams a
   * [Bot Builder for Node.js]([https://docs.botframework.com/en-us/node/builder/overview/](https://docs.botframework.com/en-us/node/builder/overview/))\n\
   \xA9 2016 Microsoft"
 constructor:
-  syntax: TeamsConnectorClient(credentials, base_url=None) -> None
+  syntax: TeamsConnectorClient(credentials, base_url=None)
   parameters:
   - name: credentials
     description: 'Subscription credentials which uniquely identify
@@ -37,6 +37,6 @@ variables:
   types:
   - <xref:botframework.connector.teams.teams_connector_client.TeamsConnectorClientConfiguration>
 - description: Teams operations
-  name: config
+  name: teams
   types:
   - <xref:botframework.connector.teams.operations.TeamsOperations>

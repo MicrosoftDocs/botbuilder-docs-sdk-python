@@ -8,7 +8,7 @@ inheritances:
 summary: Class which runs the dialog system.
 constructor:
   syntax: 'DialogManager(root_dialog: botbuilder.dialogs.dialog.Dialog = None, dialog_state_property:
-    str = None) -> None'
+    str = None)'
 methods:
 - uid: botbuilder.dialogs.dialog_manager.DialogManager.get_active_dialog_context
   name: get_active_dialog_context
@@ -65,7 +65,7 @@ methods:
 
     :return:'
   signature: 'send_state_snapshot_trace(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    trace_label: str) -> None'
+    trace_label: str)'
   parameters:
   - name: dialog_context
     isRequired: true

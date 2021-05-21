@@ -7,12 +7,11 @@ inheritances:
 - builtins.object
 constructor:
   syntax: 'UserToken(connection_name: str = None, user_id: str = None, channel_id:
-    str = None, token: str = None) -> None'
+    str = None, token: str = None)'
 methods:
 - uid: botbuilder.core.adapters.test_adapter.UserToken.equals_key
   name: equals_key
-  signature: 'equals_key(rhs: botbuilder.core.adapters.test_adapter.UserToken) ->
-    None'
+  signature: 'equals_key(rhs: botbuilder.core.adapters.test_adapter.UserToken)'
   parameters:
   - name: rhs
     isRequired: true

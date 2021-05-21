@@ -6,7 +6,7 @@ module: botbuilder.core
 inheritances:
 - botbuilder.core.storage.Storage
 constructor:
-  syntax: MemoryStorage(dictionary=None) -> None
+  syntax: MemoryStorage(dictionary=None)
 methods:
 - uid: botbuilder.core.MemoryStorage.delete
   name: delete
@@ -15,7 +15,7 @@ methods:
     :param keys:
 
     :return:'
-  signature: 'delete(keys: typing.List[str]) -> None'
+  signature: 'delete(keys: typing.List[str])'
   parameters:
   - name: keys
     isRequired: true
@@ -26,7 +26,7 @@ methods:
     :param keys:
 
     :return:'
-  signature: 'read(keys: typing.List[str]) -> None'
+  signature: 'read(keys: typing.List[str])'
   parameters:
   - name: keys
     isRequired: true
@@ -37,8 +37,7 @@ methods:
     :param changes:
 
     :return:'
-  signature: 'write(changes: typing.Dict[str, botbuilder.core.storage.StoreItem])
-    -> None'
+  signature: 'write(changes: typing.Dict[str, botbuilder.core.storage.StoreItem])'
   parameters:
   - name: changes
     isRequired: true

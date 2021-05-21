@@ -7,14 +7,14 @@ inheritances:
 - builtins.object
 constructor:
   syntax: 'DialogSet(dialog_state: botbuilder.core.state_property_accessor.StatePropertyAccessor
-    = None) -> None'
+    = None)'
 methods:
 - uid: botbuilder.dialogs.DialogSet.add
   name: add
   summary: 'Adds a new dialog to the set and returns the added dialog.
 
     :param dialog: The dialog to add.'
-  signature: 'add(dialog: botbuilder.dialogs.dialog.Dialog) -> None'
+  signature: 'add(dialog: botbuilder.dialogs.dialog.Dialog)'
   parameters:
   - name: dialog
     isRequired: true

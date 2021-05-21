@@ -6,7 +6,7 @@ module: botbuilder.core.inspection.inspection_state
 inheritances:
 - botbuilder.core.bot_state.BotState
 constructor:
-  syntax: 'InspectionState(storage: botbuilder.core.storage.Storage) -> None'
+  syntax: 'InspectionState(storage: botbuilder.core.storage.Storage)'
 methods:
 - uid: botbuilder.core.inspection.inspection_state.InspectionState.get_storage_key
   name: get_storage_key

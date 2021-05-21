@@ -9,7 +9,7 @@ summary: "Bot Telemetry Middleware\nSave off the POST body to later populate bot
   \ properties to\nadd to Application Insights.\n\nExample adding telemetry middleware\
   \ to Flask:\n   app = Flask(__name__)\n   app.wsgi_app = BotTelemetryMiddleware(app.wsgi_app)"
 constructor:
-  syntax: BotTelemetryMiddleware(app) -> None
+  syntax: BotTelemetryMiddleware(app)
 methods:
 - uid: botbuilder.applicationinsights.flask.BotTelemetryMiddleware.process_request
   name: process_request

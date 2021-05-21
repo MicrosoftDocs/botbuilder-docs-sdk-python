@@ -7,12 +7,12 @@ inheritances:
 - builtins.object
 summary: Utility functions used to extract and transform data from Luis SDK
 constructor:
-  syntax: LuisUtil() -> None
+  syntax: LuisUtil()
 methods:
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.add_properties
   name: add_properties
   signature: 'add_properties(luis: azure.cognitiveservices.language.luis.runtime.models.luis_result_py3.LuisResult,
-    result: botbuilder.core.recognizer_result.RecognizerResult) -> None'
+    result: botbuilder.core.recognizer_result.RecognizerResult) -> None -> None'
   parameters:
   - name: luis
     isRequired: true
@@ -21,7 +21,7 @@ methods:
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.add_property
   name: add_property
   signature: 'add_property(obj: typing.Dict[str, object], key: str, value: object)
-    -> None'
+    -> None -> None'
   parameters:
   - name: obj
     isRequired: true
@@ -81,7 +81,7 @@ methods:
     isRequired: true
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.get_user_agent
   name: get_user_agent
-  signature: get_user_agent() -> None
+  signature: get_user_agent()
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.intent_score_as_dict
   name: intent_score_as_dict
   signature: 'intent_score_as_dict(intent_score: botbuilder.core.intent_score.IntentScore)

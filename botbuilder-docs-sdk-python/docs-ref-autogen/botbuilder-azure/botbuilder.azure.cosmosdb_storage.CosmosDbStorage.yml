@@ -8,12 +8,12 @@ inheritances:
 summary: A CosmosDB based storage provider for a bot.
 constructor:
   syntax: 'CosmosDbStorage(config: botbuilder.azure.cosmosdb_storage.CosmosDbConfig,
-    client: azure.cosmos.cosmos_client.CosmosClient = None) -> None'
+    client: azure.cosmos.cosmos_client.CosmosClient = None)'
 methods:
 - uid: botbuilder.azure.cosmosdb_storage.CosmosDbStorage.delete
   name: delete
   summary: Remove storeitems from storage.
-  signature: 'delete(keys: typing.List[str]) -> None'
+  signature: 'delete(keys: typing.List[str])'
   parameters:
   - name: keys
     isRequired: true
@@ -27,7 +27,7 @@ methods:
 - uid: botbuilder.azure.cosmosdb_storage.CosmosDbStorage.write
   name: write
   summary: Save storeitems to storage.
-  signature: 'write(changes: typing.Dict[str, object]) -> None'
+  signature: 'write(changes: typing.Dict[str, object])'
   parameters:
   - name: changes
     isRequired: true

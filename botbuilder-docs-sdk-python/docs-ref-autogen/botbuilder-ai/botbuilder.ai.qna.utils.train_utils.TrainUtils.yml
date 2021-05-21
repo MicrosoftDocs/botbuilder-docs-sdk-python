@@ -9,7 +9,7 @@ summary: Class for Train API, used in active learning to add suggestions to the 
   base
 constructor:
   syntax: 'TrainUtils(endpoint: botbuilder.ai.qna.qnamaker_endpoint.QnAMakerEndpoint,
-    http_client: aiohttp.client.ClientSession) -> None'
+    http_client: aiohttp.client.ClientSession)'
 methods:
 - uid: botbuilder.ai.qna.utils.train_utils.TrainUtils.call_train
   name: call_train
@@ -17,8 +17,7 @@ methods:
 
 
     feedback_records: Feedback record list.'
-  signature: 'call_train(feedback_records: typing.List[botbuilder.ai.qna.models.feedback_record.FeedbackRecord])
-    -> None'
+  signature: 'call_train(feedback_records: typing.List[botbuilder.ai.qna.models.feedback_record.FeedbackRecord])'
   parameters:
   - name: feedback_records
     isRequired: true

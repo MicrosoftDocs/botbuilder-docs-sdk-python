@@ -6,7 +6,7 @@ module: botframework.connector.auth.emulator_validation
 inheritances:
 - builtins.object
 constructor:
-  syntax: EmulatorValidation() -> None
+  syntax: EmulatorValidation()
 methods:
 - uid: botframework.connector.auth.emulator_validation.EmulatorValidation.authenticate_emulator_token
   name: authenticate_emulator_token
@@ -36,6 +36,8 @@ methods:
     isRequired: true
   return:
     description: A valid ClaimsIdentity.
+  exceptions:
+  - <xref:Exception>
 - uid: botframework.connector.auth.emulator_validation.EmulatorValidation.is_token_from_emulator
   name: is_token_from_emulator
   summary: Determines if a given Auth header is from the Bot Framework Emulator

@@ -9,12 +9,13 @@ summary: Defines methods for accessing a state property created in a <xref:botbu
   object.
 constructor:
   syntax: 'BotStatePropertyAccessor(bot_state: botbuilder.core.bot_state.BotState,
-    name: str) -> None'
+    name: str)'
 methods:
 - uid: botbuilder.core.bot_state.BotStatePropertyAccessor.delete
   name: delete
   summary: Deletes the property.
-  signature: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
+  signature: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None
+    -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -39,7 +40,7 @@ methods:
   name: set
   summary: Sets the property value.
   signature: 'set(turn_context: botbuilder.core.turn_context.TurnContext, value: object)
-    -> None'
+    -> None -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn

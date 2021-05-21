@@ -7,7 +7,7 @@ inheritances:
 - abc.ABC
 summary: Handles creating conversation ids for skill and should be subclassed.
 constructor:
-  syntax: ConversationIdFactoryBase() -> None
+  syntax: ConversationIdFactoryBase()
 remarks: 'Derive from this class to handle creation of conversation ids, retrieval
   of
 
@@ -38,7 +38,7 @@ methods:
 - uid: botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase.delete_conversation_reference
   name: delete_conversation_reference
   summary: Removes any reference to objects keyed on the conversation id passed in.
-  signature: 'delete_conversation_reference(skill_conversation_id: str) -> None'
+  signature: 'delete_conversation_reference(skill_conversation_id: str)'
   parameters:
   - name: skill_conversation_id
     isRequired: true

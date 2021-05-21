@@ -6,7 +6,7 @@ module: botframework.connector.auth.channel_validation
 inheritances:
 - builtins.object
 constructor:
-  syntax: ChannelValidation() -> None
+  syntax: ChannelValidation()
 methods:
 - uid: botframework.connector.auth.channel_validation.ChannelValidation.authenticate_channel_token
   name: authenticate_channel_token
@@ -36,6 +36,8 @@ methods:
     defaultValue: None
   return:
     description: A valid ClaimsIdentity.
+  exceptions:
+  - <xref:Exception>
 - uid: botframework.connector.auth.channel_validation.ChannelValidation.authenticate_channel_token_with_service_url
   name: authenticate_channel_token_with_service_url
   summary: 'Validate the incoming Auth Header
@@ -70,6 +72,8 @@ methods:
     defaultValue: None
   return:
     description: A valid ClaimsIdentity.
+  exceptions:
+  - <xref:Exception>
 - uid: botframework.connector.auth.channel_validation.ChannelValidation.validate_identity
   name: validate_identity
   signature: 'validate_identity(identity: botframework.connector.auth.claims_identity.ClaimsIdentity,

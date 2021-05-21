@@ -6,7 +6,7 @@ module: botbuilder.core.null_telemetry_client
 inheritances:
 - botbuilder.core.bot_telemetry_client.BotTelemetryClient
 constructor:
-  syntax: NullTelemetryClient() -> None
+  syntax: NullTelemetryClient()
 methods:
 - uid: botbuilder.core.null_telemetry_client.NullTelemetryClient.track_dependency
   name: track_dependency
@@ -46,7 +46,7 @@ methods:
   signature: 'track_dependency(name: str, data: str, type_name: str = None, target:
     str = None, duration: int = None, success: bool = None, result_code: str = None,
     properties: typing.Dict[str, object] = None, measurements: typing.Dict[str, object]
-    = None, dependency_id: str = None) -> None'
+    = None, dependency_id: str = None)'
   parameters:
   - name: name
     isRequired: true
@@ -81,7 +81,7 @@ methods:
     :param measurements: the set of custom measurements the client wants to attach
     to this data item.         (defaults to: None)'
   signature: 'track_event(name: str, properties: typing.Dict[str, object] = None,
-    measurements: typing.Dict[str, object] = None) -> None'
+    measurements: typing.Dict[str, object] = None) -> None -> None'
   parameters:
   - name: name
     isRequired: true
@@ -107,7 +107,7 @@ methods:
   signature: 'track_exception(exception_type: type = None, value: Exception = None,
     trace: <module ''traceback'' from ''c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\traceback.py''>
     = None, properties: typing.Dict[str, object] = None, measurements: typing.Dict[str,
-    object] = None) -> None'
+    object] = None) -> None -> None'
   parameters:
   - name: exception_type
     defaultValue: None
@@ -174,7 +174,7 @@ methods:
     :param measurements: the set of custom measurements the client wants to attach
     to this data item.         (defaults to: None)'
   signature: 'track_pageview(name: str, url, duration: int = 0, properties: typing.Dict[str,
-    object] = None, measurements: typing.Dict[str, object] = None) -> None'
+    object] = None, measurements: typing.Dict[str, object] = None) -> None -> None'
   parameters:
   - name: name
     isRequired: true
@@ -220,7 +220,7 @@ methods:
   signature: 'track_request(name: str, url: str, success: bool, start_time: str =
     None, duration: int = None, response_code: str = None, http_method: str = None,
     properties: typing.Dict[str, object] = None, measurements: typing.Dict[str, object]
-    = None, request_id: str = None) -> None'
+    = None, request_id: str = None)'
   parameters:
   - name: name
     isRequired: true
@@ -248,7 +248,7 @@ methods:
 
     :param name: the trace statement.'
   signature: 'track_trace(name, properties=None, severity: botbuilder.core.bot_telemetry_client.Severity
-    = None) -> None'
+    = None)'
   parameters:
   - name: properties
     description: 'the set of custom properties the client wants attached to this data

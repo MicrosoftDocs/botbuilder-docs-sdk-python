@@ -6,7 +6,7 @@ module: botbuilder.applicationinsights.django.django_telemetry_processor
 inheritances:
 - botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
 constructor:
-  syntax: DjangoTelemetryProcessor() -> None
+  syntax: DjangoTelemetryProcessor()
 methods:
 - uid: botbuilder.applicationinsights.django.django_telemetry_processor.DjangoTelemetryProcessor.can_process
   name: can_process

@@ -6,12 +6,11 @@ module: botbuilder.core
 inheritances:
 - builtins.object
 constructor:
-  syntax: ComponentRegistration() -> None
+  syntax: ComponentRegistration()
 methods:
 - uid: botbuilder.core.ComponentRegistration.add
   name: add
-  signature: 'add(component_registration: botbuilder.core.component_registration.ComponentRegistration)
-    -> None'
+  signature: 'add(component_registration: botbuilder.core.component_registration.ComponentRegistration)'
   parameters:
   - name: component_registration
     isRequired: true

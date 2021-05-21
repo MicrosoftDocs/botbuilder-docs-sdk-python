@@ -68,7 +68,6 @@ methods:
 
     ``.'
   signature: create_conversation(parameters, *, custom_headers=None, raw=False, **operation_config)
-    -> None
   parameters:
   - name: parameters
     description: Parameters to create the conversation from
@@ -97,6 +96,8 @@ methods:
     types:
     - <xref:botframework.connector.models.ConversationResourceResponse>
     - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - <xref:botframework.connector.models.ErrorResponseException>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.delete_activity
   name: delete_activity
   summary: 'DeleteActivity.
@@ -108,7 +109,7 @@ methods:
 
     successful this method will remove the specified activity.'
   signature: delete_activity(conversation_id, activity_id, *, custom_headers=None,
-    raw=False, **operation_config) -> None
+    raw=False, **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
@@ -142,6 +143,8 @@ methods:
     types:
     - <xref:None>
     - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - <xref:botframework.connector.models.ErrorResponseException>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.delete_conversation_member
   name: delete_conversation_member
   summary: 'DeleteConversationMember.
@@ -157,7 +160,7 @@ methods:
 
     of the conversation, the conversation will also be deleted.'
   signature: delete_conversation_member(conversation_id, member_id, *, custom_headers=None,
-    raw=False, **operation_config) -> None
+    raw=False, **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
@@ -191,6 +194,8 @@ methods:
     types:
     - <xref:None>
     - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - <xref:botframework.connector.models.ErrorResponseException>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.get_activity_members
   name: get_activity_members
   summary: 'GetActivityMembers.
@@ -204,7 +209,7 @@ methods:
 
     particular activity in the conversation.'
   signature: get_activity_members(conversation_id, activity_id, *, custom_headers=None,
-    raw=False, **operation_config) -> None
+    raw=False, **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
@@ -238,6 +243,8 @@ methods:
     types:
     - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
     - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - <xref:botframework.connector.models.ErrorResponseException>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_member
   name: get_conversation_member
   summary: 'GetConversationMember.
@@ -249,7 +256,7 @@ methods:
 
     ChannelAccount object representing the member of the conversation.'
   signature: get_conversation_member(conversation_id, member_id, custom_headers=None,
-    raw=False, **operation_config) -> None
+    raw=False, **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation Id
@@ -283,6 +290,8 @@ methods:
     types:
     - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
     - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - <xref:botframework.connector.models.ErrorResponseException>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_members
   name: get_conversation_members
   summary: 'GetConversationMembers.
@@ -294,7 +303,7 @@ methods:
 
     ChannelAccount objects representing the members of the conversation.'
   signature: get_conversation_members(conversation_id, *, custom_headers=None, raw=False,
-    **operation_config) -> None
+    **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
@@ -323,6 +332,8 @@ methods:
     types:
     - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
     - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - <xref:botframework.connector.models.ErrorResponseException>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversation_paged_members
   name: get_conversation_paged_members
   summary: 'GetConversationPagedMembers.
@@ -356,7 +367,7 @@ methods:
 
     request may rarely return members from a previous request.'
   signature: get_conversation_paged_members(conversation_id, page_size=None, continuation_token=None,
-    *, custom_headers=None, raw=False, **operation_config) -> None
+    *, custom_headers=None, raw=False, **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
@@ -395,6 +406,8 @@ methods:
     types:
     - <xref:botframework.connector.models.PagedMembersResult>
     - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - <xref:msrest.exceptions.HttpOperationError>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.get_conversations
   name: get_conversations
   summary: 'GetConversations.
@@ -420,7 +433,7 @@ methods:
 
     conversation.'
   signature: get_conversations(continuation_token=None, *, custom_headers=None, raw=False,
-    **operation_config) -> None
+    **operation_config)
   parameters:
   - name: continuation_token
     description: skip or continuation token
@@ -449,6 +462,8 @@ methods:
     types:
     - <xref:botframework.connector.models.ConversationsResult>
     - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - <xref:botframework.connector.models.ErrorResponseException>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.get_teams_conversation_paged_members
   name: get_teams_conversation_paged_members
   summary: 'GetTeamsConversationPagedMembers.
@@ -482,8 +497,7 @@ methods:
 
     request may rarely return members from a previous request.'
   signature: get_teams_conversation_paged_members(conversation_id, page_size=None,
-    continuation_token=None, custom_headers=None, raw=False, **operation_config) ->
-    None
+    continuation_token=None, custom_headers=None, raw=False, **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
@@ -522,6 +536,8 @@ methods:
     types:
     - <xref:botframework.connector.models.PagedMembersResult>
     - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - <xref:msrest.exceptions.HttpOperationError>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.reply_to_activity
   name: reply_to_activity
   summary: 'ReplyToActivity.
@@ -551,7 +567,7 @@ methods:
 
     Use SendToConversation in all other cases.'
   signature: reply_to_activity(conversation_id, activity_id, activity, *, custom_headers=None,
-    raw=False, **operation_config) -> None
+    raw=False, **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
@@ -590,6 +606,8 @@ methods:
     types:
     - <xref:botframework.connector.models.ResourceResponse>
     - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - <xref:botframework.connector.models.ErrorResponseException>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.send_conversation_history
   name: send_conversation_history
   summary: 'SendConversationHistory.
@@ -607,7 +625,7 @@ methods:
 
     render the activities in the right order.'
   signature: send_conversation_history(conversation_id, activities=None, *, custom_headers=None,
-    raw=False, **operation_config) -> None
+    raw=False, **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
@@ -643,6 +661,8 @@ methods:
     types:
     - <xref:botframework.connector.models.ResourceResponse>
     - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - <xref:botframework.connector.models.ErrorResponseException>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.send_to_conversation
   name: send_to_conversation
   summary: 'SendToConversation.
@@ -674,7 +694,7 @@ methods:
 
     Use SendToConversation in all other cases.'
   signature: send_to_conversation(conversation_id, activity, *, custom_headers=None,
-    raw=False, **operation_config) -> None
+    raw=False, **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
@@ -708,6 +728,8 @@ methods:
     types:
     - <xref:botframework.connector.models.ResourceResponse>
     - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - <xref:botframework.connector.models.ErrorResponseException>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.update_activity
   name: update_activity
   summary: 'UpdateActivity.
@@ -723,7 +745,7 @@ methods:
 
     button.'
   signature: update_activity(conversation_id, activity_id, activity, *, custom_headers=None,
-    raw=False, **operation_config) -> None
+    raw=False, **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
@@ -762,6 +784,8 @@ methods:
     types:
     - <xref:botframework.connector.models.ResourceResponse>
     - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - <xref:botframework.connector.models.ErrorResponseException>
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.upload_attachment
   name: upload_attachment
   summary: 'UploadAttachment.
@@ -777,7 +801,7 @@ methods:
 
     is suitable for using with the attachments API.'
   signature: upload_attachment(conversation_id, attachment_upload, *, custom_headers=None,
-    raw=False, **operation_config) -> None
+    raw=False, **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
@@ -811,6 +835,8 @@ methods:
     types:
     - <xref:botframework.connector.models.ResourceResponse>
     - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - <xref:botframework.connector.models.ErrorResponseException>
 attributes:
 - uid: botframework.connector.aio.operations_async.ConversationsOperations.models
   name: models

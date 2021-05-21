@@ -7,7 +7,7 @@ inheritances:
 - botbuilder.dialogs.prompts.prompt.Prompt
 constructor:
   syntax: 'DateTimePrompt(dialog_id: str, validator: object = None, default_locale:
-    str = None) -> None'
+    str = None)'
 methods:
 - uid: botbuilder.dialogs.prompts.datetime_prompt.DateTimePrompt.on_prompt
   name: on_prompt
@@ -15,7 +15,7 @@ methods:
     user for input.
   signature: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
     typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
-    is_retry: bool) -> None'
+    is_retry: bool)'
   parameters:
   - name: turn_context
     description: Context for the current turn of conversation with the user

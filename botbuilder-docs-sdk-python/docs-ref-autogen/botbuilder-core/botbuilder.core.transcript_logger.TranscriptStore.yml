@@ -7,7 +7,7 @@ inheritances:
 - botbuilder.core.transcript_logger.TranscriptLogger
 summary: Transcript storage for conversations.
 constructor:
-  syntax: TranscriptStore() -> None
+  syntax: TranscriptStore()
 methods:
 - uid: botbuilder.core.transcript_logger.TranscriptStore.delete_transcript
   name: delete_transcript
@@ -18,7 +18,8 @@ methods:
     :param conversation_id: Id of the conversation to delete.
 
     :result: None'
-  signature: 'delete_transcript(channel_id: str, conversation_id: str) -> None'
+  signature: 'delete_transcript(channel_id: str, conversation_id: str) -> None ->
+    None'
   parameters:
   - name: channel_id
     isRequired: true
