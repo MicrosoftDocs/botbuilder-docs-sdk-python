@@ -66,7 +66,7 @@ methods:
     - <xref:botframework.connector.teams.models.TeamsParticipantChannelAccount>
     - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
-  - <xref:msrest.exceptions.HttpOperationError>
+  - 'type: msrest.exceptions.HttpOperationError'
 - uid: botframework.connector.teams.operations.TeamsOperations.get_team_details
   name: get_team_details
   summary: 'Fetches details related to a team.
@@ -103,7 +103,7 @@ methods:
     - <xref:botframework.connector.teams.models.TeamDetails>
     - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
-  - <xref:msrest.exceptions.HttpOperationError>
+  - 'type: msrest.exceptions.HttpOperationError'
 - uid: botframework.connector.teams.operations.TeamsOperations.get_teams_channels
   name: get_teams_channels
   summary: 'Fetches channel list for a given team.
@@ -140,7 +140,7 @@ methods:
     - <xref:botframework.connector.teams.models.ConversationList>
     - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
-  - <xref:msrest.exceptions.HttpOperationError>
+  - 'type: msrest.exceptions.HttpOperationError'
 attributes:
 - uid: botframework.connector.teams.operations.TeamsOperations.models
   name: models

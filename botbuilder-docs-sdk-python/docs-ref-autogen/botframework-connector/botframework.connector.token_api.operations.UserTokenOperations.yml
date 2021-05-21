@@ -79,7 +79,7 @@ methods:
     - <xref:object>
     - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
-  - <xref:botframework.tokenapi.models.ErrorResponseException>
+  - 'type: botframework.tokenapi.models.ErrorResponseException'
 - uid: botframework.connector.token_api.operations.UserTokenOperations.get_aad_tokens
   name: get_aad_tokens
   signature: get_aad_tokens(user_id, connection_name, channel_id=None, resource_urls=None,
@@ -124,7 +124,7 @@ methods:
     - <xref:dict>[<xref:str>, <xref:botframework.tokenapi.models.TokenResponse>]
     - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
-  - <xref:botframework.tokenapi.models.ErrorResponseException>
+  - 'type: botframework.tokenapi.models.ErrorResponseException'
 - uid: botframework.connector.token_api.operations.UserTokenOperations.get_token
   name: get_token
   signature: get_token(user_id, connection_name, channel_id=None, code=None, custom_headers=None,
@@ -169,7 +169,7 @@ methods:
     - <xref:botframework.tokenapi.models.TokenResponse>
     - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
-  - <xref:botframework.tokenapi.models.ErrorResponseException>
+  - 'type: botframework.tokenapi.models.ErrorResponseException'
 - uid: botframework.connector.token_api.operations.UserTokenOperations.get_token_status
   name: get_token_status
   signature: get_token_status(user_id, channel_id=None, include=None, custom_headers=None,
@@ -210,7 +210,7 @@ methods:
     - <xref:list>[<xref:botframework.tokenapi.models.TokenStatus>]
     - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
-  - <xref:botframework.tokenapi.models.ErrorResponseException>
+  - 'type: botframework.tokenapi.models.ErrorResponseException'
 - uid: botframework.connector.token_api.operations.UserTokenOperations.sign_out
   name: sign_out
   signature: sign_out(user_id, connection_name=None, channel_id=None, custom_headers=None,
@@ -251,7 +251,7 @@ methods:
     - <xref:object>
     - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
-  - <xref:botframework.tokenapi.models.ErrorResponseException>
+  - 'type: botframework.tokenapi.models.ErrorResponseException'
 attributes:
 - uid: botframework.connector.token_api.operations.UserTokenOperations.models
   name: models
