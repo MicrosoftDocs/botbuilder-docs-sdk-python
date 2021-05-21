@@ -46,28 +46,24 @@ methods:
     description: "the dependency type name. Low cardinality value for logical grouping\
       \ of dependencies and\ninterpretation of other fields like commandName and resultCode.\
       \ Examples are SQL, Azure table, and HTTP.\n\n   (default to: None)"
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: target
     description: 'the target site of a dependency call. Examples are server name,
       host address. (default to: None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: duration
     description: 'the number of milliseconds that this dependency call lasted. (defaults
       to: None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:int>
   - name: success
     description: 'true if the dependency call ended in success, false otherwise. (defaults
       to: None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:bool>
@@ -76,7 +72,6 @@ methods:
       and HTTP status code.
 
       (defaults to: None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
@@ -85,7 +80,6 @@ methods:
       item.
 
       (defaults to: None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict>[<xref:str>, <xref:object>]
@@ -94,7 +88,6 @@ methods:
       data item.
 
       (defaults to: None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict>[<xref:str>, <xref:object>]
@@ -102,7 +95,6 @@ methods:
     description: 'the id for this dependency call. If None, a new uuid will be generated.
 
       (defaults to: None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
@@ -121,7 +113,6 @@ methods:
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict>[<xref:str>, <xref:object>]
@@ -130,7 +121,6 @@ methods:
       data item. (defaults to:
 
       None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict>[<xref:str>, <xref:object>]
@@ -140,20 +130,16 @@ methods:
   parameters:
   - name: exception_type
     description: the type of the exception that was thrown.
-    isRequired: true
     defaultValue: None
   - name: value
     description: the exception that the client wants to send.
-    isRequired: true
     defaultValue: None
   - name: trace
     description: the traceback information as returned by <xref:sys.exc_info>.
-    isRequired: true
     defaultValue: None
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict>[<xref:str>, <xref:object>]
@@ -162,7 +148,6 @@ methods:
       data item. (defaults to:
 
       None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict>[<xref:str>, <xref:object>]
@@ -186,12 +171,10 @@ methods:
     - <xref:float>
   - name: tel_type
     description: 'The type of the metric. (defaults to: TelemetryDataPointType.aggregation`)'
-    isRequired: true
     defaultValue: None
   - name: count
     description: 'the number of metrics that were aggregated into this data point.
       (defaults to: None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:int>
@@ -200,7 +183,6 @@ methods:
       data point. (defaults to:
 
       None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:float>
@@ -209,7 +191,6 @@ methods:
       data point. (defaults to:
 
       None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:float>
@@ -218,14 +199,12 @@ methods:
       into this data point.
 
       (defaults to: None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:float>
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict>[<xref:str>, <xref:object>]
@@ -248,12 +227,10 @@ methods:
     - <xref:str>
   - name: duration
     description: 'the duration of the page view in milliseconds. (defaults to: 0)'
-    isRequired: true
     defaultValue: '0'
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict>[<xref:str>, <xref:object>]
@@ -262,7 +239,6 @@ methods:
       data item. (defaults to:
 
       None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict>[<xref:str>, <xref:object>]
@@ -295,33 +271,28 @@ methods:
       the one returned by
 
       <xref:datetime.isoformat>. (defaults to: None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: duration
     description: 'the number of milliseconds that this request lasted. (defaults to:
       None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:int>
   - name: response_code
     description: 'the response code that this request returned. (defaults to: None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: http_method
     description: 'the HTTP method that triggered this request. (defaults to: None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict>[<xref:str>, <xref:object>]
@@ -330,14 +301,12 @@ methods:
       data item. (defaults to:
 
       None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict>[<xref:str>, <xref:object>]
   - name: request_id
     description: 'the id for this request. If None, a new uuid will be generated.
       (defaults to: None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
@@ -355,12 +324,10 @@ methods:
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict>[<xref:str>, <xref:object>]
   - name: severity
     description: the severity level of this trace, one of DEBUG, INFO, WARNING, ERROR,
       CRITICAL
-    isRequired: true
     defaultValue: None

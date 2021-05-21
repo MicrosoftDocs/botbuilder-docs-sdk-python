@@ -34,19 +34,16 @@ methods:
     - <xref:typing.Callable>
   - name: bot_id
     description: Unused for this override.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: claims_identity
     description: A ClaimsIdentity for the conversation.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.auth.ClaimsIdentity>
   - name: audience
     description: Unused for this override.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>

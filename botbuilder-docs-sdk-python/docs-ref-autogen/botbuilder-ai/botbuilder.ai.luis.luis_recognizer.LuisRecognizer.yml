@@ -37,7 +37,6 @@ methods:
       event, defaults
 
       to None.'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict>[<xref:str>, <xref:str>], <xref:optional>
@@ -71,7 +70,6 @@ methods:
       event, defaults
 
       to None.'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict>[<xref:str>, <xref:str>], <xref:optional>
@@ -80,7 +78,6 @@ methods:
       event, defaults
 
       to None.'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict>[<xref:str>, <xref:float>], <xref:optional>
@@ -103,7 +100,6 @@ methods:
       event, defaults
 
       to None.'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict>[<xref:str>, <xref:str>], <xref:optional>
@@ -112,7 +108,6 @@ methods:
       event, defaults to
 
       None.'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict>[<xref:str>, <xref:float>], <xref:optional>
@@ -136,7 +131,6 @@ methods:
     - <xref:botbuilder.core.RecognizerResult>
   - name: default_intent
     description: Intent name to return should a top intent be found, defaults to None.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>, <xref:optional>
@@ -145,7 +139,6 @@ methods:
       If all intents in the set
 
       are below this threshold then the *defaultIntent* is returned, defaults to 0.0.'
-    isRequired: true
     defaultValue: '0.0'
     types:
     - <xref:float>, <xref:optional>

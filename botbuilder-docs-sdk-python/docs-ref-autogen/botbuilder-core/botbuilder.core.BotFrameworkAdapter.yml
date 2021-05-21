@@ -19,13 +19,6 @@ remarks: "The bot adapter encapsulates authentication processes and sends activi
   \ the bot, each piece of middleware can inspect or act\nupon the activity, both\
   \ before and after the bot logic runs.\n"
 methods:
-- uid: botbuilder.core.BotFrameworkAdapter.can_process_outgoing_activity
-  name: can_process_outgoing_activity
-  signature: 'can_process_outgoing_activity(activity: botbuilder.schema._models_py3.Activity)
-    -> bool'
-  parameters:
-  - name: activity
-    isRequired: true
 - uid: botbuilder.core.BotFrameworkAdapter.continue_conversation
   name: continue_conversation
   summary: 'Continues a conversation with a user.
@@ -79,10 +72,8 @@ methods:
     isRequired: true
   - name: identity
     description: The claims identity
-    isRequired: true
     defaultValue: None
   - name: audience
-    isRequired: true
     defaultValue: None
   return:
     description: An instance of the <xref:botbuilder.core.ConnectorClient> class
@@ -103,29 +94,24 @@ methods:
     - <xref:botbuilder.schema.ConversationReference>
   - name: logic
     description: The logic to use for the creation of the conversation
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Callable>
   - name: conversation_parameters
     description: The information to use to create the conversation
-    isRequired: true
     defaultValue: None
   - name: channel_id
     description: The ID for the channel.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.str>
   - name: service_url
     description: The channel's service URL endpoint.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.str>
   - name: credentials
     description: The application credentials for the bot.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.auth.AppCredentials>
@@ -365,11 +351,9 @@ methods:
     - <xref:str>
   - name: final_redirect
     description: The final URL that the OAuth flow will redirect to.
-    isRequired: true
     defaultValue: None
   - name: oauth_app_credentials
     description: (Optional) AppCredentials for OAuth.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.auth.AppCredential>
@@ -543,15 +527,6 @@ methods:
     isRequired: true
   - name: logic
     isRequired: true
-- uid: botbuilder.core.BotFrameworkAdapter.process_outgoing_activity
-  name: process_outgoing_activity
-  signature: 'process_outgoing_activity(turn_context: botbuilder.core.turn_context.TurnContext,
-    activity: botbuilder.schema._models_py3.Activity) -> botbuilder.schema._models_py3.ResourceResponse'
-  parameters:
-  - name: turn_context
-    isRequired: true
-  - name: activity
-    isRequired: true
 - uid: botbuilder.core.BotFrameworkAdapter.send_activities
   name: send_activities
   signature: 'send_activities(context: botbuilder.core.turn_context.TurnContext, activities:
@@ -575,19 +550,16 @@ methods:
     - <xref:botbuilder.core.TurnContext>
   - name: connection_name
     description: Name of the auth connection to use
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: user_id
     description: User id of user to sign out
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: oauth_app_credentials
     description: (Optional) AppCredentials for OAuth.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.auth.AppCredential>

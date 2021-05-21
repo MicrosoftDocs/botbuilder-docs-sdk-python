@@ -44,13 +44,11 @@ methods:
     - <xref:botbuilder.core.TurnContext>
   - name: telemetry_properties
     description: Properties to add/override for the event.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict>[<xref:str>, <xref:str>]
   - name: telemetry_metrics
     description: Metrics to add/override for the event.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict>[<xref:str>, <xref:float>]

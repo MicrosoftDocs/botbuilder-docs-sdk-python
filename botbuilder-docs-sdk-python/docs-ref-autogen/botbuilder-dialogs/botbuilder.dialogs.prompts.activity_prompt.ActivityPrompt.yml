@@ -32,7 +32,6 @@ methods:
     - <xref:botbuilder.dialogs.prompts.activity_prompt.DialogContext>
   - name: options
     description: Optional, additional information to pass to the prompt being started.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botbuilder.dialogs.prompts.activity_prompt.PromptOptions>
@@ -73,7 +72,6 @@ methods:
   - name: isRetry
     description: 'If *true* the users response wasn''t recognized and the re-prompt
       should be sent.'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -131,7 +129,6 @@ methods:
     - <xref:botbuilder.dialogs.prompts.activity_prompt.DialogReason>
   - name: result
     description: Optional, value returned from the previous dialog on the stack.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:object>
