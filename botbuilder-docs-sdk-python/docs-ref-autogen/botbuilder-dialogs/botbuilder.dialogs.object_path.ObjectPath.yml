@@ -6,6 +6,8 @@ module: botbuilder.dialogs.object_path
 inheritances:
 - builtins.object
 summary: Helper methods for working with json objects.
+constructor:
+  syntax: ObjectPath()
 methods:
 - uid: botbuilder.dialogs.object_path.ObjectPath.assign
   name: assign
@@ -27,7 +29,7 @@ methods:
 - uid: botbuilder.dialogs.object_path.ObjectPath.for_each_property
   name: for_each_property
   signature: 'for_each_property(obj: object, action: typing.Callable[[str, object],
-    NoneType])'
+    None])'
   parameters:
   - name: obj
     isRequired: true

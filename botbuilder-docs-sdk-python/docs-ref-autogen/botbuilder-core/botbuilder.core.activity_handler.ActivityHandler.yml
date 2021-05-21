@@ -6,6 +6,8 @@ module: botbuilder.core.activity_handler
 inheritances:
 - botbuilder.core.bot.Bot
 summary: Handles activities and should be subclassed.
+constructor:
+  syntax: ActivityHandler()
 remarks: 'Derive from this class to handle particular activity types.
 
   Yon can add pre and post processing of activities by calling the base class
@@ -200,7 +202,7 @@ methods:
   summary: Registers an activity event handler for the _invoke_ event, emitted for
     every incoming event activity.
   signature: 'on_invoke_activity(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> typing.Union[botbuilder.core.invoke_response.InvokeResponse, NoneType]'
+    -> Optional[botbuilder.core.invoke_response.InvokeResponse]'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -215,7 +217,6 @@ methods:
     other than the bot join
 
     the conversation. You can add your bot''s welcome logic.
-
 
 
     conversation update activity
@@ -249,7 +250,6 @@ methods:
     other than the bot leave
 
     the conversation.  You can add your bot''s good-bye logic.
-
 
 
     conversation update activity

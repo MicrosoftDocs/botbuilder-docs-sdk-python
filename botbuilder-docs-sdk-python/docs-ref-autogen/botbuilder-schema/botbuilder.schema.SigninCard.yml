@@ -7,7 +7,7 @@ inheritances:
 - msrest.serialization.Model
 summary: A card representing a request to sign in.
 constructor:
-  syntax: 'SigninCard(*, text: str = None, buttons=None, **kwargs) -> None'
+  syntax: 'SigninCard(*, text: str = None, buttons=None, **kwargs)'
   parameters:
   - name: text
     description: Text for signin request

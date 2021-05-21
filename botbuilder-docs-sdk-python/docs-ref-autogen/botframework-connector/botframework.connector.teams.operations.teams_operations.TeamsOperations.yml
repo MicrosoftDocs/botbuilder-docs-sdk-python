@@ -65,8 +65,6 @@ methods:
     types:
     - <xref:botframework.connector.teams.models.TeamsParticipantChannelAccount>
     - <xref:msrest.pipeline.ClientRawResponse>
-  exceptions:
-  - type: msrest.exceptions.HttpOperationError
 - uid: botframework.connector.teams.operations.teams_operations.TeamsOperations.get_team_details
   name: get_team_details
   summary: 'Fetches details related to a team.
@@ -102,8 +100,6 @@ methods:
     types:
     - <xref:botframework.connector.teams.models.TeamDetails>
     - <xref:msrest.pipeline.ClientRawResponse>
-  exceptions:
-  - type: msrest.exceptions.HttpOperationError
 - uid: botframework.connector.teams.operations.teams_operations.TeamsOperations.get_teams_channels
   name: get_teams_channels
   summary: 'Fetches channel list for a given team.
@@ -139,9 +135,7 @@ methods:
     types:
     - <xref:botframework.connector.teams.models.ConversationList>
     - <xref:msrest.pipeline.ClientRawResponse>
-  exceptions:
-  - type: msrest.exceptions.HttpOperationError
 attributes:
 - uid: botframework.connector.teams.operations.teams_operations.TeamsOperations.models
   name: models
-  signature: 'models = <module ''botframework.connector.models'' from ''c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\site-packages\\botframework\\connector\\models\\__init__.py''>'
+  signature: models = <module 'botframework.connector.models' from 'c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\site-packages\\botframework\\connector\\models\\__init__.py'>

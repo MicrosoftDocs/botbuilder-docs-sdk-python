@@ -6,6 +6,8 @@ module: botbuilder.core
 inheritances:
 - botbuilder.core.oauth.user_token_provider.UserTokenProvider
 - abc.ABC
+constructor:
+  syntax: ExtendedUserTokenProvider()
 methods:
 - uid: botbuilder.core.ExtendedUserTokenProvider.exchange_token
   name: exchange_token

@@ -115,37 +115,68 @@ methods:
     isRequired: true
 - uid: botbuilder.core.adapters.TestAdapter.exchange_token
   name: exchange_token
+  summary: Performs a token exchange operation such as for single sign-on.
   signature: 'exchange_token(turn_context: botbuilder.core.turn_context.TurnContext,
     connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
     -> botbuilder.schema._models_py3.TokenResponse'
   parameters:
   - name: turn_context
+    description: Context for the current turn of conversation with the user.
     isRequired: true
   - name: connection_name
+    description: Name of the auth connection to use.
     isRequired: true
   - name: user_id
+    description: The user id associated with the token..
     isRequired: true
   - name: exchange_request
+    description: The exchange request details, either a token to exchange or a uri
+      to exchange.
     isRequired: true
+  return:
+    description: If the task completes, the exchanged token is returned.
 - uid: botbuilder.core.adapters.TestAdapter.exchange_token_from_credentials
   name: exchange_token_from_credentials
+  summary: Performs a token exchange operation such as for single sign-on.
   signature: 'exchange_token_from_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
     oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
     connection_name: str, user_id: str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
     -> botbuilder.schema._models_py3.TokenResponse'
   parameters:
   - name: turn_context
+    description: Context for the current turn of conversation with the user.
     isRequired: true
   - name: oauth_app_credentials
+    description: AppCredentials for OAuth.
     isRequired: true
   - name: connection_name
+    description: Name of the auth connection to use.
     isRequired: true
   - name: user_id
+    description: The user id associated with the token..
     isRequired: true
   - name: exchange_request
+    description: The exchange request details, either a token to exchange or a uri
+      to exchange.
     isRequired: true
+  return:
+    description: If the task completes, the exchanged token is returned.
 - uid: botbuilder.core.adapters.TestAdapter.get_aad_tokens
   name: get_aad_tokens
+  summary: 'Retrieves Azure Active Directory tokens for particular resources on a
+    configured connection.
+
+    :param context:
+
+    :param connection_name:
+
+    :param resource_urls:
+
+    :param user_id:
+
+    :param oauth_app_credentials:
+
+    :return:'
   signature: 'get_aad_tokens(context: botbuilder.core.turn_context.TurnContext, connection_name:
     str, resource_urls: typing.List[str], user_id: str = None, oauth_app_credentials:
     botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
@@ -166,6 +197,18 @@ methods:
   signature: get_next_activity() -> botbuilder.schema._models_py3.Activity
 - uid: botbuilder.core.adapters.TestAdapter.get_oauth_sign_in_link
   name: get_oauth_sign_in_link
+  summary: 'Get the raw signin link to be sent to the user for signin for a connection
+    name.
+
+    :param context:
+
+    :param connection_name:
+
+    :param final_redirect:
+
+    :param oauth_app_credentials:
+
+    :return:'
   signature: 'get_oauth_sign_in_link(context: botbuilder.core.turn_context.TurnContext,
     connection_name: str, final_redirect: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None) -> str'
@@ -180,35 +223,80 @@ methods:
     defaultValue: None
 - uid: botbuilder.core.adapters.TestAdapter.get_sign_in_resource_from_user
   name: get_sign_in_resource_from_user
+  summary: Get the raw signin link to be sent to the user for signin for a connection
+    name.
   signature: 'get_sign_in_resource_from_user(turn_context: botbuilder.core.turn_context.TurnContext,
     connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
   parameters:
   - name: turn_context
+    description: Context for the current turn of conversation with the user.
     isRequired: true
   - name: connection_name
+    description: Name of the auth connection to use.
     isRequired: true
   - name: user_id
+    description: The user id that will be associated with the token.
     isRequired: true
   - name: final_redirect
+    description: The final URL that the OAuth flow will redirect to.
     defaultValue: None
+  return:
+    description: A task that represents the work queued to execute.
+  remarks: 'If the task completes successfully, the result contains the raw signin
+    link.
+
+    '
 - uid: botbuilder.core.adapters.TestAdapter.get_sign_in_resource_from_user_and_credentials
   name: get_sign_in_resource_from_user_and_credentials
+  summary: Get the raw signin link to be sent to the user for signin for a connection
+    name.
   signature: 'get_sign_in_resource_from_user_and_credentials(turn_context: botbuilder.core.turn_context.TurnContext,
     oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials,
     connection_name: str, user_id: str, final_redirect: str = None) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
   parameters:
   - name: turn_context
+    description: Context for the current turn of conversation with the user.
     isRequired: true
   - name: oauth_app_credentials
+    description: Credentials for OAuth.
     isRequired: true
   - name: connection_name
+    description: Name of the auth connection to use.
     isRequired: true
   - name: user_id
+    description: The user id that will be associated with the token.
     isRequired: true
   - name: final_redirect
+    description: The final URL that the OAuth flow will redirect to.
     defaultValue: None
+  return:
+    description: A task that represents the work queued to execute.
+  remarks: 'If the task completes successfully, the result contains the raw signin
+    link.
+
+    '
 - uid: botbuilder.core.adapters.TestAdapter.get_token_status
   name: get_token_status
+  summary: 'Retrieves Azure Active Directory tokens for particular resources on a
+    configured connection.
+
+    :param context: Context for the current turn of conversation with the user.
+
+    :param connection_name: Name of the auth connection to use.
+
+    :param user_id: The user Id for which token status is retrieved.
+
+    :param include_filter: Optional comma separated list of connection''s to include.
+    Blank will return token status
+
+    for all configured connections.
+
+    :param oauth_app_credentials: (Optional) AppCredentials for OAuth.  If None is
+    supplied, the
+
+    Bots credentials are used.
+
+    :return:'
   signature: 'get_token_status(context: botbuilder.core.turn_context.TurnContext,
     connection_name: str = None, user_id: str = None, include_filter: str = None,
     oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
@@ -226,6 +314,17 @@ methods:
     defaultValue: None
 - uid: botbuilder.core.adapters.TestAdapter.get_user_token
   name: get_user_token
+  summary: 'Retrieves the OAuth token for a user that is in a sign-in flow.
+
+    :param context:
+
+    :param connection_name:
+
+    :param magic_code:
+
+    :param oauth_app_credentials:
+
+    :return:'
   signature: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, connection_name:
     str, magic_code: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None) -> botbuilder.schema._models_py3.TokenResponse'
@@ -296,6 +395,17 @@ methods:
     isRequired: true
 - uid: botbuilder.core.adapters.TestAdapter.sign_out_user
   name: sign_out_user
+  summary: 'Signs the user out with the token server.
+
+    :param context:
+
+    :param connection_name:
+
+    :param user_id:
+
+    :param oauth_app_credentials:
+
+    :return:'
   signature: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext, connection_name:
     str = None, user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None)'

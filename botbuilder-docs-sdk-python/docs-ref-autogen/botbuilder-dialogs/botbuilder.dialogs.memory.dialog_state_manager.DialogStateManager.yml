@@ -5,6 +5,9 @@ fullName: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager
 module: botbuilder.dialogs.memory.dialog_state_manager
 inheritances:
 - builtins.object
+constructor:
+  syntax: 'DialogStateManager(dialog_context: DialogContext, configuration: botbuilder.dialogs.memory.dialog_state_manager_configuration.DialogStateManagerConfiguration
+    = None)'
 methods:
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.add
   name: add
@@ -76,8 +79,8 @@ methods:
   name: copy_to
   summary: "Copies the elements of the dialog state manager to an array starting at\
     \ a particular index.\n:param array: The one-dimensional array that is the destination\
-    \ of the elements copied\n\n\n   from the dialog state manager. The array must\
-    \ have zero-based indexing."
+    \ of the elements copied\n\n   from the dialog state manager. The array must have\
+    \ zero-based indexing."
   signature: 'copy_to(array: typing.List[typing.Tuple[str, object]], array_index:
     int)'
   parameters:
@@ -117,7 +120,7 @@ methods:
   summary: 'Returns an enumerator that iterates through the collection.
 
     :return: An enumerator that can be used to iterate through the collection.'
-  signature: get_enumerator() -> typing.Iterator[typing.Tuple[str, object]]
+  signature: get_enumerator() -> Iterator[typing.Tuple[str, object]]
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.get_int_value
   name: get_int_value
   summary: 'Get an int value from memory using a path expression.

@@ -6,13 +6,15 @@ module: botbuilder.dialogs.choices
 inheritances:
 - builtins.object
 summary: Assists with formatting a message activity that contains a list of choices.
+constructor:
+  syntax: ChoiceFactory()
 methods:
 - uid: botbuilder.dialogs.choices.ChoiceFactory.for_channel
   name: for_channel
   summary: "Creates a message activity that includes a list of choices formatted based\
-    \ on the\n   capabilities of a given channel.\n\n\n\nchannel_id: A channel ID.\n\
-    choices: List of choices to render\ntext: (Optional) Text of the message to send.\n\
-    speak (Optional) SSML. Text to be spoken by your bot on a speech-enabled channel."
+    \ on the\n   capabilities of a given channel.\n\nchannel_id: A channel ID.\nchoices:\
+    \ List of choices to render\ntext: (Optional) Text of the message to send.\nspeak\
+    \ (Optional) SSML. Text to be spoken by your bot on a speech-enabled channel."
   signature: 'for_channel(channel_id: str, choices: typing.List[typing.Union[str,
     botbuilder.dialogs.choices.choice.Choice]], text: str = None, speak: str = None,
     options: botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
@@ -47,8 +49,6 @@ methods:
     an inline list.
 
 
-
-
     choices: The list of choices to render.
 
     text: (Optional) The text of the message to send.
@@ -72,8 +72,6 @@ methods:
   name: list_style
   summary: 'Creates a message activity that includes a list of choices formatted as
     a numbered or bulleted list.
-
-
 
 
     choices: The list of choices to render.

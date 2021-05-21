@@ -12,8 +12,8 @@ summary: "\uFEFF\uFEFFThe Bot Connector REST API extension for Microsoft Teams a
   \ libraries for this REST API are available. See below for a list.\nAuthentication\
   \ for both the Bot Connector and Bot State REST APIs is accomplished with JWT Bearer\
   \ tokens, and is\ndescribed in detail in the [Connector Authentication]([https://docs.botframework.com/en-us/restapi/authentication](https://docs.botframework.com/en-us/restapi/authentication))\n\
-  \n\n   document.\n\n\n# Client Libraries for the Bot Connector REST API\n* [Bot\
-  \ Builder for C#]([https://docs.botframework.com/en-us/csharp/builder/sdkreference/](https://docs.botframework.com/en-us/csharp/builder/sdkreference/))\n\
+  \n   document.\n\n# Client Libraries for the Bot Connector REST API\n* [Bot Builder\
+  \ for C#]([https://docs.botframework.com/en-us/csharp/builder/sdkreference/](https://docs.botframework.com/en-us/csharp/builder/sdkreference/))\n\
   * [Bot Builder for Node.js]([https://docs.botframework.com/en-us/node/builder/overview/](https://docs.botframework.com/en-us/node/builder/overview/))\n\
   \xA9 2016 Microsoft"
 constructor:
@@ -35,7 +35,7 @@ variables:
 - description: Configuration for client.
   name: config
   types:
-  - <xref:TeamsConnectorClientConfiguration>
+  - <xref:botframework.connector.teams.teams_connector_client.TeamsConnectorClientConfiguration>
 - description: Teams operations
   name: teams
   types:

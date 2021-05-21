@@ -9,10 +9,13 @@ functions:
     dict_to_deserialize: dict) -> msrest.serialization.Model'
   parameters:
   - name: msrest_cls
+    isRequired: true
   - name: dict_to_deserialize
+    isRequired: true
 - uid: botbuilder.core.serializer_helper.serializer_helper
   name: serializer_helper
   signature: 'serializer_helper(object_to_serialize: msrest.serialization.Model) ->
     dict'
   parameters:
   - name: object_to_serialize
+    isRequired: true

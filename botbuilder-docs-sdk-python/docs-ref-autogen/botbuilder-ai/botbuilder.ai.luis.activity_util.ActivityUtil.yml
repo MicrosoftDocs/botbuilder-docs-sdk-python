@@ -5,6 +5,8 @@ fullName: botbuilder.ai.luis.activity_util.ActivityUtil
 module: botbuilder.ai.luis.activity_util
 inheritances:
 - builtins.object
+constructor:
+  syntax: ActivityUtil()
 methods:
 - uid: botbuilder.ai.luis.activity_util.ActivityUtil.create_trace
   name: create_trace
@@ -16,7 +18,7 @@ methods:
   - name: turn_activity
     isRequired: true
     types:
-    - <xref:Activity>
+    - <xref:botbuilder.ai.luis.activity_util.Activity>
   - name: name
     description: The value to assign to the trace activity's <see cref="Activity.name"/>
       property.
@@ -53,4 +55,4 @@ methods:
   return:
     description: The created trace activity.
     types:
-    - <xref:Activity>
+    - <xref:botbuilder.ai.luis.activity_util.Activity>

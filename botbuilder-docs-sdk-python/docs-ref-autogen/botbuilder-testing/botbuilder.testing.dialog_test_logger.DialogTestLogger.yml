@@ -10,7 +10,7 @@ summary: 'A middleware to output incoming and outgoing activities as json string
 
   unit tests.'
 constructor:
-  syntax: 'DialogTestLogger(log_func: typing.Callable[..., NoneType] = None, json_indent:
+  syntax: 'DialogTestLogger(log_func: typing.Callable[..., None] = None, json_indent:
     int = 4, time_func: typing.Callable[float] = None)'
 methods:
 - uid: botbuilder.testing.dialog_test_logger.DialogTestLogger.on_turn

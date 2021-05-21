@@ -4,10 +4,14 @@ name: QnATelemetryConstants
 fullName: botbuilder.ai.qna.QnATelemetryConstants
 summary: Default QnA event and property names logged using IBotTelemetryClient.
 module: botbuilder.ai.qna
+constructor:
+  syntax: QnATelemetryConstants(value)
 inheritances:
 - builtins.str
 - enum.Enum
 fields:
+- name: qna_message_event
+  uid: botbuilder.ai.qna.QnATelemetryConstants.qna_message_event
 - name: answer_property
   uid: botbuilder.ai.qna.QnATelemetryConstants.answer_property
 - name: article_found_property
@@ -20,8 +24,6 @@ fields:
   uid: botbuilder.ai.qna.QnATelemetryConstants.knowledge_base_id_property
 - name: matched_question_property
   uid: botbuilder.ai.qna.QnATelemetryConstants.matched_question_property
-- name: qna_message_event
-  uid: botbuilder.ai.qna.QnATelemetryConstants.qna_message_event
 - name: question_id_property
   uid: botbuilder.ai.qna.QnATelemetryConstants.question_id_property
 - name: question_property

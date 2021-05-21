@@ -4,6 +4,8 @@ name: DialogReason
 fullName: botbuilder.dialogs.dialog_reason.DialogReason
 summary: Indicates in which a dialog-related method is being called.
 module: botbuilder.dialogs.dialog_reason
+constructor:
+  syntax: DialogReason(value)
 variables:
 - description: A dialog is being started through a call to <xref:DialogContext.begin>.
   name: BeginCalled
@@ -18,7 +20,7 @@ variables:
   types:
   - <xref:int>
 - description: A dialog is ending and replaced through a call to :meth:>>``<<DialogContext.replace_dialog()`.
-  name: ReplaceCalled
+  name: "ReplaceCalled \u2013 A dialog is ending and replaced through a call to :meth:``DialogContext.replace_dialog"
 - description: A dialog was cancelled as part of a call to <xref:DialogContext.cancel_all_dialogs>.
   name: CancelCalled
   types:

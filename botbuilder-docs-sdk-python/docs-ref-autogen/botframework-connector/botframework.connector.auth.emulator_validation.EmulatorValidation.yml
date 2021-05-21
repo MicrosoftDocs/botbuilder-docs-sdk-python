@@ -5,6 +5,8 @@ fullName: botframework.connector.auth.emulator_validation.EmulatorValidation
 module: botframework.connector.auth.emulator_validation
 inheritances:
 - builtins.object
+constructor:
+  syntax: EmulatorValidation()
 methods:
 - uid: botframework.connector.auth.emulator_validation.EmulatorValidation.authenticate_emulator_token
   name: authenticate_emulator_token
@@ -27,16 +29,13 @@ methods:
     description: The user defined set of valid credentials, such as the AppId.
     isRequired: true
     types:
-    - <xref:CredentialProvider>
+    - <xref:botframework.connector.auth.credential_provider.CredentialProvider>
   - name: channel_service_or_provider
     isRequired: true
   - name: channel_id
     isRequired: true
   return:
     description: A valid ClaimsIdentity.
-  exceptions:
-  - description: ''
-    type: Exception
 - uid: botframework.connector.auth.emulator_validation.EmulatorValidation.is_token_from_emulator
   name: is_token_from_emulator
   summary: Determines if a given Auth header is from the Bot Framework Emulator

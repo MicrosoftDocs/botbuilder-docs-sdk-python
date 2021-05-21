@@ -9,7 +9,7 @@ summary: "AttachmentsOperations async operations.\n\nYou should not instantiate 
   \ this class, but create a Client instance that will create it for you and attach\n\
   \   it as attribute."
 constructor:
-  syntax: AttachmentsOperations(client, config, serializer, deserializer) -> None
+  syntax: AttachmentsOperations(client, config, serializer, deserializer)
   parameters:
   - name: client
     description: Client for service requests.
@@ -25,7 +25,8 @@ constructor:
     isRequired: true
 variables:
 - description: 'The API version to use for the request. Constant value: "v3".'
-  name: api_version
+  name: "api_version \u2013 The API version to use for the request. Constant value:\
+    \ \u201Cv3\u201D"
 methods:
 - uid: botframework.connector.aio.operations_async.AttachmentsOperations.get_attachment
   name: get_attachment
@@ -68,7 +69,8 @@ methods:
       data is uploading, response will be None.'
     isRequired: true
     types:
-    - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
+    - <xref:botframework.connector.aio.operations_async.Callable>[<xref:botframework.connector.aio.operations_async.Bytes>,
+      <xref:botframework.connector.aio.operations_async.response=None>]
   - name: operation_config
     description: '*Operation configuration
 
@@ -77,10 +79,8 @@ methods:
   return:
     description: object or ClientRawResponse if raw=true
     types:
-    - <xref:Generator>
+    - <xref:botframework.connector.aio.operations_async.Generator>
     - <xref:msrest.pipeline.ClientRawResponse>
-  exceptions:
-  - type: botframework.connector.models.ErrorResponseException
 - uid: botframework.connector.aio.operations_async.AttachmentsOperations.get_attachment_info
   name: get_attachment_info
   summary: 'GetAttachmentInfo.
@@ -117,9 +117,7 @@ methods:
     types:
     - <xref:botframework.connector.models.AttachmentInfo>
     - <xref:msrest.pipeline.ClientRawResponse>
-  exceptions:
-  - type: botframework.connector.models.ErrorResponseException
 attributes:
 - uid: botframework.connector.aio.operations_async.AttachmentsOperations.models
   name: models
-  signature: 'models = <module ''botframework.connector.models'' from ''c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\site-packages\\botframework\\connector\\models\\__init__.py''>'
+  signature: models = <module 'botframework.connector.models' from 'c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\site-packages\\botframework\\connector\\models\\__init__.py'>

@@ -8,10 +8,9 @@ inheritances:
 summary: 'Envelope for cards for a TabResponse.
 
 
-
   list[ ~botframework.connector.teams.models.TabResponseCard]'
 constructor:
-  syntax: TabResponseCards(*, cards=None, **kwargs) -> None
+  syntax: TabResponseCards(*, cards=None, **kwargs)
   parameters:
   - name: cards
     description: Gets or sets adaptive card for this card tab response.

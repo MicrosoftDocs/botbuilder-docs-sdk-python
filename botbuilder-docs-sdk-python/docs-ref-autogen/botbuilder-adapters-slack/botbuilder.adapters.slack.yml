@@ -4,16 +4,16 @@ name: slack
 fullName: botbuilder.adapters.slack
 type: import
 classes:
-- botbuilder.adapters.slack.SlackClientOptions
-- botbuilder.adapters.slack.SlackClient
-- botbuilder.adapters.slack.SlackAdapter
-- botbuilder.adapters.slack.SlackPayload
-- botbuilder.adapters.slack.SlackMessage
-- botbuilder.adapters.slack.SlackEvent
 - botbuilder.adapters.slack.ActivityResourceResponse
-- botbuilder.adapters.slack.SlackRequestBody
-- botbuilder.adapters.slack.SlackHelper
+- botbuilder.adapters.slack.SlackAdapter
 - botbuilder.adapters.slack.SlackAdapterOptions
+- botbuilder.adapters.slack.SlackClient
+- botbuilder.adapters.slack.SlackClientOptions
+- botbuilder.adapters.slack.SlackEvent
+- botbuilder.adapters.slack.SlackHelper
+- botbuilder.adapters.slack.SlackMessage
+- botbuilder.adapters.slack.SlackPayload
+- botbuilder.adapters.slack.SlackRequestBody
 modules:
 - botbuilder.adapters.slack.about
 - botbuilder.adapters.slack.activity_resourceresponse

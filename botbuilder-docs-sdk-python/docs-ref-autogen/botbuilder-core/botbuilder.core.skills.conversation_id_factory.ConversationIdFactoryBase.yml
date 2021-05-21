@@ -6,6 +6,8 @@ module: botbuilder.core.skills.conversation_id_factory
 inheritances:
 - abc.ABC
 summary: Handles creating conversation ids for skill and should be subclassed.
+constructor:
+  syntax: ConversationIdFactoryBase()
 remarks: 'Derive from this class to handle creation of conversation ids, retrieval
   of
 
@@ -29,8 +31,8 @@ methods:
       and conversation id.'
     isRequired: true
     types:
-    - <xref:botbuilder.core.skills.conversation_id_factory.Union>[<xref:SkillConversationIdFactoryOptions>,
-      <xref:ConversationReference>]
+    - <xref:botbuilder.core.skills.conversation_id_factory.Union[SkillConversationIdFactoryOptions,
+      ConversationReference]>
   return:
     description: A skill conversation id.
 - uid: botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase.delete_conversation_reference

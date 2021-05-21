@@ -5,6 +5,8 @@ fullName: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler
 module: botbuilder.core.teams.teams_activity_handler
 inheritances:
 - botbuilder.core.activity_handler.ActivityHandler
+constructor:
+  syntax: TeamsActivityHandler()
 methods:
 - uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_conversation_update_activity
   name: on_conversation_update_activity
@@ -164,7 +166,6 @@ methods:
   summary: 'Invoked when a file consent card activity is received from the connector.
 
 
-
     activity sent when the user acts on a file consent card.'
   signature: 'on_teams_file_consent(turn_context: botbuilder.core.turn_context.TurnContext,
     file_consent_card_response: botbuilder.schema.teams._models_py3.FileConsentCardResponse)
@@ -181,7 +182,6 @@ methods:
   summary: 'Invoked when a file consent card is accepted by the user.
 
 
-
     activity sent when the user accepts a file consent card.'
   signature: 'on_teams_file_consent_accept(turn_context: botbuilder.core.turn_context.TurnContext,
     file_consent_card_response: botbuilder.schema.teams._models_py3.FileConsentCardResponse)'
@@ -195,7 +195,6 @@ methods:
 - uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_file_consent_decline
   name: on_teams_file_consent_decline
   summary: 'Invoked when a file consent card is declined by the user.
-
 
 
     activity sent when the user declines a file consent card.'
@@ -214,7 +213,6 @@ methods:
     than the bot
 
     join the channel, such as your bot''s welcome logic.
-
 
 
     described by the conversation update activity.
@@ -243,7 +241,6 @@ methods:
     It will get the associated members with the provided accounts.
 
 
-
     described by the conversation update activity.
 
     :param team_info: The team info object representing the team.
@@ -266,7 +263,6 @@ methods:
     than the bot
 
     leave the channel, such as your bot''s good-bye logic.
-
 
 
     described by the conversation update activity.
@@ -293,7 +289,6 @@ methods:
     leave the channel, such as your bot''s good-bye logic.
 
     It will get the associated members with the provided accounts.
-
 
 
     described by the conversation update activity.

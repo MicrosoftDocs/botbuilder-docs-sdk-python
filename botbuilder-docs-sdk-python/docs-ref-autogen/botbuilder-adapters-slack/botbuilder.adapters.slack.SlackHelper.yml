@@ -5,6 +5,8 @@ fullName: botbuilder.adapters.slack.SlackHelper
 module: botbuilder.adapters.slack
 inheritances:
 - builtins.object
+constructor:
+  syntax: SlackHelper()
 methods:
 - uid: botbuilder.adapters.slack.SlackHelper.activity_to_slack
   name: activity_to_slack
@@ -122,7 +124,7 @@ methods:
     description: The original aiohttp Request.
     isRequired: true
     types:
-    - '[<xref:aiohttp.web_request.Request>](<xref:aiohttp.web_request.Request.html#>)'
+    - '[aiohttp.web_request.Request](aiohttp.web_request.Request)'
   - name: code
     description: The HTTP result code to return.
     isRequired: true
@@ -141,4 +143,4 @@ methods:
   return:
     description: The aoihttp Response
     types:
-    - '[<xref:aiohttp.web_response.Response>](<xref:aiohttp.web_response.Response.html#>)'
+    - '[aiohttp.web_response.Response](aiohttp.web_response.Response)'

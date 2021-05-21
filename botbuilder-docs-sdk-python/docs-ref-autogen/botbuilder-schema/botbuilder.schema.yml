@@ -21,13 +21,15 @@ classes:
 - botbuilder.schema.ConversationReference
 - botbuilder.schema.ConversationResourceResponse
 - botbuilder.schema.ConversationsResult
-- botbuilder.schema.ExpectedReplies
 - botbuilder.schema.Entity
 - botbuilder.schema.Error
 - botbuilder.schema.ErrorResponse
 - botbuilder.schema.ErrorResponseException
+- botbuilder.schema.ExpectedReplies
 - botbuilder.schema.Fact
 - botbuilder.schema.GeoCoordinates
+- botbuilder.schema.HealthCheckResponse
+- botbuilder.schema.HealthResults
 - botbuilder.schema.HeroCard
 - botbuilder.schema.InnerHttpError
 - botbuilder.schema.MediaCard
@@ -43,6 +45,7 @@ classes:
 - botbuilder.schema.ResourceResponse
 - botbuilder.schema.SemanticAction
 - botbuilder.schema.SigninCard
+- botbuilder.schema.SpeechConstants
 - botbuilder.schema.SuggestedActions
 - botbuilder.schema.TextHighlight
 - botbuilder.schema.Thing
@@ -55,9 +58,6 @@ classes:
 - botbuilder.schema.TokenResponse
 - botbuilder.schema.Transcript
 - botbuilder.schema.VideoCard
-- botbuilder.schema.HealthResults
-- botbuilder.schema.HealthCheckResponse
-- botbuilder.schema.SpeechConstants
 packages:
 - botbuilder.schema.teams
 modules:
@@ -66,18 +66,18 @@ modules:
 - botbuilder.schema.healthcheck_response
 - botbuilder.schema.speech_constants
 enums:
-- botbuilder.schema.ActivityEventNames
-- botbuilder.schema.SignInConstants
-- botbuilder.schema.RoleTypes
-- botbuilder.schema.ActivityTypes
-- botbuilder.schema.TextFormatTypes
-- botbuilder.schema.AttachmentLayoutTypes
-- botbuilder.schema.MessageReactionTypes
-- botbuilder.schema.InputHints
 - botbuilder.schema.ActionTypes
-- botbuilder.schema.EndOfConversationCodes
+- botbuilder.schema.ActivityEventNames
 - botbuilder.schema.ActivityImportance
-- botbuilder.schema.DeliveryModes
-- botbuilder.schema.ContactRelationUpdateActionTypes
-- botbuilder.schema.InstallationUpdateActionTypes
+- botbuilder.schema.ActivityTypes
+- botbuilder.schema.AttachmentLayoutTypes
 - botbuilder.schema.CallerIdConstants
+- botbuilder.schema.ContactRelationUpdateActionTypes
+- botbuilder.schema.DeliveryModes
+- botbuilder.schema.EndOfConversationCodes
+- botbuilder.schema.InputHints
+- botbuilder.schema.InstallationUpdateActionTypes
+- botbuilder.schema.MessageReactionTypes
+- botbuilder.schema.RoleTypes
+- botbuilder.schema.SignInConstants
+- botbuilder.schema.TextFormatTypes

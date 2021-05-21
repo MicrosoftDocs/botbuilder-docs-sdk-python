@@ -8,10 +8,11 @@ inheritances:
 summary: "This class is a Django middleware that automatically enables request and\
   \ exception telemetry.  Django versions\n1.7 and newer are supported.\n\nTo enable,\
   \ add this class to your settings.py file in MIDDLEWARE_CLASSES (pre-1.10) or MIDDLEWARE\
-  \ (1.10 and newer):\n\n<!-- literal_block {\"ids\": [], \"classes\": [\"code\",\
-  \ \"python\"], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\"\
-  : \"preserve\"} -->\n\n````\n\n   # If on Django < 1.10\n   MIDDLEWARE_CLASSES =\
-  \ [\n       # ... or whatever is below for you ...\n       'django.middleware.security.SecurityMiddleware',\n\
+  \ (1.10 and newer):\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\"\
+  : [], \"dupnames\": [], \"backrefs\": [], \"force\": false, \"highlight_args\":\
+  \ {}, \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false}\
+  \ -->\n\n````python\n\n   # If on Django < 1.10\n   MIDDLEWARE_CLASSES = [\n   \
+  \    # ... or whatever is below for you ...\n       'django.middleware.security.SecurityMiddleware',\n\
   \       'django.contrib.sessions.middleware.SessionMiddleware',\n       'django.middleware.common.CommonMiddleware',\n\
   \       'django.middleware.csrf.CsrfViewMiddleware',\n       'django.contrib.auth.middleware.AuthenticationMiddleware',\n\
   \       'django.contrib.auth.middleware.SessionAuthenticationMiddleware',\n    \
@@ -24,10 +25,11 @@ summary: "This class is a Django middleware that automatically enables request a
   \       'django.contrib.messages.middleware.MessageMiddleware',\n       'django.middleware.clickjacking.XFrameOptionsMiddleware',\n\
   \       # ... or whatever is above for you ...\n       'botbuilder.applicationinsights.django.ApplicationInsightsMiddleware',\
   \   # Add this middleware to the end\n   ]\n   ````\n\nAnd then, add the following\
-  \ to your settings.py file:\n\n<!-- literal_block {\"ids\": [], \"classes\": [\"\
-  code\", \"python\"], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\"\
-  : \"preserve\"} -->\n\n````\n\n   APPLICATION_INSIGHTS = {\n       # (required)\
-  \ Your Application Insights instrumentation key\n       'ikey': \"00000000-0000-0000-0000-000000000000\"\
+  \ to your settings.py file:\n\n<!-- literal_block {\"ids\": [], \"classes\": [],\
+  \ \"names\": [], \"dupnames\": [], \"backrefs\": [], \"force\": false, \"highlight_args\"\
+  : {}, \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false}\
+  \ -->\n\n````python\n\n   APPLICATION_INSIGHTS = {\n       # (required) Your Application\
+  \ Insights instrumentation key\n       'ikey': \"00000000-0000-0000-0000-000000000000\"\
   ,\n\n       # (optional) By default, request names are logged as the request method\n\
   \       # and relative path of the URL.  To log the fully-qualified view names\n\
   \       # instead, set this to True.  Defaults to False.\n       'use_view_name':\

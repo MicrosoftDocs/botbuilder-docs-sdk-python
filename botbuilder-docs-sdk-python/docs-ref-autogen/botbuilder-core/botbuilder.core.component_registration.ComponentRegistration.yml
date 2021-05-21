@@ -5,6 +5,8 @@ fullName: botbuilder.core.component_registration.ComponentRegistration
 module: botbuilder.core.component_registration
 inheritances:
 - builtins.object
+constructor:
+  syntax: ComponentRegistration()
 methods:
 - uid: botbuilder.core.component_registration.ComponentRegistration.add
   name: add
@@ -14,4 +16,4 @@ methods:
     isRequired: true
 - uid: botbuilder.core.component_registration.ComponentRegistration.get_components
   name: get_components
-  signature: get_components() -> typing.Iterable[_ForwardRef('ComponentRegistration')]
+  signature: get_components() -> typing.Iterable[botbuilder.core.component_registration.ComponentRegistration]

@@ -6,6 +6,8 @@ module: botbuilder.dialogs.choices.channel
 inheritances:
 - builtins.object
 summary: Methods for determining channel-specific functionality.
+constructor:
+  syntax: Channel()
 methods:
 - uid: botbuilder.dialogs.choices.channel.Channel.get_channel_id
   name: get_channel_id
@@ -17,7 +19,7 @@ methods:
     description: The Turn Context to retrieve the Activity's Channel Id from.
     isRequired: true
     types:
-    - <xref:TurnContext>
+    - <xref:botbuilder.dialogs.choices.channel.TurnContext>
   return:
     description: The Channel Id from the Turn Context's Activity.
     types:

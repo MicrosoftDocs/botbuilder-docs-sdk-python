@@ -5,6 +5,8 @@ fullName: botbuilder.core.middleware_set.Middleware
 module: botbuilder.core.middleware_set
 inheritances:
 - abc.ABC
+constructor:
+  syntax: Middleware()
 methods:
 - uid: botbuilder.core.middleware_set.Middleware.on_turn
   name: on_turn

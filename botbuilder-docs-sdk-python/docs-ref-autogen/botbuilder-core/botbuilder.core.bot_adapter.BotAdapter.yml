@@ -20,7 +20,6 @@ methods:
     to the user.
 
 
-
     single tenant the Adapters (Console, Test, etc) but is critical to the BotFrameworkAdapter
 
     which is multi-tenant aware.
@@ -91,7 +90,7 @@ methods:
     description: A callback method to run at the end of the pipeline.
     defaultValue: None
     types:
-    - <xref:typing.Callable>[[<xref:TurnContext>], <xref:Awaitable>]
+    - <xref:typing.Callable[[TurnContext], Awaitable]>
 - uid: botbuilder.core.bot_adapter.BotAdapter.send_activities
   name: send_activities
   summary: Sends a set of activities to the user. An array of responses from the server
@@ -108,7 +107,7 @@ methods:
     description: The activities to send.
     isRequired: true
     types:
-    - <xref:typing.List>[<xref:Activity>]
+    - <xref:typing.List[Activity]>
 - uid: botbuilder.core.bot_adapter.BotAdapter.update_activity
   name: update_activity
   summary: Replaces an existing activity.

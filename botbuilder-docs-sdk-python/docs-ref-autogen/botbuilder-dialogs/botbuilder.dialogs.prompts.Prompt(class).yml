@@ -31,7 +31,7 @@ methods:
   name: append_choices
   summary: Composes an output activity containing a set of choices.
   signature: 'append_choices(prompt: botbuilder.schema._models_py3.Activity, channel_id:
-    str, choices: typing.List[botbuilder.dialogs.choices.choice.Choice], style: botbuilder.dialogs.choices.list_style.ListStyle,
+    str, choices: typing.List[botbuilder.dialogs.choices.choice.Choice], style: botbuilder.dialogs.choices.list_style.typing.ListStyle,
     options: botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
     = None) -> botbuilder.schema._models_py3.Activity'
   parameters:
@@ -85,7 +85,7 @@ methods:
     description: Optional, additional information to pass to the prompt being started
     defaultValue: None
     types:
-    - <xref:Object>
+    - <xref:botbuilder.dialogs.prompts.Object>
   return:
     description: The dialog turn result
     types:
@@ -138,7 +138,7 @@ methods:
       stack
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.Dict>
+    - <xref:Dict>
   - name: options
     description: A prompt options object constructed from:meth:*DialogContext.prompt()*
     isRequired: true
@@ -153,15 +153,8 @@ methods:
     description: A task representing the asynchronous operation.
 - uid: botbuilder.dialogs.prompts.Prompt.on_recognize
   name: on_recognize
-  summary: 'Recognizes the user''s input.
-
-
-
-    > [!NOTE]
-
-    > When overridden in a derived class, attempts to recognize the user''s input.
-
-    >'
+  summary: "Recognizes the user's input.\n\n\n> [!NOTE]\n> When overridden in a derived\
+    \ class, attempts to recognize the user\u2019s input.\n>"
   signature: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
     state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)'
   parameters:
@@ -175,7 +168,7 @@ methods:
       stack
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.Dict>
+    - <xref:Dict>
   - name: options
     description: A prompt options object constructed from <xref:DialogContext.prompt>
     isRequired: true

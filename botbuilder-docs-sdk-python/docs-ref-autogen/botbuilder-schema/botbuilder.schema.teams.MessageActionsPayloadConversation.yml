@@ -8,16 +8,13 @@ inheritances:
 summary: Represents a team or channel entity.
 constructor:
   syntax: 'MessageActionsPayloadConversation(*, conversation_identity_type=None, id:
-    str = None, display_name: str = None, **kwargs) -> None'
+    str = None, display_name: str = None, **kwargs)'
   parameters:
   - name: conversation_identity_type
     description: 'The type of conversation, whether a
 
       team or channel. Possible values include: ''team'', ''channel'''
     isRequired: true
-    types:
-    - <xref:str>
-    - <xref:botframework.connector.teams.models.enum>
   - name: id
     description: The id of the team or channel.
     isRequired: true

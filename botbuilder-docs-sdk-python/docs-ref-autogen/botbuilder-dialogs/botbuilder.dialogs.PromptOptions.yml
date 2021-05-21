@@ -10,5 +10,5 @@ summary: Contains settings to pass to a <xref:botbuilder.dialogs.Prompt> object 
 constructor:
   syntax: 'PromptOptions(prompt: botbuilder.schema._models_py3.Activity = None, retry_prompt:
     botbuilder.schema._models_py3.Activity = None, choices: typing.List[botbuilder.dialogs.choices.choice.Choice]
-    = None, style: botbuilder.dialogs.choices.list_style.ListStyle = None, validations:
-    object = None, number_of_attempts: int = 0)'
+    = None, style: botbuilder.dialogs.choices.list_style.typing.ListStyle = None,
+    validations: object = None, number_of_attempts: int = 0)'

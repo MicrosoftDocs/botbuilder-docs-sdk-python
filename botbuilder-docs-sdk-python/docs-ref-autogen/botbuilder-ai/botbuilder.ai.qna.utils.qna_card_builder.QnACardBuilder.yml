@@ -6,6 +6,8 @@ module: botbuilder.ai.qna.utils.qna_card_builder
 inheritances:
 - builtins.object
 summary: Message activity card builder for QnAMaker dialogs.
+constructor:
+  syntax: QnACardBuilder()
 methods:
 - uid: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder.get_qna_prompts_card
   name: get_qna_prompts_card

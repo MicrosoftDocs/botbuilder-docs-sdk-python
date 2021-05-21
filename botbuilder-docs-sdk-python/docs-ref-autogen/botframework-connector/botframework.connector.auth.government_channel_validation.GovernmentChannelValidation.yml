@@ -5,6 +5,8 @@ fullName: botframework.connector.auth.government_channel_validation.GovernmentCh
 module: botframework.connector.auth.government_channel_validation
 inheritances:
 - abc.ABC
+constructor:
+  syntax: GovernmentChannelValidation()
 methods:
 - uid: botframework.connector.auth.government_channel_validation.GovernmentChannelValidation.authenticate_channel_token
   name: authenticate_channel_token

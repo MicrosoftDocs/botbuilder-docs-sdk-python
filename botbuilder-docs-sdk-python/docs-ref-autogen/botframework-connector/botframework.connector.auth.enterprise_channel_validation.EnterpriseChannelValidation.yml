@@ -5,6 +5,8 @@ fullName: botframework.connector.auth.enterprise_channel_validation.EnterpriseCh
 module: botframework.connector.auth.enterprise_channel_validation
 inheritances:
 - abc.ABC
+constructor:
+  syntax: EnterpriseChannelValidation()
 methods:
 - uid: botframework.connector.auth.enterprise_channel_validation.EnterpriseChannelValidation.authenticate_channel_token
   name: authenticate_channel_token

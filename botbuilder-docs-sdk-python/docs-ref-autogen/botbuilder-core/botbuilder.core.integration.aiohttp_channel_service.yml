@@ -9,6 +9,7 @@ functions:
     base_url: str = '''') -> aiohttp.web_routedef.RouteTableDef'
   parameters:
   - name: handler
+    isRequired: true
   - name: base_url
 - uid: botbuilder.core.integration.aiohttp_channel_service.deserialize_from_body
   name: deserialize_from_body
@@ -16,10 +17,13 @@ functions:
     typing.Type[msrest.serialization.Model]) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: request
+    isRequired: true
   - name: target_model
+    isRequired: true
 - uid: botbuilder.core.integration.aiohttp_channel_service.get_serialized_response
   name: get_serialized_response
   signature: 'get_serialized_response(model_or_list: typing.Union[msrest.serialization.Model,
     typing.List[msrest.serialization.Model]]) -> aiohttp.web_response.Response'
   parameters:
   - name: model_or_list
+    isRequired: true

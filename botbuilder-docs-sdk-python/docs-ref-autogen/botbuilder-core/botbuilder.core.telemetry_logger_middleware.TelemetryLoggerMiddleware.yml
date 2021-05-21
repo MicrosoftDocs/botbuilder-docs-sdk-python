@@ -8,7 +8,7 @@ inheritances:
 summary: Middleware for logging incoming, outgoing, updated or deleted Activity messages.
 constructor:
   syntax: 'TelemetryLoggerMiddleware(telemetry_client: botbuilder.core.bot_telemetry_client.BotTelemetryClient,
-    log_personal_information: bool) -> None'
+    log_personal_information: bool)'
 methods:
 - uid: botbuilder.core.telemetry_logger_middleware.TelemetryLoggerMiddleware.fill_delete_event_properties
   name: fill_delete_event_properties
@@ -21,7 +21,6 @@ methods:
     :param additional_properties: Additional properties to add to the event.
 
     Additional properties can override "stock" properties.
-
 
 
     BotTelemetryClient.track_event method for the BotMessageUpdate event.'
@@ -47,7 +46,6 @@ methods:
     Additional properties can override "stock" properties.
 
 
-
     BotTelemetryClient.track_event method for the BotMessageReceived event.'
   signature: 'fill_receive_event_properties(activity: botbuilder.schema._models_py3.Activity,
     additional_properties: typing.Dict[str, str] = None) -> typing.Dict[str, str]'
@@ -70,7 +68,6 @@ methods:
     :param additional_properties: Additional properties to add to the event.
 
     Additional properties can override "stock" properties.
-
 
 
     BotTelemetryClient.track_event method for the BotMessageSend event.'
@@ -98,7 +95,6 @@ methods:
     :param additional_properties: Additional properties to add to the event.
 
     Additional properties can override "stock" properties.
-
 
 
     BotTelemetryClient.track_event method for the BotMessageUpdate event.'

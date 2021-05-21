@@ -5,6 +5,8 @@ fullName: botbuilder.core.oauth.UserTokenProvider
 module: botbuilder.core.oauth
 inheritances:
 - abc.ABC
+constructor:
+  syntax: UserTokenProvider()
 methods:
 - uid: botbuilder.core.oauth.UserTokenProvider.get_aad_tokens
   name: get_aad_tokens

@@ -39,14 +39,14 @@ methods:
       to None.'
     defaultValue: None
     types:
-    - <xref:typing.Dict>[<xref:str>, <xref:str>], <xref:optional>
+    - <xref:typing.Dict[str, str]>, optional
   return:
     description: 'A dictionary sent as "Properties" to <xref:botbuilder.core.BotTelemetryClient.track_event>
       for the
 
       BotMessageSend event.'
     types:
-    - <xref:*typing.Dict>[<xref:str>, <xref:str>]<xref:*>
+    - '*typing.Dict[str, str]*'
 - uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.on_recognizer_result
   name: on_recognizer_result
   summary: Invoked prior to a LuisResult being logged.
@@ -72,7 +72,7 @@ methods:
       to None.'
     defaultValue: None
     types:
-    - <xref:typing.Dict>[<xref:str>, <xref:str>], <xref:optional>
+    - <xref:typing.Dict[str, str]>, optional
   - name: telemetry_metrics
     description: 'Additional metrics to be logged to telemetry with the LuisResult
       event, defaults
@@ -80,7 +80,7 @@ methods:
       to None.'
     defaultValue: None
     types:
-    - <xref:typing.Dict>[<xref:str>, <xref:float>], <xref:optional>
+    - <xref:typing.Dict[str, float]>, optional
 - uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.recognize
   name: recognize
   summary: Return results of the analysis (suggested actions and intents).
@@ -102,7 +102,7 @@ methods:
       to None.'
     defaultValue: None
     types:
-    - <xref:typing.Dict>[<xref:str>, <xref:str>], <xref:optional>
+    - <xref:typing.Dict[str, str]>, optional
   - name: telemetry_metrics
     description: 'Additional metrics to be logged to telemetry with the LuisResult
       event, defaults to
@@ -110,7 +110,7 @@ methods:
       None.'
     defaultValue: None
     types:
-    - <xref:typing.Dict>[<xref:str>, <xref:float>], <xref:optional>
+    - <xref:typing.Dict[str, float]>, optional
   - name: luis_prediction_options
     defaultValue: None
   return:
@@ -149,7 +149,7 @@ methods:
 attributes:
 - uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.luis_trace_label
   name: luis_trace_label
-  signature: luis_trace_label = 'Luis Trace'
+  signature: 'luis_trace_label: str = ''Luis Trace'''
 - uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.luis_trace_type
   name: luis_trace_type
-  signature: luis_trace_type = 'https://www.luis.ai/schemas/trace'
+  signature: 'luis_trace_type: str = ''https://www.luis.ai/schemas/trace'''

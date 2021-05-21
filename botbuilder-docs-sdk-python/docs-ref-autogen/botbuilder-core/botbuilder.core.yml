@@ -14,6 +14,7 @@ functions:
   signature: 'calculate_change_hash(item: botbuilder.core.storage.StoreItem) -> str'
   parameters:
   - name: item
+    isRequired: true
 classes:
 - botbuilder.core.ActivityHandler
 - botbuilder.core.AdapterExtensions
@@ -44,9 +45,9 @@ classes:
 - botbuilder.core.NullTelemetryClient
 - botbuilder.core.PrivateConversationState
 - botbuilder.core.QueueStorage
-- botbuilder.core.RegisterClassMiddleware
 - botbuilder.core.Recognizer
 - botbuilder.core.RecognizerResult
+- botbuilder.core.RegisterClassMiddleware
 - botbuilder.core.ShowTypingMiddleware
 - botbuilder.core.StatePropertyAccessor
 - botbuilder.core.StatePropertyInfo

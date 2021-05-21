@@ -6,6 +6,8 @@ module: botbuilder.core
 inheritances:
 - abc.ABC
 summary: A base class for enqueueing an Activity for later processing.
+constructor:
+  syntax: QueueStorage()
 methods:
 - uid: botbuilder.core.QueueStorage.queue_activity
   name: queue_activity
@@ -30,7 +32,7 @@ methods:
     types:
     - <xref:int>
   - name: time_to_live
-    description: 'Specifies the time-to-live interval for the message in seconds.'
+    description: Specifies the time-to-live interval for the message in seconds.
     defaultValue: None
     types:
     - <xref:int>

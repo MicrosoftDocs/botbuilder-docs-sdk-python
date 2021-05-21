@@ -19,7 +19,7 @@ constructor:
     str = None, label: str = None, value_type: str = None, value=None, name: str =
     None, relates_to=None, code=None, expiration=None, importance=None, delivery_mode=None,
     listen_for=None, text_highlights=None, semantic_action=None, caller_id: str =
-    None, **kwargs) -> None'
+    None, **kwargs)'
   parameters:
   - name: type
     description: 'Contains the activity type. Possible values include:
@@ -111,9 +111,6 @@ constructor:
 
       Default: list. Possible values include: ''list'', ''carousel'''
     isRequired: true
-    types:
-    - <xref:str>
-    - <xref:botframework.connector.models.AttachmentLayoutTypes>
   - name: members_added
     description: The collection of members added to the conversation.
     isRequired: true
@@ -334,7 +331,6 @@ methods:
   summary: 'Updates this activity with the delivery information from an existing ConversationReference
 
 
-
     incoming activity, where the bot is the recipient; otherwise, False.
 
     Default is False, and the activity will show the bot as the sender.'
@@ -536,7 +532,6 @@ methods:
   summary: 'Creates a new trace activity based on this activity.
 
 
-
     Default is the name of type of the value.
 
     :param label: Optional, a descriptive label for this trace operation.'
@@ -557,7 +552,6 @@ methods:
   name: create_trace_activity
   summary: 'Creates an instance of the <xref:botbuilder.schema.Activity> class as
     a TraceActivity object.
-
 
 
     Default is the name of type of the value.

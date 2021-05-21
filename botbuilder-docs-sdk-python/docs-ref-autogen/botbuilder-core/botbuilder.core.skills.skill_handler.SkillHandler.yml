@@ -15,6 +15,15 @@ constructor:
 methods:
 - uid: botbuilder.core.skills.skill_handler.SkillHandler.on_delete_activity
   name: on_delete_activity
+  summary: 'delete_activity() API for Skill.
+
+
+    Delete an existing activity.
+
+
+    Some channels allow you to delete an existing activity, and if successful
+
+    this method will remove the specified activity.'
   signature: 'on_delete_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity_id: str)'
   parameters:
@@ -133,6 +142,20 @@ methods:
     isRequired: true
 - uid: botbuilder.core.skills.skill_handler.SkillHandler.on_update_activity
   name: on_update_activity
+  summary: 'update_activity() API for Skill.
+
+
+    Edit an existing activity.
+
+
+    Some channels allow you to edit an existing activity to reflect the new
+
+    state of a bot conversation.
+
+
+    For example, you can remove buttons after someone has clicked "Approve"
+
+    button.'
   signature: 'on_update_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
     -> botbuilder.schema._models_py3.ResourceResponse'

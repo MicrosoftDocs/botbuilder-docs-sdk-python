@@ -8,7 +8,6 @@ inheritances:
 summary: Initializes a new instance of the TabResponsePayload class.
 constructor:
   syntax: TabResponsePayload(*, type=None, value=None, suggested_actions=None, **kwargs)
-    -> None
   parameters:
   - name: type
     description: 'Gets or sets choice of action options when responding to the
@@ -23,9 +22,9 @@ constructor:
       tab/fetch activity with type of ''continue''.'
     isRequired: true
     types:
-    - <xref:TabResponseCards>
+    - <xref:botbuilder.schema.teams.TabResponseCards>
   - name: suggested_actions
     description: Gets or sets the Suggested Actions for this card tab.
     isRequired: true
     types:
-    - <xref:TabSuggestedActions>
+    - <xref:botbuilder.schema.teams.TabSuggestedActions>
