@@ -56,7 +56,7 @@ methods:
     :param id_or_reference:
 
     :return:'
-  signature: 'delete_activity(id_or_reference: Union[str, botbuilder.schema._models_py3.ConversationReference])'
+  signature: 'delete_activity(id_or_reference: typing.Union[str, botbuilder.schema._models_py3.ConversationReference])'
   parameters:
   - name: id_or_reference
     isRequired: true
@@ -88,7 +88,7 @@ methods:
     isRequired: true
 - uid: botbuilder.core.TurnContext.get_mentions
   name: get_mentions
-  signature: 'get_mentions(activity: botbuilder.schema._models_py3.Activity) -> List[botbuilder.schema._models_py3.Mention]'
+  signature: 'get_mentions(activity: botbuilder.schema._models_py3.Activity) -> typing.List[botbuilder.schema._models_py3.Mention]'
   parameters:
   - name: activity
     isRequired: true
@@ -167,8 +167,8 @@ methods:
     isRequired: true
 - uid: botbuilder.core.TurnContext.send_activities
   name: send_activities
-  signature: 'send_activities(activities: List[botbuilder.schema._models_py3.Activity])
-    -> List[botbuilder.schema._models_py3.ResourceResponse]'
+  signature: 'send_activities(activities: typing.List[botbuilder.schema._models_py3.Activity])
+    -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
   parameters:
   - name: activities
     isRequired: true
@@ -179,7 +179,7 @@ methods:
     :param activity_or_text:
 
     :return:'
-  signature: 'send_activity(activity_or_text: Union[botbuilder.schema._models_py3.Activity,
+  signature: 'send_activity(activity_or_text: typing.Union[botbuilder.schema._models_py3.Activity,
     str], speak: str = None, input_hint: str = None) -> botbuilder.schema._models_py3.ResourceResponse'
   parameters:
   - name: activity_or_text

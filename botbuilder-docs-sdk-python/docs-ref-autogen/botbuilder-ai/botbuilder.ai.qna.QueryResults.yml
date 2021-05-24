@@ -7,5 +7,5 @@ inheritances:
 - msrest.serialization.Model
 summary: Contains answers for a user query.
 constructor:
-  syntax: 'QueryResults(answers: List[botbuilder.ai.qna.models.query_result.QueryResult],
+  syntax: 'QueryResults(answers: typing.List[botbuilder.ai.qna.models.query_result.QueryResult],
     active_learning_enabled: bool = None, **kwargs)'

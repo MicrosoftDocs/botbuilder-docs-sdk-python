@@ -12,7 +12,7 @@ methods:
 - uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_identity
   name: get_identity
   signature: 'get_identity(schema: str, parameter: str, channel_id: str, required_endorsements:
-    List[str] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+    typing.List[str] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: schema
     isRequired: true
@@ -25,7 +25,7 @@ methods:
 - uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_identity_from_auth_header
   name: get_identity_from_auth_header
   signature: 'get_identity_from_auth_header(auth_header: str, channel_id: str, required_endorsements:
-    List[str] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+    typing.List[str] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: auth_header
     isRequired: true

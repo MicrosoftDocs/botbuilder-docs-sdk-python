@@ -16,8 +16,8 @@ methods:
 
     qna_serach_results: A list of QnA QueryResults returned from the QnA GenerateAnswer
     API call.'
-  signature: 'get_low_score_variation(qna_search_results: List[botbuilder.ai.qna.models.query_result.QueryResult])
-    -> List[botbuilder.ai.qna.models.query_result.QueryResult]'
+  signature: 'get_low_score_variation(qna_search_results: typing.List[botbuilder.ai.qna.models.query_result.QueryResult])
+    -> typing.List[botbuilder.ai.qna.models.query_result.QueryResult]'
   parameters:
   - name: qna_search_results
     isRequired: true

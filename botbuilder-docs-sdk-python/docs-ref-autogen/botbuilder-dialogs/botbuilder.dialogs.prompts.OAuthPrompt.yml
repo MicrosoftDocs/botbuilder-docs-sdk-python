@@ -7,8 +7,8 @@ inheritances:
 - botbuilder.dialogs.dialog.Dialog
 constructor:
   syntax: 'OAuthPrompt(dialog_id: str, settings: botbuilder.dialogs.prompts.oauth_prompt_settings.OAuthPromptSettings,
-    validator: Callable[[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext],
-    Awaitable[bool]] = None)'
+    validator: typing.Callable[[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext],
+    typing.Awaitable[bool]] = None)'
 methods:
 - uid: botbuilder.dialogs.prompts.OAuthPrompt.begin_dialog
   name: begin_dialog

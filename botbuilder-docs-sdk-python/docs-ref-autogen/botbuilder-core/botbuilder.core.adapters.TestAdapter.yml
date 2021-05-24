@@ -7,7 +7,7 @@ inheritances:
 - botbuilder.core.bot_adapter.BotAdapter
 - botbuilder.core.oauth.extended_user_token_provider.ExtendedUserTokenProvider
 constructor:
-  syntax: 'TestAdapter(logic: Coroutine = None, template_or_conversation: Union[botbuilder.schema._models_py3.Activity,
+  syntax: 'TestAdapter(logic: typing.Coroutine = None, template_or_conversation: typing.Union[botbuilder.schema._models_py3.Activity,
     botbuilder.schema._models_py3.ConversationReference] = None, send_trace_activities:
     bool = False)'
 methods:
@@ -55,7 +55,7 @@ methods:
 
     :return:'
   signature: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
-    callback: Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
+    callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
     = None, audience: str = None)'
   parameters:
   - name: reference
@@ -70,7 +70,7 @@ methods:
     defaultValue: None
 - uid: botbuilder.core.adapters.TestAdapter.create_conversation
   name: create_conversation
-  signature: 'create_conversation(channel_id: str, callback: Callable)'
+  signature: 'create_conversation(channel_id: str, callback: typing.Callable)'
   parameters:
   - name: channel_id
     isRequired: true
@@ -178,8 +178,9 @@ methods:
 
     :return:'
   signature: 'get_aad_tokens(context: botbuilder.core.turn_context.TurnContext, connection_name:
-    str, resource_urls: List[str], user_id: str = None, oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
-    = None) -> Dict[str, botbuilder.schema._models_py3.TokenResponse]'
+    str, resource_urls: typing.List[str], user_id: str = None, oauth_app_credentials:
+    botframework.connector.auth.app_credentials.AppCredentials = None) -> typing.Dict[str,
+    botbuilder.schema._models_py3.TokenResponse]'
   parameters:
   - name: context
     isRequired: true
@@ -299,7 +300,7 @@ methods:
   signature: 'get_token_status(context: botbuilder.core.turn_context.TurnContext,
     connection_name: str = None, user_id: str = None, include_filter: str = None,
     oauth_app_credentials: botframework.connector.auth.app_credentials.AppCredentials
-    = None) -> Dict[str, botbuilder.schema._models_py3.TokenResponse]'
+    = None) -> typing.Dict[str, botbuilder.schema._models_py3.TokenResponse]'
   parameters:
   - name: context
     isRequired: true
@@ -339,7 +340,7 @@ methods:
 - uid: botbuilder.core.adapters.TestAdapter.process_activity
   name: process_activity
   signature: 'process_activity(activity: botbuilder.schema._models_py3.Activity, logic:
-    Callable[[botbuilder.core.turn_context.TurnContext], Awaitable])'
+    typing.Callable[[botbuilder.core.turn_context.TurnContext], typing.Awaitable])'
   parameters:
   - name: activity
     isRequired: true
@@ -385,8 +386,8 @@ methods:
     :param activities:
 
     :return:'
-  signature: 'send_activities(context, activities: List[botbuilder.schema._models_py3.Activity])
-    -> List[botbuilder.schema._models_py3.ResourceResponse]'
+  signature: 'send_activities(context, activities: typing.List[botbuilder.schema._models_py3.Activity])
+    -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
   parameters:
   - name: context
     isRequired: true

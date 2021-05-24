@@ -12,7 +12,7 @@ methods:
 - uid: botframework.connector.auth.skill_validation.SkillValidation.authenticate_channel_token
   name: authenticate_channel_token
   signature: 'authenticate_channel_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
-    channel_service_or_provider: Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
+    channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
     channel_id: str, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration)
     -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
@@ -39,7 +39,7 @@ methods:
     :param claims: A dict of claims.
 
     :return bool:'
-  signature: 'is_skill_claim(claims: Dict[str, object]) -> bool'
+  signature: 'is_skill_claim(claims: typing.Dict[str, object]) -> bool'
   parameters:
   - name: claims
     isRequired: true

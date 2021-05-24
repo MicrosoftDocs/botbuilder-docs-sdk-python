@@ -6,7 +6,8 @@ module: botbuilder.ai.qna.qnamaker
 inheritances:
 - builtins.tuple
 constructor:
-  syntax: 'EventData(properties: Dict[str, str], metrics: Dict[str, float])'
+  syntax: 'EventData(properties: typing.Dict[str, str], metrics: typing.Dict[str,
+    float])'
 attributes:
 - uid: botbuilder.ai.qna.qnamaker.EventData.metrics
   name: metrics

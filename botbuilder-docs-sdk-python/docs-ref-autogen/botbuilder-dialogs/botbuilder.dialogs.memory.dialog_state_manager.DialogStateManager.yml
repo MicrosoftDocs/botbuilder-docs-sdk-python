@@ -33,7 +33,7 @@ methods:
     :param paths: Paths from track_paths to check.
 
     :return: True if any path has changed since counter.'
-  signature: 'any_path_changed(counter: int, paths: Iterable[str]) -> bool'
+  signature: 'any_path_changed(counter: int, paths: typing.Iterable[str]) -> bool'
   parameters:
   - name: counter
     isRequired: true
@@ -58,7 +58,7 @@ methods:
     :param item: The tuple of the item to locate.
 
     :return bool: True if item is found in the dialog state manager otherwise, False'
-  signature: 'contains(item: Tuple[str, object]) -> bool'
+  signature: 'contains(item: typing.Tuple[str, object]) -> bool'
   parameters:
   - name: item
     isRequired: true
@@ -81,7 +81,8 @@ methods:
     \ a particular index.\n:param array: The one-dimensional array that is the destination\
     \ of the elements copied\n\n   from the dialog state manager. The array must have\
     \ zero-based indexing."
-  signature: 'copy_to(array: List[Tuple[str, object]], array_index: int)'
+  signature: 'copy_to(array: typing.List[typing.Tuple[str, object]], array_index:
+    int)'
   parameters:
   - name: array_index
     isRequired: true
@@ -119,7 +120,7 @@ methods:
   summary: 'Returns an enumerator that iterates through the collection.
 
     :return: An enumerator that can be used to iterate through the collection.'
-  signature: get_enumerator() -> Iterator[Tuple[str, object]]
+  signature: get_enumerator() -> Iterator[typing.Tuple[str, object]]
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.get_int_value
   name: get_int_value
   summary: 'Get an int value from memory using a path expression.
@@ -151,7 +152,7 @@ methods:
   summary: 'Gets all memoryscopes suitable for logging.
 
     :return: object which represents all memory scopes.'
-  signature: get_memory_snapshot() -> Dict[str, object]
+  signature: get_memory_snapshot() -> typing.Dict[str, object]
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.get_string_value
   name: get_string_value
   summary: 'Get a string value from memory using a path expression.
@@ -179,8 +180,8 @@ methods:
     :param default_value: Function to give default value if there is none (OPTIONAL).
 
     :return: Result or null if the path is not valid.'
-  signature: 'get_value(class_type: Type, path_expression: str, default_value: Callable[[],
-    ~T] = None) -> ~T'
+  signature: 'get_value(class_type: typing.Type, path_expression: str, default_value:
+    typing.Callable[[], ~T] = None) -> ~T'
   parameters:
   - name: class_type
     isRequired: true
@@ -213,7 +214,7 @@ methods:
     :param item: The tuple of the item to locate.
 
     :return bool: True if item is found in the dialog state manager otherwise, False'
-  signature: 'remove_item(item: Tuple[str, object]) -> bool'
+  signature: 'remove_item(item: typing.Tuple[str, object]) -> bool'
   parameters:
   - name: item
     isRequired: true
@@ -237,7 +238,7 @@ methods:
     :param path:
 
     :return: The memory scope and remaining subpath in scope.'
-  signature: 'resolve_memory_scope(path: str) -> Tuple[botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope,
+  signature: 'resolve_memory_scope(path: str) -> typing.Tuple[botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope,
     str]'
   parameters:
   - name: path
@@ -270,7 +271,7 @@ methods:
     :param paths: Paths to track.
 
     :return: Normalized paths to pass to any_path_changed.'
-  signature: 'track_paths(paths: Iterable[str]) -> List[str]'
+  signature: 'track_paths(paths: typing.Iterable[str]) -> typing.List[str]'
   parameters:
   - name: paths
     isRequired: true
@@ -295,8 +296,8 @@ methods:
     :param path: Path expression to use.
 
     :return: True if found, false if not and the value.'
-  signature: 'try_get_value(path: str, class_type: Type = <class ''object''>) -> Tuple[bool,
-    object]'
+  signature: 'try_get_value(path: str, class_type: typing.Type = <class ''object''>)
+    -> typing.Tuple[bool, object]'
   parameters:
   - name: path
     isRequired: true

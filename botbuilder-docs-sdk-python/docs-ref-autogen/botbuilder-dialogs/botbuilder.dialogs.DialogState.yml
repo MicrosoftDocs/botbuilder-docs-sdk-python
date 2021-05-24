@@ -7,7 +7,7 @@ inheritances:
 - builtins.object
 summary: Contains state information for the dialog stack.
 constructor:
-  syntax: 'DialogState(stack: List[botbuilder.dialogs.dialog_instance.DialogInstance]
+  syntax: 'DialogState(stack: typing.List[botbuilder.dialogs.dialog_instance.DialogInstance]
     = None)'
 attributes:
 - uid: botbuilder.dialogs.DialogState.dialog_stack

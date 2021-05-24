@@ -6,7 +6,7 @@ module: botbuilder.dialogs.prompts
 inheritances:
 - botbuilder.dialogs.prompts.prompt.Prompt
 constructor:
-  syntax: 'NumberPrompt(dialog_id: str, validator: Callable[[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext],
+  syntax: 'NumberPrompt(dialog_id: str, validator: typing.Callable[[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext],
     bool] = None, default_locale: str = None)'
 methods:
 - uid: botbuilder.dialogs.prompts.NumberPrompt.on_prompt
@@ -14,7 +14,7 @@ methods:
   summary: Prompts user for input. When overridden in a derived class, prompts the
     user for input.
   signature: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
-    Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
+    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
     is_retry: bool)'
   parameters:
   - name: turn_context
@@ -52,7 +52,7 @@ methods:
 
     >'
   signature: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
-    state: Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
+    state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
     -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
   parameters:
   - name: turn_context

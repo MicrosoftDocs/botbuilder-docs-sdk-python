@@ -6,7 +6,7 @@ module: botbuilder.dialogs.waterfall_dialog
 inheritances:
 - botbuilder.dialogs.dialog.Dialog
 constructor:
-  syntax: 'WaterfallDialog(dialog_id: str, steps: [typing.Coroutine] = None)'
+  syntax: 'WaterfallDialog(dialog_id: str, steps: [typing.typing.Coroutine] = None)'
 methods:
 - uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.add_step
   name: add_step

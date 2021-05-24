@@ -7,14 +7,14 @@ inheritances:
 - botbuilder.dialogs.prompts.prompt.Prompt
 constructor:
   syntax: 'ConfirmPrompt(dialog_id: str, validator: object = None, default_locale:
-    str = None, choice_defaults: Dict[str, object] = None)'
+    str = None, choice_defaults: typing.Dict[str, object] = None)'
 methods:
 - uid: botbuilder.dialogs.prompts.confirm_prompt.ConfirmPrompt.on_prompt
   name: on_prompt
   summary: Prompts user for input. When overridden in a derived class, prompts the
     user for input.
   signature: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
-    Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
+    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
     is_retry: bool)'
   parameters:
   - name: turn_context
@@ -52,7 +52,7 @@ methods:
 
     >'
   signature: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
-    state: Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
+    state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
     -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
   parameters:
   - name: turn_context

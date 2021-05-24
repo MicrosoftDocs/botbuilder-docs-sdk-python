@@ -20,7 +20,8 @@ methods:
     isRequired: true
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.add_property
   name: add_property
-  signature: 'add_property(obj: Dict[str, object], key: str, value: object) -> None'
+  signature: 'add_property(obj: typing.Dict[str, object], key: str, value: object)
+    -> None'
   parameters:
   - name: obj
     isRequired: true
@@ -40,9 +41,9 @@ methods:
     isRequired: true
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.extract_entities_and_metadata
   name: extract_entities_and_metadata
-  signature: 'extract_entities_and_metadata(entities: List[azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel],
-    composite_entities: List[azure.cognitiveservices.language.luis.runtime.models.composite_entity_model_py3.CompositeEntityModel],
-    verbose: bool) -> Dict[str, object]'
+  signature: 'extract_entities_and_metadata(entities: typing.List[azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel],
+    composite_entities: typing.List[azure.cognitiveservices.language.luis.runtime.models.composite_entity_model_py3.CompositeEntityModel],
+    verbose: bool) -> typing.Dict[str, object]'
   parameters:
   - name: entities
     isRequired: true
@@ -53,7 +54,7 @@ methods:
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.extract_entity_metadata
   name: extract_entity_metadata
   signature: 'extract_entity_metadata(entity: azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel)
-    -> Dict'
+    -> typing.Dict'
   parameters:
   - name: entity
     isRequired: true
@@ -74,7 +75,7 @@ methods:
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.get_intents
   name: get_intents
   signature: 'get_intents(luis_result: azure.cognitiveservices.language.luis.runtime.models.luis_result_py3.LuisResult)
-    -> Dict[str, botbuilder.core.intent_score.IntentScore]'
+    -> typing.Dict[str, botbuilder.core.intent_score.IntentScore]'
   parameters:
   - name: luis_result
     isRequired: true
@@ -84,14 +85,14 @@ methods:
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.intent_score_as_dict
   name: intent_score_as_dict
   signature: 'intent_score_as_dict(intent_score: botbuilder.core.intent_score.IntentScore)
-    -> Dict[str, float]'
+    -> typing.Dict[str, float]'
   parameters:
   - name: intent_score
     isRequired: true
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.luis_result_as_dict
   name: luis_result_as_dict
   signature: 'luis_result_as_dict(luis_result: azure.cognitiveservices.language.luis.runtime.models.luis_result_py3.LuisResult)
-    -> Dict[str, object]'
+    -> typing.Dict[str, object]'
   parameters:
   - name: luis_result
     isRequired: true
@@ -103,15 +104,15 @@ methods:
     isRequired: true
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.number
   name: number
-  signature: 'number(value: object) -> Union[int, float]'
+  signature: 'number(value: object) -> typing.Union[int, float]'
   parameters:
   - name: value
     isRequired: true
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.populate_composite_entity_model
   name: populate_composite_entity_model
   signature: 'populate_composite_entity_model(composite_entity: azure.cognitiveservices.language.luis.runtime.models.composite_entity_model_py3.CompositeEntityModel,
-    entities: List[azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel],
-    entities_and_metadata: Dict, verbose: bool) -> List[azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel]'
+    entities: typing.List[azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel],
+    entities_and_metadata: typing.Dict, verbose: bool) -> typing.List[azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel]'
   parameters:
   - name: composite_entity
     isRequired: true
@@ -124,7 +125,7 @@ methods:
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.recognizer_result_as_dict
   name: recognizer_result_as_dict
   signature: 'recognizer_result_as_dict(recognizer_result: botbuilder.core.recognizer_result.RecognizerResult)
-    -> Dict[str, object]'
+    -> typing.Dict[str, object]'
   parameters:
   - name: recognizer_result
     isRequired: true

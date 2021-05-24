@@ -31,7 +31,7 @@ methods:
     :type credentials: CredentialProvider'
   signature: 'authenticate_request(activity: botbuilder.schema._models_py3.Activity,
     auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
-    channel_service_or_provider: Union[str, botframework.connector.auth.channel_provider.ChannelProvider]
+    channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider]
     = '''', auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
     = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
@@ -49,7 +49,7 @@ methods:
     type: Exception
 - uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.get_app_id_from_claims
   name: get_app_id_from_claims
-  signature: 'get_app_id_from_claims(claims: Dict[str, object]) -> str'
+  signature: 'get_app_id_from_claims(claims: typing.Dict[str, object]) -> str'
   parameters:
   - name: claims
     isRequired: true
@@ -68,7 +68,7 @@ methods:
 - uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.validate_auth_header
   name: validate_auth_header
   signature: 'validate_auth_header(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
-    channel_service_or_provider: Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
+    channel_service_or_provider: typing.Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
     channel_id: str, service_url: str = None, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
     = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
@@ -87,7 +87,7 @@ methods:
 - uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.validate_claims
   name: validate_claims
   signature: 'validate_claims(auth_config: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration,
-    claims: List[Dict])'
+    claims: typing.List[typing.Dict])'
   parameters:
   - name: auth_config
     isRequired: true

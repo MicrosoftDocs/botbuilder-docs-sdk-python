@@ -34,14 +34,14 @@ methods:
 - uid: botbuilder.core.teams.teams_info.TeamsInfo.get_members
   name: get_members
   signature: 'get_members(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> List[botbuilder.schema.teams._models_py3.TeamsChannelAccount]'
+    -> typing.List[botbuilder.schema.teams._models_py3.TeamsChannelAccount]'
   parameters:
   - name: turn_context
     isRequired: true
 - uid: botbuilder.core.teams.teams_info.TeamsInfo.get_paged_members
   name: get_paged_members
   signature: 'get_paged_members(turn_context: botbuilder.core.turn_context.TurnContext,
-    continuation_token: str = None, page_size: int = None) -> List[botbuilder.schema.teams._models_py3.TeamsPagedMembersResult]'
+    continuation_token: str = None, page_size: int = None) -> typing.List[botbuilder.schema.teams._models_py3.TeamsPagedMembersResult]'
   parameters:
   - name: turn_context
     isRequired: true
@@ -53,7 +53,7 @@ methods:
   name: get_paged_team_members
   signature: 'get_paged_team_members(turn_context: botbuilder.core.turn_context.TurnContext,
     team_id: str = '''', continuation_token: str = None, page_size: int = None) ->
-    List[botbuilder.schema.teams._models_py3.TeamsPagedMembersResult]'
+    typing.List[botbuilder.schema.teams._models_py3.TeamsPagedMembersResult]'
   parameters:
   - name: turn_context
     isRequired: true
@@ -65,7 +65,7 @@ methods:
 - uid: botbuilder.core.teams.teams_info.TeamsInfo.get_team_channels
   name: get_team_channels
   signature: 'get_team_channels(turn_context: botbuilder.core.turn_context.TurnContext,
-    team_id: str = '''') -> List[botbuilder.schema.teams._models_py3.ChannelInfo]'
+    team_id: str = '''') -> typing.List[botbuilder.schema.teams._models_py3.ChannelInfo]'
   parameters:
   - name: turn_context
     isRequired: true
@@ -97,7 +97,7 @@ methods:
 - uid: botbuilder.core.teams.teams_info.TeamsInfo.get_team_members
   name: get_team_members
   signature: 'get_team_members(turn_context: botbuilder.core.turn_context.TurnContext,
-    team_id: str = '''') -> List[botbuilder.schema.teams._models_py3.TeamsChannelAccount]'
+    team_id: str = '''') -> typing.List[botbuilder.schema.teams._models_py3.TeamsChannelAccount]'
   parameters:
   - name: turn_context
     isRequired: true
@@ -112,7 +112,7 @@ methods:
 - uid: botbuilder.core.teams.teams_info.TeamsInfo.send_message_to_teams_channel
   name: send_message_to_teams_channel
   signature: 'send_message_to_teams_channel(turn_context: botbuilder.core.turn_context.TurnContext,
-    activity: botbuilder.schema._models_py3.Activity, teams_channel_id: str) -> Tuple[botbuilder.schema._models_py3.ConversationReference,
+    activity: botbuilder.schema._models_py3.Activity, teams_channel_id: str) -> typing.Tuple[botbuilder.schema._models_py3.ConversationReference,
     str]'
   parameters:
   - name: turn_context

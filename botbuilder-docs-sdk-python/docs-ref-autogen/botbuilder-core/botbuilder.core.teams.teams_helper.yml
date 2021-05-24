@@ -5,8 +5,8 @@ fullName: botbuilder.core.teams.teams_helper
 functions:
 - uid: botbuilder.core.teams.teams_helper.deserializer_helper
   name: deserializer_helper
-  signature: 'deserializer_helper(msrest_cls: Type[msrest.serialization.Model], dict_to_deserialize:
-    dict) -> msrest.serialization.Model'
+  signature: 'deserializer_helper(msrest_cls: typing.Type[msrest.serialization.Model],
+    dict_to_deserialize: dict) -> msrest.serialization.Model'
   parameters:
   - name: msrest_cls
   - name: dict_to_deserialize
