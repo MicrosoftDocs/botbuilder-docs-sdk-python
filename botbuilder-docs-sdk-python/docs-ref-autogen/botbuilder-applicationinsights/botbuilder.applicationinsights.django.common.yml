@@ -41,7 +41,7 @@ functions:
     description: Telemetry channel
     isRequired: true
     types:
-    - <xref:TelemetryChannel>
+    - <xref:botbuilder.applicationinsights.django.common.TelemetryChannel>
   - name: telemetry_processor
     description: use an existing telemetry processor from caller.
     defaultValue: None
@@ -50,7 +50,7 @@ functions:
   return:
     description: a telemetry client with telemetry processor.
     types:
-    - <xref:TelemetryClient>
+    - <xref:botbuilder.applicationinsights.django.common.TelemetryClient>
 - uid: botbuilder.applicationinsights.django.common.load_settings
   name: load_settings
   signature: load_settings()

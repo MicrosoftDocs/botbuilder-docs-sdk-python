@@ -11,11 +11,12 @@ constructor:
 variables:
 - name: state
   types:
-  - <xref:persisted_dialog>
+  - <xref:botbuilder.dialogs.component_dialog.persisted_dialog>
 methods:
 - uid: botbuilder.dialogs.component_dialog.ComponentDialog.add_dialog
   name: add_dialog
-  summary: Adds a <xref:Dialog> to the component dialog and returns the updated component.
+  summary: Adds a <xref:botbuilder.dialogs.component_dialog.Dialog> to the component
+    dialog and returns the updated component.
   signature: 'add_dialog(dialog: botbuilder.dialogs.dialog.Dialog) -> object'
   parameters:
   - name: dialog

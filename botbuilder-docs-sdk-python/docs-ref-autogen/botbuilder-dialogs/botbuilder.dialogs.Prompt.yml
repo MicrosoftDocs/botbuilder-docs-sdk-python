@@ -21,7 +21,7 @@ remarks: 'When the prompt ends, it returns an object that represents the value i
   Use <xref:botbuilder.dialogs.DialogContext.prompt> or <xref:botbuilder.dialogs.DialogContext.begin_dialog>
   to start the prompt.
 
-  If you start a prompt from a <xref:WaterfallStep> in a <xref:botbuilder.dialogs.WaterfallDialog>,
+  If you start a prompt from a <xref:botbuilder.dialogs.WaterfallStep> in a <xref:botbuilder.dialogs.WaterfallDialog>,
   then the
 
   prompt result will be available in the next step of the waterfall.
@@ -86,7 +86,7 @@ methods:
     description: Optional, additional information to pass to the prompt being started
     defaultValue: None
     types:
-    - <xref:Object>
+    - <xref:botbuilder.dialogs.Object>
   return:
     description: The dialog turn result
     types:

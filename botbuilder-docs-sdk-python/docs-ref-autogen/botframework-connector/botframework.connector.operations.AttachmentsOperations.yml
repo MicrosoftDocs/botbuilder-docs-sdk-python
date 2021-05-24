@@ -68,7 +68,8 @@ methods:
       data is uploading, response will be None.'
     defaultValue: None
     types:
-    - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
+    - <xref:botframework.connector.operations.Callable>[<xref:botframework.connector.operations.Bytes>,
+      <xref:botframework.connector.operations.response=None>]
   - name: operation_config
     description: '*Operation configuration
 
@@ -77,7 +78,7 @@ methods:
   return:
     description: object or ClientRawResponse if raw=true
     types:
-    - <xref:Generator>
+    - <xref:botframework.connector.operations.Generator>
     - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
   - type: botframework.connector.models.ErrorResponseException

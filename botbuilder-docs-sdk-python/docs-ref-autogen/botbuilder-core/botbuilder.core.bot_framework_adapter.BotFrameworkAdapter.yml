@@ -87,7 +87,8 @@ methods:
   - name: audience
     defaultValue: None
   return:
-    description: An instance of the <xref:ConnectorClient> class
+    description: An instance of the <xref:botbuilder.core.bot_framework_adapter.ConnectorClient>
+      class
 - uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.create_conversation
   name: create_conversation
   summary: Starts a new conversation with a user. Used to direct message to a member
@@ -558,7 +559,8 @@ methods:
 
     Call this method to reactively send a message to a conversation.
 
-    If the task completes successfully, then an <xref:InvokeResponse> is returned;
+    If the task completes successfully, then an <xref:botbuilder.core.bot_framework_adapter.InvokeResponse>
+    is returned;
 
     otherwise. *null* is returned.
 
@@ -585,7 +587,7 @@ methods:
     description: The context object for the turn.
     isRequired: true
     types:
-    - <xref:TurnContext>
+    - <xref:botbuilder.core.bot_framework_adapter.TurnContext>
   - name: activities
     description: The activities to send.
     isRequired: true
