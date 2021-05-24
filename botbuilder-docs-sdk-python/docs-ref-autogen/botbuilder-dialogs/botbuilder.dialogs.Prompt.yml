@@ -86,7 +86,7 @@ methods:
     description: Optional, additional information to pass to the prompt being started
     defaultValue: None
     types:
-    - <xref:botbuilder.dialogs.Object>
+    - <xref:Object>
   return:
     description: The dialog turn result
     types:
@@ -139,7 +139,7 @@ methods:
       stack
     isRequired: true
     types:
-    - <xref:Dict>
+    - <xref:botbuilder.dialogs.Dict>
   - name: options
     description: A prompt options object constructed from:meth:*DialogContext.prompt()*
     isRequired: true
@@ -176,7 +176,7 @@ methods:
       stack
     isRequired: true
     types:
-    - <xref:Dict>
+    - <xref:botbuilder.dialogs.Dict>
   - name: options
     description: A prompt options object constructed from <xref:botbuilder.dialogs.DialogContext.prompt>
     isRequired: true

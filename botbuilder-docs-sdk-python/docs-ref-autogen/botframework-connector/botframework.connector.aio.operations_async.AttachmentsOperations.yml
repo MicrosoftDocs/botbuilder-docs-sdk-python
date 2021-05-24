@@ -68,8 +68,7 @@ methods:
       data is uploading, response will be None.'
     isRequired: true
     types:
-    - <xref:botframework.connector.aio.operations_async.Callable>[<xref:botframework.connector.aio.operations_async.Bytes>,
-      <xref:botframework.connector.aio.operations_async.response=None>]
+    - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
   - name: operation_config
     description: '*Operation configuration
 
@@ -78,7 +77,7 @@ methods:
   return:
     description: object or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.connector.aio.operations_async.Generator>
+    - <xref:Generator>
     - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
   - type: botframework.connector.models.ErrorResponseException
