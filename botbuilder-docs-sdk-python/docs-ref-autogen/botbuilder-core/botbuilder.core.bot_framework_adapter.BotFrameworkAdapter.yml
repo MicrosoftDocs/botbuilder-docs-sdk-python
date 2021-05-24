@@ -63,6 +63,8 @@ methods:
     defaultValue: None
   return:
     description: A task that represents the work queued to execute.
+  exceptions:
+  - type: It raises an argument null exception.
   remarks: 'This is often referred to as the bots *proactive messaging* flow as it
     lets the bot proactively
 
@@ -129,6 +131,8 @@ methods:
     - <xref:botframework.connector.auth.AppCredentials>
   return:
     description: A task representing the work queued to execute.
+  exceptions:
+  - type: It raises a generic exception error.
   remarks: 'To start a conversation, your bot must know its account information and
     the user''s
 
@@ -177,6 +181,8 @@ methods:
     - <xref:botbuilder.schema.ConversationReference>
   return:
     description: A task that represents the work queued to execute
+  exceptions:
+  - type: A exception error
 - uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.delete_conversation_member
   name: delete_conversation_member
   summary: Deletes a member from the current conversation.
@@ -195,6 +201,8 @@ methods:
     - <xref:str>
   return:
     description: A task that represents the work queued to execute.</returns
+  exceptions:
+  - type: A exception error
 - uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.exchange_token
   name: exchange_token
   summary: Performs a token exchange operation such as for single sign-on.
@@ -290,6 +298,8 @@ methods:
     isRequired: true
   return:
     description: List of Members of the activity
+  exceptions:
+  - type: An exception error
 - uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_conversation_member
   name: get_conversation_member
   summary: Retrieve a member of a current conversation.
@@ -308,6 +318,8 @@ methods:
     - <xref:str>
   return:
     description: A member of the current conversation
+  exceptions:
+  - type: A TypeError if missing member_id, service_url, or conversation.id
 - uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_conversation_members
   name: get_conversation_members
   summary: Lists the members of a current conversation.
@@ -320,6 +332,8 @@ methods:
     - <xref:botbuilder.core.TurnContext>
   return:
     description: List of members of the current conversation
+  exceptions:
+  - type: TypeError if missing service_url or conversation.id
 - uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.get_conversations
   name: get_conversations
   summary: 'Lists the Conversations in which this bot has participated for a given
@@ -343,6 +357,8 @@ methods:
     defaultValue: None
   return:
     description: A task that represents the work queued to execute
+  exceptions:
+  - type: A generic exception error
   remarks: 'The channel server returns results in pages and each page will include
     a *continuationToken* that
 
@@ -498,6 +514,8 @@ methods:
     description: Token Response
     types:
     - <xref::class:'botbuilder.schema.TokenResponse`>
+  exceptions:
+  - type: An exception error
 - uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.key_for_app_credentials
   name: key_for_app_credentials
   signature: 'key_for_app_credentials(app_id: str, scope: str)'
@@ -641,6 +659,8 @@ methods:
     - <xref:botbuilder.schema.Activity>
   return:
     description: A task that represents the work queued to execute
+  exceptions:
+  - type: A generic exception error
   remarks: 'If the activity is successfully sent, the task result contains
 
     a <xref:botbuilder.schema.ResourceResponse> object containing the ID that

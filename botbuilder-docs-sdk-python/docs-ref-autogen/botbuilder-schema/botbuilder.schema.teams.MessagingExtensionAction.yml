@@ -38,6 +38,9 @@ constructor:
 
       user. Possible values include: ''edit'', ''send'''
     isRequired: true
+    types:
+    - <xref:str>
+    - <xref:botframework.connector.teams.models.enum>
   - name: bot_activity_preview
     isRequired: true
     types:

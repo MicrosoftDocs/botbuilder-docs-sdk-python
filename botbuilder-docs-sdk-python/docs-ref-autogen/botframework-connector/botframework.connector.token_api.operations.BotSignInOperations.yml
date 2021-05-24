@@ -75,7 +75,7 @@ methods:
     - <xref:botframework.tokenapi.models.SignInUrlResponse>
     - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
-  - 'type: msrest.exceptions.HttpOperationError'
+  - type: msrest.exceptions.HttpOperationError
 - uid: botframework.connector.token_api.operations.BotSignInOperations.get_sign_in_url
   name: get_sign_in_url
   signature: get_sign_in_url(state, code_challenge=None, emulator_url=None, final_redirect=None,
@@ -120,7 +120,7 @@ methods:
     - <xref:str>
     - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
-  - 'type: msrest.exceptions.HttpOperationError'
+  - type: msrest.exceptions.HttpOperationError
 attributes:
 - uid: botframework.connector.token_api.operations.BotSignInOperations.models
   name: models

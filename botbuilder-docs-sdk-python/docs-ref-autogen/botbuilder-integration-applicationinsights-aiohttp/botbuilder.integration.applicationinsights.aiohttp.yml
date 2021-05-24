@@ -10,9 +10,7 @@ functions:
   signature: bot_telemetry_middleware(request, handler)
   parameters:
   - name: request
-    isRequired: true
   - name: handler
-    isRequired: true
 classes:
 - botbuilder.integration.applicationinsights.aiohttp.AiohttpTelemetryProcessor
 modules:

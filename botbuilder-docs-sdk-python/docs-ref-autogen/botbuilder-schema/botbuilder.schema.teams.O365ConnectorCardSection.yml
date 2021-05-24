@@ -47,6 +47,9 @@ constructor:
 
       Possible values include: ''avatar'', ''article'''
     isRequired: true
+    types:
+    - <xref:str>
+    - <xref:botframework.connector.teams.models.enum>
   - name: markdown
     description: 'Use markdown for all text contents. Default value is
 

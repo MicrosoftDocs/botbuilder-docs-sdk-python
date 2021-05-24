@@ -15,6 +15,9 @@ constructor:
 
       team or channel. Possible values include: ''team'', ''channel'''
     isRequired: true
+    types:
+    - <xref:str>
+    - <xref:botframework.connector.teams.models.enum>
   - name: id
     description: The id of the team or channel.
     isRequired: true

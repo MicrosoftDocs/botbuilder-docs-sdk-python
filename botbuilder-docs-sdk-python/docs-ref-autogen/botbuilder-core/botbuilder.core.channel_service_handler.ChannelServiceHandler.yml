@@ -350,6 +350,7 @@ methods:
   - name: page_size
     defaultValue: None
   - name: continuation_token
+    isRequired: true
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.on_get_conversations
   name: on_get_conversations
   summary: 'get_conversations() API for Skill
@@ -379,6 +380,7 @@ methods:
   - name: claims_identity
     isRequired: true
   - name: conversation_id
+    isRequired: true
   - name: continuation_token
     isRequired: true
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.on_reply_to_activity

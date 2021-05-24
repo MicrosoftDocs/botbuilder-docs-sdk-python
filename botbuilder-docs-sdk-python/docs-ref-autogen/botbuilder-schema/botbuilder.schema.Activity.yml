@@ -111,6 +111,9 @@ constructor:
 
       Default: list. Possible values include: ''list'', ''carousel'''
     isRequired: true
+    types:
+    - <xref:str>
+    - <xref:botframework.connector.models.AttachmentLayoutTypes>
   - name: members_added
     description: The collection of members added to the conversation.
     isRequired: true

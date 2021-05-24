@@ -10,16 +10,13 @@ functions:
     base_url: str = '''') -> aiohttp.web_routedef.RouteTableDef'
   parameters:
   - name: handler
-    isRequired: true
   - name: base_url
 - uid: botbuilder.integration.aiohttp.aiohttp_error_middleware
   name: aiohttp_error_middleware
   signature: aiohttp_error_middleware(request, handler)
   parameters:
   - name: request
-    isRequired: true
   - name: handler
-    isRequired: true
 classes:
 - botbuilder.integration.aiohttp.BotFrameworkHttpClient
 packages:
