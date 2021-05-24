@@ -39,7 +39,7 @@ remarks: 'If a user is signed into multiple Teams clients, the Bot could receive
 methods:
 - uid: botbuilder.core.teams.TeamsSSOTokenExchangeMiddleware.on_turn
   name: on_turn
-  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[[botbuilder.core.turn_context.TurnContext],
+  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
     typing.Awaitable])'
   parameters:
   - name: context

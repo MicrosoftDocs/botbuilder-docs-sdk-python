@@ -7,8 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: An attachment within an activity.
 constructor:
-  syntax: 'Attachment(*, content_type: str = None, content_url: str = None, content
-    = None, name: str = None, thumbnail_url: str = None, **kwargs) -> None'
+  syntax: 'Attachment(*, content_type: str = None, content_url: str = None, content=None,
+    name: str = None, thumbnail_url: str = None, **kwargs) -> None'
   parameters:
   - name: content_type
     description: mimetype/Contenttype for the file

@@ -98,8 +98,8 @@ methods:
     \   CardAction(title='c', type=ActionTypes.im_back, value='c')],\n   'Choose a\
     \ color')\n\nawait context.send_activity(message)"
   signature: 'suggested_actions(actions: typing.List[botbuilder.schema._models_py3.CardAction],
-    text: str = None, speak: str = None, input_hint: str = <InputHints.accepting_input:  ''acceptingInput''>)
-    -> botbuilder.schema._models_py3.Activity'
+    text: str = None, speak: str = None, input_hint: str = <InputHints.accepting_input:
+    ''acceptingInput''>) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: actions
     isRequired: true
@@ -117,8 +117,8 @@ methods:
     message = MessageFactory.text(''Greetings from example message'')
 
     await context.send_activity(message)'
-  signature: 'text(text: str, speak: str = None, input_hint: str = <InputHints.accepting_input:  ''acceptingInput''>)
-    -> botbuilder.schema._models_py3.Activity'
+  signature: 'text(text: str, speak: str = None, input_hint: str = <InputHints.accepting_input:
+    ''acceptingInput''>) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: text
     isRequired: true

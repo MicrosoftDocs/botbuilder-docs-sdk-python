@@ -10,7 +10,7 @@ summary: "Waits for an activity to be received.\n\n   This prompt requires a val
   \ event to be received. The validator can ignore received events until the\n   expected\
   \ activity is received."
 constructor:
-  syntax: 'ActivityPrompt(dialog_id: str, validator: typing.Callable[[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext],
+  syntax: 'ActivityPrompt(dialog_id: str, validator: typing.Callable[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext,
     bool])'
 variables:
 - name: persisted_options

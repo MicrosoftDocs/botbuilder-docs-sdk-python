@@ -93,7 +93,7 @@ methods:
   summary: Starts a new conversation with a user. Used to direct message to a member
     of a group.
   signature: 'create_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
-    logic: typing.Callable[[botbuilder.core.turn_context.TurnContext], typing.Awaitable]
+    logic: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable]
     = None, conversation_parameters: botbuilder.schema._models_py3.ConversationParameters
     = None, channel_id: str = None, service_url: str = None, credentials: botframework.connector.auth.app_credentials.AppCredentials
     = None)'

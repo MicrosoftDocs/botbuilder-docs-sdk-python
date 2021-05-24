@@ -9,7 +9,7 @@ summary: "Prompts a user to select from a list of choices.\n\nBy default the pro
   \ will return to the calling dialog a *FoundChoice* object containing the choice\
   \ that\n   was selected."
 constructor:
-  syntax: 'ChoicePrompt(dialog_id: str, validator: typing.Callable[[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext],
+  syntax: 'ChoicePrompt(dialog_id: str, validator: typing.Callable[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext,
     bool] = None, default_locale: str = None, choice_defaults: typing.Dict[str, botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions]
     = None)'
 methods:

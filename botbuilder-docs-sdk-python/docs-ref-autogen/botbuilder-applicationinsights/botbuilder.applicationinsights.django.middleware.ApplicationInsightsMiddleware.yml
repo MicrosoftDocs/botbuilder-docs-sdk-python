@@ -56,7 +56,7 @@ summary: "This class is a Django middleware that automatically enables request a
   \ present even when *DEBUG* is *True*, but it may not submit telemetry unless\n\
   *debug_ikey* is set in *APPLICATION_INSIGHTS*, above."
 constructor:
-  syntax: ApplicationInsightsMiddleware(get_response = None)
+  syntax: ApplicationInsightsMiddleware(get_response=None)
 methods:
 - uid: botbuilder.applicationinsights.django.middleware.ApplicationInsightsMiddleware.process_exception
   name: process_exception

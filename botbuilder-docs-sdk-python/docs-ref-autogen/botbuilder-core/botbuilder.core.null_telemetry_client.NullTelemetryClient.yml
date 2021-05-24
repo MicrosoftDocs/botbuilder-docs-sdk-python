@@ -105,7 +105,7 @@ methods:
     :param measurements: the set of custom measurements the client wants to attach
     to this data item.         (defaults to: None)'
   signature: 'track_exception(exception_type: type = None, value: Exception = None,
-    trace: <module ''traceback'' from ''c: \\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\traceback.py''>
+    trace: <module ''traceback'' from ''c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\traceback.py''>
     = None, properties: typing.Dict[str, object] = None, measurements: typing.Dict[str,
     object] = None) -> None'
   parameters:
@@ -247,7 +247,7 @@ methods:
   summary: 'Sends a single trace statement.
 
     :param name: the trace statement.'
-  signature: 'track_trace(name, properties = None, severity: botbuilder.core.bot_telemetry_client.Severity
+  signature: 'track_trace(name, properties=None, severity: botbuilder.core.bot_telemetry_client.Severity
     = None)'
   parameters:
   - name: properties

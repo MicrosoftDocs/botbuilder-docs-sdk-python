@@ -26,7 +26,7 @@ methods:
   name: fetch_participant
   summary: Fetches Teams meeting participant details.
   signature: 'fetch_participant(meeting_id: str, participant_id: str, tenant_id: str,
-    custom_headers = None, raw = False, **operation_config)'
+    custom_headers=None, raw=False, **operation_config)'
   parameters:
   - name: meeting_id
     description: Teams meeting id
@@ -73,7 +73,7 @@ methods:
 
 
     Fetch details for a team.'
-  signature: get_team_details(team_id, custom_headers = None, raw = False, **operation_config)
+  signature: get_team_details(team_id, custom_headers=None, raw=False, **operation_config)
   parameters:
   - name: team_id
     description: Team Id
@@ -110,7 +110,7 @@ methods:
 
 
     Fetch the channel list.'
-  signature: get_teams_channels(team_id, custom_headers = None, raw = False, **operation_config)
+  signature: get_teams_channels(team_id, custom_headers=None, raw=False, **operation_config)
   parameters:
   - name: team_id
     description: Team Id

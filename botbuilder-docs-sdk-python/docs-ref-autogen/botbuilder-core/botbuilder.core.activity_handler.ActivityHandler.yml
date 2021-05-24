@@ -202,7 +202,7 @@ methods:
   summary: Registers an activity event handler for the _invoke_ event, emitted for
     every incoming event activity.
   signature: 'on_invoke_activity(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> typing.Union[botbuilder.core.invoke_response.InvokeResponse, Nonetyping.Type]'
+    -> Optional[botbuilder.core.invoke_response.InvokeResponse]'
   parameters:
   - name: turn_context
     description: The context object for this turn

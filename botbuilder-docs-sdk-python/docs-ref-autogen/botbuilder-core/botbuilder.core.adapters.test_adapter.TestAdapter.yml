@@ -340,7 +340,7 @@ methods:
 - uid: botbuilder.core.adapters.test_adapter.TestAdapter.process_activity
   name: process_activity
   signature: 'process_activity(activity: botbuilder.schema._models_py3.Activity, logic:
-    typing.Callable[[botbuilder.core.turn_context.TurnContext], typing.Awaitable])'
+    typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable])'
   parameters:
   - name: activity
     isRequired: true
@@ -437,7 +437,7 @@ methods:
     :param timeout:
 
     :return:'
-  signature: test(user_says, expected, description = None, timeout = None) -> 'TestFlow'
+  signature: test(user_says, expected, description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
   parameters:
   - name: user_says
     isRequired: true

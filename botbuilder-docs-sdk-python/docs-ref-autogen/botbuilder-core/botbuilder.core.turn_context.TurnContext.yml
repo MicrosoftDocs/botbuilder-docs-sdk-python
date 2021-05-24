@@ -45,7 +45,7 @@ methods:
     :param context:
 
     :return:'
-  signature: 'copy_to(context: ''TurnContext'') -> None'
+  signature: 'copy_to(context: botbuilder.core.turn_context.TurnContext) -> None'
   parameters:
   - name: context
     isRequired: true
@@ -121,7 +121,7 @@ methods:
     :param handler:
 
     :return:'
-  signature: on_delete_activity(handler) -> 'TurnContext'
+  signature: on_delete_activity(handler) -> botbuilder.core.turn_context.TurnContext
   parameters:
   - name: handler
     isRequired: true
@@ -133,7 +133,7 @@ methods:
     :param handler:
 
     :return:'
-  signature: on_send_activities(handler) -> 'TurnContext'
+  signature: on_send_activities(handler) -> botbuilder.core.turn_context.TurnContext
   parameters:
   - name: handler
     isRequired: true
@@ -145,7 +145,7 @@ methods:
     :param handler:
 
     :return:'
-  signature: on_update_activity(handler) -> 'TurnContext'
+  signature: on_update_activity(handler) -> botbuilder.core.turn_context.TurnContext
   parameters:
   - name: handler
     isRequired: true

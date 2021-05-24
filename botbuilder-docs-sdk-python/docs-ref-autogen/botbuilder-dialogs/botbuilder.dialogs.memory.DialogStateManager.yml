@@ -6,7 +6,7 @@ module: botbuilder.dialogs.memory
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'DialogStateManager(dialog_context: ''DialogContext'', configuration: botbuilder.dialogs.memory.dialog_state_manager_configuration.DialogStateManagerConfiguration
+  syntax: 'DialogStateManager(dialog_context: DialogContext, configuration: botbuilder.dialogs.memory.dialog_state_manager_configuration.DialogStateManagerConfiguration
     = None)'
 methods:
 - uid: botbuilder.dialogs.memory.DialogStateManager.add
@@ -181,7 +181,7 @@ methods:
 
     :return: Result or null if the path is not valid.'
   signature: 'get_value(class_type: typing.Type, path_expression: str, default_value:
-    typing.Callable[[], ~T] = None) -> ~T'
+    typing.Callable[T] = None) -> T'
   parameters:
   - name: class_type
     isRequired: true

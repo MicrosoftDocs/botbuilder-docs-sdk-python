@@ -158,8 +158,8 @@ methods:
 
     BotTelemetryClient base class'
   signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic_fn:
-    typing.Callable[[botbuilder.core.turn_context.TurnContext], typing.Awaitable])
-    -> None'
+    typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable]) ->
+    None'
   parameters:
   - name: turn_context
     description: The context object for this turn.
