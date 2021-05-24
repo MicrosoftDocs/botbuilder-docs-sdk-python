@@ -97,7 +97,7 @@ methods:
     description: A list of answers for the user's query, sorted in decreasing order
       of ranking score.
     types:
-    - <xref:botbuilder.ai.qna.qnamaker.QueryResult>
+    - <xref:QueryResult>
 - uid: botbuilder.ai.qna.qnamaker.QnAMaker.get_low_score_variation
   name: get_low_score_variation
   summary: Filters the ambiguous question for active learning.
@@ -108,7 +108,7 @@ methods:
     description: User query output.
     isRequired: true
     types:
-    - <xref:botbuilder.ai.qna.qnamaker.QueryResult>
+    - <xref:QueryResult>
   return:
     description: Filtered array of ambiguous questions.
     types:

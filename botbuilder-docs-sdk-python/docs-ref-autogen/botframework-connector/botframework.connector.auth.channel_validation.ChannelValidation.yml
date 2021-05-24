@@ -37,8 +37,8 @@ methods:
   return:
     description: A valid ClaimsIdentity.
   exceptions:
-  - type: Exception
-    description: ''
+  - description: ''
+    type: Exception
 - uid: botframework.connector.auth.channel_validation.ChannelValidation.authenticate_channel_token_with_service_url
   name: authenticate_channel_token_with_service_url
   summary: 'Validate the incoming Auth Header
@@ -74,8 +74,8 @@ methods:
   return:
     description: A valid ClaimsIdentity.
   exceptions:
-  - type: Exception
-    description: ''
+  - description: ''
+    type: Exception
 - uid: botframework.connector.auth.channel_validation.ChannelValidation.validate_identity
   name: validate_identity
   signature: 'validate_identity(identity: botframework.connector.auth.claims_identity.ClaimsIdentity,

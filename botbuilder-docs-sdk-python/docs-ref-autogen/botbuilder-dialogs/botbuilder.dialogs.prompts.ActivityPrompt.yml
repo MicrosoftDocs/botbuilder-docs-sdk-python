@@ -29,7 +29,7 @@ methods:
     description: The dialog context for the current turn of the conversation.
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.DialogContext>
+    - <xref:DialogContext>
   - name: options
     description: Optional, additional information to pass to the prompt being started.
     defaultValue: None
@@ -46,7 +46,7 @@ methods:
     description: The dialog context for the current turn of the conversation.
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.DialogContext>
+    - <xref:DialogContext>
 - uid: botbuilder.dialogs.prompts.ActivityPrompt.on_prompt
   name: on_prompt
   summary: Called anytime the derived class should send the user a prompt.
@@ -58,7 +58,7 @@ methods:
     description: The dialog context for the current turn of the conversation
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.DialogContext>
+    - <xref:DialogContext>
   - name: state
     description: Additional state being persisted for the prompt.
     isRequired: true
@@ -101,8 +101,8 @@ methods:
     - <xref:botbuilder.dialogs.prompts.PromptOptions>
   return:
     types:
-    - constructed from the options initially provided in the call to <xref:botbuilder.dialogs.prompts.ActivityPrompt.async
-      def on_prompt>
+    - constructed from the options initially provided in the call to <xref:async def
+      on_prompt>
 - uid: botbuilder.dialogs.prompts.ActivityPrompt.reprompt_dialog
   name: reprompt_dialog
   signature: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
@@ -125,12 +125,12 @@ methods:
     description: The dialog context for the current turn of the conversation
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.DialogContext>
+    - <xref:DialogContext>
   - name: reason
     description: An enum indicating why the dialog resumed.
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.DialogReason>
+    - <xref:DialogReason>
   - name: result
     description: Optional, value returned from the previous dialog on the stack.
     defaultValue: None

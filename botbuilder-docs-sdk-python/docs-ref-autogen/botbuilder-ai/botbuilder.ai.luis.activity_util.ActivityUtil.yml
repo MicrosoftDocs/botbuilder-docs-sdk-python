@@ -18,7 +18,7 @@ methods:
   - name: turn_activity
     isRequired: true
     types:
-    - <xref:botbuilder.ai.luis.activity_util.Activity>
+    - <xref:Activity>
   - name: name
     description: The value to assign to the trace activity's <see cref="Activity.name"/>
       property.
@@ -55,4 +55,4 @@ methods:
   return:
     description: The created trace activity.
     types:
-    - <xref:botbuilder.ai.luis.activity_util.Activity>
+    - <xref:Activity>

@@ -45,8 +45,8 @@ methods:
   - name: auth_configuration
     defaultValue: None
   exceptions:
-  - type: Exception
-    description: ''
+  - description: ''
+    type: Exception
 - uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.get_app_id_from_claims
   name: get_app_id_from_claims
   signature: 'get_app_id_from_claims(claims: typing.Dict[str, object]) -> str'

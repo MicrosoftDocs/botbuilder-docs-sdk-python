@@ -76,7 +76,7 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.TurnContext>
+    - <xref:TurnContext>
   - name: code
     description: (Optional) Optional user entered code to validate.
     defaultValue: None
@@ -85,7 +85,7 @@ methods:
   return:
     description: A response that includes the user's token
     types:
-    - <xref:botbuilder.dialogs.TokenResponse>
+    - <xref:TokenResponse>
   remarks: 'If the task is successful and the user already has a token or the user
     successfully signs in,
 
@@ -101,7 +101,7 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.TurnContext>
+    - <xref:TurnContext>
   return:
     description: A task representing the work queued to execute
   remarks: 'If the task is successful and the user already has a token or the user
