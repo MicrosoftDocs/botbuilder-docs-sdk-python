@@ -7,8 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: Channel data specific to messages received in Microsoft Teams.
 constructor:
-  syntax: 'TeamsChannelData(*, channel=None, eventtyping.Type: str = None, team=None,
-    notification=None, tenant=None, meeting=None, **kwargs) -> None'
+  syntax: 'TeamsChannelData(*, channel = None, eventType: str = None, team = None,
+    notification = None, tenant = None, meeting = None, **kwargs) -> None'
   parameters:
   - name: channel
     description: 'Information about the channel in which the message was

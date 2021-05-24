@@ -9,8 +9,8 @@ summary: Conversation account represents the identity of the conversation within
   channel.
 constructor:
   syntax: 'ConversationAccount(*, is_group: bool = None, conversation_type: str =
-    None, id: str = None, name: str = None, aad_object_id: str = None, role=None,
-    tenant_id=None, properties=None, **kwargs) -> None'
+    None, id: str = None, name: str = None, aad_object_id: str = None, role = None,
+    tenant_id = None, properties = None, **kwargs) -> None'
   parameters:
   - name: is_group
     description: 'Indicates whether the conversation contains more than two

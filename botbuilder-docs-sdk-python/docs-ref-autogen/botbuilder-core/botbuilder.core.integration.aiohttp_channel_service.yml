@@ -13,13 +13,13 @@ functions:
 - uid: botbuilder.core.integration.aiohttp_channel_service.deserialize_from_body
   name: deserialize_from_body
   signature: 'deserialize_from_body(request: aiohttp.web_request.Request, target_model:
-    typing.Type[msrest.serialization.Model]) -> botbuilder.schema._models_py3.Activity'
+    Type[msrest.serialization.Model]) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: request
   - name: target_model
 - uid: botbuilder.core.integration.aiohttp_channel_service.get_serialized_response
   name: get_serialized_response
-  signature: 'get_serialized_response(model_or_list: typing.Union[msrest.serialization.Model,
-    typing.List[msrest.serialization.Model]]) -> aiohttp.web_response.Response'
+  signature: 'get_serialized_response(model_or_list: Union[msrest.serialization.Model,
+    List[msrest.serialization.Model]]) -> aiohttp.web_response.Response'
   parameters:
   - name: model_or_list

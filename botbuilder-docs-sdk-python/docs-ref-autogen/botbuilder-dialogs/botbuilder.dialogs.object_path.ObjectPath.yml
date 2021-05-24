@@ -28,8 +28,7 @@ methods:
     description: A copy of start_object, with values from overlay_object
 - uid: botbuilder.dialogs.object_path.ObjectPath.for_each_property
   name: for_each_property
-  signature: 'for_each_property(obj: object, action: typing.Callable[[str, object],
-    None])'
+  signature: 'for_each_property(obj: object, action: Callable[[str, object], NoneType])'
   parameters:
   - name: obj
     isRequired: true

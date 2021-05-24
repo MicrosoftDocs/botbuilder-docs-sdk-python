@@ -9,8 +9,8 @@ summary: "Prompts a user to select from a list of choices.\n\nBy default the pro
   \ will return to the calling dialog a *FoundChoice* object containing the choice\
   \ that\n   was selected."
 constructor:
-  syntax: 'ChoicePrompt(dialog_id: str, validator: typing.Callable[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext,
-    bool] = None, default_locale: str = None, choice_defaults: typing.Dict[str, botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions]
+  syntax: 'ChoicePrompt(dialog_id: str, validator: Callable[[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext],
+    bool] = None, default_locale: str = None, choice_defaults: Dict[str, botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions]
     = None)'
 methods:
 - uid: botbuilder.dialogs.prompts.choice_prompt.ChoicePrompt.on_prompt
@@ -18,7 +18,7 @@ methods:
   summary: Prompts user for input. When overridden in a derived class, prompts the
     user for input.
   signature: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
-    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
+    Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
     is_retry: bool)'
   parameters:
   - name: turn_context
@@ -56,7 +56,7 @@ methods:
 
     >'
   signature: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
-    state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
+    state: Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
     -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
   parameters:
   - name: turn_context

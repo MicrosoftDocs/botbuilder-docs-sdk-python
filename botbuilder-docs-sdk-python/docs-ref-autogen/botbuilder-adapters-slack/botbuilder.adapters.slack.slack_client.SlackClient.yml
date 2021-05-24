@@ -18,7 +18,7 @@ methods:
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.chat_post_ephemeral_ex
   name: chat_post_ephemeral_ex
   signature: 'chat_post_ephemeral_ex(channel: str, text: str, target_user: str, parse:
-    str = None, link_names: bool = False, attachments: typing.List[str] = None, as_user:
+    str = None, link_names: bool = False, attachments: List[str] = None, as_user:
     bool = False) -> slack.web.slack_response.SlackResponse'
   parameters:
   - name: channel
@@ -38,9 +38,9 @@ methods:
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.chat_post_message_ex
   name: chat_post_message_ex
   signature: 'chat_post_message_ex(channel: str, text: str, bot_name: str = None,
-    parse: str = None, link_names: bool = False, blocks: typing.List[str] = None,
-    attachments: typing.List[str] = None, unfurl_links: bool = False, icon_url: str
-    = None, icon_emoji: str = None, as_user: bool = False) -> slack.web.slack_response.SlackResponse'
+    parse: str = None, link_names: bool = False, blocks: List[str] = None, attachments:
+    List[str] = None, unfurl_links: bool = False, icon_url: str = None, icon_emoji:
+    str = None, as_user: bool = False) -> slack.web.slack_response.SlackResponse'
   parameters:
   - name: channel
     isRequired: true
@@ -67,8 +67,8 @@ methods:
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.chat_update_ex
   name: chat_update_ex
   signature: 'chat_update_ex(timestamp: str, channel: str, text: str, bot_name: str
-    = None, parse: str = None, link_names: bool = False, attachments: typing.List[str]
-    = None, as_user: bool = False)'
+    = None, parse: str = None, link_names: bool = False, attachments: List[str] =
+    None, as_user: bool = False)'
   parameters:
   - name: timestamp
     isRequired: true
@@ -100,8 +100,7 @@ methods:
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.files_list_ex
   name: files_list_ex
   signature: 'files_list_ex(user_id: str = None, date_from: str = None, date_to: str
-    = None, count: int = None, page: int = None, types: typing.List[str] = None) ->
-    slack.web.slack_response.SlackResponse'
+    = None, count: int = None, page: int = None, types: List[str] = None) -> slack.web.slack_response.SlackResponse'
   parameters:
   - name: user_id
     defaultValue: None
@@ -117,9 +116,9 @@ methods:
     defaultValue: None
 - uid: botbuilder.adapters.slack.slack_client.SlackClient.files_upload_ex
   name: files_upload_ex
-  signature: 'files_upload_ex(file: typing.Union[str, io.IOBase] = None, content:
-    str = None, channels: typing.List[str] = None, title: str = None, initial_comment:
-    str = None, file_type: str = None)'
+  signature: 'files_upload_ex(file: Union[str, io.IOBase] = None, content: str = None,
+    channels: List[str] = None, title: str = None, initial_comment: str = None, file_type:
+    str = None)'
   parameters:
   - name: file
     defaultValue: None

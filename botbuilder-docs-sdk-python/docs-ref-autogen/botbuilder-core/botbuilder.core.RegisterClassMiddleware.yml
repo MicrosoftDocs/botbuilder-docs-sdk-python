@@ -18,8 +18,8 @@ methods:
     isRequired: true
 - uid: botbuilder.core.RegisterClassMiddleware.on_turn
   name: on_turn
-  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
-    typing.Awaitable])'
+  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: Callable[[botbuilder.core.turn_context.TurnContext],
+    Awaitable])'
   parameters:
   - name: context
     isRequired: true

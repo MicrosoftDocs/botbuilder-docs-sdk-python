@@ -6,24 +6,24 @@ module: botbuilder.dialogs.memory.scopes.turn_memory_scope
 inheritances:
 - builtins.dict
 constructor:
-  syntax: CaseInsensitivetyping.Dict(*args, **kwargs)
+  syntax: CaseInsensitiveDict(*args, **kwargs)
 methods:
 - uid: botbuilder.dialogs.memory.scopes.turn_memory_scope.CaseInsensitiveDict.get
   name: get
-  signature: get(k[,d]) -> D[k] if k in D, else d.  d defaults to None.
+  signature: get(key, *args, **kwargs)
   parameters:
   - name: key
     isRequired: true
 - uid: botbuilder.dialogs.memory.scopes.turn_memory_scope.CaseInsensitiveDict.pop
   name: pop
   summary: If key is not found, d is returned if given, otherwise KeyError is raised
-  signature: pop(k[,d]) -> v, remove specified key and return the corresponding value.
+  signature: pop(key, *args, **kwargs)
   parameters:
   - name: key
     isRequired: true
 - uid: botbuilder.dialogs.memory.scopes.turn_memory_scope.CaseInsensitiveDict.setdefault
   name: setdefault
-  signature: setdefault(k[,d]) -> D.get(k,d), also set D[k]=d if k not in D
+  signature: setdefault(key, *args, **kwargs)
   parameters:
   - name: key
     isRequired: true
@@ -36,7 +36,7 @@ methods:
     v
 
     In either case, this is followed by: for k in F:  D[k] = F[k]'
-  signature: update([E, ]**F) -> None.  Update D from dict/iterable E and F.
+  signature: update(e = None, **f)
   parameters:
   - name: e
     defaultValue: None

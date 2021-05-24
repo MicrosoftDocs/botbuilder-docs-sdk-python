@@ -11,7 +11,7 @@ summary: 'HTTP request utils class.
   http_client: Client to make HTTP requests with. Default client used in the SDK is
   *aiohttp.ClientSession*.'
 constructor:
-  syntax: 'HttpRequestUtils(http_client: typing.Any)'
+  syntax: 'HttpRequestUtils(http_client: Any)'
 methods:
 - uid: botbuilder.ai.qna.HttpRequestUtils.execute_http_request
   name: execute_http_request
@@ -30,7 +30,7 @@ methods:
     timeout: Timeout for HTTP call (milliseconds).'
   signature: 'execute_http_request(request_url: str, payload_body: object, endpoint:
     botbuilder.ai.qna.qnamaker_endpoint.QnAMakerEndpoint, timeout: float = None) ->
-    typing.Any'
+    Any'
   parameters:
   - name: request_url
     isRequired: true

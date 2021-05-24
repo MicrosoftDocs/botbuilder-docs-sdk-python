@@ -10,7 +10,7 @@ summary: "Waits for an activity to be received.\n\n   This prompt requires a val
   \ event to be received. The validator can ignore received events until the\n   expected\
   \ activity is received."
 constructor:
-  syntax: 'ActivityPrompt(dialog_id: str, validator: typing.Callable[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext,
+  syntax: 'ActivityPrompt(dialog_id: str, validator: Callable[[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext],
     bool])'
 variables:
 - name: persisted_options
@@ -51,7 +51,7 @@ methods:
   name: on_prompt
   summary: Called anytime the derived class should send the user a prompt.
   signature: 'on_prompt(context: botbuilder.core.turn_context.TurnContext, state:
-    typing.Dict[str, dict], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
+    Dict[str, dict], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
     is_retry: bool = False)'
   parameters:
   - name: dialog_context
@@ -80,7 +80,7 @@ methods:
   summary: When overridden in a derived class, attempts to recognize the incoming
     activity.
   signature: 'on_recognize(context: botbuilder.core.turn_context.TurnContext, state:
-    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
+    Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
     -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
   parameters:
   - name: context

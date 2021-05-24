@@ -9,8 +9,8 @@ summary: 'Represents a user, application, or conversation type that either sent 
 
   was referenced in a message.'
 constructor:
-  syntax: MessageActionsPayloadFrom(*, user=None, application=None, conversation=None,
-    **kwargs) -> None
+  syntax: MessageActionsPayloadFrom(*, user = None, application = None, conversation
+    = None, **kwargs) -> None
   parameters:
   - name: user
     description: Represents details of the user.

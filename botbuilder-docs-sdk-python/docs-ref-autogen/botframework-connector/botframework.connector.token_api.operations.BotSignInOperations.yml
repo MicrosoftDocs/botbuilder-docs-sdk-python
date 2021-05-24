@@ -33,8 +33,8 @@ variables:
 methods:
 - uid: botframework.connector.token_api.operations.BotSignInOperations.get_sign_in_resource
   name: get_sign_in_resource
-  signature: get_sign_in_resource(state, code_challenge=None, emulator_url=None, final_redirect=None,
-    custom_headers=None, raw=False, **operation_config)
+  signature: get_sign_in_resource(state, code_challenge = None, emulator_url = None,
+    final_redirect = None, custom_headers = None, raw = False, **operation_config)
   parameters:
   - name: state
     isRequired: true
@@ -78,8 +78,8 @@ methods:
   - type: msrest.exceptions.HttpOperationError
 - uid: botframework.connector.token_api.operations.BotSignInOperations.get_sign_in_url
   name: get_sign_in_url
-  signature: get_sign_in_url(state, code_challenge=None, emulator_url=None, final_redirect=None,
-    custom_headers=None, raw=False, **operation_config)
+  signature: get_sign_in_url(state, code_challenge = None, emulator_url = None, final_redirect
+    = None, custom_headers = None, raw = False, **operation_config)
   parameters:
   - name: state
     isRequired: true

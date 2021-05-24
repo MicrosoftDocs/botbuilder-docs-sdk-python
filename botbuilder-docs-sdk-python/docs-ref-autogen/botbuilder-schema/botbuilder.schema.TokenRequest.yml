@@ -7,7 +7,7 @@ inheritances:
 - msrest.serialization.Model
 summary: A request to receive a user token.
 constructor:
-  syntax: 'TokenRequest(*, provider: str = None, settings=None, **kwargs) -> None'
+  syntax: 'TokenRequest(*, provider: str = None, settings = None, **kwargs) -> None'
   parameters:
   - name: provider
     description: The provider to request a user token from

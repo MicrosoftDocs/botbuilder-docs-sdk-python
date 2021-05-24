@@ -38,7 +38,7 @@ methods:
     \      buttons=[CardAction(title='button2')])),\n\n   CardFactory.hero_card(HeroCard(title='title3',\n\
     \      images=[CardImage(url='imageUrl3')],\n      buttons=[CardAction(title='button3')]))])\n\
     \nawait context.send_activity(message)"
-  signature: 'carousel(attachments: typing.List[botbuilder.schema._models_py3.Attachment],
+  signature: 'carousel(attachments: List[botbuilder.schema._models_py3.Attachment],
     text: str = None, speak: str = None, input_hint: str = None) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: attachments
@@ -79,8 +79,8 @@ methods:
     \      buttons=[CardAction(title='button2')])),\n\n   CardFactory.hero_card(HeroCard(title='title3',\n\
     \      images=[CardImage(url='imageUrl3')],\n      buttons=[CardAction(title='button3')]))])\n\
     \nawait context.send_activity(message)"
-  signature: 'list(attachments: typing.List[botbuilder.schema._models_py3.Attachment],
-    text: str = None, speak: str = None, input_hint: str = None) -> botbuilder.schema._models_py3.Activity'
+  signature: 'list(attachments: List[botbuilder.schema._models_py3.Attachment], text:
+    str = None, speak: str = None, input_hint: str = None) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: attachments
     isRequired: true
@@ -97,9 +97,9 @@ methods:
     \ value='a'),\n   CardAction(title='b', type=ActionTypes.im_back, value='b'),\n\
     \   CardAction(title='c', type=ActionTypes.im_back, value='c')],\n   'Choose a\
     \ color')\n\nawait context.send_activity(message)"
-  signature: 'suggested_actions(actions: typing.List[botbuilder.schema._models_py3.CardAction],
-    text: str = None, speak: str = None, input_hint: str = <InputHints.accepting_input:
-    ''acceptingInput''>) -> botbuilder.schema._models_py3.Activity'
+  signature: 'suggested_actions(actions: List[botbuilder.schema._models_py3.CardAction],
+    text: str = None, speak: str = None, input_hint: str = <InputHints.accepting_input:  ''acceptingInput''>)
+    -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: actions
     isRequired: true
@@ -117,8 +117,8 @@ methods:
     message = MessageFactory.text(''Greetings from example message'')
 
     await context.send_activity(message)'
-  signature: 'text(text: str, speak: str = None, input_hint: str = <InputHints.accepting_input:
-    ''acceptingInput''>) -> botbuilder.schema._models_py3.Activity'
+  signature: 'text(text: str, speak: str = None, input_hint: str = <InputHints.accepting_input:  ''acceptingInput''>)
+    -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: text
     isRequired: true

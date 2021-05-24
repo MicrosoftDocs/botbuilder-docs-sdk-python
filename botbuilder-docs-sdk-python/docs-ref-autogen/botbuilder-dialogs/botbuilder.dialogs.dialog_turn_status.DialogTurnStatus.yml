@@ -5,7 +5,8 @@ fullName: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus
 summary: Indicates in which a dialog-related method is being called.
 module: botbuilder.dialogs.dialog_turn_status
 constructor:
-  syntax: DialogTurnStatus(value)
+  syntax: DialogTurnStatus(value, names = None, *, module = None, qualname = None,
+    type = None, start = 1)
 variables:
 - description: Indicates that there is currently nothing on the dialog stack.
   name: Empty
