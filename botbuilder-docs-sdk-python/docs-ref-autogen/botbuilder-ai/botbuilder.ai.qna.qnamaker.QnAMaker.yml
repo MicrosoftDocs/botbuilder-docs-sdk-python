@@ -21,7 +21,7 @@ methods:
     description: Feedback records.
     isRequired: true
     types:
-    - <xref:typing.List[<xref:FeedbackRecord>]>
+    - <xref:typing.List>[<xref:FeedbackRecord>]
 - uid: botbuilder.ai.qna.qnamaker.QnAMaker.close
   name: close
   signature: close()
@@ -46,12 +46,12 @@ methods:
     description: Properties to add/override for the event.
     defaultValue: None
     types:
-    - <xref:typing.Dict[<xref:str>, <xref:str>]>
+    - <xref:typing.Dict>[<xref:str>, <xref:str>]
   - name: telemetry_metrics
     description: Metrics to add/override for the event.
     defaultValue: None
     types:
-    - <xref:typing.Dict[<xref:str>, <xref:float>]>
+    - <xref:typing.Dict>[<xref:str>, <xref:float>]
   return:
     description: Event properties and metrics for the QnaMessage event for telemetry.
     types:

@@ -90,7 +90,7 @@ methods:
     description: A callback method to run at the end of the pipeline.
     defaultValue: None
     types:
-    - <xref:typing.Callable[[<xref:TurnContext>], <xref:Awaitable>]>
+    - <xref:typing.Callable>[[<xref:TurnContext>], <xref:Awaitable>]
 - uid: botbuilder.core.BotAdapter.send_activities
   name: send_activities
   summary: Sends a set of activities to the user. An array of responses from the server
@@ -107,7 +107,7 @@ methods:
     description: The activities to send.
     isRequired: true
     types:
-    - <xref:typing.List[<xref:Activity>]>
+    - <xref:typing.List>[<xref:Activity>]
 - uid: botbuilder.core.BotAdapter.update_activity
   name: update_activity
   summary: Replaces an existing activity.

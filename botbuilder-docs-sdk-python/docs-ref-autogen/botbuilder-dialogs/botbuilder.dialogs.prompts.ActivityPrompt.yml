@@ -63,7 +63,7 @@ methods:
     description: Additional state being persisted for the prompt.
     isRequired: true
     types:
-    - <xref:typing.Dict[<xref:str>, <xref:dict>]>
+    - <xref:typing.Dict>[<xref:str>, <xref:dict>]
   - name: options
     description: Options that the prompt started with in the call to <xref:DialogContext.prompt>.
     isRequired: true
@@ -93,7 +93,7 @@ methods:
       stack.
     isRequired: true
     types:
-    - <xref:typing.Dict[<xref:str>, <xref:dict>]>
+    - <xref:typing.Dict>[<xref:str>, <xref:dict>]
   - name: options
     description: A prompt options object
     isRequired: true
