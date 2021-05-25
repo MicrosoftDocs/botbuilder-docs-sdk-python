@@ -36,12 +36,12 @@ methods:
     description: The data of the Slack event.
     isRequired: true
     types:
-    - <xref:botbuilder.adapters.slack.SlackRequestBody>
+    - <xref:SlackRequestBody>
   - name: client
     description: The Slack client.
     isRequired: true
     types:
-    - <xref:botbuilder.adapters.slack.SlackClient>
+    - <xref:SlackClient>
   return:
     description: An activity containing the event data.
     types:
@@ -75,12 +75,12 @@ methods:
     description: The data of the Slack event.
     isRequired: true
     types:
-    - <xref:botbuilder.adapters.slack.SlackEvent>
+    - <xref:SlackEvent>
   - name: client
     description: The Slack client.
     isRequired: true
     types:
-    - <xref:botbuilder.adapters.slack.SlackClient>
+    - <xref:SlackClient>
   return:
     description: An activity containing the event data.
     types:
@@ -95,7 +95,7 @@ methods:
     description: The payload of the Slack event.
     isRequired: true
     types:
-    - <xref:botbuilder.adapters.slack.SlackPayload>
+    - <xref:SlackPayload>
   return:
     description: An activity containing the event data.
     types:
@@ -124,7 +124,7 @@ methods:
     description: The original aiohttp Request.
     isRequired: true
     types:
-    - '[aiohttp.web_request.Request](aiohttp.web_request.Request)'
+    - <xref:aiohttp.web_request.Request>
   - name: code
     description: The HTTP result code to return.
     isRequired: true
@@ -143,4 +143,4 @@ methods:
   return:
     description: The aoihttp Response
     types:
-    - '[aiohttp.web_response.Response](aiohttp.web_response.Response)'
+    - <xref:[aiohttp.web_response.Response](aiohttp.web_response.Response)>

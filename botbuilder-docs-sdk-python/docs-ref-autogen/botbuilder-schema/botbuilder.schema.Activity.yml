@@ -34,7 +34,7 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
-    - <xref:botframework.connector.models.ActivityTypes>
+    - <xref:ActivityTypes>
   - name: id
     description: 'Contains an ID that uniquely identifies the activity on the
 
@@ -85,19 +85,19 @@ constructor:
     description: Identifies the sender of the message.
     isRequired: true
     types:
-    - <xref:botframework.connector.models.ChannelAccount>
+    - <xref:ChannelAccount>
   - name: conversation
     description: 'Identifies the conversation to which the activity
 
       belongs.'
     isRequired: true
     types:
-    - <xref:botframework.connector.models.ConversationAccount>
+    - <xref:ConversationAccount>
   - name: recipient
     description: Identifies the recipient of the message.
     isRequired: true
     types:
-    - <xref:botframework.connector.models.ChannelAccount>
+    - <xref:ChannelAccount>
   - name: text_format
     description: 'Format of text fields Default:markdown. Possible
 
@@ -105,7 +105,7 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
-    - <xref:botframework.connector.models.TextFormatTypes>
+    - <xref:TextFormatTypes>
   - name: attachment_layout
     description: 'The layout hint for multiple attachments.
 
@@ -113,33 +113,33 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
-    - <xref:botframework.connector.models.AttachmentLayoutTypes>
+    - <xref:AttachmentLayoutTypes>
   - name: members_added
     description: The collection of members added to the conversation.
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
+    - <xref:list>[<xref:ChannelAccount>]
   - name: members_removed
     description: 'The collection of members removed from the
 
       conversation.'
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
+    - <xref:list>[<xref:ChannelAccount>]
   - name: reactions_added
     description: 'The collection of reactions added to the
 
       conversation.'
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.MessageReaction>]
+    - <xref:list>[<xref:MessageReaction>]
   - name: reactions_removed
     description: 'The collection of reactions removed from the
 
       conversation.'
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.MessageReaction>]
+    - <xref:list>[<xref:MessageReaction>]
   - name: topic_name
     description: The updated topic name of the conversation.
     isRequired: true
@@ -188,7 +188,7 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
-    - <xref:botframework.connector.models.InputHints>
+    - <xref:InputHints>
   - name: summary
     description: The text to display if the channel cannot render cards.
     isRequired: true
@@ -198,19 +198,19 @@ constructor:
     description: The suggested actions for the activity.
     isRequired: true
     types:
-    - <xref:botframework.connector.models.SuggestedActions>
+    - <xref:SuggestedActions>
   - name: attachments
     description: Attachments
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.Attachment>]
+    - <xref:list>[<xref:Attachment>]
   - name: entities
     description: 'Represents the entities that were mentioned in the
 
       message.'
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.Entity>]
+    - <xref:list>[<xref:Entity>]
   - name: channel_data
     description: Contains channel-specific content.
     isRequired: true
@@ -256,7 +256,7 @@ constructor:
     description: A reference to another conversation or activity.
     isRequired: true
     types:
-    - <xref:botframework.connector.models.ConversationReference>
+    - <xref:ConversationReference>
   - name: code
     description: 'The a code for endOfConversation activities that indicates
 
@@ -268,7 +268,7 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
-    - <xref:botframework.connector.models.EndOfConversationCodes>
+    - <xref:EndOfConversationCodes>
   - name: expiration
     description: 'The time at which the activity should be considered to
 
@@ -283,7 +283,7 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
-    - <xref:botframework.connector.models.ActivityImportance>
+    - <xref:ActivityImportance>
   - name: delivery_mode
     description: 'A delivery hint to signal to the recipient alternate
 
@@ -295,7 +295,7 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
-    - <xref:botframework.connector.models.DeliveryModes>
+    - <xref:DeliveryModes>
   - name: listen_for
     description: 'List of phrases and references that speech and language
 
@@ -309,14 +309,14 @@ constructor:
       the activity contains a ReplyToId value.'
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.TextHighlight>]
+    - <xref:list>[<xref:TextHighlight>]
   - name: semantic_action
     description: 'An optional programmatic action accompanying this
 
       request'
     isRequired: true
     types:
-    - <xref:botframework.connector.models.SemanticAction>
+    - <xref:SemanticAction>
   - name: caller_id
     description: 'A string containing an IRI identifying the caller of a
 

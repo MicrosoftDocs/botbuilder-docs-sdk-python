@@ -18,13 +18,13 @@ constructor:
     description: Gets or sets a reference to the conversation.
     isRequired: true
     types:
-    - <xref:botframework.connector.models.ConversationReference>
+    - <xref:ConversationReference>
   - name: relates_to
     description: Gets or sets a reference to a related parent conversation for this
       token exchange.
     isRequired: true
     types:
-    - <xref:botframework.connector.models.ConversationReference>
+    - <xref:ConversationReference>
   - name: bot_ur
     description: The URL of the bot messaging endpoint.
     isRequired: true

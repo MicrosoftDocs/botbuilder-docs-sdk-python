@@ -29,16 +29,16 @@ constructor:
     description: Array of images for the card
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.CardImage>]
+    - <xref:list>[<xref:CardImage>]
   - name: buttons
     description: Set of actions applicable to the current card
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.CardAction>]
+    - <xref:list>[<xref:CardAction>]
   - name: tap
     description: 'This action will be activated when user taps on the card
 
       itself'
     isRequired: true
     types:
-    - <xref:botframework.connector.models.CardAction>
+    - <xref:CardAction>

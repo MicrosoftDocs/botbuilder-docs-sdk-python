@@ -30,7 +30,7 @@ methods:
       <xref:botbuilder.core.skills.SkillConversationReference> and conversation id.'
     isRequired: true
     types:
-    - <xref:botbuilder.core.skills.Union[SkillConversationIdFactoryOptions, ConversationReference]>
+    - <xref:Union>[<xref:SkillConversationIdFactoryOptions>, <xref:ConversationReference>]
   return:
     description: A skill conversation id.
 - uid: botbuilder.core.skills.ConversationIdFactoryBase.delete_conversation_reference

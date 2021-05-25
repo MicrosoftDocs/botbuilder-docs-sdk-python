@@ -32,7 +32,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.TurnContext>
+    - <xref:TurnContext>
   return:
     description: None
   remarks: 'This function must be called in order for the cleared state to be persisted
@@ -62,7 +62,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.TurnContext>
+    - <xref:TurnContext>
   return:
     description: None
 - uid: botbuilder.core.bot_state.BotState.delete_property_value
@@ -102,7 +102,7 @@ methods:
     description: The context object for this turn.
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.TurnContext>
+    - <xref:TurnContext>
   return:
     description: The cached bot state instance.
 - uid: botbuilder.core.bot_state.BotState.get_property_value
@@ -115,7 +115,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.TurnContext>
+    - <xref:TurnContext>
   - name: property_name
     description: The property name
     isRequired: true
@@ -141,7 +141,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.TurnContext>
+    - <xref:TurnContext>
   - name: force
     description: Optional, true to bypass the cache
     defaultValue: 'False'
@@ -160,7 +160,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.TurnContext>
+    - <xref:TurnContext>
   - name: force
     description: Optional, true to save state to storage whether or not there are
       changes
@@ -177,7 +177,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.TurnContext>
+    - <xref:TurnContext>
   - name: property_name
     description: The property name
     isRequired: true

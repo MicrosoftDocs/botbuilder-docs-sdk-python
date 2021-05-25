@@ -20,17 +20,17 @@ constructor:
     description: (Optional) User participating in this conversation
     isRequired: true
     types:
-    - <xref:botframework.connector.models.ChannelAccount>
+    - <xref:ChannelAccount>
   - name: bot
     description: Bot participating in this conversation
     isRequired: true
     types:
-    - <xref:botframework.connector.models.ChannelAccount>
+    - <xref:ChannelAccount>
   - name: conversation
     description: Conversation reference
     isRequired: true
     types:
-    - <xref:botframework.connector.models.ConversationAccount>
+    - <xref:ConversationAccount>
   - name: channel_id
     description: Channel ID
     isRequired: true

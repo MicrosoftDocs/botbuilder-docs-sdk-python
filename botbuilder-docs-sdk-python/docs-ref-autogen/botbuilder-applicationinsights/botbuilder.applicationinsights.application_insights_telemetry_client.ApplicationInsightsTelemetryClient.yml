@@ -82,7 +82,7 @@ methods:
       (defaults to: None)'
     defaultValue: None
     types:
-    - <xref:typing.Dict[str, object]>
+    - <xref:typing.Dict>[<xref:str>, <xref:object>]
   - name: measurements
     description: 'the set of custom measurements the client wants to attach to this
       data item.
@@ -90,7 +90,7 @@ methods:
       (defaults to: None)'
     defaultValue: None
     types:
-    - <xref:typing.Dict[str, object]>
+    - <xref:typing.Dict>[<xref:str>, <xref:object>]
   - name: dependency_id
     description: 'the id for this dependency call. If None, a new uuid will be generated.
 
@@ -115,7 +115,7 @@ methods:
       item. (defaults to: None)'
     defaultValue: None
     types:
-    - <xref:typing.Dict[str, object]>
+    - <xref:typing.Dict>[<xref:str>, <xref:object>]
   - name: measurements
     description: 'the set of custom measurements the client wants to attach to this
       data item. (defaults to:
@@ -123,7 +123,7 @@ methods:
       None)'
     defaultValue: None
     types:
-    - <xref:typing.Dict[str, object]>
+    - <xref:typing.Dict>[<xref:str>, <xref:object>]
 - uid: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient.track_exception
   name: track_exception
   summary: Send information about a single exception that occurred in the application.
@@ -146,7 +146,7 @@ methods:
       item. (defaults to: None)'
     defaultValue: None
     types:
-    - <xref:typing.Dict[str, object]>
+    - <xref:typing.Dict>[<xref:str>, <xref:object>]
   - name: measurements
     description: 'the set of custom measurements the client wants to attach to this
       data item. (defaults to:
@@ -154,7 +154,7 @@ methods:
       None)'
     defaultValue: None
     types:
-    - <xref:typing.Dict[str, object]>
+    - <xref:typing.Dict>[<xref:str>, <xref:object>]
 - uid: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient.track_metric
   name: track_metric
   summary: Send information about a single metric data point that was captured for
@@ -211,7 +211,7 @@ methods:
       item. (defaults to: None)'
     defaultValue: None
     types:
-    - <xref:typing.Dict[str, object]>
+    - <xref:typing.Dict>[<xref:str>, <xref:object>]
 - uid: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient.track_pageview
   name: track_pageview
   summary: Send information about the page viewed in the application (a web page for
@@ -237,7 +237,7 @@ methods:
       item. (defaults to: None)'
     defaultValue: None
     types:
-    - <xref:typing.Dict[str, object]>
+    - <xref:typing.Dict>[<xref:str>, <xref:object>]
   - name: measurements
     description: 'the set of custom measurements the client wants to attach to this
       data item. (defaults to:
@@ -245,7 +245,7 @@ methods:
       None)'
     defaultValue: None
     types:
-    - <xref:typing.Dict[str, object]>
+    - <xref:typing.Dict>[<xref:str>, <xref:object>]
 - uid: botbuilder.applicationinsights.application_insights_telemetry_client.ApplicationInsightsTelemetryClient.track_request
   name: track_request
   summary: Sends a single request that was captured for the application.
@@ -299,7 +299,7 @@ methods:
       item. (defaults to: None)'
     defaultValue: None
     types:
-    - <xref:typing.Dict[str, object]>
+    - <xref:typing.Dict>[<xref:str>, <xref:object>]
   - name: measurements
     description: 'the set of custom measurements the client wants to attach to this
       data item. (defaults to:
@@ -307,7 +307,7 @@ methods:
       None)'
     defaultValue: None
     types:
-    - <xref:typing.Dict[str, object]>
+    - <xref:typing.Dict>[<xref:str>, <xref:object>]
   - name: request_id
     description: 'the id for this request. If None, a new uuid will be generated.
       (defaults to: None)'
@@ -330,7 +330,7 @@ methods:
       item. (defaults to: None)'
     defaultValue: None
     types:
-    - <xref:typing.Dict[str, object]>
+    - <xref:typing.Dict>[<xref:str>, <xref:object>]
   - name: severity
     description: the severity level of this trace, one of DEBUG, INFO, WARNING, ERROR,
       CRITICAL

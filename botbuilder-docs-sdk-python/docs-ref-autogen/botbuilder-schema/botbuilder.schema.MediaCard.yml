@@ -31,19 +31,19 @@ constructor:
     description: Thumbnail placeholder
     isRequired: true
     types:
-    - <xref:botframework.connector.models.ThumbnailUrl>
+    - <xref:ThumbnailUrl>
   - name: media
     description: 'Media URLs for this card. When this field contains more than
 
       one URL, each URL is an alternative format of the same content.'
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.MediaUrl>]
+    - <xref:list>[<xref:MediaUrl>]
   - name: buttons
     description: Actions on this card
     isRequired: true
     types:
-    - <xref:list>[<xref:botframework.connector.models.CardAction>]
+    - <xref:list>[<xref:CardAction>]
   - name: shareable
     description: This content may be shared with others (default:true)
     isRequired: true

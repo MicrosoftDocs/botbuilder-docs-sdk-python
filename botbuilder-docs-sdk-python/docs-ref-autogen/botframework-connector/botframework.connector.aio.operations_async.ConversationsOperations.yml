@@ -73,7 +73,7 @@ methods:
     description: Parameters to create the conversation from
     isRequired: true
     types:
-    - <xref:botframework.connector.models.ConversationParameters>
+    - <xref:ConversationParameters>
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
@@ -583,7 +583,7 @@ methods:
     description: Activity to send
     isRequired: true
     types:
-    - <xref:botframework.connector.models.Activity>
+    - <xref:Activity>
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
@@ -638,7 +638,7 @@ methods:
       Transcript schema.'
     defaultValue: None
     types:
-    - <xref:list>[<xref:botframework.connector.models.Activity>]
+    - <xref:list>[<xref:Activity>]
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
@@ -705,7 +705,7 @@ methods:
     description: Activity to send
     isRequired: true
     types:
-    - <xref:botframework.connector.models.Activity>
+    - <xref:Activity>
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
@@ -761,7 +761,7 @@ methods:
     description: replacement Activity
     isRequired: true
     types:
-    - <xref:botframework.connector.models.Activity>
+    - <xref:Activity>
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true
@@ -812,7 +812,7 @@ methods:
     description: Attachment data
     isRequired: true
     types:
-    - <xref:botframework.connector.models.AttachmentData>
+    - <xref:AttachmentData>
   - name: custom_headers
     description: headers that will be added to the request
     isRequired: true

@@ -79,7 +79,7 @@ methods:
     description: The aiohttp Request object.
     isRequired: true
     types:
-    - '[aiohttp.web_request.Request](aiohttp.web_request.Request)'
+    - <xref:aiohttp.web_request.Request>
   - name: logic
     description: The method to call for the resulting bot turn.
     isRequired: true
@@ -88,7 +88,7 @@ methods:
   return:
     description: The aiohttp Response.
     types:
-    - '[aiohttp.web_response.Response](aiohttp.web_response.Response)'
+    - <xref:[aiohttp.web_response.Response](aiohttp.web_response.Response)>
 - uid: botbuilder.adapters.slack.SlackAdapter.send_activities
   name: send_activities
   summary: Send a message from the bot to the messaging API.
@@ -105,12 +105,12 @@ methods:
       API.
     isRequired: true
     types:
-    - <xref:typing.List[Activity]>
+    - <xref:typing.List>[<xref:Activity>]
   return:
     description: An array of ResourceResponse objects containing the IDs that Slack
       assigned to the sent messages.
     types:
-    - <xref:typing.List[ResourceResponse]>
+    - <xref:<xref:typing.List[ResourceResponse]>>
 - uid: botbuilder.adapters.slack.SlackAdapter.update_activity
   name: update_activity
   summary: Update a previous message with new content.

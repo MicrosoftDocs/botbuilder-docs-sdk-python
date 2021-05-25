@@ -80,7 +80,7 @@ methods:
     description: The dialog context for the current turn of the conversation
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.prompt.DialogContext>
+    - <xref:DialogContext>
   - name: options
     description: Optional, additional information to pass to the prompt being started
     defaultValue: None
@@ -99,7 +99,7 @@ methods:
     description: The dialog context for the current turn of the conversation
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.prompt.DialogContext>
+    - <xref:DialogContext>
   return:
     description: The dialog turn result
     types:
@@ -138,12 +138,12 @@ methods:
       stack
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.prompt.Dict>
+    - <xref:Dict>
   - name: options
     description: A prompt options object constructed from:meth:*DialogContext.prompt()*
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.prompt.PromptOptions>
+    - <xref:PromptOptions>
   - name: is_retry
     description: Determines whether *prompt* or *retry_prompt* should be used
     isRequired: true
@@ -175,12 +175,12 @@ methods:
       stack
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.prompt.Dict>
+    - <xref:Dict>
   - name: options
     description: A prompt options object constructed from <xref:DialogContext.prompt>
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.prompt.PromptOptions>
+    - <xref:PromptOptions>
   return:
     description: A task representing the asynchronous operation.
 - uid: botbuilder.dialogs.prompts.prompt.Prompt.reprompt_dialog
@@ -198,7 +198,7 @@ methods:
     description: The instance of the dialog on the stack
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.prompt.DialogInstance>
+    - <xref:DialogInstance>
   return:
     description: A task representing the asynchronous operation
 - uid: botbuilder.dialogs.prompts.prompt.Prompt.resume_dialog
@@ -211,12 +211,12 @@ methods:
     description: The dialog context for the current turn of the conversation.
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.prompt.DialogContext>
+    - <xref:DialogContext>
   - name: reason
     description: An enum indicating why the dialog resumed.
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.prompts.prompt.DialogReason>
+    - <xref:DialogReason>
   - name: result
     description: Optional, value returned from the previous dialog on the stack.
     isRequired: true
