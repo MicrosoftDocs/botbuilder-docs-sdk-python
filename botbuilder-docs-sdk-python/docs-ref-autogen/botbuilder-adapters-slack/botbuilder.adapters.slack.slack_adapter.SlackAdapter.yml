@@ -79,7 +79,7 @@ methods:
     description: The aiohttp Request object.
     isRequired: true
     types:
-    - <xref:aiohttp.web_request.Request>
+    - '[<xref:aiohttp.web_request.Request>](<xref:aiohttp.web_request.Request>)'
   - name: logic
     description: The method to call for the resulting bot turn.
     isRequired: true
@@ -105,7 +105,7 @@ methods:
       API.
     isRequired: true
     types:
-    - <xref:typing.List>[<xref:Activity>]
+    - <xref:typing.List[<xref:Activity>]>
   return:
     description: An array of ResourceResponse objects containing the IDs that Slack
       assigned to the sent messages.

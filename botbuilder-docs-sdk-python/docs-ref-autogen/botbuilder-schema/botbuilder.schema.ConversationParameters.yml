@@ -20,12 +20,12 @@ constructor:
     description: The bot address for this conversation
     isRequired: true
     types:
-    - <xref:ChannelAccount>
+    - <xref:botframework.connector.models.ChannelAccount>
   - name: members
     description: Members to add to the conversation
     isRequired: true
     types:
-    - <xref:list>[<xref:ChannelAccount>]
+    - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
   - name: topic_name
     description: '(Optional) Topic of the conversation (if supported by
 
@@ -39,7 +39,7 @@ constructor:
       activity as the initial message to the conversation'
     isRequired: true
     types:
-    - <xref:Activity>
+    - <xref:botframework.connector.models.Activity>
   - name: channel_data
     description: 'Channel specific payload for creating the
 

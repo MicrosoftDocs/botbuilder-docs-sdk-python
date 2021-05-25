@@ -16,7 +16,7 @@ constructor:
       sent'
     isRequired: true
     types:
-    - <xref:ChannelInfo>
+    - <xref:botframework.connector.teams.models.ChannelInfo>
   - name: event_type
     description: Type of event.
     isRequired: true
@@ -26,19 +26,19 @@ constructor:
     description: Information about the team in which the message was sent
     isRequired: true
     types:
-    - <xref:TeamInfo>
+    - <xref:botframework.connector.teams.models.TeamInfo>
   - name: notification
     description: Notification settings for the message
     isRequired: true
     types:
-    - <xref:NotificationInfo>
+    - <xref:botframework.connector.teams.models.NotificationInfo>
   - name: tenant
     description: Information about the tenant in which the message was sent
     isRequired: true
     types:
-    - <xref:TenantInfo>
+    - <xref:botframework.connector.teams.models.TenantInfo>
   - name: meeting
     description: Information about the meeting in which the message was sent
     isRequired: true
     types:
-    - <xref:TeamsMeetingInfo>
+    - <xref:botframework.connector.teams.models.TeamsMeetingInfo>

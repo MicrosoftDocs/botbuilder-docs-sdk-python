@@ -29,11 +29,11 @@ constructor:
     description: (Only when type is result) Attachments
     isRequired: true
     types:
-    - <xref:list>[<xref:MessagingExtensionAttachment>]
+    - <xref:list>[<xref:botframework.connector.teams.models.MessagingExtensionAttachment>]
   - name: suggested_actions
     isRequired: true
     types:
-    - <xref:MessagingExtensionSuggestedAction>
+    - <xref:botframework.connector.teams.models.MessagingExtensionSuggestedAction>
   - name: text
     description: (Only when type is message) Text
     isRequired: true
@@ -45,4 +45,4 @@ constructor:
       activity to preview'
     isRequired: true
     types:
-    - <xref:Activity>
+    - <xref:botframework.connector.teams.models.Activity>

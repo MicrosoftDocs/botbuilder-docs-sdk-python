@@ -33,7 +33,7 @@ constructor:
       can be in any subtype of O365ConnectorCardInputBase'
     isRequired: true
     types:
-    - <xref:list>[<xref:O365ConnectorCardInputBase>]
+    - <xref:list>[<xref:botframework.connector.teams.models.O365ConnectorCardInputBase>]
   - name: actions
     description: 'Set of actions contained in this ActionCard whose each
 
@@ -42,4 +42,4 @@ constructor:
       O365ConnectorCardActionCard, as nested ActionCard is forbidden.'
     isRequired: true
     types:
-    - <xref:list>[<xref:O365ConnectorCardActionBase>]
+    - <xref:list>[<xref:botframework.connector.teams.models.O365ConnectorCardActionBase>]

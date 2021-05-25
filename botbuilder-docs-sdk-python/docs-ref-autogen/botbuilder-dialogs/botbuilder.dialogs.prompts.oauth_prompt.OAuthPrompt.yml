@@ -23,12 +23,12 @@ methods:
     description: The dialog context for the current turn of the conversation
     isRequired: true
     types:
-    - <xref:DialogContext>
+    - <xref:botbuilder.dialogs.prompts.oauth_prompt.DialogContext>
   - name: options
     description: Optional, additional information to pass to the prompt being started
     defaultValue: None
     types:
-    - <xref:PromptOptions>
+    - <xref:botbuilder.dialogs.prompts.oauth_prompt.PromptOptions>
   return:
     description: Dialog turn result
     types:
@@ -50,7 +50,7 @@ methods:
     description: The dialog context for the current turn of the conversation
     isRequired: true
     types:
-    - <xref:DialogContext>
+    - <xref:botbuilder.dialogs.prompts.oauth_prompt.DialogContext>
   return:
     description: Dialog turn result
     types:
@@ -76,7 +76,7 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - <xref:TurnContext>
+    - <xref:botbuilder.dialogs.prompts.oauth_prompt.TurnContext>
   - name: code
     description: (Optional) Optional user entered code to validate.
     defaultValue: None
@@ -101,7 +101,7 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - <xref:TurnContext>
+    - <xref:botbuilder.dialogs.prompts.oauth_prompt.TurnContext>
   return:
     description: A task representing the work queued to execute
   remarks: 'If the task is successful and the user already has a token or the user

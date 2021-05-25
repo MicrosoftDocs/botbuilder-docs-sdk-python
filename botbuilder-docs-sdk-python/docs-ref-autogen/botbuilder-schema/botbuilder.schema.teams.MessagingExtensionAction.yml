@@ -20,7 +20,7 @@ constructor:
     description: Current user context, i.e., the current theme
     isRequired: true
     types:
-    - <xref:TaskModuleRequestContext>
+    - <xref:botframework.connector.teams.models.TaskModuleRequestContext>
   - name: command_id
     description: Id of the command assigned by Bot
     isRequired: true
@@ -40,15 +40,15 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
-    - <xref:enum>
+    - <xref:botframework.connector.teams.models.enum>
   - name: bot_activity_preview
     isRequired: true
     types:
-    - <xref:list>[<xref:Activity>]
+    - <xref:list>[<xref:botframework.schema.models.Activity>]
   - name: message_payload
     description: 'Message content sent as part of the command
 
       request.'
     isRequired: true
     types:
-    - <xref:MessageActionsPayload>
+    - <xref:botframework.connector.teams.models.MessageActionsPayload>

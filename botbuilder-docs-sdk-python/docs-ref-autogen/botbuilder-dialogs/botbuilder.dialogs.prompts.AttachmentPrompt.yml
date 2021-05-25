@@ -31,12 +31,12 @@ methods:
       stack
     isRequired: true
     types:
-    - <xref:Dict>
+    - <xref:botbuilder.dialogs.prompts.Dict>
   - name: options
     description: A prompt options object constructed from:meth:*DialogContext.prompt()*
     isRequired: true
     types:
-    - <xref:PromptOptions>
+    - <xref:botbuilder.dialogs.prompts.PromptOptions>
   - name: is_retry
     description: Determines whether *prompt* or *retry_prompt* should be used
     isRequired: true
@@ -69,11 +69,11 @@ methods:
       stack
     isRequired: true
     types:
-    - <xref:Dict>
+    - <xref:botbuilder.dialogs.prompts.Dict>
   - name: options
     description: A prompt options object constructed from <xref:DialogContext.prompt>
     isRequired: true
     types:
-    - <xref:PromptOptions>
+    - <xref:botbuilder.dialogs.prompts.PromptOptions>
   return:
     description: A task representing the asynchronous operation.

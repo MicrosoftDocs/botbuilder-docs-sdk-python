@@ -169,7 +169,7 @@ methods:
     description: The context object for the turn
     isRequired: true
     types:
-    - "<xref::class:`TurnContext\u2019>"
+    - <xref::class:>>`<<TurnContext'>
   - name: reference
     description: Conversation reference for the activity to delete
     isRequired: true
@@ -587,12 +587,12 @@ methods:
     description: The context object for the turn.
     isRequired: true
     types:
-    - <xref:TurnContext>
+    - <xref:botbuilder.core.bot_framework_adapter.TurnContext>
   - name: activities
     description: The activities to send.
     isRequired: true
     types:
-    - <xref:typing.List>[<xref:Activity>]
+    - <xref:typing.List[<xref:Activity>]>
 - uid: botbuilder.core.bot_framework_adapter.BotFrameworkAdapter.sign_out_user
   name: sign_out_user
   summary: Signs the user out with the token server.
@@ -633,7 +633,7 @@ methods:
     description: The context object for the turn
     isRequired: true
     types:
-    - "<xref::class:`TurnContext\u2019>"
+    - <xref::class:>>`<<TurnContext'>
   - name: activity
     description: New replacement activity
     isRequired: true

@@ -19,17 +19,17 @@ constructor:
     description: Array of Fact objects
     isRequired: true
     types:
-    - <xref:list>[<xref:Fact>]
+    - <xref:list>[<xref:botframework.connector.models.Fact>]
   - name: items
     description: Array of Receipt Items
     isRequired: true
     types:
-    - <xref:list>[<xref:ReceiptItem>]
+    - <xref:list>[<xref:botframework.connector.models.ReceiptItem>]
   - name: tap
     description: This action will be activated when user taps on the card
     isRequired: true
     types:
-    - <xref:CardAction>
+    - <xref:botframework.connector.models.CardAction>
   - name: total
     description: Total amount of money paid (or to be paid)
     isRequired: true
@@ -49,4 +49,4 @@ constructor:
     description: Set of actions applicable to the current card
     isRequired: true
     types:
-    - <xref:list>[<xref:CardAction>]
+    - <xref:list>[<xref:botframework.connector.models.CardAction>]
