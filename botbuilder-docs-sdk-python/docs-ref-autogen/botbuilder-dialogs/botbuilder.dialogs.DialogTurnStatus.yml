@@ -8,21 +8,21 @@ variables:
 - description: Indicates that there is currently nothing on the dialog stack.
   name: Empty
   types:
-  - int
+  - <xref:int>
 - description: Indicates that the dialog on top is waiting for a response from the
     user.
   name: Waiting
   types:
-  - int
+  - <xref:int>
 - description: Indicates that the dialog completed successfully, the result is available,
     and the stack is empty.
   name: Complete
   types:
-  - int
+  - <xref:int>
 - description: Indicates that the dialog was cancelled and the stack is empty.
   name: Cancelled
   types:
-  - int
+  - <xref:int>
 inheritances:
 - enum.Enum
 fields:

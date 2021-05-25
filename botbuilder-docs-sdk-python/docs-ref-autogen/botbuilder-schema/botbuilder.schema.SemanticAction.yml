@@ -14,7 +14,7 @@ constructor:
     description: ID of this action
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: entities
     description: Entities associated with this action
     isRequired: true
@@ -24,5 +24,5 @@ constructor:
     description: 'State of this action. Allowed values: *start*, *continue*, *done*'
     isRequired: true
     types:
-    - str
-    - botframework.connector.models.SemanticActionStates
+    - <xref:str>
+    - <xref:botframework.connector.models.SemanticActionStates>

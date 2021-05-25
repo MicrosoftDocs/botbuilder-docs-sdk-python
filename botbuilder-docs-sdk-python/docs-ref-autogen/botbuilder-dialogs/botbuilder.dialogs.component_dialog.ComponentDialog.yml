@@ -11,7 +11,7 @@ constructor:
 variables:
 - name: state
   types:
-  - persisted_dialog
+  - <xref:persisted_dialog>
 methods:
 - uid: botbuilder.dialogs.component_dialog.ComponentDialog.add_dialog
   name: add_dialog
@@ -43,12 +43,12 @@ methods:
       of the conversation.
     isRequired: true
     types:
-    - botbuilder.dialogs.DialogContext
+    - <xref:botbuilder.dialogs.DialogContext>
   - name: options
     description: Optional, initial information to pass to the dialog.
     defaultValue: None
     types:
-    - object
+    - <xref:object>
   return:
     description: Signals the end of the turn
     types:
@@ -66,7 +66,7 @@ methods:
     description: The parent dialog context for the current turn of the conversation.
     isRequired: true
     types:
-    - botbuilder.dialogs.DialogContext
+    - <xref:botbuilder.dialogs.DialogContext>
   return:
     description: Signals the end of the turn
     types:
@@ -102,13 +102,13 @@ methods:
     description: The parent dialog context for the current turn of conversation.
     isRequired: true
     types:
-    - class:botbuilder.dialogs.DialogContext
+    - <xref:class:botbuilder.dialogs.DialogContext>
   - name: result
     description: Optional, value to return from the dialog component to the parent
       context.
     isRequired: true
     types:
-    - object
+    - <xref:object>
   return:
     description: Value to return.
     types:
@@ -130,18 +130,18 @@ methods:
     description: The context object for this turn.
     isRequired: true
     types:
-    - botbuilder.core.TurnContext
+    - <xref:botbuilder.core.TurnContext>
   - name: instance
     description: State information associated with the instance of this component
       dialog.
     isRequired: true
     types:
-    - botbuilder.dialogs.DialogInstance
+    - <xref:botbuilder.dialogs.DialogInstance>
   - name: reason
     description: Reason why the dialog ended.
     isRequired: true
     types:
-    - botbuilder.dialogs.DialogReason
+    - <xref:botbuilder.dialogs.DialogReason>
 - uid: botbuilder.dialogs.component_dialog.ComponentDialog.find_dialog
   name: find_dialog
   summary: Finds a dialog by ID.
@@ -164,12 +164,12 @@ methods:
     description: The inner dialog context for the current turn of conversation.
     isRequired: true
     types:
-    - botbuilder.dialogs.DialogContext
+    - <xref:botbuilder.dialogs.DialogContext>
   - name: options
     description: Optional, initial information to pass to the dialog.
     isRequired: true
     types:
-    - object
+    - <xref:object>
   remarks: 'If the task is successful, the result indicates whether the dialog is
     still
 
@@ -195,7 +195,7 @@ methods:
     description: The inner dialog context for the current turn of conversation.
     isRequired: true
     types:
-    - botbuilder.dialogs.DialogContext
+    - <xref:botbuilder.dialogs.DialogContext>
 - uid: botbuilder.dialogs.component_dialog.ComponentDialog.on_end_dialog
   name: on_end_dialog
   summary: Ends the component dialog in its parent's context.
@@ -208,18 +208,18 @@ methods:
       conversation.
     isRequired: true
     types:
-    - botbuilder.core.TurnContext
+    - <xref:botbuilder.core.TurnContext>
   - name: instance
     description: State information associated with the inner dialog stack of this
       component dialog.
     isRequired: true
     types:
-    - botbuilder.dialogs.DialogInstance
+    - <xref:botbuilder.dialogs.DialogInstance>
   - name: reason
     description: Reason why the dialog ended.
     isRequired: true
     types:
-    - botbuilder.dialogs.DialogReason
+    - <xref:botbuilder.dialogs.DialogReason>
 - uid: botbuilder.dialogs.component_dialog.ComponentDialog.on_reprompt_dialog
   name: on_reprompt_dialog
   signature: 'on_reprompt_dialog(turn_context: botbuilder.core.turn_context.TurnContext,
@@ -230,13 +230,13 @@ methods:
       conversation.
     isRequired: true
     types:
-    - botbuilder.dialogs.DialogInstance
+    - <xref:botbuilder.dialogs.DialogInstance>
   - name: instance
     description: State information associated with the inner dialog stack of this
       component dialog.
     isRequired: true
     types:
-    - botbuilder.dialogs.DialogInstance
+    - <xref:botbuilder.dialogs.DialogInstance>
 - uid: botbuilder.dialogs.component_dialog.ComponentDialog.reprompt_dialog
   name: reprompt_dialog
   summary: Called when the dialog should re-prompt the user for input.
@@ -247,12 +247,12 @@ methods:
     description: The context object for this turn.
     isRequired: true
     types:
-    - botbuilder.core.TurnContext
+    - <xref:botbuilder.core.TurnContext>
   - name: instance
     description: State information for this dialog.
     isRequired: true
     types:
-    - botbuilder.dialogs.DialogInstance
+    - <xref:botbuilder.dialogs.DialogInstance>
 - uid: botbuilder.dialogs.component_dialog.ComponentDialog.resume_dialog
   name: resume_dialog
   summary: 'Called when a child dialog on the parent''s dialog stack completed this
@@ -267,17 +267,17 @@ methods:
     description: The dialog context for the current turn of the conversation.
     isRequired: true
     types:
-    - botbuilder.dialogs.DialogContext
+    - <xref:botbuilder.dialogs.DialogContext>
   - name: reason
     description: Reason why the dialog resumed.
     isRequired: true
     types:
-    - botbuilder.dialogs.DialogReason
+    - <xref:botbuilder.dialogs.DialogReason>
   - name: result
     description: Optional, value returned from the dialog that was called.
     defaultValue: None
     types:
-    - object
+    - <xref:object>
   return:
     description: Signals the end of the turn
     types:

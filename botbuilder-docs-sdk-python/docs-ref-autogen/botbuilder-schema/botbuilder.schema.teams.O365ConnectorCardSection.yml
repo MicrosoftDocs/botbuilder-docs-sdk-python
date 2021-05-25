@@ -16,47 +16,47 @@ constructor:
     description: Title of the section
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: text
     description: Text for the section
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: activity_title
     description: Activity title
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: activity_subtitle
     description: Activity subtitle
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: activity_text
     description: Activity text
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: activity_image
     description: Activity image
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: activity_image_type
     description: 'Describes how Activity image is rendered.
 
       Possible values include: ''avatar'', ''article'''
     isRequired: true
     types:
-    - str
-    - botframework.connector.teams.models.enum
+    - <xref:str>
+    - <xref:botframework.connector.teams.models.enum>
   - name: markdown
     description: 'Use markdown for all text contents. Default value is
 
       true.'
     isRequired: true
     types:
-    - bool
+    - <xref:bool>
   - name: facts
     description: Set of facts for the current section
     isRequired: true

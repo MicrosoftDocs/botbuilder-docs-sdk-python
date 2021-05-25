@@ -21,23 +21,23 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - botbuilder.core.TurnContext
+    - <xref:botbuilder.core.TurnContext>
   - name: state
     description: Contains state for the current instance of the prompt on the dialog
       stack
     isRequired: true
     types:
-    - botbuilder.dialogs.Dict
+    - <xref:botbuilder.dialogs.Dict>
   - name: options
     description: A prompt options object constructed from:meth:*DialogContext.prompt()*
     isRequired: true
     types:
-    - botbuilder.dialogs.PromptOptions
+    - <xref:botbuilder.dialogs.PromptOptions>
   - name: is_retry
     description: Determines whether *prompt* or *retry_prompt* should be used
     isRequired: true
     types:
-    - bool
+    - <xref:bool>
   return:
     description: A task representing the asynchronous operation.
 - uid: botbuilder.dialogs.NumberPrompt.on_recognize
@@ -59,17 +59,17 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - botbuilder.core.TurnContext
+    - <xref:botbuilder.core.TurnContext>
   - name: state
     description: Contains state for the current instance of the prompt on the dialog
       stack
     isRequired: true
     types:
-    - botbuilder.dialogs.Dict
+    - <xref:botbuilder.dialogs.Dict>
   - name: options
     description: A prompt options object constructed from <xref:botbuilder.dialogs.DialogContext.prompt>
     isRequired: true
     types:
-    - botbuilder.dialogs.PromptOptions
+    - <xref:botbuilder.dialogs.PromptOptions>
   return:
     description: A task representing the asynchronous operation.

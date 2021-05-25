@@ -14,19 +14,19 @@ constructor:
     description: Content-Type of the attachment
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: name
     description: Name of the attachment
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: original_base64
     description: Attachment content
     isRequired: true
     types:
-    - bytearray
+    - <xref:bytearray>
   - name: thumbnail_base64
     description: Attachment thumbnail
     isRequired: true
     types:
-    - bytearray
+    - <xref:bytearray>

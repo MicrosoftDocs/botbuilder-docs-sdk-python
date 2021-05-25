@@ -26,27 +26,27 @@ methods:
     description: A reference to the conversation to continue.
     isRequired: true
     types:
-    - botbuilder.schema.ConversationReference
+    - <xref:botbuilder.schema.ConversationReference>
   - name: callback
     description: The method to call for the resulting bot turn.
     isRequired: true
     types:
-    - typing.Callable
+    - <xref:typing.Callable>
   - name: bot_id
     description: Unused for this override.
     defaultValue: None
     types:
-    - str
+    - <xref:str>
   - name: claims_identity
     description: A ClaimsIdentity for the conversation.
     defaultValue: None
     types:
-    - botframework.connector.auth.ClaimsIdentity
+    - <xref:botframework.connector.auth.ClaimsIdentity>
   - name: audience
     description: Unused for this override.
     defaultValue: None
     types:
-    - str
+    - <xref:str>
   remarks: "Most channels require a user to initiate a conversation with a bot before\
     \ the bot can send activities to the\n   user.\n"
 - uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.delete_activity
@@ -59,7 +59,7 @@ methods:
     description: A TurnContext representing the current incoming message and environment.
     isRequired: true
     types:
-    - botbuilder.core.TurnContext
+    - <xref:botbuilder.core.TurnContext>
   - name: reference
     description: 'An object in the form "{activityId: *id of message to delete*,conversation:
       { id: *id of Slack
@@ -67,7 +67,7 @@ methods:
       channel*}}".'
     isRequired: true
     types:
-    - botbuilder.schema.ConversationReference
+    - <xref:botbuilder.schema.ConversationReference>
 - uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.process
   name: process
   summary: Accept an incoming webhook request and convert it into a TurnContext which
@@ -84,7 +84,7 @@ methods:
     description: The method to call for the resulting bot turn.
     isRequired: true
     types:
-    - tying.Callable
+    - <xref:tying.Callable>
   return:
     description: The aiohttp Response.
     types:
@@ -99,7 +99,7 @@ methods:
     description: A TurnContext representing the current incoming message and environment.
     isRequired: true
     types:
-    - botbuilder.core.TurnContext
+    - <xref:botbuilder.core.TurnContext>
   - name: activities
     description: An array of outgoing activities to be sent back to the messaging
       API.
@@ -121,13 +121,13 @@ methods:
     description: A TurnContext representing the current incoming message and environment.
     isRequired: true
     types:
-    - botbuilder.core.TurnContext
+    - <xref:botbuilder.core.TurnContext>
   - name: activity
     description: 'The updated activity in the form ''{id: *id of activity to update*,
       ...}''.'
     isRequired: true
     types:
-    - botbuilder.schema.Activity
+    - <xref:botbuilder.schema.Activity>
   return:
     description: A resource response with the ID of the updated activity.
     types:

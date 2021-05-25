@@ -17,14 +17,14 @@ constructor:
       Possible values include: ''list'', ''grid'''
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: type
     description: 'The type of the result. Possible values include: ''result'',
 
       ''auth'', ''config'', ''message'', ''botMessagePreview'''
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: attachments
     description: (Only when type is result) Attachments
     isRequired: true
@@ -33,16 +33,16 @@ constructor:
   - name: suggested_actions
     isRequired: true
     types:
-    - botframework.connector.teams.models.MessagingExtensionSuggestedAction
+    - <xref:botframework.connector.teams.models.MessagingExtensionSuggestedAction>
   - name: text
     description: (Only when type is message) Text
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: activity_preview
     description: '(Only when type is botMessagePreview) Message
 
       activity to preview'
     isRequired: true
     types:
-    - botframework.connector.teams.models.Activity
+    - <xref:botframework.connector.teams.models.Activity>

@@ -18,7 +18,7 @@ methods:
     description: A BotBuilder Activity object.
     isRequired: true
     types:
-    - botbuilder.schema.Activity
+    - <xref:botbuilder.schema.Activity>
   return:
     description: 'A Slack message object with {text, attachments, channel, thread
       ts} and any fields found in
@@ -36,12 +36,12 @@ methods:
     description: The data of the Slack event.
     isRequired: true
     types:
-    - botbuilder.adapters.slack.SlackRequestBody
+    - <xref:botbuilder.adapters.slack.SlackRequestBody>
   - name: client
     description: The Slack client.
     isRequired: true
     types:
-    - botbuilder.adapters.slack.SlackClient
+    - <xref:botbuilder.adapters.slack.SlackClient>
   return:
     description: An activity containing the event data.
     types:
@@ -55,12 +55,12 @@ methods:
     description: The content type of the body.
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: request_body
     description: The body of the request.
     isRequired: true
     types:
-    - str
+    - <xref:str>
   return:
     description: A SlackRequestBody object.
     types:
@@ -75,12 +75,12 @@ methods:
     description: The data of the Slack event.
     isRequired: true
     types:
-    - botbuilder.adapters.slack.SlackEvent
+    - <xref:botbuilder.adapters.slack.SlackEvent>
   - name: client
     description: The Slack client.
     isRequired: true
     types:
-    - botbuilder.adapters.slack.SlackClient
+    - <xref:botbuilder.adapters.slack.SlackClient>
   return:
     description: An activity containing the event data.
     types:
@@ -95,7 +95,7 @@ methods:
     description: The payload of the Slack event.
     isRequired: true
     types:
-    - botbuilder.adapters.slack.SlackPayload
+    - <xref:botbuilder.adapters.slack.SlackPayload>
   return:
     description: An activity containing the event data.
     types:
@@ -109,7 +109,7 @@ methods:
     description: The query string to convert.
     isRequired: true
     types:
-    - str
+    - <xref:str>
   return:
     description: A dictionary with the query values.
     types:
@@ -129,17 +129,17 @@ methods:
     description: The HTTP result code to return.
     isRequired: true
     types:
-    - int
+    - <xref:int>
   - name: text
     description: The text to return.
     defaultValue: None
     types:
-    - str
+    - <xref:str>
   - name: encoding
     description: The text encoding. Defaults to UTF-8.
     defaultValue: None
     types:
-    - str
+    - <xref:str>
   return:
     description: The aoihttp Response
     types:

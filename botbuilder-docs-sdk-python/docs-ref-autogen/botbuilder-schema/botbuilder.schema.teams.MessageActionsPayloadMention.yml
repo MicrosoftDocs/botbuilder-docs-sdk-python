@@ -14,14 +14,14 @@ constructor:
     description: The id of the mentioned entity.
     isRequired: true
     types:
-    - int
+    - <xref:int>
   - name: mention_text
     description: The plaintext display name of the mentioned entity.
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: mentioned
     description: Provides more details on the mentioned entity.
     isRequired: true
     types:
-    - botframework.connector.teams.models.MessageActionsPayloadFrom
+    - <xref:botframework.connector.teams.models.MessageActionsPayloadFrom>

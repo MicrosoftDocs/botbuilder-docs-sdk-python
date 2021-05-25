@@ -17,29 +17,29 @@ constructor:
       ''dateInput'', ''multichoiceInput'''
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: id
     description: Input Id. It must be unique per entire O365 connector card.
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: is_required
     description: 'Define if this input is a required field. Default
 
       value is false.'
     isRequired: true
     types:
-    - bool
+    - <xref:bool>
   - name: title
     description: Input title that will be shown as the placeholder
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: value
     description: Default value for this input field
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: choices
     description: 'Set of choices whose each item can be in any subtype of
 
@@ -53,11 +53,11 @@ constructor:
       Possible values include: ''compact'', ''expanded'''
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: is_multi_select
     description: 'Define if this input field allows multiple
 
       selections. Default value is false.'
     isRequired: true
     types:
-    - bool
+    - <xref:bool>

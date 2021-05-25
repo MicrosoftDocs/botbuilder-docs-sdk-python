@@ -41,7 +41,7 @@ methods:
       with a user.
     isRequired: true
     types:
-    - botbuilder.core.TurnContext
+    - <xref:botbuilder.core.TurnContext>
   - name: telemetry_properties
     description: Properties to add/override for the event.
     defaultValue: None
@@ -108,7 +108,7 @@ methods:
     description: User query output.
     isRequired: true
     types:
-    - botbuilder.ai.qna.QueryResult
+    - <xref:botbuilder.ai.qna.QueryResult>
   return:
     description: Filtered array of ambiguous questions.
     types:

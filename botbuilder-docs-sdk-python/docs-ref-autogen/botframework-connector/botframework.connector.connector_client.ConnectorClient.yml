@@ -27,22 +27,22 @@ constructor:
       client subscription.'
     isRequired: true
     types:
-    - None
+    - <xref:None>
   - name: base_url
     description: Service URL
     isRequired: true
     types:
-    - str
+    - <xref:str>
 variables:
 - description: Configuration for client.
   name: config
   types:
-  - ConnectorClientConfiguration
+  - <xref:ConnectorClientConfiguration>
 - description: Attachments operations
   name: attachments
   types:
-  - botframework.connector.operations.AttachmentsOperations
+  - <xref:botframework.connector.operations.AttachmentsOperations>
 - description: Conversations operations
   name: conversations
   types:
-  - botframework.connector.operations.ConversationsOperations
+  - <xref:botframework.connector.operations.ConversationsOperations>

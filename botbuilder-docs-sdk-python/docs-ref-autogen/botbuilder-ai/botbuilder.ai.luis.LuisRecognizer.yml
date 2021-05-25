@@ -25,13 +25,13 @@ methods:
     description: Last activity sent from user.
     isRequired: true
     types:
-    - botbuilder.core.RecognizerResult
+    - <xref:botbuilder.core.RecognizerResult>
   - name: turn_context
     description: Context object containing information for a single turn of conversation
       with a user.
     isRequired: true
     types:
-    - botbuilder.core.TurnContext
+    - <xref:botbuilder.core.TurnContext>
   - name: telemetry_properties
     description: 'Additional properties to be logged to telemetry with the LuisResult
       event, defaults
@@ -58,13 +58,13 @@ methods:
     description: The LuisResult for the call.
     isRequired: true
     types:
-    - botbuilder.core.RecognizerResult
+    - <xref:botbuilder.core.RecognizerResult>
   - name: turn_context
     description: Context object containing information for a single turn of conversation
       with a user.
     isRequired: true
     types:
-    - botbuilder.core.TurnContext
+    - <xref:botbuilder.core.TurnContext>
   - name: telemetry_properties
     description: 'Additional properties to be logged to telemetry with the LuisResult
       event, defaults
@@ -94,7 +94,7 @@ methods:
       with a user.
     isRequired: true
     types:
-    - botbuilder.core.TurnContext
+    - <xref:botbuilder.core.TurnContext>
   - name: telemetry_properties
     description: 'Additional properties to be logged to telemetry with the LuisResult
       event, defaults
@@ -128,7 +128,7 @@ methods:
     description: Result set to be searched.
     isRequired: true
     types:
-    - botbuilder.core.RecognizerResult
+    - <xref:botbuilder.core.RecognizerResult>
   - name: default_intent
     description: Intent name to return should a top intent be found, defaults to None.
     defaultValue: None

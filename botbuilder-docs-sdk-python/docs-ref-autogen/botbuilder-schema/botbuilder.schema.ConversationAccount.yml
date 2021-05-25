@@ -18,48 +18,48 @@ constructor:
       participants at the time the activity was generated'
     isRequired: true
     types:
-    - bool
+    - <xref:bool>
   - name: conversation_type
     description: 'Indicates the type of the conversation in
 
       channels that distinguish between conversation types'
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: id
     description: 'Channel id for the user or bot on this channel (Example:
 
       <xref:mailto:joe@smith.com>, or @joesmith or 123456)'
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: name
     description: Display friendly name
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: aad_object_id
     description: 'This account''s object ID within Azure Active
 
       Directory (AAD)'
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: role
     description: 'Role of the entity behind the account (Example: User, Bot, Skill
 
       etc.). Possible values include: ''user'', ''bot'', ''skill'''
     isRequired: true
     types:
-    - str
-    - botframework.connector.models.RoleTypes
+    - <xref:str>
+    - <xref:botframework.connector.models.RoleTypes>
   - name: tenant_id
     description: This conversation's tenant ID
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: properties
     description: This conversation's properties
     isRequired: true
     types:
-    - object
+    - <xref:object>

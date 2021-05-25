@@ -24,12 +24,12 @@ methods:
     description: 'The raw HTTP header in the format: ''Bearer [longString]'''
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: credentials
     description: The user defined set of valid credentials, such as the AppId.
     isRequired: true
     types:
-    - botframework.connector.auth.credential_provider.CredentialProvider
+    - <xref:botframework.connector.auth.credential_provider.CredentialProvider>
   - name: channel_id
     isRequired: true
   - name: auth_configuration
@@ -56,17 +56,17 @@ methods:
     description: 'The raw HTTP header in the format: ''Bearer [longString]'''
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: credentials
     description: The user defined set of valid credentials, such as the AppId.
     isRequired: true
     types:
-    - botframework.connector.auth.credential_provider.CredentialProvider
+    - <xref:botframework.connector.auth.credential_provider.CredentialProvider>
   - name: service_url
     description: Claim value that must match in the identity.
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: channel_id
     isRequired: true
   - name: auth_configuration

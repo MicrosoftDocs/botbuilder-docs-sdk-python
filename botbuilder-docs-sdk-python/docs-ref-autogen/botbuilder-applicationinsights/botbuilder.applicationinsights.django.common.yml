@@ -36,17 +36,17 @@ functions:
     description: instrumentation key
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: channel
     description: Telemetry channel
     isRequired: true
     types:
-    - TelemetryChannel
+    - <xref:TelemetryChannel>
   - name: telemetry_processor
     description: use an existing telemetry processor from caller.
     defaultValue: None
     types:
-    - botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
+    - <xref:botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor>
   return:
     description: a telemetry client with telemetry processor.
     types:

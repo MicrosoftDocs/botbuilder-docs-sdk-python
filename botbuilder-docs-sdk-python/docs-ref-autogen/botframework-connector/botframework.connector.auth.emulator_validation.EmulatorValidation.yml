@@ -24,12 +24,12 @@ methods:
     description: 'The raw HTTP header in the format: ''Bearer [longString]'''
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: credentials
     description: The user defined set of valid credentials, such as the AppId.
     isRequired: true
     types:
-    - botframework.connector.auth.credential_provider.CredentialProvider
+    - <xref:botframework.connector.auth.credential_provider.CredentialProvider>
   - name: channel_service_or_provider
     isRequired: true
   - name: channel_id
@@ -48,7 +48,7 @@ methods:
     description: Bearer Token, in the 'Bearer [Long String]' Format.
     isRequired: true
     types:
-    - str
+    - <xref:str>
   return:
     description: True, if the token was issued by the Emulator. Otherwise, false.
 attributes:

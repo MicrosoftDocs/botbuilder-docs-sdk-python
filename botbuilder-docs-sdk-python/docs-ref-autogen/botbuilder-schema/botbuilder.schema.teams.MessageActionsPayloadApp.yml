@@ -18,15 +18,15 @@ constructor:
       ''webhook'''
     isRequired: true
     types:
-    - str
-    - botframework.connector.teams.models.enum
+    - <xref:str>
+    - <xref:botframework.connector.teams.models.enum>
   - name: id
     description: The id of the application.
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: display_name
     description: The plaintext display name of the application.
     isRequired: true
     types:
-    - str
+    - <xref:str>

@@ -15,28 +15,28 @@ constructor:
     description: mimetype/Contenttype for the file
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: content_url
     description: Content Url
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: content
     description: Embedded content
     isRequired: true
     types:
-    - object
+    - <xref:object>
   - name: name
     description: (OPTIONAL) The name of the attachment
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: thumbnail_url
     description: (OPTIONAL) Thumbnail associated with attachment
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: preview
     isRequired: true
     types:
-    - botframework.connector.teams.models.Attachment
+    - <xref:botframework.connector.teams.models.Attachment>

@@ -102,12 +102,12 @@ methods:
     description: The conversation reference that contains the tenant
     isRequired: true
     types:
-    - botbuilder.schema.ConversationReference
+    - <xref:botbuilder.schema.ConversationReference>
   - name: logic
     description: The logic to use for the creation of the conversation
     defaultValue: None
     types:
-    - typing.Callable
+    - <xref:typing.Callable>
   - name: conversation_parameters
     description: The information to use to create the conversation
     defaultValue: None
@@ -115,17 +115,17 @@ methods:
     description: The ID for the channel.
     defaultValue: None
     types:
-    - typing.str
+    - <xref:typing.str>
   - name: service_url
     description: The channel's service URL endpoint.
     defaultValue: None
     types:
-    - typing.str
+    - <xref:typing.str>
   - name: credentials
     description: The application credentials for the bot.
     defaultValue: None
     types:
-    - botframework.connector.auth.AppCredentials
+    - <xref:botframework.connector.auth.AppCredentials>
   return:
     description: A task representing the work queued to execute.
   remarks: 'To start a conversation, your bot must know its account information and
@@ -168,12 +168,12 @@ methods:
     description: The context object for the turn
     isRequired: true
     types:
-    - :class:`<<TurnContext'
+    - <xref::class:>>`<<TurnContext'>
   - name: reference
     description: Conversation reference for the activity to delete
     isRequired: true
     types:
-    - botbuilder.schema.ConversationReference
+    - <xref:botbuilder.schema.ConversationReference>
   return:
     description: A task that represents the work queued to execute
 - uid: botbuilder.core.BotFrameworkAdapter.delete_conversation_member
@@ -186,12 +186,12 @@ methods:
     description: The context object for the turn
     isRequired: true
     types:
-    - botbuilder.core.TurnContext
+    - <xref:botbuilder.core.TurnContext>
   - name: member_id
     description: The ID of the member to remove from the conversation
     isRequired: true
     types:
-    - str
+    - <xref:str>
   return:
     description: A task that represents the work queued to execute.</returns
 - uid: botbuilder.core.BotFrameworkAdapter.exchange_token
@@ -299,12 +299,12 @@ methods:
     description: The context object for the turn
     isRequired: true
     types:
-    - botbuilder.core.TurnContext
+    - <xref:botbuilder.core.TurnContext>
   - name: member_id
     description: The member Id
     isRequired: true
     types:
-    - str
+    - <xref:str>
   return:
     description: A member of the current conversation
 - uid: botbuilder.core.BotFrameworkAdapter.get_conversation_members
@@ -316,7 +316,7 @@ methods:
     description: The context object for the turn
     isRequired: true
     types:
-    - botbuilder.core.TurnContext
+    - <xref:botbuilder.core.TurnContext>
   return:
     description: List of members of the current conversation
 - uid: botbuilder.core.BotFrameworkAdapter.get_conversations
@@ -335,7 +335,7 @@ methods:
     description: The continuation token from the previous page of results
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: credentials
     isRequired: true
   - name: continuation_token
@@ -368,12 +368,12 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - botbuilder.core.TurnContext
+    - <xref:botbuilder.core.TurnContext>
   - name: connection_name
     description: Name of the auth connection to use
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: final_redirect
     description: The final URL that the OAuth flow will redirect to.
     defaultValue: None
@@ -381,7 +381,7 @@ methods:
     description: (Optional) AppCredentials for OAuth.
     defaultValue: None
     types:
-    - botframework.connector.auth.AppCredential
+    - <xref:botframework.connector.auth.AppCredential>
   return:
     description: If the task completes successfully, the result contains the raw sign-in
       link
@@ -536,17 +536,17 @@ methods:
     description: The incoming activity
     isRequired: true
     types:
-    - typing.str
+    - <xref:typing.str>
   - name: auth_header
     description: The HTTP authentication header of the request
     isRequired: true
     types:
-    - typing.str
+    - <xref:typing.str>
   - name: logic
     description: The logic to execute at the end of the adapter's middleware pipeline.
     isRequired: true
     types:
-    - typing.Callable
+    - <xref:typing.Callable>
   return:
     description: A task that represents the work queued to execute.
   remarks: 'This class processes an activity received by the bots web server. This
@@ -586,7 +586,7 @@ methods:
     description: The context object for the turn.
     isRequired: true
     types:
-    - botbuilder.core.TurnContext
+    - <xref:botbuilder.core.TurnContext>
   - name: activities
     description: The activities to send.
     isRequired: true
@@ -603,22 +603,22 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - botbuilder.core.TurnContext
+    - <xref:botbuilder.core.TurnContext>
   - name: connection_name
     description: Name of the auth connection to use
     defaultValue: None
     types:
-    - str
+    - <xref:str>
   - name: user_id
     description: User id of user to sign out
     defaultValue: None
     types:
-    - str
+    - <xref:str>
   - name: oauth_app_credentials
     description: (Optional) AppCredentials for OAuth.
     defaultValue: None
     types:
-    - botframework.connector.auth.AppCredential
+    - <xref:botframework.connector.auth.AppCredential>
 - uid: botbuilder.core.BotFrameworkAdapter.update_activity
   name: update_activity
   summary: 'Replaces an activity that was previously sent to a channel. It should
@@ -632,12 +632,12 @@ methods:
     description: The context object for the turn
     isRequired: true
     types:
-    - :class:`<<TurnContext'
+    - <xref::class:>>`<<TurnContext'>
   - name: activity
     description: New replacement activity
     isRequired: true
     types:
-    - botbuilder.schema.Activity
+    - <xref:botbuilder.schema.Activity>
   return:
     description: A task that represents the work queued to execute
   remarks: 'If the activity is successfully sent, the task result contains

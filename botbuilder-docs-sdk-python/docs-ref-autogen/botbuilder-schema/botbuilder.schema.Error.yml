@@ -14,14 +14,14 @@ constructor:
     description: Error code
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: message
     description: Error message
     isRequired: true
     types:
-    - str
+    - <xref:str>
   - name: inner_http_error
     description: Error from inner http call
     isRequired: true
     types:
-    - botframework.connector.models.InnerHttpError
+    - <xref:botframework.connector.models.InnerHttpError>
