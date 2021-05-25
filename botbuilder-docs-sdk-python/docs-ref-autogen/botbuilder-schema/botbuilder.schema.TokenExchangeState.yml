@@ -13,25 +13,25 @@ constructor:
     description: The connection name that was used.
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: conversation
     description: Gets or sets a reference to the conversation.
     isRequired: true
     types:
-    - <xref:botframework.connector.models.ConversationReference>
+    - botframework.connector.models.ConversationReference
   - name: relates_to
     description: Gets or sets a reference to a related parent conversation for this
       token exchange.
     isRequired: true
     types:
-    - <xref:botframework.connector.models.ConversationReference>
+    - botframework.connector.models.ConversationReference
   - name: bot_ur
     description: The URL of the bot messaging endpoint.
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: ms_app_id
     description: The bot's registered application ID.
     isRequired: true
     types:
-    - <xref:str>
+    - str

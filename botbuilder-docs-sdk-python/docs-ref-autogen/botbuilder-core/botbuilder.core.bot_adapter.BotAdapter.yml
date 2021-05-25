@@ -65,12 +65,12 @@ methods:
     description: The context object for the turn.
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_adapter.TurnContext>
+    - botbuilder.core.bot_adapter.TurnContext
   - name: reference
     description: Conversation reference for the activity to delete.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.ConversationReference>
+    - botbuilder.schema.ConversationReference
 - uid: botbuilder.core.bot_adapter.BotAdapter.run_pipeline
   name: run_pipeline
   summary: 'Called by the parent class to run the adapters middleware set and calls
@@ -85,7 +85,7 @@ methods:
     description: The context object for the turn.
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_adapter.TurnContext>
+    - botbuilder.core.bot_adapter.TurnContext
   - name: callback
     description: A callback method to run at the end of the pipeline.
     defaultValue: None
@@ -102,7 +102,7 @@ methods:
     description: The context object for the turn.
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_adapter.TurnContext>
+    - botbuilder.core.bot_adapter.TurnContext
   - name: activities
     description: The activities to send.
     isRequired: true
@@ -118,12 +118,12 @@ methods:
     description: The context object for the turn.
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_adapter.TurnContext>
+    - botbuilder.core.bot_adapter.TurnContext
   - name: activity
     description: New replacement activity.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.Activity>
+    - botbuilder.schema.Activity
 - uid: botbuilder.core.bot_adapter.BotAdapter.use
   name: use
   summary: Registers a middleware handler with the adapter.

@@ -40,24 +40,24 @@ methods:
     description: attachment id
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: view_id
     description: View id from attachmentInfo
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - <xref:dict>
+    - dict
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
     defaultValue: 'False'
     types:
-    - <xref:bool>
+    - bool
   - name: callback
     description: 'When specified, will be called with each chunk of
 
@@ -93,19 +93,19 @@ methods:
     description: attachment id
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: custom_headers
     description: headers that will be added to the request
     defaultValue: None
     types:
-    - <xref:dict>
+    - dict
   - name: raw
     description: 'returns the direct response alongside the
 
       deserialized response'
     defaultValue: 'False'
     types:
-    - <xref:bool>
+    - bool
   - name: operation_config
     description: '*Operation configuration
 

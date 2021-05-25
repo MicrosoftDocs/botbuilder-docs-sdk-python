@@ -43,7 +43,7 @@ methods:
     description: Id of the channel the prompt is being sent to
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: choices
     isRequired: true
   - name: style
@@ -81,12 +81,12 @@ methods:
     description: The dialog context for the current turn of the conversation
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.DialogContext>
+    - botbuilder.dialogs.DialogContext
   - name: options
     description: Optional, additional information to pass to the prompt being started
     defaultValue: None
     types:
-    - <xref:Object>
+    - Object
   return:
     description: The dialog turn result
     types:
@@ -100,7 +100,7 @@ methods:
     description: The dialog context for the current turn of the conversation
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.DialogContext>
+    - botbuilder.dialogs.DialogContext
   return:
     description: The dialog turn result
     types:
@@ -133,23 +133,23 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext>
+    - botbuilder.core.TurnContext
   - name: state
     description: Contains state for the current instance of the prompt on the dialog
       stack
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.Dict>
+    - botbuilder.dialogs.Dict
   - name: options
     description: A prompt options object constructed from:meth:*DialogContext.prompt()*
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.PromptOptions>
+    - botbuilder.dialogs.PromptOptions
   - name: is_retry
     description: Determines whether *prompt* or *retry_prompt* should be used
     isRequired: true
     types:
-    - <xref:bool>
+    - bool
   return:
     description: A task representing the asynchronous operation.
 - uid: botbuilder.dialogs.Prompt.on_recognize
@@ -170,18 +170,18 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext>
+    - botbuilder.core.TurnContext
   - name: state
     description: Contains state for the current instance of the prompt on the dialog
       stack
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.Dict>
+    - botbuilder.dialogs.Dict
   - name: options
     description: A prompt options object constructed from <xref:botbuilder.dialogs.DialogContext.prompt>
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.PromptOptions>
+    - botbuilder.dialogs.PromptOptions
   return:
     description: A task representing the asynchronous operation.
 - uid: botbuilder.dialogs.Prompt.reprompt_dialog
@@ -194,12 +194,12 @@ methods:
     description: Context for the current turn of conversation with the user
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext>
+    - botbuilder.core.TurnContext
   - name: instance
     description: The instance of the dialog on the stack
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.DialogInstance>
+    - botbuilder.dialogs.DialogInstance
   return:
     description: A task representing the asynchronous operation
 - uid: botbuilder.dialogs.Prompt.resume_dialog
@@ -212,17 +212,17 @@ methods:
     description: The dialog context for the current turn of the conversation.
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.DialogContext>
+    - botbuilder.dialogs.DialogContext
   - name: reason
     description: An enum indicating why the dialog resumed.
     isRequired: true
     types:
-    - <xref:botbuilder.dialogs.DialogReason>
+    - botbuilder.dialogs.DialogReason
   - name: result
     description: Optional, value returned from the previous dialog on the stack.
     isRequired: true
     types:
-    - <xref:object>
+    - object
   return:
     description: The dialog turn result
     types:

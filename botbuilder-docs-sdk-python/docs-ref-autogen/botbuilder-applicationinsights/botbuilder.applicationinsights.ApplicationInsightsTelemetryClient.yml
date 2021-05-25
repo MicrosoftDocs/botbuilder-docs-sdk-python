@@ -33,7 +33,7 @@ methods:
       Examples are stored procedure name and URL path template.'
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: data
     description: 'the command initiated by this dependency call. Examples are SQL
       statement and HTTP URL with all
@@ -41,32 +41,32 @@ methods:
       query parameters.'
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: type_name
     description: "the dependency type name. Low cardinality value for logical grouping\
       \ of dependencies and\ninterpretation of other fields like commandName and resultCode.\
       \ Examples are SQL, Azure table, and HTTP.\n\n   (default to: None)"
     defaultValue: None
     types:
-    - <xref:str>
+    - str
   - name: target
     description: 'the target site of a dependency call. Examples are server name,
       host address. (default to: None)'
     defaultValue: None
     types:
-    - <xref:str>
+    - str
   - name: duration
     description: 'the number of milliseconds that this dependency call lasted. (defaults
       to: None)'
     defaultValue: None
     types:
-    - <xref:int>
+    - int
   - name: success
     description: 'true if the dependency call ended in success, false otherwise. (defaults
       to: None)'
     defaultValue: None
     types:
-    - <xref:bool>
+    - bool
   - name: result_code
     description: 'the result code of a dependency call. Examples are SQL error code
       and HTTP status code.
@@ -74,7 +74,7 @@ methods:
       (defaults to: None)'
     defaultValue: None
     types:
-    - <xref:str>
+    - str
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item.
@@ -97,7 +97,7 @@ methods:
       (defaults to: None)'
     defaultValue: None
     types:
-    - <xref:str>
+    - str
 - uid: botbuilder.applicationinsights.ApplicationInsightsTelemetryClient.track_event
   name: track_event
   summary: Send information about a single event that has occurred in the context
@@ -109,7 +109,7 @@ methods:
     description: the data to associate to this event.
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
@@ -167,12 +167,12 @@ methods:
     description: The name of the metric that was captured.
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: value
     description: The value of the metric that was captured.
     isRequired: true
     types:
-    - <xref:float>
+    - float
   - name: tel_type
     description: 'The type of the metric. (defaults to: TelemetryDataPointType.aggregation`)'
     defaultValue: None
@@ -181,7 +181,7 @@ methods:
       (defaults to: None)'
     defaultValue: None
     types:
-    - <xref:int>
+    - int
   - name: min_val
     description: 'the minimum of all metrics collected that were aggregated into this
       data point. (defaults to:
@@ -189,7 +189,7 @@ methods:
       None)'
     defaultValue: None
     types:
-    - <xref:float>
+    - float
   - name: max_val
     description: 'the maximum of all metrics collected that were aggregated into this
       data point. (defaults to:
@@ -197,7 +197,7 @@ methods:
       None)'
     defaultValue: None
     types:
-    - <xref:float>
+    - float
   - name: std_dev
     description: 'the standard deviation of all metrics collected that were aggregated
       into this data point.
@@ -205,7 +205,7 @@ methods:
       (defaults to: None)'
     defaultValue: None
     types:
-    - <xref:float>
+    - float
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
@@ -223,12 +223,12 @@ methods:
     description: the name of the page that was viewed.
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: url
     description: the URL of the page that was viewed.
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: duration
     description: 'the duration of the page view in milliseconds. (defaults to: 0)'
     defaultValue: '0'
@@ -259,17 +259,17 @@ methods:
       grouped together.
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: url
     description: The actual URL for this request (to show in individual request instances).
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: success
     description: True if the request ended in success, False otherwise.
     isRequired: true
     types:
-    - <xref:bool>
+    - bool
   - name: start_time
     description: 'the start time of the request. The value should look the same as
       the one returned by
@@ -277,23 +277,23 @@ methods:
       <xref:datetime.isoformat>. (defaults to: None)'
     defaultValue: None
     types:
-    - <xref:str>
+    - str
   - name: duration
     description: 'the number of milliseconds that this request lasted. (defaults to:
       None)'
     defaultValue: None
     types:
-    - <xref:int>
+    - int
   - name: response_code
     description: 'the response code that this request returned. (defaults to: None)'
     defaultValue: None
     types:
-    - <xref:str>
+    - str
   - name: http_method
     description: 'the HTTP method that triggered this request. (defaults to: None)'
     defaultValue: None
     types:
-    - <xref:str>
+    - str
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
@@ -313,7 +313,7 @@ methods:
       (defaults to: None)'
     defaultValue: None
     types:
-    - <xref:str>
+    - str
 - uid: botbuilder.applicationinsights.ApplicationInsightsTelemetryClient.track_trace
   name: track_trace
   summary: Sends a single trace statement.
@@ -324,7 +324,7 @@ methods:
     description: the trace statement.
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'

@@ -25,18 +25,18 @@ constructor:
       client subscription.'
     isRequired: true
     types:
-    - <xref:None>
+    - None
   - name: base_url
     description: Service URL
     isRequired: true
     types:
-    - <xref:str>
+    - str
 variables:
 - description: Configuration for client.
   name: config
   types:
-  - <xref:botframework.connector.teams.teams_connector_client.TeamsConnectorClientConfiguration>
+  - botframework.connector.teams.teams_connector_client.TeamsConnectorClientConfiguration
 - description: Teams operations
   name: teams
   types:
-  - <xref:botframework.connector.teams.operations.TeamsOperations>
+  - botframework.connector.teams.operations.TeamsOperations

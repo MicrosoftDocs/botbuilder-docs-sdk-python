@@ -32,7 +32,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.TurnContext>
+    - botbuilder.core.bot_state.TurnContext
   return:
     description: None
   remarks: 'This function must be called in order for the cleared state to be persisted
@@ -48,7 +48,7 @@ methods:
     description: The name of the property
     isRequired: true
     types:
-    - <xref:str>
+    - str
   return:
     description: If successful, the state property accessor created
     types:
@@ -62,7 +62,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.TurnContext>
+    - botbuilder.core.bot_state.TurnContext
   return:
     description: None
 - uid: botbuilder.core.bot_state.BotState.delete_property_value
@@ -75,12 +75,12 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref::TurnContext`>
+    - :TurnContext`
   - name: property_name
     description: The name of the property to delete
     isRequired: true
     types:
-    - <xref:str>
+    - str
   return:
     description: None
 - uid: botbuilder.core.bot_state.BotState.get
@@ -102,7 +102,7 @@ methods:
     description: The context object for this turn.
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.TurnContext>
+    - botbuilder.core.bot_state.TurnContext
   return:
     description: The cached bot state instance.
 - uid: botbuilder.core.bot_state.BotState.get_property_value
@@ -115,12 +115,12 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.TurnContext>
+    - botbuilder.core.bot_state.TurnContext
   - name: property_name
     description: The property name
     isRequired: true
     types:
-    - <xref:str>
+    - str
   return:
     description: The value of the property
 - uid: botbuilder.core.bot_state.BotState.get_storage_key
@@ -141,12 +141,12 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.TurnContext>
+    - botbuilder.core.bot_state.TurnContext
   - name: force
     description: Optional, true to bypass the cache
     defaultValue: 'False'
     types:
-    - <xref:bool>
+    - bool
 - uid: botbuilder.core.bot_state.BotState.save_changes
   name: save_changes
   summary: 'Saves the state cached in the current context for this turn.
@@ -160,13 +160,13 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.TurnContext>
+    - botbuilder.core.bot_state.TurnContext
   - name: force
     description: Optional, true to save state to storage whether or not there are
       changes
     defaultValue: 'False'
     types:
-    - <xref:bool>
+    - bool
 - uid: botbuilder.core.bot_state.BotState.set_property_value
   name: set_property_value
   summary: Sets a property to the specified value in the turn context.
@@ -177,16 +177,16 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.bot_state.TurnContext>
+    - botbuilder.core.bot_state.TurnContext
   - name: property_name
     description: The property name
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: value
     description: The value to assign to the property
     isRequired: true
     types:
-    - <xref:Object>
+    - Object
   return:
     description: None

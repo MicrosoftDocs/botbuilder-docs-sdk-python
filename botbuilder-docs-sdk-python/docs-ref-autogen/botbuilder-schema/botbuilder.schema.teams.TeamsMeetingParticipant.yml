@@ -17,14 +17,14 @@ constructor:
     description: Teams Channel Account information for this meeting participant
     isRequired: true
     types:
-    - <xref:botbuilder.schema.teams.TeamsChannelAccount>
+    - botbuilder.schema.teams.TeamsChannelAccount
   - name: meeting
     description: '>Information specific to this participant in the specific meeting.'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.teams.MeetingParticipantInfo>
+    - botbuilder.schema.teams.MeetingParticipantInfo
   - name: conversation
     description: Conversation Account for the meeting.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.ConversationAccount>
+    - botbuilder.schema.ConversationAccount

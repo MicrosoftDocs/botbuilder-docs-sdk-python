@@ -28,7 +28,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext>
+    - botbuilder.core.TurnContext
   return:
     description: A task that represents the work queued to execute
   remarks: 'When the <xref:botbuilder.core.ActivityHandler.on_turn> method receives
@@ -65,7 +65,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext>
+    - botbuilder.core.TurnContext
   return:
     description: A task that represents the work queued to execute
 - uid: botbuilder.core.ActivityHandler.on_event
@@ -80,7 +80,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext>
+    - botbuilder.core.TurnContext
   return:
     description: A task that represents the work queued to execute
   remarks: 'When the <xref:botbuilder.core.ActivityHandler.on_event_activity> is used
@@ -104,7 +104,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext>
+    - botbuilder.core.TurnContext
   return:
     description: A task that represents the work queued to execute
   remarks: 'When the <xref:botbuilder.core.ActivityHandler.on_turn> method receives
@@ -166,7 +166,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext>
+    - botbuilder.core.TurnContext
   return:
     description: A task that represents the work queued to execute
 - uid: botbuilder.core.ActivityHandler.on_installation_update_add
@@ -180,7 +180,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext>
+    - botbuilder.core.TurnContext
   return:
     description: A task that represents the work queued to execute
 - uid: botbuilder.core.ActivityHandler.on_installation_update_remove
@@ -194,7 +194,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext>
+    - botbuilder.core.TurnContext
   return:
     description: A task that represents the work queued to execute
 - uid: botbuilder.core.ActivityHandler.on_invoke_activity
@@ -208,7 +208,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext>
+    - botbuilder.core.TurnContext
   return:
     description: A task that represents the work queued to execute
 - uid: botbuilder.core.ActivityHandler.on_members_added_activity
@@ -288,7 +288,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext>
+    - botbuilder.core.TurnContext
   return:
     description: A task that represents the work queued to execute
 - uid: botbuilder.core.ActivityHandler.on_message_reaction_activity
@@ -303,7 +303,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext>
+    - botbuilder.core.TurnContext
   return:
     description: A task that represents the work queued to execute
   remarks: "Message reactions correspond to the user adding a 'like' or 'sad' etc.\
@@ -333,12 +333,12 @@ methods:
     description: The list of reactions added
     isRequired: true
     types:
-    - <xref:typing.List>
+    - typing.List
   - name: turn_context
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext>
+    - botbuilder.core.TurnContext
   return:
     description: A task that represents the work queued to execute
   remarks: 'Message reactions correspond to the user adding a ''like'' or ''sad''
@@ -371,12 +371,12 @@ methods:
     description: The list of reactions removed
     isRequired: true
     types:
-    - <xref:typing.List>
+    - typing.List
   - name: turn_context
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext>
+    - botbuilder.core.TurnContext
   return:
     description: A task that represents the work queued to execute
   remarks: 'Message reactions correspond to the user adding a ''like'' or ''sad''
@@ -412,7 +412,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext>
+    - botbuilder.core.TurnContext
   return:
     description: A task that represents the work queued to execute
 - uid: botbuilder.core.ActivityHandler.on_token_response_event
@@ -430,7 +430,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext>
+    - botbuilder.core.TurnContext
   return:
     description: A task that represents the work queued to execute
   remarks: 'When the <xref:botbuilder.core.ActivityHandler.on_event> method receives
@@ -454,7 +454,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext>
+    - botbuilder.core.TurnContext
   return:
     description: A task that represents the work queued to execute
   remarks: 'It calls other methods in this class based on the type of the activity
@@ -484,7 +484,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext>
+    - botbuilder.core.TurnContext
   return:
     description: A task that represents the work queued to execute
 - uid: botbuilder.core.ActivityHandler.on_unrecognized_activity_type
@@ -502,7 +502,7 @@ methods:
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext>
+    - botbuilder.core.TurnContext
   return:
     description: A task that represents the work queued to execute
   remarks: 'When the <xref:botbuilder.core.ActivityHandler.on_turn> method receives

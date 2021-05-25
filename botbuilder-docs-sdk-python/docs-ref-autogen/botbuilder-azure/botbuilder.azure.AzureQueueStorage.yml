@@ -21,7 +21,7 @@ methods:
     description: The activity to be queued for later processing.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.Activity>
+    - botbuilder.schema.Activity
   - name: visibility_timeout
     description: 'Visibility timeout in seconds. Optional with a default value of
       0.
@@ -29,12 +29,12 @@ methods:
       Cannot be larger than 7 days.'
     defaultValue: None
     types:
-    - <xref:int>
+    - int
   - name: time_to_live
     description: Specifies the time-to-live interval for the message in seconds.
     defaultValue: None
     types:
-    - <xref:int>
+    - int
   return:
     description: QueueMessage as a JSON string.
     types:

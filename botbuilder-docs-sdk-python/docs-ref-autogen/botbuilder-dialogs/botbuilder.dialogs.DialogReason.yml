@@ -8,25 +8,25 @@ variables:
 - description: A dialog is being started through a call to <xref:DialogContext.begin>.
   name: BeginCalled
   types:
-  - <xref:int>
+  - int
 - description: A dialog is being continued through a call to <xref:botbuilder.dialogs.DialogContext.continue_dialog>.
   name: ContinueCalled
   types:
-  - <xref:int>
+  - int
 - description: A dialog ended normally through a call to :meth:>>`<<DialogContext.end_dialog()
   name: EndCalled
   types:
-  - <xref:int>
+  - int
 - description: A dialog is ending and replaced through a call to :meth:>>``<<DialogContext.replace_dialog()`.
   name: ReplaceCalled
 - description: A dialog was cancelled as part of a call to <xref:botbuilder.dialogs.DialogContext.cancel_all_dialogs>.
   name: CancelCalled
   types:
-  - <xref:int>
+  - int
 - description: A preceding step was skipped through a call to <xref:botbuilder.dialogs.WaterfallStepContext.next>.
   name: NextCalled
   types:
-  - <xref:int>
+  - int
 inheritances:
 - enum.Enum
 fields:

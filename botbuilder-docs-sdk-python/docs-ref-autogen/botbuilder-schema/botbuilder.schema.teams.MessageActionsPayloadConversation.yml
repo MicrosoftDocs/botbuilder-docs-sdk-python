@@ -16,17 +16,17 @@ constructor:
       team or channel. Possible values include: ''team'', ''channel'''
     isRequired: true
     types:
-    - <xref:str>
-    - <xref:botframework.connector.teams.models.enum>
+    - str
+    - botframework.connector.teams.models.enum
   - name: id
     description: The id of the team or channel.
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: display_name
     description: 'The plaintext display name of the team or channel
 
       entity.'
     isRequired: true
     types:
-    - <xref:str>
+    - str

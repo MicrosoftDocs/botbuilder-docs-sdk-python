@@ -26,27 +26,27 @@ methods:
     description: A reference to the conversation to continue.
     isRequired: true
     types:
-    - <xref:botbuilder.schema.ConversationReference>
+    - botbuilder.schema.ConversationReference
   - name: callback
     description: The method to call for the resulting bot turn.
     isRequired: true
     types:
-    - <xref:typing.Callable>
+    - typing.Callable
   - name: bot_id
     description: Unused for this override.
     defaultValue: None
     types:
-    - <xref:str>
+    - str
   - name: claims_identity
     description: A ClaimsIdentity for the conversation.
     defaultValue: None
     types:
-    - <xref:botframework.connector.auth.ClaimsIdentity>
+    - botframework.connector.auth.ClaimsIdentity
   - name: audience
     description: Unused for this override.
     defaultValue: None
     types:
-    - <xref:str>
+    - str
   remarks: "Most channels require a user to initiate a conversation with a bot before\
     \ the bot can send activities to the\n   user.\n"
 - uid: botbuilder.adapters.slack.SlackAdapter.delete_activity
@@ -59,7 +59,7 @@ methods:
     description: A TurnContext representing the current incoming message and environment.
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext>
+    - botbuilder.core.TurnContext
   - name: reference
     description: 'An object in the form "{activityId: *id of message to delete*,conversation:
       { id: *id of Slack
@@ -67,7 +67,7 @@ methods:
       channel*}}".'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.ConversationReference>
+    - botbuilder.schema.ConversationReference
 - uid: botbuilder.adapters.slack.SlackAdapter.process
   name: process
   summary: Accept an incoming webhook request and convert it into a TurnContext which
@@ -84,11 +84,11 @@ methods:
     description: The method to call for the resulting bot turn.
     isRequired: true
     types:
-    - <xref:tying.Callable>
+    - tying.Callable
   return:
     description: The aiohttp Response.
     types:
-    - <xref:[aiohttp.web_response.Response](aiohttp.web_response.Response)>
+    - '[aiohttp.web_response.Response](aiohttp.web_response.Response)'
 - uid: botbuilder.adapters.slack.SlackAdapter.send_activities
   name: send_activities
   summary: Send a message from the bot to the messaging API.
@@ -99,7 +99,7 @@ methods:
     description: A TurnContext representing the current incoming message and environment.
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext>
+    - botbuilder.core.TurnContext
   - name: activities
     description: An array of outgoing activities to be sent back to the messaging
       API.
@@ -110,7 +110,7 @@ methods:
     description: An array of ResourceResponse objects containing the IDs that Slack
       assigned to the sent messages.
     types:
-    - <xref:<xref:typing.List[ResourceResponse]>>
+    - <xref:typing.List[ResourceResponse]>
 - uid: botbuilder.adapters.slack.SlackAdapter.update_activity
   name: update_activity
   summary: Update a previous message with new content.
@@ -121,13 +121,13 @@ methods:
     description: A TurnContext representing the current incoming message and environment.
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext>
+    - botbuilder.core.TurnContext
   - name: activity
     description: 'The updated activity in the form ''{id: *id of activity to update*,
       ...}''.'
     isRequired: true
     types:
-    - <xref:botbuilder.schema.Activity>
+    - botbuilder.schema.Activity
   return:
     description: A resource response with the ID of the updated activity.
     types:

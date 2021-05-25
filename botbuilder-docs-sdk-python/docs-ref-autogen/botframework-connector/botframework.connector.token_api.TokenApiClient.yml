@@ -14,22 +14,22 @@ constructor:
       client subscription.'
     isRequired: true
     types:
-    - <xref:None>
+    - None
   - name: base_url
     description: Service URL
     isRequired: true
     types:
-    - <xref:str>
+    - str
 variables:
 - description: Configuration for client.
   name: config
   types:
-  - <xref:botframework.connector.token_api.TokenApiClientConfiguration>
+  - botframework.connector.token_api.TokenApiClientConfiguration
 - description: BotSignIn operations
   name: bot_sign_in
   types:
-  - <xref:botframework.tokenapi.operations.BotSignInOperations>
+  - botframework.tokenapi.operations.BotSignInOperations
 - description: UserToken operations
   name: user_token
   types:
-  - <xref:botframework.tokenapi.operations.UserTokenOperations>
+  - botframework.tokenapi.operations.UserTokenOperations

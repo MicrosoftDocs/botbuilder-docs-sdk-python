@@ -16,26 +16,26 @@ constructor:
       ''dateInput'', ''multichoiceInput'''
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: id
     description: Input Id. It must be unique per entire O365 connector card.
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: is_required
     description: 'Define if this input is a required field. Default
 
       value is false.'
     isRequired: true
     types:
-    - <xref:bool>
+    - bool
   - name: title
     description: Input title that will be shown as the placeholder
     isRequired: true
     types:
-    - <xref:str>
+    - str
   - name: value
     description: Default value for this input field
     isRequired: true
     types:
-    - <xref:str>
+    - str

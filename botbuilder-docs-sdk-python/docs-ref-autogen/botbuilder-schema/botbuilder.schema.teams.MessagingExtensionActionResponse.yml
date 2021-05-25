@@ -15,13 +15,13 @@ constructor:
     description: The JSON for the Adaptive card to appear in the task module.
     isRequired: true
     types:
-    - <xref:botframework.connector.teams.models.TaskModuleResponseBase>
+    - botframework.connector.teams.models.TaskModuleResponseBase
   - name: compose_extension
     isRequired: true
     types:
-    - <xref:botframework.connector.teams.models.MessagingExtensionResult>
+    - botframework.connector.teams.models.MessagingExtensionResult
   - name: cache_info
     description: CacheInfo for this MessagingExtensionActionResponse.
     isRequired: true
     types:
-    - <xref:botframework.connector.teams.models.CacheInfo>
+    - botframework.connector.teams.models.CacheInfo

@@ -41,7 +41,7 @@ methods:
       with a user.
     isRequired: true
     types:
-    - <xref:botbuilder.core.TurnContext>
+    - botbuilder.core.TurnContext
   - name: telemetry_properties
     description: Properties to add/override for the event.
     defaultValue: None
@@ -76,7 +76,7 @@ methods:
     description: A list of answers for the user's query, sorted in decreasing order
       of ranking score.
     types:
-    - <xref:<xref:typing.List[QueryResult]>>
+    - <xref:typing.List[QueryResult]>
 - uid: botbuilder.ai.qna.qnamaker.QnAMaker.get_answers_raw
   name: get_answers_raw
   summary: Generates raw answers from the knowledge base.
@@ -108,11 +108,11 @@ methods:
     description: User query output.
     isRequired: true
     types:
-    - <xref:botbuilder.ai.qna.qnamaker.QueryResult>
+    - botbuilder.ai.qna.qnamaker.QueryResult
   return:
     description: Filtered array of ambiguous questions.
     types:
-    - <xref:<xref:typing.List[QueryResult]>>
+    - <xref:typing.List[QueryResult]>
 - uid: botbuilder.ai.qna.qnamaker.QnAMaker.on_qna_result
   name: on_qna_result
   signature: 'on_qna_result(query_results: [<class ''botbuilder.ai.qna.models.query_result.QueryResult''>],
