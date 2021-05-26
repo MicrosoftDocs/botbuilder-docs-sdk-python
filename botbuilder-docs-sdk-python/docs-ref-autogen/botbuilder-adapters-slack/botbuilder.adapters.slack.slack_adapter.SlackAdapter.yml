@@ -88,7 +88,7 @@ methods:
   return:
     description: The aiohttp Response.
     types:
-    - '[aiohttp.web_response.Response](aiohttp.web_response.Response)'
+    - '[<xref:aiohttp.web_response.Response>](<xref:aiohttp.web_response.Response>)'
 - uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.send_activities
   name: send_activities
   summary: Send a message from the bot to the messaging API.
@@ -110,7 +110,7 @@ methods:
     description: An array of ResourceResponse objects containing the IDs that Slack
       assigned to the sent messages.
     types:
-    - <xref:typing.List[ResourceResponse]>
+    - <xref:typing.List>[<xref:ResourceResponse>]
 - uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.update_activity
   name: update_activity
   summary: Update a previous message with new content.
