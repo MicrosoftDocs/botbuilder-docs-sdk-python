@@ -318,7 +318,9 @@ methods:
   return:
     description: A member of the current conversation
   exceptions:
-  - type: A TypeError if missing member_id, service_url, or conversation.id
+  - type: A TypeError if missing member_id
+  - type: service_url
+  - type: or conversation.id
 - uid: botbuilder.core.BotFrameworkAdapter.get_conversation_members
   name: get_conversation_members
   summary: Lists the members of a current conversation.
