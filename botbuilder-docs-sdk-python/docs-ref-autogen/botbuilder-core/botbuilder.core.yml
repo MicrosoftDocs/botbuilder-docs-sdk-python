@@ -30,10 +30,11 @@ classes:
 - botbuilder.core.BotTelemetryClient
 - botbuilder.core.CardFactory
 - botbuilder.core.ChannelServiceHandler
+- botbuilder.core.CloudAdapterBase
+- botbuilder.core.CloudChannelServiceHandler
 - botbuilder.core.ComponentRegistration
 - botbuilder.core.ConversationState
 - botbuilder.core.ExtendedUserTokenProvider
-- botbuilder.core.HealthCheck
 - botbuilder.core.IntentScore
 - botbuilder.core.InvokeResponse
 - botbuilder.core.MemoryStorage
@@ -44,9 +45,9 @@ classes:
 - botbuilder.core.NullTelemetryClient
 - botbuilder.core.PrivateConversationState
 - botbuilder.core.QueueStorage
-- botbuilder.core.RegisterClassMiddleware
 - botbuilder.core.Recognizer
 - botbuilder.core.RecognizerResult
+- botbuilder.core.RegisterClassMiddleware
 - botbuilder.core.ShowTypingMiddleware
 - botbuilder.core.StatePropertyAccessor
 - botbuilder.core.StatePropertyInfo
@@ -67,6 +68,7 @@ packages:
 - botbuilder.core.integration
 - botbuilder.core.oauth
 - botbuilder.core.skills
+- botbuilder.core.streaming
 - botbuilder.core.teams
 modules:
 - botbuilder.core.about
@@ -82,10 +84,12 @@ modules:
 - botbuilder.core.bot_telemetry_client
 - botbuilder.core.card_factory
 - botbuilder.core.channel_service_handler
+- botbuilder.core.cloud_adapter_base
+- botbuilder.core.cloud_channel_service_handler
 - botbuilder.core.component_registration
+- botbuilder.core.configuration_service_client_credentials_factory
 - botbuilder.core.conversation_reference_extension
 - botbuilder.core.conversation_state
-- botbuilder.core.healthcheck
 - botbuilder.core.intent_score
 - botbuilder.core.invoke_response
 - botbuilder.core.memory_storage

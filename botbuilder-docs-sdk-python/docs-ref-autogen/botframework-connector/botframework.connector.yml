@@ -4,20 +4,34 @@ name: connector
 fullName: botframework.connector
 type: import
 classes:
+- botframework.connector.AsyncBfPipeline
+- botframework.connector.BotFrameworkConnectorConfiguration
 - botframework.connector.ConnectorClient
 - botframework.connector.EmulatorApiClient
+- botframework.connector.HttpClientBase
+- botframework.connector.HttpClientFactory
+- botframework.connector.HttpRequest
+- botframework.connector.HttpResponseBase
 packages:
 - botframework.connector.aio
 - botframework.connector.async_mixin
 - botframework.connector.auth
 - botframework.connector.models
 - botframework.connector.operations
+- botframework.connector.skills
 - botframework.connector.teams
 - botframework.connector.token_api
 modules:
+- botframework.connector.about
+- botframework.connector.aiohttp_bf_pipeline
+- botframework.connector.bot_framework_sdk_client_async
 - botframework.connector.channels
 - botframework.connector.connector_client
 - botframework.connector.emulator_api_client
+- botframework.connector.http_client_base
+- botframework.connector.http_client_factory
+- botframework.connector.http_request
+- botframework.connector.http_response_base
 - botframework.connector.version
 enums:
 - botframework.connector.Channels

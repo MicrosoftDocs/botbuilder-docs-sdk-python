@@ -9,17 +9,18 @@ summary: 'An Activity is the basic communication type for the Bot Framework 3.0
 
   protocol.'
 constructor:
-  syntax: 'Activity(*, type=None, id: str = None, timestamp=None, local_timestamp=None,
-    local_timezone: str = None, service_url: str = None, channel_id: str = None, from_property=None,
-    conversation=None, recipient=None, text_format=None, attachment_layout=None, members_added=None,
-    members_removed=None, reactions_added=None, reactions_removed=None, topic_name:
-    str = None, history_disclosed: bool = None, locale: str = None, text: str = None,
-    speak: str = None, input_hint=None, summary: str = None, suggested_actions=None,
-    attachments=None, entities=None, channel_data=None, action: str = None, reply_to_id:
-    str = None, label: str = None, value_type: str = None, value=None, name: str =
-    None, relates_to=None, code=None, expiration=None, importance=None, delivery_mode=None,
-    listen_for=None, text_highlights=None, semantic_action=None, caller_id: str =
-    None, **kwargs) -> None'
+  syntax: 'Activity(*, type=None, id: Optional[str] = None, timestamp=None, local_timestamp=None,
+    local_timezone: Optional[str] = None, service_url: Optional[str] = None, channel_id:
+    Optional[str] = None, from_property=None, conversation=None, recipient=None, text_format=None,
+    attachment_layout=None, members_added=None, members_removed=None, reactions_added=None,
+    reactions_removed=None, topic_name: Optional[str] = None, history_disclosed: Optional[bool]
+    = None, locale: Optional[str] = None, text: Optional[str] = None, speak: Optional[str]
+    = None, input_hint=None, summary: Optional[str] = None, suggested_actions=None,
+    attachments=None, entities=None, channel_data=None, action: Optional[str] = None,
+    reply_to_id: Optional[str] = None, label: Optional[str] = None, value_type: Optional[str]
+    = None, value=None, name: Optional[str] = None, relates_to=None, code=None, expiration=None,
+    importance=None, delivery_mode=None, listen_for=None, text_highlights=None, semantic_action=None,
+    caller_id: Optional[str] = None, **kwargs) -> None'
   parameters:
   - name: type
     description: 'Contains the activity type. Possible values include:
@@ -334,7 +335,6 @@ methods:
   summary: 'Updates this activity with the delivery information from an existing ConversationReference
 
 
-
     incoming activity, where the bot is the recipient; otherwise, False.
 
     Default is False, and the activity will show the bot as the sender.'
@@ -518,13 +518,15 @@ methods:
 - uid: botbuilder.schema.Activity.create_reply
   name: create_reply
   summary: Creates a new message activity as a response to this activity.
-  signature: 'create_reply(text: str = None, locale: str = None)'
+  signature: 'create_reply(text: Optional[str] = None, locale: Optional[str] = None)'
   parameters:
   - name: text
     description: The text of the reply.
+    isRequired: true
     defaultValue: None
   - name: locale
     description: The language code for the text.
+    isRequired: true
     defaultValue: None
   return:
     description: The new message activity.
@@ -536,12 +538,11 @@ methods:
   summary: 'Creates a new trace activity based on this activity.
 
 
-
     Default is the name of type of the value.
 
     :param label: Optional, a descriptive label for this trace operation.'
-  signature: 'create_trace(name: str, value: object = None, value_type: str = None,
-    label: str = None)'
+  signature: 'create_trace(name: str, value: Optional[object] = None, value_type:
+    Optional[str] = None, label: Optional[str] = None)'
   parameters:
   - name: name
     isRequired: true
@@ -559,12 +560,11 @@ methods:
     a TraceActivity object.
 
 
-
     Default is the name of type of the value.
 
     :param label: Optional, a descriptive label for this trace operation.'
-  signature: 'create_trace_activity(name: str, value: object = None, value_type: str
-    = None, label: str = None)'
+  signature: 'create_trace_activity(name: str, value: Optional[object] = None, value_type:
+    Optional[str] = None, label: Optional[str] = None)'
   parameters:
   - name: name
     isRequired: true
@@ -593,7 +593,7 @@ methods:
 - uid: botbuilder.schema.Activity.get_mentions
   name: get_mentions
   summary: Resolves the mentions from the entities of this activity.
-  signature: get_mentions() -> [<class 'botbuilder.schema._models_py3.Mention'>]
+  signature: get_mentions() -> List[botbuilder.schema._models_py3.Mention]
   return:
     description: The array of mentions; or an empty array, if none are found.
   remarks: 'This method is defined on the <xref:botbuilder.schema.Activity> class,

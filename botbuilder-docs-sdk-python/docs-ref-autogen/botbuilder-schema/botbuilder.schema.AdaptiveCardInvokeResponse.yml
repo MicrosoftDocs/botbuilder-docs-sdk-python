@@ -1,0 +1,31 @@
+### YamlMime:PythonClass
+uid: botbuilder.schema.AdaptiveCardInvokeResponse
+name: AdaptiveCardInvokeResponse
+fullName: botbuilder.schema.AdaptiveCardInvokeResponse
+module: botbuilder.schema
+inheritances:
+- msrest.serialization.Model
+summary: 'AdaptiveCardInvokeResponse.
+
+
+  Defines the structure that is returned as the result of an Invoke activity with
+  Name of ''adaptiveCard/action''.'
+constructor:
+  syntax: 'AdaptiveCardInvokeResponse(*, status_code: Optional[int] = None, type:
+    Optional[str] = None, value=None, **kwargs) -> None'
+  parameters:
+  - name: status_code
+    description: The Card Action Response StatusCode.
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: type
+    description: The type of this Card Action Response.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: value
+    description: The JSON response object.
+    isRequired: true
+    types:
+    - <xref:dict>[<xref:str>, <xref:object>]

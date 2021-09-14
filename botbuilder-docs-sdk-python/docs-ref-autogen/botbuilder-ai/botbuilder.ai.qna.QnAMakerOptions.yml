@@ -5,5 +5,11 @@ fullName: botbuilder.ai.qna.QnAMakerOptions
 module: botbuilder.ai.qna
 inheritances:
 - builtins.object
-summary: "Defines options used to configure a *QnAMaker* instance.\n\n\n   All parameters\
+summary: "Defines options used to configure a *QnAMaker* instance.\n\n   All parameters\
   \ are optional."
+constructor:
+  syntax: 'QnAMakerOptions(score_threshold: float = 0.0, timeout: int = 0, top: int
+    = 0, strict_filters: [<class ''botbuilder.ai.qna.models.metadata.Metadata''>]
+    = None, context: [<class ''botbuilder.ai.qna.models.qna_request_context.QnARequestContext''>]
+    = None, qna_id: int = None, is_test: bool = False, ranker_type: str = ''Default'',
+    strict_filters_join_operator: str = <JoinOperator.AND: ''AND''>)'

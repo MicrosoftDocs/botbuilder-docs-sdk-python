@@ -17,6 +17,7 @@ methods:
 
     :param options: (Optional) additional argument(s) to pass to the dialog being
     started.'
+  signature: 'begin_dialog(dialog_context: DialogContext, options: object = None)'
   parameters:
   - name: dialog_context
     isRequired: true
@@ -38,6 +39,7 @@ methods:
     :param dialog_context: The dialog context for the current turn of conversation.
 
     :return:'
+  signature: 'continue_dialog(dialog_context: DialogContext)'
   parameters:
   - name: dialog_context
     isRequired: true
@@ -59,6 +61,8 @@ methods:
   name: on_dialog_event
   summary: "Called when an event has been raised, using *DialogContext.emitEvent()*,\
     \ by either the current dialog or a\n   dialog that the current dialog started."
+  signature: 'on_dialog_event(dialog_context: DialogContext, dialog_event: botbuilder.dialogs.dialog_event.DialogEvent)
+    -> bool'
   parameters:
   - name: dialog_context
     description: The dialog context for the current turn of conversation.
@@ -102,6 +106,8 @@ methods:
     dependent on the dialog that was called.
 
     :return:'
+  signature: 'resume_dialog(dialog_context: DialogContext, reason: botbuilder.dialogs.dialog_reason.DialogReason,
+    result: object)'
   parameters:
   - name: dialog_context
     isRequired: true
@@ -110,6 +116,8 @@ methods:
   - name: result
     isRequired: true
 attributes:
+- uid: botbuilder.dialogs.Dialog.id
+  name: id
 - uid: botbuilder.dialogs.Dialog.telemetry_client
   name: telemetry_client
   summary: Gets the telemetry client for logging events.

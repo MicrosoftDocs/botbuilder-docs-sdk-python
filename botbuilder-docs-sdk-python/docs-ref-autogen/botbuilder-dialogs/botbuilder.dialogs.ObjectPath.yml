@@ -6,12 +6,15 @@ module: botbuilder.dialogs
 inheritances:
 - builtins.object
 summary: Helper methods for working with json objects.
+constructor:
+  syntax: ObjectPath()
 methods:
 - uid: botbuilder.dialogs.ObjectPath.assign
   name: assign
   summary: Creates a new object by overlaying values in start_object with non-null
     values from overlay_object.
-  signature: 'assign(start_object, overlay_object, default: object = None)'
+  signature: 'assign(start_object, overlay_object, default: Optional[Union[Callable,
+    object]] = None)'
   parameters:
   - name: start_object
     description: dict or typed object, the target object to set values on
@@ -21,13 +24,13 @@ methods:
     isRequired: true
   - name: default
     description: Provides a default object if both source and overlay are None
+    isRequired: true
     defaultValue: None
   return:
     description: A copy of start_object, with values from overlay_object
 - uid: botbuilder.dialogs.ObjectPath.for_each_property
   name: for_each_property
-  signature: 'for_each_property(obj: object, action: typing.Callable[[str, object],
-    NoneType])'
+  signature: 'for_each_property(obj: object, action: Callable[[str, object], None])'
   parameters:
   - name: obj
     isRequired: true
@@ -36,7 +39,8 @@ methods:
 - uid: botbuilder.dialogs.ObjectPath.get_path_value
   name: get_path_value
   summary: Get the value for a path relative to an object.
-  signature: 'get_path_value(obj, path: str, default: object = None) -> object'
+  signature: 'get_path_value(obj, path: str, default: Optional[Union[Callable, object]]
+    = None) -> object'
   parameters:
   - name: obj
     isRequired: true

@@ -17,8 +17,8 @@ constructor:
 methods:
 - uid: botbuilder.core.MiddlewareSet.on_turn
   name: on_turn
-  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: typing.Callable[botbuilder.core.turn_context.TurnContext,
-    typing.Awaitable])'
+  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: Callable[[botbuilder.core.turn_context.TurnContext],
+    Awaitable])'
   parameters:
   - name: context
     isRequired: true
@@ -33,8 +33,8 @@ methods:
 - uid: botbuilder.core.MiddlewareSet.receive_activity_internal
   name: receive_activity_internal
   signature: 'receive_activity_internal(context: botbuilder.core.turn_context.TurnContext,
-    callback: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable],
-    next_middleware_index: int = 0)'
+    callback: Callable[[botbuilder.core.turn_context.TurnContext], Awaitable], next_middleware_index:
+    int = 0)'
   parameters:
   - name: context
     isRequired: true
@@ -45,7 +45,7 @@ methods:
 - uid: botbuilder.core.MiddlewareSet.receive_activity_with_status
   name: receive_activity_with_status
   signature: 'receive_activity_with_status(context: botbuilder.core.turn_context.TurnContext,
-    callback: typing.Callable[botbuilder.core.turn_context.TurnContext, typing.Awaitable])'
+    callback: Callable[[botbuilder.core.turn_context.TurnContext], Awaitable])'
   parameters:
   - name: context
     isRequired: true

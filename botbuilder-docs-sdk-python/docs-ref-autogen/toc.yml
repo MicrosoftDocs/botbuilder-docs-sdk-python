@@ -708,10 +708,28 @@
       name: botbuilder.core.channel_service_handler
     - items:
       - name: Overview
+        uid: botbuilder.core.cloud_adapter_base
+      - name: botbuilder.core.cloud_adapter_base.CloudAdapterBase
+        uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase
+      name: botbuilder.core.cloud_adapter_base
+    - items:
+      - name: Overview
+        uid: botbuilder.core.cloud_channel_service_handler
+      - name: botbuilder.core.cloud_channel_service_handler.CloudChannelServiceHandler
+        uid: botbuilder.core.cloud_channel_service_handler.CloudChannelServiceHandler
+      name: botbuilder.core.cloud_channel_service_handler
+    - items:
+      - name: Overview
         uid: botbuilder.core.component_registration
       - name: botbuilder.core.component_registration.ComponentRegistration
         uid: botbuilder.core.component_registration.ComponentRegistration
       name: botbuilder.core.component_registration
+    - items:
+      - name: Overview
+        uid: botbuilder.core.configuration_service_client_credentials_factory
+      - name: botbuilder.core.configuration_service_client_credentials_factory.ConfigurationServiceClientCredentialFactory
+        uid: botbuilder.core.configuration_service_client_credentials_factory.ConfigurationServiceClientCredentialFactory
+      name: botbuilder.core.configuration_service_client_credentials_factory
     - name: botbuilder.core.conversation_reference_extension
       uid: botbuilder.core.conversation_reference_extension
     - items:
@@ -720,12 +738,6 @@
       - name: botbuilder.core.conversation_state.ConversationState
         uid: botbuilder.core.conversation_state.ConversationState
       name: botbuilder.core.conversation_state
-    - items:
-      - name: Overview
-        uid: botbuilder.core.healthcheck
-      - name: botbuilder.core.healthcheck.HealthCheck
-        uid: botbuilder.core.healthcheck.HealthCheck
-      name: botbuilder.core.healthcheck
     - items:
       - name: Overview
         uid: botbuilder.core.inspection
@@ -915,10 +927,22 @@
         name: botbuilder.core.skills.bot_framework_skill
       - items:
         - name: Overview
+          uid: botbuilder.core.skills.cloud_skill_handler
+        - name: botbuilder.core.skills.cloud_skill_handler.CloudSkillHandler
+          uid: botbuilder.core.skills.cloud_skill_handler.CloudSkillHandler
+        name: botbuilder.core.skills.cloud_skill_handler
+      - items:
+        - name: Overview
           uid: botbuilder.core.skills.conversation_id_factory
         - name: botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase
           uid: botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase
         name: botbuilder.core.skills.conversation_id_factory
+      - items:
+        - name: Overview
+          uid: botbuilder.core.skills.skill_conversation_id_factory
+        - name: botbuilder.core.skills.skill_conversation_id_factory.SkillConversationIdFactory
+          uid: botbuilder.core.skills.skill_conversation_id_factory.SkillConversationIdFactory
+        name: botbuilder.core.skills.skill_conversation_id_factory
       - items:
         - name: Overview
           uid: botbuilder.core.skills.skill_conversation_id_factory_options
@@ -943,6 +967,8 @@
         uid: botbuilder.core.skills.BotFrameworkSkill
       - name: botbuilder.core.skills.ConversationIdFactoryBase
         uid: botbuilder.core.skills.ConversationIdFactoryBase
+      - name: botbuilder.core.skills.SkillConversationIdFactory
+        uid: botbuilder.core.skills.SkillConversationIdFactory
       - name: botbuilder.core.skills.SkillConversationIdFactoryOptions
         uid: botbuilder.core.skills.SkillConversationIdFactoryOptions
       - name: botbuilder.core.skills.SkillConversationReference
@@ -970,6 +996,54 @@
       - name: botbuilder.core.storage.StoreItem
         uid: botbuilder.core.storage.StoreItem
       name: botbuilder.core.storage
+    - items:
+      - name: Overview
+        uid: botbuilder.core.streaming
+      - items:
+        - name: Overview
+          uid: botbuilder.core.streaming.bot_framework_http_adapter_base
+        - name: botbuilder.core.streaming.bot_framework_http_adapter_base.BotFrameworkHttpAdapterBase
+          uid: botbuilder.core.streaming.bot_framework_http_adapter_base.BotFrameworkHttpAdapterBase
+        name: botbuilder.core.streaming.bot_framework_http_adapter_base
+      - items:
+        - name: Overview
+          uid: botbuilder.core.streaming.streaming_activity_processor
+        - name: botbuilder.core.streaming.streaming_activity_processor.StreamingActivityProcessor
+          uid: botbuilder.core.streaming.streaming_activity_processor.StreamingActivityProcessor
+        name: botbuilder.core.streaming.streaming_activity_processor
+      - items:
+        - name: Overview
+          uid: botbuilder.core.streaming.streaming_http_client
+        - name: botbuilder.core.streaming.streaming_http_client.StreamingHttpDriver
+          uid: botbuilder.core.streaming.streaming_http_client.StreamingHttpDriver
+        - name: botbuilder.core.streaming.streaming_http_client.StreamingProtocolClientResponse
+          uid: botbuilder.core.streaming.streaming_http_client.StreamingProtocolClientResponse
+        name: botbuilder.core.streaming.streaming_http_client
+      - items:
+        - name: Overview
+          uid: botbuilder.core.streaming.streaming_request_handler
+        - name: botbuilder.core.streaming.streaming_request_handler.StreamContent
+          uid: botbuilder.core.streaming.streaming_request_handler.StreamContent
+        - name: botbuilder.core.streaming.streaming_request_handler.StreamingRequestHandler
+          uid: botbuilder.core.streaming.streaming_request_handler.StreamingRequestHandler
+        name: botbuilder.core.streaming.streaming_request_handler
+      - items:
+        - name: Overview
+          uid: botbuilder.core.streaming.version_info
+        - name: botbuilder.core.streaming.version_info.VersionInfo
+          uid: botbuilder.core.streaming.version_info.VersionInfo
+        name: botbuilder.core.streaming.version_info
+      - name: botbuilder.core.streaming.BotFrameworkHttpAdapterBase
+        uid: botbuilder.core.streaming.BotFrameworkHttpAdapterBase
+      - name: botbuilder.core.streaming.StreamingActivityProcessor
+        uid: botbuilder.core.streaming.StreamingActivityProcessor
+      - name: botbuilder.core.streaming.StreamingHttpDriver
+        uid: botbuilder.core.streaming.StreamingHttpDriver
+      - name: botbuilder.core.streaming.StreamingRequestHandler
+        uid: botbuilder.core.streaming.StreamingRequestHandler
+      - name: botbuilder.core.streaming.VersionInfo
+        uid: botbuilder.core.streaming.VersionInfo
+      name: botbuilder.core.streaming
     - items:
       - name: Overview
         uid: botbuilder.core.teams
@@ -1078,14 +1152,16 @@
       uid: botbuilder.core.CardFactory
     - name: botbuilder.core.ChannelServiceHandler
       uid: botbuilder.core.ChannelServiceHandler
+    - name: botbuilder.core.CloudAdapterBase
+      uid: botbuilder.core.CloudAdapterBase
+    - name: botbuilder.core.CloudChannelServiceHandler
+      uid: botbuilder.core.CloudChannelServiceHandler
     - name: botbuilder.core.ComponentRegistration
       uid: botbuilder.core.ComponentRegistration
     - name: botbuilder.core.ConversationState
       uid: botbuilder.core.ConversationState
     - name: botbuilder.core.ExtendedUserTokenProvider
       uid: botbuilder.core.ExtendedUserTokenProvider
-    - name: botbuilder.core.HealthCheck
-      uid: botbuilder.core.HealthCheck
     - name: botbuilder.core.IntentScore
       uid: botbuilder.core.IntentScore
     - name: botbuilder.core.InvokeResponse
@@ -1674,6 +1750,8 @@
         - name: botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult
           uid: botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult
         name: botbuilder.dialogs.prompts.prompt_recognizer_result
+      - name: botbuilder.dialogs.prompts.prompt_validator
+        uid: botbuilder.dialogs.prompts.prompt_validator
       - items:
         - name: Overview
           uid: botbuilder.dialogs.prompts.prompt_validator_context
@@ -1842,24 +1920,80 @@
       uid: botbuilder.integration.aiohttp.aiohttp_channel_service_exception_middleware
     - items:
       - name: Overview
+        uid: botbuilder.integration.aiohttp.bot_framework_http_adapter
+      - name: botbuilder.integration.aiohttp.bot_framework_http_adapter.BotFrameworkHttpAdapter
+        uid: botbuilder.integration.aiohttp.bot_framework_http_adapter.BotFrameworkHttpAdapter
+      name: botbuilder.integration.aiohttp.bot_framework_http_adapter
+    - items:
+      - name: Overview
+        uid: botbuilder.integration.aiohttp.bot_framework_http_adapter_integration_base
+      - name: botbuilder.integration.aiohttp.bot_framework_http_adapter_integration_base.BotFrameworkHttpAdapterIntegrationBase
+        uid: botbuilder.integration.aiohttp.bot_framework_http_adapter_integration_base.BotFrameworkHttpAdapterIntegrationBase
+      name: botbuilder.integration.aiohttp.bot_framework_http_adapter_integration_base
+    - items:
+      - name: Overview
         uid: botbuilder.integration.aiohttp.bot_framework_http_client
       - name: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient
         uid: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient
       name: botbuilder.integration.aiohttp.bot_framework_http_client
     - items:
       - name: Overview
+        uid: botbuilder.integration.aiohttp.cloud_adapter
+      - name: botbuilder.integration.aiohttp.cloud_adapter.CloudAdapter
+        uid: botbuilder.integration.aiohttp.cloud_adapter.CloudAdapter
+      name: botbuilder.integration.aiohttp.cloud_adapter
+    - items:
+      - name: Overview
+        uid: botbuilder.integration.aiohttp.configuration_bot_framework_authentication
+      - name: botbuilder.integration.aiohttp.configuration_bot_framework_authentication.ConfigurationBotFrameworkAuthentication
+        uid: botbuilder.integration.aiohttp.configuration_bot_framework_authentication.ConfigurationBotFrameworkAuthentication
+      name: botbuilder.integration.aiohttp.configuration_bot_framework_authentication
+    - items:
+      - name: Overview
+        uid: botbuilder.integration.aiohttp.configuration_service_client_credential_factory
+      - name: botbuilder.integration.aiohttp.configuration_service_client_credential_factory.ConfigurationServiceClientCredentialFactory
+        uid: botbuilder.integration.aiohttp.configuration_service_client_credential_factory.ConfigurationServiceClientCredentialFactory
+      name: botbuilder.integration.aiohttp.configuration_service_client_credential_factory
+    - items:
+      - name: Overview
         uid: botbuilder.integration.aiohttp.skills
+      - items:
+        - name: Overview
+          uid: botbuilder.integration.aiohttp.skills.aio_http_client_factory
+        - name: botbuilder.integration.aiohttp.skills.aio_http_client_factory.AioHttpClientFactory
+          uid: botbuilder.integration.aiohttp.skills.aio_http_client_factory.AioHttpClientFactory
+        name: botbuilder.integration.aiohttp.skills.aio_http_client_factory
       - items:
         - name: Overview
           uid: botbuilder.integration.aiohttp.skills.skill_http_client
         - name: botbuilder.integration.aiohttp.skills.skill_http_client.SkillHttpClient
           uid: botbuilder.integration.aiohttp.skills.skill_http_client.SkillHttpClient
         name: botbuilder.integration.aiohttp.skills.skill_http_client
+      - name: botbuilder.integration.aiohttp.skills.AioHttpClientFactory
+        uid: botbuilder.integration.aiohttp.skills.AioHttpClientFactory
       - name: botbuilder.integration.aiohttp.skills.SkillHttpClient
         uid: botbuilder.integration.aiohttp.skills.SkillHttpClient
       name: botbuilder.integration.aiohttp.skills
+    - items:
+      - name: Overview
+        uid: botbuilder.integration.aiohttp.streaming
+      - items:
+        - name: Overview
+          uid: botbuilder.integration.aiohttp.streaming.aiohttp_web_socket
+        - name: botbuilder.integration.aiohttp.streaming.aiohttp_web_socket.AiohttpWebSocket
+          uid: botbuilder.integration.aiohttp.streaming.aiohttp_web_socket.AiohttpWebSocket
+        name: botbuilder.integration.aiohttp.streaming.aiohttp_web_socket
+      - name: botbuilder.integration.aiohttp.streaming.AiohttpWebSocket
+        uid: botbuilder.integration.aiohttp.streaming.AiohttpWebSocket
+      name: botbuilder.integration.aiohttp.streaming
+    - name: botbuilder.integration.aiohttp.BotFrameworkHttpAdapter
+      uid: botbuilder.integration.aiohttp.BotFrameworkHttpAdapter
     - name: botbuilder.integration.aiohttp.BotFrameworkHttpClient
       uid: botbuilder.integration.aiohttp.BotFrameworkHttpClient
+    - name: botbuilder.integration.aiohttp.CloudAdapter
+      uid: botbuilder.integration.aiohttp.CloudAdapter
+    - name: botbuilder.integration.aiohttp.ConfigurationServiceClientCredentialFactory
+      uid: botbuilder.integration.aiohttp.ConfigurationServiceClientCredentialFactory
     name: botbuilder.integration.aiohttp
   name: botbuilder-integration-aiohttp
 
@@ -1898,18 +2032,6 @@
       name: botbuilder.schema.callerid_constants
     - items:
       - name: Overview
-        uid: botbuilder.schema.health_results
-      - name: botbuilder.schema.health_results.HealthResults
-        uid: botbuilder.schema.health_results.HealthResults
-      name: botbuilder.schema.health_results
-    - items:
-      - name: Overview
-        uid: botbuilder.schema.healthcheck_response
-      - name: botbuilder.schema.healthcheck_response.HealthCheckResponse
-        uid: botbuilder.schema.healthcheck_response.HealthCheckResponse
-      name: botbuilder.schema.healthcheck_response
-    - items:
-      - name: Overview
         uid: botbuilder.schema.speech_constants
       - name: botbuilder.schema.speech_constants.SpeechConstants
         uid: botbuilder.schema.speech_constants.SpeechConstants
@@ -1943,8 +2065,16 @@
         uid: botbuilder.schema.teams.FileInfoCard
       - name: botbuilder.schema.teams.FileUploadInfo
         uid: botbuilder.schema.teams.FileUploadInfo
+      - name: botbuilder.schema.teams.MeetingDetails
+        uid: botbuilder.schema.teams.MeetingDetails
+      - name: botbuilder.schema.teams.MeetingEndEventDetails
+        uid: botbuilder.schema.teams.MeetingEndEventDetails
+      - name: botbuilder.schema.teams.MeetingInfo
+        uid: botbuilder.schema.teams.MeetingInfo
       - name: botbuilder.schema.teams.MeetingParticipantInfo
         uid: botbuilder.schema.teams.MeetingParticipantInfo
+      - name: botbuilder.schema.teams.MeetingStartEventDetails
+        uid: botbuilder.schema.teams.MeetingStartEventDetails
       - name: botbuilder.schema.teams.MessageActionsPayload
         uid: botbuilder.schema.teams.MessageActionsPayload
       - name: botbuilder.schema.teams.MessageActionsPayloadApp
@@ -2080,6 +2210,12 @@
       uid: botbuilder.schema.ActivityImportance
     - name: botbuilder.schema.ActivityTypes
       uid: botbuilder.schema.ActivityTypes
+    - name: botbuilder.schema.AdaptiveCardInvokeAction
+      uid: botbuilder.schema.AdaptiveCardInvokeAction
+    - name: botbuilder.schema.AdaptiveCardInvokeResponse
+      uid: botbuilder.schema.AdaptiveCardInvokeResponse
+    - name: botbuilder.schema.AdaptiveCardInvokeValue
+      uid: botbuilder.schema.AdaptiveCardInvokeValue
     - name: botbuilder.schema.AnimationCard
       uid: botbuilder.schema.AnimationCard
     - name: botbuilder.schema.Attachment
@@ -2136,10 +2272,6 @@
       uid: botbuilder.schema.Fact
     - name: botbuilder.schema.GeoCoordinates
       uid: botbuilder.schema.GeoCoordinates
-    - name: botbuilder.schema.HealthCheckResponse
-      uid: botbuilder.schema.HealthCheckResponse
-    - name: botbuilder.schema.HealthResults
-      uid: botbuilder.schema.HealthResults
     - name: botbuilder.schema.HeroCard
       uid: botbuilder.schema.HeroCard
     - name: botbuilder.schema.InnerHttpError
@@ -2148,6 +2280,8 @@
       uid: botbuilder.schema.InputHints
     - name: botbuilder.schema.InstallationUpdateActionTypes
       uid: botbuilder.schema.InstallationUpdateActionTypes
+    - name: botbuilder.schema.InvokeResponse
+      uid: botbuilder.schema.InvokeResponse
     - name: botbuilder.schema.MediaCard
       uid: botbuilder.schema.MediaCard
     - name: botbuilder.schema.MediaEventValue
@@ -2252,6 +2386,8 @@
   - items:
     - name: Overview
       uid: botframework.connector
+    - name: botframework.connector.about
+      uid: botframework.connector.about
     - items:
       - name: Overview
         uid: botframework.connector.aio
@@ -2266,6 +2402,12 @@
       - name: botframework.connector.aio.ConnectorClient
         uid: botframework.connector.aio.ConnectorClient
       name: botframework.connector.aio
+    - items:
+      - name: Overview
+        uid: botframework.connector.aiohttp_bf_pipeline
+      - name: botframework.connector.aiohttp_bf_pipeline.AsyncBfPipeline
+        uid: botframework.connector.aiohttp_bf_pipeline.AsyncBfPipeline
+      name: botframework.connector.aiohttp_bf_pipeline
     - items:
       - name: Overview
         uid: botframework.connector.async_mixin
@@ -2289,6 +2431,12 @@
         name: botframework.connector.auth.app_credentials
       - items:
         - name: Overview
+          uid: botframework.connector.auth.authenticate_request_result
+        - name: botframework.connector.auth.authenticate_request_result.AuthenticateRequestResult
+          uid: botframework.connector.auth.authenticate_request_result.AuthenticateRequestResult
+        name: botframework.connector.auth.authenticate_request_result
+      - items:
+        - name: Overview
           uid: botframework.connector.auth.authentication_configuration
         - name: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
           uid: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
@@ -2299,6 +2447,18 @@
         - name: botframework.connector.auth.authentication_constants.AuthenticationConstants
           uid: botframework.connector.auth.authentication_constants.AuthenticationConstants
         name: botframework.connector.auth.authentication_constants
+      - items:
+        - name: Overview
+          uid: botframework.connector.auth.bot_framework_authentication
+        - name: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication
+          uid: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication
+        name: botframework.connector.auth.bot_framework_authentication
+      - items:
+        - name: Overview
+          uid: botframework.connector.auth.bot_framework_authentication_factory
+        - name: botframework.connector.auth.bot_framework_authentication_factory.BotFrameworkAuthenticationFactory
+          uid: botframework.connector.auth.bot_framework_authentication_factory.BotFrameworkAuthenticationFactory
+        name: botframework.connector.auth.bot_framework_authentication_factory
       - items:
         - name: Overview
           uid: botframework.connector.auth.certificate_app_credentials
@@ -2325,6 +2485,12 @@
         - name: botframework.connector.auth.claims_identity.ClaimsIdentity
           uid: botframework.connector.auth.claims_identity.ClaimsIdentity
         name: botframework.connector.auth.claims_identity
+      - items:
+        - name: Overview
+          uid: botframework.connector.auth.connector_factory
+        - name: botframework.connector.auth.connector_factory.ConnectorFactory
+          uid: botframework.connector.auth.connector_factory.ConnectorFactory
+        name: botframework.connector.auth.connector_factory
       - items:
         - name: Overview
           uid: botframework.connector.auth.credential_provider
@@ -2389,6 +2555,18 @@
         name: botframework.connector.auth.microsoft_government_app_credentials
       - items:
         - name: Overview
+          uid: botframework.connector.auth.password_service_client_credential_factory
+        - name: botframework.connector.auth.password_service_client_credential_factory.PasswordServiceClientCredentialFactory
+          uid: botframework.connector.auth.password_service_client_credential_factory.PasswordServiceClientCredentialFactory
+        name: botframework.connector.auth.password_service_client_credential_factory
+      - items:
+        - name: Overview
+          uid: botframework.connector.auth.service_client_credentials_factory
+        - name: botframework.connector.auth.service_client_credentials_factory.ServiceClientCredentialsFactory
+          uid: botframework.connector.auth.service_client_credentials_factory.ServiceClientCredentialsFactory
+        name: botframework.connector.auth.service_client_credentials_factory
+      - items:
+        - name: Overview
           uid: botframework.connector.auth.simple_channel_provider
         - name: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider
           uid: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider
@@ -2401,11 +2579,25 @@
         name: botframework.connector.auth.skill_validation
       - items:
         - name: Overview
+          uid: botframework.connector.auth.user_token_client
+        - name: botframework.connector.auth.user_token_client.UserTokenClient
+          uid: botframework.connector.auth.user_token_client.UserTokenClient
+        name: botframework.connector.auth.user_token_client
+      - items:
+        - name: Overview
           uid: botframework.connector.auth.verify_options
         - name: botframework.connector.auth.verify_options.VerifyOptions
           uid: botframework.connector.auth.verify_options.VerifyOptions
         name: botframework.connector.auth.verify_options
       name: botframework.connector.auth
+    - items:
+      - name: Overview
+        uid: botframework.connector.bot_framework_sdk_client_async
+      - name: botframework.connector.bot_framework_sdk_client_async.BotFrameworkConnectorConfiguration
+        uid: botframework.connector.bot_framework_sdk_client_async.BotFrameworkConnectorConfiguration
+      - name: botframework.connector.bot_framework_sdk_client_async.BotFrameworkSDKClientAsync
+        uid: botframework.connector.bot_framework_sdk_client_async.BotFrameworkSDKClientAsync
+      name: botframework.connector.bot_framework_sdk_client_async
     - items:
       - name: Overview
         uid: botframework.connector.channels
@@ -2424,6 +2616,30 @@
       - name: botframework.connector.emulator_api_client.EmulatorApiClient
         uid: botframework.connector.emulator_api_client.EmulatorApiClient
       name: botframework.connector.emulator_api_client
+    - items:
+      - name: Overview
+        uid: botframework.connector.http_client_base
+      - name: botframework.connector.http_client_base.HttpClientBase
+        uid: botframework.connector.http_client_base.HttpClientBase
+      name: botframework.connector.http_client_base
+    - items:
+      - name: Overview
+        uid: botframework.connector.http_client_factory
+      - name: botframework.connector.http_client_factory.HttpClientFactory
+        uid: botframework.connector.http_client_factory.HttpClientFactory
+      name: botframework.connector.http_client_factory
+    - items:
+      - name: Overview
+        uid: botframework.connector.http_request
+      - name: botframework.connector.http_request.HttpRequest
+        uid: botframework.connector.http_request.HttpRequest
+      name: botframework.connector.http_request
+    - items:
+      - name: Overview
+        uid: botframework.connector.http_response_base
+      - name: botframework.connector.http_response_base.HttpResponseBase
+        uid: botframework.connector.http_response_base.HttpResponseBase
+      name: botframework.connector.http_response_base
     - name: botframework.connector.models
       uid: botframework.connector.models
     - items:
@@ -2434,6 +2650,18 @@
       - name: botframework.connector.operations.ConversationsOperations
         uid: botframework.connector.operations.ConversationsOperations
       name: botframework.connector.operations
+    - items:
+      - name: Overview
+        uid: botframework.connector.skills
+      - items:
+        - name: Overview
+          uid: botframework.connector.skills.bot_framework_client
+        - name: botframework.connector.skills.bot_framework_client.BotFrameworkClient
+          uid: botframework.connector.skills.bot_framework_client.BotFrameworkClient
+        name: botframework.connector.skills.bot_framework_client
+      - name: botframework.connector.skills.BotFrameworkClient
+        uid: botframework.connector.skills.BotFrameworkClient
+      name: botframework.connector.skills
     - items:
       - name: Overview
         uid: botframework.connector.teams
@@ -2465,6 +2693,20 @@
     - items:
       - name: Overview
         uid: botframework.connector.token_api
+      - items:
+        - name: Overview
+          uid: botframework.connector.token_api.aio
+        - items:
+          - name: Overview
+            uid: botframework.connector.token_api.aio.operations_async
+          - name: botframework.connector.token_api.aio.operations_async.BotSignInOperations
+            uid: botframework.connector.token_api.aio.operations_async.BotSignInOperations
+          - name: botframework.connector.token_api.aio.operations_async.UserTokenOperations
+            uid: botframework.connector.token_api.aio.operations_async.UserTokenOperations
+          name: botframework.connector.token_api.aio.operations_async
+        - name: botframework.connector.token_api.aio.TokenApiClient
+          uid: botframework.connector.token_api.aio.TokenApiClient
+        name: botframework.connector.token_api.aio
       - items:
         - name: Overview
           uid: botframework.connector.token_api.models
@@ -2506,12 +2748,24 @@
       name: botframework.connector.token_api
     - name: botframework.connector.version
       uid: botframework.connector.version
+    - name: botframework.connector.AsyncBfPipeline
+      uid: botframework.connector.AsyncBfPipeline
+    - name: botframework.connector.BotFrameworkConnectorConfiguration
+      uid: botframework.connector.BotFrameworkConnectorConfiguration
     - name: botframework.connector.Channels
       uid: botframework.connector.Channels
     - name: botframework.connector.ConnectorClient
       uid: botframework.connector.ConnectorClient
     - name: botframework.connector.EmulatorApiClient
       uid: botframework.connector.EmulatorApiClient
+    - name: botframework.connector.HttpClientBase
+      uid: botframework.connector.HttpClientBase
+    - name: botframework.connector.HttpClientFactory
+      uid: botframework.connector.HttpClientFactory
+    - name: botframework.connector.HttpRequest
+      uid: botframework.connector.HttpRequest
+    - name: botframework.connector.HttpResponseBase
+      uid: botframework.connector.HttpResponseBase
     name: botframework.connector
   name: botframework-connector
 

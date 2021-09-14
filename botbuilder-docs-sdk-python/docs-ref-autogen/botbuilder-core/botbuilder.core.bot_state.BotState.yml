@@ -85,7 +85,7 @@ methods:
     description: None
 - uid: botbuilder.core.bot_state.BotState.get
   name: get
-  signature: 'get(turn_context: botbuilder.core.turn_context.TurnContext) -> typing.Dict[str,
+  signature: 'get(turn_context: botbuilder.core.turn_context.TurnContext) -> Dict[str,
     object]'
   parameters:
   - name: turn_context
@@ -144,6 +144,7 @@ methods:
     - <xref:botbuilder.core.bot_state.TurnContext>
   - name: force
     description: Optional, true to bypass the cache
+    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -164,6 +165,7 @@ methods:
   - name: force
     description: Optional, true to save state to storage whether or not there are
       changes
+    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>

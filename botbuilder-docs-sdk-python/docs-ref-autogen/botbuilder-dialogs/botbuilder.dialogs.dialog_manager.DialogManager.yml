@@ -7,8 +7,8 @@ inheritances:
 - builtins.object
 summary: Class which runs the dialog system.
 constructor:
-  syntax: 'DialogManager(root_dialog: botbuilder.dialogs.dialog.Dialog = None, dialog_state_property:
-    str = None)'
+  syntax: 'DialogManager(root_dialog: Optional[botbuilder.dialogs.dialog.Dialog] =
+    None, dialog_state_property: Optional[str] = None)'
 methods:
 - uid: botbuilder.dialogs.dialog_manager.DialogManager.get_active_dialog_context
   name: get_active_dialog_context
@@ -65,12 +65,12 @@ methods:
 
     :return:'
   signature: 'send_state_snapshot_trace(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    trace_label: str)'
+    trace_label: Optional[str] = None)'
   parameters:
   - name: dialog_context
     isRequired: true
   - name: trace_label
-    isRequired: true
+    defaultValue: None
 - uid: botbuilder.dialogs.dialog_manager.DialogManager.should_send_end_of_conversation_to_parent
   name: should_send_end_of_conversation_to_parent
   summary: 'Helper to determine if we should send an EndOfConversation to the parent

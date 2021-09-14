@@ -1,0 +1,172 @@
+### YamlMime:PythonClass
+uid: botbuilder.core.skills.cloud_skill_handler.CloudSkillHandler
+name: CloudSkillHandler
+fullName: botbuilder.core.skills.cloud_skill_handler.CloudSkillHandler
+module: botbuilder.core.skills.cloud_skill_handler
+inheritances:
+- botbuilder.core.cloud_channel_service_handler.CloudChannelServiceHandler
+constructor:
+  syntax: 'CloudSkillHandler(adapter: botbuilder.core.bot_adapter.BotAdapter, bot:
+    botbuilder.core.bot.Bot, conversation_id_factory: botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase,
+    auth: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication,
+    logger: Optional[logging.Logger] = None)'
+methods:
+- uid: botbuilder.core.skills.cloud_skill_handler.CloudSkillHandler.on_delete_activity
+  name: on_delete_activity
+  summary: 'delete_activity() API for Skill.
+
+
+    Delete an existing activity.
+
+
+    Some channels allow you to delete an existing activity, and if successful
+
+    this method will remove the specified activity.'
+  signature: 'on_delete_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+    conversation_id: str, activity_id: str)'
+  parameters:
+  - name: claims_identity
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
+  - name: activity_id
+    isRequired: true
+- uid: botbuilder.core.skills.cloud_skill_handler.CloudSkillHandler.on_reply_to_activity
+  name: on_reply_to_activity
+  summary: 'reply_to_activity() API for Skill.
+
+
+    This method allows you to reply to an activity.
+
+
+    This is slightly different from SendToConversation().
+
+    * SendToConversation(conversation_id) - will append the activity to the end
+
+    of the conversation according to the timestamp or semantics of the channel.
+
+    * ReplyToActivity(conversation_id,ActivityId) - adds the activity as a reply
+
+    to another activity, if the channel supports it. If the channel does not
+
+    support nested replies, ReplyToActivity falls back to SendToConversation.
+
+
+    Use ReplyToActivity when replying to a specific activity in the
+
+    conversation.
+
+
+    Use SendToConversation in all other cases.
+
+    :param claims_identity: Claims identity for the bot.
+
+    :type claims_identity: <xref:botframework.connector.auth.ClaimsIdentity>
+
+    :param conversation_id:The conversation ID.
+
+    :type conversation_id: str
+
+    :param activity_id: Activity ID to send.
+
+    :type activity_id: str
+
+    :param activity: Activity to send.
+
+    :type activity: Activity
+
+    :return:'
+  signature: 'on_reply_to_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+    conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
+    -> botbuilder.schema._models_py3.ResourceResponse'
+  parameters:
+  - name: claims_identity
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
+  - name: activity_id
+    isRequired: true
+  - name: activity
+    isRequired: true
+- uid: botbuilder.core.skills.cloud_skill_handler.CloudSkillHandler.on_send_to_conversation
+  name: on_send_to_conversation
+  summary: 'send_to_conversation() API for Skill
+
+
+    This method allows you to send an activity to the end of a conversation.
+
+
+    This is slightly different from ReplyToActivity().
+
+    * SendToConversation(conversation_id) - will append the activity to the end
+
+    of the conversation according to the timestamp or semantics of the channel.
+
+    * ReplyToActivity(conversation_id,ActivityId) - adds the activity as a reply
+
+    to another activity, if the channel supports it. If the channel does not
+
+    support nested replies, ReplyToActivity falls back to SendToConversation.
+
+
+    Use ReplyToActivity when replying to a specific activity in the
+
+    conversation.
+
+
+    Use SendToConversation in all other cases.
+
+    :param claims_identity: Claims identity for the bot.
+
+    :type claims_identity: <xref:botframework.connector.auth.ClaimsIdentity>
+
+    :param conversation_id:The conversation ID.
+
+    :type conversation_id: str
+
+    :param activity: Activity to send.
+
+    :type activity: Activity
+
+    :return:'
+  signature: 'on_send_to_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+    conversation_id: str, activity: botbuilder.schema._models_py3.Activity) -> botbuilder.schema._models_py3.ResourceResponse'
+  parameters:
+  - name: claims_identity
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
+  - name: activity
+    isRequired: true
+- uid: botbuilder.core.skills.cloud_skill_handler.CloudSkillHandler.on_update_activity
+  name: on_update_activity
+  summary: 'update_activity() API for Skill.
+
+
+    Edit an existing activity.
+
+
+    Some channels allow you to edit an existing activity to reflect the new
+
+    state of a bot conversation.
+
+
+    For example, you can remove buttons after someone has clicked "Approve"
+
+    button.'
+  signature: 'on_update_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+    conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
+    -> botbuilder.schema._models_py3.ResourceResponse'
+  parameters:
+  - name: claims_identity
+    isRequired: true
+  - name: conversation_id
+    isRequired: true
+  - name: activity_id
+    isRequired: true
+  - name: activity
+    isRequired: true
+attributes:
+- uid: botbuilder.core.skills.cloud_skill_handler.CloudSkillHandler.SKILL_CONVERSATION_REFERENCE_KEY
+  name: SKILL_CONVERSATION_REFERENCE_KEY
+  signature: SKILL_CONVERSATION_REFERENCE_KEY = 'botbuilder.core.skills.SkillConversationReference'

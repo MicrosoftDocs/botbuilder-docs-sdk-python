@@ -8,11 +8,17 @@ inheritances:
 summary: Result returned to the caller of one of the various stack manipulation methods.
 constructor:
   syntax: 'DialogTurnResult(status: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus,
-    result: object = None)'
+    result: Optional[object] = None)'
 attributes:
 - uid: botbuilder.dialogs.dialog_turn_result.DialogTurnResult.result
   name: result
   summary: Final result returned by a dialog that just completed.
+  return:
+    types:
+    - <xref:Final result returned by a dialog that just completed.>
 - uid: botbuilder.dialogs.dialog_turn_result.DialogTurnResult.status
   name: status
   summary: Gets or sets the current status of the stack.
+  return:
+    types:
+    - <xref:The status of the stack.>

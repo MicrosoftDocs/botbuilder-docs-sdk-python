@@ -11,16 +11,16 @@ summary: "BotAdapter that can handle incoming Slack events. Incoming Slack event
   \ and bot pipeline."
 constructor:
   syntax: 'SlackAdapter(client: botbuilder.adapters.slack.slack_client.SlackClient,
-    on_turn_error: typing.Callable[[botbuilder.core.turn_context.TurnContext, Exception],
-    typing.Awaitable] = None, options: botbuilder.adapters.slack.slack_adatper_options.SlackAdapterOptions
+    on_turn_error: Optional[Callable[[botbuilder.core.turn_context.TurnContext, Exception],
+    Awaitable]] = None, options: Optional[botbuilder.adapters.slack.slack_adatper_options.SlackAdapterOptions]
     = None)'
 methods:
 - uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.continue_conversation
   name: continue_conversation
   summary: Send a proactive message to a conversation.
   signature: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
-    callback: typing.Callable, bot_id: str = None, claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity
-    = None, audience: str = None)'
+    callback: Callable, bot_id: Optional[str] = None, claims_identity: Optional[botframework.connector.auth.claims_identity.ClaimsIdentity]
+    = None, audience: Optional[str] = None)'
   parameters:
   - name: reference
     description: A reference to the conversation to continue.
@@ -34,16 +34,19 @@ methods:
     - <xref:typing.Callable>
   - name: bot_id
     description: Unused for this override.
+    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: claims_identity
     description: A ClaimsIdentity for the conversation.
+    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.auth.ClaimsIdentity>
   - name: audience
     description: Unused for this override.
+    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
@@ -72,14 +75,13 @@ methods:
   name: process
   summary: Accept an incoming webhook request and convert it into a TurnContext which
     can be processed by the bot's logic.
-  signature: 'process(req: aiohttp.web_request.Request, logic: typing.Callable) ->
-    aiohttp.web_response.Response'
+  signature: 'process(req: aiohttp.web_request.Request, logic: Callable) -> aiohttp.web_response.Response'
   parameters:
   - name: req
     description: The aiohttp Request object.
     isRequired: true
     types:
-    - '[<xref:aiohttp.web_request.Request>](<xref:aiohttp.web_request.Request.html#>)'
+    - '[<xref:aiohttp.web_request.Request>](<xref:aiohttp.web_request.Request>)'
   - name: logic
     description: The method to call for the resulting bot turn.
     isRequired: true
@@ -88,12 +90,12 @@ methods:
   return:
     description: The aiohttp Response.
     types:
-    - '[<xref:aiohttp.web_response.Response>](<xref:aiohttp.web_response.Response.html#>)'
+    - '[<xref:aiohttp.web_response.Response>](<xref:aiohttp.web_response.Response>)'
 - uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.send_activities
   name: send_activities
   summary: Send a message from the bot to the messaging API.
   signature: 'send_activities(context: botbuilder.core.turn_context.TurnContext, activities:
-    typing.List[botbuilder.schema._models_py3.Activity]) -> typing.List[botbuilder.schema._models_py3.ResourceResponse]'
+    List[botbuilder.schema._models_py3.Activity]) -> List[botbuilder.schema._models_py3.ResourceResponse]'
   parameters:
   - name: context
     description: A TurnContext representing the current incoming message and environment.

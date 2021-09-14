@@ -22,6 +22,42 @@ constructor:
     description: An object model deserializer.
     isRequired: true
 methods:
+- uid: botframework.connector.teams.operations.TeamsOperations.fetch_meeting
+  name: fetch_meeting
+  summary: Fetch meeting information.
+  signature: 'fetch_meeting(meeting_id: str, custom_headers=None, raw=False, **operation_config)'
+  parameters:
+  - name: meeting_id
+    description: Meeting Id, encoded as a BASE64 string.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: custom_headers
+    description: headers that will be added to the request
+    isRequired: true
+    defaultValue: None
+    types:
+    - <xref:dict>
+  - name: raw
+    description: 'returns the direct response alongside the
+
+      deserialized response'
+    isRequired: true
+    defaultValue: 'False'
+    types:
+    - <xref:bool>
+  - name: operation_config
+    description: '*Operation configuration
+
+      overrides*.'
+    isRequired: true
+  return:
+    description: MeetingInfo or ClientRawResponse if raw=true
+    types:
+    - <xref:botframework.connector.teams.models.MeetingInfo>
+    - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - type: msrest.exceptions.HttpOperationError
 - uid: botframework.connector.teams.operations.TeamsOperations.fetch_participant
   name: fetch_participant
   summary: Fetches Teams meeting participant details.
@@ -45,6 +81,7 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
+    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -52,6 +89,7 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
+    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -82,6 +120,7 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
+    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -89,6 +128,7 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
+    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -119,6 +159,7 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
+    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -126,6 +167,7 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
+    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -144,4 +186,4 @@ methods:
 attributes:
 - uid: botframework.connector.teams.operations.TeamsOperations.models
   name: models
-  signature: 'models = <module ''botframework.connector.models'' from ''c:\\hostedtoolcache\\windows\\python\\3.6.8\\x64\\lib\\site-packages\\botframework\\connector\\models\\__init__.py''>'
+  signature: models = <module 'botframework.connector.models' from 'C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64\\lib\\site-packages\\botframework\\connector\\models\\__init__.py'>

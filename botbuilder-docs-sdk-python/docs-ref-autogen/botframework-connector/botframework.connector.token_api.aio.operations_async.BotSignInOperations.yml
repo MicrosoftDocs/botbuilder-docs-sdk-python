@@ -1,0 +1,133 @@
+### YamlMime:PythonClass
+uid: botframework.connector.token_api.aio.operations_async.BotSignInOperations
+name: BotSignInOperations
+fullName: botframework.connector.token_api.aio.operations_async.BotSignInOperations
+module: botframework.connector.token_api.aio.operations_async
+inheritances:
+- builtins.object
+summary: 'BotSignInOperations async operations.
+
+
+  You should not instantiate directly this class, but create a Client instance that
+  will create it for you and
+
+  attach it as attribute.'
+constructor:
+  syntax: BotSignInOperations(client, config, serializer, deserializer) -> None
+  parameters:
+  - name: client
+    description: Client for service requests.
+    isRequired: true
+  - name: config
+    description: Configuration of service client.
+    isRequired: true
+  - name: serializer
+    description: An object model serializer.
+    isRequired: true
+  - name: deserializer
+    description: An object model deserializer.
+    isRequired: true
+variables:
+- description: 'The API version to use for the request. Constant value: "token".'
+  name: api_version
+methods:
+- uid: botframework.connector.token_api.aio.operations_async.BotSignInOperations.get_sign_in_resource
+  name: get_sign_in_resource
+  signature: get_sign_in_resource(state, code_challenge=None, emulator_url=None, final_redirect=None,
+    *, custom_headers=None, raw=False, **operation_config)
+  parameters:
+  - name: state
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: code_challenge
+    isRequired: true
+    defaultValue: None
+    types:
+    - <xref:str>
+  - name: emulator_url
+    isRequired: true
+    defaultValue: None
+    types:
+    - <xref:str>
+  - name: final_redirect
+    isRequired: true
+    defaultValue: None
+    types:
+    - <xref:str>
+  - name: custom_headers
+    description: headers that will be added to the request
+    isRequired: true
+    types:
+    - <xref:dict>
+  - name: raw
+    description: 'returns the direct response alongside the
+
+      deserialized response'
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: operation_config
+    description: '*Operation configuration
+
+      overrides*.'
+    isRequired: true
+  return:
+    description: SignInUrlResponse or ClientRawResponse if raw=true
+    types:
+    - <xref:botframework.tokenapi.models.SignInUrlResponse>
+    - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - type: msrest.exceptions.HttpOperationError
+- uid: botframework.connector.token_api.aio.operations_async.BotSignInOperations.get_sign_in_url
+  name: get_sign_in_url
+  signature: get_sign_in_url(state, code_challenge=None, emulator_url=None, final_redirect=None,
+    *, custom_headers=None, raw=False, **operation_config)
+  parameters:
+  - name: state
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: code_challenge
+    isRequired: true
+    defaultValue: None
+    types:
+    - <xref:str>
+  - name: emulator_url
+    isRequired: true
+    defaultValue: None
+    types:
+    - <xref:str>
+  - name: final_redirect
+    isRequired: true
+    defaultValue: None
+    types:
+    - <xref:str>
+  - name: custom_headers
+    description: headers that will be added to the request
+    isRequired: true
+    types:
+    - <xref:dict>
+  - name: raw
+    description: 'returns the direct response alongside the
+
+      deserialized response'
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: operation_config
+    description: '*Operation configuration
+
+      overrides*.'
+    isRequired: true
+  return:
+    description: str or ClientRawResponse if raw=true
+    types:
+    - <xref:str>
+    - <xref:msrest.pipeline.ClientRawResponse>
+  exceptions:
+  - type: msrest.exceptions.HttpOperationError
+attributes:
+- uid: botframework.connector.token_api.aio.operations_async.BotSignInOperations.models
+  name: models
+  signature: models = <module 'botframework.connector.token_api.models' from 'C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64\\lib\\site-packages\\botframework\\connector\\token_api\\models\\__init__.py'>

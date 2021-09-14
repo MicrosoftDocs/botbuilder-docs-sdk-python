@@ -25,7 +25,7 @@ methods:
   name: get
   summary: Gets the property value.
   signature: 'get(turn_context: botbuilder.core.turn_context.TurnContext, default_value_or_factory:
-    object = None) -> object'
+    Optional[Union[Callable, object]] = None) -> object'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -34,6 +34,7 @@ methods:
     - <xref:botbuilder.core.bot_state.TurnContext>
   - name: default_value_or_factory
     description: Defines the default value for the property
+    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.bot_state.BotStatePropertyAccessor.set
   name: set

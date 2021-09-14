@@ -13,8 +13,8 @@ functions:
     and other settings found in the current Django project''s *settings.py* file.'
   signature: create_client()
 classes:
-- botbuilder.applicationinsights.django.BotTelemetryMiddleware
 - botbuilder.applicationinsights.django.ApplicationInsightsMiddleware
+- botbuilder.applicationinsights.django.BotTelemetryMiddleware
 - botbuilder.applicationinsights.django.LoggingHandler
 modules:
 - botbuilder.applicationinsights.django.bot_telemetry_middleware

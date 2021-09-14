@@ -1,0 +1,62 @@
+### YamlMime:PythonClass
+uid: botbuilder.core.skills.SkillConversationIdFactory
+name: SkillConversationIdFactory
+fullName: botbuilder.core.skills.SkillConversationIdFactory
+module: botbuilder.core.skills
+inheritances:
+- botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase
+constructor:
+  syntax: 'SkillConversationIdFactory(storage: botbuilder.core.storage.Storage)'
+methods:
+- uid: botbuilder.core.skills.SkillConversationIdFactory.create_skill_conversation_id
+  name: create_skill_conversation_id
+  summary: Creates a new *SkillConversationReference*.
+  signature: 'create_skill_conversation_id(options: botbuilder.core.skills.skill_conversation_id_factory_options.SkillConversationIdFactoryOptions)
+    -> str'
+  parameters:
+  - name: options
+    description: Creation options to use when creating the *SkillConversationReference*.
+    isRequired: true
+    types:
+    - <xref:botbuilder.core.skills.SkillConversationIdFactoryOptions>
+  return:
+    description: ID of the created *SkillConversationReference*.
+- uid: botbuilder.core.skills.SkillConversationIdFactory.delete_conversation_reference
+  name: delete_conversation_reference
+  summary: Deletes the *SkillConversationReference* with the specified ID.
+  signature: 'delete_conversation_reference(skill_conversation_id: str)'
+  parameters:
+  - name: skill_conversation_id
+    description: The ID of the *SkillConversationReference* to be deleted.
+    isRequired: true
+    types:
+    - <xref:str>
+- uid: botbuilder.core.skills.SkillConversationIdFactory.get_conversation_reference
+  name: get_conversation_reference
+  summary: '[DEPRECATED] Method is deprecated, please use get_skill_conversation_reference()
+    instead.
+
+
+    Retrieves a <xref:botbuilder.core.skills.ConversationReference> using a conversation
+    id passed in.'
+  signature: 'get_conversation_reference(skill_conversation_id: str) -> botbuilder.schema._models_py3.ConversationReference'
+  parameters:
+  - name: skill_conversation_id
+    description: The conversation id for which to retrieve the <xref:botbuilder.core.skills.ConversationReference>.
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: '*ConversationReference* for the specified ID.'
+- uid: botbuilder.core.skills.SkillConversationIdFactory.get_skill_conversation_reference
+  name: get_skill_conversation_reference
+  summary: Retrieve a *SkillConversationReference* with the specified ID.
+  signature: 'get_skill_conversation_reference(skill_conversation_id: str) -> botbuilder.core.skills.skill_conversation_reference.SkillConversationReference'
+  parameters:
+  - name: skill_conversation_id
+    description: The ID of the *SkillConversationReference* to retrieve.
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: '*SkillConversationReference* for the specified ID; None if not found.'

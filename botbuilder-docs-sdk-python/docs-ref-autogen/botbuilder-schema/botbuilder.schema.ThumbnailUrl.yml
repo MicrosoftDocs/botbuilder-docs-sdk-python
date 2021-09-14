@@ -7,7 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: Thumbnail URL.
 constructor:
-  syntax: 'ThumbnailUrl(*, url: str = None, alt: str = None, **kwargs) -> None'
+  syntax: 'ThumbnailUrl(*, url: Optional[str] = None, alt: Optional[str] = None, **kwargs)
+    -> None'
   parameters:
   - name: url
     description: URL pointing to the thumbnail to use for media content

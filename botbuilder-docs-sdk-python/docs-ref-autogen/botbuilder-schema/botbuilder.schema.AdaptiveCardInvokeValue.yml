@@ -1,0 +1,32 @@
+### YamlMime:PythonClass
+uid: botbuilder.schema.AdaptiveCardInvokeValue
+name: AdaptiveCardInvokeValue
+fullName: botbuilder.schema.AdaptiveCardInvokeValue
+module: botbuilder.schema
+inheritances:
+- msrest.serialization.Model
+summary: 'AdaptiveCardInvokeResponse.
+
+
+  Defines the structure that arrives in the Activity.Value for Invoke activity with
+  Name of ''adaptiveCard/action''.'
+constructor:
+  syntax: 'AdaptiveCardInvokeValue(*, action=None, authentication=None, state: Optional[str]
+    = None, **kwargs) -> None'
+  parameters:
+  - name: action
+    description: The action of this adaptive card invoke action value.
+    isRequired: true
+    types:
+    - <xref:botframework.schema.models.AdaptiveCardInvokeAction>
+  - name: authentication
+    description: The TokenExchangeInvokeRequest for this adaptive card invoke action
+      value.
+    isRequired: true
+    types:
+    - <xref:botframework.schema.models.TokenExchangeInvokeRequest>
+  - name: state
+    description: The 'state' or magic code for an OAuth flow.
+    isRequired: true
+    types:
+    - <xref:str>

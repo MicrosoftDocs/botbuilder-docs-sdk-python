@@ -7,8 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: O365 connector card HttpPOST invoke query.
 constructor:
-  syntax: 'O365ConnectorCardActionQuery(*, body: str = None, actionId: str = None,
-    **kwargs) -> None'
+  syntax: 'O365ConnectorCardActionQuery(*, body: Optional[str] = None, actionId: Optional[str]
+    = None, **kwargs) -> None'
   parameters:
   - name: body
     description: 'The results of body string defined in

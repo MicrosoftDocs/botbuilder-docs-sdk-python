@@ -7,11 +7,13 @@ inheritances:
 - builtins.object
 summary: Class container for currently-supported Culture Models in Confirm and Choice
   Prompt.
+constructor:
+  syntax: PromptCultureModels()
 methods:
 - uid: botbuilder.dialogs.prompts.prompt_culture_models.PromptCultureModels.get_supported_cultures
   name: get_supported_cultures
   summary: Gets a list of the supported culture models.
-  signature: get_supported_cultures() -> typing.List[botbuilder.dialogs.prompts.prompt_culture_models.PromptCultureModel]
+  signature: get_supported_cultures() -> List[botbuilder.dialogs.prompts.prompt_culture_models.PromptCultureModel]
   parameters:
   - name: cls
     isRequired: true

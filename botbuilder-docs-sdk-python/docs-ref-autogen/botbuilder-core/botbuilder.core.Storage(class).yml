@@ -5,6 +5,8 @@ fullName: botbuilder.core.Storage
 module: botbuilder.core
 inheritances:
 - abc.ABC
+constructor:
+  syntax: Storage()
 methods:
 - uid: botbuilder.core.Storage.delete
   name: delete
@@ -13,7 +15,7 @@ methods:
     :param keys:
 
     :return:'
-  signature: 'delete(keys: typing.List[str])'
+  signature: 'delete(keys: List[str])'
   parameters:
   - name: keys
     isRequired: true
@@ -24,7 +26,7 @@ methods:
     :param keys:
 
     :return:'
-  signature: 'read(keys: typing.List[str])'
+  signature: 'read(keys: List[str])'
   parameters:
   - name: keys
     isRequired: true
