@@ -6,6 +6,8 @@ module: botbuilder.dialogs.choices.tokenizer
 inheritances:
 - builtins.object
 summary: Provides a default tokenizer implementation.
+constructor:
+  syntax: Tokenizer()
 methods:
 - uid: botbuilder.dialogs.choices.tokenizer.Tokenizer.default_tokenizer
   name: default_tokenizer
@@ -13,13 +15,12 @@ methods:
     is to lowercase.
 
 
-
-
     text: The input text.
 
 
     locale: (Optional) Identifies the locale of the input text.'
-  signature: 'default_tokenizer(text: str, locale: str = None) -> [<class ''botbuilder.dialogs.choices.token.Token''>]'
+  signature: 'default_tokenizer(text: str, locale: Optional[str] = None) -> [<class
+    ''botbuilder.dialogs.choices.token.Token''>]'
   parameters:
   - name: text
     isRequired: true

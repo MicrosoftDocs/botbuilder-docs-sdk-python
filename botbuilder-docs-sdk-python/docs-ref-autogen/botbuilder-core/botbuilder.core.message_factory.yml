@@ -6,9 +6,9 @@ functions:
 - uid: botbuilder.core.message_factory.attachment_activity
   name: attachment_activity
   signature: 'attachment_activity(attachment_layout: botbuilder.schema._connector_client_enums.AttachmentLayoutTypes,
-    attachments: typing.List[botbuilder.schema._models_py3.Attachment], text: str
-    = None, speak: str = None, input_hint: str = <InputHints.accepting_input: ''acceptingInput''>)
-    -> botbuilder.schema._models_py3.Activity'
+    attachments: List[botbuilder.schema._models_py3.Attachment], text: Optional[str]
+    = None, speak: Optional[str] = None, input_hint: Union[botbuilder.schema._connector_client_enums.InputHints,
+    str] = <InputHints.accepting_input: ''acceptingInput''>) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: attachment_layout
   - name: attachments

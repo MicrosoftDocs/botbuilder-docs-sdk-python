@@ -4,6 +4,8 @@ name: DialogReason
 fullName: botbuilder.dialogs.DialogReason
 summary: Indicates in which a dialog-related method is being called.
 module: botbuilder.dialogs
+constructor:
+  syntax: DialogReason(value)
 variables:
 - description: A dialog is being started through a call to <xref:DialogContext.begin>.
   name: BeginCalled
@@ -23,7 +25,7 @@ variables:
   name: CancelCalled
   types:
   - <xref:int>
-- description: A preceding step was skipped through a call to <xref:WaterfallStepContext.next>.
+- description: A preceding step was skipped through a call to <xref:botbuilder.dialogs.WaterfallStepContext.next>.
   name: NextCalled
   types:
   - <xref:int>

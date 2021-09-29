@@ -1,0 +1,25 @@
+### YamlMime:PythonClass
+uid: botframework.connector.auth.connector_factory.ConnectorFactory
+name: ConnectorFactory
+fullName: botframework.connector.auth.connector_factory.ConnectorFactory
+module: botframework.connector.auth.connector_factory
+inheritances:
+- abc.ABC
+constructor:
+  syntax: ConnectorFactory()
+methods:
+- uid: botframework.connector.auth.connector_factory.ConnectorFactory.create
+  name: create
+  summary: 'A factory method used to create ConnectorClient instances.
+
+    :param service_url: The url for the client.
+
+    :param audience: The audience for the credentials the client will use.
+
+    :returns: A ConnectorClient for sending activities to the audience at the service_url.'
+  signature: 'create(service_url: str, audience: str) -> botframework.connector.aio._connector_client_async.ConnectorClient'
+  parameters:
+  - name: service_url
+    isRequired: true
+  - name: audience
+    isRequired: true

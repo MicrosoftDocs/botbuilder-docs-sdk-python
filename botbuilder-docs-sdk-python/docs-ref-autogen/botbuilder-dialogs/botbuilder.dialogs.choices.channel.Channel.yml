@@ -6,6 +6,8 @@ module: botbuilder.dialogs.choices.channel
 inheritances:
 - builtins.object
 summary: Methods for determining channel-specific functionality.
+constructor:
+  syntax: Channel()
 methods:
 - uid: botbuilder.dialogs.choices.channel.Channel.get_channel_id
   name: get_channel_id
@@ -25,7 +27,7 @@ methods:
 - uid: botbuilder.dialogs.choices.channel.Channel.has_message_feed
   name: has_message_feed
   summary: Determine if a Channel has a Message Feed.
-  signature: 'has_message_feed(channel_id: str) -> bool'
+  signature: 'has_message_feed(_: str) -> bool'
   parameters:
   - name: channel_id
     description: The Channel to check for Message Feed.

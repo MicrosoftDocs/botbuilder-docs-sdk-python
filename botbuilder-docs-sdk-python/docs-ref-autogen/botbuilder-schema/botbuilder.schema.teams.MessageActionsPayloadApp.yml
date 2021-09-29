@@ -7,8 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: Represents an application entity.
 constructor:
-  syntax: 'MessageActionsPayloadApp(*, application_identity_type=None, id: str = None,
-    display_name: str = None, **kwargs) -> None'
+  syntax: 'MessageActionsPayloadApp(*, application_identity_type=None, id: Optional[str]
+    = None, display_name: Optional[str] = None, **kwargs) -> None'
   parameters:
   - name: application_identity_type
     description: 'The type of application. Possible values

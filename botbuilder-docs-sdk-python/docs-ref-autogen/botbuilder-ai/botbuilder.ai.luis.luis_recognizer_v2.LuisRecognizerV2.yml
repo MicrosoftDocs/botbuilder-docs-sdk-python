@@ -7,7 +7,7 @@ inheritances:
 - botbuilder.ai.luis.luis_recognizer_internal.LuisRecognizerInternal
 constructor:
   syntax: 'LuisRecognizerV2(luis_application: botbuilder.ai.luis.luis_application.LuisApplication,
-    luis_recognizer_options_v2: botbuilder.ai.luis.luis_recognizer_options_v2.LuisRecognizerOptionsV2
+    luis_recognizer_options_v2: Optional[botbuilder.ai.luis.luis_recognizer_options_v2.LuisRecognizerOptionsV2]
     = None)'
 methods:
 - uid: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2.recognizer_internal
@@ -19,7 +19,7 @@ methods:
 attributes:
 - uid: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2.luis_trace_label
   name: luis_trace_label
-  signature: luis_trace_label = 'Luis Trace'
+  signature: 'luis_trace_label: str = ''Luis Trace'''
 - uid: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2.luis_trace_type
   name: luis_trace_type
-  signature: luis_trace_type = 'https://www.luis.ai/schemas/trace'
+  signature: 'luis_trace_type: str = ''https://www.luis.ai/schemas/trace'''

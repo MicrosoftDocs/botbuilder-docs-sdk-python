@@ -1,0 +1,40 @@
+### YamlMime:PythonClass
+uid: botbuilder.integration.aiohttp.streaming.aiohttp_web_socket.AiohttpWebSocket
+name: AiohttpWebSocket
+fullName: botbuilder.integration.aiohttp.streaming.aiohttp_web_socket.AiohttpWebSocket
+module: botbuilder.integration.aiohttp.streaming.aiohttp_web_socket
+inheritances:
+- botframework.streaming.transport.web_socket.web_socket.WebSocket
+constructor:
+  syntax: 'AiohttpWebSocket(aiohttp_ws: Union[aiohttp.web_ws.WebSocketResponse, aiohttp.client_ws.ClientWebSocketResponse],
+    session: Optional[aiohttp.client.ClientSession] = None)'
+methods:
+- uid: botbuilder.integration.aiohttp.streaming.aiohttp_web_socket.AiohttpWebSocket.close
+  name: close
+  signature: 'close(close_status: botframework.streaming.transport.web_socket.web_socket_close_status.WebSocketCloseStatus,
+    status_description: str)'
+  parameters:
+  - name: close_status
+    isRequired: true
+  - name: status_description
+    isRequired: true
+- uid: botbuilder.integration.aiohttp.streaming.aiohttp_web_socket.AiohttpWebSocket.dispose
+  name: dispose
+  signature: dispose()
+- uid: botbuilder.integration.aiohttp.streaming.aiohttp_web_socket.AiohttpWebSocket.receive
+  name: receive
+  signature: receive() -> botframework.streaming.transport.web_socket.web_socket.WebSocketMessage
+- uid: botbuilder.integration.aiohttp.streaming.aiohttp_web_socket.AiohttpWebSocket.send
+  name: send
+  signature: 'send(buffer: Any, message_type: botframework.streaming.transport.web_socket.web_socket_message_type.WebSocketMessageType,
+    end_of_message: bool)'
+  parameters:
+  - name: buffer
+    isRequired: true
+  - name: message_type
+    isRequired: true
+  - name: end_of_message
+    isRequired: true
+attributes:
+- uid: botbuilder.integration.aiohttp.streaming.aiohttp_web_socket.AiohttpWebSocket.status
+  name: status

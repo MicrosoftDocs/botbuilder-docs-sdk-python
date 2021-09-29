@@ -6,6 +6,7 @@ module: botbuilder.ai.qna.qna_dialog_response_options
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'QnADialogResponseOptions(active_learning_card_title: str = None, card_no_match_text:
-    str = None, no_answer: botbuilder.schema._models_py3.Activity = None, card_no_match_response:
-    botbuilder.schema._models_py3.Activity = None)'
+  syntax: 'QnADialogResponseOptions(active_learning_card_title: Optional[str] = None,
+    card_no_match_text: Optional[str] = None, no_answer: Optional[botbuilder.schema._models_py3.Activity]
+    = None, card_no_match_response: Optional[botbuilder.schema._models_py3.Activity]
+    = None)'

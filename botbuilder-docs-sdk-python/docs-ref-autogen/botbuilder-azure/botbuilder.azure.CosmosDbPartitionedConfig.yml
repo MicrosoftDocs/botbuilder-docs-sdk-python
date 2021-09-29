@@ -7,7 +7,7 @@ inheritances:
 - builtins.object
 summary: The class for partitioned CosmosDB configuration for the Azure Bot Framework.
 constructor:
-  syntax: 'CosmosDbPartitionedConfig(cosmos_db_endpoint: str = None, auth_key: str
-    = None, database_id: str = None, container_id: str = None, cosmos_client_options:
-    dict = None, container_throughput: int = 400, key_suffix: str = '''', compatibility_mode:
-    bool = False, **kwargs)'
+  syntax: 'CosmosDbPartitionedConfig(cosmos_db_endpoint: Optional[str] = None, auth_key:
+    Optional[str] = None, database_id: Optional[str] = None, container_id: Optional[str]
+    = None, cosmos_client_options: Optional[dict] = None, container_throughput: int
+    = 400, key_suffix: str = '''', compatibility_mode: bool = False, **kwargs)'

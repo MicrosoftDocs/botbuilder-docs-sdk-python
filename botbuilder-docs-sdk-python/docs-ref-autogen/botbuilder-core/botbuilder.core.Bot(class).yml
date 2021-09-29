@@ -6,6 +6,8 @@ module: botbuilder.core
 inheritances:
 - abc.ABC
 summary: Represents a bot that can operate on incoming activities.
+constructor:
+  syntax: Bot()
 methods:
 - uid: botbuilder.core.Bot.on_turn
   name: on_turn

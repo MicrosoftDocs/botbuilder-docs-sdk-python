@@ -7,7 +7,7 @@ inheritances:
 - builtins.object
 summary: Internal cached bot state.
 constructor:
-  syntax: 'CachedBotState(state: typing.Dict[str, object] = None)'
+  syntax: 'CachedBotState(state: Optional[Dict[str, object]] = None)'
 methods:
 - uid: botbuilder.core.bot_state.CachedBotState.compute_hash
   name: compute_hash
@@ -15,3 +15,6 @@ methods:
   parameters:
   - name: obj
     isRequired: true
+attributes:
+- uid: botbuilder.core.bot_state.CachedBotState.is_changed
+  name: is_changed

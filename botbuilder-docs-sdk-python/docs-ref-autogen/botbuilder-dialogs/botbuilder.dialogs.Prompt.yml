@@ -8,7 +8,7 @@ inheritances:
 summary: Defines the core behavior of prompt dialogs. Extends the <xref:botbuilder.dialogs.Dialog>
   base class.
 constructor:
-  syntax: 'Prompt(dialog_id: str, validator: object = None)'
+  syntax: 'Prompt(dialog_id: str, validator: Optional[object] = None)'
 remarks: 'When the prompt ends, it returns an object that represents the value it
   was prompted for.
 
@@ -32,8 +32,8 @@ methods:
   name: append_choices
   summary: Composes an output activity containing a set of choices.
   signature: 'append_choices(prompt: botbuilder.schema._models_py3.Activity, channel_id:
-    str, choices: typing.List[botbuilder.dialogs.choices.choice.Choice], style: botbuilder.dialogs.choices.list_style.ListStyle,
-    options: botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions
+    str, choices: List[botbuilder.dialogs.choices.choice.Choice], style: botbuilder.dialogs.choices.list_style.ListStyle,
+    options: Optional[botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions]
     = None) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: prompt
@@ -75,7 +75,7 @@ methods:
 
     >'
   signature: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+    options: Optional[object] = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: dialog_context
     description: The dialog context for the current turn of the conversation
@@ -127,7 +127,7 @@ methods:
   summary: Prompts user for input. When overridden in a derived class, prompts the
     user for input.
   signature: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
-    typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
+    Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
     is_retry: bool)'
   parameters:
   - name: turn_context
@@ -165,7 +165,7 @@ methods:
 
     >'
   signature: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
-    state: typing.Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)'
+    state: Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)'
   parameters:
   - name: turn_context
     description: Context for the current turn of conversation with the user

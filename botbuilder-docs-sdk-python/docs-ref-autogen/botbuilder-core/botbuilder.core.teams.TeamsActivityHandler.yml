@@ -5,6 +5,8 @@ fullName: botbuilder.core.teams.TeamsActivityHandler
 module: botbuilder.core.teams
 inheritances:
 - botbuilder.core.activity_handler.ActivityHandler
+constructor:
+  syntax: TeamsActivityHandler()
 methods:
 - uid: botbuilder.core.teams.TeamsActivityHandler.on_conversation_update_activity
   name: on_conversation_update_activity
@@ -27,13 +29,55 @@ methods:
     to all conversation update activities.
 
     '
+- uid: botbuilder.core.teams.TeamsActivityHandler.on_event_activity
+  name: on_event_activity
+  summary: 'Invoked when an event activity is received from the connector when the
+    base behavior of
+
+    <xref:botbuilder.core.teams.TeamsActivityHandler.on_turn> is used.'
+  signature: 'on_event_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  parameters:
+  - name: turn_context
+    description: The context object for this turn
+    isRequired: true
+    types:
+    - <xref:botbuilder.core.TurnContext>
+  return:
+    description: A task that represents the work queued to execute
+  remarks: 'When the <xref:botbuilder.core.teams.TeamsActivityHandler.on_turn> method
+    receives an event activity, it calls this method.
+
+    If the activity name is *tokens/response*, it calls <xref:botbuilder.core.teams.TeamsActivityHandler.on_token_response_event>;
+
+    otherwise, it calls <xref:botbuilder.core.teams.TeamsActivityHandler.on_event>.
+
+
+    In a derived class, override this method to add logic that applies to all event
+    activities.
+
+    Add logic to apply before the specific event-handling logic before the call to
+    this base class method.
+
+    Add logic to apply after the specific event-handling logic after the call to this
+    base class method.
+
+
+    Event activities communicate programmatic information from a client or channel
+    to a bot.
+
+    The meaning of an event activity is defined by the event activity name property,
+    which is meaningful within
+
+    the scope of a channel.
+
+    '
 - uid: botbuilder.core.teams.TeamsActivityHandler.on_invoke_activity
   name: on_invoke_activity
   summary: 'Invoked when an invoke activity is received from the connector.
 
     Invoke activities can be used to communicate many different things.'
   signature: 'on_invoke_activity(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> botbuilder.core.invoke_response.InvokeResponse'
+    -> botbuilder.schema._models_py3.InvokeResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -76,7 +120,7 @@ methods:
   name: on_teams_card_action_invoke
   summary: Invoked when an card action invoke activity is received from the connector.
   signature: 'on_teams_card_action_invoke(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> botbuilder.core.invoke_response.InvokeResponse'
+    -> botbuilder.schema._models_py3.InvokeResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -164,11 +208,10 @@ methods:
   summary: 'Invoked when a file consent card activity is received from the connector.
 
 
-
     activity sent when the user acts on a file consent card.'
   signature: 'on_teams_file_consent(turn_context: botbuilder.core.turn_context.TurnContext,
     file_consent_card_response: botbuilder.schema.teams._models_py3.FileConsentCardResponse)
-    -> botbuilder.core.invoke_response.InvokeResponse'
+    -> botbuilder.schema._models_py3.InvokeResponse'
   parameters:
   - name: turn_context
     isRequired: true
@@ -179,7 +222,6 @@ methods:
 - uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_file_consent_accept
   name: on_teams_file_consent_accept
   summary: 'Invoked when a file consent card is accepted by the user.
-
 
 
     activity sent when the user accepts a file consent card.'
@@ -197,7 +239,6 @@ methods:
   summary: 'Invoked when a file consent card is declined by the user.
 
 
-
     activity sent when the user declines a file consent card.'
   signature: 'on_teams_file_consent_decline(turn_context: botbuilder.core.turn_context.TurnContext,
     file_consent_card_response: botbuilder.schema.teams._models_py3.FileConsentCardResponse)'
@@ -208,13 +249,42 @@ methods:
     isRequired: true
   return:
     description: A task that represents the work queued to execute.
+- uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_meeting_end_event
+  name: on_teams_meeting_end_event
+  summary: Override this in a derived class to provide logic for when a Teams meeting
+    end event is received.
+  signature: 'on_teams_meeting_end_event(meeting: botbuilder.schema.teams._models_py3.MeetingEndEventDetails,
+    turn_context: botbuilder.core.turn_context.TurnContext)'
+  parameters:
+  - name: meeting
+    description: The details of the meeting.
+    isRequired: true
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  return:
+    description: A task that represents the work queued to execute.
+- uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_meeting_start_event
+  name: on_teams_meeting_start_event
+  summary: Override this in a derived class to provide logic for when a Teams meeting
+    start event is received.
+  signature: 'on_teams_meeting_start_event(meeting: botbuilder.schema.teams._models_py3.MeetingStartEventDetails,
+    turn_context: botbuilder.core.turn_context.TurnContext)'
+  parameters:
+  - name: meeting
+    description: The details of the meeting.
+    isRequired: true
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  return:
+    description: A task that represents the work queued to execute.
 - uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_members_added
   name: on_teams_members_added
   summary: 'Override this in a derived class to provide logic for when members other
     than the bot
 
     join the channel, such as your bot''s welcome logic.
-
 
 
     described by the conversation update activity.
@@ -243,7 +313,6 @@ methods:
     It will get the associated members with the provided accounts.
 
 
-
     described by the conversation update activity.
 
     :param team_info: The team info object representing the team.
@@ -266,7 +335,6 @@ methods:
     than the bot
 
     leave the channel, such as your bot''s good-bye logic.
-
 
 
     described by the conversation update activity.
@@ -293,7 +361,6 @@ methods:
     leave the channel, such as your bot''s good-bye logic.
 
     It will get the associated members with the provided accounts.
-
 
 
     described by the conversation update activity.

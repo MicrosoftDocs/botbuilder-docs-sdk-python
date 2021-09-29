@@ -7,8 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: Refers to a substring of content within another field.
 constructor:
-  syntax: 'TextHighlight(*, text: str = None, occurrence: int = None, **kwargs) ->
-    None'
+  syntax: 'TextHighlight(*, text: Optional[str] = None, occurrence: Optional[int]
+    = None, **kwargs) -> None'
   parameters:
   - name: text
     description: Defines the snippet of text to highlight
