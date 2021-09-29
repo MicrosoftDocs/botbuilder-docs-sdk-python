@@ -1,0 +1,151 @@
+### YamlMime:PythonClass
+uid: botframework.connector.auth.user_token_client.UserTokenClient
+name: UserTokenClient
+fullName: botframework.connector.auth.user_token_client.UserTokenClient
+module: botframework.connector.auth.user_token_client
+inheritances:
+- abc.ABC
+constructor:
+  syntax: UserTokenClient()
+methods:
+- uid: botframework.connector.auth.user_token_client.UserTokenClient.create_token_exchange_state
+  name: create_token_exchange_state
+  summary: 'Helper function to create the Base64 encoded token exchange state used
+    in getSignInResource calls.
+
+
+    :param app_id The app_id to include in the token exchange state.
+
+    :param connection_name The connection_name to include in the token exchange state.
+
+    :param activity The [Activity](xref:botframework-schema.Activity) from which to
+    derive the token exchange state.
+
+    :return: Base64 encoded token exchange state.'
+  signature: 'create_token_exchange_state(app_id: str, connection_name: str, activity:
+    botbuilder.schema._models_py3.Activity) -> str'
+  parameters:
+  - name: app_id
+    isRequired: true
+  - name: connection_name
+    isRequired: true
+  - name: activity
+    isRequired: true
+- uid: botframework.connector.auth.user_token_client.UserTokenClient.exchange_token
+  name: exchange_token
+  summary: 'Performs a token exchange operation such as for single sign-on.
+
+
+    :param user_id The user id that will be associated with the token.
+
+    :param connection_name Name of the auth connection to use.
+
+    :param channel_id The channel Id that will be associated with the token.
+
+    :param exchange_request The exchange request details, either a token to exchange
+    or a uri to exchange.
+
+    :return: A TokenResponse object.'
+  signature: 'exchange_token(user_id: str, connection_name: str, channel_id: str,
+    exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
+    -> botbuilder.schema._models_py3.TokenResponse'
+  parameters:
+  - name: user_id
+    isRequired: true
+  - name: connection_name
+    isRequired: true
+  - name: channel_id
+    isRequired: true
+  - name: exchange_request
+    isRequired: true
+- uid: botframework.connector.auth.user_token_client.UserTokenClient.get_aad_tokens
+  name: get_aad_tokens
+  summary: Retrieves Azure Active Directory tokens for particular resources on a configured
+    connection.
+  signature: 'get_aad_tokens(user_id: str, connection_name: str, resource_urls: List[str],
+    channel_id: str) -> Dict[str, botbuilder.schema._models_py3.TokenResponse]'
+  parameters:
+  - name: user_id
+    description: The user id that will be associated with the token.
+    isRequired: true
+  - name: connection_name
+    description: Name of the auth connection to use.
+    isRequired: true
+  - name: resource_urls
+    description: The list of resource URLs to retrieve tokens for.
+    isRequired: true
+  - name: channel_id
+    description: The channel Id that will be associated with the token.
+    isRequired: true
+  return:
+    description: A Dictionary of resource_urls to the corresponding TokenResponse.
+- uid: botframework.connector.auth.user_token_client.UserTokenClient.get_sign_in_resource
+  name: get_sign_in_resource
+  summary: Get the raw signin link to be sent to the user for signin for a connection
+    name.
+  signature: 'get_sign_in_resource(connection_name: str, activity: botbuilder.schema._models_py3.Activity,
+    final_redirect: str) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+  parameters:
+  - name: connection_name
+    description: Name of the auth connection to use.
+    isRequired: true
+  - name: activity
+    description: The Activity from which to derive the token exchange state.
+    isRequired: true
+  - name: final_redirect
+    description: The final URL that the OAuth flow will redirect to.
+    isRequired: true
+  return:
+    description: A SignInUrlResponse.
+- uid: botframework.connector.auth.user_token_client.UserTokenClient.get_token_status
+  name: get_token_status
+  summary: Retrieves the token status for each configured connection for the given
+    user.
+  signature: 'get_token_status(user_id: str, channel_id: str, include_filter: str)
+    -> List[botframework.connector.token_api.models._models_py3.TokenStatus]'
+  parameters:
+  - name: user_id
+    description: The user id that will be associated with the token.
+    isRequired: true
+  - name: channel_id
+    description: The channel Id that will be associated with the token.
+    isRequired: true
+  - name: include_filter
+    description: The include filter.
+    isRequired: true
+  return:
+    description: A list of TokenStatus objects.
+- uid: botframework.connector.auth.user_token_client.UserTokenClient.get_user_token
+  name: get_user_token
+  summary: Attempts to retrieve the token for a user that's in a login flow.
+  signature: 'get_user_token(user_id: str, connection_name: str, channel_id: str,
+    magic_code: str) -> botbuilder.schema._models_py3.TokenResponse'
+  parameters:
+  - name: user_id
+    description: The user id that will be associated with the token.
+    isRequired: true
+  - name: connection_name
+    description: Name of the auth connection to use.
+    isRequired: true
+  - name: channel_id
+    description: The channel Id that will be associated with the token.
+    isRequired: true
+  - name: magic_code
+    description: (Optional) Optional user entered code to validate.
+    isRequired: true
+  return:
+    description: A TokenResponse object.
+- uid: botframework.connector.auth.user_token_client.UserTokenClient.sign_out_user
+  name: sign_out_user
+  summary: Signs the user out with the token server.
+  signature: 'sign_out_user(user_id: str, connection_name: str, channel_id: str)'
+  parameters:
+  - name: user_id
+    description: The user id that will be associated with the token.
+    isRequired: true
+  - name: connection_name
+    description: Name of the auth connection to use.
+    isRequired: true
+  - name: channel_id
+    description: The channel Id that will be associated with the token.
+    isRequired: true

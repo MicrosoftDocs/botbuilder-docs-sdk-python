@@ -1,0 +1,70 @@
+### YamlMime:PythonClass
+uid: botframework.connector.auth.bot_framework_authentication_factory.BotFrameworkAuthenticationFactory
+name: BotFrameworkAuthenticationFactory
+fullName: botframework.connector.auth.bot_framework_authentication_factory.BotFrameworkAuthenticationFactory
+module: botframework.connector.auth.bot_framework_authentication_factory
+inheritances:
+- builtins.object
+constructor:
+  syntax: BotFrameworkAuthenticationFactory()
+methods:
+- uid: botframework.connector.auth.bot_framework_authentication_factory.BotFrameworkAuthenticationFactory.create
+  name: create
+  summary: Creates the appropriate BotFrameworkAuthentication instance.
+  signature: 'create(*, channel_service: Optional[str] = None, validate_authority:
+    bool = False, to_channel_from_bot_login_url: Optional[str] = None, to_channel_from_bot_oauth_scope:
+    Optional[str] = None, to_bot_from_channel_token_issuer: Optional[str] = None,
+    oauth_url: Optional[str] = None, to_bot_from_channel_open_id_metadata_url: Optional[str]
+    = None, to_bot_from_emulator_open_id_metadata_url: Optional[str] = None, caller_id:
+    Optional[str] = None, credential_factory: botframework.connector.auth.service_client_credentials_factory.ServiceClientCredentialsFactory
+    = <botframework.connector.auth.password_service_client_credential_factory.PasswordServiceClientCredentialFactory
+    object>, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
+    = <botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
+    object>, http_client_factory: Optional[botframework.connector.http_client_factory.HttpClientFactory]
+    = None, connector_client_configuration: Optional[botframework.connector.bot_framework_sdk_client_async.BotFrameworkConnectorConfiguration]
+    = None, logger: Optional[logging.Logger] = None) -> botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication'
+  parameters:
+  - name: channel_service
+    description: The Channel Service.
+    isRequired: true
+  - name: validate_authority
+    description: The validate authority value to use.
+    isRequired: true
+  - name: to_channel_from_bot_login_url
+    description: The to Channel from bot login url.
+    isRequired: true
+  - name: to_channel_from_bot_oauth_scope
+    description: The to Channel from bot oauth scope.
+    isRequired: true
+  - name: to_bot_from_channel_token_issuer
+    description: The to bot from Channel Token Issuer.
+    isRequired: true
+  - name: oauth_url
+    description: The oAuth url.
+    isRequired: true
+  - name: to_bot_from_channel_open_id_metadata_url
+    description: The to bot from Channel Open Id Metadata url.
+    isRequired: true
+  - name: to_bot_from_emulator_open_id_metadata_url
+    description: The to bot from Emulator Open Id Metadata url.
+    isRequired: true
+  - name: caller_id
+    description: The Microsoft app password.
+    isRequired: true
+  - name: credential_factory
+    description: The ServiceClientCredentialsFactory to use to create credentials.
+    isRequired: true
+  - name: auth_configuration
+    description: The AuthenticationConfiguration to use.
+    isRequired: true
+  - name: http_client_factory
+    description: The HttpClientFactory to use for a skill BotFrameworkClient.
+    isRequired: true
+  - name: connector_client_configuration
+    description: Configuration to use custom http pipeline for the connector
+    isRequired: true
+  - name: logger
+    description: The Logger to use.
+    isRequired: true
+  return:
+    description: A new BotFrameworkAuthentication instance.

@@ -1,0 +1,35 @@
+### YamlMime:PythonClass
+uid: botframework.connector.skills.bot_framework_client.BotFrameworkClient
+name: BotFrameworkClient
+fullName: botframework.connector.skills.bot_framework_client.BotFrameworkClient
+module: botframework.connector.skills.bot_framework_client
+inheritances:
+- abc.ABC
+constructor:
+  syntax: BotFrameworkClient()
+methods:
+- uid: botframework.connector.skills.bot_framework_client.BotFrameworkClient.post_activity
+  name: post_activity
+  summary: Forwards an activity to a another bot.
+  signature: 'post_activity(from_bot_id: str, to_bot_id: str, to_url: str, service_url:
+    str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity) ->
+    botbuilder.core.InvokeResponse'
+  parameters:
+  - name: from_bot_id
+    description: The MicrosoftAppId of the bot sending the activity.
+    isRequired: true
+  - name: to_bot_id
+    description: The MicrosoftAppId of the bot receiving the activity.
+    isRequired: true
+  - name: to_url
+    description: The URL of the bot receiving the activity.
+    isRequired: true
+  - name: service_url
+    description: The callback Url for the skill host.
+    isRequired: true
+  - name: conversation_id
+    description: A conversation ID to use for the conversation with the skill.
+    isRequired: true
+  - name: activity
+    description: Activity to forward.
+    isRequired: true

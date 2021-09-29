@@ -1,0 +1,19 @@
+### YamlMime:PythonClass
+uid: botbuilder.core.streaming.version_info.VersionInfo
+name: VersionInfo
+fullName: botbuilder.core.streaming.version_info.VersionInfo
+module: botbuilder.core.streaming.version_info
+inheritances:
+- botframework.streaming.payloads.models.serializable.Serializable
+constructor:
+  syntax: 'VersionInfo(*, user_agent: Optional[str] = None)'
+methods:
+- uid: botbuilder.core.streaming.version_info.VersionInfo.from_json
+  name: from_json
+  signature: 'from_json(json_str: str) -> ResponsePayload'
+  parameters:
+  - name: json_str
+    isRequired: true
+- uid: botbuilder.core.streaming.version_info.VersionInfo.to_json
+  name: to_json
+  signature: to_json() -> str

@@ -6,16 +6,18 @@ module: botbuilder.core.telemetry_logger_constants
 inheritances:
 - builtins.object
 summary: The Telemetry Logger Event names.
+constructor:
+  syntax: TelemetryLoggerConstants()
 attributes:
 - uid: botbuilder.core.telemetry_logger_constants.TelemetryLoggerConstants.BOT_MSG_DELETE_EVENT
   name: BOT_MSG_DELETE_EVENT
-  signature: BOT_MSG_DELETE_EVENT = 'BotMessageDelete'
+  signature: 'BOT_MSG_DELETE_EVENT: str = ''BotMessageDelete'''
 - uid: botbuilder.core.telemetry_logger_constants.TelemetryLoggerConstants.BOT_MSG_RECEIVE_EVENT
   name: BOT_MSG_RECEIVE_EVENT
-  signature: BOT_MSG_RECEIVE_EVENT = 'BotMessageReceived'
+  signature: 'BOT_MSG_RECEIVE_EVENT: str = ''BotMessageReceived'''
 - uid: botbuilder.core.telemetry_logger_constants.TelemetryLoggerConstants.BOT_MSG_SEND_EVENT
   name: BOT_MSG_SEND_EVENT
-  signature: BOT_MSG_SEND_EVENT = 'BotMessageSend'
+  signature: 'BOT_MSG_SEND_EVENT: str = ''BotMessageSend'''
 - uid: botbuilder.core.telemetry_logger_constants.TelemetryLoggerConstants.BOT_MSG_UPDATE_EVENT
   name: BOT_MSG_UPDATE_EVENT
-  signature: BOT_MSG_UPDATE_EVENT = 'BotMessageUpdate'
+  signature: 'BOT_MSG_UPDATE_EVENT: str = ''BotMessageUpdate'''

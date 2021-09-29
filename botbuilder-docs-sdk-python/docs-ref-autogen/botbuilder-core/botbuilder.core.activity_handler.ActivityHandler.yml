@@ -6,6 +6,8 @@ module: botbuilder.core.activity_handler
 inheritances:
 - botbuilder.core.bot.Bot
 summary: Handles activities and should be subclassed.
+constructor:
+  syntax: ActivityHandler()
 remarks: 'Derive from this class to handle particular activity types.
 
   Yon can add pre and post processing of activities by calling the base class
@@ -14,6 +16,30 @@ remarks: 'Derive from this class to handle particular activity types.
 
   '
 methods:
+- uid: botbuilder.core.activity_handler.ActivityHandler.on_adaptive_card_invoke
+  name: on_adaptive_card_invoke
+  summary: 'Invoked when the bot is sent an Adaptive Card Action Execute.
+
+
+    When the on_invoke_activity method receives an Invoke with a Activity.name of
+    *adaptiveCard/action*, it
+
+    calls this method.'
+  signature: 'on_adaptive_card_invoke(turn_context: botbuilder.core.turn_context.TurnContext,
+    invoke_value: botbuilder.schema._models_py3.AdaptiveCardInvokeValue) -> botbuilder.schema._models_py3.AdaptiveCardInvokeResponse'
+  parameters:
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+    types:
+    - <xref:botbuilder.core.TurnContext>
+  - name: invoke_value
+    description: A string-typed object from the incoming activity's value.
+    isRequired: true
+    types:
+    - <xref:botframework.schema.models.AdaptiveCardInvokeValue>
+  return:
+    description: The HealthCheckResponse object
 - uid: botbuilder.core.activity_handler.ActivityHandler.on_conversation_update_activity
   name: on_conversation_update_activity
   summary: 'Invoked when a conversation update activity is received from the channel
@@ -132,27 +158,6 @@ methods:
     the scope of a channel.
 
     '
-- uid: botbuilder.core.activity_handler.ActivityHandler.on_healthcheck
-  name: on_healthcheck
-  summary: 'Invoked when the bot is sent a health check from the hosting infrastructure
-    or, in the case of
-
-    Skills the parent bot. By default, this method acknowledges the health state of
-    the bot.
-
-
-    When the on_invoke_activity method receives an Invoke with a Activity.name of
-    *healthCheck*, it
-
-    calls this method.'
-  signature: 'on_healthcheck(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> botbuilder.schema.healthcheck_response.HealthCheckResponse'
-  parameters:
-  - name: turn_context
-    description: A context object for this turn.
-    isRequired: true
-  return:
-    description: The HealthCheckResponse object
 - uid: botbuilder.core.activity_handler.ActivityHandler.on_installation_update
   name: on_installation_update
   summary: 'Override this in a derived class to provide logic specific to
@@ -200,7 +205,7 @@ methods:
   summary: Registers an activity event handler for the _invoke_ event, emitted for
     every incoming event activity.
   signature: 'on_invoke_activity(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> typing.Union[botbuilder.core.invoke_response.InvokeResponse, NoneType]'
+    -> Optional[botbuilder.schema._models_py3.InvokeResponse]'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -217,7 +222,6 @@ methods:
     the conversation. You can add your bot''s welcome logic.
 
 
-
     conversation update activity
 
     :type members_added: <xref:typing.List>
@@ -225,7 +229,7 @@ methods:
     :param turn_context: The context object for this turn
 
     :type turn_context: <xref:botbuilder.core.TurnContext>'
-  signature: 'on_members_added_activity(members_added: typing.List[botbuilder.schema._models_py3.ChannelAccount],
+  signature: 'on_members_added_activity(members_added: List[botbuilder.schema._models_py3.ChannelAccount],
     turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: members_added
@@ -251,7 +255,6 @@ methods:
     the conversation.  You can add your bot''s good-bye logic.
 
 
-
     conversation update activity
 
     :type members_added: <xref:typing.List>
@@ -259,7 +262,7 @@ methods:
     :param turn_context: The context object for this turn
 
     :type turn_context: <xref:botbuilder.core.TurnContext>'
-  signature: 'on_members_removed_activity(members_removed: typing.List[botbuilder.schema._models_py3.ChannelAccount],
+  signature: 'on_members_removed_activity(members_removed: List[botbuilder.schema._models_py3.ChannelAccount],
     turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: members_removed
@@ -327,7 +330,7 @@ methods:
     to a previous activity
 
     are added to the conversation.'
-  signature: 'on_reactions_added(message_reactions: typing.List[botbuilder.schema._models_py3.MessageReaction],
+  signature: 'on_reactions_added(message_reactions: List[botbuilder.schema._models_py3.MessageReaction],
     turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: message_reactions
@@ -365,7 +368,7 @@ methods:
     to a previous activity
 
     are removed from the conversation.'
-  signature: 'on_reactions_removed(message_reactions: typing.List[botbuilder.schema._models_py3.MessageReaction],
+  signature: 'on_reactions_removed(message_reactions: List[botbuilder.schema._models_py3.MessageReaction],
     turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: message_reactions

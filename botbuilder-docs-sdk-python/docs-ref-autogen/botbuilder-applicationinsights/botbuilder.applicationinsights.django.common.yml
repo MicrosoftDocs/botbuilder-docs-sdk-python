@@ -6,7 +6,7 @@ summary: Common utilities for Django middleware.
 functions:
 - uid: botbuilder.applicationinsights.django.common.create_client
   name: create_client
-  signature: 'create_client(aisettings=None, telemetry_processor: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
+  signature: 'create_client(aisettings=None, telemetry_processor: Optional[botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor]
     = None)'
   parameters:
   - name: aisettings
@@ -19,7 +19,7 @@ functions:
     still send
 
     along the real object to things that depend on it to exist'
-  signature: 'dummy_client(reason: str, telemetry_processor: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
+  signature: 'dummy_client(reason: str, telemetry_processor: Optional[botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor]
     = None)'
   parameters:
   - name: reason
@@ -29,7 +29,7 @@ functions:
   name: get_telemetry_client_with_processor
   summary: Gets a telemetry client instance with a telemetry processor.
   signature: 'get_telemetry_client_with_processor(key: str, channel: applicationinsights.channel.TelemetryChannel.TelemetryChannel,
-    telemetry_processor: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
+    telemetry_processor: Optional[botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor]
     = None) -> applicationinsights.TelemetryClient.TelemetryClient'
   parameters:
   - name: key
@@ -47,7 +47,7 @@ functions:
     isRequired: true
     defaultValue: None
     types:
-    - <xref:TelemetryProcessor>
+    - <xref:botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor>
   return:
     description: a telemetry client with telemetry processor.
     types:

@@ -4,10 +4,16 @@ name: ActivityTypes
 fullName: botbuilder.schema.ActivityTypes
 summary: An enumeration.
 module: botbuilder.schema
+constructor:
+  syntax: ActivityTypes(value)
 inheritances:
 - builtins.str
 - enum.Enum
 fields:
+- name: command
+  uid: botbuilder.schema.ActivityTypes.command
+- name: command_result
+  uid: botbuilder.schema.ActivityTypes.command_result
 - name: contact_relation_update
   uid: botbuilder.schema.ActivityTypes.contact_relation_update
 - name: conversation_update

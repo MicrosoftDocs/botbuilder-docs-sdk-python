@@ -36,7 +36,7 @@ methods:
 
     active after the turn has been processed by the dialog.'
   signature: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    options: object = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+    options: Optional[object] = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: dialog_context
     description: The <xref:botbuilder.dialogs.DialogContext> for the current turn
@@ -240,7 +240,7 @@ methods:
     - <xref:botbuilder.dialogs.DialogInstance>
 - uid: botbuilder.dialogs.ComponentDialog.reprompt_dialog
   name: reprompt_dialog
-  summary: 'Called when the dialog should re-prompt the user for input.'
+  summary: Called when the dialog should re-prompt the user for input.
   signature: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
     botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
   parameters:
@@ -261,8 +261,8 @@ methods:
 
     control to this dialog component.'
   signature: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object = None)
-    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+    reason: botbuilder.dialogs.dialog_reason.DialogReason, result: Optional[object]
+    = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: dialog_context
     description: The dialog context for the current turn of the conversation.

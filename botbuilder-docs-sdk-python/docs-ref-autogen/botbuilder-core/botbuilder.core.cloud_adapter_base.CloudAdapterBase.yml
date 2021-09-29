@@ -1,0 +1,165 @@
+### YamlMime:PythonClass
+uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase
+name: CloudAdapterBase
+fullName: botbuilder.core.cloud_adapter_base.CloudAdapterBase
+module: botbuilder.core.cloud_adapter_base
+inheritances:
+- botbuilder.core.bot_adapter.BotAdapter
+- abc.ABC
+constructor:
+  syntax: 'CloudAdapterBase(bot_framework_authentication: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication)
+    -> None'
+methods:
+- uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.continue_conversation
+  name: continue_conversation
+  summary: 'Sends a proactive message to a conversation.
+
+    Call this method to proactively send a message to a conversation.
+
+    Most channels require a user to initiate a conversation with a bot before the
+    bot can send activities
+
+    to the user.'
+  signature: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
+    callback: Callable)'
+  parameters:
+  - name: reference
+    description: A reference to the conversation to continue.
+    isRequired: true
+    types:
+    - <xref:botbuilder.schema.ConversationReference>
+  - name: callback
+    description: The method to call for the resulting bot turn.
+    isRequired: true
+    types:
+    - <xref:typing.Callable>
+- uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.continue_conversation_with_claims
+  name: continue_conversation_with_claims
+  signature: 'continue_conversation_with_claims(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+    reference: botbuilder.schema._models_py3.ConversationReference, audience: str,
+    logic: Callable[[botbuilder.core.turn_context.TurnContext], Awaitable])'
+  parameters:
+  - name: claims_identity
+    isRequired: true
+  - name: reference
+    isRequired: true
+  - name: audience
+    isRequired: true
+  - name: logic
+    isRequired: true
+- uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.create_claims_identity
+  name: create_claims_identity
+  signature: 'create_claims_identity(bot_app_id: str = '''') -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  parameters:
+  - name: bot_app_id
+- uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.delete_activity
+  name: delete_activity
+  summary: Deletes an existing activity.
+  signature: 'delete_activity(context: botbuilder.core.turn_context.TurnContext, reference:
+    botbuilder.schema._models_py3.ConversationReference)'
+  parameters:
+  - name: context
+    description: The context object for the turn.
+    isRequired: true
+    types:
+    - <xref:botbuilder.core.cloud_adapter_base.TurnContext>
+  - name: reference
+    description: Conversation reference for the activity to delete.
+    isRequired: true
+    types:
+    - <xref:botbuilder.schema.ConversationReference>
+- uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.process_activity
+  name: process_activity
+  summary: Creates a turn context and runs the middleware pipeline for an incoming
+    activity.
+  signature: 'process_activity(auth_header_or_authenticate_request_result: Union[str,
+    botframework.connector.auth.authenticate_request_result.AuthenticateRequestResult],
+    activity: botbuilder.schema._models_py3.Activity, logic: Callable[[botbuilder.core.turn_context.TurnContext],
+    Awaitable])'
+  parameters:
+  - name: auth_header
+    description: The HTTP authentication header of the request
+    isRequired: true
+    types:
+    - <xref:typing.Union>[<xref:typing.str>, <xref:AuthenticateRequestResult>]
+  - name: activity
+    description: The incoming activity
+    isRequired: true
+    types:
+    - <xref:botbuilder.core.cloud_adapter_base.Activity>
+  - name: logic
+    description: The logic to execute at the end of the adapter's middleware pipeline.
+    isRequired: true
+    types:
+    - <xref:typing.Callable>
+  return:
+    description: A task that represents the work queued to execute.
+  remarks: 'This class processes an activity received by the bots web server. This
+    includes any messages
+
+    sent from a user and is the method that drives what''s often referred to as the
+
+    bots *reactive messaging* flow.
+
+    Call this method to reactively send a message to a conversation.
+
+    If the task completes successfully, then an <xref:botbuilder.core.cloud_adapter_base.InvokeResponse>
+    is returned;
+
+    otherwise. *null* is returned.
+
+    '
+- uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.process_proactive
+  name: process_proactive
+  signature: 'process_proactive(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+    continuation_activity: botbuilder.schema._models_py3.Activity, audience: str,
+    logic: Callable[[botbuilder.core.turn_context.TurnContext], Awaitable])'
+  parameters:
+  - name: claims_identity
+    isRequired: true
+  - name: continuation_activity
+    isRequired: true
+  - name: audience
+    isRequired: true
+  - name: logic
+    isRequired: true
+- uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.send_activities
+  name: send_activities
+  summary: Sends a set of activities to the user. An array of responses from the server
+    will be returned.
+  signature: 'send_activities(context: botbuilder.core.turn_context.TurnContext, activities:
+    List[botbuilder.schema._models_py3.Activity]) -> List[botbuilder.schema._models_py3.ResourceResponse]'
+  parameters:
+  - name: context
+    description: The context object for the turn.
+    isRequired: true
+    types:
+    - <xref:botbuilder.core.cloud_adapter_base.TurnContext>
+  - name: activities
+    description: The activities to send.
+    isRequired: true
+    types:
+    - <xref:typing.List>[<xref:Activity>]
+- uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.update_activity
+  name: update_activity
+  summary: Replaces an existing activity.
+  signature: 'update_activity(context: botbuilder.core.turn_context.TurnContext, activity:
+    botbuilder.schema._models_py3.Activity)'
+  parameters:
+  - name: context
+    description: The context object for the turn.
+    isRequired: true
+    types:
+    - <xref:botbuilder.core.cloud_adapter_base.TurnContext>
+  - name: activity
+    description: New replacement activity.
+    isRequired: true
+    types:
+    - <xref:botbuilder.schema.Activity>
+attributes:
+- uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.CONNECTOR_FACTORY_KEY
+  name: CONNECTOR_FACTORY_KEY
+  signature: CONNECTOR_FACTORY_KEY = 'ConnectorFactory'
+- uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.USER_TOKEN_CLIENT_KEY
+  name: USER_TOKEN_CLIENT_KEY
+  signature: USER_TOKEN_CLIENT_KEY = 'UserTokenClient'

@@ -1,0 +1,101 @@
+### YamlMime:PythonClass
+uid: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication
+name: BotFrameworkAuthentication
+fullName: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication
+module: botframework.connector.auth.bot_framework_authentication
+inheritances:
+- abc.ABC
+constructor:
+  syntax: BotFrameworkAuthentication()
+methods:
+- uid: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication.authenticate_channel_request
+  name: authenticate_channel_request
+  summary: Authenticate Bot Framework Protocol request to Skills.
+  signature: 'authenticate_channel_request(auth_header: str) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  parameters:
+  - name: auth_header
+    description: The HTTP auth header in the skill request.
+    isRequired: true
+  return:
+    description: A ClaimsIdentity.
+- uid: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication.authenticate_request
+  name: authenticate_request
+  summary: Validate Bot Framework Protocol requests.
+  signature: 'authenticate_request(activity: botbuilder.schema._models_py3.Activity,
+    auth_header: str) -> botframework.connector.auth.authenticate_request_result.AuthenticateRequestResult'
+  parameters:
+  - name: activity
+    description: The inbound Activity.
+    isRequired: true
+  - name: auth_header
+    description: The HTTP auth header.
+    isRequired: true
+  return:
+    description: An AuthenticateRequestResult.
+- uid: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication.authenticate_streaming_request
+  name: authenticate_streaming_request
+  summary: Validate Bot Framework Protocol requests.
+  signature: 'authenticate_streaming_request(auth_header: str, channel_id_header:
+    str) -> botframework.connector.auth.authenticate_request_result.AuthenticateRequestResult'
+  parameters:
+  - name: auth_header
+    description: The HTTP auth header.
+    isRequired: true
+  - name: channel_id_header
+    description: The channel ID HTTP header.
+    isRequired: true
+  return:
+    description: An AuthenticateRequestResult.
+- uid: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication.create_bot_framework_client
+  name: create_bot_framework_client
+  summary: Creates a BotFrameworkClient for calling Skills.
+  signature: create_bot_framework_client() -> botframework.connector.skills.bot_framework_client.BotFrameworkClient
+  return:
+    description: A BotFrameworkClient.
+- uid: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication.create_connector_factory
+  name: create_connector_factory
+  summary: 'Creates a ConnectorFactory that can be used to create ConnectorClients
+    that can use credentials
+
+    from this particular Cloud Environment.'
+  signature: 'create_connector_factory(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity)
+    -> botframework.connector.auth.connector_factory.ConnectorFactory'
+  parameters:
+  - name: claims_identity
+    description: The inbound Activity's ClaimsIdentity.
+    isRequired: true
+  return:
+    description: A ConnectorFactory.
+- uid: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication.create_user_token_client
+  name: create_user_token_client
+  summary: Creates the appropriate UserTokenClient instance.
+  signature: 'create_user_token_client(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity)
+    -> botframework.connector.auth.user_token_client.UserTokenClient'
+  parameters:
+  - name: claims_identity
+    description: The inbound Activity's ClaimsIdentity.
+    isRequired: true
+  return:
+    description: An UserTokenClient.
+- uid: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication.generate_caller_id
+  name: generate_caller_id
+  summary: 'Generates the appropriate caller_id to write onto the Activity, this might
+    be None.
+
+
+    :param credential_factory A ServiceClientCredentialsFactory to use.
+
+    :param claims_identity The inbound claims.
+
+    :param caller_id The default caller_id to use if this is not a skill.
+
+    :return: The caller_id, this might be None.'
+  signature: 'generate_caller_id(*, credential_factory: botframework.connector.auth.service_client_credentials_factory.ServiceClientCredentialsFactory,
+    claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity, caller_id:
+    str) -> str'
+- uid: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication.get_originating_audience
+  name: get_originating_audience
+  summary: Gets the originating audience from Bot OAuth scope.
+  signature: get_originating_audience() -> str
+  return:
+    description: The originating audience.

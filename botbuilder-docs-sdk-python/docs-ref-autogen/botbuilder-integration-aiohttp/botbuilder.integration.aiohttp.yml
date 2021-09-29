@@ -18,11 +18,20 @@ functions:
   - name: request
   - name: handler
 classes:
+- botbuilder.integration.aiohttp.BotFrameworkHttpAdapter
 - botbuilder.integration.aiohttp.BotFrameworkHttpClient
+- botbuilder.integration.aiohttp.CloudAdapter
+- botbuilder.integration.aiohttp.ConfigurationServiceClientCredentialFactory
 packages:
 - botbuilder.integration.aiohttp.skills
+- botbuilder.integration.aiohttp.streaming
 modules:
 - botbuilder.integration.aiohttp.about
 - botbuilder.integration.aiohttp.aiohttp_channel_service
 - botbuilder.integration.aiohttp.aiohttp_channel_service_exception_middleware
+- botbuilder.integration.aiohttp.bot_framework_http_adapter
+- botbuilder.integration.aiohttp.bot_framework_http_adapter_integration_base
 - botbuilder.integration.aiohttp.bot_framework_http_client
+- botbuilder.integration.aiohttp.cloud_adapter
+- botbuilder.integration.aiohttp.configuration_bot_framework_authentication
+- botbuilder.integration.aiohttp.configuration_service_client_credential_factory

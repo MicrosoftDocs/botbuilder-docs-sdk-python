@@ -1,0 +1,38 @@
+### YamlMime:PythonClass
+uid: botbuilder.schema.AdaptiveCardInvokeAction
+name: AdaptiveCardInvokeAction
+fullName: botbuilder.schema.AdaptiveCardInvokeAction
+module: botbuilder.schema
+inheritances:
+- msrest.serialization.Model
+summary: 'AdaptiveCardInvokeAction.
+
+
+  Defines the structure that arrives in the Activity.Value.Action for Invoke activity
+  with
+
+  name of ''adaptiveCard/action''.'
+constructor:
+  syntax: 'AdaptiveCardInvokeAction(*, type: Optional[str] = None, id: Optional[str]
+    = None, verb: Optional[str] = None, data=None, **kwargs) -> None'
+  parameters:
+  - name: type
+    description: The Type of this Adaptive Card Invoke Action.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: id
+    description: The Id of this Adaptive Card Invoke Action.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: verb
+    description: The Verb of this Adaptive Card Invoke Action.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: data
+    description: The data of this Adaptive Card Invoke Action.
+    isRequired: true
+    types:
+    - <xref:dict>[<xref:str>, <xref:object>]

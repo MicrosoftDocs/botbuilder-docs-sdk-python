@@ -6,6 +6,8 @@ module: botbuilder.core.queue_storage
 inheritances:
 - abc.ABC
 summary: A base class for enqueueing an Activity for later processing.
+constructor:
+  syntax: QueueStorage()
 methods:
 - uid: botbuilder.core.queue_storage.QueueStorage.queue_activity
   name: queue_activity
@@ -14,7 +16,7 @@ methods:
 
     visible to Dequeue and Peek operations.'
   signature: 'queue_activity(activity: botbuilder.schema._models_py3.Activity, visibility_timeout:
-    int = None, time_to_live: int = None) -> str'
+    Optional[int] = None, time_to_live: Optional[int] = None) -> str'
   parameters:
   - name: activity
     description: The activity to be queued for later processing.
@@ -31,7 +33,7 @@ methods:
     types:
     - <xref:int>
   - name: time_to_live
-    description: 'Specifies the time-to-live interval for the message in seconds.'
+    description: Specifies the time-to-live interval for the message in seconds.
     isRequired: true
     defaultValue: None
     types:

@@ -11,7 +11,7 @@ summary: 'Initializes a new instance of the <see cref="ChannelServiceHandler"/> 
 constructor:
   syntax: 'ChannelServiceHandler(credential_provider: botframework.connector.auth.credential_provider.CredentialProvider,
     auth_config: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration,
-    channel_provider: botframework.connector.auth.channel_provider.ChannelProvider
+    channel_provider: Optional[botframework.connector.auth.channel_provider.ChannelProvider]
     = None)'
 methods:
 - uid: botbuilder.core.ChannelServiceHandler.handle_create_conversation
@@ -46,7 +46,7 @@ methods:
 - uid: botbuilder.core.ChannelServiceHandler.handle_get_activity_members
   name: handle_get_activity_members
   signature: handle_get_activity_members(auth_header, conversation_id, activity_id)
-    -> typing.List[botbuilder.schema._models_py3.ChannelAccount]
+    -> List[botbuilder.schema._models_py3.ChannelAccount]
   parameters:
   - name: auth_header
     isRequired: true
@@ -67,7 +67,7 @@ methods:
     isRequired: true
 - uid: botbuilder.core.ChannelServiceHandler.handle_get_conversation_members
   name: handle_get_conversation_members
-  signature: handle_get_conversation_members(auth_header, conversation_id) -> typing.List[botbuilder.schema._models_py3.ChannelAccount]
+  signature: handle_get_conversation_members(auth_header, conversation_id) -> List[botbuilder.schema._models_py3.ChannelAccount]
   parameters:
   - name: auth_header
     isRequired: true
@@ -258,7 +258,7 @@ methods:
 
     activity in the conversation.'
   signature: 'on_get_activity_members(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str, activity_id: str) -> typing.List[botbuilder.schema._models_py3.ChannelAccount]'
+    conversation_id: str, activity_id: str) -> List[botbuilder.schema._models_py3.ChannelAccount]'
   parameters:
   - name: claims_identity
     isRequired: true
@@ -298,7 +298,7 @@ methods:
 
     objects representing the members of the conversation.'
   signature: 'on_get_conversation_members(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str) -> typing.List[botbuilder.schema._models_py3.ChannelAccount]'
+    conversation_id: str) -> List[botbuilder.schema._models_py3.ChannelAccount]'
   parameters:
   - name: claims_identity
     isRequired: true
@@ -340,8 +340,8 @@ methods:
 
     may rarely return members from a previous request.'
   signature: 'on_get_conversation_paged_members(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str, page_size: int = None, continuation_token: str = '''') ->
-    botbuilder.schema._models_py3.PagedMembersResult'
+    conversation_id: str, page_size: Optional[int] = None, continuation_token: str
+    = '''') -> botbuilder.schema._models_py3.PagedMembersResult'
   parameters:
   - name: claims_identity
     isRequired: true

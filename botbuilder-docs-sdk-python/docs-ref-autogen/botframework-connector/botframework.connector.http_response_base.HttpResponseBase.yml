@@ -1,0 +1,19 @@
+### YamlMime:PythonClass
+uid: botframework.connector.http_response_base.HttpResponseBase
+name: HttpResponseBase
+fullName: botframework.connector.http_response_base.HttpResponseBase
+module: botframework.connector.http_response_base
+inheritances:
+- abc.ABC
+constructor:
+  syntax: HttpResponseBase()
+methods:
+- uid: botframework.connector.http_response_base.HttpResponseBase.is_succesful
+  name: is_succesful
+  signature: is_succesful() -> bool
+- uid: botframework.connector.http_response_base.HttpResponseBase.read_content_str
+  name: read_content_str
+  signature: read_content_str() -> str
+attributes:
+- uid: botframework.connector.http_response_base.HttpResponseBase.status_code
+  name: status_code

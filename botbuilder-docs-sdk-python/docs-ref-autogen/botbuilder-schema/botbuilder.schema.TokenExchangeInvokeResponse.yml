@@ -7,8 +7,9 @@ inheritances:
 - msrest.serialization.Model
 summary: TokenExchangeInvokeResponse.
 constructor:
-  syntax: 'TokenExchangeInvokeResponse(*, id: str = None, connection_name: str = None,
-    failure_detail: str = None, properties=None, **kwargs) -> None'
+  syntax: 'TokenExchangeInvokeResponse(*, id: Optional[str] = None, connection_name:
+    Optional[str] = None, failure_detail: Optional[str] = None, properties=None, **kwargs)
+    -> None'
   parameters:
   - name: id
     description: The id from the OAuthCard.

@@ -4,16 +4,19 @@ name: skills
 fullName: botbuilder.core.skills
 type: import
 classes:
-- botbuilder.core.skills.BotFrameworkSkill
 - botbuilder.core.skills.BotFrameworkClient
+- botbuilder.core.skills.BotFrameworkSkill
 - botbuilder.core.skills.ConversationIdFactoryBase
+- botbuilder.core.skills.SkillConversationIdFactory
 - botbuilder.core.skills.SkillConversationIdFactoryOptions
 - botbuilder.core.skills.SkillConversationReference
 - botbuilder.core.skills.SkillHandler
 modules:
 - botbuilder.core.skills.bot_framework_client
 - botbuilder.core.skills.bot_framework_skill
+- botbuilder.core.skills.cloud_skill_handler
 - botbuilder.core.skills.conversation_id_factory
+- botbuilder.core.skills.skill_conversation_id_factory
 - botbuilder.core.skills.skill_conversation_id_factory_options
 - botbuilder.core.skills.skill_conversation_reference
 - botbuilder.core.skills.skill_handler

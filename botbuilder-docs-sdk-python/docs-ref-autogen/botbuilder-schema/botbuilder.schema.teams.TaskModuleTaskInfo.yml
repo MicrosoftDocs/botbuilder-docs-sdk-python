@@ -7,9 +7,9 @@ inheritances:
 - msrest.serialization.Model
 summary: Metadata for a Task Module.
 constructor:
-  syntax: 'TaskModuleTaskInfo(*, title: str = None, height=None, width=None, url:
-    str = None, card=None, fallback_url: str = None, completion_bot_id: str = None,
-    **kwargs) -> None'
+  syntax: 'TaskModuleTaskInfo(*, title: Optional[str] = None, height=None, width=None,
+    url: Optional[str] = None, card=None, fallback_url: Optional[str] = None, completion_bot_id:
+    Optional[str] = None, **kwargs) -> None'
   parameters:
   - name: title
     description: Appears below the app name and to the right of the app icon.

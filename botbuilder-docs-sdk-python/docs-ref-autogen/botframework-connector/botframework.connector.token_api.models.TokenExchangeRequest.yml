@@ -7,8 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: TokenExchangeRequest.
 constructor:
-  syntax: 'TokenExchangeRequest(*, uri: str = None, token: str = None, **kwargs) ->
-    None'
+  syntax: 'TokenExchangeRequest(*, uri: Optional[str] = None, token: Optional[str]
+    = None, **kwargs) -> None'
   parameters:
   - name: uri
     isRequired: true

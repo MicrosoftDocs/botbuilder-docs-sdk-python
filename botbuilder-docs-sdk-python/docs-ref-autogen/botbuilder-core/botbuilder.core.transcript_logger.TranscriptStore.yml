@@ -6,6 +6,8 @@ module: botbuilder.core.transcript_logger
 inheritances:
 - botbuilder.core.transcript_logger.TranscriptLogger
 summary: Transcript storage for conversations.
+constructor:
+  syntax: TranscriptStore()
 methods:
 - uid: botbuilder.core.transcript_logger.TranscriptStore.delete_transcript
   name: delete_transcript
@@ -36,7 +38,7 @@ methods:
 
     :result: Page of results of Activity objects'
   signature: 'get_transcript_activities(channel_id: str, conversation_id: str, continuation_token:
-    str, start_date: <module ''datetime'' from ''c:\\\\hostedtoolcache\\\\windows\\\\python\\\\3.6.8\\\\x64\\\\lib\\\\datetime.py''>)
+    str, start_date: <module ''datetime'' from ''C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64\\lib\\datetime.py''>)
     -> botbuilder.core.transcript_logger.PagedResult'
   parameters:
   - name: channel_id

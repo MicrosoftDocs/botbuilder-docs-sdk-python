@@ -6,9 +6,10 @@ module: botbuilder.ai.luis.luis_recognizer_options_v2
 inheritances:
 - botbuilder.ai.luis.luis_recognizer_options.LuisRecognizerOptions
 constructor:
-  syntax: 'LuisRecognizerOptionsV2(bing_spell_check_subscription_key: str = None,
-    include_all_intents: bool = None, include_instance_data: bool = True, log: bool
-    = True, spell_check: bool = None, staging: bool = None, timeout: float = 100000,
-    timezone_offset: float = None, include_api_results: bool = True, telemetry_client:
-    botbuilder.core.bot_telemetry_client.BotTelemetryClient = <botbuilder.core.null_telemetry_client.NullTelemetryClient
-    object>, log_personal_information: bool = False)'
+  syntax: 'LuisRecognizerOptionsV2(bing_spell_check_subscription_key: Optional[str]
+    = None, include_all_intents: Optional[bool] = None, include_instance_data: bool
+    = True, log: bool = True, spell_check: Optional[bool] = None, staging: Optional[bool]
+    = None, timeout: float = 100000, timezone_offset: Optional[float] = None, include_api_results:
+    bool = True, telemetry_client: botbuilder.core.bot_telemetry_client.BotTelemetryClient
+    = <botbuilder.core.null_telemetry_client.NullTelemetryClient object>, log_personal_information:
+    bool = False)'

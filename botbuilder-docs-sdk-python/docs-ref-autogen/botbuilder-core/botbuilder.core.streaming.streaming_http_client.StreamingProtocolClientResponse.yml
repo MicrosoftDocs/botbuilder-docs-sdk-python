@@ -1,0 +1,24 @@
+### YamlMime:PythonClass
+uid: botbuilder.core.streaming.streaming_http_client.StreamingProtocolClientResponse
+name: StreamingProtocolClientResponse
+fullName: botbuilder.core.streaming.streaming_http_client.StreamingProtocolClientResponse
+module: botbuilder.core.streaming.streaming_http_client
+inheritances:
+- msrest.universal_http.async_abc.AsyncClientResponse
+constructor:
+  syntax: 'StreamingProtocolClientResponse(request: botframework.streaming.streaming_request.StreamingRequest,
+    streaming_response: botframework.streaming.receive_response.ReceiveResponse) ->
+    None'
+methods:
+- uid: botbuilder.core.streaming.streaming_http_client.StreamingProtocolClientResponse.body
+  name: body
+  summary: Return the whole body as bytes in memory.
+  signature: body() -> bytes
+- uid: botbuilder.core.streaming.streaming_http_client.StreamingProtocolClientResponse.load_body
+  name: load_body
+  summary: Load in memory the body, so it could be accessible from sync methods.
+  signature: load_body() -> None
+- uid: botbuilder.core.streaming.streaming_http_client.StreamingProtocolClientResponse.raise_for_status
+  name: raise_for_status
+  summary: Raise for status. Should be overriden, but basic implementation provided.
+  signature: raise_for_status()

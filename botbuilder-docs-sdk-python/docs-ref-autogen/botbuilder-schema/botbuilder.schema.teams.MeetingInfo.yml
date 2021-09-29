@@ -1,0 +1,29 @@
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.MeetingInfo
+name: MeetingInfo
+fullName: botbuilder.schema.teams.MeetingInfo
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: General information about a Teams meeting.
+constructor:
+  syntax: 'MeetingInfo(*, details: Optional[botbuilder.schema.teams._models_py3.MeetingDetails]
+    = None, conversation: Optional[botbuilder.schema._models_py3.ConversationAccount]
+    = None, organizer: Optional[botbuilder.schema.teams._models_py3.TeamsChannelAccount]
+    = None, **kwargs) -> None'
+  parameters:
+  - name: details
+    description: The specific details of a Teams meeting.
+    isRequired: true
+    types:
+    - <xref:botframework.connector.teams.models.MeetingDetails>
+  - name: conversation
+    description: The Conversation Account for the meeting.
+    isRequired: true
+    types:
+    - <xref:botbuilder.schema.models.ConversationAccount>
+  - name: organizer
+    description: The meeting's scheduled start time, in UTC.
+    isRequired: true
+    types:
+    - <xref:botbuilder.schema.models.TeamsChannelAccount>

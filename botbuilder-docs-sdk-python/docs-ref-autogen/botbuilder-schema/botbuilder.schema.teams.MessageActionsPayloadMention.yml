@@ -7,8 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: Represents the entity that was mentioned in the message.
 constructor:
-  syntax: 'MessageActionsPayloadMention(*, id: int = None, mention_text: str = None,
-    mentioned=None, **kwargs) -> None'
+  syntax: 'MessageActionsPayloadMention(*, id: Optional[int] = None, mention_text:
+    Optional[str] = None, mentioned=None, **kwargs) -> None'
   parameters:
   - name: id
     description: The id of the mentioned entity.
