@@ -9,7 +9,7 @@ summary: "ConversationsOperations async operations.\n\nYou should not instantiat
   \ directly this class, but create a Client instance that will create it for you\
   \ and attach\n   it as attribute."
 constructor:
-  syntax: ConversationsOperations(client, config, serializer, deserializer) -> None
+  syntax: ConversationsOperations(client, config, serializer, deserializer)
   parameters:
   - name: client
     description: Client for service requests.
@@ -270,7 +270,6 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -278,7 +277,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -378,13 +376,11 @@ methods:
     - <xref:str>
   - name: page_size
     description: Suggested page size
-    isRequired: true
     defaultValue: None
     types:
     - <xref:int>
   - name: continuation_token
     description: Continuation Token
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
@@ -441,7 +437,6 @@ methods:
   parameters:
   - name: continuation_token
     description: skip or continuation token
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
@@ -511,19 +506,16 @@ methods:
     - <xref:str>
   - name: page_size
     description: Suggested page size
-    isRequired: true
     defaultValue: None
     types:
     - <xref:int>
   - name: continuation_token
     description: Continuation Token
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -531,7 +523,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -645,7 +636,6 @@ methods:
     description: 'A collection of Activities that conforms to the
 
       Transcript schema.'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:list>[<xref:botframework.connector.models.Activity>]
