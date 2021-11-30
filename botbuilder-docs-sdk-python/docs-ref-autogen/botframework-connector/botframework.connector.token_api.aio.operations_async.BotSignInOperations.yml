@@ -13,7 +13,7 @@ summary: 'BotSignInOperations async operations.
 
   attach it as attribute.'
 constructor:
-  syntax: BotSignInOperations(client, config, serializer, deserializer) -> None
+  syntax: BotSignInOperations(client, config, serializer, deserializer)
   parameters:
   - name: client
     description: Client for service requests.
@@ -41,17 +41,14 @@ methods:
     types:
     - <xref:str>
   - name: code_challenge
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: emulator_url
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: final_redirect
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
@@ -89,17 +86,14 @@ methods:
     types:
     - <xref:str>
   - name: code_challenge
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: emulator_url
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: final_redirect
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
