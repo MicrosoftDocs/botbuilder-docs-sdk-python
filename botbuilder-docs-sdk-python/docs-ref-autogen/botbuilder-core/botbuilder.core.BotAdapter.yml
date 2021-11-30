@@ -87,7 +87,6 @@ methods:
     - <xref:botbuilder.core.TurnContext>
   - name: callback
     description: A callback method to run at the end of the pipeline.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Callable>[[<xref:TurnContext>], <xref:Awaitable>]

@@ -1,0 +1,42 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.payload_stream.PayloadStream
+name: PayloadStream
+fullName: botframework.streaming.payload_stream.PayloadStream
+module: botframework.streaming.payload_stream
+inheritances:
+- builtins.object
+constructor:
+  syntax: 'PayloadStream(assembler: botframework.streaming.payloads.assemblers.payload_stream_assembler.PayloadStreamAssembler)'
+methods:
+- uid: botframework.streaming.payload_stream.PayloadStream.done_producing
+  name: done_producing
+  signature: done_producing()
+- uid: botframework.streaming.payload_stream.PayloadStream.give_buffer
+  name: give_buffer
+  signature: 'give_buffer(buffer: List[int])'
+  parameters:
+  - name: buffer
+    isRequired: true
+- uid: botframework.streaming.payload_stream.PayloadStream.read
+  name: read
+  signature: 'read(buffer: List[int], offset: int, count: int)'
+  parameters:
+  - name: buffer
+    isRequired: true
+  - name: offset
+    isRequired: true
+  - name: count
+    isRequired: true
+- uid: botframework.streaming.payload_stream.PayloadStream.read_until_end
+  name: read_until_end
+  signature: read_until_end()
+- uid: botframework.streaming.payload_stream.PayloadStream.write
+  name: write
+  signature: 'write(buffer: List[int], offset: int, count: int)'
+  parameters:
+  - name: buffer
+    isRequired: true
+  - name: offset
+    isRequired: true
+  - name: count
+    isRequired: true

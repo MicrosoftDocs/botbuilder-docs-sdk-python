@@ -27,14 +27,13 @@ methods:
     - <xref:botbuilder.dialogs.prompts.oauth_prompt.DialogContext>
   - name: options
     description: Optional, additional information to pass to the prompt being started
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botbuilder.dialogs.prompts.oauth_prompt.PromptOptions>
   return:
     description: Dialog turn result
     types:
-    - <xref::class`:*DialogTurnResult*>
+    - <xref:<xref::class`:*DialogTurnResult*>>
   remarks: 'If the task is successful, the result indicates whether the prompt is
     still active after the turn
 
@@ -81,7 +80,6 @@ methods:
     - <xref:botbuilder.dialogs.prompts.oauth_prompt.TurnContext>
   - name: code
     description: (Optional) Optional user entered code to validate.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>

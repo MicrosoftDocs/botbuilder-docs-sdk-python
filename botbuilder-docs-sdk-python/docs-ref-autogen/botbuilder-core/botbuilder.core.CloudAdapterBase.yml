@@ -7,8 +7,7 @@ inheritances:
 - botbuilder.core.bot_adapter.BotAdapter
 - abc.ABC
 constructor:
-  syntax: 'CloudAdapterBase(bot_framework_authentication: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication)
-    -> None'
+  syntax: 'CloudAdapterBase(bot_framework_authentication: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication)'
 methods:
 - uid: botbuilder.core.CloudAdapterBase.continue_conversation
   name: continue_conversation

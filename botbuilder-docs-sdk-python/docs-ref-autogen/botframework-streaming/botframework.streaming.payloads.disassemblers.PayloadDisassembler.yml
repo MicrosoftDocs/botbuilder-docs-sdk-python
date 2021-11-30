@@ -1,0 +1,38 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.payloads.disassemblers.PayloadDisassembler
+name: PayloadDisassembler
+fullName: botframework.streaming.payloads.disassemblers.PayloadDisassembler
+module: botframework.streaming.payloads.disassemblers
+inheritances:
+- abc.ABC
+constructor:
+  syntax: 'PayloadDisassembler(sender: botframework.streaming.payload_transport.payload_sender.PayloadSender,
+    identifier: uuid.UUID)'
+methods:
+- uid: botframework.streaming.payloads.disassemblers.PayloadDisassembler.disassemble
+  name: disassemble
+  signature: disassemble()
+- uid: botframework.streaming.payloads.disassemblers.PayloadDisassembler.get_stream
+  name: get_stream
+  signature: get_stream() -> List[int]
+- uid: botframework.streaming.payloads.disassemblers.PayloadDisassembler.get_stream_description
+  name: get_stream_description
+  signature: 'get_stream_description(stream: botframework.streaming.payloads.response_message_stream.ResponseMessageStream)
+    -> botframework.streaming.payloads.models.stream_description.StreamDescription'
+  parameters:
+  - name: stream
+    isRequired: true
+- uid: botframework.streaming.payloads.disassemblers.PayloadDisassembler.serialize
+  name: serialize
+  signature: 'serialize(item: botframework.streaming.payloads.models.serializable.Serializable,
+    stream: List[int], length: List[int])'
+  parameters:
+  - name: item
+    isRequired: true
+  - name: stream
+    isRequired: true
+  - name: length
+    isRequired: true
+attributes:
+- uid: botframework.streaming.payloads.disassemblers.PayloadDisassembler.type
+  name: type

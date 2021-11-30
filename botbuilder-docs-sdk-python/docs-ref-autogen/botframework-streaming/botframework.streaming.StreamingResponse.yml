@@ -1,0 +1,58 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.StreamingResponse
+name: StreamingResponse
+fullName: botframework.streaming.StreamingResponse
+module: botframework.streaming
+inheritances:
+- builtins.object
+constructor:
+  syntax: 'StreamingResponse(*, status_code: int = 0, streams: Optional[List[botframework.streaming.payloads.response_message_stream.ResponseMessageStream]]
+    = None)'
+methods:
+- uid: botframework.streaming.StreamingResponse.add_stream
+  name: add_stream
+  signature: 'add_stream(content: object, identifier: Optional[uuid.UUID] = None)'
+  parameters:
+  - name: content
+    isRequired: true
+  - name: identifier
+    defaultValue: None
+- uid: botframework.streaming.StreamingResponse.create_response
+  name: create_response
+  signature: 'create_response(status_code: int, body: object) -> botframework.streaming.streaming_response.StreamingResponse'
+  parameters:
+  - name: status_code
+    isRequired: true
+  - name: body
+    isRequired: true
+- uid: botframework.streaming.StreamingResponse.forbidden
+  name: forbidden
+  signature: 'forbidden(body: Optional[object] = None) -> botframework.streaming.streaming_response.StreamingResponse'
+  parameters:
+  - name: body
+    defaultValue: None
+- uid: botframework.streaming.StreamingResponse.internal_server_error
+  name: internal_server_error
+  signature: 'internal_server_error(body: Optional[object] = None) -> botframework.streaming.streaming_response.StreamingResponse'
+  parameters:
+  - name: body
+    defaultValue: None
+- uid: botframework.streaming.StreamingResponse.not_found
+  name: not_found
+  signature: 'not_found(body: Optional[object] = None) -> botframework.streaming.streaming_response.StreamingResponse'
+  parameters:
+  - name: body
+    defaultValue: None
+- uid: botframework.streaming.StreamingResponse.ok
+  name: ok
+  signature: 'ok(body: Optional[object] = None) -> botframework.streaming.streaming_response.StreamingResponse'
+  parameters:
+  - name: body
+    defaultValue: None
+- uid: botframework.streaming.StreamingResponse.set_body
+  name: set_body
+  signature: 'set_body(body: Union[str, botframework.streaming.payloads.models.serializable.Serializable,
+    msrest.serialization.Model])'
+  parameters:
+  - name: body
+    isRequired: true

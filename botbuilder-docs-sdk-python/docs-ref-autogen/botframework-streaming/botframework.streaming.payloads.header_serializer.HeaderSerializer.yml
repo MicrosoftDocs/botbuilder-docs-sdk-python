@@ -1,0 +1,74 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.payloads.header_serializer.HeaderSerializer
+name: HeaderSerializer
+fullName: botframework.streaming.payloads.header_serializer.HeaderSerializer
+module: botframework.streaming.payloads.header_serializer
+inheritances:
+- builtins.object
+constructor:
+  syntax: HeaderSerializer()
+methods:
+- uid: botframework.streaming.payloads.header_serializer.HeaderSerializer.deserialize
+  name: deserialize
+  signature: 'deserialize(buffer: List[int], offset: int, count: int) -> botframework.streaming.payloads.models.header.Header'
+  parameters:
+  - name: buffer
+    isRequired: true
+  - name: offset
+    isRequired: true
+  - name: count
+    isRequired: true
+- uid: botframework.streaming.payloads.header_serializer.HeaderSerializer.serialize
+  name: serialize
+  signature: 'serialize(header: botframework.streaming.payloads.models.header.Header,
+    buffer: List[int], offset: int) -> int'
+  parameters:
+  - name: header
+    isRequired: true
+  - name: buffer
+    isRequired: true
+  - name: offset
+    isRequired: true
+attributes:
+- uid: botframework.streaming.payloads.header_serializer.HeaderSerializer.DELIMITER
+  name: DELIMITER
+  signature: DELIMITER = 46
+- uid: botframework.streaming.payloads.header_serializer.HeaderSerializer.END
+  name: END
+  signature: END = 49
+- uid: botframework.streaming.payloads.header_serializer.HeaderSerializer.END_OFFSET
+  name: END_OFFSET
+  signature: END_OFFSET = 46
+- uid: botframework.streaming.payloads.header_serializer.HeaderSerializer.ID_DELIMETER_OFFSET
+  name: ID_DELIMETER_OFFSET
+  signature: ID_DELIMETER_OFFSET = 45
+- uid: botframework.streaming.payloads.header_serializer.HeaderSerializer.ID_LENGTH
+  name: ID_LENGTH
+  signature: ID_LENGTH = 36
+- uid: botframework.streaming.payloads.header_serializer.HeaderSerializer.ID_OFFSET
+  name: ID_OFFSET
+  signature: ID_OFFSET = 9
+- uid: botframework.streaming.payloads.header_serializer.HeaderSerializer.LENGTH_DELIMETER_OFFSET
+  name: LENGTH_DELIMETER_OFFSET
+  signature: LENGTH_DELIMETER_OFFSET = 8
+- uid: botframework.streaming.payloads.header_serializer.HeaderSerializer.LENGTH_LENGTH
+  name: LENGTH_LENGTH
+  signature: LENGTH_LENGTH = 6
+- uid: botframework.streaming.payloads.header_serializer.HeaderSerializer.LENGTH_OFFSET
+  name: LENGTH_OFFSET
+  signature: LENGTH_OFFSET = 2
+- uid: botframework.streaming.payloads.header_serializer.HeaderSerializer.NOT_END
+  name: NOT_END
+  signature: NOT_END = 48
+- uid: botframework.streaming.payloads.header_serializer.HeaderSerializer.TERMINATOR
+  name: TERMINATOR
+  signature: TERMINATOR = 10
+- uid: botframework.streaming.payloads.header_serializer.HeaderSerializer.TERMINATOR_OFFSET
+  name: TERMINATOR_OFFSET
+  signature: TERMINATOR_OFFSET = 47
+- uid: botframework.streaming.payloads.header_serializer.HeaderSerializer.TYPE_DELIMITER_OFFSET
+  name: TYPE_DELIMITER_OFFSET
+  signature: TYPE_DELIMITER_OFFSET = 1
+- uid: botframework.streaming.payloads.header_serializer.HeaderSerializer.TYPE_OFFSET
+  name: TYPE_OFFSET
+  signature: TYPE_OFFSET = 0

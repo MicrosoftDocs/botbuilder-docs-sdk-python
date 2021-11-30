@@ -1,0 +1,39 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.payloads.assemblers.receive_response_assembler.ReceiveResponseAssembler
+name: ReceiveResponseAssembler
+fullName: botframework.streaming.payloads.assemblers.receive_response_assembler.ReceiveResponseAssembler
+module: botframework.streaming.payloads.assemblers.receive_response_assembler
+inheritances:
+- botframework.streaming.payloads.assemblers.assembler.Assembler
+constructor:
+  syntax: 'ReceiveResponseAssembler(header: botframework.streaming.payloads.models.header.Header,
+    stream_manager: botframework.streaming.payloads.stream_manager.StreamManager,
+    on_completed: Callable[[uuid.UUID, botframework.streaming.receive_response.ReceiveResponse],
+    Awaitable])'
+methods:
+- uid: botframework.streaming.payloads.assemblers.receive_response_assembler.ReceiveResponseAssembler.close
+  name: close
+  signature: close()
+- uid: botframework.streaming.payloads.assemblers.receive_response_assembler.ReceiveResponseAssembler.create_stream_from_payload
+  name: create_stream_from_payload
+  signature: create_stream_from_payload() -> List[int]
+- uid: botframework.streaming.payloads.assemblers.receive_response_assembler.ReceiveResponseAssembler.get_payload_as_stream
+  name: get_payload_as_stream
+  signature: get_payload_as_stream() -> List[int]
+- uid: botframework.streaming.payloads.assemblers.receive_response_assembler.ReceiveResponseAssembler.on_receive
+  name: on_receive
+  signature: 'on_receive(header: botframework.streaming.payloads.models.header.Header,
+    stream: List[int], content_length: int)'
+  parameters:
+  - name: header
+    isRequired: true
+  - name: stream
+    isRequired: true
+  - name: content_length
+    isRequired: true
+- uid: botframework.streaming.payloads.assemblers.receive_response_assembler.ReceiveResponseAssembler.process_response
+  name: process_response
+  signature: 'process_response(stream: List[int])'
+  parameters:
+  - name: stream
+    isRequired: true

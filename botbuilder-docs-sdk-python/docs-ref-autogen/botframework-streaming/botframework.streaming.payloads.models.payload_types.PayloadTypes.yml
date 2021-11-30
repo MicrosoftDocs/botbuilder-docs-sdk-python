@@ -1,0 +1,33 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.payloads.models.payload_types.PayloadTypes
+name: PayloadTypes
+fullName: botframework.streaming.payloads.models.payload_types.PayloadTypes
+module: botframework.streaming.payloads.models.payload_types
+inheritances:
+- builtins.object
+constructor:
+  syntax: PayloadTypes()
+methods:
+- uid: botframework.streaming.payloads.models.payload_types.PayloadTypes.is_stream
+  name: is_stream
+  signature: 'is_stream(header: botframework.streaming.payloads.models.header.Header)
+    -> bool'
+  parameters:
+  - name: header
+    isRequired: true
+attributes:
+- uid: botframework.streaming.payloads.models.payload_types.PayloadTypes.CANCEL_ALL
+  name: CANCEL_ALL
+  signature: CANCEL_ALL = 'X'
+- uid: botframework.streaming.payloads.models.payload_types.PayloadTypes.CANCEL_STREAM
+  name: CANCEL_STREAM
+  signature: CANCEL_STREAM = 'C'
+- uid: botframework.streaming.payloads.models.payload_types.PayloadTypes.REQUEST
+  name: REQUEST
+  signature: REQUEST = 'A'
+- uid: botframework.streaming.payloads.models.payload_types.PayloadTypes.RESPONSE
+  name: RESPONSE
+  signature: RESPONSE = 'B'
+- uid: botframework.streaming.payloads.models.payload_types.PayloadTypes.STREAM
+  name: STREAM
+  signature: STREAM = 'S'

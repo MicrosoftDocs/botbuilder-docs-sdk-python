@@ -1,0 +1,87 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.StreamingRequest
+name: StreamingRequest
+fullName: botframework.streaming.StreamingRequest
+module: botframework.streaming
+inheritances:
+- builtins.object
+constructor:
+  syntax: 'StreamingRequest(*, verb: Optional[str] = None, path: Optional[str] = None,
+    streams: Optional[List[botframework.streaming.payloads.response_message_stream.ResponseMessageStream]]
+    = None)'
+methods:
+- uid: botframework.streaming.StreamingRequest.add_stream
+  name: add_stream
+  signature: 'add_stream(content: object, stream_id: Optional[uuid.UUID] = None)'
+  parameters:
+  - name: content
+    isRequired: true
+  - name: stream_id
+    defaultValue: None
+- uid: botframework.streaming.StreamingRequest.create_delete
+  name: create_delete
+  signature: 'create_delete(path: Optional[str] = None, body: Optional[object] = None)
+    -> botframework.streaming.streaming_request.StreamingRequest'
+  parameters:
+  - name: path
+    defaultValue: None
+  - name: body
+    defaultValue: None
+- uid: botframework.streaming.StreamingRequest.create_get
+  name: create_get
+  signature: 'create_get(path: Optional[str] = None, body: Optional[object] = None)
+    -> botframework.streaming.streaming_request.StreamingRequest'
+  parameters:
+  - name: path
+    defaultValue: None
+  - name: body
+    defaultValue: None
+- uid: botframework.streaming.StreamingRequest.create_post
+  name: create_post
+  signature: 'create_post(path: Optional[str] = None, body: Optional[object] = None)
+    -> botframework.streaming.streaming_request.StreamingRequest'
+  parameters:
+  - name: path
+    defaultValue: None
+  - name: body
+    defaultValue: None
+- uid: botframework.streaming.StreamingRequest.create_put
+  name: create_put
+  signature: 'create_put(path: Optional[str] = None, body: Optional[object] = None)
+    -> botframework.streaming.streaming_request.StreamingRequest'
+  parameters:
+  - name: path
+    defaultValue: None
+  - name: body
+    defaultValue: None
+- uid: botframework.streaming.StreamingRequest.create_request
+  name: create_request
+  signature: 'create_request(method: str, path: Optional[str] = None, body: Optional[object]
+    = None) -> botframework.streaming.streaming_request.StreamingRequest'
+  parameters:
+  - name: method
+    isRequired: true
+  - name: path
+    defaultValue: None
+  - name: body
+    defaultValue: None
+- uid: botframework.streaming.StreamingRequest.set_body
+  name: set_body
+  signature: 'set_body(body: Union[str, botframework.streaming.payloads.models.serializable.Serializable,
+    msrest.serialization.Model, bytes])'
+  parameters:
+  - name: body
+    isRequired: true
+attributes:
+- uid: botframework.streaming.StreamingRequest.DELETE
+  name: DELETE
+  signature: DELETE = 'DELETE'
+- uid: botframework.streaming.StreamingRequest.GET
+  name: GET
+  signature: GET = 'GET'
+- uid: botframework.streaming.StreamingRequest.POST
+  name: POST
+  signature: POST = 'POST'
+- uid: botframework.streaming.StreamingRequest.PUT
+  name: PUT
+  signature: PUT = 'PUT'

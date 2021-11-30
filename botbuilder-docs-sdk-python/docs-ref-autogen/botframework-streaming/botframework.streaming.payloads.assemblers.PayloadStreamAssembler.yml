@@ -1,0 +1,31 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.payloads.assemblers.PayloadStreamAssembler
+name: PayloadStreamAssembler
+fullName: botframework.streaming.payloads.assemblers.PayloadStreamAssembler
+module: botframework.streaming.payloads.assemblers
+inheritances:
+- botframework.streaming.payloads.assemblers.assembler.Assembler
+constructor:
+  syntax: 'PayloadStreamAssembler(stream_manager: botframework.streaming.payloads.stream_manager.StreamManager,
+    identifier: uuid.UUID, type: Optional[str] = None, length: Optional[int] = None)'
+methods:
+- uid: botframework.streaming.payloads.assemblers.PayloadStreamAssembler.close
+  name: close
+  signature: close()
+- uid: botframework.streaming.payloads.assemblers.PayloadStreamAssembler.create_stream_from_payload
+  name: create_stream_from_payload
+  signature: create_stream_from_payload() -> botframework.streaming.payload_stream.PayloadStream
+- uid: botframework.streaming.payloads.assemblers.PayloadStreamAssembler.get_payload_as_stream
+  name: get_payload_as_stream
+  signature: get_payload_as_stream() -> botframework.streaming.payload_stream.PayloadStream
+- uid: botframework.streaming.payloads.assemblers.PayloadStreamAssembler.on_receive
+  name: on_receive
+  signature: 'on_receive(header: botframework.streaming.payloads.models.header.Header,
+    stream: List[int], content_length: int)'
+  parameters:
+  - name: header
+    isRequired: true
+  - name: stream
+    isRequired: true
+  - name: content_length
+    isRequired: true

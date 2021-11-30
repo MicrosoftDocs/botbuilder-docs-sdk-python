@@ -1,0 +1,17 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.payloads.disassemblers.request_disassembler.RequestDisassembler
+name: RequestDisassembler
+fullName: botframework.streaming.payloads.disassemblers.request_disassembler.RequestDisassembler
+module: botframework.streaming.payloads.disassemblers.request_disassembler
+inheritances:
+- botframework.streaming.payloads.disassemblers.payload_disassembler.PayloadDisassembler
+constructor:
+  syntax: 'RequestDisassembler(sender: botframework.streaming.payload_transport.payload_sender.PayloadSender,
+    identifier: uuid.UUID, request: streaming.StreamingRequest)'
+methods:
+- uid: botframework.streaming.payloads.disassemblers.request_disassembler.RequestDisassembler.get_stream
+  name: get_stream
+  signature: get_stream() -> List[int]
+attributes:
+- uid: botframework.streaming.payloads.disassemblers.request_disassembler.RequestDisassembler.type
+  name: type

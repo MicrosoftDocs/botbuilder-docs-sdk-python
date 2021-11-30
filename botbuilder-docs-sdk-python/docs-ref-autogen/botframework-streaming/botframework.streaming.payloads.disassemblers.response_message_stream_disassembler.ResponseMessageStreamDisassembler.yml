@@ -1,0 +1,17 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.payloads.disassemblers.response_message_stream_disassembler.ResponseMessageStreamDisassembler
+name: ResponseMessageStreamDisassembler
+fullName: botframework.streaming.payloads.disassemblers.response_message_stream_disassembler.ResponseMessageStreamDisassembler
+module: botframework.streaming.payloads.disassemblers.response_message_stream_disassembler
+inheritances:
+- botframework.streaming.payloads.disassemblers.payload_disassembler.PayloadDisassembler
+constructor:
+  syntax: 'ResponseMessageStreamDisassembler(sender: botframework.streaming.payload_transport.payload_sender.PayloadSender,
+    content_stream: botframework.streaming.payloads.response_message_stream.ResponseMessageStream)'
+methods:
+- uid: botframework.streaming.payloads.disassemblers.response_message_stream_disassembler.ResponseMessageStreamDisassembler.get_stream
+  name: get_stream
+  signature: get_stream() -> List[int]
+attributes:
+- uid: botframework.streaming.payloads.disassemblers.response_message_stream_disassembler.ResponseMessageStreamDisassembler.type
+  name: type

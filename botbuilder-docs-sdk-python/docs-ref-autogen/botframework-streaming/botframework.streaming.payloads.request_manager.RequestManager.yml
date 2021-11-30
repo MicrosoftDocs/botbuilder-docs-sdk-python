@@ -1,0 +1,26 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.payloads.request_manager.RequestManager
+name: RequestManager
+fullName: botframework.streaming.payloads.request_manager.RequestManager
+module: botframework.streaming.payloads.request_manager
+inheritances:
+- builtins.object
+constructor:
+  syntax: 'RequestManager(*, pending_requests: Dict[uuid.UUID, Future[streaming.ReceiveResponse]]
+    = None)'
+methods:
+- uid: botframework.streaming.payloads.request_manager.RequestManager.get_response
+  name: get_response
+  signature: 'get_response(request_id: uuid.UUID) -> botframework.streaming.receive_response.ReceiveResponse'
+  parameters:
+  - name: request_id
+    isRequired: true
+- uid: botframework.streaming.payloads.request_manager.RequestManager.signal_response
+  name: signal_response
+  signature: 'signal_response(request_id: uuid.UUID, response: botframework.streaming.receive_response.ReceiveResponse)
+    -> bool'
+  parameters:
+  - name: request_id
+    isRequired: true
+  - name: response
+    isRequired: true

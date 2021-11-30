@@ -46,7 +46,6 @@ methods:
     - <xref:botbuilder.dialogs.DialogContext>
   - name: options
     description: Optional, initial information to pass to the dialog.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:object>
@@ -103,7 +102,7 @@ methods:
     description: The parent dialog context for the current turn of conversation.
     isRequired: true
     types:
-    - <xref:class:botbuilder.dialogs.DialogContext>
+    - <xref:<xref:class:botbuilder.dialogs.DialogContext>>
   - name: result
     description: Optional, value to return from the dialog component to the parent
       context.
@@ -276,7 +275,6 @@ methods:
     - <xref:botbuilder.dialogs.DialogReason>
   - name: result
     description: Optional, value returned from the dialog that was called.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:object>

@@ -1,0 +1,41 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.transport.web_socket.web_socket_close_status.WebSocketCloseStatus
+name: WebSocketCloseStatus
+fullName: botframework.streaming.transport.web_socket.web_socket_close_status.WebSocketCloseStatus
+module: botframework.streaming.transport.web_socket.web_socket_close_status
+inheritances:
+- enum.IntEnum
+summary: An enumeration.
+constructor:
+  syntax: WebSocketCloseStatus(value)
+attributes:
+- uid: botframework.streaming.transport.web_socket.web_socket_close_status.WebSocketCloseStatus.EMPTY
+  name: EMPTY
+  signature: EMPTY = 1005
+- uid: botframework.streaming.transport.web_socket.web_socket_close_status.WebSocketCloseStatus.ENDPOINT_UNAVAILABLE
+  name: ENDPOINT_UNAVAILABLE
+  signature: ENDPOINT_UNAVAILABLE = 1001
+- uid: botframework.streaming.transport.web_socket.web_socket_close_status.WebSocketCloseStatus.INTERNAL_SERVER_ERROR
+  name: INTERNAL_SERVER_ERROR
+  signature: INTERNAL_SERVER_ERROR = 1011
+- uid: botframework.streaming.transport.web_socket.web_socket_close_status.WebSocketCloseStatus.INVALID_MESSAGE_TYPE
+  name: INVALID_MESSAGE_TYPE
+  signature: INVALID_MESSAGE_TYPE = 1003
+- uid: botframework.streaming.transport.web_socket.web_socket_close_status.WebSocketCloseStatus.INVALID_PAYLOAD_DATA
+  name: INVALID_PAYLOAD_DATA
+  signature: INVALID_PAYLOAD_DATA = 1007
+- uid: botframework.streaming.transport.web_socket.web_socket_close_status.WebSocketCloseStatus.MANDATORY_EXTENSION
+  name: MANDATORY_EXTENSION
+  signature: MANDATORY_EXTENSION = 1010
+- uid: botframework.streaming.transport.web_socket.web_socket_close_status.WebSocketCloseStatus.MESSAGE_TOO_BIG
+  name: MESSAGE_TOO_BIG
+  signature: MESSAGE_TOO_BIG = 1009
+- uid: botframework.streaming.transport.web_socket.web_socket_close_status.WebSocketCloseStatus.NORMAL_CLOSURE
+  name: NORMAL_CLOSURE
+  signature: NORMAL_CLOSURE = 1000
+- uid: botframework.streaming.transport.web_socket.web_socket_close_status.WebSocketCloseStatus.POLICY_VIOLATION
+  name: POLICY_VIOLATION
+  signature: POLICY_VIOLATION = 1008
+- uid: botframework.streaming.transport.web_socket.web_socket_close_status.WebSocketCloseStatus.PROTOCOL_ERROR
+  name: PROTOCOL_ERROR
+  signature: PROTOCOL_ERROR = 1002

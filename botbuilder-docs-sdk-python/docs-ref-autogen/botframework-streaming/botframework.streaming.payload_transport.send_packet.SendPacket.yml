@@ -1,0 +1,11 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.payload_transport.send_packet.SendPacket
+name: SendPacket
+fullName: botframework.streaming.payload_transport.send_packet.SendPacket
+module: botframework.streaming.payload_transport.send_packet
+inheritances:
+- builtins.object
+constructor:
+  syntax: 'SendPacket(*, header: botframework.streaming.payloads.models.header.Header,
+    payload: object, is_length_known: bool, sent_callback: Callable[[botframework.streaming.payloads.models.header.Header],
+    Awaitable])'

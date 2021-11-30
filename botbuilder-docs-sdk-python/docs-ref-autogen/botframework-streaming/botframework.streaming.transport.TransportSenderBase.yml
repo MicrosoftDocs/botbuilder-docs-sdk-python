@@ -1,0 +1,21 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.transport.TransportSenderBase
+name: TransportSenderBase
+fullName: botframework.streaming.transport.TransportSenderBase
+module: botframework.streaming.transport
+inheritances:
+- abc.ABC
+- botframework.streaming.transport.transport_base.TransportBase
+constructor:
+  syntax: TransportSenderBase()
+methods:
+- uid: botframework.streaming.transport.TransportSenderBase.send
+  name: send
+  signature: 'send(buffer: object, offset: int, count: int) -> int'
+  parameters:
+  - name: buffer
+    isRequired: true
+  - name: offset
+    isRequired: true
+  - name: count
+    isRequired: true

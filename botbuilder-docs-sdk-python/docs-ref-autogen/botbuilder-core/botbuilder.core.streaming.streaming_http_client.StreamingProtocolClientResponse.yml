@@ -7,8 +7,7 @@ inheritances:
 - msrest.universal_http.async_abc.AsyncClientResponse
 constructor:
   syntax: 'StreamingProtocolClientResponse(request: botframework.streaming.streaming_request.StreamingRequest,
-    streaming_response: botframework.streaming.receive_response.ReceiveResponse) ->
-    None'
+    streaming_response: botframework.streaming.receive_response.ReceiveResponse)'
 methods:
 - uid: botbuilder.core.streaming.streaming_http_client.StreamingProtocolClientResponse.body
   name: body
