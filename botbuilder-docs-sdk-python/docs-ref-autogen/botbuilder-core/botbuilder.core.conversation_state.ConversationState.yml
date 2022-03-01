@@ -19,7 +19,6 @@ methods:
   name: get_storage_key
   summary: 'Gets the key to use when reading and writing state to and from storage.
 
-
     <xref:botbuilder.schema.Activity> channelId or conversation information or the
     conversation''s
 
@@ -38,6 +37,10 @@ methods:
 
     '
 attributes:
+- uid: botbuilder.core.ConversationState.no_key_error_message
+  name: no_key_error_message
+  signature: 'no_key_error_message = ''ConversationState: channelId and/or conversation
+    missing from context.activity.'''
 - uid: botbuilder.core.conversation_state.ConversationState.no_key_error_message
   name: no_key_error_message
   signature: 'no_key_error_message = ''ConversationState: channelId and/or conversation

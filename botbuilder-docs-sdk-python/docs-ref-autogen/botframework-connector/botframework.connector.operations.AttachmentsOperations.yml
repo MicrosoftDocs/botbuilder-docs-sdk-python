@@ -5,9 +5,9 @@ fullName: botframework.connector.operations.AttachmentsOperations
 module: botframework.connector.operations
 inheritances:
 - builtins.object
-summary: "AttachmentsOperations operations.\n\nYou should not instantiate directly\
-  \ this class, but create a Client instance that will create it for you and attach\n\
-  \   it as attribute."
+summary: "AttachmentsOperations operations.\nYou should not instantiate directly this\
+  \ class, but create a Client instance that will create it for you and attach\n \
+  \  it as attribute."
 constructor:
   syntax: AttachmentsOperations(client, config, serializer, deserializer)
   parameters:
@@ -31,7 +31,6 @@ methods:
   name: get_attachment
   summary: 'GetAttachment.
 
-
     Get the named view as binary content.'
   signature: get_attachment(attachment_id, view_id, custom_headers=None, raw=False,
     callback=None, **operation_config)
@@ -48,7 +47,6 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -56,7 +54,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -68,7 +65,6 @@ methods:
       bytes of the current chunk of data and the response object. If the
 
       data is uploading, response will be None.'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
@@ -88,7 +84,6 @@ methods:
   name: get_attachment_info
   summary: 'GetAttachmentInfo.
 
-
     Get AttachmentInfo structure describing the attachment views.'
   signature: get_attachment_info(attachment_id, custom_headers=None, raw=False, **operation_config)
   parameters:
@@ -99,7 +94,6 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -107,7 +101,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>

@@ -7,12 +7,11 @@ inheritances:
 - msrest.serialization.Model
 summary: 'AdaptiveCardInvokeResponse.
 
-
   Defines the structure that arrives in the Activity.Value for Invoke activity with
   Name of ''adaptiveCard/action''.'
 constructor:
   syntax: 'AdaptiveCardInvokeValue(*, action=None, authentication=None, state: Optional[str]
-    = None, **kwargs) -> None'
+    = None, **kwargs)'
   parameters:
   - name: action
     description: The action of this adaptive card invoke action value.

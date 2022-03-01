@@ -6,9 +6,9 @@ module: botbuilder.applicationinsights.django
 inheritances:
 - builtins.object
 summary: "This class is a Django middleware that automatically enables request and\
-  \ exception telemetry.  Django versions\n1.7 and newer are supported.\n\nTo enable,\
+  \ exception telemetry.  Django versions\n1.7 and newer are supported.\nTo enable,\
   \ add this class to your settings.py file in MIDDLEWARE_CLASSES (pre-1.10) or MIDDLEWARE\
-  \ (1.10 and newer):\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\"\
+  \ (1.10 and newer):\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\"\
   : [], \"dupnames\": [], \"backrefs\": [], \"force\": false, \"highlight_args\":\
   \ {}, \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false}\
   \ -->\n\n````python\n\n   # If on Django < 1.10\n   MIDDLEWARE_CLASSES = [\n   \
@@ -24,9 +24,9 @@ summary: "This class is a Django middleware that automatically enables request a
   \       'django.middleware.csrf.CsrfViewMiddleware',\n       'django.contrib.auth.middleware.AuthenticationMiddleware',\n\
   \       'django.contrib.messages.middleware.MessageMiddleware',\n       'django.middleware.clickjacking.XFrameOptionsMiddleware',\n\
   \       # ... or whatever is above for you ...\n       'botbuilder.applicationinsights.django.ApplicationInsightsMiddleware',\
-  \   # Add this middleware to the end\n   ]\n   ````\n\nAnd then, add the following\
-  \ to your settings.py file:\n\n<!-- literal_block {\"ids\": [], \"classes\": [],\
-  \ \"names\": [], \"dupnames\": [], \"backrefs\": [], \"force\": false, \"highlight_args\"\
+  \   # Add this middleware to the end\n   ]\n   ````\nAnd then, add the following\
+  \ to your settings.py file:\n<!-- literal_block {\"ids\": [], \"classes\": [], \"\
+  names\": [], \"dupnames\": [], \"backrefs\": [], \"force\": false, \"highlight_args\"\
   : {}, \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false}\
   \ -->\n\n````python\n\n   APPLICATION_INSIGHTS = {\n       # (required) Your Application\
   \ Insights instrumentation key\n       'ikey': \"00000000-0000-0000-0000-000000000000\"\
@@ -44,17 +44,17 @@ summary: "This class is a Django middleware that automatically enables request a
   \ 'send_time': 3.0, # Wait up to 3 seconds for an event\n\n       # (optional, uncommon)\
   \ If you must send to an endpoint other than the\n       # default endpoint, specify\
   \ it here:\n       'endpoint': \"https://dc.services.visualstudio.com/v2/track\"\
-  ,\n   }\n   ````\n\nOnce these are in place, each request will have an *appinsights*\
-  \ object placed on it.\nThis object will have the following properties:\n\n* *client*:\
+  ,\n   }\n   ````\nOnce these are in place, each request will have an *appinsights*\
+  \ object placed on it.\nThis object will have the following properties:\n* *client*:\
   \ This is an instance of the <xref:applicationinsights.TelemetryClient> type, which\
   \ will submit telemetry to the same instrumentation key, and will parent each telemetry\
   \ item to the current request. \n\n* *request*: This is the <xref:applicationinsights.channel.contracts.RequestData>\
   \ instance for the current request.  You can modify properties on this object during\
   \ the handling of the current request. It will be submitted when the request has\
   \ finished. \n\n* *context*: This is the <xref:applicationinsights.channel.TelemetryContext>\
-  \ object for the current ApplicationInsights sender. \n\nThese properties will be\
-  \ present even when *DEBUG* is *True*, but it may not submit telemetry unless\n\
-  *debug_ikey* is set in *APPLICATION_INSIGHTS*, above."
+  \ object for the current ApplicationInsights sender.\nThese properties will be present\
+  \ even when *DEBUG* is *True*, but it may not submit telemetry unless\n*debug_ikey*\
+  \ is set in *APPLICATION_INSIGHTS*, above."
 constructor:
   syntax: ApplicationInsightsMiddleware(get_response=None)
 methods:

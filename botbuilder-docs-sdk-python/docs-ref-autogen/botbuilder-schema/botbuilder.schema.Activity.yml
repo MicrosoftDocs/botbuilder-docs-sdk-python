@@ -20,7 +20,7 @@ constructor:
     reply_to_id: Optional[str] = None, label: Optional[str] = None, value_type: Optional[str]
     = None, value=None, name: Optional[str] = None, relates_to=None, code=None, expiration=None,
     importance=None, delivery_mode=None, listen_for=None, text_highlights=None, semantic_action=None,
-    caller_id: Optional[str] = None, **kwargs) -> None'
+    caller_id: Optional[str] = None, **kwargs)'
   parameters:
   - name: type
     description: 'Contains the activity type. Possible values include:
@@ -334,7 +334,6 @@ methods:
   name: apply_conversation_reference
   summary: 'Updates this activity with the delivery information from an existing ConversationReference
 
-
     incoming activity, where the bot is the recipient; otherwise, False.
 
     Default is False, and the activity will show the bot as the sender.'
@@ -470,49 +469,49 @@ methods:
   name: create_contact_relation_update_activity
   summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as aContactRelationUpdateActivity
     object.
-  signature: create_contact_relation_update_activity()
+  signature: static create_contact_relation_update_activity()
   return:
     description: The new contact relation update activity.
 - uid: botbuilder.schema.Activity.create_conversation_update_activity
   name: create_conversation_update_activity
   summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as a
     ConversationUpdateActivity object.
-  signature: create_conversation_update_activity()
+  signature: static create_conversation_update_activity()
   return:
     description: The new conversation update activity.
 - uid: botbuilder.schema.Activity.create_end_of_conversation_activity
   name: create_end_of_conversation_activity
   summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as an
     EndOfConversationActivity object.
-  signature: create_end_of_conversation_activity()
+  signature: static create_end_of_conversation_activity()
   return:
     description: The new end of conversation activity.
 - uid: botbuilder.schema.Activity.create_event_activity
   name: create_event_activity
   summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as an
     EventActivity object.
-  signature: create_event_activity()
+  signature: static create_event_activity()
   return:
     description: The new event activity.
 - uid: botbuilder.schema.Activity.create_handoff_activity
   name: create_handoff_activity
   summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as a
     HandoffActivity object.
-  signature: create_handoff_activity()
+  signature: static create_handoff_activity()
   return:
     description: The new handoff activity.
 - uid: botbuilder.schema.Activity.create_invoke_activity
   name: create_invoke_activity
   summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as an
     InvokeActivity object.
-  signature: create_invoke_activity()
+  signature: static create_invoke_activity()
   return:
     description: The new invoke activity.
 - uid: botbuilder.schema.Activity.create_message_activity
   name: create_message_activity
   summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as a
     MessageActivity object.
-  signature: create_message_activity()
+  signature: static create_message_activity()
   return:
     description: The new message activity.
 - uid: botbuilder.schema.Activity.create_reply
@@ -522,11 +521,9 @@ methods:
   parameters:
   - name: text
     description: The text of the reply.
-    isRequired: true
     defaultValue: None
   - name: locale
     description: The language code for the text.
-    isRequired: true
     defaultValue: None
   return:
     description: The new message activity.
@@ -536,7 +533,6 @@ methods:
 - uid: botbuilder.schema.Activity.create_trace
   name: create_trace
   summary: 'Creates a new trace activity based on this activity.
-
 
     Default is the name of type of the value.
 
@@ -559,12 +555,11 @@ methods:
   summary: 'Creates an instance of the <xref:botbuilder.schema.Activity> class as
     a TraceActivity object.
 
-
     Default is the name of type of the value.
 
     :param label: Optional, a descriptive label for this trace operation.'
-  signature: 'create_trace_activity(name: str, value: Optional[object] = None, value_type:
-    Optional[str] = None, label: Optional[str] = None)'
+  signature: 'static create_trace_activity(name: str, value: Optional[object] = None,
+    value_type: Optional[str] = None, label: Optional[str] = None)'
   parameters:
   - name: name
     isRequired: true
@@ -580,7 +575,7 @@ methods:
   name: create_typing_activity
   summary: Creates an instance of the <xref:botbuilder.schema.Activity> class as a
     TypingActivity object.
-  signature: create_typing_activity()
+  signature: static create_typing_activity()
   return:
     description: The new typing activity.
 - uid: botbuilder.schema.Activity.get_conversation_reference

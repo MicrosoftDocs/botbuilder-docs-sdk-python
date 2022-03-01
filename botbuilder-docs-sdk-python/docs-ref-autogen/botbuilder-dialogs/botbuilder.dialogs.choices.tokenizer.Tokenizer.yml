@@ -14,13 +14,11 @@ methods:
   summary: 'Simple tokenizer that breaks on spaces and punctuation. The only normalization
     is to lowercase.
 
-
     text: The input text.
 
-
     locale: (Optional) Identifies the locale of the input text.'
-  signature: 'default_tokenizer(text: str, locale: Optional[str] = None) -> [<class
-    ''botbuilder.dialogs.choices.token.Token''>]'
+  signature: "static default_tokenizer(text: str, locale: Optional[str] = None) ->\
+    \ [<class \u2018botbuilder.dialogs.choices.token.Token\u2019>]"
   parameters:
   - name: text
     isRequired: true

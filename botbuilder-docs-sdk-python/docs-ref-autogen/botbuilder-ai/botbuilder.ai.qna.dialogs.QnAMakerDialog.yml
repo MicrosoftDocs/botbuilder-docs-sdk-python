@@ -22,7 +22,7 @@ methods:
 - uid: botbuilder.ai.qna.dialogs.QnAMakerDialog.begin_dialog
   name: begin_dialog
   summary: Called when the dialog is started and pushed onto the dialog stack.
-  signature: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+  signature: 'async begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     options: Optional[object] = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: dialog_context
@@ -31,49 +31,23 @@ methods:
     isRequired: true
   - name: options
     description: Optional, initial information to pass to the dialog.
-    isRequired: true
     defaultValue: None
 attributes:
 - uid: botbuilder.ai.qna.dialogs.QnAMakerDialog.DEFAULT_CARD_NO_MATCH_RESPONSE
   name: DEFAULT_CARD_NO_MATCH_RESPONSE
-  summary: The default active learning response text.
-  signature: DEFAULT_CARD_NO_MATCH_RESPONSE = 'Thanks for the feedback.'
 - uid: botbuilder.ai.qna.dialogs.QnAMakerDialog.DEFAULT_CARD_NO_MATCH_TEXT
   name: DEFAULT_CARD_NO_MATCH_TEXT
-  summary: The default active learning no match text.
-  signature: DEFAULT_CARD_NO_MATCH_TEXT = 'None of the above.'
 - uid: botbuilder.ai.qna.dialogs.QnAMakerDialog.DEFAULT_CARD_TITLE
   name: DEFAULT_CARD_TITLE
-  summary: The default active learning card title.
-  signature: DEFAULT_CARD_TITLE = 'Did you mean:'
 - uid: botbuilder.ai.qna.dialogs.QnAMakerDialog.DEFAULT_NO_ANSWER
   name: DEFAULT_NO_ANSWER
-  summary: The default no answer text sent to the user.
-  signature: DEFAULT_NO_ANSWER = 'No QnAMaker answers found.'
 - uid: botbuilder.ai.qna.dialogs.QnAMakerDialog.DEFAULT_THRESHOLD
   name: DEFAULT_THRESHOLD
-  summary: The default threshold for answers returned, based on score.
-  signature: DEFAULT_THRESHOLD = 0.3
 - uid: botbuilder.ai.qna.dialogs.QnAMakerDialog.DEFAULT_TOP_N
   name: DEFAULT_TOP_N
-  summary: The default maximum number of answers to be returned for the question.
-  signature: DEFAULT_TOP_N = 3
 - uid: botbuilder.ai.qna.dialogs.QnAMakerDialog.KEY_OPTIONS
   name: KEY_OPTIONS
-  summary: The path for storing and retrieving the options for this instance of the
-    dialog.
-  signature: KEY_OPTIONS = 'options'
 - uid: botbuilder.ai.qna.dialogs.QnAMakerDialog.KEY_PREVIOUS_QNA_ID
   name: KEY_PREVIOUS_QNA_ID
-  summary: The path for storing and retrieving the previous question ID.
-  signature: KEY_PREVIOUS_QNA_ID = 'prevQnAId'
 - uid: botbuilder.ai.qna.dialogs.QnAMakerDialog.KEY_QNA_CONTEXT_DATA
   name: KEY_QNA_CONTEXT_DATA
-  summary: The path for storing and retrieving QnA Maker context data.
-  signature: KEY_QNA_CONTEXT_DATA = 'qnaContextData'
-- uid: botbuilder.ai.qna.dialogs.QnAMakerDialog.PROPERTY_CURRENT_QUERY
-  name: PROPERTY_CURRENT_QUERY
-  signature: PROPERTY_CURRENT_QUERY = 'currentQuery'
-- uid: botbuilder.ai.qna.dialogs.QnAMakerDialog.PROPERTY_QNA_DATA
-  name: PROPERTY_QNA_DATA
-  signature: PROPERTY_QNA_DATA = 'qnaData'

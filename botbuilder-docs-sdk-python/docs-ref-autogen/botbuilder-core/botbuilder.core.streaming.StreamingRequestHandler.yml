@@ -31,10 +31,10 @@ methods:
     isRequired: true
 - uid: botbuilder.core.streaming.StreamingRequestHandler.listen
   name: listen
-  signature: listen()
+  signature: async listen()
 - uid: botbuilder.core.streaming.StreamingRequestHandler.process_request
   name: process_request
-  signature: 'process_request(request: botframework.streaming.receive_request.ReceiveRequest,
+  signature: 'async process_request(request: botframework.streaming.receive_request.ReceiveRequest,
     logger: logging.Logger, context: object) -> botframework.streaming.streaming_response.StreamingResponse'
   parameters:
   - name: request
@@ -45,13 +45,14 @@ methods:
     isRequired: true
 - uid: botbuilder.core.streaming.StreamingRequestHandler.send_activity
   name: send_activity
-  signature: 'send_activity(activity: botbuilder.schema._models_py3.Activity) -> botbuilder.schema._models_py3.ResourceResponse'
+  signature: 'async send_activity(activity: botbuilder.schema._models_py3.Activity)
+    -> botbuilder.schema._models_py3.ResourceResponse'
   parameters:
   - name: activity
     isRequired: true
 - uid: botbuilder.core.streaming.StreamingRequestHandler.send_streaming_request
   name: send_streaming_request
-  signature: 'send_streaming_request(request: botframework.streaming.streaming_request.StreamingRequest)
+  signature: 'async send_streaming_request(request: botframework.streaming.streaming_request.StreamingRequest)
     -> botframework.streaming.receive_response.ReceiveResponse'
   parameters:
   - name: request

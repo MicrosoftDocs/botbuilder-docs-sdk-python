@@ -5,7 +5,7 @@ fullName: botframework.connector.operations.ConversationsOperations
 module: botframework.connector.operations
 inheritances:
 - builtins.object
-summary: "ConversationsOperations operations.\n\nYou should not instantiate directly\
+summary: "ConversationsOperations operations.\nYou should not instantiate directly\
   \ this class, but create a Client instance that will create it for you and attach\n\
   \   it as attribute."
 constructor:
@@ -30,7 +30,6 @@ methods:
 - uid: botframework.connector.operations.ConversationsOperations.create_conversation
   name: create_conversation
   summary: 'CreateConversation.
-
 
     Create a new Conversation.
 
@@ -76,7 +75,6 @@ methods:
     - <xref:botframework.connector.models.ConversationParameters>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -84,7 +82,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -103,7 +100,6 @@ methods:
 - uid: botframework.connector.operations.ConversationsOperations.delete_activity
   name: delete_activity
   summary: 'DeleteActivity.
-
 
     Delete an existing activity.
 
@@ -125,7 +121,6 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -133,7 +128,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -152,7 +146,6 @@ methods:
 - uid: botframework.connector.operations.ConversationsOperations.delete_conversation_member
   name: delete_conversation_member
   summary: 'DeleteConversationMember.
-
 
     Deletes a member from a conversation.
 
@@ -178,7 +171,6 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -186,7 +178,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -205,7 +196,6 @@ methods:
 - uid: botframework.connector.operations.ConversationsOperations.get_activity_members
   name: get_activity_members
   summary: 'GetActivityMembers.
-
 
     Enumerate the members of an activity.
 
@@ -229,7 +219,6 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -237,7 +226,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -256,7 +244,6 @@ methods:
 - uid: botframework.connector.operations.ConversationsOperations.get_conversation_member
   name: get_conversation_member
   summary: 'GetConversationMember.
-
 
     Get a member of a conversation.
 
@@ -278,7 +265,6 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -286,7 +272,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -306,7 +291,6 @@ methods:
   name: get_conversation_members
   summary: 'GetConversationMembers.
 
-
     Enumerate the members of a conversation.
 
     This REST API takes a ConversationId and returns an array of
@@ -322,7 +306,6 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -330,7 +313,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -349,7 +331,6 @@ methods:
 - uid: botframework.connector.operations.ConversationsOperations.get_conversation_paged_members
   name: get_conversation_paged_members
   summary: 'GetConversationPagedMembers.
-
 
     Enumerate the members of a conversation one page at a time.
 
@@ -388,19 +369,16 @@ methods:
     - <xref:str>
   - name: page_size
     description: Suggested page size
-    isRequired: true
     defaultValue: None
     types:
     - <xref:int>
   - name: continuation_token
     description: Continuation Token
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -408,7 +386,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -427,7 +404,6 @@ methods:
 - uid: botframework.connector.operations.ConversationsOperations.get_conversations
   name: get_conversations
   summary: 'GetConversations.
-
 
     List the Conversations in which this bot has participated.
 
@@ -453,13 +429,11 @@ methods:
   parameters:
   - name: continuation_token
     description: skip or continuation token
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -467,7 +441,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -486,7 +459,6 @@ methods:
 - uid: botframework.connector.operations.ConversationsOperations.get_teams_conversation_paged_members
   name: get_teams_conversation_paged_members
   summary: 'GetTeamsConversationPagedMembers.
-
 
     Enumerate the members of a Teams conversation one page at a time.
 
@@ -525,19 +497,16 @@ methods:
     - <xref:str>
   - name: page_size
     description: Suggested page size
-    isRequired: true
     defaultValue: None
     types:
     - <xref:int>
   - name: continuation_token
     description: Continuation Token
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -545,7 +514,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -564,7 +532,6 @@ methods:
 - uid: botframework.connector.operations.ConversationsOperations.reply_to_activity
   name: reply_to_activity
   summary: 'ReplyToActivity.
-
 
     This method allows you to reply to an activity.
 
@@ -609,7 +576,6 @@ methods:
     - <xref:botframework.connector.models.Activity>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -617,7 +583,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -636,7 +601,6 @@ methods:
 - uid: botframework.connector.operations.ConversationsOperations.send_conversation_history
   name: send_conversation_history
   summary: 'SendConversationHistory.
-
 
     This method allows you to upload the historic activities to the
 
@@ -661,13 +625,11 @@ methods:
     description: 'A collection of Activities that conforms to the
 
       Transcript schema.'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:list>[<xref:botframework.connector.models.Activity>]
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -675,7 +637,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -694,7 +655,6 @@ methods:
 - uid: botframework.connector.operations.ConversationsOperations.send_to_conversation
   name: send_to_conversation
   summary: 'SendToConversation.
-
 
     This method allows you to send an activity to the end of a
 
@@ -736,7 +696,6 @@ methods:
     - <xref:botframework.connector.models.Activity>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -744,7 +703,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -763,7 +721,6 @@ methods:
 - uid: botframework.connector.operations.ConversationsOperations.update_activity
   name: update_activity
   summary: 'UpdateActivity.
-
 
     Edit an existing activity.
 
@@ -794,7 +751,6 @@ methods:
     - <xref:botframework.connector.models.Activity>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -802,7 +758,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -821,7 +776,6 @@ methods:
 - uid: botframework.connector.operations.ConversationsOperations.upload_attachment
   name: upload_attachment
   summary: 'UploadAttachment.
-
 
     Upload an attachment directly into a channel''s blob storage.
 
@@ -847,7 +801,6 @@ methods:
     - <xref:botframework.connector.models.AttachmentData>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -855,7 +808,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>

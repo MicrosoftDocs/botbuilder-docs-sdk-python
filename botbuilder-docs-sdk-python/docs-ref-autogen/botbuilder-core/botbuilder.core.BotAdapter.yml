@@ -19,7 +19,6 @@ methods:
 
     to the user.
 
-
     single tenant the Adapters (Console, Test, etc) but is critical to the BotFrameworkAdapter
 
     which is multi-tenant aware.
@@ -40,7 +39,7 @@ methods:
     :param audience:A value signifying the recipient of the proactive message.
 
     :type audience: str'
-  signature: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
+  signature: 'async continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
     callback: Callable, bot_id: Optional[str] = None, claims_identity: Optional[botframework.connector.auth.claims_identity.ClaimsIdentity]
     = None, audience: Optional[str] = None)'
   parameters:
@@ -58,8 +57,8 @@ methods:
 - uid: botbuilder.core.BotAdapter.delete_activity
   name: delete_activity
   summary: Deletes an existing activity.
-  signature: 'delete_activity(context: botbuilder.core.turn_context.TurnContext, reference:
-    botbuilder.schema._models_py3.ConversationReference)'
+  signature: 'abstract async delete_activity(context: botbuilder.core.turn_context.TurnContext,
+    reference: botbuilder.schema._models_py3.ConversationReference)'
   parameters:
   - name: context
     description: The context object for the turn.
@@ -77,8 +76,9 @@ methods:
     the passed in *callback()* handler at
 
     the end of the chain.'
-  signature: 'run_pipeline(context: botbuilder.core.turn_context.TurnContext, callback:
-    Optional[Callable[[botbuilder.core.turn_context.TurnContext], Awaitable]] = None)'
+  signature: 'async run_pipeline(context: botbuilder.core.turn_context.TurnContext,
+    callback: Optional[Callable[[botbuilder.core.turn_context.TurnContext], Awaitable]]
+    = None)'
   parameters:
   - name: context
     description: The context object for the turn.
@@ -87,7 +87,6 @@ methods:
     - <xref:botbuilder.core.TurnContext>
   - name: callback
     description: A callback method to run at the end of the pipeline.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Callable>[[<xref:TurnContext>], <xref:Awaitable>]
@@ -95,8 +94,8 @@ methods:
   name: send_activities
   summary: Sends a set of activities to the user. An array of responses from the server
     will be returned.
-  signature: 'send_activities(context: botbuilder.core.turn_context.TurnContext, activities:
-    List[botbuilder.schema._models_py3.Activity]) -> List[botbuilder.schema._models_py3.ResourceResponse]'
+  signature: 'abstract async send_activities(context: botbuilder.core.turn_context.TurnContext,
+    activities: List[botbuilder.schema._models_py3.Activity]) -> List[botbuilder.schema._models_py3.ResourceResponse]'
   parameters:
   - name: context
     description: The context object for the turn.
@@ -111,8 +110,8 @@ methods:
 - uid: botbuilder.core.BotAdapter.update_activity
   name: update_activity
   summary: Replaces an existing activity.
-  signature: 'update_activity(context: botbuilder.core.turn_context.TurnContext, activity:
-    botbuilder.schema._models_py3.Activity)'
+  signature: 'abstract async update_activity(context: botbuilder.core.turn_context.TurnContext,
+    activity: botbuilder.schema._models_py3.Activity)'
   parameters:
   - name: context
     description: The context object for the turn.
@@ -132,16 +131,3 @@ methods:
   - name: middleware
     description: The middleware to register.
     isRequired: true
-attributes:
-- uid: botbuilder.core.BotAdapter.BOT_CALLBACK_HANDLER_KEY
-  name: BOT_CALLBACK_HANDLER_KEY
-  signature: BOT_CALLBACK_HANDLER_KEY = 'BotCallbackHandler'
-- uid: botbuilder.core.BotAdapter.BOT_CONNECTOR_CLIENT_KEY
-  name: BOT_CONNECTOR_CLIENT_KEY
-  signature: BOT_CONNECTOR_CLIENT_KEY = 'ConnectorClient'
-- uid: botbuilder.core.BotAdapter.BOT_IDENTITY_KEY
-  name: BOT_IDENTITY_KEY
-  signature: BOT_IDENTITY_KEY = 'BotIdentity'
-- uid: botbuilder.core.BotAdapter.BOT_OAUTH_SCOPE_KEY
-  name: BOT_OAUTH_SCOPE_KEY
-  signature: BOT_OAUTH_SCOPE_KEY = 'botbuilder.core.BotAdapter.OAuthScope'

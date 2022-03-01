@@ -10,32 +10,7 @@ constructor:
 methods:
 - uid: botbuilder.dialogs.memory.DialogPath.get_property_name
   name: get_property_name
-  signature: 'get_property_name(prop: str) -> str'
+  signature: 'static get_property_name(prop: str) -> str'
   parameters:
   - name: prop
     isRequired: true
-attributes:
-- uid: botbuilder.dialogs.memory.DialogPath.DEFAULT_OPERATION
-  name: DEFAULT_OPERATION
-  signature: DEFAULT_OPERATION = 'dialog.defaultOperation'
-- uid: botbuilder.dialogs.memory.DialogPath.EVENT_COUNTER
-  name: EVENT_COUNTER
-  signature: EVENT_COUNTER = 'dialog.eventCounter'
-- uid: botbuilder.dialogs.memory.DialogPath.EXPECTED_PROPERTIES
-  name: EXPECTED_PROPERTIES
-  signature: EXPECTED_PROPERTIES = 'dialog.expectedProperties'
-- uid: botbuilder.dialogs.memory.DialogPath.LAST_EVENT
-  name: LAST_EVENT
-  signature: LAST_EVENT = 'dialog.lastEvent'
-- uid: botbuilder.dialogs.memory.DialogPath.LAST_INTENT
-  name: LAST_INTENT
-  signature: LAST_INTENT = 'dialog.lastIntent'
-- uid: botbuilder.dialogs.memory.DialogPath.LAST_TRIGGER_EVENT
-  name: LAST_TRIGGER_EVENT
-  signature: LAST_TRIGGER_EVENT = 'dialog.lastTriggerEvent'
-- uid: botbuilder.dialogs.memory.DialogPath.REQUIRED_PROPERTIES
-  name: REQUIRED_PROPERTIES
-  signature: REQUIRED_PROPERTIES = 'dialog.requiredProperties'
-- uid: botbuilder.dialogs.memory.DialogPath.RETRIES
-  name: RETRIES
-  signature: RETRIES = 'dialog.retries'

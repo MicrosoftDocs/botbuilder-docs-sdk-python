@@ -16,7 +16,7 @@ constructor:
 methods:
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_create_conversation
   name: handle_create_conversation
-  signature: 'handle_create_conversation(auth_header, parameters: botbuilder.schema._models_py3.ConversationParameters)
+  signature: 'async handle_create_conversation(auth_header, parameters: botbuilder.schema._models_py3.ConversationParameters)
     -> botbuilder.schema._models_py3.ConversationResourceResponse'
   parameters:
   - name: auth_header
@@ -25,7 +25,7 @@ methods:
     isRequired: true
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_delete_activity
   name: handle_delete_activity
-  signature: handle_delete_activity(auth_header, conversation_id, activity_id)
+  signature: async handle_delete_activity(auth_header, conversation_id, activity_id)
   parameters:
   - name: auth_header
     isRequired: true
@@ -35,7 +35,8 @@ methods:
     isRequired: true
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_delete_conversation_member
   name: handle_delete_conversation_member
-  signature: handle_delete_conversation_member(auth_header, conversation_id, member_id)
+  signature: async handle_delete_conversation_member(auth_header, conversation_id,
+    member_id)
   parameters:
   - name: auth_header
     isRequired: true
@@ -45,7 +46,7 @@ methods:
     isRequired: true
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_get_activity_members
   name: handle_get_activity_members
-  signature: handle_get_activity_members(auth_header, conversation_id, activity_id)
+  signature: async handle_get_activity_members(auth_header, conversation_id, activity_id)
     -> List[botbuilder.schema._models_py3.ChannelAccount]
   parameters:
   - name: auth_header
@@ -56,7 +57,7 @@ methods:
     isRequired: true
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_get_conversation_member
   name: handle_get_conversation_member
-  signature: handle_get_conversation_member(auth_header, conversation_id, member_id)
+  signature: async handle_get_conversation_member(auth_header, conversation_id, member_id)
     -> botbuilder.schema._models_py3.ChannelAccount
   parameters:
   - name: auth_header
@@ -67,7 +68,8 @@ methods:
     isRequired: true
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_get_conversation_members
   name: handle_get_conversation_members
-  signature: handle_get_conversation_members(auth_header, conversation_id) -> List[botbuilder.schema._models_py3.ChannelAccount]
+  signature: async handle_get_conversation_members(auth_header, conversation_id) ->
+    List[botbuilder.schema._models_py3.ChannelAccount]
   parameters:
   - name: auth_header
     isRequired: true
@@ -75,7 +77,7 @@ methods:
     isRequired: true
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_get_conversation_paged_members
   name: handle_get_conversation_paged_members
-  signature: 'handle_get_conversation_paged_members(auth_header, conversation_id,
+  signature: 'async handle_get_conversation_paged_members(auth_header, conversation_id,
     page_size: int = 0, continuation_token: str = '''') -> botbuilder.schema._models_py3.PagedMembersResult'
   parameters:
   - name: auth_header
@@ -87,16 +89,16 @@ methods:
   - name: continuation_token
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_get_conversations
   name: handle_get_conversations
-  signature: 'handle_get_conversations(auth_header, continuation_token: str = '''')
-    -> botbuilder.schema._models_py3.ConversationsResult'
+  signature: 'async handle_get_conversations(auth_header, continuation_token: str
+    = '''') -> botbuilder.schema._models_py3.ConversationsResult'
   parameters:
   - name: auth_header
     isRequired: true
   - name: continuation_token
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_reply_to_activity
   name: handle_reply_to_activity
-  signature: handle_reply_to_activity(auth_header, conversation_id, activity_id, activity)
-    -> botbuilder.schema._models_py3.ResourceResponse
+  signature: async handle_reply_to_activity(auth_header, conversation_id, activity_id,
+    activity) -> botbuilder.schema._models_py3.ResourceResponse
   parameters:
   - name: auth_header
     isRequired: true
@@ -108,8 +110,8 @@ methods:
     isRequired: true
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_send_conversation_history
   name: handle_send_conversation_history
-  signature: 'handle_send_conversation_history(auth_header, conversation_id, transcript:
-    botbuilder.schema._models_py3.Transcript) -> botbuilder.schema._models_py3.ResourceResponse'
+  signature: 'async handle_send_conversation_history(auth_header, conversation_id,
+    transcript: botbuilder.schema._models_py3.Transcript) -> botbuilder.schema._models_py3.ResourceResponse'
   parameters:
   - name: auth_header
     isRequired: true
@@ -119,8 +121,8 @@ methods:
     isRequired: true
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_send_to_conversation
   name: handle_send_to_conversation
-  signature: handle_send_to_conversation(auth_header, conversation_id, activity) ->
-    botbuilder.schema._models_py3.ResourceResponse
+  signature: async handle_send_to_conversation(auth_header, conversation_id, activity)
+    -> botbuilder.schema._models_py3.ResourceResponse
   parameters:
   - name: auth_header
     isRequired: true
@@ -130,8 +132,8 @@ methods:
     isRequired: true
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_update_activity
   name: handle_update_activity
-  signature: handle_update_activity(auth_header, conversation_id, activity_id, activity)
-    -> botbuilder.schema._models_py3.ResourceResponse
+  signature: async handle_update_activity(auth_header, conversation_id, activity_id,
+    activity) -> botbuilder.schema._models_py3.ResourceResponse
   parameters:
   - name: auth_header
     isRequired: true
@@ -143,7 +145,7 @@ methods:
     isRequired: true
 - uid: botbuilder.core.channel_service_handler.ChannelServiceHandler.handle_upload_attachment
   name: handle_upload_attachment
-  signature: 'handle_upload_attachment(auth_header, conversation_id, attachment_upload:
+  signature: 'async handle_upload_attachment(auth_header, conversation_id, attachment_upload:
     botbuilder.schema._models_py3.AttachmentData) -> botbuilder.schema._models_py3.ResourceResponse'
   parameters:
   - name: auth_header
@@ -156,9 +158,7 @@ methods:
   name: on_create_conversation
   summary: 'create_conversation() API for Skill
 
-
     Create a new Conversation.
-
 
     POST to this method with a
 
@@ -168,18 +168,15 @@ methods:
 
     * Array containing the members to include in the conversation
 
-
     The return value is a ResourceResponse which contains a conversation id
 
     which is suitable for use
 
     in the message payload and REST API uris.
 
-
     Most channels only support the semantics of bots initiating a direct
 
     message conversation.  An example of how to do that would be:
-
 
     var resource = await connector.conversations.CreateConversation(new
 
@@ -191,9 +188,8 @@ methods:
 
     Activity() ... ) ;
 
-
     end.'
-  signature: 'on_create_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+  signature: 'async on_create_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     parameters: botbuilder.schema._models_py3.ConversationParameters) -> botbuilder.schema._models_py3.ConversationResourceResponse'
   parameters:
   - name: claims_identity
@@ -204,14 +200,12 @@ methods:
   name: on_delete_activity
   summary: 'delete_activity() API for Skill.
 
-
     Delete an existing activity.
-
 
     Some channels allow you to delete an existing activity, and if successful
 
     this method will remove the specified activity.'
-  signature: 'on_delete_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+  signature: 'async on_delete_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity_id: str)'
   parameters:
   - name: claims_identity
@@ -224,9 +218,7 @@ methods:
   name: on_delete_conversation_member
   summary: 'delete_conversation_member() API for Skill.
 
-
     Deletes a member from a conversation.
-
 
     This REST API takes a ConversationId and a memberId (of type string) and
 
@@ -235,7 +227,7 @@ methods:
     member
 
     of the conversation, the conversation will also be deleted.'
-  signature: 'on_delete_conversation_member(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+  signature: 'async on_delete_conversation_member(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, member_id: str)'
   parameters:
   - name: claims_identity
@@ -248,16 +240,14 @@ methods:
   name: on_get_activity_members
   summary: 'get_activity_members() API for Skill.
 
-
     Enumerate the members of an activity.
-
 
     This REST API takes a ConversationId and a ActivityId, returning an array
 
     of ChannelAccount objects representing the members of the particular
 
     activity in the conversation.'
-  signature: 'on_get_activity_members(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+  signature: 'async on_get_activity_members(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity_id: str) -> List[botbuilder.schema._models_py3.ChannelAccount]'
   parameters:
   - name: claims_identity
@@ -270,14 +260,12 @@ methods:
   name: on_get_conversation_member
   summary: 'get_conversation_member() API for Skill.
 
-
     Enumerate the members of a conversation.
-
 
     This REST API takes a ConversationId and returns a list of ChannelAccount
 
     objects representing the members of the conversation.'
-  signature: 'on_get_conversation_member(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+  signature: 'async on_get_conversation_member(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, member_id: str) -> botbuilder.schema._models_py3.ChannelAccount'
   parameters:
   - name: claims_identity
@@ -290,14 +278,12 @@ methods:
   name: on_get_conversation_members
   summary: 'get_conversation_members() API for Skill.
 
-
     Enumerate the members of a conversation.
-
 
     This REST API takes a ConversationId and returns a list of ChannelAccount
 
     objects representing the members of the conversation.'
-  signature: 'on_get_conversation_members(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+  signature: 'async on_get_conversation_members(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str) -> List[botbuilder.schema._models_py3.ChannelAccount]'
   parameters:
   - name: claims_identity
@@ -308,9 +294,7 @@ methods:
   name: on_get_conversation_paged_members
   summary: 'get_conversation_paged_members() API for Skill.
 
-
     Enumerate the members of a conversation one page at a time.
-
 
     This REST API takes a ConversationId. Optionally a page_size and/or
 
@@ -321,7 +305,6 @@ methods:
     of ChannelAccounts representing the members of the conversation and a
 
     continuation token that can be used to get more values.
-
 
     One page of ChannelAccounts records are returned with each call. The number
 
@@ -335,11 +318,10 @@ methods:
 
     the Members will be empty or not present in the response.
 
-
     A response to a request that has a continuation token from a prior request
 
     may rarely return members from a previous request.'
-  signature: 'on_get_conversation_paged_members(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+  signature: 'async on_get_conversation_paged_members(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, page_size: Optional[int] = None, continuation_token: str
     = '''') -> botbuilder.schema._models_py3.PagedMembersResult'
   parameters:
@@ -348,7 +330,6 @@ methods:
   - name: conversation_id
     isRequired: true
   - name: page_size
-    isRequired: true
     defaultValue: None
   - name: continuation_token
     isRequired: true
@@ -356,12 +337,9 @@ methods:
   name: on_get_conversations
   summary: 'get_conversations() API for Skill
 
-
     List the Conversations in which this bot has participated.
 
-
     GET from this method with a skip token
-
 
     The return value is a ConversationsResult, which contains an array of
 
@@ -371,11 +349,10 @@ methods:
 
     returned token to get more values.
 
-
     Each ConversationMembers object contains the ID of the conversation and an
 
     array of ChannelAccounts that describe the members of the conversation.'
-  signature: 'on_get_conversations(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+  signature: 'async on_get_conversations(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     continuation_token: str = '''') -> botbuilder.schema._models_py3.ConversationsResult'
   parameters:
   - name: claims_identity
@@ -388,9 +365,7 @@ methods:
   name: on_reply_to_activity
   summary: 'reply_to_activity() API for Skill.
 
-
     This method allows you to reply to an activity.
-
 
     This is slightly different from SendToConversation().
 
@@ -404,14 +379,12 @@ methods:
 
     support nested replies, ReplyToActivity falls back to SendToConversation.
 
-
     Use ReplyToActivity when replying to a specific activity in the
 
     conversation.
 
-
     Use SendToConversation in all other cases.'
-  signature: 'on_reply_to_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+  signature: 'async on_reply_to_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
     -> botbuilder.schema._models_py3.ResourceResponse'
   parameters:
@@ -427,11 +400,9 @@ methods:
   name: on_send_conversation_history
   summary: 'send_conversation_history() API for Skill.
 
-
     This method allows you to upload the historic activities to the
 
     conversation.
-
 
     Sender must ensure that the historic activities have unique ids and
 
@@ -440,7 +411,7 @@ methods:
     duplicate activities and the timestamps are used by the client to render
 
     the activities in the right order.'
-  signature: 'on_send_conversation_history(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+  signature: 'async on_send_conversation_history(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, transcript: botbuilder.schema._models_py3.Transcript) ->
     botbuilder.schema._models_py3.ResourceResponse'
   parameters:
@@ -454,9 +425,7 @@ methods:
   name: on_send_to_conversation
   summary: 'send_to_conversation() API for Skill
 
-
     This method allows you to send an activity to the end of a conversation.
-
 
     This is slightly different from ReplyToActivity().
 
@@ -470,14 +439,12 @@ methods:
 
     support nested replies, ReplyToActivity falls back to SendToConversation.
 
-
     Use ReplyToActivity when replying to a specific activity in the
 
     conversation.
 
-
     Use SendToConversation in all other cases.'
-  signature: 'on_send_to_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+  signature: 'async on_send_to_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity: botbuilder.schema._models_py3.Activity) -> botbuilder.schema._models_py3.ResourceResponse'
   parameters:
   - name: claims_identity
@@ -490,19 +457,16 @@ methods:
   name: on_update_activity
   summary: 'update_activity() API for Skill.
 
-
     Edit an existing activity.
-
 
     Some channels allow you to edit an existing activity to reflect the new
 
     state of a bot conversation.
 
-
     For example, you can remove buttons after someone has clicked "Approve"
 
     button.'
-  signature: 'on_update_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+  signature: 'async on_update_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
     -> botbuilder.schema._models_py3.ResourceResponse'
   parameters:
@@ -518,19 +482,16 @@ methods:
   name: on_upload_attachment
   summary: 'upload_attachment() API for Skill.
 
-
     Upload an attachment directly into a channel''s blob storage.
-
 
     This is useful because it allows you to store data in a compliant store
 
     when dealing with enterprises.
 
-
     The response is a ResourceResponse which contains an AttachmentId which is
 
     suitable for using with the attachments API.'
-  signature: 'on_upload_attachment(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+  signature: 'async on_upload_attachment(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, attachment_upload: botbuilder.schema._models_py3.AttachmentData)
     -> botbuilder.schema._models_py3.ResourceResponse'
   parameters:

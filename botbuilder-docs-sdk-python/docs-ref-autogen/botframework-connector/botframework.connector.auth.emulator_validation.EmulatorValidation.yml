@@ -12,13 +12,13 @@ methods:
   name: authenticate_emulator_token
   summary: 'Validate the incoming Auth Header
 
-
     Validate the incoming Auth Header as a token sent from the Bot Framework Service.
 
     A token issued by the Bot Framework emulator will FAIL this check.'
-  signature: 'authenticate_emulator_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
-    channel_service_or_provider: Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
-    channel_id: str) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  signature: 'async static authenticate_emulator_token(auth_header: str, credentials:
+    botframework.connector.auth.credential_provider.CredentialProvider, channel_service_or_provider:
+    Union[str, botframework.connector.auth.channel_provider.ChannelProvider], channel_id:
+    str) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: auth_header
     description: 'The raw HTTP header in the format: ''Bearer [longString]'''
@@ -37,12 +37,11 @@ methods:
   return:
     description: A valid ClaimsIdentity.
   exceptions:
-  - description: ''
-    type: Exception
+  - type: Exception
 - uid: botframework.connector.auth.emulator_validation.EmulatorValidation.is_token_from_emulator
   name: is_token_from_emulator
   summary: Determines if a given Auth header is from the Bot Framework Emulator
-  signature: 'is_token_from_emulator(auth_header: str) -> bool'
+  signature: 'static is_token_from_emulator(auth_header: str) -> bool'
   parameters:
   - name: auth_header
     description: Bearer Token, in the 'Bearer [Long String]' Format.

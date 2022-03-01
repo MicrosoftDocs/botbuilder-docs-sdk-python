@@ -16,11 +16,11 @@ methods:
     :return: True if the request body can be processed, False otherwise.
 
     :rtype: bool'
-  signature: can_process() -> bool
+  signature: abstract can_process() -> bool
 - uid: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor.get_request_body
   name: get_request_body
   summary: Retrieve the request body from flask/django middleware component.
-  signature: get_request_body() -> str
+  signature: abstract get_request_body() -> str
 attributes:
 - uid: botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor.activity_json
   name: activity_json

@@ -5,11 +5,11 @@ fullName: botframework.connector.aio.operations_async.AttachmentsOperations
 module: botframework.connector.aio.operations_async
 inheritances:
 - builtins.object
-summary: "AttachmentsOperations async operations.\n\nYou should not instantiate directly\
+summary: "AttachmentsOperations async operations.\nYou should not instantiate directly\
   \ this class, but create a Client instance that will create it for you and attach\n\
   \   it as attribute."
 constructor:
-  syntax: AttachmentsOperations(client, config, serializer, deserializer) -> None
+  syntax: AttachmentsOperations(client, config, serializer, deserializer)
   parameters:
   - name: client
     description: Client for service requests.
@@ -31,10 +31,9 @@ methods:
   name: get_attachment
   summary: 'GetAttachment.
 
-
     Get the named view as binary content.'
-  signature: get_attachment(attachment_id, view_id, *, custom_headers=None, raw=False,
-    callback=None, **operation_config)
+  signature: async get_attachment(attachment_id, view_id, *, custom_headers=None,
+    raw=False, callback=None, **operation_config)
   parameters:
   - name: attachment_id
     description: attachment id
@@ -85,9 +84,8 @@ methods:
   name: get_attachment_info
   summary: 'GetAttachmentInfo.
 
-
     Get AttachmentInfo structure describing the attachment views.'
-  signature: get_attachment_info(attachment_id, *, custom_headers=None, raw=False,
+  signature: async get_attachment_info(attachment_id, *, custom_headers=None, raw=False,
     **operation_config)
   parameters:
   - name: attachment_id

@@ -28,7 +28,7 @@ methods:
 
     :param options: (Optional) additional argument(s) to pass to the dialog being
     started.'
-  signature: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+  signature: 'async begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     options: Optional[object] = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: dialog_context
@@ -51,7 +51,7 @@ methods:
     :param dialog_context: The dialog context for the current turn of conversation.
 
     :return:'
-  signature: 'continue_dialog(dialog_context: Optional[botbuilder.dialogs.dialog_context.DialogContext]
+  signature: 'async continue_dialog(dialog_context: Optional[botbuilder.dialogs.dialog_context.DialogContext]
     = None, reason: Optional[botbuilder.dialogs.dialog_reason.DialogReason] = None,
     result: object = NotImplementedError()) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
@@ -62,8 +62,8 @@ methods:
   - name: result
 - uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.end_dialog
   name: end_dialog
-  signature: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
-    botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)
+  signature: 'async end_dialog(context: botbuilder.core.turn_context.TurnContext,
+    instance: botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)
     -> None'
   parameters:
   - name: context
@@ -81,7 +81,7 @@ methods:
     isRequired: true
 - uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.on_step
   name: on_step
-  signature: 'on_step(step_context: botbuilder.dialogs.waterfall_step_context.WaterfallStepContext)
+  signature: 'async on_step(step_context: botbuilder.dialogs.waterfall_step_context.WaterfallStepContext)
     -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: step_context
@@ -110,7 +110,7 @@ methods:
     dependent on the dialog that was called.
 
     :return:'
-  signature: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+  signature: 'async resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)'
   parameters:
   - name: dialog_context
@@ -121,7 +121,7 @@ methods:
     isRequired: true
 - uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.run_step
   name: run_step
-  signature: 'run_step(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+  signature: 'async run_step(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     index: int, reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)
     -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
@@ -134,6 +134,18 @@ methods:
   - name: result
     isRequired: true
 attributes:
+- uid: botbuilder.dialogs.WaterfallDialog.PersistedInstanceId
+  name: PersistedInstanceId
+  signature: PersistedInstanceId = 'instanceId'
+- uid: botbuilder.dialogs.WaterfallDialog.PersistedOptions
+  name: PersistedOptions
+  signature: PersistedOptions = 'options'
+- uid: botbuilder.dialogs.WaterfallDialog.PersistedValues
+  name: PersistedValues
+  signature: PersistedValues = 'values'
+- uid: botbuilder.dialogs.WaterfallDialog.StepIndex
+  name: StepIndex
+  signature: StepIndex = 'stepIndex'
 - uid: botbuilder.dialogs.waterfall_dialog.WaterfallDialog.PersistedInstanceId
   name: PersistedInstanceId
   signature: PersistedInstanceId = 'instanceId'

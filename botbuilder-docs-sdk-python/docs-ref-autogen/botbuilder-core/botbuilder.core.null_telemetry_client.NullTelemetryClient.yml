@@ -122,13 +122,22 @@ methods:
     defaultValue: None
 - uid: botbuilder.core.null_telemetry_client.NullTelemetryClient.track_metric
   name: track_metric
-  summary: "Send information about a single metric data point that was captured for\
-    \ the application.\n:param name: The name of the metric that was captured.\n:param\
-    \ value: The value of the metric that was captured.\n:param tel_type: The type\
-    \ of the metric. (defaults to: TelemetryDataPointType.aggregation`)\n:param count:\
-    \ the number of metrics that were aggregated into this data point. (defaults to:\
-    \ None\n:param min_val: the minimum of all metrics collected that were aggregated\
-    \ into this data point.\n\n   (defaults to: None)"
+  summary: 'Send information about a single metric data point that was captured for
+    the application.
+
+    :param name: The name of the metric that was captured.
+
+    :param value: The value of the metric that was captured.
+
+    :param tel_type: The type of the metric. (defaults to: TelemetryDataPointType.aggregation`)
+
+    :param count: the number of metrics that were aggregated into this data point.
+    (defaults to: None
+
+    :param min_val: the minimum of all metrics collected that were aggregated into
+    this data point.
+
+    (defaults to: None)'
   signature: 'track_metric(name: str, value: float, tel_type: Optional[botbuilder.core.bot_telemetry_client.TelemetryDataPointType]
     = None, count: Optional[int] = None, min_val: Optional[float] = None, max_val:
     Optional[float] = None, std_dev: Optional[float] = None, properties: Optional[Dict[str,
@@ -147,7 +156,6 @@ methods:
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
-    isRequired: true
     defaultValue: None
   - name: count
     defaultValue: None
@@ -260,7 +268,6 @@ methods:
   - name: severity
     description: the severity level of this trace, one of DEBUG, INFO, WARNING, ERROR,
       CRITICAL
-    isRequired: true
     defaultValue: None
   - name: severity
     defaultValue: None

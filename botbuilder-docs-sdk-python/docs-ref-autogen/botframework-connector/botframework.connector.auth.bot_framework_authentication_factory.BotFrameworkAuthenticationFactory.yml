@@ -11,7 +11,7 @@ methods:
 - uid: botframework.connector.auth.bot_framework_authentication_factory.BotFrameworkAuthenticationFactory.create
   name: create
   summary: Creates the appropriate BotFrameworkAuthentication instance.
-  signature: 'create(*, channel_service: Optional[str] = None, validate_authority:
+  signature: 'static create(*, channel_service: Optional[str] = None, validate_authority:
     bool = False, to_channel_from_bot_login_url: Optional[str] = None, to_channel_from_bot_oauth_scope:
     Optional[str] = None, to_bot_from_channel_token_issuer: Optional[str] = None,
     oauth_url: Optional[str] = None, to_bot_from_channel_open_id_metadata_url: Optional[str]

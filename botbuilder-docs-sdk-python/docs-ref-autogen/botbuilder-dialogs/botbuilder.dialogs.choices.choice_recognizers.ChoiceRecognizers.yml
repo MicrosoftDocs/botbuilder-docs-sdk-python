@@ -11,16 +11,16 @@ constructor:
 methods:
 - uid: botbuilder.dialogs.choices.choice_recognizers.ChoiceRecognizers.recognize_choices
   name: recognize_choices
-  summary: "Matches user input against a list of choices.\n\nThis is layered above\
-    \ the *Find.find_choices()* function, and adds logic to let the user specify\n\
-    their choice by index (they can say \"one\" to pick *choice[0]*) or ordinal position\n\
-    \n   (they can say \"the second one\" to pick *choice[1]*.)\n\nThe user's utterance\
-    \ is recognized in the following order:\n\n* By name using *find_choices()* \n\
-    \n* By 1's based ordinal position. \n\n* By 1's based index position. \n\nutterance:\
-    \ The input.\n\nchoices: The list of choices.\n\noptions: (Optional) Options to\
-    \ control the recognition strategy.\n\nA list of found choices, sorted by most\
-    \ relevant first."
-  signature: 'recognize_choices(utterance: str, choices: List[Union[str, botbuilder.dialogs.choices.choice.Choice]],
+  summary: "Matches user input against a list of choices.\nThis is layered above the\
+    \ *Find.find_choices()* function, and adds logic to let the user specify\ntheir\
+    \ choice by index (they can say \"one\" to pick *choice[0]*) or ordinal position\n\
+    (they can say \"the second one\" to pick *choice[1]*.)\nThe user's utterance is\
+    \ recognized in the following order:\n* By name using *find_choices()* \n\n* By\
+    \ 1's based ordinal position. \n\n* By 1's based index position.\nutterance: The\
+    \ input.\nchoices: The list of choices.\noptions: (Optional) Options to control\
+    \ the recognition strategy.\nA list of found choices, sorted by most relevant\
+    \ first."
+  signature: 'static recognize_choices(utterance: str, choices: List[Union[str, botbuilder.dialogs.choices.choice.Choice]],
     options: Optional[botbuilder.dialogs.choices.find_choices_options.FindChoicesOptions]
     = None) -> List[botbuilder.dialogs.choices.model_result.ModelResult]'
   parameters:

@@ -25,7 +25,7 @@ methods:
     :param is_incoming:
 
     :return:'
-  signature: 'apply_conversation_reference(activity: botbuilder.schema._models_py3.Activity,
+  signature: 'static apply_conversation_reference(activity: botbuilder.schema._models_py3.Activity,
     reference: botbuilder.schema._models_py3.ConversationReference, is_incoming: bool
     = False) -> botbuilder.schema._models_py3.Activity'
   parameters:
@@ -56,7 +56,7 @@ methods:
     :param id_or_reference:
 
     :return:'
-  signature: 'delete_activity(id_or_reference: Union[str, botbuilder.schema._models_py3.ConversationReference])'
+  signature: 'async delete_activity(id_or_reference: Union[str, botbuilder.schema._models_py3.ConversationReference])'
   parameters:
   - name: id_or_reference
     isRequired: true
@@ -73,7 +73,6 @@ methods:
 
     object and then later used to message the user proactively.
 
-
     Usage Example:
 
     reference = TurnContext.get_conversation_reference(context.request)
@@ -81,20 +80,21 @@ methods:
     :param activity:
 
     :return:'
-  signature: 'get_conversation_reference(activity: botbuilder.schema._models_py3.Activity)
+  signature: 'static get_conversation_reference(activity: botbuilder.schema._models_py3.Activity)
     -> botbuilder.schema._models_py3.ConversationReference'
   parameters:
   - name: activity
     isRequired: true
 - uid: botbuilder.core.TurnContext.get_mentions
   name: get_mentions
-  signature: 'get_mentions(activity: botbuilder.schema._models_py3.Activity) -> List[botbuilder.schema._models_py3.Mention]'
+  signature: 'static get_mentions(activity: botbuilder.schema._models_py3.Activity)
+    -> List[botbuilder.schema._models_py3.Mention]'
   parameters:
   - name: activity
     isRequired: true
 - uid: botbuilder.core.TurnContext.get_reply_conversation_reference
   name: get_reply_conversation_reference
-  signature: 'get_reply_conversation_reference(activity: botbuilder.schema._models_py3.Activity,
+  signature: 'static get_reply_conversation_reference(activity: botbuilder.schema._models_py3.Activity,
     reply: botbuilder.schema._models_py3.ResourceResponse) -> botbuilder.schema._models_py3.ConversationReference'
   parameters:
   - name: activity
@@ -151,7 +151,7 @@ methods:
     isRequired: true
 - uid: botbuilder.core.TurnContext.remove_mention_text
   name: remove_mention_text
-  signature: 'remove_mention_text(activity: botbuilder.schema._models_py3.Activity,
+  signature: 'static remove_mention_text(activity: botbuilder.schema._models_py3.Activity,
     identifier: str) -> str'
   parameters:
   - name: activity
@@ -160,14 +160,14 @@ methods:
     isRequired: true
 - uid: botbuilder.core.TurnContext.remove_recipient_mention
   name: remove_recipient_mention
-  signature: 'remove_recipient_mention(activity: botbuilder.schema._models_py3.Activity)
+  signature: 'static remove_recipient_mention(activity: botbuilder.schema._models_py3.Activity)
     -> str'
   parameters:
   - name: activity
     isRequired: true
 - uid: botbuilder.core.TurnContext.send_activities
   name: send_activities
-  signature: 'send_activities(activities: List[botbuilder.schema._models_py3.Activity])
+  signature: 'async send_activities(activities: List[botbuilder.schema._models_py3.Activity])
     -> List[botbuilder.schema._models_py3.ResourceResponse]'
   parameters:
   - name: activities
@@ -179,7 +179,7 @@ methods:
     :param activity_or_text:
 
     :return:'
-  signature: 'send_activity(activity_or_text: Union[botbuilder.schema._models_py3.Activity,
+  signature: 'async send_activity(activity_or_text: Union[botbuilder.schema._models_py3.Activity,
     str], speak: Optional[str] = None, input_hint: Optional[str] = None) -> botbuilder.schema._models_py3.ResourceResponse'
   parameters:
   - name: activity_or_text
@@ -190,8 +190,8 @@ methods:
     defaultValue: None
 - uid: botbuilder.core.TurnContext.send_trace_activity
   name: send_trace_activity
-  signature: 'send_trace_activity(name: str, value: Optional[object] = None, value_type:
-    Optional[str] = None, label: Optional[str] = None) -> botbuilder.schema._models_py3.ResourceResponse'
+  signature: 'async send_trace_activity(name: str, value: Optional[object] = None,
+    value_type: Optional[str] = None, label: Optional[str] = None) -> botbuilder.schema._models_py3.ResourceResponse'
   parameters:
   - name: name
     isRequired: true
@@ -223,7 +223,7 @@ methods:
     :param activity:
 
     :return:'
-  signature: 'update_activity(activity: botbuilder.schema._models_py3.Activity)'
+  signature: 'async update_activity(activity: botbuilder.schema._models_py3.Activity)'
   parameters:
   - name: activity
     isRequired: true

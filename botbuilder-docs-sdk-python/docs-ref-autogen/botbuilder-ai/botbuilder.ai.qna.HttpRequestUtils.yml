@@ -7,7 +7,6 @@ inheritances:
 - builtins.object
 summary: 'HTTP request utils class.
 
-
   http_client: Client to make HTTP requests with. Default client used in the SDK is
   *aiohttp.ClientSession*.'
 constructor:
@@ -17,18 +16,14 @@ methods:
   name: execute_http_request
   summary: 'Execute HTTP request.
 
-
     request_url: HTTP request URL.
-
 
     payload_body: HTTP request body.
 
-
     endpoint: QnA Maker endpoint details.
 
-
     timeout: Timeout for HTTP call (milliseconds).'
-  signature: 'execute_http_request(request_url: str, payload_body: object, endpoint:
+  signature: 'async execute_http_request(request_url: str, payload_body: object, endpoint:
     botbuilder.ai.qna.qnamaker_endpoint.QnAMakerEndpoint, timeout: Optional[float]
     = None) -> Any'
   parameters:

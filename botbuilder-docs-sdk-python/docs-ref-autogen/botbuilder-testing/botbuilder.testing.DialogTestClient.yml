@@ -24,7 +24,7 @@ methods:
 - uid: botbuilder.testing.DialogTestClient.send_activity
   name: send_activity
   summary: Send an activity into the dialog.
-  signature: send_activity(activity) -> botbuilder.schema._models_py3.Activity
+  signature: async send_activity(activity) -> botbuilder.schema._models_py3.Activity
   parameters:
   - name: activity
     description: an activity potentially with text.

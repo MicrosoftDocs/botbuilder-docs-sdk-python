@@ -17,14 +17,12 @@ methods:
   name: on_delete_activity
   summary: 'delete_activity() API for Skill.
 
-
     Delete an existing activity.
-
 
     Some channels allow you to delete an existing activity, and if successful
 
     this method will remove the specified activity.'
-  signature: 'on_delete_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+  signature: 'async on_delete_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity_id: str)'
   parameters:
   - name: claims_identity
@@ -37,9 +35,7 @@ methods:
   name: on_reply_to_activity
   summary: 'reply_to_activity() API for Skill.
 
-
     This method allows you to reply to an activity.
-
 
     This is slightly different from SendToConversation().
 
@@ -53,11 +49,9 @@ methods:
 
     support nested replies, ReplyToActivity falls back to SendToConversation.
 
-
     Use ReplyToActivity when replying to a specific activity in the
 
     conversation.
-
 
     Use SendToConversation in all other cases.
 
@@ -78,7 +72,7 @@ methods:
     :type activity: Activity
 
     :return:'
-  signature: 'on_reply_to_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+  signature: 'async on_reply_to_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
     -> botbuilder.schema._models_py3.ResourceResponse'
   parameters:
@@ -94,9 +88,7 @@ methods:
   name: on_send_to_conversation
   summary: 'send_to_conversation() API for Skill
 
-
     This method allows you to send an activity to the end of a conversation.
-
 
     This is slightly different from ReplyToActivity().
 
@@ -110,11 +102,9 @@ methods:
 
     support nested replies, ReplyToActivity falls back to SendToConversation.
 
-
     Use ReplyToActivity when replying to a specific activity in the
 
     conversation.
-
 
     Use SendToConversation in all other cases.
 
@@ -131,7 +121,7 @@ methods:
     :type activity: Activity
 
     :return:'
-  signature: 'on_send_to_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+  signature: 'async on_send_to_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity: botbuilder.schema._models_py3.Activity) -> botbuilder.schema._models_py3.ResourceResponse'
   parameters:
   - name: claims_identity
@@ -144,19 +134,16 @@ methods:
   name: on_update_activity
   summary: 'update_activity() API for Skill.
 
-
     Edit an existing activity.
-
 
     Some channels allow you to edit an existing activity to reflect the new
 
     state of a bot conversation.
 
-
     For example, you can remove buttons after someone has clicked "Approve"
 
     button.'
-  signature: 'on_update_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+  signature: 'async on_update_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
     -> botbuilder.schema._models_py3.ResourceResponse'
   parameters:
@@ -168,7 +155,3 @@ methods:
     isRequired: true
   - name: activity
     isRequired: true
-attributes:
-- uid: botbuilder.core.skills.SkillHandler.SKILL_CONVERSATION_REFERENCE_KEY
-  name: SKILL_CONVERSATION_REFERENCE_KEY
-  signature: SKILL_CONVERSATION_REFERENCE_KEY = 'botbuilder.core.skills.SkillConversationReference'

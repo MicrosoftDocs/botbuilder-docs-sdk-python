@@ -15,8 +15,9 @@ constructor:
 methods:
 - uid: botbuilder.ai.qna.utils.GenerateAnswerUtils.get_answers
   name: get_answers
-  signature: 'get_answers(context: botbuilder.core.turn_context.TurnContext, options:
-    Optional[botbuilder.ai.qna.qnamaker_options.QnAMakerOptions] = None) -> List[botbuilder.ai.qna.models.query_result.QueryResult]'
+  signature: 'async get_answers(context: botbuilder.core.turn_context.TurnContext,
+    options: Optional[botbuilder.ai.qna.qnamaker_options.QnAMakerOptions] = None)
+    -> List[botbuilder.ai.qna.models.query_result.QueryResult]'
   parameters:
   - name: context
     isRequired: true
@@ -24,8 +25,9 @@ methods:
     defaultValue: None
 - uid: botbuilder.ai.qna.utils.GenerateAnswerUtils.get_answers_raw
   name: get_answers_raw
-  signature: 'get_answers_raw(context: botbuilder.core.turn_context.TurnContext, options:
-    Optional[botbuilder.ai.qna.qnamaker_options.QnAMakerOptions] = None) -> botbuilder.ai.qna.models.query_results.QueryResults'
+  signature: 'async get_answers_raw(context: botbuilder.core.turn_context.TurnContext,
+    options: Optional[botbuilder.ai.qna.qnamaker_options.QnAMakerOptions] = None)
+    -> botbuilder.ai.qna.models.query_results.QueryResults'
   parameters:
   - name: context
     isRequired: true

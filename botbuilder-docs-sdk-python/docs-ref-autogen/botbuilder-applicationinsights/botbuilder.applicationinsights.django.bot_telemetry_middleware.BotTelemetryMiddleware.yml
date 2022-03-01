@@ -6,9 +6,9 @@ module: botbuilder.applicationinsights.django.bot_telemetry_middleware
 inheritances:
 - builtins.object
 summary: "Save off the POST body to later populate bot-specific properties to add\
-  \ to Application Insights.\n\nExample activating MIDDLEWARE in Django settings:\n\
-  \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
-  : [], \"backrefs\": [], \"xml:space\": \"preserve\", \"force\": false, \"language\"\
+  \ to Application Insights.\nExample activating MIDDLEWARE in Django settings:\n\
+  <!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [],\
+  \ \"backrefs\": [], \"xml:space\": \"preserve\", \"force\": false, \"language\"\
   : \"python\", \"highlight_args\": {}, \"linenos\": false} -->\n\n````python\n\n\
   \   MIDDLEWARE = [\n       # Ideally add somewhere near top\n       'botbuilder.applicationinsights.django.BotTelemetryMiddleware',\n\
   \       ...\n       ]\n   ````"

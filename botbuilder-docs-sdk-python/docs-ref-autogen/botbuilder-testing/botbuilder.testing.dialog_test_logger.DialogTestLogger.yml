@@ -10,13 +10,13 @@ summary: 'A middleware to output incoming and outgoing activities as json string
 
   unit tests.'
 constructor:
-  syntax: 'DialogTestLogger(log_func: Optional[Callable[[...], None]] = None, json_indent:
-    int = 4, time_func: Optional[Callable[[], float]] = None)'
+  syntax: "DialogTestLogger(log_func: Optional[Callable[[\u2026], None]] = None, json_indent:\
+    \ int = 4, time_func: Optional[Callable[], float]] = None)"
 methods:
 - uid: botbuilder.testing.dialog_test_logger.DialogTestLogger.on_turn
   name: on_turn
-  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: Callable[[botbuilder.core.turn_context.TurnContext],
-    Awaitable])'
+  signature: 'async on_turn(context: botbuilder.core.turn_context.TurnContext, logic:
+    Callable[[botbuilder.core.turn_context.TurnContext], Awaitable])'
   parameters:
   - name: context
     isRequired: true

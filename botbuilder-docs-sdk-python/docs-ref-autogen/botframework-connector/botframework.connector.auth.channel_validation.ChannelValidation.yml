@@ -12,12 +12,12 @@ methods:
   name: authenticate_channel_token
   summary: 'Validate the incoming Auth Header
 
-
     Validate the incoming Auth Header as a token sent from the Bot Framework Service.
 
     A token issued by the Bot Framework emulator will FAIL this check.'
-  signature: 'authenticate_channel_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
-    channel_id: str, auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
+  signature: 'async static authenticate_channel_token(auth_header: str, credentials:
+    botframework.connector.auth.credential_provider.CredentialProvider, channel_id:
+    str, auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
     = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: auth_header
@@ -37,19 +37,17 @@ methods:
   return:
     description: A valid ClaimsIdentity.
   exceptions:
-  - description: ''
-    type: Exception
+  - type: Exception
 - uid: botframework.connector.auth.channel_validation.ChannelValidation.authenticate_channel_token_with_service_url
   name: authenticate_channel_token_with_service_url
   summary: 'Validate the incoming Auth Header
 
-
     Validate the incoming Auth Header as a token sent from the Bot Framework Service.
 
     A token issued by the Bot Framework emulator will FAIL this check.'
-  signature: 'authenticate_channel_token_with_service_url(auth_header: str, credentials:
-    botframework.connector.auth.credential_provider.CredentialProvider, service_url:
-    str, channel_id: str, auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
+  signature: 'async static authenticate_channel_token_with_service_url(auth_header:
+    str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
+    service_url: str, channel_id: str, auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
     = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: auth_header
@@ -74,11 +72,10 @@ methods:
   return:
     description: A valid ClaimsIdentity.
   exceptions:
-  - description: ''
-    type: Exception
+  - type: Exception
 - uid: botframework.connector.auth.channel_validation.ChannelValidation.validate_identity
   name: validate_identity
-  signature: 'validate_identity(identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+  signature: 'async static validate_identity(identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     credentials: botframework.connector.auth.credential_provider.CredentialProvider)
     -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:

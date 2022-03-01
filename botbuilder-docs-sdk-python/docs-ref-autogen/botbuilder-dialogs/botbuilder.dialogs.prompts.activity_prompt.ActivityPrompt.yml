@@ -5,7 +5,7 @@ fullName: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt
 module: botbuilder.dialogs.prompts.activity_prompt
 inheritances:
 - botbuilder.dialogs.dialog.Dialog
-summary: "Waits for an activity to be received.\n\n   This prompt requires a validator\
+summary: "Waits for an activity to be received.\nThis prompt requires a validator\
   \ be passed in and is useful when waiting for non-message\n   activities like an\
   \ event to be received. The validator can ignore received events until the\n   expected\
   \ activity is received."
@@ -22,7 +22,7 @@ methods:
   name: begin_dialog
   summary: Called when a prompt dialog is pushed onto the dialog stack and is being
     activated.
-  signature: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+  signature: 'async begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     options: Optional[botbuilder.dialogs.prompts.prompt_options.PromptOptions] = None)
     -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
@@ -33,7 +33,6 @@ methods:
     - <xref:botbuilder.dialogs.prompts.activity_prompt.DialogContext>
   - name: options
     description: Optional, additional information to pass to the prompt being started.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botbuilder.dialogs.prompts.activity_prompt.PromptOptions>
@@ -41,7 +40,7 @@ methods:
   name: continue_dialog
   summary: Called when a prompt dialog is the active dialog and the user replied with
     a new activity.
-  signature: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
+  signature: 'async continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
     -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: dialog_context
@@ -52,7 +51,7 @@ methods:
 - uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.on_prompt
   name: on_prompt
   summary: Called anytime the derived class should send the user a prompt.
-  signature: 'on_prompt(context: botbuilder.core.turn_context.TurnContext, state:
+  signature: 'async on_prompt(context: botbuilder.core.turn_context.TurnContext, state:
     Dict[str, dict], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
     is_retry: bool = False)'
   parameters:
@@ -74,7 +73,6 @@ methods:
   - name: isRetry
     description: If *true* the users response wasn't recognized and the re-prompt
       should be sent.
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -82,8 +80,8 @@ methods:
   name: on_recognize
   summary: When overridden in a derived class, attempts to recognize the incoming
     activity.
-  signature: 'on_recognize(context: botbuilder.core.turn_context.TurnContext, state:
-    Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
+  signature: 'async on_recognize(context: botbuilder.core.turn_context.TurnContext,
+    state: Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
     -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
   parameters:
   - name: context
@@ -104,12 +102,12 @@ methods:
     - <xref:botbuilder.dialogs.prompts.activity_prompt.PromptOptions>
   return:
     types:
-    - constructed from the options initially provided in the call to <xref:botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.async
-      def on_prompt>
+    - <xref:constructed from the options initially provided in the call to <xref:botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.async
+      def on_prompt>>
 - uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.reprompt_dialog
   name: reprompt_dialog
-  signature: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
-    botbuilder.dialogs.dialog_instance.DialogInstance)'
+  signature: 'async reprompt_dialog(context: botbuilder.core.turn_context.TurnContext,
+    instance: botbuilder.dialogs.dialog_instance.DialogInstance)'
   parameters:
   - name: context
     isRequired: true
@@ -121,7 +119,7 @@ methods:
     stack, such
 
     as when the previous active dialog on the stack completes.'
-  signature: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+  signature: 'async resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     reason: botbuilder.dialogs.dialog_reason.DialogReason, result: Optional[object]
     = None)'
   parameters:
@@ -137,7 +135,6 @@ methods:
     - <xref:botbuilder.dialogs.prompts.activity_prompt.DialogReason>
   - name: result
     description: Optional, value returned from the previous dialog on the stack.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:object>
@@ -156,6 +153,12 @@ methods:
 
     '
 attributes:
+- uid: botbuilder.dialogs.prompts.ActivityPrompt.persisted_options
+  name: persisted_options
+  signature: persisted_options = 'options'
+- uid: botbuilder.dialogs.prompts.ActivityPrompt.persisted_state
+  name: persisted_state
+  signature: persisted_state = 'state'
 - uid: botbuilder.dialogs.prompts.activity_prompt.ActivityPrompt.persisted_options
   name: persisted_options
   signature: persisted_options = 'options'

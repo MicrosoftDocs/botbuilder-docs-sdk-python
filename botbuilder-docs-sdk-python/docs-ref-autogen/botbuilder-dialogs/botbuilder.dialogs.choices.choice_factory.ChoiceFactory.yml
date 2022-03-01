@@ -12,10 +12,10 @@ methods:
 - uid: botbuilder.dialogs.choices.choice_factory.ChoiceFactory.for_channel
   name: for_channel
   summary: "Creates a message activity that includes a list of choices formatted based\
-    \ on the\n   capabilities of a given channel.\n\nchannel_id: A channel ID.\nchoices:\
+    \ on the\n   capabilities of a given channel.\nchannel_id: A channel ID.\nchoices:\
     \ List of choices to render\ntext: (Optional) Text of the message to send.\nspeak\
     \ (Optional) SSML. Text to be spoken by your bot on a speech-enabled channel."
-  signature: 'for_channel(channel_id: str, choices: List[Union[str, botbuilder.dialogs.choices.choice.Choice]],
+  signature: 'static for_channel(channel_id: str, choices: List[Union[str, botbuilder.dialogs.choices.choice.Choice]],
     text: Optional[str] = None, speak: Optional[str] = None, options: Optional[botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions]
     = None) -> botbuilder.schema._models_py3.Activity'
   parameters:
@@ -33,7 +33,7 @@ methods:
   name: hero_card
   summary: Creates a message activity that includes a lsit of coices that have been
     added as *HeroCard*'s
-  signature: 'hero_card(choices: List[Union[str, botbuilder.dialogs.choices.choice.Choice]],
+  signature: 'static hero_card(choices: List[Union[str, botbuilder.dialogs.choices.choice.Choice]],
     text: Optional[str] = None, speak: Optional[str] = None) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: choices
@@ -47,7 +47,6 @@ methods:
   summary: 'Creates a message activity that includes a list of choices formatted as
     an inline list.
 
-
     choices: The list of choices to render.
 
     text: (Optional) The text of the message to send.
@@ -55,7 +54,7 @@ methods:
     speak: (Optional) SSML. Text to be spoken by your bot on a speech-enabled channel.
 
     options: (Optional) The formatting options to use to tweak rendering of list.'
-  signature: 'inline(choices: List[Union[str, botbuilder.dialogs.choices.choice.Choice]],
+  signature: 'static inline(choices: List[Union[str, botbuilder.dialogs.choices.choice.Choice]],
     text: Optional[str] = None, speak: Optional[str] = None, options: Optional[botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions]
     = None) -> botbuilder.schema._models_py3.Activity'
   parameters:
@@ -72,18 +71,14 @@ methods:
   summary: 'Creates a message activity that includes a list of choices formatted as
     a numbered or bulleted list.
 
-
     choices: The list of choices to render.
-
 
     text: (Optional) The text of the message to send.
 
-
     speak: (Optional) SSML. Text to be spoken by your bot on a speech-enabled channel.
 
-
     options: (Optional) The formatting options to use to tweak rendering of list.'
-  signature: 'list_style(choices: List[Union[str, botbuilder.dialogs.choices.choice.Choice]],
+  signature: 'static list_style(choices: List[Union[str, botbuilder.dialogs.choices.choice.Choice]],
     text: Optional[str] = None, speak: Optional[str] = None, options: Optional[botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions]
     = None)'
   parameters:
@@ -99,7 +94,7 @@ methods:
   name: suggested_action
   summary: Creates a message activity that includes a list of choices that have been
     added as suggested actions.
-  signature: 'suggested_action(choices: List[botbuilder.dialogs.choices.choice.Choice],
+  signature: 'static suggested_action(choices: List[botbuilder.dialogs.choices.choice.Choice],
     text: Optional[str] = None, speak: Optional[str] = None) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: choices

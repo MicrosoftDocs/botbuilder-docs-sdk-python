@@ -77,10 +77,13 @@ methods:
     isRequired: true
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.copy_to
   name: copy_to
-  summary: "Copies the elements of the dialog state manager to an array starting at\
-    \ a particular index.\n:param array: The one-dimensional array that is the destination\
-    \ of the elements copied\n\n   from the dialog state manager. The array must have\
-    \ zero-based indexing."
+  summary: 'Copies the elements of the dialog state manager to an array starting at
+    a particular index.
+
+    :param array: The one-dimensional array that is the destination of the elements
+    copied
+
+    from the dialog state manager. The array must have zero-based indexing.'
   signature: 'copy_to(array: List[Tuple[str, object]], array_index: int)'
   parameters:
   - name: array_index
@@ -94,7 +97,7 @@ methods:
     :param name: name of the scope.
 
     :return:'
-  signature: 'delete_scopes_memory_async(name: str)'
+  signature: 'async delete_scopes_memory_async(name: str)'
   parameters:
   - name: name
     isRequired: true
@@ -179,7 +182,7 @@ methods:
     :param default_value: Function to give default value if there is none (OPTIONAL).
 
     :return: Result or null if the path is not valid.'
-  signature: 'get_value(class_type: Type, path_expression: str, default_value: Optional[Callable[[],
+  signature: 'get_value(class_type: Type, path_expression: str, default_value: Optional[Callable[],
     T]] = None) -> T'
   parameters:
   - name: class_type
@@ -193,7 +196,7 @@ methods:
   summary: 'Load all of the scopes.
 
     :return:'
-  signature: load_all_scopes()
+  signature: async load_all_scopes()
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.remove
   name: remove
   summary: 'Removes the element with the specified key from the dialog state manager.
@@ -247,7 +250,7 @@ methods:
   summary: 'Save all changes for all scopes.
 
     :return:'
-  signature: save_all_changes()
+  signature: async save_all_changes()
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.set_value
   name: set_value
   summary: 'Set memory to value.
@@ -330,6 +333,9 @@ attributes:
   summary: 'Gets a Iterable containing the values of the memory scopes.
 
     :return: Values of the memory scopes.'
+- uid: botbuilder.dialogs.memory.DialogStateManager.SEPARATORS
+  name: SEPARATORS
+  signature: SEPARATORS = [',', '[']
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.SEPARATORS
   name: SEPARATORS
   signature: SEPARATORS = [',', '[']
