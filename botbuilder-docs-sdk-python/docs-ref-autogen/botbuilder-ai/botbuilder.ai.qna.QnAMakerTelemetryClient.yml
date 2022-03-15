@@ -11,10 +11,10 @@ constructor:
 methods:
 - uid: botbuilder.ai.qna.QnAMakerTelemetryClient.get_answers
   name: get_answers
-  signature: 'get_answers(context: botbuilder.core.turn_context.TurnContext, options:
-    Optional[botbuilder.ai.qna.qnamaker_options.QnAMakerOptions] = None, telemetry_properties:
-    Optional[Dict[str, str]] = None, telemetry_metrics: Optional[Dict[str, float]]
-    = None)'
+  signature: 'abstract get_answers(context: botbuilder.core.turn_context.TurnContext,
+    options: Optional[botbuilder.ai.qna.qnamaker_options.QnAMakerOptions] = None,
+    telemetry_properties: Optional[Dict[str, str]] = None, telemetry_metrics: Optional[Dict[str,
+    float]] = None)'
   parameters:
   - name: context
     isRequired: true

@@ -11,9 +11,10 @@ constructor:
 methods:
 - uid: botframework.connector.auth.skill_validation.SkillValidation.authenticate_channel_token
   name: authenticate_channel_token
-  signature: 'authenticate_channel_token(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
-    channel_service_or_provider: Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
-    channel_id: str, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration)
+  signature: 'async static authenticate_channel_token(auth_header: str, credentials:
+    botframework.connector.auth.credential_provider.CredentialProvider, channel_service_or_provider:
+    Union[str, botframework.connector.auth.channel_provider.ChannelProvider], channel_id:
+    str, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration)
     -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: auth_header
@@ -31,7 +32,7 @@ methods:
   summary: 'Creates a ClaimsIdentity for an anonymous (unauthenticated) skill.
 
     :return ClaimsIdentity:'
-  signature: create_anonymous_skill_claim()
+  signature: static create_anonymous_skill_claim()
 - uid: botframework.connector.auth.skill_validation.SkillValidation.is_skill_claim
   name: is_skill_claim
   summary: 'Checks if the given list of claims represents a skill.
@@ -39,7 +40,7 @@ methods:
     :param claims: A dict of claims.
 
     :return bool:'
-  signature: 'is_skill_claim(claims: Dict[str, object]) -> bool'
+  signature: 'static is_skill_claim(claims: Dict[str, object]) -> bool'
   parameters:
   - name: claims
     isRequired: true
@@ -51,7 +52,7 @@ methods:
     :param auth_header: Bearer Token, in the "Bearer [Long String]" Format.
 
     :return bool:'
-  signature: 'is_skill_token(auth_header: str) -> bool'
+  signature: 'static is_skill_token(auth_header: str) -> bool'
   parameters:
   - name: auth_header
     isRequired: true
