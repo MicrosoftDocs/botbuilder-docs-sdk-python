@@ -92,10 +92,8 @@ methods:
     isRequired: true
   - name: identity
     description: The claims identity
-    isRequired: true
     defaultValue: None
   - name: audience
-    isRequired: true
     defaultValue: None
   return:
     description: An instance of the <xref:botbuilder.core.ConnectorClient> class
@@ -116,29 +114,24 @@ methods:
     - <xref:botbuilder.schema.ConversationReference>
   - name: logic
     description: The logic to use for the creation of the conversation
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Callable>
   - name: conversation_parameters
     description: The information to use to create the conversation
-    isRequired: true
     defaultValue: None
   - name: channel_id
     description: The ID for the channel.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.str>
   - name: service_url
     description: The channel's service URL endpoint.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.str>
   - name: credentials
     description: The application credentials for the bot.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.auth.AppCredentials>
@@ -186,7 +179,7 @@ methods:
     description: The context object for the turn
     isRequired: true
     types:
-    - <xref::class:>>`<<TurnContext'>
+    - <xref:<xref::class:>>`<<TurnContext'>>
   - name: reference
     description: Conversation reference for the activity to delete
     isRequired: true
@@ -332,7 +325,7 @@ methods:
   return:
     description: A member of the current conversation
   exceptions:
-  - type: A TypeError if missing member_id, service_url, or conversation.id
+  - type: <xref:A TypeError if missing member_id>, <xref:service_url>, <xref:or conversation.id>
 - uid: botbuilder.core.BotFrameworkAdapter.get_conversation_members
   name: get_conversation_members
   summary: Lists the members of a current conversation.
@@ -407,11 +400,9 @@ methods:
     - <xref:str>
   - name: final_redirect
     description: The final URL that the OAuth flow will redirect to.
-    isRequired: true
     defaultValue: None
   - name: oauth_app_credentials
     description: (Optional) AppCredentials for OAuth.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.auth.AppCredential>
@@ -436,7 +427,6 @@ methods:
     isRequired: true
   - name: final_redirect
     description: The final URL that the OAuth flow will redirect to.
-    isRequired: true
     defaultValue: None
   return:
     description: A task that represents the work queued to execute.
@@ -466,7 +456,6 @@ methods:
     isRequired: true
   - name: final_redirect
     description: The final URL that the OAuth flow will redirect to.
-    isRequired: true
     defaultValue: None
   return:
     description: A task that represents the work queued to execute.
@@ -531,7 +520,7 @@ methods:
   return:
     description: Token Response
     types:
-    - <xref::class:'botbuilder.schema.TokenResponse`>
+    - <xref:<xref::class:'botbuilder.schema.TokenResponse`>>
   exceptions:
   - type: An exception error
 - uid: botbuilder.core.BotFrameworkAdapter.key_for_app_credentials
@@ -652,19 +641,16 @@ methods:
     - <xref:botbuilder.core.TurnContext>
   - name: connection_name
     description: Name of the auth connection to use
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: user_id
     description: User id of user to sign out
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: oauth_app_credentials
     description: (Optional) AppCredentials for OAuth.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botframework.connector.auth.AppCredential>
@@ -681,7 +667,7 @@ methods:
     description: The context object for the turn
     isRequired: true
     types:
-    - <xref::class:>>`<<TurnContext'>
+    - <xref:<xref::class:>>`<<TurnContext'>>
   - name: activity
     description: New replacement activity
     isRequired: true

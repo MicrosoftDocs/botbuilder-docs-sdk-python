@@ -13,7 +13,7 @@ summary: 'UserTokenOperations async operations.
 
   attach it as attribute.'
 constructor:
-  syntax: UserTokenOperations(client, config, serializer, deserializer) -> None
+  syntax: UserTokenOperations(client, config, serializer, deserializer)
   parameters:
   - name: client
     description: Client for service requests.
@@ -49,12 +49,10 @@ methods:
     types:
     - <xref:str>
   - name: uri
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: token
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
@@ -96,12 +94,10 @@ methods:
     types:
     - <xref:str>
   - name: channel_id
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: resource_urls
-    isRequired: true
     defaultValue: None
     types:
     - <xref:list>[<xref:str>]
@@ -143,12 +139,10 @@ methods:
     types:
     - <xref:str>
   - name: channel_id
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: code
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
@@ -186,12 +180,10 @@ methods:
     types:
     - <xref:str>
   - name: channel_id
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: include
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
@@ -229,12 +221,10 @@ methods:
     types:
     - <xref:str>
   - name: connection_name
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: channel_id
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
