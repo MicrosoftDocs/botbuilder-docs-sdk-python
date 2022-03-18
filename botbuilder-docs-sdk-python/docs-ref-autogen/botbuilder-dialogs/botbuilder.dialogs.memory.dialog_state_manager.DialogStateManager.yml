@@ -94,7 +94,7 @@ methods:
     :param name: name of the scope.
 
     :return:'
-  signature: 'delete_scopes_memory_async(name: str)'
+  signature: 'async delete_scopes_memory_async(name: str)'
   parameters:
   - name: name
     isRequired: true
@@ -179,7 +179,7 @@ methods:
     :param default_value: Function to give default value if there is none (OPTIONAL).
 
     :return: Result or null if the path is not valid.'
-  signature: 'get_value(class_type: Type, path_expression: str, default_value: Optional[Callable[[],
+  signature: 'get_value(class_type: Type, path_expression: str, default_value: Optional[Callable[],
     T]] = None) -> T'
   parameters:
   - name: class_type
@@ -193,7 +193,7 @@ methods:
   summary: 'Load all of the scopes.
 
     :return:'
-  signature: load_all_scopes()
+  signature: async load_all_scopes()
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.remove
   name: remove
   summary: 'Removes the element with the specified key from the dialog state manager.
@@ -247,7 +247,7 @@ methods:
   summary: 'Save all changes for all scopes.
 
     :return:'
-  signature: save_all_changes()
+  signature: async save_all_changes()
 - uid: botbuilder.dialogs.memory.dialog_state_manager.DialogStateManager.set_value
   name: set_value
   summary: 'Set memory to value.

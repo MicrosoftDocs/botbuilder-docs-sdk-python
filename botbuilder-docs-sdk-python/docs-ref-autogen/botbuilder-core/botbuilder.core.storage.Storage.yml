@@ -15,7 +15,7 @@ methods:
     :param keys:
 
     :return:'
-  signature: 'delete(keys: List[str])'
+  signature: 'abstract async delete(keys: List[str])'
   parameters:
   - name: keys
     isRequired: true
@@ -26,7 +26,7 @@ methods:
     :param keys:
 
     :return:'
-  signature: 'read(keys: List[str])'
+  signature: 'abstract async read(keys: List[str])'
   parameters:
   - name: keys
     isRequired: true
@@ -37,7 +37,7 @@ methods:
     :param changes:
 
     :return:'
-  signature: write(changes)
+  signature: abstract async write(changes)
   parameters:
   - name: changes
     isRequired: true

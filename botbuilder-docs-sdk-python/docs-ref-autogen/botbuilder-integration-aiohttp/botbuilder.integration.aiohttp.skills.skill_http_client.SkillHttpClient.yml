@@ -13,7 +13,7 @@ constructor:
 methods:
 - uid: botbuilder.integration.aiohttp.skills.skill_http_client.SkillHttpClient.post_activity_to_skill
   name: post_activity_to_skill
-  signature: 'post_activity_to_skill(from_bot_id: str, to_skill: botbuilder.core.skills.bot_framework_skill.BotFrameworkSkill,
+  signature: 'async post_activity_to_skill(from_bot_id: str, to_skill: botbuilder.core.skills.bot_framework_skill.BotFrameworkSkill,
     service_url: str, activity: botbuilder.schema._models_py3.Activity, originating_audience:
     Optional[str] = None) -> botbuilder.schema._models_py3.InvokeResponse'
   parameters:

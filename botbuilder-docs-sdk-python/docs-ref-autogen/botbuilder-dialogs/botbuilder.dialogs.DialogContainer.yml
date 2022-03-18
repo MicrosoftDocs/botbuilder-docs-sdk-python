@@ -19,7 +19,7 @@ methods:
 
     This should be called at the start of *beginDialog()*, *continueDialog()*, and
     *resumeDialog()*.'
-  signature: 'check_for_version_change_async(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
+  signature: 'async check_for_version_change_async(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
   parameters:
   - name: dialog_context
     description: dialog context.
@@ -28,7 +28,7 @@ methods:
     description: task.
 - uid: botbuilder.dialogs.DialogContainer.create_child_context
   name: create_child_context
-  signature: 'create_child_context(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
+  signature: 'abstract create_child_context(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
     -> botbuilder.dialogs.dialog_context.DialogContext'
   parameters:
   - name: dialog_context
@@ -63,7 +63,7 @@ methods:
   name: on_dialog_event
   summary: "Called when an event has been raised, using *DialogContext.emitEvent()*,\
     \ by either the current dialog or a\n   dialog that the current dialog started."
-  signature: 'on_dialog_event(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+  signature: 'async on_dialog_event(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     dialog_event: botbuilder.dialogs.dialog_event.DialogEvent) -> bool'
   parameters:
   - name: dialog_context

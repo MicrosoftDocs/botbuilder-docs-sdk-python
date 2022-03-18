@@ -34,7 +34,7 @@ methods:
 - uid: botbuilder.azure.BlobStorage.delete
   name: delete
   summary: Deletes entity blobs from the configured container.
-  signature: 'delete(keys: List[str])'
+  signature: 'async delete(keys: List[str])'
   parameters:
   - name: keys
     description: An array of entity keys.
@@ -44,7 +44,7 @@ methods:
 - uid: botbuilder.azure.BlobStorage.read
   name: read
   summary: Retrieve entities from the configured blob container.
-  signature: 'read(keys: List[str]) -> Dict[str, object]'
+  signature: 'async read(keys: List[str]) -> Dict[str, object]'
   parameters:
   - name: keys
     description: An array of entity keys.
@@ -54,7 +54,7 @@ methods:
 - uid: botbuilder.azure.BlobStorage.write
   name: write
   summary: Stores a new entity in the configured blob container.
-  signature: 'write(changes: Dict[str, object])'
+  signature: 'async write(changes: Dict[str, object])'
   parameters:
   - name: changes
     description: The changes to write to storage.

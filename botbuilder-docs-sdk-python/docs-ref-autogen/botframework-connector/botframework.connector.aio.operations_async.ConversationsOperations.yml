@@ -9,7 +9,7 @@ summary: "ConversationsOperations async operations.\n\nYou should not instantiat
   \ directly this class, but create a Client instance that will create it for you\
   \ and attach\n   it as attribute."
 constructor:
-  syntax: ConversationsOperations(client, config, serializer, deserializer) -> None
+  syntax: ConversationsOperations(client, config, serializer, deserializer)
   parameters:
   - name: client
     description: Client for service requests.
@@ -67,7 +67,8 @@ methods:
     Activity() ... ) ;
 
     ``.'
-  signature: create_conversation(parameters, *, custom_headers=None, raw=False, **operation_config)
+  signature: async create_conversation(parameters, *, custom_headers=None, raw=False,
+    **operation_config)
   parameters:
   - name: parameters
     description: Parameters to create the conversation from
@@ -108,7 +109,7 @@ methods:
     Some channels allow you to delete an existing activity, and if
 
     successful this method will remove the specified activity.'
-  signature: delete_activity(conversation_id, activity_id, *, custom_headers=None,
+  signature: async delete_activity(conversation_id, activity_id, *, custom_headers=None,
     raw=False, **operation_config)
   parameters:
   - name: conversation_id
@@ -159,7 +160,7 @@ methods:
     last member
 
     of the conversation, the conversation will also be deleted.'
-  signature: delete_conversation_member(conversation_id, member_id, *, custom_headers=None,
+  signature: async delete_conversation_member(conversation_id, member_id, *, custom_headers=None,
     raw=False, **operation_config)
   parameters:
   - name: conversation_id
@@ -208,7 +209,7 @@ methods:
     array of ChannelAccount objects representing the members of the
 
     particular activity in the conversation.'
-  signature: get_activity_members(conversation_id, activity_id, *, custom_headers=None,
+  signature: async get_activity_members(conversation_id, activity_id, *, custom_headers=None,
     raw=False, **operation_config)
   parameters:
   - name: conversation_id
@@ -255,7 +256,7 @@ methods:
     This REST API takes a ConversationId and memberId and returns a
 
     ChannelAccount object representing the member of the conversation.'
-  signature: get_conversation_member(conversation_id, member_id, custom_headers=None,
+  signature: async get_conversation_member(conversation_id, member_id, custom_headers=None,
     raw=False, **operation_config)
   parameters:
   - name: conversation_id
@@ -270,7 +271,6 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -278,7 +278,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -304,8 +303,8 @@ methods:
     This REST API takes a ConversationId and returns an array of
 
     ChannelAccount objects representing the members of the conversation.'
-  signature: get_conversation_members(conversation_id, *, custom_headers=None, raw=False,
-    **operation_config)
+  signature: async get_conversation_members(conversation_id, *, custom_headers=None,
+    raw=False, **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
@@ -368,8 +367,8 @@ methods:
     A response to a request that has a continuation token from a prior
 
     request may rarely return members from a previous request.'
-  signature: get_conversation_paged_members(conversation_id, page_size=None, continuation_token=None,
-    *, custom_headers=None, raw=False, **operation_config)
+  signature: async get_conversation_paged_members(conversation_id, page_size=None,
+    continuation_token=None, *, custom_headers=None, raw=False, **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
@@ -378,13 +377,11 @@ methods:
     - <xref:str>
   - name: page_size
     description: Suggested page size
-    isRequired: true
     defaultValue: None
     types:
     - <xref:int>
   - name: continuation_token
     description: Continuation Token
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
@@ -436,12 +433,11 @@ methods:
     an array of ChannelAccounts that describe the members of the
 
     conversation.'
-  signature: get_conversations(continuation_token=None, *, custom_headers=None, raw=False,
-    **operation_config)
+  signature: async get_conversations(continuation_token=None, *, custom_headers=None,
+    raw=False, **operation_config)
   parameters:
   - name: continuation_token
     description: skip or continuation token
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
@@ -501,7 +497,7 @@ methods:
     A response to a request that has a continuation token from a prior
 
     request may rarely return members from a previous request.'
-  signature: get_teams_conversation_paged_members(conversation_id, page_size=None,
+  signature: async get_teams_conversation_paged_members(conversation_id, page_size=None,
     continuation_token=None, custom_headers=None, raw=False, **operation_config)
   parameters:
   - name: conversation_id
@@ -511,19 +507,16 @@ methods:
     - <xref:str>
   - name: page_size
     description: Suggested page size
-    isRequired: true
     defaultValue: None
     types:
     - <xref:int>
   - name: continuation_token
     description: Continuation Token
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -531,7 +524,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -575,7 +567,7 @@ methods:
     conversation.
 
     Use SendToConversation in all other cases.'
-  signature: reply_to_activity(conversation_id, activity_id, activity, *, custom_headers=None,
+  signature: async reply_to_activity(conversation_id, activity_id, activity, *, custom_headers=None,
     raw=False, **operation_config)
   parameters:
   - name: conversation_id
@@ -633,8 +625,8 @@ methods:
     duplicate activities and the timestamps are used by the client to
 
     render the activities in the right order.'
-  signature: send_conversation_history(conversation_id, activities=None, *, custom_headers=None,
-    raw=False, **operation_config)
+  signature: async send_conversation_history(conversation_id, activities=None, *,
+    custom_headers=None, raw=False, **operation_config)
   parameters:
   - name: conversation_id
     description: Conversation ID
@@ -645,7 +637,6 @@ methods:
     description: 'A collection of Activities that conforms to the
 
       Transcript schema.'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:list>[<xref:botframework.connector.models.Activity>]
@@ -703,7 +694,7 @@ methods:
     conversation.
 
     Use SendToConversation in all other cases.'
-  signature: send_to_conversation(conversation_id, activity, *, custom_headers=None,
+  signature: async send_to_conversation(conversation_id, activity, *, custom_headers=None,
     raw=False, **operation_config)
   parameters:
   - name: conversation_id
@@ -754,7 +745,7 @@ methods:
     For example, you can remove buttons after someone has clicked "Approve"
 
     button.'
-  signature: update_activity(conversation_id, activity_id, activity, *, custom_headers=None,
+  signature: async update_activity(conversation_id, activity_id, activity, *, custom_headers=None,
     raw=False, **operation_config)
   parameters:
   - name: conversation_id
@@ -810,7 +801,7 @@ methods:
     The response is a ResourceResponse which contains an AttachmentId which
 
     is suitable for using with the attachments API.'
-  signature: upload_attachment(conversation_id, attachment_upload, *, custom_headers=None,
+  signature: async upload_attachment(conversation_id, attachment_upload, *, custom_headers=None,
     raw=False, **operation_config)
   parameters:
   - name: conversation_id
