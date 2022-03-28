@@ -24,7 +24,7 @@ methods:
     Some channels allow you to delete an existing activity, and if successful
 
     this method will remove the specified activity.'
-  signature: 'on_delete_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+  signature: 'async on_delete_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity_id: str)'
   parameters:
   - name: claims_identity
@@ -78,7 +78,7 @@ methods:
     :type activity: Activity
 
     :return:'
-  signature: 'on_reply_to_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+  signature: 'async on_reply_to_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
     -> botbuilder.schema._models_py3.ResourceResponse'
   parameters:
@@ -131,7 +131,7 @@ methods:
     :type activity: Activity
 
     :return:'
-  signature: 'on_send_to_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+  signature: 'async on_send_to_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity: botbuilder.schema._models_py3.Activity) -> botbuilder.schema._models_py3.ResourceResponse'
   parameters:
   - name: claims_identity
@@ -156,7 +156,7 @@ methods:
     For example, you can remove buttons after someone has clicked "Approve"
 
     button.'
-  signature: 'on_update_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+  signature: 'async on_update_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
     -> botbuilder.schema._models_py3.ResourceResponse'
   parameters:

@@ -67,14 +67,13 @@ methods:
     dialog stack and is being activated.
 
 
-
     > [!NOTE]
 
     > The result indicates whether the prompt is still active after the turn has been
     processed.
 
     >'
-  signature: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+  signature: 'async begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     options: Optional[object] = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: dialog_context
@@ -94,7 +93,7 @@ methods:
 - uid: botbuilder.dialogs.Prompt.continue_dialog
   name: continue_dialog
   summary: Continues a dialog.
-  signature: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
+  signature: 'async continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
   parameters:
   - name: dialog_context
     description: The dialog context for the current turn of the conversation
@@ -125,8 +124,8 @@ methods:
   name: on_prompt
   summary: Prompts user for input. When overridden in a derived class, prompts the
     user for input.
-  signature: 'on_prompt(turn_context: botbuilder.core.turn_context.TurnContext, state:
-    Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
+  signature: 'abstract async on_prompt(turn_context: botbuilder.core.turn_context.TurnContext,
+    state: Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
     is_retry: bool)'
   parameters:
   - name: turn_context
@@ -157,13 +156,12 @@ methods:
   summary: 'Recognizes the user''s input.
 
 
-
     > [!NOTE]
 
     > When overridden in a derived class, attempts to recognize the user''s input.
 
     >'
-  signature: 'on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
+  signature: 'abstract async on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
     state: Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)'
   parameters:
   - name: turn_context
@@ -187,8 +185,8 @@ methods:
 - uid: botbuilder.dialogs.Prompt.reprompt_dialog
   name: reprompt_dialog
   summary: Reprompts user for input.
-  signature: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
-    botbuilder.dialogs.dialog_instance.DialogInstance)'
+  signature: 'async reprompt_dialog(context: botbuilder.core.turn_context.TurnContext,
+    instance: botbuilder.dialogs.dialog_instance.DialogInstance)'
   parameters:
   - name: context
     description: Context for the current turn of conversation with the user
@@ -205,7 +203,7 @@ methods:
 - uid: botbuilder.dialogs.Prompt.resume_dialog
   name: resume_dialog
   summary: Resumes a dialog.
-  signature: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+  signature: 'async resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: dialog_context

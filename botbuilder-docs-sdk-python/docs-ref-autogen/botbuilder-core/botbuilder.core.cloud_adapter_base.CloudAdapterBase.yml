@@ -19,7 +19,7 @@ methods:
     bot can send activities
 
     to the user.'
-  signature: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
+  signature: 'async continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
     callback: Callable)'
   parameters:
   - name: reference
@@ -34,7 +34,7 @@ methods:
     - <xref:typing.Callable>
 - uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.continue_conversation_with_claims
   name: continue_conversation_with_claims
-  signature: 'continue_conversation_with_claims(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+  signature: 'async continue_conversation_with_claims(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     reference: botbuilder.schema._models_py3.ConversationReference, audience: str,
     logic: Callable[[botbuilder.core.turn_context.TurnContext], Awaitable])'
   parameters:
@@ -54,8 +54,8 @@ methods:
 - uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.delete_activity
   name: delete_activity
   summary: Deletes an existing activity.
-  signature: 'delete_activity(context: botbuilder.core.turn_context.TurnContext, reference:
-    botbuilder.schema._models_py3.ConversationReference)'
+  signature: 'async delete_activity(context: botbuilder.core.turn_context.TurnContext,
+    reference: botbuilder.schema._models_py3.ConversationReference)'
   parameters:
   - name: context
     description: The context object for the turn.
@@ -71,7 +71,7 @@ methods:
   name: process_activity
   summary: Creates a turn context and runs the middleware pipeline for an incoming
     activity.
-  signature: 'process_activity(auth_header_or_authenticate_request_result: Union[str,
+  signature: 'async process_activity(auth_header_or_authenticate_request_result: Union[str,
     botframework.connector.auth.authenticate_request_result.AuthenticateRequestResult],
     activity: botbuilder.schema._models_py3.Activity, logic: Callable[[botbuilder.core.turn_context.TurnContext],
     Awaitable])'
@@ -110,7 +110,7 @@ methods:
     '
 - uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.process_proactive
   name: process_proactive
-  signature: 'process_proactive(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
+  signature: 'async process_proactive(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
     continuation_activity: botbuilder.schema._models_py3.Activity, audience: str,
     logic: Callable[[botbuilder.core.turn_context.TurnContext], Awaitable])'
   parameters:
@@ -126,8 +126,8 @@ methods:
   name: send_activities
   summary: Sends a set of activities to the user. An array of responses from the server
     will be returned.
-  signature: 'send_activities(context: botbuilder.core.turn_context.TurnContext, activities:
-    List[botbuilder.schema._models_py3.Activity]) -> List[botbuilder.schema._models_py3.ResourceResponse]'
+  signature: 'async send_activities(context: botbuilder.core.turn_context.TurnContext,
+    activities: List[botbuilder.schema._models_py3.Activity]) -> List[botbuilder.schema._models_py3.ResourceResponse]'
   parameters:
   - name: context
     description: The context object for the turn.
@@ -142,8 +142,8 @@ methods:
 - uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.update_activity
   name: update_activity
   summary: Replaces an existing activity.
-  signature: 'update_activity(context: botbuilder.core.turn_context.TurnContext, activity:
-    botbuilder.schema._models_py3.Activity)'
+  signature: 'async update_activity(context: botbuilder.core.turn_context.TurnContext,
+    activity: botbuilder.schema._models_py3.Activity)'
   parameters:
   - name: context
     description: The context object for the turn.

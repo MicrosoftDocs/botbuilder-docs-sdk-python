@@ -6,7 +6,7 @@ functions:
 - uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_middleware.bot_telemetry_middleware
   name: bot_telemetry_middleware
   summary: Process the incoming Flask request.
-  signature: bot_telemetry_middleware(request, handler)
+  signature: async bot_telemetry_middleware(request, handler)
   parameters:
   - name: request
   - name: handler

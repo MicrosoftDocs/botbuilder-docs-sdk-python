@@ -12,7 +12,7 @@ methods:
 - uid: botbuilder.core.oauth.connector_client_builder.ConnectorClientBuilder.create_connector_client
   name: create_connector_client
   summary: Creates the connector client asynchronous.
-  signature: 'create_connector_client(service_url: str, identity: Optional[botframework.connector.auth.claims_identity.ClaimsIdentity]
+  signature: 'abstract async create_connector_client(service_url: str, identity: Optional[botframework.connector.auth.claims_identity.ClaimsIdentity]
     = None, audience: Optional[str] = None) -> botframework.connector.connector_client.ConnectorClient'
   parameters:
   - name: service_url

@@ -18,7 +18,7 @@ methods:
     isRequired: true
 - uid: botbuilder.core.streaming.bot_framework_http_adapter_base.BotFrameworkHttpAdapterBase.process_outgoing_activity
   name: process_outgoing_activity
-  signature: 'process_outgoing_activity(turn_context: botbuilder.core.turn_context.TurnContext,
+  signature: 'async process_outgoing_activity(turn_context: botbuilder.core.turn_context.TurnContext,
     activity: botbuilder.schema._models_py3.Activity) -> botbuilder.schema._models_py3.ResourceResponse'
   parameters:
   - name: turn_context
@@ -27,7 +27,7 @@ methods:
     isRequired: true
 - uid: botbuilder.core.streaming.bot_framework_http_adapter_base.BotFrameworkHttpAdapterBase.process_streaming_activity
   name: process_streaming_activity
-  signature: 'process_streaming_activity(activity: botbuilder.schema._models_py3.Activity,
+  signature: 'async process_streaming_activity(activity: botbuilder.schema._models_py3.Activity,
     bot_callback_handler: Callable[[botbuilder.core.turn_context.TurnContext], Awaitable])
     -> botbuilder.schema._models_py3.InvokeResponse'
   parameters:
@@ -37,7 +37,7 @@ methods:
     isRequired: true
 - uid: botbuilder.core.streaming.bot_framework_http_adapter_base.BotFrameworkHttpAdapterBase.send_streaming_activity
   name: send_streaming_activity
-  signature: 'send_streaming_activity(activity: botbuilder.schema._models_py3.Activity)
+  signature: 'async send_streaming_activity(activity: botbuilder.schema._models_py3.Activity)
     -> botbuilder.schema._models_py3.ResourceResponse'
   parameters:
   - name: activity

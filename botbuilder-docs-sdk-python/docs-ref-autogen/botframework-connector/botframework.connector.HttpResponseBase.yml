@@ -10,10 +10,10 @@ constructor:
 methods:
 - uid: botframework.connector.HttpResponseBase.is_succesful
   name: is_succesful
-  signature: is_succesful() -> bool
+  signature: abstract async is_succesful() -> bool
 - uid: botframework.connector.HttpResponseBase.read_content_str
   name: read_content_str
-  signature: read_content_str() -> str
+  signature: abstract async read_content_str() -> str
 attributes:
 - uid: botframework.connector.HttpResponseBase.status_code
   name: status_code

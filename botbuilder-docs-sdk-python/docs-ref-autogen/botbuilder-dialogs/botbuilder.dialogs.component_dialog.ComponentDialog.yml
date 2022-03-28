@@ -35,7 +35,7 @@ methods:
     If the task is successful, the result indicates whether the dialog is still
 
     active after the turn has been processed by the dialog.'
-  signature: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+  signature: 'async begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     options: Optional[object] = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: dialog_context
@@ -59,7 +59,7 @@ methods:
     the
 
     user replies with a new activity.'
-  signature: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
+  signature: 'async continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
     -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: dialog_context
@@ -95,7 +95,7 @@ methods:
 - uid: botbuilder.dialogs.component_dialog.ComponentDialog.end_component
   name: end_component
   summary: Ends the component dialog in its parent's context.
-  signature: 'end_component(outer_dc: botbuilder.dialogs.dialog_context.DialogContext,
+  signature: 'async end_component(outer_dc: botbuilder.dialogs.dialog_context.DialogContext,
     result: object) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: outer_dc
@@ -122,8 +122,8 @@ methods:
 - uid: botbuilder.dialogs.component_dialog.ComponentDialog.end_dialog
   name: end_dialog
   summary: Called when the dialog is ending.
-  signature: 'end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
-    botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)
+  signature: 'async end_dialog(context: botbuilder.core.turn_context.TurnContext,
+    instance: botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)
     -> None'
   parameters:
   - name: context
@@ -145,7 +145,7 @@ methods:
 - uid: botbuilder.dialogs.component_dialog.ComponentDialog.find_dialog
   name: find_dialog
   summary: Finds a dialog by ID.
-  signature: 'find_dialog(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
+  signature: 'async find_dialog(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
   parameters:
   - name: dialog_id
     description: The dialog to add.
@@ -157,7 +157,7 @@ methods:
 - uid: botbuilder.dialogs.component_dialog.ComponentDialog.on_begin_dialog
   name: on_begin_dialog
   summary: Called when the dialog is started and pushed onto the parent's dialog stack.
-  signature: 'on_begin_dialog(inner_dc: botbuilder.dialogs.dialog_context.DialogContext,
+  signature: 'async on_begin_dialog(inner_dc: botbuilder.dialogs.dialog_context.DialogContext,
     options: object) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: inner_dc
@@ -188,7 +188,7 @@ methods:
   name: on_continue_dialog
   summary: Called when the dialog is continued, where it is the active dialog and
     the user replies with a new activity.
-  signature: 'on_continue_dialog(inner_dc: botbuilder.dialogs.dialog_context.DialogContext)
+  signature: 'async on_continue_dialog(inner_dc: botbuilder.dialogs.dialog_context.DialogContext)
     -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: inner_dc
@@ -199,8 +199,8 @@ methods:
 - uid: botbuilder.dialogs.component_dialog.ComponentDialog.on_end_dialog
   name: on_end_dialog
   summary: Ends the component dialog in its parent's context.
-  signature: 'on_end_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
-    botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)
+  signature: 'async on_end_dialog(context: botbuilder.core.turn_context.TurnContext,
+    instance: botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)
     -> None'
   parameters:
   - name: turn_context
@@ -222,7 +222,7 @@ methods:
     - <xref:botbuilder.dialogs.DialogReason>
 - uid: botbuilder.dialogs.component_dialog.ComponentDialog.on_reprompt_dialog
   name: on_reprompt_dialog
-  signature: 'on_reprompt_dialog(turn_context: botbuilder.core.turn_context.TurnContext,
+  signature: 'async on_reprompt_dialog(turn_context: botbuilder.core.turn_context.TurnContext,
     instance: botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
   parameters:
   - name: turn_context
@@ -240,8 +240,8 @@ methods:
 - uid: botbuilder.dialogs.component_dialog.ComponentDialog.reprompt_dialog
   name: reprompt_dialog
   summary: Called when the dialog should re-prompt the user for input.
-  signature: 'reprompt_dialog(context: botbuilder.core.turn_context.TurnContext, instance:
-    botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
+  signature: 'async reprompt_dialog(context: botbuilder.core.turn_context.TurnContext,
+    instance: botbuilder.dialogs.dialog_instance.DialogInstance) -> None'
   parameters:
   - name: context
     description: The context object for this turn.
@@ -259,7 +259,7 @@ methods:
     turn, returning
 
     control to this dialog component.'
-  signature: 'resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+  signature: 'async resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     reason: botbuilder.dialogs.dialog_reason.DialogReason, result: Optional[object]
     = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:

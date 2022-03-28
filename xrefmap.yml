@@ -1423,18 +1423,18 @@ references:
   href: https://docs.python.org/3/library/contextvars.html#contextvars.ContextVar.name
   name: name
   uid: contextvars.ContextVar.name
-- fullName: contextvars.contextvars.Token.Token.MISSING
-  href: https://docs.python.org/3/library/contextvars.html#contextvars.contextvars.Token.Token.MISSING
+- fullName: contextvars.Token.MISSING
+  href: https://docs.python.org/3/library/contextvars.html#contextvars.Token.MISSING
   name: MISSING
-  uid: contextvars.contextvars.Token.Token.MISSING
-- fullName: contextvars.contextvars.Token.Token.old_value
-  href: https://docs.python.org/3/library/contextvars.html#contextvars.contextvars.Token.Token.old_value
+  uid: contextvars.Token.MISSING
+- fullName: contextvars.Token.old_value
+  href: https://docs.python.org/3/library/contextvars.html#contextvars.Token.old_value
   name: old_value
-  uid: contextvars.contextvars.Token.Token.old_value
-- fullName: contextvars.contextvars.Token.Token.var
-  href: https://docs.python.org/3/library/contextvars.html#contextvars.contextvars.Token.Token.var
+  uid: contextvars.Token.old_value
+- fullName: contextvars.Token.var
+  href: https://docs.python.org/3/library/contextvars.html#contextvars.Token.var
   name: var
-  uid: contextvars.contextvars.Token.Token.var
+  uid: contextvars.Token.var
 - fullName: crypt.methods
   href: https://docs.python.org/3/library/crypt.html#crypt.methods
   name: methods
@@ -4299,6 +4299,18 @@ references:
   href: https://docs.python.org/3/library/typing.html#typing.ParamSpec.kwargs
   name: kwargs
   uid: typing.ParamSpec.kwargs
+- fullName: typing.TypedDict.__optional_keys__
+  href: https://docs.python.org/3/library/typing.html#typing.TypedDict.__optional_keys__
+  name: __optional_keys__
+  uid: typing.TypedDict.__optional_keys__
+- fullName: typing.TypedDict.__required_keys__
+  href: https://docs.python.org/3/library/typing.html#typing.TypedDict.__required_keys__
+  name: __required_keys__
+  uid: typing.TypedDict.__required_keys__
+- fullName: typing.TypedDict.__total__
+  href: https://docs.python.org/3/library/typing.html#typing.TypedDict.__total__
+  name: __total__
+  uid: typing.TypedDict.__total__
 - fullName: unittest.TestCase.failureException
   href: https://docs.python.org/3/library/unittest.html#unittest.TestCase.failureException
   name: failureException
@@ -11231,6 +11243,10 @@ references:
   href: https://docs.python.org/3/library/logging.handlers.html#logging.handlers.TimedRotatingFileHandler.emit
   name: emit
   uid: logging.handlers.TimedRotatingFileHandler.emit
+- fullName: logging.handlers.TimedRotatingFileHandler.getFilesToDelete
+  href: https://docs.python.org/3/library/logging.handlers.html#logging.handlers.TimedRotatingFileHandler.getFilesToDelete
+  name: getFilesToDelete
+  uid: logging.handlers.TimedRotatingFileHandler.getFilesToDelete
 - fullName: logging.handlers.WatchedFileHandler.emit
   href: https://docs.python.org/3/library/logging.handlers.html#logging.handlers.WatchedFileHandler.emit
   name: emit
@@ -17815,6 +17831,34 @@ references:
   href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.asyncio.subprocess.STDOUT
   name: STDOUT
   uid: asyncio.asyncio.subprocess.STDOUT
+- fullName: calendar.FRIDAY
+  href: https://docs.python.org/3/library/calendar.html#calendar.FRIDAY
+  name: FRIDAY
+  uid: calendar.FRIDAY
+- fullName: calendar.MONDAY
+  href: https://docs.python.org/3/library/calendar.html#calendar.MONDAY
+  name: MONDAY
+  uid: calendar.MONDAY
+- fullName: calendar.SATURDAY
+  href: https://docs.python.org/3/library/calendar.html#calendar.SATURDAY
+  name: SATURDAY
+  uid: calendar.SATURDAY
+- fullName: calendar.SUNDAY
+  href: https://docs.python.org/3/library/calendar.html#calendar.SUNDAY
+  name: SUNDAY
+  uid: calendar.SUNDAY
+- fullName: calendar.THURSDAY
+  href: https://docs.python.org/3/library/calendar.html#calendar.THURSDAY
+  name: THURSDAY
+  uid: calendar.THURSDAY
+- fullName: calendar.TUESDAY
+  href: https://docs.python.org/3/library/calendar.html#calendar.TUESDAY
+  name: TUESDAY
+  uid: calendar.TUESDAY
+- fullName: calendar.WEDNESDAY
+  href: https://docs.python.org/3/library/calendar.html#calendar.WEDNESDAY
+  name: WEDNESDAY
+  uid: calendar.WEDNESDAY
 - fullName: calendar.day_abbr
   href: https://docs.python.org/3/library/calendar.html#calendar.day_abbr
   name: day_abbr
@@ -21907,10 +21951,6 @@ references:
   href: https://docs.python.org/3/library/types.html#types.NotImplementedType
   name: NotImplementedType
   uid: types.NotImplementedType
-- fullName: types.UnionType
-  href: https://docs.python.org/3/library/types.html#types.UnionType
-  name: UnionType
-  uid: types.UnionType
 - fullName: types.WrapperDescriptorType
   href: https://docs.python.org/3/library/types.html#types.WrapperDescriptorType
   name: WrapperDescriptorType
@@ -29971,10 +30011,6 @@ references:
   href: https://docs.python.org/3/library/socket.html#socket.sethostname
   name: sethostname
   uid: socket.sethostname
-- fullName: socket.socket
-  href: https://docs.python.org/3/library/socket.html#socket.socket
-  name: socket
-  uid: socket.socket
 - fullName: socket.socketpair
   href: https://docs.python.org/3/library/socket.html#socket.socketpair
   name: socketpair
@@ -30587,14 +30623,6 @@ references:
   href: https://docs.python.org/3/library/tempfile.html#tempfile.NamedTemporaryFile
   name: NamedTemporaryFile
   uid: tempfile.NamedTemporaryFile
-- fullName: tempfile.SpooledTemporaryFile
-  href: https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile
-  name: SpooledTemporaryFile
-  uid: tempfile.SpooledTemporaryFile
-- fullName: tempfile.TemporaryDirectory
-  href: https://docs.python.org/3/library/tempfile.html#tempfile.TemporaryDirectory
-  name: TemporaryDirectory
-  uid: tempfile.TemporaryDirectory
 - fullName: tempfile.TemporaryFile
   href: https://docs.python.org/3/library/tempfile.html#tempfile.TemporaryFile
   name: TemporaryFile
@@ -33607,10 +33635,10 @@ references:
   href: https://docs.python.org/3/library/contextvars.html#contextvars.ContextVar
   name: ContextVar
   uid: contextvars.ContextVar
-- fullName: contextvars.contextvars.Token
-  href: https://docs.python.org/3/library/contextvars.html#contextvars.contextvars.Token
+- fullName: contextvars.Token
+  href: https://docs.python.org/3/library/contextvars.html#contextvars.Token
   name: Token
-  uid: contextvars.contextvars.Token
+  uid: contextvars.Token
 - fullName: csv.Dialect
   href: https://docs.python.org/3/library/csv.html#csv.Dialect
   name: Dialect
@@ -35087,6 +35115,10 @@ references:
   href: https://docs.python.org/3/library/smtplib.html#smtplib.SMTP_SSL
   name: SMTP_SSL
   uid: smtplib.SMTP_SSL
+- fullName: socket.socket
+  href: https://docs.python.org/3/library/socket.html#socket.socket
+  name: socket
+  uid: socket.socket
 - fullName: socketserver.BaseRequestHandler
   href: https://docs.python.org/3/library/socketserver.html#socketserver.BaseRequestHandler
   name: BaseRequestHandler
@@ -35263,6 +35295,14 @@ references:
   href: https://docs.python.org/3/library/telnetlib.html#telnetlib.Telnet
   name: Telnet
   uid: telnetlib.Telnet
+- fullName: tempfile.SpooledTemporaryFile
+  href: https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile
+  name: SpooledTemporaryFile
+  uid: tempfile.SpooledTemporaryFile
+- fullName: tempfile.TemporaryDirectory
+  href: https://docs.python.org/3/library/tempfile.html#tempfile.TemporaryDirectory
+  name: TemporaryDirectory
+  uid: tempfile.TemporaryDirectory
 - fullName: test.support.BasicTestRunner
   href: https://docs.python.org/3/library/test.html#test.support.BasicTestRunner
   name: BasicTestRunner
@@ -35671,6 +35711,10 @@ references:
   href: https://docs.python.org/3/library/types.html#types.TracebackType
   name: TracebackType
   uid: types.TracebackType
+- fullName: types.UnionType
+  href: https://docs.python.org/3/library/types.html#types.UnionType
+  name: UnionType
+  uid: types.UnionType
 - fullName: typing.AbstractSet
   href: https://docs.python.org/3/library/typing.html#typing.AbstractSet
   name: AbstractSet

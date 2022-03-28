@@ -16,7 +16,7 @@ methods:
     prompt dialog is pushed onto the
 
     dialog stack and is being activated.'
-  signature: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+  signature: 'async begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     options: Optional[botbuilder.dialogs.prompts.prompt_options.PromptOptions] = None)
     -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
@@ -44,7 +44,7 @@ methods:
   name: continue_dialog
   summary: Continues a dialog. Called when a prompt dialog is the active dialog and
     the user replied with a new activity.
-  signature: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
+  signature: 'async continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
     -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: dialog_context
@@ -70,8 +70,8 @@ methods:
 - uid: botbuilder.dialogs.OAuthPrompt.get_user_token
   name: get_user_token
   summary: Gets the user's tokeN.
-  signature: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, code:
-    Optional[str] = None) -> botbuilder.schema._models_py3.TokenResponse'
+  signature: 'async get_user_token(context: botbuilder.core.turn_context.TurnContext,
+    code: Optional[str] = None) -> botbuilder.schema._models_py3.TokenResponse'
   parameters:
   - name: context
     description: Context for the current turn of conversation with the user
@@ -96,7 +96,7 @@ methods:
 - uid: botbuilder.dialogs.OAuthPrompt.sign_out_user
   name: sign_out_user
   summary: Signs out the user
-  signature: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async sign_out_user(context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: context
     description: Context for the current turn of conversation with the user
