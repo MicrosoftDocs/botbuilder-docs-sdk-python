@@ -9,6 +9,10 @@ summary: Result returned to the caller of one of the various stack manipulation 
 constructor:
   syntax: 'DialogTurnResult(status: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus,
     result: Optional[object] = None)'
+  parameters:
+  - name: status
+  - name: result
+    defaultValue: None
 attributes:
 - uid: botbuilder.dialogs.dialog_turn_result.DialogTurnResult.result
   name: result

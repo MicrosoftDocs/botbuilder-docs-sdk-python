@@ -7,6 +7,9 @@ inheritances:
 - builtins.object
 constructor:
   syntax: 'TestFlow(previous: Callable, adapter: botbuilder.core.adapters.test_adapter.TestAdapter)'
+  parameters:
+  - name: previous
+  - name: adapter
 methods:
 - uid: botbuilder.core.adapters.test_adapter.TestFlow.assert_no_reply
   name: assert_no_reply

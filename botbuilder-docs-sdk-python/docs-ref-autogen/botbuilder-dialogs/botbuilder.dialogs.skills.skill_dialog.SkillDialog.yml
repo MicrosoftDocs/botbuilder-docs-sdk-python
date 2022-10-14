@@ -8,6 +8,9 @@ inheritances:
 constructor:
   syntax: 'SkillDialog(dialog_options: botbuilder.dialogs.skills.skill_dialog_options.SkillDialogOptions,
     dialog_id: str)'
+  parameters:
+  - name: dialog_options
+  - name: dialog_id
 methods:
 - uid: botbuilder.dialogs.skills.skill_dialog.SkillDialog.begin_dialog
   name: begin_dialog

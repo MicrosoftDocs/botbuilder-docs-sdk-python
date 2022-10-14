@@ -11,6 +11,14 @@ constructor:
     Optional[botbuilder.core.conversation_state.ConversationState] = None, credentials:
     Optional[botframework.connector.auth.microsoft_app_credentials.MicrosoftAppCredentials]
     = None)'
+  parameters:
+  - name: inspection_state
+  - name: user_state
+    defaultValue: None
+  - name: conversation_state
+    defaultValue: None
+  - name: credentials
+    defaultValue: None
 methods:
 - uid: botbuilder.core.inspection.InspectionMiddleware.process_attach_command
   name: process_attach_command

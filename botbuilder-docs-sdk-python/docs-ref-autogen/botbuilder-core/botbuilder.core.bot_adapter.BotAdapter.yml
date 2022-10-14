@@ -8,6 +8,9 @@ inheritances:
 constructor:
   syntax: 'BotAdapter(on_turn_error: Optional[Callable[[botbuilder.core.turn_context.TurnContext,
     Exception], Awaitable]] = None)'
+  parameters:
+  - name: on_turn_error
+    defaultValue: None
 methods:
 - uid: botbuilder.core.bot_adapter.BotAdapter.continue_conversation
   name: continue_conversation
@@ -46,11 +49,11 @@ methods:
   parameters:
   - name: bot_id
     description: The application ID of the bot. This parameter is ignored in
+    defaultValue: None
+  - name: reference
     isRequired: true
   - name: callback
     isRequired: true
-  - name: bot_id
-    defaultValue: None
   - name: claims_identity
     defaultValue: None
   - name: audience

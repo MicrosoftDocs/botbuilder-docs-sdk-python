@@ -13,6 +13,11 @@ constructor:
     auth_config: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration,
     channel_provider: Optional[botframework.connector.auth.channel_provider.ChannelProvider]
     = None)'
+  parameters:
+  - name: credential_provider
+  - name: auth_config
+  - name: channel_provider
+    defaultValue: None
 methods:
 - uid: botbuilder.core.ChannelServiceHandler.handle_create_conversation
   name: handle_create_conversation

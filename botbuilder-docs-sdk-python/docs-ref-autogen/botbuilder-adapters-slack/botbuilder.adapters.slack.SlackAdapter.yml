@@ -14,6 +14,12 @@ constructor:
     on_turn_error: Optional[Callable[[botbuilder.core.turn_context.TurnContext, Exception],
     Awaitable]] = None, options: Optional[botbuilder.adapters.slack.slack_adatper_options.SlackAdapterOptions]
     = None)'
+  parameters:
+  - name: client
+  - name: on_turn_error
+    defaultValue: None
+  - name: options
+    defaultValue: None
 methods:
 - uid: botbuilder.adapters.slack.SlackAdapter.continue_conversation
   name: continue_conversation

@@ -12,6 +12,14 @@ constructor:
   syntax: 'ChoicePrompt(dialog_id: str, validator: Optional[Callable[[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext],
     bool]] = None, default_locale: Optional[str] = None, choice_defaults: Optional[Dict[str,
     botbuilder.dialogs.choices.choice_factory_options.ChoiceFactoryOptions]] = None)'
+  parameters:
+  - name: dialog_id
+  - name: validator
+    defaultValue: None
+  - name: default_locale
+    defaultValue: None
+  - name: choice_defaults
+    defaultValue: None
 methods:
 - uid: botbuilder.dialogs.prompts.ChoicePrompt.on_prompt
   name: on_prompt

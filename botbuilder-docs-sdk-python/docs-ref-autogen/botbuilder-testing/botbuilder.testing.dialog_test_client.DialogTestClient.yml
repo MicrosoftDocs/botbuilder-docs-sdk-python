@@ -12,6 +12,15 @@ constructor:
     = None, middlewares: Optional[List[botbuilder.core.middleware_set.Middleware]]
     = None, conversation_state: Optional[botbuilder.core.conversation_state.ConversationState]
     = None)'
+  parameters:
+  - name: channel_or_adapter
+  - name: target_dialog
+  - name: initial_dialog_options
+    defaultValue: None
+  - name: middlewares
+    defaultValue: None
+  - name: conversation_state
+    defaultValue: None
 methods:
 - uid: botbuilder.testing.dialog_test_client.DialogTestClient.get_next_reply
   name: get_next_reply

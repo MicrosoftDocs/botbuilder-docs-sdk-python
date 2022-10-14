@@ -11,3 +11,12 @@ constructor:
   syntax: 'FindValuesOptions(allow_partial_matches: Optional[bool] = None, locale:
     Optional[str] = None, max_token_distance: Optional[int] = None, tokenizer: Optional[Callable[[str,
     str], List[botbuilder.dialogs.choices.token.Token]]] = None)'
+  parameters:
+  - name: allow_partial_matches
+    defaultValue: None
+  - name: locale
+    defaultValue: None
+  - name: max_token_distance
+    defaultValue: None
+  - name: tokenizer
+    defaultValue: None

@@ -8,6 +8,9 @@ inheritances:
 - abc.ABC
 constructor:
   syntax: 'DialogContainer(dialog_id: Optional[str] = None)'
+  parameters:
+  - name: dialog_id
+    defaultValue: None
 methods:
 - uid: botbuilder.dialogs.dialog_container.DialogContainer.check_for_version_change_async
   name: check_for_version_change_async

@@ -10,6 +10,8 @@ inheritances:
 summary: Defines an adapter to connect a bot to a service endpoint.
 constructor:
   syntax: 'BotFrameworkAdapter(settings: botbuilder.core.bot_framework_adapter.BotFrameworkAdapterSettings)'
+  parameters:
+  - name: settings
 remarks: 'The bot adapter encapsulates authentication processes and sends activities
   to and
 
@@ -354,13 +356,13 @@ methods:
   parameters:
   - name: continuation_token
     description: The continuation token from the previous page of results
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
+  - name: service_url
+    isRequired: true
   - name: credentials
     isRequired: true
-  - name: continuation_token
-    defaultValue: None
   return:
     description: A task that represents the work queued to execute
   exceptions:

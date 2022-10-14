@@ -12,6 +12,16 @@ constructor:
     http_client: Optional[aiohttp.client.ClientSession] = None, telemetry_client:
     Optional[botbuilder.core.bot_telemetry_client.BotTelemetryClient] = None, log_personal_information:
     Optional[bool] = None)'
+  parameters:
+  - name: endpoint
+  - name: options
+    defaultValue: None
+  - name: http_client
+    defaultValue: None
+  - name: telemetry_client
+    defaultValue: None
+  - name: log_personal_information
+    defaultValue: None
 methods:
 - uid: botbuilder.ai.qna.qnamaker.QnAMaker.call_train
   name: call_train

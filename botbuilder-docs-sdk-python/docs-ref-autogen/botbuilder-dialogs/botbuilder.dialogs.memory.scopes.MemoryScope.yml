@@ -7,6 +7,10 @@ inheritances:
 - abc.ABC
 constructor:
   syntax: 'MemoryScope(name: str, include_in_snapshot: bool = True)'
+  parameters:
+  - name: name
+  - name: include_in_snapshot
+    defaultValue: 'True'
 methods:
 - uid: botbuilder.dialogs.memory.scopes.MemoryScope.delete
   name: delete

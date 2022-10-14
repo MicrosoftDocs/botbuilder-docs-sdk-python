@@ -8,6 +8,8 @@ inheritances:
 summary: A CosmosDB based storage provider using partitioning for a bot.
 constructor:
   syntax: 'CosmosDbPartitionedStorage(config: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedConfig)'
+  parameters:
+  - name: config
 methods:
 - uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.delete
   name: delete

@@ -9,6 +9,9 @@ summary: Middleware for logging incoming, outgoing, updated or deleted Activity 
 constructor:
   syntax: 'TelemetryLoggerMiddleware(telemetry_client: botbuilder.core.bot_telemetry_client.BotTelemetryClient,
     log_personal_information: bool)'
+  parameters:
+  - name: telemetry_client
+  - name: log_personal_information
 methods:
 - uid: botbuilder.core.telemetry_logger_middleware.TelemetryLoggerMiddleware.fill_delete_event_properties
   name: fill_delete_event_properties
@@ -165,6 +168,10 @@ methods:
     isRequired: true
   - name: logic
     description: Callable to continue the bot middleware pipeline
+    isRequired: true
+  - name: context
+    isRequired: true
+  - name: logic_fn
     isRequired: true
   return:
     description: None

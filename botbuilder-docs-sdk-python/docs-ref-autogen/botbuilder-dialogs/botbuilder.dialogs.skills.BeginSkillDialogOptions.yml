@@ -7,6 +7,8 @@ inheritances:
 - builtins.object
 constructor:
   syntax: 'BeginSkillDialogOptions(activity: botbuilder.schema._models_py3.Activity)'
+  parameters:
+  - name: activity
 methods:
 - uid: botbuilder.dialogs.skills.BeginSkillDialogOptions.from_object
   name: from_object

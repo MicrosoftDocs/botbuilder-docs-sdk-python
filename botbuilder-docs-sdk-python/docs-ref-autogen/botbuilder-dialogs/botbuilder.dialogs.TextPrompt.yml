@@ -7,6 +7,10 @@ inheritances:
 - botbuilder.dialogs.prompts.prompt.Prompt
 constructor:
   syntax: 'TextPrompt(dialog_id: str, validator: Optional[object] = None)'
+  parameters:
+  - name: dialog_id
+  - name: validator
+    defaultValue: None
 methods:
 - uid: botbuilder.dialogs.TextPrompt.on_prompt
   name: on_prompt

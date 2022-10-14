@@ -9,6 +9,11 @@ constructor:
   syntax: 'OAuthPrompt(dialog_id: str, settings: botbuilder.dialogs.prompts.oauth_prompt_settings.OAuthPromptSettings,
     validator: Optional[Callable[[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext],
     Awaitable[bool]]] = None)'
+  parameters:
+  - name: dialog_id
+  - name: settings
+  - name: validator
+    defaultValue: None
 methods:
 - uid: botbuilder.dialogs.prompts.oauth_prompt.OAuthPrompt.begin_dialog
   name: begin_dialog

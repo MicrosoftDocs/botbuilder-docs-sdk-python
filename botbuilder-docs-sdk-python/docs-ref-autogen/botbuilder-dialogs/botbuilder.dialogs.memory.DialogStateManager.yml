@@ -8,6 +8,10 @@ inheritances:
 constructor:
   syntax: 'DialogStateManager(dialog_context: DialogContext, configuration: botbuilder.dialogs.memory.dialog_state_manager_configuration.DialogStateManagerConfiguration
     = None)'
+  parameters:
+  - name: dialog_context
+  - name: configuration
+    defaultValue: None
 methods:
 - uid: botbuilder.dialogs.memory.DialogStateManager.add
   name: add
@@ -85,7 +89,7 @@ methods:
   parameters:
   - name: array_index
     isRequired: true
-  - name: array_index
+  - name: array
     isRequired: true
 - uid: botbuilder.dialogs.memory.DialogStateManager.delete_scopes_memory_async
   name: delete_scopes_memory_async

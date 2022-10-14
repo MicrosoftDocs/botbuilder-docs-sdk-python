@@ -9,6 +9,9 @@ summary: Contains state information for the dialog stack.
 constructor:
   syntax: 'DialogState(stack: Optional[List[botbuilder.dialogs.dialog_instance.DialogInstance]]
     = None)'
+  parameters:
+  - name: stack
+    defaultValue: None
 attributes:
 - uid: botbuilder.dialogs.dialog_state.DialogState.dialog_stack
   name: dialog_stack

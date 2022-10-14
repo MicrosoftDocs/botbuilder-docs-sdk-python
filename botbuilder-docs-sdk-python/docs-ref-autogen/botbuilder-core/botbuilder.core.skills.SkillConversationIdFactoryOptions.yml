@@ -8,3 +8,8 @@ inheritances:
 constructor:
   syntax: 'SkillConversationIdFactoryOptions(from_bot_oauth_scope: str, from_bot_id:
     str, activity: botbuilder.schema._models_py3.Activity, bot_framework_skill: botbuilder.core.skills.bot_framework_skill.BotFrameworkSkill)'
+  parameters:
+  - name: from_bot_oauth_scope
+  - name: from_bot_id
+  - name: activity
+  - name: bot_framework_skill

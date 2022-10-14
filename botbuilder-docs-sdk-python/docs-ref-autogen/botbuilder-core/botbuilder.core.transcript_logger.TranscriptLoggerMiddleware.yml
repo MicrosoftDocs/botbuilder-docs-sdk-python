@@ -8,6 +8,8 @@ inheritances:
 summary: Logs incoming and outgoing activities to a TranscriptStore.
 constructor:
   syntax: 'TranscriptLoggerMiddleware(logger: botbuilder.core.transcript_logger.TranscriptLogger)'
+  parameters:
+  - name: logger
 methods:
 - uid: botbuilder.core.transcript_logger.TranscriptLoggerMiddleware.log_activity
   name: log_activity

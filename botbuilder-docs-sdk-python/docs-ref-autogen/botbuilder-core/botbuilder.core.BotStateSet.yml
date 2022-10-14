@@ -7,6 +7,8 @@ inheritances:
 - builtins.object
 constructor:
   syntax: 'BotStateSet(bot_states: List[botbuilder.core.bot_state.BotState])'
+  parameters:
+  - name: bot_states
 methods:
 - uid: botbuilder.core.BotStateSet.add
   name: add

@@ -8,6 +8,10 @@ inheritances:
 constructor:
   syntax: 'DialogContext(dialog_set: botbuilder.dialogs.dialog_set.DialogSet, turn_context:
     botbuilder.core.turn_context.TurnContext, state: botbuilder.dialogs.dialog_state.DialogState)'
+  parameters:
+  - name: dialog_set
+  - name: turn_context
+  - name: state
 methods:
 - uid: botbuilder.dialogs.DialogContext.begin_dialog
   name: begin_dialog

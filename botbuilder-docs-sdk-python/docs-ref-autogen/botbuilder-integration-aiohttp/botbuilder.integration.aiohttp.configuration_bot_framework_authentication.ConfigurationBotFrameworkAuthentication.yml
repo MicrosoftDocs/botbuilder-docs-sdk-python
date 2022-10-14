@@ -11,6 +11,8 @@ constructor:
     = None, auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
     = None, http_client_factory: Optional[botframework.connector.http_client_factory.HttpClientFactory]
     = None, logger: Optional[logging.Logger] = None)'
+  parameters:
+  - name: configuration
 methods:
 - uid: botbuilder.integration.aiohttp.configuration_bot_framework_authentication.ConfigurationBotFrameworkAuthentication.authenticate_channel_request
   name: authenticate_channel_request

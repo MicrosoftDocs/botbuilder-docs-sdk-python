@@ -9,3 +9,8 @@ constructor:
   syntax: 'InspectionSessionsByStatus(opened_sessions: Optional[Dict[str, botbuilder.schema._models_py3.ConversationReference]]
     = None, attached_sessions: Optional[Dict[str, botbuilder.schema._models_py3.ConversationReference]]
     = None)'
+  parameters:
+  - name: opened_sessions
+    defaultValue: None
+  - name: attached_sessions
+    defaultValue: None

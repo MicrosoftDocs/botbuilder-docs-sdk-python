@@ -7,3 +7,7 @@ inheritances:
 - collections.abc.AsyncIterator
 constructor:
   syntax: StreamDownloadGenerator(response, user_callback, block)
+  parameters:
+  - name: response
+  - name: user_callback
+  - name: block

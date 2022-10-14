@@ -8,6 +8,8 @@ inheritances:
 summary: Slack client that extends [https://github.com/slackapi/python-slackclient](https://github.com/slackapi/python-slackclient).
 constructor:
   syntax: 'SlackClient(options: botbuilder.adapters.slack.slack_client_options.SlackClientOptions)'
+  parameters:
+  - name: options
 methods:
 - uid: botbuilder.adapters.slack.SlackClient.channels_list_ex
   name: channels_list_ex

@@ -783,6 +783,10 @@ references:
   href: https://docs.python.org/3/library/socket.html#socket.timeout
   name: timeout
   uid: socket.timeout
+- fullName: sqlite3.DataError
+  href: https://docs.python.org/3/library/sqlite3.html#sqlite3.DataError
+  name: DataError
+  uid: sqlite3.DataError
 - fullName: sqlite3.DatabaseError
   href: https://docs.python.org/3/library/sqlite3.html#sqlite3.DatabaseError
   name: DatabaseError
@@ -795,6 +799,14 @@ references:
   href: https://docs.python.org/3/library/sqlite3.html#sqlite3.IntegrityError
   name: IntegrityError
   uid: sqlite3.IntegrityError
+- fullName: sqlite3.InterfaceError
+  href: https://docs.python.org/3/library/sqlite3.html#sqlite3.InterfaceError
+  name: InterfaceError
+  uid: sqlite3.InterfaceError
+- fullName: sqlite3.InternalError
+  href: https://docs.python.org/3/library/sqlite3.html#sqlite3.InternalError
+  name: InternalError
+  uid: sqlite3.InternalError
 - fullName: sqlite3.NotSupportedError
   href: https://docs.python.org/3/library/sqlite3.html#sqlite3.NotSupportedError
   name: NotSupportedError
@@ -1239,26 +1251,66 @@ references:
   href: https://docs.python.org/3/library/asyncio-stream.html#asyncio.StreamWriter.transport
   name: transport
   uid: asyncio.StreamWriter.transport
-- fullName: asyncio.asyncio.subprocess.Process.pid
-  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.asyncio.subprocess.Process.pid
+- fullName: asyncio.subprocess.Process.pid
+  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.subprocess.Process.pid
   name: pid
-  uid: asyncio.asyncio.subprocess.Process.pid
-- fullName: asyncio.asyncio.subprocess.Process.returncode
-  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.asyncio.subprocess.Process.returncode
+  uid: asyncio.subprocess.Process.pid
+- fullName: asyncio.subprocess.Process.returncode
+  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.subprocess.Process.returncode
   name: returncode
-  uid: asyncio.asyncio.subprocess.Process.returncode
-- fullName: asyncio.asyncio.subprocess.Process.stderr
-  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.asyncio.subprocess.Process.stderr
+  uid: asyncio.subprocess.Process.returncode
+- fullName: asyncio.subprocess.Process.stderr
+  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.subprocess.Process.stderr
   name: stderr
-  uid: asyncio.asyncio.subprocess.Process.stderr
-- fullName: asyncio.asyncio.subprocess.Process.stdin
-  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.asyncio.subprocess.Process.stdin
+  uid: asyncio.subprocess.Process.stderr
+- fullName: asyncio.subprocess.Process.stdin
+  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.subprocess.Process.stdin
   name: stdin
-  uid: asyncio.asyncio.subprocess.Process.stdin
-- fullName: asyncio.asyncio.subprocess.Process.stdout
-  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.asyncio.subprocess.Process.stdout
+  uid: asyncio.subprocess.Process.stdin
+- fullName: asyncio.subprocess.Process.stdout
+  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.subprocess.Process.stdout
   name: stdout
-  uid: asyncio.asyncio.subprocess.Process.stdout
+  uid: asyncio.subprocess.Process.stdout
+- fullName: bdb.Breakpoint.bpbynumber
+  href: https://docs.python.org/3/library/bdb.html#bdb.Breakpoint.bpbynumber
+  name: bpbynumber
+  uid: bdb.Breakpoint.bpbynumber
+- fullName: bdb.Breakpoint.bplist
+  href: https://docs.python.org/3/library/bdb.html#bdb.Breakpoint.bplist
+  name: bplist
+  uid: bdb.Breakpoint.bplist
+- fullName: bdb.Breakpoint.cond
+  href: https://docs.python.org/3/library/bdb.html#bdb.Breakpoint.cond
+  name: cond
+  uid: bdb.Breakpoint.cond
+- fullName: bdb.Breakpoint.enabled
+  href: https://docs.python.org/3/library/bdb.html#bdb.Breakpoint.enabled
+  name: enabled
+  uid: bdb.Breakpoint.enabled
+- fullName: bdb.Breakpoint.file
+  href: https://docs.python.org/3/library/bdb.html#bdb.Breakpoint.file
+  name: file
+  uid: bdb.Breakpoint.file
+- fullName: bdb.Breakpoint.funcname
+  href: https://docs.python.org/3/library/bdb.html#bdb.Breakpoint.funcname
+  name: funcname
+  uid: bdb.Breakpoint.funcname
+- fullName: bdb.Breakpoint.hits
+  href: https://docs.python.org/3/library/bdb.html#bdb.Breakpoint.hits
+  name: hits
+  uid: bdb.Breakpoint.hits
+- fullName: bdb.Breakpoint.ignore
+  href: https://docs.python.org/3/library/bdb.html#bdb.Breakpoint.ignore
+  name: ignore
+  uid: bdb.Breakpoint.ignore
+- fullName: bdb.Breakpoint.line
+  href: https://docs.python.org/3/library/bdb.html#bdb.Breakpoint.line
+  name: line
+  uid: bdb.Breakpoint.line
+- fullName: bdb.Breakpoint.temporary
+  href: https://docs.python.org/3/library/bdb.html#bdb.Breakpoint.temporary
+  name: temporary
+  uid: bdb.Breakpoint.temporary
 - fullName: bz2.BZ2Decompressor.eof
   href: https://docs.python.org/3/library/bz2.html#bz2.BZ2Decompressor.eof
   name: eof
@@ -2871,6 +2923,10 @@ references:
   href: https://docs.python.org/3/library/logging.handlers.html#logging.handlers.BaseRotatingHandler.rotator
   name: rotator
   uid: logging.handlers.BaseRotatingHandler.rotator
+- fullName: logging.handlers.QueueHandler.listener
+  href: https://docs.python.org/3/library/logging.handlers.html#logging.handlers.QueueHandler.listener
+  name: listener
+  uid: logging.handlers.QueueHandler.listener
 - fullName: logging.lastResort
   href: https://docs.python.org/3/library/logging.html#logging.lastResort
   name: lastResort
@@ -4131,6 +4187,18 @@ references:
   href: https://docs.python.org/3/library/threading.html#threading.Thread.native_id
   name: native_id
   uid: threading.Thread.native_id
+- fullName: tkinter.Tk.children
+  href: https://docs.python.org/3/library/tkinter.html#tkinter.Tk.children
+  name: children
+  uid: tkinter.Tk.children
+- fullName: tkinter.Tk.master
+  href: https://docs.python.org/3/library/tkinter.html#tkinter.Tk.master
+  name: master
+  uid: tkinter.Tk.master
+- fullName: tkinter.Tk.tk
+  href: https://docs.python.org/3/library/tkinter.html#tkinter.Tk.tk
+  name: tk
+  uid: tkinter.Tk.tk
 - fullName: tkinter.scrolledtext.ScrolledText.frame
   href: https://docs.python.org/3/library/tkinter.scrolledtext.html#tkinter.scrolledtext.ScrolledText.frame
   name: frame
@@ -5771,26 +5839,6 @@ references:
   href: https://docs.python.org/3/library/asyncio-protocol.html#asyncio.WriteTransport.writelines
   name: writelines
   uid: asyncio.WriteTransport.writelines
-- fullName: asyncio.asyncio.subprocess.Process.communicate
-  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.asyncio.subprocess.Process.communicate
-  name: communicate
-  uid: asyncio.asyncio.subprocess.Process.communicate
-- fullName: asyncio.asyncio.subprocess.Process.kill
-  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.asyncio.subprocess.Process.kill
-  name: kill
-  uid: asyncio.asyncio.subprocess.Process.kill
-- fullName: asyncio.asyncio.subprocess.Process.send_signal
-  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.asyncio.subprocess.Process.send_signal
-  name: send_signal
-  uid: asyncio.asyncio.subprocess.Process.send_signal
-- fullName: asyncio.asyncio.subprocess.Process.terminate
-  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.asyncio.subprocess.Process.terminate
-  name: terminate
-  uid: asyncio.asyncio.subprocess.Process.terminate
-- fullName: asyncio.asyncio.subprocess.Process.wait
-  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.asyncio.subprocess.Process.wait
-  name: wait
-  uid: asyncio.asyncio.subprocess.Process.wait
 - fullName: asyncio.loop.add_reader
   href: https://docs.python.org/3/library/asyncio-eventloop.html#asyncio.loop.add_reader
   name: add_reader
@@ -5995,6 +6043,26 @@ references:
   href: https://docs.python.org/3/library/asyncio-eventloop.html#asyncio.loop.time
   name: time
   uid: asyncio.loop.time
+- fullName: asyncio.subprocess.Process.communicate
+  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.subprocess.Process.communicate
+  name: communicate
+  uid: asyncio.subprocess.Process.communicate
+- fullName: asyncio.subprocess.Process.kill
+  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.subprocess.Process.kill
+  name: kill
+  uid: asyncio.subprocess.Process.kill
+- fullName: asyncio.subprocess.Process.send_signal
+  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.subprocess.Process.send_signal
+  name: send_signal
+  uid: asyncio.subprocess.Process.send_signal
+- fullName: asyncio.subprocess.Process.terminate
+  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.subprocess.Process.terminate
+  name: terminate
+  uid: asyncio.subprocess.Process.terminate
+- fullName: asyncio.subprocess.Process.wait
+  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.subprocess.Process.wait
+  name: wait
+  uid: asyncio.subprocess.Process.wait
 - fullName: asyncore.dispatcher.accept
   href: https://docs.python.org/3/library/asyncore.html#asyncore.dispatcher.accept
   name: accept
@@ -6143,6 +6211,10 @@ references:
   href: https://docs.python.org/3/library/bdb.html#bdb.Bdb.get_stack
   name: get_stack
   uid: bdb.Bdb.get_stack
+- fullName: bdb.Bdb.is_skipped_line
+  href: https://docs.python.org/3/library/bdb.html#bdb.Bdb.is_skipped_line
+  name: is_skipped_line
+  uid: bdb.Bdb.is_skipped_line
 - fullName: bdb.Bdb.reset
   href: https://docs.python.org/3/library/bdb.html#bdb.Bdb.reset
   name: reset
@@ -10863,6 +10935,18 @@ references:
   href: https://docs.python.org/3/library/stdtypes.html#list.sort
   name: sort
   uid: list.sort
+- fullName: logging.BufferingFormatter.format
+  href: https://docs.python.org/3/library/logging.html#logging.BufferingFormatter.format
+  name: format
+  uid: logging.BufferingFormatter.format
+- fullName: logging.BufferingFormatter.formatFooter
+  href: https://docs.python.org/3/library/logging.html#logging.BufferingFormatter.formatFooter
+  name: formatFooter
+  uid: logging.BufferingFormatter.formatFooter
+- fullName: logging.BufferingFormatter.formatHeader
+  href: https://docs.python.org/3/library/logging.html#logging.BufferingFormatter.formatHeader
+  name: formatHeader
+  uid: logging.BufferingFormatter.formatHeader
 - fullName: logging.FileHandler.close
   href: https://docs.python.org/3/library/logging.handlers.html#logging.FileHandler.close
   name: close
@@ -14947,6 +15031,14 @@ references:
   href: https://docs.python.org/3/library/test.html#test.support.Matcher.matches
   name: matches
   uid: test.support.Matcher.matches
+- fullName: test.support.SaveSignals.restore
+  href: https://docs.python.org/3/library/test.html#test.support.SaveSignals.restore
+  name: restore
+  uid: test.support.SaveSignals.restore
+- fullName: test.support.SaveSignals.save
+  href: https://docs.python.org/3/library/test.html#test.support.SaveSignals.save
+  name: save
+  uid: test.support.SaveSignals.save
 - fullName: test.support.bytecode_helper.BytecodeTestCase.assertInBytecode
   href: https://docs.python.org/3/library/test.html#test.support.bytecode_helper.BytecodeTestCase.assertInBytecode
   name: assertInBytecode
@@ -17819,18 +17911,18 @@ references:
   href: https://docs.python.org/3/library/asynchat.html#asynchat.async_chat.ac_out_buffer_size
   name: ac_out_buffer_size
   uid: asynchat.async_chat.ac_out_buffer_size
-- fullName: asyncio.asyncio.subprocess.DEVNULL
-  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.asyncio.subprocess.DEVNULL
+- fullName: asyncio.subprocess.DEVNULL
+  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.subprocess.DEVNULL
   name: DEVNULL
-  uid: asyncio.asyncio.subprocess.DEVNULL
-- fullName: asyncio.asyncio.subprocess.PIPE
-  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.asyncio.subprocess.PIPE
+  uid: asyncio.subprocess.DEVNULL
+- fullName: asyncio.subprocess.PIPE
+  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.subprocess.PIPE
   name: PIPE
-  uid: asyncio.asyncio.subprocess.PIPE
-- fullName: asyncio.asyncio.subprocess.STDOUT
-  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.asyncio.subprocess.STDOUT
+  uid: asyncio.subprocess.PIPE
+- fullName: asyncio.subprocess.STDOUT
+  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.subprocess.STDOUT
   name: STDOUT
-  uid: asyncio.asyncio.subprocess.STDOUT
+  uid: asyncio.subprocess.STDOUT
 - fullName: calendar.FRIDAY
   href: https://docs.python.org/3/library/calendar.html#calendar.FRIDAY
   name: FRIDAY
@@ -20439,6 +20531,18 @@ references:
   href: https://docs.python.org/3/library/sqlite3.html#sqlite3.PARSE_DECLTYPES
   name: PARSE_DECLTYPES
   uid: sqlite3.PARSE_DECLTYPES
+- fullName: sqlite3.SQLITE_DENY
+  href: https://docs.python.org/3/library/sqlite3.html#sqlite3.SQLITE_DENY
+  name: SQLITE_DENY
+  uid: sqlite3.SQLITE_DENY
+- fullName: sqlite3.SQLITE_IGNORE
+  href: https://docs.python.org/3/library/sqlite3.html#sqlite3.SQLITE_IGNORE
+  name: SQLITE_IGNORE
+  uid: sqlite3.SQLITE_IGNORE
+- fullName: sqlite3.SQLITE_OK
+  href: https://docs.python.org/3/library/sqlite3.html#sqlite3.SQLITE_OK
+  name: SQLITE_OK
+  uid: sqlite3.SQLITE_OK
 - fullName: sqlite3.apilevel
   href: https://docs.python.org/3/library/sqlite3.html#sqlite3.apilevel
   name: apilevel
@@ -23139,6 +23243,10 @@ references:
   href: https://docs.python.org/3/library/http.server.html#module-http.server
   name: server
   uid: http.server
+- fullName: idlelib
+  href: https://docs.python.org/3/library/idle.html#module-idlelib
+  name: idlelib
+  uid: idlelib
 - fullName: imaplib
   href: https://docs.python.org/3/library/imaplib.html#module-imaplib
   name: imaplib
@@ -24827,6 +24935,10 @@ references:
   href: https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.wait
   name: wait
   uid: concurrent.futures.wait
+- fullName: contextlib.aclosing
+  href: https://docs.python.org/3/library/contextlib.html#contextlib.aclosing
+  name: aclosing
+  uid: contextlib.aclosing
 - fullName: contextlib.asynccontextmanager
   href: https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager
   name: asynccontextmanager
@@ -27591,6 +27703,10 @@ references:
   href: https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Array
   name: Array
   uid: multiprocessing.Array
+- fullName: multiprocessing.Manager
+  href: https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Manager
+  name: Manager
+  uid: multiprocessing.Manager
 - fullName: multiprocessing.Pipe
   href: https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Pipe
   name: Pipe
@@ -27683,10 +27799,6 @@ references:
   href: https://docs.python.org/3/library/multiprocessing.html#multiprocessing.sharedctypes.copy
   name: copy
   uid: multiprocessing.sharedctypes.copy
-- fullName: multiprocessing.sharedctypes.multiprocessing.Manager
-  href: https://docs.python.org/3/library/multiprocessing.html#multiprocessing.sharedctypes.multiprocessing.Manager
-  name: Manager
-  uid: multiprocessing.sharedctypes.multiprocessing.Manager
 - fullName: multiprocessing.sharedctypes.synchronized
   href: https://docs.python.org/3/library/multiprocessing.html#multiprocessing.sharedctypes.synchronized
   name: synchronized
@@ -30435,6 +30547,10 @@ references:
   href: https://docs.python.org/3/library/sys.html#sys.get_coroutine_origin_tracking_depth
   name: get_coroutine_origin_tracking_depth
   uid: sys.get_coroutine_origin_tracking_depth
+- fullName: sys.get_int_max_str_digits
+  href: https://docs.python.org/3/library/sys.html#sys.get_int_max_str_digits
+  name: get_int_max_str_digits
+  uid: sys.get_int_max_str_digits
 - fullName: sys.getallocatedblocks
   href: https://docs.python.org/3/library/sys.html#sys.getallocatedblocks
   name: getallocatedblocks
@@ -30503,6 +30619,10 @@ references:
   href: https://docs.python.org/3/library/sys.html#sys.set_coroutine_origin_tracking_depth
   name: set_coroutine_origin_tracking_depth
   uid: sys.set_coroutine_origin_tracking_depth
+- fullName: sys.set_int_max_str_digits
+  href: https://docs.python.org/3/library/sys.html#sys.set_int_max_str_digits
+  name: set_int_max_str_digits
+  uid: sys.set_int_max_str_digits
 - fullName: sys.setdlopenflags
   href: https://docs.python.org/3/library/sys.html#sys.setdlopenflags
   name: setdlopenflags
@@ -30679,6 +30799,10 @@ references:
   href: https://docs.python.org/3/library/termios.html#termios.tcsetattr
   name: tcsetattr
   uid: termios.tcsetattr
+- fullName: test.support.adjust_int_max_str_digits
+  href: https://docs.python.org/3/library/test.html#test.support.adjust_int_max_str_digits
+  name: adjust_int_max_str_digits
+  uid: test.support.adjust_int_max_str_digits
 - fullName: test.support.anticipate_failure
   href: https://docs.python.org/3/library/test.html#test.support.anticipate_failure
   name: anticipate_failure
@@ -32523,6 +32647,14 @@ references:
   href: https://docs.python.org/3/library/xml.dom.html#xml.dom.registerDOMImplementation
   name: registerDOMImplementation
   uid: xml.dom.registerDOMImplementation
+- fullName: xml.etree.ElementInclude.default_loader
+  href: https://docs.python.org/3/library/xml.etree.elementtree.html#xml.etree.ElementInclude.default_loader
+  name: default_loader
+  uid: xml.etree.ElementInclude.default_loader
+- fullName: xml.etree.ElementInclude.include
+  href: https://docs.python.org/3/library/xml.etree.elementtree.html#xml.etree.ElementInclude.include
+  name: include
+  uid: xml.etree.ElementInclude.include
 - fullName: xml.etree.ElementTree.Comment
   href: https://docs.python.org/3/library/xml.etree.elementtree.html#xml.etree.ElementTree.Comment
   name: Comment
@@ -32587,14 +32719,6 @@ references:
   href: https://docs.python.org/3/library/xml.etree.elementtree.html#xml.etree.ElementTree.tostringlist
   name: tostringlist
   uid: xml.etree.ElementTree.tostringlist
-- fullName: xml.etree.ElementTree.xml.etree.ElementInclude.default_loader
-  href: https://docs.python.org/3/library/xml.etree.elementtree.html#xml.etree.ElementTree.xml.etree.ElementInclude.default_loader
-  name: default_loader
-  uid: xml.etree.ElementTree.xml.etree.ElementInclude.default_loader
-- fullName: xml.etree.ElementTree.xml.etree.ElementInclude.include
-  href: https://docs.python.org/3/library/xml.etree.elementtree.html#xml.etree.ElementTree.xml.etree.ElementInclude.include
-  name: include
-  uid: xml.etree.ElementTree.xml.etree.ElementInclude.include
 - fullName: xml.parsers.expat.ErrorString
   href: https://docs.python.org/3/library/pyexpat.html#xml.parsers.expat.ErrorString
   name: ErrorString
@@ -33307,10 +33431,10 @@ references:
   href: https://docs.python.org/3/library/asyncio-protocol.html#asyncio.WriteTransport
   name: WriteTransport
   uid: asyncio.WriteTransport
-- fullName: asyncio.asyncio.subprocess.Process
-  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.asyncio.subprocess.Process
+- fullName: asyncio.subprocess.Process
+  href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.subprocess.Process
   name: Process
-  uid: asyncio.asyncio.subprocess.Process
+  uid: asyncio.subprocess.Process
 - fullName: asyncore.dispatcher
   href: https://docs.python.org/3/library/asyncore.html#asyncore.dispatcher
   name: dispatcher
@@ -33623,10 +33747,6 @@ references:
   href: https://docs.python.org/3/library/contextlib.html#contextlib.ExitStack
   name: ExitStack
   uid: contextlib.ExitStack
-- fullName: contextlib.aclosing
-  href: https://docs.python.org/3/library/contextlib.html#contextlib.aclosing
-  name: aclosing
-  uid: contextlib.aclosing
 - fullName: contextvars.Context
   href: https://docs.python.org/3/library/contextvars.html#contextvars.Context
   name: Context
@@ -34547,6 +34667,10 @@ references:
   href: https://docs.python.org/3/library/stdtypes.html#list
   name: list
   uid: list
+- fullName: logging.BufferingFormatter
+  href: https://docs.python.org/3/library/logging.html#logging.BufferingFormatter
+  name: BufferingFormatter
+  uid: logging.BufferingFormatter
 - fullName: logging.FileHandler
   href: https://docs.python.org/3/library/logging.handlers.html#logging.FileHandler
   name: FileHandler
@@ -35183,6 +35307,10 @@ references:
   href: https://docs.python.org/3/library/sqlite3.html#sqlite3.Cursor
   name: Cursor
   uid: sqlite3.Cursor
+- fullName: sqlite3.PrepareProtocol
+  href: https://docs.python.org/3/library/sqlite3.html#sqlite3.PrepareProtocol
+  name: PrepareProtocol
+  uid: sqlite3.PrepareProtocol
 - fullName: sqlite3.Row
   href: https://docs.python.org/3/library/sqlite3.html#sqlite3.Row
   name: Row

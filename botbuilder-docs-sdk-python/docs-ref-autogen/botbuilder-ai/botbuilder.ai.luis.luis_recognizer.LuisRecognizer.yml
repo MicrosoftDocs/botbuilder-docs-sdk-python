@@ -11,6 +11,12 @@ constructor:
     str], prediction_options: Optional[Union[botbuilder.ai.luis.luis_recognizer_options_v2.LuisRecognizerOptionsV2,
     botbuilder.ai.luis.luis_recognizer_options_v3.LuisRecognizerOptionsV3, botbuilder.ai.luis.luis_prediction_options.LuisPredictionOptions]]
     = None, include_api_results: bool = False)'
+  parameters:
+  - name: application
+  - name: prediction_options
+    defaultValue: None
+  - name: include_api_results
+    defaultValue: 'False'
 methods:
 - uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.fill_luis_event_properties
   name: fill_luis_event_properties

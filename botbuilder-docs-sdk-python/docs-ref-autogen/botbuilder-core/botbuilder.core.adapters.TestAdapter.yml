@@ -10,6 +10,13 @@ constructor:
   syntax: 'TestAdapter(logic: Optional[Coroutine] = None, template_or_conversation:
     Optional[Union[botbuilder.schema._models_py3.Activity, botbuilder.schema._models_py3.ConversationReference]]
     = None, send_trace_activities: bool = False)'
+  parameters:
+  - name: logic
+    defaultValue: None
+  - name: template_or_conversation
+    defaultValue: None
+  - name: send_trace_activities
+    defaultValue: 'False'
 methods:
 - uid: botbuilder.core.adapters.TestAdapter.add_exchangeable_token
   name: add_exchangeable_token

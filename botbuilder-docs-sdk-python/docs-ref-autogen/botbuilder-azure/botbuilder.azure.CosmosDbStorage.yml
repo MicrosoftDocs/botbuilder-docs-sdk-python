@@ -9,6 +9,10 @@ summary: A CosmosDB based storage provider for a bot.
 constructor:
   syntax: 'CosmosDbStorage(config: botbuilder.azure.cosmosdb_storage.CosmosDbConfig,
     client: Optional[azure.cosmos.cosmos_client.CosmosClient] = None)'
+  parameters:
+  - name: config
+  - name: client
+    defaultValue: None
 methods:
 - uid: botbuilder.azure.CosmosDbStorage.delete
   name: delete

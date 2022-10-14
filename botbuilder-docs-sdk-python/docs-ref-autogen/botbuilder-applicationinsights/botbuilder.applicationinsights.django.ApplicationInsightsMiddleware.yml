@@ -57,6 +57,9 @@ summary: "This class is a Django middleware that automatically enables request a
   *debug_ikey* is set in *APPLICATION_INSIGHTS*, above."
 constructor:
   syntax: ApplicationInsightsMiddleware(get_response=None)
+  parameters:
+  - name: get_response
+    defaultValue: None
 methods:
 - uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_exception
   name: process_exception

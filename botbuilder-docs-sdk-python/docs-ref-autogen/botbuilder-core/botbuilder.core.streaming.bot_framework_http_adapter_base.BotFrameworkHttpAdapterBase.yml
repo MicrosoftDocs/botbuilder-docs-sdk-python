@@ -8,6 +8,8 @@ inheritances:
 - botbuilder.core.streaming.streaming_activity_processor.StreamingActivityProcessor
 constructor:
   syntax: 'BotFrameworkHttpAdapterBase(settings: botbuilder.core.bot_framework_adapter.BotFrameworkAdapterSettings)'
+  parameters:
+  - name: settings
 methods:
 - uid: botbuilder.core.streaming.bot_framework_http_adapter_base.BotFrameworkHttpAdapterBase.can_process_outgoing_activity
   name: can_process_outgoing_activity

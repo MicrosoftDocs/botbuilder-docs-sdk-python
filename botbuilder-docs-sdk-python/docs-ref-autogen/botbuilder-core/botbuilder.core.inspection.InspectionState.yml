@@ -7,6 +7,8 @@ inheritances:
 - botbuilder.core.bot_state.BotState
 constructor:
   syntax: 'InspectionState(storage: botbuilder.core.storage.Storage)'
+  parameters:
+  - name: storage
 methods:
 - uid: botbuilder.core.inspection.InspectionState.get_storage_key
   name: get_storage_key

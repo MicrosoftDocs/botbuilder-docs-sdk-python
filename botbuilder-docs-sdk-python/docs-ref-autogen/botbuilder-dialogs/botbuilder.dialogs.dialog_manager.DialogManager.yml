@@ -9,6 +9,11 @@ summary: Class which runs the dialog system.
 constructor:
   syntax: 'DialogManager(root_dialog: Optional[botbuilder.dialogs.dialog.Dialog] =
     None, dialog_state_property: Optional[str] = None)'
+  parameters:
+  - name: root_dialog
+    defaultValue: None
+  - name: dialog_state_property
+    defaultValue: None
 methods:
 - uid: botbuilder.dialogs.dialog_manager.DialogManager.get_active_dialog_context
   name: get_active_dialog_context

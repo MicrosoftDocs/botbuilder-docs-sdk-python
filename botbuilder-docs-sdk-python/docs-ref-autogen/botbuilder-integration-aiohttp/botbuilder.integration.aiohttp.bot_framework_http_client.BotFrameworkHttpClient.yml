@@ -13,6 +13,12 @@ constructor:
   syntax: 'BotFrameworkHttpClient(credential_provider: botframework.connector.auth.credential_provider.CredentialProvider,
     channel_provider: Optional[botframework.connector.auth.channel_provider.ChannelProvider]
     = None, logger: Optional[logging.Logger] = None)'
+  parameters:
+  - name: credential_provider
+  - name: channel_provider
+    defaultValue: None
+  - name: logger
+    defaultValue: None
 methods:
 - uid: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.post_activity
   name: post_activity

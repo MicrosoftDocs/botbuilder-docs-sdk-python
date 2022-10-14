@@ -10,6 +10,9 @@ summary: Class for Train API, used in active learning to add suggestions to the 
 constructor:
   syntax: 'TrainUtils(endpoint: botbuilder.ai.qna.qnamaker_endpoint.QnAMakerEndpoint,
     http_client: aiohttp.client.ClientSession)'
+  parameters:
+  - name: endpoint
+  - name: http_client
 methods:
 - uid: botbuilder.ai.qna.utils.train_utils.TrainUtils.call_train
   name: call_train

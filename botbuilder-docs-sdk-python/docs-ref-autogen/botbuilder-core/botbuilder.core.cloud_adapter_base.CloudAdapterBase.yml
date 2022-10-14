@@ -8,6 +8,8 @@ inheritances:
 - abc.ABC
 constructor:
   syntax: 'CloudAdapterBase(bot_framework_authentication: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication)'
+  parameters:
+  - name: bot_framework_authentication
 methods:
 - uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.continue_conversation
   name: continue_conversation
@@ -91,6 +93,8 @@ methods:
     isRequired: true
     types:
     - <xref:typing.Callable>
+  - name: auth_header_or_authenticate_request_result
+    isRequired: true
   return:
     description: A task that represents the work queued to execute.
   remarks: 'This class processes an activity received by the bots web server. This

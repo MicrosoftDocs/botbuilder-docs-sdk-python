@@ -11,3 +11,18 @@ constructor:
     = None, conversation_id_factory: Optional[botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase]
     = None, conversation_state: Optional[botbuilder.core.conversation_state.ConversationState]
     = None, connection_name: Optional[str] = None)'
+  parameters:
+  - name: bot_id
+    defaultValue: None
+  - name: skill_client
+    defaultValue: None
+  - name: skill_host_endpoint
+    defaultValue: None
+  - name: skill
+    defaultValue: None
+  - name: conversation_id_factory
+    defaultValue: None
+  - name: conversation_state
+    defaultValue: None
+  - name: connection_name
+    defaultValue: None

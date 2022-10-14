@@ -12,6 +12,9 @@ summary: "Waits for an activity to be received.\n\n   This prompt requires a val
 constructor:
   syntax: 'ActivityPrompt(dialog_id: str, validator: Callable[[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext],
     bool])'
+  parameters:
+  - name: dialog_id
+  - name: validator
 variables:
 - name: persisted_options
 - name: persisted_state
@@ -73,9 +76,13 @@ methods:
   - name: isRetry
     description: If *true* the users response wasn't recognized and the re-prompt
       should be sent.
-    defaultValue: 'False'
+    isRequired: true
     types:
     - <xref:bool>
+  - name: context
+    isRequired: true
+  - name: is_retry
+    defaultValue: 'False'
 - uid: botbuilder.dialogs.prompts.ActivityPrompt.on_recognize
   name: on_recognize
   summary: When overridden in a derived class, attempts to recognize the incoming

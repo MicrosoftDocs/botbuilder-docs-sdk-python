@@ -8,6 +8,9 @@ inheritances:
 constructor:
   syntax: 'QnAMakerTelemetryClient(log_personal_information: bool, telemetry_client:
     botbuilder.core.bot_telemetry_client.BotTelemetryClient)'
+  parameters:
+  - name: log_personal_information
+  - name: telemetry_client
 methods:
 - uid: botbuilder.ai.qna.qnamaker_telemetry_client.QnAMakerTelemetryClient.get_answers
   name: get_answers

@@ -13,6 +13,26 @@ constructor:
     ''None of the above.'', top: int = 3, card_no_match_response: botbuilder.schema._models_py3.Activity
     = None, strict_filters: [<class ''botbuilder.ai.qna.models.metadata.Metadata''>]
     = None, dialog_id: str = ''QnAMakerDialog'')'
+  parameters:
+  - name: knowledgebase_id
+  - name: endpoint_key
+  - name: hostname
+  - name: no_answer
+    defaultValue: None
+  - name: threshold
+    defaultValue: '0.3'
+  - name: active_learning_card_title
+    defaultValue: 'Did you mean:'
+  - name: card_no_match_text
+    defaultValue: None of the above.
+  - name: top
+    defaultValue: '3'
+  - name: card_no_match_response
+    defaultValue: None
+  - name: strict_filters
+    defaultValue: None
+  - name: dialog_id
+    defaultValue: QnAMakerDialog
 remarks: 'An instance of this class targets a specific QnA Maker knowledge base.
 
   It supports knowledge bases that include follow-up prompt and active learning features.

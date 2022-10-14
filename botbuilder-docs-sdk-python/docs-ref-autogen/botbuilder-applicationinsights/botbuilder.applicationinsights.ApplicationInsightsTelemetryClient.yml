@@ -11,6 +11,14 @@ constructor:
     Optional[applicationinsights.TelemetryClient.TelemetryClient] = None, telemetry_processor:
     Optional[Callable[[object, object], bool]] = None, client_queue_size: Optional[int]
     = None)'
+  parameters:
+  - name: instrumentation_key
+  - name: telemetry_client
+    defaultValue: None
+  - name: telemetry_processor
+    defaultValue: None
+  - name: client_queue_size
+    defaultValue: None
 methods:
 - uid: botbuilder.applicationinsights.ApplicationInsightsTelemetryClient.flush
   name: flush

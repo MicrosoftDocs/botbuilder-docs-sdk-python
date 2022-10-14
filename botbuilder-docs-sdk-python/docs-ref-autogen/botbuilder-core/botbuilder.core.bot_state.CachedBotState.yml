@@ -8,6 +8,9 @@ inheritances:
 summary: Internal cached bot state.
 constructor:
   syntax: 'CachedBotState(state: Optional[Dict[str, object]] = None)'
+  parameters:
+  - name: state
+    defaultValue: None
 methods:
 - uid: botbuilder.core.bot_state.CachedBotState.compute_hash
   name: compute_hash

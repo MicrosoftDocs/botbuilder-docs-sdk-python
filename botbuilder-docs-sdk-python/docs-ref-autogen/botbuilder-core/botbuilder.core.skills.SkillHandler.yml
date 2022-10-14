@@ -12,6 +12,16 @@ constructor:
     auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration,
     channel_provider: Optional[botframework.connector.auth.channel_provider.ChannelProvider]
     = None, logger: Optional[logging.Logger] = None)'
+  parameters:
+  - name: adapter
+  - name: bot
+  - name: conversation_id_factory
+  - name: credential_provider
+  - name: auth_configuration
+  - name: channel_provider
+    defaultValue: None
+  - name: logger
+    defaultValue: None
 methods:
 - uid: botbuilder.core.skills.SkillHandler.on_delete_activity
   name: on_delete_activity

@@ -8,6 +8,10 @@ inheritances:
 constructor:
   syntax: 'JwtTokenExtractor(validation_params: botframework.connector.auth.verify_options.VerifyOptions,
     metadata_url: str, allowed_algorithms: list)'
+  parameters:
+  - name: validation_params
+  - name: metadata_url
+  - name: allowed_algorithms
 methods:
 - uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_identity
   name: get_identity

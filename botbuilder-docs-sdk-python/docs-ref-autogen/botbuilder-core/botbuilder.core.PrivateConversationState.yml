@@ -8,6 +8,9 @@ inheritances:
 constructor:
   syntax: 'PrivateConversationState(storage: botbuilder.core.storage.Storage, namespace:
     str = '''')'
+  parameters:
+  - name: storage
+  - name: namespace
 methods:
 - uid: botbuilder.core.PrivateConversationState.get_storage_key
   name: get_storage_key

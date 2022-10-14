@@ -11,3 +11,18 @@ constructor:
     = None, database: Optional[str] = None, container: Optional[str] = None, partition_key:
     Optional[str] = None, database_creation_options: Optional[dict] = None, container_creation_options:
     Optional[dict] = None, **kwargs)'
+  parameters:
+  - name: endpoint
+    defaultValue: None
+  - name: masterkey
+    defaultValue: None
+  - name: database
+    defaultValue: None
+  - name: container
+    defaultValue: None
+  - name: partition_key
+    defaultValue: None
+  - name: database_creation_options
+    defaultValue: None
+  - name: container_creation_options
+    defaultValue: None

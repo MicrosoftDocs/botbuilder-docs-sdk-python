@@ -8,6 +8,8 @@ inheritances:
 summary: A <xref:botbuilder.dialogs.Dialog> that is composed of other dialogs
 constructor:
   syntax: 'ComponentDialog(dialog_id: str)'
+  parameters:
+  - name: dialog_id
 variables:
 - name: state
   types:
@@ -220,6 +222,8 @@ methods:
     isRequired: true
     types:
     - <xref:botbuilder.dialogs.DialogReason>
+  - name: context
+    isRequired: true
 - uid: botbuilder.dialogs.component_dialog.ComponentDialog.on_reprompt_dialog
   name: on_reprompt_dialog
   signature: 'async on_reprompt_dialog(turn_context: botbuilder.core.turn_context.TurnContext,

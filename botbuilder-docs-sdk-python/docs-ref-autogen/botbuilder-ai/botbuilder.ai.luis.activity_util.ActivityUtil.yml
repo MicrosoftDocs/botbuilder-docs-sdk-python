@@ -33,7 +33,7 @@ methods:
     defaultValue: None
   - name: value
     description: object, optional
-    defaultValue: None
+    isRequired: true
   - name: value_type
     description: 'The value to assign to the trace activity''s <see cref="Activity.value_type"/>
       property,
@@ -48,7 +48,7 @@ methods:
       property, defaults
 
       to None'
-    isRequired: true
+    defaultValue: None
   - name: label
     description: str, optional
     isRequired: true

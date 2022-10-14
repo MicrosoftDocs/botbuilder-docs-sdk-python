@@ -9,6 +9,9 @@ summary: Application Insights Telemetry Processor for Bot
 constructor:
   syntax: 'BotTelemetryProcessor(processors: Optional[List[botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor]]
     = None)'
+  parameters:
+  - name: processors
+    defaultValue: None
 methods:
 - uid: botbuilder.applicationinsights.bot_telemetry_processor.BotTelemetryProcessor.can_process
   name: can_process

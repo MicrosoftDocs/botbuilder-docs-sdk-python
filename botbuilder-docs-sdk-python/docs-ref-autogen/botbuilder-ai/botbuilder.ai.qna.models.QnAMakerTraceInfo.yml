@@ -13,3 +13,18 @@ constructor:
     context: Optional[botbuilder.ai.qna.models.qna_request_context.QnARequestContext]
     = None, qna_id: Optional[int] = None, is_test: bool = False, ranker_type: str
     = ''Default'')'
+  parameters:
+  - name: message
+  - name: query_results
+  - name: knowledge_base_id
+  - name: score_threshold
+  - name: top
+  - name: strict_filters
+  - name: context
+    defaultValue: None
+  - name: qna_id
+    defaultValue: None
+  - name: is_test
+    defaultValue: 'False'
+  - name: ranker_type
+    defaultValue: Default

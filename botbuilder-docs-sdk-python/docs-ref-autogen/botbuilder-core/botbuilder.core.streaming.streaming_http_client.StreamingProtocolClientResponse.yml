@@ -8,6 +8,9 @@ inheritances:
 constructor:
   syntax: 'StreamingProtocolClientResponse(request: botframework.streaming.streaming_request.StreamingRequest,
     streaming_response: botframework.streaming.receive_response.ReceiveResponse)'
+  parameters:
+  - name: request
+  - name: streaming_response
 methods:
 - uid: botbuilder.core.streaming.streaming_http_client.StreamingProtocolClientResponse.body
   name: body

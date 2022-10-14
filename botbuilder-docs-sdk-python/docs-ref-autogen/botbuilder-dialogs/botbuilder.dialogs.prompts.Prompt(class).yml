@@ -9,6 +9,10 @@ summary: Defines the core behavior of prompt dialogs. Extends the <xref:botbuild
   base class.
 constructor:
   syntax: 'Prompt(dialog_id: str, validator: Optional[object] = None)'
+  parameters:
+  - name: dialog_id
+  - name: validator
+    defaultValue: None
 remarks: 'When the prompt ends, it returns an object that represents the value it
   was prompted for.
 

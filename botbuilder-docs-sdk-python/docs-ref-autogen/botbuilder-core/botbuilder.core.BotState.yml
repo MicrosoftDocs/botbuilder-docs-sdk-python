@@ -12,6 +12,9 @@ summary: 'Defines a state management object and automates the reading and writin
 constructor:
   syntax: 'BotState(storage: botbuilder.core.storage.Storage, context_service_key:
     str)'
+  parameters:
+  - name: storage
+  - name: context_service_key
 remarks: 'Each state management object defines a scope for a storage layer.
 
   State properties are created within a state management scope, and the Bot Framework

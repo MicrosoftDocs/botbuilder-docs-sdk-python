@@ -12,6 +12,10 @@ summary: 'Prompts a user to upload attachments like images.
 constructor:
   syntax: 'AttachmentPrompt(dialog_id: str, validator: Optional[Callable[[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext],
     bool]] = None)'
+  parameters:
+  - name: dialog_id
+  - name: validator
+    defaultValue: None
 methods:
 - uid: botbuilder.dialogs.prompts.AttachmentPrompt.on_prompt
   name: on_prompt

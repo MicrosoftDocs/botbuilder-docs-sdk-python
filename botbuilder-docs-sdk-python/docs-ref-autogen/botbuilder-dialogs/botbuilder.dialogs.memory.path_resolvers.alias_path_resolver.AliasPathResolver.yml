@@ -7,6 +7,11 @@ inheritances:
 - botbuilder.dialogs.memory.path_resolver_base.PathResolverBase
 constructor:
   syntax: 'AliasPathResolver(alias: str, prefix: str, postfix: Optional[str] = None)'
+  parameters:
+  - name: alias
+  - name: prefix
+  - name: postfix
+    defaultValue: None
 methods:
 - uid: botbuilder.dialogs.memory.path_resolvers.alias_path_resolver.AliasPathResolver.transform_path
   name: transform_path

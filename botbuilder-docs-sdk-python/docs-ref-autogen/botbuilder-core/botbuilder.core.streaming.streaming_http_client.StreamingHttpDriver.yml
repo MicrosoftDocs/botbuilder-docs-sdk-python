@@ -8,6 +8,8 @@ inheritances:
 constructor:
   syntax: 'StreamingHttpDriver(request_handler: botbuilder.core.streaming.streaming_request_handler.StreamingRequestHandler,
     *, config=None, logger: Optional[logging.Logger] = None)'
+  parameters:
+  - name: request_handler
 methods:
 - uid: botbuilder.core.streaming.streaming_http_client.StreamingHttpDriver.send
   name: send

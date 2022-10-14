@@ -7,6 +7,8 @@ inheritances:
 - botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase
 constructor:
   syntax: 'SkillConversationIdFactory(storage: botbuilder.core.storage.Storage)'
+  parameters:
+  - name: storage
 methods:
 - uid: botbuilder.core.skills.SkillConversationIdFactory.create_skill_conversation_id
   name: create_skill_conversation_id

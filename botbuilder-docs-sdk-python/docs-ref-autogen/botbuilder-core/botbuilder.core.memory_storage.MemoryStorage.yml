@@ -7,6 +7,9 @@ inheritances:
 - botbuilder.core.storage.Storage
 constructor:
   syntax: MemoryStorage(dictionary=None)
+  parameters:
+  - name: dictionary
+    defaultValue: None
 methods:
 - uid: botbuilder.core.memory_storage.MemoryStorage.delete
   name: delete

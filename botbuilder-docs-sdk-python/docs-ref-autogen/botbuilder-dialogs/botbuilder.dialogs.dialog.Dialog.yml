@@ -7,6 +7,8 @@ inheritances:
 - abc.ABC
 constructor:
   syntax: 'Dialog(dialog_id: str)'
+  parameters:
+  - name: dialog_id
 methods:
 - uid: botbuilder.dialogs.dialog.Dialog.begin_dialog
   name: begin_dialog

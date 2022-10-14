@@ -10,6 +10,13 @@ constructor:
     botbuilder.core.bot.Bot, conversation_id_factory: botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase,
     auth: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication,
     logger: Optional[logging.Logger] = None)'
+  parameters:
+  - name: adapter
+  - name: bot
+  - name: conversation_id_factory
+  - name: auth
+  - name: logger
+    defaultValue: None
 methods:
 - uid: botbuilder.core.skills.cloud_skill_handler.CloudSkillHandler.on_delete_activity
   name: on_delete_activity

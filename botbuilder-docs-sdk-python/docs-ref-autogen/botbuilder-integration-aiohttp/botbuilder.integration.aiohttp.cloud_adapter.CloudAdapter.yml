@@ -9,6 +9,9 @@ inheritances:
 constructor:
   syntax: 'CloudAdapter(bot_framework_authentication: Optional[botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication]
     = None)'
+  parameters:
+  - name: bot_framework_authentication
+    defaultValue: None
 methods:
 - uid: botbuilder.integration.aiohttp.cloud_adapter.CloudAdapter.process
   name: process

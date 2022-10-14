@@ -8,6 +8,10 @@ inheritances:
 constructor:
   syntax: 'AiohttpWebSocket(aiohttp_ws: Union[aiohttp.web_ws.WebSocketResponse, aiohttp.client_ws.ClientWebSocketResponse],
     session: Optional[aiohttp.client.ClientSession] = None)'
+  parameters:
+  - name: aiohttp_ws
+  - name: session
+    defaultValue: None
 methods:
 - uid: botbuilder.integration.aiohttp.streaming.aiohttp_web_socket.AiohttpWebSocket.close
   name: close

@@ -9,6 +9,10 @@ summary: Middleware for adding an object to or registering a service with the cu
   turn context.
 constructor:
   syntax: 'RegisterClassMiddleware(service, key: Optional[str] = None)'
+  parameters:
+  - name: service
+  - name: key
+    defaultValue: None
 methods:
 - uid: botbuilder.core.RegisterClassMiddleware.fullname
   name: fullname

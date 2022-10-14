@@ -8,6 +8,10 @@ inheritances:
 constructor:
   syntax: 'TurnContext(adapter_or_context, request: Optional[botbuilder.schema._models_py3.Activity]
     = None)'
+  parameters:
+  - name: adapter_or_context
+  - name: request
+    defaultValue: None
 methods:
 - uid: botbuilder.core.TurnContext.apply_conversation_reference
   name: apply_conversation_reference
