@@ -9,3 +9,9 @@ constructor:
   syntax: 'LuisRecognizerOptions(include_api_results: Optional[bool] = None, telemetry_client:
     botbuilder.core.bot_telemetry_client.BotTelemetryClient = <botbuilder.core.null_telemetry_client.NullTelemetryClient
     object>, log_personal_information: bool = False)'
+  parameters:
+  - name: include_api_results
+    defaultValue: None
+  - name: telemetry_client
+  - name: log_personal_information
+    defaultValue: 'False'

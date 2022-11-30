@@ -7,6 +7,8 @@ inheritances:
 - builtins.object
 constructor:
   syntax: 'BotStateSet(bot_states: List[botbuilder.core.bot_state.BotState])'
+  parameters:
+  - name: bot_states
 methods:
 - uid: botbuilder.core.BotStateSet.add
   name: add
@@ -16,8 +18,8 @@ methods:
     isRequired: true
 - uid: botbuilder.core.BotStateSet.load_all
   name: load_all
-  signature: 'load_all(turn_context: botbuilder.core.turn_context.TurnContext, force:
-    bool = False)'
+  signature: 'async load_all(turn_context: botbuilder.core.turn_context.TurnContext,
+    force: bool = False)'
   parameters:
   - name: turn_context
     isRequired: true
@@ -25,7 +27,7 @@ methods:
     defaultValue: 'False'
 - uid: botbuilder.core.BotStateSet.save_all_changes
   name: save_all_changes
-  signature: 'save_all_changes(turn_context: botbuilder.core.turn_context.TurnContext,
+  signature: 'async save_all_changes(turn_context: botbuilder.core.turn_context.TurnContext,
     force: bool = False)'
   parameters:
   - name: turn_context

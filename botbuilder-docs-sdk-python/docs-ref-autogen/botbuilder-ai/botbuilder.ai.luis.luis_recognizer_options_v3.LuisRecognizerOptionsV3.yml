@@ -13,3 +13,27 @@ constructor:
     include_api_results: bool = True, telemetry_client: botbuilder.core.bot_telemetry_client.BotTelemetryClient
     = <botbuilder.core.null_telemetry_client.NullTelemetryClient object>, log_personal_information:
     bool = False)'
+  parameters:
+  - name: include_all_intents
+    defaultValue: 'False'
+  - name: include_instance_data
+    defaultValue: 'True'
+  - name: log
+    defaultValue: 'True'
+  - name: prefer_external_entities
+    defaultValue: 'True'
+  - name: datetime_reference
+    defaultValue: None
+  - name: dynamic_lists
+    defaultValue: None
+  - name: external_entities
+    defaultValue: None
+  - name: slot
+    defaultValue: production
+  - name: version
+    defaultValue: None
+  - name: include_api_results
+    defaultValue: 'True'
+  - name: telemetry_client
+  - name: log_personal_information
+    defaultValue: 'False'

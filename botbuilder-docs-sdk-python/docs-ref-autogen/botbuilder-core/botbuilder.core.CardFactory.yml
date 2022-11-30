@@ -21,7 +21,7 @@ methods:
     :param card:
 
     :return:'
-  signature: 'adaptive_card(card: dict) -> botbuilder.schema._models_py3.Attachment'
+  signature: 'static adaptive_card(card: dict) -> botbuilder.schema._models_py3.Attachment'
   parameters:
   - name: card
     isRequired: true
@@ -35,8 +35,8 @@ methods:
     :param card:
 
     :return:'
-  signature: 'animation_card(card: botbuilder.schema._models_py3.AnimationCard) ->
-    botbuilder.schema._models_py3.Attachment'
+  signature: 'static animation_card(card: botbuilder.schema._models_py3.AnimationCard)
+    -> botbuilder.schema._models_py3.Attachment'
   parameters:
   - name: card
     isRequired: true
@@ -48,7 +48,8 @@ methods:
     :param card:
 
     :return:'
-  signature: 'audio_card(card: botbuilder.schema._models_py3.AudioCard) -> botbuilder.schema._models_py3.Attachment'
+  signature: 'static audio_card(card: botbuilder.schema._models_py3.AudioCard) ->
+    botbuilder.schema._models_py3.Attachment'
   parameters:
   - name: card
     isRequired: true
@@ -64,7 +65,7 @@ methods:
     usually be found below the image.
 
     :return:'
-  signature: 'hero_card(card: botbuilder.schema._models_py3.HeroCard) -> botbuilder.schema._models_py3.Attachment'
+  signature: 'static hero_card(card: botbuilder.schema._models_py3.HeroCard) -> botbuilder.schema._models_py3.Attachment'
   parameters:
   - name: card
     isRequired: true
@@ -78,7 +79,8 @@ methods:
     :param card:
 
     :return:'
-  signature: 'oauth_card(card: botbuilder.schema._models_py3.OAuthCard) -> botbuilder.schema._models_py3.Attachment'
+  signature: 'static oauth_card(card: botbuilder.schema._models_py3.OAuthCard) ->
+    botbuilder.schema._models_py3.Attachment'
   parameters:
   - name: card
     isRequired: true
@@ -90,7 +92,8 @@ methods:
     :param card:
 
     :return:'
-  signature: 'receipt_card(card: botbuilder.schema._models_py3.ReceiptCard) -> botbuilder.schema._models_py3.Attachment'
+  signature: 'static receipt_card(card: botbuilder.schema._models_py3.ReceiptCard)
+    -> botbuilder.schema._models_py3.Attachment'
   parameters:
   - name: card
     isRequired: true
@@ -105,7 +108,8 @@ methods:
     :param card:
 
     :return:'
-  signature: 'signin_card(card: botbuilder.schema._models_py3.SigninCard) -> botbuilder.schema._models_py3.Attachment'
+  signature: 'static signin_card(card: botbuilder.schema._models_py3.SigninCard) ->
+    botbuilder.schema._models_py3.Attachment'
   parameters:
   - name: card
     isRequired: true
@@ -126,8 +130,8 @@ methods:
     :param card:
 
     :return:'
-  signature: 'thumbnail_card(card: botbuilder.schema._models_py3.ThumbnailCard) ->
-    botbuilder.schema._models_py3.Attachment'
+  signature: 'static thumbnail_card(card: botbuilder.schema._models_py3.ThumbnailCard)
+    -> botbuilder.schema._models_py3.Attachment'
   parameters:
   - name: card
     isRequired: true
@@ -139,7 +143,8 @@ methods:
     :param card:
 
     :return:'
-  signature: 'video_card(card: botbuilder.schema._models_py3.VideoCard) -> botbuilder.schema._models_py3.Attachment'
+  signature: 'static video_card(card: botbuilder.schema._models_py3.VideoCard) ->
+    botbuilder.schema._models_py3.Attachment'
   parameters:
   - name: card
     isRequired: true

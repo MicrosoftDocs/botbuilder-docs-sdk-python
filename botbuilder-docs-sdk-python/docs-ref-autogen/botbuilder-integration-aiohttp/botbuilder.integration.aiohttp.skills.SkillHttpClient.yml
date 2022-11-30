@@ -10,10 +10,17 @@ constructor:
     skill_conversation_id_factory: botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase,
     channel_provider: Optional[botframework.connector.auth.channel_provider.ChannelProvider]
     = None, logger: Optional[logging.Logger] = None)'
+  parameters:
+  - name: credential_provider
+  - name: skill_conversation_id_factory
+  - name: channel_provider
+    defaultValue: None
+  - name: logger
+    defaultValue: None
 methods:
 - uid: botbuilder.integration.aiohttp.skills.SkillHttpClient.post_activity_to_skill
   name: post_activity_to_skill
-  signature: 'post_activity_to_skill(from_bot_id: str, to_skill: botbuilder.core.skills.bot_framework_skill.BotFrameworkSkill,
+  signature: 'async post_activity_to_skill(from_bot_id: str, to_skill: botbuilder.core.skills.bot_framework_skill.BotFrameworkSkill,
     service_url: str, activity: botbuilder.schema._models_py3.Activity, originating_audience:
     Optional[str] = None) -> botbuilder.schema._models_py3.InvokeResponse'
   parameters:

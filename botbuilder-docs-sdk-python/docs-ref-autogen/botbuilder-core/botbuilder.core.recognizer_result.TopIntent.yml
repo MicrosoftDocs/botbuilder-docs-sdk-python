@@ -8,6 +8,10 @@ inheritances:
 summary: The top scoring intent and its score.
 constructor:
   syntax: 'TopIntent(intent: str, score: float)'
+  parameters:
+  - name: _cls
+  - name: intent
+  - name: score
 attributes:
 - uid: botbuilder.core.recognizer_result.TopIntent.intent
   name: intent

@@ -13,3 +13,16 @@ constructor:
     choices: Optional[List[botbuilder.dialogs.choices.choice.Choice]] = None, style:
     Optional[botbuilder.dialogs.choices.list_style.ListStyle] = None, validations:
     Optional[object] = None, number_of_attempts: int = 0)'
+  parameters:
+  - name: prompt
+    defaultValue: None
+  - name: retry_prompt
+    defaultValue: None
+  - name: choices
+    defaultValue: None
+  - name: style
+    defaultValue: None
+  - name: validations
+    defaultValue: None
+  - name: number_of_attempts
+    defaultValue: '0'

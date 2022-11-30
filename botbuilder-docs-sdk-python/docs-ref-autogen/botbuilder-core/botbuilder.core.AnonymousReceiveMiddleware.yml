@@ -7,6 +7,8 @@ inheritances:
 - botbuilder.core.middleware_set.Middleware
 constructor:
   syntax: AnonymousReceiveMiddleware(anonymous_handler)
+  parameters:
+  - name: anonymous_handler
 methods:
 - uid: botbuilder.core.AnonymousReceiveMiddleware.on_turn
   name: on_turn

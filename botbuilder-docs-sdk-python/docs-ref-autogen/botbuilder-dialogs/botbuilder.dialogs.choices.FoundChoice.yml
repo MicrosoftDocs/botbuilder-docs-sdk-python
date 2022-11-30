@@ -9,3 +9,9 @@ summary: Represents a result from matching user input against a list of choices
 constructor:
   syntax: 'FoundChoice(value: str, index: int, score: float, synonym: Optional[str]
     = None)'
+  parameters:
+  - name: value
+  - name: index
+  - name: score
+  - name: synonym
+    defaultValue: None

@@ -8,6 +8,9 @@ inheritances:
 summary: Reads and writes user state for your bot to storage.
 constructor:
   syntax: 'UserState(storage: botbuilder.core.storage.Storage, namespace='''')'
+  parameters:
+  - name: storage
+  - name: namespace
 methods:
 - uid: botbuilder.core.user_state.UserState.get_storage_key
   name: get_storage_key

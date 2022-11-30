@@ -11,11 +11,13 @@ constructor:
     = None, auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
     = None, http_client_factory: Optional[botframework.connector.http_client_factory.HttpClientFactory]
     = None, logger: Optional[logging.Logger] = None)'
+  parameters:
+  - name: configuration
 methods:
 - uid: botbuilder.integration.aiohttp.configuration_bot_framework_authentication.ConfigurationBotFrameworkAuthentication.authenticate_channel_request
   name: authenticate_channel_request
   summary: Authenticate Bot Framework Protocol request to Skills.
-  signature: 'authenticate_channel_request(auth_header: str) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  signature: 'async authenticate_channel_request(auth_header: str) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: auth_header
     description: The HTTP auth header in the skill request.
@@ -25,7 +27,7 @@ methods:
 - uid: botbuilder.integration.aiohttp.configuration_bot_framework_authentication.ConfigurationBotFrameworkAuthentication.authenticate_request
   name: authenticate_request
   summary: Validate Bot Framework Protocol requests.
-  signature: 'authenticate_request(activity: botbuilder.schema._models_py3.Activity,
+  signature: 'async authenticate_request(activity: botbuilder.schema._models_py3.Activity,
     auth_header: str) -> botframework.connector.auth.authenticate_request_result.AuthenticateRequestResult'
   parameters:
   - name: activity
@@ -39,7 +41,7 @@ methods:
 - uid: botbuilder.integration.aiohttp.configuration_bot_framework_authentication.ConfigurationBotFrameworkAuthentication.authenticate_streaming_request
   name: authenticate_streaming_request
   summary: Validate Bot Framework Protocol requests.
-  signature: 'authenticate_streaming_request(auth_header: str, channel_id_header:
+  signature: 'async authenticate_streaming_request(auth_header: str, channel_id_header:
     str) -> botframework.connector.auth.authenticate_request_result.AuthenticateRequestResult'
   parameters:
   - name: auth_header
@@ -73,7 +75,7 @@ methods:
 - uid: botbuilder.integration.aiohttp.configuration_bot_framework_authentication.ConfigurationBotFrameworkAuthentication.create_user_token_client
   name: create_user_token_client
   summary: Creates the appropriate UserTokenClient instance.
-  signature: 'create_user_token_client(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity)
+  signature: 'async create_user_token_client(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity)
     -> botframework.connector.auth.user_token_client.UserTokenClient'
   parameters:
   - name: claims_identity

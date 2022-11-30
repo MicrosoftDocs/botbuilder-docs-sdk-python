@@ -7,11 +7,13 @@ inheritances:
 - botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase
 constructor:
   syntax: 'SkillConversationIdFactory(storage: botbuilder.core.storage.Storage)'
+  parameters:
+  - name: storage
 methods:
 - uid: botbuilder.core.skills.skill_conversation_id_factory.SkillConversationIdFactory.create_skill_conversation_id
   name: create_skill_conversation_id
   summary: Creates a new *SkillConversationReference*.
-  signature: 'create_skill_conversation_id(options: botbuilder.core.skills.skill_conversation_id_factory_options.SkillConversationIdFactoryOptions)
+  signature: 'async create_skill_conversation_id(options: botbuilder.core.skills.skill_conversation_id_factory_options.SkillConversationIdFactoryOptions)
     -> str'
   parameters:
   - name: options
@@ -24,7 +26,7 @@ methods:
 - uid: botbuilder.core.skills.skill_conversation_id_factory.SkillConversationIdFactory.delete_conversation_reference
   name: delete_conversation_reference
   summary: Deletes the *SkillConversationReference* with the specified ID.
-  signature: 'delete_conversation_reference(skill_conversation_id: str)'
+  signature: 'async delete_conversation_reference(skill_conversation_id: str)'
   parameters:
   - name: skill_conversation_id
     description: The ID of the *SkillConversationReference* to be deleted.
@@ -39,7 +41,7 @@ methods:
 
     Retrieves a <xref:botbuilder.core.skills.skill_conversation_id_factory.ConversationReference>
     using a conversation id passed in.'
-  signature: 'get_conversation_reference(skill_conversation_id: str) -> botbuilder.schema._models_py3.ConversationReference'
+  signature: 'async get_conversation_reference(skill_conversation_id: str) -> botbuilder.schema._models_py3.ConversationReference'
   parameters:
   - name: skill_conversation_id
     description: The conversation id for which to retrieve the <xref:botbuilder.core.skills.skill_conversation_id_factory.ConversationReference>.
@@ -51,7 +53,8 @@ methods:
 - uid: botbuilder.core.skills.skill_conversation_id_factory.SkillConversationIdFactory.get_skill_conversation_reference
   name: get_skill_conversation_reference
   summary: Retrieve a *SkillConversationReference* with the specified ID.
-  signature: 'get_skill_conversation_reference(skill_conversation_id: str) -> botbuilder.core.skills.skill_conversation_reference.SkillConversationReference'
+  signature: 'async get_skill_conversation_reference(skill_conversation_id: str) ->
+    botbuilder.core.skills.skill_conversation_reference.SkillConversationReference'
   parameters:
   - name: skill_conversation_id
     description: The ID of the *SkillConversationReference* to retrieve.

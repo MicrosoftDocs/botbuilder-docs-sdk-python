@@ -14,8 +14,7 @@ constructor:
     Optional[str] = None, deleted: Optional[bool] = None, subject: Optional[str] =
     None, summary: Optional[str] = None, importance=None, locale: Optional[str] =
     None, link_to_message: Optional[str] = None, from_property=None, body=None, attachment_layout:
-    Optional[str] = None, attachments=None, mentions=None, reactions=None, **kwargs)
-    -> None'
+    Optional[str] = None, attachments=None, mentions=None, reactions=None, **kwargs)'
   parameters:
   - name: id
     description: Unique id of the message.

@@ -8,10 +8,14 @@ inheritances:
 constructor:
   syntax: 'AiohttpWebSocket(aiohttp_ws: Union[aiohttp.web_ws.WebSocketResponse, aiohttp.client_ws.ClientWebSocketResponse],
     session: Optional[aiohttp.client.ClientSession] = None)'
+  parameters:
+  - name: aiohttp_ws
+  - name: session
+    defaultValue: None
 methods:
 - uid: botbuilder.integration.aiohttp.streaming.AiohttpWebSocket.close
   name: close
-  signature: 'close(close_status: botframework.streaming.transport.web_socket.web_socket_close_status.WebSocketCloseStatus,
+  signature: 'async close(close_status: botframework.streaming.transport.web_socket.web_socket_close_status.WebSocketCloseStatus,
     status_description: str)'
   parameters:
   - name: close_status
@@ -23,10 +27,10 @@ methods:
   signature: dispose()
 - uid: botbuilder.integration.aiohttp.streaming.AiohttpWebSocket.receive
   name: receive
-  signature: receive() -> botframework.streaming.transport.web_socket.web_socket.WebSocketMessage
+  signature: async receive() -> botframework.streaming.transport.web_socket.web_socket.WebSocketMessage
 - uid: botbuilder.integration.aiohttp.streaming.AiohttpWebSocket.send
   name: send
-  signature: 'send(buffer: Any, message_type: botframework.streaming.transport.web_socket.web_socket_message_type.WebSocketMessageType,
+  signature: 'async send(buffer: Any, message_type: botframework.streaming.transport.web_socket.web_socket_message_type.WebSocketMessageType,
     end_of_message: bool)'
   parameters:
   - name: buffer

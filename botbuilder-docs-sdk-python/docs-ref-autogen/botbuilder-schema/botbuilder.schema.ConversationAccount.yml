@@ -10,8 +10,7 @@ summary: Conversation account represents the identity of the conversation within
 constructor:
   syntax: 'ConversationAccount(*, is_group: Optional[bool] = None, conversation_type:
     Optional[str] = None, id: Optional[str] = None, name: Optional[str] = None, aad_object_id:
-    Optional[str] = None, role=None, tenant_id=None, properties=None, **kwargs) ->
-    None'
+    Optional[str] = None, role=None, tenant_id=None, properties=None, **kwargs)'
   parameters:
   - name: is_group
     description: 'Indicates whether the conversation contains more than two

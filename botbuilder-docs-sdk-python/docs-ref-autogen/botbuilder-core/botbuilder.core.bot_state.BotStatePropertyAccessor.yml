@@ -10,11 +10,15 @@ summary: Defines methods for accessing a state property created in a <xref:botbu
 constructor:
   syntax: 'BotStatePropertyAccessor(bot_state: botbuilder.core.bot_state.BotState,
     name: str)'
+  parameters:
+  - name: bot_state
+  - name: name
 methods:
 - uid: botbuilder.core.bot_state.BotStatePropertyAccessor.delete
   name: delete
   summary: Deletes the property.
-  signature: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
+  signature: 'async delete(turn_context: botbuilder.core.turn_context.TurnContext)
+    -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -24,7 +28,7 @@ methods:
 - uid: botbuilder.core.bot_state.BotStatePropertyAccessor.get
   name: get
   summary: Gets the property value.
-  signature: 'get(turn_context: botbuilder.core.turn_context.TurnContext, default_value_or_factory:
+  signature: 'async get(turn_context: botbuilder.core.turn_context.TurnContext, default_value_or_factory:
     Optional[Union[Callable, object]] = None) -> object'
   parameters:
   - name: turn_context
@@ -34,13 +38,12 @@ methods:
     - <xref:botbuilder.core.bot_state.TurnContext>
   - name: default_value_or_factory
     description: Defines the default value for the property
-    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.bot_state.BotStatePropertyAccessor.set
   name: set
   summary: Sets the property value.
-  signature: 'set(turn_context: botbuilder.core.turn_context.TurnContext, value: object)
-    -> None'
+  signature: 'async set(turn_context: botbuilder.core.turn_context.TurnContext, value:
+    object) -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn

@@ -8,6 +8,11 @@ inheritances:
 constructor:
   syntax: 'ClaimsIdentity(claims: dict, is_authenticated: bool, authentication_type:
     Optional[str] = None)'
+  parameters:
+  - name: claims
+  - name: is_authenticated
+  - name: authentication_type
+    defaultValue: None
 methods:
 - uid: botframework.connector.auth.claims_identity.ClaimsIdentity.get_claim_value
   name: get_claim_value

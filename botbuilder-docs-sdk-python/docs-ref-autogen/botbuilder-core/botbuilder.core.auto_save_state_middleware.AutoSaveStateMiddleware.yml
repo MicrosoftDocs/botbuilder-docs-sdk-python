@@ -8,6 +8,9 @@ inheritances:
 constructor:
   syntax: 'AutoSaveStateMiddleware(bot_states: Optional[Union[List[botbuilder.core.bot_state.BotState],
     botbuilder.core.bot_state_set.BotStateSet]] = None)'
+  parameters:
+  - name: bot_states
+    defaultValue: None
 methods:
 - uid: botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware.add
   name: add
@@ -17,8 +20,8 @@ methods:
     isRequired: true
 - uid: botbuilder.core.auto_save_state_middleware.AutoSaveStateMiddleware.on_turn
   name: on_turn
-  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: Callable[[botbuilder.core.turn_context.TurnContext],
-    Awaitable])'
+  signature: 'async on_turn(context: botbuilder.core.turn_context.TurnContext, logic:
+    Callable[[botbuilder.core.turn_context.TurnContext], Awaitable])'
   parameters:
   - name: context
     isRequired: true

@@ -10,4 +10,4 @@ constructor:
 methods:
 - uid: botbuilder.dialogs.memory.component_memory_scopes_base.ComponentMemoryScopesBase.get_memory_scopes
   name: get_memory_scopes
-  signature: get_memory_scopes() -> Iterable[botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope]
+  signature: abstract get_memory_scopes() -> Iterable[botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope]

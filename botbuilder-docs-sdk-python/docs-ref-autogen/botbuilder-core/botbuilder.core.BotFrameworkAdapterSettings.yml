@@ -13,3 +13,21 @@ constructor:
     = None, app_credentials: Optional[botframework.connector.auth.app_credentials.AppCredentials]
     = None, credential_provider: Optional[botframework.connector.auth.credential_provider.CredentialProvider]
     = None)'
+  parameters:
+  - name: app_id
+  - name: app_password
+    defaultValue: None
+  - name: channel_auth_tenant
+    defaultValue: None
+  - name: oauth_endpoint
+    defaultValue: None
+  - name: open_id_metadata
+    defaultValue: None
+  - name: channel_provider
+    defaultValue: None
+  - name: auth_configuration
+    defaultValue: None
+  - name: app_credentials
+    defaultValue: None
+  - name: credential_provider
+    defaultValue: None

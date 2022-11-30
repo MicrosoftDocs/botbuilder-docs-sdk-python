@@ -8,6 +8,10 @@ inheritances:
 summary: Data describing a LUIS application.
 constructor:
   syntax: 'LuisApplication(application_id: str, endpoint_key: str, endpoint: str)'
+  parameters:
+  - name: application_id
+  - name: endpoint_key
+  - name: endpoint
 methods:
 - uid: botbuilder.ai.luis.LuisApplication.from_application_endpoint
   name: from_application_endpoint
@@ -20,8 +24,6 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: application_endpoint
-    isRequired: true
   return:
     types:
     - <xref:botbuilder.ai.luis.LuisApplication>

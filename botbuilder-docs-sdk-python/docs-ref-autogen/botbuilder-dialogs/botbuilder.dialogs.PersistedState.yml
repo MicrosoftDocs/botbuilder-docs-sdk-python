@@ -8,3 +8,8 @@ inheritances:
 constructor:
   syntax: 'PersistedState(keys: Optional[botbuilder.dialogs.persisted_state_keys.PersistedStateKeys]
     = None, data: Optional[Dict[str, object]] = None)'
+  parameters:
+  - name: keys
+    defaultValue: None
+  - name: data
+    defaultValue: None
