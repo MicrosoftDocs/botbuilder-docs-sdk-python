@@ -9,17 +9,21 @@ summary: Middleware for adding an object to or registering a service with the cu
   turn context.
 constructor:
   syntax: 'RegisterClassMiddleware(service, key: Optional[str] = None)'
+  parameters:
+  - name: service
+  - name: key
+    defaultValue: None
 methods:
 - uid: botbuilder.core.register_class_middleware.RegisterClassMiddleware.fullname
   name: fullname
-  signature: fullname(obj)
+  signature: static fullname(obj)
   parameters:
   - name: obj
     isRequired: true
 - uid: botbuilder.core.register_class_middleware.RegisterClassMiddleware.on_turn
   name: on_turn
-  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: Callable[[botbuilder.core.turn_context.TurnContext],
-    Awaitable])'
+  signature: 'async on_turn(context: botbuilder.core.turn_context.TurnContext, logic:
+    Callable[[botbuilder.core.turn_context.TurnContext], Awaitable])'
   parameters:
   - name: context
     isRequired: true

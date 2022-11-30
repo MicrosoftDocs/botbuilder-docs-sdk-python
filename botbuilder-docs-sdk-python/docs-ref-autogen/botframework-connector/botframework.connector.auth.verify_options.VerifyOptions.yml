@@ -7,3 +7,8 @@ inheritances:
 - builtins.object
 constructor:
   syntax: VerifyOptions(issuer, audience, clock_tolerance, ignore_expiration)
+  parameters:
+  - name: issuer
+  - name: audience
+  - name: clock_tolerance
+  - name: ignore_expiration

@@ -13,6 +13,26 @@ constructor:
     ''None of the above.'', top: int = 3, card_no_match_response: botbuilder.schema._models_py3.Activity
     = None, strict_filters: [<class ''botbuilder.ai.qna.models.metadata.Metadata''>]
     = None, dialog_id: str = ''QnAMakerDialog'')'
+  parameters:
+  - name: knowledgebase_id
+  - name: endpoint_key
+  - name: hostname
+  - name: no_answer
+    defaultValue: None
+  - name: threshold
+    defaultValue: '0.3'
+  - name: active_learning_card_title
+    defaultValue: 'Did you mean:'
+  - name: card_no_match_text
+    defaultValue: None of the above.
+  - name: top
+    defaultValue: '3'
+  - name: card_no_match_response
+    defaultValue: None
+  - name: strict_filters
+    defaultValue: None
+  - name: dialog_id
+    defaultValue: QnAMakerDialog
 remarks: 'An instance of this class targets a specific QnA Maker knowledge base.
 
   It supports knowledge bases that include follow-up prompt and active learning features.
@@ -22,7 +42,7 @@ methods:
 - uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.begin_dialog
   name: begin_dialog
   summary: Called when the dialog is started and pushed onto the dialog stack.
-  signature: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
+  signature: 'async begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
     options: Optional[object] = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: dialog_context
@@ -31,7 +51,6 @@ methods:
     isRequired: true
   - name: options
     description: Optional, initial information to pass to the dialog.
-    isRequired: true
     defaultValue: None
 attributes:
 - uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.DEFAULT_CARD_NO_MATCH_RESPONSE

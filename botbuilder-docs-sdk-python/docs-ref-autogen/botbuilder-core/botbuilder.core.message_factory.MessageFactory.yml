@@ -18,20 +18,17 @@ methods:
     \ = MessageFactory.attachment(CardFactory.hero_card(HeroCard(title='White T-Shirt',\n\
     \   images=[CardImage(url=\n      '[https://example.com/whiteShirt.jpg](https://example.com/whiteShirt.jpg)'\n\
     \      )],\n\n   buttons=[CardAction(title='buy')])))\n\nawait context.send_activity(message)"
-  signature: 'attachment(attachment: botbuilder.schema._models_py3.Attachment, text:
-    Optional[str] = None, speak: Optional[str] = None, input_hint: Optional[Union[botbuilder.schema._connector_client_enums.InputHints,
+  signature: 'static attachment(attachment: botbuilder.schema._models_py3.Attachment,
+    text: Optional[str] = None, speak: Optional[str] = None, input_hint: Optional[Union[botbuilder.schema._connector_client_enums.InputHints,
     str]] = None)'
   parameters:
   - name: attachment
     isRequired: true
   - name: text
-    isRequired: true
     defaultValue: None
   - name: speak
-    isRequired: true
     defaultValue: None
   - name: input_hint
-    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.message_factory.MessageFactory.carousel
   name: carousel
@@ -42,20 +39,17 @@ methods:
     \      buttons=[CardAction(title='button2')])),\n\n   CardFactory.hero_card(HeroCard(title='title3',\n\
     \      images=[CardImage(url='imageUrl3')],\n      buttons=[CardAction(title='button3')]))])\n\
     \nawait context.send_activity(message)"
-  signature: 'carousel(attachments: List[botbuilder.schema._models_py3.Attachment],
+  signature: 'static carousel(attachments: List[botbuilder.schema._models_py3.Attachment],
     text: Optional[str] = None, speak: Optional[str] = None, input_hint: Optional[Union[botbuilder.schema._connector_client_enums.InputHints,
     str]] = None) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: attachments
     isRequired: true
   - name: text
-    isRequired: true
     defaultValue: None
   - name: speak
-    isRequired: true
     defaultValue: None
   - name: input_hint
-    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.message_factory.MessageFactory.content_url
   name: content_url
@@ -63,8 +57,8 @@ methods:
     \nmessage = MessageFactory.content_url('[https://example.com/hawaii.jpg](https://example.com/hawaii.jpg)',\
     \ 'image/jpeg',\n   'Hawaii Trip', 'A photo from our family vacation.')\n\nawait\
     \ context.send_activity(message)"
-  signature: 'content_url(url: str, content_type: str, name: Optional[str] = None,
-    text: Optional[str] = None, speak: Optional[str] = None, input_hint: Optional[Union[botbuilder.schema._connector_client_enums.InputHints,
+  signature: 'static content_url(url: str, content_type: str, name: Optional[str]
+    = None, text: Optional[str] = None, speak: Optional[str] = None, input_hint: Optional[Union[botbuilder.schema._connector_client_enums.InputHints,
     str]] = None)'
   parameters:
   - name: url
@@ -72,16 +66,12 @@ methods:
   - name: content_type
     isRequired: true
   - name: name
-    isRequired: true
     defaultValue: None
   - name: text
-    isRequired: true
     defaultValue: None
   - name: speak
-    isRequired: true
     defaultValue: None
   - name: input_hint
-    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.message_factory.MessageFactory.list
   name: list
@@ -92,20 +82,17 @@ methods:
     \      buttons=[CardAction(title='button2')])),\n\n   CardFactory.hero_card(HeroCard(title='title3',\n\
     \      images=[CardImage(url='imageUrl3')],\n      buttons=[CardAction(title='button3')]))])\n\
     \nawait context.send_activity(message)"
-  signature: 'list(attachments: List[botbuilder.schema._models_py3.Attachment], text:
-    Optional[str] = None, speak: Optional[str] = None, input_hint: Optional[Union[botbuilder.schema._connector_client_enums.InputHints,
+  signature: 'static list(attachments: List[botbuilder.schema._models_py3.Attachment],
+    text: Optional[str] = None, speak: Optional[str] = None, input_hint: Optional[Union[botbuilder.schema._connector_client_enums.InputHints,
     str]] = None) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: attachments
     isRequired: true
   - name: text
-    isRequired: true
     defaultValue: None
   - name: speak
-    isRequired: true
     defaultValue: None
   - name: input_hint
-    isRequired: true
     defaultValue: None
 - uid: botbuilder.core.message_factory.MessageFactory.suggested_actions
   name: suggested_actions
@@ -114,20 +101,17 @@ methods:
     \ value='a'),\n   CardAction(title='b', type=ActionTypes.im_back, value='b'),\n\
     \   CardAction(title='c', type=ActionTypes.im_back, value='c')],\n   'Choose a\
     \ color')\n\nawait context.send_activity(message)"
-  signature: 'suggested_actions(actions: List[botbuilder.schema._models_py3.CardAction],
+  signature: 'static suggested_actions(actions: List[botbuilder.schema._models_py3.CardAction],
     text: Optional[str] = None, speak: Optional[str] = None, input_hint: Union[botbuilder.schema._connector_client_enums.InputHints,
     str] = <InputHints.accepting_input: ''acceptingInput''>) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: actions
     isRequired: true
   - name: text
-    isRequired: true
     defaultValue: None
   - name: speak
-    isRequired: true
     defaultValue: None
   - name: input_hint
-    isRequired: true
     defaultValue: InputHints.accepting_input
 - uid: botbuilder.core.message_factory.MessageFactory.text
   name: text
@@ -137,14 +121,12 @@ methods:
     message = MessageFactory.text(''Greetings from example message'')
 
     await context.send_activity(message)'
-  signature: 'text(text: str, speak: Optional[str] = None, input_hint: Union[botbuilder.schema._connector_client_enums.InputHints,
+  signature: 'static text(text: str, speak: Optional[str] = None, input_hint: Union[botbuilder.schema._connector_client_enums.InputHints,
     str] = <InputHints.accepting_input: ''acceptingInput''>) -> botbuilder.schema._models_py3.Activity'
   parameters:
   - name: text
     isRequired: true
   - name: speak
-    isRequired: true
     defaultValue: None
   - name: input_hint
-    isRequired: true
     defaultValue: InputHints.accepting_input

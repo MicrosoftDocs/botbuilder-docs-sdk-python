@@ -8,10 +8,14 @@ inheritances:
 constructor:
   syntax: 'JwtTokenExtractor(validation_params: botframework.connector.auth.verify_options.VerifyOptions,
     metadata_url: str, allowed_algorithms: list)'
+  parameters:
+  - name: validation_params
+  - name: metadata_url
+  - name: allowed_algorithms
 methods:
 - uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_identity
   name: get_identity
-  signature: 'get_identity(schema: str, parameter: str, channel_id: str, required_endorsements:
+  signature: 'async get_identity(schema: str, parameter: str, channel_id: str, required_endorsements:
     Optional[List[str]] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: schema
@@ -24,8 +28,8 @@ methods:
     defaultValue: None
 - uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_identity_from_auth_header
   name: get_identity_from_auth_header
-  signature: 'get_identity_from_auth_header(auth_header: str, channel_id: str, required_endorsements:
-    Optional[List[str]] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  signature: 'async get_identity_from_auth_header(auth_header: str, channel_id: str,
+    required_endorsements: Optional[List[str]] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
   parameters:
   - name: auth_header
     isRequired: true
@@ -35,7 +39,7 @@ methods:
     defaultValue: None
 - uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_open_id_metadata
   name: get_open_id_metadata
-  signature: 'get_open_id_metadata(metadata_url: str)'
+  signature: 'static get_open_id_metadata(metadata_url: str)'
   parameters:
   - name: metadata_url
     isRequired: true

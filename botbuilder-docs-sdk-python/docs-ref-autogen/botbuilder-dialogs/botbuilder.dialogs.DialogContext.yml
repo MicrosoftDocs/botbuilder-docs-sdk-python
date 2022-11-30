@@ -8,6 +8,10 @@ inheritances:
 constructor:
   syntax: 'DialogContext(dialog_set: botbuilder.dialogs.dialog_set.DialogSet, turn_context:
     botbuilder.core.turn_context.TurnContext, state: botbuilder.dialogs.dialog_state.DialogState)'
+  parameters:
+  - name: dialog_set
+  - name: turn_context
+  - name: state
 methods:
 - uid: botbuilder.dialogs.DialogContext.begin_dialog
   name: begin_dialog
@@ -17,7 +21,7 @@ methods:
 
     :param options: (Optional) additional argument(s) to pass to the dialog being
     started.'
-  signature: 'begin_dialog(dialog_id: str, options: Optional[object] = None)'
+  signature: 'async begin_dialog(dialog_id: str, options: Optional[object] = None)'
   parameters:
   - name: dialog_id
     isRequired: true
@@ -34,7 +38,7 @@ methods:
     :param event_value:
 
     :return:'
-  signature: 'cancel_all_dialogs(cancel_parents: Optional[bool] = None, event_name:
+  signature: 'async cancel_all_dialogs(cancel_parents: Optional[bool] = None, event_name:
     Optional[str] = None, event_value: Optional[object] = None)'
   parameters:
   - name: cancel_parents
@@ -54,7 +58,7 @@ methods:
     to determine if a dialog was run and a reply was sent to the user.
 
     :return:'
-  signature: continue_dialog()
+  signature: async continue_dialog()
 - uid: botbuilder.dialogs.DialogContext.emit_event
   name: emit_event
   summary: 'Searches for a dialog with a given ID.
@@ -75,8 +79,8 @@ methods:
     :param cancellationToken: The cancellation token.
 
     :return: True if the event was handled.'
-  signature: 'emit_event(name: str, value: Optional[object] = None, bubble: bool =
-    True, from_leaf: bool = False) -> bool'
+  signature: 'async emit_event(name: str, value: Optional[object] = None, bubble:
+    bool = True, from_leaf: bool = False) -> bool'
   parameters:
   - name: name
     isRequired: true
@@ -88,7 +92,7 @@ methods:
     defaultValue: 'False'
 - uid: botbuilder.dialogs.DialogContext.end_active_dialog
   name: end_active_dialog
-  signature: 'end_active_dialog(reason: botbuilder.dialogs.dialog_reason.DialogReason)'
+  signature: 'async end_active_dialog(reason: botbuilder.dialogs.dialog_reason.DialogReason)'
   parameters:
   - name: reason
     isRequired: true
@@ -116,7 +120,7 @@ methods:
     :param result: (Optional) result to pass to the parent dialogs.
 
     :return:'
-  signature: 'end_dialog(result: Optional[object] = None)'
+  signature: 'async end_dialog(result: Optional[object] = None)'
   parameters:
   - name: result
     defaultValue: None
@@ -130,7 +134,7 @@ methods:
     :param dialog_id: ID of the dialog to search for.
 
     :return:'
-  signature: 'find_dialog(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
+  signature: 'async find_dialog(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
   parameters:
   - name: dialog_id
     isRequired: true
@@ -161,7 +165,7 @@ methods:
     Choices.
 
     :return:'
-  signature: 'prompt(dialog_id: str, options) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  signature: 'async prompt(dialog_id: str, options) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: dialog_id
     isRequired: true
@@ -179,8 +183,8 @@ methods:
     :param options: (Optional) additional argument(s) to pass to the new dialog.
 
     :return:'
-  signature: 'replace_dialog(dialog_id: str, options: Optional[object] = None) ->
-    botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  signature: 'async replace_dialog(dialog_id: str, options: Optional[object] = None)
+    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
   parameters:
   - name: dialog_id
     isRequired: true
@@ -192,7 +196,7 @@ methods:
     Prompts that have a reprompt behavior.
 
     :return:'
-  signature: reprompt_dialog()
+  signature: async reprompt_dialog()
 attributes:
 - uid: botbuilder.dialogs.DialogContext.active_dialog
   name: active_dialog

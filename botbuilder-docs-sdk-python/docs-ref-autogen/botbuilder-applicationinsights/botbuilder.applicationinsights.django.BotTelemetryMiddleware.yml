@@ -14,6 +14,8 @@ summary: "Save off the POST body to later populate bot-specific properties to ad
   \       ...\n       ]\n   ````"
 constructor:
   syntax: BotTelemetryMiddleware(get_response)
+  parameters:
+  - name: get_response
 methods:
 - uid: botbuilder.applicationinsights.django.BotTelemetryMiddleware.process_request
   name: process_request

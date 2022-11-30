@@ -10,3 +10,12 @@ constructor:
     card_no_match_text: Optional[str] = None, no_answer: Optional[botbuilder.schema._models_py3.Activity]
     = None, card_no_match_response: Optional[botbuilder.schema._models_py3.Activity]
     = None)'
+  parameters:
+  - name: active_learning_card_title
+    defaultValue: None
+  - name: card_no_match_text
+    defaultValue: None
+  - name: no_answer
+    defaultValue: None
+  - name: card_no_match_response
+    defaultValue: None

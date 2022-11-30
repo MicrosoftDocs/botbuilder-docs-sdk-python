@@ -11,6 +11,12 @@ constructor:
     str], prediction_options: Optional[Union[botbuilder.ai.luis.luis_recognizer_options_v2.LuisRecognizerOptionsV2,
     botbuilder.ai.luis.luis_recognizer_options_v3.LuisRecognizerOptionsV3, botbuilder.ai.luis.luis_prediction_options.LuisPredictionOptions]]
     = None, include_api_results: bool = False)'
+  parameters:
+  - name: application
+  - name: prediction_options
+    defaultValue: None
+  - name: include_api_results
+    defaultValue: 'False'
 methods:
 - uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.fill_luis_event_properties
   name: fill_luis_event_properties
@@ -37,7 +43,6 @@ methods:
       event, defaults
 
       to None.'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict>[<xref:str>, <xref:str>], <xref:optional>
@@ -72,7 +77,6 @@ methods:
       event, defaults
 
       to None.'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict>[<xref:str>, <xref:str>], <xref:optional>
@@ -81,16 +85,15 @@ methods:
       event, defaults
 
       to None.'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict>[<xref:str>, <xref:float>], <xref:optional>
 - uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.recognize
   name: recognize
   summary: Return results of the analysis (suggested actions and intents).
-  signature: 'recognize(turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
-    Optional[Dict[str, str]] = None, telemetry_metrics: Optional[Dict[str, float]]
-    = None, luis_prediction_options: Optional[botbuilder.ai.luis.luis_prediction_options.LuisPredictionOptions]
+  signature: 'async recognize(turn_context: botbuilder.core.turn_context.TurnContext,
+    telemetry_properties: Optional[Dict[str, str]] = None, telemetry_metrics: Optional[Dict[str,
+    float]] = None, luis_prediction_options: Optional[botbuilder.ai.luis.luis_prediction_options.LuisPredictionOptions]
     = None) -> botbuilder.core.recognizer_result.RecognizerResult'
   parameters:
   - name: turn_context
@@ -104,7 +107,6 @@ methods:
       event, defaults
 
       to None.'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict>[<xref:str>, <xref:str>], <xref:optional>
@@ -113,7 +115,6 @@ methods:
       event, defaults to
 
       None.'
-    isRequired: true
     defaultValue: None
     types:
     - <xref:typing.Dict>[<xref:str>, <xref:float>], <xref:optional>
@@ -127,7 +128,7 @@ methods:
 - uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.top_intent
   name: top_intent
   summary: Returns the name of the top scoring intent from a set of LUIS results.
-  signature: 'top_intent(results: botbuilder.core.recognizer_result.RecognizerResult,
+  signature: 'static top_intent(results: botbuilder.core.recognizer_result.RecognizerResult,
     default_intent: str = ''None'', min_score: float = 0.0) -> str'
   parameters:
   - name: results
@@ -137,7 +138,6 @@ methods:
     - <xref:botbuilder.core.RecognizerResult>
   - name: default_intent
     description: Intent name to return should a top intent be found, defaults to None.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>, <xref:optional>
@@ -146,7 +146,6 @@ methods:
       If all intents in the set
 
       are below this threshold then the *defaultIntent* is returned, defaults to 0.0.'
-    isRequired: true
     defaultValue: '0.0'
     types:
     - <xref:float>, <xref:optional>

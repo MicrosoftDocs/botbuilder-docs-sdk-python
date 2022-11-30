@@ -13,10 +13,16 @@ constructor:
   syntax: 'BotFrameworkHttpClient(credential_provider: botframework.connector.auth.credential_provider.CredentialProvider,
     channel_provider: Optional[botframework.connector.auth.channel_provider.ChannelProvider]
     = None, logger: Optional[logging.Logger] = None)'
+  parameters:
+  - name: credential_provider
+  - name: channel_provider
+    defaultValue: None
+  - name: logger
+    defaultValue: None
 methods:
 - uid: botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient.post_activity
   name: post_activity
-  signature: 'post_activity(from_bot_id: str, to_bot_id: str, to_url: str, service_url:
+  signature: 'async post_activity(from_bot_id: str, to_bot_id: str, to_url: str, service_url:
     str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity) ->
     botbuilder.schema._models_py3.InvokeResponse'
   parameters:
@@ -37,8 +43,8 @@ methods:
   summary: 'Helper method to return a list of activities when an Activity is being
 
     sent with DeliveryMode == expectReplies.'
-  signature: 'post_buffered_activity(from_bot_id: str, to_bot_id: str, to_url: str,
-    service_url: str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity)
+  signature: 'async post_buffered_activity(from_bot_id: str, to_bot_id: str, to_url:
+    str, service_url: str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity)
     -> List[botbuilder.schema._models_py3.Activity]'
   parameters:
   - name: from_bot_id

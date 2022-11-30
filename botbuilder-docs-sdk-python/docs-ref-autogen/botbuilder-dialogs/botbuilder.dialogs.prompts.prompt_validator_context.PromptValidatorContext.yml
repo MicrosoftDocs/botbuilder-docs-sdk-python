@@ -9,6 +9,11 @@ constructor:
   syntax: 'PromptValidatorContext(turn_context: botbuilder.core.turn_context.TurnContext,
     recognized: botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult,
     state: Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)'
+  parameters:
+  - name: turn_context
+  - name: recognized
+  - name: state
+  - name: options
 attributes:
 - uid: botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext.attempt_count
   name: attempt_count

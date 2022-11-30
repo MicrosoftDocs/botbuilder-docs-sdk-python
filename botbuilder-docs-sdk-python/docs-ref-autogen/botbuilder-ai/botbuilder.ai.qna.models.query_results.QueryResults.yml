@@ -9,3 +9,7 @@ summary: Contains answers for a user query.
 constructor:
   syntax: 'QueryResults(answers: List[botbuilder.ai.qna.models.query_result.QueryResult],
     active_learning_enabled: Optional[bool] = None, **kwargs)'
+  parameters:
+  - name: answers
+  - name: active_learning_enabled
+    defaultValue: None

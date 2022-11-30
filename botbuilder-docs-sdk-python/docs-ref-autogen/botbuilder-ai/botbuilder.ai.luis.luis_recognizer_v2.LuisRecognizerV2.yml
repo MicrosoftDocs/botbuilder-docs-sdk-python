@@ -9,10 +9,14 @@ constructor:
   syntax: 'LuisRecognizerV2(luis_application: botbuilder.ai.luis.luis_application.LuisApplication,
     luis_recognizer_options_v2: Optional[botbuilder.ai.luis.luis_recognizer_options_v2.LuisRecognizerOptionsV2]
     = None)'
+  parameters:
+  - name: luis_application
+  - name: luis_recognizer_options_v2
+    defaultValue: None
 methods:
 - uid: botbuilder.ai.luis.luis_recognizer_v2.LuisRecognizerV2.recognizer_internal
   name: recognizer_internal
-  signature: 'recognizer_internal(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async recognizer_internal(turn_context: botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: turn_context
     isRequired: true

@@ -8,12 +8,14 @@ inheritances:
 constructor:
   syntax: 'StreamingHttpDriver(request_handler: botbuilder.core.streaming.streaming_request_handler.StreamingRequestHandler,
     *, config=None, logger: Optional[logging.Logger] = None)'
+  parameters:
+  - name: request_handler
 methods:
 - uid: botbuilder.core.streaming.streaming_http_client.StreamingHttpDriver.send
   name: send
   summary: Send the request using this HTTP sender.
-  signature: 'send(request: msrest.universal_http.ClientRequest, **config: Any) ->
-    msrest.universal_http.async_abc.AsyncClientResponse'
+  signature: 'async send(request: msrest.universal_http.ClientRequest, **config: Any)
+    -> msrest.universal_http.async_abc.AsyncClientResponse'
   parameters:
   - name: request
     isRequired: true

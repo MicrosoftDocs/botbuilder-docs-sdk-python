@@ -14,8 +14,8 @@ methods:
 
 
     Replace characters that are not allowed in keys in Cosmos.'
-  signature: 'sanitize_key(key: str, key_suffix: str = '''', compatibility_mode: bool
-    = True) -> str'
+  signature: 'static sanitize_key(key: str, key_suffix: str = '''', compatibility_mode:
+    bool = True) -> str'
   parameters:
   - name: key
     description: The provided key to be escaped.
@@ -29,11 +29,10 @@ methods:
       max key length of 255.  This behavior can be overridden by setting
 
       cosmosdb_partitioned_config.compatibility_mode to False.'
-    isRequired: true
     defaultValue: 'True'
 - uid: botbuilder.azure.cosmosdb_storage.CosmosDbKeyEscape.truncate_key
   name: truncate_key
-  signature: 'truncate_key(key: str, compatibility_mode: bool = True) -> str'
+  signature: 'static truncate_key(key: str, compatibility_mode: bool = True) -> str'
   parameters:
   - name: key
     isRequired: true

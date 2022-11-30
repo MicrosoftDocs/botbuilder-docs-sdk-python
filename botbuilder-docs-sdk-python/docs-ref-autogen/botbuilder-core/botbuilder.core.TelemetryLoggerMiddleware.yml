@@ -8,7 +8,10 @@ inheritances:
 summary: Middleware for logging incoming, outgoing, updated or deleted Activity messages.
 constructor:
   syntax: 'TelemetryLoggerMiddleware(telemetry_client: botbuilder.core.bot_telemetry_client.BotTelemetryClient,
-    log_personal_information: bool) -> None'
+    log_personal_information: bool)'
+  parameters:
+  - name: telemetry_client
+  - name: log_personal_information
 methods:
 - uid: botbuilder.core.TelemetryLoggerMiddleware.fill_delete_event_properties
   name: fill_delete_event_properties
@@ -24,7 +27,7 @@ methods:
 
 
     BotTelemetryClient.track_event method for the BotMessageUpdate event.'
-  signature: 'fill_delete_event_properties(activity: botbuilder.schema._models_py3.Activity,
+  signature: 'async fill_delete_event_properties(activity: botbuilder.schema._models_py3.Activity,
     additional_properties: Optional[Dict[str, str]] = None) -> Dict[str, str]'
   parameters:
   - name: activity
@@ -47,7 +50,7 @@ methods:
 
 
     BotTelemetryClient.track_event method for the BotMessageReceived event.'
-  signature: 'fill_receive_event_properties(activity: botbuilder.schema._models_py3.Activity,
+  signature: 'async fill_receive_event_properties(activity: botbuilder.schema._models_py3.Activity,
     additional_properties: Optional[Dict[str, str]] = None) -> Dict[str, str]'
   parameters:
   - name: activity
@@ -71,7 +74,7 @@ methods:
 
 
     BotTelemetryClient.track_event method for the BotMessageSend event.'
-  signature: 'fill_send_event_properties(activity: botbuilder.schema._models_py3.Activity,
+  signature: 'async fill_send_event_properties(activity: botbuilder.schema._models_py3.Activity,
     additional_properties: Optional[Dict[str, str]] = None) -> Dict[str, str]'
   parameters:
   - name: activity
@@ -98,7 +101,7 @@ methods:
 
 
     BotTelemetryClient.track_event method for the BotMessageUpdate event.'
-  signature: 'fill_update_event_properties(activity: botbuilder.schema._models_py3.Activity,
+  signature: 'async fill_update_event_properties(activity: botbuilder.schema._models_py3.Activity,
     additional_properties: Optional[Dict[str, str]] = None) -> Dict[str, str]'
   parameters:
   - name: activity
@@ -117,7 +120,7 @@ methods:
     This event name used is "BotMessageDelete".
 
     :param activity: Current activity sent from user.'
-  signature: 'on_delete_activity(activity: botbuilder.schema._models_py3.Activity)
+  signature: 'async on_delete_activity(activity: botbuilder.schema._models_py3.Activity)
     -> None'
   parameters:
   - name: activity
@@ -132,7 +135,7 @@ methods:
     This event name used is "BotMessageReceived".
 
     :param activity: Current activity sent from user.'
-  signature: 'on_receive_activity(activity: botbuilder.schema._models_py3.Activity)
+  signature: 'async on_receive_activity(activity: botbuilder.schema._models_py3.Activity)
     -> None'
   parameters:
   - name: activity
@@ -147,8 +150,8 @@ methods:
     This event name used is "BotMessageSend".
 
     :param activity: Current activity sent from bot.'
-  signature: 'on_send_activity(activity: botbuilder.schema._models_py3.Activity) ->
-    None'
+  signature: 'async on_send_activity(activity: botbuilder.schema._models_py3.Activity)
+    -> None'
   parameters:
   - name: activity
     isRequired: true
@@ -157,7 +160,7 @@ methods:
   summary: 'Logs events based on incoming and outgoing activities using
 
     BotTelemetryClient base class'
-  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic_fn:
+  signature: 'async on_turn(context: botbuilder.core.turn_context.TurnContext, logic_fn:
     Callable[[botbuilder.core.turn_context.TurnContext], Awaitable]) -> None'
   parameters:
   - name: turn_context
@@ -165,6 +168,10 @@ methods:
     isRequired: true
   - name: logic
     description: Callable to continue the bot middleware pipeline
+    isRequired: true
+  - name: context
+    isRequired: true
+  - name: logic_fn
     isRequired: true
   return:
     description: None
@@ -178,7 +185,7 @@ methods:
     This event name used is "BotMessageUpdate".
 
     :param activity: Current activity sent from user.'
-  signature: 'on_update_activity(activity: botbuilder.schema._models_py3.Activity)
+  signature: 'async on_update_activity(activity: botbuilder.schema._models_py3.Activity)
     -> None'
   parameters:
   - name: activity

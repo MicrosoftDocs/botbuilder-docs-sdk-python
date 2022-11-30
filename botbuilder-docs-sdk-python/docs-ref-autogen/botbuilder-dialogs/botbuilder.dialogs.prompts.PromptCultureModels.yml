@@ -14,9 +14,6 @@ methods:
   name: get_supported_cultures
   summary: Gets a list of the supported culture models.
   signature: get_supported_cultures() -> List[botbuilder.dialogs.prompts.prompt_culture_models.PromptCultureModel]
-  parameters:
-  - name: cls
-    isRequired: true
 - uid: botbuilder.dialogs.prompts.PromptCultureModels.map_to_nearest_language
   name: map_to_nearest_language
   summary: 'Normalize various potential locale strings to a standard.
@@ -28,8 +25,6 @@ methods:
     :rtype: str'
   signature: 'map_to_nearest_language(culture_code: str) -> str'
   parameters:
-  - name: cls
-    isRequired: true
   - name: culture_code
     isRequired: true
   remarks: 'In our other SDKs, this method is a copy/paste of the ones from the Recognizers-Text

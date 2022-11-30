@@ -13,3 +13,22 @@ constructor:
     = None, context: [<class ''botbuilder.ai.qna.models.qna_request_context.QnARequestContext''>]
     = None, qna_id: int = None, is_test: bool = False, ranker_type: str = ''Default'',
     strict_filters_join_operator: str = <JoinOperator.AND: ''AND''>)'
+  parameters:
+  - name: score_threshold
+    defaultValue: '0.0'
+  - name: timeout
+    defaultValue: '0'
+  - name: top
+    defaultValue: '0'
+  - name: strict_filters
+    defaultValue: None
+  - name: context
+    defaultValue: None
+  - name: qna_id
+    defaultValue: None
+  - name: is_test
+    defaultValue: 'False'
+  - name: ranker_type
+    defaultValue: Default
+  - name: strict_filters_join_operator
+    defaultValue: JoinOperator.AND

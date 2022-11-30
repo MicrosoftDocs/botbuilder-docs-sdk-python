@@ -139,25 +139,24 @@ methods:
       data point.
 
       (defaults to: None)'
-    isRequired: true
+    defaultValue: None
   - name: std_dev
     description: 'the standard deviation of all metrics collected that were aggregated
       into this data point.         (defaults to: None)'
-    isRequired: true
+    defaultValue: None
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
+    defaultValue: None
+  - name: name
     isRequired: true
+  - name: value
+    isRequired: true
+  - name: tel_type
     defaultValue: None
   - name: count
     defaultValue: None
   - name: min_val
-    defaultValue: None
-  - name: max_val
-    defaultValue: None
-  - name: std_dev
-    defaultValue: None
-  - name: properties
     defaultValue: None
 - uid: botbuilder.core.null_telemetry_client.NullTelemetryClient.track_pageview
   name: track_pageview
@@ -256,11 +255,10 @@ methods:
   - name: properties
     description: 'the set of custom properties the client wants attached to this data
       item. (defaults to: None)'
-    isRequired: true
+    defaultValue: None
   - name: severity
     description: the severity level of this trace, one of DEBUG, INFO, WARNING, ERROR,
       CRITICAL
+    defaultValue: None
+  - name: name
     isRequired: true
-    defaultValue: None
-  - name: severity
-    defaultValue: None

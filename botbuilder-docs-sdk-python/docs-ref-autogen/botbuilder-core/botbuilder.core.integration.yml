@@ -13,7 +13,7 @@ functions:
   - name: base_url
 - uid: botbuilder.core.integration.aiohttp_error_middleware
   name: aiohttp_error_middleware
-  signature: aiohttp_error_middleware(request, handler)
+  signature: async aiohttp_error_middleware(request, handler)
   parameters:
   - name: request
   - name: handler

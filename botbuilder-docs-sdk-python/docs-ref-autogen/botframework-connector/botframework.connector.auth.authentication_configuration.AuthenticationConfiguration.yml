@@ -8,3 +8,8 @@ inheritances:
 constructor:
   syntax: 'AuthenticationConfiguration(required_endorsements: Optional[List[str]]
     = None, claims_validator: Optional[Callable[[List[Dict]], Awaitable]] = None)'
+  parameters:
+  - name: required_endorsements
+    defaultValue: None
+  - name: claims_validator
+    defaultValue: None

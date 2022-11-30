@@ -7,6 +7,11 @@ inheritances:
 - builtins.tuple
 constructor:
   syntax: ApplicationInsightsChannelSettings(send_interval, send_time, endpoint)
+  parameters:
+  - name: _cls
+  - name: send_interval
+  - name: send_time
+  - name: endpoint
 attributes:
 - uid: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings.endpoint
   name: endpoint

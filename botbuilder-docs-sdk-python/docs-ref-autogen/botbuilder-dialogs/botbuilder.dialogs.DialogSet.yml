@@ -8,6 +8,9 @@ inheritances:
 constructor:
   syntax: 'DialogSet(dialog_state: Optional[botbuilder.core.state_property_accessor.StatePropertyAccessor]
     = None)'
+  parameters:
+  - name: dialog_state
+    defaultValue: None
 methods:
 - uid: botbuilder.dialogs.DialogSet.add
   name: add
@@ -20,7 +23,7 @@ methods:
     isRequired: true
 - uid: botbuilder.dialogs.DialogSet.create_context
   name: create_context
-  signature: 'create_context(turn_context: botbuilder.core.turn_context.TurnContext)
+  signature: 'async create_context(turn_context: botbuilder.core.turn_context.TurnContext)
     -> DialogContext'
   parameters:
   - name: turn_context
@@ -32,7 +35,7 @@ methods:
     :param dialog_id: ID of the dialog/prompt to look up.
 
     :return: The dialog if found, otherwise null.'
-  signature: 'find(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
+  signature: 'async find(dialog_id: str) -> botbuilder.dialogs.dialog.Dialog'
   parameters:
   - name: dialog_id
     isRequired: true

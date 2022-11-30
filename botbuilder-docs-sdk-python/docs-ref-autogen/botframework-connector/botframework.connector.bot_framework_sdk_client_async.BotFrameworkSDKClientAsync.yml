@@ -6,5 +6,6 @@ module: botframework.connector.bot_framework_sdk_client_async
 inheritances:
 - msrest.async_client.SDKClientAsync
 constructor:
-  syntax: 'BotFrameworkSDKClientAsync(config: botframework.connector.bot_framework_sdk_client_async.BotFrameworkConnectorConfiguration)
-    -> None'
+  syntax: 'BotFrameworkSDKClientAsync(config: botframework.connector.bot_framework_sdk_client_async.BotFrameworkConnectorConfiguration)'
+  parameters:
+  - name: config

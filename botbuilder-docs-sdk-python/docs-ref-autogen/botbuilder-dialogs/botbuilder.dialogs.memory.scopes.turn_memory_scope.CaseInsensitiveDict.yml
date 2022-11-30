@@ -18,7 +18,7 @@ methods:
 - uid: botbuilder.dialogs.memory.scopes.turn_memory_scope.CaseInsensitiveDict.pop
   name: pop
   summary: If key is not found, d is returned if given, otherwise KeyError is raised
-  signature: pop(k[,d]) -> v, remove specified key and return the corresponding value.
+  signature: pop(k, [d]) -> v, remove specified key and return the corresponding value.
   parameters:
   - name: key
     isRequired: true
@@ -41,7 +41,7 @@ methods:
     v
 
     In either case, this is followed by: for k in F:  D[k] = F[k]'
-  signature: update([E, ]**F) -> None.  Update D from dict/iterable E and F.
+  signature: update([E], **F) -> None.  Update D from dict/iterable E and F.
   parameters:
   - name: e
     defaultValue: None
