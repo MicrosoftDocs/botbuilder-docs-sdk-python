@@ -8,9 +8,9 @@ inheritances:
 summary: Contains search options, used to control how choices are recognized in a
   user's utterance.
 constructor:
-  syntax: 'FindValuesOptions(allow_partial_matches: Optional[bool] = None, locale:
-    Optional[str] = None, max_token_distance: Optional[int] = None, tokenizer: Optional[Callable[[str,
-    str], List[botbuilder.dialogs.choices.token.Token]]] = None)'
+  syntax: 'FindValuesOptions(allow_partial_matches: bool | None = None, locale: str
+    | None = None, max_token_distance: int | None = None, tokenizer: Callable[[str,
+    str], List[Token]] | None = None)'
   parameters:
   - name: allow_partial_matches
     defaultValue: None

@@ -6,8 +6,8 @@ module: botbuilder.dialogs.prompts
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'PromptRecognizerResult(succeeded: bool = False, value: Optional[object]
-    = None)'
+  syntax: 'PromptRecognizerResult(succeeded: bool = False, value: object | None =
+    None)'
   parameters:
   - name: succeeded
     defaultValue: 'False'

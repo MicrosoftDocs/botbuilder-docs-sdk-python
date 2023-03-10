@@ -7,9 +7,9 @@ inheritances:
 - botbuilder.schema.teams._models_py3.O365ConnectorCardInputBase
 summary: O365 connector card text input.
 constructor:
-  syntax: 'O365ConnectorCardTextInput(*, type=None, id: Optional[str] = None, is_required:
-    Optional[bool] = None, title: Optional[str] = None, value: Optional[str] = None,
-    is_multiline: Optional[bool] = None, max_length: Optional[float] = None, **kwargs)'
+  syntax: 'O365ConnectorCardTextInput(*, type=None, id: str | None = None, is_required:
+    bool | None = None, title: str | None = None, value: str | None = None, is_multiline:
+    bool | None = None, max_length: float | None = None, **kwargs)'
   parameters:
   - name: type
     description: 'Input type name. Possible values include: ''textInput'',

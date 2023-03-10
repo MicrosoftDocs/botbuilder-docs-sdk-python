@@ -12,8 +12,7 @@ summary: 'If the activity name is signin/tokenExchange, self middleware will att
 
   exchange request is processed.'
 constructor:
-  syntax: 'TeamsSSOTokenExchangeMiddleware(storage: botbuilder.core.storage.Storage,
-    connection_name: str)'
+  syntax: 'TeamsSSOTokenExchangeMiddleware(storage: Storage, connection_name: str)'
   parameters:
   - name: storage
   - name: connection_name
@@ -42,8 +41,7 @@ remarks: 'If a user is signed into multiple Teams clients, the Bot could receive
 methods:
 - uid: botbuilder.core.teams.TeamsSSOTokenExchangeMiddleware.on_turn
   name: on_turn
-  signature: 'async on_turn(context: botbuilder.core.turn_context.TurnContext, logic:
-    Callable[[botbuilder.core.turn_context.TurnContext], Awaitable])'
+  signature: 'async on_turn(context: TurnContext, logic: Callable[[TurnContext], Awaitable])'
   parameters:
   - name: context
     isRequired: true

@@ -8,9 +8,9 @@ inheritances:
 summary: A dialog that supports multi-step and adaptive-learning QnA Maker services.
 constructor:
   syntax: 'QnAMakerDialog(knowledgebase_id: str, endpoint_key: str, hostname: str,
-    no_answer: botbuilder.schema._models_py3.Activity = None, threshold: float = 0.3,
-    active_learning_card_title: str = ''Did you mean:'', card_no_match_text: str =
-    ''None of the above.'', top: int = 3, card_no_match_response: botbuilder.schema._models_py3.Activity
+    no_answer: ~botbuilder.schema._models_py3.Activity = None, threshold: float =
+    0.3, active_learning_card_title: str = ''Did you mean:'', card_no_match_text:
+    str = ''None of the above.'', top: int = 3, card_no_match_response: ~botbuilder.schema._models_py3.Activity
     = None, strict_filters: [<class ''botbuilder.ai.qna.models.metadata.Metadata''>]
     = None, dialog_id: str = ''QnAMakerDialog'')'
   parameters:
@@ -42,8 +42,8 @@ methods:
 - uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog.begin_dialog
   name: begin_dialog
   summary: Called when the dialog is started and pushed onto the dialog stack.
-  signature: 'async begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    options: Optional[object] = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  signature: 'async begin_dialog(dialog_context: DialogContext, options: object |
+    None = None) -> DialogTurnResult'
   parameters:
   - name: dialog_context
     description: The :class:'botbuilder.dialogs.DialogContext' for the current turn

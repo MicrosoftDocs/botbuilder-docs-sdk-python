@@ -6,7 +6,7 @@ module: botbuilder.dialogs
 inheritances:
 - botbuilder.dialogs.prompts.prompt.Prompt
 constructor:
-  syntax: 'TextPrompt(dialog_id: str, validator: Optional[object] = None)'
+  syntax: 'TextPrompt(dialog_id: str, validator: object | None = None)'
   parameters:
   - name: dialog_id
   - name: validator
@@ -16,9 +16,8 @@ methods:
   name: on_prompt
   summary: Prompts user for input. When overridden in a derived class, prompts the
     user for input.
-  signature: 'async on_prompt(turn_context: botbuilder.core.turn_context.TurnContext,
-    state: Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
-    is_retry: bool)'
+  signature: 'async on_prompt(turn_context: TurnContext, state: Dict[str, object],
+    options: PromptOptions, is_retry: bool)'
   parameters:
   - name: turn_context
     description: Context for the current turn of conversation with the user
@@ -53,9 +52,8 @@ methods:
     > When overridden in a derived class, attempts to recognize the user''s input.
 
     >'
-  signature: 'async on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
-    state: Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
-    -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
+  signature: 'async on_recognize(turn_context: TurnContext, state: Dict[str, object],
+    options: PromptOptions) -> PromptRecognizerResult'
   parameters:
   - name: turn_context
     description: Context for the current turn of conversation with the user

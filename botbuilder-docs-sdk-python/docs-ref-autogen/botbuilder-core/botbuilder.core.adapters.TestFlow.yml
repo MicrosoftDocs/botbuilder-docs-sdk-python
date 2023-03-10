@@ -6,7 +6,7 @@ module: botbuilder.core.adapters
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'TestFlow(previous: Callable, adapter: botbuilder.core.adapters.test_adapter.TestAdapter)'
+  syntax: 'TestFlow(previous: Callable, adapter: TestAdapter)'
   parameters:
   - name: previous
   - name: adapter
@@ -18,7 +18,7 @@ methods:
     :param description:
 
     :param timeout:'
-  signature: async assert_no_reply(description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
+  signature: async assert_no_reply(description=None, timeout=None) -> TestFlow
   parameters:
   - name: description
     defaultValue: None
@@ -38,9 +38,8 @@ methods:
     :param is_substring:
 
     :return:'
-  signature: 'async assert_reply(expected: Union[str, botbuilder.schema._models_py3.Activity,
-    Callable[[botbuilder.schema._models_py3.Activity, str], None]], description=None,
-    timeout=None, is_substring=False) -> botbuilder.core.adapters.test_adapter.TestFlow'
+  signature: 'async assert_reply(expected: str | Activity | Callable[[Activity, str],
+    None], description=None, timeout=None, is_substring=False) -> TestFlow'
   parameters:
   - name: expected
     isRequired: true
@@ -57,7 +56,7 @@ methods:
     :param user_says:
 
     :return:'
-  signature: async send(user_says) -> botbuilder.core.adapters.test_adapter.TestFlow
+  signature: async send(user_says) -> TestFlow
   parameters:
   - name: user_says
     isRequired: true
@@ -80,7 +79,7 @@ methods:
     :param timeout:
 
     :return:'
-  signature: async test(user_says, expected, description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
+  signature: async test(user_says, expected, description=None, timeout=None) -> TestFlow
   parameters:
   - name: user_says
     isRequired: true

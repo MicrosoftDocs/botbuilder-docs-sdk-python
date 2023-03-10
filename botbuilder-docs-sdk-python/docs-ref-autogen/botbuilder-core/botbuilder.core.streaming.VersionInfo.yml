@@ -6,7 +6,7 @@ module: botbuilder.core.streaming
 inheritances:
 - botframework.streaming.payloads.models.serializable.Serializable
 constructor:
-  syntax: 'VersionInfo(*, user_agent: Optional[str] = None)'
+  syntax: 'VersionInfo(*, user_agent: str | None = None)'
 methods:
 - uid: botbuilder.core.streaming.VersionInfo.from_json
   name: from_json

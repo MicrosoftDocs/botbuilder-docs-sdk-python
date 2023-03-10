@@ -13,8 +13,8 @@ summary: 'AdaptiveCardInvokeAction.
 
   name of ''adaptiveCard/action''.'
 constructor:
-  syntax: 'AdaptiveCardInvokeAction(*, type: Optional[str] = None, id: Optional[str]
-    = None, verb: Optional[str] = None, data=None, **kwargs)'
+  syntax: 'AdaptiveCardInvokeAction(*, type: str | None = None, id: str | None = None,
+    verb: str | None = None, data=None, **kwargs)'
   parameters:
   - name: type
     description: The Type of this Adaptive Card Invoke Action.

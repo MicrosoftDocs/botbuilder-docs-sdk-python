@@ -17,9 +17,8 @@ methods:
     how long the message should be
 
     visible to Dequeue and Peek operations.'
-  signature: 'async queue_activity(activity: botbuilder.schema._models_py3.Activity,
-    visibility_timeout: Optional[int] = None, time_to_live: Optional[int] = None)
-    -> str'
+  signature: 'async queue_activity(activity: Activity, visibility_timeout: int | None
+    = None, time_to_live: int | None = None) -> str'
   parameters:
   - name: activity
     description: The activity to be queued for later processing.

@@ -7,8 +7,7 @@ inheritances:
 - botbuilder.core.storage.Storage
 summary: A CosmosDB based storage provider for a bot.
 constructor:
-  syntax: 'CosmosDbStorage(config: botbuilder.azure.cosmosdb_storage.CosmosDbConfig,
-    client: Optional[azure.cosmos.cosmos_client.CosmosClient] = None)'
+  syntax: 'CosmosDbStorage(config: CosmosDbConfig, client: CosmosClient | None = None)'
   parameters:
   - name: config
   - name: client

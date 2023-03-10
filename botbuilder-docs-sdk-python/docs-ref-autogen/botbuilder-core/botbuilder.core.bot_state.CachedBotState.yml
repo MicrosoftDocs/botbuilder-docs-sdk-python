@@ -7,7 +7,7 @@ inheritances:
 - builtins.object
 summary: Internal cached bot state.
 constructor:
-  syntax: 'CachedBotState(state: Optional[Dict[str, object]] = None)'
+  syntax: 'CachedBotState(state: Dict[str, object] | None = None)'
   parameters:
   - name: state
     defaultValue: None

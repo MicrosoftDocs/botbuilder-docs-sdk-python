@@ -7,9 +7,8 @@ inheritances:
 - botbuilder.schema._models_py3.PagedMembersResult
 summary: Page of members for Teams.
 constructor:
-  syntax: 'TeamsPagedMembersResult(*, continuation_token: Optional[str] = None, members:
-    Optional[List[botbuilder.schema.teams._models_py3.TeamsChannelAccount]] = None,
-    **kwargs)'
+  syntax: 'TeamsPagedMembersResult(*, continuation_token: str | None = None, members:
+    List[TeamsChannelAccount] | None = None, **kwargs)'
   parameters:
   - name: continuation_token
     description: Paging token

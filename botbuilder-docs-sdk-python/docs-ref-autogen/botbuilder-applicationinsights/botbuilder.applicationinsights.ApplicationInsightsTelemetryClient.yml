@@ -8,9 +8,8 @@ inheritances:
 summary: Application Insights Telemetry Client.
 constructor:
   syntax: 'ApplicationInsightsTelemetryClient(instrumentation_key: str, telemetry_client:
-    Optional[applicationinsights.TelemetryClient.TelemetryClient] = None, telemetry_processor:
-    Optional[Callable[[object, object], bool]] = None, client_queue_size: Optional[int]
-    = None)'
+    TelemetryClient | None = None, telemetry_processor: Callable[[object, object],
+    bool] | None = None, client_queue_size: int | None = None)'
   parameters:
   - name: instrumentation_key
   - name: telemetry_client
@@ -30,11 +29,10 @@ methods:
 - uid: botbuilder.applicationinsights.ApplicationInsightsTelemetryClient.track_dependency
   name: track_dependency
   summary: Sends a single dependency telemetry that was captured for the application.
-  signature: 'track_dependency(name: str, data: str, type_name: Optional[str] = None,
-    target: Optional[str] = None, duration: Optional[int] = None, success: Optional[bool]
-    = None, result_code: Optional[str] = None, properties: Optional[Dict[str, object]]
-    = None, measurements: Optional[Dict[str, object]] = None, dependency_id: Optional[str]
-    = None)'
+  signature: 'track_dependency(name: str, data: str, type_name: str | None = None,
+    target: str | None = None, duration: int | None = None, success: bool | None =
+    None, result_code: str | None = None, properties: Dict[str, object] | None = None,
+    measurements: Dict[str, object] | None = None, dependency_id: str | None = None)'
   parameters:
   - name: name
     description: 'the name of the command initiated with this dependency call. Low
@@ -112,8 +110,8 @@ methods:
   name: track_event
   summary: Send information about a single event that has occurred in the context
     of the application.
-  signature: 'track_event(name: str, properties: Optional[Dict[str, object]] = None,
-    measurements: Optional[Dict[str, object]] = None) -> None'
+  signature: 'track_event(name: str, properties: Dict[str, object] | None = None,
+    measurements: Dict[str, object] | None = None) -> None'
   parameters:
   - name: name
     description: the data to associate to this event.
@@ -139,8 +137,8 @@ methods:
   summary: Send information about a single exception that occurred in the application.
   signature: 'track_exception(exception_type: type = None, value: Exception = None,
     trace: <module ''traceback'' from ''C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64\\lib\\traceback.py''>
-    = None, properties: Dict[str, object] = None, measurements: Dict[str, object]
-    = None) -> None'
+    = None, properties: ~typing.Dict[str, object] = None, measurements: ~typing.Dict[str,
+    object] = None) -> None'
   parameters:
   - name: exception_type
     description: the type of the exception that was thrown.
@@ -169,10 +167,10 @@ methods:
   name: track_metric
   summary: Send information about a single metric data point that was captured for
     the application.
-  signature: 'track_metric(name: str, value: float, tel_type: Optional[botbuilder.core.bot_telemetry_client.TelemetryDataPointType]
-    = None, count: Optional[int] = None, min_val: Optional[float] = None, max_val:
-    Optional[float] = None, std_dev: Optional[float] = None, properties: Optional[Dict[str,
-    object]] = None) -> NotImplemented'
+  signature: 'track_metric(name: str, value: float, tel_type: TelemetryDataPointType
+    | None = None, count: int | None = None, min_val: float | None = None, max_val:
+    float | None = None, std_dev: float | None = None, properties: Dict[str, object]
+    | None = None) -> NotImplemented'
   parameters:
   - name: name
     description: The name of the metric that was captured.
@@ -227,8 +225,8 @@ methods:
   name: track_pageview
   summary: Send information about the page viewed in the application (a web page for
     instance).
-  signature: 'track_pageview(name: str, url: str, duration: int = 0, properties: Optional[Dict[str,
-    object]] = None, measurements: Optional[Dict[str, object]] = None) -> None'
+  signature: 'track_pageview(name: str, url: str, duration: int = 0, properties: Dict[str,
+    object] | None = None, measurements: Dict[str, object] | None = None) -> None'
   parameters:
   - name: name
     description: the name of the page that was viewed.
@@ -260,10 +258,10 @@ methods:
 - uid: botbuilder.applicationinsights.ApplicationInsightsTelemetryClient.track_request
   name: track_request
   summary: Sends a single request that was captured for the application.
-  signature: 'track_request(name: str, url: str, success: bool, start_time: Optional[str]
-    = None, duration: Optional[int] = None, response_code: Optional[str] = None, http_method:
-    Optional[str] = None, properties: Optional[Dict[str, object]] = None, measurements:
-    Optional[Dict[str, object]] = None, request_id: Optional[str] = None)'
+  signature: 'track_request(name: str, url: str, success: bool, start_time: str |
+    None = None, duration: int | None = None, response_code: str | None = None, http_method:
+    str | None = None, properties: Dict[str, object] | None = None, measurements:
+    Dict[str, object] | None = None, request_id: str | None = None)'
   parameters:
   - name: name
     description: The name for this request. All requests with the same name will be
@@ -328,8 +326,8 @@ methods:
 - uid: botbuilder.applicationinsights.ApplicationInsightsTelemetryClient.track_trace
   name: track_trace
   summary: Sends a single trace statement.
-  signature: 'track_trace(name: str, properties: Optional[Dict[str, object]] = None,
-    severity: Optional[botbuilder.core.bot_telemetry_client.Severity] = None)'
+  signature: 'track_trace(name: str, properties: Dict[str, object] | None = None,
+    severity: Severity | None = None)'
   parameters:
   - name: name
     description: the trace statement.

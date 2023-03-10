@@ -6,8 +6,8 @@ module: botbuilder.dialogs.choices
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'ChoiceFactoryOptions(inline_separator: Optional[str] = None, inline_or:
-    Optional[str] = None, inline_or_more: Optional[str] = None, include_numbers: Optional[bool]
+  syntax: 'ChoiceFactoryOptions(inline_separator: str | None = None, inline_or: str
+    | None = None, inline_or_more: str | None = None, include_numbers: bool | None
     = None)'
   parameters:
   - name: inline_separator

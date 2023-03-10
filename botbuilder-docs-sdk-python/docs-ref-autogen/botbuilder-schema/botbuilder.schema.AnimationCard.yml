@@ -7,11 +7,10 @@ inheritances:
 - msrest.serialization.Model
 summary: 'An animation card (Ex: gif or short video clip).'
 constructor:
-  syntax: 'AnimationCard(*, title: Optional[str] = None, subtitle: Optional[str] =
-    None, text: Optional[str] = None, image=None, media=None, buttons=None, shareable:
-    Optional[bool] = None, autoloop: Optional[bool] = None, autostart: Optional[bool]
-    = None, aspect: Optional[str] = None, duration: Optional[str] = None, value=None,
-    **kwargs)'
+  syntax: 'AnimationCard(*, title: str | None = None, subtitle: str | None = None,
+    text: str | None = None, image=None, media=None, buttons=None, shareable: bool
+    | None = None, autoloop: bool | None = None, autostart: bool | None = None, aspect:
+    str | None = None, duration: str | None = None, value=None, **kwargs)'
   parameters:
   - name: title
     description: Title of this card

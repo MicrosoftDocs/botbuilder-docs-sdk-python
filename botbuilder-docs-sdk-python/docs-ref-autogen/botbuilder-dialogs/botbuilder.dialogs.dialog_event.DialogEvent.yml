@@ -6,7 +6,7 @@ module: botbuilder.dialogs.dialog_event
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'DialogEvent(bubble: bool = False, name: str = '''', value: Optional[object]
+  syntax: 'DialogEvent(bubble: bool = False, name: str = '''', value: object | None
     = None)'
   parameters:
   - name: bubble

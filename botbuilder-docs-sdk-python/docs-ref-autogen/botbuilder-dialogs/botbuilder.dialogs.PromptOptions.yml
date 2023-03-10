@@ -8,11 +8,9 @@ inheritances:
 summary: Contains settings to pass to a <xref:botbuilder.dialogs.Prompt> object when
   the prompt is started.
 constructor:
-  syntax: 'PromptOptions(prompt: Optional[botbuilder.schema._models_py3.Activity]
-    = None, retry_prompt: Optional[botbuilder.schema._models_py3.Activity] = None,
-    choices: Optional[List[botbuilder.dialogs.choices.choice.Choice]] = None, style:
-    Optional[botbuilder.dialogs.choices.list_style.ListStyle] = None, validations:
-    Optional[object] = None, number_of_attempts: int = 0)'
+  syntax: 'PromptOptions(prompt: Activity | None = None, retry_prompt: Activity |
+    None = None, choices: List[Choice] | None = None, style: ListStyle | None = None,
+    validations: object | None = None, number_of_attempts: int = 0)'
   parameters:
   - name: prompt
     defaultValue: None

@@ -7,17 +7,16 @@ inheritances:
 - botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication
 constructor:
   syntax: 'ConfigurationBotFrameworkAuthentication(configuration: Any, *, credentials_factory:
-    Optional[botframework.connector.auth.service_client_credentials_factory.ServiceClientCredentialsFactory]
-    = None, auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
-    = None, http_client_factory: Optional[botframework.connector.http_client_factory.HttpClientFactory]
-    = None, logger: Optional[logging.Logger] = None)'
+    ServiceClientCredentialsFactory | None = None, auth_configuration: AuthenticationConfiguration
+    | None = None, http_client_factory: HttpClientFactory | None = None, logger: Logger
+    | None = None)'
   parameters:
   - name: configuration
 methods:
 - uid: botbuilder.integration.aiohttp.configuration_bot_framework_authentication.ConfigurationBotFrameworkAuthentication.authenticate_channel_request
   name: authenticate_channel_request
   summary: Authenticate Bot Framework Protocol request to Skills.
-  signature: 'async authenticate_channel_request(auth_header: str) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  signature: 'async authenticate_channel_request(auth_header: str) -> ClaimsIdentity'
   parameters:
   - name: auth_header
     description: The HTTP auth header in the skill request.
@@ -27,8 +26,8 @@ methods:
 - uid: botbuilder.integration.aiohttp.configuration_bot_framework_authentication.ConfigurationBotFrameworkAuthentication.authenticate_request
   name: authenticate_request
   summary: Validate Bot Framework Protocol requests.
-  signature: 'async authenticate_request(activity: botbuilder.schema._models_py3.Activity,
-    auth_header: str) -> botframework.connector.auth.authenticate_request_result.AuthenticateRequestResult'
+  signature: 'async authenticate_request(activity: Activity, auth_header: str) ->
+    AuthenticateRequestResult'
   parameters:
   - name: activity
     description: The inbound Activity.
@@ -42,7 +41,7 @@ methods:
   name: authenticate_streaming_request
   summary: Validate Bot Framework Protocol requests.
   signature: 'async authenticate_streaming_request(auth_header: str, channel_id_header:
-    str) -> botframework.connector.auth.authenticate_request_result.AuthenticateRequestResult'
+    str) -> AuthenticateRequestResult'
   parameters:
   - name: auth_header
     description: The HTTP auth header.
@@ -55,7 +54,7 @@ methods:
 - uid: botbuilder.integration.aiohttp.configuration_bot_framework_authentication.ConfigurationBotFrameworkAuthentication.create_bot_framework_client
   name: create_bot_framework_client
   summary: Creates a BotFrameworkClient for calling Skills.
-  signature: create_bot_framework_client() -> botframework.connector.skills.bot_framework_client.BotFrameworkClient
+  signature: create_bot_framework_client() -> BotFrameworkClient
   return:
     description: A BotFrameworkClient.
 - uid: botbuilder.integration.aiohttp.configuration_bot_framework_authentication.ConfigurationBotFrameworkAuthentication.create_connector_factory
@@ -64,8 +63,7 @@ methods:
     that can use credentials
 
     from this particular Cloud Environment.'
-  signature: 'create_connector_factory(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity)
-    -> botframework.connector.auth.connector_factory.ConnectorFactory'
+  signature: 'create_connector_factory(claims_identity: ClaimsIdentity) -> ConnectorFactory'
   parameters:
   - name: claims_identity
     description: The inbound Activity's ClaimsIdentity.
@@ -75,8 +73,7 @@ methods:
 - uid: botbuilder.integration.aiohttp.configuration_bot_framework_authentication.ConfigurationBotFrameworkAuthentication.create_user_token_client
   name: create_user_token_client
   summary: Creates the appropriate UserTokenClient instance.
-  signature: 'async create_user_token_client(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity)
-    -> botframework.connector.auth.user_token_client.UserTokenClient'
+  signature: 'async create_user_token_client(claims_identity: ClaimsIdentity) -> UserTokenClient'
   parameters:
   - name: claims_identity
     description: The inbound Activity's ClaimsIdentity.

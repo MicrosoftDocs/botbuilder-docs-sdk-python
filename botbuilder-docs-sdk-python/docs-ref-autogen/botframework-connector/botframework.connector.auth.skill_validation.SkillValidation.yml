@@ -12,10 +12,8 @@ methods:
 - uid: botframework.connector.auth.skill_validation.SkillValidation.authenticate_channel_token
   name: authenticate_channel_token
   signature: 'async static authenticate_channel_token(auth_header: str, credentials:
-    botframework.connector.auth.credential_provider.CredentialProvider, channel_service_or_provider:
-    Union[str, botframework.connector.auth.channel_provider.ChannelProvider], channel_id:
-    str, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration)
-    -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+    CredentialProvider, channel_service_or_provider: str | ChannelProvider, channel_id:
+    str, auth_configuration: AuthenticationConfiguration) -> ClaimsIdentity'
   parameters:
   - name: auth_header
     isRequired: true

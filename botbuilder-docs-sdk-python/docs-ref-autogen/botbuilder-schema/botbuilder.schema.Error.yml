@@ -7,7 +7,7 @@ inheritances:
 - msrest.serialization.Model
 summary: Object representing error information.
 constructor:
-  syntax: 'Error(*, code: Optional[str] = None, message: Optional[str] = None, inner_http_error=None,
+  syntax: 'Error(*, code: str | None = None, message: str | None = None, inner_http_error=None,
     **kwargs)'
   parameters:
   - name: code

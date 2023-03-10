@@ -48,8 +48,8 @@ methods:
     isRequired: true
 - uid: botbuilder.dialogs.dialog.Dialog.end_dialog
   name: end_dialog
-  signature: 'async end_dialog(context: botbuilder.core.turn_context.TurnContext,
-    instance: botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)'
+  signature: 'async end_dialog(context: TurnContext, instance: DialogInstance, reason:
+    DialogReason)'
   parameters:
   - name: context
     isRequired: true
@@ -64,7 +64,7 @@ methods:
   name: on_dialog_event
   summary: "Called when an event has been raised, using *DialogContext.emitEvent()*,\
     \ by either the current dialog or a\n   dialog that the current dialog started."
-  signature: 'async on_dialog_event(dialog_context: DialogContext, dialog_event: botbuilder.dialogs.dialog_event.DialogEvent)
+  signature: 'async on_dialog_event(dialog_context: DialogContext, dialog_event: DialogEvent)
     -> bool'
   parameters:
   - name: dialog_context
@@ -78,8 +78,7 @@ methods:
       stop.
 - uid: botbuilder.dialogs.dialog.Dialog.reprompt_dialog
   name: reprompt_dialog
-  signature: 'async reprompt_dialog(context: botbuilder.core.turn_context.TurnContext,
-    instance: botbuilder.dialogs.dialog_instance.DialogInstance)'
+  signature: 'async reprompt_dialog(context: TurnContext, instance: DialogInstance)'
   parameters:
   - name: context
     isRequired: true
@@ -109,7 +108,7 @@ methods:
     dependent on the dialog that was called.
 
     :return:'
-  signature: 'async resume_dialog(dialog_context: DialogContext, reason: botbuilder.dialogs.dialog_reason.DialogReason,
+  signature: 'async resume_dialog(dialog_context: DialogContext, reason: DialogReason,
     result: object)'
   parameters:
   - name: dialog_context

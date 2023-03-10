@@ -7,7 +7,7 @@ inheritances:
 - botbuilder.core.storage.Storage
 summary: A CosmosDB based storage provider using partitioning for a bot.
 constructor:
-  syntax: 'CosmosDbPartitionedStorage(config: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedConfig)'
+  syntax: 'CosmosDbPartitionedStorage(config: CosmosDbPartitionedConfig)'
   parameters:
   - name: config
 methods:

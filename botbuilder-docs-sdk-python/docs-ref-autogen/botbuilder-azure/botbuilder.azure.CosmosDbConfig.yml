@@ -7,10 +7,10 @@ inheritances:
 - builtins.object
 summary: The class for CosmosDB configuration for the Azure Bot Framework.
 constructor:
-  syntax: 'CosmosDbConfig(endpoint: Optional[str] = None, masterkey: Optional[str]
-    = None, database: Optional[str] = None, container: Optional[str] = None, partition_key:
-    Optional[str] = None, database_creation_options: Optional[dict] = None, container_creation_options:
-    Optional[dict] = None, **kwargs)'
+  syntax: 'CosmosDbConfig(endpoint: str | None = None, masterkey: str | None = None,
+    database: str | None = None, container: str | None = None, partition_key: str
+    | None = None, database_creation_options: dict | None = None, container_creation_options:
+    dict | None = None, **kwargs)'
   parameters:
   - name: endpoint
     defaultValue: None

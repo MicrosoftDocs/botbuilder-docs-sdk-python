@@ -7,8 +7,7 @@ inheritances:
 - botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
 summary: Application Insights Telemetry Processor for Bot
 constructor:
-  syntax: 'BotTelemetryProcessor(processors: Optional[List[botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor]]
-    = None)'
+  syntax: 'BotTelemetryProcessor(processors: List[TelemetryProcessor] | None = None)'
   parameters:
   - name: processors
     defaultValue: None

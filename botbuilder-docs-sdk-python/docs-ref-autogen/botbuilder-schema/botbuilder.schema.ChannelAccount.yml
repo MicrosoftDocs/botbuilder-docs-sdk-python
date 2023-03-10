@@ -7,8 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: Channel account information needed to route a message.
 constructor:
-  syntax: 'ChannelAccount(*, id: Optional[str] = None, name: Optional[str] = None,
-    aad_object_id: Optional[str] = None, role=None, **kwargs)'
+  syntax: 'ChannelAccount(*, id: str | None = None, name: str | None = None, aad_object_id:
+    str | None = None, role=None, **kwargs)'
   parameters:
   - name: id
     description: 'Channel id for the user or bot on this channel (Example:

@@ -7,8 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: File consent card attachment.
 constructor:
-  syntax: 'FileConsentCard(*, description: Optional[str] = None, size_in_bytes: Optional[int]
-    = None, accept_context=None, decline_context=None, **kwargs)'
+  syntax: 'FileConsentCard(*, description: str | None = None, size_in_bytes: int |
+    None = None, accept_context=None, decline_context=None, **kwargs)'
   parameters:
   - name: description
     description: File description.

@@ -6,10 +6,8 @@ module: botbuilder.dialogs.dialog_manager_result
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'DialogManagerResult(turn_result: Optional[botbuilder.dialogs.dialog_turn_result.DialogTurnResult]
-    = None, activities: Optional[List[botbuilder.schema._models_py3.Activity]] = None,
-    persisted_state: Optional[botbuilder.dialogs.persisted_state.PersistedState] =
-    None)'
+  syntax: 'DialogManagerResult(turn_result: DialogTurnResult | None = None, activities:
+    List[Activity] | None = None, persisted_state: PersistedState | None = None)'
   parameters:
   - name: turn_result
     defaultValue: None

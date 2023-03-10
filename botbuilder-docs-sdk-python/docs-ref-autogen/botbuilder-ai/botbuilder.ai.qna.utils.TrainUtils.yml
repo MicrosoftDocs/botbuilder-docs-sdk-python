@@ -8,8 +8,7 @@ inheritances:
 summary: Class for Train API, used in active learning to add suggestions to the knowledge
   base
 constructor:
-  syntax: 'TrainUtils(endpoint: botbuilder.ai.qna.qnamaker_endpoint.QnAMakerEndpoint,
-    http_client: aiohttp.client.ClientSession)'
+  syntax: 'TrainUtils(endpoint: QnAMakerEndpoint, http_client: ClientSession)'
   parameters:
   - name: endpoint
   - name: http_client
@@ -19,8 +18,11 @@ methods:
   summary: 'Train API to provide feedback.
 
 
+    # Parameter:
+
+
     feedback_records: Feedback record list.'
-  signature: 'async call_train(feedback_records: List[botbuilder.ai.qna.models.feedback_record.FeedbackRecord])'
+  signature: 'async call_train(feedback_records: List[FeedbackRecord])'
   parameters:
   - name: feedback_records
     isRequired: true

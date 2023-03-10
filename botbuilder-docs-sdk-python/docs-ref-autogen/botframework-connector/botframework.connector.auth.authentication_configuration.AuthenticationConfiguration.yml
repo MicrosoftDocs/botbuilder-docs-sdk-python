@@ -6,8 +6,8 @@ module: botframework.connector.auth.authentication_configuration
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'AuthenticationConfiguration(required_endorsements: Optional[List[str]]
-    = None, claims_validator: Optional[Callable[[List[Dict]], Awaitable]] = None)'
+  syntax: 'AuthenticationConfiguration(required_endorsements: List[str] | None = None,
+    claims_validator: Callable[[List[Dict]], Awaitable] | None = None)'
   parameters:
   - name: required_endorsements
     defaultValue: None

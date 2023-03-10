@@ -28,8 +28,7 @@ constructor:
 methods:
 - uid: botbuilder.core.show_typing_middleware.ShowTypingMiddleware.on_turn
   name: on_turn
-  signature: 'async on_turn(context: botbuilder.core.turn_context.TurnContext, logic:
-    Callable[[botbuilder.core.turn_context.TurnContext], Awaitable])'
+  signature: 'async on_turn(context: TurnContext, logic: Callable[[TurnContext], Awaitable])'
   parameters:
   - name: context
     isRequired: true

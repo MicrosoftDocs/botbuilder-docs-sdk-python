@@ -7,11 +7,9 @@ inheritances:
 - builtins.object
 summary: A client for testing dialogs in isolation.
 constructor:
-  syntax: 'DialogTestClient(channel_or_adapter: Union[str, botbuilder.core.adapters.test_adapter.TestAdapter],
-    target_dialog: botbuilder.dialogs.dialog.Dialog, initial_dialog_options: Optional[object]
-    = None, middlewares: Optional[List[botbuilder.core.middleware_set.Middleware]]
-    = None, conversation_state: Optional[botbuilder.core.conversation_state.ConversationState]
-    = None)'
+  syntax: 'DialogTestClient(channel_or_adapter: str | TestAdapter, target_dialog:
+    Dialog, initial_dialog_options: object | None = None, middlewares: List[Middleware]
+    | None = None, conversation_state: ConversationState | None = None)'
   parameters:
   - name: channel_or_adapter
   - name: target_dialog
@@ -25,7 +23,7 @@ methods:
 - uid: botbuilder.testing.DialogTestClient.get_next_reply
   name: get_next_reply
   summary: Get the next reply waiting to be delivered (if one exists)
-  signature: get_next_reply() -> botbuilder.schema._models_py3.Activity
+  signature: get_next_reply() -> Activity
   return:
     description: a TestFlow that can be used to assert replies etc.
     types:
@@ -33,7 +31,7 @@ methods:
 - uid: botbuilder.testing.DialogTestClient.send_activity
   name: send_activity
   summary: Send an activity into the dialog.
-  signature: async send_activity(activity) -> botbuilder.schema._models_py3.Activity
+  signature: async send_activity(activity) -> Activity
   parameters:
   - name: activity
     description: an activity potentially with text.
