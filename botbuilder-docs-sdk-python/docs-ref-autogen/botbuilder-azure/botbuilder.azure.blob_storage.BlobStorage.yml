@@ -23,7 +23,7 @@ summary: 'An Azure Blob based storage provider for a bot.
 
   will be generated during Write. New entities start with a null e_tag.'
 constructor:
-  syntax: 'BlobStorage(settings: botbuilder.azure.blob_storage.BlobStorageSettings)'
+  syntax: 'BlobStorage(settings: BlobStorageSettings)'
   parameters:
   - name: settings
     description: Settings used to instantiate the Blob service.

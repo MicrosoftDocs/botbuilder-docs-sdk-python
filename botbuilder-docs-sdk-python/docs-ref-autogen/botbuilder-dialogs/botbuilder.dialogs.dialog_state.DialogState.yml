@@ -5,13 +5,19 @@ fullName: botbuilder.dialogs.dialog_state.DialogState
 module: botbuilder.dialogs.dialog_state
 inheritances:
 - builtins.object
-summary: Contains state information for the dialog stack.
+summary: 'Contains state information for the dialog stack.
+
+
+  Initializes a new instance of the <xref:botbuilder.dialogs.dialog_state.DialogState>
+  class.'
 constructor:
-  syntax: 'DialogState(stack: Optional[List[botbuilder.dialogs.dialog_instance.DialogInstance]]
-    = None)'
+  syntax: 'DialogState(stack: List[DialogInstance] | None = None)'
   parameters:
   - name: stack
+    description: The state information to initialize the stack with.
     defaultValue: None
+    types:
+    - <xref:typing.List>
 attributes:
 - uid: botbuilder.dialogs.dialog_state.DialogState.dialog_stack
   name: dialog_stack

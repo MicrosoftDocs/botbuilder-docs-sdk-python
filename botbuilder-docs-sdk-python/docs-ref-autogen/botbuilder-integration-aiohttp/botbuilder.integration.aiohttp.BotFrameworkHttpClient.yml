@@ -10,9 +10,8 @@ summary: 'A skill host adapter that implements the API to forward activity to a 
 
   implements routing ChannelAPI calls from the skill up through the bot/adapter.'
 constructor:
-  syntax: 'BotFrameworkHttpClient(credential_provider: botframework.connector.auth.credential_provider.CredentialProvider,
-    channel_provider: Optional[botframework.connector.auth.channel_provider.ChannelProvider]
-    = None, logger: Optional[logging.Logger] = None)'
+  syntax: 'BotFrameworkHttpClient(credential_provider: CredentialProvider, channel_provider:
+    ChannelProvider | None = None, logger: Logger | None = None)'
   parameters:
   - name: credential_provider
   - name: channel_provider
@@ -23,8 +22,7 @@ methods:
 - uid: botbuilder.integration.aiohttp.BotFrameworkHttpClient.post_activity
   name: post_activity
   signature: 'async post_activity(from_bot_id: str, to_bot_id: str, to_url: str, service_url:
-    str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity) ->
-    botbuilder.schema._models_py3.InvokeResponse'
+    str, conversation_id: str, activity: Activity) -> InvokeResponse'
   parameters:
   - name: from_bot_id
     isRequired: true
@@ -44,8 +42,7 @@ methods:
 
     sent with DeliveryMode == expectReplies.'
   signature: 'async post_buffered_activity(from_bot_id: str, to_bot_id: str, to_url:
-    str, service_url: str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity)
-    -> List[botbuilder.schema._models_py3.Activity]'
+    str, service_url: str, conversation_id: str, activity: Activity) -> List[Activity]'
   parameters:
   - name: from_bot_id
     isRequired: true

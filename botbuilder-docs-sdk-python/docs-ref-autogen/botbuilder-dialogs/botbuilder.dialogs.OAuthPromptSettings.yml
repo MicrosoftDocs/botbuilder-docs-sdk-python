@@ -5,9 +5,22 @@ fullName: botbuilder.dialogs.OAuthPromptSettings
 module: botbuilder.dialogs
 inheritances:
 - builtins.object
+summary: "Settings used to configure an *OAuthPrompt* instance.\n   Parameters:\n\
+  \      connection_name (str): Name of the OAuth connection being used.\n      title\
+  \ (str): The title of the cards signin button.\n      text (str): (Optional) additional\
+  \ text included on the signin card.\n      timeout (int): (Optional) number of milliseconds\
+  \ the prompt will wait for the user to authenticate.\n\n         *OAuthPrompt* defaults\
+  \ value to *900,000* ms (15 minutes).\n\n      oauth_app_credentials (AppCredentials):\
+  \ (Optional) AppCredentials to use for OAuth.  If None,\n      the Bots credentials\
+  \ are used.\n      end_on_invalid_message (bool): (Optional) value indicating whether\
+  \ the OAuthPrompt should end upon\n      receiving an invalid message.  Generally\
+  \ the OAuthPrompt will ignore incoming messages from the\n      user during the\
+  \ auth flow, if they are not related to the auth flow.  This flag enables ending\
+  \ the\n      OAuthPrompt rather than ignoring the user's message.  Typically, this\
+  \ flag will be set to 'true',\n      but is 'false' by default for backwards compatibility."
 constructor:
-  syntax: 'OAuthPromptSettings(connection_name: str, title: str, text: Optional[str]
-    = None, timeout: Optional[int] = None, oauth_app_credentials: Optional[botframework.connector.auth.app_credentials.AppCredentials]
+  syntax: 'OAuthPromptSettings(connection_name: str, title: str, text: str | None
+    = None, timeout: int | None = None, oauth_app_credentials: AppCredentials | None
     = None, end_on_invalid_message: bool = False)'
   parameters:
   - name: connection_name

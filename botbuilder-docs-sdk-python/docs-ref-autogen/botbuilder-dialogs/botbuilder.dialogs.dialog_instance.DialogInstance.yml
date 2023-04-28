@@ -5,12 +5,24 @@ fullName: botbuilder.dialogs.dialog_instance.DialogInstance
 module: botbuilder.dialogs.dialog_instance
 inheritances:
 - builtins.object
-summary: Tracking information for a dialog on the stack.
+summary: 'Tracking information for a dialog on the stack.
+
+
+  Gets or sets the ID of the dialog and gets or sets the instance''s persisted state.'
 constructor:
-  syntax: 'DialogInstance(id: Optional[str] = None, state: Optional[Dict[str, object]]
-    = None)'
+  syntax: 'DialogInstance(id: str | None = None, state: Dict[str, object] | None =
+    None)'
   parameters:
   - name: id
     defaultValue: None
   - name: state
     defaultValue: None
+variables:
+- description: The ID of the dialog
+  name: self.id
+  types:
+  - <xref:str>
+- description: The instance's persisted state.
+  name: self.state
+  types:
+  - <xref:typing.Dict>[<xref:str>, <xref:object>]

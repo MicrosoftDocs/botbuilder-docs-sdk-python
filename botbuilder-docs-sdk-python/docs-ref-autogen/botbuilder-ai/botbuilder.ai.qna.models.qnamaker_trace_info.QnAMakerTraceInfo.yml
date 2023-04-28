@@ -5,14 +5,46 @@ fullName: botbuilder.ai.qna.models.qnamaker_trace_info.QnAMakerTraceInfo
 module: botbuilder.ai.qna.models.qnamaker_trace_info
 inheritances:
 - builtins.object
-summary: Represents all the trace info that we collect from the QnAMaker Middleware.
+summary: 'Represents all the trace info that we collect from the QnAMaker Middleware.
+
+
+  # Parameters:
+
+
+  message: Message which instigated the query to QnA Maker.
+
+
+  query_results: Results that QnA Maker returned.
+
+
+  knowledge_base_id: ID of the knowledge base that is being queried.
+
+
+  score_threshold: The minimum score threshold, used to filter returned results.
+
+
+  top: Number of ranked results that are asked to be returned.
+
+
+  strict_filters: Filters used on query.
+
+
+  context: (Optional) The context from which the QnA was extracted.
+
+
+  qna_id: (Optional) Id of the current question asked.
+
+
+  is_test: (Optional) A value indicating whether to call test or prod environment
+  of knowledgebase.
+
+
+  ranker_types: (Optional) Ranker types.'
 constructor:
-  syntax: 'QnAMakerTraceInfo(message: botbuilder.schema._models_py3.Activity, query_results:
-    List[botbuilder.ai.qna.models.query_result.QueryResult], knowledge_base_id: str,
-    score_threshold: float, top: int, strict_filters: List[botbuilder.ai.qna.models.metadata.Metadata],
-    context: Optional[botbuilder.ai.qna.models.qna_request_context.QnARequestContext]
-    = None, qna_id: Optional[int] = None, is_test: bool = False, ranker_type: str
-    = ''Default'')'
+  syntax: 'QnAMakerTraceInfo(message: Activity, query_results: List[QueryResult],
+    knowledge_base_id: str, score_threshold: float, top: int, strict_filters: List[Metadata],
+    context: QnARequestContext | None = None, qna_id: int | None = None, is_test:
+    bool = False, ranker_type: str = ''Default'')'
   parameters:
   - name: message
   - name: query_results

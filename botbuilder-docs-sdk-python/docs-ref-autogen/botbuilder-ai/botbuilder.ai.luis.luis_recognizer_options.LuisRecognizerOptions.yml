@@ -6,8 +6,8 @@ module: botbuilder.ai.luis.luis_recognizer_options
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'LuisRecognizerOptions(include_api_results: Optional[bool] = None, telemetry_client:
-    botbuilder.core.bot_telemetry_client.BotTelemetryClient = <botbuilder.core.null_telemetry_client.NullTelemetryClient
+  syntax: 'LuisRecognizerOptions(include_api_results: bool | None = None, telemetry_client:
+    ~botbuilder.core.bot_telemetry_client.BotTelemetryClient = <botbuilder.core.null_telemetry_client.NullTelemetryClient
     object>, log_personal_information: bool = False)'
   parameters:
   - name: include_api_results

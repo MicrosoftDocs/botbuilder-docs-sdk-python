@@ -6,8 +6,8 @@ module: botbuilder.dialogs.choices.choice
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'Choice(value: Optional[str] = None, action: Optional[botbuilder.schema._models_py3.CardAction]
-    = None, synonyms: Optional[List[str]] = None)'
+  syntax: 'Choice(value: str | None = None, action: CardAction | None = None, synonyms:
+    List[str] | None = None)'
   parameters:
   - name: value
     defaultValue: None

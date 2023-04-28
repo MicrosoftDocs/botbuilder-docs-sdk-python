@@ -6,7 +6,7 @@ module: botbuilder.adapters.slack.activity_resourceresponse
 inheritances:
 - botbuilder.schema._models_py3.ResourceResponse
 constructor:
-  syntax: 'ActivityResourceResponse(activity_id: str, conversation: botbuilder.schema._models_py3.ConversationAccount,
+  syntax: 'ActivityResourceResponse(activity_id: str, conversation: ConversationAccount,
     **kwargs)'
   parameters:
   - name: activity_id

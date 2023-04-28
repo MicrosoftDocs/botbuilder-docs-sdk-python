@@ -5,17 +5,55 @@ fullName: botbuilder.core.BotFrameworkAdapterSettings
 module: botbuilder.core
 inheritances:
 - builtins.object
+summary: 'Contains the settings used to initialize a <xref:botbuilder.core.BotFrameworkAdapter>
+  instance.
+
+
+  the value os the *MicrosoftAppPassword* parameter in the *config.py* file.
+
+  :type app_password: str
+
+  :param channel_auth_tenant: The channel tenant to use in conversation
+
+  :type channel_auth_tenant: str
+
+  :param oauth_endpoint:
+
+  :type oauth_endpoint: str
+
+  :param open_id_metadata:
+
+  :type open_id_metadata: str
+
+  :param channel_provider: The channel provider
+
+  :type channel_provider: <xref:botframework.connector.auth.ChannelProvider>.  Defaults
+  to SimpleChannelProvider
+
+  if one isn''t specified.
+
+  :param auth_configuration:
+
+  :type auth_configuration: <xref:botframework.connector.auth.AuthenticationConfiguration>
+
+  :param credential_provider: Defaults to SimpleCredentialProvider if one isn''t specified.
+
+  :param app_credentials: Allows for a custom AppCredentials.  Used, for example,
+  for CertificateAppCredentials.'
 constructor:
-  syntax: 'BotFrameworkAdapterSettings(app_id: str, app_password: Optional[str] =
-    None, channel_auth_tenant: Optional[str] = None, oauth_endpoint: Optional[str]
-    = None, open_id_metadata: Optional[str] = None, channel_provider: Optional[botframework.connector.auth.channel_provider.ChannelProvider]
-    = None, auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
-    = None, app_credentials: Optional[botframework.connector.auth.app_credentials.AppCredentials]
-    = None, credential_provider: Optional[botframework.connector.auth.credential_provider.CredentialProvider]
-    = None)'
+  syntax: 'BotFrameworkAdapterSettings(app_id: str, app_password: str | None = None,
+    channel_auth_tenant: str | None = None, oauth_endpoint: str | None = None, open_id_metadata:
+    str | None = None, channel_provider: ChannelProvider | None = None, auth_configuration:
+    AuthenticationConfiguration | None = None, app_credentials: AppCredentials | None
+    = None, credential_provider: CredentialProvider | None = None)'
   parameters:
   - name: app_id
+    description: The bot application ID.
+    isRequired: true
+    types:
+    - <xref:str>
   - name: app_password
+    description: The bot application password.
     defaultValue: None
   - name: channel_auth_tenant
     defaultValue: None

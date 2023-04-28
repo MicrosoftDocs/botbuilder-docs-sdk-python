@@ -7,7 +7,7 @@ inheritances:
 - msrest.serialization.Model
 summary: SignInUrlResponse.
 constructor:
-  syntax: 'SignInUrlResponse(*, sign_in_link: Optional[str] = None, token_exchange_resource=None,
+  syntax: 'SignInUrlResponse(*, sign_in_link: str | None = None, token_exchange_resource=None,
     **kwargs)'
   parameters:
   - name: sign_in_link

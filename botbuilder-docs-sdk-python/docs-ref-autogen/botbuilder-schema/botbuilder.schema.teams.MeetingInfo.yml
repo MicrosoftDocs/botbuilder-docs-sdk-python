@@ -7,10 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: General information about a Teams meeting.
 constructor:
-  syntax: 'MeetingInfo(*, details: Optional[botbuilder.schema.teams._models_py3.MeetingDetails]
-    = None, conversation: Optional[botbuilder.schema._models_py3.ConversationAccount]
-    = None, organizer: Optional[botbuilder.schema.teams._models_py3.TeamsChannelAccount]
-    = None, **kwargs)'
+  syntax: 'MeetingInfo(*, details: MeetingDetails | None = None, conversation: ConversationAccount
+    | None = None, organizer: TeamsChannelAccount | None = None, **kwargs)'
   parameters:
   - name: details
     description: The specific details of a Teams meeting.

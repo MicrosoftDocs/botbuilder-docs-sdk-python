@@ -6,8 +6,7 @@ module: botbuilder.core.adapters.test_adapter
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'TokenMagicCode(key: Optional[botbuilder.core.adapters.test_adapter.UserToken]
-    = None, magic_code: Optional[str] = None)'
+  syntax: 'TokenMagicCode(key: UserToken | None = None, magic_code: str | None = None)'
   parameters:
   - name: key
     defaultValue: None

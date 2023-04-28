@@ -11,9 +11,8 @@ methods:
 - uid: botbuilder.ai.luis.activity_util.ActivityUtil.create_trace
   name: create_trace
   summary: Creates a trace activity based on this activity.
-  signature: 'static create_trace(turn_activity: botbuilder.schema._models_py3.Activity,
-    name: str, value: Optional[object] = None, value_type: Optional[str] = None, label:
-    Optional[str] = None) -> botbuilder.schema._models_py3.Activity'
+  signature: 'static create_trace(turn_activity: Activity, name: str, value: object
+    | None = None, value_type: str | None = None, label: str | None = None) -> Activity'
   parameters:
   - name: turn_activity
     isRequired: true

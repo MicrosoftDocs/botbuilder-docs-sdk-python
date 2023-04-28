@@ -7,8 +7,8 @@ inheritances:
 - botbuilder.schema.teams._models_py3.O365ConnectorCardActionBase
 summary: O365 connector card ActionCard action.
 constructor:
-  syntax: 'O365ConnectorCardActionCard(*, type=None, name: Optional[str] = None, id:
-    Optional[str] = None, inputs=None, actions=None, **kwargs)'
+  syntax: 'O365ConnectorCardActionCard(*, type=None, name: str | None = None, id:
+    str | None = None, inputs=None, actions=None, **kwargs)'
   parameters:
   - name: type
     description: 'Type of the action. Possible values include: ''ViewAction'',

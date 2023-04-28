@@ -12,8 +12,7 @@ methods:
 - uid: botbuilder.dialogs.choices.Channel.get_channel_id
   name: get_channel_id
   summary: Get the Channel Id from the current Activity on the Turn Context.
-  signature: 'static get_channel_id(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> str'
+  signature: 'static get_channel_id(turn_context: TurnContext) -> str'
   parameters:
   - name: turn_context
     description: The Turn Context to retrieve the Activity's Channel Id from.

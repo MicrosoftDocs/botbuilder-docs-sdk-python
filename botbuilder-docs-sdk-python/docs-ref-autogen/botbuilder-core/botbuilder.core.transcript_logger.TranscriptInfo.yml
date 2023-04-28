@@ -12,8 +12,13 @@ constructor:
     conversation_id: str = None)'
   parameters:
   - name: channel_id
+    description: Channel ID the transcript was taken from
     defaultValue: None
   - name: created
+    description: Timestamp when event created
     defaultValue: None
+  - name: id
+    description: Conversation ID
+    isRequired: true
   - name: conversation_id
     defaultValue: None

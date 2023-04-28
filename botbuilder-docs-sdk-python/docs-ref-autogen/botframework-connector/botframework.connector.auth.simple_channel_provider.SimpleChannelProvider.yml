@@ -11,7 +11,7 @@ summary: 'ChannelProvider interface. This interface allows Bots to provide their
 
   Framework channel service.'
 constructor:
-  syntax: 'SimpleChannelProvider(channel_service: Optional[str] = None)'
+  syntax: 'SimpleChannelProvider(channel_service: str | None = None)'
   parameters:
   - name: channel_service
     defaultValue: None

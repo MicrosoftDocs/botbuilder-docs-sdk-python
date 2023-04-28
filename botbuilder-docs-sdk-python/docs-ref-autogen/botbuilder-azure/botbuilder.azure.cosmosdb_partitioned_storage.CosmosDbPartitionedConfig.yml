@@ -5,25 +5,45 @@ fullName: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedConfi
 module: botbuilder.azure.cosmosdb_partitioned_storage
 inheritances:
 - builtins.object
-summary: The class for partitioned CosmosDB configuration for the Azure Bot Framework.
+summary: 'The class for partitioned CosmosDB configuration for the Azure Bot Framework.
+
+
+  Create the Config object.'
 constructor:
-  syntax: 'CosmosDbPartitionedConfig(cosmos_db_endpoint: Optional[str] = None, auth_key:
-    Optional[str] = None, database_id: Optional[str] = None, container_id: Optional[str]
-    = None, cosmos_client_options: Optional[dict] = None, container_throughput: int
-    = 400, key_suffix: str = '''', compatibility_mode: bool = False, **kwargs)'
+  syntax: 'CosmosDbPartitionedConfig(cosmos_db_endpoint: str | None = None, auth_key:
+    str | None = None, database_id: str | None = None, container_id: str | None =
+    None, cosmos_client_options: dict | None = None, container_throughput: int = 400,
+    key_suffix: str = '''', compatibility_mode: bool = False, **kwargs)'
   parameters:
   - name: cosmos_db_endpoint
+    description: The CosmosDB endpoint.
     defaultValue: None
   - name: auth_key
+    description: The authentication key for Cosmos DB.
     defaultValue: None
   - name: database_id
+    description: The database identifier for Cosmos DB instance.
     defaultValue: None
   - name: container_id
+    description: The container identifier.
     defaultValue: None
   - name: cosmos_client_options
+    description: 'The options for the CosmosClient. Currently only supports connection_policy
+      and
+
+      consistency_level'
     defaultValue: None
   - name: container_throughput
+    description: The throughput set when creating the Container. Defaults to 400.
     defaultValue: '400'
   - name: key_suffix
+    description: 'The suffix to be added to every key. The keySuffix must contain
+      only valid ComosDb
+
+      key characters. (e.g. not: '''', ''?'', ''/'', ''#'', ''*'')'
+    isRequired: true
   - name: compatibility_mode
+    description: 'True if keys should be truncated in order to support previous CosmosDb
+
+      max key length of 255.'
     defaultValue: 'False'

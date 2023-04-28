@@ -7,9 +7,9 @@ inheritances:
 - msrest.serialization.Model
 summary: Information about the file to be uploaded.
 constructor:
-  syntax: 'FileUploadInfo(*, name: Optional[str] = None, upload_url: Optional[str]
-    = None, content_url: Optional[str] = None, unique_id: Optional[str] = None, file_type:
-    Optional[str] = None, **kwargs)'
+  syntax: 'FileUploadInfo(*, name: str | None = None, upload_url: str | None = None,
+    content_url: str | None = None, unique_id: str | None = None, file_type: str |
+    None = None, **kwargs)'
   parameters:
   - name: name
     description: Name of the file.

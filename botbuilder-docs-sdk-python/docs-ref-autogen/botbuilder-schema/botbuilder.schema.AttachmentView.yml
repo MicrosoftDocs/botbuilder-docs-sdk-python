@@ -7,8 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: Attachment View name and size.
 constructor:
-  syntax: 'AttachmentView(*, view_id: Optional[str] = None, size: Optional[int] =
-    None, **kwargs)'
+  syntax: 'AttachmentView(*, view_id: str | None = None, size: int | None = None,
+    **kwargs)'
   parameters:
   - name: view_id
     description: Id of the attachment

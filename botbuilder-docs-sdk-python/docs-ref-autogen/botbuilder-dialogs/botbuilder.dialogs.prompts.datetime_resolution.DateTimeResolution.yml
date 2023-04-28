@@ -6,8 +6,8 @@ module: botbuilder.dialogs.prompts.datetime_resolution
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'DateTimeResolution(value: Optional[str] = None, start: Optional[str] =
-    None, end: Optional[str] = None, timex: Optional[str] = None)'
+  syntax: 'DateTimeResolution(value: str | None = None, start: str | None = None,
+    end: str | None = None, timex: str | None = None)'
   parameters:
   - name: value
     defaultValue: None

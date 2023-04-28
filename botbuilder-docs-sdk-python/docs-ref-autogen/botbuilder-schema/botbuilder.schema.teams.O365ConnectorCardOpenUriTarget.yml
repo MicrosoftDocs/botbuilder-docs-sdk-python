@@ -7,7 +7,7 @@ inheritances:
 - msrest.serialization.Model
 summary: O365 connector card OpenUri target.
 constructor:
-  syntax: 'O365ConnectorCardOpenUriTarget(*, os=None, uri: Optional[str] = None, **kwargs)'
+  syntax: 'O365ConnectorCardOpenUriTarget(*, os=None, uri: str | None = None, **kwargs)'
   parameters:
   - name: os
     description: 'Target operating system. Possible values include: ''default'',

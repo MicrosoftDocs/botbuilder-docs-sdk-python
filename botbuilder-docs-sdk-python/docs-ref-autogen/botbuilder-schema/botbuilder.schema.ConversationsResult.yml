@@ -7,7 +7,7 @@ inheritances:
 - msrest.serialization.Model
 summary: Conversations result.
 constructor:
-  syntax: 'ConversationsResult(*, continuation_token: Optional[str] = None, conversations=None,
+  syntax: 'ConversationsResult(*, continuation_token: str | None = None, conversations=None,
     **kwargs)'
   parameters:
   - name: continuation_token

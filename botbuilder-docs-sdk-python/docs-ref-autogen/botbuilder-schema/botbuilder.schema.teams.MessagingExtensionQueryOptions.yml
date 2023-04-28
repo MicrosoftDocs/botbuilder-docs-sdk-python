@@ -7,8 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: Messaging extension query options.
 constructor:
-  syntax: 'MessagingExtensionQueryOptions(*, skip: Optional[int] = None, count: Optional[int]
-    = None, **kwargs)'
+  syntax: 'MessagingExtensionQueryOptions(*, skip: int | None = None, count: int |
+    None = None, **kwargs)'
   parameters:
   - name: skip
     description: Number of entities to skip

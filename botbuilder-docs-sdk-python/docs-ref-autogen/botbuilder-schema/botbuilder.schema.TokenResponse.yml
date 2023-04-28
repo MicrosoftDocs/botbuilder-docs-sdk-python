@@ -7,8 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: A response that includes a user token.
 constructor:
-  syntax: 'TokenResponse(*, connection_name: Optional[str] = None, token: Optional[str]
-    = None, expiration: Optional[str] = None, channel_id: Optional[str] = None, **kwargs)'
+  syntax: 'TokenResponse(*, connection_name: str | None = None, token: str | None
+    = None, expiration: str | None = None, channel_id: str | None = None, **kwargs)'
   parameters:
   - name: connection_name
     description: The connection name

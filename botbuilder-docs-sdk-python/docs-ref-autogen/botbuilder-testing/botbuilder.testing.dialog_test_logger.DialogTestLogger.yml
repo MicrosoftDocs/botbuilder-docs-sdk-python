@@ -8,12 +8,29 @@ inheritances:
 summary: 'A middleware to output incoming and outgoing activities as json strings
   to the console during
 
-  unit tests.'
+  unit tests.
+
+
+  Initialize a new instance of the dialog test logger.
+
+
+  default to *logging.getLogger(__name__).info*.
+
+  :type log_func: Callable[..., None]
+
+  :param json_indent: An indent for json output, default indent is 4.
+
+  :type json_indent: int
+
+  :param time_func: A time function to record time spans, default to *time.monotonic*.
+
+  :type time_func: Callable[[], float]'
 constructor:
-  syntax: "DialogTestLogger(log_func: Optional[Callable[[\u2026], None]] = None, json_indent:\
-    \ int = 4, time_func: Optional[Callable[], float]] = None)"
+  syntax: 'DialogTestLogger(log_func: Callable[[...], None] | None = None, json_indent:
+    int = 4, time_func: Callable[[], float] | None = None)'
   parameters:
   - name: log_func
+    description: A callable method or object that can log a message,
     defaultValue: None
   - name: json_indent
     defaultValue: '4'
@@ -22,8 +39,7 @@ constructor:
 methods:
 - uid: botbuilder.testing.dialog_test_logger.DialogTestLogger.on_turn
   name: on_turn
-  signature: 'async on_turn(context: botbuilder.core.turn_context.TurnContext, logic:
-    Callable[[botbuilder.core.turn_context.TurnContext], Awaitable])'
+  signature: 'async on_turn(context: TurnContext, logic: Callable[[TurnContext], Awaitable])'
   parameters:
   - name: context
     isRequired: true

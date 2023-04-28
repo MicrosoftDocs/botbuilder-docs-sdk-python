@@ -7,7 +7,7 @@ inheritances:
 - msrest.serialization.Model
 summary: An image on a card.
 constructor:
-  syntax: 'CardImage(*, url: Optional[str] = None, alt: Optional[str] = None, tap=None,
+  syntax: 'CardImage(*, url: str | None = None, alt: str | None = None, tap=None,
     **kwargs)'
   parameters:
   - name: url
