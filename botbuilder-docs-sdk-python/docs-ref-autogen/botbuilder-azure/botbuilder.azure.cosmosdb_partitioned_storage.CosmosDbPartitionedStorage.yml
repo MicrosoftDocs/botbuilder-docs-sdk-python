@@ -5,11 +5,15 @@ fullName: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStora
 module: botbuilder.azure.cosmosdb_partitioned_storage
 inheritances:
 - botbuilder.core.storage.Storage
-summary: A CosmosDB based storage provider using partitioning for a bot.
+summary: 'A CosmosDB based storage provider using partitioning for a bot.
+
+
+  Create the storage object.'
 constructor:
-  syntax: 'CosmosDbPartitionedStorage(config: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedConfig)'
+  syntax: 'CosmosDbPartitionedStorage(config: CosmosDbPartitionedConfig)'
   parameters:
   - name: config
+    isRequired: true
 methods:
 - uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage.delete
   name: delete

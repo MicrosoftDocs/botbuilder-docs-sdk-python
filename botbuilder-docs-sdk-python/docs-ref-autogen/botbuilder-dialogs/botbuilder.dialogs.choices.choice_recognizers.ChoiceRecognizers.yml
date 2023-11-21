@@ -16,13 +16,12 @@ methods:
     their choice by index (they can say \"one\" to pick *choice[0]*) or ordinal position\n\
     \n   (they can say \"the second one\" to pick *choice[1]*.)\n\nThe user's utterance\
     \ is recognized in the following order:\n\n* By name using *find_choices()* \n\
-    \n* By 1's based ordinal position. \n\n* By 1's based index position. \n\nutterance:\
-    \ The input.\n\nchoices: The list of choices.\n\noptions: (Optional) Options to\
-    \ control the recognition strategy.\n\nA list of found choices, sorted by most\
-    \ relevant first."
-  signature: 'static recognize_choices(utterance: str, choices: List[Union[str, botbuilder.dialogs.choices.choice.Choice]],
-    options: Optional[botbuilder.dialogs.choices.find_choices_options.FindChoicesOptions]
-    = None) -> List[botbuilder.dialogs.choices.model_result.ModelResult]'
+    \n* By 1's based ordinal position. \n\n* By 1's based index position. \n\n# Parameters:\n\
+    \nutterance: The input.\n\nchoices: The list of choices.\n\noptions: (Optional)\
+    \ Options to control the recognition strategy.\n\n# Returns:\n\nA list of found\
+    \ choices, sorted by most relevant first."
+  signature: 'static recognize_choices(utterance: str, choices: List[str | Choice],
+    options: FindChoicesOptions = None) -> List[ModelResult]'
   parameters:
   - name: utterance
     isRequired: true

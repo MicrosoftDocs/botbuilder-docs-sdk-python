@@ -11,8 +11,7 @@ methods:
 - uid: botbuilder.adapters.slack.slack_helper.SlackHelper.activity_to_slack
   name: activity_to_slack
   summary: Formats a BotBuilder Activity into an outgoing Slack message.
-  signature: 'static activity_to_slack(activity: botbuilder.schema._models_py3.Activity)
-    -> botbuilder.adapters.slack.slack_message.SlackMessage'
+  signature: 'static activity_to_slack(activity: Activity) -> SlackMessage'
   parameters:
   - name: activity
     description: A BotBuilder Activity object.
@@ -29,8 +28,8 @@ methods:
 - uid: botbuilder.adapters.slack.slack_helper.SlackHelper.command_to_activity
   name: command_to_activity
   summary: Creates an activity based on a Slack event related to a slash command.
-  signature: 'async static command_to_activity(body: botbuilder.adapters.slack.slack_request_body.SlackRequestBody,
-    client: botbuilder.adapters.slack.slack_client.SlackClient) -> botbuilder.schema._models_py3.Activity'
+  signature: 'async static command_to_activity(body: SlackRequestBody, client: SlackClient)
+    -> Activity'
   parameters:
   - name: body
     description: The data of the Slack event.
@@ -49,7 +48,7 @@ methods:
 - uid: botbuilder.adapters.slack.slack_helper.SlackHelper.deserialize_body
   name: deserialize_body
   summary: Deserializes the request's body as a SlackRequestBody object.
-  signature: 'static deserialize_body(content_type: str, request_body: str) -> botbuilder.adapters.slack.slack_request_body.SlackRequestBody'
+  signature: 'static deserialize_body(content_type: str, request_body: str) -> SlackRequestBody'
   parameters:
   - name: content_type
     description: The content type of the body.
@@ -68,8 +67,8 @@ methods:
 - uid: botbuilder.adapters.slack.slack_helper.SlackHelper.event_to_activity
   name: event_to_activity
   summary: Creates an activity based on the Slack event data.
-  signature: 'async static event_to_activity(event: botbuilder.adapters.slack.slack_event.SlackEvent,
-    client: botbuilder.adapters.slack.slack_client.SlackClient) -> botbuilder.schema._models_py3.Activity'
+  signature: 'async static event_to_activity(event: SlackEvent, client: SlackClient)
+    -> Activity'
   parameters:
   - name: event
     description: The data of the Slack event.
@@ -88,8 +87,7 @@ methods:
 - uid: botbuilder.adapters.slack.slack_helper.SlackHelper.payload_to_activity
   name: payload_to_activity
   summary: Creates an activity based on the Slack event payload.
-  signature: 'static payload_to_activity(payload: botbuilder.adapters.slack.slack_payload.SlackPayload)
-    -> botbuilder.schema._models_py3.Activity'
+  signature: 'static payload_to_activity(payload: SlackPayload) -> Activity'
   parameters:
   - name: payload
     description: The payload of the Slack event.
@@ -117,14 +115,14 @@ methods:
 - uid: botbuilder.adapters.slack.slack_helper.SlackHelper.response
   name: response
   summary: Formats an aiohttp Response.
-  signature: 'static response(req: aiohttp.web_request.Request, code: int, text: Optional[str]
-    = None, encoding: Optional[str] = None) -> aiohttp.web_response.Response'
+  signature: 'static response(req: Request, code: int, text: str = None, encoding:
+    str = None) -> Response'
   parameters:
   - name: req
     description: The original aiohttp Request.
     isRequired: true
     types:
-    - '[<xref:aiohttp.web_request.Request>](<xref:aiohttp.web_request.Request>)'
+    - <xref:aiohttp.web_request.Request>
   - name: code
     description: The HTTP result code to return.
     isRequired: true

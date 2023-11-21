@@ -11,8 +11,8 @@ methods:
 - uid: botbuilder.dialogs.dialog_extensions.DialogExtensions.run_dialog
   name: run_dialog
   summary: Creates a dialog stack and starts a dialog, pushing it onto the stack.
-  signature: 'async static run_dialog(dialog: botbuilder.dialogs.dialog.Dialog, turn_context:
-    botbuilder.core.turn_context.TurnContext, accessor: botbuilder.core.state_property_accessor.StatePropertyAccessor)'
+  signature: 'async static run_dialog(dialog: Dialog, turn_context: TurnContext, accessor:
+    StatePropertyAccessor)'
   parameters:
   - name: dialog
     isRequired: true

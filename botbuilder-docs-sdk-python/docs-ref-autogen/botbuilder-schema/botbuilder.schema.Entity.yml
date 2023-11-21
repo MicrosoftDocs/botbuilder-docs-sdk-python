@@ -7,7 +7,7 @@ inheritances:
 - msrest.serialization.Model
 summary: Metadata object pertaining to an activity.
 constructor:
-  syntax: 'Entity(*, type: Optional[str] = None, **kwargs)'
+  syntax: 'Entity(*, type: str = None, **kwargs)'
   parameters:
   - name: type
     description: Type of this entity (RFC 3987 IRI)

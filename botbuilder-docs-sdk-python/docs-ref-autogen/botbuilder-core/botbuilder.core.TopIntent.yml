@@ -5,7 +5,10 @@ fullName: botbuilder.core.TopIntent
 module: botbuilder.core
 inheritances:
 - builtins.tuple
-summary: The top scoring intent and its score.
+summary: 'The top scoring intent and its score.
+
+
+  Create new instance of TopIntent(intent, score)'
 constructor:
   syntax: 'TopIntent(intent: str, score: float)'
   parameters:

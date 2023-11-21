@@ -6,7 +6,7 @@ module: botframework.connector.aio
 inheritances:
 - botframework.connector.bot_framework_sdk_client_async.BotFrameworkSDKClientAsync
 summary: "The Bot Connector REST API allows your bot to send and receive messages\
-  \ to channels configured in the\n[Bot Framework Developer Portal]([https://dev.botframework.com](https://dev.botframework.com)).\
+  \ to channels configured in the\n[Bot Framework Developer Portal](https://dev.botframework.com).\
   \ The Connector service uses industry-standard REST\nand JSON over HTTPS.\nClient\
   \ libraries for this REST API are available. See below for a list.\nMany bots will\
   \ use both the Bot Connector REST API and the associated [Bot State REST API](/en-us/restapi/state).\n\
@@ -19,10 +19,9 @@ summary: "The Bot Connector REST API allows your bot to send and receive message
   \ from the\n[Connector API Swagger file]([https://raw.githubusercontent.com/Microsoft/BotBuilder/master/CSharp/Library/](https://raw.githubusercontent.com/Microsoft/BotBuilder/master/CSharp/Library/)\n\
   Microsoft.Bot.Connector.Shared/Swagger/ConnectorAPI.json)\n\xA9 2016 Microsoft"
 constructor:
-  syntax: 'ConnectorClient(credentials, base_url=None, *, pipeline_type: Optional[Type[msrest.pipeline.async_abc.AsyncPipeline]]
-    = None, sender: Optional[msrest.pipeline.async_abc.AsyncHTTPSender] = None, driver:
-    Optional[msrest.universal_http.async_abc.AsyncHTTPSender] = None, custom_configuration:
-    Optional[botframework.connector.bot_framework_sdk_client_async.BotFrameworkConnectorConfiguration]
+  syntax: 'ConnectorClient(credentials, base_url=None, *, pipeline_type: Type[AsyncPipeline]
+    | None = None, sender: AsyncHTTPSender | None = None, driver: AsyncHTTPSender
+    | None = None, custom_configuration: BotFrameworkConnectorConfiguration | None
     = None)'
   parameters:
   - name: credentials

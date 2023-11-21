@@ -6,14 +6,14 @@ module: botbuilder.integration.aiohttp
 inheritances:
 - botbuilder.core.streaming.bot_framework_http_adapter_base.BotFrameworkHttpAdapterBase
 constructor:
-  syntax: 'BotFrameworkHttpAdapter(settings: botbuilder.core.bot_framework_adapter.BotFrameworkAdapterSettings)'
+  syntax: 'BotFrameworkHttpAdapter(settings: BotFrameworkAdapterSettings)'
   parameters:
   - name: settings
 methods:
 - uid: botbuilder.integration.aiohttp.BotFrameworkHttpAdapter.process
   name: process
-  signature: 'async process(request: aiohttp.web_request.Request, ws_response: aiohttp.web_ws.WebSocketResponse,
-    bot: botbuilder.core.bot.Bot) -> Optional[aiohttp.web_response.Response]'
+  signature: 'async process(request: Request, ws_response: WebSocketResponse, bot:
+    Bot) -> Response | None'
   parameters:
   - name: request
     isRequired: true
@@ -23,8 +23,7 @@ methods:
     isRequired: true
 - uid: botbuilder.integration.aiohttp.BotFrameworkHttpAdapter.send_streaming_activity
   name: send_streaming_activity
-  signature: 'async send_streaming_activity(activity: botbuilder.schema._models_py3.Activity)
-    -> botbuilder.schema._models_py3.ResourceResponse'
+  signature: 'async send_streaming_activity(activity: Activity) -> ResourceResponse'
   parameters:
   - name: activity
     isRequired: true

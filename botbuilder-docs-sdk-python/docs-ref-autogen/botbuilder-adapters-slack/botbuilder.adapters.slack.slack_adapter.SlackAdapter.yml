@@ -10,10 +10,8 @@ summary: "BotAdapter that can handle incoming Slack events. Incoming Slack event
   \ are deserialized to an Activity that is\n   dispatched through the middleware\
   \ and bot pipeline."
 constructor:
-  syntax: 'SlackAdapter(client: botbuilder.adapters.slack.slack_client.SlackClient,
-    on_turn_error: Optional[Callable[[botbuilder.core.turn_context.TurnContext, Exception],
-    Awaitable]] = None, options: Optional[botbuilder.adapters.slack.slack_adatper_options.SlackAdapterOptions]
-    = None)'
+  syntax: 'SlackAdapter(client: SlackClient, on_turn_error: Callable[[TurnContext,
+    Exception], Awaitable] = None, options: SlackAdapterOptions = None)'
   parameters:
   - name: client
   - name: on_turn_error
@@ -24,9 +22,9 @@ methods:
 - uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.continue_conversation
   name: continue_conversation
   summary: Send a proactive message to a conversation.
-  signature: 'async continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
-    callback: Callable, bot_id: Optional[str] = None, claims_identity: Optional[botframework.connector.auth.claims_identity.ClaimsIdentity]
-    = None, audience: Optional[str] = None)'
+  signature: 'async continue_conversation(reference: ConversationReference, callback:
+    Callable, bot_id: str = None, claims_identity: ClaimsIdentity = None, audience:
+    str = None)'
   parameters:
   - name: reference
     description: A reference to the conversation to continue.
@@ -58,8 +56,7 @@ methods:
 - uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.delete_activity
   name: delete_activity
   summary: Delete a previous message.
-  signature: 'async delete_activity(context: botbuilder.core.turn_context.TurnContext,
-    reference: botbuilder.schema._models_py3.ConversationReference)'
+  signature: 'async delete_activity(context: TurnContext, reference: ConversationReference)'
   parameters:
   - name: context
     description: A TurnContext representing the current incoming message and environment.
@@ -78,14 +75,13 @@ methods:
   name: process
   summary: Accept an incoming webhook request and convert it into a TurnContext which
     can be processed by the bot's logic.
-  signature: 'async process(req: aiohttp.web_request.Request, logic: Callable) ->
-    aiohttp.web_response.Response'
+  signature: 'async process(req: Request, logic: Callable) -> Response'
   parameters:
   - name: req
     description: The aiohttp Request object.
     isRequired: true
     types:
-    - '[<xref:aiohttp.web_request.Request>](<xref:aiohttp.web_request.Request>)'
+    - <xref:aiohttp.web_request.Request>
   - name: logic
     description: The method to call for the resulting bot turn.
     isRequired: true
@@ -98,8 +94,8 @@ methods:
 - uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.send_activities
   name: send_activities
   summary: Send a message from the bot to the messaging API.
-  signature: 'async send_activities(context: botbuilder.core.turn_context.TurnContext,
-    activities: List[botbuilder.schema._models_py3.Activity]) -> List[botbuilder.schema._models_py3.ResourceResponse]'
+  signature: 'async send_activities(context: TurnContext, activities: List[Activity])
+    -> List[ResourceResponse]'
   parameters:
   - name: context
     description: A TurnContext representing the current incoming message and environment.
@@ -120,8 +116,7 @@ methods:
 - uid: botbuilder.adapters.slack.slack_adapter.SlackAdapter.update_activity
   name: update_activity
   summary: Update a previous message with new content.
-  signature: 'async update_activity(context: botbuilder.core.turn_context.TurnContext,
-    activity: botbuilder.schema._models_py3.Activity)'
+  signature: 'async update_activity(context: TurnContext, activity: Activity)'
   parameters:
   - name: context
     description: A TurnContext representing the current incoming message and environment.

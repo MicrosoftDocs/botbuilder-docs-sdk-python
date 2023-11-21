@@ -7,8 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: A Hero card (card with a single, large image).
 constructor:
-  syntax: 'HeroCard(*, title: Optional[str] = None, subtitle: Optional[str] = None,
-    text: Optional[str] = None, images=None, buttons=None, tap=None, **kwargs)'
+  syntax: 'HeroCard(*, title: str = None, subtitle: str = None, text: str = None,
+    images=None, buttons=None, tap=None, **kwargs)'
   parameters:
   - name: title
     description: Title of the card

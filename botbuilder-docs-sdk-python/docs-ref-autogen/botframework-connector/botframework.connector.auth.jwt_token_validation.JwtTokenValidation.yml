@@ -29,11 +29,9 @@ methods:
     :param auth_configuration: Authentication configuration
 
     :type credentials: CredentialProvider'
-  signature: 'async static authenticate_request(activity: botbuilder.schema._models_py3.Activity,
-    auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
-    channel_service_or_provider: Union[str, botframework.connector.auth.channel_provider.ChannelProvider]
-    = '''', auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
-    = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  signature: 'async static authenticate_request(activity: Activity, auth_header: str,
+    credentials: CredentialProvider, channel_service_or_provider: str | ChannelProvider
+    = '''', auth_configuration: AuthenticationConfiguration = None) -> ClaimsIdentity'
   parameters:
   - name: activity
     isRequired: true
@@ -66,10 +64,9 @@ methods:
     isRequired: true
 - uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.validate_auth_header
   name: validate_auth_header
-  signature: 'async static validate_auth_header(auth_header: str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
-    channel_service_or_provider: Union[str, botframework.connector.auth.channel_provider.ChannelProvider],
-    channel_id: str, service_url: Optional[str] = None, auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
-    = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  signature: 'async static validate_auth_header(auth_header: str, credentials: CredentialProvider,
+    channel_service_or_provider: str | ChannelProvider, channel_id: str, service_url:
+    str = None, auth_configuration: AuthenticationConfiguration = None) -> ClaimsIdentity'
   parameters:
   - name: auth_header
     isRequired: true
@@ -85,7 +82,7 @@ methods:
     defaultValue: None
 - uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation.validate_claims
   name: validate_claims
-  signature: 'async static validate_claims(auth_config: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration,
+  signature: 'async static validate_claims(auth_config: AuthenticationConfiguration,
     claims: List[Dict])'
   parameters:
   - name: auth_config

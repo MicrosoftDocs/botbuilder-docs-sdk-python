@@ -7,8 +7,7 @@ inheritances:
 - msrest.serialization.Model
 summary: Teams meeting participant details.
 constructor:
-  syntax: 'MeetingParticipantInfo(*, role: Optional[str] = None, in_meeting: Optional[bool]
-    = None, **kwargs)'
+  syntax: 'MeetingParticipantInfo(*, role: str = None, in_meeting: bool = None, **kwargs)'
   parameters:
   - name: role
     description: Role of the participant in the current meeting.
