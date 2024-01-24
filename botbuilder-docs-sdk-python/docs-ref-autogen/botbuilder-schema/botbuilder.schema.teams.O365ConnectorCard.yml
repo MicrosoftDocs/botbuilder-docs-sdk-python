@@ -7,9 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: O365 connector card.
 constructor:
-  syntax: 'O365ConnectorCard(*, title: Optional[str] = None, text: Optional[str] =
-    None, summary: Optional[str] = None, theme_color: Optional[str] = None, sections=None,
-    potential_action=None, **kwargs)'
+  syntax: 'O365ConnectorCard(*, title: str = None, text: str = None, summary: str
+    = None, theme_color: str = None, sections=None, potential_action=None, **kwargs)'
   parameters:
   - name: title
     description: Title of the item

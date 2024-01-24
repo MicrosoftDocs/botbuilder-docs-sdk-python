@@ -7,7 +7,7 @@ inheritances:
 - msrest.serialization.Model
 summary: 'Thing (entity type: "[https://schema.org/Thing](https://schema.org/Thing)").'
 constructor:
-  syntax: 'Thing(*, type: Optional[str] = None, name: Optional[str] = None, **kwargs)'
+  syntax: 'Thing(*, type: str = None, name: str = None, **kwargs)'
   parameters:
   - name: type
     description: The type of the thing

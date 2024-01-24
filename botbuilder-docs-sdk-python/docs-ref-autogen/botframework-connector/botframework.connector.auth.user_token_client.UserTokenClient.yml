@@ -23,7 +23,7 @@ methods:
 
     :return: Base64 encoded token exchange state.'
   signature: 'static create_token_exchange_state(app_id: str, connection_name: str,
-    activity: botbuilder.schema._models_py3.Activity) -> str'
+    activity: Activity) -> str'
   parameters:
   - name: app_id
     isRequired: true
@@ -47,8 +47,7 @@ methods:
 
     :return: A TokenResponse object.'
   signature: 'abstract async exchange_token(user_id: str, connection_name: str, channel_id:
-    str, exchange_request: botframework.connector.token_api.models._models_py3.TokenExchangeRequest)
-    -> botbuilder.schema._models_py3.TokenResponse'
+    str, exchange_request: TokenExchangeRequest) -> TokenResponse'
   parameters:
   - name: user_id
     isRequired: true
@@ -63,7 +62,7 @@ methods:
   summary: Retrieves Azure Active Directory tokens for particular resources on a configured
     connection.
   signature: 'abstract async get_aad_tokens(user_id: str, connection_name: str, resource_urls:
-    List[str], channel_id: str) -> Dict[str, botbuilder.schema._models_py3.TokenResponse]'
+    List[str], channel_id: str) -> Dict[str, TokenResponse]'
   parameters:
   - name: user_id
     description: The user id that will be associated with the token.
@@ -84,7 +83,7 @@ methods:
   summary: Get the raw signin link to be sent to the user for signin for a connection
     name.
   signature: 'abstract async get_sign_in_resource(connection_name: str, activity:
-    botbuilder.schema._models_py3.Activity, final_redirect: str) -> botframework.connector.token_api.models._models_py3.SignInUrlResponse'
+    Activity, final_redirect: str) -> SignInUrlResponse'
   parameters:
   - name: connection_name
     description: Name of the auth connection to use.
@@ -102,7 +101,7 @@ methods:
   summary: Retrieves the token status for each configured connection for the given
     user.
   signature: 'abstract async get_token_status(user_id: str, channel_id: str, include_filter:
-    str) -> List[botframework.connector.token_api.models._models_py3.TokenStatus]'
+    str) -> List[TokenStatus]'
   parameters:
   - name: user_id
     description: The user id that will be associated with the token.
@@ -119,7 +118,7 @@ methods:
   name: get_user_token
   summary: Attempts to retrieve the token for a user that's in a login flow.
   signature: 'abstract async get_user_token(user_id: str, connection_name: str, channel_id:
-    str, magic_code: str) -> botbuilder.schema._models_py3.TokenResponse'
+    str, magic_code: str) -> TokenResponse'
   parameters:
   - name: user_id
     description: The user id that will be associated with the token.

@@ -6,8 +6,7 @@ module: botbuilder.dialogs.skills
 inheritances:
 - botbuilder.dialogs.dialog.Dialog
 constructor:
-  syntax: 'SkillDialog(dialog_options: botbuilder.dialogs.skills.skill_dialog_options.SkillDialogOptions,
-    dialog_id: str)'
+  syntax: 'SkillDialog(dialog_options: SkillDialogOptions, dialog_id: str)'
   parameters:
   - name: dialog_options
   - name: dialog_id
@@ -21,8 +20,8 @@ methods:
 
     :param options: (Optional) additional argument(s) to pass to the dialog being
     started.'
-  signature: 'async begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    options: Optional[object] = None)'
+  signature: 'async begin_dialog(dialog_context: DialogContext, options: object =
+    None)'
   parameters:
   - name: dialog_context
     isRequired: true
@@ -30,28 +29,14 @@ methods:
     defaultValue: None
 - uid: botbuilder.dialogs.skills.SkillDialog.continue_dialog
   name: continue_dialog
-  summary: 'Method called when an instance of the dialog is the "current" dialog and
-    the
-
-    user replies with a new activity. The dialog will generally continue to receive
-    the user''s
-
-    replies until it calls either *end_dialog()* or *begin_dialog()*.
-
-    If this method is NOT implemented then the dialog will automatically be ended
-    when the user replies.
-
-    :param dialog_context: The dialog context for the current turn of conversation.
-
-    :return:'
-  signature: 'async continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)'
+  signature: 'async continue_dialog(dialog_context: DialogContext)'
   parameters:
   - name: dialog_context
     isRequired: true
 - uid: botbuilder.dialogs.skills.SkillDialog.end_dialog
   name: end_dialog
-  signature: 'async end_dialog(context: botbuilder.core.turn_context.TurnContext,
-    instance: botbuilder.dialogs.dialog_instance.DialogInstance, reason: botbuilder.dialogs.dialog_reason.DialogReason)'
+  signature: 'async end_dialog(context: TurnContext, instance: DialogInstance, reason:
+    DialogReason)'
   parameters:
   - name: context
     isRequired: true
@@ -61,8 +46,7 @@ methods:
     isRequired: true
 - uid: botbuilder.dialogs.skills.SkillDialog.reprompt_dialog
   name: reprompt_dialog
-  signature: 'async reprompt_dialog(context: botbuilder.core.turn_context.TurnContext,
-    instance: botbuilder.dialogs.dialog_instance.DialogInstance)'
+  signature: 'async reprompt_dialog(context: TurnContext, instance: DialogInstance)'
   parameters:
   - name: context
     isRequired: true
@@ -70,30 +54,8 @@ methods:
     isRequired: true
 - uid: botbuilder.dialogs.skills.SkillDialog.resume_dialog
   name: resume_dialog
-  summary: 'Method called when an instance of the dialog is being returned to from
-    another
-
-    dialog that was started by the current instance using *begin_dialog()*.
-
-    If this method is NOT implemented then the dialog will be automatically ended
-    with a call
-
-    to *end_dialog()*. Any result passed from the called dialog will be passed
-
-    to the current dialog''s parent.
-
-    :param dialog_context: The dialog context for the current turn of conversation.
-
-    :param reason: Reason why the dialog resumed.
-
-    :param result: (Optional) value returned from the dialog that was called. The
-    type of the value returned is
-
-    dependent on the dialog that was called.
-
-    :return:'
-  signature: 'async resume_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    reason: botbuilder.dialogs.dialog_reason.DialogReason, result: object)'
+  signature: 'async resume_dialog(dialog_context: DialogContext, reason: DialogReason,
+    result: object)'
   parameters:
   - name: dialog_context
     isRequired: true

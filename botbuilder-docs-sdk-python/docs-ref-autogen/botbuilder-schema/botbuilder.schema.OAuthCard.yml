@@ -7,8 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: A card representing a request to perform a sign in via OAuth.
 constructor:
-  syntax: 'OAuthCard(*, text: Optional[str] = None, connection_name: Optional[str]
-    = None, buttons=None, token_exchange_resource=None, **kwargs)'
+  syntax: 'OAuthCard(*, text: str = None, connection_name: str = None, buttons=None,
+    token_exchange_resource=None, **kwargs)'
   parameters:
   - name: text
     description: Text for signin request

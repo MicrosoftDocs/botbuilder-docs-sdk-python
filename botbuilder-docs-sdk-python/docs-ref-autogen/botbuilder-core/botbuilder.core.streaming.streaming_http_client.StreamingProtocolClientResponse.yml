@@ -6,8 +6,8 @@ module: botbuilder.core.streaming.streaming_http_client
 inheritances:
 - msrest.universal_http.async_abc.AsyncClientResponse
 constructor:
-  syntax: 'StreamingProtocolClientResponse(request: botframework.streaming.streaming_request.StreamingRequest,
-    streaming_response: botframework.streaming.receive_response.ReceiveResponse)'
+  syntax: 'StreamingProtocolClientResponse(request: StreamingRequest, streaming_response:
+    ReceiveResponse)'
   parameters:
   - name: request
   - name: streaming_response
@@ -22,5 +22,4 @@ methods:
   signature: async load_body() -> None
 - uid: botbuilder.core.streaming.streaming_http_client.StreamingProtocolClientResponse.raise_for_status
   name: raise_for_status
-  summary: Raise for status. Should be overriden, but basic implementation provided.
   signature: raise_for_status()

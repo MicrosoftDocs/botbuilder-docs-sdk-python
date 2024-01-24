@@ -5,18 +5,59 @@ fullName: botbuilder.ai.qna.dialogs.QnAMakerDialog
 module: botbuilder.ai.qna.dialogs
 inheritances:
 - botbuilder.dialogs.waterfall_dialog.WaterfallDialog
-summary: A dialog that supports multi-step and adaptive-learning QnA Maker services.
+summary: 'A dialog that supports multi-step and adaptive-learning QnA Maker services.
+
+
+  Initializes a new instance of the QnAMakerDialog class.
+
+
+  ending with "/qnamaker".
+
+  :param no_answer: The activity to send the user when QnA Maker does not find an
+  answer.
+
+  :param threshold: The threshold for answers returned, based on score.
+
+  :param active_learning_card_title: The card title to use when showing active learning
+  options
+
+  to the user, if active learning is enabled.
+
+  :param card_no_match_text: The button text to use with active learning options,
+
+  allowing a user to indicate none of the options are applicable.
+
+  :param top: The maximum number of answers to return from the knowledge base.
+
+  :param card_no_match_response: The activity to send the user if they select the
+  no match option
+
+  on an active learning card.
+
+  :param strict_filters: QnA Maker metadata with which to filter or boost queries
+  to the
+
+  knowledge base; or null to apply none.
+
+  :param dialog_id: The ID of this dialog.'
 constructor:
   syntax: 'QnAMakerDialog(knowledgebase_id: str, endpoint_key: str, hostname: str,
-    no_answer: botbuilder.schema._models_py3.Activity = None, threshold: float = 0.3,
-    active_learning_card_title: str = ''Did you mean:'', card_no_match_text: str =
-    ''None of the above.'', top: int = 3, card_no_match_response: botbuilder.schema._models_py3.Activity
+    no_answer: ~botbuilder.schema._models_py3.Activity = None, threshold: float =
+    0.3, active_learning_card_title: str = ''Did you mean:'', card_no_match_text:
+    str = ''None of the above.'', top: int = 3, card_no_match_response: ~botbuilder.schema._models_py3.Activity
     = None, strict_filters: [<class ''botbuilder.ai.qna.models.metadata.Metadata''>]
     = None, dialog_id: str = ''QnAMakerDialog'')'
   parameters:
   - name: knowledgebase_id
+    description: The ID of the QnA Maker knowledge base to query.
+    isRequired: true
   - name: endpoint_key
+    description: The QnA Maker endpoint key to use to query the knowledge base.
+    isRequired: true
   - name: hostname
+    description: The QnA Maker host URL for the knowledge base, starting with "[https://](https://)"
+      and
+    isRequired: true
   - name: no_answer
     defaultValue: None
   - name: threshold
@@ -42,8 +83,8 @@ methods:
 - uid: botbuilder.ai.qna.dialogs.QnAMakerDialog.begin_dialog
   name: begin_dialog
   summary: Called when the dialog is started and pushed onto the dialog stack.
-  signature: 'async begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    options: Optional[object] = None) -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  signature: 'async begin_dialog(dialog_context: DialogContext, options: object =
+    None) -> DialogTurnResult'
   parameters:
   - name: dialog_context
     description: The :class:'botbuilder.dialogs.DialogContext' for the current turn

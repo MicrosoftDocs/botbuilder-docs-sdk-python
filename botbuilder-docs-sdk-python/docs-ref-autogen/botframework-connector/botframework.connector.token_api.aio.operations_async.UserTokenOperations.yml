@@ -121,7 +121,7 @@ methods:
   return:
     description: dict or ClientRawResponse if raw=true
     types:
-    - <xref:dict>[<xref:str>, <xref:botframework.tokenapi.models.TokenResponse>]
+    - <xref:dict>[<xref:str>, <xref:botframework.connector.token_api.models.TokenResponse>]
     - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
   - type: botframework.tokenapi.models.ErrorResponseException
@@ -166,7 +166,7 @@ methods:
   return:
     description: TokenResponse or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.tokenapi.models.TokenResponse>
+    - <xref:botframework.connector.token_api.models.TokenResponse>
     - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
   - type: botframework.tokenapi.models.ErrorResponseException
@@ -207,7 +207,7 @@ methods:
   return:
     description: list or ClientRawResponse if raw=true
     types:
-    - <xref:list>[<xref:botframework.tokenapi.models.TokenStatus>]
+    - <xref:list>[<xref:botframework.connector.token_api.models.TokenStatus>]
     - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
   - type: botframework.tokenapi.models.ErrorResponseException
@@ -255,4 +255,4 @@ methods:
 attributes:
 - uid: botframework.connector.token_api.aio.operations_async.UserTokenOperations.models
   name: models
-  signature: models = <module 'botframework.connector.token_api.models' from 'C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64\\lib\\site-packages\\botframework\\connector\\token_api\\models\\__init__.py'>
+  signature: models = <module 'botframework.connector.token_api.models' from 'C:\\hostedtoolcache\\windows\\Python\\3.11.7\\x64\\Lib\\site-packages\\botframework\\connector\\token_api\\models\\__init__.py'>

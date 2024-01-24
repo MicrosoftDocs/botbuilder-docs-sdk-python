@@ -7,31 +7,29 @@ inheritances:
 - botbuilder.core.bot_framework_adapter.BotFrameworkAdapter
 - botbuilder.core.streaming.streaming_activity_processor.StreamingActivityProcessor
 constructor:
-  syntax: 'BotFrameworkHttpAdapterBase(settings: botbuilder.core.bot_framework_adapter.BotFrameworkAdapterSettings)'
+  syntax: 'BotFrameworkHttpAdapterBase(settings: BotFrameworkAdapterSettings)'
   parameters:
   - name: settings
 methods:
 - uid: botbuilder.core.streaming.BotFrameworkHttpAdapterBase.can_process_outgoing_activity
   name: can_process_outgoing_activity
-  signature: 'can_process_outgoing_activity(activity: botbuilder.schema._models_py3.Activity)
-    -> bool'
+  signature: 'can_process_outgoing_activity(activity: Activity) -> bool'
   parameters:
   - name: activity
     isRequired: true
 - uid: botbuilder.core.streaming.BotFrameworkHttpAdapterBase.process_outgoing_activity
   name: process_outgoing_activity
-  signature: 'async process_outgoing_activity(turn_context: botbuilder.core.turn_context.TurnContext,
-    activity: botbuilder.schema._models_py3.Activity) -> botbuilder.schema._models_py3.ResourceResponse'
+  signature: 'async process_outgoing_activity(_turn_context: TurnContext, activity:
+    Activity) -> ResourceResponse'
   parameters:
-  - name: turn_context
+  - name: _turn_context
     isRequired: true
   - name: activity
     isRequired: true
 - uid: botbuilder.core.streaming.BotFrameworkHttpAdapterBase.process_streaming_activity
   name: process_streaming_activity
-  signature: 'async process_streaming_activity(activity: botbuilder.schema._models_py3.Activity,
-    bot_callback_handler: Callable[[botbuilder.core.turn_context.TurnContext], Awaitable])
-    -> botbuilder.schema._models_py3.InvokeResponse'
+  signature: 'async process_streaming_activity(activity: Activity, bot_callback_handler:
+    Callable[[TurnContext], Awaitable]) -> InvokeResponse'
   parameters:
   - name: activity
     isRequired: true
@@ -39,8 +37,7 @@ methods:
     isRequired: true
 - uid: botbuilder.core.streaming.BotFrameworkHttpAdapterBase.send_streaming_activity
   name: send_streaming_activity
-  signature: 'async send_streaming_activity(activity: botbuilder.schema._models_py3.Activity)
-    -> botbuilder.schema._models_py3.ResourceResponse'
+  signature: 'async send_streaming_activity(activity: Activity) -> ResourceResponse'
   parameters:
   - name: activity
     isRequired: true

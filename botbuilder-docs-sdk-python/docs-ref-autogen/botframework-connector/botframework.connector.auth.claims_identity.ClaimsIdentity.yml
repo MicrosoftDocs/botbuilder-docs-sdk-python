@@ -7,7 +7,7 @@ inheritances:
 - builtins.object
 constructor:
   syntax: 'ClaimsIdentity(claims: dict, is_authenticated: bool, authentication_type:
-    Optional[str] = None)'
+    str = None)'
   parameters:
   - name: claims
   - name: is_authenticated

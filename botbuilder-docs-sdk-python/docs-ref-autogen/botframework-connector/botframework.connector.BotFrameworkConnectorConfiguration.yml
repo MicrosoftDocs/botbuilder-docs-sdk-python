@@ -7,8 +7,8 @@ inheritances:
 - botframework.connector._configuration.ConnectorClientConfiguration
 constructor:
   syntax: 'BotFrameworkConnectorConfiguration(credentials, base_url: str, *, pipeline_type:
-    Optional[Type[msrest.pipeline.async_abc.AsyncPipeline]] = None, sender: Optional[msrest.pipeline.async_abc.AsyncHTTPSender]
-    = None, driver: Optional[msrest.universal_http.async_abc.AsyncHTTPSender] = None)'
+    Type[AsyncPipeline] | None = None, sender: AsyncHTTPSender | None = None, driver:
+    AsyncHTTPSender | None = None)'
   parameters:
   - name: credentials
   - name: base_url
