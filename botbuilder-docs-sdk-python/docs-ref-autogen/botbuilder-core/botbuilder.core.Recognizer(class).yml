@@ -10,8 +10,7 @@ constructor:
 methods:
 - uid: botbuilder.core.Recognizer.recognize
   name: recognize
-  signature: 'abstract async recognize(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> botbuilder.core.recognizer_result.RecognizerResult'
+  signature: 'abstract async recognize(turn_context: TurnContext) -> RecognizerResult'
   parameters:
   - name: turn_context
     isRequired: true

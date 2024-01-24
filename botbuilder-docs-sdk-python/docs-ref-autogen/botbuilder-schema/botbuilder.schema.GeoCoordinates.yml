@@ -7,28 +7,27 @@ inheritances:
 - msrest.serialization.Model
 summary: 'GeoCoordinates (entity type: "[https://schema.org/GeoCoordinates](https://schema.org/GeoCoordinates)").'
 constructor:
-  syntax: 'GeoCoordinates(*, elevation: Optional[float] = None, latitude: Optional[float]
-    = None, longitude: Optional[float] = None, type: Optional[str] = None, name: Optional[str]
-    = None, **kwargs)'
+  syntax: 'GeoCoordinates(*, elevation: float = None, latitude: float = None, longitude:
+    float = None, type: str = None, name: str = None, **kwargs)'
   parameters:
   - name: elevation
     description: 'Elevation of the location [WGS
 
-      84]([https://en.wikipedia.org/wiki/World_Geodetic_System](https://en.wikipedia.org/wiki/World_Geodetic_System))'
+      84](https://en.wikipedia.org/wiki/World_Geodetic_System)'
     isRequired: true
     types:
     - <xref:float>
   - name: latitude
     description: 'Latitude of the location [WGS
 
-      84]([https://en.wikipedia.org/wiki/World_Geodetic_System](https://en.wikipedia.org/wiki/World_Geodetic_System))'
+      84](https://en.wikipedia.org/wiki/World_Geodetic_System)'
     isRequired: true
     types:
     - <xref:float>
   - name: longitude
     description: 'Longitude of the location [WGS
 
-      84]([https://en.wikipedia.org/wiki/World_Geodetic_System](https://en.wikipedia.org/wiki/World_Geodetic_System))'
+      84](https://en.wikipedia.org/wiki/World_Geodetic_System)'
     isRequired: true
     types:
     - <xref:float>

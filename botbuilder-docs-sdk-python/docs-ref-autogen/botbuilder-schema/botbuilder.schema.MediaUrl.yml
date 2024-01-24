@@ -7,7 +7,7 @@ inheritances:
 - msrest.serialization.Model
 summary: Media URL.
 constructor:
-  syntax: 'MediaUrl(*, url: Optional[str] = None, profile: Optional[str] = None, **kwargs)'
+  syntax: 'MediaUrl(*, url: str = None, profile: str = None, **kwargs)'
   parameters:
   - name: url
     description: Url for the media

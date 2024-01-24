@@ -6,8 +6,8 @@ module: botbuilder.core.bot_adapter
 inheritances:
 - abc.ABC
 constructor:
-  syntax: 'BotAdapter(on_turn_error: Optional[Callable[[botbuilder.core.turn_context.TurnContext,
-    Exception], Awaitable]] = None)'
+  syntax: 'BotAdapter(on_turn_error: Callable[[TurnContext, Exception], Awaitable]
+    = None)'
   parameters:
   - name: on_turn_error
     defaultValue: None
@@ -43,9 +43,9 @@ methods:
     :param audience:A value signifying the recipient of the proactive message.
 
     :type audience: str'
-  signature: 'async continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
-    callback: Callable, bot_id: Optional[str] = None, claims_identity: Optional[botframework.connector.auth.claims_identity.ClaimsIdentity]
-    = None, audience: Optional[str] = None)'
+  signature: 'async continue_conversation(reference: ConversationReference, callback:
+    Callable, bot_id: str = None, claims_identity: ClaimsIdentity = None, audience:
+    str = None)'
   parameters:
   - name: bot_id
     description: The application ID of the bot. This parameter is ignored in
@@ -58,11 +58,68 @@ methods:
     defaultValue: None
   - name: audience
     defaultValue: None
+- uid: botbuilder.core.bot_adapter.BotAdapter.create_conversation
+  name: create_conversation
+  summary: Starts a new conversation with a user. Used to direct message to a member
+    of a group.
+  signature: 'async create_conversation(reference: ConversationReference, logic: Callable[[TurnContext],
+    Awaitable] = None, conversation_parameters: ConversationParameters = None, channel_id:
+    str = None, service_url: str = None, credentials: AppCredentials = None)'
+  parameters:
+  - name: reference
+    description: The conversation reference that contains the tenant
+    isRequired: true
+    types:
+    - <xref:botbuilder.schema.ConversationReference>
+  - name: logic
+    description: The logic to use for the creation of the conversation
+    defaultValue: None
+    types:
+    - <xref:typing.Callable>
+  - name: conversation_parameters
+    description: The information to use to create the conversation
+    defaultValue: None
+  - name: channel_id
+    description: The ID for the channel.
+    defaultValue: None
+    types:
+    - <xref:typing.str>
+  - name: service_url
+    description: The channel's service URL endpoint.
+    defaultValue: None
+    types:
+    - <xref:typing.str>
+  - name: credentials
+    description: The application credentials for the bot.
+    defaultValue: None
+    types:
+    - <xref:botframework.connector.auth.AppCredentials>
+  return:
+    description: A task representing the work queued to execute.
+  exceptions:
+  - type: It raises a generic exception error.
+  remarks: 'To start a conversation, your bot must know its account information and
+    the user''s
+
+    account information on that channel.
+
+    Most channels only support initiating a direct message (non-group) conversation.
+
+    The adapter attempts to create a new conversation on the channel, and
+
+    then sends a conversation update activity through its middleware pipeline
+
+    to the the callback method.
+
+    If the conversation is established with the specified users, the ID of the activity
+
+    will contain the ID of the new conversation.
+
+    '
 - uid: botbuilder.core.bot_adapter.BotAdapter.delete_activity
   name: delete_activity
   summary: Deletes an existing activity.
-  signature: 'abstract async delete_activity(context: botbuilder.core.turn_context.TurnContext,
-    reference: botbuilder.schema._models_py3.ConversationReference)'
+  signature: 'abstract async delete_activity(context: TurnContext, reference: ConversationReference)'
   parameters:
   - name: context
     description: The context object for the turn.
@@ -80,9 +137,8 @@ methods:
     the passed in *callback()* handler at
 
     the end of the chain.'
-  signature: 'async run_pipeline(context: botbuilder.core.turn_context.TurnContext,
-    callback: Optional[Callable[[botbuilder.core.turn_context.TurnContext], Awaitable]]
-    = None)'
+  signature: 'async run_pipeline(context: TurnContext, callback: Callable[[TurnContext],
+    Awaitable] = None)'
   parameters:
   - name: context
     description: The context object for the turn.
@@ -93,13 +149,13 @@ methods:
     description: A callback method to run at the end of the pipeline.
     defaultValue: None
     types:
-    - <xref:typing.Callable>[[<xref:TurnContext>], <xref:Awaitable>]
+    - '<xref:typing.Callable>[[<xref:TurnContext>],<xref: Awaitable>]'
 - uid: botbuilder.core.bot_adapter.BotAdapter.send_activities
   name: send_activities
   summary: Sends a set of activities to the user. An array of responses from the server
     will be returned.
-  signature: 'abstract async send_activities(context: botbuilder.core.turn_context.TurnContext,
-    activities: List[botbuilder.schema._models_py3.Activity]) -> List[botbuilder.schema._models_py3.ResourceResponse]'
+  signature: 'abstract async send_activities(context: TurnContext, activities: List[Activity])
+    -> List[ResourceResponse]'
   parameters:
   - name: context
     description: The context object for the turn.
@@ -114,8 +170,7 @@ methods:
 - uid: botbuilder.core.bot_adapter.BotAdapter.update_activity
   name: update_activity
   summary: Replaces an existing activity.
-  signature: 'abstract async update_activity(context: botbuilder.core.turn_context.TurnContext,
-    activity: botbuilder.schema._models_py3.Activity)'
+  signature: 'abstract async update_activity(context: TurnContext, activity: Activity)'
   parameters:
   - name: context
     description: The context object for the turn.

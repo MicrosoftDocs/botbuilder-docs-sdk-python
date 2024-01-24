@@ -25,8 +25,8 @@ methods:
     *adaptiveCard/action*, it
 
     calls this method.'
-  signature: 'async on_adaptive_card_invoke(turn_context: botbuilder.core.turn_context.TurnContext,
-    invoke_value: botbuilder.schema._models_py3.AdaptiveCardInvokeValue) -> botbuilder.schema._models_py3.AdaptiveCardInvokeResponse'
+  signature: 'async on_adaptive_card_invoke(turn_context: TurnContext, invoke_value:
+    AdaptiveCardInvokeValue) -> AdaptiveCardInvokeResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -46,7 +46,7 @@ methods:
     when the base behavior of
 
     <xref:botbuilder.core.ActivityHandler.on_turn> is used.'
-  signature: 'async on_conversation_update_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_conversation_update_activity(turn_context: TurnContext)'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -83,7 +83,7 @@ methods:
 - uid: botbuilder.core.ActivityHandler.on_end_of_conversation_activity
   name: on_end_of_conversation_activity
   summary: Invoked when a conversation end activity is received from the channel.
-  signature: 'async on_end_of_conversation_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_end_of_conversation_activity(turn_context: TurnContext)'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -98,7 +98,7 @@ methods:
     base behavior of
 
     <xref:botbuilder.core.ActivityHandler.on_event_activity> is used.'
-  signature: 'async on_event(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_event(turn_context: TurnContext)'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -122,7 +122,7 @@ methods:
     base behavior of
 
     <xref:botbuilder.core.ActivityHandler.on_turn> is used.'
-  signature: 'async on_event_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_event_activity(turn_context: TurnContext)'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -163,7 +163,7 @@ methods:
   summary: 'Override this in a derived class to provide logic specific to
 
     ActivityTypes.InstallationUpdate activities.'
-  signature: 'async on_installation_update(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_installation_update(turn_context: TurnContext)'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -177,7 +177,7 @@ methods:
   summary: 'Override this in a derived class to provide logic specific to
 
     ActivityTypes.InstallationUpdate activities with ''action'' set to ''add''.'
-  signature: 'async on_installation_update_add(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_installation_update_add(turn_context: TurnContext)'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -191,7 +191,7 @@ methods:
   summary: 'Override this in a derived class to provide logic specific to
 
     ActivityTypes.InstallationUpdate activities with ''action'' set to ''remove''.'
-  signature: 'async on_installation_update_remove(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_installation_update_remove(turn_context: TurnContext)'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -204,8 +204,8 @@ methods:
   name: on_invoke_activity
   summary: Registers an activity event handler for the _invoke_ event, emitted for
     every incoming event activity.
-  signature: 'async on_invoke_activity(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> Optional[botbuilder.schema._models_py3.InvokeResponse]'
+  signature: 'async on_invoke_activity(turn_context: TurnContext) -> InvokeResponse
+    | None'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -229,8 +229,8 @@ methods:
     :param turn_context: The context object for this turn
 
     :type turn_context: <xref:botbuilder.core.TurnContext>'
-  signature: 'async on_members_added_activity(members_added: List[botbuilder.schema._models_py3.ChannelAccount],
-    turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_members_added_activity(members_added: List[ChannelAccount],
+    turn_context: TurnContext)'
   parameters:
   - name: members_added
     isRequired: true
@@ -262,8 +262,8 @@ methods:
     :param turn_context: The context object for this turn
 
     :type turn_context: <xref:botbuilder.core.TurnContext>'
-  signature: 'async on_members_removed_activity(members_removed: List[botbuilder.schema._models_py3.ChannelAccount],
-    turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_members_removed_activity(members_removed: List[ChannelAccount],
+    turn_context: TurnContext)'
   parameters:
   - name: members_removed
     isRequired: true
@@ -285,7 +285,7 @@ methods:
   summary: 'Override this method in a derived class to provide logic specific to activities,
 
     such as the conversational logic.'
-  signature: 'async on_message_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_message_activity(turn_context: TurnContext)'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -300,7 +300,7 @@ methods:
     base behavior of
 
     <xref:botbuilder.core.ActivityHandler.on_turn> is used.'
-  signature: 'async on_message_reaction_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_message_reaction_activity(turn_context: TurnContext)'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -329,8 +329,8 @@ methods:
     to a previous activity
 
     are added to the conversation.'
-  signature: 'async on_reactions_added(message_reactions: List[botbuilder.schema._models_py3.MessageReaction],
-    turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_reactions_added(message_reactions: List[MessageReaction], turn_context:
+    TurnContext)'
   parameters:
   - name: message_reactions
     description: The list of reactions added
@@ -367,8 +367,8 @@ methods:
     to a previous activity
 
     are removed from the conversation.'
-  signature: 'async on_reactions_removed(message_reactions: List[botbuilder.schema._models_py3.MessageReaction],
-    turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_reactions_removed(message_reactions: List[MessageReaction],
+    turn_context: TurnContext)'
   parameters:
   - name: message_reactions
     description: The list of reactions removed
@@ -409,7 +409,7 @@ methods:
     current dialog.
 
     By default, this method does nothing.'
-  signature: 'async on_sign_in_invoke(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_sign_in_invoke(turn_context: TurnContext)'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -427,7 +427,7 @@ methods:
 
     If using an *oauth_prompt*, override this method to forward this activity to the
     current dialog.'
-  signature: 'async on_token_response_event(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_token_response_event(turn_context: TurnContext)'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -451,7 +451,7 @@ methods:
     at runtime
 
     in order to process an inbound <xref:botbuilder.schema.Activity>.'
-  signature: 'async on_turn(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_turn(turn_context: TurnContext)'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -481,7 +481,7 @@ methods:
   summary: 'Override this in a derived class to provide logic specific to
 
     ActivityTypes.typing activities, such as the conversational logic.'
-  signature: 'async on_typing_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_typing_activity(turn_context: TurnContext)'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -499,7 +499,7 @@ methods:
 
     If overridden, this method could potentially respond to any of the other activity
     types.'
-  signature: 'async on_unrecognized_activity_type(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_unrecognized_activity_type(turn_context: TurnContext)'
   parameters:
   - name: turn_context
     description: The context object for this turn

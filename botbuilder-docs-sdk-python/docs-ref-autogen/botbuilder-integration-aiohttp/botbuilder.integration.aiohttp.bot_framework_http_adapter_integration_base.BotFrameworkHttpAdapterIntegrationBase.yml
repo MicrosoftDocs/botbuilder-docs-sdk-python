@@ -10,8 +10,8 @@ constructor:
 methods:
 - uid: botbuilder.integration.aiohttp.bot_framework_http_adapter_integration_base.BotFrameworkHttpAdapterIntegrationBase.process
   name: process
-  signature: 'abstract async process(request: aiohttp.web_request.Request, bot: botbuilder.core.bot.Bot,
-    ws_response: Optional[aiohttp.web_ws.WebSocketResponse] = None) -> Optional[aiohttp.web_response.Response]'
+  signature: 'abstract async process(request: Request, bot: Bot, ws_response: WebSocketResponse
+    = None) -> Response | None'
   parameters:
   - name: request
     isRequired: true
