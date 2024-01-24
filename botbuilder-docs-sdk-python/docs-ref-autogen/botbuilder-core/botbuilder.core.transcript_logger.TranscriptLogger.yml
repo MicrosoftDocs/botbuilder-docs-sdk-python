@@ -14,8 +14,7 @@ methods:
   summary: 'Log an activity to the transcript.
 
     :param activity:Activity being logged.'
-  signature: 'abstract async log_activity(activity: botbuilder.schema._models_py3.Activity)
-    -> None'
+  signature: 'abstract async log_activity(activity: Activity) -> None'
   parameters:
   - name: activity
     isRequired: true

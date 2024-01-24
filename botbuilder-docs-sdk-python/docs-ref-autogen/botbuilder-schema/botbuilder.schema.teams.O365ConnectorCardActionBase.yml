@@ -7,8 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: O365 connector card action base.
 constructor:
-  syntax: 'O365ConnectorCardActionBase(*, type=None, name: Optional[str] = None, id:
-    Optional[str] = None, **kwargs)'
+  syntax: 'O365ConnectorCardActionBase(*, type=None, name: str = None, id: str = None,
+    **kwargs)'
   parameters:
   - name: type
     description: 'Type of the action. Possible values include: ''ViewAction'',

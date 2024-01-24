@@ -15,12 +15,14 @@ methods:
     is to lowercase.
 
 
+    # Parameter:
+
+
     text: The input text.
 
 
     locale: (Optional) Identifies the locale of the input text.'
-  signature: "static default_tokenizer(text: str, locale: Optional[str] = None) ->\
-    \ [<class \u2018botbuilder.dialogs.choices.token.Token\u2019>]"
+  signature: 'static default_tokenizer(text: str, locale: str = None) -> [<class ''botbuilder.dialogs.choices.token.Token''>]'
   parameters:
   - name: text
     isRequired: true

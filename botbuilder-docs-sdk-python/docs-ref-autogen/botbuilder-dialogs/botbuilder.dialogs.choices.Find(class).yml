@@ -12,9 +12,8 @@ methods:
 - uid: botbuilder.dialogs.choices.Find.find_choices
   name: find_choices
   summary: Matches user input against a list of choices
-  signature: 'static find_choices(utterance: str, choices: [typing.Union[str, botbuilder.dialogs.choices.choice.Choice]],
-    options: Optional[botbuilder.dialogs.choices.find_choices_options.FindChoicesOptions]
-    = None)'
+  signature: 'static find_choices(utterance: str, choices: [Union[str, botbuilder.dialogs.choices.choice.Choice]],
+    options: FindChoicesOptions = None)'
   parameters:
   - name: utterance
     isRequired: true
@@ -24,9 +23,8 @@ methods:
     defaultValue: None
 - uid: botbuilder.dialogs.choices.Find.find_values
   name: find_values
-  signature: 'static find_values(utterance: str, values: List[botbuilder.dialogs.choices.sorted_value.SortedValue],
-    options: Optional[botbuilder.dialogs.choices.find_values_options.FindValuesOptions]
-    = None) -> List[botbuilder.dialogs.choices.model_result.ModelResult]'
+  signature: 'static find_values(utterance: str, values: List[SortedValue], options:
+    FindValuesOptions = None) -> List[ModelResult]'
   parameters:
   - name: utterance
     isRequired: true

@@ -23,7 +23,7 @@ summary: 'An Azure Blob based storage provider for a bot.
 
   will be generated during Write. New entities start with a null e_tag.'
 constructor:
-  syntax: 'BlobStorage(settings: botbuilder.azure.blob_storage.BlobStorageSettings)'
+  syntax: 'BlobStorage(settings: BlobStorageSettings)'
   parameters:
   - name: settings
     description: Settings used to instantiate the Blob service.
@@ -40,7 +40,7 @@ methods:
     description: An array of entity keys.
     isRequired: true
     types:
-    - <xref:Dict>[<xref:str>, <xref:object>]
+    - <xref:typing.Dict>[<xref:str>, <xref:object>]
 - uid: botbuilder.azure.blob_storage.BlobStorage.read
   name: read
   summary: Retrieve entities from the configured blob container.
@@ -50,7 +50,7 @@ methods:
     description: An array of entity keys.
     isRequired: true
     types:
-    - <xref:Dict>[<xref:str>, <xref:object>]
+    - <xref:typing.Dict>[<xref:str>, <xref:object>]
 - uid: botbuilder.azure.blob_storage.BlobStorage.write
   name: write
   summary: Stores a new entity in the configured blob container.
@@ -60,4 +60,4 @@ methods:
     description: The changes to write to storage.
     isRequired: true
     types:
-    - <xref:Dict>[<xref:str>, <xref:object>]
+    - <xref:typing.Dict>[<xref:str>, <xref:object>]

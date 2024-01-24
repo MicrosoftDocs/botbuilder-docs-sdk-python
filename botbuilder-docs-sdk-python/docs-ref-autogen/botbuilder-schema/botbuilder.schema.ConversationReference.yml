@@ -7,9 +7,9 @@ inheritances:
 - msrest.serialization.Model
 summary: An object relating to a particular point in a conversation.
 constructor:
-  syntax: 'ConversationReference(*, activity_id: Optional[str] = None, user=None,
-    bot=None, conversation=None, channel_id: Optional[str] = None, locale: Optional[str]
-    = None, service_url: Optional[str] = None, **kwargs)'
+  syntax: 'ConversationReference(*, activity_id: str = None, user=None, bot=None,
+    conversation=None, channel_id: str = None, locale: str = None, service_url: str
+    = None, **kwargs)'
   parameters:
   - name: activity_id
     description: (Optional) ID of the activity to refer to

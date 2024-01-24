@@ -7,6 +7,15 @@ inheritances:
 - msrest.serialization.Model
 summary: 'The context associated with QnA.
 
-  Used to mark if the qna response has related prompts.'
+  Used to mark if the qna response has related prompts.
+
+
+  # Parameters:
+
+
+  is_context_only: Whether this prompt is context only.
+
+
+  prompts: The prompts collection of related prompts.'
 constructor:
   syntax: QnAResponseContext(**kwargs)

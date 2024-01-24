@@ -7,8 +7,7 @@ inheritances:
 - msrest.serialization.Model
 summary: Metadata for an attachment.
 constructor:
-  syntax: 'AttachmentInfo(*, name: Optional[str] = None, type: Optional[str] = None,
-    views=None, **kwargs)'
+  syntax: 'AttachmentInfo(*, name: str = None, type: str = None, views=None, **kwargs)'
   parameters:
   - name: name
     description: Name of the attachment

@@ -5,10 +5,19 @@ fullName: botbuilder.dialogs.prompts.PromptValidatorContext
 module: botbuilder.dialogs.prompts
 inheritances:
 - builtins.object
+summary: 'Creates contextual information passed to a custom *PromptValidator*.
+
+  :param turn_context: The context for the current turn of conversation with the user.
+
+  :param recognized: Result returned from the prompts recognizer function.
+
+  :param state: A dictionary of values persisted for each conversational turn while
+  the prompt is active.
+
+  :param options: Original set of options passed to the prompt by the calling dialog.'
 constructor:
-  syntax: 'PromptValidatorContext(turn_context: botbuilder.core.turn_context.TurnContext,
-    recognized: botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult,
-    state: Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)'
+  syntax: 'PromptValidatorContext(turn_context: TurnContext, recognized: PromptRecognizerResult,
+    state: Dict[str, object], options: PromptOptions)'
   parameters:
   - name: turn_context
   - name: recognized
