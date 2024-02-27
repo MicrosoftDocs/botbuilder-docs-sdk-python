@@ -6,4 +6,6 @@ module: botframework.connector.aiohttp_bf_pipeline
 inheritances:
 - msrest.pipeline.async_abc.AsyncPipeline
 constructor:
-  syntax: 'AsyncBfPipeline(config: botframework.connector.bot_framework_sdk_client_async.BotFrameworkConnectorConfiguration)'
+  syntax: 'AsyncBfPipeline(config: BotFrameworkConnectorConfiguration)'
+  parameters:
+  - name: config

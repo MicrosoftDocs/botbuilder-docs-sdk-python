@@ -8,10 +8,8 @@ inheritances:
 summary: Teams participant channel account detailing user Azure Active Directory and
   meeting participant details.
 constructor:
-  syntax: 'TeamsMeetingParticipant(*, user: Optional[botbuilder.schema.teams._models_py3.TeamsChannelAccount]
-    = None, meeting: Optional[botbuilder.schema.teams._models_py3.MeetingParticipantInfo]
-    = None, conversation: Optional[botbuilder.schema._models_py3.ConversationAccount]
-    = None, **kwargs)'
+  syntax: 'TeamsMeetingParticipant(*, user: TeamsChannelAccount = None, meeting: MeetingParticipantInfo
+    = None, conversation: ConversationAccount = None, **kwargs)'
   parameters:
   - name: user
     description: Teams Channel Account information for this meeting participant

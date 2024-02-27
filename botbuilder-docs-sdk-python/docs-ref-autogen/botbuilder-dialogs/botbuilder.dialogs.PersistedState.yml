@@ -6,8 +6,8 @@ module: botbuilder.dialogs
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'PersistedState(keys: Optional[botbuilder.dialogs.persisted_state_keys.PersistedStateKeys]
-    = None, data: Optional[Dict[str, object]] = None)'
+  syntax: 'PersistedState(keys: PersistedStateKeys = None, data: Dict[str, object]
+    = None)'
   parameters:
   - name: keys
     defaultValue: None

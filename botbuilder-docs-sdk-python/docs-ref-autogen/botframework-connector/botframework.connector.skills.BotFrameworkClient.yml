@@ -12,8 +12,7 @@ methods:
   name: post_activity
   summary: Forwards an activity to a another bot.
   signature: 'abstract async post_activity(from_bot_id: str, to_bot_id: str, to_url:
-    str, service_url: str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity)
-    -> botbuilder.core.InvokeResponse'
+    str, service_url: str, conversation_id: str, activity: Activity) -> botbuilder.core.InvokeResponse'
   parameters:
   - name: from_bot_id
     description: The MicrosoftAppId of the bot sending the activity.
