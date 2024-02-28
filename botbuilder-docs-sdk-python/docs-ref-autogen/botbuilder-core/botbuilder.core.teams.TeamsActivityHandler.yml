@@ -17,7 +17,7 @@ methods:
     being added to or removed from the channel.
 
     For example, a bot could respond to a user being added by greeting the user.'
-  signature: 'async on_conversation_update_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_conversation_update_activity(turn_context: TurnContext)'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -35,7 +35,7 @@ methods:
     base behavior of
 
     <xref:botbuilder.core.teams.TeamsActivityHandler.on_turn> is used.'
-  signature: 'async on_event_activity(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_event_activity(turn_context: TurnContext)'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -76,8 +76,7 @@ methods:
   summary: 'Invoked when an invoke activity is received from the connector.
 
     Invoke activities can be used to communicate many different things.'
-  signature: 'async on_invoke_activity(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> botbuilder.schema._models_py3.InvokeResponse'
+  signature: 'async on_invoke_activity(turn_context: TurnContext) -> InvokeResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -95,7 +94,7 @@ methods:
 - uid: botbuilder.core.teams.TeamsActivityHandler.on_sign_in_invoke
   name: on_sign_in_invoke
   summary: Invoked when a signIn invoke activity is received from the connector.
-  signature: 'async on_sign_in_invoke(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_sign_in_invoke(turn_context: TurnContext)'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -105,8 +104,8 @@ methods:
 - uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_app_based_link_query
   name: on_teams_app_based_link_query
   summary: Invoked when an app based link query activity is received from the connector.
-  signature: 'async on_teams_app_based_link_query(turn_context: botbuilder.core.turn_context.TurnContext,
-    query: botbuilder.schema.teams._models_py3.AppBasedLinkQuery) -> botbuilder.schema.teams._models_py3.MessagingExtensionResponse'
+  signature: 'async on_teams_app_based_link_query(turn_context: TurnContext, query:
+    AppBasedLinkQuery) -> MessagingExtensionResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -119,8 +118,7 @@ methods:
 - uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_card_action_invoke
   name: on_teams_card_action_invoke
   summary: Invoked when an card action invoke activity is received from the connector.
-  signature: 'async on_teams_card_action_invoke(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> botbuilder.schema._models_py3.InvokeResponse'
+  signature: 'async on_teams_card_action_invoke(turn_context: TurnContext) -> InvokeResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -132,8 +130,8 @@ methods:
   summary: 'Invoked when a Channel Created event activity is received from the connector.
 
     Channel Created correspond to the user creating a new channel.'
-  signature: 'async on_teams_channel_created(channel_info: botbuilder.schema.teams._models_py3.ChannelInfo,
-    team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_teams_channel_created(channel_info: ChannelInfo, team_info:
+    TeamInfo, turn_context: TurnContext)'
   parameters:
   - name: channel_info
     description: The channel info object which describes the channel.
@@ -151,8 +149,8 @@ methods:
   summary: 'Invoked when a Channel Deleted event activity is received from the connector.
 
     Channel Deleted correspond to the user deleting an existing channel.'
-  signature: 'async on_teams_channel_deleted(channel_info: botbuilder.schema.teams._models_py3.ChannelInfo,
-    team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_teams_channel_deleted(channel_info: ChannelInfo, team_info:
+    TeamInfo, turn_context: TurnContext)'
   parameters:
   - name: channel_info
     description: The channel info object which describes the channel.
@@ -170,8 +168,8 @@ methods:
   summary: 'Invoked when a Channel Renamed event activity is received from the connector.
 
     Channel Renamed correspond to the user renaming an existing channel.'
-  signature: 'async on_teams_channel_renamed(channel_info: botbuilder.schema.teams._models_py3.ChannelInfo,
-    team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_teams_channel_renamed(channel_info: ChannelInfo, team_info:
+    TeamInfo, turn_context: TurnContext)'
   parameters:
   - name: channel_info
     description: The channel info object which describes the channel.
@@ -189,8 +187,8 @@ methods:
   summary: 'Invoked when a Channel Restored event activity is received from the connector.
 
     Channel Restored correspond to the user restoring a previously deleted channel.'
-  signature: 'async on_teams_channel_restored(channel_info: botbuilder.schema.teams._models_py3.ChannelInfo,
-    team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_teams_channel_restored(channel_info: ChannelInfo, team_info:
+    TeamInfo, turn_context: TurnContext)'
   parameters:
   - name: channel_info
     description: The channel info object which describes the channel.
@@ -209,9 +207,8 @@ methods:
 
 
     activity sent when the user acts on a file consent card.'
-  signature: 'async on_teams_file_consent(turn_context: botbuilder.core.turn_context.TurnContext,
-    file_consent_card_response: botbuilder.schema.teams._models_py3.FileConsentCardResponse)
-    -> botbuilder.schema._models_py3.InvokeResponse'
+  signature: 'async on_teams_file_consent(turn_context: TurnContext, file_consent_card_response:
+    FileConsentCardResponse) -> InvokeResponse'
   parameters:
   - name: turn_context
     isRequired: true
@@ -225,8 +222,8 @@ methods:
 
 
     activity sent when the user accepts a file consent card.'
-  signature: 'async on_teams_file_consent_accept(turn_context: botbuilder.core.turn_context.TurnContext,
-    file_consent_card_response: botbuilder.schema.teams._models_py3.FileConsentCardResponse)'
+  signature: 'async on_teams_file_consent_accept(turn_context: TurnContext, file_consent_card_response:
+    FileConsentCardResponse)'
   parameters:
   - name: turn_context
     isRequired: true
@@ -240,8 +237,8 @@ methods:
 
 
     activity sent when the user declines a file consent card.'
-  signature: 'async on_teams_file_consent_decline(turn_context: botbuilder.core.turn_context.TurnContext,
-    file_consent_card_response: botbuilder.schema.teams._models_py3.FileConsentCardResponse)'
+  signature: 'async on_teams_file_consent_decline(turn_context: TurnContext, file_consent_card_response:
+    FileConsentCardResponse)'
   parameters:
   - name: turn_context
     isRequired: true
@@ -253,8 +250,8 @@ methods:
   name: on_teams_meeting_end_event
   summary: Override this in a derived class to provide logic for when a Teams meeting
     end event is received.
-  signature: 'async on_teams_meeting_end_event(meeting: botbuilder.schema.teams._models_py3.MeetingEndEventDetails,
-    turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_teams_meeting_end_event(meeting: MeetingEndEventDetails, turn_context:
+    TurnContext)'
   parameters:
   - name: meeting
     description: The details of the meeting.
@@ -268,8 +265,8 @@ methods:
   name: on_teams_meeting_start_event
   summary: Override this in a derived class to provide logic for when a Teams meeting
     start event is received.
-  signature: 'async on_teams_meeting_start_event(meeting: botbuilder.schema.teams._models_py3.MeetingStartEventDetails,
-    turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_teams_meeting_start_event(meeting: MeetingStartEventDetails,
+    turn_context: TurnContext)'
   parameters:
   - name: meeting
     description: The details of the meeting.
@@ -293,7 +290,7 @@ methods:
 
     :param turn_context: A context object for this turn.'
   signature: 'async on_teams_members_added(teams_members_added: [<class ''botbuilder.schema.teams._models_py3.TeamsChannelAccount''>],
-    team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
+    team_info: ~botbuilder.schema.teams._models_py3.TeamInfo, turn_context: ~botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: teams_members_added
     isRequired: true
@@ -319,7 +316,7 @@ methods:
 
     :param turn_context: A context object for this turn.'
   signature: 'async on_teams_members_added_dispatch(members_added: [<class ''botbuilder.schema._models_py3.ChannelAccount''>],
-    team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
+    team_info: ~botbuilder.schema.teams._models_py3.TeamInfo, turn_context: ~botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: members_added
     isRequired: true
@@ -343,7 +340,7 @@ methods:
 
     :param turn_context: A context object for this turn.'
   signature: 'async on_teams_members_removed(teams_members_removed: [<class ''botbuilder.schema.teams._models_py3.TeamsChannelAccount''>],
-    team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
+    team_info: ~botbuilder.schema.teams._models_py3.TeamInfo, turn_context: ~botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: teams_members_removed
     isRequired: true
@@ -369,7 +366,7 @@ methods:
 
     :param turn_context: A context object for this turn.'
   signature: 'async on_teams_members_removed_dispatch(members_removed: [<class ''botbuilder.schema._models_py3.ChannelAccount''>],
-    team_info: botbuilder.schema.teams._models_py3.TeamInfo, turn_context: botbuilder.core.turn_context.TurnContext)'
+    team_info: ~botbuilder.schema.teams._models_py3.TeamInfo, turn_context: ~botbuilder.core.turn_context.TurnContext)'
   parameters:
   - name: members_removed
     isRequired: true
@@ -384,8 +381,7 @@ methods:
   summary: Invoked when a messaging extension bot message preview edit activity is
     received from the connector.
   signature: 'async on_teams_messaging_extension_bot_message_preview_edit(turn_context:
-    botbuilder.core.turn_context.TurnContext, action: botbuilder.schema.teams._models_py3.MessagingExtensionAction)
-    -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
+    TurnContext, action: MessagingExtensionAction) -> MessagingExtensionActionResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -400,8 +396,7 @@ methods:
   summary: Invoked when a messaging extension bot message preview send activity is
     received from the connector.
   signature: 'async on_teams_messaging_extension_bot_message_preview_send(turn_context:
-    botbuilder.core.turn_context.TurnContext, action: botbuilder.schema.teams._models_py3.MessagingExtensionAction)
-    -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
+    TurnContext, action: MessagingExtensionAction) -> MessagingExtensionActionResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -416,7 +411,7 @@ methods:
   summary: Override this in a derived class to provide logic for when a card button
     is clicked in a messaging extension.
   signature: 'async on_teams_messaging_extension_card_button_clicked(turn_context:
-    botbuilder.core.turn_context.TurnContext, card_data)'
+    TurnContext, card_data)'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -431,8 +426,7 @@ methods:
   summary: Invoked when a messaging extension configuration query setting url activity
     is received from the connector.
   signature: 'async on_teams_messaging_extension_configuration_query_settings_url(turn_context:
-    botbuilder.core.turn_context.TurnContext, query: botbuilder.schema.teams._models_py3.MessagingExtensionQuery)
-    -> botbuilder.schema.teams._models_py3.MessagingExtensionResponse'
+    TurnContext, query: MessagingExtensionQuery) -> MessagingExtensionResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -447,7 +441,7 @@ methods:
   summary: Override this in a derived class to provide logic for when a configuration
     is set for a messaging extension.
   signature: 'async on_teams_messaging_extension_configuration_setting(turn_context:
-    botbuilder.core.turn_context.TurnContext, settings)'
+    TurnContext, settings)'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -461,8 +455,8 @@ methods:
   name: on_teams_messaging_extension_fetch_task
   summary: Invoked when a Messaging Extension Fetch activity is received from the
     connector.
-  signature: 'async on_teams_messaging_extension_fetch_task(turn_context: botbuilder.core.turn_context.TurnContext,
-    action: botbuilder.schema.teams._models_py3.MessagingExtensionAction) -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
+  signature: 'async on_teams_messaging_extension_fetch_task(turn_context: TurnContext,
+    action: MessagingExtensionAction) -> MessagingExtensionActionResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -476,8 +470,8 @@ methods:
   name: on_teams_messaging_extension_query
   summary: Invoked when a Messaging Extension Query activity is received from the
     connector.
-  signature: 'async on_teams_messaging_extension_query(turn_context: botbuilder.core.turn_context.TurnContext,
-    query: botbuilder.schema.teams._models_py3.MessagingExtensionQuery) -> botbuilder.schema.teams._models_py3.MessagingExtensionResponse'
+  signature: 'async on_teams_messaging_extension_query(turn_context: TurnContext,
+    query: MessagingExtensionQuery) -> MessagingExtensionResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -491,8 +485,8 @@ methods:
   name: on_teams_messaging_extension_select_item
   summary: Invoked when a messaging extension select item activity is received from
     the connector.
-  signature: 'async on_teams_messaging_extension_select_item(turn_context: botbuilder.core.turn_context.TurnContext,
-    query) -> botbuilder.schema.teams._models_py3.MessagingExtensionResponse'
+  signature: 'async on_teams_messaging_extension_select_item(turn_context: TurnContext,
+    query) -> MessagingExtensionResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -506,8 +500,8 @@ methods:
   name: on_teams_messaging_extension_submit_action
   summary: Invoked when a messaging extension submit action activity is received from
     the connector.
-  signature: 'async on_teams_messaging_extension_submit_action(turn_context: botbuilder.core.turn_context.TurnContext,
-    action: botbuilder.schema.teams._models_py3.MessagingExtensionAction) -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
+  signature: 'async on_teams_messaging_extension_submit_action(turn_context: TurnContext,
+    action: MessagingExtensionAction) -> MessagingExtensionActionResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -522,8 +516,7 @@ methods:
   summary: Invoked when a messaging extension submit action dispatch activity is received
     from the connector.
   signature: 'async on_teams_messaging_extension_submit_action_dispatch(turn_context:
-    botbuilder.core.turn_context.TurnContext, action: botbuilder.schema.teams._models_py3.MessagingExtensionAction)
-    -> botbuilder.schema.teams._models_py3.MessagingExtensionActionResponse'
+    TurnContext, action: MessagingExtensionAction) -> MessagingExtensionActionResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -537,8 +530,8 @@ methods:
   name: on_teams_o365_connector_card_action
   summary: Invoked when a O365 Connector Card Action activity is received from the
     connector.
-  signature: 'async on_teams_o365_connector_card_action(turn_context: botbuilder.core.turn_context.TurnContext,
-    query: botbuilder.schema.teams._models_py3.O365ConnectorCardActionQuery)'
+  signature: 'async on_teams_o365_connector_card_action(turn_context: TurnContext,
+    query: O365ConnectorCardActionQuery)'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -550,14 +543,14 @@ methods:
     description: A task that represents the work queued to execute.
 - uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_signin_token_exchange
   name: on_teams_signin_token_exchange
-  signature: 'async on_teams_signin_token_exchange(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_teams_signin_token_exchange(turn_context: TurnContext)'
   parameters:
   - name: turn_context
     isRequired: true
 - uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_signin_verify_state
   name: on_teams_signin_verify_state
   summary: Invoked when a signIn verify state activity is received from the connector.
-  signature: 'async on_teams_signin_verify_state(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_teams_signin_verify_state(turn_context: TurnContext)'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -567,8 +560,7 @@ methods:
 - uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_tab_fetch
   name: on_teams_tab_fetch
   summary: Override this in a derived class to provide logic for when a tab is fetched.
-  signature: 'async on_teams_tab_fetch(turn_context: botbuilder.core.turn_context.TurnContext,
-    tab_request: botbuilder.schema.teams._models_py3.TabRequest)'
+  signature: 'async on_teams_tab_fetch(turn_context: TurnContext, tab_request: TabRequest)'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -581,8 +573,7 @@ methods:
 - uid: botbuilder.core.teams.TeamsActivityHandler.on_teams_tab_submit
   name: on_teams_tab_submit
   summary: Override this in a derived class to provide logic for when a tab is submitted.
-  signature: 'async on_teams_tab_submit(turn_context: botbuilder.core.turn_context.TurnContext,
-    tab_submit: botbuilder.schema.teams._models_py3.TabSubmit)'
+  signature: 'async on_teams_tab_submit(turn_context: TurnContext, tab_submit: TabSubmit)'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -596,9 +587,8 @@ methods:
   name: on_teams_task_module_fetch
   summary: Override this in a derived class to provide logic for when a task module
     is fetched.
-  signature: 'async on_teams_task_module_fetch(turn_context: botbuilder.core.turn_context.TurnContext,
-    task_module_request: botbuilder.schema.teams._models_py3.TaskModuleRequest) ->
-    botbuilder.schema.teams._models_py3.TaskModuleResponse'
+  signature: 'async on_teams_task_module_fetch(turn_context: TurnContext, task_module_request:
+    TaskModuleRequest) -> TaskModuleResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -612,9 +602,8 @@ methods:
   name: on_teams_task_module_submit
   summary: Override this in a derived class to provide logic for when a task module
     is submitted.
-  signature: 'async on_teams_task_module_submit(turn_context: botbuilder.core.turn_context.TurnContext,
-    task_module_request: botbuilder.schema.teams._models_py3.TaskModuleRequest) ->
-    botbuilder.schema.teams._models_py3.TaskModuleResponse'
+  signature: 'async on_teams_task_module_submit(turn_context: TurnContext, task_module_request:
+    TaskModuleRequest) -> TaskModuleResponse'
   parameters:
   - name: turn_context
     description: A context object for this turn.
@@ -629,8 +618,7 @@ methods:
   summary: 'Invoked when a Team Archived event activity is received from the connector.
 
     Team Archived correspond to the user archiving a team.'
-  signature: 'async on_teams_team_archived(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
-    turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_teams_team_archived(team_info: TeamInfo, turn_context: TurnContext)'
   parameters:
   - name: team_info
     description: The team info object representing the team.
@@ -645,8 +633,7 @@ methods:
   summary: 'Invoked when a Team Deleted event activity is received from the connector.
 
     Team Deleted corresponds to the user deleting a team.'
-  signature: 'async on_teams_team_deleted(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
-    turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_teams_team_deleted(team_info: TeamInfo, turn_context: TurnContext)'
   parameters:
   - name: team_info
     description: The team info object representing the team.
@@ -661,8 +648,8 @@ methods:
   summary: 'Invoked when a Team Hard Deleted event activity is received from the connector.
 
     Team Hard Deleted corresponds to the user hard deleting a team.'
-  signature: 'async on_teams_team_hard_deleted(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
-    turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_teams_team_hard_deleted(team_info: TeamInfo, turn_context:
+    TurnContext)'
   parameters:
   - name: team_info
     description: The team info object representing the team.
@@ -677,8 +664,7 @@ methods:
   summary: 'Invoked when a Team Renamed event activity is received from the connector.
 
     Team Renamed correspond to the user renaming an existing team.'
-  signature: 'async on_teams_team_renamed(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
-    turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_teams_team_renamed(team_info: TeamInfo, turn_context: TurnContext)'
   parameters:
   - name: team_info
     description: The team info object representing the team.
@@ -699,8 +685,8 @@ methods:
     Invoked when a Team Renamed event activity is received from the connector.
 
     Team Renamed correspond to the user renaming an existing team.'
-  signature: 'async on_teams_team_renamed_activity(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
-    turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_teams_team_renamed_activity(team_info: TeamInfo, turn_context:
+    TurnContext)'
   parameters:
   - name: team_info
     description: The team info object representing the team.
@@ -715,8 +701,7 @@ methods:
   summary: 'Invoked when a Team Restored event activity is received from the connector.
 
     Team Restored corresponds to the user restoring a team.'
-  signature: 'async on_teams_team_restored(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
-    turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_teams_team_restored(team_info: TeamInfo, turn_context: TurnContext)'
   parameters:
   - name: team_info
     description: The team info object representing the team.
@@ -731,8 +716,7 @@ methods:
   summary: 'Invoked when a Team Unarchived event activity is received from the connector.
 
     Team Unarchived correspond to the user unarchiving a team.'
-  signature: 'async on_teams_team_unarchived(team_info: botbuilder.schema.teams._models_py3.TeamInfo,
-    turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async on_teams_team_unarchived(team_info: TeamInfo, turn_context: TurnContext)'
   parameters:
   - name: team_info
     description: The team info object representing the team.

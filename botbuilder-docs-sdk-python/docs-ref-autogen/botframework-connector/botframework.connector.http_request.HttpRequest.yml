@@ -6,5 +6,5 @@ module: botframework.connector.http_request
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'HttpRequest(*, request_uri: Optional[str] = None, content: Optional[Any]
-    = None, headers: Optional[Dict[str, str]] = None)'
+  syntax: 'HttpRequest(*, request_uri: str = None, content: Any = None, headers: Dict[str,
+    str] = None)'

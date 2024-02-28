@@ -5,7 +5,25 @@ fullName: botbuilder.dialogs.choices.model_result.ModelResult
 module: botbuilder.dialogs.choices.model_result
 inheritances:
 - builtins.object
-summary: Contains recognition result information.
+summary: 'Contains recognition result information.
+
+
+  # Parameters:
+
+
+  text: Substring of the utterance that was recognized.
+
+
+  start: Start character position of the recognized substring.
+
+
+  end: The end character position of the recognized substring.
+
+
+  type_name: The type of the entity that was recognized.
+
+
+  resolution: The recognized entity object.'
 constructor:
   syntax: 'ModelResult(text: str, start: int, end: int, type_name: str, resolution:
     object)'

@@ -7,9 +7,9 @@ inheritances:
 - botbuilder.schema._models_py3.Attachment
 summary: Messaging extension attachment.
 constructor:
-  syntax: 'MessagingExtensionAttachment(*, content_type: Optional[str] = None, content_url:
-    Optional[str] = None, content=None, name: Optional[str] = None, thumbnail_url:
-    Optional[str] = None, preview=None, **kwargs)'
+  syntax: 'MessagingExtensionAttachment(*, content_type: str = None, content_url:
+    str = None, content=None, name: str = None, thumbnail_url: str = None, preview=None,
+    **kwargs)'
   parameters:
   - name: content_type
     description: mimetype/Contenttype for the file

@@ -6,8 +6,8 @@ type: import
 functions:
 - uid: botbuilder.integration.aiohttp.aiohttp_channel_service_routes
   name: aiohttp_channel_service_routes
-  signature: 'aiohttp_channel_service_routes(handler: botbuilder.core.channel_service_handler.ChannelServiceHandler,
-    base_url: str = '''') -> aiohttp.web_routedef.RouteTableDef'
+  signature: 'aiohttp_channel_service_routes(handler: ChannelServiceHandler, base_url:
+    str = '''') -> RouteTableDef'
   parameters:
   - name: handler
   - name: base_url
@@ -21,6 +21,7 @@ classes:
 - botbuilder.integration.aiohttp.BotFrameworkHttpAdapter
 - botbuilder.integration.aiohttp.BotFrameworkHttpClient
 - botbuilder.integration.aiohttp.CloudAdapter
+- botbuilder.integration.aiohttp.ConfigurationBotFrameworkAuthentication
 - botbuilder.integration.aiohttp.ConfigurationServiceClientCredentialFactory
 packages:
 - botbuilder.integration.aiohttp.skills

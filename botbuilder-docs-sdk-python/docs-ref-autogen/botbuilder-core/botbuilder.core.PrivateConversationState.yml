@@ -6,16 +6,14 @@ module: botbuilder.core
 inheritances:
 - botbuilder.core.bot_state.BotState
 constructor:
-  syntax: 'PrivateConversationState(storage: botbuilder.core.storage.Storage, namespace:
-    str = '''')'
+  syntax: 'PrivateConversationState(storage: Storage, namespace: str = '''')'
   parameters:
   - name: storage
   - name: namespace
 methods:
 - uid: botbuilder.core.PrivateConversationState.get_storage_key
   name: get_storage_key
-  signature: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> str'
+  signature: 'get_storage_key(turn_context: TurnContext) -> str'
   parameters:
   - name: turn_context
     isRequired: true
