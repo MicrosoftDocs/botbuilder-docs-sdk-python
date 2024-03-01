@@ -74,6 +74,13 @@ methods:
 
       overrides*.'
     isRequired: true
+  keywordOnlyParameters:
+  - name: custom_headers
+    isRequired: true
+  - name: raw
+    isRequired: true
+  - name: callback
+    isRequired: true
   return:
     description: object or ClientRawResponse if raw=true
     types:
@@ -111,6 +118,11 @@ methods:
     description: '*Operation configuration
 
       overrides*.'
+    isRequired: true
+  keywordOnlyParameters:
+  - name: custom_headers
+    isRequired: true
+  - name: raw
     isRequired: true
   return:
     description: AttachmentInfo or ClientRawResponse if raw=true

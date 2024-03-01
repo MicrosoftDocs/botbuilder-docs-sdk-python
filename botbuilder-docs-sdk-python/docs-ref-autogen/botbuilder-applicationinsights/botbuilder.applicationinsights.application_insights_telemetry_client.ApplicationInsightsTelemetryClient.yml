@@ -12,6 +12,7 @@ constructor:
     = None, client_queue_size: int = None)'
   parameters:
   - name: instrumentation_key
+    isRequired: true
   - name: telemetry_client
     defaultValue: None
   - name: telemetry_processor

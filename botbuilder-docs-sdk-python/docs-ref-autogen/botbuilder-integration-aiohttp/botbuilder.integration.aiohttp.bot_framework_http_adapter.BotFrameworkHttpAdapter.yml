@@ -9,6 +9,7 @@ constructor:
   syntax: 'BotFrameworkHttpAdapter(settings: BotFrameworkAdapterSettings)'
   parameters:
   - name: settings
+    isRequired: true
 methods:
 - uid: botbuilder.integration.aiohttp.bot_framework_http_adapter.BotFrameworkHttpAdapter.process
   name: process

@@ -9,6 +9,7 @@ constructor:
   syntax: 'MemoryScope(name: str, include_in_snapshot: bool = True)'
   parameters:
   - name: name
+    isRequired: true
   - name: include_in_snapshot
     defaultValue: 'True'
 methods:

@@ -92,6 +92,13 @@ methods:
     :return: The caller_id, this might be None.'
   signature: 'async generate_caller_id(*, credential_factory: ServiceClientCredentialsFactory,
     claims_identity: ClaimsIdentity, caller_id: str) -> str'
+  keywordOnlyParameters:
+  - name: credential_factory
+    isRequired: true
+  - name: claims_identity
+    isRequired: true
+  - name: caller_id
+    isRequired: true
 - uid: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication.get_originating_audience
   name: get_originating_audience
   summary: Gets the originating audience from Bot OAuth scope.

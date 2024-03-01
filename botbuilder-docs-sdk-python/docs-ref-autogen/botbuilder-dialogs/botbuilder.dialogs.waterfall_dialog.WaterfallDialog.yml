@@ -9,6 +9,7 @@ constructor:
   syntax: 'WaterfallDialog(dialog_id: str, steps: [Coroutine] = None)'
   parameters:
   - name: dialog_id
+    isRequired: true
   - name: steps
     defaultValue: None
 methods:

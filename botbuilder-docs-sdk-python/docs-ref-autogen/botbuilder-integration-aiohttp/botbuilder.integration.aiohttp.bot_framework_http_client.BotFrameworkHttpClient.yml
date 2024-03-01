@@ -14,6 +14,7 @@ constructor:
     ChannelProvider = None, logger: Logger = None)'
   parameters:
   - name: credential_provider
+    isRequired: true
   - name: channel_provider
     defaultValue: None
   - name: logger

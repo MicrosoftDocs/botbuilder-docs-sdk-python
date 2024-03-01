@@ -11,6 +11,16 @@ constructor:
     = None, http_client_factory: HttpClientFactory = None, logger: Logger = None)'
   parameters:
   - name: configuration
+    isRequired: true
+  keywordOnlyParameters:
+  - name: credentials_factory
+    isRequired: true
+  - name: auth_configuration
+    isRequired: true
+  - name: http_client_factory
+    isRequired: true
+  - name: logger
+    isRequired: true
 methods:
 - uid: botbuilder.integration.aiohttp.configuration_bot_framework_authentication.ConfigurationBotFrameworkAuthentication.authenticate_channel_request
   name: authenticate_channel_request

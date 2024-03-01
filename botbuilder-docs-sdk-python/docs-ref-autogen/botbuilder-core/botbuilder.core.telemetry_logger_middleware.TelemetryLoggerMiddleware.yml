@@ -11,7 +11,9 @@ constructor:
     bool)'
   parameters:
   - name: telemetry_client
+    isRequired: true
   - name: log_personal_information
+    isRequired: true
 methods:
 - uid: botbuilder.core.telemetry_logger_middleware.TelemetryLoggerMiddleware.fill_delete_event_properties
   name: fill_delete_event_properties

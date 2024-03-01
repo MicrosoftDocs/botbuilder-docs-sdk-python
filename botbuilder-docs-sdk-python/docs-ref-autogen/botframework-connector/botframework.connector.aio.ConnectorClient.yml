@@ -36,6 +36,15 @@ constructor:
     defaultValue: None
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: pipeline_type
+    isRequired: true
+  - name: sender
+    isRequired: true
+  - name: driver
+    isRequired: true
+  - name: custom_configuration
+    isRequired: true
 variables:
 - description: Configuration for client.
   name: config

@@ -10,6 +10,7 @@ constructor:
   syntax: 'BotFrameworkHttpAdapterBase(settings: BotFrameworkAdapterSettings)'
   parameters:
   - name: settings
+    isRequired: true
 methods:
 - uid: botbuilder.core.streaming.bot_framework_http_adapter_base.BotFrameworkHttpAdapterBase.can_process_outgoing_activity
   name: can_process_outgoing_activity

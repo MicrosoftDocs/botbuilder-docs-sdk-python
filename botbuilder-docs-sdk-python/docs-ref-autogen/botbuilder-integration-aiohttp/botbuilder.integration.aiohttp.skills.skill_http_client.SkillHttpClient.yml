@@ -11,7 +11,9 @@ constructor:
     = None)'
   parameters:
   - name: credential_provider
+    isRequired: true
   - name: skill_conversation_id_factory
+    isRequired: true
   - name: channel_provider
     defaultValue: None
   - name: logger

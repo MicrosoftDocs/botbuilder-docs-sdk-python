@@ -47,11 +47,17 @@ constructor:
     ranker_type: str = ''Default'')'
   parameters:
   - name: message
+    isRequired: true
   - name: query_results
+    isRequired: true
   - name: knowledge_base_id
+    isRequired: true
   - name: score_threshold
+    isRequired: true
   - name: top
+    isRequired: true
   - name: strict_filters
+    isRequired: true
   - name: context
     defaultValue: None
   - name: qna_id

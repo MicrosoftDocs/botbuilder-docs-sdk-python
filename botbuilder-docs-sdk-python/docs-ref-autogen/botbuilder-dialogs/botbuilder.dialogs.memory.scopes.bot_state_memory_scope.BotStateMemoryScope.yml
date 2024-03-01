@@ -9,7 +9,9 @@ constructor:
   syntax: 'BotStateMemoryScope(bot_state_type: Type[BotState], name: str)'
   parameters:
   - name: bot_state_type
+    isRequired: true
   - name: name
+    isRequired: true
 methods:
 - uid: botbuilder.dialogs.memory.scopes.bot_state_memory_scope.BotStateMemoryScope.get_memory
   name: get_memory

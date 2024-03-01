@@ -10,6 +10,7 @@ constructor:
   syntax: 'TranscriptLoggerMiddleware(logger: TranscriptLogger)'
   parameters:
   - name: logger
+    isRequired: true
 methods:
 - uid: botbuilder.core.TranscriptLoggerMiddleware.log_activity
   name: log_activity

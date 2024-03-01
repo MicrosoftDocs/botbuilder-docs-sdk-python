@@ -9,6 +9,10 @@ constructor:
   syntax: VerifyOptions(issuer, audience, clock_tolerance, ignore_expiration)
   parameters:
   - name: issuer
+    isRequired: true
   - name: audience
+    isRequired: true
   - name: clock_tolerance
+    isRequired: true
   - name: ignore_expiration
+    isRequired: true

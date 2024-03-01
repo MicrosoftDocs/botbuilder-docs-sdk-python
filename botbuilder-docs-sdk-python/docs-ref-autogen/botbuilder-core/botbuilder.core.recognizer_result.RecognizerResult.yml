@@ -10,6 +10,17 @@ constructor:
   syntax: 'RecognizerResult(*, text: str = None, altered_text: str = None, intents:
     Dict[str, IntentScore] = None, entities: Dict[str, object] = None, properties:
     Dict[str, object] = None, **kwargs)'
+  keywordOnlyParameters:
+  - name: text
+    isRequired: true
+  - name: altered_text
+    isRequired: true
+  - name: intents
+    isRequired: true
+  - name: entities
+    isRequired: true
+  - name: properties
+    isRequired: true
 methods:
 - uid: botbuilder.core.recognizer_result.RecognizerResult.convert
   name: convert

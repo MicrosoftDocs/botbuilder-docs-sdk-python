@@ -65,5 +65,36 @@ methods:
   - name: logger
     description: The Logger to use.
     isRequired: true
+  keywordOnlyParameters:
+  - name: channel_service
+    isRequired: true
+  - name: validate_authority
+    isRequired: true
+  - name: to_channel_from_bot_login_url
+    isRequired: true
+  - name: to_channel_from_bot_oauth_scope
+    isRequired: true
+  - name: to_bot_from_channel_token_issuer
+    isRequired: true
+  - name: oauth_url
+    isRequired: true
+  - name: to_bot_from_channel_open_id_metadata_url
+    isRequired: true
+  - name: to_bot_from_emulator_open_id_metadata_url
+    isRequired: true
+  - name: caller_id
+    isRequired: true
+  - name: credential_factory
+    defaultValue: <botframework.connector.auth.password_service_client_credential_factory.PasswordServiceClientCredentialFactory
+      object at 0x000002CA9FFB7790>
+  - name: auth_configuration
+    defaultValue: <botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
+      object at 0x000002CA9FFA33D0>
+  - name: http_client_factory
+    isRequired: true
+  - name: connector_client_configuration
+    isRequired: true
+  - name: logger
+    isRequired: true
   return:
     description: A new BotFrameworkAuthentication instance.

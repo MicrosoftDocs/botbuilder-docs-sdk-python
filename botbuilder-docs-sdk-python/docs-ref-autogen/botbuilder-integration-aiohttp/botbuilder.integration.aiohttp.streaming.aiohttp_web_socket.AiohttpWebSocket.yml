@@ -10,6 +10,7 @@ constructor:
     session: ClientSession | None = None)'
   parameters:
   - name: aiohttp_ws
+    isRequired: true
   - name: session
     defaultValue: None
 methods:

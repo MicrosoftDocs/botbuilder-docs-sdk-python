@@ -15,7 +15,9 @@ constructor:
   syntax: 'TrainUtils(endpoint: QnAMakerEndpoint, http_client: ClientSession)'
   parameters:
   - name: endpoint
+    isRequired: true
   - name: http_client
+    isRequired: true
 methods:
 - uid: botbuilder.ai.qna.utils.train_utils.TrainUtils.call_train
   name: call_train

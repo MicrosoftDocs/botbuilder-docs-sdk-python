@@ -14,7 +14,9 @@ constructor:
   syntax: 'TestFlow(previous: Callable, adapter: TestAdapter)'
   parameters:
   - name: previous
+    isRequired: true
   - name: adapter
+    isRequired: true
 methods:
 - uid: botbuilder.core.adapters.TestFlow.assert_no_reply
   name: assert_no_reply

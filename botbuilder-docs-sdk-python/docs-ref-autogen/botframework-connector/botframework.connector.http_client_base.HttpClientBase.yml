@@ -11,3 +11,6 @@ methods:
 - uid: botframework.connector.http_client_base.HttpClientBase.post
   name: post
   signature: 'abstract async post(*, request: HttpRequest) -> HttpResponseBase'
+  keywordOnlyParameters:
+  - name: request
+    isRequired: true

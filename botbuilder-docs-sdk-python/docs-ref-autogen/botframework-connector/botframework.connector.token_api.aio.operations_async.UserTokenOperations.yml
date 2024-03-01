@@ -73,6 +73,11 @@ methods:
 
       overrides*.'
     isRequired: true
+  keywordOnlyParameters:
+  - name: custom_headers
+    isRequired: true
+  - name: raw
+    isRequired: true
   return:
     description: object or ClientRawResponse if raw=true
     types:
@@ -117,6 +122,11 @@ methods:
     description: '*Operation configuration
 
       overrides*.'
+    isRequired: true
+  keywordOnlyParameters:
+  - name: custom_headers
+    isRequired: true
+  - name: raw
     isRequired: true
   return:
     description: dict or ClientRawResponse if raw=true
@@ -163,6 +173,11 @@ methods:
 
       overrides*.'
     isRequired: true
+  keywordOnlyParameters:
+  - name: custom_headers
+    isRequired: true
+  - name: raw
+    isRequired: true
   return:
     description: TokenResponse or ClientRawResponse if raw=true
     types:
@@ -204,6 +219,11 @@ methods:
 
       overrides*.'
     isRequired: true
+  keywordOnlyParameters:
+  - name: custom_headers
+    isRequired: true
+  - name: raw
+    isRequired: true
   return:
     description: list or ClientRawResponse if raw=true
     types:
@@ -244,6 +264,11 @@ methods:
     description: '*Operation configuration
 
       overrides*.'
+    isRequired: true
+  keywordOnlyParameters:
+  - name: custom_headers
+    isRequired: true
+  - name: raw
     isRequired: true
   return:
     description: object or ClientRawResponse if raw=true

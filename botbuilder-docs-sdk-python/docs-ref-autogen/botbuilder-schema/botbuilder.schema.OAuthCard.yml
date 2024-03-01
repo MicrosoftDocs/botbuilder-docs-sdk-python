@@ -25,3 +25,12 @@ constructor:
     isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.models.CardAction>]
+  keywordOnlyParameters:
+  - name: text
+    isRequired: true
+  - name: connection_name
+    isRequired: true
+  - name: buttons
+    isRequired: true
+  - name: token_exchange_resource
+    isRequired: true

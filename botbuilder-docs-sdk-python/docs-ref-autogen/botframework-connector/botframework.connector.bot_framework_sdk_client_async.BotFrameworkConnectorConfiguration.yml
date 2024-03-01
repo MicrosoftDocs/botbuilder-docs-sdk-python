@@ -11,4 +11,13 @@ constructor:
     AsyncHTTPSender | None = None)'
   parameters:
   - name: credentials
+    isRequired: true
   - name: base_url
+    isRequired: true
+  keywordOnlyParameters:
+  - name: pipeline_type
+    isRequired: true
+  - name: sender
+    isRequired: true
+  - name: driver
+    isRequired: true

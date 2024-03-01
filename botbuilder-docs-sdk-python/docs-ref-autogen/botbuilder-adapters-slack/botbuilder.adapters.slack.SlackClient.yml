@@ -10,6 +10,7 @@ constructor:
   syntax: 'SlackClient(options: SlackClientOptions)'
   parameters:
   - name: options
+    isRequired: true
 methods:
 - uid: botbuilder.adapters.slack.SlackClient.channels_list_ex
   name: channels_list_ex

@@ -9,6 +9,7 @@ constructor:
   syntax: AnonymousReceiveMiddleware(anonymous_handler)
   parameters:
   - name: anonymous_handler
+    isRequired: true
 methods:
 - uid: botbuilder.core.middleware_set.AnonymousReceiveMiddleware.on_turn
   name: on_turn

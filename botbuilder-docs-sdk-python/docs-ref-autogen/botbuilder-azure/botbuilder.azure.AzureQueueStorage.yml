@@ -9,7 +9,9 @@ constructor:
   syntax: 'AzureQueueStorage(queues_storage_connection_string: str, queue_name: str)'
   parameters:
   - name: queues_storage_connection_string
+    isRequired: true
   - name: queue_name
+    isRequired: true
 methods:
 - uid: botbuilder.azure.AzureQueueStorage.queue_activity
   name: queue_activity

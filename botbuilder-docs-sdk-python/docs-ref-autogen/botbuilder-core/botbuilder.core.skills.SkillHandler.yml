@@ -11,10 +11,15 @@ constructor:
     channel_provider: ChannelProvider = None, logger: Logger = None)'
   parameters:
   - name: adapter
+    isRequired: true
   - name: bot
+    isRequired: true
   - name: conversation_id_factory
+    isRequired: true
   - name: credential_provider
+    isRequired: true
   - name: auth_configuration
+    isRequired: true
   - name: channel_provider
     defaultValue: None
   - name: logger

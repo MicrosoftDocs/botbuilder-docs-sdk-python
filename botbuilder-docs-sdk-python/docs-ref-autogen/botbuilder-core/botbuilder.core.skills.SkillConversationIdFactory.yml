@@ -9,6 +9,7 @@ constructor:
   syntax: 'SkillConversationIdFactory(storage: Storage)'
   parameters:
   - name: storage
+    isRequired: true
 methods:
 - uid: botbuilder.core.skills.SkillConversationIdFactory.create_skill_conversation_id
   name: create_skill_conversation_id

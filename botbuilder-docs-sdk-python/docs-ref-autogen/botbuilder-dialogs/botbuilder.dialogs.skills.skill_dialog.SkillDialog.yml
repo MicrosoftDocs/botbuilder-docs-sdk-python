@@ -9,7 +9,9 @@ constructor:
   syntax: 'SkillDialog(dialog_options: SkillDialogOptions, dialog_id: str)'
   parameters:
   - name: dialog_options
+    isRequired: true
   - name: dialog_id
+    isRequired: true
 methods:
 - uid: botbuilder.dialogs.skills.skill_dialog.SkillDialog.begin_dialog
   name: begin_dialog

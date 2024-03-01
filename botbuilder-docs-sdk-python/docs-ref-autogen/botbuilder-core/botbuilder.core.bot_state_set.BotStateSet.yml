@@ -9,6 +9,7 @@ constructor:
   syntax: 'BotStateSet(bot_states: List[BotState])'
   parameters:
   - name: bot_states
+    isRequired: true
 methods:
 - uid: botbuilder.core.bot_state_set.BotStateSet.add
   name: add

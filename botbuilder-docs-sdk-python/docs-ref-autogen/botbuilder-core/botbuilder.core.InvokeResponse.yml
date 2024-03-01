@@ -32,6 +32,11 @@ summary: 'Tuple class containing an HTTP Status Code and a JSON serializable
   dictionaries of strings are acceptable).'
 constructor:
   syntax: 'InvokeResponse(*, status: int = None, body: object = None, **kwargs)'
+  keywordOnlyParameters:
+  - name: status
+    isRequired: true
+  - name: body
+    isRequired: true
 methods:
 - uid: botbuilder.core.InvokeResponse.is_successful_status_code
   name: is_successful_status_code

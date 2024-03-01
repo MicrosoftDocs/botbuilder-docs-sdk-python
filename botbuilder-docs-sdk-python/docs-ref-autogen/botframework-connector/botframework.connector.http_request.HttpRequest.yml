@@ -8,3 +8,10 @@ inheritances:
 constructor:
   syntax: 'HttpRequest(*, request_uri: str = None, content: Any = None, headers: Dict[str,
     str] = None)'
+  keywordOnlyParameters:
+  - name: request_uri
+    isRequired: true
+  - name: content
+    isRequired: true
+  - name: headers
+    isRequired: true

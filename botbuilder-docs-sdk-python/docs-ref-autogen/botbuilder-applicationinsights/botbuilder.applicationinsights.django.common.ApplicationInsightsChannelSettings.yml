@@ -11,9 +11,13 @@ constructor:
   syntax: ApplicationInsightsChannelSettings(send_interval, send_time, endpoint)
   parameters:
   - name: _cls
+    isRequired: true
   - name: send_interval
+    isRequired: true
   - name: send_time
+    isRequired: true
   - name: endpoint
+    isRequired: true
 attributes:
 - uid: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings.endpoint
   name: endpoint

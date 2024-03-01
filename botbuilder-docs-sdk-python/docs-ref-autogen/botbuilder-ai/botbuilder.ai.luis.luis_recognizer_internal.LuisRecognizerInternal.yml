@@ -9,6 +9,7 @@ constructor:
   syntax: 'LuisRecognizerInternal(luis_application: LuisApplication)'
   parameters:
   - name: luis_application
+    isRequired: true
 methods:
 - uid: botbuilder.ai.luis.luis_recognizer_internal.LuisRecognizerInternal.recognizer_internal
   name: recognizer_internal

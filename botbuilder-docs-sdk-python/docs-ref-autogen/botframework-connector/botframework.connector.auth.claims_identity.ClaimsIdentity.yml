@@ -10,7 +10,9 @@ constructor:
     str = None)'
   parameters:
   - name: claims
+    isRequired: true
   - name: is_authenticated
+    isRequired: true
   - name: authentication_type
     defaultValue: None
 methods:

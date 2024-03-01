@@ -14,6 +14,7 @@ constructor:
     Exception], Awaitable] = None, options: SlackAdapterOptions = None)'
   parameters:
   - name: client
+    isRequired: true
   - name: on_turn_error
     defaultValue: None
   - name: options

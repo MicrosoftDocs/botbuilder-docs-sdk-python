@@ -69,6 +69,11 @@ methods:
 
       overrides*.'
     isRequired: true
+  keywordOnlyParameters:
+  - name: custom_headers
+    isRequired: true
+  - name: raw
+    isRequired: true
   return:
     description: SignInUrlResponse or ClientRawResponse if raw=true
     types:
@@ -113,6 +118,11 @@ methods:
     description: '*Operation configuration
 
       overrides*.'
+    isRequired: true
+  keywordOnlyParameters:
+  - name: custom_headers
+    isRequired: true
+  - name: raw
     isRequired: true
   return:
     description: str or ClientRawResponse if raw=true

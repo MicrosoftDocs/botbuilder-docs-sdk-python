@@ -10,6 +10,10 @@ constructor:
     str, activity: Activity, bot_framework_skill: BotFrameworkSkill)'
   parameters:
   - name: from_bot_oauth_scope
+    isRequired: true
   - name: from_bot_id
+    isRequired: true
   - name: activity
+    isRequired: true
   - name: bot_framework_skill
+    isRequired: true

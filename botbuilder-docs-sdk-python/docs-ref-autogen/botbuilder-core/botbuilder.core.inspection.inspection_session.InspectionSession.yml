@@ -10,7 +10,9 @@ constructor:
     MicrosoftAppCredentials)'
   parameters:
   - name: conversation_reference
+    isRequired: true
   - name: credentials
+    isRequired: true
 methods:
 - uid: botbuilder.core.inspection.inspection_session.InspectionSession.send
   name: send

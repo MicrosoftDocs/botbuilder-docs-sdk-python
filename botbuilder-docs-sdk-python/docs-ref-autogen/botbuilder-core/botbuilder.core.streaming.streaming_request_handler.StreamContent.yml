@@ -9,3 +9,7 @@ constructor:
   syntax: 'StreamContent(stream: List[int], *, headers: Dict[str, str] = None)'
   parameters:
   - name: stream
+    isRequired: true
+  keywordOnlyParameters:
+  - name: headers
+    isRequired: true

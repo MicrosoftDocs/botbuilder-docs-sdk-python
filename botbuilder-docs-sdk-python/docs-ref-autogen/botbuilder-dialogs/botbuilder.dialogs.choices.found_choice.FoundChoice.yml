@@ -27,7 +27,10 @@ constructor:
   syntax: 'FoundChoice(value: str, index: int, score: float, synonym: str = None)'
   parameters:
   - name: value
+    isRequired: true
   - name: index
+    isRequired: true
   - name: score
+    isRequired: true
   - name: synonym
     defaultValue: None

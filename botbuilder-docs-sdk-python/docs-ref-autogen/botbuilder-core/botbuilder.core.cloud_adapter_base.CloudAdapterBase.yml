@@ -10,6 +10,7 @@ constructor:
   syntax: 'CloudAdapterBase(bot_framework_authentication: BotFrameworkAuthentication)'
   parameters:
   - name: bot_framework_authentication
+    isRequired: true
 methods:
 - uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.continue_conversation
   name: continue_conversation

@@ -328,6 +328,91 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: type
+    isRequired: true
+  - name: id
+    isRequired: true
+  - name: timestamp
+    isRequired: true
+  - name: local_timestamp
+    isRequired: true
+  - name: local_timezone
+    isRequired: true
+  - name: service_url
+    isRequired: true
+  - name: channel_id
+    isRequired: true
+  - name: from_property
+    isRequired: true
+  - name: conversation
+    isRequired: true
+  - name: recipient
+    isRequired: true
+  - name: text_format
+    isRequired: true
+  - name: attachment_layout
+    isRequired: true
+  - name: members_added
+    isRequired: true
+  - name: members_removed
+    isRequired: true
+  - name: reactions_added
+    isRequired: true
+  - name: reactions_removed
+    isRequired: true
+  - name: topic_name
+    isRequired: true
+  - name: history_disclosed
+    isRequired: true
+  - name: locale
+    isRequired: true
+  - name: text
+    isRequired: true
+  - name: speak
+    isRequired: true
+  - name: input_hint
+    isRequired: true
+  - name: summary
+    isRequired: true
+  - name: suggested_actions
+    isRequired: true
+  - name: attachments
+    isRequired: true
+  - name: entities
+    isRequired: true
+  - name: channel_data
+    isRequired: true
+  - name: action
+    isRequired: true
+  - name: reply_to_id
+    isRequired: true
+  - name: label
+    isRequired: true
+  - name: value_type
+    isRequired: true
+  - name: value
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: relates_to
+    isRequired: true
+  - name: code
+    isRequired: true
+  - name: expiration
+    isRequired: true
+  - name: importance
+    isRequired: true
+  - name: delivery_mode
+    isRequired: true
+  - name: listen_for
+    isRequired: true
+  - name: text_highlights
+    isRequired: true
+  - name: semantic_action
+    isRequired: true
+  - name: caller_id
+    isRequired: true
 methods:
 - uid: botbuilder.schema.Activity.apply_conversation_reference
   name: apply_conversation_reference

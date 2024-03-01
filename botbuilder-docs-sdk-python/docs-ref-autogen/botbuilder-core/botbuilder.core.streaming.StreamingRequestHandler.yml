@@ -10,8 +10,11 @@ constructor:
     web_socket: WebSocket, logger: Logger = None)'
   parameters:
   - name: bot
+    isRequired: true
   - name: activity_processor
+    isRequired: true
   - name: web_socket
+    isRequired: true
   - name: logger
     defaultValue: None
 methods:

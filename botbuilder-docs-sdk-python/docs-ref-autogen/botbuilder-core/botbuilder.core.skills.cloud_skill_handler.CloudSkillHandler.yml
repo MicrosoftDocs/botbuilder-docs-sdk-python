@@ -11,9 +11,13 @@ constructor:
     None)'
   parameters:
   - name: adapter
+    isRequired: true
   - name: bot
+    isRequired: true
   - name: conversation_id_factory
+    isRequired: true
   - name: auth
+    isRequired: true
   - name: logger
     defaultValue: None
 methods:

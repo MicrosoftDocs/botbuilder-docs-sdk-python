@@ -17,6 +17,7 @@ constructor:
   syntax: 'UserState(storage: Storage, namespace='''')'
   parameters:
   - name: storage
+    isRequired: true
   - name: namespace
 methods:
 - uid: botbuilder.core.user_state.UserState.get_storage_key

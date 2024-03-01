@@ -10,11 +10,17 @@ constructor:
     Dict[str, object], index: int, reason: DialogReason, result: object = None)'
   parameters:
   - name: parent
+    isRequired: true
   - name: dc
+    isRequired: true
   - name: options
+    isRequired: true
   - name: values
+    isRequired: true
   - name: index
+    isRequired: true
   - name: reason
+    isRequired: true
   - name: result
     defaultValue: None
 methods:

@@ -23,6 +23,7 @@ functions:
     None)'
   parameters:
   - name: reason
+    isRequired: true
   - name: telemetry_processor
     defaultValue: None
 - uid: botbuilder.applicationinsights.django.common.get_telemetry_client_with_processor

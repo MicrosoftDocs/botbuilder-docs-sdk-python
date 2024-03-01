@@ -10,8 +10,11 @@ constructor:
     DialogState)'
   parameters:
   - name: dialog_set
+    isRequired: true
   - name: turn_context
+    isRequired: true
   - name: state
+    isRequired: true
 methods:
 - uid: botbuilder.dialogs.DialogContext.begin_dialog
   name: begin_dialog

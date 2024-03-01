@@ -10,7 +10,9 @@ constructor:
     BotTelemetryClient)'
   parameters:
   - name: log_personal_information
+    isRequired: true
   - name: telemetry_client
+    isRequired: true
 methods:
 - uid: botbuilder.ai.qna.QnAMakerTelemetryClient.get_answers
   name: get_answers

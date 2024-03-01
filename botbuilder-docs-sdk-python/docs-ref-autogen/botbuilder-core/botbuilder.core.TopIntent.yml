@@ -13,8 +13,11 @@ constructor:
   syntax: 'TopIntent(intent: str, score: float)'
   parameters:
   - name: _cls
+    isRequired: true
   - name: intent
+    isRequired: true
   - name: score
+    isRequired: true
 attributes:
 - uid: botbuilder.core.TopIntent.intent
   name: intent

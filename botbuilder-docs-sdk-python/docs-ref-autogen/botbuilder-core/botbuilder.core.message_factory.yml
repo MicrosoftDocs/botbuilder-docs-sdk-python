@@ -10,7 +10,9 @@ functions:
     | str = InputHints.accepting_input) -> Activity'
   parameters:
   - name: attachment_layout
+    isRequired: true
   - name: attachments
+    isRequired: true
   - name: text
     defaultValue: None
   - name: speak

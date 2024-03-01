@@ -9,6 +9,7 @@ constructor:
   syntax: 'PrivateConversationState(storage: Storage, namespace: str = '''')'
   parameters:
   - name: storage
+    isRequired: true
   - name: namespace
 methods:
 - uid: botbuilder.core.private_conversation_state.PrivateConversationState.get_storage_key

@@ -10,7 +10,9 @@ constructor:
     ReceiveResponse)'
   parameters:
   - name: request
+    isRequired: true
   - name: streaming_response
+    isRequired: true
 methods:
 - uid: botbuilder.core.streaming.streaming_http_client.StreamingProtocolClientResponse.body
   name: body

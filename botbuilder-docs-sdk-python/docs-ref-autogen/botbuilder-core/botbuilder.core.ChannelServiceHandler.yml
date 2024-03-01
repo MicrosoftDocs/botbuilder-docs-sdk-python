@@ -13,7 +13,9 @@ constructor:
     AuthenticationConfiguration, channel_provider: ChannelProvider = None)'
   parameters:
   - name: credential_provider
+    isRequired: true
   - name: auth_config
+    isRequired: true
   - name: channel_provider
     defaultValue: None
 methods:

@@ -10,8 +10,11 @@ constructor:
     allowed_algorithms: list)'
   parameters:
   - name: validation_params
+    isRequired: true
   - name: metadata_url
+    isRequired: true
   - name: allowed_algorithms
+    isRequired: true
 methods:
 - uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_identity
   name: get_identity

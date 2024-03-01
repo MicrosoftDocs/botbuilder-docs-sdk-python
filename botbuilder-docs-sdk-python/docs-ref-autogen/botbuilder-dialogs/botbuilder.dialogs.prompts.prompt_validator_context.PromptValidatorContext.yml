@@ -20,9 +20,13 @@ constructor:
     state: Dict[str, object], options: PromptOptions)'
   parameters:
   - name: turn_context
+    isRequired: true
   - name: recognized
+    isRequired: true
   - name: state
+    isRequired: true
   - name: options
+    isRequired: true
 attributes:
 - uid: botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext.attempt_count
   name: attempt_count
