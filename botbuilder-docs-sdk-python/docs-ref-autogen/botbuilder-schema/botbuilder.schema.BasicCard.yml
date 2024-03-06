@@ -7,8 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: A basic card.
 constructor:
-  syntax: 'BasicCard(*, title: Optional[str] = None, subtitle: Optional[str] = None,
-    text: Optional[str] = None, images=None, buttons=None, tap=None, **kwargs)'
+  syntax: 'BasicCard(*, title: str = None, subtitle: str = None, text: str = None,
+    images=None, buttons=None, tap=None, **kwargs)'
   parameters:
   - name: title
     description: Title of the card
@@ -42,3 +42,16 @@ constructor:
     isRequired: true
     types:
     - <xref:botframework.connector.models.CardAction>
+  keywordOnlyParameters:
+  - name: title
+    isRequired: true
+  - name: subtitle
+    isRequired: true
+  - name: text
+    isRequired: true
+  - name: images
+    isRequired: true
+  - name: buttons
+    isRequired: true
+  - name: tap
+    isRequired: true

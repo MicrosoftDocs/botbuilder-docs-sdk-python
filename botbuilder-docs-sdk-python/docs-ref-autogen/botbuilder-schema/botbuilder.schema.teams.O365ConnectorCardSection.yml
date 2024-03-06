@@ -7,10 +7,9 @@ inheritances:
 - msrest.serialization.Model
 summary: O365 connector card section.
 constructor:
-  syntax: 'O365ConnectorCardSection(*, title: Optional[str] = None, text: Optional[str]
-    = None, activity_title: Optional[str] = None, activity_subtitle: Optional[str]
-    = None, activity_text: Optional[str] = None, activity_image: Optional[str] = None,
-    activity_image_type=None, markdown: Optional[bool] = None, facts=None, images=None,
+  syntax: 'O365ConnectorCardSection(*, title: str = None, text: str = None, activity_title:
+    str = None, activity_subtitle: str = None, activity_text: str = None, activity_image:
+    str = None, activity_image_type=None, markdown: bool = None, facts=None, images=None,
     potential_action=None, **kwargs)'
   parameters:
   - name: title
@@ -73,3 +72,26 @@ constructor:
     isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.teams.models.O365ConnectorCardActionBase>]
+  keywordOnlyParameters:
+  - name: title
+    isRequired: true
+  - name: text
+    isRequired: true
+  - name: activity_title
+    isRequired: true
+  - name: activity_subtitle
+    isRequired: true
+  - name: activity_text
+    isRequired: true
+  - name: activity_image
+    isRequired: true
+  - name: activity_image_type
+    isRequired: true
+  - name: markdown
+    isRequired: true
+  - name: facts
+    isRequired: true
+  - name: images
+    isRequired: true
+  - name: potential_action
+    isRequired: true

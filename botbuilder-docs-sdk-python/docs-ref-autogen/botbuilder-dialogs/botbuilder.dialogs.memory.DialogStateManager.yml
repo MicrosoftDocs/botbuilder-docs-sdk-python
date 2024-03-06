@@ -5,11 +5,17 @@ fullName: botbuilder.dialogs.memory.DialogStateManager
 module: botbuilder.dialogs.memory
 inheritances:
 - builtins.object
+summary: 'Initializes a new instance of the DialogStateManager class.
+
+  :param dialog_context: The dialog context for the current turn of the conversation.
+
+  :param configuration: Configuration for the dialog state manager. Default is None.'
 constructor:
-  syntax: 'DialogStateManager(dialog_context: DialogContext, configuration: botbuilder.dialogs.memory.dialog_state_manager_configuration.DialogStateManagerConfiguration
+  syntax: 'DialogStateManager(dialog_context: DialogContext, configuration: DialogStateManagerConfiguration
     = None)'
   parameters:
   - name: dialog_context
+    isRequired: true
   - name: configuration
     defaultValue: None
 methods:
@@ -146,7 +152,7 @@ methods:
     :param name:
 
     :return: A memory scope.'
-  signature: 'get_memory_scope(name: str) -> botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope'
+  signature: 'get_memory_scope(name: str) -> MemoryScope'
   parameters:
   - name: name
     isRequired: true
@@ -183,8 +189,8 @@ methods:
     :param default_value: Function to give default value if there is none (OPTIONAL).
 
     :return: Result or null if the path is not valid.'
-  signature: 'get_value(class_type: Type, path_expression: str, default_value: Optional[Callable[],
-    T]] = None) -> T'
+  signature: 'get_value(class_type: Type, path_expression: str, default_value: Callable[[],
+    T] = None) -> T'
   parameters:
   - name: class_type
     isRequired: true
@@ -241,8 +247,7 @@ methods:
     :param path:
 
     :return: The memory scope and remaining subpath in scope.'
-  signature: 'resolve_memory_scope(path: str) -> Tuple[botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope,
-    str]'
+  signature: 'resolve_memory_scope(path: str) -> Tuple[MemoryScope, str]'
   parameters:
   - name: path
     isRequired: true
@@ -299,8 +304,8 @@ methods:
     :param path: Path expression to use.
 
     :return: True if found, false if not and the value.'
-  signature: 'try_get_value(path: str, class_type: Type = <class ''object''>) -> Tuple[bool,
-    object]'
+  signature: 'try_get_value(path: str, class_type: ~typing.Type = <class ''object''>)
+    -> Tuple[bool, object]'
   parameters:
   - name: path
     isRequired: true

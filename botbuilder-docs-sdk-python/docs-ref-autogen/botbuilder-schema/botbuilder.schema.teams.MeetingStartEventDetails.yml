@@ -7,10 +7,13 @@ inheritances:
 - botbuilder.schema.teams._models_py3.MeetingDetailsBase
 summary: Specific details of a Teams meeting start event.
 constructor:
-  syntax: 'MeetingStartEventDetails(*, start_time: Optional[str] = None, **kwargs)'
+  syntax: 'MeetingStartEventDetails(*, start_time: str = None, **kwargs)'
   parameters:
   - name: start_time
     description: Timestamp for meeting start, in UTC.
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: start_time
+    isRequired: true

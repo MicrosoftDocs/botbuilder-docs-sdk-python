@@ -7,9 +7,9 @@ inheritances:
 - msrest.serialization.Model
 summary: Represents the attachment in a message.
 constructor:
-  syntax: 'MessageActionsPayloadAttachment(*, id: Optional[str] = None, content_type:
-    Optional[str] = None, content_url: Optional[str] = None, content=None, name: Optional[str]
-    = None, thumbnail_url: Optional[str] = None, **kwargs)'
+  syntax: 'MessageActionsPayloadAttachment(*, id: str = None, content_type: str =
+    None, content_url: str = None, content=None, name: str = None, thumbnail_url:
+    str = None, **kwargs)'
   parameters:
   - name: id
     description: The id of the attachment.
@@ -45,3 +45,16 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: id
+    isRequired: true
+  - name: content_type
+    isRequired: true
+  - name: content_url
+    isRequired: true
+  - name: content
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: thumbnail_url
+    isRequired: true

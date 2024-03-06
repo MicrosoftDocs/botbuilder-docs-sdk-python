@@ -17,8 +17,7 @@ constructor:
 methods:
 - uid: botbuilder.core.MiddlewareSet.on_turn
   name: on_turn
-  signature: 'async on_turn(context: botbuilder.core.turn_context.TurnContext, logic:
-    Callable[[botbuilder.core.turn_context.TurnContext], Awaitable])'
+  signature: 'async on_turn(context: TurnContext, logic: Callable[[TurnContext], Awaitable])'
   parameters:
   - name: context
     isRequired: true
@@ -26,15 +25,14 @@ methods:
     isRequired: true
 - uid: botbuilder.core.MiddlewareSet.receive_activity
   name: receive_activity
-  signature: 'async receive_activity(context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async receive_activity(context: TurnContext)'
   parameters:
   - name: context
     isRequired: true
 - uid: botbuilder.core.MiddlewareSet.receive_activity_internal
   name: receive_activity_internal
-  signature: 'async receive_activity_internal(context: botbuilder.core.turn_context.TurnContext,
-    callback: Callable[[botbuilder.core.turn_context.TurnContext], Awaitable], next_middleware_index:
-    int = 0)'
+  signature: 'async receive_activity_internal(context: TurnContext, callback: Callable[[TurnContext],
+    Awaitable], next_middleware_index: int = 0)'
   parameters:
   - name: context
     isRequired: true
@@ -44,8 +42,8 @@ methods:
     defaultValue: '0'
 - uid: botbuilder.core.MiddlewareSet.receive_activity_with_status
   name: receive_activity_with_status
-  signature: 'async receive_activity_with_status(context: botbuilder.core.turn_context.TurnContext,
-    callback: Callable[[botbuilder.core.turn_context.TurnContext], Awaitable])'
+  signature: 'async receive_activity_with_status(context: TurnContext, callback: Callable[[TurnContext],
+    Awaitable])'
   parameters:
   - name: context
     isRequired: true
@@ -58,4 +56,4 @@ methods:
     :param middleware :
 
     :return:'
-  signature: 'use(*middleware: botbuilder.core.middleware_set.Middleware)'
+  signature: 'use(*middleware: Middleware)'

@@ -5,3 +5,18 @@ fullName: botbuilder-applicationinsights
 type: distribution
 packages:
 - botbuilder.applicationinsights
+- botbuilder.applicationinsights.django
+- botbuilder.applicationinsights.flask
+- botbuilder.applicationinsights.processor
+modules:
+- botbuilder.applicationinsights.about
+- botbuilder.applicationinsights.application_insights_telemetry_client
+- botbuilder.applicationinsights.bot_telemetry_processor
+- botbuilder.applicationinsights.django.bot_telemetry_middleware
+- botbuilder.applicationinsights.django.common
+- botbuilder.applicationinsights.django.django_telemetry_processor
+- botbuilder.applicationinsights.django.logging
+- botbuilder.applicationinsights.django.middleware
+- botbuilder.applicationinsights.flask.flask_telemetry_middleware
+- botbuilder.applicationinsights.flask.flask_telemetry_processor
+- botbuilder.applicationinsights.processor.telemetry_processor

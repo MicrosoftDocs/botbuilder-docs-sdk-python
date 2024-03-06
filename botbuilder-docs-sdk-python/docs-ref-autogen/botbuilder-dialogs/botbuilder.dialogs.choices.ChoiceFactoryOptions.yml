@@ -5,16 +5,39 @@ fullName: botbuilder.dialogs.choices.ChoiceFactoryOptions
 module: botbuilder.dialogs.choices
 inheritances:
 - builtins.object
+summary: 'Initializes a new instance.
+
+  Refer to the code in the ConfirmPrompt for an example of usage.'
 constructor:
-  syntax: 'ChoiceFactoryOptions(inline_separator: Optional[str] = None, inline_or:
-    Optional[str] = None, inline_or_more: Optional[str] = None, include_numbers: Optional[bool]
-    = None)'
+  syntax: 'ChoiceFactoryOptions(inline_separator: str = None, inline_or: str = None,
+    inline_or_more: str = None, include_numbers: bool = None)'
   parameters:
+  - name: object
+    isRequired: true
   - name: inline_separator
+    description: The inline seperator value, defaults to None
+    defaultValue: None
+  - name: inline_separator
+    description: str, optional
+    isRequired: true
+  - name: inline_or
+    description: The inline or value, defaults to None
     defaultValue: None
   - name: inline_or
+    description: str, optional
+    isRequired: true
+  - name: inline_or_more
+    description: The inline or more value, defaults to None
     defaultValue: None
   - name: inline_or_more
-    defaultValue: None
+    description: str, optional
+    isRequired: true
+  - name: includeNumbers
+    description: Flag indicating whether to include numbers as a choice, defaults
+      to None
+    isRequired: true
+  - name: includeNumbers
+    description: bool, optional
+    isRequired: true
   - name: include_numbers
     defaultValue: None

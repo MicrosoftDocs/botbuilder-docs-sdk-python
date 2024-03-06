@@ -7,8 +7,7 @@ inheritances:
 - msrest.serialization.Model
 summary: 'Mention information (entity type: "mention").'
 constructor:
-  syntax: 'Mention(*, mentioned=None, text: Optional[str] = None, type: Optional[str]
-    = None, **kwargs)'
+  syntax: 'Mention(*, mentioned=None, text: str = None, type: str = None, **kwargs)'
   parameters:
   - name: mentioned
     description: The mentioned user
@@ -25,3 +24,10 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: mentioned
+    isRequired: true
+  - name: text
+    isRequired: true
+  - name: type
+    isRequired: true

@@ -7,9 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: An item on a receipt card.
 constructor:
-  syntax: 'ReceiptItem(*, title: Optional[str] = None, subtitle: Optional[str] = None,
-    text: Optional[str] = None, image=None, price: Optional[str] = None, quantity:
-    Optional[str] = None, tap=None, **kwargs)'
+  syntax: 'ReceiptItem(*, title: str = None, subtitle: str = None, text: str = None,
+    image=None, price: str = None, quantity: str = None, tap=None, **kwargs)'
   parameters:
   - name: title
     description: Title of the Card
@@ -52,3 +51,18 @@ constructor:
     isRequired: true
     types:
     - <xref:botframework.connector.models.CardAction>
+  keywordOnlyParameters:
+  - name: title
+    isRequired: true
+  - name: subtitle
+    isRequired: true
+  - name: text
+    isRequired: true
+  - name: image
+    isRequired: true
+  - name: price
+    isRequired: true
+  - name: quantity
+    isRequired: true
+  - name: tap
+    isRequired: true

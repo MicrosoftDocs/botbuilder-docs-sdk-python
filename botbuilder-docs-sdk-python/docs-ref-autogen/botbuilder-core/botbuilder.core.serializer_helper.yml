@@ -5,14 +5,16 @@ fullName: botbuilder.core.serializer_helper
 functions:
 - uid: botbuilder.core.serializer_helper.deserializer_helper
   name: deserializer_helper
-  signature: 'deserializer_helper(msrest_cls: Type[msrest.serialization.Model], dict_to_deserialize:
-    dict) -> msrest.serialization.Model'
+  signature: 'deserializer_helper(msrest_cls: Type[Model], dict_to_deserialize: dict)
+    -> Model'
   parameters:
   - name: msrest_cls
+    isRequired: true
   - name: dict_to_deserialize
+    isRequired: true
 - uid: botbuilder.core.serializer_helper.serializer_helper
   name: serializer_helper
-  signature: 'serializer_helper(object_to_serialize: msrest.serialization.Model) ->
-    dict'
+  signature: 'serializer_helper(object_to_serialize: Model) -> dict'
   parameters:
   - name: object_to_serialize
+    isRequired: true
