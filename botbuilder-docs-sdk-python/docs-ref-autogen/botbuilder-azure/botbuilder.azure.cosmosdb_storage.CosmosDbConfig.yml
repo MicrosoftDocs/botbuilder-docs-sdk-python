@@ -5,12 +5,14 @@ fullName: botbuilder.azure.cosmosdb_storage.CosmosDbConfig
 module: botbuilder.azure.cosmosdb_storage
 inheritances:
 - builtins.object
-summary: The class for CosmosDB configuration for the Azure Bot Framework.
+summary: 'The class for CosmosDB configuration for the Azure Bot Framework.
+
+
+  Create the Config object.'
 constructor:
-  syntax: 'CosmosDbConfig(endpoint: Optional[str] = None, masterkey: Optional[str]
-    = None, database: Optional[str] = None, container: Optional[str] = None, partition_key:
-    Optional[str] = None, database_creation_options: Optional[dict] = None, container_creation_options:
-    Optional[dict] = None, **kwargs)'
+  syntax: 'CosmosDbConfig(endpoint: str = None, masterkey: str = None, database: str
+    = None, container: str = None, partition_key: str = None, database_creation_options:
+    dict = None, container_creation_options: dict = None, **kwargs)'
   parameters:
   - name: endpoint
     defaultValue: None
@@ -20,6 +22,8 @@ constructor:
     defaultValue: None
   - name: container
     defaultValue: None
+  - name: filename
+    isRequired: true
   - name: partition_key
     defaultValue: None
   - name: database_creation_options

@@ -7,9 +7,9 @@ inheritances:
 - botbuilder.schema.teams._models_py3.O365ConnectorCardInputBase
 summary: O365 connector card multiple choice input.
 constructor:
-  syntax: 'O365ConnectorCardMultichoiceInput(*, type=None, id: Optional[str] = None,
-    is_required: Optional[bool] = None, title: Optional[str] = None, value: Optional[str]
-    = None, choices=None, style=None, is_multi_select: Optional[bool] = None, **kwargs)'
+  syntax: 'O365ConnectorCardMultichoiceInput(*, type=None, id: str = None, is_required:
+    bool = None, title: str = None, value: str = None, choices=None, style=None, is_multi_select:
+    bool = None, **kwargs)'
   parameters:
   - name: type
     description: 'Input type name. Possible values include: ''textInput'',
@@ -61,3 +61,20 @@ constructor:
     isRequired: true
     types:
     - <xref:bool>
+  keywordOnlyParameters:
+  - name: type
+    isRequired: true
+  - name: id
+    isRequired: true
+  - name: is_required
+    isRequired: true
+  - name: title
+    isRequired: true
+  - name: value
+    isRequired: true
+  - name: choices
+    isRequired: true
+  - name: style
+    isRequired: true
+  - name: is_multi_select
+    isRequired: true

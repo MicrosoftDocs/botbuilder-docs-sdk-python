@@ -7,8 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: Channel data specific to messages received in Microsoft Teams.
 constructor:
-  syntax: 'TeamsChannelData(*, channel=None, event_type: Optional[str] = None, team=None,
-    notification=None, tenant=None, meeting=None, **kwargs)'
+  syntax: 'TeamsChannelData(*, channel=None, event_type: str = None, team=None, notification=None,
+    tenant=None, meeting=None, **kwargs)'
   parameters:
   - name: channel
     description: 'Information about the channel in which the message was
@@ -42,3 +42,16 @@ constructor:
     isRequired: true
     types:
     - <xref:botframework.connector.teams.models.TeamsMeetingInfo>
+  keywordOnlyParameters:
+  - name: channel
+    isRequired: true
+  - name: event_type
+    isRequired: true
+  - name: team
+    isRequired: true
+  - name: notification
+    isRequired: true
+  - name: tenant
+    isRequired: true
+  - name: meeting
+    isRequired: true

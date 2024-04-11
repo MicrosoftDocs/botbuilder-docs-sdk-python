@@ -11,18 +11,17 @@ methods:
 - uid: botframework.connector.auth.bot_framework_authentication_factory.BotFrameworkAuthenticationFactory.create
   name: create
   summary: Creates the appropriate BotFrameworkAuthentication instance.
-  signature: 'static create(*, channel_service: Optional[str] = None, validate_authority:
-    bool = False, to_channel_from_bot_login_url: Optional[str] = None, to_channel_from_bot_oauth_scope:
-    Optional[str] = None, to_bot_from_channel_token_issuer: Optional[str] = None,
-    oauth_url: Optional[str] = None, to_bot_from_channel_open_id_metadata_url: Optional[str]
-    = None, to_bot_from_emulator_open_id_metadata_url: Optional[str] = None, caller_id:
-    Optional[str] = None, credential_factory: botframework.connector.auth.service_client_credentials_factory.ServiceClientCredentialsFactory
+  signature: 'static create(*, channel_service: str = None, validate_authority: bool
+    = False, to_channel_from_bot_login_url: str = None, to_channel_from_bot_oauth_scope:
+    str = None, to_bot_from_channel_token_issuer: str = None, oauth_url: str = None,
+    to_bot_from_channel_open_id_metadata_url: str = None, to_bot_from_emulator_open_id_metadata_url:
+    str = None, caller_id: str = None, credential_factory: ~botframework.connector.auth.service_client_credentials_factory.ServiceClientCredentialsFactory
     = <botframework.connector.auth.password_service_client_credential_factory.PasswordServiceClientCredentialFactory
-    object>, auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
+    object>, auth_configuration: ~botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
     = <botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
-    object>, http_client_factory: Optional[botframework.connector.http_client_factory.HttpClientFactory]
-    = None, connector_client_configuration: Optional[botframework.connector.bot_framework_sdk_client_async.BotFrameworkConnectorConfiguration]
-    = None, logger: Optional[logging.Logger] = None) -> botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication'
+    object>, http_client_factory: ~botframework.connector.http_client_factory.HttpClientFactory
+    = None, connector_client_configuration: ~botframework.connector.bot_framework_sdk_client_async.BotFrameworkConnectorConfiguration
+    = None, logger: ~logging.Logger = None) -> BotFrameworkAuthentication'
   parameters:
   - name: channel_service
     description: The Channel Service.
@@ -65,6 +64,37 @@ methods:
     isRequired: true
   - name: logger
     description: The Logger to use.
+    isRequired: true
+  keywordOnlyParameters:
+  - name: channel_service
+    isRequired: true
+  - name: validate_authority
+    isRequired: true
+  - name: to_channel_from_bot_login_url
+    isRequired: true
+  - name: to_channel_from_bot_oauth_scope
+    isRequired: true
+  - name: to_bot_from_channel_token_issuer
+    isRequired: true
+  - name: oauth_url
+    isRequired: true
+  - name: to_bot_from_channel_open_id_metadata_url
+    isRequired: true
+  - name: to_bot_from_emulator_open_id_metadata_url
+    isRequired: true
+  - name: caller_id
+    isRequired: true
+  - name: credential_factory
+    defaultValue: <botframework.connector.auth.password_service_client_credential_factory.PasswordServiceClientCredentialFactory
+      object at 0x0000028F1734A450>
+  - name: auth_configuration
+    defaultValue: <botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
+      object at 0x0000028F17354A50>
+  - name: http_client_factory
+    isRequired: true
+  - name: connector_client_configuration
+    isRequired: true
+  - name: logger
     isRequired: true
   return:
     description: A new BotFrameworkAuthentication instance.

@@ -39,8 +39,8 @@ methods:
 
     :result: Page of results of Activity objects'
   signature: 'abstract async get_transcript_activities(channel_id: str, conversation_id:
-    str, continuation_token: str, start_date: <module ''datetime'' from ''C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64\\lib\\datetime.py''>)
-    -> botbuilder.core.transcript_logger.PagedResult'
+    str, continuation_token: str, start_date: <module ''datetime'' from ''C:\\hostedtoolcache\\windows\\Python\\3.11.9\\x64\\Lib\\datetime.py''>)
+    -> PagedResult'
   parameters:
   - name: channel_id
     isRequired: true
@@ -60,7 +60,7 @@ methods:
 
     :result: Page of results of TranscriptInfo objects'
   signature: 'abstract async list_transcripts(channel_id: str, continuation_token:
-    str) -> botbuilder.core.transcript_logger.PagedResult'
+    str) -> PagedResult'
   parameters:
   - name: channel_id
     isRequired: true

@@ -5,24 +5,43 @@ fullName: botbuilder.dialogs.prompts.prompt_options.PromptOptions
 module: botbuilder.dialogs.prompts.prompt_options
 inheritances:
 - builtins.object
-summary: Contains settings to pass to a <xref:botbuilder.dialogs.prompts.prompt_options.Prompt>
+summary: 'Contains settings to pass to a <xref:botbuilder.dialogs.prompts.prompt_options.Prompt>
   object when the prompt is started.
+
+
+  Sets the initial prompt to send to the user as an <xref:botbuilder.schema.Activity>.'
 constructor:
-  syntax: 'PromptOptions(prompt: Optional[botbuilder.schema._models_py3.Activity]
-    = None, retry_prompt: Optional[botbuilder.schema._models_py3.Activity] = None,
-    choices: Optional[List[botbuilder.dialogs.choices.choice.Choice]] = None, style:
-    Optional[botbuilder.dialogs.choices.list_style.ListStyle] = None, validations:
-    Optional[object] = None, number_of_attempts: int = 0)'
+  syntax: 'PromptOptions(prompt: Activity = None, retry_prompt: Activity = None, choices:
+    List[Choice] = None, style: ListStyle = None, validations: object = None, number_of_attempts:
+    int = 0)'
   parameters:
   - name: prompt
+    description: The initial prompt to send to the user
     defaultValue: None
+    types:
+    - <xref:botbuilder.schema.Activity>
   - name: retry_prompt
+    description: The retry prompt to send to the user
     defaultValue: None
+    types:
+    - <xref:botbuilder.schema.Activity>
   - name: choices
+    description: The choices to send to the user
     defaultValue: None
+    types:
+    - <xref:typing.List>
   - name: style
+    description: The style of the list of choices to send to the user
     defaultValue: None
+    types:
+    - <xref:botbuilder.dialogs.prompts.prompt_options.ListStyle>
   - name: validations
+    description: The prompt validations
     defaultValue: None
+    types:
+    - <xref:botbuilder.dialogs.prompts.prompt_options.Object>
   - name: number_of_attempts
+    description: The number of attempts allowed
     defaultValue: '0'
+    types:
+    - <xref:int>

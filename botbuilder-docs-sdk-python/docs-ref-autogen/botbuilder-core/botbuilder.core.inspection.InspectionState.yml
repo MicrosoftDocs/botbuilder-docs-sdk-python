@@ -6,14 +6,14 @@ module: botbuilder.core.inspection
 inheritances:
 - botbuilder.core.bot_state.BotState
 constructor:
-  syntax: 'InspectionState(storage: botbuilder.core.storage.Storage)'
+  syntax: 'InspectionState(storage: Storage)'
   parameters:
   - name: storage
+    isRequired: true
 methods:
 - uid: botbuilder.core.inspection.InspectionState.get_storage_key
   name: get_storage_key
-  signature: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> str'
+  signature: 'get_storage_key(turn_context: TurnContext) -> str'
   parameters:
   - name: turn_context
     isRequired: true

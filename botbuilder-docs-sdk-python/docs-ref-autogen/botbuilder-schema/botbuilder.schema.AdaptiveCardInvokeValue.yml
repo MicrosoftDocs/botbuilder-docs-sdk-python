@@ -11,7 +11,7 @@ summary: 'AdaptiveCardInvokeResponse.
   Defines the structure that arrives in the Activity.Value for Invoke activity with
   Name of ''adaptiveCard/action''.'
 constructor:
-  syntax: 'AdaptiveCardInvokeValue(*, action=None, authentication=None, state: Optional[str]
+  syntax: 'AdaptiveCardInvokeValue(*, action=None, authentication=None, state: str
     = None, **kwargs)'
   parameters:
   - name: action
@@ -30,3 +30,10 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: action
+    isRequired: true
+  - name: authentication
+    isRequired: true
+  - name: state
+    isRequired: true

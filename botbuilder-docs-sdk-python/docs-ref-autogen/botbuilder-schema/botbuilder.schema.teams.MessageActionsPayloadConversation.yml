@@ -8,7 +8,7 @@ inheritances:
 summary: Represents a team or channel entity.
 constructor:
   syntax: 'MessageActionsPayloadConversation(*, conversation_identity_type=None, id:
-    Optional[str] = None, display_name: Optional[str] = None, **kwargs)'
+    str = None, display_name: str = None, **kwargs)'
   parameters:
   - name: conversation_identity_type
     description: 'The type of conversation, whether a
@@ -30,3 +30,10 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: conversation_identity_type
+    isRequired: true
+  - name: id
+    isRequired: true
+  - name: display_name
+    isRequired: true

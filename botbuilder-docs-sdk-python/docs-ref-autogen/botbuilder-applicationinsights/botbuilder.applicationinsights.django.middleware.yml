@@ -8,11 +8,13 @@ functions:
   signature: arg_to_str(arg)
   parameters:
   - name: arg
+    isRequired: true
 - uid: botbuilder.applicationinsights.django.middleware.ms_to_duration
   name: ms_to_duration
   signature: ms_to_duration(n)
   parameters:
   - name: n
+    isRequired: true
 classes:
 - botbuilder.applicationinsights.django.middleware.ApplicationInsightsMiddleware
 - botbuilder.applicationinsights.django.middleware.RequestAddon

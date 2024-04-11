@@ -11,9 +11,10 @@ functions:
     :param item:
 
     :return:'
-  signature: 'calculate_change_hash(item: botbuilder.core.storage.StoreItem) -> str'
+  signature: 'calculate_change_hash(item: StoreItem) -> str'
   parameters:
   - name: item
+    isRequired: true
 classes:
 - botbuilder.core.ActivityHandler
 - botbuilder.core.AdapterExtensions

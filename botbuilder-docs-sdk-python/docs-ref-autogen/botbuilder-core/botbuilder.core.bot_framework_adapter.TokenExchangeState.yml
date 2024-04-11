@@ -6,9 +6,8 @@ module: botbuilder.core.bot_framework_adapter
 inheritances:
 - msrest.serialization.Model
 constructor:
-  syntax: 'TokenExchangeState(*, connection_name: Optional[str] = None, conversation=None,
-    relates_to=None, bot_url: Optional[str] = None, ms_app_id: Optional[str] = None,
-    **kwargs)'
+  syntax: 'TokenExchangeState(*, connection_name: str = None, conversation=None, relates_to=None,
+    bot_url: str = None, ms_app_id: str = None, **kwargs)'
   parameters:
   - name: connection_name
     description: The connection name that was used.
@@ -36,3 +35,14 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: connection_name
+    isRequired: true
+  - name: conversation
+    isRequired: true
+  - name: relates_to
+    isRequired: true
+  - name: bot_url
+    isRequired: true
+  - name: ms_app_id
+    isRequired: true

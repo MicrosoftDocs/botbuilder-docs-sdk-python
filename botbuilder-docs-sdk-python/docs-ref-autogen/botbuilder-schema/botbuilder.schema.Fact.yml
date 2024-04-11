@@ -13,7 +13,7 @@ summary: 'Set of key-value pairs. Advantage of this section is that key and valu
 
   So there is no need for developer to specify style information.'
 constructor:
-  syntax: 'Fact(*, key: Optional[str] = None, value: Optional[str] = None, **kwargs)'
+  syntax: 'Fact(*, key: str = None, value: str = None, **kwargs)'
   parameters:
   - name: key
     description: The key for this Fact
@@ -25,3 +25,8 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: key
+    isRequired: true
+  - name: value
+    isRequired: true

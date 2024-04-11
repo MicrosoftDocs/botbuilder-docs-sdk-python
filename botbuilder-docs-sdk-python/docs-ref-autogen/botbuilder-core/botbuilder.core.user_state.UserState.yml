@@ -5,11 +5,19 @@ fullName: botbuilder.core.user_state.UserState
 module: botbuilder.core.user_state
 inheritances:
 - botbuilder.core.bot_state.BotState
-summary: Reads and writes user state for your bot to storage.
+summary: 'Reads and writes user state for your bot to storage.
+
+
+  Creates a new UserState instance.
+
+  :param storage:
+
+  :param namespace:'
 constructor:
-  syntax: 'UserState(storage: botbuilder.core.storage.Storage, namespace='''')'
+  syntax: 'UserState(storage: Storage, namespace='''')'
   parameters:
   - name: storage
+    isRequired: true
   - name: namespace
 methods:
 - uid: botbuilder.core.user_state.UserState.get_storage_key
@@ -19,8 +27,7 @@ methods:
     :param turn_context:
 
     :return:'
-  signature: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> str'
+  signature: 'get_storage_key(turn_context: TurnContext) -> str'
   parameters:
   - name: turn_context
     isRequired: true

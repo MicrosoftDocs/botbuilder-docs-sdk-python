@@ -7,9 +7,13 @@ inheritances:
 - builtins.object
 constructor:
   syntax: 'SkillConversationIdFactoryOptions(from_bot_oauth_scope: str, from_bot_id:
-    str, activity: botbuilder.schema._models_py3.Activity, bot_framework_skill: botbuilder.core.skills.bot_framework_skill.BotFrameworkSkill)'
+    str, activity: Activity, bot_framework_skill: BotFrameworkSkill)'
   parameters:
   - name: from_bot_oauth_scope
+    isRequired: true
   - name: from_bot_id
+    isRequired: true
   - name: activity
+    isRequired: true
   - name: bot_framework_skill
+    isRequired: true

@@ -7,9 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: The status of a particular token.
 constructor:
-  syntax: 'TokenStatus(*, channel_id: Optional[str] = None, connection_name: Optional[str]
-    = None, has_token: Optional[bool] = None, service_provider_display_name: Optional[str]
-    = None, **kwargs)'
+  syntax: 'TokenStatus(*, channel_id: str = None, connection_name: str = None, has_token:
+    bool = None, service_provider_display_name: str = None, **kwargs)'
   parameters:
   - name: channel_id
     description: The channelId of the token status pertains to
@@ -35,3 +34,12 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: channel_id
+    isRequired: true
+  - name: connection_name
+    isRequired: true
+  - name: has_token
+    isRequired: true
+  - name: service_provider_display_name
+    isRequired: true

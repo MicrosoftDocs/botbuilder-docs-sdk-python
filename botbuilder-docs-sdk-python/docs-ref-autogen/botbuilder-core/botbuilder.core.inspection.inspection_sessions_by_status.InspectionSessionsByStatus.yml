@@ -6,9 +6,8 @@ module: botbuilder.core.inspection.inspection_sessions_by_status
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'InspectionSessionsByStatus(opened_sessions: Optional[Dict[str, botbuilder.schema._models_py3.ConversationReference]]
-    = None, attached_sessions: Optional[Dict[str, botbuilder.schema._models_py3.ConversationReference]]
-    = None)'
+  syntax: 'InspectionSessionsByStatus(opened_sessions: Dict[str, ConversationReference]
+    = None, attached_sessions: Dict[str, ConversationReference] = None)'
   parameters:
   - name: opened_sessions
     defaultValue: None

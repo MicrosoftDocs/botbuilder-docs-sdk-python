@@ -9,18 +9,17 @@ summary: 'An Activity is the basic communication type for the Bot Framework 3.0
 
   protocol.'
 constructor:
-  syntax: 'Activity(*, type=None, id: Optional[str] = None, timestamp=None, local_timestamp=None,
-    local_timezone: Optional[str] = None, service_url: Optional[str] = None, channel_id:
-    Optional[str] = None, from_property=None, conversation=None, recipient=None, text_format=None,
-    attachment_layout=None, members_added=None, members_removed=None, reactions_added=None,
-    reactions_removed=None, topic_name: Optional[str] = None, history_disclosed: Optional[bool]
-    = None, locale: Optional[str] = None, text: Optional[str] = None, speak: Optional[str]
-    = None, input_hint=None, summary: Optional[str] = None, suggested_actions=None,
-    attachments=None, entities=None, channel_data=None, action: Optional[str] = None,
-    reply_to_id: Optional[str] = None, label: Optional[str] = None, value_type: Optional[str]
-    = None, value=None, name: Optional[str] = None, relates_to=None, code=None, expiration=None,
-    importance=None, delivery_mode=None, listen_for=None, text_highlights=None, semantic_action=None,
-    caller_id: Optional[str] = None, **kwargs)'
+  syntax: 'Activity(*, type=None, id: str = None, timestamp=None, local_timestamp=None,
+    local_timezone: str = None, service_url: str = None, channel_id: str = None, from_property=None,
+    conversation=None, recipient=None, text_format=None, attachment_layout=None, members_added=None,
+    members_removed=None, reactions_added=None, reactions_removed=None, topic_name:
+    str = None, history_disclosed: bool = None, locale: str = None, text: str = None,
+    speak: str = None, input_hint=None, summary: str = None, suggested_actions=None,
+    attachments=None, entities=None, channel_data=None, action: str = None, reply_to_id:
+    str = None, label: str = None, value_type: str = None, value=None, name: str =
+    None, relates_to=None, code=None, expiration=None, importance=None, delivery_mode=None,
+    listen_for=None, text_highlights=None, semantic_action=None, caller_id: str =
+    None, **kwargs)'
   parameters:
   - name: type
     description: 'Contains the activity type. Possible values include:
@@ -329,6 +328,91 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: type
+    isRequired: true
+  - name: id
+    isRequired: true
+  - name: timestamp
+    isRequired: true
+  - name: local_timestamp
+    isRequired: true
+  - name: local_timezone
+    isRequired: true
+  - name: service_url
+    isRequired: true
+  - name: channel_id
+    isRequired: true
+  - name: from_property
+    isRequired: true
+  - name: conversation
+    isRequired: true
+  - name: recipient
+    isRequired: true
+  - name: text_format
+    isRequired: true
+  - name: attachment_layout
+    isRequired: true
+  - name: members_added
+    isRequired: true
+  - name: members_removed
+    isRequired: true
+  - name: reactions_added
+    isRequired: true
+  - name: reactions_removed
+    isRequired: true
+  - name: topic_name
+    isRequired: true
+  - name: history_disclosed
+    isRequired: true
+  - name: locale
+    isRequired: true
+  - name: text
+    isRequired: true
+  - name: speak
+    isRequired: true
+  - name: input_hint
+    isRequired: true
+  - name: summary
+    isRequired: true
+  - name: suggested_actions
+    isRequired: true
+  - name: attachments
+    isRequired: true
+  - name: entities
+    isRequired: true
+  - name: channel_data
+    isRequired: true
+  - name: action
+    isRequired: true
+  - name: reply_to_id
+    isRequired: true
+  - name: label
+    isRequired: true
+  - name: value_type
+    isRequired: true
+  - name: value
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: relates_to
+    isRequired: true
+  - name: code
+    isRequired: true
+  - name: expiration
+    isRequired: true
+  - name: importance
+    isRequired: true
+  - name: delivery_mode
+    isRequired: true
+  - name: listen_for
+    isRequired: true
+  - name: text_highlights
+    isRequired: true
+  - name: semantic_action
+    isRequired: true
+  - name: caller_id
+    isRequired: true
 methods:
 - uid: botbuilder.schema.Activity.apply_conversation_reference
   name: apply_conversation_reference
@@ -338,8 +422,8 @@ methods:
     incoming activity, where the bot is the recipient; otherwise, False.
 
     Default is False, and the activity will show the bot as the sender.'
-  signature: 'apply_conversation_reference(reference: botbuilder.schema._models_py3.ConversationReference,
-    is_incoming: bool = False)'
+  signature: 'apply_conversation_reference(reference: ConversationReference, is_incoming:
+    bool = False)'
   parameters:
   - name: reference
     isRequired: true
@@ -518,7 +602,7 @@ methods:
 - uid: botbuilder.schema.Activity.create_reply
   name: create_reply
   summary: Creates a new message activity as a response to this activity.
-  signature: 'create_reply(text: Optional[str] = None, locale: Optional[str] = None)'
+  signature: 'create_reply(text: str = None, locale: str = None)'
   parameters:
   - name: text
     description: The text of the reply.
@@ -539,8 +623,8 @@ methods:
     Default is the name of type of the value.
 
     :param label: Optional, a descriptive label for this trace operation.'
-  signature: 'create_trace(name: str, value: Optional[object] = None, value_type:
-    Optional[str] = None, label: Optional[str] = None)'
+  signature: 'create_trace(name: str, value: object = None, value_type: str = None,
+    label: str = None)'
   parameters:
   - name: name
     isRequired: true
@@ -561,8 +645,8 @@ methods:
     Default is the name of type of the value.
 
     :param label: Optional, a descriptive label for this trace operation.'
-  signature: 'static create_trace_activity(name: str, value: Optional[object] = None,
-    value_type: Optional[str] = None, label: Optional[str] = None)'
+  signature: 'static create_trace_activity(name: str, value: object = None, value_type:
+    str = None, label: str = None)'
   parameters:
   - name: name
     isRequired: true
@@ -591,7 +675,7 @@ methods:
 - uid: botbuilder.schema.Activity.get_mentions
   name: get_mentions
   summary: Resolves the mentions from the entities of this activity.
-  signature: get_mentions() -> List[botbuilder.schema._models_py3.Mention]
+  signature: get_mentions() -> List[Mention]
   return:
     description: The array of mentions; or an empty array, if none are found.
   remarks: 'This method is defined on the <xref:botbuilder.schema.Activity> class,
@@ -608,8 +692,7 @@ methods:
     info
 
     and the ResourceResponse from sending an activity.'
-  signature: 'get_reply_conversation_reference(reply: botbuilder.schema._models_py3.ResourceResponse)
-    -> botbuilder.schema._models_py3.ConversationReference'
+  signature: 'get_reply_conversation_reference(reply: ResourceResponse) -> ConversationReference'
   parameters:
   - name: reply
     description: ResourceResponse returned from send_activity.

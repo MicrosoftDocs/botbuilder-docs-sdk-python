@@ -6,23 +6,23 @@ type: import
 functions:
 - uid: botbuilder.core.teams.teams_get_channel_id
   name: teams_get_channel_id
-  signature: 'teams_get_channel_id(activity: botbuilder.schema._models_py3.Activity)
-    -> str'
+  signature: 'teams_get_channel_id(activity: Activity) -> str'
   parameters:
   - name: activity
+    isRequired: true
 - uid: botbuilder.core.teams.teams_get_team_info
   name: teams_get_team_info
-  signature: 'teams_get_team_info(activity: botbuilder.schema._models_py3.Activity)
-    -> botbuilder.schema.teams._models_py3.TeamInfo'
+  signature: 'teams_get_team_info(activity: Activity) -> TeamInfo'
   parameters:
   - name: activity
+    isRequired: true
 - uid: botbuilder.core.teams.teams_notify_user
   name: teams_notify_user
-  signature: 'teams_notify_user(activity: botbuilder.schema._models_py3.Activity,
-    alert_in_meeting: Optional[bool] = None, external_resource_url: Optional[str]
-    = None)'
+  signature: 'teams_notify_user(activity: Activity, alert_in_meeting: bool = None,
+    external_resource_url: str = None)'
   parameters:
   - name: activity
+    isRequired: true
   - name: alert_in_meeting
     defaultValue: None
   - name: external_resource_url

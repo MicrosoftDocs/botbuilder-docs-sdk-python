@@ -12,14 +12,13 @@ methods:
 - uid: botbuilder.dialogs.choices.channel.Channel.get_channel_id
   name: get_channel_id
   summary: Get the Channel Id from the current Activity on the Turn Context.
-  signature: 'static get_channel_id(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> str'
+  signature: 'static get_channel_id(turn_context: TurnContext) -> str'
   parameters:
   - name: turn_context
     description: The Turn Context to retrieve the Activity's Channel Id from.
     isRequired: true
     types:
-    - <xref:TurnContext>
+    - <xref:botbuilder.dialogs.choices.channel.TurnContext>
   return:
     description: The Channel Id from the Turn Context's Activity.
     types:
@@ -70,7 +69,7 @@ methods:
     description: Defaults to 100. The number of Card Actions to check for the Channel.
     defaultValue: '100'
     types:
-    - <xref:int>, <xref:optional>
+    - <xref:<xref:botbuilder.dialogs.choices.channel.int, optional>>
   return:
     description: "True if the Channel supports the button_cnt total Card Actions,\
       \ False if the Channel does not support\n   that number of Card Actions."
@@ -92,7 +91,7 @@ methods:
       Channel.
     defaultValue: '100'
     types:
-    - <xref:int>, <xref:optional>
+    - <xref:<xref:botbuilder.dialogs.choices.channel.int, optional>>
   return:
     description: "True if the Channel supports the button_cnt total Suggested Actions,\
       \ False if the Channel does not\n   support that number of Suggested Actions."

@@ -6,10 +6,11 @@ module: botbuilder.dialogs.prompts
 inheritances:
 - botbuilder.dialogs.prompts.prompt.Prompt
 constructor:
-  syntax: 'NumberPrompt(dialog_id: str, validator: Optional[Callable[[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext],
-    bool]] = None, default_locale: Optional[str] = None)'
+  syntax: 'NumberPrompt(dialog_id: str, validator: Callable[[PromptValidatorContext],
+    bool] = None, default_locale: str = None)'
   parameters:
   - name: dialog_id
+    isRequired: true
   - name: validator
     defaultValue: None
   - name: default_locale
@@ -17,64 +18,25 @@ constructor:
 methods:
 - uid: botbuilder.dialogs.prompts.NumberPrompt.on_prompt
   name: on_prompt
-  summary: Prompts user for input. When overridden in a derived class, prompts the
-    user for input.
-  signature: 'async on_prompt(turn_context: botbuilder.core.turn_context.TurnContext,
-    state: Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions,
-    is_retry: bool)'
+  signature: 'async on_prompt(turn_context: TurnContext, state: Dict[str, object],
+    options: PromptOptions, is_retry: bool)'
   parameters:
   - name: turn_context
-    description: Context for the current turn of conversation with the user
     isRequired: true
-    types:
-    - <xref:botbuilder.core.TurnContext>
   - name: state
-    description: Contains state for the current instance of the prompt on the dialog
-      stack
     isRequired: true
-    types:
-    - <xref:botbuilder.dialogs.prompts.Dict>
   - name: options
-    description: A prompt options object constructed from:meth:*DialogContext.prompt()*
     isRequired: true
-    types:
-    - <xref:botbuilder.dialogs.prompts.PromptOptions>
   - name: is_retry
-    description: Determines whether *prompt* or *retry_prompt* should be used
     isRequired: true
-    types:
-    - <xref:bool>
-  return:
-    description: A task representing the asynchronous operation.
 - uid: botbuilder.dialogs.prompts.NumberPrompt.on_recognize
   name: on_recognize
-  summary: 'Recognizes the user''s input.
-
-
-    > [!NOTE]
-
-    > When overridden in a derived class, attempts to recognize the user''s input.
-
-    >'
-  signature: 'async on_recognize(turn_context: botbuilder.core.turn_context.TurnContext,
-    state: Dict[str, object], options: botbuilder.dialogs.prompts.prompt_options.PromptOptions)
-    -> botbuilder.dialogs.prompts.prompt_recognizer_result.PromptRecognizerResult'
+  signature: 'async on_recognize(turn_context: TurnContext, state: Dict[str, object],
+    options: PromptOptions) -> PromptRecognizerResult'
   parameters:
   - name: turn_context
-    description: Context for the current turn of conversation with the user
     isRequired: true
-    types:
-    - <xref:botbuilder.core.TurnContext>
   - name: state
-    description: Contains state for the current instance of the prompt on the dialog
-      stack
     isRequired: true
-    types:
-    - <xref:botbuilder.dialogs.prompts.Dict>
   - name: options
-    description: A prompt options object constructed from <xref:DialogContext.prompt>
     isRequired: true
-    types:
-    - <xref:botbuilder.dialogs.prompts.PromptOptions>
-  return:
-    description: A task representing the asynchronous operation.
