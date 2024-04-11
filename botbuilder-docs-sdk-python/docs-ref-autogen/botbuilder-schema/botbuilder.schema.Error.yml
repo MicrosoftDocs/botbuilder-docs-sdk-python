@@ -7,7 +7,7 @@ inheritances:
 - msrest.serialization.Model
 summary: Object representing error information.
 constructor:
-  syntax: 'Error(*, code: Optional[str] = None, message: Optional[str] = None, inner_http_error=None,
+  syntax: 'Error(*, code: str = None, message: str = None, inner_http_error=None,
     **kwargs)'
   parameters:
   - name: code
@@ -25,3 +25,10 @@ constructor:
     isRequired: true
     types:
     - <xref:botframework.connector.models.InnerHttpError>
+  keywordOnlyParameters:
+  - name: code
+    isRequired: true
+  - name: message
+    isRequired: true
+  - name: inner_http_error
+    isRequired: true

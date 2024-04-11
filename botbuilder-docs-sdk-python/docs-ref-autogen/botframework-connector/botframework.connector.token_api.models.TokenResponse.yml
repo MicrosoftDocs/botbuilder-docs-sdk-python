@@ -7,8 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: TokenResponse.
 constructor:
-  syntax: 'TokenResponse(*, channel_id: Optional[str] = None, connection_name: Optional[str]
-    = None, token: Optional[str] = None, expiration: Optional[str] = None, **kwargs)'
+  syntax: 'TokenResponse(*, channel_id: str = None, connection_name: str = None, token:
+    str = None, expiration: str = None, **kwargs)'
   parameters:
   - name: channel_id
     isRequired: true
@@ -26,3 +26,12 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: channel_id
+    isRequired: true
+  - name: connection_name
+    isRequired: true
+  - name: token
+    isRequired: true
+  - name: expiration
+    isRequired: true

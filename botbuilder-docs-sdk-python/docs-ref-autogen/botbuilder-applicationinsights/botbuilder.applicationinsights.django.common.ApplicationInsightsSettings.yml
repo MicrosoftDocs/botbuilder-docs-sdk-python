@@ -5,16 +5,24 @@ fullName: botbuilder.applicationinsights.django.common.ApplicationInsightsSettin
 module: botbuilder.applicationinsights.django.common
 inheritances:
 - builtins.tuple
+summary: Create new instance of ApplicationInsightsSettings(ikey, channel_settings,
+  use_view_name, record_view_arguments, log_exceptions)
 constructor:
   syntax: ApplicationInsightsSettings(ikey, channel_settings, use_view_name, record_view_arguments,
     log_exceptions)
   parameters:
   - name: _cls
+    isRequired: true
   - name: ikey
+    isRequired: true
   - name: channel_settings
+    isRequired: true
   - name: use_view_name
+    isRequired: true
   - name: record_view_arguments
+    isRequired: true
   - name: log_exceptions
+    isRequired: true
 attributes:
 - uid: botbuilder.applicationinsights.django.common.ApplicationInsightsSettings.channel_settings
   name: channel_settings

@@ -7,9 +7,8 @@ inheritances:
 - botbuilder.schema.teams._models_py3.MeetingDetailsBase
 summary: Specific details of a Teams meeting.
 constructor:
-  syntax: 'MeetingDetails(*, ms_graph_resource_id: Optional[str] = None, scheduled_start_time:
-    Optional[str] = None, scheduled_end_time: Optional[str] = None, type: Optional[str]
-    = None, **kwargs)'
+  syntax: 'MeetingDetails(*, ms_graph_resource_id: str = None, scheduled_start_time:
+    str = None, scheduled_end_time: str = None, type: str = None, **kwargs)'
   parameters:
   - name: ms_graph_resource_id
     description: The MsGraphResourceId, used specifically for MS Graph API calls.
@@ -31,3 +30,12 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: ms_graph_resource_id
+    isRequired: true
+  - name: scheduled_start_time
+    isRequired: true
+  - name: scheduled_end_time
+    isRequired: true
+  - name: type
+    isRequired: true

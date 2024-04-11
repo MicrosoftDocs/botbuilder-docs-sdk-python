@@ -7,22 +7,31 @@ inheritances:
 - builtins.object
 summary: Result returned to the caller of one of the various stack manipulation methods.
 constructor:
-  syntax: 'DialogTurnResult(status: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus,
-    result: Optional[object] = None)'
+  syntax: 'DialogTurnResult(status: DialogTurnStatus, result: object = None)'
   parameters:
   - name: status
+    description: The current status of the stack.
+    isRequired: true
+    types:
+    - <xref:botbuilder.dialogs.DialogTurnStatus>
   - name: result
+    description: The result returned by a dialog that was just ended.
     defaultValue: None
+    types:
+    - <xref:object>
 attributes:
 - uid: botbuilder.dialogs.dialog_turn_result.DialogTurnResult.result
   name: result
   summary: Final result returned by a dialog that just completed.
   return:
     types:
-    - <xref:<xref:Final result returned by a dialog that just completed.>>
+    - <xref:typing.Final> <xref:botbuilder.dialogs.DialogTurnResult.result> <xref:returned>
+      <xref:by> <xref:a> <xref:botbuilder.dialogs.dialog> <xref:that> <xref:just>
+      <xref:completed.>
 - uid: botbuilder.dialogs.dialog_turn_result.DialogTurnResult.status
   name: status
   summary: Gets or sets the current status of the stack.
   return:
     types:
-    - <xref:<xref:The status of the stack.>>
+    - <xref:The> <xref:botbuilder.dialogs.DialogTurnResult.status> <xref:of> <xref:the>
+      <xref:stack.>

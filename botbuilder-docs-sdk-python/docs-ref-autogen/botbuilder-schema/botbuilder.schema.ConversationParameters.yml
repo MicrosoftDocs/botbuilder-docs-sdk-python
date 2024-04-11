@@ -7,9 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: Parameters for creating a new conversation.
 constructor:
-  syntax: 'ConversationParameters(*, is_group: Optional[bool] = None, bot=None, members=None,
-    topic_name: Optional[str] = None, activity=None, channel_data=None, tenant_id=None,
-    **kwargs)'
+  syntax: 'ConversationParameters(*, is_group: bool = None, bot=None, members=None,
+    topic_name: str = None, activity=None, channel_data=None, tenant_id=None, **kwargs)'
   parameters:
   - name: is_group
     description: IsGroup
@@ -52,3 +51,18 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: is_group
+    isRequired: true
+  - name: bot
+    isRequired: true
+  - name: members
+    isRequired: true
+  - name: topic_name
+    isRequired: true
+  - name: activity
+    isRequired: true
+  - name: channel_data
+    isRequired: true
+  - name: tenant_id
+    isRequired: true

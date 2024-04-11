@@ -7,10 +7,13 @@ inheritances:
 - botbuilder.schema.teams._models_py3.MeetingDetailsBase
 summary: Specific details of a Teams meeting end event.
 constructor:
-  syntax: 'MeetingEndEventDetails(*, end_time: Optional[str] = None, **kwargs)'
+  syntax: 'MeetingEndEventDetails(*, end_time: str = None, **kwargs)'
   parameters:
   - name: end_time
     description: Timestamp for meeting end, in UTC.
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: end_time
+    isRequired: true

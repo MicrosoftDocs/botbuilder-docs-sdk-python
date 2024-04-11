@@ -5,16 +5,67 @@ fullName: botbuilder.testing.dialog_test_client.DialogTestClient
 module: botbuilder.testing.dialog_test_client
 inheritances:
 - builtins.object
-summary: A client for testing dialogs in isolation.
+summary: 'A client for testing dialogs in isolation.
+
+
+  Create a DialogTestClient to test a dialog without having to create a full-fledged
+  adapter.
+
+
+  ``python
+
+  client = DialogTestClient("test", MY_DIALOG, MY_OPTIONS)
+
+  reply = await client.send_activity("first message")
+
+  self.assertEqual(reply.text, "first reply", "reply failed")
+
+  ``
+
+
+  For channel Id, use ''emulator'' or ''test'' if you are uncertain of the channel
+  you are targeting.
+
+  Otherwise, it is recommended that you use the id for the channel(s) your bot will
+  be using and
+
+  write a test case for each channel.
+
+  Or, a test adapter instance can be used.
+
+  :type channel_or_adapter: Union[str, TestAdapter]
+
+  :param target_dialog: The dialog to be tested. This will be the root dialog for
+  the test client.
+
+  :type target_dialog: Dialog
+
+  :param initial_dialog_options: (Optional) additional argument(s) to pass to the
+  dialog being started.
+
+  :type initial_dialog_options: object
+
+  :param middlewares: (Optional) The test adapter to use. If this parameter is not
+  provided, the test client will
+
+  use a default TestAdapter.
+
+  :type middlewares: List[Middleware]
+
+  :param conversation_state: (Optional) A ConversationState instance to use in the
+  test client.
+
+  :type conversation_state: ConversationState'
 constructor:
-  syntax: 'DialogTestClient(channel_or_adapter: Union[str, botbuilder.core.adapters.test_adapter.TestAdapter],
-    target_dialog: botbuilder.dialogs.dialog.Dialog, initial_dialog_options: Optional[object]
-    = None, middlewares: Optional[List[botbuilder.core.middleware_set.Middleware]]
-    = None, conversation_state: Optional[botbuilder.core.conversation_state.ConversationState]
-    = None)'
+  syntax: 'DialogTestClient(channel_or_adapter: str | TestAdapter, target_dialog:
+    Dialog, initial_dialog_options: object = None, middlewares: List[Middleware] =
+    None, conversation_state: ConversationState = None)'
   parameters:
   - name: channel_or_adapter
+    description: The channel Id or test adapter to be used for the test.
+    isRequired: true
   - name: target_dialog
+    isRequired: true
   - name: initial_dialog_options
     defaultValue: None
   - name: middlewares
@@ -25,7 +76,7 @@ methods:
 - uid: botbuilder.testing.dialog_test_client.DialogTestClient.get_next_reply
   name: get_next_reply
   summary: Get the next reply waiting to be delivered (if one exists)
-  signature: get_next_reply() -> botbuilder.schema._models_py3.Activity
+  signature: get_next_reply() -> Activity
   return:
     description: a TestFlow that can be used to assert replies etc.
     types:
@@ -33,7 +84,7 @@ methods:
 - uid: botbuilder.testing.dialog_test_client.DialogTestClient.send_activity
   name: send_activity
   summary: Send an activity into the dialog.
-  signature: async send_activity(activity) -> botbuilder.schema._models_py3.Activity
+  signature: async send_activity(activity) -> Activity
   parameters:
   - name: activity
     description: an activity potentially with text.

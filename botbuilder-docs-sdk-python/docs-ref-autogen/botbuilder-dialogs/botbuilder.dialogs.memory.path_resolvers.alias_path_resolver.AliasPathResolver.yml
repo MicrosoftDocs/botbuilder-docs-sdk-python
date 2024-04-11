@@ -5,11 +5,20 @@ fullName: botbuilder.dialogs.memory.path_resolvers.alias_path_resolver.AliasPath
 module: botbuilder.dialogs.memory.path_resolvers.alias_path_resolver
 inheritances:
 - botbuilder.dialogs.memory.path_resolver_base.PathResolverBase
+summary: 'Initializes a new instance of the <see cref="AliasPathResolver"/> class.
+
+  <param name="alias">Alias name.</param>
+
+  <param name="prefix">Prefix name.</param>
+
+  <param name="postfix">Postfix name.</param>'
 constructor:
-  syntax: 'AliasPathResolver(alias: str, prefix: str, postfix: Optional[str] = None)'
+  syntax: 'AliasPathResolver(alias: str, prefix: str, postfix: str = None)'
   parameters:
   - name: alias
+    isRequired: true
   - name: prefix
+    isRequired: true
   - name: postfix
     defaultValue: None
 methods:

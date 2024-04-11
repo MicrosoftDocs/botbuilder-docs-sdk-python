@@ -7,9 +7,8 @@ inheritances:
 - botbuilder.schema.teams._models_py3.O365ConnectorCardInputBase
 summary: O365 connector card date input.
 constructor:
-  syntax: 'O365ConnectorCardDateInput(*, type=None, id: Optional[str] = None, is_required:
-    Optional[bool] = None, title: Optional[str] = None, value: Optional[str] = None,
-    include_time: Optional[bool] = None, **kwargs)'
+  syntax: 'O365ConnectorCardDateInput(*, type=None, id: str = None, is_required: bool
+    = None, title: str = None, value: str = None, include_time: bool = None, **kwargs)'
   parameters:
   - name: type
     description: 'Input type name. Possible values include: ''textInput'',
@@ -47,3 +46,16 @@ constructor:
     isRequired: true
     types:
     - <xref:bool>
+  keywordOnlyParameters:
+  - name: type
+    isRequired: true
+  - name: id
+    isRequired: true
+  - name: is_required
+    isRequired: true
+  - name: title
+    isRequired: true
+  - name: value
+    isRequired: true
+  - name: include_time
+    isRequired: true

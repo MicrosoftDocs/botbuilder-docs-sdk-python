@@ -68,7 +68,7 @@ methods:
       data is uploading, response will be None.'
     defaultValue: None
     types:
-    - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
+    - <xref:typing.Callable>[<xref:Bytes>, <xref:response=None>]
   - name: operation_config
     description: '*Operation configuration
 
@@ -77,7 +77,7 @@ methods:
   return:
     description: object or ClientRawResponse if raw=true
     types:
-    - <xref:Generator>
+    - <xref:typing.Generator>
     - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
   - type: botframework.connector.models.ErrorResponseException
@@ -121,4 +121,4 @@ methods:
 attributes:
 - uid: botframework.connector.operations.AttachmentsOperations.models
   name: models
-  signature: models = <module 'botframework.connector.models' from 'C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64\\lib\\site-packages\\botframework\\connector\\models\\__init__.py'>
+  signature: models = <module 'botframework.connector.models' from 'C:\\hostedtoolcache\\windows\\Python\\3.11.9\\x64\\Lib\\site-packages\\botframework\\connector\\models\\__init__.py'>

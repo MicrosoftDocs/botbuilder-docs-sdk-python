@@ -6,11 +6,10 @@ module: botbuilder.dialogs.skills.skill_dialog_options
 inheritances:
 - builtins.object
 constructor:
-  syntax: 'SkillDialogOptions(bot_id: Optional[str] = None, skill_client: Optional[botbuilder.core.skills.bot_framework_client.BotFrameworkClient]
-    = None, skill_host_endpoint: Optional[str] = None, skill: Optional[botbuilder.core.skills.bot_framework_skill.BotFrameworkSkill]
-    = None, conversation_id_factory: Optional[botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase]
-    = None, conversation_state: Optional[botbuilder.core.conversation_state.ConversationState]
-    = None, connection_name: Optional[str] = None)'
+  syntax: 'SkillDialogOptions(bot_id: str = None, skill_client: BotFrameworkClient
+    = None, skill_host_endpoint: str = None, skill: BotFrameworkSkill = None, conversation_id_factory:
+    ConversationIdFactoryBase = None, conversation_state: ConversationState = None,
+    connection_name: str = None)'
   parameters:
   - name: bot_id
     defaultValue: None

@@ -9,12 +9,11 @@ summary: 'Represents the individual message within a chat or channel where a mes
 
   actions is taken.'
 constructor:
-  syntax: 'MessageActionsPayload(*, id: Optional[str] = None, reply_to_id: Optional[str]
-    = None, message_type=None, created_date_time: Optional[str] = None, last_modified_date_time:
-    Optional[str] = None, deleted: Optional[bool] = None, subject: Optional[str] =
-    None, summary: Optional[str] = None, importance=None, locale: Optional[str] =
-    None, link_to_message: Optional[str] = None, from_property=None, body=None, attachment_layout:
-    Optional[str] = None, attachments=None, mentions=None, reactions=None, **kwargs)'
+  syntax: 'MessageActionsPayload(*, id: str = None, reply_to_id: str = None, message_type=None,
+    created_date_time: str = None, last_modified_date_time: str = None, deleted: bool
+    = None, subject: str = None, summary: str = None, importance=None, locale: str
+    = None, link_to_message: str = None, from_property=None, body=None, attachment_layout:
+    str = None, attachments=None, mentions=None, reactions=None, **kwargs)'
   parameters:
   - name: id
     description: Unique id of the message.
@@ -111,3 +110,38 @@ constructor:
     isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.teams.models.MessageActionsPayloadReaction>]
+  keywordOnlyParameters:
+  - name: id
+    isRequired: true
+  - name: reply_to_id
+    isRequired: true
+  - name: message_type
+    isRequired: true
+  - name: created_date_time
+    isRequired: true
+  - name: last_modified_date_time
+    isRequired: true
+  - name: deleted
+    isRequired: true
+  - name: subject
+    isRequired: true
+  - name: summary
+    isRequired: true
+  - name: importance
+    isRequired: true
+  - name: locale
+    isRequired: true
+  - name: link_to_message
+    isRequired: true
+  - name: from_property
+    isRequired: true
+  - name: body
+    isRequired: true
+  - name: attachment_layout
+    isRequired: true
+  - name: attachments
+    isRequired: true
+  - name: mentions
+    isRequired: true
+  - name: reactions
+    isRequired: true

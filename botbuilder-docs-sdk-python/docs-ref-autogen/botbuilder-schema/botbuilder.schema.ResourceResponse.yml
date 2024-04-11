@@ -7,10 +7,13 @@ inheritances:
 - msrest.serialization.Model
 summary: A response containing a resource ID.
 constructor:
-  syntax: 'ResourceResponse(*, id: Optional[str] = None, **kwargs)'
+  syntax: 'ResourceResponse(*, id: str = None, **kwargs)'
   parameters:
   - name: id
     description: Id of the resource
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: id
+    isRequired: true

@@ -12,6 +12,7 @@ constructor:
   syntax: BotTelemetryMiddleware(app)
   parameters:
   - name: app
+    isRequired: true
 methods:
 - uid: botbuilder.applicationinsights.flask.flask_telemetry_middleware.BotTelemetryMiddleware.process_request
   name: process_request

@@ -6,17 +6,17 @@ module: botbuilder.ai.luis.luis_recognizer_v3
 inheritances:
 - botbuilder.ai.luis.luis_recognizer_internal.LuisRecognizerInternal
 constructor:
-  syntax: 'LuisRecognizerV3(luis_application: botbuilder.ai.luis.luis_application.LuisApplication,
-    luis_recognizer_options_v3: Optional[botbuilder.ai.luis.luis_recognizer_options_v3.LuisRecognizerOptionsV3]
-    = None)'
+  syntax: 'LuisRecognizerV3(luis_application: LuisApplication, luis_recognizer_options_v3:
+    LuisRecognizerOptionsV3 = None)'
   parameters:
   - name: luis_application
+    isRequired: true
   - name: luis_recognizer_options_v3
     defaultValue: None
 methods:
 - uid: botbuilder.ai.luis.luis_recognizer_v3.LuisRecognizerV3.recognizer_internal
   name: recognizer_internal
-  signature: 'async recognizer_internal(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async recognizer_internal(turn_context: TurnContext)'
   parameters:
   - name: turn_context
     isRequired: true

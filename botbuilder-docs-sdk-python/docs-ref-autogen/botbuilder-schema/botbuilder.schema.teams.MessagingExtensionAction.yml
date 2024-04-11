@@ -7,8 +7,8 @@ inheritances:
 - botbuilder.schema.teams._models_py3.TaskModuleRequest
 summary: Messaging extension action.
 constructor:
-  syntax: 'MessagingExtensionAction(*, data=None, context=None, command_id: Optional[str]
-    = None, command_context=None, bot_message_preview_action=None, bot_activity_preview=None,
+  syntax: 'MessagingExtensionAction(*, data=None, context=None, command_id: str =
+    None, command_context=None, bot_message_preview_action=None, bot_activity_preview=None,
     message_payload=None, **kwargs)'
   parameters:
   - name: data
@@ -52,3 +52,18 @@ constructor:
     isRequired: true
     types:
     - <xref:botframework.connector.teams.models.MessageActionsPayload>
+  keywordOnlyParameters:
+  - name: data
+    isRequired: true
+  - name: context
+    isRequired: true
+  - name: command_id
+    isRequired: true
+  - name: command_context
+    isRequired: true
+  - name: bot_message_preview_action
+    isRequired: true
+  - name: bot_activity_preview
+    isRequired: true
+  - name: message_payload
+    isRequired: true

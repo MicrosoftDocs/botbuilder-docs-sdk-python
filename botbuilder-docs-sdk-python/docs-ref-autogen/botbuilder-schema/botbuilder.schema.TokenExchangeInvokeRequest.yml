@@ -7,8 +7,8 @@ inheritances:
 - msrest.serialization.Model
 summary: TokenExchangeInvokeRequest.
 constructor:
-  syntax: 'TokenExchangeInvokeRequest(*, id: Optional[str] = None, connection_name:
-    Optional[str] = None, token: Optional[str] = None, properties=None, **kwargs)'
+  syntax: 'TokenExchangeInvokeRequest(*, id: str = None, connection_name: str = None,
+    token: str = None, properties=None, **kwargs)'
   parameters:
   - name: id
     description: The id from the OAuthCard.
@@ -30,3 +30,12 @@ constructor:
     isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:object>]
+  keywordOnlyParameters:
+  - name: id
+    isRequired: true
+  - name: connection_name
+    isRequired: true
+  - name: token
+    isRequired: true
+  - name: properties
+    isRequired: true

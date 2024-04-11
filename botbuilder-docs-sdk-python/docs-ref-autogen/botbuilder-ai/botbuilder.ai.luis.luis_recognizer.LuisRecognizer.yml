@@ -5,27 +5,39 @@ fullName: botbuilder.ai.luis.luis_recognizer.LuisRecognizer
 module: botbuilder.ai.luis.luis_recognizer
 inheritances:
 - botbuilder.core.recognizer.Recognizer
-summary: A LUIS based implementation of <xref:botbuilder.core.Recognizer>.
+summary: 'A LUIS based implementation of <xref:botbuilder.core.Recognizer>.
+
+
+  Initializes a new instance of the <xref:botbuilder.ai.luis.luis_recognizer.LuisRecognizer>
+  class.'
 constructor:
-  syntax: 'LuisRecognizer(application: Union[botbuilder.ai.luis.luis_application.LuisApplication,
-    str], prediction_options: Optional[Union[botbuilder.ai.luis.luis_recognizer_options_v2.LuisRecognizerOptionsV2,
-    botbuilder.ai.luis.luis_recognizer_options_v3.LuisRecognizerOptionsV3, botbuilder.ai.luis.luis_prediction_options.LuisPredictionOptions]]
-    = None, include_api_results: bool = False)'
+  syntax: 'LuisRecognizer(application: LuisApplication | str, prediction_options:
+    LuisRecognizerOptionsV2 | LuisRecognizerOptionsV3 | LuisPredictionOptions = None,
+    include_api_results: bool = False)'
   parameters:
   - name: application
+    description: The LUIS application to use to recognize text.
+    isRequired: true
+    types:
+    - <xref:botbuilder.ai.luis.luis_recognizer.LuisApplication>
   - name: prediction_options
+    description: The LUIS prediction options to use, defaults to None.
     defaultValue: None
+    types:
+    - <xref:botbuilder.ai.luis.luis_recognizer.LuisPredictionOptions>, optional
   - name: include_api_results
+    description: True to include raw LUIS API response, defaults to False.
     defaultValue: 'False'
+    types:
+    - <xref:bool>, <xref:optional>
 methods:
 - uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.fill_luis_event_properties
   name: fill_luis_event_properties
   summary: 'Fills the event properties for LuisResult event for telemetry.
 
     These properties are logged when the recognizer is called.'
-  signature: 'fill_luis_event_properties(recognizer_result: botbuilder.core.recognizer_result.RecognizerResult,
-    turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
-    Optional[Dict[str, str]] = None) -> Dict[str, str]'
+  signature: 'fill_luis_event_properties(recognizer_result: RecognizerResult, turn_context:
+    TurnContext, telemetry_properties: Dict[str, str] = None) -> Dict[str, str]'
   parameters:
   - name: recognizer_result
     description: Last activity sent from user.
@@ -45,21 +57,20 @@ methods:
       to None.'
     defaultValue: None
     types:
-    - <xref:typing.Dict>[<xref:str>, <xref:str>], <xref:optional>
+    - '<xref:typing.Dict>[<xref:str>,<xref: str>], optional'
   return:
     description: 'A dictionary sent as "Properties" to <xref:botbuilder.core.BotTelemetryClient.track_event>
       for the
 
       BotMessageSend event.'
     types:
-    - <xref:*typing.Dict>[<xref:str>, <xref:str>]<xref:*>
+    - <xref:typing.Dict>[<xref:str>, <xref:str>]
 - uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.on_recognizer_result
   name: on_recognizer_result
   summary: Invoked prior to a LuisResult being logged.
-  signature: 'on_recognizer_result(recognizer_result: botbuilder.core.recognizer_result.RecognizerResult,
-    turn_context: botbuilder.core.turn_context.TurnContext, telemetry_properties:
-    Optional[Dict[str, str]] = None, telemetry_metrics: Optional[Dict[str, float]]
-    = None)'
+  signature: 'on_recognizer_result(recognizer_result: RecognizerResult, turn_context:
+    TurnContext, telemetry_properties: Dict[str, str] = None, telemetry_metrics: Dict[str,
+    float] = None)'
   parameters:
   - name: recognizer_result
     description: The LuisResult for the call.
@@ -79,7 +90,7 @@ methods:
       to None.'
     defaultValue: None
     types:
-    - <xref:typing.Dict>[<xref:str>, <xref:str>], <xref:optional>
+    - '<xref:typing.Dict>[<xref:str>,<xref: str>], optional'
   - name: telemetry_metrics
     description: 'Additional metrics to be logged to telemetry with the LuisResult
       event, defaults
@@ -87,14 +98,13 @@ methods:
       to None.'
     defaultValue: None
     types:
-    - <xref:typing.Dict>[<xref:str>, <xref:float>], <xref:optional>
+    - '<xref:typing.Dict>[<xref:str>,<xref: float>], optional'
 - uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.recognize
   name: recognize
   summary: Return results of the analysis (suggested actions and intents).
-  signature: 'async recognize(turn_context: botbuilder.core.turn_context.TurnContext,
-    telemetry_properties: Optional[Dict[str, str]] = None, telemetry_metrics: Optional[Dict[str,
-    float]] = None, luis_prediction_options: Optional[botbuilder.ai.luis.luis_prediction_options.LuisPredictionOptions]
-    = None) -> botbuilder.core.recognizer_result.RecognizerResult'
+  signature: 'async recognize(turn_context: TurnContext, telemetry_properties: Dict[str,
+    str] = None, telemetry_metrics: Dict[str, float] = None, luis_prediction_options:
+    LuisPredictionOptions = None) -> RecognizerResult'
   parameters:
   - name: turn_context
     description: Context object containing information for a single conversation turn
@@ -109,7 +119,7 @@ methods:
       to None.'
     defaultValue: None
     types:
-    - <xref:typing.Dict>[<xref:str>, <xref:str>], <xref:optional>
+    - '<xref:typing.Dict>[<xref:str>,<xref: str>], optional'
   - name: telemetry_metrics
     description: 'Additional metrics to be logged to telemetry with the LuisResult
       event, defaults to
@@ -117,7 +127,7 @@ methods:
       None.'
     defaultValue: None
     types:
-    - <xref:typing.Dict>[<xref:str>, <xref:float>], <xref:optional>
+    - '<xref:typing.Dict>[<xref:str>,<xref: float>], optional'
   - name: luis_prediction_options
     defaultValue: None
   return:
@@ -128,8 +138,8 @@ methods:
 - uid: botbuilder.ai.luis.luis_recognizer.LuisRecognizer.top_intent
   name: top_intent
   summary: Returns the name of the top scoring intent from a set of LUIS results.
-  signature: 'static top_intent(results: botbuilder.core.recognizer_result.RecognizerResult,
-    default_intent: str = ''None'', min_score: float = 0.0) -> str'
+  signature: 'static top_intent(results: RecognizerResult, default_intent: str = ''None'',
+    min_score: float = 0.0) -> str'
   parameters:
   - name: results
     description: Result set to be searched.

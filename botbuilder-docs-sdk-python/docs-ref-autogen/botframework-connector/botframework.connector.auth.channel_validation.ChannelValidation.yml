@@ -17,9 +17,8 @@ methods:
 
     A token issued by the Bot Framework emulator will FAIL this check.'
   signature: 'async static authenticate_channel_token(auth_header: str, credentials:
-    botframework.connector.auth.credential_provider.CredentialProvider, channel_id:
-    str, auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
-    = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+    CredentialProvider, channel_id: str, auth_configuration: AuthenticationConfiguration
+    = None) -> ClaimsIdentity'
   parameters:
   - name: auth_header
     description: 'The raw HTTP header in the format: ''Bearer [longString]'''
@@ -48,9 +47,8 @@ methods:
 
     A token issued by the Bot Framework emulator will FAIL this check.'
   signature: 'async static authenticate_channel_token_with_service_url(auth_header:
-    str, credentials: botframework.connector.auth.credential_provider.CredentialProvider,
-    service_url: str, channel_id: str, auth_configuration: Optional[botframework.connector.auth.authentication_configuration.AuthenticationConfiguration]
-    = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+    str, credentials: CredentialProvider, service_url: str, channel_id: str, auth_configuration:
+    AuthenticationConfiguration = None) -> ClaimsIdentity'
   parameters:
   - name: auth_header
     description: 'The raw HTTP header in the format: ''Bearer [longString]'''
@@ -77,9 +75,8 @@ methods:
   - type: Exception
 - uid: botframework.connector.auth.channel_validation.ChannelValidation.validate_identity
   name: validate_identity
-  signature: 'async static validate_identity(identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    credentials: botframework.connector.auth.credential_provider.CredentialProvider)
-    -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  signature: 'async static validate_identity(identity: ClaimsIdentity, credentials:
+    CredentialProvider) -> ClaimsIdentity'
   parameters:
   - name: identity
     isRequired: true
