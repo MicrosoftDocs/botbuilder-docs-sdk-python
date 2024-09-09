@@ -923,12 +923,6 @@
     - name: ComponentRegistration
       uid: botbuilder.core.component_registration.ComponentRegistration
     name: component_registration
-  - items:
-    - name: Overview
-      uid: botbuilder.core.configuration_service_client_credentials_factory
-    - name: ConfigurationServiceClientCredentialFactory
-      uid: botbuilder.core.configuration_service_client_credentials_factory.ConfigurationServiceClientCredentialFactory
-    name: configuration_service_client_credentials_factory
   - name: conversation_reference_extension
     uid: botbuilder.core.conversation_reference_extension
   - items:
@@ -2408,6 +2402,18 @@
       name: certificate_app_credentials
     - items:
       - name: Overview
+        uid: botframework.connector.auth.certificate_government_app_credentials
+      - name: CertificateGovernmentAppCredentials
+        uid: botframework.connector.auth.certificate_government_app_credentials.CertificateGovernmentAppCredentials
+      name: certificate_government_app_credentials
+    - items:
+      - name: Overview
+        uid: botframework.connector.auth.certificate_service_client_credential_factory
+      - name: CertificateServiceClientCredentialsFactory
+        uid: botframework.connector.auth.certificate_service_client_credential_factory.CertificateServiceClientCredentialsFactory
+      name: certificate_service_client_credential_factory
+    - items:
+      - name: Overview
         uid: botframework.connector.auth.channel_provider
       - name: ChannelProvider
         uid: botframework.connector.auth.channel_provider.ChannelProvider
@@ -2482,6 +2488,18 @@
       - name: JwtTokenValidation
         uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation
       name: jwt_token_validation
+    - items:
+      - name: Overview
+        uid: botframework.connector.auth.managedidentity_app_credentials
+      - name: ManagedIdentityAppCredentials
+        uid: botframework.connector.auth.managedidentity_app_credentials.ManagedIdentityAppCredentials
+      name: managedidentity_app_credentials
+    - items:
+      - name: Overview
+        uid: botframework.connector.auth.managedidentity_service_client_credential_factory
+      - name: ManagedIdentityServiceClientCredentialsFactory
+        uid: botframework.connector.auth.managedidentity_service_client_credential_factory.ManagedIdentityServiceClientCredentialsFactory
+      name: managedidentity_service_client_credential_factory
     - items:
       - name: Overview
         uid: botframework.connector.auth.microsoft_app_credentials
