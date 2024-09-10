@@ -5,45 +5,35 @@ fullName: botbuilder.ai.qna.utils.HttpRequestUtils
 module: botbuilder.ai.qna.utils
 inheritances:
 - builtins.object
-summary: "HTTP request utils class.\n\n# Parameters:\n\nhttp_client: Client to make\
-  \ HTTP requests with. Default client used in the SDK is *aiohttp.ClientSession*.\n\
-  \nasync execute_http_request(request_url: str, payload_body: object, endpoint: QnAMakerEndpoint,\
-  \ timeout: float = None) -> <xref:typing.Any>\n\n\n   Execute HTTP request.\n\n\n\
-  \n   #### Parameters:\n\n   request_url: HTTP request URL.\n\n   payload_body: HTTP\
-  \ request body.\n\n   endpoint: QnA Maker endpoint details.\n\n   timeout: Timeout\
-  \ for HTTP call (milliseconds)."
+summary: HTTP request utils class.
 constructor:
   syntax: 'HttpRequestUtils(http_client: Any)'
   parameters:
   - name: http_client
     isRequired: true
+    types:
+    - <xref:botbuilder.ai.qna.utils.Client> to <xref:make HTTP requests with. Default
+      client used in the SDK is `aiohttp.ClientSession>.`
 methods:
 - uid: botbuilder.ai.qna.utils.HttpRequestUtils.execute_http_request
   name: execute_http_request
-  summary: 'Execute HTTP request.
-
-
-    # Parameters:
-
-
-    request_url: HTTP request URL.
-
-
-    payload_body: HTTP request body.
-
-
-    endpoint: QnA Maker endpoint details.
-
-
-    timeout: Timeout for HTTP call (milliseconds).'
+  summary: Execute HTTP request.
   signature: 'async execute_http_request(request_url: str, payload_body: object, endpoint:
     QnAMakerEndpoint, timeout: float = None) -> Any'
   parameters:
   - name: request_url
     isRequired: true
+    types:
+    - <xref:<xref:HTTP request URL.>>
   - name: payload_body
     isRequired: true
+    types:
+    - <xref:<xref:HTTP request body.>>
   - name: endpoint
     isRequired: true
+    types:
+    - <xref:<xref:QnA Maker endpoint details.>>
   - name: timeout
     defaultValue: None
+    types:
+    - <xref:Timeout for HTTP call >(<xref:milliseconds>)<xref:.
