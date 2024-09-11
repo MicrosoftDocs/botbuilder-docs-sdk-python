@@ -1,0 +1,20 @@
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.MeetingParticipantsEventDetails
+name: MeetingParticipantsEventDetails
+fullName: botbuilder.schema.teams.MeetingParticipantsEventDetails
+module: botbuilder.schema.teams
+inheritances:
+- msrest.serialization.Model
+summary: Data about the meeting participants.
+constructor:
+  syntax: 'MeetingParticipantsEventDetails(*, members: List[TeamsMeetingMember] =
+    None, **kwargs)'
+  parameters:
+  - name: members
+    description: The members involved in the meeting event.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:botframework.connector.models.TeamsMeetingMember>]
+  keywordOnlyParameters:
+  - name: members
+    isRequired: true

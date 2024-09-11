@@ -536,37 +536,25 @@
   - items:
     - name: Overview
       uid: botbuilder.azure.cosmosdb_partitioned_storage
+    - name: CosmosDbKeyEscape
+      uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbKeyEscape
     - name: CosmosDbPartitionedConfig
       uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedConfig
     - name: CosmosDbPartitionedStorage
       uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage
     name: cosmosdb_partitioned_storage
-  - items:
-    - name: Overview
-      uid: botbuilder.azure.cosmosdb_storage
-    - name: CosmosDbConfig
-      uid: botbuilder.azure.cosmosdb_storage.CosmosDbConfig
-    - name: CosmosDbKeyEscape
-      uid: botbuilder.azure.cosmosdb_storage.CosmosDbKeyEscape
-    - name: CosmosDbStorage
-      uid: botbuilder.azure.cosmosdb_storage.CosmosDbStorage
-    name: cosmosdb_storage
   - name: AzureQueueStorage
     uid: botbuilder.azure.AzureQueueStorage
   - name: BlobStorage
     uid: botbuilder.azure.BlobStorage
   - name: BlobStorageSettings
     uid: botbuilder.azure.BlobStorageSettings
-  - name: CosmosDbConfig
-    uid: botbuilder.azure.CosmosDbConfig
   - name: CosmosDbKeyEscape
     uid: botbuilder.azure.CosmosDbKeyEscape
   - name: CosmosDbPartitionedConfig
     uid: botbuilder.azure.CosmosDbPartitionedConfig
   - name: CosmosDbPartitionedStorage
     uid: botbuilder.azure.CosmosDbPartitionedStorage
-  - name: CosmosDbStorage
-    uid: botbuilder.azure.CosmosDbStorage
   name: botbuilder.azure
 - items:
   - name: Overview
@@ -923,12 +911,6 @@
     - name: ComponentRegistration
       uid: botbuilder.core.component_registration.ComponentRegistration
     name: component_registration
-  - items:
-    - name: Overview
-      uid: botbuilder.core.configuration_service_client_credentials_factory
-    - name: ConfigurationServiceClientCredentialFactory
-      uid: botbuilder.core.configuration_service_client_credentials_factory.ConfigurationServiceClientCredentialFactory
-    name: configuration_service_client_credentials_factory
   - name: conversation_reference_extension
     uid: botbuilder.core.conversation_reference_extension
   - items:
@@ -2020,6 +2002,8 @@
       uid: botbuilder.schema.teams.MeetingInfo
     - name: MeetingParticipantInfo
       uid: botbuilder.schema.teams.MeetingParticipantInfo
+    - name: MeetingParticipantsEventDetails
+      uid: botbuilder.schema.teams.MeetingParticipantsEventDetails
     - name: MeetingStartEventDetails
       uid: botbuilder.schema.teams.MeetingStartEventDetails
     - name: MessageActionsPayload
@@ -2140,12 +2124,16 @@
       uid: botbuilder.schema.teams.TeamsChannelData
     - name: TeamsMeetingInfo
       uid: botbuilder.schema.teams.TeamsMeetingInfo
+    - name: TeamsMeetingMember
+      uid: botbuilder.schema.teams.TeamsMeetingMember
     - name: TeamsMeetingParticipant
       uid: botbuilder.schema.teams.TeamsMeetingParticipant
     - name: TeamsPagedMembersResult
       uid: botbuilder.schema.teams.TeamsPagedMembersResult
     - name: TenantInfo
       uid: botbuilder.schema.teams.TenantInfo
+    - name: UserMeetingDetails
+      uid: botbuilder.schema.teams.UserMeetingDetails
     name: teams
   - items:
     - name: Overview
@@ -2408,6 +2396,18 @@
       name: certificate_app_credentials
     - items:
       - name: Overview
+        uid: botframework.connector.auth.certificate_government_app_credentials
+      - name: CertificateGovernmentAppCredentials
+        uid: botframework.connector.auth.certificate_government_app_credentials.CertificateGovernmentAppCredentials
+      name: certificate_government_app_credentials
+    - items:
+      - name: Overview
+        uid: botframework.connector.auth.certificate_service_client_credential_factory
+      - name: CertificateServiceClientCredentialsFactory
+        uid: botframework.connector.auth.certificate_service_client_credential_factory.CertificateServiceClientCredentialsFactory
+      name: certificate_service_client_credential_factory
+    - items:
+      - name: Overview
         uid: botframework.connector.auth.channel_provider
       - name: ChannelProvider
         uid: botframework.connector.auth.channel_provider.ChannelProvider
@@ -2482,6 +2482,18 @@
       - name: JwtTokenValidation
         uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation
       name: jwt_token_validation
+    - items:
+      - name: Overview
+        uid: botframework.connector.auth.managedidentity_app_credentials
+      - name: ManagedIdentityAppCredentials
+        uid: botframework.connector.auth.managedidentity_app_credentials.ManagedIdentityAppCredentials
+      name: managedidentity_app_credentials
+    - items:
+      - name: Overview
+        uid: botframework.connector.auth.managedidentity_service_client_credential_factory
+      - name: ManagedIdentityServiceClientCredentialsFactory
+        uid: botframework.connector.auth.managedidentity_service_client_credential_factory.ManagedIdentityServiceClientCredentialsFactory
+      name: managedidentity_service_client_credential_factory
     - items:
       - name: Overview
         uid: botframework.connector.auth.microsoft_app_credentials
