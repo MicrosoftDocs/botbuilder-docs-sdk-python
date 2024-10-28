@@ -184,7 +184,7 @@ methods:
 
     :return:'
   signature: 'async send_activity(activity_or_text: Activity | str, speak: str = None,
-    input_hint: str = None) -> ResourceResponse'
+    input_hint: str = None) -> ResourceResponse | None'
   parameters:
   - name: activity_or_text
     isRequired: true

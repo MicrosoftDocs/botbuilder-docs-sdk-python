@@ -1,14 +1,14 @@
 ### YamlMime:PythonClass
-uid: botbuilder.azure.cosmosdb_storage.CosmosDbKeyEscape
+uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbKeyEscape
 name: CosmosDbKeyEscape
-fullName: botbuilder.azure.cosmosdb_storage.CosmosDbKeyEscape
-module: botbuilder.azure.cosmosdb_storage
+fullName: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbKeyEscape
+module: botbuilder.azure.cosmosdb_partitioned_storage
 inheritances:
 - builtins.object
 constructor:
   syntax: CosmosDbKeyEscape()
 methods:
-- uid: botbuilder.azure.cosmosdb_storage.CosmosDbKeyEscape.sanitize_key
+- uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbKeyEscape.sanitize_key
   name: sanitize_key
   summary: 'Return the sanitized key.
 
@@ -30,7 +30,7 @@ methods:
 
       cosmosdb_partitioned_config.compatibility_mode to False.'
     defaultValue: 'True'
-- uid: botbuilder.azure.cosmosdb_storage.CosmosDbKeyEscape.truncate_key
+- uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbKeyEscape.truncate_key
   name: truncate_key
   signature: 'static truncate_key(key: str, compatibility_mode: bool = True) -> str'
   parameters:

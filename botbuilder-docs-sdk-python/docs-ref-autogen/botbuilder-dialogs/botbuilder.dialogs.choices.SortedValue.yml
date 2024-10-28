@@ -5,21 +5,16 @@ fullName: botbuilder.dialogs.choices.SortedValue
 module: botbuilder.dialogs.choices
 inheritances:
 - builtins.object
-summary: 'A value that can be sorted and still refer to its original position with
+summary: A value that can be sorted and still refer to its original position with
   a source array.
-
-
-  # Parameters:
-
-
-  value: The value that will be sorted.
-
-
-  index: The values original position within its unsorted array.'
 constructor:
   syntax: 'SortedValue(value: str, index: int)'
   parameters:
   - name: value
     isRequired: true
+    types:
+    - <xref:<xref:The value that will be sorted.>>
   - name: index
     isRequired: true
+    types:
+    - <xref:<xref:The values original position within its unsorted array.>>

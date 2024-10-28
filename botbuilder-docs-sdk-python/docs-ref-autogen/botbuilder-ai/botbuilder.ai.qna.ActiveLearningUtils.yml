@@ -11,16 +11,14 @@ constructor:
 methods:
 - uid: botbuilder.ai.qna.ActiveLearningUtils.get_low_score_variation
   name: get_low_score_variation
-  summary: 'Returns a list of QnA search results, which have low score variation.
-
-
-    # Parameters:
-
-
-    qna_serach_results: A list of QnA QueryResults returned from the QnA GenerateAnswer
-    API call.'
+  summary: Returns a list of QnA search results, which have low score variation.
   signature: 'static get_low_score_variation(qna_search_results: List[QueryResult])
     -> List[QueryResult]'
   parameters:
+  - name: qna_serach_results
+    isRequired: true
+    types:
+    - <xref:<xref:botbuilder.ai.qna.A list> of <xref:QnA QueryResults returned from
+      the QnA GenerateAnswer API call.>>
   - name: qna_search_results
     isRequired: true

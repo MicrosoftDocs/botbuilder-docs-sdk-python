@@ -5,41 +5,7 @@ fullName: botbuilder.ai.qna.models.QnAMakerTraceInfo
 module: botbuilder.ai.qna.models
 inheritances:
 - builtins.object
-summary: 'Represents all the trace info that we collect from the QnAMaker Middleware.
-
-
-  # Parameters:
-
-
-  message: Message which instigated the query to QnA Maker.
-
-
-  query_results: Results that QnA Maker returned.
-
-
-  knowledge_base_id: ID of the knowledge base that is being queried.
-
-
-  score_threshold: The minimum score threshold, used to filter returned results.
-
-
-  top: Number of ranked results that are asked to be returned.
-
-
-  strict_filters: Filters used on query.
-
-
-  context: (Optional) The context from which the QnA was extracted.
-
-
-  qna_id: (Optional) Id of the current question asked.
-
-
-  is_test: (Optional) A value indicating whether to call test or prod environment
-  of knowledgebase.
-
-
-  ranker_types: (Optional) Ranker types.'
+summary: Represents all the trace info that we collect from the QnAMaker Middleware.
 constructor:
   syntax: 'QnAMakerTraceInfo(message: Activity, query_results: List[QueryResult],
     knowledge_base_id: str, score_threshold: float, top: int, strict_filters: List[Metadata],
@@ -48,21 +14,49 @@ constructor:
   parameters:
   - name: message
     isRequired: true
+    types:
+    - <xref:<xref:botbuilder.ai.qna.models.Message which instigated the query> to
+      <xref:QnA Maker.>>
   - name: query_results
     isRequired: true
+    types:
+    - <xref:<xref:Results that QnA Maker returned.>>
   - name: knowledge_base_id
     isRequired: true
+    types:
+    - <xref:botbuilder.ai.qna.models.ID> of <xref:the knowledge base that is being
+      queried.>
   - name: score_threshold
     isRequired: true
+    types:
+    - <xref:botbuilder.ai.qna.models.The minimum score threshold>, <xref:botbuilder.ai.qna.models.used>
+      to <xref:filter returned results.>
   - name: top
     isRequired: true
+    types:
+    - <xref:botbuilder.ai.qna.models.Number> of <xref:botbuilder.ai.qna.models.ranked
+      results that are asked> to <xref:be returned.>
   - name: strict_filters
     isRequired: true
+    types:
+    - <xref:<xref:Filters used on query.>>
   - name: context
     defaultValue: None
+    types:
+    - '(<xref:Optional>)<xref: The context from which the QnA was extracted.'
   - name: qna_id
     defaultValue: None
+    types:
+    - '(<xref:Optional>)<xref: Id> of <xref:the current question asked.>'
   - name: is_test
     defaultValue: 'False'
+    types:
+    - '(<xref:Optional>)<xref: A value indicating whether> to <xref:botbuilder.ai.qna.models.call
+      test>'
+    - <xref:botbuilder.ai.qna.models.prod environment> of <xref:knowledgebase.>
+  - name: ranker_types
+    isRequired: true
+    types:
+    - '(<xref:Optional>)<xref: Ranker types.'
   - name: ranker_type
     defaultValue: Default

@@ -5,26 +5,25 @@ fullName: botbuilder.dialogs.choices.found_value.FoundValue
 module: botbuilder.dialogs.choices.found_value
 inheritances:
 - builtins.object
-summary: 'Represents a result from matching user input against a list of choices
-
-
-  # Parameters:
-
-
-  value: The value that was matched.
-
-  index: The index of the value that was matched.
-
-  score: The accuracy with which the synonym matched the specified portion of the
-  utterance.
-
-  A value of 1.0 would indicate a perfect match.'
+summary: Represents a result from matching user input against a list of choices
 constructor:
   syntax: 'FoundValue(value: str, index: int, score: float)'
   parameters:
   - name: value
     isRequired: true
+    types:
+    - <xref:<xref:The value that was matched.>>
   - name: index
     isRequired: true
+    types:
+    - <xref:<xref:botbuilder.dialogs.choices.found_value.The index> of <xref:the value
+      that was matched.>>
   - name: score
     isRequired: true
+    types:
+    - <xref:<xref:botbuilder.dialogs.choices.found_value.The accuracy with which the
+      synonym matched the specified portion> of <xref:the utterance.>>
+  - name: match.
+    isRequired: true
+    types:
+    - <xref:<xref:A value> of <xref:1.0 would indicate a perfect>>
