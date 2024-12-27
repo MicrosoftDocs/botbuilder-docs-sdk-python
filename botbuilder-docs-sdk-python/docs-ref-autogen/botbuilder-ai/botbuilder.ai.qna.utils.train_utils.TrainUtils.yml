@@ -5,19 +5,23 @@ fullName: botbuilder.ai.qna.utils.train_utils.TrainUtils
 module: botbuilder.ai.qna.utils.train_utils
 inheritances:
 - builtins.object
-summary: "Class for Train API, used in active learning to add suggestions to the knowledge\
-  \ base\n\nInitializes a new instance for active learning train utils.\n\n# Parameters:\n\
-  \nendpoint: QnA Maker Endpoint of the knowledge base to query.\n\nhttp_client: Http\
-  \ client.\n\nasync call_train(feedback_records: List[FeedbackRecord])\n\n\n   Train\
-  \ API to provide feedback.\n\n\n\n   #### Parameter:\n\n   feedback_records: Feedback\
-  \ record list."
+summary: 'Class for Train API, used in active learning to add suggestions to the knowledge
+  base
+
+
+  Initializes a new instance for active learning train utils.'
 constructor:
   syntax: 'TrainUtils(endpoint: QnAMakerEndpoint, http_client: ClientSession)'
   parameters:
   - name: endpoint
     isRequired: true
+    types:
+    - <xref:botbuilder.ai.qna.utils.train_utils.QnA Maker Endpoint> of <xref:botbuilder.ai.qna.utils.train_utils.the
+      knowledge base> to <xref:query.>
   - name: http_client
     isRequired: true
+    types:
+    - <xref:<xref:Http client.>>
 methods:
 - uid: botbuilder.ai.qna.utils.train_utils.TrainUtils.call_train
   name: call_train

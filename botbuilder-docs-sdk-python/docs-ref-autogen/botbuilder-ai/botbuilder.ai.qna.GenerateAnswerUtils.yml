@@ -7,42 +7,27 @@ inheritances:
 - builtins.object
 summary: 'Helper class for Generate Answer API, which is used to make queries to
 
-  a single QnA Maker knowledge base and return the result.
-
-
-  # Parameters:
-
-
-  telemetry_client: Telemetry client.
-
-
-  endpoint: QnA Maker endpoint details.
-
-
-  options: QnA Maker options to configure the instance.
-
-
-  http_client: HTTP client.
-
-
-  async get_answers(context: TurnContext, options: QnAMakerOptions = None) -> <xref:typing.List>[<xref:botbuilder.ai.qna.models.query_result.QueryResult>]
-
-
-
-  async get_answers_raw(context: TurnContext, options: QnAMakerOptions = None) ->
-  <xref:botbuilder.ai.qna.models.query_results.QueryResults>'
+  a single QnA Maker knowledge base and return the result.'
 constructor:
   syntax: 'GenerateAnswerUtils(telemetry_client: BotTelemetryClient | NullTelemetryClient,
     endpoint: QnAMakerEndpoint, options: QnAMakerOptions, http_client: ClientSession)'
   parameters:
   - name: telemetry_client
     isRequired: true
+    types:
+    - <xref:<xref:Telemetry client.>>
   - name: endpoint
     isRequired: true
+    types:
+    - <xref:<xref:QnA Maker endpoint details.>>
   - name: options
     isRequired: true
+    types:
+    - <xref:<xref:botbuilder.ai.qna.QnA Maker options> to <xref:configure the instance.>>
   - name: http_client
     isRequired: true
+    types:
+    - <xref:<xref:HTTP client.>>
 methods:
 - uid: botbuilder.ai.qna.GenerateAnswerUtils.get_answers
   name: get_answers

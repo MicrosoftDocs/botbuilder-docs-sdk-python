@@ -262,6 +262,36 @@ methods:
     isRequired: true
   return:
     description: A task that represents the work queued to execute.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_meeting_participants_join_event
+  name: on_teams_meeting_participants_join_event
+  summary: Override this in a derived class to provide logic for when meeting participants
+    are added.
+  signature: 'async on_teams_meeting_participants_join_event(meeting: MeetingParticipantsEventDetails,
+    turn_context: TurnContext)'
+  parameters:
+  - name: meeting
+    description: The details of the meeting.
+    isRequired: true
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  return:
+    description: A task that represents the work queued to execute.
+- uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_meeting_participants_leave_event
+  name: on_teams_meeting_participants_leave_event
+  summary: Override this in a derived class to provide logic for when meeting participants
+    are removed.
+  signature: 'async on_teams_meeting_participants_leave_event(meeting: MeetingParticipantsEventDetails,
+    turn_context: TurnContext)'
+  parameters:
+  - name: meeting
+    description: The details of the meeting.
+    isRequired: true
+  - name: turn_context
+    description: A context object for this turn.
+    isRequired: true
+  return:
+    description: A task that represents the work queued to execute.
 - uid: botbuilder.core.teams.teams_activity_handler.TeamsActivityHandler.on_teams_meeting_start_event
   name: on_teams_meeting_start_event
   summary: Override this in a derived class to provide logic for when a Teams meeting
