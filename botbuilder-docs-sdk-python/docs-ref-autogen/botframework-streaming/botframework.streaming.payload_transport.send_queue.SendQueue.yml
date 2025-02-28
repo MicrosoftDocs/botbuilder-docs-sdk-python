@@ -1,0 +1,19 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.payload_transport.send_queue.SendQueue
+name: SendQueue
+fullName: botframework.streaming.payload_transport.send_queue.SendQueue
+module: botframework.streaming.payload_transport.send_queue
+constructor:
+  syntax: 'SendQueue(action: Callable[[object], Awaitable], timeout: int = 30)'
+  parameters:
+  - name: action
+    isRequired: true
+  - name: timeout
+    defaultValue: '30'
+methods:
+- uid: botframework.streaming.payload_transport.send_queue.SendQueue.post
+  name: post
+  signature: 'post(item: object)'
+  parameters:
+  - name: item
+    isRequired: true

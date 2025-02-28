@@ -1,0 +1,34 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.payloads.PayloadAssemblerManager
+name: PayloadAssemblerManager
+fullName: botframework.streaming.payloads.PayloadAssemblerManager
+module: botframework.streaming.payloads
+constructor:
+  syntax: 'PayloadAssemblerManager(stream_manager: StreamManager, on_receive_request:
+    Callable[[UUID, streaming.ReceiveRequest], Awaitable], on_receive_response: Callable[[UUID,
+    streaming.ReceiveResponse], Awaitable])'
+  parameters:
+  - name: stream_manager
+    isRequired: true
+  - name: on_receive_request
+    isRequired: true
+  - name: on_receive_response
+    isRequired: true
+methods:
+- uid: botframework.streaming.payloads.PayloadAssemblerManager.get_payload_stream
+  name: get_payload_stream
+  signature: 'get_payload_stream(header: Header) -> List[int] | streaming.PayloadStream'
+  parameters:
+  - name: header
+    isRequired: true
+- uid: botframework.streaming.payloads.PayloadAssemblerManager.on_receive
+  name: on_receive
+  signature: 'on_receive(header: Header, content_stream: List[int], content_length:
+    int)'
+  parameters:
+  - name: header
+    isRequired: true
+  - name: content_stream
+    isRequired: true
+  - name: content_length
+    isRequired: true

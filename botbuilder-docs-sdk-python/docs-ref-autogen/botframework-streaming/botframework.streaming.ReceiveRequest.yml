@@ -1,0 +1,19 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.ReceiveRequest
+name: ReceiveRequest
+fullName: botframework.streaming.ReceiveRequest
+module: botframework.streaming
+constructor:
+  syntax: 'ReceiveRequest(*, verb: str = None, path: str = None, streams: List[ContentStream]
+    = None)'
+  keywordOnlyParameters:
+  - name: verb
+    isRequired: true
+  - name: path
+    isRequired: true
+  - name: streams
+    isRequired: true
+methods:
+- uid: botframework.streaming.ReceiveRequest.read_body_as_str
+  name: read_body_as_str
+  signature: async read_body_as_str() -> str

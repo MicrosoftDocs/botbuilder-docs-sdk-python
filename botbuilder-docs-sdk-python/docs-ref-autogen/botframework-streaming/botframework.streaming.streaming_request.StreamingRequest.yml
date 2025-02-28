@@ -1,0 +1,86 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.streaming_request.StreamingRequest
+name: StreamingRequest
+fullName: botframework.streaming.streaming_request.StreamingRequest
+module: botframework.streaming.streaming_request
+constructor:
+  syntax: 'StreamingRequest(*, verb: str = None, path: str = None, streams: List[ResponseMessageStream]
+    = None)'
+  keywordOnlyParameters:
+  - name: verb
+    isRequired: true
+  - name: path
+    isRequired: true
+  - name: streams
+    isRequired: true
+methods:
+- uid: botframework.streaming.streaming_request.StreamingRequest.add_stream
+  name: add_stream
+  signature: 'add_stream(content: object, stream_id: UUID = None)'
+  parameters:
+  - name: content
+    isRequired: true
+  - name: stream_id
+    defaultValue: None
+- uid: botframework.streaming.streaming_request.StreamingRequest.create_delete
+  name: create_delete
+  signature: 'static create_delete(path: str = None, body: object = None) -> StreamingRequest'
+  parameters:
+  - name: path
+    defaultValue: None
+  - name: body
+    defaultValue: None
+- uid: botframework.streaming.streaming_request.StreamingRequest.create_get
+  name: create_get
+  signature: 'static create_get(path: str = None, body: object = None) -> StreamingRequest'
+  parameters:
+  - name: path
+    defaultValue: None
+  - name: body
+    defaultValue: None
+- uid: botframework.streaming.streaming_request.StreamingRequest.create_post
+  name: create_post
+  signature: 'static create_post(path: str = None, body: object = None) -> StreamingRequest'
+  parameters:
+  - name: path
+    defaultValue: None
+  - name: body
+    defaultValue: None
+- uid: botframework.streaming.streaming_request.StreamingRequest.create_put
+  name: create_put
+  signature: 'static create_put(path: str = None, body: object = None) -> StreamingRequest'
+  parameters:
+  - name: path
+    defaultValue: None
+  - name: body
+    defaultValue: None
+- uid: botframework.streaming.streaming_request.StreamingRequest.create_request
+  name: create_request
+  signature: 'static create_request(method: str, path: str = None, body: object =
+    None) -> StreamingRequest'
+  parameters:
+  - name: method
+    isRequired: true
+  - name: path
+    defaultValue: None
+  - name: body
+    defaultValue: None
+- uid: botframework.streaming.streaming_request.StreamingRequest.set_body
+  name: set_body
+  signature: 'set_body(body: str | Serializable | Model | bytes)'
+  parameters:
+  - name: body
+    isRequired: true
+attributes:
+- uid: botframework.streaming.streaming_request.StreamingRequest.DELETE
+  name: DELETE
+  signature: DELETE = 'DELETE'
+- uid: botframework.streaming.streaming_request.StreamingRequest.GET
+  name: GET
+  signature: GET = 'GET'
+- uid: botframework.streaming.streaming_request.StreamingRequest.POST
+  name: POST
+  signature: POST = 'POST'
+- uid: botframework.streaming.streaming_request.StreamingRequest.PUT
+  name: PUT
+  signature: PUT = 'PUT'

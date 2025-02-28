@@ -1,0 +1,19 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.RequestHandler
+name: RequestHandler
+fullName: botframework.streaming.RequestHandler
+module: botframework.streaming
+constructor:
+  syntax: RequestHandler()
+methods:
+- uid: botframework.streaming.RequestHandler.process_request
+  name: process_request
+  signature: 'async process_request(request: ReceiveRequest, logger: Logger, context:
+    object) -> StreamingResponse'
+  parameters:
+  - name: request
+    isRequired: true
+  - name: logger
+    isRequired: true
+  - name: context
+    isRequired: true

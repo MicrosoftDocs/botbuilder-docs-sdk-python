@@ -1,0 +1,39 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.transport.web_socket.web_socket_transport.WebSocketTransport
+name: WebSocketTransport
+fullName: botframework.streaming.transport.web_socket.web_socket_transport.WebSocketTransport
+module: botframework.streaming.transport.web_socket.web_socket_transport
+constructor:
+  syntax: 'WebSocketTransport(web_socket: WebSocket)'
+  parameters:
+  - name: web_socket
+    isRequired: true
+methods:
+- uid: botframework.streaming.transport.web_socket.web_socket_transport.WebSocketTransport.close
+  name: close
+  signature: async close()
+- uid: botframework.streaming.transport.web_socket.web_socket_transport.WebSocketTransport.receive
+  name: receive
+  signature: 'async receive(buffer: List[int], offset: int = 0, count: int = None)
+    -> int'
+  parameters:
+  - name: buffer
+    isRequired: true
+  - name: offset
+    defaultValue: '0'
+  - name: count
+    defaultValue: None
+- uid: botframework.streaming.transport.web_socket.web_socket_transport.WebSocketTransport.send
+  name: send
+  signature: 'async send(buffer: List[int], offset: int = 0, count: int = None) ->
+    int'
+  parameters:
+  - name: buffer
+    isRequired: true
+  - name: offset
+    defaultValue: '0'
+  - name: count
+    defaultValue: None
+attributes:
+- uid: botframework.streaming.transport.web_socket.web_socket_transport.WebSocketTransport.is_connected
+  name: is_connected

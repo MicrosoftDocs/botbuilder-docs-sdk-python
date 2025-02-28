@@ -1,0 +1,17 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.payloads.models.header.Header
+name: Header
+fullName: botframework.streaming.payloads.models.header.Header
+module: botframework.streaming.payloads.models.header
+constructor:
+  syntax: 'Header(*, type: str = None, id: UUID = None, end: bool = None)'
+  keywordOnlyParameters:
+  - name: type
+    isRequired: true
+  - name: id
+    isRequired: true
+  - name: end
+    isRequired: true
+attributes:
+- uid: botframework.streaming.payloads.models.header.Header.payload_length
+  name: payload_length

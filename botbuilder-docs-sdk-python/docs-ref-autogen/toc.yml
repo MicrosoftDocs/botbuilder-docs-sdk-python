@@ -178,26 +178,6 @@
       uid: botbuilder.ai.qna
     - items:
       - name: Overview
-        uid: botbuilder.ai.qna.dialogs
-      - items:
-        - name: Overview
-          uid: botbuilder.ai.qna.dialogs.qnamaker_dialog
-        - name: QnAMakerDialog
-          uid: botbuilder.ai.qna.dialogs.qnamaker_dialog.QnAMakerDialog
-        name: qnamaker_dialog
-      - items:
-        - name: Overview
-          uid: botbuilder.ai.qna.dialogs.qnamaker_dialog_options
-        - name: QnAMakerDialogOptions
-          uid: botbuilder.ai.qna.dialogs.qnamaker_dialog_options.QnAMakerDialogOptions
-        name: qnamaker_dialog_options
-      - name: QnAMakerDialog
-        uid: botbuilder.ai.qna.dialogs.QnAMakerDialog
-      - name: QnAMakerDialogOptions
-        uid: botbuilder.ai.qna.dialogs.QnAMakerDialogOptions
-      name: dialogs
-    - items:
-      - name: Overview
         uid: botbuilder.ai.qna.models
       - items:
         - name: Overview
@@ -514,60 +494,8 @@
   - name: BotTelemetryProcessor
     uid: botbuilder.applicationinsights.BotTelemetryProcessor
   name: botbuilder.applicationinsights
-- items:
-  - name: Overview
-    uid: botbuilder.azure
-  - name: about
-    uid: botbuilder.azure.about
-  - items:
-    - name: Overview
-      uid: botbuilder.azure.azure_queue_storage
-    - name: AzureQueueStorage
-      uid: botbuilder.azure.azure_queue_storage.AzureQueueStorage
-    name: azure_queue_storage
-  - items:
-    - name: Overview
-      uid: botbuilder.azure.blob_storage
-    - name: BlobStorage
-      uid: botbuilder.azure.blob_storage.BlobStorage
-    - name: BlobStorageSettings
-      uid: botbuilder.azure.blob_storage.BlobStorageSettings
-    name: blob_storage
-  - items:
-    - name: Overview
-      uid: botbuilder.azure.cosmosdb_partitioned_storage
-    - name: CosmosDbPartitionedConfig
-      uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedConfig
-    - name: CosmosDbPartitionedStorage
-      uid: botbuilder.azure.cosmosdb_partitioned_storage.CosmosDbPartitionedStorage
-    name: cosmosdb_partitioned_storage
-  - items:
-    - name: Overview
-      uid: botbuilder.azure.cosmosdb_storage
-    - name: CosmosDbConfig
-      uid: botbuilder.azure.cosmosdb_storage.CosmosDbConfig
-    - name: CosmosDbKeyEscape
-      uid: botbuilder.azure.cosmosdb_storage.CosmosDbKeyEscape
-    - name: CosmosDbStorage
-      uid: botbuilder.azure.cosmosdb_storage.CosmosDbStorage
-    name: cosmosdb_storage
-  - name: AzureQueueStorage
-    uid: botbuilder.azure.AzureQueueStorage
-  - name: BlobStorage
-    uid: botbuilder.azure.BlobStorage
-  - name: BlobStorageSettings
-    uid: botbuilder.azure.BlobStorageSettings
-  - name: CosmosDbConfig
-    uid: botbuilder.azure.CosmosDbConfig
-  - name: CosmosDbKeyEscape
-    uid: botbuilder.azure.CosmosDbKeyEscape
-  - name: CosmosDbPartitionedConfig
-    uid: botbuilder.azure.CosmosDbPartitionedConfig
-  - name: CosmosDbPartitionedStorage
-    uid: botbuilder.azure.CosmosDbPartitionedStorage
-  - name: CosmosDbStorage
-    uid: botbuilder.azure.CosmosDbStorage
-  name: botbuilder.azure
+- name: botbuilder.azure.about
+  uid: botbuilder.azure.about
 - items:
   - name: Overview
     uid: botbuilder.core
@@ -923,12 +851,6 @@
     - name: ComponentRegistration
       uid: botbuilder.core.component_registration.ComponentRegistration
     name: component_registration
-  - items:
-    - name: Overview
-      uid: botbuilder.core.configuration_service_client_credentials_factory
-    - name: ConfigurationServiceClientCredentialFactory
-      uid: botbuilder.core.configuration_service_client_credentials_factory.ConfigurationServiceClientCredentialFactory
-    name: configuration_service_client_credentials_factory
   - name: conversation_reference_extension
     uid: botbuilder.core.conversation_reference_extension
   - items:
@@ -2020,6 +1942,8 @@
       uid: botbuilder.schema.teams.MeetingInfo
     - name: MeetingParticipantInfo
       uid: botbuilder.schema.teams.MeetingParticipantInfo
+    - name: MeetingParticipantsEventDetails
+      uid: botbuilder.schema.teams.MeetingParticipantsEventDetails
     - name: MeetingStartEventDetails
       uid: botbuilder.schema.teams.MeetingStartEventDetails
     - name: MessageActionsPayload
@@ -2140,12 +2064,16 @@
       uid: botbuilder.schema.teams.TeamsChannelData
     - name: TeamsMeetingInfo
       uid: botbuilder.schema.teams.TeamsMeetingInfo
+    - name: TeamsMeetingMember
+      uid: botbuilder.schema.teams.TeamsMeetingMember
     - name: TeamsMeetingParticipant
       uid: botbuilder.schema.teams.TeamsMeetingParticipant
     - name: TeamsPagedMembersResult
       uid: botbuilder.schema.teams.TeamsPagedMembersResult
     - name: TenantInfo
       uid: botbuilder.schema.teams.TenantInfo
+    - name: UserMeetingDetails
+      uid: botbuilder.schema.teams.UserMeetingDetails
     name: teams
   - items:
     - name: Overview
@@ -2408,6 +2336,18 @@
       name: certificate_app_credentials
     - items:
       - name: Overview
+        uid: botframework.connector.auth.certificate_government_app_credentials
+      - name: CertificateGovernmentAppCredentials
+        uid: botframework.connector.auth.certificate_government_app_credentials.CertificateGovernmentAppCredentials
+      name: certificate_government_app_credentials
+    - items:
+      - name: Overview
+        uid: botframework.connector.auth.certificate_service_client_credential_factory
+      - name: CertificateServiceClientCredentialsFactory
+        uid: botframework.connector.auth.certificate_service_client_credential_factory.CertificateServiceClientCredentialsFactory
+      name: certificate_service_client_credential_factory
+    - items:
+      - name: Overview
         uid: botframework.connector.auth.channel_provider
       - name: ChannelProvider
         uid: botframework.connector.auth.channel_provider.ChannelProvider
@@ -2482,6 +2422,18 @@
       - name: JwtTokenValidation
         uid: botframework.connector.auth.jwt_token_validation.JwtTokenValidation
       name: jwt_token_validation
+    - items:
+      - name: Overview
+        uid: botframework.connector.auth.managedidentity_app_credentials
+      - name: ManagedIdentityAppCredentials
+        uid: botframework.connector.auth.managedidentity_app_credentials.ManagedIdentityAppCredentials
+      name: managedidentity_app_credentials
+    - items:
+      - name: Overview
+        uid: botframework.connector.auth.managedidentity_service_client_credential_factory
+      - name: ManagedIdentityServiceClientCredentialsFactory
+        uid: botframework.connector.auth.managedidentity_service_client_credential_factory.ManagedIdentityServiceClientCredentialsFactory
+      name: managedidentity_service_client_credential_factory
     - items:
       - name: Overview
         uid: botframework.connector.auth.microsoft_app_credentials
@@ -2716,3 +2668,399 @@
   - name: HttpResponseBase
     uid: botframework.connector.HttpResponseBase
   name: botframework.connector
+- items:
+  - name: Overview
+    uid: botframework.streaming
+  - items:
+    - name: Overview
+      uid: botframework.streaming.payload_transport
+    - items:
+      - name: Overview
+        uid: botframework.streaming.payload_transport.payload_receiver
+      - name: PayloadReceiver
+        uid: botframework.streaming.payload_transport.payload_receiver.PayloadReceiver
+      name: payload_receiver
+    - items:
+      - name: Overview
+        uid: botframework.streaming.payload_transport.payload_sender
+      - name: PayloadSender
+        uid: botframework.streaming.payload_transport.payload_sender.PayloadSender
+      name: payload_sender
+    - items:
+      - name: Overview
+        uid: botframework.streaming.payload_transport.send_packet
+      - name: SendPacket
+        uid: botframework.streaming.payload_transport.send_packet.SendPacket
+      name: send_packet
+    - items:
+      - name: Overview
+        uid: botframework.streaming.payload_transport.send_queue
+      - name: SendQueue
+        uid: botframework.streaming.payload_transport.send_queue.SendQueue
+      name: send_queue
+    - name: PayloadReceiver
+      uid: botframework.streaming.payload_transport.PayloadReceiver
+    - name: PayloadSender
+      uid: botframework.streaming.payload_transport.PayloadSender
+    - name: SendPacket
+      uid: botframework.streaming.payload_transport.SendPacket
+    name: payload_transport
+  - items:
+    - name: Overview
+      uid: botframework.streaming.payloads
+    - items:
+      - name: Overview
+        uid: botframework.streaming.payloads.assemblers
+      - items:
+        - name: Overview
+          uid: botframework.streaming.payloads.assemblers.assembler
+        - name: Assembler
+          uid: botframework.streaming.payloads.assemblers.assembler.Assembler
+        name: assembler
+      - items:
+        - name: Overview
+          uid: botframework.streaming.payloads.assemblers.payload_stream_assembler
+        - name: PayloadStreamAssembler
+          uid: botframework.streaming.payloads.assemblers.payload_stream_assembler.PayloadStreamAssembler
+        name: payload_stream_assembler
+      - items:
+        - name: Overview
+          uid: botframework.streaming.payloads.assemblers.receive_request_assembler
+        - name: ReceiveRequestAssembler
+          uid: botframework.streaming.payloads.assemblers.receive_request_assembler.ReceiveRequestAssembler
+        name: receive_request_assembler
+      - items:
+        - name: Overview
+          uid: botframework.streaming.payloads.assemblers.receive_response_assembler
+        - name: ReceiveResponseAssembler
+          uid: botframework.streaming.payloads.assemblers.receive_response_assembler.ReceiveResponseAssembler
+        name: receive_response_assembler
+      - name: Assembler
+        uid: botframework.streaming.payloads.assemblers.Assembler
+      - name: PayloadStreamAssembler
+        uid: botframework.streaming.payloads.assemblers.PayloadStreamAssembler
+      - name: ReceiveRequestAssembler
+        uid: botframework.streaming.payloads.assemblers.ReceiveRequestAssembler
+      - name: ReceiveResponseAssembler
+        uid: botframework.streaming.payloads.assemblers.ReceiveResponseAssembler
+      name: assemblers
+    - items:
+      - name: Overview
+        uid: botframework.streaming.payloads.disassemblers
+      - items:
+        - name: Overview
+          uid: botframework.streaming.payloads.disassemblers.cancel_disassembler
+        - name: CancelDisassembler
+          uid: botframework.streaming.payloads.disassemblers.cancel_disassembler.CancelDisassembler
+        name: cancel_disassembler
+      - items:
+        - name: Overview
+          uid: botframework.streaming.payloads.disassemblers.payload_disassembler
+        - name: PayloadDisassembler
+          uid: botframework.streaming.payloads.disassemblers.payload_disassembler.PayloadDisassembler
+        name: payload_disassembler
+      - items:
+        - name: Overview
+          uid: botframework.streaming.payloads.disassemblers.request_disassembler
+        - name: RequestDisassembler
+          uid: botframework.streaming.payloads.disassemblers.request_disassembler.RequestDisassembler
+        name: request_disassembler
+      - items:
+        - name: Overview
+          uid: botframework.streaming.payloads.disassemblers.response_disassembler
+        - name: ResponseDisassembler
+          uid: botframework.streaming.payloads.disassemblers.response_disassembler.ResponseDisassembler
+        name: response_disassembler
+      - items:
+        - name: Overview
+          uid: botframework.streaming.payloads.disassemblers.response_message_stream_disassembler
+        - name: ResponseMessageStreamDisassembler
+          uid: botframework.streaming.payloads.disassemblers.response_message_stream_disassembler.ResponseMessageStreamDisassembler
+        name: response_message_stream_disassembler
+      - name: CancelDisassembler
+        uid: botframework.streaming.payloads.disassemblers.CancelDisassembler
+      - name: PayloadDisassembler
+        uid: botframework.streaming.payloads.disassemblers.PayloadDisassembler
+      - name: RequestDisassembler
+        uid: botframework.streaming.payloads.disassemblers.RequestDisassembler
+      - name: ResponseDisassembler
+        uid: botframework.streaming.payloads.disassemblers.ResponseDisassembler
+      - name: ResponseMessageStreamDisassembler
+        uid: botframework.streaming.payloads.disassemblers.ResponseMessageStreamDisassembler
+      name: disassemblers
+    - items:
+      - name: Overview
+        uid: botframework.streaming.payloads.models
+      - items:
+        - name: Overview
+          uid: botframework.streaming.payloads.models.header
+        - name: Header
+          uid: botframework.streaming.payloads.models.header.Header
+        name: header
+      - items:
+        - name: Overview
+          uid: botframework.streaming.payloads.models.payload_types
+        - name: PayloadTypes
+          uid: botframework.streaming.payloads.models.payload_types.PayloadTypes
+        name: payload_types
+      - items:
+        - name: Overview
+          uid: botframework.streaming.payloads.models.request_payload
+        - name: RequestPayload
+          uid: botframework.streaming.payloads.models.request_payload.RequestPayload
+        name: request_payload
+      - items:
+        - name: Overview
+          uid: botframework.streaming.payloads.models.response_payload
+        - name: ResponsePayload
+          uid: botframework.streaming.payloads.models.response_payload.ResponsePayload
+        name: response_payload
+      - items:
+        - name: Overview
+          uid: botframework.streaming.payloads.models.serializable
+        - name: Serializable
+          uid: botframework.streaming.payloads.models.serializable.Serializable
+        name: serializable
+      - items:
+        - name: Overview
+          uid: botframework.streaming.payloads.models.stream_description
+        - name: StreamDescription
+          uid: botframework.streaming.payloads.models.stream_description.StreamDescription
+        name: stream_description
+      - name: Header
+        uid: botframework.streaming.payloads.models.Header
+      - name: PayloadTypes
+        uid: botframework.streaming.payloads.models.PayloadTypes
+      - name: RequestPayload
+        uid: botframework.streaming.payloads.models.RequestPayload
+      - name: ResponsePayload
+        uid: botframework.streaming.payloads.models.ResponsePayload
+      - name: Serializable
+        uid: botframework.streaming.payloads.models.Serializable
+      - name: StreamDescription
+        uid: botframework.streaming.payloads.models.StreamDescription
+      name: models
+    - items:
+      - name: Overview
+        uid: botframework.streaming.payloads.content_stream
+      - name: ContentStream
+        uid: botframework.streaming.payloads.content_stream.ContentStream
+      name: content_stream
+    - items:
+      - name: Overview
+        uid: botframework.streaming.payloads.header_serializer
+      - name: HeaderSerializer
+        uid: botframework.streaming.payloads.header_serializer.HeaderSerializer
+      name: header_serializer
+    - items:
+      - name: Overview
+        uid: botframework.streaming.payloads.payload_assembler_manager
+      - name: PayloadAssemblerManager
+        uid: botframework.streaming.payloads.payload_assembler_manager.PayloadAssemblerManager
+      name: payload_assembler_manager
+    - items:
+      - name: Overview
+        uid: botframework.streaming.payloads.request_manager
+      - name: RequestManager
+        uid: botframework.streaming.payloads.request_manager.RequestManager
+      name: request_manager
+    - items:
+      - name: Overview
+        uid: botframework.streaming.payloads.response_message_stream
+      - name: ResponseMessageStream
+        uid: botframework.streaming.payloads.response_message_stream.ResponseMessageStream
+      name: response_message_stream
+    - items:
+      - name: Overview
+        uid: botframework.streaming.payloads.send_operations
+      - name: SendOperations
+        uid: botframework.streaming.payloads.send_operations.SendOperations
+      name: send_operations
+    - items:
+      - name: Overview
+        uid: botframework.streaming.payloads.stream_manager
+      - name: StreamManager
+        uid: botframework.streaming.payloads.stream_manager.StreamManager
+      name: stream_manager
+    - name: ContentStream
+      uid: botframework.streaming.payloads.ContentStream
+    - name: HeaderSerializer
+      uid: botframework.streaming.payloads.HeaderSerializer
+    - name: PayloadAssemblerManager
+      uid: botframework.streaming.payloads.PayloadAssemblerManager
+    - name: RequestManager
+      uid: botframework.streaming.payloads.RequestManager
+    - name: ResponseMessageStream
+      uid: botframework.streaming.payloads.ResponseMessageStream
+    - name: SendOperations
+      uid: botframework.streaming.payloads.SendOperations
+    - name: StreamManager
+      uid: botframework.streaming.payloads.StreamManager
+    name: payloads
+  - items:
+    - name: Overview
+      uid: botframework.streaming.transport
+    - items:
+      - name: Overview
+        uid: botframework.streaming.transport.web_socket
+      - items:
+        - name: Overview
+          uid: botframework.streaming.transport.web_socket.web_socket
+        - name: WebSocket
+          uid: botframework.streaming.transport.web_socket.web_socket.WebSocket
+        - name: WebSocketMessage
+          uid: botframework.streaming.transport.web_socket.web_socket.WebSocketMessage
+        name: web_socket
+      - items:
+        - name: Overview
+          uid: botframework.streaming.transport.web_socket.web_socket_close_status
+        - name: WebSocketCloseStatus
+          uid: botframework.streaming.transport.web_socket.web_socket_close_status.WebSocketCloseStatus
+        name: web_socket_close_status
+      - items:
+        - name: Overview
+          uid: botframework.streaming.transport.web_socket.web_socket_message_type
+        - name: WebSocketMessageType
+          uid: botframework.streaming.transport.web_socket.web_socket_message_type.WebSocketMessageType
+        name: web_socket_message_type
+      - items:
+        - name: Overview
+          uid: botframework.streaming.transport.web_socket.web_socket_server
+        - name: WebSocketServer
+          uid: botframework.streaming.transport.web_socket.web_socket_server.WebSocketServer
+        name: web_socket_server
+      - items:
+        - name: Overview
+          uid: botframework.streaming.transport.web_socket.web_socket_state
+        - name: WebSocketState
+          uid: botframework.streaming.transport.web_socket.web_socket_state.WebSocketState
+        name: web_socket_state
+      - items:
+        - name: Overview
+          uid: botframework.streaming.transport.web_socket.web_socket_transport
+        - name: WebSocketTransport
+          uid: botframework.streaming.transport.web_socket.web_socket_transport.WebSocketTransport
+        name: web_socket_transport
+      - name: WebSocket
+        uid: botframework.streaming.transport.web_socket.WebSocket
+      - name: WebSocketCloseStatus
+        uid: botframework.streaming.transport.web_socket.WebSocketCloseStatus
+      - name: WebSocketMessage
+        uid: botframework.streaming.transport.web_socket.WebSocketMessage
+      - name: WebSocketMessageType
+        uid: botframework.streaming.transport.web_socket.WebSocketMessageType
+      - name: WebSocketServer
+        uid: botframework.streaming.transport.web_socket.WebSocketServer
+      - name: WebSocketState
+        uid: botframework.streaming.transport.web_socket.WebSocketState
+      - name: WebSocketTransport
+        uid: botframework.streaming.transport.web_socket.WebSocketTransport
+      name: web_socket
+    - items:
+      - name: Overview
+        uid: botframework.streaming.transport.disconnected_event_args
+      - name: DisconnectedEventArgs
+        uid: botframework.streaming.transport.disconnected_event_args.DisconnectedEventArgs
+      name: disconnected_event_args
+    - items:
+      - name: Overview
+        uid: botframework.streaming.transport.streaming_transport_service
+      - name: StreamingTransportService
+        uid: botframework.streaming.transport.streaming_transport_service.StreamingTransportService
+      name: streaming_transport_service
+    - items:
+      - name: Overview
+        uid: botframework.streaming.transport.transport_base
+      - name: TransportBase
+        uid: botframework.streaming.transport.transport_base.TransportBase
+      name: transport_base
+    - items:
+      - name: Overview
+        uid: botframework.streaming.transport.transport_constants
+      - name: TransportConstants
+        uid: botframework.streaming.transport.transport_constants.TransportConstants
+      name: transport_constants
+    - items:
+      - name: Overview
+        uid: botframework.streaming.transport.transport_receiver_base
+      - name: TransportReceiverBase
+        uid: botframework.streaming.transport.transport_receiver_base.TransportReceiverBase
+      name: transport_receiver_base
+    - items:
+      - name: Overview
+        uid: botframework.streaming.transport.transport_sender_base
+      - name: TransportSenderBase
+        uid: botframework.streaming.transport.transport_sender_base.TransportSenderBase
+      name: transport_sender_base
+    - name: DisconnectedEventArgs
+      uid: botframework.streaming.transport.DisconnectedEventArgs
+    - name: StreamingTransportService
+      uid: botframework.streaming.transport.StreamingTransportService
+    - name: TransportBase
+      uid: botframework.streaming.transport.TransportBase
+    - name: TransportConstants
+      uid: botframework.streaming.transport.TransportConstants
+    - name: TransportReceiverBase
+      uid: botframework.streaming.transport.TransportReceiverBase
+    - name: TransportSenderBase
+      uid: botframework.streaming.transport.TransportSenderBase
+    name: transport
+  - name: about
+    uid: botframework.streaming.about
+  - items:
+    - name: Overview
+      uid: botframework.streaming.payload_stream
+    - name: PayloadStream
+      uid: botframework.streaming.payload_stream.PayloadStream
+    name: payload_stream
+  - items:
+    - name: Overview
+      uid: botframework.streaming.protocol_adapter
+    - name: ProtocolAdapter
+      uid: botframework.streaming.protocol_adapter.ProtocolAdapter
+    name: protocol_adapter
+  - items:
+    - name: Overview
+      uid: botframework.streaming.receive_request
+    - name: ReceiveRequest
+      uid: botframework.streaming.receive_request.ReceiveRequest
+    name: receive_request
+  - items:
+    - name: Overview
+      uid: botframework.streaming.receive_response
+    - name: ReceiveResponse
+      uid: botframework.streaming.receive_response.ReceiveResponse
+    name: receive_response
+  - items:
+    - name: Overview
+      uid: botframework.streaming.request_handler
+    - name: RequestHandler
+      uid: botframework.streaming.request_handler.RequestHandler
+    name: request_handler
+  - items:
+    - name: Overview
+      uid: botframework.streaming.streaming_request
+    - name: StreamingRequest
+      uid: botframework.streaming.streaming_request.StreamingRequest
+    name: streaming_request
+  - items:
+    - name: Overview
+      uid: botframework.streaming.streaming_response
+    - name: StreamingResponse
+      uid: botframework.streaming.streaming_response.StreamingResponse
+    name: streaming_response
+  - name: PayloadStream
+    uid: botframework.streaming.PayloadStream
+  - name: ProtocolAdapter
+    uid: botframework.streaming.ProtocolAdapter
+  - name: ReceiveRequest
+    uid: botframework.streaming.ReceiveRequest
+  - name: ReceiveResponse
+    uid: botframework.streaming.ReceiveResponse
+  - name: RequestHandler
+    uid: botframework.streaming.RequestHandler
+  - name: StreamingRequest
+    uid: botframework.streaming.StreamingRequest
+  - name: StreamingResponse
+    uid: botframework.streaming.StreamingResponse
+  name: botframework.streaming

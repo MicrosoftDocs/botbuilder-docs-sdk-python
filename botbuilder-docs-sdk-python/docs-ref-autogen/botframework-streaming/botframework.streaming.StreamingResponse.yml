@@ -1,0 +1,60 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.StreamingResponse
+name: StreamingResponse
+fullName: botframework.streaming.StreamingResponse
+module: botframework.streaming
+constructor:
+  syntax: 'StreamingResponse(*, status_code: int = 0, streams: List[ResponseMessageStream]
+    = None)'
+  keywordOnlyParameters:
+  - name: status_code
+    isRequired: true
+  - name: streams
+    isRequired: true
+methods:
+- uid: botframework.streaming.StreamingResponse.add_stream
+  name: add_stream
+  signature: 'add_stream(content: object, identifier: UUID = None)'
+  parameters:
+  - name: content
+    isRequired: true
+  - name: identifier
+    defaultValue: None
+- uid: botframework.streaming.StreamingResponse.create_response
+  name: create_response
+  signature: 'static create_response(status_code: int, body: object) -> StreamingResponse'
+  parameters:
+  - name: status_code
+    isRequired: true
+  - name: body
+    isRequired: true
+- uid: botframework.streaming.StreamingResponse.forbidden
+  name: forbidden
+  signature: 'static forbidden(body: object = None) -> StreamingResponse'
+  parameters:
+  - name: body
+    defaultValue: None
+- uid: botframework.streaming.StreamingResponse.internal_server_error
+  name: internal_server_error
+  signature: 'static internal_server_error(body: object = None) -> StreamingResponse'
+  parameters:
+  - name: body
+    defaultValue: None
+- uid: botframework.streaming.StreamingResponse.not_found
+  name: not_found
+  signature: 'static not_found(body: object = None) -> StreamingResponse'
+  parameters:
+  - name: body
+    defaultValue: None
+- uid: botframework.streaming.StreamingResponse.ok
+  name: ok
+  signature: 'static ok(body: object = None) -> StreamingResponse'
+  parameters:
+  - name: body
+    defaultValue: None
+- uid: botframework.streaming.StreamingResponse.set_body
+  name: set_body
+  signature: 'set_body(body: str | Serializable | Model)'
+  parameters:
+  - name: body
+    isRequired: true

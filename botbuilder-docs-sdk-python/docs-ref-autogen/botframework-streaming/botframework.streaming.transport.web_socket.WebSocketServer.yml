@@ -1,0 +1,28 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.transport.web_socket.WebSocketServer
+name: WebSocketServer
+fullName: botframework.streaming.transport.web_socket.WebSocketServer
+module: botframework.streaming.transport.web_socket
+constructor:
+  syntax: 'WebSocketServer(socket: WebSocket, request_handler: RequestHandler)'
+  parameters:
+  - name: socket
+    isRequired: true
+  - name: request_handler
+    isRequired: true
+methods:
+- uid: botframework.streaming.transport.web_socket.WebSocketServer.disconnect
+  name: disconnect
+  signature: async disconnect()
+- uid: botframework.streaming.transport.web_socket.WebSocketServer.send
+  name: send
+  signature: 'async send(request: StreamingRequest) -> ReceiveResponse'
+  parameters:
+  - name: request
+    isRequired: true
+- uid: botframework.streaming.transport.web_socket.WebSocketServer.start
+  name: start
+  signature: async start()
+attributes:
+- uid: botframework.streaming.transport.web_socket.WebSocketServer.is_connected
+  name: is_connected

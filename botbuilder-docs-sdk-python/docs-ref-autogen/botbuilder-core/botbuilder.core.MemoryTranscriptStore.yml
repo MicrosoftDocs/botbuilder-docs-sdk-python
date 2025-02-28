@@ -3,8 +3,6 @@ uid: botbuilder.core.MemoryTranscriptStore
 name: MemoryTranscriptStore
 fullName: botbuilder.core.MemoryTranscriptStore
 module: botbuilder.core
-inheritances:
-- botbuilder.core.transcript_logger.TranscriptStore
 summary: 'This provider is most useful for simulating production storage when running
   locally against the
 
@@ -23,7 +21,7 @@ methods:
 - uid: botbuilder.core.MemoryTranscriptStore.get_transcript_activities
   name: get_transcript_activities
   signature: 'async get_transcript_activities(channel_id: str, conversation_id: str,
-    continuation_token: str = None, start_date: <module ''datetime'' from ''C:\\hostedtoolcache\\windows\\Python\\3.11.9\\x64\\Lib\\datetime.py''>
+    continuation_token: str = None, start_date: <module ''datetime'' from ''C:\\hostedtoolcache\\windows\\Python\\3.11.10\\x64\\Lib\\datetime.py''>
     = datetime.datetime(1, 1, 1, 0, 0)) -> PagedResult[Activity]'
   parameters:
   - name: channel_id

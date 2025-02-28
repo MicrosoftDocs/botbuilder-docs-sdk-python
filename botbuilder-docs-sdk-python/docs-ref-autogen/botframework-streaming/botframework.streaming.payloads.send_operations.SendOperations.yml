@@ -1,0 +1,39 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.payloads.send_operations.SendOperations
+name: SendOperations
+fullName: botframework.streaming.payloads.send_operations.SendOperations
+module: botframework.streaming.payloads.send_operations
+constructor:
+  syntax: 'SendOperations(payload_sender: PayloadSender)'
+  parameters:
+  - name: payload_sender
+    isRequired: true
+methods:
+- uid: botframework.streaming.payloads.send_operations.SendOperations.send_cancel_all
+  name: send_cancel_all
+  signature: 'async send_cancel_all(identifier: UUID)'
+  parameters:
+  - name: identifier
+    isRequired: true
+- uid: botframework.streaming.payloads.send_operations.SendOperations.send_cancel_stream
+  name: send_cancel_stream
+  signature: 'async send_cancel_stream(identifier: UUID)'
+  parameters:
+  - name: identifier
+    isRequired: true
+- uid: botframework.streaming.payloads.send_operations.SendOperations.send_request
+  name: send_request
+  signature: 'async send_request(identifier: UUID, request: streaming.StreamingRequest)'
+  parameters:
+  - name: identifier
+    isRequired: true
+  - name: request
+    isRequired: true
+- uid: botframework.streaming.payloads.send_operations.SendOperations.send_response
+  name: send_response
+  signature: 'async send_response(identifier: UUID, response: streaming.StreamingResponse)'
+  parameters:
+  - name: identifier
+    isRequired: true
+  - name: response
+    isRequired: true

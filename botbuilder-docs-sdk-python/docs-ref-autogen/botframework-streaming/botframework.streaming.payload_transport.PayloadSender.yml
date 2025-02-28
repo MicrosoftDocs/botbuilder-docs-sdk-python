@@ -1,0 +1,36 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.payload_transport.PayloadSender
+name: PayloadSender
+fullName: botframework.streaming.payload_transport.PayloadSender
+module: botframework.streaming.payload_transport
+constructor:
+  syntax: PayloadSender()
+methods:
+- uid: botframework.streaming.payload_transport.PayloadSender.connect
+  name: connect
+  signature: 'connect(sender: TransportSenderBase)'
+  parameters:
+  - name: sender
+    isRequired: true
+- uid: botframework.streaming.payload_transport.PayloadSender.disconnect
+  name: disconnect
+  signature: 'async disconnect(event_args: DisconnectedEventArgs = None)'
+  parameters:
+  - name: event_args
+    defaultValue: None
+- uid: botframework.streaming.payload_transport.PayloadSender.send_payload
+  name: send_payload
+  signature: 'send_payload(header: Header, payload: object, is_length_known: bool,
+    sent_callback: Callable[[Header], Awaitable])'
+  parameters:
+  - name: header
+    isRequired: true
+  - name: payload
+    isRequired: true
+  - name: is_length_known
+    isRequired: true
+  - name: sent_callback
+    isRequired: true
+attributes:
+- uid: botframework.streaming.payload_transport.PayloadSender.is_connected
+  name: is_connected

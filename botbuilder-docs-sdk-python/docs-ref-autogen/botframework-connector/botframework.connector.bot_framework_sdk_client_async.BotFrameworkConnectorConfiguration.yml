@@ -3,8 +3,6 @@ uid: botframework.connector.bot_framework_sdk_client_async.BotFrameworkConnector
 name: BotFrameworkConnectorConfiguration
 fullName: botframework.connector.bot_framework_sdk_client_async.BotFrameworkConnectorConfiguration
 module: botframework.connector.bot_framework_sdk_client_async
-inheritances:
-- botframework.connector._configuration.ConnectorClientConfiguration
 constructor:
   syntax: 'BotFrameworkConnectorConfiguration(credentials, base_url: str, *, pipeline_type:
     Type[AsyncPipeline] | None = None, sender: AsyncHTTPSender | None = None, driver:

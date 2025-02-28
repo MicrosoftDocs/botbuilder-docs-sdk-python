@@ -1,0 +1,18 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.transport.transport_receiver_base.TransportReceiverBase
+name: TransportReceiverBase
+fullName: botframework.streaming.transport.transport_receiver_base.TransportReceiverBase
+module: botframework.streaming.transport.transport_receiver_base
+constructor:
+  syntax: TransportReceiverBase()
+methods:
+- uid: botframework.streaming.transport.transport_receiver_base.TransportReceiverBase.receive
+  name: receive
+  signature: 'async receive(buffer: object, offset: int, count: int) -> int'
+  parameters:
+  - name: buffer
+    isRequired: true
+  - name: offset
+    isRequired: true
+  - name: count
+    isRequired: true

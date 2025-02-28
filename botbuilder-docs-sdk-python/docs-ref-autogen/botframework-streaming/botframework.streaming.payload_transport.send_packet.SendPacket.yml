@@ -1,0 +1,17 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.payload_transport.send_packet.SendPacket
+name: SendPacket
+fullName: botframework.streaming.payload_transport.send_packet.SendPacket
+module: botframework.streaming.payload_transport.send_packet
+constructor:
+  syntax: 'SendPacket(*, header: Header, payload: object, is_length_known: bool, sent_callback:
+    Callable[[Header], Awaitable])'
+  keywordOnlyParameters:
+  - name: header
+    isRequired: true
+  - name: payload
+    isRequired: true
+  - name: is_length_known
+    isRequired: true
+  - name: sent_callback
+    isRequired: true

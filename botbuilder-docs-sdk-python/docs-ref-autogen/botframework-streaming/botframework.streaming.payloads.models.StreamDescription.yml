@@ -1,0 +1,34 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.payloads.models.StreamDescription
+name: StreamDescription
+fullName: botframework.streaming.payloads.models.StreamDescription
+module: botframework.streaming.payloads.models
+constructor:
+  syntax: 'StreamDescription(*, id: str = None, content_type: str = None, length:
+    int = None)'
+  keywordOnlyParameters:
+  - name: id
+    isRequired: true
+  - name: content_type
+    isRequired: true
+  - name: length
+    isRequired: true
+methods:
+- uid: botframework.streaming.payloads.models.StreamDescription.from_dict
+  name: from_dict
+  signature: 'from_dict(json_dict: dict) -> StreamDescription'
+  parameters:
+  - name: json_dict
+    isRequired: true
+- uid: botframework.streaming.payloads.models.StreamDescription.from_json
+  name: from_json
+  signature: 'from_json(json_str: str) -> StreamDescription'
+  parameters:
+  - name: json_str
+    isRequired: true
+- uid: botframework.streaming.payloads.models.StreamDescription.to_dict
+  name: to_dict
+  signature: to_dict() -> dict
+- uid: botframework.streaming.payloads.models.StreamDescription.to_json
+  name: to_json
+  signature: to_json() -> str

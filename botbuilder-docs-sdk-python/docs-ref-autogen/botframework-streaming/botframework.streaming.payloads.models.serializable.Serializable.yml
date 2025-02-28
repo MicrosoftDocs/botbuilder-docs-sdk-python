@@ -1,0 +1,17 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.payloads.models.serializable.Serializable
+name: Serializable
+fullName: botframework.streaming.payloads.models.serializable.Serializable
+module: botframework.streaming.payloads.models.serializable
+constructor:
+  syntax: Serializable()
+methods:
+- uid: botframework.streaming.payloads.models.serializable.Serializable.from_json
+  name: from_json
+  signature: 'from_json(json_str: str)'
+  parameters:
+  - name: json_str
+    isRequired: true
+- uid: botframework.streaming.payloads.models.serializable.Serializable.to_json
+  name: to_json
+  signature: to_json() -> str

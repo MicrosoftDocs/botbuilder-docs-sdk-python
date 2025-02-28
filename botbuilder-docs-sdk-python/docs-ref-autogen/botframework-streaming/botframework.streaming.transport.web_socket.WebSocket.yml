@@ -1,0 +1,37 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.transport.web_socket.WebSocket
+name: WebSocket
+fullName: botframework.streaming.transport.web_socket.WebSocket
+module: botframework.streaming.transport.web_socket
+constructor:
+  syntax: WebSocket()
+methods:
+- uid: botframework.streaming.transport.web_socket.WebSocket.close
+  name: close
+  signature: 'async close(close_status: WebSocketCloseStatus, status_description:
+    str)'
+  parameters:
+  - name: close_status
+    isRequired: true
+  - name: status_description
+    isRequired: true
+- uid: botframework.streaming.transport.web_socket.WebSocket.dispose
+  name: dispose
+  signature: dispose()
+- uid: botframework.streaming.transport.web_socket.WebSocket.receive
+  name: receive
+  signature: async receive() -> WebSocketMessage
+- uid: botframework.streaming.transport.web_socket.WebSocket.send
+  name: send
+  signature: 'async send(buffer: Any, message_type: WebSocketMessageType, end_of_message:
+    bool)'
+  parameters:
+  - name: buffer
+    isRequired: true
+  - name: message_type
+    isRequired: true
+  - name: end_of_message
+    isRequired: true
+attributes:
+- uid: botframework.streaming.transport.web_socket.WebSocket.status
+  name: status

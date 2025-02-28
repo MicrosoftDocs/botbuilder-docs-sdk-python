@@ -1,0 +1,16 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.payloads.ContentStream
+name: ContentStream
+fullName: botframework.streaming.payloads.ContentStream
+module: botframework.streaming.payloads
+constructor:
+  syntax: 'ContentStream(identifier: UUID, assembler: PayloadStreamAssembler)'
+  parameters:
+  - name: identifier
+    isRequired: true
+  - name: assembler
+    isRequired: true
+methods:
+- uid: botframework.streaming.payloads.ContentStream.cancel
+  name: cancel
+  signature: cancel()

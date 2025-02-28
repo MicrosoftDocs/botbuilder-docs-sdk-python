@@ -3,34 +3,30 @@ uid: botbuilder.dialogs.choices.found_choice.FoundChoice
 name: FoundChoice
 fullName: botbuilder.dialogs.choices.found_choice.FoundChoice
 module: botbuilder.dialogs.choices.found_choice
-inheritances:
-- builtins.object
-summary: 'Represents a result from matching user input against a list of choices
-
-
-  # Parameters:
-
-
-  value: The value of the choice that was matched.
-
-  index: The index of the choice within the list of choices that was searched over.
-
-
-  score: The accuracy with which the synonym matched the specified portion of the
-  utterance.
-
-  A value of 1.0 would indicate a perfect match.
-
-
-  synonym: (Optional) The synonym that was matched.'
+summary: Represents a result from matching user input against a list of choices
 constructor:
   syntax: 'FoundChoice(value: str, index: int, score: float, synonym: str = None)'
   parameters:
   - name: value
     isRequired: true
+    types:
+    - <xref:<xref:botbuilder.dialogs.choices.found_choice.The value> of <xref:the
+      choice that was matched.>>
   - name: index
     isRequired: true
+    types:
+    - <xref:<xref:botbuilder.dialogs.choices.found_choice.The index> of <xref:botbuilder.dialogs.choices.found_choice.the
+      choice within the list> of <xref:choices that was searched over.>>
   - name: score
     isRequired: true
+    types:
+    - <xref:<xref:botbuilder.dialogs.choices.found_choice.The accuracy with which
+      the synonym matched the specified portion> of <xref:the utterance.>>
+  - name: match.
+    isRequired: true
+    types:
+    - <xref:<xref:A value> of <xref:1.0 would indicate a perfect>>
   - name: synonym
     defaultValue: None
+    types:
+    - '(<xref:Optional>)<xref: The synonym that was matched.'

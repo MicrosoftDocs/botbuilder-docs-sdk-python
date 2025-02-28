@@ -1,0 +1,26 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.ReceiveResponse
+name: ReceiveResponse
+fullName: botframework.streaming.ReceiveResponse
+module: botframework.streaming
+constructor:
+  syntax: 'ReceiveResponse(status_code: int = 0, streams: List[ContentStream] = None)'
+  parameters:
+  - name: status_code
+    defaultValue: '0'
+  - name: streams
+    defaultValue: None
+methods:
+- uid: botframework.streaming.ReceiveResponse.read_body
+  name: read_body
+  signature: read_body() -> bytes
+- uid: botframework.streaming.ReceiveResponse.read_body_as_json
+  name: read_body_as_json
+  signature: 'read_body_as_json(cls: Type[Model] | Type[Serializable]) -> Model |
+    Serializable'
+  parameters:
+  - name: cls
+    isRequired: true
+- uid: botframework.streaming.ReceiveResponse.read_body_as_str
+  name: read_body_as_str
+  signature: read_body_as_str() -> str

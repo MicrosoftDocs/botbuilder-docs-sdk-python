@@ -1,0 +1,23 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.payloads.models.ResponsePayload
+name: ResponsePayload
+fullName: botframework.streaming.payloads.models.ResponsePayload
+module: botframework.streaming.payloads.models
+constructor:
+  syntax: 'ResponsePayload(*, status_code: int = None, streams: List[StreamDescription]
+    = None)'
+  keywordOnlyParameters:
+  - name: status_code
+    isRequired: true
+  - name: streams
+    isRequired: true
+methods:
+- uid: botframework.streaming.payloads.models.ResponsePayload.from_json
+  name: from_json
+  signature: 'from_json(json_str: str) -> ResponsePayload'
+  parameters:
+  - name: json_str
+    isRequired: true
+- uid: botframework.streaming.payloads.models.ResponsePayload.to_json
+  name: to_json
+  signature: to_json() -> str

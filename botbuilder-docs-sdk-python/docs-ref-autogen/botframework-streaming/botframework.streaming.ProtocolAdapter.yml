@@ -1,0 +1,27 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.ProtocolAdapter
+name: ProtocolAdapter
+fullName: botframework.streaming.ProtocolAdapter
+module: botframework.streaming
+constructor:
+  syntax: 'ProtocolAdapter(request_handler: RequestHandler, request_manager: RequestManager,
+    payload_sender: PayloadSender, payload_receiver: PayloadReceiver, handler_context:
+    object = None)'
+  parameters:
+  - name: request_handler
+    isRequired: true
+  - name: request_manager
+    isRequired: true
+  - name: payload_sender
+    isRequired: true
+  - name: payload_receiver
+    isRequired: true
+  - name: handler_context
+    defaultValue: None
+methods:
+- uid: botframework.streaming.ProtocolAdapter.send_request
+  name: send_request
+  signature: 'async send_request(request: StreamingRequest) -> ReceiveResponse'
+  parameters:
+  - name: request
+    isRequired: true

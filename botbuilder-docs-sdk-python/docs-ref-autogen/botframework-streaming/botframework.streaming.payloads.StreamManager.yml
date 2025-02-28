@@ -1,0 +1,41 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.payloads.StreamManager
+name: StreamManager
+fullName: botframework.streaming.payloads.StreamManager
+module: botframework.streaming.payloads
+constructor:
+  syntax: 'StreamManager(on_cancel_stream: Callable[[PayloadStreamAssembler], None]
+    = None)'
+  parameters:
+  - name: on_cancel_stream
+    defaultValue: None
+methods:
+- uid: botframework.streaming.payloads.StreamManager.close_stream
+  name: close_stream
+  signature: 'close_stream(identifier: UUID)'
+  parameters:
+  - name: identifier
+    isRequired: true
+- uid: botframework.streaming.payloads.StreamManager.get_payload_assembler
+  name: get_payload_assembler
+  signature: 'get_payload_assembler(identifier: UUID) -> PayloadStreamAssembler'
+  parameters:
+  - name: identifier
+    isRequired: true
+- uid: botframework.streaming.payloads.StreamManager.get_payload_stream
+  name: get_payload_stream
+  signature: 'get_payload_stream(header: Header) -> streaming.PayloadStream'
+  parameters:
+  - name: header
+    isRequired: true
+- uid: botframework.streaming.payloads.StreamManager.on_receive
+  name: on_receive
+  signature: 'on_receive(header: Header, content_stream: List[int], content_length:
+    int)'
+  parameters:
+  - name: header
+    isRequired: true
+  - name: content_stream
+    isRequired: true
+  - name: content_length
+    isRequired: true

@@ -1,0 +1,18 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.payloads.disassemblers.CancelDisassembler
+name: CancelDisassembler
+fullName: botframework.streaming.payloads.disassemblers.CancelDisassembler
+module: botframework.streaming.payloads.disassemblers
+constructor:
+  syntax: 'CancelDisassembler(*, sender: PayloadSender, identifier: UUID, type: str)'
+  keywordOnlyParameters:
+  - name: sender
+    isRequired: true
+  - name: identifier
+    isRequired: true
+  - name: type
+    isRequired: true
+methods:
+- uid: botframework.streaming.payloads.disassemblers.CancelDisassembler.disassemble
+  name: disassemble
+  signature: async disassemble()

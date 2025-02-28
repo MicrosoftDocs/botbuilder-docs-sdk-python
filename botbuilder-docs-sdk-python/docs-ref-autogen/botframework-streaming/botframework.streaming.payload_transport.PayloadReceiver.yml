@@ -1,0 +1,32 @@
+### YamlMime:PythonClass
+uid: botframework.streaming.payload_transport.PayloadReceiver
+name: PayloadReceiver
+fullName: botframework.streaming.payload_transport.PayloadReceiver
+module: botframework.streaming.payload_transport
+constructor:
+  syntax: PayloadReceiver()
+methods:
+- uid: botframework.streaming.payload_transport.PayloadReceiver.connect
+  name: connect
+  signature: 'async connect(receiver: TransportReceiverBase)'
+  parameters:
+  - name: receiver
+    isRequired: true
+- uid: botframework.streaming.payload_transport.PayloadReceiver.disconnect
+  name: disconnect
+  signature: 'async disconnect(event_args: DisconnectedEventArgs = None)'
+  parameters:
+  - name: event_args
+    defaultValue: None
+- uid: botframework.streaming.payload_transport.PayloadReceiver.subscribe
+  name: subscribe
+  signature: 'subscribe(get_stream: Callable[[Header], List[int]], receive_action:
+    Callable[[Header, List[int]], int])'
+  parameters:
+  - name: get_stream
+    isRequired: true
+  - name: receive_action
+    isRequired: true
+attributes:
+- uid: botframework.streaming.payload_transport.PayloadReceiver.is_connected
+  name: is_connected
