@@ -3,8 +3,6 @@ uid: botbuilder.dialogs.choices.ChoiceFactory
 name: ChoiceFactory
 fullName: botbuilder.dialogs.choices.ChoiceFactory
 module: botbuilder.dialogs.choices
-inheritances:
-- builtins.object
 summary: Assists with formatting a message activity that contains a list of choices.
 constructor:
   syntax: ChoiceFactory()
@@ -12,19 +10,28 @@ methods:
 - uid: botbuilder.dialogs.choices.ChoiceFactory.for_channel
   name: for_channel
   summary: "Creates a message activity that includes a list of choices formatted based\
-    \ on the\n   capabilities of a given channel.\n\n# Parameters:\n\nchannel_id:\
-    \ A channel ID.\nchoices: List of choices to render\ntext: (Optional) Text of\
-    \ the message to send.\nspeak (Optional) SSML. Text to be spoken by your bot on\
-    \ a speech-enabled channel."
+    \ on the\n   capabilities of a given channel."
   signature: 'static for_channel(channel_id: str, choices: List[str | Choice], text:
     str = None, speak: str = None, options: ChoiceFactoryOptions = None) -> Activity'
   parameters:
   - name: channel_id
     isRequired: true
+    types:
+    - <xref:<xref:A channel ID.>>
   - name: choices
     isRequired: true
+    types:
+    - <xref:typing.List> of <xref:botbuilder.dialogs.choices.choices> to <xref:botbuilder.dialogs.choices.render>
   - name: text
     defaultValue: None
+    types:
+    - '(<xref:Optional>)<xref: Text> of <xref:botbuilder.dialogs.choices.the message>
+      to <xref:send.>'
+  - name: channel.
+    isRequired: true
+    types:
+    - <xref:speak> (<xref:typing.Optional>) <xref:SSML. Text to be spoken by your
+      bot on a speech-enabled>
   - name: speak
     defaultValue: None
   - name: options
@@ -44,61 +51,58 @@ methods:
     defaultValue: None
 - uid: botbuilder.dialogs.choices.ChoiceFactory.inline
   name: inline
-  summary: 'Creates a message activity that includes a list of choices formatted as
+  summary: Creates a message activity that includes a list of choices formatted as
     an inline list.
-
-
-    # Parameters:
-
-
-    choices: The list of choices to render.
-
-    text: (Optional) The text of the message to send.
-
-    speak: (Optional) SSML. Text to be spoken by your bot on a speech-enabled channel.
-
-    options: (Optional) The formatting options to use to tweak rendering of list.'
   signature: 'static inline(choices: List[str | Choice], text: str = None, speak:
     str = None, options: ChoiceFactoryOptions = None) -> Activity'
   parameters:
   - name: choices
     isRequired: true
+    types:
+    - <xref:botbuilder.dialogs.choices.The list> of <xref:botbuilder.dialogs.choices.choices>
+      to <xref:render.>
   - name: text
     defaultValue: None
+    types:
+    - '(<xref:Optional>)<xref: The text> of <xref:botbuilder.dialogs.choices.the message>
+      to <xref:send.>'
   - name: speak
     defaultValue: None
+    types:
+    - '(<xref:Optional>)<xref: SSML. Text> to <xref:be spoken by your bot on a speech-enabled
+      channel.>'
   - name: options
     defaultValue: None
+    types:
+    - '(<xref:Optional>)<xref: The formatting options> to <xref:botbuilder.dialogs.choices.use>
+      to <xref:botbuilder.dialogs.choices.tweak rendering> of <xref:list.>'
 - uid: botbuilder.dialogs.choices.ChoiceFactory.list_style
   name: list_style
-  summary: 'Creates a message activity that includes a list of choices formatted as
+  summary: Creates a message activity that includes a list of choices formatted as
     a numbered or bulleted list.
-
-
-    # Parameters:
-
-
-    choices: The list of choices to render.
-
-
-    text: (Optional) The text of the message to send.
-
-
-    speak: (Optional) SSML. Text to be spoken by your bot on a speech-enabled channel.
-
-
-    options: (Optional) The formatting options to use to tweak rendering of list.'
   signature: 'static list_style(choices: List[str | Choice], text: str = None, speak:
     str = None, options: ChoiceFactoryOptions = None)'
   parameters:
   - name: choices
     isRequired: true
+    types:
+    - <xref:botbuilder.dialogs.choices.The list> of <xref:botbuilder.dialogs.choices.choices>
+      to <xref:render.>
   - name: text
     defaultValue: None
+    types:
+    - '(<xref:Optional>)<xref: The text> of <xref:botbuilder.dialogs.choices.the message>
+      to <xref:send.>'
   - name: speak
     defaultValue: None
+    types:
+    - '(<xref:Optional>)<xref: SSML. Text> to <xref:be spoken by your bot on a speech-enabled
+      channel.>'
   - name: options
     defaultValue: None
+    types:
+    - '(<xref:Optional>)<xref: The formatting options> to <xref:botbuilder.dialogs.choices.use>
+      to <xref:botbuilder.dialogs.choices.tweak rendering> of <xref:list.>'
 - uid: botbuilder.dialogs.choices.ChoiceFactory.suggested_action
   name: suggested_action
   summary: Creates a message activity that includes a list of choices that have been

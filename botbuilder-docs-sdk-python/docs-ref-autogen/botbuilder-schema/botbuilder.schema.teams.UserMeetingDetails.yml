@@ -1,0 +1,24 @@
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.UserMeetingDetails
+name: UserMeetingDetails
+fullName: botbuilder.schema.teams.UserMeetingDetails
+module: botbuilder.schema.teams
+summary: Specific details of a user in a Teams meeting.
+constructor:
+  syntax: 'UserMeetingDetails(*, role: str = None, in_meeting: bool = None, **kwargs)'
+  parameters:
+  - name: role
+    description: Role of the participant in the current meeting.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: in_meeting
+    description: True, if the participant is in the meeting.
+    isRequired: true
+    types:
+    - <xref:bool>
+  keywordOnlyParameters:
+  - name: role
+    isRequired: true
+  - name: in_meeting
+    isRequired: true
