@@ -3,8 +3,6 @@ uid: botbuilder.core.show_typing_middleware.ShowTypingMiddleware
 name: ShowTypingMiddleware
 fullName: botbuilder.core.show_typing_middleware.ShowTypingMiddleware
 module: botbuilder.core.show_typing_middleware
-inheritances:
-- botbuilder.core.middleware_set.Middleware
 summary: 'When added, this middleware will send typing activities back to the user
   when a Message activity
 
@@ -17,14 +15,23 @@ summary: 'When added, this middleware will send typing activities back to the us
   determines how often another typing activity is sent. Typing activities will continue
   to be sent
 
-  until your bot sends another message back to the user.'
+  until your bot sends another message back to the user.
+
+
+  Initializes the middleware.'
 constructor:
   syntax: 'ShowTypingMiddleware(delay: float = 0.5, period: float = 2.0)'
+  parameters:
+  - name: delay
+    description: Delay in seconds for the first typing indicator to be sent.
+    defaultValue: '0.5'
+  - name: period
+    description: Delay in seconds for subsequent typing indicators.
+    defaultValue: '2.0'
 methods:
 - uid: botbuilder.core.show_typing_middleware.ShowTypingMiddleware.on_turn
   name: on_turn
-  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: Callable[[botbuilder.core.turn_context.TurnContext],
-    Awaitable])'
+  signature: 'async on_turn(context: TurnContext, logic: Callable[[TurnContext], Awaitable])'
   parameters:
   - name: context
     isRequired: true

@@ -3,8 +3,11 @@ uid: botbuilder.core.intent_score.IntentScore
 name: IntentScore
 fullName: botbuilder.core.intent_score.IntentScore
 module: botbuilder.core.intent_score
-inheritances:
-- msrest.serialization.Model
 constructor:
-  syntax: 'IntentScore(score: Optional[float] = None, properties: Optional[Dict[str,
-    object]] = None, **kwargs)'
+  syntax: 'IntentScore(score: float = None, properties: Dict[str, object] = None,
+    **kwargs)'
+  parameters:
+  - name: score
+    defaultValue: None
+  - name: properties
+    defaultValue: None

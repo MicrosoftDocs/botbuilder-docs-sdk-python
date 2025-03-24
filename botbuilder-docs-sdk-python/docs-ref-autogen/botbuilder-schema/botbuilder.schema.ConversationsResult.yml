@@ -3,12 +3,10 @@ uid: botbuilder.schema.ConversationsResult
 name: ConversationsResult
 fullName: botbuilder.schema.ConversationsResult
 module: botbuilder.schema
-inheritances:
-- msrest.serialization.Model
 summary: Conversations result.
 constructor:
-  syntax: 'ConversationsResult(*, continuation_token: Optional[str] = None, conversations=None,
-    **kwargs) -> None'
+  syntax: 'ConversationsResult(*, continuation_token: str = None, conversations=None,
+    **kwargs)'
   parameters:
   - name: continuation_token
     description: Paging token
@@ -20,3 +18,8 @@ constructor:
     isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.models.ConversationMembers>]
+  keywordOnlyParameters:
+  - name: continuation_token
+    isRequired: true
+  - name: conversations
+    isRequired: true

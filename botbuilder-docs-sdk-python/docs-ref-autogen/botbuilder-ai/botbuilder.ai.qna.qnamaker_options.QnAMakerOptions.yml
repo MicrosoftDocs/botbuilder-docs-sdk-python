@@ -3,13 +3,43 @@ uid: botbuilder.ai.qna.qnamaker_options.QnAMakerOptions
 name: QnAMakerOptions
 fullName: botbuilder.ai.qna.qnamaker_options.QnAMakerOptions
 module: botbuilder.ai.qna.qnamaker_options
-inheritances:
-- builtins.object
-summary: "Defines options used to configure a *QnAMaker* instance.\n\n   All parameters\
-  \ are optional."
+summary: "Defines options used to configure a *QnAMaker* instance.\n\n# remarks\n\n\
+  \   All parameters are optional.\n\nparam score_threshold (float):\n   The minimum\
+  \ score threshold, used to filter returned results.\n   Values range from score\
+  \ of 0.0 to 1.0.\n\nparam timeout (int):\n   The time in milliseconds to wait before\
+  \ the request times out.\n\nparam top (int):\n   The number of ranked results to\
+  \ return.\n\nparam strict_filters ([Metadata]):\n   Filters to use on queries to\
+  \ a QnA knowledge base, based on a\n   QnA pair's metadata.\n\nparam context ([QnARequestContext]):\n\
+  \   The context of the previous turn.\n\nparam qna_id (int):\n   Id of the current\
+  \ question asked (if available).\n\nparam is_test (bool):\n   A value indicating\
+  \ whether to call test or prod environment of a knowledge base.\n\nparam ranker_type\
+  \ (str):\n   The QnA ranker type to use.\n\nparam strict_filters_join_operator (str):\n\
+  \   A value indicating how strictly you want to apply strict_filters on QnA pairs'\
+  \ metadata.\n   For example, when combining several metadata filters, you can determine\
+  \ if you are\n   concerned with all filters matching or just at least one filter\
+  \ matching."
 constructor:
   syntax: 'QnAMakerOptions(score_threshold: float = 0.0, timeout: int = 0, top: int
     = 0, strict_filters: [<class ''botbuilder.ai.qna.models.metadata.Metadata''>]
     = None, context: [<class ''botbuilder.ai.qna.models.qna_request_context.QnARequestContext''>]
     = None, qna_id: int = None, is_test: bool = False, ranker_type: str = ''Default'',
-    strict_filters_join_operator: str = <JoinOperator.AND: ''AND''>)'
+    strict_filters_join_operator: str = JoinOperator.AND)'
+  parameters:
+  - name: score_threshold
+    defaultValue: '0.0'
+  - name: timeout
+    defaultValue: '0'
+  - name: top
+    defaultValue: '0'
+  - name: strict_filters
+    defaultValue: None
+  - name: context
+    defaultValue: None
+  - name: qna_id
+    defaultValue: None
+  - name: is_test
+    defaultValue: 'False'
+  - name: ranker_type
+    defaultValue: Default
+  - name: strict_filters_join_operator
+    defaultValue: JoinOperator.AND

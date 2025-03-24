@@ -3,12 +3,34 @@ uid: botbuilder.dialogs.prompts.oauth_prompt.OAuthPrompt
 name: OAuthPrompt
 fullName: botbuilder.dialogs.prompts.oauth_prompt.OAuthPrompt
 module: botbuilder.dialogs.prompts.oauth_prompt
-inheritances:
-- botbuilder.dialogs.dialog.Dialog
+summary: Creates a new instance of the <xref:botbuilder.dialogs.prompts.oauth_prompt.OAuthPrompt>
+  class.
 constructor:
-  syntax: 'OAuthPrompt(dialog_id: str, settings: botbuilder.dialogs.prompts.oauth_prompt_settings.OAuthPromptSettings,
-    validator: Optional[Callable[[botbuilder.dialogs.prompts.prompt_validator_context.PromptValidatorContext],
-    Awaitable[bool]]] = None)'
+  syntax: 'OAuthPrompt(dialog_id: str, settings: OAuthPromptSettings, validator: Callable[[PromptValidatorContext],
+    Awaitable[bool]] = None)'
+  parameters:
+  - name: dialog_id
+    description: The Id to assign to this prompt.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: settings
+    description: Additional authentication settings to use with this instance of the
+      prompt
+    isRequired: true
+    types:
+    - <xref:botbuilder.dialogs.prompts.oauth_prompt.OAuthPromptSettings>
+  - name: validator
+    description: Optional, contains additional, custom validation for this prompt
+    defaultValue: None
+    types:
+    - <xref:botbuilder.dialogs.prompts.oauth_prompt.PromptValidatorContext>
+remarks: 'The value of :param dialogId: must be unique within the <xref:botbuilder.dialogs.prompts.oauth_prompt.DialogSet`or
+  :class:`ComponentDialog>
+
+  to which the prompt is added.
+
+  '
 methods:
 - uid: botbuilder.dialogs.prompts.oauth_prompt.OAuthPrompt.begin_dialog
   name: begin_dialog
@@ -16,9 +38,8 @@ methods:
     prompt dialog is pushed onto the
 
     dialog stack and is being activated.'
-  signature: 'begin_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    options: Optional[botbuilder.dialogs.prompts.prompt_options.PromptOptions] = None)
-    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  signature: 'async begin_dialog(dialog_context: DialogContext, options: PromptOptions
+    = None) -> DialogTurnResult'
   parameters:
   - name: dialog_context
     description: The dialog context for the current turn of the conversation
@@ -27,14 +48,13 @@ methods:
     - <xref:botbuilder.dialogs.prompts.oauth_prompt.DialogContext>
   - name: options
     description: Optional, additional information to pass to the prompt being started
-    isRequired: true
     defaultValue: None
     types:
     - <xref:botbuilder.dialogs.prompts.oauth_prompt.PromptOptions>
   return:
     description: Dialog turn result
     types:
-    - <xref::class`:*DialogTurnResult*>
+    - :<xref:class>`:<xref:botbuilder.dialogs.DialogTurnResult>
   remarks: 'If the task is successful, the result indicates whether the prompt is
     still active after the turn
 
@@ -45,8 +65,7 @@ methods:
   name: continue_dialog
   summary: Continues a dialog. Called when a prompt dialog is the active dialog and
     the user replied with a new activity.
-  signature: 'continue_dialog(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
-    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  signature: 'async continue_dialog(dialog_context: DialogContext) -> DialogTurnResult'
   parameters:
   - name: dialog_context
     description: The dialog context for the current turn of the conversation
@@ -56,7 +75,7 @@ methods:
   return:
     description: Dialog turn result
     types:
-    - <xref:botbuilder.dialogs.prompts.oauth_prompt.DialogTurnResult>
+    - <xref:botbuilder.dialogs.DialogTurnResult>
   remarks: 'If the task is successful, the result indicates whether the dialog is
     still
 
@@ -71,8 +90,7 @@ methods:
 - uid: botbuilder.dialogs.prompts.oauth_prompt.OAuthPrompt.get_user_token
   name: get_user_token
   summary: Gets the user's tokeN.
-  signature: 'get_user_token(context: botbuilder.core.turn_context.TurnContext, code:
-    Optional[str] = None) -> botbuilder.schema._models_py3.TokenResponse'
+  signature: 'async get_user_token(context: TurnContext, code: str = None) -> TokenResponse'
   parameters:
   - name: context
     description: Context for the current turn of conversation with the user
@@ -81,7 +99,6 @@ methods:
     - <xref:botbuilder.dialogs.prompts.oauth_prompt.TurnContext>
   - name: code
     description: (Optional) Optional user entered code to validate.
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
@@ -98,7 +115,7 @@ methods:
 - uid: botbuilder.dialogs.prompts.oauth_prompt.OAuthPrompt.sign_out_user
   name: sign_out_user
   summary: Signs out the user
-  signature: 'sign_out_user(context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async sign_out_user(context: TurnContext)'
   parameters:
   - name: context
     description: Context for the current turn of conversation with the user

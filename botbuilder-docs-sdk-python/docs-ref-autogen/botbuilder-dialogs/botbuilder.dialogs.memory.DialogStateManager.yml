@@ -3,11 +3,19 @@ uid: botbuilder.dialogs.memory.DialogStateManager
 name: DialogStateManager
 fullName: botbuilder.dialogs.memory.DialogStateManager
 module: botbuilder.dialogs.memory
-inheritances:
-- builtins.object
+summary: 'Initializes a new instance of the DialogStateManager class.
+
+  :param dialog_context: The dialog context for the current turn of the conversation.
+
+  :param configuration: Configuration for the dialog state manager. Default is None.'
 constructor:
-  syntax: 'DialogStateManager(dialog_context: DialogContext, configuration: botbuilder.dialogs.memory.dialog_state_manager_configuration.DialogStateManagerConfiguration
+  syntax: 'DialogStateManager(dialog_context: DialogContext, configuration: DialogStateManagerConfiguration
     = None)'
+  parameters:
+  - name: dialog_context
+    isRequired: true
+  - name: configuration
+    defaultValue: None
 methods:
 - uid: botbuilder.dialogs.memory.DialogStateManager.add
   name: add
@@ -85,7 +93,7 @@ methods:
   parameters:
   - name: array_index
     isRequired: true
-  - name: array_index
+  - name: array
     isRequired: true
 - uid: botbuilder.dialogs.memory.DialogStateManager.delete_scopes_memory_async
   name: delete_scopes_memory_async
@@ -94,7 +102,7 @@ methods:
     :param name: name of the scope.
 
     :return:'
-  signature: 'delete_scopes_memory_async(name: str)'
+  signature: 'async delete_scopes_memory_async(name: str)'
   parameters:
   - name: name
     isRequired: true
@@ -142,7 +150,7 @@ methods:
     :param name:
 
     :return: A memory scope.'
-  signature: 'get_memory_scope(name: str) -> botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope'
+  signature: 'get_memory_scope(name: str) -> MemoryScope'
   parameters:
   - name: name
     isRequired: true
@@ -179,8 +187,8 @@ methods:
     :param default_value: Function to give default value if there is none (OPTIONAL).
 
     :return: Result or null if the path is not valid.'
-  signature: 'get_value(class_type: Type, path_expression: str, default_value: Optional[Callable[[],
-    T]] = None) -> T'
+  signature: 'get_value(class_type: Type, path_expression: str, default_value: Callable[[],
+    T] = None) -> T'
   parameters:
   - name: class_type
     isRequired: true
@@ -193,7 +201,7 @@ methods:
   summary: 'Load all of the scopes.
 
     :return:'
-  signature: load_all_scopes()
+  signature: async load_all_scopes()
 - uid: botbuilder.dialogs.memory.DialogStateManager.remove
   name: remove
   summary: 'Removes the element with the specified key from the dialog state manager.
@@ -237,8 +245,7 @@ methods:
     :param path:
 
     :return: The memory scope and remaining subpath in scope.'
-  signature: 'resolve_memory_scope(path: str) -> Tuple[botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope,
-    str]'
+  signature: 'resolve_memory_scope(path: str) -> Tuple[MemoryScope, str]'
   parameters:
   - name: path
     isRequired: true
@@ -247,7 +254,7 @@ methods:
   summary: 'Save all changes for all scopes.
 
     :return:'
-  signature: save_all_changes()
+  signature: async save_all_changes()
 - uid: botbuilder.dialogs.memory.DialogStateManager.set_value
   name: set_value
   summary: 'Set memory to value.
@@ -295,8 +302,8 @@ methods:
     :param path: Path expression to use.
 
     :return: True if found, false if not and the value.'
-  signature: 'try_get_value(path: str, class_type: Type = <class ''object''>) -> Tuple[bool,
-    object]'
+  signature: 'try_get_value(path: str, class_type: ~typing.Type = <class ''object''>)
+    -> Tuple[bool, object]'
   parameters:
   - name: path
     isRequired: true

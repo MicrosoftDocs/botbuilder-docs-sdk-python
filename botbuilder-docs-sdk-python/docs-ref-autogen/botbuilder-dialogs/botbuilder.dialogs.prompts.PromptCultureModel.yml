@@ -3,9 +3,30 @@ uid: botbuilder.dialogs.prompts.PromptCultureModel
 name: PromptCultureModel
 fullName: botbuilder.dialogs.prompts.PromptCultureModel
 module: botbuilder.dialogs.prompts
-inheritances:
-- builtins.object
 summary: Culture model used in Choice and Confirm Prompts.
 constructor:
   syntax: 'PromptCultureModel(locale: str, separator: str, inline_or: str, inline_or_more:
     str, yes_in_language: str, no_in_language: str)'
+  parameters:
+  - name: locale
+    description: 'Culture Model''s Locale. Example: "en-US".'
+    isRequired: true
+  - name: separator
+    description: 'Culture Model''s Inline Separator. Example: ", ".'
+    isRequired: true
+  - name: inline_or
+    description: 'Culture Model''s Inline Or. Example: " or ".'
+    isRequired: true
+  - name: Example
+    description: '", or ".'
+    isRequired: true
+    types:
+    - <xref:<xref:inline_or_more Culture Model's Inline Or More.>>
+  - name: yes_in_language
+    description: 'Equivalent of "Yes" in Culture Model''s Language. Example: "Yes".'
+    isRequired: true
+  - name: no_in_language
+    description: 'Equivalent of "No" in Culture Model''s Language. Example: "No".'
+    isRequired: true
+  - name: inline_or_more
+    isRequired: true

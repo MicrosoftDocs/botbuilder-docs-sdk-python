@@ -3,17 +3,22 @@ uid: botbuilder.core.streaming.StreamingRequestHandler
 name: StreamingRequestHandler
 fullName: botbuilder.core.streaming.StreamingRequestHandler
 module: botbuilder.core.streaming
-inheritances:
-- botframework.streaming.request_handler.RequestHandler
 constructor:
-  syntax: 'StreamingRequestHandler(bot: botbuilder.core.bot.Bot, activity_processor:
-    botbuilder.core.streaming.streaming_activity_processor.StreamingActivityProcessor,
-    web_socket: botframework.streaming.transport.web_socket.web_socket.WebSocket,
-    logger: Optional[logging.Logger] = None)'
+  syntax: 'StreamingRequestHandler(bot: Bot, activity_processor: StreamingActivityProcessor,
+    web_socket: WebSocket, logger: Logger = None)'
+  parameters:
+  - name: bot
+    isRequired: true
+  - name: activity_processor
+    isRequired: true
+  - name: web_socket
+    isRequired: true
+  - name: logger
+    defaultValue: None
 methods:
 - uid: botbuilder.core.streaming.StreamingRequestHandler.conversation_added_time
   name: conversation_added_time
-  signature: 'conversation_added_time(conversation_id: str) -> datetime.datetime'
+  signature: 'conversation_added_time(conversation_id: str) -> datetime'
   parameters:
   - name: conversation_id
     isRequired: true
@@ -31,11 +36,11 @@ methods:
     isRequired: true
 - uid: botbuilder.core.streaming.StreamingRequestHandler.listen
   name: listen
-  signature: listen()
+  signature: async listen()
 - uid: botbuilder.core.streaming.StreamingRequestHandler.process_request
   name: process_request
-  signature: 'process_request(request: botframework.streaming.receive_request.ReceiveRequest,
-    logger: logging.Logger, context: object) -> botframework.streaming.streaming_response.StreamingResponse'
+  signature: 'async process_request(request: ReceiveRequest, logger: Logger, context:
+    object) -> StreamingResponse'
   parameters:
   - name: request
     isRequired: true
@@ -45,14 +50,13 @@ methods:
     isRequired: true
 - uid: botbuilder.core.streaming.StreamingRequestHandler.send_activity
   name: send_activity
-  signature: 'send_activity(activity: botbuilder.schema._models_py3.Activity) -> botbuilder.schema._models_py3.ResourceResponse'
+  signature: 'async send_activity(activity: Activity) -> ResourceResponse'
   parameters:
   - name: activity
     isRequired: true
 - uid: botbuilder.core.streaming.StreamingRequestHandler.send_streaming_request
   name: send_streaming_request
-  signature: 'send_streaming_request(request: botframework.streaming.streaming_request.StreamingRequest)
-    -> botframework.streaming.receive_response.ReceiveResponse'
+  signature: 'async send_streaming_request(request: StreamingRequest) -> ReceiveResponse'
   parameters:
   - name: request
     isRequired: true

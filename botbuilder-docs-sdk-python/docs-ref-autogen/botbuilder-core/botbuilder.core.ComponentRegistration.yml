@@ -3,17 +3,15 @@ uid: botbuilder.core.ComponentRegistration
 name: ComponentRegistration
 fullName: botbuilder.core.ComponentRegistration
 module: botbuilder.core
-inheritances:
-- builtins.object
 constructor:
   syntax: ComponentRegistration()
 methods:
 - uid: botbuilder.core.ComponentRegistration.add
   name: add
-  signature: 'add(component_registration: botbuilder.core.component_registration.ComponentRegistration)'
+  signature: 'static add(component_registration: ComponentRegistration)'
   parameters:
   - name: component_registration
     isRequired: true
 - uid: botbuilder.core.ComponentRegistration.get_components
   name: get_components
-  signature: get_components() -> Iterable[botbuilder.core.component_registration.ComponentRegistration]
+  signature: static get_components() -> Iterable[ComponentRegistration]

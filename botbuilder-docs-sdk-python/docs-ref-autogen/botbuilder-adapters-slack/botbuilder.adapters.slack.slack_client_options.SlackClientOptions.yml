@@ -3,9 +3,27 @@ uid: botbuilder.adapters.slack.slack_client_options.SlackClientOptions
 name: SlackClientOptions
 fullName: botbuilder.adapters.slack.slack_client_options.SlackClientOptions
 module: botbuilder.adapters.slack.slack_client_options
-inheritances:
-- builtins.object
-summary: Defines the implementation of the SlackClient options.
+summary: 'Defines the implementation of the SlackClient options.
+
+
+  Initializes a new instance of SlackClientOptions.'
 constructor:
   syntax: 'SlackClientOptions(slack_verification_token: str, slack_bot_token: str,
     slack_client_signing_secret: str)'
+  parameters:
+  - name: slack_verification_token
+    description: A token for validating the origin of incoming webhooks.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: slack_bot_token
+    description: A token for a bot to work on a single workspace.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: slack_client_signing_secret
+    description: The token used to validate that incoming webhooks originated from
+      Slack.
+    isRequired: true
+    types:
+    - <xref:str>

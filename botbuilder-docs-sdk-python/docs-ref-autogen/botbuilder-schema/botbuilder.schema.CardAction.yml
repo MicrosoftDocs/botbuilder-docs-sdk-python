@@ -3,13 +3,11 @@ uid: botbuilder.schema.CardAction
 name: CardAction
 fullName: botbuilder.schema.CardAction
 module: botbuilder.schema
-inheritances:
-- msrest.serialization.Model
 summary: A clickable action.
 constructor:
-  syntax: 'CardAction(*, type=None, title: Optional[str] = None, image: Optional[str]
-    = None, text: Optional[str] = None, display_text: Optional[str] = None, value=None,
-    channel_data=None, image_alt_text: Optional[str] = None, **kwargs) -> None'
+  syntax: 'CardAction(*, type=None, title: str = None, image: str = None, text: str
+    = None, display_text: str = None, value=None, channel_data=None, image_alt_text:
+    str = None, **kwargs)'
   parameters:
   - name: type
     description: 'The type of action implemented by this button. Possible
@@ -62,3 +60,20 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: type
+    isRequired: true
+  - name: title
+    isRequired: true
+  - name: image
+    isRequired: true
+  - name: text
+    isRequired: true
+  - name: display_text
+    isRequired: true
+  - name: value
+    isRequired: true
+  - name: channel_data
+    isRequired: true
+  - name: image_alt_text
+    isRequired: true

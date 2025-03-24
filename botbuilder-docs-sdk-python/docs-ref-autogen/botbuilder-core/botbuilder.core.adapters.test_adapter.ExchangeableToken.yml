@@ -3,17 +3,24 @@ uid: botbuilder.core.adapters.test_adapter.ExchangeableToken
 name: ExchangeableToken
 fullName: botbuilder.core.adapters.test_adapter.ExchangeableToken
 module: botbuilder.core.adapters.test_adapter
-inheritances:
-- botbuilder.core.adapters.test_adapter.UserToken
 constructor:
-  syntax: 'ExchangeableToken(connection_name: Optional[str] = None, user_id: Optional[str]
-    = None, channel_id: Optional[str] = None, token: Optional[str] = None, exchangeable_item:
-    Optional[str] = None)'
+  syntax: 'ExchangeableToken(connection_name: str = None, user_id: str = None, channel_id:
+    str = None, token: str = None, exchangeable_item: str = None)'
+  parameters:
+  - name: connection_name
+    defaultValue: None
+  - name: user_id
+    defaultValue: None
+  - name: channel_id
+    defaultValue: None
+  - name: token
+    defaultValue: None
+  - name: exchangeable_item
+    defaultValue: None
 methods:
 - uid: botbuilder.core.adapters.test_adapter.ExchangeableToken.equals_key
   name: equals_key
-  signature: 'equals_key(rhs: botbuilder.core.adapters.test_adapter.ExchangeableToken)
-    -> bool'
+  signature: 'equals_key(rhs: ExchangeableToken) -> bool'
   parameters:
   - name: rhs
     isRequired: true

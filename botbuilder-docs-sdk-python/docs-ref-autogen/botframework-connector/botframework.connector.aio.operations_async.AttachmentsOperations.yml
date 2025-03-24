@@ -3,13 +3,11 @@ uid: botframework.connector.aio.operations_async.AttachmentsOperations
 name: AttachmentsOperations
 fullName: botframework.connector.aio.operations_async.AttachmentsOperations
 module: botframework.connector.aio.operations_async
-inheritances:
-- builtins.object
 summary: "AttachmentsOperations async operations.\n\nYou should not instantiate directly\
   \ this class, but create a Client instance that will create it for you and attach\n\
   \   it as attribute."
 constructor:
-  syntax: AttachmentsOperations(client, config, serializer, deserializer) -> None
+  syntax: AttachmentsOperations(client, config, serializer, deserializer)
   parameters:
   - name: client
     description: Client for service requests.
@@ -33,8 +31,8 @@ methods:
 
 
     Get the named view as binary content.'
-  signature: get_attachment(attachment_id, view_id, *, custom_headers=None, raw=False,
-    callback=None, **operation_config)
+  signature: async get_attachment(attachment_id, view_id, *, custom_headers=None,
+    raw=False, callback=None, **operation_config)
   parameters:
   - name: attachment_id
     description: attachment id
@@ -68,16 +66,23 @@ methods:
       data is uploading, response will be None.'
     isRequired: true
     types:
-    - <xref:Callable>[<xref:Bytes>, <xref:response=None>]
+    - <xref:typing.Callable>[<xref:Bytes>, <xref:response=None>]
   - name: operation_config
     description: '*Operation configuration
 
       overrides*.'
     isRequired: true
+  keywordOnlyParameters:
+  - name: custom_headers
+    isRequired: true
+  - name: raw
+    isRequired: true
+  - name: callback
+    isRequired: true
   return:
     description: object or ClientRawResponse if raw=true
     types:
-    - <xref:Generator>
+    - <xref:typing.Generator>
     - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
   - type: botframework.connector.models.ErrorResponseException
@@ -87,7 +92,7 @@ methods:
 
 
     Get AttachmentInfo structure describing the attachment views.'
-  signature: get_attachment_info(attachment_id, *, custom_headers=None, raw=False,
+  signature: async get_attachment_info(attachment_id, *, custom_headers=None, raw=False,
     **operation_config)
   parameters:
   - name: attachment_id
@@ -112,6 +117,11 @@ methods:
 
       overrides*.'
     isRequired: true
+  keywordOnlyParameters:
+  - name: custom_headers
+    isRequired: true
+  - name: raw
+    isRequired: true
   return:
     description: AttachmentInfo or ClientRawResponse if raw=true
     types:
@@ -122,4 +132,4 @@ methods:
 attributes:
 - uid: botframework.connector.aio.operations_async.AttachmentsOperations.models
   name: models
-  signature: models = <module 'botframework.connector.models' from 'C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64\\lib\\site-packages\\botframework\\connector\\models\\__init__.py'>
+  signature: models = <module 'botframework.connector.models' from 'C:\\hostedtoolcache\\windows\\Python\\3.11.10\\x64\\Lib\\site-packages\\py2docfx\\venv\\venv10\\Lib\\site-packages\\botframework\\connector\\models\\__init__.py'>

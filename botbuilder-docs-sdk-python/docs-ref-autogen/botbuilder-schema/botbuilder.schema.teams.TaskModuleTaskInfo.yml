@@ -3,13 +3,11 @@ uid: botbuilder.schema.teams.TaskModuleTaskInfo
 name: TaskModuleTaskInfo
 fullName: botbuilder.schema.teams.TaskModuleTaskInfo
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: Metadata for a Task Module.
 constructor:
-  syntax: 'TaskModuleTaskInfo(*, title: Optional[str] = None, height=None, width=None,
-    url: Optional[str] = None, card=None, fallback_url: Optional[str] = None, completion_bot_id:
-    Optional[str] = None, **kwargs) -> None'
+  syntax: 'TaskModuleTaskInfo(*, title: str = None, height=None, width=None, url:
+    str = None, card=None, fallback_url: str = None, completion_bot_id: str = None,
+    **kwargs)'
   parameters:
   - name: title
     description: Appears below the app name and to the right of the app icon.
@@ -56,3 +54,18 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: title
+    isRequired: true
+  - name: height
+    isRequired: true
+  - name: width
+    isRequired: true
+  - name: url
+    isRequired: true
+  - name: card
+    isRequired: true
+  - name: fallback_url
+    isRequired: true
+  - name: completion_bot_id
+    isRequired: true

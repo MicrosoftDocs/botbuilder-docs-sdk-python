@@ -3,16 +3,14 @@ uid: botbuilder.ai.luis.luis_util.LuisUtil
 name: LuisUtil
 fullName: botbuilder.ai.luis.luis_util.LuisUtil
 module: botbuilder.ai.luis.luis_util
-inheritances:
-- builtins.object
 summary: Utility functions used to extract and transform data from Luis SDK
 constructor:
   syntax: LuisUtil()
 methods:
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.add_properties
   name: add_properties
-  signature: 'add_properties(luis: azure.cognitiveservices.language.luis.runtime.models.luis_result_py3.LuisResult,
-    result: botbuilder.core.recognizer_result.RecognizerResult) -> None'
+  signature: 'static add_properties(luis: LuisResult, result: RecognizerResult) ->
+    None'
   parameters:
   - name: luis
     isRequired: true
@@ -20,7 +18,8 @@ methods:
     isRequired: true
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.add_property
   name: add_property
-  signature: 'add_property(obj: Dict[str, object], key: str, value: object) -> None'
+  signature: 'static add_property(obj: Dict[str, object], key: str, value: object)
+    -> None'
   parameters:
   - name: obj
     isRequired: true
@@ -30,9 +29,8 @@ methods:
     isRequired: true
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.composite_contains_entity
   name: composite_contains_entity
-  signature: 'composite_contains_entity(composite_entity_metadata: azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel,
-    entity: azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel)
-    -> bool'
+  signature: 'static composite_contains_entity(composite_entity_metadata: EntityModel,
+    entity: EntityModel) -> bool'
   parameters:
   - name: composite_entity_metadata
     isRequired: true
@@ -40,9 +38,8 @@ methods:
     isRequired: true
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.extract_entities_and_metadata
   name: extract_entities_and_metadata
-  signature: 'extract_entities_and_metadata(entities: List[azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel],
-    composite_entities: List[azure.cognitiveservices.language.luis.runtime.models.composite_entity_model_py3.CompositeEntityModel],
-    verbose: bool) -> Dict[str, object]'
+  signature: 'static extract_entities_and_metadata(entities: List[EntityModel], composite_entities:
+    List[CompositeEntityModel], verbose: bool) -> Dict[str, object]'
   parameters:
   - name: entities
     isRequired: true
@@ -52,66 +49,60 @@ methods:
     isRequired: true
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.extract_entity_metadata
   name: extract_entity_metadata
-  signature: 'extract_entity_metadata(entity: azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel)
-    -> Dict'
+  signature: 'static extract_entity_metadata(entity: EntityModel) -> Dict'
   parameters:
   - name: entity
     isRequired: true
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.extract_entity_value
   name: extract_entity_value
-  signature: 'extract_entity_value(entity: azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel)
-    -> object'
+  signature: 'static extract_entity_value(entity: EntityModel) -> object'
   parameters:
   - name: entity
     isRequired: true
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.extract_normalized_entity_name
   name: extract_normalized_entity_name
-  signature: 'extract_normalized_entity_name(entity: azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel)
-    -> str'
+  signature: 'static extract_normalized_entity_name(entity: EntityModel) -> str'
   parameters:
   - name: entity
     isRequired: true
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.get_intents
   name: get_intents
-  signature: 'get_intents(luis_result: azure.cognitiveservices.language.luis.runtime.models.luis_result_py3.LuisResult)
-    -> Dict[str, botbuilder.core.intent_score.IntentScore]'
+  signature: 'static get_intents(luis_result: LuisResult) -> Dict[str, IntentScore]'
   parameters:
   - name: luis_result
     isRequired: true
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.get_user_agent
   name: get_user_agent
-  signature: get_user_agent()
+  signature: static get_user_agent()
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.intent_score_as_dict
   name: intent_score_as_dict
-  signature: 'intent_score_as_dict(intent_score: botbuilder.core.intent_score.IntentScore)
-    -> Dict[str, float]'
+  signature: 'static intent_score_as_dict(intent_score: IntentScore) -> Dict[str,
+    float]'
   parameters:
   - name: intent_score
     isRequired: true
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.luis_result_as_dict
   name: luis_result_as_dict
-  signature: 'luis_result_as_dict(luis_result: azure.cognitiveservices.language.luis.runtime.models.luis_result_py3.LuisResult)
-    -> Dict[str, object]'
+  signature: 'static luis_result_as_dict(luis_result: LuisResult) -> Dict[str, object]'
   parameters:
   - name: luis_result
     isRequired: true
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.normalized_intent
   name: normalized_intent
-  signature: 'normalized_intent(intent: str) -> str'
+  signature: 'static normalized_intent(intent: str) -> str'
   parameters:
   - name: intent
     isRequired: true
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.number
   name: number
-  signature: 'number(value: object) -> Union[int, float]'
+  signature: 'static number(value: object) -> int | float'
   parameters:
   - name: value
     isRequired: true
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.populate_composite_entity_model
   name: populate_composite_entity_model
-  signature: 'populate_composite_entity_model(composite_entity: azure.cognitiveservices.language.luis.runtime.models.composite_entity_model_py3.CompositeEntityModel,
-    entities: List[azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel],
-    entities_and_metadata: Dict, verbose: bool) -> List[azure.cognitiveservices.language.luis.runtime.models.entity_model_py3.EntityModel]'
+  signature: 'static populate_composite_entity_model(composite_entity: CompositeEntityModel,
+    entities: List[EntityModel], entities_and_metadata: Dict, verbose: bool) -> List[EntityModel]'
   parameters:
   - name: composite_entity
     isRequired: true
@@ -123,7 +114,7 @@ methods:
     isRequired: true
 - uid: botbuilder.ai.luis.luis_util.LuisUtil.recognizer_result_as_dict
   name: recognizer_result_as_dict
-  signature: 'recognizer_result_as_dict(recognizer_result: botbuilder.core.recognizer_result.RecognizerResult)
+  signature: 'static recognizer_result_as_dict(recognizer_result: RecognizerResult)
     -> Dict[str, object]'
   parameters:
   - name: recognizer_result

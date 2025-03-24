@@ -3,13 +3,32 @@ uid: botbuilder.ai.luis.luis_recognizer_options_v2.LuisRecognizerOptionsV2
 name: LuisRecognizerOptionsV2
 fullName: botbuilder.ai.luis.luis_recognizer_options_v2.LuisRecognizerOptionsV2
 module: botbuilder.ai.luis.luis_recognizer_options_v2
-inheritances:
-- botbuilder.ai.luis.luis_recognizer_options.LuisRecognizerOptions
 constructor:
-  syntax: 'LuisRecognizerOptionsV2(bing_spell_check_subscription_key: Optional[str]
-    = None, include_all_intents: Optional[bool] = None, include_instance_data: bool
-    = True, log: bool = True, spell_check: Optional[bool] = None, staging: Optional[bool]
-    = None, timeout: float = 100000, timezone_offset: Optional[float] = None, include_api_results:
-    bool = True, telemetry_client: botbuilder.core.bot_telemetry_client.BotTelemetryClient
-    = <botbuilder.core.null_telemetry_client.NullTelemetryClient object>, log_personal_information:
-    bool = False)'
+  syntax: 'LuisRecognizerOptionsV2(bing_spell_check_subscription_key: str = None,
+    include_all_intents: bool = None, include_instance_data: bool = True, log: bool
+    = True, spell_check: bool = None, staging: bool = None, timeout: float = 100000,
+    timezone_offset: float = None, include_api_results: bool = True, telemetry_client:
+    ~botbuilder.core.bot_telemetry_client.BotTelemetryClient = <botbuilder.core.null_telemetry_client.NullTelemetryClient
+    object>, log_personal_information: bool = False)'
+  parameters:
+  - name: bing_spell_check_subscription_key
+    defaultValue: None
+  - name: include_all_intents
+    defaultValue: None
+  - name: include_instance_data
+    defaultValue: 'True'
+  - name: log
+    defaultValue: 'True'
+  - name: spell_check
+    defaultValue: None
+  - name: staging
+    defaultValue: None
+  - name: timeout
+    defaultValue: '100000'
+  - name: timezone_offset
+    defaultValue: None
+  - name: include_api_results
+    defaultValue: 'True'
+  - name: telemetry_client
+  - name: log_personal_information
+    defaultValue: 'False'

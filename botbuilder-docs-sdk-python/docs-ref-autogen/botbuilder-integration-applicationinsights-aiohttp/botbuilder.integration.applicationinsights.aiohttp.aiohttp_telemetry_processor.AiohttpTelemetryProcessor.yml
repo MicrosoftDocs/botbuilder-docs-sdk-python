@@ -3,24 +3,16 @@ uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_proces
 name: AiohttpTelemetryProcessor
 fullName: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor
 module: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor
-inheritances:
-- botbuilder.applicationinsights.processor.telemetry_processor.TelemetryProcessor
 constructor:
   syntax: AiohttpTelemetryProcessor()
 methods:
 - uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor.can_process
   name: can_process
-  summary: 'Whether the processor can process the request body.
-
-    :return: True if the request body can be processed, False otherwise.
-
-    :rtype: bool'
   signature: can_process() -> bool
 - uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor.detect_aiohttp
   name: detect_aiohttp
   summary: Detects if running in aiohttp.
-  signature: detect_aiohttp() -> bool
+  signature: static detect_aiohttp() -> bool
 - uid: botbuilder.integration.applicationinsights.aiohttp.aiohttp_telemetry_processor.AiohttpTelemetryProcessor.get_request_body
   name: get_request_body
-  summary: Retrieve the request body from flask/django middleware component.
   signature: get_request_body() -> str

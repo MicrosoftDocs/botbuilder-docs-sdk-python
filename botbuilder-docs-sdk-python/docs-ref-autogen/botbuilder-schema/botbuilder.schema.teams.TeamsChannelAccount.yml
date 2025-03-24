@@ -3,14 +3,11 @@ uid: botbuilder.schema.teams.TeamsChannelAccount
 name: TeamsChannelAccount
 fullName: botbuilder.schema.teams.TeamsChannelAccount
 module: botbuilder.schema.teams
-inheritances:
-- botbuilder.schema._models_py3.ChannelAccount
 summary: Teams channel account detailing user Azure Active Directory details.
 constructor:
-  syntax: 'TeamsChannelAccount(*, id: Optional[str] = None, name: Optional[str] =
-    None, given_name: Optional[str] = None, surname: Optional[str] = None, email:
-    Optional[str] = None, user_principal_name: Optional[str] = None, tenant_id: Optional[str]
-    = None, user_role: Optional[str] = None, **kwargs) -> None'
+  syntax: 'TeamsChannelAccount(*, id: str = None, name: str = None, given_name: str
+    = None, surname: str = None, email: str = None, user_principal_name: str = None,
+    tenant_id: str = None, user_role: str = None, **kwargs)'
   parameters:
   - name: id
     description: 'Channel id for the user or bot on this channel (Example:
@@ -54,3 +51,20 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: id
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: given_name
+    isRequired: true
+  - name: surname
+    isRequired: true
+  - name: email
+    isRequired: true
+  - name: user_principal_name
+    isRequired: true
+  - name: tenant_id
+    isRequired: true
+  - name: user_role
+    isRequired: true

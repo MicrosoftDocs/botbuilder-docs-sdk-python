@@ -3,8 +3,6 @@ uid: botbuilder.core.bot_assert.BotAssert
 name: BotAssert
 fullName: botbuilder.core.bot_assert.BotAssert
 module: botbuilder.core.bot_assert
-inheritances:
-- builtins.object
 constructor:
   syntax: BotAssert()
 methods:
@@ -13,8 +11,7 @@ methods:
   summary: 'Checks that an activity list is not None
 
     :param activities: The activity list'
-  signature: 'activity_list_not_none(activities: List[botbuilder.schema._models_py3.Activity])
-    -> None'
+  signature: 'static activity_list_not_none(activities: List[Activity]) -> None'
   parameters:
   - name: activities
     isRequired: true
@@ -23,8 +20,7 @@ methods:
   summary: 'Checks that an activity object is not None
 
     :param activity: The activity object'
-  signature: 'activity_not_none(activity: botbuilder.schema._models_py3.Activity)
-    -> None'
+  signature: 'static activity_not_none(activity: Activity) -> None'
   parameters:
   - name: activity
     isRequired: true
@@ -33,8 +29,7 @@ methods:
   summary: 'Checks that a context object is not None
 
     :param turn_context: The context object'
-  signature: 'context_not_none(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> None'
+  signature: 'static context_not_none(turn_context: TurnContext) -> None'
   parameters:
   - name: turn_context
     isRequired: true
@@ -43,7 +38,7 @@ methods:
   summary: 'Checks that a conversation reference object is not None
 
     :param reference: The conversation reference object'
-  signature: 'conversation_reference_not_none(reference: botbuilder.schema._models_py3.ConversationReference)
+  signature: 'static conversation_reference_not_none(reference: ConversationReference)
     -> None'
   parameters:
   - name: reference
@@ -53,8 +48,7 @@ methods:
   summary: 'Checks that a middeware list is not None
 
     :param activities: The middleware list'
-  signature: 'middleware_list_not_none(middleware: List[botbuilder.core.middleware_set.Middleware])
-    -> None'
+  signature: 'static middleware_list_not_none(middleware: List[Middleware]) -> None'
   parameters:
   - name: middleware
     isRequired: true
@@ -63,8 +57,7 @@ methods:
   summary: 'Checks that a middleware object is not None
 
     :param middleware: The middleware object'
-  signature: 'middleware_not_none(middleware: botbuilder.core.middleware_set.Middleware)
-    -> None'
+  signature: 'static middleware_not_none(middleware: Middleware) -> None'
   parameters:
   - name: middleware
     isRequired: true

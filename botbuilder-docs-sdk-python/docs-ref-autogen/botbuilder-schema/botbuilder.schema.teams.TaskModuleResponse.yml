@@ -3,11 +3,9 @@ uid: botbuilder.schema.teams.TaskModuleResponse
 name: TaskModuleResponse
 fullName: botbuilder.schema.teams.TaskModuleResponse
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: Envelope for Task Module Response.
 constructor:
-  syntax: TaskModuleResponse(*, task=None, cache_info=None, **kwargs) -> None
+  syntax: TaskModuleResponse(*, task=None, cache_info=None, **kwargs)
   parameters:
   - name: task
     description: The JSON for the Adaptive card to appear in the task module.
@@ -19,3 +17,8 @@ constructor:
     isRequired: true
     types:
     - <xref:botframework.connector.teams.models.CacheInfo>
+  keywordOnlyParameters:
+  - name: task
+    isRequired: true
+  - name: cache_info
+    isRequired: true

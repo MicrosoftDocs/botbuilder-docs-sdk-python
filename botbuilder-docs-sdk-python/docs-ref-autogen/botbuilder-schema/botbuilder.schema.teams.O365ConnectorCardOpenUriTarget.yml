@@ -3,12 +3,9 @@ uid: botbuilder.schema.teams.O365ConnectorCardOpenUriTarget
 name: O365ConnectorCardOpenUriTarget
 fullName: botbuilder.schema.teams.O365ConnectorCardOpenUriTarget
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: O365 connector card OpenUri target.
 constructor:
-  syntax: 'O365ConnectorCardOpenUriTarget(*, os=None, uri: Optional[str] = None, **kwargs)
-    -> None'
+  syntax: 'O365ConnectorCardOpenUriTarget(*, os=None, uri: str = None, **kwargs)'
   parameters:
   - name: os
     description: 'Target operating system. Possible values include: ''default'',
@@ -22,3 +19,8 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: os
+    isRequired: true
+  - name: uri
+    isRequired: true

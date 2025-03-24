@@ -3,11 +3,9 @@ uid: botbuilder.schema.Transcript
 name: Transcript
 fullName: botbuilder.schema.Transcript
 module: botbuilder.schema
-inheritances:
-- msrest.serialization.Model
 summary: Transcript.
 constructor:
-  syntax: Transcript(*, activities=None, **kwargs) -> None
+  syntax: Transcript(*, activities=None, **kwargs)
   parameters:
   - name: activities
     description: 'A collection of Activities that conforms to the
@@ -16,3 +14,6 @@ constructor:
     isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.models.Activity>]
+  keywordOnlyParameters:
+  - name: activities
+    isRequired: true

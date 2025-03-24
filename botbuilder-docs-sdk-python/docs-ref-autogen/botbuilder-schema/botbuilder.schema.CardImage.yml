@@ -3,12 +3,9 @@ uid: botbuilder.schema.CardImage
 name: CardImage
 fullName: botbuilder.schema.CardImage
 module: botbuilder.schema
-inheritances:
-- msrest.serialization.Model
 summary: An image on a card.
 constructor:
-  syntax: 'CardImage(*, url: Optional[str] = None, alt: Optional[str] = None, tap=None,
-    **kwargs) -> None'
+  syntax: 'CardImage(*, url: str = None, alt: str = None, tap=None, **kwargs)'
   parameters:
   - name: url
     description: URL thumbnail image for major content property
@@ -25,3 +22,10 @@ constructor:
     isRequired: true
     types:
     - <xref:botframework.connector.models.CardAction>
+  keywordOnlyParameters:
+  - name: url
+    isRequired: true
+  - name: alt
+    isRequired: true
+  - name: tap
+    isRequired: true

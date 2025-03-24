@@ -4,8 +4,6 @@ name: DialogTurnStatus
 fullName: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus
 summary: Indicates in which a dialog-related method is being called.
 module: botbuilder.dialogs.dialog_turn_status
-constructor:
-  syntax: DialogTurnStatus(value)
 variables:
 - description: Indicates that there is currently nothing on the dialog stack.
   name: Empty
@@ -25,8 +23,6 @@ variables:
   name: Cancelled
   types:
   - <xref:int>
-inheritances:
-- enum.Enum
 fields:
 - name: Cancelled
   uid: botbuilder.dialogs.dialog_turn_status.DialogTurnStatus.Cancelled

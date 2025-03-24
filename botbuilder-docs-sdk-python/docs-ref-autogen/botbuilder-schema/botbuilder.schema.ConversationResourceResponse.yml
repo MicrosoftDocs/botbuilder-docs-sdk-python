@@ -3,12 +3,10 @@ uid: botbuilder.schema.ConversationResourceResponse
 name: ConversationResourceResponse
 fullName: botbuilder.schema.ConversationResourceResponse
 module: botbuilder.schema
-inheritances:
-- msrest.serialization.Model
 summary: A response containing a resource.
 constructor:
-  syntax: 'ConversationResourceResponse(*, activity_id: Optional[str] = None, service_url:
-    Optional[str] = None, id: Optional[str] = None, **kwargs) -> None'
+  syntax: 'ConversationResourceResponse(*, activity_id: str = None, service_url: str
+    = None, id: str = None, **kwargs)'
   parameters:
   - name: activity_id
     description: ID of the Activity (if sent)
@@ -27,3 +25,10 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: activity_id
+    isRequired: true
+  - name: service_url
+    isRequired: true
+  - name: id
+    isRequired: true

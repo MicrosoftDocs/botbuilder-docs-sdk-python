@@ -5,7 +5,9 @@ fullName: botbuilder.integration.aiohttp.aiohttp_channel_service_exception_middl
 functions:
 - uid: botbuilder.integration.aiohttp.aiohttp_channel_service_exception_middleware.aiohttp_error_middleware
   name: aiohttp_error_middleware
-  signature: aiohttp_error_middleware(request, handler)
+  signature: async aiohttp_error_middleware(request, handler)
   parameters:
   - name: request
+    isRequired: true
   - name: handler
+    isRequired: true

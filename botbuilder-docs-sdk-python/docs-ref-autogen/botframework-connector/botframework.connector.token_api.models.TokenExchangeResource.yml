@@ -3,12 +3,10 @@ uid: botframework.connector.token_api.models.TokenExchangeResource
 name: TokenExchangeResource
 fullName: botframework.connector.token_api.models.TokenExchangeResource
 module: botframework.connector.token_api.models
-inheritances:
-- msrest.serialization.Model
 summary: TokenExchangeResource.
 constructor:
-  syntax: 'TokenExchangeResource(*, id: Optional[str] = None, uri: Optional[str] =
-    None, provider_id: Optional[str] = None, **kwargs) -> None'
+  syntax: 'TokenExchangeResource(*, id: str = None, uri: str = None, provider_id:
+    str = None, **kwargs)'
   parameters:
   - name: id
     isRequired: true
@@ -22,3 +20,10 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: id
+    isRequired: true
+  - name: uri
+    isRequired: true
+  - name: provider_id
+    isRequired: true

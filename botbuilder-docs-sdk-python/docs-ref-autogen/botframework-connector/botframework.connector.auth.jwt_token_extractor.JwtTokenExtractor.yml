@@ -3,16 +3,21 @@ uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor
 name: JwtTokenExtractor
 fullName: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor
 module: botframework.connector.auth.jwt_token_extractor
-inheritances:
-- builtins.object
 constructor:
-  syntax: 'JwtTokenExtractor(validation_params: botframework.connector.auth.verify_options.VerifyOptions,
-    metadata_url: str, allowed_algorithms: list)'
+  syntax: 'JwtTokenExtractor(validation_params: VerifyOptions, metadata_url: str,
+    allowed_algorithms: list)'
+  parameters:
+  - name: validation_params
+    isRequired: true
+  - name: metadata_url
+    isRequired: true
+  - name: allowed_algorithms
+    isRequired: true
 methods:
 - uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_identity
   name: get_identity
-  signature: 'get_identity(schema: str, parameter: str, channel_id: str, required_endorsements:
-    Optional[List[str]] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  signature: 'async get_identity(schema: str, parameter: str, channel_id: str, required_endorsements:
+    List[str] = None) -> ClaimsIdentity'
   parameters:
   - name: schema
     isRequired: true
@@ -24,8 +29,8 @@ methods:
     defaultValue: None
 - uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_identity_from_auth_header
   name: get_identity_from_auth_header
-  signature: 'get_identity_from_auth_header(auth_header: str, channel_id: str, required_endorsements:
-    Optional[List[str]] = None) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  signature: 'async get_identity_from_auth_header(auth_header: str, channel_id: str,
+    required_endorsements: List[str] = None) -> ClaimsIdentity'
   parameters:
   - name: auth_header
     isRequired: true
@@ -35,7 +40,7 @@ methods:
     defaultValue: None
 - uid: botframework.connector.auth.jwt_token_extractor.JwtTokenExtractor.get_open_id_metadata
   name: get_open_id_metadata
-  signature: 'get_open_id_metadata(metadata_url: str)'
+  signature: 'static get_open_id_metadata(metadata_url: str)'
   parameters:
   - name: metadata_url
     isRequired: true

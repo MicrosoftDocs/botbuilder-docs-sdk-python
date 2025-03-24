@@ -3,11 +3,9 @@ uid: botbuilder.schema.MessageReaction
 name: MessageReaction
 fullName: botbuilder.schema.MessageReaction
 module: botbuilder.schema
-inheritances:
-- msrest.serialization.Model
 summary: Message reaction object.
 constructor:
-  syntax: MessageReaction(*, type=None, **kwargs) -> None
+  syntax: MessageReaction(*, type=None, **kwargs)
   parameters:
   - name: type
     description: 'Message reaction type. Possible values include: ''like'',
@@ -17,3 +15,6 @@ constructor:
     types:
     - <xref:str>
     - <xref:botframework.connector.models.MessageReactionTypes>
+  keywordOnlyParameters:
+  - name: type
+    isRequired: true

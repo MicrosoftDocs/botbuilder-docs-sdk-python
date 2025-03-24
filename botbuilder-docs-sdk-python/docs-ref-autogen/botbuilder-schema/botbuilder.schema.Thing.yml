@@ -3,12 +3,9 @@ uid: botbuilder.schema.Thing
 name: Thing
 fullName: botbuilder.schema.Thing
 module: botbuilder.schema
-inheritances:
-- msrest.serialization.Model
 summary: 'Thing (entity type: "[https://schema.org/Thing](https://schema.org/Thing)").'
 constructor:
-  syntax: 'Thing(*, type: Optional[str] = None, name: Optional[str] = None, **kwargs)
-    -> None'
+  syntax: 'Thing(*, type: str = None, name: str = None, **kwargs)'
   parameters:
   - name: type
     description: The type of the thing
@@ -20,3 +17,8 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: type
+    isRequired: true
+  - name: name
+    isRequired: true

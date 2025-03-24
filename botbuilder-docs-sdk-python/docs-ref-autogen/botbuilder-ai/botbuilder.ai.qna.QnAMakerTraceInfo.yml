@@ -3,13 +3,57 @@ uid: botbuilder.ai.qna.QnAMakerTraceInfo
 name: QnAMakerTraceInfo
 fullName: botbuilder.ai.qna.QnAMakerTraceInfo
 module: botbuilder.ai.qna
-inheritances:
-- builtins.object
 summary: Represents all the trace info that we collect from the QnAMaker Middleware.
 constructor:
-  syntax: 'QnAMakerTraceInfo(message: botbuilder.schema._models_py3.Activity, query_results:
-    List[botbuilder.ai.qna.models.query_result.QueryResult], knowledge_base_id: str,
-    score_threshold: float, top: int, strict_filters: List[botbuilder.ai.qna.models.metadata.Metadata],
-    context: Optional[botbuilder.ai.qna.models.qna_request_context.QnARequestContext]
-    = None, qna_id: Optional[int] = None, is_test: bool = False, ranker_type: str
-    = ''Default'')'
+  syntax: 'QnAMakerTraceInfo(message: Activity, query_results: List[QueryResult],
+    knowledge_base_id: str, score_threshold: float, top: int, strict_filters: List[Metadata],
+    context: QnARequestContext = None, qna_id: int = None, is_test: bool = False,
+    ranker_type: str = ''Default'')'
+  parameters:
+  - name: message
+    isRequired: true
+    types:
+    - <xref:<xref:botbuilder.ai.qna.Message which instigated the query> to <xref:QnA
+      Maker.>>
+  - name: query_results
+    isRequired: true
+    types:
+    - <xref:<xref:Results that QnA Maker returned.>>
+  - name: knowledge_base_id
+    isRequired: true
+    types:
+    - <xref:botbuilder.ai.qna.ID> of <xref:the knowledge base that is being queried.>
+  - name: score_threshold
+    isRequired: true
+    types:
+    - <xref:botbuilder.ai.qna.The minimum score threshold>, <xref:botbuilder.ai.qna.used>
+      to <xref:filter returned results.>
+  - name: top
+    isRequired: true
+    types:
+    - <xref:botbuilder.ai.qna.Number> of <xref:botbuilder.ai.qna.ranked results that
+      are asked> to <xref:be returned.>
+  - name: strict_filters
+    isRequired: true
+    types:
+    - <xref:<xref:Filters used on query.>>
+  - name: context
+    defaultValue: None
+    types:
+    - '(<xref:Optional>)<xref: The context from which the QnA was extracted.'
+  - name: qna_id
+    defaultValue: None
+    types:
+    - '(<xref:Optional>)<xref: Id> of <xref:the current question asked.>'
+  - name: is_test
+    defaultValue: 'False'
+    types:
+    - '(<xref:Optional>)<xref: A value indicating whether> to <xref:botbuilder.ai.qna.call
+      test>'
+    - <xref:botbuilder.ai.qna.prod environment> of <xref:knowledgebase.>
+  - name: ranker_types
+    isRequired: true
+    types:
+    - '(<xref:Optional>)<xref: Ranker types.'
+  - name: ranker_type
+    defaultValue: Default

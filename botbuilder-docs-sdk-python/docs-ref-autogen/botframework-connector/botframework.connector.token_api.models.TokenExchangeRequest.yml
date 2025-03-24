@@ -3,12 +3,9 @@ uid: botframework.connector.token_api.models.TokenExchangeRequest
 name: TokenExchangeRequest
 fullName: botframework.connector.token_api.models.TokenExchangeRequest
 module: botframework.connector.token_api.models
-inheritances:
-- msrest.serialization.Model
 summary: TokenExchangeRequest.
 constructor:
-  syntax: 'TokenExchangeRequest(*, uri: Optional[str] = None, token: Optional[str]
-    = None, **kwargs) -> None'
+  syntax: 'TokenExchangeRequest(*, uri: str = None, token: str = None, **kwargs)'
   parameters:
   - name: uri
     isRequired: true
@@ -18,3 +15,8 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: uri
+    isRequired: true
+  - name: token
+    isRequired: true

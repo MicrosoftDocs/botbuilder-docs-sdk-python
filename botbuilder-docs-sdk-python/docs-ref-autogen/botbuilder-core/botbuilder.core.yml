@@ -2,7 +2,7 @@
 uid: botbuilder.core
 name: core
 fullName: botbuilder.core
-type: import
+type: rootImport
 functions:
 - uid: botbuilder.core.calculate_change_hash
   name: calculate_change_hash
@@ -11,9 +11,10 @@ functions:
     :param item:
 
     :return:'
-  signature: 'calculate_change_hash(item: botbuilder.core.storage.StoreItem) -> str'
+  signature: 'calculate_change_hash(item: StoreItem) -> str'
   parameters:
   - name: item
+    isRequired: true
 classes:
 - botbuilder.core.ActivityHandler
 - botbuilder.core.AdapterExtensions
@@ -87,7 +88,6 @@ modules:
 - botbuilder.core.cloud_adapter_base
 - botbuilder.core.cloud_channel_service_handler
 - botbuilder.core.component_registration
-- botbuilder.core.configuration_service_client_credentials_factory
 - botbuilder.core.conversation_reference_extension
 - botbuilder.core.conversation_state
 - botbuilder.core.intent_score

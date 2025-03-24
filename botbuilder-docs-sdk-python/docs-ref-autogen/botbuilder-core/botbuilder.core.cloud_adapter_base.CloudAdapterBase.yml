@@ -3,12 +3,11 @@ uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase
 name: CloudAdapterBase
 fullName: botbuilder.core.cloud_adapter_base.CloudAdapterBase
 module: botbuilder.core.cloud_adapter_base
-inheritances:
-- botbuilder.core.bot_adapter.BotAdapter
-- abc.ABC
 constructor:
-  syntax: 'CloudAdapterBase(bot_framework_authentication: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication)
-    -> None'
+  syntax: 'CloudAdapterBase(bot_framework_authentication: BotFrameworkAuthentication)'
+  parameters:
+  - name: bot_framework_authentication
+    isRequired: true
 methods:
 - uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.continue_conversation
   name: continue_conversation
@@ -19,9 +18,15 @@ methods:
     Most channels require a user to initiate a conversation with a bot before the
     bot can send activities
 
-    to the user.'
-  signature: 'continue_conversation(reference: botbuilder.schema._models_py3.ConversationReference,
-    callback: Callable)'
+    to the user.
+
+
+    and is generally found in the *MicrosoftAppId* parameter in *config.py*.
+
+    :type bot_app_id: <xref:typing.str>'
+  signature: 'async continue_conversation(reference: ConversationReference, callback:
+    Callable, bot_app_id: str = None, claims_identity: ClaimsIdentity = None, audience:
+    str = None)'
   parameters:
   - name: reference
     description: A reference to the conversation to continue.
@@ -33,11 +38,19 @@ methods:
     isRequired: true
     types:
     - <xref:typing.Callable>
+  - name: bot_app_id
+    description: The application Id of the bot. This is the appId returned by the
+      Azure portal registration,
+    defaultValue: None
+  - name: claims_identity
+    defaultValue: None
+  - name: audience
+    defaultValue: None
 - uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.continue_conversation_with_claims
   name: continue_conversation_with_claims
-  signature: 'continue_conversation_with_claims(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    reference: botbuilder.schema._models_py3.ConversationReference, audience: str,
-    logic: Callable[[botbuilder.core.turn_context.TurnContext], Awaitable])'
+  signature: 'async continue_conversation_with_claims(claims_identity: ClaimsIdentity,
+    reference: ConversationReference, audience: str, logic: Callable[[TurnContext],
+    Awaitable])'
   parameters:
   - name: claims_identity
     isRequired: true
@@ -49,39 +62,48 @@ methods:
     isRequired: true
 - uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.create_claims_identity
   name: create_claims_identity
-  signature: 'create_claims_identity(bot_app_id: str = '''') -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  signature: 'create_claims_identity(bot_app_id: str = '''') -> ClaimsIdentity'
   parameters:
   - name: bot_app_id
+- uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.create_conversation
+  name: create_conversation
+  signature: 'async create_conversation(bot_app_id: str, callback: Callable[[TurnContext],
+    Awaitable] = None, conversation_parameters: ConversationParameters = None, channel_id:
+    str = None, service_url: str = None, audience: str = None)'
+  parameters:
+  - name: bot_app_id
+    isRequired: true
+  - name: callback
+    defaultValue: None
+  - name: conversation_parameters
+    defaultValue: None
+  - name: channel_id
+    defaultValue: None
+  - name: service_url
+    defaultValue: None
+  - name: audience
+    defaultValue: None
 - uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.delete_activity
   name: delete_activity
-  summary: Deletes an existing activity.
-  signature: 'delete_activity(context: botbuilder.core.turn_context.TurnContext, reference:
-    botbuilder.schema._models_py3.ConversationReference)'
+  signature: 'async delete_activity(context: TurnContext, reference: ConversationReference)'
   parameters:
   - name: context
-    description: The context object for the turn.
     isRequired: true
-    types:
-    - <xref:botbuilder.core.cloud_adapter_base.TurnContext>
   - name: reference
-    description: Conversation reference for the activity to delete.
     isRequired: true
-    types:
-    - <xref:botbuilder.schema.ConversationReference>
 - uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.process_activity
   name: process_activity
   summary: Creates a turn context and runs the middleware pipeline for an incoming
     activity.
-  signature: 'process_activity(auth_header_or_authenticate_request_result: Union[str,
-    botframework.connector.auth.authenticate_request_result.AuthenticateRequestResult],
-    activity: botbuilder.schema._models_py3.Activity, logic: Callable[[botbuilder.core.turn_context.TurnContext],
+  signature: 'async process_activity(auth_header_or_authenticate_request_result: str
+    | AuthenticateRequestResult, activity: Activity, logic: Callable[[TurnContext],
     Awaitable])'
   parameters:
   - name: auth_header
     description: The HTTP authentication header of the request
     isRequired: true
     types:
-    - <xref:typing.Union>[<xref:typing.str>, <xref:AuthenticateRequestResult>]
+    - '<xref:typing.Union>[<xref:typing.str>,<xref: AuthenticateRequestResult>]'
   - name: activity
     description: The incoming activity
     isRequired: true
@@ -92,6 +114,8 @@ methods:
     isRequired: true
     types:
     - <xref:typing.Callable>
+  - name: auth_header_or_authenticate_request_result
+    isRequired: true
   return:
     description: A task that represents the work queued to execute.
   remarks: 'This class processes an activity received by the bots web server. This
@@ -111,9 +135,8 @@ methods:
     '
 - uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.process_proactive
   name: process_proactive
-  signature: 'process_proactive(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    continuation_activity: botbuilder.schema._models_py3.Activity, audience: str,
-    logic: Callable[[botbuilder.core.turn_context.TurnContext], Awaitable])'
+  signature: 'async process_proactive(claims_identity: ClaimsIdentity, continuation_activity:
+    Activity, audience: str, logic: Callable[[TurnContext], Awaitable])'
   parameters:
   - name: claims_identity
     isRequired: true
@@ -125,37 +148,21 @@ methods:
     isRequired: true
 - uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.send_activities
   name: send_activities
-  summary: Sends a set of activities to the user. An array of responses from the server
-    will be returned.
-  signature: 'send_activities(context: botbuilder.core.turn_context.TurnContext, activities:
-    List[botbuilder.schema._models_py3.Activity]) -> List[botbuilder.schema._models_py3.ResourceResponse]'
+  signature: 'async send_activities(context: TurnContext, activities: List[Activity])
+    -> List[ResourceResponse]'
   parameters:
   - name: context
-    description: The context object for the turn.
     isRequired: true
-    types:
-    - <xref:botbuilder.core.cloud_adapter_base.TurnContext>
   - name: activities
-    description: The activities to send.
     isRequired: true
-    types:
-    - <xref:typing.List>[<xref:Activity>]
 - uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.update_activity
   name: update_activity
-  summary: Replaces an existing activity.
-  signature: 'update_activity(context: botbuilder.core.turn_context.TurnContext, activity:
-    botbuilder.schema._models_py3.Activity)'
+  signature: 'async update_activity(context: TurnContext, activity: Activity)'
   parameters:
   - name: context
-    description: The context object for the turn.
     isRequired: true
-    types:
-    - <xref:botbuilder.core.cloud_adapter_base.TurnContext>
   - name: activity
-    description: New replacement activity.
     isRequired: true
-    types:
-    - <xref:botbuilder.schema.Activity>
 attributes:
 - uid: botbuilder.core.cloud_adapter_base.CloudAdapterBase.CONNECTOR_FACTORY_KEY
   name: CONNECTOR_FACTORY_KEY

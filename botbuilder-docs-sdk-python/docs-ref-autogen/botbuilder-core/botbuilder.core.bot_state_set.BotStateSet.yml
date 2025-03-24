@@ -3,21 +3,21 @@ uid: botbuilder.core.bot_state_set.BotStateSet
 name: BotStateSet
 fullName: botbuilder.core.bot_state_set.BotStateSet
 module: botbuilder.core.bot_state_set
-inheritances:
-- builtins.object
 constructor:
-  syntax: 'BotStateSet(bot_states: List[botbuilder.core.bot_state.BotState])'
+  syntax: 'BotStateSet(bot_states: List[BotState])'
+  parameters:
+  - name: bot_states
+    isRequired: true
 methods:
 - uid: botbuilder.core.bot_state_set.BotStateSet.add
   name: add
-  signature: 'add(bot_state: botbuilder.core.bot_state.BotState) -> botbuilder.core.bot_state_set.BotStateSet'
+  signature: 'add(bot_state: BotState) -> BotStateSet'
   parameters:
   - name: bot_state
     isRequired: true
 - uid: botbuilder.core.bot_state_set.BotStateSet.load_all
   name: load_all
-  signature: 'load_all(turn_context: botbuilder.core.turn_context.TurnContext, force:
-    bool = False)'
+  signature: 'async load_all(turn_context: TurnContext, force: bool = False)'
   parameters:
   - name: turn_context
     isRequired: true
@@ -25,8 +25,7 @@ methods:
     defaultValue: 'False'
 - uid: botbuilder.core.bot_state_set.BotStateSet.save_all_changes
   name: save_all_changes
-  signature: 'save_all_changes(turn_context: botbuilder.core.turn_context.TurnContext,
-    force: bool = False)'
+  signature: 'async save_all_changes(turn_context: TurnContext, force: bool = False)'
   parameters:
   - name: turn_context
     isRequired: true

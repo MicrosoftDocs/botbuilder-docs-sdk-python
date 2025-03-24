@@ -3,12 +3,10 @@ uid: botbuilder.schema.teams.MessagingExtensionQueryOptions
 name: MessagingExtensionQueryOptions
 fullName: botbuilder.schema.teams.MessagingExtensionQueryOptions
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: Messaging extension query options.
 constructor:
-  syntax: 'MessagingExtensionQueryOptions(*, skip: Optional[int] = None, count: Optional[int]
-    = None, **kwargs) -> None'
+  syntax: 'MessagingExtensionQueryOptions(*, skip: int = None, count: int = None,
+    **kwargs)'
   parameters:
   - name: skip
     description: Number of entities to skip
@@ -20,3 +18,8 @@ constructor:
     isRequired: true
     types:
     - <xref:int>
+  keywordOnlyParameters:
+  - name: skip
+    isRequired: true
+  - name: count
+    isRequired: true

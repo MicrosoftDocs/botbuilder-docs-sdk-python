@@ -3,7 +3,8 @@ uid: botbuilder.core.CloudChannelServiceHandler
 name: CloudChannelServiceHandler
 fullName: botbuilder.core.CloudChannelServiceHandler
 module: botbuilder.core
-inheritances:
-- botbuilder.core.channel_service_handler.ChannelServiceHandler
 constructor:
-  syntax: 'CloudChannelServiceHandler(auth: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication)'
+  syntax: 'CloudChannelServiceHandler(auth: BotFrameworkAuthentication)'
+  parameters:
+  - name: auth
+    isRequired: true

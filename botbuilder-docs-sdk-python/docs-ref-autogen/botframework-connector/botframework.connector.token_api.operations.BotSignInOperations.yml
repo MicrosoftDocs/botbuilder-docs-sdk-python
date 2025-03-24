@@ -3,8 +3,6 @@ uid: botframework.connector.token_api.operations.BotSignInOperations
 name: BotSignInOperations
 fullName: botframework.connector.token_api.operations.BotSignInOperations
 module: botframework.connector.token_api.operations
-inheritances:
-- builtins.object
 summary: 'BotSignInOperations operations.
 
 
@@ -41,23 +39,19 @@ methods:
     types:
     - <xref:str>
   - name: code_challenge
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: emulator_url
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: final_redirect
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -65,7 +59,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -77,7 +70,7 @@ methods:
   return:
     description: SignInUrlResponse or ClientRawResponse if raw=true
     types:
-    - <xref:botframework.tokenapi.models.SignInUrlResponse>
+    - <xref:botframework.connector.token_api.models.SignInUrlResponse>
     - <xref:msrest.pipeline.ClientRawResponse>
   exceptions:
   - type: msrest.exceptions.HttpOperationError
@@ -91,23 +84,19 @@ methods:
     types:
     - <xref:str>
   - name: code_challenge
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: emulator_url
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: final_redirect
-    isRequired: true
     defaultValue: None
     types:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -115,7 +104,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -134,4 +122,4 @@ methods:
 attributes:
 - uid: botframework.connector.token_api.operations.BotSignInOperations.models
   name: models
-  signature: models = <module 'botframework.connector.token_api.models' from 'C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64\\lib\\site-packages\\botframework\\connector\\token_api\\models\\__init__.py'>
+  signature: models = <module 'botframework.connector.token_api.models' from 'C:\\hostedtoolcache\\windows\\Python\\3.11.10\\x64\\Lib\\site-packages\\py2docfx\\venv\\venv10\\Lib\\site-packages\\botframework\\connector\\token_api\\models\\__init__.py'>

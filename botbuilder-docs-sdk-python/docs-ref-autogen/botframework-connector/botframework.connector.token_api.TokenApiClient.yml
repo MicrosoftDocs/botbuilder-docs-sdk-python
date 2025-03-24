@@ -3,8 +3,6 @@ uid: botframework.connector.token_api.TokenApiClient
 name: TokenApiClient
 fullName: botframework.connector.token_api.TokenApiClient
 module: botframework.connector.token_api
-inheritances:
-- msrest.service_client.SDKClient
 constructor:
   syntax: TokenApiClient(credentials, base_url=None)
   parameters:
@@ -17,7 +15,7 @@ constructor:
     - <xref:None>
   - name: base_url
     description: Service URL
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
 variables:

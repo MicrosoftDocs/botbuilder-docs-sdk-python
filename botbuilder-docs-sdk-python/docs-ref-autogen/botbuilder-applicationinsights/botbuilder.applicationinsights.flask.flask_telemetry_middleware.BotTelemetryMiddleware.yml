@@ -3,13 +3,14 @@ uid: botbuilder.applicationinsights.flask.flask_telemetry_middleware.BotTelemetr
 name: BotTelemetryMiddleware
 fullName: botbuilder.applicationinsights.flask.flask_telemetry_middleware.BotTelemetryMiddleware
 module: botbuilder.applicationinsights.flask.flask_telemetry_middleware
-inheritances:
-- builtins.object
 summary: "Bot Telemetry Middleware\nSave off the POST body to later populate bot-specific\
   \ properties to\nadd to Application Insights.\n\nExample adding telemetry middleware\
   \ to Flask:\n   app = Flask(__name__)\n   app.wsgi_app = BotTelemetryMiddleware(app.wsgi_app)"
 constructor:
   syntax: BotTelemetryMiddleware(app)
+  parameters:
+  - name: app
+    isRequired: true
 methods:
 - uid: botbuilder.applicationinsights.flask.flask_telemetry_middleware.BotTelemetryMiddleware.process_request
   name: process_request

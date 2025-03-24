@@ -3,14 +3,15 @@ uid: botbuilder.schema.teams.TabEntityContext
 name: TabEntityContext
 fullName: botbuilder.schema.teams.TabEntityContext
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: Current TabRequest entity context, or 'tabEntityId'.
 constructor:
-  syntax: TabEntityContext(*, tab_entity_id=None, **kwargs) -> None
+  syntax: TabEntityContext(*, tab_entity_id=None, **kwargs)
   parameters:
   - name: tab_entity_id
     description: Gets or sets the entity id of the tab.
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: tab_entity_id
+    isRequired: true

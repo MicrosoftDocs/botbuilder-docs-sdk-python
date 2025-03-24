@@ -3,30 +3,41 @@ uid: botbuilder.core.bot_state.BotState
 name: BotState
 fullName: botbuilder.core.bot_state.BotState
 module: botbuilder.core.bot_state
-inheritances:
-- botbuilder.core.property_manager.PropertyManager
 summary: 'Defines a state management object and automates the reading and writing
   of
 
-  associated state properties to a storage layer.'
+  associated state properties to a storage layer.
+
+
+  Initializes a new instance of the <xref:botbuilder.core.bot_state.BotState> class.'
 constructor:
-  syntax: 'BotState(storage: botbuilder.core.storage.Storage, context_service_key:
-    str)'
-remarks: 'Each state management object defines a scope for a storage layer.
+  syntax: 'BotState(storage: Storage, context_service_key: str)'
+  parameters:
+  - name: storage
+    description: The storage layer this state management object will use to store
+      and retrieve state
+    isRequired: true
+    types:
+    - <xref:bptbuilder.core.Storage>
+  - name: context_service_key
+    description: The key for the state cache for this <xref:botbuilder.core.bot_state.BotState>
+    isRequired: true
+    types:
+    - <xref:str>
+remarks: 'This constructor creates a state management object and associated scope.
+  The object uses
 
-  State properties are created within a state management scope, and the Bot Framework
+  the :param storage: to persist state property values and the :param context_service_key:
+  to cache state
 
-  defines these scopes: <xref:botbuilder.core.bot_state.ConversationState>, <xref:botbuilder.core.bot_state.UserState>,
-  and <xref:botbuilder.core.bot_state.PrivateConversationState>.
-
-  You can define additional scopes for your bot.
+  within the context for each turn.
 
   '
 methods:
 - uid: botbuilder.core.bot_state.BotState.clear_state
   name: clear_state
   summary: Clears any state currently stored in this state scope.
-  signature: 'clear_state(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'async clear_state(turn_context: TurnContext)'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -42,7 +53,7 @@ methods:
 - uid: botbuilder.core.bot_state.BotState.create_property
   name: create_property
   summary: Creates a property definition and registers it with this <xref:botbuilder.core.bot_state.BotState>.
-  signature: 'create_property(name: str) -> botbuilder.core.state_property_accessor.StatePropertyAccessor'
+  signature: 'create_property(name: str) -> StatePropertyAccessor'
   parameters:
   - name: name
     description: The name of the property
@@ -52,11 +63,11 @@ methods:
   return:
     description: If successful, the state property accessor created
     types:
-    - <xref:botbuilder.core.bot_state.StatePropertyAccessor>
+    - <xref:botbuilder.core.StatePropertyAccessor>
 - uid: botbuilder.core.bot_state.BotState.delete
   name: delete
   summary: Deletes any state currently stored in this state scope.
-  signature: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
+  signature: 'async delete(turn_context: TurnContext) -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -68,14 +79,14 @@ methods:
 - uid: botbuilder.core.bot_state.BotState.delete_property_value
   name: delete_property_value
   summary: Deletes a property from the state cache in the turn context.
-  signature: 'delete_property_value(turn_context: botbuilder.core.turn_context.TurnContext,
-    property_name: str) -> None'
+  signature: 'async delete_property_value(turn_context: TurnContext, property_name:
+    str) -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn
     isRequired: true
     types:
-    - <xref::TurnContext`>
+    - <xref:<xref::TurnContext`>>
   - name: property_name
     description: The name of the property to delete
     isRequired: true
@@ -85,8 +96,7 @@ methods:
     description: None
 - uid: botbuilder.core.bot_state.BotState.get
   name: get
-  signature: 'get(turn_context: botbuilder.core.turn_context.TurnContext) -> Dict[str,
-    object]'
+  signature: 'get(turn_context: TurnContext) -> Dict[str, object]'
   parameters:
   - name: turn_context
     isRequired: true
@@ -96,7 +106,7 @@ methods:
     this "BotState"
 
     from the turn context.'
-  signature: 'get_cached_state(turn_context: botbuilder.core.turn_context.TurnContext)'
+  signature: 'get_cached_state(turn_context: TurnContext)'
   parameters:
   - name: turn_context
     description: The context object for this turn.
@@ -108,8 +118,7 @@ methods:
 - uid: botbuilder.core.bot_state.BotState.get_property_value
   name: get_property_value
   summary: Gets the value of the specified property in the turn context.
-  signature: 'get_property_value(turn_context: botbuilder.core.turn_context.TurnContext,
-    property_name: str)'
+  signature: 'async get_property_value(turn_context: TurnContext, property_name: str)'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -125,8 +134,7 @@ methods:
     description: The value of the property
 - uid: botbuilder.core.bot_state.BotState.get_storage_key
   name: get_storage_key
-  signature: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> str'
+  signature: 'abstract get_storage_key(turn_context: TurnContext) -> str'
   parameters:
   - name: turn_context
     isRequired: true
@@ -134,8 +142,7 @@ methods:
   name: load
   summary: Reads the current state object and caches it in the context object for
     this turn.
-  signature: 'load(turn_context: botbuilder.core.turn_context.TurnContext, force:
-    bool = False) -> None'
+  signature: 'async load(turn_context: TurnContext, force: bool = False) -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -144,7 +151,6 @@ methods:
     - <xref:botbuilder.core.bot_state.TurnContext>
   - name: force
     description: Optional, true to bypass the cache
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -154,8 +160,8 @@ methods:
 
     If the state has changed, it saves the state cached in the current context for
     this turn.'
-  signature: 'save_changes(turn_context: botbuilder.core.turn_context.TurnContext,
-    force: bool = False) -> None'
+  signature: 'async save_changes(turn_context: TurnContext, force: bool = False) ->
+    None'
   parameters:
   - name: turn_context
     description: The context object for this turn
@@ -165,15 +171,14 @@ methods:
   - name: force
     description: Optional, true to save state to storage whether or not there are
       changes
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
 - uid: botbuilder.core.bot_state.BotState.set_property_value
   name: set_property_value
   summary: Sets a property to the specified value in the turn context.
-  signature: 'set_property_value(turn_context: botbuilder.core.turn_context.TurnContext,
-    property_name: str, value: object) -> None'
+  signature: 'async set_property_value(turn_context: TurnContext, property_name: str,
+    value: object) -> None'
   parameters:
   - name: turn_context
     description: The context object for this turn

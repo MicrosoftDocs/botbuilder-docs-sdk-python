@@ -3,11 +3,13 @@ uid: botbuilder.dialogs.memory.scopes.BotStateMemoryScope
 name: BotStateMemoryScope
 fullName: botbuilder.dialogs.memory.scopes.BotStateMemoryScope
 module: botbuilder.dialogs.memory.scopes
-inheritances:
-- botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope
 constructor:
-  syntax: 'BotStateMemoryScope(bot_state_type: Type[botbuilder.core.bot_state.BotState],
-    name: str)'
+  syntax: 'BotStateMemoryScope(bot_state_type: Type[BotState], name: str)'
+  parameters:
+  - name: bot_state_type
+    isRequired: true
+  - name: name
+    isRequired: true
 methods:
 - uid: botbuilder.dialogs.memory.scopes.BotStateMemoryScope.get_memory
   name: get_memory
@@ -17,7 +19,7 @@ methods:
     isRequired: true
 - uid: botbuilder.dialogs.memory.scopes.BotStateMemoryScope.load
   name: load
-  signature: 'load(dialog_context: DialogContext, force: bool = False)'
+  signature: 'async load(dialog_context: DialogContext, force: bool = False)'
   parameters:
   - name: dialog_context
     isRequired: true
@@ -25,7 +27,7 @@ methods:
     defaultValue: 'False'
 - uid: botbuilder.dialogs.memory.scopes.BotStateMemoryScope.save_changes
   name: save_changes
-  signature: 'save_changes(dialog_context: DialogContext, force: bool = False)'
+  signature: 'async save_changes(dialog_context: DialogContext, force: bool = False)'
   parameters:
   - name: dialog_context
     isRequired: true

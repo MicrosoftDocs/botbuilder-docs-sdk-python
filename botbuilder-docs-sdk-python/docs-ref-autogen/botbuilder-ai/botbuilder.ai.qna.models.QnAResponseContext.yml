@@ -3,10 +3,18 @@ uid: botbuilder.ai.qna.models.QnAResponseContext
 name: QnAResponseContext
 fullName: botbuilder.ai.qna.models.QnAResponseContext
 module: botbuilder.ai.qna.models
-inheritances:
-- msrest.serialization.Model
 summary: 'The context associated with QnA.
 
   Used to mark if the qna response has related prompts.'
 constructor:
   syntax: QnAResponseContext(**kwargs)
+  parameters:
+  - name: is_context_only
+    isRequired: true
+    types:
+    - <xref:<xref:Whether this prompt is context only.>>
+  - name: prompts
+    isRequired: true
+    types:
+    - <xref:<xref:botbuilder.ai.qna.models.The prompts collection> of <xref:related
+      prompts.>>

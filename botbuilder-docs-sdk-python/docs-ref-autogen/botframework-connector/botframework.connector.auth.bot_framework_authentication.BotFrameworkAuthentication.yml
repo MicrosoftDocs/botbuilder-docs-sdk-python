@@ -3,15 +3,13 @@ uid: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthen
 name: BotFrameworkAuthentication
 fullName: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication
 module: botframework.connector.auth.bot_framework_authentication
-inheritances:
-- abc.ABC
 constructor:
   syntax: BotFrameworkAuthentication()
 methods:
 - uid: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication.authenticate_channel_request
   name: authenticate_channel_request
   summary: Authenticate Bot Framework Protocol request to Skills.
-  signature: 'authenticate_channel_request(auth_header: str) -> botframework.connector.auth.claims_identity.ClaimsIdentity'
+  signature: 'async authenticate_channel_request(auth_header: str) -> ClaimsIdentity'
   parameters:
   - name: auth_header
     description: The HTTP auth header in the skill request.
@@ -21,8 +19,8 @@ methods:
 - uid: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication.authenticate_request
   name: authenticate_request
   summary: Validate Bot Framework Protocol requests.
-  signature: 'authenticate_request(activity: botbuilder.schema._models_py3.Activity,
-    auth_header: str) -> botframework.connector.auth.authenticate_request_result.AuthenticateRequestResult'
+  signature: 'abstract async authenticate_request(activity: Activity, auth_header:
+    str) -> AuthenticateRequestResult'
   parameters:
   - name: activity
     description: The inbound Activity.
@@ -35,8 +33,8 @@ methods:
 - uid: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication.authenticate_streaming_request
   name: authenticate_streaming_request
   summary: Validate Bot Framework Protocol requests.
-  signature: 'authenticate_streaming_request(auth_header: str, channel_id_header:
-    str) -> botframework.connector.auth.authenticate_request_result.AuthenticateRequestResult'
+  signature: 'abstract async authenticate_streaming_request(auth_header: str, channel_id_header:
+    str) -> AuthenticateRequestResult'
   parameters:
   - name: auth_header
     description: The HTTP auth header.
@@ -49,7 +47,7 @@ methods:
 - uid: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication.create_bot_framework_client
   name: create_bot_framework_client
   summary: Creates a BotFrameworkClient for calling Skills.
-  signature: create_bot_framework_client() -> botframework.connector.skills.bot_framework_client.BotFrameworkClient
+  signature: create_bot_framework_client() -> BotFrameworkClient
   return:
     description: A BotFrameworkClient.
 - uid: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication.create_connector_factory
@@ -58,8 +56,8 @@ methods:
     that can use credentials
 
     from this particular Cloud Environment.'
-  signature: 'create_connector_factory(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity)
-    -> botframework.connector.auth.connector_factory.ConnectorFactory'
+  signature: 'abstract create_connector_factory(claims_identity: ClaimsIdentity) ->
+    ConnectorFactory'
   parameters:
   - name: claims_identity
     description: The inbound Activity's ClaimsIdentity.
@@ -69,8 +67,8 @@ methods:
 - uid: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication.create_user_token_client
   name: create_user_token_client
   summary: Creates the appropriate UserTokenClient instance.
-  signature: 'create_user_token_client(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity)
-    -> botframework.connector.auth.user_token_client.UserTokenClient'
+  signature: 'abstract async create_user_token_client(claims_identity: ClaimsIdentity)
+    -> UserTokenClient'
   parameters:
   - name: claims_identity
     description: The inbound Activity's ClaimsIdentity.
@@ -90,9 +88,15 @@ methods:
     :param caller_id The default caller_id to use if this is not a skill.
 
     :return: The caller_id, this might be None.'
-  signature: 'generate_caller_id(*, credential_factory: botframework.connector.auth.service_client_credentials_factory.ServiceClientCredentialsFactory,
-    claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity, caller_id:
-    str) -> str'
+  signature: 'async generate_caller_id(*, credential_factory: ServiceClientCredentialsFactory,
+    claims_identity: ClaimsIdentity, caller_id: str) -> str'
+  keywordOnlyParameters:
+  - name: credential_factory
+    isRequired: true
+  - name: claims_identity
+    isRequired: true
+  - name: caller_id
+    isRequired: true
 - uid: botframework.connector.auth.bot_framework_authentication.BotFrameworkAuthentication.get_originating_audience
   name: get_originating_audience
   summary: Gets the originating audience from Bot OAuth scope.

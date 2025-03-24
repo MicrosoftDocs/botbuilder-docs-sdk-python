@@ -3,16 +3,14 @@ uid: botbuilder.schema.AdaptiveCardInvokeResponse
 name: AdaptiveCardInvokeResponse
 fullName: botbuilder.schema.AdaptiveCardInvokeResponse
 module: botbuilder.schema
-inheritances:
-- msrest.serialization.Model
 summary: 'AdaptiveCardInvokeResponse.
 
 
   Defines the structure that is returned as the result of an Invoke activity with
   Name of ''adaptiveCard/action''.'
 constructor:
-  syntax: 'AdaptiveCardInvokeResponse(*, status_code: Optional[int] = None, type:
-    Optional[str] = None, value=None, **kwargs) -> None'
+  syntax: 'AdaptiveCardInvokeResponse(*, status_code: int = None, type: str = None,
+    value=None, **kwargs)'
   parameters:
   - name: status_code
     description: The Card Action Response StatusCode.
@@ -29,3 +27,10 @@ constructor:
     isRequired: true
     types:
     - <xref:dict>[<xref:str>, <xref:object>]
+  keywordOnlyParameters:
+  - name: status_code
+    isRequired: true
+  - name: type
+    isRequired: true
+  - name: value
+    isRequired: true

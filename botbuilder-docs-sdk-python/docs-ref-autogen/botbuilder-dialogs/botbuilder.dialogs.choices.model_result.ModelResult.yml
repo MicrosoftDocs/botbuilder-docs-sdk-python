@@ -3,9 +3,32 @@ uid: botbuilder.dialogs.choices.model_result.ModelResult
 name: ModelResult
 fullName: botbuilder.dialogs.choices.model_result.ModelResult
 module: botbuilder.dialogs.choices.model_result
-inheritances:
-- builtins.object
 summary: Contains recognition result information.
 constructor:
   syntax: 'ModelResult(text: str, start: int, end: int, type_name: str, resolution:
     object)'
+  parameters:
+  - name: text
+    isRequired: true
+    types:
+    - <xref:botbuilder.dialogs.choices.model_result.Substring> of <xref:the utterance
+      that was recognized.>
+  - name: start
+    isRequired: true
+    types:
+    - <xref:<xref:botbuilder.dialogs.choices.model_result.Start character position>
+      of <xref:the recognized substring.>>
+  - name: end
+    isRequired: true
+    types:
+    - <xref:<xref:botbuilder.dialogs.choices.model_result.The end character position>
+      of <xref:the recognized substring.>>
+  - name: type_name
+    isRequired: true
+    types:
+    - <xref:<xref:botbuilder.dialogs.choices.model_result.The type> of <xref:the entity
+      that was recognized.>>
+  - name: resolution
+    isRequired: true
+    types:
+    - <xref:<xref:The recognized entity object.>>

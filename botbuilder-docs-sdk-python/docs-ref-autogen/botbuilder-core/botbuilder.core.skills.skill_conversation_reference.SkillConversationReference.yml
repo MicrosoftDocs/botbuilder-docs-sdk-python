@@ -3,9 +3,12 @@ uid: botbuilder.core.skills.skill_conversation_reference.SkillConversationRefere
 name: SkillConversationReference
 fullName: botbuilder.core.skills.skill_conversation_reference.SkillConversationReference
 module: botbuilder.core.skills.skill_conversation_reference
-inheritances:
-- builtins.object
 summary: ConversationReference implementation for Skills ConversationIdFactory.
 constructor:
-  syntax: 'SkillConversationReference(conversation_reference: botbuilder.schema._models_py3.ConversationReference,
+  syntax: 'SkillConversationReference(conversation_reference: ConversationReference,
     oauth_scope: str)'
+  parameters:
+  - name: conversation_reference
+    isRequired: true
+  - name: oauth_scope
+    isRequired: true

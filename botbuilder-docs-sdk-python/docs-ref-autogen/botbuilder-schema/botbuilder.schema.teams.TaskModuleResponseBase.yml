@@ -3,11 +3,9 @@ uid: botbuilder.schema.teams.TaskModuleResponseBase
 name: TaskModuleResponseBase
 fullName: botbuilder.schema.teams.TaskModuleResponseBase
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: Base class for Task Module responses.
 constructor:
-  syntax: TaskModuleResponseBase(*, type=None, **kwargs) -> None
+  syntax: TaskModuleResponseBase(*, type=None, **kwargs)
   parameters:
   - name: type
     description: 'Choice of action options when responding to the task/submit
@@ -16,3 +14,6 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: type
+    isRequired: true

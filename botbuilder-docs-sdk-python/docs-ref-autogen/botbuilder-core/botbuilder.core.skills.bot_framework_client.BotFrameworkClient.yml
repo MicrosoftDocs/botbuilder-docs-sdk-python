@@ -3,16 +3,13 @@ uid: botbuilder.core.skills.bot_framework_client.BotFrameworkClient
 name: BotFrameworkClient
 fullName: botbuilder.core.skills.bot_framework_client.BotFrameworkClient
 module: botbuilder.core.skills.bot_framework_client
-inheritances:
-- abc.ABC
 constructor:
   syntax: BotFrameworkClient()
 methods:
 - uid: botbuilder.core.skills.bot_framework_client.BotFrameworkClient.post_activity
   name: post_activity
   signature: 'post_activity(from_bot_id: str, to_bot_id: str, to_url: str, service_url:
-    str, conversation_id: str, activity: botbuilder.schema._models_py3.Activity) ->
-    botbuilder.schema._models_py3.InvokeResponse'
+    str, conversation_id: str, activity: Activity) -> InvokeResponse'
   parameters:
   - name: from_bot_id
     isRequired: true

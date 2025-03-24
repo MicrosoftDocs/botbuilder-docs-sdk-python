@@ -3,12 +3,10 @@ uid: botbuilder.schema.teams.O365ConnectorCardHttpPOST
 name: O365ConnectorCardHttpPOST
 fullName: botbuilder.schema.teams.O365ConnectorCardHttpPOST
 module: botbuilder.schema.teams
-inheritances:
-- botbuilder.schema.teams._models_py3.O365ConnectorCardActionBase
 summary: O365 connector card HttpPOST action.
 constructor:
-  syntax: 'O365ConnectorCardHttpPOST(*, type=None, name: Optional[str] = None, id:
-    Optional[str] = None, body: Optional[str] = None, **kwargs) -> None'
+  syntax: 'O365ConnectorCardHttpPOST(*, type=None, name: str = None, id: str = None,
+    body: str = None, **kwargs)'
   parameters:
   - name: type
     description: 'Type of the action. Possible values include: ''ViewAction'',
@@ -32,3 +30,12 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: type
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: id
+    isRequired: true
+  - name: body
+    isRequired: true

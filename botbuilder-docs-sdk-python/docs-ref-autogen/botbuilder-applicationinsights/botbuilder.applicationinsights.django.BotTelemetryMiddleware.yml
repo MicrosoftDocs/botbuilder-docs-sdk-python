@@ -3,8 +3,6 @@ uid: botbuilder.applicationinsights.django.BotTelemetryMiddleware
 name: BotTelemetryMiddleware
 fullName: botbuilder.applicationinsights.django.BotTelemetryMiddleware
 module: botbuilder.applicationinsights.django
-inheritances:
-- builtins.object
 summary: "Save off the POST body to later populate bot-specific properties to add\
   \ to Application Insights.\n\nExample activating MIDDLEWARE in Django settings:\n\
   \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
@@ -14,6 +12,9 @@ summary: "Save off the POST body to later populate bot-specific properties to ad
   \       ...\n       ]\n   ````"
 constructor:
   syntax: BotTelemetryMiddleware(get_response)
+  parameters:
+  - name: get_response
+    isRequired: true
 methods:
 - uid: botbuilder.applicationinsights.django.BotTelemetryMiddleware.process_request
   name: process_request

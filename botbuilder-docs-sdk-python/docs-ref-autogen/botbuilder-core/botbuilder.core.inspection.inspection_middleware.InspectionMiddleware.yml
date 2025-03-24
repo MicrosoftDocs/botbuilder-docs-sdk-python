@@ -3,19 +3,24 @@ uid: botbuilder.core.inspection.inspection_middleware.InspectionMiddleware
 name: InspectionMiddleware
 fullName: botbuilder.core.inspection.inspection_middleware.InspectionMiddleware
 module: botbuilder.core.inspection.inspection_middleware
-inheritances:
-- botbuilder.core.inspection.interception_middleware.InterceptionMiddleware
 constructor:
-  syntax: 'InspectionMiddleware(inspection_state: botbuilder.core.inspection.inspection_state.InspectionState,
-    user_state: Optional[botbuilder.core.user_state.UserState] = None, conversation_state:
-    Optional[botbuilder.core.conversation_state.ConversationState] = None, credentials:
-    Optional[botframework.connector.auth.microsoft_app_credentials.MicrosoftAppCredentials]
+  syntax: 'InspectionMiddleware(inspection_state: InspectionState, user_state: UserState
+    = None, conversation_state: ConversationState = None, credentials: MicrosoftAppCredentials
     = None)'
+  parameters:
+  - name: inspection_state
+    isRequired: true
+  - name: user_state
+    defaultValue: None
+  - name: conversation_state
+    defaultValue: None
+  - name: credentials
+    defaultValue: None
 methods:
 - uid: botbuilder.core.inspection.inspection_middleware.InspectionMiddleware.process_attach_command
   name: process_attach_command
-  signature: 'process_attach_command(context: botbuilder.core.turn_context.TurnContext,
-    session_id: str) -> None'
+  signature: 'async process_attach_command(context: TurnContext, session_id: str)
+    -> None'
   parameters:
   - name: context
     isRequired: true
@@ -23,8 +28,7 @@ methods:
     isRequired: true
 - uid: botbuilder.core.inspection.inspection_middleware.InspectionMiddleware.process_command
   name: process_command
-  signature: 'process_command(context: botbuilder.core.turn_context.TurnContext) ->
-    Any'
+  signature: 'async process_command(context: TurnContext) -> Any'
   parameters:
   - name: context
     isRequired: true

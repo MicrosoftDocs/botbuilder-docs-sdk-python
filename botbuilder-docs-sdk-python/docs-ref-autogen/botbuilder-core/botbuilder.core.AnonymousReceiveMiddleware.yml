@@ -3,15 +3,15 @@ uid: botbuilder.core.AnonymousReceiveMiddleware
 name: AnonymousReceiveMiddleware
 fullName: botbuilder.core.AnonymousReceiveMiddleware
 module: botbuilder.core
-inheritances:
-- botbuilder.core.middleware_set.Middleware
 constructor:
   syntax: AnonymousReceiveMiddleware(anonymous_handler)
+  parameters:
+  - name: anonymous_handler
+    isRequired: true
 methods:
 - uid: botbuilder.core.AnonymousReceiveMiddleware.on_turn
   name: on_turn
-  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: Callable[[botbuilder.core.turn_context.TurnContext],
-    Awaitable])'
+  signature: 'on_turn(context: TurnContext, logic: Callable[[TurnContext], Awaitable])'
   parameters:
   - name: context
     isRequired: true

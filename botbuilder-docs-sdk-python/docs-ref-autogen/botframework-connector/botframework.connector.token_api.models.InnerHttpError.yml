@@ -3,12 +3,9 @@ uid: botframework.connector.token_api.models.InnerHttpError
 name: InnerHttpError
 fullName: botframework.connector.token_api.models.InnerHttpError
 module: botframework.connector.token_api.models
-inheritances:
-- msrest.serialization.Model
 summary: InnerHttpError.
 constructor:
-  syntax: 'InnerHttpError(*, status_code: Optional[int] = None, body=None, **kwargs)
-    -> None'
+  syntax: 'InnerHttpError(*, status_code: int = None, body=None, **kwargs)'
   parameters:
   - name: status_code
     isRequired: true
@@ -18,3 +15,8 @@ constructor:
     isRequired: true
     types:
     - <xref:object>
+  keywordOnlyParameters:
+  - name: status_code
+    isRequired: true
+  - name: body
+    isRequired: true

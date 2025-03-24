@@ -3,26 +3,29 @@ uid: botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope
 name: MemoryScope
 fullName: botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope
 module: botbuilder.dialogs.memory.scopes.memory_scope
-inheritances:
-- abc.ABC
 constructor:
   syntax: 'MemoryScope(name: str, include_in_snapshot: bool = True)'
+  parameters:
+  - name: name
+    isRequired: true
+  - name: include_in_snapshot
+    defaultValue: 'True'
 methods:
 - uid: botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope.delete
   name: delete
-  signature: 'delete(dialog_context: DialogContext)'
+  signature: 'async delete(dialog_context: DialogContext)'
   parameters:
   - name: dialog_context
     isRequired: true
 - uid: botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope.get_memory
   name: get_memory
-  signature: 'get_memory(dialog_context: DialogContext) -> object'
+  signature: 'abstract get_memory(dialog_context: DialogContext) -> object'
   parameters:
   - name: dialog_context
     isRequired: true
 - uid: botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope.load
   name: load
-  signature: 'load(dialog_context: DialogContext, force: bool = False)'
+  signature: 'async load(dialog_context: DialogContext, force: bool = False)'
   parameters:
   - name: dialog_context
     isRequired: true
@@ -30,7 +33,7 @@ methods:
     defaultValue: 'False'
 - uid: botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope.save_changes
   name: save_changes
-  signature: 'save_changes(dialog_context: DialogContext, force: bool = False)'
+  signature: 'async save_changes(dialog_context: DialogContext, force: bool = False)'
   parameters:
   - name: dialog_context
     isRequired: true
@@ -38,7 +41,7 @@ methods:
     defaultValue: 'False'
 - uid: botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope.set_memory
   name: set_memory
-  signature: 'set_memory(dialog_context: DialogContext, memory: object)'
+  signature: 'abstract set_memory(dialog_context: DialogContext, memory: object)'
   parameters:
   - name: dialog_context
     isRequired: true

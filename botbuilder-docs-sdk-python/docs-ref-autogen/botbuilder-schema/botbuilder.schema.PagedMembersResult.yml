@@ -3,12 +3,9 @@ uid: botbuilder.schema.PagedMembersResult
 name: PagedMembersResult
 fullName: botbuilder.schema.PagedMembersResult
 module: botbuilder.schema
-inheritances:
-- msrest.serialization.Model
 summary: Page of members.
 constructor:
-  syntax: 'PagedMembersResult(*, continuation_token: Optional[str] = None, members=None,
-    **kwargs) -> None'
+  syntax: 'PagedMembersResult(*, continuation_token: str = None, members=None, **kwargs)'
   parameters:
   - name: continuation_token
     description: Paging token
@@ -20,3 +17,8 @@ constructor:
     isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
+  keywordOnlyParameters:
+  - name: continuation_token
+    isRequired: true
+  - name: members
+    isRequired: true

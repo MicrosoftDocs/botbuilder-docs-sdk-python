@@ -3,14 +3,10 @@ uid: botbuilder.schema.teams.MeetingInfo
 name: MeetingInfo
 fullName: botbuilder.schema.teams.MeetingInfo
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: General information about a Teams meeting.
 constructor:
-  syntax: 'MeetingInfo(*, details: Optional[botbuilder.schema.teams._models_py3.MeetingDetails]
-    = None, conversation: Optional[botbuilder.schema._models_py3.ConversationAccount]
-    = None, organizer: Optional[botbuilder.schema.teams._models_py3.TeamsChannelAccount]
-    = None, **kwargs) -> None'
+  syntax: 'MeetingInfo(*, details: MeetingDetails = None, conversation: ConversationAccount
+    = None, organizer: TeamsChannelAccount = None, **kwargs)'
   parameters:
   - name: details
     description: The specific details of a Teams meeting.
@@ -27,3 +23,10 @@ constructor:
     isRequired: true
     types:
     - <xref:botbuilder.schema.models.TeamsChannelAccount>
+  keywordOnlyParameters:
+  - name: details
+    isRequired: true
+  - name: conversation
+    isRequired: true
+  - name: organizer
+    isRequired: true

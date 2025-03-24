@@ -3,8 +3,6 @@ uid: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder
 name: QnACardBuilder
 fullName: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder
 module: botbuilder.ai.qna.utils.qna_card_builder
-inheritances:
-- builtins.object
 summary: Message activity card builder for QnAMaker dialogs.
 constructor:
   syntax: QnACardBuilder()
@@ -12,8 +10,8 @@ methods:
 - uid: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder.get_qna_prompts_card
   name: get_qna_prompts_card
   summary: Get active learning suggestions card.
-  signature: 'get_qna_prompts_card(result: botbuilder.ai.qna.models.query_result.QueryResult,
-    card_no_match_text: str) -> botbuilder.schema._models_py3.Activity'
+  signature: 'static get_qna_prompts_card(result: QueryResult, card_no_match_text:
+    str) -> Activity'
   parameters:
   - name: result
     isRequired: true
@@ -22,8 +20,8 @@ methods:
 - uid: botbuilder.ai.qna.utils.qna_card_builder.QnACardBuilder.get_suggestions_card
   name: get_suggestions_card
   summary: Get active learning suggestions card.
-  signature: 'get_suggestions_card(suggestions: List[str], card_title: str, card_no_match:
-    str) -> botbuilder.schema._models_py3.Activity'
+  signature: 'static get_suggestions_card(suggestions: List[str], card_title: str,
+    card_no_match: str) -> Activity'
   parameters:
   - name: suggestions
     isRequired: true

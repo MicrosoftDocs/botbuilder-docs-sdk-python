@@ -3,8 +3,11 @@ uid: botbuilder.dialogs.persisted_state.PersistedState
 name: PersistedState
 fullName: botbuilder.dialogs.persisted_state.PersistedState
 module: botbuilder.dialogs.persisted_state
-inheritances:
-- builtins.object
 constructor:
-  syntax: 'PersistedState(keys: Optional[botbuilder.dialogs.persisted_state_keys.PersistedStateKeys]
-    = None, data: Optional[Dict[str, object]] = None)'
+  syntax: 'PersistedState(keys: PersistedStateKeys = None, data: Dict[str, object]
+    = None)'
+  parameters:
+  - name: keys
+    defaultValue: None
+  - name: data
+    defaultValue: None

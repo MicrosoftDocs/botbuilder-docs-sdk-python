@@ -3,14 +3,15 @@ uid: botbuilder.schema.Entity
 name: Entity
 fullName: botbuilder.schema.Entity
 module: botbuilder.schema
-inheritances:
-- msrest.serialization.Model
 summary: Metadata object pertaining to an activity.
 constructor:
-  syntax: 'Entity(*, type: Optional[str] = None, **kwargs) -> None'
+  syntax: 'Entity(*, type: str = None, **kwargs)'
   parameters:
   - name: type
     description: Type of this entity (RFC 3987 IRI)
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: type
+    isRequired: true

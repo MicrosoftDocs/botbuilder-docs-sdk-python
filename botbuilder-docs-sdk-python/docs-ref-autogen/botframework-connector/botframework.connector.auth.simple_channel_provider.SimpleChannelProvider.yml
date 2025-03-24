@@ -3,19 +3,20 @@ uid: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider
 name: SimpleChannelProvider
 fullName: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider
 module: botframework.connector.auth.simple_channel_provider
-inheritances:
-- botframework.connector.auth.channel_provider.ChannelProvider
 summary: 'ChannelProvider interface. This interface allows Bots to provide their own
 
   implementation for the configuration parameters to connect to a Bot.
 
   Framework channel service.'
 constructor:
-  syntax: 'SimpleChannelProvider(channel_service: Optional[str] = None)'
+  syntax: 'SimpleChannelProvider(channel_service: str = None)'
+  parameters:
+  - name: channel_service
+    defaultValue: None
 methods:
 - uid: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider.get_channel_service
   name: get_channel_service
-  signature: get_channel_service() -> str
+  signature: async get_channel_service() -> str
 - uid: botframework.connector.auth.simple_channel_provider.SimpleChannelProvider.is_government
   name: is_government
   signature: is_government() -> bool

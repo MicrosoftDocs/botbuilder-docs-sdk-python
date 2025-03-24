@@ -3,12 +3,9 @@ uid: botbuilder.schema.ConversationMembers
 name: ConversationMembers
 fullName: botbuilder.schema.ConversationMembers
 module: botbuilder.schema
-inheritances:
-- msrest.serialization.Model
 summary: Conversation and its members.
 constructor:
-  syntax: 'ConversationMembers(*, id: Optional[str] = None, members=None, **kwargs)
-    -> None'
+  syntax: 'ConversationMembers(*, id: str = None, members=None, **kwargs)'
   parameters:
   - name: id
     description: Conversation ID
@@ -20,3 +17,8 @@ constructor:
     isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.models.ChannelAccount>]
+  keywordOnlyParameters:
+  - name: id
+    isRequired: true
+  - name: members
+    isRequired: true

@@ -3,10 +3,18 @@ uid: botbuilder.core.adapters.TestFlow
 name: TestFlow
 fullName: botbuilder.core.adapters.TestFlow
 module: botbuilder.core.adapters
-inheritances:
-- builtins.object
+summary: 'INTERNAL: creates a TestFlow instance.
+
+  :param previous:
+
+  :param adapter:'
 constructor:
-  syntax: 'TestFlow(previous: Callable, adapter: botbuilder.core.adapters.test_adapter.TestAdapter)'
+  syntax: 'TestFlow(previous: Callable, adapter: TestAdapter)'
+  parameters:
+  - name: previous
+    isRequired: true
+  - name: adapter
+    isRequired: true
 methods:
 - uid: botbuilder.core.adapters.TestFlow.assert_no_reply
   name: assert_no_reply
@@ -15,7 +23,7 @@ methods:
     :param description:
 
     :param timeout:'
-  signature: assert_no_reply(description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
+  signature: async assert_no_reply(description=None, timeout=None) -> TestFlow
   parameters:
   - name: description
     defaultValue: None
@@ -35,9 +43,8 @@ methods:
     :param is_substring:
 
     :return:'
-  signature: 'assert_reply(expected: Union[str, botbuilder.schema._models_py3.Activity,
-    Callable[[botbuilder.schema._models_py3.Activity, str], None]], description=None,
-    timeout=None, is_substring=False) -> botbuilder.core.adapters.test_adapter.TestFlow'
+  signature: 'async assert_reply(expected: str | Activity | Callable[[Activity, str],
+    None], description=None, timeout=None, is_substring=False) -> TestFlow'
   parameters:
   - name: expected
     isRequired: true
@@ -54,7 +61,7 @@ methods:
     :param user_says:
 
     :return:'
-  signature: send(user_says) -> botbuilder.core.adapters.test_adapter.TestFlow
+  signature: async send(user_says) -> TestFlow
   parameters:
   - name: user_says
     isRequired: true
@@ -77,7 +84,7 @@ methods:
     :param timeout:
 
     :return:'
-  signature: test(user_says, expected, description=None, timeout=None) -> botbuilder.core.adapters.test_adapter.TestFlow
+  signature: async test(user_says, expected, description=None, timeout=None) -> TestFlow
   parameters:
   - name: user_says
     isRequired: true

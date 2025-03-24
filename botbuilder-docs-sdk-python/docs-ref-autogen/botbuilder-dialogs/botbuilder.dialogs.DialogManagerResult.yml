@@ -3,10 +3,13 @@ uid: botbuilder.dialogs.DialogManagerResult
 name: DialogManagerResult
 fullName: botbuilder.dialogs.DialogManagerResult
 module: botbuilder.dialogs
-inheritances:
-- builtins.object
 constructor:
-  syntax: 'DialogManagerResult(turn_result: Optional[botbuilder.dialogs.dialog_turn_result.DialogTurnResult]
-    = None, activities: Optional[List[botbuilder.schema._models_py3.Activity]] = None,
-    persisted_state: Optional[botbuilder.dialogs.persisted_state.PersistedState] =
-    None)'
+  syntax: 'DialogManagerResult(turn_result: DialogTurnResult = None, activities: List[Activity]
+    = None, persisted_state: PersistedState = None)'
+  parameters:
+  - name: turn_result
+    defaultValue: None
+  - name: activities
+    defaultValue: None
+  - name: persisted_state
+    defaultValue: None

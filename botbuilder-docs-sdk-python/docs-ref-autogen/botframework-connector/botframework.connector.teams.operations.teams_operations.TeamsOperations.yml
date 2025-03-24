@@ -3,8 +3,6 @@ uid: botframework.connector.teams.operations.teams_operations.TeamsOperations
 name: TeamsOperations
 fullName: botframework.connector.teams.operations.teams_operations.TeamsOperations
 module: botframework.connector.teams.operations.teams_operations
-inheritances:
-- builtins.object
 summary: TeamsOperations operations.
 constructor:
   syntax: TeamsOperations(client, config, serializer, deserializer)
@@ -34,7 +32,6 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -42,7 +39,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -81,7 +77,6 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -89,7 +84,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -120,7 +114,6 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -128,7 +121,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -159,7 +151,6 @@ methods:
     - <xref:str>
   - name: custom_headers
     description: headers that will be added to the request
-    isRequired: true
     defaultValue: None
     types:
     - <xref:dict>
@@ -167,7 +158,6 @@ methods:
     description: 'returns the direct response alongside the
 
       deserialized response'
-    isRequired: true
     defaultValue: 'False'
     types:
     - <xref:bool>
@@ -186,4 +176,4 @@ methods:
 attributes:
 - uid: botframework.connector.teams.operations.teams_operations.TeamsOperations.models
   name: models
-  signature: models = <module 'botframework.connector.models' from 'C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64\\lib\\site-packages\\botframework\\connector\\models\\__init__.py'>
+  signature: models = <module 'botframework.connector.models' from 'C:\\hostedtoolcache\\windows\\Python\\3.11.10\\x64\\Lib\\site-packages\\py2docfx\\venv\\venv10\\Lib\\site-packages\\botframework\\connector\\models\\__init__.py'>

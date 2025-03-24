@@ -3,8 +3,6 @@ uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware
 name: ApplicationInsightsMiddleware
 fullName: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware
 module: botbuilder.applicationinsights.django
-inheritances:
-- builtins.object
 summary: "This class is a Django middleware that automatically enables request and\
   \ exception telemetry.  Django versions\n1.7 and newer are supported.\n\nTo enable,\
   \ add this class to your settings.py file in MIDDLEWARE_CLASSES (pre-1.10) or MIDDLEWARE\
@@ -57,6 +55,9 @@ summary: "This class is a Django middleware that automatically enables request a
   *debug_ikey* is set in *APPLICATION_INSIGHTS*, above."
 constructor:
   syntax: ApplicationInsightsMiddleware(get_response=None)
+  parameters:
+  - name: get_response
+    defaultValue: None
 methods:
 - uid: botbuilder.applicationinsights.django.ApplicationInsightsMiddleware.process_exception
   name: process_exception

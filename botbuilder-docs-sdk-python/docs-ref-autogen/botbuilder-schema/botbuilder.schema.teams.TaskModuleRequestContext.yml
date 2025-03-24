@@ -3,13 +3,14 @@ uid: botbuilder.schema.teams.TaskModuleRequestContext
 name: TaskModuleRequestContext
 fullName: botbuilder.schema.teams.TaskModuleRequestContext
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: Current user context, i.e., the current theme.
 constructor:
-  syntax: 'TaskModuleRequestContext(*, theme: Optional[str] = None, **kwargs) -> None'
+  syntax: 'TaskModuleRequestContext(*, theme: str = None, **kwargs)'
   parameters:
   - name: theme
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: theme
+    isRequired: true

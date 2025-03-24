@@ -3,12 +3,9 @@ uid: botbuilder.schema.teams.AppBasedLinkQuery
 name: AppBasedLinkQuery
 fullName: botbuilder.schema.teams.AppBasedLinkQuery
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: Invoke request body type for app-based link query.
 constructor:
-  syntax: 'AppBasedLinkQuery(*, url: Optional[str] = None, state: Optional[str] =
-    None, **kwargs) -> None'
+  syntax: 'AppBasedLinkQuery(*, url: str = None, state: str = None, **kwargs)'
   parameters:
   - name: url
     description: Url queried by user
@@ -20,3 +17,8 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: url
+    isRequired: true
+  - name: state
+    isRequired: true

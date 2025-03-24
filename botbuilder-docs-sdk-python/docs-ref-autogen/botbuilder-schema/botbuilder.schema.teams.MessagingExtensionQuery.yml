@@ -3,12 +3,10 @@ uid: botbuilder.schema.teams.MessagingExtensionQuery
 name: MessagingExtensionQuery
 fullName: botbuilder.schema.teams.MessagingExtensionQuery
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: Messaging extension query.
 constructor:
-  syntax: 'MessagingExtensionQuery(*, command_id: Optional[str] = None, parameters=None,
-    query_options=None, state: Optional[str] = None, **kwargs) -> None'
+  syntax: 'MessagingExtensionQuery(*, command_id: str = None, parameters=None, query_options=None,
+    state: str = None, **kwargs)'
   parameters:
   - name: command_id
     description: Id of the command assigned by Bot
@@ -31,3 +29,12 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: command_id
+    isRequired: true
+  - name: parameters
+    isRequired: true
+  - name: query_options
+    isRequired: true
+  - name: state
+    isRequired: true

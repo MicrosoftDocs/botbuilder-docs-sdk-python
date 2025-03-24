@@ -3,8 +3,10 @@ uid: botbuilder.core.adapters.test_adapter.TokenMagicCode
 name: TokenMagicCode
 fullName: botbuilder.core.adapters.test_adapter.TokenMagicCode
 module: botbuilder.core.adapters.test_adapter
-inheritances:
-- builtins.object
 constructor:
-  syntax: 'TokenMagicCode(key: Optional[botbuilder.core.adapters.test_adapter.UserToken]
-    = None, magic_code: Optional[str] = None)'
+  syntax: 'TokenMagicCode(key: UserToken = None, magic_code: str = None)'
+  parameters:
+  - name: key
+    defaultValue: None
+  - name: magic_code
+    defaultValue: None

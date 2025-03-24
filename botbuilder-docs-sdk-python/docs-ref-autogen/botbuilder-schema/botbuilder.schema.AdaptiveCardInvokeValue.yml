@@ -3,16 +3,14 @@ uid: botbuilder.schema.AdaptiveCardInvokeValue
 name: AdaptiveCardInvokeValue
 fullName: botbuilder.schema.AdaptiveCardInvokeValue
 module: botbuilder.schema
-inheritances:
-- msrest.serialization.Model
 summary: 'AdaptiveCardInvokeResponse.
 
 
   Defines the structure that arrives in the Activity.Value for Invoke activity with
   Name of ''adaptiveCard/action''.'
 constructor:
-  syntax: 'AdaptiveCardInvokeValue(*, action=None, authentication=None, state: Optional[str]
-    = None, **kwargs) -> None'
+  syntax: 'AdaptiveCardInvokeValue(*, action=None, authentication=None, state: str
+    = None, **kwargs)'
   parameters:
   - name: action
     description: The action of this adaptive card invoke action value.
@@ -30,3 +28,10 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: action
+    isRequired: true
+  - name: authentication
+    isRequired: true
+  - name: state
+    isRequired: true

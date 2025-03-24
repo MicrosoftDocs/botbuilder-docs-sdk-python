@@ -3,11 +3,9 @@ uid: botbuilder.dialogs.memory.ComponentMemoryScopesBase
 name: ComponentMemoryScopesBase
 fullName: botbuilder.dialogs.memory.ComponentMemoryScopesBase
 module: botbuilder.dialogs.memory
-inheritances:
-- abc.ABC
 constructor:
   syntax: ComponentMemoryScopesBase()
 methods:
 - uid: botbuilder.dialogs.memory.ComponentMemoryScopesBase.get_memory_scopes
   name: get_memory_scopes
-  signature: get_memory_scopes() -> Iterable[botbuilder.dialogs.memory.scopes.memory_scope.MemoryScope]
+  signature: abstract get_memory_scopes() -> Iterable[MemoryScope]

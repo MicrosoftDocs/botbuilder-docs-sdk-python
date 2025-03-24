@@ -3,10 +3,8 @@ uid: botframework.connector.ConnectorClient
 name: ConnectorClient
 fullName: botframework.connector.ConnectorClient
 module: botframework.connector
-inheritances:
-- msrest.service_client.SDKClient
 summary: "The Bot Connector REST API allows your bot to send and receive messages\
-  \ to channels configured in the\n[Bot Framework Developer Portal]([https://dev.botframework.com](https://dev.botframework.com)).\
+  \ to channels configured in the\n[Bot Framework Developer Portal](https://dev.botframework.com).\
   \ The Connector service uses industry-standard REST\nand JSON over HTTPS.\nClient\
   \ libraries for this REST API are available. See below for a list.\nMany bots will\
   \ use both the Bot Connector REST API and the associated [Bot State REST API](/en-us/restapi/state).\n\
@@ -30,7 +28,7 @@ constructor:
     - <xref:None>
   - name: base_url
     description: Service URL
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:str>
 variables:

@@ -3,14 +3,15 @@ uid: botbuilder.dialogs.skills.BeginSkillDialogOptions
 name: BeginSkillDialogOptions
 fullName: botbuilder.dialogs.skills.BeginSkillDialogOptions
 module: botbuilder.dialogs.skills
-inheritances:
-- builtins.object
 constructor:
-  syntax: 'BeginSkillDialogOptions(activity: botbuilder.schema._models_py3.Activity)'
+  syntax: 'BeginSkillDialogOptions(activity: Activity)'
+  parameters:
+  - name: activity
+    isRequired: true
 methods:
 - uid: botbuilder.dialogs.skills.BeginSkillDialogOptions.from_object
   name: from_object
-  signature: 'from_object(obj: object) -> botbuilder.dialogs.skills.begin_skill_dialog_options.BeginSkillDialogOptions'
+  signature: 'static from_object(obj: object) -> BeginSkillDialogOptions'
   parameters:
   - name: obj
     isRequired: true

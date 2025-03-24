@@ -3,12 +3,10 @@ uid: botbuilder.schema.teams.FileConsentCard
 name: FileConsentCard
 fullName: botbuilder.schema.teams.FileConsentCard
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: File consent card attachment.
 constructor:
-  syntax: 'FileConsentCard(*, description: Optional[str] = None, size_in_bytes: Optional[int]
-    = None, accept_context=None, decline_context=None, **kwargs) -> None'
+  syntax: 'FileConsentCard(*, description: str = None, size_in_bytes: int = None,
+    accept_context=None, decline_context=None, **kwargs)'
   parameters:
   - name: description
     description: File description.
@@ -36,3 +34,12 @@ constructor:
     isRequired: true
     types:
     - <xref:object>
+  keywordOnlyParameters:
+  - name: description
+    isRequired: true
+  - name: size_in_bytes
+    isRequired: true
+  - name: accept_context
+    isRequired: true
+  - name: decline_context
+    isRequired: true

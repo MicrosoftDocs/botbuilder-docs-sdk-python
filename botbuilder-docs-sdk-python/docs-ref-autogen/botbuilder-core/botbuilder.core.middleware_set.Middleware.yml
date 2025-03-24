@@ -3,14 +3,12 @@ uid: botbuilder.core.middleware_set.Middleware
 name: Middleware
 fullName: botbuilder.core.middleware_set.Middleware
 module: botbuilder.core.middleware_set
-inheritances:
-- abc.ABC
 constructor:
   syntax: Middleware()
 methods:
 - uid: botbuilder.core.middleware_set.Middleware.on_turn
   name: on_turn
-  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: Callable[[botbuilder.core.turn_context.TurnContext],
+  signature: 'abstract async on_turn(context: TurnContext, logic: Callable[[TurnContext],
     Awaitable])'
   parameters:
   - name: context

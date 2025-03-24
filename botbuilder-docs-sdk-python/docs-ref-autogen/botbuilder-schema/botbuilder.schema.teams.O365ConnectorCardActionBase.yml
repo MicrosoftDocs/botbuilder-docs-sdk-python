@@ -3,12 +3,10 @@ uid: botbuilder.schema.teams.O365ConnectorCardActionBase
 name: O365ConnectorCardActionBase
 fullName: botbuilder.schema.teams.O365ConnectorCardActionBase
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: O365 connector card action base.
 constructor:
-  syntax: 'O365ConnectorCardActionBase(*, type=None, name: Optional[str] = None, id:
-    Optional[str] = None, **kwargs) -> None'
+  syntax: 'O365ConnectorCardActionBase(*, type=None, name: str = None, id: str = None,
+    **kwargs)'
   parameters:
   - name: type
     description: 'Type of the action. Possible values include: ''ViewAction'',
@@ -27,3 +25,10 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: type
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: id
+    isRequired: true

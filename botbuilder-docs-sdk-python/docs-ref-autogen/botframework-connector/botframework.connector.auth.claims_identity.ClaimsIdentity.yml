@@ -3,11 +3,16 @@ uid: botframework.connector.auth.claims_identity.ClaimsIdentity
 name: ClaimsIdentity
 fullName: botframework.connector.auth.claims_identity.ClaimsIdentity
 module: botframework.connector.auth.claims_identity
-inheritances:
-- builtins.object
 constructor:
   syntax: 'ClaimsIdentity(claims: dict, is_authenticated: bool, authentication_type:
-    Optional[str] = None)'
+    str = None)'
+  parameters:
+  - name: claims
+    isRequired: true
+  - name: is_authenticated
+    isRequired: true
+  - name: authentication_type
+    defaultValue: None
 methods:
 - uid: botframework.connector.auth.claims_identity.ClaimsIdentity.get_claim_value
   name: get_claim_value

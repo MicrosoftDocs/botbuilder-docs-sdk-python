@@ -3,41 +3,27 @@ uid: botbuilder.core.MemoryStorage
 name: MemoryStorage
 fullName: botbuilder.core.MemoryStorage
 module: botbuilder.core
-inheritances:
-- botbuilder.core.storage.Storage
 constructor:
   syntax: MemoryStorage(dictionary=None)
+  parameters:
+  - name: dictionary
+    defaultValue: None
 methods:
 - uid: botbuilder.core.MemoryStorage.delete
   name: delete
-  summary: 'Removes store items from storage.
-
-    :param keys:
-
-    :return:'
-  signature: 'delete(keys: List[str])'
+  signature: 'async delete(keys: List[str])'
   parameters:
   - name: keys
     isRequired: true
 - uid: botbuilder.core.MemoryStorage.read
   name: read
-  summary: 'Loads store items from storage.
-
-    :param keys:
-
-    :return:'
-  signature: 'read(keys: List[str])'
+  signature: 'async read(keys: List[str])'
   parameters:
   - name: keys
     isRequired: true
 - uid: botbuilder.core.MemoryStorage.write
   name: write
-  summary: 'Saves store items to storage.
-
-    :param changes:
-
-    :return:'
-  signature: 'write(changes: Dict[str, botbuilder.core.storage.StoreItem])'
+  signature: 'async write(changes: Dict[str, StoreItem])'
   parameters:
   - name: changes
     isRequired: true

@@ -3,29 +3,30 @@ uid: botbuilder.core.skills.SkillHandler
 name: SkillHandler
 fullName: botbuilder.core.skills.SkillHandler
 module: botbuilder.core.skills
-inheritances:
-- botbuilder.core.channel_service_handler.ChannelServiceHandler
 constructor:
-  syntax: 'SkillHandler(adapter: botbuilder.core.bot_adapter.BotAdapter, bot: botbuilder.core.bot.Bot,
-    conversation_id_factory: botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase,
-    credential_provider: botframework.connector.auth.credential_provider.CredentialProvider,
-    auth_configuration: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration,
-    channel_provider: Optional[botframework.connector.auth.channel_provider.ChannelProvider]
-    = None, logger: Optional[logging.Logger] = None)'
+  syntax: 'SkillHandler(adapter: BotAdapter, bot: Bot, conversation_id_factory: ConversationIdFactoryBase,
+    credential_provider: CredentialProvider, auth_configuration: AuthenticationConfiguration,
+    channel_provider: ChannelProvider = None, logger: Logger = None)'
+  parameters:
+  - name: adapter
+    isRequired: true
+  - name: bot
+    isRequired: true
+  - name: conversation_id_factory
+    isRequired: true
+  - name: credential_provider
+    isRequired: true
+  - name: auth_configuration
+    isRequired: true
+  - name: channel_provider
+    defaultValue: None
+  - name: logger
+    defaultValue: None
 methods:
 - uid: botbuilder.core.skills.SkillHandler.on_delete_activity
   name: on_delete_activity
-  summary: 'delete_activity() API for Skill.
-
-
-    Delete an existing activity.
-
-
-    Some channels allow you to delete an existing activity, and if successful
-
-    this method will remove the specified activity.'
-  signature: 'on_delete_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str, activity_id: str)'
+  signature: 'async on_delete_activity(claims_identity: ClaimsIdentity, conversation_id:
+    str, activity_id: str)'
   parameters:
   - name: claims_identity
     isRequired: true
@@ -78,9 +79,8 @@ methods:
     :type activity: Activity
 
     :return:'
-  signature: 'on_reply_to_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
-    -> botbuilder.schema._models_py3.ResourceResponse'
+  signature: 'async on_reply_to_activity(claims_identity: ClaimsIdentity, conversation_id:
+    str, activity_id: str, activity: Activity) -> ResourceResponse'
   parameters:
   - name: claims_identity
     isRequired: true
@@ -131,8 +131,8 @@ methods:
     :type activity: Activity
 
     :return:'
-  signature: 'on_send_to_conversation(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str, activity: botbuilder.schema._models_py3.Activity) -> botbuilder.schema._models_py3.ResourceResponse'
+  signature: 'async on_send_to_conversation(claims_identity: ClaimsIdentity, conversation_id:
+    str, activity: Activity) -> ResourceResponse'
   parameters:
   - name: claims_identity
     isRequired: true
@@ -142,23 +142,8 @@ methods:
     isRequired: true
 - uid: botbuilder.core.skills.SkillHandler.on_update_activity
   name: on_update_activity
-  summary: 'update_activity() API for Skill.
-
-
-    Edit an existing activity.
-
-
-    Some channels allow you to edit an existing activity to reflect the new
-
-    state of a bot conversation.
-
-
-    For example, you can remove buttons after someone has clicked "Approve"
-
-    button.'
-  signature: 'on_update_activity(claims_identity: botframework.connector.auth.claims_identity.ClaimsIdentity,
-    conversation_id: str, activity_id: str, activity: botbuilder.schema._models_py3.Activity)
-    -> botbuilder.schema._models_py3.ResourceResponse'
+  signature: 'async on_update_activity(claims_identity: ClaimsIdentity, conversation_id:
+    str, activity_id: str, activity: Activity) -> ResourceResponse'
   parameters:
   - name: claims_identity
     isRequired: true

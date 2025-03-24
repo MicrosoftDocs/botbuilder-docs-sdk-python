@@ -3,15 +3,12 @@ uid: botbuilder.schema.AnimationCard
 name: AnimationCard
 fullName: botbuilder.schema.AnimationCard
 module: botbuilder.schema
-inheritances:
-- msrest.serialization.Model
 summary: 'An animation card (Ex: gif or short video clip).'
 constructor:
-  syntax: 'AnimationCard(*, title: Optional[str] = None, subtitle: Optional[str] =
-    None, text: Optional[str] = None, image=None, media=None, buttons=None, shareable:
-    Optional[bool] = None, autoloop: Optional[bool] = None, autostart: Optional[bool]
-    = None, aspect: Optional[str] = None, duration: Optional[str] = None, value=None,
-    **kwargs) -> None'
+  syntax: 'AnimationCard(*, title: str = None, subtitle: str = None, text: str = None,
+    image=None, media=None, buttons=None, shareable: bool = None, autoloop: bool =
+    None, autostart: bool = None, aspect: str = None, duration: str = None, value=None,
+    **kwargs)'
   parameters:
   - name: title
     description: Title of this card
@@ -85,3 +82,28 @@ constructor:
     isRequired: true
     types:
     - <xref:object>
+  keywordOnlyParameters:
+  - name: title
+    isRequired: true
+  - name: subtitle
+    isRequired: true
+  - name: text
+    isRequired: true
+  - name: image
+    isRequired: true
+  - name: media
+    isRequired: true
+  - name: buttons
+    isRequired: true
+  - name: shareable
+    isRequired: true
+  - name: autoloop
+    isRequired: true
+  - name: autostart
+    isRequired: true
+  - name: aspect
+    isRequired: true
+  - name: duration
+    isRequired: true
+  - name: value
+    isRequired: true

@@ -3,11 +3,50 @@ uid: botbuilder.dialogs.choices.find_values_options.FindValuesOptions
 name: FindValuesOptions
 fullName: botbuilder.dialogs.choices.find_values_options.FindValuesOptions
 module: botbuilder.dialogs.choices.find_values_options
-inheritances:
-- builtins.object
 summary: Contains search options, used to control how choices are recognized in a
   user's utterance.
 constructor:
-  syntax: 'FindValuesOptions(allow_partial_matches: Optional[bool] = None, locale:
-    Optional[str] = None, max_token_distance: Optional[int] = None, tokenizer: Optional[Callable[[str,
-    str], List[botbuilder.dialogs.choices.token.Token]]] = None)'
+  syntax: 'FindValuesOptions(allow_partial_matches: bool = None, locale: str = None,
+    max_token_distance: int = None, tokenizer: Callable[[str, str], List[Token]] =
+    None)'
+  parameters:
+  - name: allow_partial_matches
+    description: be considered
+    defaultValue: None
+    types:
+    - '(<xref:Optional>)<xref: If `True`, <xref:botbuilder.dialogs.choices.find_values_options.then
+      only some> of <xref:botbuilder.dialogs.choices.find_values_options.the tokens
+      in a value need> to <xref:botbuilder.dialogs.choices.find_values_options.exist
+      to>'
+  - name: False.
+    isRequired: true
+    types:
+    - <xref:<xref:a match. The default value is>>
+  - name: locale
+    defaultValue: None
+    types:
+    - '(<xref:Optional>)<xref: locale/culture code> of <xref:the utterance. Default
+      is `en-US>.`'
+  - name: max_token_distance
+    defaultValue: None
+    types:
+    - '(<xref:Optional>)<xref: maximum tokens allowed between two matched tokens in
+      the utterance. So with>'
+  - name: last"
+    isRequired: true
+    types:
+    - <xref:<xref:a max distance> of <xref:2 the value "second last" would match the
+      utterance "second from the>>
+  - name: it?".
+    isRequired: true
+    types:
+    - <xref:<xref:but it wouldn't match "Wait a second. That's not the last one is>>
+  - name: '"2".'
+    isRequired: true
+    types:
+    - <xref:<xref:The default value is>>
+  - name: tokenizer
+    defaultValue: None
+    types:
+    - '(<xref:Optional>)<xref: Tokenizer> to <xref:botbuilder.dialogs.choices.find_values_options.use
+      when parsing the utterance> and <xref:values being recognized.>'

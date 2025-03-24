@@ -3,12 +3,10 @@ uid: botbuilder.schema.Place
 name: Place
 fullName: botbuilder.schema.Place
 module: botbuilder.schema
-inheritances:
-- msrest.serialization.Model
 summary: 'Place (entity type: "[https://schema.org/Place](https://schema.org/Place)").'
 constructor:
-  syntax: 'Place(*, address=None, geo=None, has_map=None, type: Optional[str] = None,
-    name: Optional[str] = None, **kwargs) -> None'
+  syntax: 'Place(*, address=None, geo=None, has_map=None, type: str = None, name:
+    str = None, **kwargs)'
   parameters:
   - name: address
     description: 'Address of the place (may be *string* or complex object of
@@ -41,3 +39,14 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: address
+    isRequired: true
+  - name: geo
+    isRequired: true
+  - name: has_map
+    isRequired: true
+  - name: type
+    isRequired: true
+  - name: name
+    isRequired: true

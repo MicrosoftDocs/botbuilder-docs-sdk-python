@@ -3,19 +3,24 @@ uid: botbuilder.integration.aiohttp.skills.SkillHttpClient
 name: SkillHttpClient
 fullName: botbuilder.integration.aiohttp.skills.SkillHttpClient
 module: botbuilder.integration.aiohttp.skills
-inheritances:
-- botbuilder.integration.aiohttp.bot_framework_http_client.BotFrameworkHttpClient
 constructor:
-  syntax: 'SkillHttpClient(credential_provider: botframework.connector.auth.credential_provider.SimpleCredentialProvider,
-    skill_conversation_id_factory: botbuilder.core.skills.conversation_id_factory.ConversationIdFactoryBase,
-    channel_provider: Optional[botframework.connector.auth.channel_provider.ChannelProvider]
-    = None, logger: Optional[logging.Logger] = None)'
+  syntax: 'SkillHttpClient(credential_provider: SimpleCredentialProvider, skill_conversation_id_factory:
+    ConversationIdFactoryBase, channel_provider: ChannelProvider = None, logger: Logger
+    = None)'
+  parameters:
+  - name: credential_provider
+    isRequired: true
+  - name: skill_conversation_id_factory
+    isRequired: true
+  - name: channel_provider
+    defaultValue: None
+  - name: logger
+    defaultValue: None
 methods:
 - uid: botbuilder.integration.aiohttp.skills.SkillHttpClient.post_activity_to_skill
   name: post_activity_to_skill
-  signature: 'post_activity_to_skill(from_bot_id: str, to_skill: botbuilder.core.skills.bot_framework_skill.BotFrameworkSkill,
-    service_url: str, activity: botbuilder.schema._models_py3.Activity, originating_audience:
-    Optional[str] = None) -> botbuilder.schema._models_py3.InvokeResponse'
+  signature: 'async post_activity_to_skill(from_bot_id: str, to_skill: BotFrameworkSkill,
+    service_url: str, activity: Activity, originating_audience: str = None) -> InvokeResponse'
   parameters:
   - name: from_bot_id
     isRequired: true

@@ -3,8 +3,15 @@ uid: botbuilder.dialogs.DateTimeResolution
 name: DateTimeResolution
 fullName: botbuilder.dialogs.DateTimeResolution
 module: botbuilder.dialogs
-inheritances:
-- builtins.object
 constructor:
-  syntax: 'DateTimeResolution(value: Optional[str] = None, start: Optional[str] =
-    None, end: Optional[str] = None, timex: Optional[str] = None)'
+  syntax: 'DateTimeResolution(value: str = None, start: str = None, end: str = None,
+    timex: str = None)'
+  parameters:
+  - name: value
+    defaultValue: None
+  - name: start
+    defaultValue: None
+  - name: end
+    defaultValue: None
+  - name: timex
+    defaultValue: None

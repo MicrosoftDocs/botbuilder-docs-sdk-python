@@ -3,11 +3,9 @@ uid: botframework.connector.HttpClientFactory
 name: HttpClientFactory
 fullName: botframework.connector.HttpClientFactory
 module: botframework.connector
-inheritances:
-- builtins.object
 constructor:
   syntax: HttpClientFactory()
 methods:
 - uid: botframework.connector.HttpClientFactory.create_client
   name: create_client
-  signature: create_client() -> botframework.connector.http_client_base.HttpClientBase
+  signature: create_client() -> HttpClientBase

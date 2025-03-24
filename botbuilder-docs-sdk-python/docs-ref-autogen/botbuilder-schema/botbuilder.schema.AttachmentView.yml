@@ -3,12 +3,9 @@ uid: botbuilder.schema.AttachmentView
 name: AttachmentView
 fullName: botbuilder.schema.AttachmentView
 module: botbuilder.schema
-inheritances:
-- msrest.serialization.Model
 summary: Attachment View name and size.
 constructor:
-  syntax: 'AttachmentView(*, view_id: Optional[str] = None, size: Optional[int] =
-    None, **kwargs) -> None'
+  syntax: 'AttachmentView(*, view_id: str = None, size: int = None, **kwargs)'
   parameters:
   - name: view_id
     description: Id of the attachment
@@ -20,3 +17,8 @@ constructor:
     isRequired: true
     types:
     - <xref:int>
+  keywordOnlyParameters:
+  - name: view_id
+    isRequired: true
+  - name: size
+    isRequired: true

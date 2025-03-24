@@ -3,17 +3,27 @@ uid: botbuilder.core.teams.TeamsSSOTokenExchangeMiddleware
 name: TeamsSSOTokenExchangeMiddleware
 fullName: botbuilder.core.teams.TeamsSSOTokenExchangeMiddleware
 module: botbuilder.core.teams
-inheritances:
-- botbuilder.core.middleware_set.Middleware
 summary: 'If the activity name is signin/tokenExchange, self middleware will attempt
   to
 
   exchange the token, and deduplicate the incoming call, ensuring only one
 
-  exchange request is processed.'
+  exchange request is processed.
+
+
+  Initializes a instance of the <see cref="TeamsSSOTokenExchangeMiddleware"/> class.
+
+
+  sign on token exchange.'
 constructor:
-  syntax: 'TeamsSSOTokenExchangeMiddleware(storage: botbuilder.core.storage.Storage,
-    connection_name: str)'
+  syntax: 'TeamsSSOTokenExchangeMiddleware(storage: Storage, connection_name: str)'
+  parameters:
+  - name: storage
+    description: The Storage to use for deduplication.
+    isRequired: true
+  - name: connection_name
+    description: The connection name to use for the single
+    isRequired: true
 remarks: 'If a user is signed into multiple Teams clients, the Bot could receive a
 
   "signin/tokenExchange" from each client. Each token exchange request for a
@@ -39,8 +49,7 @@ remarks: 'If a user is signed into multiple Teams clients, the Bot could receive
 methods:
 - uid: botbuilder.core.teams.TeamsSSOTokenExchangeMiddleware.on_turn
   name: on_turn
-  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext, logic: Callable[[botbuilder.core.turn_context.TurnContext],
-    Awaitable])'
+  signature: 'async on_turn(context: TurnContext, logic: Callable[[TurnContext], Awaitable])'
   parameters:
   - name: context
     isRequired: true

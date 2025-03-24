@@ -3,13 +3,14 @@ uid: botbuilder.schema.teams.ConversationList
 name: ConversationList
 fullName: botbuilder.schema.teams.ConversationList
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: List of channels under a team.
 constructor:
-  syntax: ConversationList(*, conversations=None, **kwargs) -> None
+  syntax: ConversationList(*, conversations=None, **kwargs)
   parameters:
   - name: conversations
     isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.teams.models.ChannelInfo>]
+  keywordOnlyParameters:
+  - name: conversations
+    isRequired: true

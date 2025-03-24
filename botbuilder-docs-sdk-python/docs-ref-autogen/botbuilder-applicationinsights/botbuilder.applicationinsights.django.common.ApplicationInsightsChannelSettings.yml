@@ -3,10 +3,19 @@ uid: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSett
 name: ApplicationInsightsChannelSettings
 fullName: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings
 module: botbuilder.applicationinsights.django.common
-inheritances:
-- builtins.tuple
+summary: Create new instance of ApplicationInsightsChannelSettings(send_interval,
+  send_time, endpoint)
 constructor:
   syntax: ApplicationInsightsChannelSettings(send_interval, send_time, endpoint)
+  parameters:
+  - name: _cls
+    isRequired: true
+  - name: send_interval
+    isRequired: true
+  - name: send_time
+    isRequired: true
+  - name: endpoint
+    isRequired: true
 attributes:
 - uid: botbuilder.applicationinsights.django.common.ApplicationInsightsChannelSettings.endpoint
   name: endpoint

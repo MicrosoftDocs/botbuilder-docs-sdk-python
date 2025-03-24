@@ -3,12 +3,9 @@ uid: botbuilder.schema.teams.TaskModuleMessageResponse
 name: TaskModuleMessageResponse
 fullName: botbuilder.schema.teams.TaskModuleMessageResponse
 module: botbuilder.schema.teams
-inheritances:
-- botbuilder.schema.teams._models_py3.TaskModuleResponseBase
 summary: Task Module response with message action.
 constructor:
-  syntax: 'TaskModuleMessageResponse(*, value: Optional[str] = None, **kwargs) ->
-    None'
+  syntax: 'TaskModuleMessageResponse(*, value: str = None, **kwargs)'
   parameters:
   - name: value
     description: 'Teams will display the value of value in a popup message
@@ -17,3 +14,6 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: value
+    isRequired: true

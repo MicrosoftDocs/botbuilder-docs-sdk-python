@@ -3,14 +3,15 @@ uid: botbuilder.schema.ResourceResponse
 name: ResourceResponse
 fullName: botbuilder.schema.ResourceResponse
 module: botbuilder.schema
-inheritances:
-- msrest.serialization.Model
 summary: A response containing a resource ID.
 constructor:
-  syntax: 'ResourceResponse(*, id: Optional[str] = None, **kwargs) -> None'
+  syntax: 'ResourceResponse(*, id: str = None, **kwargs)'
   parameters:
   - name: id
     description: Id of the resource
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: id
+    isRequired: true

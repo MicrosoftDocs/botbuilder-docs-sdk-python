@@ -3,15 +3,18 @@ uid: botbuilder.core.inspection.inspection_session.InspectionSession
 name: InspectionSession
 fullName: botbuilder.core.inspection.inspection_session.InspectionSession
 module: botbuilder.core.inspection.inspection_session
-inheritances:
-- builtins.object
 constructor:
-  syntax: 'InspectionSession(conversation_reference: botbuilder.schema._models_py3.ConversationReference,
-    credentials: botframework.connector.auth.microsoft_app_credentials.MicrosoftAppCredentials)'
+  syntax: 'InspectionSession(conversation_reference: ConversationReference, credentials:
+    MicrosoftAppCredentials)'
+  parameters:
+  - name: conversation_reference
+    isRequired: true
+  - name: credentials
+    isRequired: true
 methods:
 - uid: botbuilder.core.inspection.inspection_session.InspectionSession.send
   name: send
-  signature: 'send(activity: botbuilder.schema._models_py3.Activity) -> Any'
+  signature: 'async send(activity: Activity) -> Any'
   parameters:
   - name: activity
     isRequired: true

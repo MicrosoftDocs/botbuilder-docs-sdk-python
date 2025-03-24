@@ -3,12 +3,9 @@ uid: botbuilder.schema.InnerHttpError
 name: InnerHttpError
 fullName: botbuilder.schema.InnerHttpError
 module: botbuilder.schema
-inheritances:
-- msrest.serialization.Model
 summary: Object representing inner http error.
 constructor:
-  syntax: 'InnerHttpError(*, status_code: Optional[int] = None, body=None, **kwargs)
-    -> None'
+  syntax: 'InnerHttpError(*, status_code: int = None, body=None, **kwargs)'
   parameters:
   - name: status_code
     description: HttpStatusCode from failed request
@@ -20,3 +17,8 @@ constructor:
     isRequired: true
     types:
     - <xref:object>
+  keywordOnlyParameters:
+  - name: status_code
+    isRequired: true
+  - name: body
+    isRequired: true

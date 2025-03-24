@@ -3,13 +3,35 @@ uid: botbuilder.ai.luis.luis_recognizer_options_v3.LuisRecognizerOptionsV3
 name: LuisRecognizerOptionsV3
 fullName: botbuilder.ai.luis.luis_recognizer_options_v3.LuisRecognizerOptionsV3
 module: botbuilder.ai.luis.luis_recognizer_options_v3
-inheritances:
-- botbuilder.ai.luis.luis_recognizer_options.LuisRecognizerOptions
 constructor:
   syntax: 'LuisRecognizerOptionsV3(include_all_intents: bool = False, include_instance_data:
     bool = True, log: bool = True, prefer_external_entities: bool = True, datetime_reference:
-    Optional[str] = None, dynamic_lists: Optional[List] = None, external_entities:
-    Optional[List] = None, slot: str = ''production'', version: Optional[str] = None,
-    include_api_results: bool = True, telemetry_client: botbuilder.core.bot_telemetry_client.BotTelemetryClient
+    str = None, dynamic_lists: ~typing.List = None, external_entities: ~typing.List
+    = None, slot: str = ''production'', version: str = None, include_api_results:
+    bool = True, telemetry_client: ~botbuilder.core.bot_telemetry_client.BotTelemetryClient
     = <botbuilder.core.null_telemetry_client.NullTelemetryClient object>, log_personal_information:
     bool = False)'
+  parameters:
+  - name: include_all_intents
+    defaultValue: 'False'
+  - name: include_instance_data
+    defaultValue: 'True'
+  - name: log
+    defaultValue: 'True'
+  - name: prefer_external_entities
+    defaultValue: 'True'
+  - name: datetime_reference
+    defaultValue: None
+  - name: dynamic_lists
+    defaultValue: None
+  - name: external_entities
+    defaultValue: None
+  - name: slot
+    defaultValue: production
+  - name: version
+    defaultValue: None
+  - name: include_api_results
+    defaultValue: 'True'
+  - name: telemetry_client
+  - name: log_personal_information
+    defaultValue: 'False'

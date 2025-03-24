@@ -3,11 +3,9 @@ uid: botbuilder.schema.teams.TabSubmitData
 name: TabSubmitData
 fullName: botbuilder.schema.teams.TabSubmitData
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: Invoke ('tab/submit') request value payload data.
 constructor:
-  syntax: TabSubmitData(*, type=None, properties=None, **kwargs) -> None
+  syntax: TabSubmitData(*, type=None, properties=None, **kwargs)
   parameters:
   - name: type
     description: Currently, 'tab/submit'.
@@ -21,3 +19,8 @@ constructor:
     isRequired: true
     types:
     - <xref:object>
+  keywordOnlyParameters:
+  - name: type
+    isRequired: true
+  - name: properties
+    isRequired: true

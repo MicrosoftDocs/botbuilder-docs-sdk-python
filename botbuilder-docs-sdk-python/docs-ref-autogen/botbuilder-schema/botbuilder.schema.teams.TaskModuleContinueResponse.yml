@@ -3,14 +3,15 @@ uid: botbuilder.schema.teams.TaskModuleContinueResponse
 name: TaskModuleContinueResponse
 fullName: botbuilder.schema.teams.TaskModuleContinueResponse
 module: botbuilder.schema.teams
-inheritances:
-- botbuilder.schema.teams._models_py3.TaskModuleResponseBase
 summary: Task Module Response with continue action.
 constructor:
-  syntax: TaskModuleContinueResponse(*, value=None, **kwargs) -> None
+  syntax: TaskModuleContinueResponse(*, value=None, **kwargs)
   parameters:
   - name: value
     description: The JSON for the Adaptive card to appear in the task module.
     isRequired: true
     types:
     - <xref:botframework.connector.teams.models.TaskModuleTaskInfo>
+  keywordOnlyParameters:
+  - name: value
+    isRequired: true

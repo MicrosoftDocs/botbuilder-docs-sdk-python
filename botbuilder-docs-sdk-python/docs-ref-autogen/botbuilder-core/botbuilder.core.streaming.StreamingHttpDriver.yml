@@ -3,17 +3,21 @@ uid: botbuilder.core.streaming.StreamingHttpDriver
 name: StreamingHttpDriver
 fullName: botbuilder.core.streaming.StreamingHttpDriver
 module: botbuilder.core.streaming
-inheritances:
-- msrest.universal_http.async_requests.AsyncRequestsHTTPSender
 constructor:
-  syntax: 'StreamingHttpDriver(request_handler: botbuilder.core.streaming.streaming_request_handler.StreamingRequestHandler,
-    *, config=None, logger: Optional[logging.Logger] = None)'
+  syntax: 'StreamingHttpDriver(request_handler: StreamingRequestHandler, *, config=None,
+    logger: Logger = None)'
+  parameters:
+  - name: request_handler
+    isRequired: true
+  keywordOnlyParameters:
+  - name: config
+    isRequired: true
+  - name: logger
+    isRequired: true
 methods:
 - uid: botbuilder.core.streaming.StreamingHttpDriver.send
   name: send
-  summary: Send the request using this HTTP sender.
-  signature: 'send(request: msrest.universal_http.ClientRequest, **config: Any) ->
-    msrest.universal_http.async_abc.AsyncClientResponse'
+  signature: 'async send(request: ClientRequest, **config: Any) -> AsyncClientResponse'
   parameters:
   - name: request
     isRequired: true

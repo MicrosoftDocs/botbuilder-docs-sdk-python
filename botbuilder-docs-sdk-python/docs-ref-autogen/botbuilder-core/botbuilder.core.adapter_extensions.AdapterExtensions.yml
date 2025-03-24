@@ -3,14 +3,12 @@ uid: botbuilder.core.adapter_extensions.AdapterExtensions
 name: AdapterExtensions
 fullName: botbuilder.core.adapter_extensions.AdapterExtensions
 module: botbuilder.core.adapter_extensions
-inheritances:
-- builtins.object
 constructor:
   syntax: AdapterExtensions()
 methods:
 - uid: botbuilder.core.adapter_extensions.AdapterExtensions.fullname
   name: fullname
-  signature: fullname(obj)
+  signature: static fullname(obj)
   parameters:
   - name: obj
     isRequired: true
@@ -18,8 +16,8 @@ methods:
   name: use_bot_state
   summary: Registers bot state object into the TurnContext. The botstate will be available
     via the turn context.
-  signature: 'use_bot_state(bot_adapter: botbuilder.core.bot_adapter.BotAdapter, *bot_states:
-    botbuilder.core.bot_state.BotState, auto: bool = True) -> botbuilder.core.bot_adapter.BotAdapter'
+  signature: 'static use_bot_state(bot_adapter: BotAdapter, *bot_states: BotState,
+    auto: bool = True) -> BotAdapter'
   parameters:
   - name: bot_adapter
     description: The BotAdapter on which to register the state objects.
@@ -27,6 +25,9 @@ methods:
   - name: bot_states
     description: One or more BotState objects to register.
     isRequired: true
+  keywordOnlyParameters:
+  - name: auto
+    defaultValue: 'True'
   return:
     description: The updated adapter.
 - uid: botbuilder.core.adapter_extensions.AdapterExtensions.use_state
@@ -35,9 +36,8 @@ methods:
     These objects will be available via
 
     the turn context''s *turn_state* property.'
-  signature: 'use_state(adapter: botbuilder.core.bot_adapter.BotAdapter, user_state:
-    botbuilder.core.user_state.UserState, conversation_state: botbuilder.core.conversation_state.ConversationState,
-    auto: bool = True) -> botbuilder.core.bot_adapter.BotAdapter'
+  signature: 'static use_state(adapter: BotAdapter, user_state: UserState, conversation_state:
+    ConversationState, auto: bool = True) -> BotAdapter'
   parameters:
   - name: adapter
     description: The BotAdapter on which to register the state objects.
@@ -50,7 +50,6 @@ methods:
     isRequired: true
   - name: auto
     description: True to automatically persist state each turn.
-    isRequired: true
     defaultValue: 'True'
   return:
     description: The BotAdapter
@@ -60,8 +59,7 @@ methods:
     available via the turn context''s
 
     *turn_state* property.'
-  signature: 'use_storage(adapter: botbuilder.core.bot_adapter.BotAdapter, storage:
-    botbuilder.core.storage.Storage) -> botbuilder.core.bot_adapter.BotAdapter'
+  signature: 'static use_storage(adapter: BotAdapter, storage: Storage) -> BotAdapter'
   parameters:
   - name: adapter
     description: The BotAdapter on which to register the storage object.

@@ -3,8 +3,6 @@ uid: botbuilder.schema.InvokeResponse
 name: InvokeResponse
 fullName: botbuilder.schema.InvokeResponse
 module: botbuilder.schema
-inheritances:
-- msrest.serialization.Model
 summary: 'Tuple class containing an HTTP Status Code and a JSON serializable
 
   object. The HTTP Status code is, in the invoke activity scenario, what will
@@ -16,10 +14,27 @@ summary: 'Tuple class containing an HTTP Status Code and a JSON serializable
 
   The body content is defined by the producer.  The caller must know what
 
-  the content is and deserialize as needed.'
+  the content is and deserialize as needed.
+
+
+  Gets or sets the HTTP status and/or body code for the response
+
+  :param status: The HTTP status code.
+
+  :param body: The JSON serializable body content for the response.  This object
+
+  must be serializable by the core Python json routines.  The caller is responsible
+
+  for serializing more complex/nested objects into native classes (lists and
+
+  dictionaries of strings are acceptable).'
 constructor:
-  syntax: 'InvokeResponse(*, status: Optional[int] = None, body: Optional[object]
-    = None, **kwargs)'
+  syntax: 'InvokeResponse(*, status: int = None, body: object = None, **kwargs)'
+  keywordOnlyParameters:
+  - name: status
+    isRequired: true
+  - name: body
+    isRequired: true
 methods:
 - uid: botbuilder.schema.InvokeResponse.is_successful_status_code
   name: is_successful_status_code

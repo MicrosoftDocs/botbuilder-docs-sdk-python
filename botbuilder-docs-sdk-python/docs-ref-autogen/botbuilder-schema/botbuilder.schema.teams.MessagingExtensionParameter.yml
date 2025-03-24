@@ -3,12 +3,9 @@ uid: botbuilder.schema.teams.MessagingExtensionParameter
 name: MessagingExtensionParameter
 fullName: botbuilder.schema.teams.MessagingExtensionParameter
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: Messaging extension query parameters.
 constructor:
-  syntax: 'MessagingExtensionParameter(*, name: Optional[str] = None, value=None,
-    **kwargs) -> None'
+  syntax: 'MessagingExtensionParameter(*, name: str = None, value=None, **kwargs)'
   parameters:
   - name: name
     description: Name of the parameter
@@ -20,3 +17,8 @@ constructor:
     isRequired: true
     types:
     - <xref:object>
+  keywordOnlyParameters:
+  - name: name
+    isRequired: true
+  - name: value
+    isRequired: true

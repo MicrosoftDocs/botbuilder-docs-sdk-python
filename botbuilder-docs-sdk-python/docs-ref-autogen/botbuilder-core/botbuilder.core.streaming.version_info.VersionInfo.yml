@@ -3,10 +3,11 @@ uid: botbuilder.core.streaming.version_info.VersionInfo
 name: VersionInfo
 fullName: botbuilder.core.streaming.version_info.VersionInfo
 module: botbuilder.core.streaming.version_info
-inheritances:
-- botframework.streaming.payloads.models.serializable.Serializable
 constructor:
-  syntax: 'VersionInfo(*, user_agent: Optional[str] = None)'
+  syntax: 'VersionInfo(*, user_agent: str = None)'
+  keywordOnlyParameters:
+  - name: user_agent
+    isRequired: true
 methods:
 - uid: botbuilder.core.streaming.version_info.VersionInfo.from_json
   name: from_json

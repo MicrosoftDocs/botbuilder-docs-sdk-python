@@ -3,12 +3,9 @@ uid: botbuilder.schema.teams.MeetingParticipantInfo
 name: MeetingParticipantInfo
 fullName: botbuilder.schema.teams.MeetingParticipantInfo
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: Teams meeting participant details.
 constructor:
-  syntax: 'MeetingParticipantInfo(*, role: Optional[str] = None, in_meeting: Optional[bool]
-    = None, **kwargs) -> None'
+  syntax: 'MeetingParticipantInfo(*, role: str = None, in_meeting: bool = None, **kwargs)'
   parameters:
   - name: role
     description: Role of the participant in the current meeting.
@@ -20,3 +17,8 @@ constructor:
     isRequired: true
     types:
     - <xref:bool>
+  keywordOnlyParameters:
+  - name: role
+    isRequired: true
+  - name: in_meeting
+    isRequired: true

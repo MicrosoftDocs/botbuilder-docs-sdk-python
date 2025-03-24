@@ -3,9 +3,16 @@ uid: botbuilder.ai.qna.QueryResults
 name: QueryResults
 fullName: botbuilder.ai.qna.QueryResults
 module: botbuilder.ai.qna
-inheritances:
-- msrest.serialization.Model
 summary: Contains answers for a user query.
 constructor:
-  syntax: 'QueryResults(answers: List[botbuilder.ai.qna.models.query_result.QueryResult],
-    active_learning_enabled: Optional[bool] = None, **kwargs)'
+  syntax: 'QueryResults(answers: List[QueryResult], active_learning_enabled: bool
+    = None, **kwargs)'
+  parameters:
+  - name: answers
+    isRequired: true
+    types:
+    - <xref:<xref:The answers for a user query.>>
+  - name: active_learning_enabled
+    defaultValue: None
+    types:
+    - <xref:<xref:The active learning enable flag.>>

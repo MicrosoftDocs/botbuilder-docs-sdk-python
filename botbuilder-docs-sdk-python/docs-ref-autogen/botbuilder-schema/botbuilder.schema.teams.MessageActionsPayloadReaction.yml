@@ -3,12 +3,10 @@ uid: botbuilder.schema.teams.MessageActionsPayloadReaction
 name: MessageActionsPayloadReaction
 fullName: botbuilder.schema.teams.MessageActionsPayloadReaction
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: Represents the reaction of a user to a message.
 constructor:
   syntax: 'MessageActionsPayloadReaction(*, reaction_type=None, created_date_time:
-    Optional[str] = None, user=None, **kwargs) -> None'
+    str = None, user=None, **kwargs)'
   parameters:
   - name: reaction_type
     description: 'The type of reaction given to the message. Possible
@@ -29,3 +27,10 @@ constructor:
     isRequired: true
     types:
     - <xref:botframework.connector.teams.models.MessageActionsPayloadFrom>
+  keywordOnlyParameters:
+  - name: reaction_type
+    isRequired: true
+  - name: created_date_time
+    isRequired: true
+  - name: user
+    isRequired: true

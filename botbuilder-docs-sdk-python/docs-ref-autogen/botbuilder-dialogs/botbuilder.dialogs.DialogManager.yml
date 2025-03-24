@@ -3,12 +3,23 @@ uid: botbuilder.dialogs.DialogManager
 name: DialogManager
 fullName: botbuilder.dialogs.DialogManager
 module: botbuilder.dialogs
-inheritances:
-- builtins.object
-summary: Class which runs the dialog system.
+summary: 'Class which runs the dialog system.
+
+
+  Initializes a instance of the <see cref="DialogManager"/> class.
+
+  :param root_dialog: Root dialog to use.
+
+  :param dialog_state_property: alternate name for the dialog_state property. (Default
+  is "DialogState").'
 constructor:
-  syntax: 'DialogManager(root_dialog: Optional[botbuilder.dialogs.dialog.Dialog] =
-    None, dialog_state_property: Optional[str] = None)'
+  syntax: 'DialogManager(root_dialog: Dialog = None, dialog_state_property: str =
+    None)'
+  parameters:
+  - name: root_dialog
+    defaultValue: None
+  - name: dialog_state_property
+    defaultValue: None
 methods:
 - uid: botbuilder.dialogs.DialogManager.get_active_dialog_context
   name: get_active_dialog_context
@@ -17,29 +28,25 @@ methods:
     :param dialog_context:
 
     :return:'
-  signature: 'get_active_dialog_context(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
-    -> botbuilder.dialogs.dialog_context.DialogContext'
+  signature: 'static get_active_dialog_context(dialog_context: DialogContext) -> DialogContext'
   parameters:
   - name: dialog_context
     isRequired: true
 - uid: botbuilder.dialogs.DialogManager.handle_bot_on_turn
   name: handle_bot_on_turn
-  signature: 'handle_bot_on_turn(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
-    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  signature: 'async handle_bot_on_turn(dialog_context: DialogContext) -> DialogTurnResult'
   parameters:
   - name: dialog_context
     isRequired: true
 - uid: botbuilder.dialogs.DialogManager.handle_skill_on_turn
   name: handle_skill_on_turn
-  signature: 'handle_skill_on_turn(dialog_context: botbuilder.dialogs.dialog_context.DialogContext)
-    -> botbuilder.dialogs.dialog_turn_result.DialogTurnResult'
+  signature: 'async handle_skill_on_turn(dialog_context: DialogContext) -> DialogTurnResult'
   parameters:
   - name: dialog_context
     isRequired: true
 - uid: botbuilder.dialogs.DialogManager.is_from_parent_to_skill
   name: is_from_parent_to_skill
-  signature: 'is_from_parent_to_skill(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> bool'
+  signature: 'static is_from_parent_to_skill(turn_context: TurnContext) -> bool'
   parameters:
   - name: turn_context
     isRequired: true
@@ -50,7 +57,7 @@ methods:
     :param context: turn context.
 
     :return:'
-  signature: 'on_turn(context: botbuilder.core.turn_context.TurnContext) -> botbuilder.dialogs.dialog_manager_result.DialogManagerResult'
+  signature: 'async on_turn(context: TurnContext) -> DialogManagerResult'
   parameters:
   - name: context
     isRequired: true
@@ -64,8 +71,8 @@ methods:
     :param trace_label:
 
     :return:'
-  signature: 'send_state_snapshot_trace(dialog_context: botbuilder.dialogs.dialog_context.DialogContext,
-    trace_label: Optional[str] = None)'
+  signature: 'async static send_state_snapshot_trace(dialog_context: DialogContext,
+    trace_label: str = None)'
   parameters:
   - name: dialog_context
     isRequired: true
@@ -81,8 +88,8 @@ methods:
     :param turn_result:
 
     :return:'
-  signature: 'should_send_end_of_conversation_to_parent(context: botbuilder.core.turn_context.TurnContext,
-    turn_result: botbuilder.dialogs.dialog_turn_result.DialogTurnResult) -> bool'
+  signature: 'static should_send_end_of_conversation_to_parent(context: TurnContext,
+    turn_result: DialogTurnResult) -> bool'
   parameters:
   - name: context
     isRequired: true

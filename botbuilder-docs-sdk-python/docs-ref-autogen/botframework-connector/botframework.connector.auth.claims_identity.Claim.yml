@@ -3,7 +3,10 @@ uid: botframework.connector.auth.claims_identity.Claim
 name: Claim
 fullName: botframework.connector.auth.claims_identity.Claim
 module: botframework.connector.auth.claims_identity
-inheritances:
-- builtins.object
 constructor:
   syntax: 'Claim(claim_type: str, value)'
+  parameters:
+  - name: claim_type
+    isRequired: true
+  - name: value
+    isRequired: true

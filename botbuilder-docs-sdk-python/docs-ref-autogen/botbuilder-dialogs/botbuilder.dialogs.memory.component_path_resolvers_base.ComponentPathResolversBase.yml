@@ -3,11 +3,9 @@ uid: botbuilder.dialogs.memory.component_path_resolvers_base.ComponentPathResolv
 name: ComponentPathResolversBase
 fullName: botbuilder.dialogs.memory.component_path_resolvers_base.ComponentPathResolversBase
 module: botbuilder.dialogs.memory.component_path_resolvers_base
-inheritances:
-- abc.ABC
 constructor:
   syntax: ComponentPathResolversBase()
 methods:
 - uid: botbuilder.dialogs.memory.component_path_resolvers_base.ComponentPathResolversBase.get_path_resolvers
   name: get_path_resolvers
-  signature: get_path_resolvers() -> Iterable[botbuilder.dialogs.memory.path_resolver_base.PathResolverBase]
+  signature: abstract get_path_resolvers() -> Iterable[PathResolverBase]

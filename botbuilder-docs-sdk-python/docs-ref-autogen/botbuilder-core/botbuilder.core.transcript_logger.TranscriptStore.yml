@@ -3,8 +3,6 @@ uid: botbuilder.core.transcript_logger.TranscriptStore
 name: TranscriptStore
 fullName: botbuilder.core.transcript_logger.TranscriptStore
 module: botbuilder.core.transcript_logger
-inheritances:
-- botbuilder.core.transcript_logger.TranscriptLogger
 summary: Transcript storage for conversations.
 constructor:
   syntax: TranscriptStore()
@@ -18,7 +16,8 @@ methods:
     :param conversation_id: Id of the conversation to delete.
 
     :result: None'
-  signature: 'delete_transcript(channel_id: str, conversation_id: str) -> None'
+  signature: 'abstract async delete_transcript(channel_id: str, conversation_id: str)
+    -> None'
   parameters:
   - name: channel_id
     isRequired: true
@@ -37,9 +36,8 @@ methods:
     :param start_date: Earliest time to include
 
     :result: Page of results of Activity objects'
-  signature: 'get_transcript_activities(channel_id: str, conversation_id: str, continuation_token:
-    str, start_date: <module ''datetime'' from ''C:\\hostedtoolcache\\windows\\Python\\3.8.10\\x64\\lib\\datetime.py''>)
-    -> botbuilder.core.transcript_logger.PagedResult'
+  signature: 'abstract async get_transcript_activities(channel_id: str, conversation_id:
+    str, continuation_token: str, start_date: datetime) -> PagedResult'
   parameters:
   - name: channel_id
     isRequired: true
@@ -58,7 +56,8 @@ methods:
     :param continuation_token : Continuation token to page through results.
 
     :result: Page of results of TranscriptInfo objects'
-  signature: 'list_transcripts(channel_id: str, continuation_token: str) -> botbuilder.core.transcript_logger.PagedResult'
+  signature: 'abstract async list_transcripts(channel_id: str, continuation_token:
+    str) -> PagedResult'
   parameters:
   - name: channel_id
     isRequired: true

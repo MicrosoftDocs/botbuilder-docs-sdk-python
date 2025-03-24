@@ -3,8 +3,28 @@ uid: botbuilder.dialogs.choices.token.Token
 name: Token
 fullName: botbuilder.dialogs.choices.token.Token
 module: botbuilder.dialogs.choices.token
-inheritances:
-- builtins.object
 summary: Represents an individual token, such as a word in an input string.
 constructor:
   syntax: 'Token(start: int, end: int, text: str, normalized: str)'
+  parameters:
+  - name: start
+    isRequired: true
+    types:
+    - <xref:<xref:botbuilder.dialogs.choices.token.The index> of <xref:botbuilder.dialogs.choices.token.the
+      first character> of <xref:the token within the outer input string.>>
+  - name: end
+    isRequired: true
+    types:
+    - <xref:<xref:botbuilder.dialogs.choices.token.The index> of <xref:botbuilder.dialogs.choices.token.the
+      last character> of <xref:the token within the outer input string.>>
+  - name: text
+    isRequired: true
+    types:
+    - <xref:<xref:botbuilder.dialogs.choices.token.The original text> of <xref:the
+      token.>>
+  - name: normalized
+    isRequired: true
+    types:
+    - <xref:<xref:botbuilder.dialogs.choices.token.A normalized version> of <xref:the
+      token. This can include things like lower casing>>
+    - <xref:stemming.>

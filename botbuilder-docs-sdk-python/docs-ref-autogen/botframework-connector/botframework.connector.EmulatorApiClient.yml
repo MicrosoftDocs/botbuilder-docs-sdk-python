@@ -3,15 +3,13 @@ uid: botframework.connector.EmulatorApiClient
 name: EmulatorApiClient
 fullName: botframework.connector.EmulatorApiClient
 module: botframework.connector
-inheritances:
-- builtins.object
 constructor:
   syntax: EmulatorApiClient()
 methods:
 - uid: botframework.connector.EmulatorApiClient.emulate_oauth_cards
   name: emulate_oauth_cards
-  signature: 'emulate_oauth_cards(credentials: botframework.connector.auth.app_credentials.AppCredentials,
-    emulator_url: str, emulate: bool) -> bool'
+  signature: 'async static emulate_oauth_cards(credentials: AppCredentials, emulator_url:
+    str, emulate: bool) -> bool'
   parameters:
   - name: credentials
     isRequired: true

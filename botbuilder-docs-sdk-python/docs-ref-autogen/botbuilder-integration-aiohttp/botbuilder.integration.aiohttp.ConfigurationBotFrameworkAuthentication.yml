@@ -1,0 +1,64 @@
+### YamlMime:PythonClass
+uid: botbuilder.integration.aiohttp.ConfigurationBotFrameworkAuthentication
+name: ConfigurationBotFrameworkAuthentication
+fullName: botbuilder.integration.aiohttp.ConfigurationBotFrameworkAuthentication
+module: botbuilder.integration.aiohttp
+constructor:
+  syntax: 'ConfigurationBotFrameworkAuthentication(configuration: Any, *, credentials_factory:
+    ServiceClientCredentialsFactory = None, auth_configuration: AuthenticationConfiguration
+    = None, http_client_factory: HttpClientFactory = None, logger: Logger = None)'
+  parameters:
+  - name: configuration
+    isRequired: true
+  keywordOnlyParameters:
+  - name: credentials_factory
+    isRequired: true
+  - name: auth_configuration
+    isRequired: true
+  - name: http_client_factory
+    isRequired: true
+  - name: logger
+    isRequired: true
+methods:
+- uid: botbuilder.integration.aiohttp.ConfigurationBotFrameworkAuthentication.authenticate_channel_request
+  name: authenticate_channel_request
+  signature: 'async authenticate_channel_request(auth_header: str) -> ClaimsIdentity'
+  parameters:
+  - name: auth_header
+    isRequired: true
+- uid: botbuilder.integration.aiohttp.ConfigurationBotFrameworkAuthentication.authenticate_request
+  name: authenticate_request
+  signature: 'async authenticate_request(activity: Activity, auth_header: str) ->
+    AuthenticateRequestResult'
+  parameters:
+  - name: activity
+    isRequired: true
+  - name: auth_header
+    isRequired: true
+- uid: botbuilder.integration.aiohttp.ConfigurationBotFrameworkAuthentication.authenticate_streaming_request
+  name: authenticate_streaming_request
+  signature: 'async authenticate_streaming_request(auth_header: str, channel_id_header:
+    str) -> AuthenticateRequestResult'
+  parameters:
+  - name: auth_header
+    isRequired: true
+  - name: channel_id_header
+    isRequired: true
+- uid: botbuilder.integration.aiohttp.ConfigurationBotFrameworkAuthentication.create_bot_framework_client
+  name: create_bot_framework_client
+  signature: create_bot_framework_client() -> BotFrameworkClient
+- uid: botbuilder.integration.aiohttp.ConfigurationBotFrameworkAuthentication.create_connector_factory
+  name: create_connector_factory
+  signature: 'create_connector_factory(claims_identity: ClaimsIdentity) -> ConnectorFactory'
+  parameters:
+  - name: claims_identity
+    isRequired: true
+- uid: botbuilder.integration.aiohttp.ConfigurationBotFrameworkAuthentication.create_user_token_client
+  name: create_user_token_client
+  signature: 'async create_user_token_client(claims_identity: ClaimsIdentity) -> UserTokenClient'
+  parameters:
+  - name: claims_identity
+    isRequired: true
+- uid: botbuilder.integration.aiohttp.ConfigurationBotFrameworkAuthentication.get_originating_audience
+  name: get_originating_audience
+  signature: get_originating_audience() -> str

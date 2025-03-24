@@ -3,12 +3,10 @@ uid: botbuilder.schema.teams.MessageActionsPayloadApp
 name: MessageActionsPayloadApp
 fullName: botbuilder.schema.teams.MessageActionsPayloadApp
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: Represents an application entity.
 constructor:
-  syntax: 'MessageActionsPayloadApp(*, application_identity_type=None, id: Optional[str]
-    = None, display_name: Optional[str] = None, **kwargs) -> None'
+  syntax: 'MessageActionsPayloadApp(*, application_identity_type=None, id: str = None,
+    display_name: str = None, **kwargs)'
   parameters:
   - name: application_identity_type
     description: 'The type of application. Possible values
@@ -30,3 +28,10 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: application_identity_type
+    isRequired: true
+  - name: id
+    isRequired: true
+  - name: display_name
+    isRequired: true

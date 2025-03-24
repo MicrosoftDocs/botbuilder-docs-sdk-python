@@ -3,8 +3,10 @@ uid: botbuilder.dialogs.prompts.oauth_prompt.CallerInfo
 name: CallerInfo
 fullName: botbuilder.dialogs.prompts.oauth_prompt.CallerInfo
 module: botbuilder.dialogs.prompts.oauth_prompt
-inheritances:
-- builtins.object
 constructor:
-  syntax: 'CallerInfo(caller_service_url: Optional[str] = None, scope: Optional[str]
-    = None)'
+  syntax: 'CallerInfo(caller_service_url: str = None, scope: str = None)'
+  parameters:
+  - name: caller_service_url
+    defaultValue: None
+  - name: scope
+    defaultValue: None

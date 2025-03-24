@@ -3,14 +3,31 @@ uid: botbuilder.ai.luis.luis_prediction_options.LuisPredictionOptions
 name: LuisPredictionOptions
 fullName: botbuilder.ai.luis.luis_prediction_options.LuisPredictionOptions
 module: botbuilder.ai.luis.luis_prediction_options
-inheritances:
-- builtins.object
 summary: Optional parameters for a LUIS prediction request.
 constructor:
-  syntax: 'LuisPredictionOptions(bing_spell_check_subscription_key: Optional[str]
-    = None, include_all_intents: Optional[bool] = None, include_instance_data: Optional[bool]
-    = None, log: Optional[bool] = None, spell_check: Optional[bool] = None, staging:
-    Optional[bool] = None, timeout: float = 100000, timezone_offset: Optional[float]
-    = None, telemetry_client: botbuilder.core.bot_telemetry_client.BotTelemetryClient
+  syntax: 'LuisPredictionOptions(bing_spell_check_subscription_key: str = None, include_all_intents:
+    bool = None, include_instance_data: bool = None, log: bool = None, spell_check:
+    bool = None, staging: bool = None, timeout: float = 100000, timezone_offset: float
+    = None, telemetry_client: ~botbuilder.core.bot_telemetry_client.BotTelemetryClient
     = <botbuilder.core.null_telemetry_client.NullTelemetryClient object>, log_personal_information:
     bool = False)'
+  parameters:
+  - name: bing_spell_check_subscription_key
+    defaultValue: None
+  - name: include_all_intents
+    defaultValue: None
+  - name: include_instance_data
+    defaultValue: None
+  - name: log
+    defaultValue: None
+  - name: spell_check
+    defaultValue: None
+  - name: staging
+    defaultValue: None
+  - name: timeout
+    defaultValue: '100000'
+  - name: timezone_offset
+    defaultValue: None
+  - name: telemetry_client
+  - name: log_personal_information
+    defaultValue: 'False'

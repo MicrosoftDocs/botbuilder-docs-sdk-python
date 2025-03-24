@@ -3,14 +3,12 @@ uid: botbuilder.schema.teams.MessageActionsPayloadFrom
 name: MessageActionsPayloadFrom
 fullName: botbuilder.schema.teams.MessageActionsPayloadFrom
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: 'Represents a user, application, or conversation type that either sent or
 
   was referenced in a message.'
 constructor:
   syntax: MessageActionsPayloadFrom(*, user=None, application=None, conversation=None,
-    **kwargs) -> None
+    **kwargs)
   parameters:
   - name: user
     description: Represents details of the user.
@@ -27,3 +25,10 @@ constructor:
     isRequired: true
     types:
     - <xref:botframework.connector.teams.models.MessageActionsPayloadConversation>
+  keywordOnlyParameters:
+  - name: user
+    isRequired: true
+  - name: application
+    isRequired: true
+  - name: conversation
+    isRequired: true

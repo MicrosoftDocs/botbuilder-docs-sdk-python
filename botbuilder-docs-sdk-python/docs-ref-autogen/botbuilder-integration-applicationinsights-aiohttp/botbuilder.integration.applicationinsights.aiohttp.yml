@@ -2,15 +2,17 @@
 uid: botbuilder.integration.applicationinsights.aiohttp
 name: aiohttp
 fullName: botbuilder.integration.applicationinsights.aiohttp
-type: import
+type: rootImport
 functions:
 - uid: botbuilder.integration.applicationinsights.aiohttp.bot_telemetry_middleware
   name: bot_telemetry_middleware
   summary: Process the incoming Flask request.
-  signature: bot_telemetry_middleware(request, handler)
+  signature: async bot_telemetry_middleware(request, handler)
   parameters:
   - name: request
+    isRequired: true
   - name: handler
+    isRequired: true
 classes:
 - botbuilder.integration.applicationinsights.aiohttp.AiohttpTelemetryProcessor
 modules:

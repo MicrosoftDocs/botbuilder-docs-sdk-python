@@ -3,14 +3,12 @@ uid: botbuilder.dialogs.memory.path_resolver_base.PathResolverBase
 name: PathResolverBase
 fullName: botbuilder.dialogs.memory.path_resolver_base.PathResolverBase
 module: botbuilder.dialogs.memory.path_resolver_base
-inheritances:
-- abc.ABC
 constructor:
   syntax: PathResolverBase()
 methods:
 - uid: botbuilder.dialogs.memory.path_resolver_base.PathResolverBase.transform_path
   name: transform_path
-  signature: 'transform_path(path: str)'
+  signature: 'abstract transform_path(path: str)'
   parameters:
   - name: path
     isRequired: true

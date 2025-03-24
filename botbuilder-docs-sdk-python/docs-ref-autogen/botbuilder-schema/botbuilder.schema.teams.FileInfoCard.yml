@@ -3,12 +3,10 @@ uid: botbuilder.schema.teams.FileInfoCard
 name: FileInfoCard
 fullName: botbuilder.schema.teams.FileInfoCard
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: File info card.
 constructor:
-  syntax: 'FileInfoCard(*, unique_id: Optional[str] = None, file_type: Optional[str]
-    = None, etag=None, **kwargs) -> None'
+  syntax: 'FileInfoCard(*, unique_id: str = None, file_type: str = None, etag=None,
+    **kwargs)'
   parameters:
   - name: unique_id
     description: Unique Id for the file.
@@ -25,3 +23,10 @@ constructor:
     isRequired: true
     types:
     - <xref:object>
+  keywordOnlyParameters:
+  - name: unique_id
+    isRequired: true
+  - name: file_type
+    isRequired: true
+  - name: etag
+    isRequired: true

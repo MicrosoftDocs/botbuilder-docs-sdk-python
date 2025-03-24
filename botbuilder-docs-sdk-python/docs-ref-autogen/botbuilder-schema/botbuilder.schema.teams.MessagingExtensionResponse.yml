@@ -3,12 +3,9 @@ uid: botbuilder.schema.teams.MessagingExtensionResponse
 name: MessagingExtensionResponse
 fullName: botbuilder.schema.teams.MessagingExtensionResponse
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: Messaging extension response.
 constructor:
   syntax: MessagingExtensionResponse(*, compose_extension=None, cache_info=None, **kwargs)
-    -> None
   parameters:
   - name: compose_extension
     isRequired: true
@@ -19,3 +16,8 @@ constructor:
     isRequired: true
     types:
     - <xref:botframework.connector.teams.models.CacheInfo>
+  keywordOnlyParameters:
+  - name: compose_extension
+    isRequired: true
+  - name: cache_info
+    isRequired: true

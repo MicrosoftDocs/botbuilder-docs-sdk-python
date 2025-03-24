@@ -3,12 +3,10 @@ uid: botframework.connector.token_api.models.SignInUrlResponse
 name: SignInUrlResponse
 fullName: botframework.connector.token_api.models.SignInUrlResponse
 module: botframework.connector.token_api.models
-inheritances:
-- msrest.serialization.Model
 summary: SignInUrlResponse.
 constructor:
-  syntax: 'SignInUrlResponse(*, sign_in_link: Optional[str] = None, token_exchange_resource=None,
-    **kwargs) -> None'
+  syntax: 'SignInUrlResponse(*, sign_in_link: str = None, token_exchange_resource=None,
+    **kwargs)'
   parameters:
   - name: sign_in_link
     isRequired: true
@@ -18,3 +16,8 @@ constructor:
     isRequired: true
     types:
     - <xref:botframework.tokenapi.models.TokenExchangeResource>
+  keywordOnlyParameters:
+  - name: sign_in_link
+    isRequired: true
+  - name: token_exchange_resource
+    isRequired: true

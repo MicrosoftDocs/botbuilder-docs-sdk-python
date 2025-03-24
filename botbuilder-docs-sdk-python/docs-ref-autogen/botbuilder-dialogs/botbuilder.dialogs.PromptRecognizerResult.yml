@@ -3,8 +3,11 @@ uid: botbuilder.dialogs.PromptRecognizerResult
 name: PromptRecognizerResult
 fullName: botbuilder.dialogs.PromptRecognizerResult
 module: botbuilder.dialogs
-inheritances:
-- builtins.object
+summary: Creates result returned by a prompts recognizer function.
 constructor:
-  syntax: 'PromptRecognizerResult(succeeded: bool = False, value: Optional[object]
-    = None)'
+  syntax: 'PromptRecognizerResult(succeeded: bool = False, value: object = None)'
+  parameters:
+  - name: succeeded
+    defaultValue: 'False'
+  - name: value
+    defaultValue: None

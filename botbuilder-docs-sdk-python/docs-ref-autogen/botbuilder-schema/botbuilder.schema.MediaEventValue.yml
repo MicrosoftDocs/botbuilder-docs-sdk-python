@@ -3,11 +3,9 @@ uid: botbuilder.schema.MediaEventValue
 name: MediaEventValue
 fullName: botbuilder.schema.MediaEventValue
 module: botbuilder.schema
-inheritances:
-- msrest.serialization.Model
 summary: Supplementary parameter for media events.
 constructor:
-  syntax: MediaEventValue(*, card_value=None, **kwargs) -> None
+  syntax: MediaEventValue(*, card_value=None, **kwargs)
   parameters:
   - name: card_value
     description: 'Callback parameter specified in the Value field of the
@@ -16,3 +14,6 @@ constructor:
     isRequired: true
     types:
     - <xref:object>
+  keywordOnlyParameters:
+  - name: card_value
+    isRequired: true

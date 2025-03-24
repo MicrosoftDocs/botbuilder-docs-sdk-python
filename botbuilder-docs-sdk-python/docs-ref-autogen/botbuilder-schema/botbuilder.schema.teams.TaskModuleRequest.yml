@@ -3,12 +3,9 @@ uid: botbuilder.schema.teams.TaskModuleRequest
 name: TaskModuleRequest
 fullName: botbuilder.schema.teams.TaskModuleRequest
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: Task module invoke request value payload.
 constructor:
   syntax: TaskModuleRequest(*, data=None, context=None, tab_entity_context=None, **kwargs)
-    -> None
   parameters:
   - name: data
     description: User input data. Free payload with key-value pairs.
@@ -25,3 +22,10 @@ constructor:
     isRequired: true
     types:
     - <xref:botframework.connector.teams.models.TabEntityContext>
+  keywordOnlyParameters:
+  - name: data
+    isRequired: true
+  - name: context
+    isRequired: true
+  - name: tab_entity_context
+    isRequired: true

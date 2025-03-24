@@ -3,12 +3,9 @@ uid: botbuilder.schema.teams.MessageActionsPayloadBody
 name: MessageActionsPayloadBody
 fullName: botbuilder.schema.teams.MessageActionsPayloadBody
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: Plaintext/HTML representation of the content of the message.
 constructor:
-  syntax: 'MessageActionsPayloadBody(*, content_type=None, content: Optional[str]
-    = None, **kwargs) -> None'
+  syntax: 'MessageActionsPayloadBody(*, content_type=None, content: str = None, **kwargs)'
   parameters:
   - name: content_type
     description: 'Type of the content. Possible values include: ''html'',
@@ -22,3 +19,8 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: content_type
+    isRequired: true
+  - name: content
+    isRequired: true

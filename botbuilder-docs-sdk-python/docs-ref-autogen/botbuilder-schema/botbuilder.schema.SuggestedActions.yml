@@ -3,11 +3,9 @@ uid: botbuilder.schema.SuggestedActions
 name: SuggestedActions
 fullName: botbuilder.schema.SuggestedActions
 module: botbuilder.schema
-inheritances:
-- msrest.serialization.Model
 summary: SuggestedActions that can be performed.
 constructor:
-  syntax: SuggestedActions(*, to=None, actions=None, **kwargs) -> None
+  syntax: SuggestedActions(*, to=None, actions=None, **kwargs)
   parameters:
   - name: to
     description: 'Ids of the recipients that the actions should be shown to.
@@ -23,3 +21,8 @@ constructor:
     isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.models.CardAction>]
+  keywordOnlyParameters:
+  - name: to
+    isRequired: true
+  - name: actions
+    isRequired: true

@@ -3,13 +3,11 @@ uid: botbuilder.schema.teams.MessagingExtensionAttachment
 name: MessagingExtensionAttachment
 fullName: botbuilder.schema.teams.MessagingExtensionAttachment
 module: botbuilder.schema.teams
-inheritances:
-- botbuilder.schema._models_py3.Attachment
 summary: Messaging extension attachment.
 constructor:
-  syntax: 'MessagingExtensionAttachment(*, content_type: Optional[str] = None, content_url:
-    Optional[str] = None, content=None, name: Optional[str] = None, thumbnail_url:
-    Optional[str] = None, preview=None, **kwargs) -> None'
+  syntax: 'MessagingExtensionAttachment(*, content_type: str = None, content_url:
+    str = None, content=None, name: str = None, thumbnail_url: str = None, preview=None,
+    **kwargs)'
   parameters:
   - name: content_type
     description: mimetype/Contenttype for the file
@@ -40,3 +38,16 @@ constructor:
     isRequired: true
     types:
     - <xref:botframework.connector.teams.models.Attachment>
+  keywordOnlyParameters:
+  - name: content_type
+    isRequired: true
+  - name: content_url
+    isRequired: true
+  - name: content
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: thumbnail_url
+    isRequired: true
+  - name: preview
+    isRequired: true

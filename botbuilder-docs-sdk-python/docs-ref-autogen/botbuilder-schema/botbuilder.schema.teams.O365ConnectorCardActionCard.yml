@@ -3,12 +3,10 @@ uid: botbuilder.schema.teams.O365ConnectorCardActionCard
 name: O365ConnectorCardActionCard
 fullName: botbuilder.schema.teams.O365ConnectorCardActionCard
 module: botbuilder.schema.teams
-inheritances:
-- botbuilder.schema.teams._models_py3.O365ConnectorCardActionBase
 summary: O365 connector card ActionCard action.
 constructor:
-  syntax: 'O365ConnectorCardActionCard(*, type=None, name: Optional[str] = None, id:
-    Optional[str] = None, inputs=None, actions=None, **kwargs) -> None'
+  syntax: 'O365ConnectorCardActionCard(*, type=None, name: str = None, id: str = None,
+    inputs=None, actions=None, **kwargs)'
   parameters:
   - name: type
     description: 'Type of the action. Possible values include: ''ViewAction'',
@@ -43,3 +41,14 @@ constructor:
     isRequired: true
     types:
     - <xref:list>[<xref:botframework.connector.teams.models.O365ConnectorCardActionBase>]
+  keywordOnlyParameters:
+  - name: type
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: id
+    isRequired: true
+  - name: inputs
+    isRequired: true
+  - name: actions
+    isRequired: true

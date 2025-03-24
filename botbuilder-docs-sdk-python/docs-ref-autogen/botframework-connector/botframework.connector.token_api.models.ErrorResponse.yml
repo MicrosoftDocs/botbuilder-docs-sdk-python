@@ -3,13 +3,14 @@ uid: botframework.connector.token_api.models.ErrorResponse
 name: ErrorResponse
 fullName: botframework.connector.token_api.models.ErrorResponse
 module: botframework.connector.token_api.models
-inheritances:
-- msrest.serialization.Model
 summary: ErrorResponse.
 constructor:
-  syntax: ErrorResponse(*, error=None, **kwargs) -> None
+  syntax: ErrorResponse(*, error=None, **kwargs)
   parameters:
   - name: error
     isRequired: true
     types:
     - <xref:botframework.tokenapi.models.Error>
+  keywordOnlyParameters:
+  - name: error
+    isRequired: true

@@ -3,14 +3,15 @@ uid: botbuilder.schema.teams.TabContext
 name: TabContext
 fullName: botbuilder.schema.teams.TabContext
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: Current tab request context, i.e., the current theme.
 constructor:
-  syntax: TabContext(*, theme=None, **kwargs) -> None
+  syntax: TabContext(*, theme=None, **kwargs)
   parameters:
   - name: theme
     description: Gets or sets the current user's theme.
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: theme
+    isRequired: true

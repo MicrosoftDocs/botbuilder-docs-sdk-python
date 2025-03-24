@@ -3,8 +3,6 @@ uid: botbuilder.core.StatePropertyAccessor
 name: StatePropertyAccessor
 fullName: botbuilder.core.StatePropertyAccessor
 module: botbuilder.core
-inheritances:
-- abc.ABC
 constructor:
   syntax: StatePropertyAccessor()
 methods:
@@ -15,7 +13,7 @@ methods:
     :param turn_context: Turn Context.
 
     :return:'
-  signature: 'delete(turn_context: botbuilder.core.turn_context.TurnContext) -> None'
+  signature: 'abstract async delete(turn_context: TurnContext) -> None'
   parameters:
   - name: turn_context
     isRequired: true
@@ -28,7 +26,7 @@ methods:
     :param default_value_or_factory: Function which defines the property
 
     value to be returned if no value has been set.'
-  signature: 'get(turn_context: botbuilder.core.turn_context.TurnContext, default_value_or_factory=None)
+  signature: 'abstract async get(turn_context: TurnContext, default_value_or_factory=None)
     -> object'
   parameters:
   - name: turn_context
@@ -44,8 +42,7 @@ methods:
     :param value:
 
     :return:'
-  signature: 'set(turn_context: botbuilder.core.turn_context.TurnContext, value) ->
-    None'
+  signature: 'abstract async set(turn_context: TurnContext, value) -> None'
   parameters:
   - name: turn_context
     isRequired: true

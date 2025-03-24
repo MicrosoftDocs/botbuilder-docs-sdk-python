@@ -5,6 +5,9 @@ fullName: botbuilder.ai.qna.models.JoinOperator
 summary: 'Join Operator for Strict Filters.
 
 
+  # remarks
+
+
   For example, when using multiple filters in a query, if you want results that
 
   have metadata that matches all filters, then use *AND* operator.
@@ -12,13 +15,15 @@ summary: 'Join Operator for Strict Filters.
 
   If instead you only wish that the results from knowledge base match
 
-  at least one of the filters, then use *OR* operator.'
+  at least one of the filters, then use *OR* operator.
+
+
+  AND = ''AND''
+
+
+
+  OR = ''OR'''
 module: botbuilder.ai.qna.models
-constructor:
-  syntax: JoinOperator(value)
-inheritances:
-- builtins.str
-- enum.Enum
 fields:
 - name: AND
   uid: botbuilder.ai.qna.models.JoinOperator.AND

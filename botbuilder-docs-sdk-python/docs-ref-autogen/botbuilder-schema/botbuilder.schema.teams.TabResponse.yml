@@ -3,12 +3,13 @@ uid: botbuilder.schema.teams.TabResponse
 name: TabResponse
 fullName: botbuilder.schema.teams.TabResponse
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: Envelope for Card Tab Response Payload.
 constructor:
-  syntax: TabResponse(*, tab=None, **kwargs) -> None
+  syntax: TabResponse(*, tab=None, **kwargs)
   parameters:
   - name: tab
     description: 'Possible values include: ''continue'', ''auth'' or ''silentAuth'''
+    isRequired: true
+  keywordOnlyParameters:
+  - name: tab
     isRequired: true

@@ -3,11 +3,18 @@ uid: botbuilder.core.TurnContext
 name: TurnContext
 fullName: botbuilder.core.TurnContext
 module: botbuilder.core
-inheritances:
-- builtins.object
+summary: 'Creates a new TurnContext instance.
+
+  :param adapter_or_context:
+
+  :param request:'
 constructor:
-  syntax: 'TurnContext(adapter_or_context, request: Optional[botbuilder.schema._models_py3.Activity]
-    = None)'
+  syntax: 'TurnContext(adapter_or_context, request: Activity = None)'
+  parameters:
+  - name: adapter_or_context
+    isRequired: true
+  - name: request
+    defaultValue: None
 methods:
 - uid: botbuilder.core.TurnContext.apply_conversation_reference
   name: apply_conversation_reference
@@ -25,9 +32,8 @@ methods:
     :param is_incoming:
 
     :return:'
-  signature: 'apply_conversation_reference(activity: botbuilder.schema._models_py3.Activity,
-    reference: botbuilder.schema._models_py3.ConversationReference, is_incoming: bool
-    = False) -> botbuilder.schema._models_py3.Activity'
+  signature: 'static apply_conversation_reference(activity: Activity, reference: ConversationReference,
+    is_incoming: bool = False) -> Activity'
   parameters:
   - name: activity
     isRequired: true
@@ -45,7 +51,7 @@ methods:
     :param context:
 
     :return:'
-  signature: 'copy_to(context: botbuilder.core.turn_context.TurnContext) -> None'
+  signature: 'copy_to(context: TurnContext) -> None'
   parameters:
   - name: context
     isRequired: true
@@ -56,7 +62,7 @@ methods:
     :param id_or_reference:
 
     :return:'
-  signature: 'delete_activity(id_or_reference: Union[str, botbuilder.schema._models_py3.ConversationReference])'
+  signature: 'async delete_activity(id_or_reference: str | ConversationReference)'
   parameters:
   - name: id_or_reference
     isRequired: true
@@ -81,21 +87,20 @@ methods:
     :param activity:
 
     :return:'
-  signature: 'get_conversation_reference(activity: botbuilder.schema._models_py3.Activity)
-    -> botbuilder.schema._models_py3.ConversationReference'
+  signature: 'static get_conversation_reference(activity: Activity) -> ConversationReference'
   parameters:
   - name: activity
     isRequired: true
 - uid: botbuilder.core.TurnContext.get_mentions
   name: get_mentions
-  signature: 'get_mentions(activity: botbuilder.schema._models_py3.Activity) -> List[botbuilder.schema._models_py3.Mention]'
+  signature: 'static get_mentions(activity: Activity) -> List[Mention]'
   parameters:
   - name: activity
     isRequired: true
 - uid: botbuilder.core.TurnContext.get_reply_conversation_reference
   name: get_reply_conversation_reference
-  signature: 'get_reply_conversation_reference(activity: botbuilder.schema._models_py3.Activity,
-    reply: botbuilder.schema._models_py3.ResourceResponse) -> botbuilder.schema._models_py3.ConversationReference'
+  signature: 'static get_reply_conversation_reference(activity: Activity, reply: ResourceResponse)
+    -> ConversationReference'
   parameters:
   - name: activity
     isRequired: true
@@ -121,7 +126,7 @@ methods:
     :param handler:
 
     :return:'
-  signature: on_delete_activity(handler) -> botbuilder.core.turn_context.TurnContext
+  signature: on_delete_activity(handler) -> TurnContext
   parameters:
   - name: handler
     isRequired: true
@@ -133,7 +138,7 @@ methods:
     :param handler:
 
     :return:'
-  signature: on_send_activities(handler) -> botbuilder.core.turn_context.TurnContext
+  signature: on_send_activities(handler) -> TurnContext
   parameters:
   - name: handler
     isRequired: true
@@ -145,14 +150,13 @@ methods:
     :param handler:
 
     :return:'
-  signature: on_update_activity(handler) -> botbuilder.core.turn_context.TurnContext
+  signature: on_update_activity(handler) -> TurnContext
   parameters:
   - name: handler
     isRequired: true
 - uid: botbuilder.core.TurnContext.remove_mention_text
   name: remove_mention_text
-  signature: 'remove_mention_text(activity: botbuilder.schema._models_py3.Activity,
-    identifier: str) -> str'
+  signature: 'static remove_mention_text(activity: Activity, identifier: str) -> str'
   parameters:
   - name: activity
     isRequired: true
@@ -160,15 +164,13 @@ methods:
     isRequired: true
 - uid: botbuilder.core.TurnContext.remove_recipient_mention
   name: remove_recipient_mention
-  signature: 'remove_recipient_mention(activity: botbuilder.schema._models_py3.Activity)
-    -> str'
+  signature: 'static remove_recipient_mention(activity: Activity) -> str'
   parameters:
   - name: activity
     isRequired: true
 - uid: botbuilder.core.TurnContext.send_activities
   name: send_activities
-  signature: 'send_activities(activities: List[botbuilder.schema._models_py3.Activity])
-    -> List[botbuilder.schema._models_py3.ResourceResponse]'
+  signature: 'async send_activities(activities: List[Activity]) -> List[ResourceResponse]'
   parameters:
   - name: activities
     isRequired: true
@@ -179,8 +181,8 @@ methods:
     :param activity_or_text:
 
     :return:'
-  signature: 'send_activity(activity_or_text: Union[botbuilder.schema._models_py3.Activity,
-    str], speak: Optional[str] = None, input_hint: Optional[str] = None) -> botbuilder.schema._models_py3.ResourceResponse'
+  signature: 'async send_activity(activity_or_text: Activity | str, speak: str = None,
+    input_hint: str = None) -> ResourceResponse | None'
   parameters:
   - name: activity_or_text
     isRequired: true
@@ -190,8 +192,8 @@ methods:
     defaultValue: None
 - uid: botbuilder.core.TurnContext.send_trace_activity
   name: send_trace_activity
-  signature: 'send_trace_activity(name: str, value: Optional[object] = None, value_type:
-    Optional[str] = None, label: Optional[str] = None) -> botbuilder.schema._models_py3.ResourceResponse'
+  signature: 'async send_trace_activity(name: str, value: object = None, value_type:
+    str = None, label: str = None) -> ResourceResponse'
   parameters:
   - name: name
     isRequired: true
@@ -223,7 +225,7 @@ methods:
     :param activity:
 
     :return:'
-  signature: 'update_activity(activity: botbuilder.schema._models_py3.Activity)'
+  signature: 'async update_activity(activity: Activity)'
   parameters:
   - name: activity
     isRequired: true

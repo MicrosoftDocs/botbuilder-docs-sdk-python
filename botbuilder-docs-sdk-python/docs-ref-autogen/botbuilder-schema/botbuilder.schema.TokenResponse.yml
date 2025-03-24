@@ -3,13 +3,10 @@ uid: botbuilder.schema.TokenResponse
 name: TokenResponse
 fullName: botbuilder.schema.TokenResponse
 module: botbuilder.schema
-inheritances:
-- msrest.serialization.Model
 summary: A response that includes a user token.
 constructor:
-  syntax: 'TokenResponse(*, connection_name: Optional[str] = None, token: Optional[str]
-    = None, expiration: Optional[str] = None, channel_id: Optional[str] = None, **kwargs)
-    -> None'
+  syntax: 'TokenResponse(*, connection_name: str = None, token: str = None, expiration:
+    str = None, channel_id: str = None, **kwargs)'
   parameters:
   - name: connection_name
     description: The connection name
@@ -33,3 +30,12 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: connection_name
+    isRequired: true
+  - name: token
+    isRequired: true
+  - name: expiration
+    isRequired: true
+  - name: channel_id
+    isRequired: true

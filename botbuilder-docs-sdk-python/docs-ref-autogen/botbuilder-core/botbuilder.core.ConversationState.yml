@@ -3,11 +3,22 @@ uid: botbuilder.core.ConversationState
 name: ConversationState
 fullName: botbuilder.core.ConversationState
 module: botbuilder.core
-inheritances:
-- botbuilder.core.bot_state.BotState
-summary: Defines a state management object for conversation state.
+summary: 'Defines a state management object for conversation state.
+
+
+  Creates a <xref:botbuilder.core.ConversationState> instance.
+
+
+  Creates a new instance of the <xref:botbuilder.core.ConversationState> class.
+
+  :param storage: The storage containing the conversation state.
+
+  :type storage: <xref:botbuilder.core.Storage>'
 constructor:
-  syntax: 'ConversationState(storage: botbuilder.core.storage.Storage)'
+  syntax: 'ConversationState(storage: Storage)'
+  parameters:
+  - name: storage
+    isRequired: true
 remarks: 'Conversation state is available in any turn in a specific conversation,
   regardless of the user, such as
 
@@ -24,8 +35,7 @@ methods:
     conversation''s
 
     account id is missing.'
-  signature: 'get_storage_key(turn_context: botbuilder.core.turn_context.TurnContext)
-    -> object'
+  signature: 'get_storage_key(turn_context: TurnContext) -> object'
   parameters:
   - name: turn_context
     isRequired: true

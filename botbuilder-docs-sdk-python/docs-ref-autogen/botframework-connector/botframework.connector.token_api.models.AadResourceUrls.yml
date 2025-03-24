@@ -3,13 +3,14 @@ uid: botframework.connector.token_api.models.AadResourceUrls
 name: AadResourceUrls
 fullName: botframework.connector.token_api.models.AadResourceUrls
 module: botframework.connector.token_api.models
-inheritances:
-- msrest.serialization.Model
 summary: AadResourceUrls.
 constructor:
-  syntax: AadResourceUrls(*, resource_urls=None, **kwargs) -> None
+  syntax: AadResourceUrls(*, resource_urls=None, **kwargs)
   parameters:
   - name: resource_urls
     isRequired: true
     types:
     - <xref:list>[<xref:str>]
+  keywordOnlyParameters:
+  - name: resource_urls
+    isRequired: true

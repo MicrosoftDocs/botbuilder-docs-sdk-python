@@ -3,10 +3,16 @@ uid: botbuilder.ai.qna.qnamaker.EventData
 name: EventData
 fullName: botbuilder.ai.qna.qnamaker.EventData
 module: botbuilder.ai.qna.qnamaker
-inheritances:
-- builtins.tuple
+summary: Create new instance of EventData(properties, metrics)
 constructor:
   syntax: EventData(properties, metrics)
+  parameters:
+  - name: _cls
+    isRequired: true
+  - name: properties
+    isRequired: true
+  - name: metrics
+    isRequired: true
 attributes:
 - uid: botbuilder.ai.qna.qnamaker.EventData.metrics
   name: metrics

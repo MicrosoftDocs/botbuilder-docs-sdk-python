@@ -3,12 +3,10 @@ uid: botbuilder.schema.teams.O365ConnectorCardMultichoiceInputChoice
 name: O365ConnectorCardMultichoiceInputChoice
 fullName: botbuilder.schema.teams.O365ConnectorCardMultichoiceInputChoice
 module: botbuilder.schema.teams
-inheritances:
-- msrest.serialization.Model
 summary: O365O365 connector card multiple choice input item.
 constructor:
-  syntax: 'O365ConnectorCardMultichoiceInputChoice(*, display: Optional[str] = None,
-    value: Optional[str] = None, **kwargs) -> None'
+  syntax: 'O365ConnectorCardMultichoiceInputChoice(*, display: str = None, value:
+    str = None, **kwargs)'
   parameters:
   - name: display
     description: The text rendered on ActionCard.
@@ -20,3 +18,8 @@ constructor:
     isRequired: true
     types:
     - <xref:str>
+  keywordOnlyParameters:
+  - name: display
+    isRequired: true
+  - name: value
+    isRequired: true
