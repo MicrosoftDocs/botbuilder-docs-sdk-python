@@ -3,8 +3,6 @@ uid: botbuilder.core.transcript_logger.TranscriptStore
 name: TranscriptStore
 fullName: botbuilder.core.transcript_logger.TranscriptStore
 module: botbuilder.core.transcript_logger
-inheritances:
-- botbuilder.core.transcript_logger.TranscriptLogger
 summary: Transcript storage for conversations.
 constructor:
   syntax: TranscriptStore()
@@ -39,8 +37,7 @@ methods:
 
     :result: Page of results of Activity objects'
   signature: 'abstract async get_transcript_activities(channel_id: str, conversation_id:
-    str, continuation_token: str, start_date: <module ''datetime'' from ''C:\\hostedtoolcache\\windows\\Python\\3.11.9\\x64\\Lib\\datetime.py''>)
-    -> PagedResult'
+    str, continuation_token: str, start_date: datetime) -> PagedResult'
   parameters:
   - name: channel_id
     isRequired: true
