@@ -3,9 +3,6 @@ uid: botbuilder.core.CloudAdapterBase
 name: CloudAdapterBase
 fullName: botbuilder.core.CloudAdapterBase
 module: botbuilder.core
-inheritances:
-- botbuilder.core.bot_adapter.BotAdapter
-- abc.ABC
 constructor:
   syntax: 'CloudAdapterBase(bot_framework_authentication: BotFrameworkAuthentication)'
   parameters:
@@ -28,7 +25,8 @@ methods:
 
     :type bot_app_id: <xref:typing.str>'
   signature: 'async continue_conversation(reference: ConversationReference, callback:
-    Callable, bot_app_id: str)'
+    Callable, bot_app_id: str = None, claims_identity: ClaimsIdentity = None, audience:
+    str = None)'
   parameters:
   - name: reference
     description: A reference to the conversation to continue.
@@ -43,7 +41,11 @@ methods:
   - name: bot_app_id
     description: The application Id of the bot. This is the appId returned by the
       Azure portal registration,
-    isRequired: true
+    defaultValue: None
+  - name: claims_identity
+    defaultValue: None
+  - name: audience
+    defaultValue: None
 - uid: botbuilder.core.CloudAdapterBase.continue_conversation_with_claims
   name: continue_conversation_with_claims
   signature: 'async continue_conversation_with_claims(claims_identity: ClaimsIdentity,

@@ -3,13 +3,25 @@ uid: botframework.connector.auth.authentication_configuration.AuthenticationConf
 name: AuthenticationConfiguration
 fullName: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration
 module: botframework.connector.auth.authentication_configuration
-inheritances:
-- builtins.object
 constructor:
   syntax: 'AuthenticationConfiguration(required_endorsements: List[str] = None, claims_validator:
-    Callable[[List[Dict]], Awaitable] = None)'
+    Callable[[List[Dict]], Awaitable] = None, valid_token_issuers: List[str] = None,
+    tenant_id: str = None)'
   parameters:
   - name: required_endorsements
     defaultValue: None
   - name: claims_validator
     defaultValue: None
+  - name: valid_token_issuers
+    defaultValue: None
+  - name: tenant_id
+    defaultValue: None
+methods:
+- uid: botframework.connector.auth.authentication_configuration.AuthenticationConfiguration.add_tenant_issuers
+  name: add_tenant_issuers
+  signature: 'static add_tenant_issuers(authentication_configuration, tenant_id: str)'
+  parameters:
+  - name: authentication_configuration
+    isRequired: true
+  - name: tenant_id
+    isRequired: true
