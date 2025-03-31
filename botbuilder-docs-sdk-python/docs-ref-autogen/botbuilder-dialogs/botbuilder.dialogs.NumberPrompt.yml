@@ -3,8 +3,6 @@ uid: botbuilder.dialogs.NumberPrompt
 name: NumberPrompt
 fullName: botbuilder.dialogs.NumberPrompt
 module: botbuilder.dialogs
-inheritances:
-- botbuilder.dialogs.prompts.prompt.Prompt
 constructor:
   syntax: 'NumberPrompt(dialog_id: str, validator: Callable[[PromptValidatorContext],
     bool] = None, default_locale: str = None)'

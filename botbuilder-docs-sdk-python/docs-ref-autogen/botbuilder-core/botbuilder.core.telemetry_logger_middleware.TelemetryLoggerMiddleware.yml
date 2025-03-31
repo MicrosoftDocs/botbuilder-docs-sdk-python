@@ -3,8 +3,6 @@ uid: botbuilder.core.telemetry_logger_middleware.TelemetryLoggerMiddleware
 name: TelemetryLoggerMiddleware
 fullName: botbuilder.core.telemetry_logger_middleware.TelemetryLoggerMiddleware
 module: botbuilder.core.telemetry_logger_middleware
-inheritances:
-- botbuilder.core.middleware_set.Middleware
 summary: Middleware for logging incoming, outgoing, updated or deleted Activity messages.
 constructor:
   syntax: 'TelemetryLoggerMiddleware(telemetry_client: BotTelemetryClient, log_personal_information:

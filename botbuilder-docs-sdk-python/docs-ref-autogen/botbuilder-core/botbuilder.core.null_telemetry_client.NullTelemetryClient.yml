@@ -3,8 +3,6 @@ uid: botbuilder.core.null_telemetry_client.NullTelemetryClient
 name: NullTelemetryClient
 fullName: botbuilder.core.null_telemetry_client.NullTelemetryClient
 module: botbuilder.core.null_telemetry_client
-inheritances:
-- botbuilder.core.bot_telemetry_client.BotTelemetryClient
 constructor:
   syntax: NullTelemetryClient()
 methods:
@@ -105,7 +103,7 @@ methods:
     :param measurements: the set of custom measurements the client wants to attach
     to this data item.         (defaults to: None)'
   signature: 'track_exception(exception_type: type = None, value: Exception = None,
-    trace: <module ''traceback'' from ''C:\\hostedtoolcache\\windows\\Python\\3.11.9\\x64\\Lib\\traceback.py''>
+    trace: <module ''traceback'' from ''C:\\hostedtoolcache\\windows\\Python\\3.11.10\\x64\\Lib\\traceback.py''>
     = None, properties: ~typing.Dict[str, object] = None, measurements: ~typing.Dict[str,
     object] = None) -> None'
   parameters:

@@ -3,8 +3,6 @@ uid: botframework.connector.auth.authentication_constants.AuthenticationConstant
 name: AuthenticationConstants
 fullName: botframework.connector.auth.authentication_constants.AuthenticationConstants
 module: botframework.connector.auth.authentication_constants
-inheritances:
-- abc.ABC
 constructor:
   syntax: AuthenticationConstants()
 attributes:
@@ -79,12 +77,12 @@ attributes:
 - uid: botframework.connector.auth.authentication_constants.AuthenticationConstants.SERVICE_URL_CLAIM
   name: SERVICE_URL_CLAIM
   signature: SERVICE_URL_CLAIM = 'serviceurl'
-- uid: botframework.connector.auth.authentication_constants.AuthenticationConstants.TO_BOT_FROM_CHANNEL_OPEN_ID_METADATA_URL
-  name: TO_BOT_FROM_CHANNEL_OPEN_ID_METADATA_URL
-  signature: TO_BOT_FROM_CHANNEL_OPEN_ID_METADATA_URL = 'https://login.botframework.com/v1/.well-known/openidconfiguration'
-- uid: botframework.connector.auth.authentication_constants.AuthenticationConstants.TO_BOT_FROM_EMULATOR_OPEN_ID_METADATA_URL
-  name: TO_BOT_FROM_EMULATOR_OPEN_ID_METADATA_URL
-  signature: TO_BOT_FROM_EMULATOR_OPEN_ID_METADATA_URL = 'https://login.microsoftonline.com/common/v2.0/.well-known/openid-configuration'
+- uid: botframework.connector.auth.authentication_constants.AuthenticationConstants.TO_BOT_FROM_CHANNEL_OPENID_METADATA_URL
+  name: TO_BOT_FROM_CHANNEL_OPENID_METADATA_URL
+  signature: TO_BOT_FROM_CHANNEL_OPENID_METADATA_URL = 'https://login.botframework.com/v1/.well-known/openidconfiguration'
+- uid: botframework.connector.auth.authentication_constants.AuthenticationConstants.TO_BOT_FROM_EMULATOR_OPENID_METADATA_URL
+  name: TO_BOT_FROM_EMULATOR_OPENID_METADATA_URL
+  signature: TO_BOT_FROM_EMULATOR_OPENID_METADATA_URL = 'https://login.microsoftonline.com/common/v2.0/.well-known/openid-configuration'
 - uid: botframework.connector.auth.authentication_constants.AuthenticationConstants.TO_BOT_FROM_ENTERPRISE_CHANNEL_OPEN_ID_METADATA_URL_FORMAT
   name: TO_BOT_FROM_ENTERPRISE_CHANNEL_OPEN_ID_METADATA_URL_FORMAT
   signature: TO_BOT_FROM_ENTERPRISE_CHANNEL_OPEN_ID_METADATA_URL_FORMAT = 'https://{channelService}.enterprisechannel.botframework.com/v1/.well-known/openidconfiguration'
@@ -96,10 +94,22 @@ attributes:
   signature: TO_CHANNEL_FROM_BOT_LOGIN_URL_PREFIX = 'https://login.microsoftonline.com/'
 - uid: botframework.connector.auth.authentication_constants.AuthenticationConstants.TO_CHANNEL_FROM_BOT_OAUTH_SCOPE
   name: TO_CHANNEL_FROM_BOT_OAUTH_SCOPE
-  signature: TO_CHANNEL_FROM_BOT_OAUTH_SCOPE = 'https://api.botframework.com/.default'
+  signature: TO_CHANNEL_FROM_BOT_OAUTH_SCOPE = 'https://api.botframework.com'
 - uid: botframework.connector.auth.authentication_constants.AuthenticationConstants.TO_CHANNEL_FROM_BOT_TOKEN_ENDPOINT_PATH
   name: TO_CHANNEL_FROM_BOT_TOKEN_ENDPOINT_PATH
   signature: TO_CHANNEL_FROM_BOT_TOKEN_ENDPOINT_PATH = '/oauth2/v2.0/token'
+- uid: botframework.connector.auth.authentication_constants.AuthenticationConstants.VALID_GOVERNMENT_TOKEN_ISSUER_URL_TEMPLATE_V1
+  name: VALID_GOVERNMENT_TOKEN_ISSUER_URL_TEMPLATE_V1
+  signature: VALID_GOVERNMENT_TOKEN_ISSUER_URL_TEMPLATE_V1 = 'https://login.microsoftonline.us/{0}/'
+- uid: botframework.connector.auth.authentication_constants.AuthenticationConstants.VALID_GOVERNMENT_TOKEN_ISSUER_URL_TEMPLATE_V2
+  name: VALID_GOVERNMENT_TOKEN_ISSUER_URL_TEMPLATE_V2
+  signature: VALID_GOVERNMENT_TOKEN_ISSUER_URL_TEMPLATE_V2 = 'https://login.microsoftonline.us/{0}/v2.0'
+- uid: botframework.connector.auth.authentication_constants.AuthenticationConstants.VALID_TOKEN_ISSUER_URL_TEMPLATE_V1
+  name: VALID_TOKEN_ISSUER_URL_TEMPLATE_V1
+  signature: VALID_TOKEN_ISSUER_URL_TEMPLATE_V1 = 'https://sts.windows.net/{0}/'
+- uid: botframework.connector.auth.authentication_constants.AuthenticationConstants.VALID_TOKEN_ISSUER_URL_TEMPLATE_V2
+  name: VALID_TOKEN_ISSUER_URL_TEMPLATE_V2
+  signature: VALID_TOKEN_ISSUER_URL_TEMPLATE_V2 = 'https://login.microsoftonline.com/{0}/v2.0'
 - uid: botframework.connector.auth.authentication_constants.AuthenticationConstants.VERSION_CLAIM
   name: VERSION_CLAIM
   signature: VERSION_CLAIM = 'ver'
