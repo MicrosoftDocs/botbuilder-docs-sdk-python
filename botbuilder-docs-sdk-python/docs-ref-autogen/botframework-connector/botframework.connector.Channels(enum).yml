@@ -4,12 +4,6 @@ name: Channels
 fullName: botframework.connector.Channels
 summary: Ids of channels supported by the Bot Builder.
 module: botframework.connector
-constructor:
-  syntax: Channels(value, names=None, *, module=None, qualname=None, type=None, start=1,
-    boundary=None)
-inheritances:
-- builtins.str
-- enum.Enum
 fields:
 - name: console
   uid: botframework.connector.Channels.console
@@ -17,6 +11,8 @@ fields:
   uid: botframework.connector.Channels.cortana
 - name: direct_line
   uid: botframework.connector.Channels.direct_line
+- name: direct_line_speech
+  uid: botframework.connector.Channels.direct_line_speech
 - name: email
   uid: botframework.connector.Channels.email
 - name: emulator
@@ -41,5 +37,7 @@ fields:
   uid: botframework.connector.Channels.sms
 - name: telegram
   uid: botframework.connector.Channels.telegram
+- name: test
+  uid: botframework.connector.Channels.test
 - name: webchat
   uid: botframework.connector.Channels.webchat

@@ -3,12 +3,10 @@ uid: botbuilder.schema.ChannelAccount
 name: ChannelAccount
 fullName: botbuilder.schema.ChannelAccount
 module: botbuilder.schema
-inheritances:
-- msrest.serialization.Model
 summary: Channel account information needed to route a message.
 constructor:
   syntax: 'ChannelAccount(*, id: str = None, name: str = None, aad_object_id: str
-    = None, role=None, **kwargs)'
+    = None, role=None, properties=None, **kwargs)'
   parameters:
   - name: id
     description: 'Channel id for the user or bot on this channel (Example:
@@ -45,4 +43,6 @@ constructor:
   - name: aad_object_id
     isRequired: true
   - name: role
+    isRequired: true
+  - name: properties
     isRequired: true

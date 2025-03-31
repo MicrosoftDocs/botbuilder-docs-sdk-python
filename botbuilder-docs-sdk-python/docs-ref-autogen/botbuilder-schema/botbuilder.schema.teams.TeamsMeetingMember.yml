@@ -1,0 +1,25 @@
+### YamlMime:PythonClass
+uid: botbuilder.schema.teams.TeamsMeetingMember
+name: TeamsMeetingMember
+fullName: botbuilder.schema.teams.TeamsMeetingMember
+module: botbuilder.schema.teams
+summary: Data about the meeting participants.
+constructor:
+  syntax: 'TeamsMeetingMember(*, user: TeamsChannelAccount = None, meeting: UserMeetingDetails
+    = None, **kwargs)'
+  parameters:
+  - name: user
+    description: The channel user data.
+    isRequired: true
+    types:
+    - <xref:botbuilder.schema.teams.TeamsChannelAccount>
+  - name: meeting
+    description: The user meeting details.
+    isRequired: true
+    types:
+    - <xref:botbuilder.schema.teams.UserMeetingDetails>
+  keywordOnlyParameters:
+  - name: user
+    isRequired: true
+  - name: meeting
+    isRequired: true
